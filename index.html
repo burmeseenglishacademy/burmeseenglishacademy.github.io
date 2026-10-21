@@ -18,8 +18,32 @@
     <nav class="toplinks" aria-label="Main navigation">
       <a href="#home" data-nav="home">Home</a><a href="#courses" data-nav="courses">Courses</a><a href="#gym" data-nav="gym">Grammar Gym</a><a href="#review" data-nav="review">Review</a><a href="#ielts" data-nav="ielts">IELTS Lab</a><a href="#guide" data-nav="guide">Study guide</a><a href="#updates" data-nav="updates">Updates</a>
     </nav>
+    <button id="voiceSettingsToggle" class="voice-open-btn" type="button" aria-expanded="false" aria-controls="voiceSettingsPanel">🔊 Voices</button>
     <button id="menuToggle" class="mobile-menu" type="button" aria-label="Toggle menu" aria-expanded="false">☰</button>
   </header>
+  <section class="voice-panel" id="voiceSettingsPanel" aria-labelledby="voicePanelTitle" hidden>
+    <div class="voice-panel-inner">
+      <div class="voice-panel-intro">
+        <h2 id="voicePanelTitle">British English Voice Settings</h2>
+        <p>Choose a male or female voice and listen to a sample. Your choice will be remembered on this browser.</p>
+        <p class="mm" lang="my">British English အမျိုးသား၊ အမျိုးသမီး အသံကို ရွေးပြီး နမူနာ နားထောင်နိုင်ပါတယ်။ ရွေးချယ်မှုကို ဒီ Browser မှာ သိမ်းထားပါမယ်။</p>
+      </div>
+      <div class="voice-controls">
+        <div class="voice-field"><label for="voiceGender">Preferred voice</label>
+          <select id="voiceGender" class="filter"><option value="male">Male (British)</option><option value="female">Female (British)</option></select>
+        </div>
+        <div class="voice-field"><label for="voiceChoice">Available English voices</label>
+          <select id="voiceChoice" class="filter"><option value="">Automatic — best available British voice</option></select>
+        </div>
+        <div class="voice-actions">
+          <button id="voicePreview" type="button" class="btn primary">▶ Preview voice</button>
+          <button id="voiceStop" type="button" class="btn outline">■ Stop audio</button>
+        </div>
+      </div>
+      <p class="voice-status" id="voiceStatus" role="status" aria-live="polite">Looking for British English voices…</p>
+      <p class="voice-disclaimer">Accents, gender and realistic voices depend on the learner's browser and device. “Natural” names are browser-provided labels, not a quality guarantee. Some natural voices require internet. No paid API is used.</p>
+    </div>
+  </section>
   <div class="shell">
     <aside id="sidebar" class="sidebar" aria-label="Quick course navigation">
       <div class="sidebar-top"><span class="eyebrow">YOUR LEARNING SPACE</span><h2>Learn with purpose.</h2><p lang="my">နေ့တိုင်း နည်းနည်းစီ လေ့ကျင့်ပါ။</p></div>
