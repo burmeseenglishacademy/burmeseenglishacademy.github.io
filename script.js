@@ -13,6 +13,7 @@ const today=()=>{let d=new Date();return [d.getFullYear(),String(d.getMonth()+1)
 const tr=(id)=>LESSONS.find(l=>l.id===Number(id));
 const defaultState=()=>({speed:0.85,activeMock:null});
 function loadState(){return defaultState()} // Fresh, in-memory practice only; never read historical progress
+let wordBankQuery='',wordBankTopic='all',wordBankPage=0,wordBankExact=false;
 let state=loadState();let timerHandle=null,timerEndsAt=0,timerRemain=0,recorder=null,recordedChunks=[],recordedAudioURL=null,recogniser=null;let recordingStream=null,recordDeletePending=false,recordingGeneration=0;let activeFlash=null;let searchQuery='',filterLevel='all';let gymQuestions=[],gymLevel='all';
 function save(){} // Intentional: no learner progress, drafts, or preferences are persisted.
 function recordVisit(){} // No visit logs.
@@ -34,6 +35,7 @@ function route(){clearRecordingSession(false);let hash=decodeURIComponent(locati
   else if(top==='review')app.innerHTML=renderReview();
   else if(top==='gym')app.innerHTML=renderGym(parts[1]||'all');
   else if(top==='ielts')app.innerHTML=renderIELTS();
+  else if(top==='ielts-vocabulary')app.innerHTML=renderIELTSVocabulary();
   else if(top==='mock')app.innerHTML=renderMock(parts[1]);
   else if(top==='guide')app.innerHTML=renderGuide();
   else if(top==='updates')app.innerHTML=renderUpdates();
@@ -71,12 +73,13 @@ function renderHome(){
     <div class="metric"><strong class="value">6</strong><span class="label">Practice skills</span></div>
     <div class="metric"><strong class="value">Free</strong><span class="label">Always, for everyone</span></div>
   </section>
+  <section class="word-bank-teaser"><div><span class="eyebrow">NEW · IELTS VOCABULARY</span><h2>1,000 words. A world of ideas.</h2><p>English definitions, Burmese meanings and real usage examples across 20 useful topics. Hear every word, search freely, and learn without tracking.</p><a href="#ielts-vocabulary" class="btn primary">Explore the word bank ↗</a></div><div class="word-bank-teaser-art" aria-hidden="true"><span>1,000</span><small>WORDS TO DISCOVER</small></div></section>
   <section class="privacy-promise" aria-label="Our privacy promise"><span class="privacy-promise-icon">✳</span><div><strong>Learning belongs to you. Not a database.</strong><p>No account, saved scores or completion history. Pick up at any lesson next time. <span lang="my">ဘယ်သင်ခန်းစာရောက်ခဲ့လဲ ကိုယ်တိုင်မှတ်သားနိုင်ပါတယ်။</span></p></div><a href="privacy.html">Our privacy promise ↗</a></section>
   <div class="section-head"><div><span class="eyebrow">FIND YOUR PATH</span><h2>Where will English take you?</h2><p>Pick any level. Every lesson is open.</p></div><a href="#courses">All ${MAX_ID} lessons ↗</a></div>
   <section class="cards level-cards">${TRACKS.map(([id,label,mm],i)=>trackCard(id,label,mm,i)).join('')}</section>
   <section class="welcome-work home-extras">
     <article class="panel editorial-panel"><span class="eyebrow">YOUR DAILY ROUTINE</span><h2>Just 25 minutes. Big difference.</h2><ol class="flow-steps"><li><span class="step-num">05</span><span>Learn five useful phrases</span></li><li><span class="step-num">08</span><span>Read and listen for meaning</span></li><li><span class="step-num">07</span><span>Speak and write your own words</span></li><li><span class="step-num">05</span><span>Check your answers and retry</span></li></ol><a href="#guide" class="text-arrow">Find your study rhythm →</a></article>
-    <article class="panel editorial-panel accent-panel"><span class="eyebrow">IELTS CORNER</span><h2>Make practice feel possible.</h2><p>Academic and General Training mini-checks, guided writing and speaking prompts. Honest feedback, no made-up band scores.</p><a href="#ielts" class="btn primary">Enter IELTS Lab →</a></article>
+    <article class="panel editorial-panel accent-panel"><span class="eyebrow">IELTS CORNER</span><h2>Make practice feel possible.</h2><p>Academic and General Training mini-checks, guided writing and speaking prompts. Honest feedback, no made-up band scores.</p><div class="toolbar-actions"><a href="#ielts" class="btn primary">Enter IELTS Lab →</a><a href="#ielts-vocabulary" class="btn outline">Explore 1,000 IELTS Words ↗</a></div></article>
   </section>
   <div class="section-head"><div><span class="eyebrow">SIX WAYS TO LEARN</span><h2>Practice your whole voice.</h2></div></div>
   <div class="skill-showcase">${[['📖','Reading'],['🎧','Listening'],['🎙','Speaking'],['✍','Writing'],['🧩','Grammar'],['🗂','Vocabulary']].map(([ico,n])=>`<div class="skill-show"><span>${ico}</span><strong>${n}</strong></div>`).join('')}</div>
@@ -122,7 +125,49 @@ function renderVocab(l){return `${skillHead('Vocabulary','ဝေါဟာရ','L
  <div class="vocab-grid">${l.words.map(([word,mm,example],i)=>`<article class="vocab-tile"><div><span class="tag">WORD ${i+1}</span><h3>${E(word)}</h3><div id="vocabMeaning${i}" hidden><p class="mm mm-soft">${E(mm)}</p><p>${E(example)}</p></div></div><div class="vocab-actions"><button type="button" class="btn outline sm" data-action="vocab-flip" data-idx="${i}">Reveal meaning</button><button type="button" class="btn soft sm" data-action="vocab-audio" data-idx="${i}" aria-label="Play pronunciation for word ${i+1}">🔊 Listen</button></div></article>`).join('')}</div><div class="toolbar-actions"><a class="btn soft" href="#review">Browse word practice →</a></div><p class="note-small">Your learning is yours: jot down words you want to revisit another day.</p>`}
 function renderQuiz(l){return `${skillHead('Lesson checkpoint','သင်ခန်းစာစစ်ဆေးမှု','Five quick questions with instant feedback. Nothing is saved, and you can retry freely.')}
  <div class="notice">The quiz checks selected concepts on this page only. Speaking and writing are not automatically graded.</div><div id="quizArea">${l.quiz.map((q,i)=>qHtml(q,'quiz'+i,i)).join('')}</div><div class="toolbar-actions"><button type="button" class="btn primary" data-action="quiz-submit">Check my answers</button><button type="button" class="btn outline" data-action="quiz-retry">Try again</button></div><div id="quizResult" aria-live="polite"></div>`}
-function renderReview(){return `<div class="page"><span class="eyebrow">WORD PLAY · ပြန်လည်လေ့ကျင့်ခြင်း</span><h1>Pick a word. Make it yours.</h1><p class="muted">No scheduled reminders, ratings or saved review history. Choose any lesson to revisit its vocabulary whenever you like.</p><div class="review-hero"><span class="eyebrow">ANY DAY, ANY WORD</span><h2>A word is a tiny adventure.</h2><p>Say it. Try it. Remember it your way.</p><a class="btn light" href="#lesson/1/vocab">Try Lesson 01 words →</a></div><div class="section-head"><div><span class="eyebrow">PICK A LESSON</span><h2>Word practice library</h2></div></div><div class="lesson-list">${LESSONS.map(l=>`<a class="lesson-item" href="#lesson/${l.id}/vocab"><span class="lesson-index">${String(l.id).padStart(2,'0')}</span><div class="lesson-info"><span class="lesson-level">${E(l.level)}</span><h3>${E(l.title)}</h3><p class="mm">${E(l.myanmarTitle)}</p><span class="lesson-state">5 words · practise now →</span></div></a>`).join('')}</div></div>`}
+/* IELTS VOCABULARY · 1,000 terms in a static locally served script, no tracking. */
+const WORD_BANK_PAGE_SIZE=24;
+function getWordBankEntries(){return typeof IELTS_VOCAB_BANK!=='undefined'&&Array.isArray(IELTS_VOCAB_BANK.entries)?IELTS_VOCAB_BANK.entries:[]}
+function filteredWordBank(){
+ const query=wordBankQuery.trim().toLocaleLowerCase();
+ return getWordBankEntries().map((entry,index)=>({entry,index})).filter(({entry})=>{
+  if(wordBankTopic!=='all'&&String(entry[4])!==wordBankTopic)return false;
+  if(!query)return true;
+  if(wordBankExact)return entry[0].toLocaleLowerCase()===query;
+  return [entry[0],entry[1],entry[2],entry[3]].some(value=>String(value).toLocaleLowerCase().includes(query));
+ });
+}
+function wordBankCard({entry,index}){
+ const [word,meaning,burmese,example,topicId]=entry;
+ const topics=typeof IELTS_VOCAB_BANK!=='undefined'?IELTS_VOCAB_BANK.topics:[];
+ return `<article class="word-bank-card"><div class="word-bank-card-top"><span class="word-bank-number">${String(index+1).padStart(4,'0')} / 1000</span><span class="word-bank-tag">${E(topics[topicId]||'Academic')}</span></div>
+ <div class="word-bank-head"><h3>${E(word)}</h3><button type="button" class="word-bank-sound" data-action="word-bank-say" data-idx="${index}" aria-label="Hear pronunciation of ${E(word)}">🔊 <span>Listen</span></button></div>
+ <div class="word-bank-definition" id="wordDef${index}"><p class="word-bank-label">MEANING · အဓိပ္ပာယ်</p><p class="word-bank-english">${E(meaning)}</p><p class="word-bank-burmese" lang="my">${E(burmese)}</p>
+ <p class="word-bank-label">USAGE · အသုံးပြုပုံ</p><blockquote class="word-bank-example">${E(example)}</blockquote></div>
+ <div class="word-bank-card-actions"><button class="btn outline sm" type="button" data-action="word-bank-example" data-idx="${index}">▶ Read example</button><button class="word-bank-cover" type="button" data-action="word-bank-cover" data-idx="${index}" aria-controls="wordDef${index}" aria-expanded="true">Hide meaning</button></div></article>`;
+}
+function wordBankResultMarkup(){
+ const filtered=filteredWordBank();const maxPage=Math.max(0,Math.ceil(filtered.length/WORD_BANK_PAGE_SIZE)-1);
+ wordBankPage=Math.max(0,Math.min(wordBankPage,maxPage));
+ const first=wordBankPage*WORD_BANK_PAGE_SIZE,last=Math.min(filtered.length,first+WORD_BANK_PAGE_SIZE);
+ const cards=filtered.slice(first,last).map(wordBankCard).join('');
+ return `<div class="word-bank-resultbar"><strong>${filtered.length.toLocaleString('en-GB')} of 1,000 words</strong><span>${filtered.length?`Showing ${first+1}–${last}`:'Try a different word or topic'}</span></div>
+ ${filtered.length?`<div class="word-bank-grid">${cards}</div><nav class="word-bank-pagination" aria-label="Vocabulary pages"><button type="button" class="btn outline" data-action="word-bank-prev" ${wordBankPage===0?'disabled':''}>← Previous</button><span>Page ${wordBankPage+1} of ${maxPage+1}</span><button type="button" class="btn outline" data-action="word-bank-next" ${wordBankPage>=maxPage?'disabled':''}>Next →</button></nav>`:
+ `<div class="word-bank-empty"><h2>No matches found</h2><p>Try another spelling, remove the topic filter or search for a meaning in English or Burmese.</p><button type="button" data-action="word-bank-reset" class="btn primary">Show all 1,000 words</button></div>`}`;
+}
+function updateWordBankResults(scroll=false){const target=document.getElementById('wordBankResults');if(!target)return;target.innerHTML=wordBankResultMarkup();if(scroll){document.getElementById('wordBankFilters')?.scrollIntoView({behavior:'auto',block:'start'});}}
+function renderIELTSVocabulary(){
+ const entries=getWordBankEntries(),topics=typeof IELTS_VOCAB_BANK==='undefined'?[]:IELTS_VOCAB_BANK.topics;
+ return `<div class="page word-bank-page"><a class="back-link" href="#ielts">← Back to IELTS Lab</a>
+ <section class="word-bank-hero"><div class="word-bank-hero-text"><span class="eyebrow">IELTS VOCABULARY · ENGLISH + မြန်မာ</span><h1>1,000 words.<br><em>More ways to say it.</em></h1><p>From science to society, learn useful academic and everyday vocabulary with clear meanings, Burmese support and natural example sentences.</p><p class="word-bank-hero-mm" lang="my">အကြောင်းအရာ ၂၀ မျိုးခွဲထားတဲ့ ဝေါဟာရ ၁,၀၀၀ ကို အဓိပ္ပာယ်၊ မြန်မာဘာသာနဲ့ အသုံးချဝါကျတွေနဲ့ လေ့လာပါ။</p><div class="word-bank-facts"><span>✦ 1,000 entries</span><span>✦ 20 topics</span><span>✦ British voice</span><span>✦ No tracking</span></div></div><div class="word-bank-hero-number" aria-hidden="true"><strong>1000</strong><span>WORDS / စကားလုံးများ</span></div></section>
+ <div class="word-bank-help"><strong>How to learn:</strong> Search by a word or meaning, choose a topic, press 🔊 to hear pronunciation, and try saying the example aloud. Use the top <strong>Voices</strong> button to change the British voice. Your search, study actions and word history are <strong>not saved</strong>. <span lang="my">သင်ယူခဲ့သည့် စကားလုံးမှတ်တမ်းကို မသိမ်းပါ။</span></div>
+ <section class="word-bank-controls" id="wordBankFilters" aria-label="Vocabulary filters"><div class="word-bank-search-field"><label for="ieltsVocabSearch">Search vocabulary · ရှာဖွေရန်</label><input id="ieltsVocabSearch" class="search" type="search" autocomplete="off" spellcheck="false" placeholder="Try sustainability, စီးပွားရေး, example…" value="${E(wordBankQuery)}"></div><div class="word-bank-topic-field"><label for="ieltsVocabTopic">Topic · အကြောင်းအရာ</label><select id="ieltsVocabTopic" class="filter"><option value="all">All 20 topics · 1,000 words</option>${topics.map((topic,i)=>`<option value="${i}" ${wordBankTopic===String(i)?'selected':''}>${E(topic)} · 50</option>`).join('')}</select></div><button class="btn soft word-bank-surprise" type="button" data-action="word-bank-surprise">✦ Surprise me</button></section>
+ <div id="wordBankResults" aria-live="polite">${wordBankResultMarkup()}</div>
+ <section class="word-bank-bottom-note"><h2>Words are a starting point, not a band score.</h2><p>This is an independently curated learning bank, <strong>not an official IELTS vocabulary list or an IELTS-endorsed product</strong>. Learning 1,000 words cannot guarantee a test result. Practise accurate meaning, natural collocations and use in full sentences.</p><p class="mm" lang="my">IELTS စာမေးပွဲက တရားဝင် ထုတ်ပြန်ထားတဲ့ စကားလုံးစာရင်း မဟုတ်ပါ။ စာလုံးတွေကို အဓိပ္ပာယ်နားလည်ပြီး ဝါကျထဲမှာ သဘာဝကျကျ အသုံးချလေ့ကျင့်ပါ။</p></section>
+ </div>`;
+}
+
+function renderReview(){return `<div class="page"><span class="eyebrow">WORD PLAY · ပြန်လည်လေ့ကျင့်ခြင်း</span><h1>Pick a word. Make it yours.</h1><p class="muted">No scheduled reminders, ratings or saved review history. Choose any lesson to revisit its vocabulary whenever you like.</p><div class="review-hero"><span class="eyebrow">ANY DAY, ANY WORD</span><h2>A word is a tiny adventure.</h2><p>Say it. Try it. Remember it your way.</p><a class="btn light" href="#lesson/1/vocab">Try Lesson 01 words →</a> <a class="btn ghost" href="#ielts-vocabulary">Explore 1,000 IELTS words ↗</a></div><div class="section-head"><div><span class="eyebrow">PICK A LESSON</span><h2>Word practice library</h2></div></div><div class="lesson-list">${LESSONS.map(l=>`<a class="lesson-item" href="#lesson/${l.id}/vocab"><span class="lesson-index">${String(l.id).padStart(2,'0')}</span><div class="lesson-info"><span class="lesson-level">${E(l.level)}</span><h3>${E(l.title)}</h3><p class="mm">${E(l.myanmarTitle)}</p><span class="lesson-state">5 words · practise now →</span></div></a>`).join('')}</div></div>`}
 function refreshReview(){document.getElementById('app').innerHTML=renderReview()}
 
 function gymPick(level){let pool=LESSONS.filter(l=>level==='all'||l.level===level).map(l=>({ ...l.quiz.find(q=>q.skill==='Grammar'),lesson:l.id,topic:l.title})).filter(x=>x.q);
@@ -132,6 +177,7 @@ function renderGymInPlace(){document.getElementById('app').innerHTML=renderGym(g
 function checkGym(){let result=scoreQuestions(gymQuestions,'gym');let el=document.getElementById('gymResult');if(result.missing){el.innerHTML=`<div class="result-banner fail">Answer all ${gymQuestions.length} questions first. ${result.missing} missing.</div>`;return}el.innerHTML=`<div class="result-banner">${result.score}/${gymQuestions.length} answered correctly. Review each explanation and try a fresh set.</div>`;toast('Grammar practice checked.')}
 
 function renderIELTS(){return `<div class="page"><span class="eyebrow">IELTS PRACTICE STUDIO</span><h1>Prepare with the right test.</h1><p>Choose Academic or General Training. The two tests share listening and speaking formats, but their reading content and Writing Task 1 requirements differ.</p><div class="cards" style="grid-template-columns:repeat(auto-fit,minmax(270px,1fr))"><article class="panel"><span class="level-pill purple">IELTS Academic</span><h2>University and academic contexts</h2><p>Academic-style passages, chart/process description and essay tasks.</p><div class="toolbar-actions"><a href="#courses/IELTS%20Academic" class="btn primary">6 guided lessons</a><button class="btn outline" data-action="mock-start" data-type="IELTS Academic">20-minute mini check</button></div></article><article class="panel"><span class="level-pill purple">IELTS General Training</span><h2>Everyday and workplace contexts</h2><p>General-style passages, formal/informal letters and essay tasks.</p><div class="toolbar-actions"><a href="#courses/IELTS%20General" class="btn primary">6 guided lessons</a><button class="btn outline" data-action="mock-start" data-type="IELTS General">20-minute mini check</button></div></article></div>
+ <div class="panel ielts-vocab-cta"><div><span class="eyebrow">IELTS VOCABULARY</span><h2>1,000 words for curious minds</h2><p>20 topics · simple meanings in English and Burmese · original example sentences · British voice practice. Search by word or topic, without creating an account.</p></div><a class="btn primary" href="#ielts-vocabulary">Open the vocabulary bank →</a></div>
  <div class="panel"><h2>Writing task reminder</h2><div class="sample-grid"><div class="tiny-panel"><h4>Academic Task 1</h4><p>Describe visual information such as a graph, table or process. At least 150 words; about 20 minutes.</p></div><div class="tiny-panel"><h4>General Training Task 1</h4><p>Write a letter responding to a situation. At least 150 words; about 20 minutes.</p></div><div class="tiny-panel"><h4>Task 2 (both)</h4><p>Write an essay responding to an argument or problem. At least 250 words; about 40 minutes.</p></div><div class="tiny-panel"><h4>Speaking (both)</h4><p>Practice personal questions, a long turn and deeper discussion. Genuine scoring requires skilled human assessment.</p></div></div><p class="note-small" style="margin-top:17px">Official guidance: <a href="https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing" target="_blank" rel="noopener noreferrer">Academic writing</a> · <a href="https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-writing" target="_blank" rel="noopener noreferrer">General Training writing</a>. These links require internet.</p></div>
  <div class="notice amber"><strong>About the mini checks:</strong> These are original 12-question, 20-minute reading-and-listening practice sets, <em>not</em> full-length IELTS mock examinations. Browser-generated audio does not replicate the actual listening test. Objective scores are not IELTS bands.</div>''}</div>`}
 function renderMock(type){if(type!=='IELTS Academic'&&type!=='IELTS General')return renderIELTS();if(!state.activeMock||state.activeMock.type!==type)return `<div class="page"><h1>${E(type)} mini check</h1><p>This check has twelve original objective questions and a 20-minute timer. It is not a full IELTS mock examination.</p><button class="btn primary" data-action="mock-start" data-type="${E(type)}">Begin practice check</button></div>`;
@@ -349,16 +395,25 @@ document.addEventListener('click',async function(ev){let node=ev.target.closest(
  case 'mock-submit':submitMock();break;
 
 
+ case 'word-bank-say':{let e=getWordBankEntries()[Number(node.dataset.idx)];if(e)playSpeech(e[0]);}break;
+ case 'word-bank-example':{let e=getWordBankEntries()[Number(node.dataset.idx)];if(e)playSpeech(e[3]);}break;
+ case 'word-bank-cover':{let el=document.getElementById('wordDef'+node.dataset.idx);if(el){el.hidden=!el.hidden;node.textContent=el.hidden?'Reveal meaning':'Hide meaning';node.setAttribute('aria-expanded',String(!el.hidden));}}break;
+ case 'word-bank-prev':wordBankPage=Math.max(0,wordBankPage-1);updateWordBankResults(true);break;
+ case 'word-bank-next':wordBankPage++;updateWordBankResults(true);break;
+ case 'word-bank-reset':wordBankQuery='';wordBankTopic='all';wordBankPage=0;wordBankExact=false;document.getElementById('ieltsVocabSearch').value='';document.getElementById('ieltsVocabTopic').value='all';updateWordBankResults();break;
+ case 'word-bank-surprise':{let entries=getWordBankEntries();if(entries.length){let e=entries[Math.floor(Math.random()*entries.length)];wordBankQuery=e[0];wordBankTopic='all';wordBankPage=0;wordBankExact=true;document.getElementById('ieltsVocabSearch').value=wordBankQuery;document.getElementById('ieltsVocabTopic').value='all';updateWordBankResults();}}break;
  case 'clear-session':clearPracticeSession();break;
  }
 });
 document.addEventListener('input',e=>{
+ if(e.target.id==='ieltsVocabSearch'){wordBankQuery=e.target.value;wordBankPage=0;wordBankExact=false;updateWordBankResults();}
  if(e.target.id==='writingText')showWritingStatus();
  if(e.target.id==='courseSearch'){
   searchQuery=e.target.value;let list=LESSONS.filter(l=>(filterLevel==='all'||l.level===filterLevel)&&(`${l.title} ${l.myanmarTitle} ${l.summary} ${l.level}`).toLowerCase().includes(searchQuery.toLowerCase()));let box=document.getElementById('courseMatches');if(box)box.innerHTML=list.length?list.map(lessonTile).join(''):'<p class="empty">No lessons found. Try a different topic.</p>';
  }
 });
 document.addEventListener('change',e=>{
+ if(e.target.id==='ieltsVocabTopic'){wordBankTopic=e.target.value;wordBankPage=0;wordBankExact=false;updateWordBankResults();}
  if(e.target.id==='levelSelect'){filterLevel=e.target.value;location.hash='#courses/'+encodeURIComponent(filterLevel);route()}
  if(e.target.id==='gymLevel'){gymLevel=e.target.value;gymQuestions=[];renderGymInPlace()}
  if(e.target.id==='speedControl'){state.speed=Number(e.target.value);toast('Speed changed for this page only.')}

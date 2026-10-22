@@ -4,17 +4,18 @@
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self' blob:; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
  <meta name="theme-color" content="#132c3e">
- <meta name="description" content="54 free English lessons with Burmese support, British voice practice, grammar, vocabulary and IELTS-style exercises. No login or progress tracking.">
+ <meta name="description" content="54 free English lessons and a 1,000-word IELTS vocabulary bank with Burmese meanings, examples and British voice practice. No login or progress tracking.">
  <meta name="color-scheme" content="light">
  <meta property="og:type" content="website">
  <meta property="og:title" content="Burmese English Academy — A little English. A lot of possibility.">
- <meta property="og:description" content="Free English lessons with Burmese support. Learn on your own terms—no accounts, no progress tracking.">
+ <meta property="og:description" content="54 free English lessons and 1,000 IELTS-preparation vocabulary entries with English and Burmese meanings. No accounts or tracking.">
  <title>Burmese English Academy · Free English, Your Way</title>
- <link rel="icon" href="favicon.svg?v=1.1.0" type="image/svg+xml">
- <link rel="stylesheet" href="style.css?v=1.1.0">
- <script defer src="site-config.js?v=1.1.0"></script>
- <script defer src="content.js?v=1.1.0"></script>
- <script defer src="script.js?v=1.1.0"></script>
+ <link rel="icon" href="favicon.svg?v=1.2.0" type="image/svg+xml">
+ <link rel="stylesheet" href="style.css?v=1.2.0">
+ <script defer src="site-config.js?v=1.2.0"></script>
+ <script defer src="content.js?v=1.2.0"></script>
+ <script defer src="ielts-vocabulary-data.js?v=1.2.0"></script>
+ <script defer src="script.js?v=1.2.0"></script>
 </head>
 <body>
  <a class="skip" href="#main">Skip to main content</a>
@@ -29,6 +30,7 @@
    <a href="#review" data-nav="review">Word Play</a>
    <a href="#gym" data-nav="gym">Grammar Gym</a>
    <a href="#ielts" data-nav="ielts">IELTS Lab</a>
+   <a href="#ielts-vocabulary" data-nav="ielts-vocabulary">1000 Words</a>
    <a href="#guide" data-nav="guide">Study Guide</a>
    <a href="privacy.html">Privacy</a>
   </nav>
@@ -59,12 +61,13 @@
    <div class="sidebar-top"><span class="eyebrow">YOUR WAY TO ENGLISH</span><h2>Every lesson is yours.</h2><p class="mm" lang="my">နှစ်သက်ရာသင်ခန်းစာကို ရွေးပါ။</p></div>
    <p class="side-label">EXPLORE LEVELS</p>
    <nav id="sideTracks" class="side-tracks" aria-label="Level navigation"></nav>
+   <a class="aside-vocab" href="#ielts-vocabulary"><span aria-hidden="true">✦</span><span><strong>IELTS 1,000 Words</strong><small>Meaning · မြန်မာ · Examples</small></span><span aria-hidden="true">↗</span></a>
    <div class="aside-hint"><strong>✦ No account needed</strong><p>Choose your next lesson yourself. We don't save scores or lesson history.</p><a href="privacy.html">Read our privacy promise ↗</a></div>
    <div class="aside-clear"><button type="button" class="btn outline sm" data-action="clear-session">Clear session &amp; old data</button></div>
   </aside>
   <main id="main" tabindex="-1"><div id="app" aria-live="off"><div class="loading"><span class="spinner"></span> Opening your learning space…</div></div></main>
  </div>
- <footer class="footer"><div class="footer-mark"><span class="footer-seal">b.</span><div><strong>Burmese English Academy</strong><small>Free learning, with room to grow.</small></div></div><div class="footer-links"><a href="#courses">Lessons</a><a href="#updates">Updates</a><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="mailto:learnersbea@gmail.com">Contact</a></div><div class="footer-end">© 2026 Burmese English Academy · <span id="siteVersion"></span> · Independent, non-commercial educational resource.</div></footer>
+ <footer class="footer"><div class="footer-mark"><span class="footer-seal">b.</span><div><strong>Burmese English Academy</strong><small>Free learning, with room to grow.</small></div></div><div class="footer-links"><a href="#courses">Lessons</a><a href="#ielts-vocabulary">1,000 Words</a><a href="#updates">Updates</a><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="mailto:learnersbea@gmail.com">Contact</a></div><div class="footer-end">© 2026 Burmese English Academy · <span id="siteVersion"></span> · Independent, non-commercial educational resource.</div></footer>
  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
