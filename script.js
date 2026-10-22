@@ -11,7 +11,7 @@ const countWords=s=>toWords(s).length;
 const norm=s=>String(s).toLowerCase().normalize('NFKC').replace(/[’]/g,"'").replace(/[^\p{L}\p{N}' ]/gu,' ').replace(/\s+/g,' ').trim();
 const today=()=>{let d=new Date();return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')};
 const tr=(id)=>LESSONS.find(l=>l.id===Number(id));
-const defaultState=()=>({speed:0.85,activeMock:null});
+const defaultState=()=>({speed:1,activeMock:null});
 function loadState(){return defaultState()} // Fresh, in-memory practice only; never read historical progress
 let wordBankQuery='',wordBankTopic='all',wordBankPage=0,wordBankExact=false;
 let state=loadState();let timerHandle=null,timerEndsAt=0,timerRemain=0,recorder=null,recordedChunks=[],recordedAudioURL=null,recogniser=null;let recordingStream=null,recordDeletePending=false,recordingGeneration=0;let activeFlash=null;let searchQuery='',filterLevel='all';let gymQuestions=[],gymLevel='all';
@@ -104,7 +104,7 @@ function qHtml(q,name,index){return `<fieldset class="quiz-q"><legend class="q-t
 function renderReading(l){let isOld=l.id<=18;return `${skillHead('Reading','စာဖတ်ခြင်း','Read for meaning, then answer two questions without guessing. The original A1–A2 lessons use short dialogue texts; later lessons use longer passages.')}
  <div class="study-text" lang="en">${E(l.reading)}</div><div class="toolbar-actions"><button class="btn soft sm" data-action="say" data-text="reading" type="button">🔊 Listen to the passage</button><button class="btn outline sm" data-action="say" data-text="slow-reading" type="button">🐢 Slow playback</button></div><h3 class="divider-large">Reading checkpoint</h3><p class="muted">Choose answers based on the text. After checking, read the explanation for each question.</p><div id="readingQuestions">${l.readingQuestions.map((q,i)=>qHtml(q,'rd'+i,i)).join('')}</div><button type="button" class="btn primary" data-action="reading-check">Check reading answers</button><div class="statline" style="margin-top:10px">${isOld?'Short foundational dialogue practice':'Original reading passage practice'} · Scores here are for learning, not an official test.</div>`}
 function renderListening(l){let q=l.audioQuestion;return `${skillHead('Listening','နားထောင်ခြင်း','Play the short recording. Listen for the answer, then try to write the dictated sentence before revealing the transcript.')}
- <div class="rec-box"><h3>🎧 Audio exercise</h3><p class="muted">Choose British male or female voices with the Voices button. Natural voices depend on your browser.</p><div class="toolbar-actions"><button class="btn primary" type="button" data-action="say" data-text="audio">▶ Play audio</button><button class="btn outline" type="button" data-action="say" data-text="slow-audio">🐢 Play slowly</button><button class="btn soft" type="button" data-action="say-stop">■ Stop</button><button class="btn outline" type="button" data-action="voice-open">🔊 Choose voice</button></div><label for="speedControl">Playback speed</label><select id="speedControl" class="filter" style="min-width:145px;max-width:225px;margin:8px 0"><option value="0.75" ${state.speed===.75?'selected':''}>Slow (0.75x)</option><option value="0.85" ${state.speed===.85?'selected':''}>Learning (0.85x)</option><option value="1" ${state.speed===1?'selected':''}>Normal (1x)</option></select></div>
+ <div class="rec-box"><h3>🎧 Audio exercise</h3><p class="muted">Choose British male or female voices with the Voices button. Natural voices depend on your browser.</p><div class="toolbar-actions"><button class="btn primary" type="button" data-action="say" data-text="audio">▶ Play audio</button><button class="btn outline" type="button" data-action="say" data-text="slow-audio">🐢 Play slowly</button><button class="btn soft" type="button" data-action="say-stop">■ Stop</button><button class="btn outline" type="button" data-action="voice-open">🔊 Choose voice</button></div><label for="speedControl">Playback speed</label><select id="speedControl" class="filter" style="min-width:145px;max-width:225px;margin:8px 0"><option value="0.75" ${state.speed===.75?'selected':''}>Slow (0.75x)</option><option value="0.85" ${state.speed===.85?'selected':''}>Learning (0.85x)</option><option value="1" ${state.speed===1?'selected':''}>Natural pace (1.0x) · recommended</option></select></div>
  <h3>Comprehension question</h3>${qHtml(q,'listening-q',0)}<h3>Dictation challenge</h3><p class="muted">Type the first sentence that you hear. This is a word-matching exercise, not an accent or IELTS score.</p><label for="dictInput" class="small">Your dictated sentence</label><textarea id="dictInput" class="input-text dictation" placeholder="Listen, then type the first sentence…" spellcheck="false"></textarea><div class="toolbar-actions"><button class="btn primary" data-action="listening-check" type="button">Check listening</button><button class="btn outline" data-action="listen-reveal" type="button">Reveal full transcript</button></div><div id="dictFeedback" aria-live="polite"></div><div id="listenTranscript" class="listen-text" hidden><strong>Recording transcript:</strong><p>${E(l.audio)}</p><strong>Dictation target:</strong> ${E(l.dictation)}</div><p class="note-small">Audio is generated by browser text-to-speech, not recorded from a real IELTS examiner. Some voices may need internet access.</p>`}
 function renderSpeaking(l){return `${skillHead('Speaking','စကားပြောခြင်း','Speak in your own words. Record yourself if your browser allows microphone access, then listen and reflect. No artificial band score is assigned.')}
  <ol class="hint-list">${l.speak.map(s=>`<li>${E(s)}</li>`).join('')}</ol><div class="rec-box"><h3>🎙 Speaking recorder</h3><p class="muted">Optional: your browser may ask permission to use the microphone. Audio stays in this page and is not uploaded.</p><div class="toolbar-actions"><button class="btn primary" type="button" data-action="record-start">● Start recording</button><button class="btn outline" type="button" data-action="record-stop">■ Stop recording</button><button class="btn outline" type="button" data-action="record-delete">✕ Delete recording</button></div><p id="recordStatus" class="statline">Ready. You can also speak without recording.</p><div id="recordPlayback"></div><p class="note-small">Privacy test build: Speech-to-text is disabled because browser services may send spoken audio to third parties. Recording stays within this page session unless you download it. Leaving the Speaking page clears app-managed recording memory.</p></div>
@@ -207,67 +207,75 @@ function currentLesson(){let parts=decodeURIComponent(location.hash.replace(/^#/
 let voicePreferences={gender:'male',voiceId:''};
 function saveVoicePreferences(){} // Selection is lost on refresh by design.
 
-function voiceIsBritish(v){return /^en[-_]GB$/i.test(v.lang)}
+// UK ONLY: Do not expose, select, or fall back to US/AU/other English voices.
+// Web Speech voices are supplied by the visitor's browser, not by this website.
+function voiceIsBritish(v){return /^en[-_]GB(?:$|[-_])/i.test(String(v?.lang||''))}
 function voiceGenderHint(v){
- const n=v.name||'';
- if(/\b(ryan|george|daniel|david|james|oliver|guy|mark|alfie|thomas|arthur|brian|male)\b/i.test(n))return 'male';
- if(/\b(sonia|libby|hazel|kate|susan|emily|charlotte|emma|olivia|amy|jenny|serena|female)\b/i.test(n))return 'female';
+ const n=String(v?.name||'');
+ if(/\b(ryan|george|daniel|david|james|oliver|guy|mark|alfie|thomas|arthur|brian|harry|fred|male|man)\b/i.test(n))return 'male';
+ if(/\b(sonia|libby|hazel|kate|susan|emily|charlotte|emma|olivia|amy|jenny|serena|maisie|martha|female|woman)\b/i.test(n))return 'female';
+ // Browser APIs do not expose a reliable gender property; these are name-only hints.
  return '';
 }
-function voiceIsNatural(v){return /\b(natural|neural|premium|enhanced)\b/i.test(v.name||'')}
+function voiceIsNatural(v){return /\b(natural|neural|premium|enhanced|high.quality)\b/i.test(String(v?.name||''))}
 function voiceId(v){return [v.voiceURI||'',v.name||'',v.lang||''].join('||')}
-function allEnglishVoices(){
+function voiceQualityScore(v){
+ // Advertised neural/natural voices usually sound more human than basic system voices,
+ // but these labels are not a quality guarantee and not present on every platform.
+ const n=String(v?.name||'');
+ return (voiceIsNatural(v)?100:0)+(v.localService===false?8:0)+(v.default?1:0);
+}
+function britishVoices(){
  if(!('speechSynthesis'in window))return [];
- return (speechSynthesis.getVoices()||[]).filter(v=>/^en(?:[-_]|$)/i.test(v.lang)).slice().sort((a,b)=>
-    Number(voiceIsBritish(b))-Number(voiceIsBritish(a))||
-    Number(voiceIsNatural(b))-Number(voiceIsNatural(a))||
-    (a.name||'').localeCompare(b.name||''));
+ return (speechSynthesis.getVoices()||[]).filter(voiceIsBritish).slice().sort((a,b)=>
+   voiceQualityScore(b)-voiceQualityScore(a)||String(a.name||'').localeCompare(String(b.name||'')));
 }
 function resolveVoice(){
- const voices=allEnglishVoices();
- const british=voices.filter(voiceIsBritish);
- const pool=british.length?british:voices;
+ const voices=britishVoices();
  const chosen=voices.find(v=>voicePreferences.voiceId===voiceId(v))||null;
- const genderMatches=pool.filter(v=>voiceGenderHint(v)===voicePreferences.gender);
- const voice=chosen||genderMatches[0]||pool[0]||null;
- return {voice,voices,manual:!!chosen,hasBritish:!!british.length,hasPreferredBritish:british.some(v=>voiceGenderHint(v)===voicePreferences.gender)};
+ const byGender=voices.filter(v=>voiceGenderHint(v)===voicePreferences.gender);
+ const unknown=voices.filter(v=>!voiceGenderHint(v));
+ const voice=chosen||byGender[0]||unknown[0]||voices[0]||null;
+ return {voice,voices,manual:!!chosen,exactGender:!!voice&&voiceGenderHint(voice)===voicePreferences.gender};
 }
 function refreshVoicePanel(){
  const gender=document.getElementById('voiceGender'),pick=document.getElementById('voiceChoice'),status=document.getElementById('voiceStatus');
  if(!gender||!pick||!status)return;
  gender.value=voicePreferences.gender;
  const selected=resolveVoice();
- let choices='<option value="">Automatic — best available British '+voicePreferences.gender+' voice</option>';
+ let choices='<option value="">Automatic — best available UK '+voicePreferences.gender+' voice</option>';
  for(const v of selected.voices){
-   let desc=(voiceIsBritish(v)?'British en-GB':'Other English '+v.lang);
-   if(voiceIsNatural(v))desc+=' · Natural/Neural';
-   if(voiceGenderHint(v))desc+=' · '+voiceGenderHint(v)+' (name hint)';
-   choices+='<option value="'+E(voiceId(v))+'">'+E(v.name)+' — '+E(desc)+'</option>';
+  const hint=voiceGenderHint(v);
+  let desc='British English (en-GB)';
+  if(voiceIsNatural(v))desc+=' · Natural/Neural labelled';
+  if(hint)desc+=' · '+hint+' (name hint)';
+  choices+='<option value="'+E(voiceId(v))+'">'+E(v.name)+' — '+E(desc)+'</option>';
  }
  pick.innerHTML=choices;
  pick.value=selected.voices.some(v=>voiceId(v)===voicePreferences.voiceId)?voicePreferences.voiceId:'';
  pick.disabled=!selected.voices.length;
  document.getElementById('voicePreview').disabled=!selected.voices.length;
- if(!('speechSynthesis'in window))status.textContent='This browser has no speech synthesis support. Try Edge or Chrome.';
- else if(!selected.voice)status.textContent='English voices are not ready or not available. Please wait a moment and try again, or install British voices in your system.';
- else{
-  let msg='';
-  if(!selected.manual&&!selected.hasPreferredBritish)msg='No identifiable British '+voicePreferences.gender+' voice was found; using the closest available voice. ';
-  else if(selected.manual&&voiceGenderHint(selected.voice)!==voicePreferences.gender)msg='Manual choice overrides the gender preference; the browser does not report voice gender. ';
-  msg+='Selected: '+selected.voice.name+' — '+(voiceIsBritish(selected.voice)?'British English (en-GB)':'other English accent')+(voiceIsNatural(selected.voice)?' · Natural/Neural labelled':'')+'. Preview it to judge how it sounds.';
-  status.textContent=msg;
+ if(!('speechSynthesis'in window)){
+   status.textContent='Your browser does not support text-to-speech. Please try a recent Microsoft Edge or Chrome.';
+ }else if(!selected.voice){
+   status.textContent='No British (en-GB) voice is available in this browser. We will NOT substitute US English. Try Microsoft Edge with UK voices enabled, or install an English (United Kingdom) voice in your device settings.';
+ }else{
+   let note=selected.exactGender?'':'The browser cannot verify the requested male/female voice; listen to the preview. ';
+   let quality=voiceIsNatural(selected.voice)?' · labelled Natural/Neural':' · standard device voice';
+   status.textContent=note+'Playing only British English: '+selected.voice.name+quality+'. For a more human-sounding voice, use an available UK Natural voice (often in Microsoft Edge).';
  }
 }
 function playSpeech(text,slow=false,preview=false){
- if(!('speechSynthesis'in window)){toast('Text-to-speech is unavailable on this browser.');return}
- const selection=resolveVoice();
- if(!selection.voice){refreshVoicePanel();toast('English voices are not ready. Please wait or try another browser.');return}
+ if(!('speechSynthesis'in window)){toast('Text-to-speech is not supported by this browser.');return}
+ const selected=resolveVoice();
+ if(!selected.voice){refreshVoicePanel();toast('A British English (en-GB) voice is required. No US accent fallback.');return}
  const synth=window.speechSynthesis;
  synth.cancel();
  const utterance=new SpeechSynthesisUtterance(String(text??''));
- utterance.voice=selection.voice;
- utterance.lang=selection.voice.lang;
- utterance.rate=preview?1:(slow?Math.max(.6,state.speed-.22):state.speed);
+ utterance.voice=selected.voice;
+ utterance.lang='en-GB';
+ // The browser's normal rate preserves a voice's own prosody better than 0.85x playback.
+ utterance.rate=preview?1:(slow?Math.max(.65,state.speed-.22):state.speed);
  utterance.pitch=1;
  synth.speak(utterance);
 }

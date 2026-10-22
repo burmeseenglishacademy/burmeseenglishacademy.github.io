@@ -242,3 +242,10 @@ main{padding:clamp(22px,3vw,47px) clamp(19px,3.5vw,64px) 94px}
 @media(max-width:1020px){.word-bank-hero-number{min-width:140px}.word-bank-hero-number strong{font-size:3.8rem}}
 @media(max-width:750px){.word-bank-grid{grid-template-columns:1fr}.word-bank-hero-number{display:none}.word-bank-teaser{grid-template-columns:1fr}.word-bank-teaser-art{display:none}.word-bank-controls{display:grid;grid-template-columns:1fr 1fr}.word-bank-surprise{grid-column:1/-1}}
 @media(max-width:530px){.word-bank-hero{padding:30px 23px;border-radius:19px}.word-bank-hero h1{font-size:2.3rem}.word-bank-controls{grid-template-columns:1fr}.word-bank-card{padding:18px}.word-bank-head h3{font-size:1.65rem}.word-bank-surprise{grid-column:auto}.word-bank-pagination{gap:10px}.word-bank-pagination .btn{min-width:100px}}
+
+/* v1.2.2: British-only voice settings: simple two-choice panel. */
+.voice-advanced{border:1px solid #d6e5dd;border-radius:13px;padding:11px 14px;background:rgba(255,255,255,.75);margin:7px 0 0}
+.voice-advanced summary{font-weight:700;color:#235c55;cursor:pointer;line-height:1.5}
+.voice-advanced[open] .voice-field{padding-top:13px}
+.voice-advanced .note-small{margin:7px 0 0}
+.voice-status{overflow-wrap:anywhere}
