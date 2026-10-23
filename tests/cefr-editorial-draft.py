@@ -10,6 +10,18 @@ candidates=json.loads(CANDIDATES.read_text('utf8'))
 assert draft['release_status']=='UNVERIFIED_DRAFT_DO_NOT_PUBLISH'
 assert candidates['release_status']=='UNVERIFIED_DRAFT_DO_NOT_PUBLISH'
 entries=draft['entries']
+oxford=json.loads((ROOT/'draft/A1-OXFORD-LEVEL-SAMPLE-CHECKS.json').read_text('utf8'))
+assert oxford['verified_scope']=='ENGLISH CEFR LEVEL AND PART OF SPEECH ONLY'
+assert oxford['semantic_burmese_reviewed'] is False
+assert oxford['pronunciation_reviewed'] is False
+assert len(oxford['checks'])==10
+lookups={x['word']:x for x in entries}
+for check in oxford['checks']:
+    match=lookups[check['word']]
+    assert match['part_of_speech']==check['part_of_speech'],check['word']
+    assert match['level']==check['level']=='A1',check['word']
+    assert check['result']=='SOURCE_LEVEL_MATCH_OBSERVED'
+    assert check['source_url'].startswith('https://www.oxfordlearnersdictionaries.')
 assert len(entries)==227, f'Expected current hand-authored starter count 227, got {len(entries)}'
 assert len({e['word'] for e in entries})==len(entries)
 full=candidates['entries']
