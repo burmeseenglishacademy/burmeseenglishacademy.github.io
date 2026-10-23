@@ -4,6 +4,13 @@ on:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
       - .github/workflows/cefr-browser-regression.yml
+      - index.html
+      - script.js
+      - cefr-vocabulary.js
+      - cefr-vocabulary-data.js
+      - audio-player.js
+      - audio-integration.js
+      - tests/production-browser.cjs
   workflow_dispatch:
 permissions:
   contents: read
