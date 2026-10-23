@@ -1,0 +1,29 @@
+name: CEFR A1 editorial draft structural review (staging)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - .github/workflows/cefr-editorial-review-gate.yml
+      - draft/A1-EDITORIAL-STARTER.json
+      - draft/UNVERIFIED_CEFR_CANDIDATES.json
+      - tests/cefr-editorial-draft.py
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check original A1 English-Myanmar draft and 5000 word corpus
+        run: python3 tests/cefr-editorial-draft.py
+      - name: Never release unverified entries
+        run: |
+          python3 - <<'PY'
+          import json
+          for path in ['draft/A1-EDITORIAL-STARTER.json','draft/UNVERIFIED_CEFR_CANDIDATES.json']:
+              obj=json.load(open(path))
+              assert obj['release_status']=='UNVERIFIED_DRAFT_DO_NOT_PUBLISH'
+          print('PASS: release gate prevents unverified vocabulary publication')
+          PY
