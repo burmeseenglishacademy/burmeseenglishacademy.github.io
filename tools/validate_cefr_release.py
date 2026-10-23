@@ -5,11 +5,29 @@ must represent actual human checks; no automated producer may set them.
 """
 import argparse,collections,hashlib,json,re,subprocess,sys
 from pathlib import Path
+from urllib.parse import urlparse
 TARGETS={'A1':500,'A2':700,'B1':1000,'B2':1300,'C1':1500}
 MYANMAR=re.compile('[\\u1000-\\u109f\\uaa60-\\uaa7f]')
 ASCII_WORD=re.compile(r"^[a-z][a-z'-]{0,35}$")
 REVIEW_FIELDS=('reviewed_english','reviewed_burmese','reviewed_example','reviewed_level','reviewed_pronunciation')
 SOURCE_FIELDS=('source_english','source_burmese','source_level')
+
+def source_url_is_specific(url):
+    """Heuristic provenance check, never proof of linguistic correctness."""
+    if not isinstance(url,str) or not url.startswith('https://'):
+        return False
+    p=urlparse(url)
+    host=(p.hostname or '').lower()
+    path=p.path.strip('/').lower()
+    if not host or p.username or p.password or host in ('example.org','www.example.org','example.com','www.example.com'):
+        return False
+    if path in ('','about/wordlists/oxford3000-5000','dictionary','english','about'):
+        return False
+    if host.endswith('oxfordlearnersdictionaries.com') and path.startswith('about/wordlists/'):
+        return False
+    if len([segment for segment in path.split('/') if segment])<2:
+        return False
+    return True
 def normalize(s):return ' '.join(str(s).strip().split())
 def validate(data,root=None,verify_audio=False):
     errors=[]
@@ -46,8 +64,8 @@ def validate(data,root=None,verify_audio=False):
             if row.get(field) is not True:fail(f'{n}: {field} not independently verified')
         for field in SOURCE_FIELDS:
             ref=row.get(field)
-            if not isinstance(ref,str) or not ref.startswith('https://'):
-                fail(f'{n}: missing reference URL in {field}')
+            if not source_url_is_specific(ref):
+                fail(f'{n}: missing or generic non-word-specific reference URL in {field}')
         texts.add(word);texts.add(normalize(row.get('example_sentence','')))
     if counts!=collections.Counter(TARGETS):fail(f'Level quota mismatch: {counts}')
     if not verify_audio or root is None:return errors
@@ -82,5 +100,5 @@ def main():
         for msg in issues[:35]:print('BLOCK:',msg,file=sys.stderr)
         print(f'NOT RELEASE READY: {len(issues)} defects (first 35 shown)',file=sys.stderr)
         raise SystemExit(1)
-    print('PASS: 5000 reviewed bilingual headwords; valid levels, examples, sources'+(' + all audio' if args.audio else ''))
+    print('PASS: 5000 records satisfy structural reference/review checks' + (' and MP3 existence/decoding' if args.audio else '; AUDIO NOT CHECKED, NOT RELEASE APPROVED'))
 if __name__=='__main__':main()
