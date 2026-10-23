@@ -1,10 +1,11 @@
-name: A2–C1 first bilingual drafts structural QA (never deploy)
+name: A2–C1 bilingual draft and word-specific evidence QA (never deploy)
 on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
       - .github/workflows/cefr-a2-c1-draft-qa.yml
       - draft/A2-C1-EDITORIAL-STARTER.json
+      - draft/A2-C1-SOURCE-EVIDENCE-REVIEW.json
       - tools/audit_cefr_a2_c1_drafts.py
   workflow_dispatch:
 permissions:
@@ -15,17 +16,20 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - name: Check all 40 original A2-C1 draft cards in candidate inventory
+      - name: Check original bilingual drafts and observed word-specific evidence
         run: python3 tools/audit_cefr_a2_c1_drafts.py
-      - name: Assert no A2-C1 words or new British audio released
+      - name: Assert no A2-C1 drafts or British audio are prematurely published
         run: |
           python3 - <<'PY'
           import json
           from pathlib import Path
           d=json.loads(Path('draft/A2-C1-EDITORIAL-STARTER.json').read_text('utf8'))
+          ev=json.loads(Path('draft/A2-C1-SOURCE-EVIDENCE-REVIEW.json').read_text('utf8'))
           assert d['reviewed_independently']==0
+          assert len(d['entries'])>=80
           assert all(all(x[key] is False for key in ('reviewed_english','reviewed_burmese','reviewed_example','reviewed_level','reviewed_pronunciation')) for x in d['entries'])
+          assert all(not x['release_approved'] for x in ev['records'])
           site=Path('cefr-vocabulary-data.js').read_text('utf8')
           assert 'UNVERIFIED_DRAFT_DO_NOT_PUBLISH' in site and 'entries:[]' in site
-          print('PASS: A2-C1 new drafts are unpublished, not incorrectly certified')
+          print('PASS: original drafts/evidence are staging-only, no false certification or new CEFR release')
           PY
