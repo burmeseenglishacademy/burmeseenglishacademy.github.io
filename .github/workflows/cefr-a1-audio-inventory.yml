@@ -1,0 +1,28 @@
+name: CEFR A1 British audio reuse inventory (staging only)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - tools/inventory_cefr_a1_audio.py
+      - .github/workflows/cefr-a1-audio-inventory.yml
+      - draft/A1-EDITORIAL-STARTER.json
+      - audio-manifest.js
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audio-reuse-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Count available verified-format historic files without regenerating audio
+        run: python3 tools/inventory_cefr_a1_audio.py
+      - name: Archive audio inventory for independent reviewer planning
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: CEFR-A1-AUDIO-REUSE-UNREVIEWED
+          path: draft/A1-AUDIO-REUSE-REPORT.json
+          retention-days: 30
+          if-no-files-found: error
