@@ -1,0 +1,762 @@
+{
+  "schema": 1,
+  "status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "entries": [
+    {
+      "word": "coffee",
+      "part_of_speech": "noun",
+      "english_definition": "A drink made from roasted coffee beans.",
+      "burmese_meaning": "ကော်ဖီ",
+      "example_sentence": "My father drinks coffee."
+    },
+    {
+      "word": "tea",
+      "part_of_speech": "noun",
+      "english_definition": "A drink made by putting tea leaves in hot water.",
+      "burmese_meaning": "လက်ဖက်ရည်",
+      "example_sentence": "Would you like some tea?"
+    },
+    {
+      "word": "juice",
+      "part_of_speech": "noun",
+      "english_definition": "Liquid from fruit or vegetables, often used as a drink.",
+      "burmese_meaning": "သစ်သီးဖျော်ရည်",
+      "example_sentence": "I drink orange juice."
+    },
+    {
+      "word": "sugar",
+      "part_of_speech": "noun",
+      "english_definition": "A sweet substance added to food and drinks.",
+      "burmese_meaning": "သကြား",
+      "example_sentence": "Please add a little sugar."
+    },
+    {
+      "word": "salt",
+      "part_of_speech": "noun",
+      "english_definition": "A white substance used to give food flavour.",
+      "burmese_meaning": "ဆား",
+      "example_sentence": "The soup needs salt."
+    },
+    {
+      "word": "butter",
+      "part_of_speech": "noun",
+      "english_definition": "A soft yellow food made from cream.",
+      "burmese_meaning": "ထောပတ်",
+      "example_sentence": "She puts butter on bread."
+    },
+    {
+      "word": "cheese",
+      "part_of_speech": "noun",
+      "english_definition": "A food made from milk.",
+      "burmese_meaning": "ချိစ်၊ ဒိန်ခဲ",
+      "example_sentence": "I like cheese sandwiches."
+    },
+    {
+      "word": "meat",
+      "part_of_speech": "noun",
+      "english_definition": "The flesh of an animal eaten as food.",
+      "burmese_meaning": "အသား",
+      "example_sentence": "We eat meat with vegetables."
+    },
+    {
+      "word": "beef",
+      "part_of_speech": "noun",
+      "english_definition": "Meat from a cow.",
+      "burmese_meaning": "အမဲသား",
+      "example_sentence": "The restaurant serves beef soup."
+    },
+    {
+      "word": "pork",
+      "part_of_speech": "noun",
+      "english_definition": "Meat from a pig.",
+      "burmese_meaning": "ဝက်သား",
+      "example_sentence": "He does not eat pork."
+    },
+    {
+      "word": "fruit",
+      "part_of_speech": "noun",
+      "english_definition": "Food that grows on plants, often sweet and containing seeds.",
+      "burmese_meaning": "သစ်သီး",
+      "example_sentence": "We eat fruit after lunch."
+    },
+    {
+      "word": "vegetable",
+      "part_of_speech": "noun",
+      "english_definition": "A plant or part of a plant eaten as food.",
+      "burmese_meaning": "ဟင်းသီးဟင်းရွက်",
+      "example_sentence": "This vegetable is fresh."
+    },
+    {
+      "word": "tomato",
+      "part_of_speech": "noun",
+      "english_definition": "A soft red fruit often used in salads and cooking.",
+      "burmese_meaning": "ခရမ်းချဉ်သီး",
+      "example_sentence": "There is a tomato in my salad."
+    },
+    {
+      "word": "onion",
+      "part_of_speech": "noun",
+      "english_definition": "A round vegetable with layers and a strong taste.",
+      "burmese_meaning": "ကြက်သွန်နီ",
+      "example_sentence": "She cuts an onion."
+    },
+    {
+      "word": "carrot",
+      "part_of_speech": "noun",
+      "english_definition": "A long orange vegetable that grows under the ground.",
+      "burmese_meaning": "မုန်လာဥနီ",
+      "example_sentence": "The rabbit eats a carrot."
+    },
+    {
+      "word": "salad",
+      "part_of_speech": "noun",
+      "english_definition": "A dish of vegetables, often eaten cold.",
+      "burmese_meaning": "အသုပ်၊ ဟင်းသီးဟင်းရွက်သုပ်",
+      "example_sentence": "I have a salad for lunch."
+    },
+    {
+      "word": "sandwich",
+      "part_of_speech": "noun",
+      "english_definition": "Bread with food between two slices.",
+      "burmese_meaning": "အသားညှပ်ပေါင်မုန့်",
+      "example_sentence": "I made a cheese sandwich."
+    },
+    {
+      "word": "cake",
+      "part_of_speech": "noun",
+      "english_definition": "A sweet baked food, often eaten on special days.",
+      "burmese_meaning": "ကိတ်မုန့်",
+      "example_sentence": "The cake is for my birthday."
+    },
+    {
+      "word": "chocolate",
+      "part_of_speech": "noun",
+      "english_definition": "A sweet food made from cocoa.",
+      "burmese_meaning": "ချောကလက်",
+      "example_sentence": "She likes chocolate."
+    },
+    {
+      "word": "breakfast",
+      "part_of_speech": "noun",
+      "english_definition": "The first meal of the day.",
+      "burmese_meaning": "မနက်စာ",
+      "example_sentence": "We eat breakfast at seven."
+    },
+    {
+      "word": "lunch",
+      "part_of_speech": "noun",
+      "english_definition": "A meal eaten in the middle of the day.",
+      "burmese_meaning": "နေ့လယ်စာ",
+      "example_sentence": "My lunch is ready."
+    },
+    {
+      "word": "dinner",
+      "part_of_speech": "noun",
+      "english_definition": "The main meal eaten in the evening or sometimes at midday.",
+      "burmese_meaning": "ညစာ (တချို့ဒေသတွင် နေ့လယ်အဓိကထမင်း)",
+      "example_sentence": "We eat dinner together."
+    },
+    {
+      "word": "meal",
+      "part_of_speech": "noun",
+      "english_definition": "Food eaten at a particular time.",
+      "burmese_meaning": "အစားအသောက်တစ်နပ်",
+      "example_sentence": "That was a good meal."
+    },
+    {
+      "word": "plate",
+      "part_of_speech": "noun",
+      "english_definition": "A flat dish used for serving food.",
+      "burmese_meaning": "ပန်းကန်ပြား",
+      "example_sentence": "Put the bread on a plate."
+    },
+    {
+      "word": "bowl",
+      "part_of_speech": "noun",
+      "english_definition": "A round deep dish used for food.",
+      "burmese_meaning": "ဇလုံ၊ ပန်းကန်လုံး",
+      "example_sentence": "The soup is in a bowl."
+    },
+    {
+      "word": "cup",
+      "part_of_speech": "noun",
+      "english_definition": "A small container used for drinking.",
+      "burmese_meaning": "ခွက်",
+      "example_sentence": "Can I have a cup of tea?"
+    },
+    {
+      "word": "glass",
+      "part_of_speech": "noun",
+      "english_definition": "A container used for drinking, usually made of glass.",
+      "burmese_meaning": "ဖန်ခွက်",
+      "example_sentence": "I need a glass of water."
+    },
+    {
+      "word": "spoon",
+      "part_of_speech": "noun",
+      "english_definition": "A tool with a small bowl at one end for eating.",
+      "burmese_meaning": "ဇွန်း",
+      "example_sentence": "Eat the soup with a spoon."
+    },
+    {
+      "word": "fork",
+      "part_of_speech": "noun",
+      "english_definition": "A tool with pointed ends used for eating food.",
+      "burmese_meaning": "ခက်ရင်း",
+      "example_sentence": "She uses a fork."
+    },
+    {
+      "word": "knife",
+      "part_of_speech": "noun",
+      "english_definition": "A tool with a sharp blade used for cutting.",
+      "burmese_meaning": "ဓား",
+      "example_sentence": "Please use a knife carefully."
+    },
+    {
+      "word": "bottle",
+      "part_of_speech": "noun",
+      "english_definition": "A container with a narrow neck for liquids.",
+      "burmese_meaning": "ပုလင်း",
+      "example_sentence": "This bottle is empty."
+    },
+    {
+      "word": "box",
+      "part_of_speech": "noun",
+      "english_definition": "A container with flat sides, usually square or rectangular.",
+      "burmese_meaning": "သေတ္တာ၊ ဘူး",
+      "example_sentence": "The shoes are in a box."
+    },
+    {
+      "word": "basket",
+      "part_of_speech": "noun",
+      "english_definition": "A container often made from woven material.",
+      "burmese_meaning": "ခြင်းတောင်း",
+      "example_sentence": "The basket holds fruit."
+    },
+    {
+      "word": "paper",
+      "part_of_speech": "noun",
+      "english_definition": "Thin material used for writing or printing.",
+      "burmese_meaning": "စက္ကူ",
+      "example_sentence": "Please write on the paper."
+    },
+    {
+      "word": "pencil",
+      "part_of_speech": "noun",
+      "english_definition": "A tool used for writing or drawing with a graphite point.",
+      "burmese_meaning": "ခဲတံ",
+      "example_sentence": "I draw with a pencil."
+    },
+    {
+      "word": "eraser",
+      "part_of_speech": "noun",
+      "english_definition": "A small object used to remove pencil marks.",
+      "burmese_meaning": "ခဲဖျက်",
+      "example_sentence": "I need an eraser."
+    },
+    {
+      "word": "ruler",
+      "part_of_speech": "noun",
+      "english_definition": "A straight tool used for measuring and drawing lines.",
+      "burmese_meaning": "ပေတံ",
+      "example_sentence": "Use a ruler to draw a line."
+    },
+    {
+      "word": "notebook",
+      "part_of_speech": "noun",
+      "english_definition": "A book of blank or lined pages for writing notes.",
+      "burmese_meaning": "မှတ်စုစာအုပ်",
+      "example_sentence": "My notebook is on the desk."
+    },
+    {
+      "word": "letter",
+      "part_of_speech": "noun",
+      "english_definition": "A written message sent to someone.",
+      "burmese_meaning": "စာ၊ စာတစ်စောင်",
+      "example_sentence": "I write a letter to my friend."
+    },
+    {
+      "word": "email",
+      "part_of_speech": "noun",
+      "english_definition": "A message sent using the internet.",
+      "burmese_meaning": "အီးမေးလ်",
+      "example_sentence": "Please send me an email."
+    },
+    {
+      "word": "message",
+      "part_of_speech": "noun",
+      "english_definition": "Information that someone sends to another person.",
+      "burmese_meaning": "သတင်းစကား၊ မက်ဆေ့ခ်ျ",
+      "example_sentence": "I got your message."
+    },
+    {
+      "word": "question",
+      "part_of_speech": "noun",
+      "english_definition": "A sentence used to ask for information.",
+      "burmese_meaning": "မေးခွန်း",
+      "example_sentence": "Can I ask a question?"
+    },
+    {
+      "word": "answer",
+      "part_of_speech": "noun",
+      "english_definition": "What someone says or writes in reply to a question.",
+      "burmese_meaning": "အဖြေ",
+      "example_sentence": "I know the answer."
+    },
+    {
+      "word": "word",
+      "part_of_speech": "noun",
+      "english_definition": "A single unit of language that has meaning.",
+      "burmese_meaning": "စကားလုံး",
+      "example_sentence": "This word is easy."
+    },
+    {
+      "word": "sentence",
+      "part_of_speech": "noun",
+      "english_definition": "A group of words expressing a complete thought.",
+      "burmese_meaning": "ဝါကျ",
+      "example_sentence": "Write one short sentence."
+    },
+    {
+      "word": "language",
+      "part_of_speech": "noun",
+      "english_definition": "A system of words used to communicate.",
+      "burmese_meaning": "ဘာသာစကား",
+      "example_sentence": "English is a language."
+    },
+    {
+      "word": "english",
+      "part_of_speech": "noun",
+      "english_definition": "The language used in Britain and many other countries.",
+      "burmese_meaning": "အင်္ဂလိပ်ဘာသာစကား",
+      "example_sentence": "I study English every day."
+    },
+    {
+      "word": "class",
+      "part_of_speech": "noun",
+      "english_definition": "A group of students who learn together.",
+      "burmese_meaning": "အတန်း၊ သင်တန်း",
+      "example_sentence": "Our class starts at nine."
+    },
+    {
+      "word": "lesson",
+      "part_of_speech": "noun",
+      "english_definition": "A period of time spent learning something.",
+      "burmese_meaning": "သင်ခန်းစာ",
+      "example_sentence": "This lesson is about food."
+    },
+    {
+      "word": "homework",
+      "part_of_speech": "noun",
+      "english_definition": "Schoolwork that students do outside class.",
+      "burmese_meaning": "အိမ်စာ",
+      "example_sentence": "I do my homework after dinner."
+    },
+    {
+      "word": "test",
+      "part_of_speech": "noun",
+      "english_definition": "Questions or tasks used to check what someone knows.",
+      "burmese_meaning": "စာမေးပွဲ၊ စစ်ဆေးမှု",
+      "example_sentence": "The test is on Friday."
+    },
+    {
+      "word": "music",
+      "part_of_speech": "noun",
+      "english_definition": "Sounds arranged in a way that people enjoy listening to.",
+      "burmese_meaning": "ဂီတ၊ သီချင်းသံ",
+      "example_sentence": "I listen to music."
+    },
+    {
+      "word": "song",
+      "part_of_speech": "noun",
+      "english_definition": "Music with words that someone sings.",
+      "burmese_meaning": "သီချင်း",
+      "example_sentence": "She sings a song."
+    },
+    {
+      "word": "movie",
+      "part_of_speech": "noun",
+      "english_definition": "A story shown as moving pictures.",
+      "burmese_meaning": "ရုပ်ရှင်ကား",
+      "example_sentence": "We watch a movie at home."
+    },
+    {
+      "word": "television",
+      "part_of_speech": "noun",
+      "english_definition": "A device used for watching programmes and pictures.",
+      "burmese_meaning": "ရုပ်မြင်သံကြား၊ တီဗီ",
+      "example_sentence": "We watch television at night."
+    },
+    {
+      "word": "radio",
+      "part_of_speech": "noun",
+      "english_definition": "A device for listening to broadcast programmes.",
+      "burmese_meaning": "ရေဒီယို",
+      "example_sentence": "My grandfather listens to the radio."
+    },
+    {
+      "word": "camera",
+      "part_of_speech": "noun",
+      "english_definition": "A device used to take photographs.",
+      "burmese_meaning": "ကင်မရာ",
+      "example_sentence": "I use a camera on holiday."
+    },
+    {
+      "word": "photo",
+      "part_of_speech": "noun",
+      "english_definition": "A picture taken with a camera.",
+      "burmese_meaning": "ဓာတ်ပုံ",
+      "example_sentence": "This is a photo of my family."
+    },
+    {
+      "word": "game",
+      "part_of_speech": "noun",
+      "english_definition": "An activity that people play for fun.",
+      "burmese_meaning": "ကစားနည်း၊ ဂိမ်း",
+      "example_sentence": "Let's play a game."
+    },
+    {
+      "word": "football",
+      "part_of_speech": "noun",
+      "english_definition": "A game played by kicking a ball.",
+      "burmese_meaning": "ဘောလုံးအားကစား",
+      "example_sentence": "They play football every Sunday."
+    },
+    {
+      "word": "ball",
+      "part_of_speech": "noun",
+      "english_definition": "A round object used in games and sports.",
+      "burmese_meaning": "ဘောလုံး၊ အဝိုင်းပုံကစားစရာ",
+      "example_sentence": "The ball is under the chair."
+    },
+    {
+      "word": "swim",
+      "part_of_speech": "verb",
+      "english_definition": "To move through water using your body.",
+      "burmese_meaning": "ရေကူးသည်",
+      "example_sentence": "I can swim in the pool."
+    },
+    {
+      "word": "dance",
+      "part_of_speech": "verb",
+      "english_definition": "To move your body to music.",
+      "burmese_meaning": "ကသည်၊ အကကသည်",
+      "example_sentence": "They dance at the party."
+    },
+    {
+      "word": "sing",
+      "part_of_speech": "verb",
+      "english_definition": "To make musical sounds with your voice.",
+      "burmese_meaning": "သီချင်းဆိုသည်",
+      "example_sentence": "My sister likes to sing."
+    },
+    {
+      "word": "draw",
+      "part_of_speech": "verb",
+      "english_definition": "To make a picture with a pencil or pen.",
+      "burmese_meaning": "ပုံဆွဲသည်",
+      "example_sentence": "I draw a flower."
+    },
+    {
+      "word": "paint",
+      "part_of_speech": "verb",
+      "english_definition": "To make a picture or change a surface using paint.",
+      "burmese_meaning": "ဆေးခြယ်သည်၊ ပန်းချီဆွဲသည်",
+      "example_sentence": "We paint the wall white."
+    },
+    {
+      "word": "wash",
+      "part_of_speech": "verb",
+      "english_definition": "To clean something using water.",
+      "burmese_meaning": "ဆေးကြောသည်၊ လျှော်သည်",
+      "example_sentence": "I wash my hands."
+    },
+    {
+      "word": "brush",
+      "part_of_speech": "verb",
+      "english_definition": "To clean or make something tidy using a brush.",
+      "burmese_meaning": "တိုက်သည်၊ ဖြီးသည်",
+      "example_sentence": "I brush my teeth."
+    },
+    {
+      "word": "wear",
+      "part_of_speech": "verb",
+      "english_definition": "To have clothes or shoes on your body.",
+      "burmese_meaning": "ဝတ်ဆင်သည်",
+      "example_sentence": "I wear a blue shirt."
+    },
+    {
+      "word": "put",
+      "part_of_speech": "verb",
+      "english_definition": "To move something into a particular place.",
+      "burmese_meaning": "ထားသည်၊ ထည့်သည်",
+      "example_sentence": "Put your bag here."
+    },
+    {
+      "word": "bring",
+      "part_of_speech": "verb",
+      "english_definition": "To carry something or someone towards a place.",
+      "burmese_meaning": "ယူလာသည်၊ ခေါ်လာသည်",
+      "example_sentence": "Please bring your book."
+    },
+    {
+      "word": "send",
+      "part_of_speech": "verb",
+      "english_definition": "To make something go to another person or place.",
+      "burmese_meaning": "ပို့သည်",
+      "example_sentence": "I send a message to my friend."
+    },
+    {
+      "word": "call",
+      "part_of_speech": "verb",
+      "english_definition": "To speak to someone using a phone.",
+      "burmese_meaning": "ဖုန်းခေါ်သည်",
+      "example_sentence": "I call my mother every day."
+    },
+    {
+      "word": "talk",
+      "part_of_speech": "verb",
+      "english_definition": "To speak with someone.",
+      "burmese_meaning": "စကားပြောသည်",
+      "example_sentence": "We talk after class."
+    },
+    {
+      "word": "ask",
+      "part_of_speech": "verb",
+      "english_definition": "To say or write a question.",
+      "burmese_meaning": "မေးသည်",
+      "example_sentence": "Please ask your teacher."
+    },
+    {
+      "word": "tell",
+      "part_of_speech": "verb",
+      "english_definition": "To give someone information in words.",
+      "burmese_meaning": "ပြောပြသည်",
+      "example_sentence": "Tell me your name."
+    },
+    {
+      "word": "say",
+      "part_of_speech": "verb",
+      "english_definition": "To speak words aloud.",
+      "burmese_meaning": "ပြောသည်",
+      "example_sentence": "Please say it again."
+    },
+    {
+      "word": "meet",
+      "part_of_speech": "verb",
+      "english_definition": "To see and speak to someone, often for the first time.",
+      "burmese_meaning": "တွေ့ဆုံသည်",
+      "example_sentence": "I meet my friend at the park."
+    },
+    {
+      "word": "visit",
+      "part_of_speech": "verb",
+      "english_definition": "To go to see a person or place.",
+      "burmese_meaning": "သွားလည်သည်၊ လည်ပတ်သည်",
+      "example_sentence": "We visit our grandparents."
+    },
+    {
+      "word": "travel",
+      "part_of_speech": "verb",
+      "english_definition": "To go from one place to another, often far away.",
+      "burmese_meaning": "ခရီးသွားသည်",
+      "example_sentence": "I travel by train."
+    },
+    {
+      "word": "arrive",
+      "part_of_speech": "verb",
+      "english_definition": "To reach a place.",
+      "burmese_meaning": "ရောက်ရှိသည်",
+      "example_sentence": "We arrive at school early."
+    },
+    {
+      "word": "leave",
+      "part_of_speech": "verb",
+      "english_definition": "To go away from a place.",
+      "burmese_meaning": "ထွက်ခွာသည်၊ ထွက်သွားသည်",
+      "example_sentence": "I leave home at eight."
+    },
+    {
+      "word": "start",
+      "part_of_speech": "verb",
+      "english_definition": "To begin doing something.",
+      "burmese_meaning": "စတင်သည်",
+      "example_sentence": "We start work at nine."
+    },
+    {
+      "word": "finish",
+      "part_of_speech": "verb",
+      "english_definition": "To complete something.",
+      "burmese_meaning": "ပြီးစီးသည်၊ ပြီးဆုံးသည်",
+      "example_sentence": "I finish my homework."
+    },
+    {
+      "word": "stop",
+      "part_of_speech": "verb",
+      "english_definition": "To end an action or movement.",
+      "burmese_meaning": "ရပ်သည်၊ ရပ်တန့်သည်",
+      "example_sentence": "Please stop here."
+    },
+    {
+      "word": "wait",
+      "part_of_speech": "verb",
+      "english_definition": "To stay in one place until something happens.",
+      "burmese_meaning": "စောင့်သည်",
+      "example_sentence": "Wait for me, please."
+    },
+    {
+      "word": "find",
+      "part_of_speech": "verb",
+      "english_definition": "To discover something you were looking for.",
+      "burmese_meaning": "ရှာတွေ့သည်",
+      "example_sentence": "I cannot find my keys."
+    },
+    {
+      "word": "lose",
+      "part_of_speech": "verb",
+      "english_definition": "To be unable to find something you had.",
+      "burmese_meaning": "ပျောက်ဆုံးသည်",
+      "example_sentence": "Do not lose your ticket."
+    },
+    {
+      "word": "choose",
+      "part_of_speech": "verb",
+      "english_definition": "To decide which person or thing you want.",
+      "burmese_meaning": "ရွေးချယ်သည်",
+      "example_sentence": "Choose one colour."
+    },
+    {
+      "word": "try",
+      "part_of_speech": "verb",
+      "english_definition": "To make an effort to do something.",
+      "burmese_meaning": "ကြိုးစားကြည့်သည်",
+      "example_sentence": "I will try again."
+    },
+    {
+      "word": "remember",
+      "part_of_speech": "verb",
+      "english_definition": "To keep something in your mind.",
+      "burmese_meaning": "မှတ်မိသည်၊ သတိရသည်",
+      "example_sentence": "I remember your name."
+    },
+    {
+      "word": "forget",
+      "part_of_speech": "verb",
+      "english_definition": "To fail to remember something.",
+      "burmese_meaning": "မေ့သည်",
+      "example_sentence": "Do not forget your bag."
+    },
+    {
+      "word": "understand",
+      "part_of_speech": "verb",
+      "english_definition": "To know what something means.",
+      "burmese_meaning": "နားလည်သည်",
+      "example_sentence": "I understand this lesson."
+    },
+    {
+      "word": "think",
+      "part_of_speech": "verb",
+      "english_definition": "To use your mind to consider something.",
+      "burmese_meaning": "စဉ်းစားသည်၊ တွေးသည်",
+      "example_sentence": "I think this is right."
+    },
+    {
+      "word": "feel",
+      "part_of_speech": "verb",
+      "english_definition": "To have an emotion or physical sensation.",
+      "burmese_meaning": "ခံစားရသည်",
+      "example_sentence": "I feel happy today."
+    },
+    {
+      "word": "smile",
+      "part_of_speech": "verb",
+      "english_definition": "To show happiness by moving the corners of your mouth.",
+      "burmese_meaning": "ပြုံးသည်",
+      "example_sentence": "The baby can smile."
+    },
+    {
+      "word": "laugh",
+      "part_of_speech": "verb",
+      "english_definition": "To make sounds because something is funny.",
+      "burmese_meaning": "ရယ်သည်",
+      "example_sentence": "The children laugh together."
+    },
+    {
+      "word": "cry",
+      "part_of_speech": "verb",
+      "english_definition": "To produce tears because you are sad or upset.",
+      "burmese_meaning": "ငိုသည်",
+      "example_sentence": "The baby begins to cry."
+    },
+    {
+      "word": "live",
+      "part_of_speech": "verb",
+      "english_definition": "To have your home in a particular place.",
+      "burmese_meaning": "နေထိုင်သည်",
+      "example_sentence": "I live in Singapore."
+    },
+    {
+      "word": "move",
+      "part_of_speech": "verb",
+      "english_definition": "To change position or go to another place.",
+      "burmese_meaning": "ရွှေ့သည်၊ ရွေ့လျားသည်",
+      "example_sentence": "Move your chair, please."
+    },
+    {
+      "word": "turn",
+      "part_of_speech": "verb",
+      "english_definition": "To move so that you face another direction.",
+      "burmese_meaning": "လှည့်သည်",
+      "example_sentence": "Turn left at the road."
+    },
+    {
+      "word": "drive",
+      "part_of_speech": "verb",
+      "english_definition": "To control a car or other road vehicle.",
+      "burmese_meaning": "ကားမောင်းသည်၊ ယာဉ်မောင်းသည်",
+      "example_sentence": "I can drive a car."
+    },
+    {
+      "word": "ride",
+      "part_of_speech": "verb",
+      "english_definition": "To travel on a bicycle, horse or similar vehicle.",
+      "burmese_meaning": "စီးသည်",
+      "example_sentence": "She rides a bike."
+    },
+    {
+      "word": "carry",
+      "part_of_speech": "verb",
+      "english_definition": "To hold something while moving it.",
+      "burmese_meaning": "သယ်သည်၊ ကိုင်သယ်သည်",
+      "example_sentence": "Please carry this box."
+    },
+    {
+      "word": "hold",
+      "part_of_speech": "verb",
+      "english_definition": "To keep something in your hand or arms.",
+      "burmese_meaning": "ကိုင်ထားသည်၊ ပွေ့ထားသည်",
+      "example_sentence": "Hold my hand."
+    },
+    {
+      "word": "cut",
+      "part_of_speech": "verb",
+      "english_definition": "To divide something using a sharp tool.",
+      "burmese_meaning": "ဖြတ်သည်၊ လှီးသည်",
+      "example_sentence": "Cut the apple in half."
+    },
+    {
+      "word": "break",
+      "part_of_speech": "verb",
+      "english_definition": "To damage something so that it separates into pieces.",
+      "burmese_meaning": "ကွဲသည်၊ ချိုးဖျက်သည်",
+      "example_sentence": "Be careful not to break the glass."
+    },
+    {
+      "word": "fix",
+      "part_of_speech": "verb",
+      "english_definition": "To repair something that is broken.",
+      "burmese_meaning": "ပြုပြင်သည်",
+      "example_sentence": "Can you fix my chair?"
+    }
+  ]
+}
