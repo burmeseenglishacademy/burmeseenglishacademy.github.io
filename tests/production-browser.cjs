@@ -37,7 +37,7 @@ async function check(engine,label,options,allRoutes){
    loaded:typeof window.playSpeech==='function',
    hero:document.querySelector('h1')?.innerText,
   }));
-  assert.equal(state.version,'1.2.4');
+  assert.equal(state.version,'1.2.5');
   assert.equal(state.lessons,54);assert.equal(state.vocab,1000);
   assert.equal(state.clips,2326);assert.ok(state.loaded);
   const routes=allRoutes?Array.from({length:54},(_,i)=>i+1):[1,2,10,18,19,31,44,54];
