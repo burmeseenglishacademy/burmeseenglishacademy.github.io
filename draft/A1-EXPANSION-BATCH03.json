@@ -1,0 +1,538 @@
+{
+  "schema": 1,
+  "status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "entries": [
+    {
+      "word": "sun",
+      "part_of_speech": "noun",
+      "english_definition": "The star that gives light and heat to the Earth.",
+      "burmese_meaning": "နေ၊ နေမင်း",
+      "example_sentence": "The sun is bright today."
+    },
+    {
+      "word": "moon",
+      "part_of_speech": "noun",
+      "english_definition": "The round object seen in the night sky that moves around Earth.",
+      "burmese_meaning": "လ၊ လမင်း",
+      "example_sentence": "The moon is bright tonight."
+    },
+    {
+      "word": "star",
+      "part_of_speech": "noun",
+      "english_definition": "A bright point of light seen in the night sky.",
+      "burmese_meaning": "ကြယ်",
+      "example_sentence": "I can see a star."
+    },
+    {
+      "word": "sky",
+      "part_of_speech": "noun",
+      "english_definition": "The space above the Earth that we see when we look up.",
+      "burmese_meaning": "ကောင်းကင်",
+      "example_sentence": "The sky is blue."
+    },
+    {
+      "word": "rain",
+      "part_of_speech": "noun",
+      "english_definition": "Water that falls from clouds.",
+      "burmese_meaning": "မိုး၊ မိုးရေ",
+      "example_sentence": "The rain starts in the afternoon."
+    },
+    {
+      "word": "snow",
+      "part_of_speech": "noun",
+      "english_definition": "Soft white pieces of frozen water that fall from the sky.",
+      "burmese_meaning": "နှင်း",
+      "example_sentence": "The children play in the snow."
+    },
+    {
+      "word": "wind",
+      "part_of_speech": "noun",
+      "english_definition": "Air that moves outside.",
+      "burmese_meaning": "လေ",
+      "example_sentence": "The wind is strong today."
+    },
+    {
+      "word": "weather",
+      "part_of_speech": "noun",
+      "english_definition": "How hot, cold, wet or windy it is outside.",
+      "burmese_meaning": "ရာသီဥတု",
+      "example_sentence": "The weather is nice today."
+    },
+    {
+      "word": "cloud",
+      "part_of_speech": "noun",
+      "english_definition": "A white or grey mass in the sky made of tiny drops of water.",
+      "burmese_meaning": "တိမ်",
+      "example_sentence": "There is a cloud in the sky."
+    },
+    {
+      "word": "tree",
+      "part_of_speech": "noun",
+      "english_definition": "A tall plant with a thick wooden stem and branches.",
+      "burmese_meaning": "သစ်ပင်",
+      "example_sentence": "The tree is very tall."
+    },
+    {
+      "word": "flower",
+      "part_of_speech": "noun",
+      "english_definition": "The colourful part of a plant.",
+      "burmese_meaning": "ပန်း",
+      "example_sentence": "This flower is beautiful."
+    },
+    {
+      "word": "grass",
+      "part_of_speech": "noun",
+      "english_definition": "A common plant with thin green leaves that covers the ground.",
+      "burmese_meaning": "မြက်",
+      "example_sentence": "The grass is wet."
+    },
+    {
+      "word": "leaf",
+      "part_of_speech": "noun",
+      "english_definition": "A flat green part of a plant that grows from a stem or branch.",
+      "burmese_meaning": "အရွက်",
+      "example_sentence": "A leaf falls from the tree."
+    },
+    {
+      "word": "animal",
+      "part_of_speech": "noun",
+      "english_definition": "A living thing such as a cat or bird, not a plant.",
+      "burmese_meaning": "တိရစ္ဆာန်",
+      "example_sentence": "My favourite animal is a cat."
+    },
+    {
+      "word": "pet",
+      "part_of_speech": "noun",
+      "english_definition": "An animal kept at home for company.",
+      "burmese_meaning": "အိမ်မွေးတိရစ္ဆာန်",
+      "example_sentence": "Our pet is a small dog."
+    },
+    {
+      "word": "tiger",
+      "part_of_speech": "noun",
+      "english_definition": "A large wild cat with dark stripes.",
+      "burmese_meaning": "ကျား",
+      "example_sentence": "The tiger is a wild animal."
+    },
+    {
+      "word": "elephant",
+      "part_of_speech": "noun",
+      "english_definition": "A very large animal with a long trunk.",
+      "burmese_meaning": "ဆင်",
+      "example_sentence": "An elephant has a long trunk."
+    },
+    {
+      "word": "shirt",
+      "part_of_speech": "noun",
+      "english_definition": "A piece of clothing worn on the upper body.",
+      "burmese_meaning": "ရှပ်အင်္ကျီ",
+      "example_sentence": "His shirt is green."
+    },
+    {
+      "word": "dress",
+      "part_of_speech": "noun",
+      "english_definition": "A one-piece item of clothing often worn by women or girls.",
+      "burmese_meaning": "ဂါဝန်၊ ဝတ်စုံရှည်",
+      "example_sentence": "She wears a red dress."
+    },
+    {
+      "word": "skirt",
+      "part_of_speech": "noun",
+      "english_definition": "Clothing that hangs from the waist and covers part of the legs.",
+      "burmese_meaning": "စကတ်",
+      "example_sentence": "This skirt is blue."
+    },
+    {
+      "word": "trousers",
+      "part_of_speech": "plural noun",
+      "english_definition": "Clothing that covers both legs from the waist down.",
+      "burmese_meaning": "ဘောင်းဘီရှည်",
+      "example_sentence": "My trousers are black."
+    },
+    {
+      "word": "jeans",
+      "part_of_speech": "plural noun",
+      "english_definition": "Strong cotton trousers, often blue.",
+      "burmese_meaning": "ဂျင်းဘောင်းဘီ",
+      "example_sentence": "I wear jeans at weekends."
+    },
+    {
+      "word": "coat",
+      "part_of_speech": "noun",
+      "english_definition": "A piece of clothing worn over other clothes to keep warm.",
+      "burmese_meaning": "ကုတ်အင်္ကျီ",
+      "example_sentence": "Take your coat; it is cold."
+    },
+    {
+      "word": "jacket",
+      "part_of_speech": "noun",
+      "english_definition": "A short coat worn on the upper body.",
+      "burmese_meaning": "ဂျာကင်အင်္ကျီ",
+      "example_sentence": "My jacket is on the chair."
+    },
+    {
+      "word": "hat",
+      "part_of_speech": "noun",
+      "english_definition": "Something worn on the head.",
+      "burmese_meaning": "ဦးထုပ်",
+      "example_sentence": "He wears a hat in the sun."
+    },
+    {
+      "word": "sock",
+      "part_of_speech": "noun",
+      "english_definition": "Clothing worn on the foot inside a shoe.",
+      "burmese_meaning": "ခြေအိတ်",
+      "example_sentence": "I need a clean sock."
+    },
+    {
+      "word": "clothes",
+      "part_of_speech": "plural noun",
+      "english_definition": "Things that people wear, such as shirts and trousers.",
+      "burmese_meaning": "အဝတ်အစားများ",
+      "example_sentence": "My clothes are in the bag."
+    },
+    {
+      "word": "beautiful",
+      "part_of_speech": "adjective",
+      "english_definition": "Very pleasant to look at or listen to.",
+      "burmese_meaning": "လှပသော",
+      "example_sentence": "The garden is beautiful."
+    },
+    {
+      "word": "nice",
+      "part_of_speech": "adjective",
+      "english_definition": "Pleasant or enjoyable.",
+      "burmese_meaning": "ကောင်းမွန်သော၊ နှစ်သက်ဖွယ်ကောင်းသော",
+      "example_sentence": "We had a nice day."
+    },
+    {
+      "word": "kind",
+      "part_of_speech": "adjective",
+      "english_definition": "Caring and helpful towards others.",
+      "burmese_meaning": "ကြင်နာသော",
+      "example_sentence": "Our teacher is kind."
+    },
+    {
+      "word": "angry",
+      "part_of_speech": "adjective",
+      "english_definition": "Feeling strong displeasure.",
+      "burmese_meaning": "စိတ်ဆိုးသော၊ ဒေါသထွက်သော",
+      "example_sentence": "He is angry about the mistake."
+    },
+    {
+      "word": "sad",
+      "part_of_speech": "adjective",
+      "english_definition": "Feeling unhappy.",
+      "burmese_meaning": "ဝမ်းနည်းသော",
+      "example_sentence": "She feels sad today."
+    },
+    {
+      "word": "afraid",
+      "part_of_speech": "adjective",
+      "english_definition": "Feeling fear.",
+      "burmese_meaning": "ကြောက်သော၊ ကြောက်ရွံ့သော",
+      "example_sentence": "The child is afraid of dogs."
+    },
+    {
+      "word": "scared",
+      "part_of_speech": "adjective",
+      "english_definition": "Feeling frightened.",
+      "burmese_meaning": "ကြောက်လန့်သော",
+      "example_sentence": "I am scared of snakes."
+    },
+    {
+      "word": "busy",
+      "part_of_speech": "adjective",
+      "english_definition": "Having a lot of things to do.",
+      "burmese_meaning": "အလုပ်များသော",
+      "example_sentence": "My father is busy today."
+    },
+    {
+      "word": "free",
+      "part_of_speech": "adjective",
+      "english_definition": "Not busy or available to do something.",
+      "burmese_meaning": "အားလပ်သော",
+      "example_sentence": "Are you free tomorrow?"
+    },
+    {
+      "word": "ready",
+      "part_of_speech": "adjective",
+      "english_definition": "Prepared to do something.",
+      "burmese_meaning": "အဆင်သင့်ဖြစ်သော",
+      "example_sentence": "We are ready to leave."
+    },
+    {
+      "word": "late",
+      "part_of_speech": "adjective",
+      "english_definition": "After the expected time.",
+      "burmese_meaning": "နောက်ကျသော",
+      "example_sentence": "I am late for class."
+    },
+    {
+      "word": "early",
+      "part_of_speech": "adverb",
+      "english_definition": "Before the usual or expected time.",
+      "burmese_meaning": "စောစော၊ အချိန်စော၍",
+      "example_sentence": "I wake up early."
+    },
+    {
+      "word": "right",
+      "part_of_speech": "adjective",
+      "english_definition": "Correct or true.",
+      "burmese_meaning": "မှန်ကန်သော",
+      "example_sentence": "Your answer is right."
+    },
+    {
+      "word": "wrong",
+      "part_of_speech": "adjective",
+      "english_definition": "Not correct.",
+      "burmese_meaning": "မှားယွင်းသော",
+      "example_sentence": "This answer is wrong."
+    },
+    {
+      "word": "same",
+      "part_of_speech": "adjective",
+      "english_definition": "Not different.",
+      "burmese_meaning": "တူညီသော",
+      "example_sentence": "We have the same bag."
+    },
+    {
+      "word": "different",
+      "part_of_speech": "adjective",
+      "english_definition": "Not the same.",
+      "burmese_meaning": "မတူညီသော၊ ကွဲပြားသော",
+      "example_sentence": "Our books are different."
+    },
+    {
+      "word": "full",
+      "part_of_speech": "adjective",
+      "english_definition": "Containing as much as possible.",
+      "burmese_meaning": "ပြည့်နေသော",
+      "example_sentence": "The glass is full."
+    },
+    {
+      "word": "empty",
+      "part_of_speech": "adjective",
+      "english_definition": "Having nothing inside.",
+      "burmese_meaning": "အလွတ်ဖြစ်သော၊ ဗလာဖြစ်သော",
+      "example_sentence": "The bottle is empty."
+    },
+    {
+      "word": "strong",
+      "part_of_speech": "adjective",
+      "english_definition": "Having a lot of physical power.",
+      "burmese_meaning": "အားကောင်းသော၊ သန်မာသော",
+      "example_sentence": "My brother is strong."
+    },
+    {
+      "word": "weak",
+      "part_of_speech": "adjective",
+      "english_definition": "Not physically strong.",
+      "burmese_meaning": "အားနည်းသော",
+      "example_sentence": "I feel weak today."
+    },
+    {
+      "word": "heavy",
+      "part_of_speech": "adjective",
+      "english_definition": "Weighing a lot.",
+      "burmese_meaning": "လေးလံသော",
+      "example_sentence": "This bag is heavy."
+    },
+    {
+      "word": "light",
+      "part_of_speech": "adjective",
+      "english_definition": "Not weighing very much.",
+      "burmese_meaning": "ပေါ့ပါးသော",
+      "example_sentence": "This box is light."
+    },
+    {
+      "word": "long",
+      "part_of_speech": "adjective",
+      "english_definition": "Measuring a large distance from one end to the other.",
+      "burmese_meaning": "ရှည်လျားသော",
+      "example_sentence": "The road is long."
+    },
+    {
+      "word": "high",
+      "part_of_speech": "adjective",
+      "english_definition": "Far above the ground or a particular level.",
+      "burmese_meaning": "မြင့်သော",
+      "example_sentence": "The wall is high."
+    },
+    {
+      "word": "low",
+      "part_of_speech": "adjective",
+      "english_definition": "Not high or close to the ground.",
+      "burmese_meaning": "နိမ့်သော",
+      "example_sentence": "The table is low."
+    },
+    {
+      "word": "near",
+      "part_of_speech": "preposition",
+      "english_definition": "Not far from a place.",
+      "burmese_meaning": "အနီးမှာ၊ အနားမှာ",
+      "example_sentence": "Our school is near the park."
+    },
+    {
+      "word": "far",
+      "part_of_speech": "adverb",
+      "english_definition": "At a great distance.",
+      "burmese_meaning": "အဝေးမှာ",
+      "example_sentence": "My office is far from home."
+    },
+    {
+      "word": "inside",
+      "part_of_speech": "adverb",
+      "english_definition": "In the inner part of something.",
+      "burmese_meaning": "အတွင်းမှာ",
+      "example_sentence": "The children are inside."
+    },
+    {
+      "word": "outside",
+      "part_of_speech": "adverb",
+      "english_definition": "Not inside a building or place.",
+      "burmese_meaning": "အပြင်မှာ",
+      "example_sentence": "The dog is outside."
+    },
+    {
+      "word": "under",
+      "part_of_speech": "preposition",
+      "english_definition": "Below something.",
+      "burmese_meaning": "အောက်မှာ",
+      "example_sentence": "The ball is under the table."
+    },
+    {
+      "word": "above",
+      "part_of_speech": "preposition",
+      "english_definition": "At a higher position than something.",
+      "burmese_meaning": "အထက်မှာ",
+      "example_sentence": "The clock is above the door."
+    },
+    {
+      "word": "behind",
+      "part_of_speech": "preposition",
+      "english_definition": "At the back of something.",
+      "burmese_meaning": "နောက်မှာ",
+      "example_sentence": "The garden is behind the house."
+    },
+    {
+      "word": "between",
+      "part_of_speech": "preposition",
+      "english_definition": "In the space separating two things.",
+      "burmese_meaning": "နှစ်ခုကြားမှာ",
+      "example_sentence": "The shop is between two banks."
+    },
+    {
+      "word": "next",
+      "part_of_speech": "adjective",
+      "english_definition": "Coming immediately after something else.",
+      "burmese_meaning": "နောက်တစ်ခု၊ လာမည့်",
+      "example_sentence": "See you next week."
+    },
+    {
+      "word": "again",
+      "part_of_speech": "adverb",
+      "english_definition": "One more time.",
+      "burmese_meaning": "ထပ်မံ၊ နောက်တစ်ကြိမ်",
+      "example_sentence": "Please say that again."
+    },
+    {
+      "word": "always",
+      "part_of_speech": "adverb",
+      "english_definition": "At all times or every time.",
+      "burmese_meaning": "အမြဲတမ်း",
+      "example_sentence": "I always eat breakfast."
+    },
+    {
+      "word": "often",
+      "part_of_speech": "adverb",
+      "english_definition": "Many times or on many occasions.",
+      "burmese_meaning": "မကြာခဏ",
+      "example_sentence": "I often visit my aunt."
+    },
+    {
+      "word": "sometimes",
+      "part_of_speech": "adverb",
+      "english_definition": "On some occasions, but not always.",
+      "burmese_meaning": "တစ်ခါတလေ၊ တစ်ခါတစ်ရံ",
+      "example_sentence": "I sometimes drink coffee."
+    },
+    {
+      "word": "never",
+      "part_of_speech": "adverb",
+      "english_definition": "At no time.",
+      "burmese_meaning": "ဘယ်တော့မှ မ...",
+      "example_sentence": "I never smoke."
+    },
+    {
+      "word": "now",
+      "part_of_speech": "adverb",
+      "english_definition": "At the present time.",
+      "burmese_meaning": "အခု၊ ယခု",
+      "example_sentence": "I am busy now."
+    },
+    {
+      "word": "soon",
+      "part_of_speech": "adverb",
+      "english_definition": "After a short time.",
+      "burmese_meaning": "မကြာခင်",
+      "example_sentence": "The bus will arrive soon."
+    },
+    {
+      "word": "together",
+      "part_of_speech": "adverb",
+      "english_definition": "With one another or in a group.",
+      "burmese_meaning": "အတူတူ",
+      "example_sentence": "We study together."
+    },
+    {
+      "word": "alone",
+      "part_of_speech": "adverb",
+      "english_definition": "Without other people.",
+      "burmese_meaning": "တစ်ယောက်တည်း",
+      "example_sentence": "She lives alone."
+    },
+    {
+      "word": "first",
+      "part_of_speech": "adjective",
+      "english_definition": "Coming before all others.",
+      "burmese_meaning": "ပထမဆုံးဖြစ်သော",
+      "example_sentence": "This is my first class."
+    },
+    {
+      "word": "last",
+      "part_of_speech": "adjective",
+      "english_definition": "Coming after all others.",
+      "burmese_meaning": "နောက်ဆုံးဖြစ်သော",
+      "example_sentence": "This is the last question."
+    },
+    {
+      "word": "also",
+      "part_of_speech": "adverb",
+      "english_definition": "In addition; too.",
+      "burmese_meaning": "လည်း၊ ထို့ပြင်",
+      "example_sentence": "I also speak Burmese."
+    },
+    {
+      "word": "only",
+      "part_of_speech": "adverb",
+      "english_definition": "No more than or no one else.",
+      "burmese_meaning": "သာ၊ ပဲ",
+      "example_sentence": "I have only one ticket."
+    },
+    {
+      "word": "really",
+      "part_of_speech": "adverb",
+      "english_definition": "Very or truly.",
+      "burmese_meaning": "တကယ်၊ အမှန်တကယ်",
+      "example_sentence": "I really like this song."
+    },
+    {
+      "word": "just",
+      "part_of_speech": "adverb",
+      "english_definition": "Only or exactly.",
+      "burmese_meaning": "ပဲ၊ သာ၊ တိတိ",
+      "example_sentence": "I have just one question."
+    }
+  ]
+}
