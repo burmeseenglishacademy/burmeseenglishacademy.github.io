@@ -1,0 +1,60 @@
+name: A2–C1 unpublished editorial packet preparation
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - .github/workflows/cefr-a2-c1-review-packets.yml
+      - tools/build_cefr_a2_c1_review_packets.py
+      - draft/UNVERIFIED_CEFR_CANDIDATES.json
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  prepare-work-packets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare batches for independent bilingual editorial review
+        run: python3 tools/build_cefr_a2_c1_review_packets.py
+      - name: Double-check all 4500 candidates are unapproved and accounted for
+        run: |
+          python3 - <<'PY'
+          from collections import Counter
+          from pathlib import Path
+          import json
+          root=Path('scratch/cefr-a2-c1-work-packets')
+          idx=json.loads((root/'INDEX.json').read_text('utf8'))
+          assert idx['status']=='A2_C1_UNVERIFIED_WORK_QUEUE_ONLY'
+          assert idx['publication_allowed'] is False
+          assert idx['total_candidates']==4500
+          assert idx['total_batches']==45
+          seen=set();by_level=Counter()
+          for info in idx['batches']:
+              d=json.loads((root/info['path']).read_text('utf8'))
+              assert d['release_status']=='UNVERIFIED_DRAFT_DO_NOT_PUBLISH'
+              assert len(d['entries'])==info['candidate_count']
+              for row in d['entries']:
+                  assert row['word'] not in seen
+                  seen.add(row['word'])
+                  by_level[row['provisional_level']]+=1
+                  assert not row['english_definition']
+                  assert not row['burmese_meaning']
+                  assert not row['example_sentence']
+                  assert not row['source_english']
+                  assert not row['source_burmese']
+                  assert not row['source_level']
+                  assert row['status']=='EDITORIAL_WORK_QUEUE_NOT_APPROVED'
+                  for field in ('reviewed_english','reviewed_burmese','reviewed_example','reviewed_level','reviewed_pronunciation'):
+                      assert row[field] is False
+          assert len(seen)==4500
+          assert by_level==Counter({'A2':700,'B1':1000,'B2':1300,'C1':1500})
+          print('PASS: 45 packets, exactly 4500 unique unpublished and unapproved records')
+          PY
+      - name: Store review packets off the public site
+        uses: actions/upload-artifact@v4
+        with:
+          name: CEFR-A2-C1-4500-UNVERIFIED-EDITORIAL-PACKETS
+          path: scratch/cefr-a2-c1-work-packets/
+          retention-days: 30
+          if-no-files-found: error
