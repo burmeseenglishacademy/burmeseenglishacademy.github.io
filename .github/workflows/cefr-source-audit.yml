@@ -5,6 +5,7 @@ on:
     paths:
       - .github/workflows/cefr-source-audit.yml
       - tools/prepare_cefr_candidates.py
+      - draft/A1-EDITORIAL-STARTER.json
   workflow_dispatch:
 permissions:
   contents: write
