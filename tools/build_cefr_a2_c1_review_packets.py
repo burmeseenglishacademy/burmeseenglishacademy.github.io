@@ -86,6 +86,8 @@ def main():
     for level, count in LEVELS.items():
         sample=next(x for x in result["batches"] if x["level"]==level)
         print(f"{level}: {count} candidates; first packet {sample['first_word']} .. {sample['last_word']}")
+        first_packet=json.loads((args.output/sample["path"]).read_text("utf8"))
+        print(f"{level} first 25 candidate headwords (UNVERIFIED):",", ".join(x["word"] for x in first_packet["entries"][:25]))
     print("All meanings, examples, source evidence, level judgments and audio reviews remain PENDING.")
     print("Output stored only as GitHub Actions review artifacts, NEVER added to the live web page.")
 
