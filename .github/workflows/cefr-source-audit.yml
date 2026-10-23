@@ -49,6 +49,7 @@ jobs:
           git add draft/UNVERIFIED_CEFR_CANDIDATES.json
           if ! git diff --cached --quiet; then
             git commit -m "Archive 5000 unverified CEFR headword candidates for editorial review"
+            git pull --rebase origin cefr-5000-bilingual-qa-staging
             git push origin HEAD:cefr-5000-bilingual-qa-staging
           fi
       - name: Retain review candidates as CI artifact only — never publish
