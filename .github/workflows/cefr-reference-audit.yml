@@ -1,0 +1,33 @@
+name: English Myanmar dictionary reference coverage audit
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - .github/workflows/cefr-reference-audit.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch third-party dictionary for a temporary reference-only schema audit
+        run: |
+          curl -fLsS --retry 3 --max-time 180 -o /tmp/eng-myan-reference.db https://raw.githubusercontent.com/soeminnminn/EngMyanDictionary/master/app/src/main/assets/database/dictionary.db
+          test $(stat -c%s /tmp/eng-myan-reference.db) -gt 20000000
+      - name: Inspect bilingual reference coverage and metadata — never import entries
+        run: |
+          python3 - <<'PY'
+          import sqlite3
+          p='/tmp/eng-myan-reference.db'
+          con=sqlite3.connect('file:'+p+'?mode=ro',uri=True)
+          tabs=con.execute("SELECT name FROM sqlite_master WHERE type='table'").fetchall()
+          for (name,) in tabs:
+              if not name.replace('_','').isalnum():continue
+              cols=con.execute('PRAGMA table_info("'+name+'")').fetchall()
+              size=con.execute('SELECT COUNT(*) FROM "'+name+'"').fetchone()[0]
+              print('TABLE',name,'rows',size,'fields',[(x[1],x[2]) for x in cols])
+          print('Reference schema audited. No definitions/translation rows copied or published.')
+          PY
