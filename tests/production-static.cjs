@@ -46,7 +46,7 @@ const source=read('audio-integration.js');
 assert.ok(source.includes('const gender=()'),'gender switch exists');
 assert.ok(source.includes('root.playSpeech=function'),'audio integration active');
 assert.ok(source.includes('return originalSpeak'),'safe fallback preserved');
-assert.ok(read('site-config.js').includes("version: '1.2.4'"),'expected release version');
+assert.ok(read('site-config.js').includes("version: '1.2.5'"),'expected release version');
 console.log('PASS static: 54 lessons, 8 skills, 1000 IELTS entries, 2326 texts, 4652 MP3s, exact audio paths');
 console.log('PASS script/CSP integration, manifest size and privacy checks');
 console.log('Audio bytes:',bytes);
