@@ -25,7 +25,7 @@
     const voices=clips[text];
     if(!voices||!['bm_george','bf_emma'].every(v=>{
      const prefix='audio/'+v+'/';
-     return typeof voices[v]==='string'&&voices[v].startsWith(prefix)&&/^[a-f0-9]{24}\\.mp3$/.test(voices[v].slice(prefix.length));
+     return typeof voices[v]==='string'&&voices[v].startsWith(prefix)&&/^[a-f0-9]{24}\.mp3$/.test(voices[v].slice(prefix.length));
     }))return false;
    }
    levels[row.level]++;
