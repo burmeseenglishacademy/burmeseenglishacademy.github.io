@@ -74,18 +74,18 @@ async function check(engine,label,options,allRoutes){
   await page.locator('#voiceSettingsToggle').click();
   await page.locator('#voicePreview').click();
   let heard=await page.evaluate(()=>window.__audioEvents.filter(x=>x.kind==='play').at(-1)?.src);
-  assert.match(heard,/audio\\/bm_george\\/[a-f0-9]{24}\\.mp3$/,label+' George preview');
+  assert.match(heard,/audio\/bm_george\/[a-f0-9]{24}\.mp3$/,label+' George preview');
   await page.locator('#voiceGender').selectOption('female');
   await page.locator('#voicePreview').click();
   heard=await page.evaluate(()=>window.__audioEvents.filter(x=>x.kind==='play').at(-1)?.src);
-  assert.match(heard,/audio\\/bf_emma\\/[a-f0-9]{24}\\.mp3$/,label+' Emma preview');
+  assert.match(heard,/audio\/bf_emma\/[a-f0-9]{24}\.mp3$/,label+' Emma preview');
   await page.locator('[data-action="word-bank-say"]').first().click();
   heard=await page.evaluate(()=>window.__audioEvents.filter(x=>x.kind==='play').at(-1)?.src);
-  assert.match(heard,/audio\\/bf_emma\\/[a-f0-9]{24}\\.mp3$/,label+' vocabulary playback');
+  assert.match(heard,/audio\/bf_emma\/[a-f0-9]{24}\.mp3$/,label+' vocabulary playback');
   await page.evaluate(()=>{history.replaceState(null,'','#lesson/1/listening');route();});
   await page.locator('[data-action="say"][data-text="audio"]').first().click();
   heard=await page.evaluate(()=>window.__audioEvents.filter(x=>x.kind==='play').at(-1)?.src);
-  assert.match(heard,/audio\\/bf_emma\\/[a-f0-9]{24}\\.mp3$/,label+' lesson playback');
+  assert.match(heard,/audio\/bf_emma\/[a-f0-9]{24}\.mp3$/,label+' lesson playback');
   const before=await page.evaluate(()=>window.__audioEvents.filter(x=>x.kind==='pause').length);
   await page.locator('[data-action="say-stop"]').click();
   const after=await page.evaluate(()=>window.__audioEvents.filter(x=>x.kind==='pause').length);
@@ -105,7 +105,6 @@ async function main(){
  await check(webkit,'WebKit iPhone emulation',devices['iPhone 13'],false);
  const browser=await chromium.launch({headless:true});
  try{
-  const request=await browser.newBrowserCDPSession?null:null; // HTTP check uses isolated context, no CSP fetch.
   const ctx=await browser.newContext();
   const p=await ctx.newPage();await p.goto(base);
   const samples=await p.evaluate(()=>{
