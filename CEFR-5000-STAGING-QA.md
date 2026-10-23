@@ -4,6 +4,16 @@ Status: **STAGING ONLY — NOT RELEASE READY**
 Date: 2026-10-23  
 Production remains **Burmese English Academy v1.2.5**; no new CEFR words have been published.
 
+## Latest development update — 24 October 2026
+
+- **A1 editorial drafts: 227 of 500 words**, each with an independently authored English learner definition, a Burmese meaning draft, and one original usage sentence. All 227 are marked **pending independent language/sense review**; *zero* are signed off as semantically approved.
+- The regenerated **5,000-word source candidate file** now places all 227 original A1 starter words in the A1 quota; no other candidate is approved.
+- **Ten A1 headword/part-of-speech levels were checked** against Oxford's published online wordlist (cat, chair, pen, blue, eat, drink, apple, dog, kitchen, thirsty). This verifies those level observations only, not meanings, examples, or translations. See `draft/A1-OXFORD-LEVEL-SAMPLE-CHECKS.json`.
+- An experimental CC BY 4.0 Myanmar Open Wordnet weak sense alignment was run against 227 drafts; it found possible synset overlap for **53**. These are leads for further review, not verified translations.
+- `tests/cefr-editorial-draft.py` currently passes source inventory, quota integration, draft status, basic orthography, and 10 Oxford level-evidence crosschecks. Passing a structural test is **not** a translation sign-off.
+- The independent George/Emma A1 audio sample workflow was launched as a **private QA pilot**, separate from live learners. Do not claim full audio or device QA for CEFR entries.
+- **Production remains v1.2.5** and no unreviewed new CEFR vocabulary has been deployed.
+
 ## Planned bilingual content
 | Level | New words | Total |
 |---|---:|---:|
