@@ -1,23 +1,9 @@
-# George/Emma full-audio staging — 23 October 2026
+# George & Emma full audio release — 23 October 2026
 
-**Not live:** Files on this branch are preliminary. Do not merge or switch GitHub Pages to this branch before a full verified catalogue is built.
+The automated Kokoro generation completed successfully in GitHub Actions run 39935787562. All 12 parallel synthesis shards succeeded. The release gate checked the 2,326 distinct English text strings across 54 lessons and 1,000 IELTS entries, both bm_george and bf_emma recordings for every text (4,652 MP3s total), file presence, MP3 codec, 24 kHz mono audio, positive duration, and total static site size below the 800 MB guard. The verified library was committed to the staging branch.
 
-Current main branch has 10 Kokoro pilot MP3s (five unique passages × two voices); the original Web Speech system remains the default for lessons and vocabulary.
+The full library is merged to main for GitHub Pages deployment. GitHub Pages success and live URLs must be checked separately.
 
-Read from current main sources:
-- 54 lessons and 1,000 IELTS entries;
-- 2,326 distinct playable English text strings (including voice preview);
-- 4,652 George/Emma MP3s required for full coverage.
-- Existing pilot recordings: 10. Additional recordings required: 4,642, assuming the matching text hashes and files are valid.
+Not yet verified: manual listening/pronunciation review of all recordings, physical iPhone Safari voice switching and playback, and real-traffic bandwidth performance. A GitHub Actions success does not prove these items.
 
-Local unit checks: catalogue fixture generation, voice switching/fallback, JavaScript syntax, Python syntax passed. **Not tested**: producing all Kokoro speech in this environment, hearing every file, actual iPhone Safari playback, GitHub Pages under real traffic.
-
-Before deployment:
-1. Generate all files offline using licensed Kokoro British voices `bm_george` and `bf_emma`.
-2. Verify decoding, duration, sample rates, file size, exact source-text coverage, and pronunciation through listening QA.
-3. Update the `audio-manifest.js` to list only validated MP3s.
-4. Add `audio-manifest.js`, `audio-player.js`, `audio-integration.js` as deferred scripts after `script.js` in `index.html`; ensure the first two files are not duplicated.
-5. Retest all lesson, speaking, vocabulary and stop/play actions on desktop and actual iPhone Safari.
-6. Only then publish a reviewed and approved change to `main`. Preserve all other page layouts, study data and privacy policies.
-
-There is no paid API requirement in the scripts. First-run model download may require internet access; thereafter synthesis can run locally.
+The site preserves the original lessons, vocabulary, privacy protections, and UK-only device-voice fallback for unmatched text. No paid TTS API is required for playback.
