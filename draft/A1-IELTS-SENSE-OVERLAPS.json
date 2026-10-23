@@ -1,0 +1,24 @@
+{
+  "status": "LEXICAL_OVERLAP_AUDIT_PENDING_INDEPENDENT_EDITOR",
+  "a1_count": 500,
+  "ielts_count": 1000,
+  "total_exact_lexical_overlaps": 3,
+  "ref_counts_are_version_specific": true,
+  "entries": [
+    {
+      "word": "family",
+      "semantic_status": "RELATED_SENSE",
+      "notes": "Both use family members/relations; preserve each original example and bilingual gloss. Do not automatically merge full entries."
+    },
+    {
+      "word": "market",
+      "semantic_status": "PARTIAL_SENSE_OVERLAP",
+      "notes": "A1 market = physical place to buy/sell. IELTS market = trading system/place. Preserve sense-level Burmese translations: ဈေး vs စျေးကွက်."
+    },
+    {
+      "word": "cloud",
+      "semantic_status": "DIFFERENT_SENSE",
+      "notes": "A1 cloud = visible atmospheric water droplets, Burmese တိမ်; IELTS cloud = remote computing services, Burmese အင်တာနက်ဆာဗာဝန်ဆောင်မှု. Never share one definition."
+    }
+  ]
+}
