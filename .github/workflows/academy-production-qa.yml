@@ -1,0 +1,46 @@
+name: Burmese English Academy post-release QC
+on:
+  push:
+    branches: [academy-postrelease-qa]
+    paths:
+      - .github/workflows/academy-production-qa.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  static-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check JavaScript syntax
+        run: |
+          for f in script.js audio-manifest.js audio-player.js audio-integration.js tests/*.cjs content.js ielts-vocabulary-data.js; do node --check "$f"; done
+      - name: Verify complete library, source mapping and privacy
+        run: node tests/production-static.cjs
+  web-browsers:
+    needs: static-integrity
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install standalone Playwright and browsers
+        run: |
+          npm install --no-save playwright@1.56.0
+          npx playwright install --with-deps chromium webkit
+      - name: Start Academy local HTTP server
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/bea-http.log 2>&1 &
+          for i in $(seq 1 40); do if curl -sf http://127.0.0.1:8765/ > /dev/null; then exit 0; fi; sleep 1; done
+          exit 1
+      - name: Test all lesson tabs and mobile WebKit/audio playback routing
+        run: node tests/production-browser.cjs
+      - name: Print server diagnostics on failure
+        if: failure()
+        run: tail -80 /tmp/bea-http.log || true
