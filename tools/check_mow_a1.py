@@ -22,7 +22,8 @@ for line in tab.read_text('utf8').splitlines():
 output=[]
 for entry in draft['entries']:
     word=entry['word']
-    source=candidate_by_word[word]
+    source=candidate_by_word.get(word, {})
+    if not source:print('WARNING: candidate missing for',word)
     sense_id=source.get('lexical_sense_id','')
     synsets=[]
     if sense_id:
