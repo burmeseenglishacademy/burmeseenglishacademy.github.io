@@ -1,0 +1,38 @@
+name: A1 500 original bilingual draft structure and review queue
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - .github/workflows/cefr-a1-500-qa.yml
+      - draft/A1-EDITORIAL-STARTER.json
+      - tools/audit_a1_500_drafts.py
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  a1-draft-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check 500 authored English-Myanmar A1 records and prepare review queue
+        run: python3 tools/audit_a1_500_drafts.py
+      - name: Strictly block premature 5000-word data publication
+        run: |
+          python3 - <<'PY'
+          import json
+          a=json.load(open('draft/A1-EDITORIAL-STARTER.json'))
+          report=json.load(open('draft/A1-500-REVIEW-QUEUE.json'))
+          assert a['release_status']=='UNVERIFIED_DRAFT_DO_NOT_PUBLISH'
+          assert report['draft_entries']==500
+          assert report['independent_burmese_approved']==0
+          assert len(report['individual_review_queue'])==500
+          assert all(not e['reviewed_burmese'] for e in a['entries'])
+          print('PASS: 500 draft words; no unverified content allowed into the live site')
+          PY
+      - name: Archive English/Burmese editorial review queue — not website content
+        uses: actions/upload-artifact@v4
+        with:
+          name: A1-500-EDITORIAL-REVIEW-QUEUE-UNVERIFIED
+          path: draft/A1-500-REVIEW-QUEUE.json
+          retention-days: 30
