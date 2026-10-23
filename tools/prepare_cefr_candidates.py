@@ -40,15 +40,14 @@ def main():
     for term in ordered:
         term=term.lower().strip()
         if not re.fullmatch(r"[a-z]+(?:'[a-z]+)?",term) or len(term)>25:continue
-        if any(t['word']==term for t in []):pass
         senses=[] if term in function_words else wn.synsets(term.replace("'",""))
-        if not senses and term not in required:continue
+        if not senses and term not in required and term not in starter:continue
         # Prefer headwords/lemmas rather than machine-derived tense/plural forms.
-        if term not in required and wn.morphy(term) not in (None,term):continue
+        if term not in required and term not in starter and wn.morphy(term) not in (None,term):continue
         # POS of the first available synset is provisional; common words may be polysemous.
         pos=senses[0].pos() if senses else 'other'
         gloss=senses[0].definition() if senses else ''
-        if not gloss and term not in required:continue
+        if not gloss and term not in required and term not in starter:continue
         entry={
             'word':term,
             'level':'',
@@ -77,7 +76,8 @@ def main():
         for row in entries[offset:offset+count]:row['level']=level
         offset+=count
     assert len({x['word'] for x in entries})==5000
-    assert all(row['word'] in {x['word'] for x in entries[:TARGETS['A1']]} for row in starter.values())
+    a1set={x['word'] for x in entries[:TARGETS['A1']]}
+    assert all(word in a1set for word in starter), 'All original A1 drafts must stay in A1'
     print('Editorial A1 drafts merged:',len(starter),'(none independently reviewed)')
     # Explicitly prohibited from live publication until all bilingual content is reviewed.
     payload={'schema':1,'release_status':'UNVERIFIED_DRAFT_DO_NOT_PUBLISH',
