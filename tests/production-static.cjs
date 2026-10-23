@@ -8,7 +8,7 @@ const vm=require('node:vm');
 const path=require('node:path');
 const root=path.resolve(__dirname,'..');
 const read=(f)=>fs.readFileSync(path.join(root,f),'utf8');
-function loadConst(f,expr){const ctx=Object.create(null);vm.runInNewContext(read(f)+'\n;globalThis.output='+expr+';',ctx,{filename:f,timeout:12000});return JSON.parse(JSON.stringify(ctx.output));}
+function loadConst(f,expr){const ctx={window:{}};vm.runInNewContext(read(f)+'\n;globalThis.output='+expr+';',ctx,{filename:f,timeout:12000});return JSON.parse(JSON.stringify(ctx.output));}
 const lessons=loadConst('content.js','LESSONS');
 const vocab=loadConst('ielts-vocabulary-data.js','IELTS_VOCAB_BANK');
 const manifest=loadConst('audio-manifest.js','window.BEA_AUDIO_MANIFEST');
