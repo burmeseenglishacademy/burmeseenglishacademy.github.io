@@ -1,0 +1,35 @@
+name: CEFR editorial evidence audit (staging, never deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - .github/workflows/cefr-evidence-audit.yml
+      - tools/audit_cefr_editorial_evidence.py
+      - draft/A1-EDITORIAL-STARTER.json
+      - draft/UNVERIFIED_CEFR_CANDIDATES.json
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  review-only-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit 500 A1 editorial drafts against 5000 candidate entries
+        run: python3 tools/audit_cefr_editorial_evidence.py
+      - name: Verify release remains blocked without independently approved reviews
+        run: |
+          if python3 tools/audit_cefr_editorial_evidence.py --require-release; then
+            echo 'Unexpected CEFR publication approval: rejecting staging build.'
+            exit 1
+          fi
+          echo 'PASS: unverified words cannot pass CEFR release check.'
+      - name: Archive unpublished per-word editorial work queue
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: CEFR-5000-EVIDENCE-AUDIT-UNVERIFIED
+          path: draft/CEFR-EVIDENCE-REVIEW-QUEUE.json
+          retention-days: 30
+          if-no-files-found: error
