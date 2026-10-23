@@ -87,7 +87,7 @@ jobs:
         run: |
           node tools/build_audio_catalogue.js . audio-catalogue.json
           python tools/build_kokoro_audio.py --catalogue audio-catalogue.json --root . --manifest-only
-      - name: Full release gate: exact coverage, playable MP3s, GitHub Pages size
+      - name: 'Full release gate: exact coverage, playable MP3s, GitHub Pages size'
         run: |
           python - <<'PY'
           import json,pathlib,subprocess
