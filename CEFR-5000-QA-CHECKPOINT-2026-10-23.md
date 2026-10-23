@@ -1,3 +1,5 @@
+> **Superseded checkpoint notice (24 October 2026):** This file records the *earlier 227-draft milestone*, not current totals. Current A1 editorial draft contains **500 unique entries**, all still unverified; 5,000 CEFR candidates remain unapproved. See [CEFR-A1-500-DRAFT-CHECKPOINT.md](CEFR-A1-500-DRAFT-CHECKPOINT.md) and [CEFR-5000-STAGING-QA.md](CEFR-5000-STAGING-QA.md). Audio pilot workflow **succeeded** and archived 40 unreviewed clips; that does not constitute auditory pronunciation approval. Do not merge this branch into production on this evidence alone.
+
 # CEFR 5,000 bilingual vocabulary — QA checkpoint (23 October 2026)
 
 **Status: not released.** Production is still Academy v1.2.5. This branch contains editorial drafts, not certified learner material.
