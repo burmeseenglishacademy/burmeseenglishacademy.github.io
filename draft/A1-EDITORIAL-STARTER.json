@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
-  "description": "100 hand-authored A1 English definitions, Burmese meanings and original examples; all pending independent sense-level translation and CEFR review",
+  "description": "100 original bilingual A1 editorial draft entries; 11 English-sense source crosschecks completed; 100 Burmese sense-level independent reviews and all pronunciation approvals remain pending.",
   "entries": [
     {
       "word": "a",
@@ -11,14 +11,20 @@
       "burmese_meaning": "တစ်ခု၊ တစ်ယောက် (မသတ်မှတ်ရသေးသော)",
       "example_sentence": "I have a book.",
       "source_level_reference": "https://www.oxfordlearnersdictionaries.com/about/wordlists/oxford3000-5000",
-      "source_english_reference": "https://www.oxfordlearnersdictionaries.com/",
+      "source_english_reference": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2-grammar/articles-a-an-the",
       "source_burmese_reference": "original bilingual editorial draft, independent verification pending",
       "reviewed_english": false,
       "reviewed_burmese": false,
       "reviewed_example": false,
       "reviewed_level": false,
       "reviewed_pronunciation": false,
-      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW"
+      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "english_source_crosscheck": {
+        "status": "LEARNER_SENSE_SUPPORTED_BY_EXTERNAL_REFERENCE",
+        "checked_date": "2026-10-23",
+        "reference": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2-grammar/articles-a-an-the",
+        "independent_burmese_check": false
+      }
     },
     {
       "word": "an",
@@ -28,14 +34,20 @@
       "burmese_meaning": "တစ်ခု၊ တစ်ယောက် (သရသံဖြင့်စသော စကားလုံးရှေ့တွင်)",
       "example_sentence": "She has an apple.",
       "source_level_reference": "https://www.oxfordlearnersdictionaries.com/about/wordlists/oxford3000-5000",
-      "source_english_reference": "https://www.oxfordlearnersdictionaries.com/",
+      "source_english_reference": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2-grammar/articles-a-an-the",
       "source_burmese_reference": "original bilingual editorial draft, independent verification pending",
       "reviewed_english": false,
       "reviewed_burmese": false,
       "reviewed_example": false,
       "reviewed_level": false,
       "reviewed_pronunciation": false,
-      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW"
+      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "english_source_crosscheck": {
+        "status": "LEARNER_SENSE_SUPPORTED_BY_EXTERNAL_REFERENCE",
+        "checked_date": "2026-10-23",
+        "reference": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2-grammar/articles-a-an-the",
+        "independent_burmese_check": false
+      }
     },
     {
       "word": "be",
@@ -62,7 +74,7 @@
       "burmese_meaning": "ကျွန်တော်၊ ကျွန်မ (မိမိကိုယ်ကို ရည်ညွှန်းသောစကား)",
       "example_sentence": "I am a student.",
       "source_level_reference": "https://www.oxfordlearnersdictionaries.com/about/wordlists/oxford3000-5000",
-      "source_english_reference": "https://www.oxfordlearnersdictionaries.com/",
+      "source_english_reference": "https://learnenglish.britishcouncil.org/grammar/english-grammar-reference/personal-pronouns",
       "source_burmese_reference": "original bilingual editorial draft, independent verification pending",
       "reviewed_english": false,
       "reviewed_burmese": false,
@@ -70,7 +82,13 @@
       "reviewed_level": false,
       "reviewed_pronunciation": false,
       "status": "DRAFT_PENDING_INDEPENDENT_REVIEW",
-      "display_word": "I"
+      "display_word": "I",
+      "english_source_crosscheck": {
+        "status": "LEARNER_SENSE_SUPPORTED_BY_EXTERNAL_REFERENCE",
+        "checked_date": "2026-10-23",
+        "reference": "https://learnenglish.britishcouncil.org/grammar/english-grammar-reference/personal-pronouns",
+        "independent_burmese_check": false
+      }
     },
     {
       "word": "you",
@@ -80,14 +98,20 @@
       "burmese_meaning": "သင်၊ မင်း၊ ရှင်",
       "example_sentence": "You are my friend.",
       "source_level_reference": "https://www.oxfordlearnersdictionaries.com/about/wordlists/oxford3000-5000",
-      "source_english_reference": "https://www.oxfordlearnersdictionaries.com/",
+      "source_english_reference": "https://learnenglish.britishcouncil.org/grammar/english-grammar-reference/personal-pronouns",
       "source_burmese_reference": "original bilingual editorial draft, independent verification pending",
       "reviewed_english": false,
       "reviewed_burmese": false,
       "reviewed_example": false,
       "reviewed_level": false,
       "reviewed_pronunciation": false,
-      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW"
+      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "english_source_crosscheck": {
+        "status": "LEARNER_SENSE_SUPPORTED_BY_EXTERNAL_REFERENCE",
+        "checked_date": "2026-10-23",
+        "reference": "https://learnenglish.britishcouncil.org/grammar/english-grammar-reference/personal-pronouns",
+        "independent_burmese_check": false
+      }
     },
     {
       "word": "we",
@@ -97,14 +121,20 @@
       "burmese_meaning": "ကျွန်ုပ်တို့၊ ကျွန်တော်တို့",
       "example_sentence": "We go to school.",
       "source_level_reference": "https://www.oxfordlearnersdictionaries.com/about/wordlists/oxford3000-5000",
-      "source_english_reference": "https://www.oxfordlearnersdictionaries.com/",
+      "source_english_reference": "https://learnenglish.britishcouncil.org/grammar/english-grammar-reference/personal-pronouns",
       "source_burmese_reference": "original bilingual editorial draft, independent verification pending",
       "reviewed_english": false,
       "reviewed_burmese": false,
       "reviewed_example": false,
       "reviewed_level": false,
       "reviewed_pronunciation": false,
-      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW"
+      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "english_source_crosscheck": {
+        "status": "LEARNER_SENSE_SUPPORTED_BY_EXTERNAL_REFERENCE",
+        "checked_date": "2026-10-23",
+        "reference": "https://learnenglish.britishcouncil.org/grammar/english-grammar-reference/personal-pronouns",
+        "independent_burmese_check": false
+      }
     },
     {
       "word": "the",
@@ -114,14 +144,20 @@
       "burmese_meaning": "အတိအကျသတ်မှတ်ထားသော အရာကို ညွှန်းသည့်စကား",
       "example_sentence": "The book is on the table.",
       "source_level_reference": "https://www.oxfordlearnersdictionaries.com/about/wordlists/oxford3000-5000",
-      "source_english_reference": "https://www.oxfordlearnersdictionaries.com/",
+      "source_english_reference": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2-grammar/articles-a-an-the",
       "source_burmese_reference": "original bilingual editorial draft, independent verification pending",
       "reviewed_english": false,
       "reviewed_burmese": false,
       "reviewed_example": false,
       "reviewed_level": false,
       "reviewed_pronunciation": false,
-      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW"
+      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "english_source_crosscheck": {
+        "status": "LEARNER_SENSE_SUPPORTED_BY_EXTERNAL_REFERENCE",
+        "checked_date": "2026-10-23",
+        "reference": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2-grammar/articles-a-an-the",
+        "independent_burmese_check": false
+      }
     },
     {
       "word": "this",
@@ -165,14 +201,20 @@
       "burmese_meaning": "သူ (အမျိုးသား)",
       "example_sentence": "He is my brother.",
       "source_level_reference": "https://www.oxfordlearnersdictionaries.com/about/wordlists/oxford3000-5000",
-      "source_english_reference": "https://www.oxfordlearnersdictionaries.com/",
+      "source_english_reference": "https://learnenglish.britishcouncil.org/grammar/english-grammar-reference/personal-pronouns",
       "source_burmese_reference": "original bilingual editorial draft, independent verification pending",
       "reviewed_english": false,
       "reviewed_burmese": false,
       "reviewed_example": false,
       "reviewed_level": false,
       "reviewed_pronunciation": false,
-      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW"
+      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "english_source_crosscheck": {
+        "status": "LEARNER_SENSE_SUPPORTED_BY_EXTERNAL_REFERENCE",
+        "checked_date": "2026-10-23",
+        "reference": "https://learnenglish.britishcouncil.org/grammar/english-grammar-reference/personal-pronouns",
+        "independent_burmese_check": false
+      }
     },
     {
       "word": "she",
@@ -182,14 +224,20 @@
       "burmese_meaning": "သူ (အမျိုးသမီး)",
       "example_sentence": "She is my sister.",
       "source_level_reference": "https://www.oxfordlearnersdictionaries.com/about/wordlists/oxford3000-5000",
-      "source_english_reference": "https://www.oxfordlearnersdictionaries.com/",
+      "source_english_reference": "https://learnenglish.britishcouncil.org/grammar/english-grammar-reference/personal-pronouns",
       "source_burmese_reference": "original bilingual editorial draft, independent verification pending",
       "reviewed_english": false,
       "reviewed_burmese": false,
       "reviewed_example": false,
       "reviewed_level": false,
       "reviewed_pronunciation": false,
-      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW"
+      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "english_source_crosscheck": {
+        "status": "LEARNER_SENSE_SUPPORTED_BY_EXTERNAL_REFERENCE",
+        "checked_date": "2026-10-23",
+        "reference": "https://learnenglish.britishcouncil.org/grammar/english-grammar-reference/personal-pronouns",
+        "independent_burmese_check": false
+      }
     },
     {
       "word": "it",
@@ -199,14 +247,20 @@
       "burmese_meaning": "အဲဒါ၊ ၎င်း",
       "example_sentence": "It is a small cat.",
       "source_level_reference": "https://www.oxfordlearnersdictionaries.com/about/wordlists/oxford3000-5000",
-      "source_english_reference": "https://www.oxfordlearnersdictionaries.com/",
+      "source_english_reference": "https://learnenglish.britishcouncil.org/grammar/english-grammar-reference/personal-pronouns",
       "source_burmese_reference": "original bilingual editorial draft, independent verification pending",
       "reviewed_english": false,
       "reviewed_burmese": false,
       "reviewed_example": false,
       "reviewed_level": false,
       "reviewed_pronunciation": false,
-      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW"
+      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "english_source_crosscheck": {
+        "status": "LEARNER_SENSE_SUPPORTED_BY_EXTERNAL_REFERENCE",
+        "checked_date": "2026-10-23",
+        "reference": "https://learnenglish.britishcouncil.org/grammar/english-grammar-reference/personal-pronouns",
+        "independent_burmese_check": false
+      }
     },
     {
       "word": "my",
@@ -505,14 +559,20 @@
       "burmese_meaning": "စာအုပ်",
       "example_sentence": "This book is interesting.",
       "source_level_reference": "https://www.oxfordlearnersdictionaries.com/about/wordlists/oxford3000-5000",
-      "source_english_reference": "https://www.oxfordlearnersdictionaries.com/",
+      "source_english_reference": "https://dictionary.cambridge.org/dictionary/english/book",
       "source_burmese_reference": "original bilingual editorial draft, independent verification pending",
       "reviewed_english": false,
       "reviewed_burmese": false,
       "reviewed_example": false,
       "reviewed_level": false,
       "reviewed_pronunciation": false,
-      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW"
+      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "english_source_crosscheck": {
+        "status": "LEARNER_SENSE_SUPPORTED_BY_EXTERNAL_REFERENCE",
+        "checked_date": "2026-10-23",
+        "reference": "https://dictionary.cambridge.org/dictionary/english/book",
+        "independent_burmese_check": false
+      }
     },
     {
       "word": "read",
@@ -658,14 +718,20 @@
       "burmese_meaning": "ကျွန်တော့်ကို၊ ကျွန်မကို",
       "example_sentence": "Please help me.",
       "source_level_reference": "https://www.oxfordlearnersdictionaries.com/about/wordlists/oxford3000-5000",
-      "source_english_reference": "https://www.oxfordlearnersdictionaries.com/",
+      "source_english_reference": "https://learnenglish.britishcouncil.org/grammar/english-grammar-reference/personal-pronouns",
       "source_burmese_reference": "original bilingual editorial draft, independent verification pending",
       "reviewed_english": false,
       "reviewed_burmese": false,
       "reviewed_example": false,
       "reviewed_level": false,
       "reviewed_pronunciation": false,
-      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW"
+      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "english_source_crosscheck": {
+        "status": "LEARNER_SENSE_SUPPORTED_BY_EXTERNAL_REFERENCE",
+        "checked_date": "2026-10-23",
+        "reference": "https://learnenglish.britishcouncil.org/grammar/english-grammar-reference/personal-pronouns",
+        "independent_burmese_check": false
+      }
     },
     {
       "word": "one",
