@@ -1,0 +1,45 @@
+name: A1 British voices technical pilot (private QA only)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - .github/workflows/cefr-audio-pilot.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pronunciation-samples:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Kokoro and audio validation tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq espeak-ng ffmpeg
+          python -m pip install --upgrade pip
+          python -m pip install 'kokoro==0.9.4' 'transformers<5' soundfile numpy
+      - name: Generate 40 offline sample recordings for manual QA
+        run: python tools/build_cefr_pronunciation_pilot.py
+      - name: Confirm no learner assets were modified
+        run: |
+          git diff --exit-code -- .
+          python - <<'PY'
+          import json
+          p='scratch/cefr-pronunciation-pilot/technical-report.json'
+          d=json.load(open(p))
+          assert d['state']=='TECHNICAL_PILOT_ONLY_NEVER_PUBLISH'
+          assert d['recordings']==40 and d['words']==10
+          assert all(x['listening_review']=='NOT_PERFORMED' for x in d['recordings_detail'])
+          print('PASS: 40 test files only; none declared pronunciation-approved')
+          PY
+      - name: Store sample recordings for listening review, never GitHub Pages
+        uses: actions/upload-artifact@v4
+        with:
+          name: a1-kokoro-british-technical-pilot-UNREVIEWED
+          path: scratch/cefr-pronunciation-pilot/
+          retention-days: 14
+          if-no-files-found: error
