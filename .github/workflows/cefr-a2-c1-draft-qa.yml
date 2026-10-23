@@ -1,0 +1,31 @@
+name: A2–C1 first bilingual drafts structural QA (never deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - .github/workflows/cefr-a2-c1-draft-qa.yml
+      - draft/A2-C1-EDITORIAL-STARTER.json
+      - tools/audit_cefr_a2_c1_drafts.py
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  editorial-structural-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check all 40 original A2-C1 draft cards in candidate inventory
+        run: python3 tools/audit_cefr_a2_c1_drafts.py
+      - name: Assert no A2-C1 words or new British audio released
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('draft/A2-C1-EDITORIAL-STARTER.json').read_text('utf8'))
+          assert d['reviewed_independently']==0
+          assert all(all(x[key] is False for key in ('reviewed_english','reviewed_burmese','reviewed_example','reviewed_level','reviewed_pronunciation')) for x in d['entries'])
+          site=Path('cefr-vocabulary-data.js').read_text('utf8')
+          assert 'UNVERIFIED_DRAFT_DO_NOT_PUBLISH' in site and 'entries:[]' in site
+          print('PASS: A2-C1 new drafts are unpublished, not incorrectly certified')
+          PY
