@@ -4,6 +4,7 @@ on:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
       - .github/workflows/cefr-mow-crosscheck.yml
+      - draft/UNVERIFIED_CEFR_CANDIDATES.json
   workflow_dispatch:
 permissions:
   contents: read
@@ -34,7 +35,8 @@ jobs:
           python - <<'PY'
           import json
           p=json.load(open('draft/A1-MOW-WEAK-CROSSCHECK.json'))
-          assert len(p['entries'])==100
+          starters=json.load(open('draft/A1-EDITORIAL-STARTER.json'))
+          assert len(p['entries'])==len(starters['entries'])
           assert all(x['reviewed_burmese'] is False for x in p['entries'])
           print('PASS: no translation falsely approved')
           PY
