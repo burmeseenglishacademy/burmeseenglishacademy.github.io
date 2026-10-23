@@ -7,7 +7,7 @@ on:
       - tools/prepare_cefr_candidates.py
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
   audit-public-sources:
     runs-on: ubuntu-latest
@@ -39,9 +39,21 @@ jobs:
           assert all(not x['reviewed_burmese'] for x in d['entries'])
           print('PASS: 5000 source candidates exist; missing Myanmar translations correctly blocked')
           PY
+      - name: Persist explicitly unverified candidates to staging branch
+        run: |
+          mkdir -p draft
+          cp draft/cefr-candidates.json draft/UNVERIFIED_CEFR_CANDIDATES.json
+          rm draft/cefr-candidates.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add draft/UNVERIFIED_CEFR_CANDIDATES.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive 5000 unverified CEFR headword candidates for editorial review"
+            git push origin HEAD:cefr-5000-bilingual-qa-staging
+          fi
       - name: Retain review candidates as CI artifact only — never publish
         uses: actions/upload-artifact@v4
         with:
           name: cefr-5000-source-candidates-UNVERIFIED
-          path: draft/cefr-candidates.json
+          path: draft/UNVERIFIED_CEFR_CANDIDATES.json
           retention-days: 14
