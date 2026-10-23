@@ -6,13 +6,14 @@ Production remains **Burmese English Academy v1.2.5**; no new CEFR words have be
 
 ## Latest development update — 24 October 2026
 
-- **A1 editorial drafts: 227 of 500 words**, each with an independently authored English learner definition, a Burmese meaning draft, and one original usage sentence. All 227 are marked **pending independent language/sense review**; *zero* are signed off as semantically approved.
-- The regenerated **5,000-word source candidate file** now places all 227 original A1 starter words in the A1 quota; no other candidate is approved.
-- **Ten A1 headword/part-of-speech levels were checked** against Oxford's published online wordlist (cat, chair, pen, blue, eat, drink, apple, dog, kitchen, thirsty). This verifies those level observations only, not meanings, examples, or translations. See `draft/A1-OXFORD-LEVEL-SAMPLE-CHECKS.json`.
-- An experimental CC BY 4.0 Myanmar Open Wordnet weak sense alignment was run against 227 drafts; it found possible synset overlap for **53**. These are leads for further review, not verified translations.
-- `tests/cefr-editorial-draft.py` currently passes source inventory, quota integration, draft status, basic orthography, and 10 Oxford level-evidence crosschecks. Passing a structural test is **not** a translation sign-off.
-- The independent George/Emma A1 audio sample workflow was launched as a **private QA pilot**, separate from live learners. Do not claim full audio or device QA for CEFR entries.
-- **Production remains v1.2.5** and no unreviewed new CEFR vocabulary has been deployed.
+- **A1 editorial drafts: 500 of 500 unique headwords**, each with an original learner definition in English, Burmese draft meaning, part of speech and original example sentence. These are **drafts, not verified vocabulary**.
+- **0 of 500 entries are independently approved** for meaning, translation, grammar, CEFR classification or pronunciation. Their five editorial review flags remain false.
+- The **5,000-word A1–C1 candidate corpus** contains these 500 A1 drafts, but all levels and senses remain provisional.
+- **Oxford level spot checks cover 10 words only**; earlier Cambridge/British Council checks and Myanmar Open Wordnet *possible* overlaps are review leads, not approval of the remaining entries.
+- [A1 500 structural validation](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/39989612024) and [integrated staging QA](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/39989791984) recorded success. These tests do not verify Burmese linguistic accuracy.
+- The independent George/Emma Kokoro A1 pilot was initiated; recorded audio output and pronunciation listening approval must be checked separately. **No new CEFR recordings are published on the live website.**
+- Read [CEFR-A1-500-DRAFT-CHECKPOINT.md](CEFR-A1-500-DRAFT-CHECKPOINT.md) for the more recent detailed checkpoint.
+- **Production remains v1.2.5**, unchanged. Keep all unverified CEFR drafts on staging.
 
 ## Planned bilingual content
 | Level | New words | Total |
