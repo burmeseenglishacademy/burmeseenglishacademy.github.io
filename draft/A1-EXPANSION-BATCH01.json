@@ -1,0 +1,636 @@
+{
+  "schema": 1,
+  "status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "entries": [
+    {
+      "word": "they",
+      "part_of_speech": "pronoun",
+      "english_definition": "The people or things being talked about.",
+      "burmese_meaning": "သူတို့",
+      "example_sentence": "They live near the park."
+    },
+    {
+      "word": "them",
+      "part_of_speech": "pronoun",
+      "english_definition": "The object form of they.",
+      "burmese_meaning": "သူတို့ကို",
+      "example_sentence": "Please give them the books."
+    },
+    {
+      "word": "our",
+      "part_of_speech": "determiner",
+      "english_definition": "Belonging to us.",
+      "burmese_meaning": "ကျွန်ုပ်တို့၏၊ ကျွန်တော်တို့ရဲ့",
+      "example_sentence": "Our classroom is clean."
+    },
+    {
+      "word": "their",
+      "part_of_speech": "determiner",
+      "english_definition": "Belonging to them.",
+      "burmese_meaning": "သူတို့၏၊ သူတို့ရဲ့",
+      "example_sentence": "Their house is big."
+    },
+    {
+      "word": "his",
+      "part_of_speech": "determiner",
+      "english_definition": "Belonging to a male person.",
+      "burmese_meaning": "သူ၏ (အမျိုးသား)",
+      "example_sentence": "His name is Ko Ko."
+    },
+    {
+      "word": "her",
+      "part_of_speech": "determiner",
+      "english_definition": "Belonging to a female person.",
+      "burmese_meaning": "သူမ၏၊ သူမရဲ့",
+      "example_sentence": "Her bag is blue."
+    },
+    {
+      "word": "mine",
+      "part_of_speech": "pronoun",
+      "english_definition": "Something that belongs to me.",
+      "burmese_meaning": "ကျွန်တော့်ဟာ၊ ကျွန်မဟာ",
+      "example_sentence": "This book is mine."
+    },
+    {
+      "word": "yours",
+      "part_of_speech": "pronoun",
+      "english_definition": "Something that belongs to you.",
+      "burmese_meaning": "သင့်ဟာ၊ မင်းဟာ",
+      "example_sentence": "Is this pen yours?"
+    },
+    {
+      "word": "these",
+      "part_of_speech": "determiner",
+      "english_definition": "Used to point to people or things near the speaker.",
+      "burmese_meaning": "ဒီဟာတွေ၊ ဤအရာများ",
+      "example_sentence": "These apples are fresh."
+    },
+    {
+      "word": "those",
+      "part_of_speech": "determiner",
+      "english_definition": "Used to point to people or things farther away.",
+      "burmese_meaning": "ဟိုဟာတွေ၊ အဲဒီအရာတွေ",
+      "example_sentence": "Those houses are old."
+    },
+    {
+      "word": "there",
+      "part_of_speech": "adverb",
+      "english_definition": "In or at another place.",
+      "burmese_meaning": "အဲဒီမှာ၊ ဟိုမှာ",
+      "example_sentence": "My friend is there."
+    },
+    {
+      "word": "some",
+      "part_of_speech": "determiner",
+      "english_definition": "An amount or number that is not stated exactly.",
+      "burmese_meaning": "အချို့၊ နည်းနည်း",
+      "example_sentence": "I need some water."
+    },
+    {
+      "word": "any",
+      "part_of_speech": "determiner",
+      "english_definition": "One or more, without saying exactly which.",
+      "burmese_meaning": "တစ်ခုခု၊ မည်သည့်အရာမဆို",
+      "example_sentence": "Do you have any questions?"
+    },
+    {
+      "word": "much",
+      "part_of_speech": "determiner",
+      "english_definition": "A large amount of something.",
+      "burmese_meaning": "အများကြီး၊ များစွာ",
+      "example_sentence": "I do not have much time."
+    },
+    {
+      "word": "more",
+      "part_of_speech": "determiner",
+      "english_definition": "An additional amount or number.",
+      "burmese_meaning": "ပို၍၊ ထပ်မံ",
+      "example_sentence": "I want more rice."
+    },
+    {
+      "word": "most",
+      "part_of_speech": "determiner",
+      "english_definition": "The largest part or amount.",
+      "burmese_meaning": "အများဆုံး၊ အများစု",
+      "example_sentence": "Most students are here."
+    },
+    {
+      "word": "each",
+      "part_of_speech": "determiner",
+      "english_definition": "Every person or thing considered separately.",
+      "burmese_meaning": "တစ်ဦးချင်းစီ၊ တစ်ခုစီ",
+      "example_sentence": "Each child has a book."
+    },
+    {
+      "word": "every",
+      "part_of_speech": "determiner",
+      "english_definition": "All members of a group, considered separately.",
+      "burmese_meaning": "တိုင်း၊ အားလုံး",
+      "example_sentence": "I walk every morning."
+    },
+    {
+      "word": "both",
+      "part_of_speech": "determiner",
+      "english_definition": "The two people or things together.",
+      "burmese_meaning": "နှစ်ခုလုံး၊ နှစ်ယောက်လုံး",
+      "example_sentence": "Both girls can swim."
+    },
+    {
+      "word": "another",
+      "part_of_speech": "determiner",
+      "english_definition": "One more or a different one.",
+      "burmese_meaning": "နောက်ထပ်တစ်ခု၊ အခြားတစ်ခု",
+      "example_sentence": "Can I have another cup?"
+    },
+    {
+      "word": "eleven",
+      "part_of_speech": "number",
+      "english_definition": "The number 11.",
+      "burmese_meaning": "ဆယ့်တစ်",
+      "example_sentence": "I have eleven pencils."
+    },
+    {
+      "word": "twelve",
+      "part_of_speech": "number",
+      "english_definition": "The number 12.",
+      "burmese_meaning": "ဆယ့်နှစ်",
+      "example_sentence": "There are twelve months in a year."
+    },
+    {
+      "word": "thirteen",
+      "part_of_speech": "number",
+      "english_definition": "The number 13.",
+      "burmese_meaning": "ဆယ့်သုံး",
+      "example_sentence": "She is thirteen years old."
+    },
+    {
+      "word": "fourteen",
+      "part_of_speech": "number",
+      "english_definition": "The number 14.",
+      "burmese_meaning": "ဆယ့်လေး",
+      "example_sentence": "There are fourteen chairs."
+    },
+    {
+      "word": "fifteen",
+      "part_of_speech": "number",
+      "english_definition": "The number 15.",
+      "burmese_meaning": "ဆယ့်ငါး",
+      "example_sentence": "The bus leaves at fifteen past eight."
+    },
+    {
+      "word": "sixteen",
+      "part_of_speech": "number",
+      "english_definition": "The number 16.",
+      "burmese_meaning": "ဆယ့်ခြောက်",
+      "example_sentence": "He is sixteen years old."
+    },
+    {
+      "word": "seventeen",
+      "part_of_speech": "number",
+      "english_definition": "The number 17.",
+      "burmese_meaning": "ဆယ့်ခုနစ်",
+      "example_sentence": "There are seventeen students."
+    },
+    {
+      "word": "eighteen",
+      "part_of_speech": "number",
+      "english_definition": "The number 18.",
+      "burmese_meaning": "ဆယ့်ရှစ်",
+      "example_sentence": "My sister is eighteen."
+    },
+    {
+      "word": "nineteen",
+      "part_of_speech": "number",
+      "english_definition": "The number 19.",
+      "burmese_meaning": "ဆယ့်ကိုး",
+      "example_sentence": "We have nineteen books."
+    },
+    {
+      "word": "twenty",
+      "part_of_speech": "number",
+      "english_definition": "The number 20.",
+      "burmese_meaning": "နှစ်ဆယ်",
+      "example_sentence": "I need twenty minutes."
+    },
+    {
+      "word": "hundred",
+      "part_of_speech": "number",
+      "english_definition": "The number 100.",
+      "burmese_meaning": "တစ်ရာ",
+      "example_sentence": "There are one hundred pages."
+    },
+    {
+      "word": "thousand",
+      "part_of_speech": "number",
+      "english_definition": "The number 1000.",
+      "burmese_meaning": "တစ်ထောင်",
+      "example_sentence": "This town has a thousand houses."
+    },
+    {
+      "word": "monday",
+      "part_of_speech": "noun",
+      "english_definition": "The day after Sunday.",
+      "burmese_meaning": "တနင်္လာနေ့",
+      "example_sentence": "I work on Monday."
+    },
+    {
+      "word": "tuesday",
+      "part_of_speech": "noun",
+      "english_definition": "The day after Monday.",
+      "burmese_meaning": "အင်္ဂါနေ့",
+      "example_sentence": "Our class is on Tuesday."
+    },
+    {
+      "word": "wednesday",
+      "part_of_speech": "noun",
+      "english_definition": "The day after Tuesday.",
+      "burmese_meaning": "ဗုဒ္ဓဟူးနေ့",
+      "example_sentence": "We play football on Wednesday."
+    },
+    {
+      "word": "thursday",
+      "part_of_speech": "noun",
+      "english_definition": "The day after Wednesday.",
+      "burmese_meaning": "ကြာသပတေးနေ့",
+      "example_sentence": "I study on Thursday."
+    },
+    {
+      "word": "friday",
+      "part_of_speech": "noun",
+      "english_definition": "The day after Thursday.",
+      "burmese_meaning": "သောကြာနေ့",
+      "example_sentence": "Friday is my busy day."
+    },
+    {
+      "word": "saturday",
+      "part_of_speech": "noun",
+      "english_definition": "The day after Friday.",
+      "burmese_meaning": "စနေနေ့",
+      "example_sentence": "We visit our grandparents on Saturday."
+    },
+    {
+      "word": "sunday",
+      "part_of_speech": "noun",
+      "english_definition": "The day after Saturday.",
+      "burmese_meaning": "တနင်္ဂနွေနေ့",
+      "example_sentence": "Sunday is a rest day."
+    },
+    {
+      "word": "january",
+      "part_of_speech": "noun",
+      "english_definition": "The first month of the year.",
+      "burmese_meaning": "ဇန်နဝါရီလ",
+      "example_sentence": "School starts in January."
+    },
+    {
+      "word": "february",
+      "part_of_speech": "noun",
+      "english_definition": "The second month of the year.",
+      "burmese_meaning": "ဖေဖော်ဝါရီလ",
+      "example_sentence": "February is a short month."
+    },
+    {
+      "word": "march",
+      "part_of_speech": "noun",
+      "english_definition": "The third month of the year.",
+      "burmese_meaning": "မတ်လ",
+      "example_sentence": "Her birthday is in March."
+    },
+    {
+      "word": "april",
+      "part_of_speech": "noun",
+      "english_definition": "The fourth month of the year.",
+      "burmese_meaning": "ဧပြီလ",
+      "example_sentence": "We travel in April."
+    },
+    {
+      "word": "june",
+      "part_of_speech": "noun",
+      "english_definition": "The sixth month of the year.",
+      "burmese_meaning": "ဇွန်လ",
+      "example_sentence": "The course begins in June."
+    },
+    {
+      "word": "july",
+      "part_of_speech": "noun",
+      "english_definition": "The seventh month of the year.",
+      "burmese_meaning": "ဇူလိုင်လ",
+      "example_sentence": "We have a holiday in July."
+    },
+    {
+      "word": "august",
+      "part_of_speech": "noun",
+      "english_definition": "The eighth month of the year.",
+      "burmese_meaning": "ဩဂုတ်လ",
+      "example_sentence": "His birthday is in August."
+    },
+    {
+      "word": "september",
+      "part_of_speech": "noun",
+      "english_definition": "The ninth month of the year.",
+      "burmese_meaning": "စက်တင်ဘာလ",
+      "example_sentence": "Classes begin in September."
+    },
+    {
+      "word": "october",
+      "part_of_speech": "noun",
+      "english_definition": "The tenth month of the year.",
+      "burmese_meaning": "အောက်တိုဘာလ",
+      "example_sentence": "My holiday is in October."
+    },
+    {
+      "word": "november",
+      "part_of_speech": "noun",
+      "english_definition": "The eleventh month of the year.",
+      "burmese_meaning": "နိုဝင်ဘာလ",
+      "example_sentence": "The exam is in November."
+    },
+    {
+      "word": "december",
+      "part_of_speech": "noun",
+      "english_definition": "The twelfth month of the year.",
+      "burmese_meaning": "ဒီဇင်ဘာလ",
+      "example_sentence": "December is the last month."
+    },
+    {
+      "word": "spring",
+      "part_of_speech": "noun",
+      "english_definition": "The season after winter and before summer.",
+      "burmese_meaning": "နွေဦးရာသီ",
+      "example_sentence": "Flowers grow in spring."
+    },
+    {
+      "word": "summer",
+      "part_of_speech": "noun",
+      "english_definition": "The warmest season of the year.",
+      "burmese_meaning": "နွေရာသီ",
+      "example_sentence": "We visit the beach in summer."
+    },
+    {
+      "word": "autumn",
+      "part_of_speech": "noun",
+      "english_definition": "The season after summer and before winter.",
+      "burmese_meaning": "ဆောင်းဦးရာသီ",
+      "example_sentence": "The leaves turn yellow in autumn."
+    },
+    {
+      "word": "winter",
+      "part_of_speech": "noun",
+      "english_definition": "The coldest season of the year.",
+      "burmese_meaning": "ဆောင်းရာသီ",
+      "example_sentence": "It often snows in winter."
+    },
+    {
+      "word": "parent",
+      "part_of_speech": "noun",
+      "english_definition": "A mother or father.",
+      "burmese_meaning": "မိဘ",
+      "example_sentence": "Every parent wants a safe school."
+    },
+    {
+      "word": "baby",
+      "part_of_speech": "noun",
+      "english_definition": "A very young child.",
+      "burmese_meaning": "မွေးကင်းစကလေး၊ ကလေးငယ်",
+      "example_sentence": "The baby is sleeping."
+    },
+    {
+      "word": "husband",
+      "part_of_speech": "noun",
+      "english_definition": "A married man in relation to his spouse.",
+      "burmese_meaning": "ခင်ပွန်း၊ ယောက်ျား",
+      "example_sentence": "Her husband is a cook."
+    },
+    {
+      "word": "wife",
+      "part_of_speech": "noun",
+      "english_definition": "A married woman in relation to her spouse.",
+      "burmese_meaning": "ဇနီး၊ မိန်းမ",
+      "example_sentence": "His wife works at a bank."
+    },
+    {
+      "word": "doctor",
+      "part_of_speech": "noun",
+      "english_definition": "A person who treats people who are ill.",
+      "burmese_meaning": "ဆရာဝန်",
+      "example_sentence": "The doctor helps sick people."
+    },
+    {
+      "word": "nurse",
+      "part_of_speech": "noun",
+      "english_definition": "A person trained to care for sick people.",
+      "burmese_meaning": "သူနာပြု",
+      "example_sentence": "The nurse is very kind."
+    },
+    {
+      "word": "driver",
+      "part_of_speech": "noun",
+      "english_definition": "A person who drives a vehicle.",
+      "burmese_meaning": "ယာဉ်မောင်း",
+      "example_sentence": "The driver stops the bus."
+    },
+    {
+      "word": "worker",
+      "part_of_speech": "noun",
+      "english_definition": "A person who works.",
+      "burmese_meaning": "အလုပ်သမား၊ အလုပ်လုပ်သူ",
+      "example_sentence": "The worker starts at eight."
+    },
+    {
+      "word": "cook",
+      "part_of_speech": "noun",
+      "english_definition": "A person who prepares food.",
+      "burmese_meaning": "ထမင်းချက်၊ စားဖိုမှူး",
+      "example_sentence": "The cook makes lunch."
+    },
+    {
+      "word": "farmer",
+      "part_of_speech": "noun",
+      "english_definition": "A person who grows crops or raises animals.",
+      "burmese_meaning": "လယ်သမား၊ စိုက်ပျိုးမွေးမြူသူ",
+      "example_sentence": "The farmer grows rice."
+    },
+    {
+      "word": "shop",
+      "part_of_speech": "noun",
+      "english_definition": "A place where people buy things.",
+      "burmese_meaning": "ဆိုင်",
+      "example_sentence": "The shop is open today."
+    },
+    {
+      "word": "market",
+      "part_of_speech": "noun",
+      "english_definition": "A place where people buy and sell things.",
+      "burmese_meaning": "ဈေး",
+      "example_sentence": "We buy vegetables at the market."
+    },
+    {
+      "word": "restaurant",
+      "part_of_speech": "noun",
+      "english_definition": "A place where people pay to eat meals.",
+      "burmese_meaning": "စားသောက်ဆိုင်",
+      "example_sentence": "We eat dinner at a restaurant."
+    },
+    {
+      "word": "hospital",
+      "part_of_speech": "noun",
+      "english_definition": "A place where sick or injured people receive treatment.",
+      "burmese_meaning": "ဆေးရုံ",
+      "example_sentence": "The hospital is near my house."
+    },
+    {
+      "word": "bank",
+      "part_of_speech": "noun",
+      "english_definition": "A business that keeps and manages people's money.",
+      "burmese_meaning": "ဘဏ်",
+      "example_sentence": "My mother works at a bank."
+    },
+    {
+      "word": "park",
+      "part_of_speech": "noun",
+      "english_definition": "A public place with grass and trees for people to enjoy.",
+      "burmese_meaning": "ပန်းခြံ",
+      "example_sentence": "Children play in the park."
+    },
+    {
+      "word": "library",
+      "part_of_speech": "noun",
+      "english_definition": "A place where people can read or borrow books.",
+      "burmese_meaning": "စာကြည့်တိုက်",
+      "example_sentence": "I borrow books from the library."
+    },
+    {
+      "word": "airport",
+      "part_of_speech": "noun",
+      "english_definition": "A place where planes take off and land.",
+      "burmese_meaning": "လေဆိပ်",
+      "example_sentence": "We arrive at the airport early."
+    },
+    {
+      "word": "station",
+      "part_of_speech": "noun",
+      "english_definition": "A place where trains or buses stop for passengers.",
+      "burmese_meaning": "ဘူတာ၊ ယာဉ်ရပ်နားစခန်း",
+      "example_sentence": "Meet me at the bus station."
+    },
+    {
+      "word": "hotel",
+      "part_of_speech": "noun",
+      "english_definition": "A place where travellers pay to sleep.",
+      "burmese_meaning": "ဟိုတယ်၊ တည်းခိုခန်း",
+      "example_sentence": "Our hotel is near the sea."
+    },
+    {
+      "word": "office",
+      "part_of_speech": "noun",
+      "english_definition": "A room or building where people work at desks.",
+      "burmese_meaning": "ရုံး၊ ရုံးခန်း",
+      "example_sentence": "She works in an office."
+    },
+    {
+      "word": "farm",
+      "part_of_speech": "noun",
+      "english_definition": "Land used to grow food or keep animals.",
+      "burmese_meaning": "လယ်ယာ၊ ခြံ",
+      "example_sentence": "The farm has ten cows."
+    },
+    {
+      "word": "garden",
+      "part_of_speech": "noun",
+      "english_definition": "Land where people grow flowers or vegetables.",
+      "burmese_meaning": "ဥယျာဉ်၊ ပန်းခြံငယ်",
+      "example_sentence": "There are flowers in our garden."
+    },
+    {
+      "word": "beach",
+      "part_of_speech": "noun",
+      "english_definition": "A sandy or stony area beside the sea.",
+      "burmese_meaning": "ကမ်းခြေ",
+      "example_sentence": "We walk on the beach."
+    },
+    {
+      "word": "river",
+      "part_of_speech": "noun",
+      "english_definition": "A large natural flow of water.",
+      "burmese_meaning": "မြစ်",
+      "example_sentence": "The river is very long."
+    },
+    {
+      "word": "lake",
+      "part_of_speech": "noun",
+      "english_definition": "A large area of water surrounded by land.",
+      "burmese_meaning": "ကန်၊ ရေကန်",
+      "example_sentence": "The lake is beautiful."
+    },
+    {
+      "word": "sea",
+      "part_of_speech": "noun",
+      "english_definition": "A large area of salty water.",
+      "burmese_meaning": "ပင်လယ်",
+      "example_sentence": "The sea is calm today."
+    },
+    {
+      "word": "mountain",
+      "part_of_speech": "noun",
+      "english_definition": "A very high area of land.",
+      "burmese_meaning": "တောင်ကြီး",
+      "example_sentence": "We can see a mountain."
+    },
+    {
+      "word": "road",
+      "part_of_speech": "noun",
+      "english_definition": "A way that vehicles travel along.",
+      "burmese_meaning": "လမ်းမ၊ ကားလမ်း",
+      "example_sentence": "The road is busy."
+    },
+    {
+      "word": "bridge",
+      "part_of_speech": "noun",
+      "english_definition": "A structure that carries a road or path over something.",
+      "burmese_meaning": "တံတား",
+      "example_sentence": "We cross the bridge."
+    },
+    {
+      "word": "bike",
+      "part_of_speech": "noun",
+      "english_definition": "A bicycle or motorcycle, depending on context.",
+      "burmese_meaning": "စက်ဘီး၊ မော်တော်ဆိုင်ကယ်",
+      "example_sentence": "I ride my bike to school."
+    },
+    {
+      "word": "bicycle",
+      "part_of_speech": "noun",
+      "english_definition": "A two-wheeled vehicle moved by pedalling.",
+      "burmese_meaning": "စက်ဘီး",
+      "example_sentence": "She rides a bicycle."
+    },
+    {
+      "word": "taxi",
+      "part_of_speech": "noun",
+      "english_definition": "A car that people pay to travel in.",
+      "burmese_meaning": "အငှားယာဉ်၊ တက္ကစီ",
+      "example_sentence": "We take a taxi home."
+    },
+    {
+      "word": "plane",
+      "part_of_speech": "noun",
+      "english_definition": "A vehicle that flies through the air.",
+      "burmese_meaning": "လေယာဉ်",
+      "example_sentence": "The plane is in the sky."
+    },
+    {
+      "word": "ticket",
+      "part_of_speech": "noun",
+      "english_definition": "A piece of paper or digital record showing you may travel or enter.",
+      "burmese_meaning": "လက်မှတ်",
+      "example_sentence": "I buy a train ticket."
+    },
+    {
+      "word": "map",
+      "part_of_speech": "noun",
+      "english_definition": "A picture that shows where places are.",
+      "burmese_meaning": "မြေပုံ",
+      "example_sentence": "The map shows our street."
+    }
+  ]
+}
