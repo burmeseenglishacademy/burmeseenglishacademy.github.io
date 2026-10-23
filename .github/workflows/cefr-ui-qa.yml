@@ -1,0 +1,37 @@
+name: CEFR bilingual UI staging QA (never deploys)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - .github/workflows/cefr-ui-qa.yml
+      - cefr-vocabulary.js
+      - cefr-vocabulary-data.js
+      - index.html
+      - script.js
+      - tests/cefr-ui.cjs
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test-offline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax and 5000-entry UI safety checks
+        run: |
+          node --check cefr-vocabulary.js
+          node --check cefr-vocabulary-data.js
+          node --check script.js
+          node tests/cefr-ui.cjs
+      - name: Ensure draft can never be mistaken for published content
+        run: |
+          node - <<'JS'
+          const fs=require('fs');
+          const s=fs.readFileSync('cefr-vocabulary-data.js','utf8');
+          if(!s.includes('UNVERIFIED_DRAFT_DO_NOT_PUBLISH'))throw new Error('Unreviewed content potentially active');
+          console.log('PASS candidate word bank remains unpublished');
+          JS
