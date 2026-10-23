@@ -51,7 +51,7 @@ for e in entries:
     assert e['source_level_reference'].startswith('https://'),word
     # This check is only a rough heuristic; morphology and contextual sense still
     # need human checking. We never mark anything verified based on this test.
-    pattern=re.compile(r'\b'+re.escape(word)+r'\b',re.I)
+    pattern=re.compile(r'\b'+re.escape(word)+r'(?:s|es)?\b',re.I)
     if not pattern.search(example):print('REQUIRES HUMAN MORPHOLOGY CHECK:',word,example)
 for word in ['a','an','be','he','i','it']:
     entry=first500[word]
