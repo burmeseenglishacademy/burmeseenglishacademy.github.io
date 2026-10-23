@@ -10,7 +10,7 @@ candidates=json.loads(CANDIDATES.read_text('utf8'))
 assert draft['release_status']=='UNVERIFIED_DRAFT_DO_NOT_PUBLISH'
 assert candidates['release_status']=='UNVERIFIED_DRAFT_DO_NOT_PUBLISH'
 entries=draft['entries']
-assert len(entries)==100
+assert len(entries)==227, f'Expected current hand-authored starter count 227, got {len(entries)}'
 assert len({e['word'] for e in entries})==len(entries)
 full=candidates['entries']
 assert len(full)==5000
