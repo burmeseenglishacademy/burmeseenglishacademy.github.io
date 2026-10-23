@@ -35,7 +35,7 @@ function route(){clearRecordingSession(false);let hash=decodeURIComponent(locati
   else if(top==='review')app.innerHTML=renderReview();
   else if(top==='gym')app.innerHTML=renderGym(parts[1]||'all');
   else if(top==='ielts')app.innerHTML=renderIELTS();
-  else if(top==='ielts-vocabulary')app.innerHTML=renderIELTSVocabulary();
+  else if(top==='ielts-vocabulary')app.innerHTML=renderIELTSVocabulary();\n  else if(top==='cefr-vocabulary')app.innerHTML=window.BEACefr?window.BEACefr.render():renderHome();
   else if(top==='mock')app.innerHTML=renderMock(parts[1]);
   else if(top==='guide')app.innerHTML=renderGuide();
   else if(top==='updates')app.innerHTML=renderUpdates();
