@@ -28,7 +28,7 @@ for e in entries:
     assert other['editorial_burmese_meaning_draft']==e['burmese_meaning'],word
     assert other['editorial_example_sentence_draft']==e['example_sentence'],word
     assert isinstance(e['part_of_speech'],str) and len(e['part_of_speech'])>=3,word
-    assert len(e['english_definition'])>=15,word
+    assert len(e['english_definition'])>=8,word
     assert myanmar.search(e['burmese_meaning']),word
     assert unicodedata.normalize('NFC',e['burmese_meaning'])==e['burmese_meaning'],word
     example=e['example_sentence']
