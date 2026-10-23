@@ -1,0 +1,32 @@
+name: CEFR staging browser regression — no deployment
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - .github/workflows/cefr-browser-regression.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Playwright and WebKit/Chromium for regression QA
+        run: |
+          npm install --no-save playwright@1.56.0
+          npx playwright install --with-deps chromium webkit
+      - name: Launch local Academy browser version
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/bea-local-http.log 2>&1 &
+          for i in $(seq 1 50); do curl -fsS http://127.0.0.1:8765/ > /dev/null && exit 0; sleep 1; done
+          exit 1
+      - name: Run existing site regressions with experimental vocabulary scripts loaded
+        run: node tests/production-browser.cjs
+      - name: Check server errors if regression fails
+        if: failure()
+        run: tail -80 /tmp/bea-local-http.log || true
