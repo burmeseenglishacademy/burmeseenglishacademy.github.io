@@ -24,13 +24,18 @@ def main():
               'yes','no','please','hello','goodbye','thank','water','food','home',
               'family','mother','father','school','teacher','student','book','read']
     ordered=list(dict.fromkeys(required+ranked))
+    # Function words and pronouns must not inherit chemical-symbol or acronym synsets.
+    function_words={'a','an','be','i','you','we','the','this','that','he','she','it','my','your',
+                    'yes','no','please','hello','goodbye'}
     entries=[]
     for term in ordered:
         term=term.lower().strip()
         if not re.fullmatch(r"[a-z]+(?:'[a-z]+)?",term) or len(term)>25:continue
         if any(t['word']==term for t in []):pass
-        senses=wn.synsets(term.replace("'",""))
+        senses=[] if term in function_words else wn.synsets(term.replace("'",""))
         if not senses and term not in required:continue
+        # Prefer headwords/lemmas rather than machine-derived tense/plural forms.
+        if term not in required and wn.morphy(term) not in (None,term):continue
         # POS of the first available synset is provisional; common words may be polysemous.
         pos=senses[0].pos() if senses else 'other'
         gloss=senses[0].definition() if senses else ''
@@ -43,6 +48,7 @@ def main():
             'burmese_meaning':'',
             'example_sentence':'',
             'lexical_sense_id':senses[0].name() if senses else '',
+            'sense_selection_status':'UNREVIEWED_PROVISIONAL',
             'zipf_frequency':round(zipf_frequency(term,'en'),2),
             'reference':'Princeton WordNet 3.0 / wordfreq',
             'reviewed_english':False,'reviewed_burmese':False,
