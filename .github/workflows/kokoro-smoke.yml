@@ -1,0 +1,49 @@
+name: Kokoro British audio smoke test
+on:
+  push:
+    branches: [kokoro-full-audio-staging]
+    paths:
+      - .github/workflows/kokoro-smoke.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  synthesize-pilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install local synthesis dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq espeak-ng ffmpeg
+          python -m pip install --upgrade pip
+          python -m pip install 'kokoro==0.9.4' 'transformers<5' soundfile numpy
+      - name: Derive the whole audio catalogue
+        run: node tools/build_audio_catalogue.js . audio-catalogue.json
+      - name: Verify source counts
+        run: |
+          python - <<'PY'
+          import json
+          c=json.load(open('audio-catalogue.json'))
+          assert c['unique_texts']==2326 and c['recording_goal']==4652, c
+          print('PASS: 2326 unique texts / 4652 audio files')
+          PY
+      - name: Synthesize 2 sample voices locally
+        run: python tools/build_kokoro_audio.py --catalogue audio-catalogue.json --root . --start 0 --limit 1
+      - name: Inspect generated MP3 and manifests
+        run: |
+          ffprobe -v error -show_entries format=duration -of default=nokey=1:noprint_wrappers=1 audio/bm_george/*.mp3 | head -10
+          ffprobe -v error -show_entries format=duration -of default=nokey=1:noprint_wrappers=1 audio/bf_emma/*.mp3 | head -10
+      - name: Upload samples for listening QA
+        uses: actions/upload-artifact@v4
+        with:
+          name: kokoro-smoke-audio
+          path: |
+            audio/bm_george/
+            audio/bf_emma/
+            audio-manifest.js
+          retention-days: 7

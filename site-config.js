@@ -1,8 +1,9 @@
 /* Burmese English Academy: public release notes. No tracking code. */
 const SITE_META = {
- version: '1.2.3',
- updated: '2026-10-22',
+ version: '1.2.4',
+ updated: '2026-10-23',
  history: [
+  {version:'1.2.4',date:'2026-10-23',title:'Full George & Emma British audio library',notes:'Published 4,652 locally generated British Kokoro MP3 recordings for 2,326 distinct lesson and IELTS practice passages. All files passed automated format, duration, and catalogue coverage checks. Real-device iPhone Safari playback and subjective listening QA remain unverified; unmatched text retains the existing UK-only fallback. No accounts, tracking or paid speech API.'},
   {version:'1.2.3',date:'2026-10-23',title:'George & Emma playback bridge',notes:'Added same-site prerecorded Kokoro British voices to the Academy for the five pilot texts, including a reliable iPhone voice-preview sample. All other lesson and IELTS vocabulary playback retains the existing UK-only device voice fallback until the verified full recordings are available. No accounts, tracking, browser storage or paid API.'},
   {version:'1.2.2',date:'2026-10-22',title:'British-only voices · natural sound preference',notes:'Limited the voice menu and playback to British English (en-GB) only. Prioritises browser-supplied Natural/Neural voices where available, simplifies male/female choice, provides advanced UK-only options, and restores normal speaking pace. No new accounts, tracking, API or cloud service.'},
   {version:'1.2.1',date:'2026-10-22',title:'IELTS Lab display fix and full quality check',notes:'Removed a stray template fragment appearing below the IELTS mini-check notice. Rechecked lesson routes, IELTS vocabulary search and filters, privacy controls, and responsive layouts. No learner accounts, tracking or saved progress were added.'},

@@ -1,0 +1,129 @@
+name: Build complete Kokoro George and Emma library
+on:
+  push:
+    branches: [kokoro-full-audio-staging]
+    paths:
+      - .github/workflows/kokoro-full-audio.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audio-shards:
+    name: Generate audio shard ${{ matrix.shard }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install offline Kokoro TTS engine
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq espeak-ng ffmpeg
+          python -m pip install --upgrade pip
+          python -m pip install 'kokoro==0.9.4' 'transformers<5' soundfile numpy
+      - name: Extract and validate exact website text catalogue
+        run: |
+          node tools/build_audio_catalogue.js . audio-catalogue.json
+          python - <<'PY'
+          import json
+          c=json.load(open('audio-catalogue.json'))
+          assert c['unique_texts']==2326 and c['recording_goal']==4652
+          PY
+      - name: Synthesize one complete shard
+        env:
+          SHARD: ${{ matrix.shard }}
+        run: |
+          START=$((SHARD * 194))
+          python tools/build_kokoro_audio.py --catalogue audio-catalogue.json --root generated --start "$START" --limit 194
+      - name: Validate this shard before upload
+        env:
+          SHARD: ${{ matrix.shard }}
+        run: |
+          python - <<'PY'
+          import json,os,pathlib
+          c=json.load(open('audio-catalogue.json'))
+          start=int(os.environ['SHARD'])*194
+          expected=len(c['entries'][start:start+194])*2
+          files=list(pathlib.Path('generated/audio').rglob('*.mp3'))
+          assert len(files)==expected,(len(files),expected)
+          assert all(p.stat().st_size>500 for p in files)
+          print(f'PASS {len(files)} new MP3s in shard {os.environ["SHARD"]}')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: audio-shard-${{ matrix.shard }}
+          path: generated/audio/
+          retention-days: 7
+          if-no-files-found: error
+  assemble:
+    name: Verify entire library and commit to staging
+    needs: audio-shards
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: kokoro-full-audio-staging
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install audio verification tool
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: audio-shard-*
+          merge-multiple: true
+          path: audio/
+      - name: Rebuild manifest from complete validated MP3 files
+        run: |
+          node tools/build_audio_catalogue.js . audio-catalogue.json
+          python tools/build_kokoro_audio.py --catalogue audio-catalogue.json --root . --manifest-only
+      - name: 'Full release gate: exact coverage, playable MP3s, GitHub Pages size'
+        run: |
+          python - <<'PY'
+          import json,pathlib,subprocess
+          root=pathlib.Path('.')
+          cat=json.loads((root/'audio-catalogue.json').read_text())
+          s=(root/'audio-manifest.js').read_text()
+          data=json.loads(s.split('window.BEA_AUDIO_MANIFEST=',1)[1].rstrip().removesuffix(';'))
+          assert cat['unique_texts']==2326 and cat['recording_goal']==4652
+          assert len(data['clips'])==2326, ('Incomplete text coverage',len(data['clips']))
+          paths=[]
+          for e in cat['entries']:
+              voices=data['clips'][e['text']]
+              assert set(voices)=={'bm_george','bf_emma'},e['id']
+              for voice,rel in voices.items():
+                  assert rel==f'audio/{voice}/{e["id"]}.mp3'
+                  p=root/rel
+                  assert p.is_file() and p.stat().st_size>500,p
+                  paths.append(p)
+          assert len(paths)==4652 and len(set(paths))==4652
+          for k,p in enumerate(paths):
+              probe=subprocess.run(['ffprobe','-v','error','-show_entries','stream=codec_name,sample_rate,channels:format=duration','-of','json',str(p)],capture_output=True,text=True,check=True)
+              info=json.loads(probe.stdout)
+              stream=info['streams'][0]
+              assert stream['codec_name']=='mp3' and stream['sample_rate']=='24000' and stream['channels']==1,p
+              assert float(info['format']['duration'])>=0.12,p
+              if (k+1)%500==0: print('Verified',k+1,flush=True)
+          assets=sum(p.stat().st_size for p in root.rglob('*') if p.is_file() and '.git' not in p.parts)
+          print('Full site bytes:',assets)
+          assert assets<800_000_000, 'Site exceeds 800MB release guard'
+          print('PASS 4652 playable George/Emma MP3s; coverage and Pages size')
+          PY
+      - name: Commit only verified audio assets to staging
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add audio audio-manifest.js
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Complete 4652-file George and Emma offline audio library (verified)"
+          git push origin HEAD:kokoro-full-audio-staging
