@@ -1,0 +1,30 @@
+name: CEFR release evidence gate regression (staging only)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - tools/validate_cefr_release.py
+      - tests/cefr-release-evidence-gate.py
+      - .github/workflows/cefr-release-evidence-gate.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  negative-release-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check CEFR release validator imports and negative cases
+        run: |
+          python3 -m py_compile tools/validate_cefr_release.py tests/cefr-release-evidence-gate.py
+          python3 tests/cefr-release-evidence-gate.py
+      - name: Assert staged data is never declared release ready
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          s=Path('cefr-vocabulary-data.js').read_text('utf8')
+          assert 'UNVERIFIED_DRAFT_DO_NOT_PUBLISH' in s
+          assert 'entries:[]' in s
+          print('PASS: CEFR published bank remains empty until independently verified')
+          PY
