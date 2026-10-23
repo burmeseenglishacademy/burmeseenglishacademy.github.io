@@ -4,6 +4,14 @@ on:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
       - .github/workflows/cefr-a1-final-gate.yml
+      - draft/A1-EDITORIAL-STARTER.json
+      - draft/UNVERIFIED_CEFR_CANDIDATES.json
+      - tools/audit_cefr_editorial_evidence.py
+      - tools/validate_cefr_release.py
+      - tests/cefr-release-evidence-gate.py
+      - tools/inventory_cefr_a1_audio.py
+      - cefr-vocabulary.js
+      - cefr-vocabulary-data.js
   workflow_dispatch:
 permissions:
   contents: read
@@ -40,3 +48,9 @@ jobs:
           node tests/cefr-ui.cjs
       - name: Confirm unchanged released Academy lessons IELTS and Kokoro assets
         run: node tests/production-static.cjs
+      - name: Validate evidence gates and prepare unpublished bilingual review queue
+        run: |
+          python3 tests/cefr-release-evidence-gate.py
+          python3 tools/audit_cefr_editorial_evidence.py
+      - name: Audit inherited George and Emma files without generating recordings
+        run: python3 tools/inventory_cefr_a1_audio.py
