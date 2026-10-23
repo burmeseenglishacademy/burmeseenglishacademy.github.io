@@ -22,8 +22,17 @@ for check in oxford['checks']:
     assert match['level']==check['level']=='A1',check['word']
     assert check['result']=='SOURCE_LEVEL_MATCH_OBSERVED'
     assert check['source_url'].startswith('https://www.oxfordlearnersdictionaries.')
-assert len(entries)==227, f'Expected current hand-authored starter count 227, got {len(entries)}'
+assert len(entries)==500, f'Expected full hand-authored A1 draft count 500, got {len(entries)}'
 assert len({e['word'] for e in entries})==len(entries)
+assert all(e['word'].islower() and e['word'].strip()==e['word'] for e in entries)
+assert all(e.get('level')=='A1' for e in entries)
+proper={'i','english','monday','tuesday','wednesday','thursday','friday','saturday','sunday',
+        'january','february','march','april','june','july','august','september','october','november','december'}
+for item in entries:
+    if item['word'] in proper:
+        want='I' if item['word']=='i' else item['word'].title()
+        assert item.get('display_word')==want, (item['word'],'proper capitalization')
+
 full=candidates['entries']
 assert len(full)==5000
 assert len({e['word'] for e in full})==5000
@@ -40,6 +49,8 @@ for e in entries:
     assert other['editorial_burmese_meaning_draft']==e['burmese_meaning'],word
     assert other['editorial_example_sentence_draft']==e['example_sentence'],word
     assert isinstance(e['part_of_speech'],str) and len(e['part_of_speech'])>=3,word
+    assert len(e['burmese_meaning'])<=250 and len(e['english_definition'])<=300,word
+    assert '<' not in e['burmese_meaning']+e['english_definition']+e['example_sentence'],word
     assert len(e['english_definition'])>=8,word
     assert myanmar.search(e['burmese_meaning']),word
     assert unicodedata.normalize('NFC',e['burmese_meaning'])==e['burmese_meaning'],word
@@ -60,5 +71,6 @@ assert 'cefr-vocabulary-data.js' not in (str(CANDIDATES)+str(STARTER))
 production=(ROOT/'cefr-vocabulary-data.js').read_text('utf8')
 assert 'UNVERIFIED_DRAFT_DO_NOT_PUBLISH' in production
 assert 'entries:[]' in production
-print(f'PASS: {len(entries)} author-written A1 bilingual examples structurally valid, integrated in 5000 unverified corpus')
+print(f'PASS: {len(entries)} authored A1 bilingual draft cards with no duplicates and correct provisional corpus alignment')
+print('NOTE: 500 unreviewed meanings, 500 unreviewed examples, 0 approved new CEFR audio clips')
 print('CAUTION: Meaning, naturalness, level, pronunciation and independent translation review still PENDING')
