@@ -1,3 +1,9 @@
+# Historical pilot report — superseded by production v1.2.5
+
+This report records the initial 10-file pilot of 22 October 2026. It is **not current production status**. All 4,652 Kokoro MP3 files were generated and published on 23 October 2026; see [production audio QC](PRODUCTION-AUDIO-QC-2026-10-23.md).
+
+---
+
 # Public George and Emma audio pilot
 
 Published with William’s explicit approval on 2026-10-22.
