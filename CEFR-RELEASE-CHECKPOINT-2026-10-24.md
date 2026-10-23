@@ -19,14 +19,14 @@ Latest staging branch snapshot at this checkpoint: `23f8d4bd5be7ebcc320fae1acc2b
 - Evidence audit flagged **500/500 A1 generic (non-word-specific) CEFR level source links, 489/500 English source references too generic, and 500/500 lacking independently corroborated Burmese evidence**.
 - A1 has **992 unique words/example texts**, requiring **1,984 George/Emma voice file mappings**. The published audio catalogue already contains **22 reusable recordings**; **1,962 missing new recordings**. This is file/manifest verification only, not subjective listening approval.
 - New A1 pronunciation pilot 40 files had previously completed with a technical-success artifact, but none has independent auditory approval.
-- The remaining **A2–C1 4,500 candidate entries** still need original English/Mynamar editorial content, sense/level review and all new audio.
+- The remaining **A2–C1 4,500 candidate entries** still need original English/Myanmar editorial content, sense/level review and all new audio.
 - Full 5,000 headword + example recordings, independent pronunciation review, final published-site asset size and physical iPhone verification are NOT done.
 
 ## Deployment and host constraints
 
 - The existing version 1.2.5 remains on the default branch. No CEFR vocabulary/data/audio has been merged into production.
 - Current GitHub repository metadata reported approximately **119 MiB repository size**; this **is not** a measured published Pages site size.
-- GitHub's official [Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits) specify a **1 GiB-class published site cap** (stated as 1 GB) and **100 GB/month soft traffic limit**. Size, total download traffic and deployment behavior still require measuring once new MP3s exist.
+- GitHub's official [Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits) specify a **1 GB published-site limit** and **100 GB/month soft traffic limit**. Size, total download traffic and deployment behavior still require measuring once new MP3s exist.
 - Audio and drafts must remain in staging until source-based semantic approvals, human language review, deterministic audio inventory/decoding, pronunciation spot listening, and cross-device regression pass.
 - Neither CI success nor review checkboxes alone certify an English-Myanmar translation or pronounceability.
 
