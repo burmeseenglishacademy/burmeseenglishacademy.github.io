@@ -1,0 +1,41 @@
+name: CEFR A2–C1 candidate suitability triage (never deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - .github/workflows/cefr-candidate-triage.yml
+      - tools/triage_cefr_candidate_quality.py
+      - draft/A2-C1-EDITORIAL-STARTER.json
+      - draft/A2-C1-SOURCE-EVIDENCE-REVIEW.json
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  candidate-risk-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Produce the full manual review queue without approving CEFR tiers
+        run: python3 tools/triage_cefr_candidate_quality.py
+      - name: Verify flags are not treated as automatic approval or publishing
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          p=json.loads(Path('scratch/CEFR-HEURISTIC-CANDIDATE-TRIAGE.json').read_text('utf8'))
+          assert p['status']=='EDITORIAL_TRIAGE_NOT_RELEASE_APPROVAL'
+          assert p['source_headwords']==5000
+          assert p['a2_c1_candidate_count']==4500
+          assert p['release_ready'] is False
+          assert p['flagged_review_rows']>0
+          assert all(x['editorial_approval'] is False for x in p['needs_editorial_sense_and_level_review'])
+          print('PASS: no language or release approvals inferred from heuristic flags')
+          PY
+      - name: Store private editorial issue queue
+        uses: actions/upload-artifact@v4
+        with:
+          name: CEFR-A2-C1-UNVERIFIED-CANDIDATE-TRIAGE
+          path: scratch/CEFR-HEURISTIC-CANDIDATE-TRIAGE.json
+          retention-days: 30
+          if-no-files-found: error
