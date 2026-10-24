@@ -41,8 +41,8 @@ def check(level):
   assert all(d[k]=="" for k in ("source_english","source_burmese","source_level"))
   assert d["status"]=="AI_ASSISTED_DRAFT_PENDING_INDEPENDENT_REVIEW"
   assert d["english_definition"].strip() and d["part_of_speech"].strip()
-  assert re.search("[\\u1000-\\u109f]",d["burmese_meaning"])
-  assert re.search(r"\\b"+re.escape(w)+r"\\b",d["example_sentence"],re.I),w
+  assert any(0x1000<=ord(ch)<=0x109F for ch in d["burmese_meaning"])
+  assert re.search(r"(?<![A-Za-z])"+re.escape(w)+r"(?![A-Za-z])",d["example_sentence"],re.I),w
   assert 25<=len(d["example_sentence"])<=180
   assert not any(s in d["english_definition"].lower() for s in ("placeholder","todo","tbd"))
   task=review[w]
