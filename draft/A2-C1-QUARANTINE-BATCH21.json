@@ -186,10 +186,10 @@
       "release_approved": false
     },
     {
-      "word": "louisiana",
+      "word": "stanley",
       "provisional_level": "C1",
-      "risk": "PROPER_NOUN",
-      "evidence_note": "US state name requires capitalization and is not generic C1 vocabulary.",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "WordNet named inventor biography; not a lowercase general learner headword.",
       "source_observed": false,
       "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
       "reviewed_independently": false,
