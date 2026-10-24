@@ -1,0 +1,219 @@
+{
+  "schema": 1,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "created_on": "2026-10-25",
+  "description": "21 additional provisional candidates held from drafting for proper-name, register, inflection, WordNet-first-sense or unsupported-tier review; not permanently rejected.",
+  "independently_approved": 0,
+  "records": [
+    {
+      "word": "david",
+      "provisional_level": "A2",
+      "risk": "PROPER_PERSON_NAME",
+      "evidence_note": "WordNet clue refers to a historical person, not a general learner headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "james",
+      "provisional_level": "A2",
+      "risk": "PROPER_PERSON_NAME",
+      "evidence_note": "WordNet clue describes a monarch; name needs proper-noun policy.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "michael",
+      "provisional_level": "A2",
+      "risk": "PROPER_PERSON_NAME",
+      "evidence_note": "WordNet clue names an archangel; not a general common noun.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "england",
+      "provisional_level": "A2",
+      "risk": "PROPER_PLACE_NAME",
+      "evidence_note": "Country or region proper name needs curriculum policy.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "fucking",
+      "provisional_level": "A2",
+      "risk": "REGISTER_AND_INFLECTION_RISK",
+      "evidence_note": "Profane inflected form; not suitable for automatic general-learner drafting.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "fuck",
+      "provisional_level": "A2",
+      "risk": "REGISTER_AND_SENSE_RISK",
+      "evidence_note": "Strong profanity and multiple senses require deliberate register policy.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "shit",
+      "provisional_level": "A2",
+      "risk": "REGISTER_AND_SENSE_RISK",
+      "evidence_note": "Strong profanity and multiple senses require deliberate register policy.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "going",
+      "provisional_level": "A2",
+      "risk": "INFLECTED_FORM_SENSE_MISMATCH",
+      "evidence_note": "WordNet nominal departure sense may not match everyday progressive verb usage.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "louis",
+      "provisional_level": "B1",
+      "risk": "PROPER_PERSON_NAME",
+      "evidence_note": "WordNet first sense refers to a named athlete.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "florida",
+      "provisional_level": "B1",
+      "risk": "PROPER_PLACE_NAME",
+      "evidence_note": "US state name rather than ordinary learner vocabulary.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "http",
+      "provisional_level": "B1",
+      "risk": "TECHNICAL_ACRONYM",
+      "evidence_note": "Protocol abbreviation should be handled separately from lexical CEFR levels.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "christ",
+      "provisional_level": "B1",
+      "risk": "PROPER_RELIGIOUS_NAME",
+      "evidence_note": "Proper religious referent and capitalization require editorial policy.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "colorado",
+      "provisional_level": "B2",
+      "risk": "PROPER_PLACE_NAME",
+      "evidence_note": "US state proper name rather than general learner vocabulary.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "olympics",
+      "provisional_level": "B2",
+      "risk": "PROPER_EVENT_NAME",
+      "evidence_note": "Proper event name; capitalization and CEFR placement unreviewed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "terry",
+      "provisional_level": "C1",
+      "risk": "PROPER_PERSON_NAME",
+      "evidence_note": "WordNet first sense refers to a named actress; alternate fabric sense exists.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "baker",
+      "provisional_level": "C1",
+      "risk": "COMMON_SENSE_LEVEL_RISK",
+      "evidence_note": "Ordinary profession appears implausibly high at provisional C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "add",
+      "provisional_level": "A2",
+      "risk": "WORDNET_FIRST_SENSE_MISMATCH",
+      "evidence_note": "Candidate first sense is ADD disorder, not the common verb add.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "extra",
+      "provisional_level": "A2",
+      "risk": "WORDNET_FIRST_SENSE_MISMATCH",
+      "evidence_note": "Candidate first noun sense is background actor, not common adjective extra.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "join",
+      "provisional_level": "A2",
+      "risk": "WORDNET_FIRST_SENSE_MISMATCH",
+      "evidence_note": "Candidate first noun sense differs from the everyday verb join.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "quick",
+      "provisional_level": "A2",
+      "risk": "WORDNET_FIRST_SENSE_MISMATCH",
+      "evidence_note": "Candidate first noun sense is sensitive skin rather than adjective quick.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "remove",
+      "provisional_level": "B1",
+      "risk": "WORDNET_FIRST_SENSE_MISMATCH",
+      "evidence_note": "Candidate first noun sense is figurative distance rather than common verb remove.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
