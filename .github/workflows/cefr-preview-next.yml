@@ -1,0 +1,19 @@
+name: Preview next CEFR A2–C1 draft words (staging only)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - tools/list_cefr_next_candidates.py
+      - .github/workflows/cefr-preview-next.yml
+      - draft/A2-C1-EDITORIAL-STARTER.json
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  candidate-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Find next 30 undrafted provisional candidates for each level
+        run: python3 tools/list_cefr_next_candidates.py
