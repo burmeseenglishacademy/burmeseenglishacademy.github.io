@@ -7,6 +7,7 @@ on:
       - tools/build_cefr_a2_c1_review_packets.py
       - draft/UNVERIFIED_CEFR_CANDIDATES.json
       - draft/A2-C1-EDITORIAL-STARTER.json
+      - draft/A2-C1-SOURCE-EVIDENCE-REVIEW.json
   workflow_dispatch:
 permissions:
   contents: read
@@ -28,13 +29,17 @@ jobs:
           idx=json.loads((root/'INDEX.json').read_text('utf8'))
           starter=json.loads(Path('draft/A2-C1-EDITORIAL-STARTER.json').read_text('utf8'))
           originals={e['word']:e for e in starter['entries']}
+          evidence=json.loads(Path('draft/A2-C1-SOURCE-EVIDENCE-REVIEW.json').read_text('utf8'))
+          observations={e['word']:e for e in evidence['records']}
           assert idx['status']=='A2_C1_UNVERIFIED_WORK_QUEUE_ONLY'
           assert idx['publication_allowed'] is False
           assert idx['total_candidates']==4500
           assert idx['total_batches']==45
           assert idx['unverified_original_first_drafts']==len(originals)
           assert idx['missing_first_drafts']==4500-len(originals)
-          seen=set();by_level=Counter();covered_drafts=set()
+          assert idx['source_observations']==len(observations)
+          assert idx['source_level_conflicts']==sum(e['provisional_level_conflicts_with_source'] for e in observations.values())
+          seen=set();by_level=Counter();covered_drafts=set();covered_evidence=set()
           for info in idx['batches']:
               d=json.loads((root/info['path']).read_text('utf8'))
               assert d['release_status']=='UNVERIFIED_DRAFT_DO_NOT_PUBLISH'
@@ -48,6 +53,16 @@ jobs:
                   assert not row['source_level']
                   for field in ('reviewed_english','reviewed_burmese','reviewed_example','reviewed_level','reviewed_pronunciation'):
                       assert row[field] is False
+                  if row['word'] in observations:
+                      observation=observations[row['word']]
+                      covered_evidence.add(row['word'])
+                      assert row['source_observation_unverified']['dictionary_url']==observation['source_url']
+                      assert row['source_observation_unverified']['dictionary_sense_level']==observation['source_sense_level']
+                      assert row['source_observation_unverified']['independently_approved'] is False
+                      assert row['provisional_level_conflict']==observation['provisional_level_conflicts_with_source']
+                  else:
+                      assert row['source_observation_unverified'] is None
+                      assert row['provisional_level_conflict'] is False
                   if row['word'] in originals:
                       original=originals[row['word']]
                       covered_drafts.add(row['word'])
@@ -62,7 +77,8 @@ jobs:
           assert len(seen)==4500
           assert by_level==Counter({'A2':700,'B1':1000,'B2':1300,'C1':1500})
           assert covered_drafts==set(originals)
-          print('PASS: 45 packets, 4500 unique candidates, all existing bilingual drafts retained without false approval')
+          assert covered_evidence==set(observations)
+          print('PASS: 45 packets, 4500 unique candidates, original bilingual drafts and word-specific source observations retained without false approval')
           PY
       - name: Store review packets off the public site
         uses: actions/upload-artifact@v4
