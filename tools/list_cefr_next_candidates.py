@@ -20,8 +20,7 @@ def main():
     assert len(pool["entries"]) == 5000
     drafted = {}
     for path in ["draft/A2-C1-EDITORIAL-STARTER.json"] + [
-        f"draft/A2-C1-EDITORIAL-BATCH{i:02d}.json" for i in range(9, 19)
-        if (ROOT / f"draft/A2-C1-EDITORIAL-BATCH{i:02d}.json").exists()
+        str(p.relative_to(ROOT)) for p in sorted((ROOT / "draft").glob("A2-C1-EDITORIAL-BATCH*.json"))
     ]:
         for row in read(path)["entries"]:
             if row["word"] in drafted:
