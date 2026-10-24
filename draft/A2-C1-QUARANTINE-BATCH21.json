@@ -186,10 +186,10 @@
       "release_approved": false
     },
     {
-      "word": "stanley",
+      "word": "christianity",
       "provisional_level": "C1",
-      "risk": "NAMED_ENTITY",
-      "evidence_note": "WordNet named inventor biography; not a lowercase general learner headword.",
+      "risk": "CAPITALIZATION_RELIGION",
+      "evidence_note": "Christianity is a religion name normally capitalized; lowercased candidate and provisional C1 need review.",
       "source_observed": false,
       "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
       "reviewed_independently": false,
