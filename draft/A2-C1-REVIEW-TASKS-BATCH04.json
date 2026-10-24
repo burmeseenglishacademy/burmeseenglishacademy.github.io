@@ -1,0 +1,1251 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-24",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "release_status": "UNVERIFIED_REVIEW_TASKS_DO_NOT_PUBLISH",
+  "source_pages_not_yet_checked": true,
+  "independently_approved": 0,
+  "description": "Independent source-evidence and linguistic editorial review tasks for the 40 new A2–C1 drafts; these tasks are NOT completed checks.",
+  "entries": [
+    {
+      "word": "national",
+      "provisional_level": "A2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/national",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "general",
+      "provisional_level": "A2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/general",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "history",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/history",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "university",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/university",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "air",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/air",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "probably",
+      "provisional_level": "A2",
+      "part_of_speech": "adverb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/probably",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "international",
+      "provisional_level": "A2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/international",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "future",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/future",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "police",
+      "provisional_level": "A2",
+      "part_of_speech": "plural noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/police",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "reason",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/reason",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "appear",
+      "provisional_level": "B1",
+      "part_of_speech": "verb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/appear",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "exchange",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/exchange",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "powerful",
+      "provisional_level": "B1",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/powerful",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "partner",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/partner",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "solution",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/solution",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "traditional",
+      "provisional_level": "B1",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/traditional",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "worry",
+      "provisional_level": "B1",
+      "part_of_speech": "verb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/worry",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "benefit",
+      "provisional_level": "B1",
+      "part_of_speech": "verb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/benefit",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "budget",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/budget",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "generation",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/generation",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "criticism",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/criticism",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "effectively",
+      "provisional_level": "B2",
+      "part_of_speech": "adverb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/effectively",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "extensive",
+      "provisional_level": "B2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/extensive",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "formation",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/formation",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "historic",
+      "provisional_level": "B2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/historic",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "improvement",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/improvement",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "philosophy",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/philosophy",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "settlement",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/settlement",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "consistent",
+      "provisional_level": "B2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/consistent",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "partnership",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/partnership",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "productive",
+      "provisional_level": "C1",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/productive",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "unity",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/unity",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "disability",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/disability",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "manufacturer",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/manufacturer",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "transaction",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/transaction",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "veteran",
+      "provisional_level": "C1",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/veteran",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "slavery",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/slavery",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "additionally",
+      "provisional_level": "C1",
+      "part_of_speech": "adverb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/additionally",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "identical",
+      "provisional_level": "C1",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/identical",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "legally",
+      "provisional_level": "C1",
+      "part_of_speech": "adverb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Compare this exact sense and part of speech with a trustworthy learner dictionary; note source, access date and any disagreement.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/legally",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Ask a competent Burmese editor to assess meaning, register and naturalness against the verified English sense.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Check natural grammar, collocation and exact sense; revise if needed.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Check CEFR for the specific sense, not word frequency or another part of speech; quarantine or reclassify conflicts.",
+        "completed": false
+      },
+      "audio_review": {
+        "task": "After text approval, generate and listen-check British George and Emma recordings on actual playback devices.",
+        "completed": false
+      },
+      "release_approved": false
+    }
+  ]
+}
