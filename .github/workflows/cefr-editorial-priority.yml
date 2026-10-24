@@ -1,0 +1,19 @@
+name: Preview curated CEFR editorial queue (no deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - tools/list_cefr_editorial_priority.py
+      - .github/workflows/cefr-editorial-priority.yml
+      - draft/A2-C1-EDITORIAL-STARTER.json
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prioritize unpublished A2-C1 candidates
+        run: python3 tools/list_cefr_editorial_priority.py
