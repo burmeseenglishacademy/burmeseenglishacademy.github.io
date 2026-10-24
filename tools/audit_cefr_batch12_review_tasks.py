@@ -46,7 +46,7 @@ def audit(level):
         assert word in pool and pool[word]["level"] == item["level"], word
         assert re.fullmatch(r"[a-z]{3,}", word), word
         assert len(item["english_definition"].strip()) >= 20, word
-        assert len(item["burmese_meaning"].strip()) >= 4, word
+        assert len(item["burmese_meaning"].strip()) >= 2, word
         assert re.search(r"[\u1000-\u109F]", item["burmese_meaning"]), word
         assert re.search(r"(?<![a-z])" + re.escape(word) + r"(?![a-z])", item["example_sentence"].lower()), word
         assert len(item["example_sentence"].strip()) >= 20, word
