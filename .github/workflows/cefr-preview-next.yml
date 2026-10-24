@@ -15,5 +15,5 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - name: Find next 30 undrafted provisional candidates for each level
-        run: python3 tools/list_cefr_next_candidates.py
+      - name: Preview up to 200 unreviewed provisional candidates per level
+        run: python3 tools/list_cefr_next_candidates.py --limit 200
