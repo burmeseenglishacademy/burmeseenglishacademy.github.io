@@ -9,7 +9,7 @@ Date: 25 October 2026 (SGT). Branch: `cefr-5000-bilingual-qa-staging`.
 - 16 additional provisional CEFR-level mismatches held out of drafting. They are suspected misplacements, not verified corrections or rejections.
 - C1 remains especially risky: the four drafted C1 senses are high-priority source-review candidates, **not confirmed C1**.
 
-## Exact unique draft inventory (conditional on successful five-way GitHub Actions QA)
+## Exact unique draft inventory (confirmed by five-way GitHub Actions QA)
 | Level | Target | Previous unique drafts | New unique drafts | Expected unique total | Independently approved |
 |---|---:|---:|---:|---:|---:|
 | A1 | 500 | 500 | 0 | 500 | 0 |
@@ -19,7 +19,15 @@ Date: 25 October 2026 (SGT). Branch: `cefr-5000-bilingual-qa-staging`.
 | C1 | 1500 | 276 | 4 | 280 | 0 |
 | **All** | **5000** | **1668** | **50** | **1718** | **0** |
 
-Remaining unique first drafts: **3,282**. Prior identical legacy duplicate rows: **182**, excluded from unique counts. The five-way CI audit checks these exact counts against all files; do not treat these expected counts as confirmed until its ALL job succeeds.
+Remaining unique first drafts: **3,282**. Prior identical legacy duplicate rows: **182**, excluded from unique counts. The five-way CI ALL job actually confirmed these exact counts. Structural success does not constitute linguistic approval.
+
+## Executed GitHub Actions and commit evidence
+- Draft/quarantine/review-task/CI initial commit: `e4bc8a5c9efe974179292475d4d58766d763d27a`.
+- Source-free editorial correction: `2225257629268f4e002e067c9dbeb40badf6a350` — changed `bare` from an adjectival example to a verb meaning and idiomatic original example. This is **not independent review**.
+- [Batch16 initial five-way QA run 40116231364](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40116231364): **COMPLETED SUCCESS**, A2/B1/B2/C1/ALL each SUCCESS; run against initial commit.
+- [Batch16 final five-way QA run 40116262590](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40116262590): **COMPLETED SUCCESS**, A2/B1/B2/C1/ALL each SUCCESS; run against corrected commit.
+- The ALL audit confirmed **A2 312, B1 314, B2 312, C1 280, A2–C1 1,218 unique drafts**, with **182 identical legacy duplicate rows excluded** and **zero independent approvals**.
+- Post-QA production `main` was actually rechecked and remained `dca0db7aa30118ecc18350db8dc406e6cac91554`; staging remained `2225257629268f4e002e067c9dbeb40badf6a350` before this report-only commit.
 
 ## QA and release blockers
 - Automated structural checks, headword/example matching, cross-batch uniqueness, candidate alignment, quarantine separation and false-approval guards are distinct from independent linguistic review.
