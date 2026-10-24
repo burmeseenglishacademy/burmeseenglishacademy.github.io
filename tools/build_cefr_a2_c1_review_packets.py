@@ -42,7 +42,7 @@ def load_editorial_starters(raw, candidates):
         lookup[word]=row
     return lookup
 
-def prepare(source, starters, outdir, batch_size=100):
+def prepare(source, starters, outdir, batch_size=100, evidence=None):
     if batch_size < 1 or batch_size > 200:
         raise ValueError("batch_size must be between 1 and 200")
     if source.get("release_status") != "UNVERIFIED_DRAFT_DO_NOT_PUBLISH":
@@ -57,6 +57,19 @@ def prepare(source, starters, outdir, batch_size=100):
     if counts != Counter({"A1":500, **LEVELS}):
         raise ValueError(f"Unexpected provisional levels: {counts}")
     starters_by_word=load_editorial_starters(starters,candidate_map)
+    evidence_by_word={}
+    if evidence is not None:
+        if evidence.get("release_status")!="UNVERIFIED_DRAFT_DO_NOT_PUBLISH" or evidence.get("independently_approved")!=0:
+            raise ValueError("Source evidence must be explicitly unverified")
+        for observed in evidence.get("records",[]):
+            word=observed.get("word")
+            if word in evidence_by_word or word not in starters_by_word:
+                raise ValueError("Duplicate/unmatched source observation: "+str(word))
+            if observed.get("provisional_level")!=starters_by_word[word]["level"]:
+                raise ValueError("Evidence provisional level mismatch: "+word)
+            if observed.get("release_approved") is not False:
+                raise ValueError("Premature source evidence approval: "+word)
+            evidence_by_word[word]=observed
     outdir.mkdir(parents=True, exist_ok=True)
     inventory = []
     for level, expected in LEVELS.items():
@@ -71,6 +84,7 @@ def prepare(source, starters, outdir, batch_size=100):
                     raise ValueError(f"Candidate incorrectly approved: {row['word']}")
                 word=row["word"]
                 draft=starters_by_word.get(word)
+                observed=evidence_by_word.get(word)
                 work.append({
                     "word":word, "provisional_level":level,
                     "provisional_pos":row.get("part_of_speech",""),
@@ -82,6 +96,14 @@ def prepare(source, starters, outdir, batch_size=100):
                     "example_sentence":draft["example_sentence"] if draft else "",
                     "part_of_speech":draft["part_of_speech"] if draft else "",
                     "source_english":"", "source_burmese":"", "source_level":"",
+                    "source_observation_unverified":({
+                        "dictionary_url":observed["source_url"],
+                        "dictionary_sense_level":observed["source_sense_level"],
+                        "sense_paraphrase":observed["source_sense_paraphrase"],
+                        "observation_method":observed.get("observation_method","method not recorded"),
+                        "independently_approved":False
+                    } if observed else None),
+                    "provisional_level_conflict":bool(observed and observed.get("provisional_level_conflicts_with_source")),
                     **{field:False for field in FIELDS},
                     "status":("AI_ASSISTED_DRAFT_PENDING_INDEPENDENT_REVIEW"
                               if draft else "EDITORIAL_WORK_QUEUE_NOT_APPROVED"),
@@ -101,6 +123,8 @@ def prepare(source, starters, outdir, batch_size=100):
                               "candidate_count":len(work),
                               "first_drafts_pending_review":sum(
                                   r["status"]=="AI_ASSISTED_DRAFT_PENDING_INDEPENDENT_REVIEW" for r in work),
+                              "source_observations":sum(bool(r["source_observation_unverified"]) for r in work),
+                              "level_conflicts":sum(r["provisional_level_conflict"] for r in work),
                               "independently_verified":0})
     drafted=Counter(x["level"] for x in starters_by_word.values())
     summary={"schema":1,"status":"A2_C1_UNVERIFIED_WORK_QUEUE_ONLY",
@@ -109,6 +133,8 @@ def prepare(source, starters, outdir, batch_size=100):
              "unverified_original_first_drafts":len(starters_by_word),
              "unverified_first_drafts_by_level":dict(drafted),
              "missing_first_drafts":sum(LEVELS.values())-len(starters_by_word),
+             "source_observations":len(evidence_by_word),
+             "source_level_conflicts":sum(bool(e.get("provisional_level_conflicts_with_source")) for e in evidence_by_word.values()),
              "reviewed_burmese":0,"reviewed_levels":0,"approved_audio":0,
              "publication_allowed":False,"batches":inventory}
     (outdir/"INDEX.json").write_text(json.dumps(summary,ensure_ascii=False,indent=2)+"\n","utf-8")
@@ -119,13 +145,16 @@ def main():
     parser.add_argument("--source",type=Path,default=ROOT/"draft/UNVERIFIED_CEFR_CANDIDATES.json")
     parser.add_argument("--starters",type=Path,default=ROOT/"draft/A2-C1-EDITORIAL-STARTER.json")
     parser.add_argument("--output",type=Path,default=ROOT/"scratch/cefr-a2-c1-work-packets")
+    parser.add_argument("--evidence",type=Path,default=ROOT/"draft/A2-C1-SOURCE-EVIDENCE-REVIEW.json")
     args=parser.parse_args()
     d=json.loads(args.source.read_text("utf-8"))
     s=json.loads(args.starters.read_text("utf-8"))
-    result=prepare(d,s,args.output)
+    e=json.loads(args.evidence.read_text("utf-8"))
+    result=prepare(d,s,args.output,evidence=e)
     print(f"PASS: {result['total_batches']} packets covering {result['total_candidates']} A2-C1 candidates")
     print(f"Original AI-assisted drafts awaiting independent verification: {result['unverified_original_first_drafts']}")
     print(f"Candidates without first draft: {result['missing_first_drafts']}")
+    print(f"Unapproved word-specific source observations: {result['source_observations']}, including {result['source_level_conflicts']} flagged CEFR conflicts")
     for level,count in LEVELS.items():
         sample=next(x for x in result["batches"] if x["level"]==level)
         print(f"{level}: {count} candidates; first packet {sample['first_word']} .. {sample['last_word']}; first drafts {result['unverified_first_drafts_by_level'].get(level,0)}")
