@@ -1,0 +1,25 @@
+name: CEFR batch22 parallel draft and quarantine QA (never deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - draft/A2-C1-EDITORIAL-BATCH22.json
+      - draft/A2-C1-REVIEW-TASKS-BATCH22.json
+      - draft/A2-C1-QUARANTINE-BATCH22.json
+      - tools/audit_cefr_batch22_review_tasks.py
+      - .github/workflows/cefr-batch22-review-qa.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  level-structural-review:
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A2, B1, B2, C1, ALL]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check unpublished batch22 drafts
+        run: python3 tools/audit_cefr_batch22_review_tasks.py --level ${{ matrix.level }}
