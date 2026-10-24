@@ -797,6 +797,114 @@
       "action": "HOLD_FOR_MANUAL_REVIEW",
       "reviewed_independently": false,
       "release_approved": false
+    },
+    {
+      "word": "chicago",
+      "provisional_level": "B1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "City name, not a general-purpose learner headword; provisional pool may prioritize a proper noun. This is a candidate-triage hypothesis, NOT independently checked lexical evidence.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "twitter",
+      "provisional_level": "B1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Platform/brand name; lexical entry may be a trademark or service name rather than a general vocabulary sense. This is a candidate-triage hypothesis, NOT independently checked lexical evidence.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "tom",
+      "provisional_level": "B1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Likely personal name in the candidate list; inspect any ordinary common-noun sense before deciding. This is a candidate-triage hypothesis, NOT independently checked lexical evidence.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "davis",
+      "provisional_level": "B2",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Surname in candidate list; requires proper-noun filtering and sense check. This is a candidate-triage hypothesis, NOT independently checked lexical evidence.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "santa",
+      "provisional_level": "B2",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Likely a shortened proper name for Santa Claus; check whether appropriate as a curriculum headword. This is a candidate-triage hypothesis, NOT independently checked lexical evidence.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "sarah",
+      "provisional_level": "B2",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Personal name; not normally a general learner vocabulary headword. This is a candidate-triage hypothesis, NOT independently checked lexical evidence.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "simon",
+      "provisional_level": "B2",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Personal name; not normally a general learner vocabulary headword. This is a candidate-triage hypothesis, NOT independently checked lexical evidence.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "batman",
+      "provisional_level": "C1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Named fictional character or trademark; do not treat as general C1 vocabulary automatically. This is a candidate-triage hypothesis, NOT independently checked lexical evidence.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "charlotte",
+      "provisional_level": "C1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Common personal/place name; check capitalization and sense before inclusion. This is a candidate-triage hypothesis, NOT independently checked lexical evidence.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ontario",
+      "provisional_level": "C1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Geographic proper name; should not automatically count as a general C1 headword. This is a candidate-triage hypothesis, NOT independently checked lexical evidence.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "phoenix",
+      "provisional_level": "C1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Potential city name versus mythological-bird common noun; WordNet first-sense ambiguity requires manual disambiguation. This is a candidate-triage hypothesis, NOT independently checked lexical evidence.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ken",
+      "provisional_level": "C1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Personal name versus verb 'ken'; candidate spelling/sense/level require independent review. This is a candidate-triage hypothesis, NOT independently checked lexical evidence.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
     }
   ]
 }
