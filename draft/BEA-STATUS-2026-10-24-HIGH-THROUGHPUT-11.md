@@ -35,3 +35,12 @@
 - Existing quarantine audit run `40095304229`: **FAILURE** because its allowlist did not yet recognise the newly documented unsupported-provisional-C1 hold category; this commit adds a constrained category and C1 assertion.
 - Existing bilingual structural run `40095304209`: **FAILURE** because batch11 provenance text started with 'Original editorial' instead of the required 'Original draft'; this commit aligns the note while preserving the explicit unverified warning.
 - No green job or editorial approval is inferred from a source-code repair. Inspect the corrected push's GitHub Actions statuses and logs separately.
+
+## Corrected GitHub Actions evidence (actual completed runs)
+- Repair commit: `a2f07c7656c5076fc8e9f0dce8a7676adba7675a`. No production branch, 54 lessons, IELTS 1000, George/Emma audio or privacy files changed.
+- Batch11 five-way matrix run [40095390429](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40095390429): **COMPLETED / SUCCESS**. Individual A2, B1, B2, C1, ALL jobs each passed; ALL job `120876427716` reports 62 unverified drafts, 0 independent approvals, no deployment.
+- Quarantine run [40095390441](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40095390441): **COMPLETED / SUCCESS**. Job `120876427537` reports 136 held headwords, none drafted or approved.
+- Existing bilingual/source-evidence audit run [40095390452](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40095390452): **COMPLETED / SUCCESS**. Job `120876427635` reports 926 A2–C1 drafts, A2=236 B1=236 B2=236 C1=218; 21 previous source observations and 8 previously flagged conflicts; 0 independent approvals.
+- All 14 observed workflows triggered by the repair commit `a2f07c7` finished **COMPLETED / SUCCESS**, including prior batch05–10, candidate triage, previews and parallel four-level structural checks. These are not linguistic approvals or audio listening tests.
+- Initial failed jobs are retained in history, not hidden or called successes. They resulted from new QA regex escaping, unrecognised quarantine risk enum, and provenance text mismatch; fixes were made and rechecked.
+- Production release remains **BLOCKED**; live website deployment was not performed.
