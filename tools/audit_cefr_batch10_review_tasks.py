@@ -30,8 +30,8 @@ def check():
     assert tasks["source_pages_not_yet_checked"] is True
     assert tasks["independently_approved"] == 0
     assert len(batch["entries"]) == len(tasks["entries"]) == 40
-    assert Counter(x["level"] for x in batch["entries"]) == dict.fromkeys(LEVELS, 20)
-    assert Counter(x["provisional_level"] for x in tasks["entries"]) == dict.fromkeys(LEVELS, 20)
+    assert Counter(x["level"] for x in batch["entries"]) == dict.fromkeys(LEVELS, 10)
+    assert Counter(x["provisional_level"] for x in tasks["entries"]) == dict.fromkeys(LEVELS, 10)
     assert len(master["entries"]) >= 864
     assert all(Counter(x["level"] for x in master["entries"])[l] >= 216 for l in LEVELS)
     master_by_word = {x["word"]: x for x in master["entries"]}
