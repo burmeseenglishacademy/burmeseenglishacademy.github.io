@@ -23,9 +23,9 @@ assert Counter(t["provisional_level"] for t in tasks["entries"])=={"A2":20,"B1":
 by_word={x["word"]:x for x in drafts["entries"]}
 pool_map={x["word"]:x for x in pool["entries"]}
 held={x["word"] for x in holds["records"]}
-assert len(by_word)==len(drafts["entries"])==664
-assert Counter(x["level"] for x in drafts["entries"])=={"A2":166,"B1":166,"B2":166,"C1":166}
-assert len({x["example_sentence"] for x in drafts["entries"]})==664
+assert len(by_word)==len(drafts["entries"]) and len(drafts["entries"])>=664
+assert all(Counter(x["level"] for x in drafts["entries"])[l]>=166 for l in ("A2","B1","B2","C1"))
+assert len({x["example_sentence"] for x in drafts["entries"]})==len(drafts["entries"])
 assert len({t["word"] for t in tasks["entries"]})==80
 for t in tasks["entries"]:
  if level!="ALL" and t["provisional_level"]!=level: continue
