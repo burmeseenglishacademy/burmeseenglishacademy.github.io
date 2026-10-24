@@ -140,7 +140,7 @@
       "provisional_level": "A2",
       "part_of_speech": "verb",
       "review_status": "PENDING_INDEPENDENT_REVIEW",
-      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "priority": "WORDNET_SENSE_MISMATCH_REVIEW",
       "english_definition_review": {
         "task": "Independently check exact English sense and POS, record observed source, date and reviewer; do not copy protected definitions.",
         "completed": false,
@@ -165,7 +165,13 @@
         "task": "Only after text approval generate George and Emma word/example audio, listen and test on real iPhone Safari.",
         "completed": false
       },
-      "release_approved": false
+      "release_approved": false,
+      "wordnet_first_sense_review": {
+        "risk": "SENSE_MISMATCH_WITH_SELECTED_DRAFT",
+        "reason": "Candidate WordNet first sense concerns spending time, while this draft teaches spending money.",
+        "task": "Compare exact learner sense with independent source; do not transfer WordNet CEFR or POS automatically.",
+        "completed": false
+      }
     },
     {
       "word": "track",
@@ -268,7 +274,7 @@
       "provisional_level": "A2",
       "part_of_speech": "verb",
       "review_status": "PENDING_INDEPENDENT_REVIEW",
-      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "priority": "CHECK_POSSIBLE_LOWER_CEFR_TIER",
       "english_definition_review": {
         "task": "Independently check exact English sense and POS, record observed source, date and reviewer; do not copy protected definitions.",
         "completed": false,
@@ -287,7 +293,7 @@
       "cefr_review": {
         "task": "Verify this specific sense and POS using CEFR-linked evidence, quarantine or reclassify unsupported tiers.",
         "completed": false,
-        "provisional_level_risk": "UNASSESSED"
+        "provisional_level_risk": "COMMON_SENSE_MAY_BELONG_TO_LOWER_TIER"
       },
       "audio_review": {
         "task": "Only after text approval generate George and Emma word/example audio, listen and test on real iPhone Safari.",
@@ -300,7 +306,7 @@
       "provisional_level": "A2",
       "part_of_speech": "verb",
       "review_status": "PENDING_INDEPENDENT_REVIEW",
-      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "priority": "CHECK_POSSIBLE_LOWER_CEFR_TIER",
       "english_definition_review": {
         "task": "Independently check exact English sense and POS, record observed source, date and reviewer; do not copy protected definitions.",
         "completed": false,
@@ -319,7 +325,7 @@
       "cefr_review": {
         "task": "Verify this specific sense and POS using CEFR-linked evidence, quarantine or reclassify unsupported tiers.",
         "completed": false,
-        "provisional_level_risk": "UNASSESSED"
+        "provisional_level_risk": "COMMON_SENSE_MAY_BELONG_TO_LOWER_TIER"
       },
       "audio_review": {
         "task": "Only after text approval generate George and Emma word/example audio, listen and test on real iPhone Safari.",
@@ -332,7 +338,7 @@
       "provisional_level": "A2",
       "part_of_speech": "verb",
       "review_status": "PENDING_INDEPENDENT_REVIEW",
-      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "priority": "CHECK_POSSIBLE_LOWER_CEFR_TIER",
       "english_definition_review": {
         "task": "Independently check exact English sense and POS, record observed source, date and reviewer; do not copy protected definitions.",
         "completed": false,
@@ -351,7 +357,7 @@
       "cefr_review": {
         "task": "Verify this specific sense and POS using CEFR-linked evidence, quarantine or reclassify unsupported tiers.",
         "completed": false,
-        "provisional_level_risk": "UNASSESSED"
+        "provisional_level_risk": "COMMON_SENSE_MAY_BELONG_TO_LOWER_TIER"
       },
       "audio_review": {
         "task": "Only after text approval generate George and Emma word/example audio, listen and test on real iPhone Safari.",
@@ -364,7 +370,7 @@
       "provisional_level": "A2",
       "part_of_speech": "adjective",
       "review_status": "PENDING_INDEPENDENT_REVIEW",
-      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "priority": "CHECK_POSSIBLE_LOWER_CEFR_TIER",
       "english_definition_review": {
         "task": "Independently check exact English sense and POS, record observed source, date and reviewer; do not copy protected definitions.",
         "completed": false,
@@ -383,7 +389,7 @@
       "cefr_review": {
         "task": "Verify this specific sense and POS using CEFR-linked evidence, quarantine or reclassify unsupported tiers.",
         "completed": false,
-        "provisional_level_risk": "UNASSESSED"
+        "provisional_level_risk": "COMMON_SENSE_MAY_BELONG_TO_LOWER_TIER"
       },
       "audio_review": {
         "task": "Only after text approval generate George and Emma word/example audio, listen and test on real iPhone Safari.",
@@ -684,7 +690,7 @@
       "provisional_level": "B1",
       "part_of_speech": "noun",
       "review_status": "PENDING_INDEPENDENT_REVIEW",
-      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "priority": "WORDNET_SENSE_MISMATCH_REVIEW",
       "english_definition_review": {
         "task": "Independently check exact English sense and POS, record observed source, date and reviewer; do not copy protected definitions.",
         "completed": false,
@@ -709,7 +715,13 @@
         "task": "Only after text approval generate George and Emma word/example audio, listen and test on real iPhone Safari.",
         "completed": false
       },
-      "release_approved": false
+      "release_approved": false,
+      "wordnet_first_sense_review": {
+        "risk": "SENSE_MISMATCH_WITH_SELECTED_DRAFT",
+        "reason": "Candidate WordNet first sense concerns a critical inspection, while this draft teaches a questionnaire survey.",
+        "task": "Compare exact learner sense with independent source; do not transfer WordNet CEFR or POS automatically.",
+        "completed": false
+      }
     },
     {
       "word": "transfer",
@@ -1004,7 +1016,7 @@
       "provisional_level": "B2",
       "part_of_speech": "noun",
       "review_status": "PENDING_INDEPENDENT_REVIEW",
-      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "priority": "CHECK_POSSIBLE_LOWER_CEFR_TIER",
       "english_definition_review": {
         "task": "Independently check exact English sense and POS, record observed source, date and reviewer; do not copy protected definitions.",
         "completed": false,
@@ -1023,7 +1035,7 @@
       "cefr_review": {
         "task": "Verify this specific sense and POS using CEFR-linked evidence, quarantine or reclassify unsupported tiers.",
         "completed": false,
-        "provisional_level_risk": "UNASSESSED"
+        "provisional_level_risk": "COMMON_SENSE_MAY_BELONG_TO_LOWER_TIER"
       },
       "audio_review": {
         "task": "Only after text approval generate George and Emma word/example audio, listen and test on real iPhone Safari.",
@@ -1228,7 +1240,7 @@
       "provisional_level": "B2",
       "part_of_speech": "adjective",
       "review_status": "PENDING_INDEPENDENT_REVIEW",
-      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "priority": "CHECK_POSSIBLE_LOWER_CEFR_TIER",
       "english_definition_review": {
         "task": "Independently check exact English sense and POS, record observed source, date and reviewer; do not copy protected definitions.",
         "completed": false,
@@ -1247,7 +1259,7 @@
       "cefr_review": {
         "task": "Verify this specific sense and POS using CEFR-linked evidence, quarantine or reclassify unsupported tiers.",
         "completed": false,
-        "provisional_level_risk": "UNASSESSED"
+        "provisional_level_risk": "COMMON_SENSE_MAY_BELONG_TO_LOWER_TIER"
       },
       "audio_review": {
         "task": "Only after text approval generate George and Emma word/example audio, listen and test on real iPhone Safari.",
@@ -1292,7 +1304,7 @@
       "provisional_level": "B2",
       "part_of_speech": "adjective",
       "review_status": "PENDING_INDEPENDENT_REVIEW",
-      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "priority": "WORDNET_SENSE_MISMATCH_REVIEW",
       "english_definition_review": {
         "task": "Independently check exact English sense and POS, record observed source, date and reviewer; do not copy protected definitions.",
         "completed": false,
@@ -1317,7 +1329,13 @@
         "task": "Only after text approval generate George and Emma word/example audio, listen and test on real iPhone Safari.",
         "completed": false
       },
-      "release_approved": false
+      "release_approved": false,
+      "wordnet_first_sense_review": {
+        "risk": "SENSE_MISMATCH_WITH_SELECTED_DRAFT",
+        "reason": "Candidate WordNet first sense concerns theatrical drama, while this draft teaches a striking change.",
+        "task": "Compare exact learner sense with independent source; do not transfer WordNet CEFR or POS automatically.",
+        "completed": false
+      }
     },
     {
       "word": "institution",
@@ -1356,7 +1374,7 @@
       "provisional_level": "C1",
       "part_of_speech": "noun",
       "review_status": "PENDING_INDEPENDENT_REVIEW",
-      "priority": "CHECK_SENSE_SPECIFIC_CEFR_HIGH_PRIORITY",
+      "priority": "WORDNET_SENSE_MISMATCH_REVIEW",
       "english_definition_review": {
         "task": "Independently check exact English sense and POS, record observed source, date and reviewer; do not copy protected definitions.",
         "completed": false,
@@ -1381,7 +1399,13 @@
         "task": "Only after text approval generate George and Emma word/example audio, listen and test on real iPhone Safari.",
         "completed": false
       },
-      "release_approved": false
+      "release_approved": false,
+      "wordnet_first_sense_review": {
+        "risk": "SENSE_MISMATCH_WITH_SELECTED_DRAFT",
+        "reason": "Candidate WordNet first sense concerns agreement of opinion, while this draft teaches conformity with rules.",
+        "task": "Compare exact learner sense with independent source; do not transfer WordNet CEFR or POS automatically.",
+        "completed": false
+      }
     },
     {
       "word": "applicable",
