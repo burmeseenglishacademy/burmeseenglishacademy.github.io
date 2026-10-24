@@ -1,0 +1,149 @@
+{
+  "schema": 1,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "created_on": "2026-10-24",
+  "description": "Batch14 additional provisional holds. These are risk leads, not verified rejections or CEFR assignments.",
+  "independently_approved": 0,
+  "records": [
+    {
+      "word": "evidence",
+      "provisional_level": "A2",
+      "risk": "POSSIBLE_LEVEL_MISMATCH",
+      "evidence_note": "Academic/legal sense likely exceeds the provisional A2 placement; check sense-level CEFR before drafting.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "management",
+      "provisional_level": "A2",
+      "risk": "POSSIBLE_LEVEL_MISMATCH",
+      "evidence_note": "Organisational management sense requires explicit CEFR evidence before A2 placement.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "production",
+      "provisional_level": "A2",
+      "risk": "POSSIBLE_LEVEL_MISMATCH",
+      "evidence_note": "Industrial production sense may be above A2; no source-level approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "medical",
+      "provisional_level": "A2",
+      "risk": "POSSIBLE_LEVEL_MISMATCH",
+      "evidence_note": "Medical adjective may not match the provisional A2 level.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "performance",
+      "provisional_level": "A2",
+      "risk": "POLYSEMOUS_LEVEL_RISK",
+      "evidence_note": "Artistic performance and work-performance senses must not be conflated.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "industry",
+      "provisional_level": "A2",
+      "risk": "POSSIBLE_LEVEL_MISMATCH",
+      "evidence_note": "Economic-sector sense requires word-specific level review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "suggestion",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_LEVEL",
+      "evidence_note": "Common suggestion noun may be below C1; avoid assigning a false advanced level.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "instantly",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_LEVEL",
+      "evidence_note": "Common time adverb requires a word-specific CEFR check before C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "examine",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_LEVEL",
+      "evidence_note": "General inspect/test verb may be below C1 depending on sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "animation",
+      "provisional_level": "C1",
+      "risk": "POSSIBLE_LEVEL_MISMATCH",
+      "evidence_note": "Film/graphics noun may be lower than C1; verify exact sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "nightmare",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_LEVEL",
+      "evidence_note": "Bad-dream noun may be below C1; distinguish figurative usage.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "mixture",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_LEVEL",
+      "evidence_note": "Ordinary combination noun may be below C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "grain",
+      "provisional_level": "C1",
+      "risk": "POLYSEMOUS_LEVEL_RISK",
+      "evidence_note": "Food-grain and small-particle senses have different educational complexity.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "overnight",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_LEVEL",
+      "evidence_note": "Common time adverb/adjective may be below C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
