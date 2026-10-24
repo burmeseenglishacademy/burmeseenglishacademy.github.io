@@ -26,3 +26,16 @@ A2–C1: 1,400 unique written headwords; legacy 182 duplicate rows excluded. Pre
 - Independent source-based English/Myanmar/CEFR/example reviews: **0 approved**. No new CEFR audio generation or actual listening; no physical iPhone Safari test; no measured hosting budget confirmation; no live CEFR release.
 - `cefr-vocabulary-data.js` must stay empty, and the production 54 lessons, IELTS 1,000 bank, existing George/Emma recordings, privacy safeguards and `main` must remain untouched.
 - **Do not merge, publish, or notify as completed.**
+
+## Post-commit CI evidence (observed, not inferred)
+
+- Batch20 atomic staging content commit: [`38dfd3001ed99598696854ec4eb77a33aa69ccf4`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/38dfd3001ed99598696854ec4eb77a33aa69ccf4).
+- [Actual GitHub Actions run 40133472286](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40133472286): **completed / success**; individually fetched all five jobs and their decoded logs:
+  - A2 job `120989951572`: completed / success; structural PASS.
+  - B1 job `120989951561`: completed / success; structural PASS.
+  - B2 job `120989951506`: completed / success; structural PASS.
+  - C1 job `120989951582`: completed / success; structural PASS.
+  - ALL job `120989951635`: completed / success; `A2=366 B1=368 B2=366 C1=300 total=1400; independent approvals=0`, `A1-C1 written=1900; first drafts outstanding=3100; legacy duplicate rows=182`.
+- Read the real `main` branch metadata: production head was `dca0db7aa30118ecc18350db8dc406e6cac91554` at this inspection. Staging CEFR release file still has `entries:[]`.
+- **Limits:** These CI passes are structural only; they cannot establish sense-specific English correctness, natural Burmese, true CEFR levels, authentic listening quality, physical iPhone Safari behavior or GitHub Pages budget.
+- **Review blockers remain:** 3,100 unwritten first drafts, 5,000 independent editorial approvals, new CEFR George/Emma recordings plus listening, mobile/device and hosting verification, and confirmed production deployment. No merge, no new CEFR publication, no completion notification.
