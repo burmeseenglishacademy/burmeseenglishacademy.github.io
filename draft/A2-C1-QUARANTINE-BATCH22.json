@@ -1,0 +1,409 @@
+{
+  "schema": 1,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "created_on": "2026-10-25",
+  "independently_approved": 0,
+  "description": "40 distinct high-risk candidates held, not drafted or permanently rejected.",
+  "records": [
+    {
+      "word": "russian",
+      "provisional_level": "A2",
+      "risk": "CAPITALISATION_DEMONYM",
+      "evidence_note": "Nationality or language requires capitalization; lower-case candidate needs policy.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "california",
+      "provisional_level": "A2",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "US state name rather than ordinary learner headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "jesus",
+      "provisional_level": "A2",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Religious figure name rather than generic word.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "canada",
+      "provisional_level": "A2",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Country name and capitalization issue.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "france",
+      "provisional_level": "A2",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Country name and capitalization issue.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "earlier",
+      "provisional_level": "A2",
+      "risk": "COMPARATIVE_FORM",
+      "evidence_note": "Comparative of early may not justify independent lemma.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "conditions",
+      "provisional_level": "A2",
+      "risk": "INFLECTED_PLURAL",
+      "evidence_note": "Plural condition requires lemma and sense review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "numbers",
+      "provisional_level": "A2",
+      "risk": "NAMED_ENTITY_OR_PLURAL",
+      "evidence_note": "WordNet biblical title conflicts with plural noun.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "winning",
+      "provisional_level": "A2",
+      "risk": "GERUND_SENSE",
+      "evidence_note": "Nominalized present participle needs lemma policy.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "leading",
+      "provisional_level": "A2",
+      "risk": "WORDNET_SENSE_DRIFT",
+      "evidence_note": "WordNet typography sense differs from ordinary adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "canadian",
+      "provisional_level": "B1",
+      "risk": "CAPITALISATION_DEMONYM",
+      "evidence_note": "Nationality demonym requires capitalization.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "republican",
+      "provisional_level": "B1",
+      "risk": "CAPITALISATION_POLITICAL_SENSE",
+      "evidence_note": "Political party member versus generic ideology unclear.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "asian",
+      "provisional_level": "B1",
+      "risk": "CAPITALISATION_DEMONYM",
+      "evidence_note": "Demonym requires capitalization and POS review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "banks",
+      "provisional_level": "B1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "WordNet surname rather than plural common noun.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ben",
+      "provisional_level": "B1",
+      "risk": "PROPER_NAME_OR_REGIONAL_TERM",
+      "evidence_note": "Personal name versus Scottish hill sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "boston",
+      "provisional_level": "B1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "City name, not generic word.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "scotland",
+      "provisional_level": "B1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Country name, not generic word.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "teach",
+      "provisional_level": "B1",
+      "risk": "WORDNET_NAMED_ENTITY_COLLISION",
+      "evidence_note": "WordNet pirate surname conflicts with common verb.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "williams",
+      "provisional_level": "B1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Named singer or surname.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "italy",
+      "provisional_level": "B1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Country name, not generic word.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "anthony",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Personal or historical name.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "arthur",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Personal or historical name.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "dutch",
+      "provisional_level": "B2",
+      "risk": "CAPITALISATION_DEMONYM",
+      "evidence_note": "Language or nationality needs capitalization.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "mexican",
+      "provisional_level": "B2",
+      "risk": "CAPITALISATION_DEMONYM",
+      "evidence_note": "Nationality requires capitalization.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "tho",
+      "provisional_level": "B2",
+      "risk": "NONSTANDARD_OR_SPECIALIST",
+      "evidence_note": "Informal spelling conflicts with language name.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "columbia",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "River or named place.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "forth",
+      "provisional_level": "B2",
+      "risk": "WORDNET_NAMED_ENTITY_COLLISION",
+      "evidence_note": "River name conflicts with ordinary adverb.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "israeli",
+      "provisional_level": "B2",
+      "risk": "CAPITALISATION_DEMONYM",
+      "evidence_note": "Demonym requires capitalization.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "pennsylvania",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "US state name.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "sweden",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Country name.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "watson",
+      "provisional_level": "C1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Named engineer or surname.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ukrainian",
+      "provisional_level": "C1",
+      "risk": "CAPITALISATION_DEMONYM",
+      "evidence_note": "Language or demonym needs capitalization.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "madison",
+      "provisional_level": "C1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "President or personal name.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "tyler",
+      "provisional_level": "C1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "President or personal name.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "hitler",
+      "provisional_level": "C1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Historical person name.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "benjamin",
+      "provisional_level": "C1",
+      "risk": "NAMED_ENTITY_OR_SPECIALIST",
+      "evidence_note": "Personal name versus rare resin sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "blake",
+      "provisional_level": "C1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Named poet and artist.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "kent",
+      "provisional_level": "C1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "County or proper name.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "maine",
+      "provisional_level": "C1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "US state name.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "manhattan",
+      "provisional_level": "C1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Named borough of New York.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
