@@ -1,0 +1,20 @@
+name: CEFR candidate quarantine audit (never deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - .github/workflows/cefr-quarantine-qa.yml
+      - tools/audit_cefr_quarantine.py
+      - draft/A2-C1-CANDIDATE-QUARANTINE.json
+      - draft/A2-C1-EDITORIAL-STARTER.json
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  holdout-validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fail if held candidates are drafted or marked approved
+        run: python3 tools/audit_cefr_quarantine.py
