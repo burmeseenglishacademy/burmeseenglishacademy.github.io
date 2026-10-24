@@ -26,8 +26,8 @@ def audit(level):
     assert Counter(e["level"] for e in batch["entries"])==EXPECTED
     assert Counter(e["provisional_level"] for e in tasks["entries"])==EXPECTED
     assert batch["counts_by_provisional_level"]==EXPECTED
-    assert len({e["word"] for e in batch["entries"]})==42
-    assert len({e["example_sentence"] for e in batch["entries"]})==42
+    assert len({e["word"] for e in batch["entries"]})==60
+    assert len({e["example_sentence"] for e in batch["entries"]})==60
     assert len({e["word"] for e in holds["records"]})==12
     held={e["word"] for e in holds["records"]}|{e["word"] for e in old_holds["records"]}|{e["word"] for e in prior_holds["records"]}
     assert len(held)==len(holds["records"])+len(old_holds["records"])+len(prior_holds["records"]), "Overlapping quarantine records"
@@ -36,10 +36,10 @@ def audit(level):
     assert len(pool)==5000
     earlier=[e for p in FILES[:-1] for e in load(p)["entries"]]
     already={e["word"] for e in earlier}
-    assert not ({e["word"] for e in batch["entries"]}&already), "Batch14 duplicates previous drafts"
+    assert not ({e["word"] for e in batch["entries"]}&already), "Batch15 duplicates previous drafts"
     assert not ({e["word"] for e in batch["entries"]}&held), "Quarantined candidate drafted"
     review={e["word"]:e for e in tasks["entries"]}
-    assert len(review)==42
+    assert len(review)==60
     for item in batch["entries"]:
         if level!="ALL" and item["level"]!=level: continue
         word=item["word"]
@@ -62,7 +62,7 @@ def audit(level):
         byword=defaultdict(list)
         for path in FILES:
             for row in load(path)["entries"]: byword[row["word"]].append(row)
-        assert len(byword)==1168,(len(byword),"expected 1108 unique A2-C1 draft headwords")
+        assert len(byword)==1168,(len(byword),"expected 1168 unique A2-C1 draft headwords")
         assert Counter(rs[0]["level"] for rs in byword.values())=={"A2":298,"B1":296,"B2":298,"C1":276}
         conflicts=[w for w,rs in byword.items() if any((r["level"],r["part_of_speech"],r["english_definition"],r["burmese_meaning"],r["example_sentence"])!=(rs[0]["level"],rs[0]["part_of_speech"],rs[0]["english_definition"],rs[0]["burmese_meaning"],rs[0]["example_sentence"]) for r in rs[1:])]
         assert not conflicts,("conflicting duplicate draft content",conflicts[:10])
