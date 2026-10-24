@@ -9,6 +9,8 @@ def audit(level):
  d=read("draft/A2-C1-EDITORIAL-BATCH21.json")
  t=read("draft/A2-C1-REVIEW-TASKS-BATCH21.json")
  q=read("draft/A2-C1-QUARANTINE-BATCH21.json")
+ pool={x["word"]:x for x in read("draft/UNVERIFIED_CEFR_CANDIDATES.json")["entries"]}
+ assert len(pool)==5000
  assert d["release_status"]==q["release_status"]=="UNVERIFIED_DRAFT_DO_NOT_PUBLISH"
  assert t["release_status"]=="UNVERIFIED_REVIEW_TASKS_DO_NOT_PUBLISH"
  assert t["source_pages_not_yet_checked"] is True
@@ -18,6 +20,8 @@ def audit(level):
  assert d["counts_by_provisional_level"]=={"A2":16,"B1":14,"B2":12,"C1":4}
  assert len({x["word"] for x in d["entries"]})==len({x["example_sentence"] for x in d["entries"]})==46
  assert len(q["records"])==len({x["word"] for x in q["records"]})==20
+ assert all(x["word"] in pool and pool[x["word"]]["level"]==x["provisional_level"] for x in q["records"])
+ assert all(x["risk"] and x["evidence_note"] and x["source_observed"] is False and x["reviewed_independently"] is False and x["release_approved"] is False for x in q["records"])
  previous=["draft/A2-C1-EDITORIAL-STARTER.json"]+[f"draft/A2-C1-EDITORIAL-BATCH{i:02d}.json" for i in range(9,21)]
  prior=[x for p in previous for x in read(p)["entries"]]
  assert not {x["word"] for x in prior}&{x["word"] for x in d["entries"]}
@@ -32,6 +36,7 @@ def audit(level):
   if level!="ALL" and x["level"]!=level:continue
   w=x["word"]
   assert re.fullmatch("[a-z]{3,}",w),w
+  assert w in pool and pool[w]["level"]==x["level"],("candidate-level mismatch",w,x["level"],pool.get(w,{}).get("level"))
   assert len(x["english_definition"].strip())>=25,w
   assert re.search(r"[\u1000-\u109f]",x["burmese_meaning"]),w
   assert re.search(r"(?<![a-z])"+re.escape(w)+r"(?![a-z])",x["example_sentence"].lower()),w
