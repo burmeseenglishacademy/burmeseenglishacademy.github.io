@@ -38,6 +38,8 @@ def audit(drafts,candidates,evidence):
         errors.append("Candidate pool missing records or duplicate words")
     if len(drafts_by_word)!=len(rows):
         errors.append("Duplicate editorial starter headwords")
+    if len({r.get("example_sentence") for r in rows})!=len(rows):
+        errors.append("Duplicate example sentences across editorial drafts")
     for e in rows:
         word=e.get("word","")
         if not re.fullmatch(r"[a-z]+(?:'[a-z]+)?",word):
@@ -64,6 +66,8 @@ def audit(drafts,candidates,evidence):
         ex=e.get("example_sentence","")
         if not ex or not ex[0].isupper() or ex[-1] not in ".?!":
             errors.append(f"{word}: incomplete example punctuation")
+        if word.lower() not in ex.lower():
+            errors.append(f"{word}: example does not contain headword spelling or inflection")
         if len(ex)>180 or len(e.get("english_definition",""))>300:
             errors.append(f"{word}: example or definition too long")
         if not e.get("source_note","").startswith("Original draft"):
