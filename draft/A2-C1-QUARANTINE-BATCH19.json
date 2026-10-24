@@ -1,0 +1,209 @@
+{
+  "schema": 1,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "created_on": "2026-10-25",
+  "independently_approved": 0,
+  "description": "20 additional candidate holds; these are not permanently rejected.",
+  "records": [
+    {
+      "word": "saw",
+      "provisional_level": "A2",
+      "risk": "WORDNET_MISMATCH",
+      "evidence_note": "Proverb noun in WordNet vs common past of see or cutting tool.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "british",
+      "provisional_level": "A2",
+      "risk": "NATIONALITY_CAPITALIZATION",
+      "evidence_note": "Nationality requires capitalization and level/sense review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "china",
+      "provisional_level": "A2",
+      "risk": "PROPER_NOUN",
+      "evidence_note": "Country vs china tableware; candidate capitalization and sense conflict.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "led",
+      "provisional_level": "A2",
+      "risk": "ACRONYM_HOMOGRAPH",
+      "evidence_note": "LED lighting acronym vs past tense of lead.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "lost",
+      "provisional_level": "A2",
+      "risk": "INFLECTED_FORM",
+      "evidence_note": "Adjective or past participle of lose; WordNet noun is unsuitable.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "frank",
+      "provisional_level": "B1",
+      "risk": "PROPER_NOUN_HOMOGRAPH",
+      "evidence_note": "Historical Frank vs adjective frank or personal name.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "mexico",
+      "provisional_level": "B1",
+      "risk": "PROPER_NOUN",
+      "evidence_note": "Country name; not a lower-case lexical headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "dry",
+      "provisional_level": "B1",
+      "risk": "WORDNET_MISMATCH",
+      "evidence_note": "WordNet prohibitionist noun vs everyday adjective dry.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "till",
+      "provisional_level": "B1",
+      "risk": "WORDNET_MISMATCH",
+      "evidence_note": "Glacial sediment noun vs until or cash drawer.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "japanese",
+      "provisional_level": "B1",
+      "risk": "NATIONALITY_CAPITALIZATION",
+      "evidence_note": "Nationality/language must be capitalized; headword policy pending.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "georgia",
+      "provisional_level": "B2",
+      "risk": "PROPER_NOUN",
+      "evidence_note": "Geographic name with multiple referents.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "luke",
+      "provisional_level": "B2",
+      "risk": "PROPER_NOUN",
+      "evidence_note": "Person or biblical name rather than general lexical headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "waters",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY_FIRST_SENSE",
+      "evidence_note": "WordNet actress vs plural of water; lexical policy unclear.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ceo",
+      "provisional_level": "B2",
+      "risk": "ACRONYM",
+      "evidence_note": "Requires CEO capitalization and abbreviation policy.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "egypt",
+      "provisional_level": "B2",
+      "risk": "PROPER_NOUN",
+      "evidence_note": "Country name not a lower-case general word.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "orleans",
+      "provisional_level": "C1",
+      "risk": "PROPER_NOUN",
+      "evidence_note": "Place name; inappropriate generic CEFR lexical entry.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "samuel",
+      "provisional_level": "C1",
+      "risk": "PROPER_NOUN",
+      "evidence_note": "Personal/biblical name.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "mar",
+      "provisional_level": "C1",
+      "risk": "WORDNET_MISMATCH",
+      "evidence_note": "WordNet month abbreviation vs verb meaning damage.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "colored",
+      "provisional_level": "C1",
+      "risk": "OUTDATED_OFFENSIVE_SENSE",
+      "evidence_note": "Offensive historical nominal usage; needs usage and safeguarding review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "lied",
+      "provisional_level": "C1",
+      "risk": "WORDNET_MISMATCH",
+      "evidence_note": "German art-song noun vs past tense of lie.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
