@@ -1,0 +1,25 @@
+name: CEFR batch08 parallel editorial queue QA (never deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - draft/A2-C1-EDITORIAL-STARTER.json
+      - draft/A2-C1-REVIEW-TASKS-BATCH08.json
+      - draft/A2-C1-CANDIDATE-QUARANTINE.json
+      - tools/audit_cefr_batch08_review_tasks.py
+      - .github/workflows/cefr-batch08-review-qa.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  level-review-integrity:
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A2, B1, B2, C1, ALL]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Structural QA only — no source or audio approval, never publish
+        run: python3 tools/audit_cefr_batch08_review_tasks.py --level ${{ matrix.level }}
