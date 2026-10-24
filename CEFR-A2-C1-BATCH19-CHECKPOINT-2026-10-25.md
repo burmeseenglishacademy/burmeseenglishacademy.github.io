@@ -27,3 +27,11 @@ A2–C1 has 1,348 unique written headwords; 182 identical legacy duplicate rows 
 - No independent source-based English/Myanmar/CEFR/example approval; no actual audio listening; no physical iPhone Safari validation; no verified hosting limits or production deployment.
 - Production 54 lessons, IELTS 1000 bank, existing George/Emma audio and privacy are untouched. The release CEFR dataset remains empty.
 - No notification, merge, or live deployment is warranted.
+
+
+## Post-commit verified execution evidence
+- Batch19 content/QA commit: [`73850fdbdc873aa62bfe0bd86c6a5ab81bfd7afb`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/73850fdbdc873aa62bfe0bd86c6a5ab81bfd7afb).
+- Future-proof candidate preview exclusion commit: [`fbc0bd4fef74abf542da4def8d89aa75c5e7221b`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/fbc0bd4fef74abf542da4def8d89aa75c5e7221b); now discovers all present `A2-C1-EDITORIAL-BATCH*.json` files rather than a fixed range.
+- [Actual batch19 GitHub Actions run 40129420765](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40129420765): **completed / success**. Read actual job statuses and logs for **all five jobs**: A2 `120977745979`, B1 `120977746138`, B2 `120977746119`, C1 `120977746120`, ALL `120977746100`, all **completed / success**.
+- ALL job log: `A2=350 B1=352 B2=350 C1=296 total=1348; independent approvals=0`; `A1-C1 written=1848; first drafts outstanding=3152; legacy duplicate rows=182`; `40 drafts, 20 holds, zero approvals; no audio/deploy`.
+- **Scope:** These are automated structural checks, not independent lexical, Myanmar-language, CEFR, audio-listening or physical-device validation. No production merge occurred.
