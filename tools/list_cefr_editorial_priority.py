@@ -12,11 +12,17 @@ root=Path(__file__).resolve().parents[1]
 pool=json.loads((root/'draft/UNVERIFIED_CEFR_CANDIDATES.json').read_text('utf8'))
 drafts=json.loads((root/'draft/A2-C1-EDITORIAL-STARTER.json').read_text('utf8'))
 evidence=json.loads((root/'draft/A2-C1-SOURCE-EVIDENCE-REVIEW.json').read_text('utf8'))
+quarantine=json.loads((root/'draft/A2-C1-CANDIDATE-QUARANTINE.json').read_text('utf8'))
+assert quarantine['release_status']=='UNVERIFIED_DRAFT_DO_NOT_PUBLISH'
+held={x['word'] for x in quarantine['records']}
+assert len(held)==len(quarantine['records'])
+assert all(x['release_approved'] is False for x in quarantine['records'])
 assert pool['release_status']==drafts['release_status']==evidence['release_status']=='UNVERIFIED_DRAFT_DO_NOT_PUBLISH'
 assert len(pool['entries'])==5000
 seen={x['word'] for x in drafts['entries']}
 conflicts={x['word'] for x in evidence['records'] if x['provisional_level_conflicts_with_source']}
-exclude={'trump','pussy','bible','congress','democrat','soviet','indian','irish','gay'}
+exclude={'trump','pussy','bible','congress','democrat','soviet','indian','irish','gay','shit','fuck','porn'}
+inflected={'years','men','found','lost','given','older','greater','worse','fed','aged','fell','eggs','loads','rates','laws','names','details','days','times','things','seats','roads','being','going','using'}
 named=re.compile(r'(?:United States|English (?:actor|actress|admiral|writer|engineer)|American (?:actor|actress|writer|politician)|a (?:city|town|state|country|republic|continent|university) (?:in|of)|the largest .* city|named after)',re.I)
 for level, quota in [('A2',700),('B1',1000),('B2',1300),('C1',1500)]:
     rows=[x for x in pool['entries'] if x['level']==level]
@@ -29,6 +35,8 @@ for level, quota in [('A2',700),('B1',1000),('B2',1300),('C1',1500)]:
         clue=row.get('english_definition_draft','')
         reasons=[]
         if w in conflicts: reasons.append('SOURCE_LEVEL_CONFLICT')
+        if w in held: reasons.append('QUARANTINED_WORD_SPECIFIC_RISK')
+        if w in inflected: reasons.append('INFLECTED_FORM_NEEDS_LEMMA_REVIEW')
         if w in exclude: reasons.append('REGISTER_OR_NAMED_ENTITY')
         if not re.fullmatch(r'[a-z]{3,}',w): reasons.append('FORM_OR_ABBREVIATION')
         if re.search(r'(ing|ed|s)$',w) and len(w)>5: reasons.append('MORPHOLOGICAL_FORM')
@@ -39,4 +47,5 @@ for level, quota in [('A2',700),('B1',1000),('B2',1300),('C1',1500)]:
     for i in range(0,min(100,len(safe)),10):
         print('  '+', '.join(safe[i:i+10]))
     print(f'{level} deferred {len(deferred)} candidate forms for extra sense review (not rejected).')
+print(f'Explicitly quarantined headwords: {len(held)} (never automatically approved).')
 print('DISCLAIMER: ALL words and provisional CEFR levels remain unverified. No automatic publication.')
