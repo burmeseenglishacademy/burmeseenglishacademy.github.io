@@ -1,0 +1,33 @@
+name: CEFR A2-C1 parallel batch QC (never deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - .github/workflows/cefr-parallel-level-qa.yml
+      - tools/qa_cefr_level.py
+      - draft/A2-C1-EDITORIAL-STARTER.json
+      - draft/A2-C1-SOURCE-EVIDENCE-REVIEW.json
+      - draft/UNVERIFIED_CEFR_CANDIDATES.json
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  level-qa:
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A2, B1, B2, C1]
+    name: QA ${{ matrix.level }} editorial drafts
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Draft and source-evidence validation (no independent approval)
+        run: python3 tools/qa_cefr_level.py --level '${{ matrix.level }}'
+      - name: Archive staging-only per-level QA record
+        uses: actions/upload-artifact@v4
+        with:
+          name: CEFR-${{ matrix.level }}-UNVERIFIED-QA
+          path: scratch/cefr-level-qa/${{ matrix.level }}.json
+          if-no-files-found: error
+          retention-days: 14
