@@ -13,7 +13,7 @@ Scope: CEFR A1–C1 5,000-word project. **No production publication.**
 ## Tests actually executed
 - A2–C1 draft structural/source-evidence QA: **passed** on 424-draft commit. https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40062689729
 - Parallel per-level QA: **A2, B1, B2, C1 all passed** on 424-draft commit. https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40062689726
-- Quarantine QA passed on the **earlier 69-hold commit** in run https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40062689681 . A *new* quarantine check was triggered for the 87-hold commit at https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40062709196 ; it was **in progress at report creation**, so no success is claimed here.
+- Quarantine QA passed on the **earlier 69-hold commit** in run https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40062689681 . Quarantine QA for the **new 87-hold commit** subsequently **passed**: https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40062709196 . This validates holdout bookkeeping only, not lexical correctness.
 - All the above are code/structure checks only. They do **not** verify word sense, Burmese meaning, CEFR level, or audio pronunciation.
 
 ## Independent editorial and release gates
