@@ -1,0 +1,2571 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-24",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "release_status": "UNVERIFIED_REVIEW_TASKS_DO_NOT_PUBLISH",
+  "source_pages_not_yet_checked": true,
+  "independently_approved": 0,
+  "description": "Batch09: 80 original bilingual first-pass drafts, 20 per provisional A2/B1/B2/C1; all require independent sense, Myanmar, example, CEFR and real George/Emma listening review. C1 tier is explicitly unsupported.",
+  "entries": [
+    {
+      "word": "watch",
+      "provisional_level": "A2",
+      "part_of_speech": "verb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/watch",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "third",
+      "provisional_level": "A2",
+      "part_of_speech": "ordinal adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/third",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "development",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/development",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "form",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/form",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "further",
+      "provisional_level": "A2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/further",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "act",
+      "provisional_level": "A2",
+      "part_of_speech": "verb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/act",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "political",
+      "provisional_level": "A2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/political",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "quite",
+      "provisional_level": "A2",
+      "part_of_speech": "adverb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/quite",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "west",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/west",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "final",
+      "provisional_level": "A2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/final",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "former",
+      "provisional_level": "A2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/former",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "current",
+      "provisional_level": "A2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/current",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "program",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/program",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "type",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/type",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "action",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/action",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "board",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/board",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "field",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/field",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "instead",
+      "provisional_level": "A2",
+      "part_of_speech": "adverb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/instead",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "moment",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/moment",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "department",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/department",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "twice",
+      "provisional_level": "B1",
+      "part_of_speech": "adverb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/twice",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "brand",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/brand",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "cent",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/cent",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "count",
+      "provisional_level": "B1",
+      "part_of_speech": "verb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/count",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "fourth",
+      "provisional_level": "B1",
+      "part_of_speech": "ordinal adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/fourth",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "mental",
+      "provisional_level": "B1",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/mental",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "mostly",
+      "provisional_level": "B1",
+      "part_of_speech": "adverb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/mostly",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "owner",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/owner",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "previously",
+      "provisional_level": "B1",
+      "part_of_speech": "adverb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/previously",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "realize",
+      "provisional_level": "B1",
+      "part_of_speech": "verb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/realize",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "totally",
+      "provisional_level": "B1",
+      "part_of_speech": "adverb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/totally",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "click",
+      "provisional_level": "B1",
+      "part_of_speech": "verb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/click",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "estate",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/estate",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "faith",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/faith",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "fashion",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/fashion",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "fund",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/fund",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "hill",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/hill",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "metal",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/metal",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "profile",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/profile",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "pull",
+      "provisional_level": "B1",
+      "part_of_speech": "verb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/pull",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "primarily",
+      "provisional_level": "B2",
+      "part_of_speech": "adverb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/primarily",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "relative",
+      "provisional_level": "B2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/relative",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "circuit",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/circuit",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "defend",
+      "provisional_level": "B2",
+      "part_of_speech": "verb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/defend",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "healthcare",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/healthcare",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "impressive",
+      "provisional_level": "B2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/impressive",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "membership",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/membership",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "province",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/province",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "argue",
+      "provisional_level": "B2",
+      "part_of_speech": "verb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/argue",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "element",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/element",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "extension",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/extension",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "moral",
+      "provisional_level": "B2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/moral",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "offensive",
+      "provisional_level": "B2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/offensive",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "package",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/package",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "railway",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/railway",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "server",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/server",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "shock",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/shock",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "silence",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/silence",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "superior",
+      "provisional_level": "B2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/superior",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "administrative",
+      "provisional_level": "B2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "CHECK_SENSE_SPECIFIC_CEFR",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/administrative",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": null
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "ultra",
+      "provisional_level": "C1",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_RECLASSIFICATION_RISK",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/ultra",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": "UNSUPPORTED_C1_PROVISIONAL_TIER_REQUIRES_SOURCE_RECLASSIFICATION"
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "nasty",
+      "provisional_level": "C1",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_RECLASSIFICATION_RISK",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/nasty",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": "UNSUPPORTED_C1_PROVISIONAL_TIER_REQUIRES_SOURCE_RECLASSIFICATION"
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "nonsense",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_RECLASSIFICATION_RISK",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/nonsense",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": "UNSUPPORTED_C1_PROVISIONAL_TIER_REQUIRES_SOURCE_RECLASSIFICATION"
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "highlight",
+      "provisional_level": "C1",
+      "part_of_speech": "verb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_RECLASSIFICATION_RISK",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/highlight",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": "UNSUPPORTED_C1_PROVISIONAL_TIER_REQUIRES_SOURCE_RECLASSIFICATION"
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "detective",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_RECLASSIFICATION_RISK",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/detective",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": "UNSUPPORTED_C1_PROVISIONAL_TIER_REQUIRES_SOURCE_RECLASSIFICATION"
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "mentally",
+      "provisional_level": "C1",
+      "part_of_speech": "adverb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_RECLASSIFICATION_RISK",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/mentally",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": "UNSUPPORTED_C1_PROVISIONAL_TIER_REQUIRES_SOURCE_RECLASSIFICATION"
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "radar",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_RECLASSIFICATION_RISK",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/radar",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": "UNSUPPORTED_C1_PROVISIONAL_TIER_REQUIRES_SOURCE_RECLASSIFICATION"
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "bulk",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_RECLASSIFICATION_RISK",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/bulk",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": "UNSUPPORTED_C1_PROVISIONAL_TIER_REQUIRES_SOURCE_RECLASSIFICATION"
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "congressional",
+      "provisional_level": "C1",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_RECLASSIFICATION_RISK",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/congressional",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": "UNSUPPORTED_C1_PROVISIONAL_TIER_REQUIRES_SOURCE_RECLASSIFICATION"
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "destiny",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_RECLASSIFICATION_RISK",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/destiny",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": "UNSUPPORTED_C1_PROVISIONAL_TIER_REQUIRES_SOURCE_RECLASSIFICATION"
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "distant",
+      "provisional_level": "C1",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_RECLASSIFICATION_RISK",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/distant",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": "UNSUPPORTED_C1_PROVISIONAL_TIER_REQUIRES_SOURCE_RECLASSIFICATION"
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "adopt",
+      "provisional_level": "C1",
+      "part_of_speech": "verb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_RECLASSIFICATION_RISK",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/adopt",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": "UNSUPPORTED_C1_PROVISIONAL_TIER_REQUIRES_SOURCE_RECLASSIFICATION"
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "blade",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_RECLASSIFICATION_RISK",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/blade",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": "UNSUPPORTED_C1_PROVISIONAL_TIER_REQUIRES_SOURCE_RECLASSIFICATION"
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "transit",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_RECLASSIFICATION_RISK",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/transit",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": "UNSUPPORTED_C1_PROVISIONAL_TIER_REQUIRES_SOURCE_RECLASSIFICATION"
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "villa",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_RECLASSIFICATION_RISK",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/villa",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": "UNSUPPORTED_C1_PROVISIONAL_TIER_REQUIRES_SOURCE_RECLASSIFICATION"
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "communicate",
+      "provisional_level": "C1",
+      "part_of_speech": "verb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_RECLASSIFICATION_RISK",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/communicate",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": "UNSUPPORTED_C1_PROVISIONAL_TIER_REQUIRES_SOURCE_RECLASSIFICATION"
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "creator",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_RECLASSIFICATION_RISK",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/creator",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": "UNSUPPORTED_C1_PROVISIONAL_TIER_REQUIRES_SOURCE_RECLASSIFICATION"
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "poet",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_RECLASSIFICATION_RISK",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/poet",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": "UNSUPPORTED_C1_PROVISIONAL_TIER_REQUIRES_SOURCE_RECLASSIFICATION"
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "backup",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_RECLASSIFICATION_RISK",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/backup",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": "UNSUPPORTED_C1_PROVISIONAL_TIER_REQUIRES_SOURCE_RECLASSIFICATION"
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    },
+    {
+      "word": "slight",
+      "provisional_level": "C1",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_RECLASSIFICATION_RISK",
+      "english_definition_review": {
+        "task": "Independently verify exact dictionary sense and POS; record observed page text, date and reviewer.",
+        "completed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/slight",
+        "source_observed": false
+      },
+      "burmese_review": {
+        "task": "Independent Burmese editor checks exact sense, naturalness and register.",
+        "completed": false,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent reviewer checks grammar, collocation and intended sense.",
+        "completed": false
+      },
+      "cefr_review": {
+        "task": "Verify sense-specific CEFR from reliable evidence; reclassify or quarantine unsupported tier.",
+        "completed": false,
+        "provisional_level_risk": "UNSUPPORTED_C1_PROVISIONAL_TIER_REQUIRES_SOURCE_RECLASSIFICATION"
+      },
+      "audio_review": {
+        "task": "Only after approval, generate George and Emma word/example audio and actually listen; verify real iPhone Safari.",
+        "completed": false
+      },
+      "release_approved": false
+    }
+  ]
+}
