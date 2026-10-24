@@ -29,3 +29,9 @@
 ## Commits and tests
 - This report is created in the same atomic staging commit as batch11; inspect GitHub branch commit and actual Actions run/job logs after commit. No job is claimed passed before GitHub reports success.
 - If a check fails, record the failure and repair on staging only. Do not merge unverified content.
+
+## Actual initial QA failures and repairs
+- Initial content commit `1cfdfe177b4e24ff1788c2250d88aa08bb066234` produced batch11 five-job run `40095304427`: **FAILURE** due an incorrectly escaped regex in the new test script. The script was corrected in `4e294f5b06738172c3aaa0dbb0472a32bd8d33ea`; a rerun was queued.
+- Existing quarantine audit run `40095304229`: **FAILURE** because its allowlist did not yet recognise the newly documented unsupported-provisional-C1 hold category; this commit adds a constrained category and C1 assertion.
+- Existing bilingual structural run `40095304209`: **FAILURE** because batch11 provenance text started with 'Original editorial' instead of the required 'Original draft'; this commit aligns the note while preserving the explicit unverified warning.
+- No green job or editorial approval is inferred from a source-code repair. Inspect the corrected push's GitHub Actions statuses and logs separately.

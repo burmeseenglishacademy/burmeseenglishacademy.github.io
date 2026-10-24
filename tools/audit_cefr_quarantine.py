@@ -13,7 +13,8 @@ ROOT=Path(__file__).resolve().parents[1]
 LEVELS={"A2","B1","B2","C1"}
 CONFLICT="CAMBRIDGE_SENSE_LEVEL_CONFLICT"
 RISKS={CONFLICT,"WORDNET_FIRST_SENSE_WRONG_FOR_COMMON_USAGE",
-       "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY"}
+       "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+       "PROVISIONAL_C1_LIKELY_LOWER_OR_UNSUPPORTED"}
 
 def main():
     q=json.loads((ROOT/"draft/A2-C1-CANDIDATE-QUARANTINE.json").read_text("utf8"))
@@ -34,6 +35,8 @@ def main():
         assert e["provisional_level"] in LEVELS
         assert e["provisional_level"]==inventory[w]["level"], "candidate level changed: "+w
         assert e["risk"] in RISKS and e["evidence_note"].strip()
+        if e["risk"]=="PROVISIONAL_C1_LIKELY_LOWER_OR_UNSUPPORTED":
+            assert e["provisional_level"]=="C1", "new level hold must target provisional C1"
         assert e["action"]=="HOLD_FOR_MANUAL_REVIEW"
         assert e["release_approved"] is False and e["reviewed_independently"] is False
         types[e["risk"]]+=1
