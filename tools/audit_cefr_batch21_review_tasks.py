@@ -22,7 +22,7 @@ def audit(level):
  prior=[x for p in previous for x in read(p)["entries"]]
  assert not {x["word"] for x in prior}&{x["word"] for x in d["entries"]}
  holds=["draft/A2-C1-CANDIDATE-QUARANTINE.json"]+[f"draft/A2-C1-QUARANTINE-BATCH{i:02d}.json" for i in range(14,22)]
- held=[x for p in holds for x in read(p)["records"]]
+ held=[x["word"] for p in holds for x in read(p)["records"]]
  assert len(held)==len(set(held))
  assert not set(held)&{x["word"] for x in prior+d["entries"]}
  assert all(x["reviewed_independently"] is False and x["release_approved"] is False for p in holds for x in read(p)["records"])
