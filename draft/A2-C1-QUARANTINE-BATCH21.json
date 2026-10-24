@@ -1,0 +1,209 @@
+{
+  "schema": 1,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "created_on": "2026-10-25",
+  "independently_approved": 0,
+  "description": "20 candidate holds; not drafted, reviewed or approved.",
+  "records": [
+    {
+      "word": "years",
+      "provisional_level": "A2",
+      "risk": "INFLECTED_PLURAL_OR_SPECIAL_SENSE",
+      "evidence_note": "Plural of year; WordNet late-life sense not a clear independent CEFR headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "being",
+      "provisional_level": "A2",
+      "risk": "GRAMMATICAL_FORM_AND_SENSE",
+      "evidence_note": "Gerund/present participle of be versus philosophical noun; requires POS policy.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "god",
+      "provisional_level": "A2",
+      "risk": "CAPITALISATION_RELIGIOUS_SENSE",
+      "evidence_note": "Generic deity versus proper capitalized God; needs editorial capitalization policy.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "times",
+      "provisional_level": "A2",
+      "risk": "INFLECTED_PLURAL_OR_SPECIAL_SENSE",
+      "evidence_note": "Plural time versus mathematical multiplication or era; weak standalone selection.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "older",
+      "provisional_level": "B1",
+      "risk": "COMPARATIVE_FORM",
+      "evidence_note": "Comparative old, not a distinct lexical headword without morphology policy.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "telling",
+      "provisional_level": "B1",
+      "risk": "GERUND_FORM",
+      "evidence_note": "WordNet act-of-narration sense may not justify separate learner headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "harry",
+      "provisional_level": "B1",
+      "risk": "PROPER_NAME_VERB_HOMOGRAPH",
+      "evidence_note": "Verb to harry vs capitalized personal name Harry; usage frequency unreliable.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "johnson",
+      "provisional_level": "B1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Surname and named biography, not generic lexical headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "irish",
+      "provisional_level": "B2",
+      "risk": "CAPITALIZATION_NATIONALITY",
+      "evidence_note": "Irish must be capitalized; candidate lowercasing is unsafe.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "fed",
+      "provisional_level": "B2",
+      "risk": "WORDNET_LAW_ENFORCEMENT_SLANG",
+      "evidence_note": "WordNet slang federal agent vs past form of feed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "semi",
+      "provisional_level": "B2",
+      "risk": "ABBREVIATION_AND_POLYSEMY",
+      "evidence_note": "Semi can mean semifinal, semi-detached house or lorry; sense and level unclear.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "korean",
+      "provisional_level": "B2",
+      "risk": "CAPITALIZATION_NATIONALITY",
+      "evidence_note": "Korean must be capitalized for language or nationality.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "latin",
+      "provisional_level": "B2",
+      "risk": "CAPITALIZATION_LANGUAGE",
+      "evidence_note": "Latin language name must be capitalized.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "victoria",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Proper name or place, not a lowercase general vocabulary item.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "mama",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_THAN_PROVISIONAL",
+      "evidence_note": "Common family term is implausibly assigned C1 by frequency tier.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ultra",
+      "provisional_level": "C1",
+      "risk": "BOUND_FORM_OR_SPECIALISED_SENSE",
+      "evidence_note": "Prefix or informal adjective; WordNet sense is unsuitable without context.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "beats",
+      "provisional_level": "C1",
+      "risk": "PLURAL_AND_NAMED_SUBCULTURE",
+      "evidence_note": "Plural of beat versus historical Beats subculture; capitalization required.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "stole",
+      "provisional_level": "C1",
+      "risk": "HOMOGRAPH_INFLECTED_VERB",
+      "evidence_note": "Past tense of steal versus clothing noun stole; level and sense unclear.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "louisiana",
+      "provisional_level": "C1",
+      "risk": "PROPER_NOUN",
+      "evidence_note": "US state name requires capitalization and is not generic C1 vocabulary.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "cole",
+      "provisional_level": "C1",
+      "risk": "WORDNET_RARE_SENSE",
+      "evidence_note": "Rare vegetable term risks confusion with proper surname; low priority for C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
