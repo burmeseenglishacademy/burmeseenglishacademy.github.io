@@ -1,0 +1,209 @@
+{
+  "schema": 1,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "created_on": "2026-10-25",
+  "independently_approved": 0,
+  "description": "20 new candidate holds; sense, proper-noun, morphology, and tier issues require evidence; not counted as drafts.",
+  "records": [
+    {
+      "word": "born",
+      "provisional_level": "A2",
+      "risk": "NAMED_ENTITY_FIRST_SENSE",
+      "evidence_note": "WordNet physicist surname vs adjective/past participle born.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "french",
+      "provisional_level": "A2",
+      "risk": "CAPITALIZATION_LANGUAGE",
+      "evidence_note": "French is a language or nationality requiring capitalization.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "entire",
+      "provisional_level": "A2",
+      "risk": "WORDNET_MISMATCH",
+      "evidence_note": "WordNet horse noun vs everyday adjective meaning whole.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "non",
+      "provisional_level": "A2",
+      "risk": "BOUND_PREFIX",
+      "evidence_note": "Usually a bound prefix; WordNet adverb sense unsuitable.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "super",
+      "provisional_level": "A2",
+      "risk": "WORDNET_MISMATCH",
+      "evidence_note": "Apartment caretaker noun vs common informal adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "henry",
+      "provisional_level": "B1",
+      "risk": "PROPER_NAME_UNIT_COLLISION",
+      "evidence_note": "Personal name vs SI unit henry; distinguish capitalization.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "jones",
+      "provisional_level": "B1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "WordNet biography rather than a general headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "lee",
+      "provisional_level": "B1",
+      "risk": "NAMED_ENTITY_HOMOGRAPH",
+      "evidence_note": "Person name vs sheltered side of something.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "britain",
+      "provisional_level": "B1",
+      "risk": "PROPER_NOUN_CAPITALIZATION",
+      "evidence_note": "Geographical proper name requires capital B.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "spanish",
+      "provisional_level": "B1",
+      "risk": "CAPITALIZATION_LANGUAGE",
+      "evidence_note": "Language or nationality requires capital S.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "illinois",
+      "provisional_level": "B2",
+      "risk": "PROPER_NOUN",
+      "evidence_note": "US state name not a lower-case general headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "harris",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "WordNet person biography, not generic vocabulary.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "kelly",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "WordNet named individual; no general sense established.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "dna",
+      "provisional_level": "B2",
+      "risk": "ACRONYM_CAPITALIZATION",
+      "evidence_note": "DNA acronym requires uppercase and separate policy.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "greek",
+      "provisional_level": "B2",
+      "risk": "CAPITALIZATION_LANGUAGE",
+      "evidence_note": "Greek language or nationality requires capitalization.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "cia",
+      "provisional_level": "C1",
+      "risk": "ACRONYM_NAMED_ENTITY",
+      "evidence_note": "CIA organization acronym, not lower-case common noun.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "louisiana",
+      "provisional_level": "C1",
+      "risk": "PROPER_NOUN",
+      "evidence_note": "US state name; lower-case candidate unsuitable.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "stanley",
+      "provisional_level": "C1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "WordNet individual biography rather than generic word.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "turner",
+      "provisional_level": "C1",
+      "risk": "NAMED_ENTITY_FIRST_SENSE",
+      "evidence_note": "WordNet named historical figure vs ordinary occupational noun.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ram",
+      "provisional_level": "C1",
+      "risk": "ACRONYM_HOMOGRAPH",
+      "evidence_note": "RAM computer memory acronym vs male sheep or striking device.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
