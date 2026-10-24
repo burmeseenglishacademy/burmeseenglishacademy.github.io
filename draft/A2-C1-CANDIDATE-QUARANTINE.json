@@ -905,6 +905,186 @@
       "action": "HOLD_FOR_MANUAL_REVIEW",
       "reviewed_independently": false,
       "release_approved": false
+    },
+    {
+      "word": "london",
+      "provisional_level": "A2",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Heuristic candidate triage only (not a dictionary observation): Capital-city proper name; do not treat a geographic name as a general A2 lexical sense.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "america",
+      "provisional_level": "A2",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Heuristic candidate triage only (not a dictionary observation): Geographic proper name; inclusion requires explicit proper-noun curriculum policy.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "paris",
+      "provisional_level": "B1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Heuristic candidate triage only (not a dictionary observation): City proper name, not a general learner word sense.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "usa",
+      "provisional_level": "B1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Heuristic candidate triage only (not a dictionary observation): Country abbreviation/proper name; acronym and pronunciation need a separate policy.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "mary",
+      "provisional_level": "B1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Heuristic candidate triage only (not a dictionary observation): Personal given name; WordNet-first-sense treatment is not general vocabulary.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "israel",
+      "provisional_level": "B1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Heuristic candidate triage only (not a dictionary observation): Country proper name; requires geographic-name curriculum policy.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "jack",
+      "provisional_level": "B1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Heuristic candidate triage only (not a dictionary observation): Ambiguous given name versus common noun/tool sense; first WordNet sense is not safe without review.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "mike",
+      "provisional_level": "B1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Heuristic candidate triage only (not a dictionary observation): Ambiguous personal name versus informal microphone noun; require explicit sense/POS review.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "elizabeth",
+      "provisional_level": "B2",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Heuristic candidate triage only (not a dictionary observation): Personal given name/royal historical entity rather than a general B2 headword.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "miami",
+      "provisional_level": "B2",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Heuristic candidate triage only (not a dictionary observation): City proper name; not a general vocabulary sense.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "jason",
+      "provisional_level": "B2",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Heuristic candidate triage only (not a dictionary observation): Personal name or mythological figure; not a general lexical sense.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "roman",
+      "provisional_level": "B2",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Heuristic candidate triage only (not a dictionary observation): Demonym, historical person or typography adjective/noun; proper-name and sense ambiguity.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "marks",
+      "provisional_level": "B2",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Heuristic candidate triage only (not a dictionary observation): Plural/inflected form or surname; requires lemma and first-sense disambiguation.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "leo",
+      "provisional_level": "C1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Heuristic candidate triage only (not a dictionary observation): Personal name or zodiac sign; no justified general C1 placement.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "bobby",
+      "provisional_level": "C1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Heuristic candidate triage only (not a dictionary observation): Personal nickname or colloquial common noun; unsupported C1 tier and sense ambiguity.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ron",
+      "provisional_level": "C1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Heuristic candidate triage only (not a dictionary observation): Personal given name; not a general C1 learner sense.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "robinson",
+      "provisional_level": "C1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Heuristic candidate triage only (not a dictionary observation): Surname or named entity; not general C1 vocabulary.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "jerusalem",
+      "provisional_level": "C1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Heuristic candidate triage only (not a dictionary observation): City proper name; unsupported general C1 level.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "glasgow",
+      "provisional_level": "C1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Heuristic candidate triage only (not a dictionary observation): City proper name; unsupported general C1 level.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "helen",
+      "provisional_level": "C1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Heuristic candidate triage only (not a dictionary observation): Personal given name; not a general C1 learner sense.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
     }
   ]
 }
