@@ -1,0 +1,26 @@
+name: CEFR batch13 five-way bilingual draft QA (never deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - draft/A2-C1-EDITORIAL-BATCH13.json
+      - draft/A2-C1-REVIEW-TASKS-BATCH13.json
+      - draft/A2-C1-EDITORIAL-STARTER.json
+      - draft/A2-C1-CANDIDATE-QUARANTINE.json
+      - tools/audit_cefr_batch13_review_tasks.py
+      - .github/workflows/cefr-batch13-review-qa.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  batch13-structure-only:
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A2, B1, B2, C1, ALL]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit batch13 draft and independent-review queue (not editorial approval)
+        run: python3 tools/audit_cefr_batch13_review_tasks.py --level ${{ matrix.level }}
