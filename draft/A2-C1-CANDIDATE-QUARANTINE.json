@@ -1,0 +1,199 @@
+{
+  "schema": 1,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "purpose": "Hold risky candidate entries out of automatic first-draft expansion. A flagged candidate is NOT permanently excluded; editorial reclassification/replacement is required.",
+  "created_on": "2026-10-24",
+  "evidence_sources": {
+    "cambridge": "Word-specific Cambridge search-index observations with explicit sense-level markers; direct page access returned HTTP 403.",
+    "candidate_clues": "Existing unverified first-WordNet-sense candidate pool; GitHub workflow run 40053153799 and 40053690807.",
+    "independent_review_performed": false
+  },
+  "records": [
+    {
+      "word": "government",
+      "provisional_level": "A2",
+      "risk": "CAMBRIDGE_SENSE_LEVEL_CONFLICT",
+      "source_sense_level": "B1",
+      "source_url": "https://dictionary.cambridge.org/dictionary/learner-english/government",
+      "evidence_note": "Government as the group controlling a country is marked B1 in Cambridge Learner's Dictionary.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "protein",
+      "provisional_level": "B2",
+      "risk": "CAMBRIDGE_SENSE_LEVEL_CONFLICT",
+      "source_sense_level": "C1",
+      "source_url": "https://dictionary.cambridge.org/dictionary/english/protein",
+      "evidence_note": "Protein as a food/body substance is marked C1 in Cambridge Advanced Learner's Dictionary.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "toxic",
+      "provisional_level": "C1",
+      "risk": "CAMBRIDGE_SENSE_LEVEL_CONFLICT",
+      "source_sense_level": "B2",
+      "source_url": "https://dictionary.cambridge.org/dictionary/english/toxic",
+      "evidence_note": "Toxic in the poisonous sense is marked B2 in Cambridge Advanced Learner's Dictionary.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "it's",
+      "provisional_level": "A2",
+      "risk": "WORDNET_FIRST_SENSE_WRONG_FOR_COMMON_USAGE",
+      "evidence_note": "Candidate lexical clue describes IT technology rather than the contraction 'it is' or 'it has'.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "he's",
+      "provisional_level": "A2",
+      "risk": "WORDNET_FIRST_SENSE_WRONG_FOR_COMMON_USAGE",
+      "evidence_note": "Candidate lexical clue describes helium rather than the contraction 'he is' or 'he has'.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "let",
+      "provisional_level": "A2",
+      "risk": "WORDNET_FIRST_SENSE_WRONG_FOR_COMMON_USAGE",
+      "evidence_note": "Candidate lexical clue describes an acronym for an armed group, not the common verb 'allow'.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "sweet",
+      "provisional_level": "B1",
+      "risk": "WORDNET_FIRST_SENSE_WRONG_FOR_COMMON_USAGE",
+      "evidence_note": "Candidate lexical clue describes a historical phonetician, not the common adjective or food noun.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "glad",
+      "provisional_level": "B1",
+      "risk": "WORDNET_FIRST_SENSE_WRONG_FOR_COMMON_USAGE",
+      "evidence_note": "Candidate lexical clue describes gladiolus plants, not the common adjective 'pleased'.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "thus",
+      "provisional_level": "B1",
+      "risk": "WORDNET_FIRST_SENSE_WRONG_FOR_COMMON_USAGE",
+      "evidence_note": "Candidate lexical clue describes aromatic resin, not the adverb 'therefore'.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "roads",
+      "provisional_level": "B2",
+      "risk": "WORDNET_FIRST_SENSE_WRONG_FOR_COMMON_USAGE",
+      "evidence_note": "Candidate lexical clue describes a sheltered anchorage, not the ordinary plural of 'road'.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "russia",
+      "provisional_level": "B1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Country name rather than general-purpose vocabulary lemma.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "africa",
+      "provisional_level": "B1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Continent name rather than general-purpose vocabulary lemma.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "manchester",
+      "provisional_level": "B2",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Place name; candidate lexical clue selects Manchester in New Hampshire.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "albert",
+      "provisional_level": "C1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Personal name; candidate lexical clue refers to Prince Albert.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "mitchell",
+      "provisional_level": "C1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Surname; candidate lexical clue refers to an aeronautical engineer.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "john",
+      "provisional_level": "A2",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Common personal name; verify whether it belongs in general vocabulary inventory.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "google",
+      "provisional_level": "B1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Brand/company name or verb; needs headword/licensing and POS review.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "carolina",
+      "provisional_level": "B2",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Geographical name; not a typical general-purpose learner headword.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "jordan",
+      "provisional_level": "B2",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "Personal or country name; lexical identity must be resolved.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "baltimore",
+      "provisional_level": "C1",
+      "risk": "POSSIBLE_PROPER_NOUN_IN_GENERAL_VOCABULARY",
+      "evidence_note": "City name; check curriculum suitability before drafting.",
+      "action": "HOLD_FOR_MANUAL_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
