@@ -1,0 +1,129 @@
+{
+  "schema": 1,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "created_on": "2026-10-25",
+  "description": "12 provisional holds for proper names, polysemy, demonyms, political entities and unsupported CEFR placement; no verified rejections.",
+  "independently_approved": 0,
+  "records": [
+    {
+      "word": "american",
+      "provisional_level": "A2",
+      "risk": "PROPER_DEMONYM_SENSE",
+      "evidence_note": "Nationality adjective/noun requires sense and level-specific source review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "president",
+      "provisional_level": "A2",
+      "risk": "POSSIBLE_LEVEL_MISMATCH",
+      "evidence_note": "Political office sense should not inherit A2 solely from frequency.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "federal",
+      "provisional_level": "A2",
+      "risk": "POSSIBLE_LEVEL_MISMATCH",
+      "evidence_note": "Constitutional government adjective likely exceeds A2.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "military",
+      "provisional_level": "A2",
+      "risk": "POSSIBLE_LEVEL_MISMATCH",
+      "evidence_note": "Military adjective/noun senses require distinct level evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "trump",
+      "provisional_level": "B1",
+      "risk": "PROPER_NAME_AND_COMMON_NOUN",
+      "evidence_note": "Potential surname versus card-game verb/noun; disambiguate before drafting.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "congress",
+      "provisional_level": "B1",
+      "risk": "POLITICAL_INSTITUTION_SENSE",
+      "evidence_note": "US institution versus generic assembly; proper-noun usage risk.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "christian",
+      "provisional_level": "B1",
+      "risk": "RELIGION_DEMONYM_SENSE",
+      "evidence_note": "Capitalised identity adjective/noun and level require review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "thomas",
+      "provisional_level": "B1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Given name or surname is not a general learner headword without a justified curriculum purpose.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "soviet",
+      "provisional_level": "B2",
+      "risk": "HISTORICAL_PROPER_ADJECTIVE",
+      "evidence_note": "Capitalised historical adjective and sense-level evidence require review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "olympic",
+      "provisional_level": "B2",
+      "risk": "PROPER_ADJECTIVE",
+      "evidence_note": "Capitalised Olympics-related adjective requires level and naming review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "democrat",
+      "provisional_level": "C1",
+      "risk": "POLITICAL_PARTY_OR_COMMON_NOUN",
+      "evidence_note": "Generic advocate versus party member and capitalisation require review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "gop",
+      "provisional_level": "C1",
+      "risk": "ACRONYM_NAMED_ENTITY",
+      "evidence_note": "US political acronym should not be treated as an ordinary C1 lexical headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
