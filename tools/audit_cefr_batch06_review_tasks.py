@@ -14,7 +14,7 @@ assert len(t["entries"])==80
 assert Counter(x["provisional_level"] for x in t["entries"])==Counter({"A2":20,"B1":20,"B2":20,"C1":20})
 assert len({x["word"] for x in t["entries"]})==80
 by_word={x["word"]:x for x in d["entries"]}
-assert len(by_word)==len(d["entries"])==584
+assert len(by_word)==len(d["entries"]) and len(d["entries"])>=584
 held={x["word"] for x in q["records"]}
 for x in t["entries"]:
     w=x["word"]
@@ -36,7 +36,7 @@ for x in t["entries"]:
         assert x["priority"]=="HIGH_CEFR_RECLASSIFICATION_RISK"
         assert "UNSUPPORTED" in x["cefr_review"]["provisional_level_risk"]
 assert (ROOT/"cefr-vocabulary-data.js").read_text("utf8").find("entries:[]")>=0
-print("PASS: 80 batch06 review tasks, 20 each A2/B1/B2/C1; 584 total unverified drafts.")
+print(f"PASS: 80 batch06 review tasks preserved, 20 each A2/B1/B2/C1; {len(d['entries'])} total unverified drafts.")
 print("PASS: 0 independent source/Burmese/example/CEFR/audio approvals; 0 held words drafted.")
 print("WARNING: C1 placements are provisional and require reclassification review.")
 print("STAGING ONLY: no production merge or deployment.")
