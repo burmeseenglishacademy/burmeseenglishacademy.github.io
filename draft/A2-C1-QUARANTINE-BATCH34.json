@@ -1,0 +1,836 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-25",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "independently_approved": 0,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "description": "Reversible batch34 candidate holds based on provisional pool clue; not independent dictionary or CEFR evidence. Includes two removed draft candidates.",
+  "counts_by_provisional_level": {
+    "A2": 13,
+    "B1": 26,
+    "B2": 28,
+    "C1": 15
+  },
+  "records": [
+    {
+      "word": "taking",
+      "provisional_level": "A2",
+      "risk": "INFLECTED_NOMINALISATION",
+      "evidence_note": "Pool sense is a nominalised action; verify whether this belongs as a separate headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "dead",
+      "provisional_level": "A2",
+      "risk": "COLLECTIVE_NOUN_SPECIAL_SENSE",
+      "evidence_note": "Pool sense is the collective dead, not the beginner adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "whatever",
+      "provisional_level": "A2",
+      "risk": "WORDNET_POS_DETERMINER_AMBIGUITY",
+      "evidence_note": "Common determiner use conflicts with provisional adjective classification.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "european",
+      "provisional_level": "A2",
+      "risk": "DEMONYM_AND_PROVISIONAL_TIER",
+      "evidence_note": "Geographic identity term requires case, category and level policy.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "parts",
+      "provisional_level": "A2",
+      "risk": "SPECIALISED_SENSE_MISMATCH",
+      "evidence_note": "Pool defines local surroundings, not ordinary pieces of something.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "base",
+      "provisional_level": "A2",
+      "risk": "MILITARY_SPECIALISED_SENSE",
+      "evidence_note": "Pool refers to military installation, not everyday base.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ahead",
+      "provisional_level": "A2",
+      "risk": "UNUSUAL_ADJECTIVE_SENSE",
+      "evidence_note": "Pool labels a predicative contest-leading sense as adjective; verify POS and tier.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "beat",
+      "provisional_level": "A2",
+      "risk": "POLICE_ROUTE_SPECIAL_SENSE",
+      "evidence_note": "Pool refers to a patrol officer's regular route, not common beat.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "costs",
+      "provisional_level": "A2",
+      "risk": "LEGAL_PLURAL_SENSE",
+      "evidence_note": "Pool sense is court-awarded legal costs, not everyday prices.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "fit",
+      "provisional_level": "A2",
+      "risk": "TANTRUM_SPECIAL_SENSE",
+      "evidence_note": "Pool refers to a burst of bad temper, not ordinary physical fitness.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "pro",
+      "provisional_level": "A2",
+      "risk": "INFORMAL_REGISTER_AND_TIER",
+      "evidence_note": "Pool refers to a paid professional athlete; A2 tier unsubstantiated.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "administration",
+      "provisional_level": "A2",
+      "risk": "ABSTRACT_SENSE_TIER_RISK",
+      "evidence_note": "Management method sense unlikely to be securely assigned A2 without evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "sex",
+      "provisional_level": "A2",
+      "risk": "SENSE_SPECIFIC_LEVEL_RISK",
+      "evidence_note": "Pool specifically selects intercourse rather than biological sex; needs age-appropriate register and level review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "pop",
+      "provisional_level": "B1",
+      "risk": "INFORMAL_FATHER_SENSE",
+      "evidence_note": "Pool chooses informal father, not music or sound; needs register and tier check.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "sitting",
+      "provisional_level": "B1",
+      "risk": "PHOTOGRAPHY_SPECIAL_SENSE",
+      "evidence_note": "Pool refers to posing for a portrait, not ordinary sitting.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "keeping",
+      "provisional_level": "B1",
+      "risk": "ABSTRACT_NOMINAL_SENSE",
+      "evidence_note": "Pool defines harmony/conformity rather than the usual verb.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "african",
+      "provisional_level": "B1",
+      "risk": "DEMONYM_LEVEL_POLICY",
+      "evidence_note": "Continental demonym needs proper-name/identity handling and CEFR source.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "larger",
+      "provisional_level": "B1",
+      "risk": "INFLECTED_COMPARATIVE",
+      "evidence_note": "Comparative form should not be assumed a distinct CEFR lemma.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "smaller",
+      "provisional_level": "B1",
+      "risk": "INFLECTED_COMPARATIVE",
+      "evidence_note": "Comparative form should not be assumed a distinct CEFR lemma.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "greatest",
+      "provisional_level": "B1",
+      "risk": "INFLECTED_SUPERLATIVE",
+      "evidence_note": "Superlative form should not be assumed a distinct CEFR lemma.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "bitch",
+      "provisional_level": "B1",
+      "risk": "OFFENSIVE_REGISTER_WORDNET",
+      "evidence_note": "Potentially derogatory expression; pool clue and teaching context require careful review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "knowing",
+      "provisional_level": "B1",
+      "risk": "ABSTRACT_NOMINAL_SENSE",
+      "evidence_note": "Pool uses a rare nominal mental-apprehension sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "bigger",
+      "provisional_level": "B1",
+      "risk": "INFLECTED_COMPARATIVE",
+      "evidence_note": "Comparative form duplicates a common adjective lemma.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "elements",
+      "provisional_level": "B1",
+      "risk": "FIGURATIVE_WEATHER_SENSE",
+      "evidence_note": "Pool means harsh weather rather than chemical elements.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "legs",
+      "provisional_level": "B1",
+      "risk": "FIGURATIVE_ENDURANCE_SENSE",
+      "evidence_note": "Pool means stamina, not body parts; level and usage need review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "developing",
+      "provisional_level": "B1",
+      "risk": "PHOTOGRAPHY_TECHNICAL_SENSE",
+      "evidence_note": "Pool refers to processing film, not ordinary development.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "italian",
+      "provisional_level": "B1",
+      "risk": "DEMONYM_LEVEL_POLICY",
+      "evidence_note": "Nationality label requires lexical policy and independent level evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "letters",
+      "provisional_level": "B1",
+      "risk": "LITERARY_CULTURE_SPECIAL_SENSE",
+      "evidence_note": "Pool refers to literature or literary culture, not mail or alphabet.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "friendly",
+      "provisional_level": "B1",
+      "risk": "MILITARY_NOMINAL_SENSE",
+      "evidence_note": "Pool means allied military forces, not the everyday adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "lay",
+      "provisional_level": "B1",
+      "risk": "ARCHAIC_SONG_NOUN",
+      "evidence_note": "Pool defines an old-style narrative song, not common verb lay.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "falls",
+      "provisional_level": "B1",
+      "risk": "BOTANICAL_SPECIAL_SENSE",
+      "evidence_note": "Pool refers to drooping iris petals, not waterfalls.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "passing",
+      "provisional_level": "B1",
+      "risk": "AMERICAN_FOOTBALL_SPECIAL_SENSE",
+      "evidence_note": "Pool describes a football play, not ordinary passing.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "daniel",
+      "provisional_level": "B1",
+      "risk": "NAMED_ENTITY_BIBLICAL",
+      "evidence_note": "Pool names a biblical person rather than general vocabulary.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "iran",
+      "provisional_level": "B1",
+      "risk": "NAMED_ENTITY_COUNTRY",
+      "evidence_note": "Pool defines a country name, not a common lexical headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "virginia",
+      "provisional_level": "B1",
+      "risk": "NAMED_ENTITY_US_STATE",
+      "evidence_note": "Pool defines a US state.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ohio",
+      "provisional_level": "B1",
+      "risk": "NAMED_ENTITY_US_STATE",
+      "evidence_note": "Pool defines a US state.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "fields",
+      "provisional_level": "B1",
+      "risk": "NAMED_ENTITY_PERSON",
+      "evidence_note": "Pool selects a named American entertainer, not plural fields.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "don",
+      "provisional_level": "B1",
+      "risk": "SPANISH_TITLE_SPECIAL_SENSE",
+      "evidence_note": "Pool selects Spanish honorific rather than common English forms.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "dumb",
+      "provisional_level": "B2",
+      "risk": "OUTDATED_DEROGATORY_WORDNET",
+      "evidence_note": "Pool definition describes people as lacking intellectual ability; review respectful register.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "eggs",
+      "provisional_level": "B2",
+      "risk": "INFLECTED_PLURAL",
+      "evidence_note": "Plural food noun should be considered against lemma egg.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "bullshit",
+      "provisional_level": "B2",
+      "risk": "PROFANITY_REGISTER",
+      "evidence_note": "Obscene term and learner-level suitability require special editorial policy.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "colors",
+      "provisional_level": "B2",
+      "risk": "FLAG_SPECIAL_SENSE",
+      "evidence_note": "Pool refers to national colours or flag, not ordinary colours.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "thick",
+      "provisional_level": "B2",
+      "risk": "RARE_NOMINAL_SENSE",
+      "evidence_note": "Pool uses the thick of something, not common adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "hearts",
+      "provisional_level": "B2",
+      "risk": "CARD_GAME_SPECIAL_SENSE",
+      "evidence_note": "Pool means a card game, not anatomical hearts.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "picking",
+      "provisional_level": "B2",
+      "risk": "HARVEST_NOMINAL_SENSE",
+      "evidence_note": "Pool selects quantity of harvest rather than ordinary picking.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "alright",
+      "provisional_level": "B2",
+      "risk": "NONSTANDARD_OR_VARIANT_SPELLING",
+      "evidence_note": "Pool clue calls this nonstandard; review UK spelling policy.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "islam",
+      "provisional_level": "B2",
+      "risk": "RELIGION_VS_CIVILISATION_SENSE",
+      "evidence_note": "Pool describes civilisation collectively, not religion; verify respectful precise sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "lowest",
+      "provisional_level": "B2",
+      "risk": "INFLECTED_SUPERLATIVE",
+      "evidence_note": "Superlative form should not be a standalone CEFR lemma without rationale.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "annoying",
+      "provisional_level": "B2",
+      "risk": "NOMINAL_VS_ADJECTIVE_SENSE",
+      "evidence_note": "Pool treats annoying as noun rather than common adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "insane",
+      "provisional_level": "B2",
+      "risk": "PATHOLOGISING_OUTDATED_WORDNET",
+      "evidence_note": "Pool mental-health definition requires respectful usage and evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "nowhere",
+      "provisional_level": "B2",
+      "risk": "UNUSUAL_NOUN_SENSE",
+      "evidence_note": "Pool uses insignificant place, not common adverb.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "smooth",
+      "provisional_level": "B2",
+      "risk": "RARE_NOMINAL_SENSE",
+      "evidence_note": "Pool noun is the act of smoothing, not common adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "abroad",
+      "provisional_level": "B2",
+      "risk": "POS_MISMATCH_ADJECTIVE",
+      "evidence_note": "Pool labels abroad adjective despite usual adverb usage.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "narrow",
+      "provisional_level": "B2",
+      "risk": "RARE_WATERWAY_NOUN",
+      "evidence_note": "Pool selects a narrow strait, not common adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "findings",
+      "provisional_level": "B2",
+      "risk": "SPECIALISED_CRAFT_TOOLS",
+      "evidence_note": "Pool means craft supplies, not research findings.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "wayne",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY_PERSON",
+      "evidence_note": "Pool selects an actor's surname.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "anderson",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY_PERSON",
+      "evidence_note": "Pool selects a named author.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "walter",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY_PERSON",
+      "evidence_note": "Pool selects a named conductor.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "wisconsin",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY_RIVER",
+      "evidence_note": "Pool selects a named US river.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "carter",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY_PERSON",
+      "evidence_note": "Pool selects an Egyptologist's surname.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "johnny",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY_HISTORICAL_NICKNAME",
+      "evidence_note": "Pool defines a historical proper-name nickname.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "masters",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY_PERSON",
+      "evidence_note": "Pool selects a named poet.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "oct",
+      "provisional_level": "B2",
+      "risk": "MONTH_ABBREVIATION",
+      "evidence_note": "Pool abbreviation for October is not an independent headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "sept",
+      "provisional_level": "B2",
+      "risk": "MONTH_ABBREVIATION",
+      "evidence_note": "Pool abbreviation for September is not an independent headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "rio",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY_CITY",
+      "evidence_note": "Pool selects Rio de Janeiro, a named place.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "seed",
+      "provisional_level": "B2",
+      "risk": "WORDNET_SENSE_BOTANICAL_MISMATCH",
+      "evidence_note": "Pool defines a small hard fruit, while ordinary seed is a different botanical category; removed from batch34 draft.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "supporting",
+      "provisional_level": "B1",
+      "risk": "UNNATURAL_NOMINALISATION",
+      "evidence_note": "Pool treats supporting as a standalone noun; original batch34 example was stilted and removed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "bug",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_EVERYDAY_SENSE",
+      "evidence_note": "Pool chooses common insect noun, not independently evidenced C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "corn",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_EVERYDAY_SENSE",
+      "evidence_note": "Pool defines common crop, not independently evidenced C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "carpet",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_EVERYDAY_SENSE",
+      "evidence_note": "Pool defines common floor covering, not independently evidenced C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "collecting",
+      "provisional_level": "C1",
+      "risk": "GERUND_NOMINALISATION",
+      "evidence_note": "Pool selects the act of collecting; lemma/level needs review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "sadly",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_ADVERB",
+      "evidence_note": "Pool chooses everyday adverb, not independently evidenced C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "cinema",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_EVERYDAY_SENSE",
+      "evidence_note": "Pool describes film medium, not independently evidenced C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "classroom",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_EVERYDAY_SENSE",
+      "evidence_note": "Pool describes school classroom, not independently evidenced C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "norway",
+      "provisional_level": "C1",
+      "risk": "NAMED_ENTITY_COUNTRY",
+      "evidence_note": "Pool selects a country name.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "rachel",
+      "provisional_level": "C1",
+      "risk": "NAMED_ENTITY_BIBLICAL",
+      "evidence_note": "Pool selects a named biblical person.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "swift",
+      "provisional_level": "C1",
+      "risk": "NAMED_ENTITY_PERSON",
+      "evidence_note": "Pool selects an industrialist surname, not adjective swift.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "wallet",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_EVERYDAY_SENSE",
+      "evidence_note": "Pool describes common wallet, not independently evidenced C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "sheriff",
+      "provisional_level": "C1",
+      "risk": "LEVEL_AND_CULTURE_SPECIFIC_SENSE",
+      "evidence_note": "US county law-enforcement title needs cultural context and C1 evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "diabetes",
+      "provisional_level": "C1",
+      "risk": "MEDICAL_TERM_LEVEL_UNSUPPORTED",
+      "evidence_note": "Valid medical term but provisional C1 tier has no source support.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "tobacco",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_EVERYDAY_SENSE",
+      "evidence_note": "Pool describes tobacco leaves; C1 tier unsubstantiated.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "patrol",
+      "provisional_level": "C1",
+      "risk": "MILITARY_SPECIALISED_SENSE",
+      "evidence_note": "Pool refers to security/reconnaissance detachment, not general patrol; C1 tier needs evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
