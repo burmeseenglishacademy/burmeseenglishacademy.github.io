@@ -1,0 +1,17 @@
+name: CEFR batch33 candidate preview (staging only; never deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - .github/workflows/cefr-batch33-candidate-preview.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  next-candidates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: List unheld and undrafted candidate clues by level (not CEFR evidence)
+        run: python3 tools/list_cefr_next_candidates.py --limit 65
