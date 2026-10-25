@@ -82,6 +82,9 @@ def audit(level):
         task = taskmap[word]
         assert task["provisional_level"] == row["level"] and task["part_of_speech"] == row["part_of_speech"], word
         assert task["review_status"] == "PENDING_INDEPENDENT_REVIEW" and task["release_approved"] is False, word
+        assert task["cefr_review"]["provisional_level_risk"] == row["editorial_risk"], word
+        if row["editorial_risk"] != "WORDNET_SENSE_AND_LEVEL_REQUIRES_SOURCE_CHECK":
+            assert task["priority"] == "HIGH_PRIORITY_SENSE_OR_CEFR_TIER_MISMATCH_REVIEW", word
         for key in ("english_definition_review", "burmese_review", "example_review", "cefr_review"):
             assert task[key]["completed"] is False and task[key]["reviewer"] is None, word
             assert task[key]["observed_evidence"] is None, word
