@@ -1,0 +1,26 @@
+name: CEFR batch29 parallel draft and quarantine QA (never deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - draft/A2-C1-EDITORIAL-BATCH29.json
+      - draft/A2-C1-REVIEW-TASKS-BATCH29.json
+      - draft/A2-C1-QUARANTINE-BATCH29.json
+      - tools/audit_cefr_batch29_review_tasks.py
+      - .github/workflows/cefr-batch29-review-qa.yml
+      - CEFR-A2-C1-BATCH29-CHECKPOINT-2026-10-25.md
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  level-structural-review:
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A2, B1, B2, C1, ALL]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check unpublished batch29 drafts and quarantine
+        run: python3 tools/audit_cefr_batch29_review_tasks.py --level ${{ matrix.level }}

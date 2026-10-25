@@ -1,0 +1,169 @@
+{
+  "schema": 1,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "created_on": "2026-10-25",
+  "independently_approved": 0,
+  "description": "16 reversible holds for named entities, wrong WordNet senses, rare POS and unsupported candidates.",
+  "records": [
+    {
+      "word": "paul",
+      "provisional_level": "A2",
+      "risk": "NAMED_PERSON",
+      "evidence_note": "WordNet describes a named historical individual, not a general learner headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "india",
+      "provisional_level": "A2",
+      "risk": "NAMED_COUNTRY",
+      "evidence_note": "Lowercase country name; named entity and capitalization require a separate proper-name policy.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "specific",
+      "provisional_level": "A2",
+      "risk": "WRONG_POS_WORDNET_SENSE",
+      "evidence_note": "Candidate is noun 'a fact about some part'; common learner use is adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "despite",
+      "provisional_level": "A2",
+      "risk": "WRONG_POS_WORDNET_SENSE",
+      "evidence_note": "Candidate noun denotes contempt; everyday despite is a preposition.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "shoes",
+      "provisional_level": "B1",
+      "risk": "WRONG_WORDNET_SENSE",
+      "evidence_note": "Candidate clue is a rare figurative situation, not footwear plural.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "willing",
+      "provisional_level": "B1",
+      "risk": "RARE_NOUN_SENSE",
+      "evidence_note": "Candidate noun is the act of choosing; common learner adjective differs.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "girlfriend",
+      "provisional_level": "B1",
+      "risk": "WORDNET_SENSE_MISMATCH",
+      "evidence_note": "WordNet female friend clue risks confusion with romantic partner sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "domestic",
+      "provisional_level": "B1",
+      "risk": "RARE_NOUN_SENSE",
+      "evidence_note": "WordNet paid servant noun differs from common adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "judges",
+      "provisional_level": "B2",
+      "risk": "NAMED_SCRIPTURAL_BOOK",
+      "evidence_note": "Candidate WordNet sense refers to a biblical book rather than judges in court.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "mum",
+      "provisional_level": "B2",
+      "risk": "WORDNET_SENSE_ERROR",
+      "evidence_note": "WordNet botanical clue 'of China' is unusable for British mother noun.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "organic",
+      "provisional_level": "B2",
+      "risk": "SPECIALIST_NOUN_SENSE",
+      "evidence_note": "WordNet fertilizer noun differs from common organic adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "iraq",
+      "provisional_level": "B2",
+      "risk": "NAMED_COUNTRY",
+      "evidence_note": "Country name requires capitalization and a proper-name inclusion policy.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "gentle",
+      "provisional_level": "C1",
+      "risk": "RARE_VERB_SENSE",
+      "evidence_note": "WordNet verb means placate; common learner adjective differs.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "partial",
+      "provisional_level": "C1",
+      "risk": "SPECIALIST_MATH_NOUN",
+      "evidence_note": "WordNet partial derivative noun is specialist and not general learner sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "thai",
+      "provisional_level": "C1",
+      "risk": "NAMED_NATIONALITY",
+      "evidence_note": "Lowercase demonym requires capitalization and proper-name policy.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "crush",
+      "provisional_level": "C1",
+      "risk": "OBSCURE_WORDNET_SENSE",
+      "evidence_note": "WordNet leather-grain noun is obscure and unsuitable without evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
