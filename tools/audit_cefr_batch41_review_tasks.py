@@ -54,7 +54,8 @@ def audit(level):
         assert x["audio_review"]["completed"] is False and x["audio_review"]["real_listening"] is False and x["audio_review"]["real_device_test"] is False,word
     for word,r in holds.items():
         assert word in pool and pool[word]["level"]==r["provisional_level"],word
-        assert r["reviewed_independently"] is False and r["release_approved"] is False,word\n        if r["source_observed"]: assert word=="finishing" and r["source_url"] and r["source_review_date"] and r["source_observation"],word
+        assert r["reviewed_independently"] is False and r["release_approved"] is False,word
+        if r["source_observed"]: assert word=="finishing" and r["source_url"] and r["source_review_date"] and r["source_observation"],word
     if level=="ALL":
         oldfiles=["draft/A2-C1-EDITORIAL-STARTER.json"]+[f"draft/A2-C1-EDITORIAL-BATCH{i:02d}.json" for i in range(9,41)]
         olddrafts={r["word"] for p in oldfiles for r in read(p)["entries"]}
