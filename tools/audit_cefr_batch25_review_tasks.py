@@ -17,7 +17,7 @@ def audit(level):
  assert d["independently_approved"]==t["independently_approved"]==q["independently_approved"]==0
  assert len(d["entries"])==len(t["entries"])==50
  assert Counter(x["level"] for x in d["entries"])=={"A2":14,"B1":14,"B2":16,"C1":6}
- assert d["counts_by_provisional_level"]=={"A2":14,"B1":14,"B2":14,"C1":6}
+ assert d["counts_by_provisional_level"]=={"A2":14,"B1":14,"B2":16,"C1":6}
  assert len({x["word"] for x in d["entries"]})==len({x["example_sentence"] for x in d["entries"]})==50
  assert len(q["records"])==len({x["word"] for x in q["records"]})==12
  assert all(x["word"] in pool and pool[x["word"]]["level"]==x["provisional_level"] for x in q["records"])
