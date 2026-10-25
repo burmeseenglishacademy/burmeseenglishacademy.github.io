@@ -1,0 +1,129 @@
+{
+  "schema": 1,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "created_on": "2026-10-25",
+  "independently_approved": 0,
+  "description": "12 reversible high-risk candidate holds, not source-adjudicated rejections.",
+  "records": [
+    {
+      "word": "working",
+      "provisional_level": "A2",
+      "risk": "GERUND_OR_SPECIALIST_NOUN",
+      "evidence_note": "WordNet clue describes a mine or quarry, not ordinary working as an activity.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "europe",
+      "provisional_level": "A2",
+      "risk": "PROPER_GEOGRAPHIC_ENTITY",
+      "evidence_note": "Continent name, not a generic vocabulary lemma; hold under named-entity policy.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "die",
+      "provisional_level": "A2",
+      "risk": "WORDNET_SENSE_COLLISION",
+      "evidence_note": "Candidate is a gaming cube noun, not the much more frequent verb 'die'.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "speaking",
+      "provisional_level": "B1",
+      "risk": "GERUND_NOT_BASE_LEMMA",
+      "evidence_note": "Noun from the act of speech; duplicate-family and curriculum lemma policy unresolved.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ill",
+      "provisional_level": "B1",
+      "risk": "RARE_NOUN_SENSE",
+      "evidence_note": "WordNet candidate is a noun for bodily disorder; common learner usage is adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "worse",
+      "provisional_level": "B1",
+      "risk": "COMPARATIVE_FORM_OR_RARE_NOUN",
+      "evidence_note": "Candidate is nominalised inferiority, not the common comparative adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "jimmy",
+      "provisional_level": "B2",
+      "risk": "PROPER_NAME_OR_SPECIALIST_TOOL",
+      "evidence_note": "Ambiguous given name versus specialist crowbar sense; unsuitable without evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ordinary",
+      "provisional_level": "B2",
+      "risk": "WORDNET_SPECIALIST_NOUN",
+      "evidence_note": "Candidate describes a probate judge, not the frequent adjective meaning.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "morgan",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "WordNet candidate describes a named anthropologist, not a generic learner word.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "pie",
+      "provisional_level": "C1",
+      "risk": "CEFR_TIER_IMPLAUSIBLY_HIGH",
+      "evidence_note": "Everyday food noun appears unsuitable for provisional C1; requires source-led re-tiering.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "soap",
+      "provisional_level": "C1",
+      "risk": "CEFR_TIER_IMPLAUSIBLY_HIGH",
+      "evidence_note": "Everyday washing product noun appears unsuitable for provisional C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "coin",
+      "provisional_level": "C1",
+      "risk": "CEFR_TIER_IMPLAUSIBLY_HIGH",
+      "evidence_note": "Common money noun appears unsuitable for provisional C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}

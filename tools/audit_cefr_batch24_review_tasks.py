@@ -1,0 +1,68 @@
+#!/usr/bin/env python3
+"""Batch24 fail-closed structural QA. Green checks do NOT verify language or CEFR."""
+import argparse,json,re
+from collections import Counter,defaultdict
+from pathlib import Path
+R=Path(__file__).resolve().parents[1]
+def read(p): return json.loads((R/p).read_text(encoding="utf-8"))
+def audit(level):
+ d=read("draft/A2-C1-EDITORIAL-BATCH24.json")
+ t=read("draft/A2-C1-REVIEW-TASKS-BATCH24.json")
+ q=read("draft/A2-C1-QUARANTINE-BATCH24.json")
+ pool={x["word"]:x for x in read("draft/UNVERIFIED_CEFR_CANDIDATES.json")["entries"]}
+ assert len(pool)==5000
+ assert d["release_status"]==q["release_status"]=="UNVERIFIED_DRAFT_DO_NOT_PUBLISH"
+ assert t["release_status"]=="UNVERIFIED_REVIEW_TASKS_DO_NOT_PUBLISH"
+ assert t["source_pages_not_yet_checked"] is True
+ assert d["independently_approved"]==t["independently_approved"]==q["independently_approved"]==0
+ assert len(d["entries"])==len(t["entries"])==48
+ assert Counter(x["level"] for x in d["entries"])=={"A2":14,"B1":14,"B2":14,"C1":6}
+ assert d["counts_by_provisional_level"]=={"A2":14,"B1":14,"B2":14,"C1":6}
+ assert len({x["word"] for x in d["entries"]})==len({x["example_sentence"] for x in d["entries"]})==48
+ assert len(q["records"])==len({x["word"] for x in q["records"]})==12
+ assert all(x["word"] in pool and pool[x["word"]]["level"]==x["provisional_level"] for x in q["records"])
+ assert all(x["risk"] and x["evidence_note"] and x["source_observed"] is False and x["reviewed_independently"] is False and x["release_approved"] is False for x in q["records"])
+ previous=["draft/A2-C1-EDITORIAL-STARTER.json"]+[f"draft/A2-C1-EDITORIAL-BATCH{i:02d}.json" for i in range(9,24)]
+ prior=[x for p in previous for x in read(p)["entries"]]
+ assert not {x["word"] for x in prior}&{x["word"] for x in d["entries"]}
+ holds=["draft/A2-C1-CANDIDATE-QUARANTINE.json"]+[f"draft/A2-C1-QUARANTINE-BATCH{i:02d}.json" for i in range(14,25)]
+ held=[x["word"] for p in holds for x in read(p)["records"]]
+ assert len(held)==len(set(held))
+ assert not set(held)&{x["word"] for x in prior+d["entries"]}
+ assert all(x["reviewed_independently"] is False and x["release_approved"] is False for p in holds for x in read(p)["records"])
+ taskmap={x["word"]:x for x in t["entries"]}
+ assert len(taskmap)==48
+ for x in d["entries"]:
+  if level!="ALL" and x["level"]!=level: continue
+  w=x["word"]
+  assert re.fullmatch("[a-z]{3,}",w),w
+  assert w in pool and pool[w]["level"]==x["level"],("candidate-level mismatch",w)
+  assert len(x["english_definition"].strip())>=25,w
+  assert {"n":"noun","v":"verb","a":"adjective","s":"adjective","r":"adverb"}[pool[w]["part_of_speech"]]==x["part_of_speech"],("candidate-POS mismatch",w)
+  assert re.search(r"[\u1000-\u109f]",x["burmese_meaning"]),w
+  assert re.search(r"(?<![a-z])"+re.escape(w)+r"(?![a-z])",x["example_sentence"].lower()),w
+  assert len(x["example_sentence"].strip())>=25,w
+  assert all(x[k] is False for k in ("reviewed_english","reviewed_burmese","reviewed_example","reviewed_level","reviewed_pronunciation")),w
+  assert all(x[k]=="" for k in ("source_english","source_burmese","source_level")),w
+  assert x["status"]=="AI_ASSISTED_DRAFT_PENDING_INDEPENDENT_REVIEW",w
+  y=taskmap[w]
+  assert y["provisional_level"]==x["level"] and y["part_of_speech"]==x["part_of_speech"],w
+  assert y["release_approved"] is False and y["review_status"]=="PENDING_INDEPENDENT_REVIEW",w
+  assert y["english_definition_review"]["source_observed"] is False,w
+  assert y["burmese_review"]["reviewer"] is None,w
+  assert all(y[k]["completed"] is False for k in ("english_definition_review","burmese_review","example_review","cefr_review","audio_review")),w
+ if level=="ALL":
+  byword=defaultdict(list)
+  for x in prior+d["entries"]:byword[x["word"]].append(x)
+  assert len(byword)==1615,len(byword)
+  assert Counter(v[0]["level"] for v in byword.values())=={"A2":432,"B1":432,"B2":425,"C1":326}
+  assert all(all((x["level"],x["part_of_speech"],x["english_definition"],x["burmese_meaning"],x["example_sentence"])==(v[0]["level"],v[0]["part_of_speech"],v[0]["english_definition"],v[0]["burmese_meaning"],v[0]["example_sentence"]) for x in v[1:]) for v in byword.values())
+  assert len(held)==375,len(held)
+  print("UNIQUE A2-C1 A2=432 B1=432 B2=425 C1=326 total=1615; independent approvals=0")
+  print("A1=500; A1-C1 written=2115; first drafts outstanding=2885; legacy duplicate rows=",sum(len(v)-1 for v in byword.values()))
+ assert "entries:[]" in (R/"cefr-vocabulary-data.js").read_text(encoding="utf-8")
+ print("STAGING ONLY batch24",level,"PASS: 48 drafts, 12 holds, zero approvals; no audio/deploy")
+if __name__=="__main__":
+ p=argparse.ArgumentParser()
+ p.add_argument("--level",choices=("A2","B1","B2","C1","ALL"),default="ALL")
+ audit(p.parse_args().level)
