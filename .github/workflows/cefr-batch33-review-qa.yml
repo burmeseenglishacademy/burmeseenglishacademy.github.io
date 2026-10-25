@@ -8,7 +8,6 @@ on:
       - draft/A2-C1-QUARANTINE-BATCH33.json
       - tools/audit_cefr_batch33_review_tasks.py
       - .github/workflows/cefr-batch33-review-qa.yml
-      - CEFR-A2-C1-BATCH33-CHECKPOINT-2026-10-25.md
   workflow_dispatch:
 permissions:
   contents: read
