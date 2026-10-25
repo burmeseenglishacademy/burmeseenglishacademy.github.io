@@ -4,7 +4,7 @@
   "branch": "cefr-5000-bilingual-qa-staging",
   "independently_approved": 0,
   "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
-  "description": "28 newly held candidate headwords from live undrafted/unheld preview; reversible and not source-verified.",
+  "description": "30 reversible new candidate holds, including two newly detected sense mismatches; no independent approval.",
   "records": [
     {
       "word": "pass",
@@ -281,6 +281,26 @@
       "provisional_level": "C1",
       "risk": "LIKELY_LOWER_CEFR_TIER",
       "evidence_note": "Common verb show a response has unsupported C1 assignment.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "pants",
+      "provisional_level": "B2",
+      "risk": "WORDNET_SENSE_GENDERED_REGIONAL",
+      "evidence_note": "Pool gloss restricts British pants to women's underwear; requires precise regional usage and sense review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "bother",
+      "provisional_level": "B2",
+      "risk": "WORDNET_SENSE_MISMATCH",
+      "evidence_note": "Pool gloss denotes an angry disturbance, not the general inconvenience sense; candidate held rather than misdefined.",
       "source_observed": false,
       "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
       "reviewed_independently": false,
