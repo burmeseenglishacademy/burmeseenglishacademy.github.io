@@ -37,8 +37,16 @@
 - Candidate quarantine: `e330d434bb1bd2646344daf4dffb7445ccaf169c`.
 - Structural audit: `af28d9cdefe432fe793cc670bb12894dc9716b55`.
 - Non-deploying five-way matrix workflow: `f7c6dd524a680f947d6fdba4894b3744a0a559fc`.
-- [GitHub Actions run 40238371148](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40238371148): **queued/in progress when this checkpoint was drafted; final conclusion pending observation**. Matrix: A2, B1, B2, C1, ALL. The ALL job additionally compares protected production assets against `main`.
+- [GitHub Actions run 40238371148](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40238371148): **queued/in progress when this checkpoint was drafted; final conclusion now independently observed in the verified CI section below**. Matrix: A2, B1, B2, C1, ALL. The ALL job additionally compares protected production assets against `main`.
 - Do not equate structural test success with bilingual correctness, graded tier validity, independent approval or real audio listening.
 
 ## Unresolved blockers
 **1,797 unwritten**, **983 quarantined**, **0 / 5,000 independently approved**; source-evidence and Myanmar reviewer work outstanding, George/Emma complete audio creation/listening outstanding, browser/mobile and physical iPhone Safari testing outstanding, hosting limits and production deployment not approved. **No merge, no publication and no completion notification.**
+
+
+## Verified GitHub Actions result — 26 October 2026
+- [Run 40238371148](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40238371148) on workflow commit `f7c6dd524a680f947d6fdba4894b3744a0a559fc`: **completed, five of five matrix jobs succeeded**. Actual job statuses and decoded logs were inspected.
+- Job IDs: A2 `121304692833` **success**, B1 `121304692934` **success**, B2 `121304692650` **success**, C1 `121304692769` **success**, ALL `121304692786` **success**.
+- ALL log printed **A2 521, B1 747, B2 877, C1 558 = 2,703 unique A2–C1 drafts**, plus **A1 500 = 3,203** total written; **1,797 unwritten**, **983 held**, **182 historical duplicate rows excluded**, **0 independently approved**.
+- ALL log explicitly printed `PASS: production lesson, IELTS, George/Emma audio and privacy assets unchanged` after a diff against `main`. Staging `cefr-vocabulary-data.js` remained empty.
+- The test is **structural only**. It does not certify natural Myanmar, correct dictionary sense, grammatical nuance, CEFR tier, real listening, mobile compatibility or live deployment. Release gate remains **closed**.
