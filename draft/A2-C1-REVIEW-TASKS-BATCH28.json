@@ -1,0 +1,2657 @@
+{
+  "schema": 1,
+  "release_status": "UNVERIFIED_REVIEW_TASKS_DO_NOT_PUBLISH",
+  "created_on": "2026-10-25",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "source_pages_not_yet_checked": true,
+  "independently_approved": 0,
+  "description": "63 separate five-stage review packets; URL references are leads, not observed evidence.",
+  "entries": [
+    {
+      "word": "dad",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/dad",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "judge",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/judge",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "leader",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/leader",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "anymore",
+      "provisional_level": "A2",
+      "part_of_speech": "adverb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/anymore",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "contract",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/contract",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "insurance",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/insurance",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "majority",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/majority",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "successful",
+      "provisional_level": "A2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/successful",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "physical",
+      "provisional_level": "A2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/physical",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "image",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/image",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "degree",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/degree",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "approach",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/approach",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "perform",
+      "provisional_level": "B1",
+      "part_of_speech": "verb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/perform",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "storm",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/storm",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "studio",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/studio",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "actor",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/actor",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "chain",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/chain",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "chapter",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/chapter",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "identity",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/identity",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "journey",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/journey",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "maintain",
+      "provisional_level": "B1",
+      "part_of_speech": "verb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/maintain",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "numerous",
+      "provisional_level": "B1",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/numerous",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "specifically",
+      "provisional_level": "B1",
+      "part_of_speech": "adverb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/specifically",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "task",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/task",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "urban",
+      "provisional_level": "B1",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/urban",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "aircraft",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/aircraft",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "approximately",
+      "provisional_level": "B1",
+      "part_of_speech": "adverb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/approximately",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "argument",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/argument",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "conflict",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/conflict",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "debate",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/debate",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "phase",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/phase",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "properly",
+      "provisional_level": "B1",
+      "part_of_speech": "adverb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/properly",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "forum",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/forum",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "hence",
+      "provisional_level": "B2",
+      "part_of_speech": "adverb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/hence",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "increasingly",
+      "provisional_level": "B2",
+      "part_of_speech": "adverb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/increasingly",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "journalist",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/journalist",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "occasion",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/occasion",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "pace",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/pace",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "regulation",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/regulation",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "resident",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/resident",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "suitable",
+      "provisional_level": "B2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/suitable",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "valid",
+      "provisional_level": "B2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/valid",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "vital",
+      "provisional_level": "B2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/vital",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "currency",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/currency",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "exhibition",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/exhibition",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "fraud",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/fraud",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "funeral",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/funeral",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "genuine",
+      "provisional_level": "B2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/genuine",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "merely",
+      "provisional_level": "B2",
+      "part_of_speech": "adverb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/merely",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "ratio",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/ratio",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "regret",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/regret",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "routine",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/routine",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "summary",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/summary",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "survival",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/survival",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "achievement",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/achievement",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "addiction",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/addiction",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "inflation",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/inflation",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "inventory",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/inventory",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "migration",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/migration",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "provision",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/provision",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "trauma",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/trauma",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "acquire",
+      "provisional_level": "C1",
+      "part_of_speech": "verb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/acquire",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "boundary",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Check the exact POS and selected sense against an actually observed authoritative dictionary entry; record evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/boundary",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently verify natural Myanmar meaning, register and alignment with the English sense; record evidence and reviewer.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently review grammar, collocation, naturalness, originality and exact sense of the example.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Find an actually observed sense-specific CEFR-tagged source or quarantine/re-tier the candidate; never infer level from frequency alone.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval, generate both George and Emma; listen to recordings and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    }
+  ]
+}

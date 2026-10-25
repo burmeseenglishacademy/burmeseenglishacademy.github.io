@@ -1,0 +1,149 @@
+{
+  "schema": 1,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "created_on": "2026-10-25",
+  "independently_approved": 0,
+  "description": "14 reversible editorial holds; none is an independently sourced rejection.",
+  "records": [
+    {
+      "word": "german",
+      "provisional_level": "A2",
+      "risk": "NATIONALITY_CAPITALIZATION_AND_NAMED_ENTITY",
+      "evidence_note": "Lowercase candidate describes a German national; nationality spelling and level need evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "australian",
+      "provisional_level": "A2",
+      "risk": "NATIONALITY_CAPITALIZATION_AND_NAMED_ENTITY",
+      "evidence_note": "Lowercase demonym should be capitalised; verify CEFR and noun sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "regular",
+      "provisional_level": "A2",
+      "risk": "POLYSEMOUS_RARE_NOUN",
+      "evidence_note": "WordNet regular customer noun differs from common adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "annual",
+      "provisional_level": "A2",
+      "risk": "BOTANICAL_SPECIALIST_NOUN",
+      "evidence_note": "Botanical annual plant noun differs from common adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "hurt",
+      "provisional_level": "A2",
+      "risk": "NOUN_SENSE_UNNATURAL_USAGE",
+      "evidence_note": "Physical injury noun requires exact dictionary usage; do not silently substitute verb or emotional sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ca",
+      "provisional_level": "B1",
+      "risk": "CHEMICAL_SYMBOL_NOT_HEADWORD",
+      "evidence_note": "Ca is a chemical symbol, not a lowercase learner headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "disney",
+      "provisional_level": "B2",
+      "risk": "NAMED_PERSON",
+      "evidence_note": "Surname of a film-maker; not ordinary CEFR vocabulary.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "gary",
+      "provisional_level": "B2",
+      "risk": "NAMED_PLACE",
+      "evidence_note": "Name of a city; should not be a common noun entry.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "seattle",
+      "provisional_level": "B2",
+      "risk": "NAMED_PLACE",
+      "evidence_note": "Proper name of a city, not a lowercase headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "she'd",
+      "provisional_level": "C1",
+      "risk": "TOKENIZATION_WORDNET_MISMATCH",
+      "evidence_note": "Contraction she'd was assigned a shed/outbuilding noun sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "she'll",
+      "provisional_level": "C1",
+      "risk": "TOKENIZATION_WORDNET_MISMATCH",
+      "evidence_note": "Contraction she'll was assigned a shell/ammunition noun sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "tigers",
+      "provisional_level": "C1",
+      "risk": "NAMED_GROUP_SENSE",
+      "evidence_note": "WordNet sense refers to a named organisation rather than the common plural animal.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "sc",
+      "provisional_level": "C1",
+      "risk": "CHEMICAL_SYMBOL_NOT_HEADWORD",
+      "evidence_note": "Sc is a chemical symbol, not a lowercase CEFR headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ga",
+      "provisional_level": "C1",
+      "risk": "CHEMICAL_CODE_NOT_HEADWORD",
+      "evidence_note": "GA is a chemical designation, not ordinary learner vocabulary.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
