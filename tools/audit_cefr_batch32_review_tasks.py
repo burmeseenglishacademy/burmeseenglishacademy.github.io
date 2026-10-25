@@ -32,7 +32,7 @@ def audit(level):
     prior=[x for p in olddraft for x in read(p)["entries"]]
     heldfiles=["draft/A2-C1-CANDIDATE-QUARANTINE.json"]+[f"draft/A2-C1-QUARANTINE-BATCH{i:02d}.json" for i in range(14,33)]
     held=[x for p in heldfiles for x in read(p)["records"]]
-    assert len({x["word"] for x in held})==len(held)==484
+    assert len({x["word"] for x in held})==len(held)==484, ("held_count",len(held),"unique",len({x["word"] for x in held}),"duplicates",[w for w,c in Counter(x["word"] for x in held).items() if c>1])
     assert not {x["word"] for x in prior}&{x["word"] for x in d["entries"]}
     assert not {x["word"] for x in held}&{x["word"] for x in prior+d["entries"]}
     assert all(x["word"] in pool and x["provisional_level"]==pool[x["word"]]["level"] and not x["source_observed"] and not x["reviewed_independently"] and not x["release_approved"] for x in held)
