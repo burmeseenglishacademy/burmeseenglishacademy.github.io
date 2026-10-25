@@ -29,3 +29,6 @@ A2–C1 unique written 2310; held 741; historical duplicate draft rows excluded 
   - C1 job `121197771918`: completed/success, corresponding C1 PASS log.
   - ALL job `121197772022`: completed/success; `A2=521 B1=680 B2=674 C1=435 total=2310`; `A1-C1 written=2810; outstanding=2190; quarantine=741; legacy duplicate rows=182`.
 - Structural QA passing **does not** imply any independent English, Myanmar, CEFR, example or pronunciation approval. Production remains untouched.
+
+## Production-preservation read-only comparison
+GitHub blob SHA comparisons between `main` and staging were actually performed for `content.js`, `ielts-vocabulary-data.js`, `audio-manifest.js`, `audio-player.js`, `audio-integration.js`, `privacy-tools.js` and `site-config.js`: **all seven byte-identical**. `cefr-vocabulary-data.js` exists only in staging and contains `entries:[]`; it is not a released CEFR bank. This comparison does not replace real-device audio QA or release validation.
