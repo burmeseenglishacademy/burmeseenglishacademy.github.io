@@ -26,7 +26,7 @@ def audit(level):
     assert len(d["entries"])==len(t["entries"])==44
     assert collections.Counter(x["level"] for x in d["entries"])==expected
     assert d["counts_by_provisional_level"]==expected
-    assert len(q["records"])==len({x["word"] for x in q["records"]})==28
+    assert len(q["records"])==len({x["word"] for x in q["records"]})==30
     assert len({x["word"] for x in d["entries"]})==44
     assert len({x["example_sentence"] for x in d["entries"]})==44
     olddraft=["draft/A2-C1-EDITORIAL-STARTER.json"]+[f"draft/A2-C1-EDITORIAL-BATCH{i:02d}.json" for i in range(9,33)]
@@ -41,7 +41,7 @@ def audit(level):
     assert not oldheld & newheld,("duplicate quarantine",oldheld & newheld)
     assert not (oldheld|newheld) & (oldwords|newwords),("held and drafted",(oldheld|newheld)&(oldwords|newwords))
     assert len(oldheld)==len(priorheld)==479
-    assert len(oldheld|newheld)==507
+    assert len(oldheld|newheld)==509
     posmap={"n":"noun","v":"verb","a":"adjective","s":"adjective","r":"adverb"}
     taskmap={x["word"]:x for x in t["entries"]}
     assert len(taskmap)==44
@@ -79,7 +79,7 @@ def audit(level):
         print("UNIQUE A2-C1 A2=516 B1=569 B2=572 C1=409 total=2066; independently approved=0")
         print("A1=500; A1-C1 written=2566; first drafts outstanding=2434; unique quarantine=507; legacy duplicate rows=",sum(len(v)-1 for v in byword.values()))
     assert "entries:[]" in (R/"cefr-vocabulary-data.js").read_text(encoding="utf-8")
-    print("STAGING ONLY batch33",level,"PASS: 44 drafts, 28 new held, zero approvals; no audio/deploy")
+    print("STAGING ONLY batch33",level,"PASS: 44 drafts, 30 new held, zero approvals; no audio/deploy")
 if __name__=="__main__":
     p=argparse.ArgumentParser()
     p.add_argument("--level",choices=("A2","B1","B2","C1","ALL"),default="ALL")
