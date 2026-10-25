@@ -1,0 +1,466 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-25",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "independently_approved": 0,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "description": "45 reversible risk-based holds from current undrafted, unheld candidate inventory. These are not source-verified exclusions.",
+  "counts_by_provisional_level": {
+    "A2": 0,
+    "B1": 10,
+    "B2": 15,
+    "C1": 20
+  },
+  "records": [
+    {
+      "word": "wales",
+      "provisional_level": "B1",
+      "risk": "NAMED_GEOGRAPHIC_ENTITY",
+      "evidence_note": "A country name must not be treated as a generic vocabulary lemma.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "affect",
+      "provisional_level": "B1",
+      "risk": "SPECIALIST_PSYCHOLOGY_NOUN",
+      "evidence_note": "The candidate noun refers to observed emotion, not the common verb affect; provisional B1 lacks evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "aside",
+      "provisional_level": "B1",
+      "risk": "THEATRE_SPECIALIST_NOUN",
+      "evidence_note": "A speech heard by the audience but not the other characters is a specialised theatrical sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "kinda",
+      "provisional_level": "B1",
+      "risk": "NONSTANDARD_COLLOQUIAL_FORM",
+      "evidence_note": "Informal contracted kind of is not a safe standard B1 headword without register treatment.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "pacific",
+      "provisional_level": "B1",
+      "risk": "NAMED_GEOGRAPHIC_ENTITY",
+      "evidence_note": "The WordNet clue denotes the Pacific Ocean, a proper geographic name.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "spain",
+      "provisional_level": "B1",
+      "risk": "NAMED_GEOGRAPHIC_ENTITY",
+      "evidence_note": "The clue describes a named country rather than a generic headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "brazil",
+      "provisional_level": "B1",
+      "risk": "NAMED_GEOGRAPHIC_ENTITY",
+      "evidence_note": "The clue describes a named country rather than a generic headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "jackson",
+      "provisional_level": "B1",
+      "risk": "PERSON_NAME_WORDNET_SENSE",
+      "evidence_note": "The clue identifies an actress rather than a general noun.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "clinton",
+      "provisional_level": "B1",
+      "risk": "PERSON_NAME_WORDNET_SENSE",
+      "evidence_note": "The clue identifies a named public figure rather than a general noun.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "adam",
+      "provisional_level": "B1",
+      "risk": "PERSON_NAME_RELIGIOUS_REFERENCE",
+      "evidence_note": "The clue identifies a named religious figure rather than a general noun.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "scary",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_LEVEL_ADJECTIVE",
+      "evidence_note": "The ordinary adjective frightening is probably not a defensible B2-specific sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "settle",
+      "provisional_level": "B2",
+      "risk": "RARE_FURNITURE_NOUN",
+      "evidence_note": "A long wooden bench with a back is a specialised sense, not the common verb settle.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "jean",
+      "provisional_level": "B2",
+      "risk": "LEMMA_NUMBER_MISMATCH",
+      "evidence_note": "The clue defines jeans as plural trousers but the proposed lemma is singular jean.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "maria",
+      "provisional_level": "B2",
+      "risk": "TECHNICAL_PLURAL_OR_NAME",
+      "evidence_note": "The clue refers to dark lunar regions, plural of mare; singular maria is not supported.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "aug",
+      "provisional_level": "B2",
+      "risk": "ABBREVIATION_NOT_HEADWORD",
+      "evidence_note": "The candidate is a calendar abbreviation rather than an independent teaching headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "billy",
+      "provisional_level": "B2",
+      "risk": "REGIONAL_DATED_POLICE_TERM",
+      "evidence_note": "The candidate clue refers to a police club; region and register require review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "constitutional",
+      "provisional_level": "B2",
+      "risk": "RARE_NOUN_SENSE",
+      "evidence_note": "A constitutional as a walk is distinct from the common adjective and likely dated.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "foster",
+      "provisional_level": "B2",
+      "risk": "PERSON_NAME_WORDNET_SENSE",
+      "evidence_note": "The clue identifies a named composer rather than a generic noun.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "iowa",
+      "provisional_level": "B2",
+      "risk": "NAMED_PEOPLE_OR_PLACE",
+      "evidence_note": "The clue refers to an Indigenous people name; proper-noun treatment and evidence are required.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "parks",
+      "provisional_level": "B2",
+      "risk": "PERSON_NAME_WORDNET_SENSE",
+      "evidence_note": "The clue identifies a named civil-rights figure rather than a generic noun.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "brave",
+      "provisional_level": "B2",
+      "risk": "OUTDATED_ETHNIC_LABEL",
+      "evidence_note": "The noun clue describes an Indigenous warrior using potentially dated stereotyped wording.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "gen",
+      "provisional_level": "B2",
+      "risk": "COLLOQUIAL_BRITISH_NOUN",
+      "evidence_note": "Informal gen meaning information needs region and register evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "radical",
+      "provisional_level": "B2",
+      "risk": "SPECIALIST_CHEMISTRY_NOUN",
+      "evidence_note": "A chemical radical is distinct from the ordinary adjective and requires subject-level evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "rings",
+      "provisional_level": "B2",
+      "risk": "PLURAL_SPORTS_EQUIPMENT",
+      "evidence_note": "Gymnastic rings is a plural equipment name and should not inherit a singular noun level.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "precious",
+      "provisional_level": "B2",
+      "risk": "SENSE_LEVEL_MISMATCH",
+      "evidence_note": "The adjective clue is an affectionate sense, not necessarily the usual B2 valuable sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "catching",
+      "provisional_level": "C1",
+      "risk": "GERUND_SPORTS_SENSE",
+      "evidence_note": "The noun clue is the act of playing baseball catcher; specialised and likely not a C1 headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "marijuana",
+      "provisional_level": "C1",
+      "risk": "BOTANICAL_SENSE_AND_TIER",
+      "evidence_note": "The clue defines a plant via drug use; register, exact sense and CEFR level require review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "pic",
+      "provisional_level": "C1",
+      "risk": "INFORMAL_ABBREVIATION",
+      "evidence_note": "Pic is informal for picture or film and is not safely a C1 lexical sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "punk",
+      "provisional_level": "C1",
+      "risk": "PEJORATIVE_REGISTER",
+      "evidence_note": "The candidate clue describes a criminal using a potentially derogatory sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "spreading",
+      "provisional_level": "C1",
+      "risk": "GERUND_LEMMA_RISK",
+      "evidence_note": "A nominalised process is not enough to justify a distinct C1 headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "rifle",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_OR_SPECIALIST_NOUN",
+      "evidence_note": "The ordinary object noun is not automatically C1, and exact intended sense needs evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "spray",
+      "provisional_level": "C1",
+      "risk": "SPECIALIST_PESTICIDE_SENSE",
+      "evidence_note": "The clue is pesticide spray rather than common spray; technical register and tier require evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "approaching",
+      "provisional_level": "C1",
+      "risk": "GERUND_LEMMA_RISK",
+      "evidence_note": "A process of coming closer is usually a verb form rather than a separate C1 noun.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "defeated",
+      "provisional_level": "C1",
+      "risk": "ADJECTIVE_USED_AS_PLURAL_NOUN",
+      "evidence_note": "The defeated denotes people collectively; this is not a straightforward noun lemma.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "rat",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_LEVEL_NOUN",
+      "evidence_note": "The everyday animal sense is not supported as C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "casino",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_LEVEL_NOUN",
+      "evidence_note": "The ordinary building noun is not supported as C1 without sense evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "kicking",
+      "provisional_level": "C1",
+      "risk": "GERUND_LEMMA_RISK",
+      "evidence_note": "The clue describes a leg movement and does not establish a distinct C1 noun.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "laying",
+      "provisional_level": "C1",
+      "risk": "GERUND_SPECIALIST_SENSE",
+      "evidence_note": "Egg-laying is a specialised nominalisation requiring lemma and level review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "teens",
+      "provisional_level": "C1",
+      "risk": "PLURAL_AGE_RANGE",
+      "evidence_note": "The clue refers to a plural age period; singular lemma and CEFR level need evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "travelling",
+      "provisional_level": "C1",
+      "risk": "GERUND_LEMMA_RISK",
+      "evidence_note": "The act of travel is not independently supported as a C1 noun headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "smiling",
+      "provisional_level": "C1",
+      "risk": "GERUND_LEMMA_RISK",
+      "evidence_note": "The ordinary facial expression does not justify a separate C1 nominal headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "welsh",
+      "provisional_level": "C1",
+      "risk": "DEMOGRAPHIC_IDENTITY_NAME",
+      "evidence_note": "The clue refers to a Welsh person and needs proper-name and identity treatment.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "pig",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_LEVEL_NOUN",
+      "evidence_note": "The everyday animal sense is not supported as C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "zoo",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_LEVEL_NOUN",
+      "evidence_note": "The ordinary animal park sense is not supported as C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "bacon",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_LEVEL_NOUN",
+      "evidence_note": "The everyday food noun is not supported as C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
