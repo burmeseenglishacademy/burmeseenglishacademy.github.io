@@ -9,7 +9,7 @@
     "A2": 0,
     "B1": 0,
     "B2": 23,
-    "C1": 20
+    "C1": 26
   },
   "records": [
     {
@@ -439,6 +439,78 @@
       "evidence_note": "Heuristic editorial hold, not independent dictionary or CEFR evidence. Resolve exact lemma, sense and graded tier before reconsidering.",
       "source_observed": false,
       "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "presumably",
+      "provisional_level": "C1",
+      "risk": "QUARANTINE_LEVEL_CONFLICT",
+      "evidence_note": "AI-assisted Cambridge page observation on 2026-10-26: adverb indicating what seems likely. Displayed tier: B2; not an independent reviewer sign-off.",
+      "source_observed": true,
+      "source_observation_type": "AI_ASSISTED_DIRECT_CAMBRIDGE_PAGE_OBSERVATION_NOT_INDEPENDENT_REVIEW",
+      "source_url": "https://dictionary.cambridge.org/dictionary/english/presumably",
+      "action": "HOLD_FOR_INDEPENDENT_SENSE_SPECIFIC_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "subtle",
+      "provisional_level": "C1",
+      "risk": "QUARANTINE_LEVEL_CONFLICT",
+      "evidence_note": "AI-assisted Cambridge page observation on 2026-10-26: adjective describing a difficult-to-notice difference. Displayed tier: C2; not an independent reviewer sign-off.",
+      "source_observed": true,
+      "source_observation_type": "AI_ASSISTED_DIRECT_CAMBRIDGE_PAGE_OBSERVATION_NOT_INDEPENDENT_REVIEW",
+      "source_url": "https://dictionary.cambridge.org/dictionary/english/subtle",
+      "action": "HOLD_FOR_INDEPENDENT_SENSE_SPECIFIC_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "allegedly",
+      "provisional_level": "C1",
+      "risk": "QUARANTINE_LEVEL_CONFLICT",
+      "evidence_note": "AI-assisted Cambridge page observation on 2026-10-26: adverb for an unproven claim. Displayed tier: C2; not an independent reviewer sign-off.",
+      "source_observed": true,
+      "source_observation_type": "AI_ASSISTED_DIRECT_CAMBRIDGE_PAGE_OBSERVATION_NOT_INDEPENDENT_REVIEW",
+      "source_url": "https://dictionary.cambridge.org/dictionary/english/allegedly",
+      "action": "HOLD_FOR_INDEPENDENT_SENSE_SPECIFIC_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "alter",
+      "provisional_level": "C1",
+      "risk": "QUARANTINE_LEVEL_CONFLICT",
+      "evidence_note": "AI-assisted Cambridge page observation on 2026-10-26: verb meaning to change something. Displayed tier: B2; not an independent reviewer sign-off.",
+      "source_observed": true,
+      "source_observation_type": "AI_ASSISTED_DIRECT_CAMBRIDGE_PAGE_OBSERVATION_NOT_INDEPENDENT_REVIEW",
+      "source_url": "https://dictionary.cambridge.org/dictionary/english/alter",
+      "action": "HOLD_FOR_INDEPENDENT_SENSE_SPECIFIC_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "realm",
+      "provisional_level": "C1",
+      "risk": "QUARANTINE_LEVEL_CONFLICT",
+      "evidence_note": "AI-assisted Cambridge page observation on 2026-10-26: noun meaning area of interest or activity. Displayed tier: C2; not an independent reviewer sign-off.",
+      "source_observed": true,
+      "source_observation_type": "AI_ASSISTED_DIRECT_CAMBRIDGE_PAGE_OBSERVATION_NOT_INDEPENDENT_REVIEW",
+      "source_url": "https://dictionary.cambridge.org/dictionary/english/realm",
+      "action": "HOLD_FOR_INDEPENDENT_SENSE_SPECIFIC_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "momentum",
+      "provisional_level": "C1",
+      "risk": "QUARANTINE_SENSE_TIER_AMBIGUITY",
+      "evidence_note": "AI-assisted Cambridge page observation on 2026-10-26: noun meaning developing progress; page labels physics sense C2 but does not clearly grade figurative sense. Displayed tier: C2_FOR_PHYSICS;FIGURATIVE_SENSE_UNLABELLED; not an independent reviewer sign-off.",
+      "source_observed": true,
+      "source_observation_type": "AI_ASSISTED_DIRECT_CAMBRIDGE_PAGE_OBSERVATION_NOT_INDEPENDENT_REVIEW",
+      "source_url": "https://dictionary.cambridge.org/dictionary/english/momentum",
+      "action": "HOLD_FOR_INDEPENDENT_SENSE_SPECIFIC_REVIEW_OR_REPLACEMENT",
       "reviewed_independently": false,
       "release_approved": false
     }
