@@ -2015,7 +2015,7 @@
       "cefr_review": {
         "task": "Find independently observed sense-specific CEFR evidence; re-tier or hold if unsupported.",
         "completed": false,
-        "provisional_level_risk": "C1_TIER_MAY_BE_TOO_HIGH_CHECK_SENSE_SPECIFIC_CEFR",
+        "provisional_level_risk": "WORDNET_ORDER_DISRUPTION_SENSE_VS_COMMUNICATION_FAILURE_REQUIRES_REVIEW",
         "observed_evidence": null,
         "reviewer": null
       },
@@ -2057,7 +2057,7 @@
       "cefr_review": {
         "task": "Find independently observed sense-specific CEFR evidence; re-tier or hold if unsupported.",
         "completed": false,
-        "provisional_level_risk": "C1_TIER_MAY_BE_TOO_HIGH_CHECK_SENSE_SPECIFIC_CEFR",
+        "provisional_level_risk": "WORDNET_LINGUISTIC_HYBRID_SENSE_VS_GENERAL_COMBINATION_REQUIRES_REVIEW",
         "observed_evidence": null,
         "reviewer": null
       },
