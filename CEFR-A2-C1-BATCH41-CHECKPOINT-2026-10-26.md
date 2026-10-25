@@ -38,3 +38,5 @@ The WordNet candidate clues are unverified and sometimes wrong or socially outda
 
 ## Observed correction CI failure and fix
 - Correction commit `80ab6f302a28e26cd7d679c5ee2933e51f58029c` triggered [run 40223164145](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40223164145): **all five jobs failed**. Actual B1 and ALL decoded logs showed a Python `SyntaxError` at line 57: a literal `\\n` was inserted between statements in the audit script. This is a test-script formatting error, **not a passed editorial QA**. Corrected the line break in the audit script; the subsequent run must be inspected separately.
+
+- Audit-format fix commit `76fb26872dc61a0840f6cd68ba0a6f6f9dec9948` triggered [run 40223215383](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40223215383): decoded ALL log shows **failed assertion at line 34**, because the uniqueness assertion still expected 13 holds after the source-observed finishing quarantine raised the count to 14. Updated the expected unique hold count to 14; no success is claimed for that run.

@@ -31,7 +31,7 @@ def audit(level):
     drafts={x["word"]:x for x in d["entries"]}
     tasks={x["word"]:x for x in t["entries"]}
     holds={x["word"]:x for x in q["records"]}
-    assert len(drafts)==len(tasks)==54 and len(holds)==13
+    assert len(drafts)==len(tasks)==54 and len(holds)==14
     assert set(drafts)==set(tasks) and not (set(drafts)&set(holds))
     assert len({x["example_sentence"] for x in drafts.values()})==54
     for word,r in drafts.items():
