@@ -7,7 +7,7 @@ The first Batch29 CI run [40167162660](https://github.com/burmeseenglishacademy/
 ## This corrected iteration
 - **42 distinct original bilingual drafts:** A2 8, B1 10, B2 12, C1 12.
 - **42 separate review packets:** English definition/POS, natural Myanmar, grammatical example, sense-specific CEFR and audio/listening, all pending.
-- **9 distinct reversible candidate holds:** named/capitalisation problems, wrong WordNet senses, slang/register and unsuitable POS.
+- **10 distinct reversible candidate holds:** named/capitalisation problems, wrong WordNet senses, slang/register and unsuitable POS.
 - Candidate WordNet senses and provisional levels are NOT authoritative. C1 contains likely lower-level words explicitly flagged for re-tier or quarantine.
 
 ## Exact unique written inventory — not independently checked
@@ -20,7 +20,7 @@ The first Batch29 CI run [40167162660](https://github.com/burmeseenglishacademy/
 | C1 | 1,500 | 362 | 0 | 1,138 |
 | **Total** | **5,000** | **2,370** | **0** | **2,630** |
 
-A2–C1 unique written 1,870; quarantine 449 total (440 prior + 9 distinct new); 182 prior identical legacy duplicates excluded.
+A2–C1 unique written 1,870; quarantine 450 total (440 prior + 10 distinct new); 182 prior identical legacy duplicates excluded.
 
 ## Quality and release blockers
 No independent dictionary/POS/CEFR source observations, Myanmar sign-off, example sign-off, full new CEFR George/Emma generation, listening, real-device iPhone Safari, hosting-limit sign-off or live deployment. GitHub Actions check structure, not linguistic correctness.
@@ -28,3 +28,6 @@ Staging `cefr-vocabulary-data.js` stays `entries:[]`. No production lesson, IELT
 
 ## CI
 The corrected atomic staging commit triggers five parallel jobs A2/B1/B2/C1/ALL; their real status and decoded logs must be checked before marking structural QA successful.
+
+## Extra sense correction
+Quarantined **fantastic** after finding a mismatch between the WordNet clue and the drafted meaning, replacing it with the original **squad** noun draft. Revised **ending** to the grammatical suffix sense and **terrible** to the fear-inducing sense. Flagged likely misplaced CEFR tiers for separate review. No independent linguistic approval.

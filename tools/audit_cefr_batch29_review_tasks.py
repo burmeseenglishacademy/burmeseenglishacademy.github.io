@@ -22,7 +22,7 @@ def audit(level):
     assert d["counts_by_provisional_level"]==expected
     assert len({x["word"] for x in d["entries"]})==42
     assert len({x["example_sentence"] for x in d["entries"]})==42
-    assert len(q["records"])==len({x["word"] for x in q["records"]})==9
+    assert len(q["records"])==len({x["word"] for x in q["records"]})==10
     assert all(x["word"] in pool and pool[x["word"]]["level"]==x["provisional_level"] for x in q["records"])
     assert all(x["risk"] and x["evidence_note"] and x["source_observed"] is False
                and x["reviewed_independently"] is False and x["release_approved"] is False for x in q["records"])
@@ -33,7 +33,7 @@ def audit(level):
     holds=["draft/A2-C1-CANDIDATE-QUARANTINE.json"]+[f"draft/A2-C1-QUARANTINE-BATCH{i:02d}.json" for i in range(14,30)]
     heldrows=[x for p in holds for x in read(p)["records"]]
     held=[x["word"] for x in heldrows]
-    assert len(held)==len(set(held))==449, ("quarantine collision",len(held),len(set(held)))
+    assert len(held)==len(set(held))==450, ("quarantine collision",len(held),len(set(held)))
     assert not set(held)&{x["word"] for x in prior+current}, "held word was drafted"
     assert all(x["reviewed_independently"] is False and x["release_approved"] is False for x in heldrows)
     taskmap={x["word"]:x for x in t["entries"]}
@@ -72,7 +72,7 @@ def audit(level):
         print("UNIQUE A2-C1 A2=494 B1=507 B2=507 C1=362 total=1870; independently approved=0")
         print("A1=500; A1-C1 written=2370; first drafts outstanding=2630; legacy duplicate rows=",sum(len(v)-1 for v in byword.values()))
     assert "entries:[]" in (R/"cefr-vocabulary-data.js").read_text(encoding="utf-8")
-    print("STAGING ONLY batch29",level,"PASS: 42 drafts, 9 held, zero approvals; no audio/deploy")
+    print("STAGING ONLY batch29",level,"PASS: 42 drafts, 10 held, zero approvals; no audio/deploy")
 if __name__=="__main__":
     p=argparse.ArgumentParser()
     p.add_argument("--level",choices=("A2","B1","B2","C1","ALL"),default="ALL")

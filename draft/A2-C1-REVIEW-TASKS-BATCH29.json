@@ -138,7 +138,7 @@
       "provisional_level": "B1",
       "part_of_speech": "adjective",
       "review_status": "PENDING_INDEPENDENT_REVIEW",
-      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "priority": "SENSE_SPECIFIC_CEFR_REVIEW_REQUIRED",
       "english_definition_review": {
         "task": "Observe an authoritative dictionary's exact POS and sense; record URL, quoted minimal evidence, date and reviewer.",
         "completed": false,
@@ -162,7 +162,7 @@
       "cefr_review": {
         "task": "Observe sense-specific CEFR evidence; if tier unsupported, quarantine or re-tier before any release.",
         "completed": false,
-        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "provisional_level_risk": "SENSE_SPECIFIC_CEFR_REVIEW_REQUIRED",
         "observed_evidence": null,
         "reviewer": null
       },
@@ -1062,7 +1062,7 @@
       "provisional_level": "A2",
       "part_of_speech": "noun",
       "review_status": "PENDING_INDEPENDENT_REVIEW",
-      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "priority": "PROVISIONAL_LEVEL_LIKELY_MISPLACED_REQUIRES_RETIER_OR_QUARANTINE",
       "english_definition_review": {
         "task": "Observe an authoritative dictionary's exact POS and sense; record URL, quoted minimal evidence, date and reviewer.",
         "completed": false,
@@ -1086,7 +1086,7 @@
       "cefr_review": {
         "task": "Observe sense-specific CEFR evidence; if tier unsupported, quarantine or re-tier before any release.",
         "completed": false,
-        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "provisional_level_risk": "PROVISIONAL_LEVEL_LIKELY_MISPLACED_REQUIRES_RETIER_OR_QUARANTINE",
         "observed_evidence": null,
         "reviewer": null
       },
@@ -1104,7 +1104,7 @@
       "provisional_level": "A2",
       "part_of_speech": "noun",
       "review_status": "PENDING_INDEPENDENT_REVIEW",
-      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "priority": "PROVISIONAL_LEVEL_LIKELY_MISPLACED_REQUIRES_RETIER_OR_QUARANTINE",
       "english_definition_review": {
         "task": "Observe an authoritative dictionary's exact POS and sense; record URL, quoted minimal evidence, date and reviewer.",
         "completed": false,
@@ -1128,7 +1128,7 @@
       "cefr_review": {
         "task": "Observe sense-specific CEFR evidence; if tier unsupported, quarantine or re-tier before any release.",
         "completed": false,
-        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "provisional_level_risk": "PROVISIONAL_LEVEL_LIKELY_MISPLACED_REQUIRES_RETIER_OR_QUARANTINE",
         "observed_evidence": null,
         "reviewer": null
       },
@@ -1268,53 +1268,11 @@
       "release_approved": false
     },
     {
-      "word": "fantastic",
-      "provisional_level": "B1",
-      "part_of_speech": "adjective",
-      "review_status": "PENDING_INDEPENDENT_REVIEW",
-      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
-      "english_definition_review": {
-        "task": "Observe an authoritative dictionary's exact POS and sense; record URL, quoted minimal evidence, date and reviewer.",
-        "completed": false,
-        "source_observed": false,
-        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/fantastic",
-        "observed_evidence": null,
-        "reviewer": null
-      },
-      "burmese_review": {
-        "task": "Independently review the natural Myanmar meaning and sense/register alignment; document reviewer and evidence.",
-        "completed": false,
-        "reviewer": null,
-        "observed_evidence": null
-      },
-      "example_review": {
-        "task": "Independently check original example grammar, collocation, register and exact sense.",
-        "completed": false,
-        "reviewer": null,
-        "observed_evidence": null
-      },
-      "cefr_review": {
-        "task": "Observe sense-specific CEFR evidence; if tier unsupported, quarantine or re-tier before any release.",
-        "completed": false,
-        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
-        "observed_evidence": null,
-        "reviewer": null
-      },
-      "audio_review": {
-        "task": "After full editorial approval, generate both George/Emma and listen; test real physical iPhone Safari.",
-        "completed": false,
-        "real_listening": false,
-        "real_device_test": false,
-        "reviewer": null
-      },
-      "release_approved": false
-    },
-    {
       "word": "arm",
       "provisional_level": "B1",
       "part_of_speech": "noun",
       "review_status": "PENDING_INDEPENDENT_REVIEW",
-      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "priority": "PROVISIONAL_LEVEL_LIKELY_MISPLACED_REQUIRES_RETIER_OR_QUARANTINE",
       "english_definition_review": {
         "task": "Observe an authoritative dictionary's exact POS and sense; record URL, quoted minimal evidence, date and reviewer.",
         "completed": false,
@@ -1338,7 +1296,7 @@
       "cefr_review": {
         "task": "Observe sense-specific CEFR evidence; if tier unsupported, quarantine or re-tier before any release.",
         "completed": false,
-        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "provisional_level_risk": "PROVISIONAL_LEVEL_LIKELY_MISPLACED_REQUIRES_RETIER_OR_QUARANTINE",
         "observed_evidence": null,
         "reviewer": null
       },
@@ -1356,7 +1314,7 @@
       "provisional_level": "B1",
       "part_of_speech": "noun",
       "review_status": "PENDING_INDEPENDENT_REVIEW",
-      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "priority": "SPECIALIST_GRAMMATICAL_SENSE_AND_LEVEL_UNVERIFIED",
       "english_definition_review": {
         "task": "Observe an authoritative dictionary's exact POS and sense; record URL, quoted minimal evidence, date and reviewer.",
         "completed": false,
@@ -1380,7 +1338,7 @@
       "cefr_review": {
         "task": "Observe sense-specific CEFR evidence; if tier unsupported, quarantine or re-tier before any release.",
         "completed": false,
-        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "provisional_level_risk": "SPECIALIST_GRAMMATICAL_SENSE_AND_LEVEL_UNVERIFIED",
         "observed_evidence": null,
         "reviewer": null
       },
@@ -1440,7 +1398,7 @@
       "provisional_level": "B1",
       "part_of_speech": "adjective",
       "review_status": "PENDING_INDEPENDENT_REVIEW",
-      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "priority": "PROVISIONAL_LEVEL_LIKELY_MISPLACED_REQUIRES_RETIER_OR_QUARANTINE",
       "english_definition_review": {
         "task": "Observe an authoritative dictionary's exact POS and sense; record URL, quoted minimal evidence, date and reviewer.",
         "completed": false,
@@ -1464,7 +1422,7 @@
       "cefr_review": {
         "task": "Observe sense-specific CEFR evidence; if tier unsupported, quarantine or re-tier before any release.",
         "completed": false,
-        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "provisional_level_risk": "PROVISIONAL_LEVEL_LIKELY_MISPLACED_REQUIRES_RETIER_OR_QUARANTINE",
         "observed_evidence": null,
         "reviewer": null
       },
@@ -1734,12 +1692,54 @@
       "provisional_level": "B2",
       "part_of_speech": "noun",
       "review_status": "PENDING_INDEPENDENT_REVIEW",
-      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "priority": "PROVISIONAL_LEVEL_LIKELY_MISPLACED_REQUIRES_RETIER_OR_QUARANTINE",
       "english_definition_review": {
         "task": "Observe an authoritative dictionary's exact POS and sense; record URL, quoted minimal evidence, date and reviewer.",
         "completed": false,
         "source_observed": false,
         "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/pot",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review the natural Myanmar meaning and sense/register alignment; document reviewer and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example grammar, collocation, register and exact sense.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Observe sense-specific CEFR evidence; if tier unsupported, quarantine or re-tier before any release.",
+        "completed": false,
+        "provisional_level_risk": "PROVISIONAL_LEVEL_LIKELY_MISPLACED_REQUIRES_RETIER_OR_QUARANTINE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After full editorial approval, generate both George/Emma and listen; test real physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "squad",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Observe an authoritative dictionary's exact POS and sense; record URL, quoted minimal evidence, date and reviewer.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/squad",
         "observed_evidence": null,
         "reviewer": null
       },

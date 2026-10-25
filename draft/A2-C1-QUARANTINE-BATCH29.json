@@ -3,7 +3,7 @@
   "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
   "created_on": "2026-10-25",
   "independently_approved": 0,
-  "description": "9 new reversible candidate holds after removing earlier quarantine duplicates.",
+  "description": "10 reversible holds including a caught WordNet sense conflict.",
   "records": [
     {
       "word": "shoes",
@@ -90,6 +90,16 @@
       "provisional_level": "C1",
       "risk": "ABBREVIATION_WRONG_SENSE",
       "evidence_note": "WordNet shortened literature noun differs from colloquial lit adjective; do not silently substitute.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "fantastic",
+      "provisional_level": "B1",
+      "risk": "WORDNET_SENSE_CONFLICT",
+      "evidence_note": "Original WordNet clue 'ludicrously odd' differs from proposed positive sense 'extremely good'. Quarantine for exact-sense review.",
       "source_observed": false,
       "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
       "reviewed_independently": false,
