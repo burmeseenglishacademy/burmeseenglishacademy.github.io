@@ -1,0 +1,290 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-25",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "independently_approved": 0,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "description": "28 newly held candidate headwords from live undrafted/unheld preview; reversible and not source-verified.",
+  "records": [
+    {
+      "word": "pass",
+      "provisional_level": "A2",
+      "risk": "SPORTS_SENSE_MISMATCH",
+      "evidence_note": "Pool sense is a baseball walk, not ordinary pass.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "hands",
+      "provisional_level": "A2",
+      "risk": "SPECIALISED_CUSTODY_SENSE",
+      "evidence_note": "Pool refers to legal guardianship rather than the ordinary plural of hand.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "higher",
+      "provisional_level": "A2",
+      "risk": "INFLECTED_COMPARATIVE",
+      "evidence_note": "Comparative form and provisional A2 tier require lemma/sense-specific evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "gay",
+      "provisional_level": "B1",
+      "risk": "OUTDATED_OFFENSIVE_WORDNET_DEFINITION",
+      "evidence_note": "Pool definition pathologises or stereotypes sexual orientation; requires respectful independent rewriting and sense check.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ireland",
+      "provisional_level": "B1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Country name is not general lexical vocabulary.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "asia",
+      "provisional_level": "B1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Continent name is a proper noun.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "korea",
+      "provisional_level": "B1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Geographical proper noun.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "acts",
+      "provisional_level": "B1",
+      "risk": "BIBLICAL_BOOK_TITLE",
+      "evidence_note": "Pool identifies a specific biblical book, not the plural noun acts.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "sat",
+      "provisional_level": "B1",
+      "risk": "ABBREVIATION_SENSE_MISMATCH",
+      "evidence_note": "Pool sense is a weekday abbreviation, not the verb sat.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "bob",
+      "provisional_level": "B1",
+      "risk": "HISTORICAL_CURRENCY",
+      "evidence_note": "Pool sense is obsolete British slang for a shilling.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "allen",
+      "provisional_level": "B2",
+      "risk": "PERSON_NAME",
+      "evidence_note": "Pool sense names a comedian rather than a general word.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "arizona",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "US state name.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "atlanta",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "US city name.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "jay",
+      "provisional_level": "B2",
+      "risk": "PERSON_NAME_SENSE",
+      "evidence_note": "Pool sense identifies a diplomat, not the bird.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "kansas",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "US state name.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "matthew",
+      "provisional_level": "B2",
+      "risk": "PERSON_NAME",
+      "evidence_note": "Pool sense identifies a biblical figure.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "feb",
+      "provisional_level": "B2",
+      "risk": "ABBREVIATION",
+      "evidence_note": "Abbreviated month form should not be counted as independent general lexical lemma.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "nov",
+      "provisional_level": "B2",
+      "risk": "ABBREVIATION",
+      "evidence_note": "Abbreviated month form should not be counted as independent general lexical lemma.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "agriculture",
+      "provisional_level": "B2",
+      "risk": "WORDNET_SENSE_MISMATCH",
+      "evidence_note": "Pool describes a large-scale farming enterprise, while learner meaning normally refers to farming as an activity.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "halloween",
+      "provisional_level": "C1",
+      "risk": "NAMED_HOLIDAY",
+      "evidence_note": "Proper name of a holiday; C1 lexical tier unsupported.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "iranian",
+      "provisional_level": "C1",
+      "risk": "NATIONALITY_NOUN",
+      "evidence_note": "Nationality descriptor and C1 tier require independent wordlist evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "thou",
+      "provisional_level": "C1",
+      "risk": "ARCHAIC_WORDNET_SENSE_MISMATCH",
+      "evidence_note": "Pool gloss defines one thousand rather than archaic pronoun; unsuitable without source check.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "hammer",
+      "provisional_level": "C1",
+      "risk": "SPECIALISED_FIREARM_SENSE",
+      "evidence_note": "Pool defines firearm firing mechanism, not ordinary tool.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "metro",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_CEFR_TIER",
+      "evidence_note": "Everyday urban train term unlikely C1 without sense-specific evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "jam",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_CEFR_TIER",
+      "evidence_note": "Common fruit preserve sense unlikely C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "liver",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_CEFR_TIER",
+      "evidence_note": "Common anatomy term has unsupported C1 assignment.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "dam",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_CEFR_TIER",
+      "evidence_note": "Common barrier for water has unsupported C1 assignment.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "react",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_CEFR_TIER",
+      "evidence_note": "Common verb show a response has unsupported C1 assignment.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
