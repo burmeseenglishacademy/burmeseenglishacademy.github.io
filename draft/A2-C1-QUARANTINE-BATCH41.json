@@ -1,0 +1,146 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-26",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "independently_approved": 0,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "description": "13 reversible WordNet-sense, level and named-entity holds; no independent evidence observed.",
+  "counts_by_provisional_level": {
+    "A2": 0,
+    "B1": 3,
+    "B2": 5,
+    "C1": 5
+  },
+  "records": [
+    {
+      "word": "turkey",
+      "provisional_level": "B1",
+      "risk": "LIKELY_LOWER_TIER_COMMON_ANIMAL",
+      "evidence_note": "A common animal word is unlikely to require B1; review sense-specific tier.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "mate",
+      "provisional_level": "B1",
+      "risk": "SPECIALISED_NAUTICAL_WORDNET_SENSE",
+      "evidence_note": "The source clue is a ship officer rather than the common friend sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "deputy",
+      "provisional_level": "B1",
+      "risk": "WORDNET_NARROW_SHERIFF_SENSE",
+      "evidence_note": "The candidate clue describes an emergency sheriff deputy, not the general deputy sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "saudi",
+      "provisional_level": "B2",
+      "risk": "DEM0NYM_NAMED_ENTITY_RISK",
+      "evidence_note": "Nationality and proper-name casing need manual review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "oregon",
+      "provisional_level": "B2",
+      "risk": "GEOGRAPHIC_NAMED_ENTITY",
+      "evidence_note": "US state name is not a suitable generic headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "jazz",
+      "provisional_level": "B2",
+      "risk": "INCORRECT_OR_RARE_WORDNET_SENSE",
+      "evidence_note": "WordNet clue means empty rhetoric, not the usual musical genre.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "disabled",
+      "provisional_level": "B2",
+      "risk": "OUTDATED_STIGMATISING_WORDNET_GLOSS",
+      "evidence_note": "The candidate noun clue uses outdated and disrespectful terminology.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "galaxy",
+      "provisional_level": "B2",
+      "risk": "WORDNET_UNCOMMON_SENSE",
+      "evidence_note": "Clue describes a splendid group of people, not the common astronomical sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "est",
+      "provisional_level": "C1",
+      "risk": "ABBREVIATION_NOT_STANDARD_HEADWORD",
+      "evidence_note": "Time-zone abbreviation is not a suitable ordinary C1 vocabulary item.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "sang",
+      "provisional_level": "C1",
+      "risk": "OBSCURE_BOTANICAL_WORDNET_SENSE",
+      "evidence_note": "WordNet refers to a regional plant name rather than common past tense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "fig",
+      "provisional_level": "C1",
+      "risk": "ABBREVIATION_WORDNET_SENSE",
+      "evidence_note": "The candidate clue uses an abbreviation of figure.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "restoration",
+      "provisional_level": "C1",
+      "risk": "HISTORICAL_NAMED_EVENT_SENSE",
+      "evidence_note": "The candidate clue names a specific English historical era.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "journalism",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_MISMATCH",
+      "evidence_note": "Candidate clue describes newspapers collectively, not the common profession or practice.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
