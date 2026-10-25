@@ -1,0 +1,25 @@
+name: CEFR batch36 parallel bilingual draft and quarantine QA (never deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - draft/A2-C1-EDITORIAL-BATCH35.json
+      - draft/A2-C1-REVIEW-TASKS-BATCH35.json
+      - draft/A2-C1-QUARANTINE-BATCH35.json
+      - tools/audit_cefr_batch36_review_tasks.py
+      - .github/workflows/cefr-batch36-review-qa.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  unpublished-structural-review:
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A2, B1, B2, C1, ALL]
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify unpublished batch36 drafts, quarantine and review evidence flags
+        run: python3 tools/audit_cefr_batch36_review_tasks.py --level ${{ matrix.level }}
