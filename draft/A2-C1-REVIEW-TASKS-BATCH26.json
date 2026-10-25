@@ -1,0 +1,2111 @@
+{
+  "schema": 1,
+  "release_status": "UNVERIFIED_REVIEW_TASKS_DO_NOT_PUBLISH",
+  "created_on": "2026-10-25",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "source_pages_not_yet_checked": true,
+  "independently_approved": 0,
+  "description": "50 separate pending five-stage independent source/linguistic/audio review packets. Links are unvisited research leads, NOT evidence.",
+  "entries": [
+    {
+      "word": "talking",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/talking",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "living",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/living",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "lead",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/lead",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "felt",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/felt",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "writing",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/writing",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "waiting",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/waiting",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "note",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/note",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "growth",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/growth",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "pain",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/pain",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "response",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/response",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "consider",
+      "provisional_level": "A2",
+      "part_of_speech": "verb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/consider",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "drop",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/drop",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "link",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/link",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "throughout",
+      "provisional_level": "A2",
+      "part_of_speech": "adverb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/throughout",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "additional",
+      "provisional_level": "A2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/additional",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "justice",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/justice",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "walking",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/walking",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "helping",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/helping",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "shooting",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/shooting",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "breaking",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/breaking",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "kick",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/kick",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "mail",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/mail",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "pair",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/pair",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "teaching",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/teaching",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "zone",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/zone",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "joint",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/joint",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "mix",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/mix",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "path",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/path",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "spending",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/spending",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "vice",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/vice",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "ray",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/ray",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "testing",
+      "provisional_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/testing",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "hanging",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/hanging",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "joining",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/joining",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "closing",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/closing",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "woods",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/woods",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "rear",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/rear",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "scores",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/scores",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "wire",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/wire",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "comic",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/comic",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "lab",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/lab",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "odd",
+      "provisional_level": "B2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/odd",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "colonel",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/colonel",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "dean",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/dean",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "landing",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/landing",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "layer",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/layer",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "LEVEL_UNVERIFIED_NEEDS_SENSE_EVIDENCE",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "sake",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/sake",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "suite",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/suite",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "grammar",
+      "provisional_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/grammar",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "proceed",
+      "provisional_level": "C1",
+      "part_of_speech": "verb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+      "english_definition_review": {
+        "task": "Independently consult a trustworthy dictionary for the exact selected sense and POS; record observed quotation-free paraphrase, date, reviewer and source. Reject wrong WordNet sense.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/proceed",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independently review natural Myanmar gloss, register and English-sense alignment; record reviewer, date and evidence.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "example_review": {
+        "task": "Independently check original example for grammar, natural collocation, exact sense and appropriateness.",
+        "completed": false,
+        "reviewer": null,
+        "observed_evidence": null
+      },
+      "cefr_review": {
+        "task": "Independently establish sense-specific CEFR tier using an actual observed level-tagged source; otherwise hold/re-tier.",
+        "completed": false,
+        "provisional_level_risk": "HIGH_CEFR_OR_SENSE_RISK_REQUIRES_RECLASSIFICATION_REVIEW",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After editorial approval generate George and Emma recordings; listen to both and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    }
+  ]
+}
