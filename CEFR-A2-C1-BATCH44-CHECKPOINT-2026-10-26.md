@@ -33,3 +33,10 @@ A2–C1 unique drafts 2655; 182 historical duplicate rows excluded; 922 reversib
 
 ## Release blockers
 1845 unwritten, 922 held, **0/5000 independently approved**, complete George/Emma recordings and real listening, browser/mobile and real-device iPhone Safari, hosting limits and confirmed live deployment. Do not notify completion.
+
+## Observed final Batch44 CI — 26 October 2026
+- **Final source-corrected vocabulary/QA commit:** `e6d75bb74b80bfd622e7828d05ad9e272d8b8cb0` (parent `8fa72df3a886cd49f2c52ae17002409015d910c4`). This commit contains the 41 drafts, 49 new reversible holds, eight separate Cambridge source observations, audit, workflow and checkpoint.
+- **Actual [GitHub Actions run 40236007013](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40236007013)** on that exact commit: **completed, all five matrix jobs succeeded**, and decoded logs were inspected. A2 job `121297614327`, B1 `121297614390`, B2 `121297614323`, C1 `121297614349`, ALL `121297614218`.
+- ALL decoded log printed **A2 521 / B1 747 / B2 853 / C1 534** = **2,655 unique A2–C1 drafts**; with A1 **500**, **3,155 written / 1,845 unwritten**, **922 holds**, **182 historical duplicate rows excluded**, **0 independently approved**. ALL also printed `PASS: production lesson, IELTS, George/Emma audio and privacy assets unchanged` after comparing against `main`.
+- Prior corrected-examples run [40235906551](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40235906551) succeeded, but its 47-draft ledger is **superseded** by the later source-conflict quarantines. The initial failed run [40235870863](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40235870863) remains documented; it is not misreported as a pass.
+- These five successes are **structural staging-only tests**; no independent linguistic or CEFR approval, no listening, no real-device Safari, no hosting certification, no publication. The completion gate remains closed.
