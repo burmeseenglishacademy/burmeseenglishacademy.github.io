@@ -35,7 +35,8 @@ def audit(level):
     assert len({x["word"] for x in held})==len(held)==479, ("held_count",len(held),"unique",len({x["word"] for x in held}),"duplicates",[w for w,c in Counter(x["word"] for x in held).items() if c>1])
     assert not {x["word"] for x in prior}&{x["word"] for x in d["entries"]},("duplicate_prior_draft",sorted({x["word"] for x in prior}&{x["word"] for x in d["entries"]}))
     assert not {x["word"] for x in held}&{x["word"] for x in prior+d["entries"]},("held_drafted",sorted({x["word"] for x in held}&{x["word"] for x in prior+d["entries"]}))
-    assert all(x["word"] in pool and x["provisional_level"]==pool[x["word"]]["level"] and not x["source_observed"] and not x["reviewed_independently"] and not x["release_approved"] for x in held)
+    assert all(x["reviewed_independently"] is False and x["release_approved"] is False for x in held)
+    assert all(x["word"] in pool and x["provisional_level"]==pool[x["word"]]["level"] and x["source_observed"] is False for x in q["records"])
     taskmap={x["word"]:x for x in t["entries"]}
     assert len(taskmap)==40
     posmap={"n":"noun","v":"verb","a":"adjective","s":"adjective","r":"adverb"}
