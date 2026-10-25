@@ -17,7 +17,7 @@
 | C1 | 1500 | 515 | 0 | 985 |
 | **TOTAL** | **5000** | **3073** | **0** | **1927** |
 
-Expected A2–C1 unique 2573, plus A1 500. Historical duplicate rows 182 excluded. Reversible holds 831. Final ledger **requires observed CI**, not just local expectation.
+Expected A2–C1 unique 2573, plus A1 500. Historical duplicate rows 182 excluded. Reversible holds 831. Final ledger **was confirmed by actual five-job structural CI and decoded logs**, not by independent linguistic review.
 
 ## Separate editorial stages
 1. English definitions: 45 first-pass drafts; 3 AI-assisted source observations, **0 independently approved**.
@@ -32,7 +32,7 @@ Expected A2–C1 unique 2573, plus A1 500. Historical duplicate rows 182 exclude
 - Initial batch42 draft commit `711dc05a5fe54d3acf5948bdbae9f4f20f77b9eb`.
 - Review/hold/QA commit `a5e2ec69c147f2c2797c3043a5edefc6f3ddd4c0`; run `40226100097` completed **success** for all five A2/B1/B2/C1/ALL jobs. Actual logs read for jobs `121267680401`, `121267680596`, `121267680628`, `121267680632`, `121267680685`. ALL printed **3074 written, 1926 outstanding, 830 holds**, and confirmed production lesson/IELTS/audio/privacy assets unchanged vs main. These figures predate beneficial quarantine.
 - Stronger chained historical-audit commit `0c62c989a103fe798451c63e698553c9ea9ff40d`; run `40226157237` had all five jobs report **success**. This run also predates the Cambridge correction.
-- Source correction + updated batch42 structural QA commit: **pending new commit and CI observation**.
+- Source correction + updated batch42 structural QA commit: `56b4d1de4ef1dc857254f8495ec472930bcb04ef`. [Final run 40226233742](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40226233742) **completed success** on this exact commit; all five jobs were checked and decoded logs read: B2 `121268090112`, B1 `121268090225`, C1 `121268090281`, ALL `121268090289`, A2 `121268090296`. ALL logged **A2 521 / B1 747 / B2 790 / C1 515**, A2–C1 unique **2573**, plus A1 **500** = **3073 written**, **1927 unwritten**, **831 reversible holds**, **182 historical duplicate rows**, **0 independently approved**. The ALL job also verified that production lessons, IELTS, George/Emma audio and privacy assets are unchanged compared with `main`. These are structural checks only; they do not certify any language/audio/device quality.
 
 ## Release blockers
 1,927 headwords unwritten; 831 candidate holds; **0/5000 independent linguistic/CEFR/example approvals**; full new George/Emma collection, actual listening, browser/mobile/physical iPhone Safari, hosting limits and live deployment are unconfirmed. **Do not merge, publish or notify completion.**
