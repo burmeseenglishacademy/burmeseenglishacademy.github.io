@@ -1,0 +1,129 @@
+{
+  "schema": 1,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "created_on": "2026-10-25",
+  "independently_approved": 0,
+  "description": "12 reversible candidate holds; no held word counted as drafted.",
+  "records": [
+    {
+      "word": "yeah",
+      "provisional_level": "A2",
+      "risk": "WORDNET_UNUSUAL_ADVERB_SENSE",
+      "evidence_note": "Pool adverb clue 'not only so, but' is not the normal interjection; no tier evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "starting",
+      "provisional_level": "A2",
+      "risk": "SPORTS_NOUN_SENSE",
+      "evidence_note": "Pool clue refers to a starter's turn in a game, not the ordinary verb.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "positive",
+      "provisional_level": "A2",
+      "risk": "GRAMMATICAL_TECHNICAL_NOUN",
+      "evidence_note": "Pool noun is a grammatical comparative degree, not the common adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "taylor",
+      "provisional_level": "B1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Pool names a historical composer rather than a common learner lemma.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "jersey",
+      "provisional_level": "B1",
+      "risk": "NAMED_ENTITY_GEOGRAPHY",
+      "evidence_note": "Pool describes a US state; lexical jersey garment sense would be different.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "sam",
+      "provisional_level": "B1",
+      "risk": "ACRONYM_SPECIALIST",
+      "evidence_note": "Pool denotes surface-to-air missile acronym, not ordinary word.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "cambridge",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Pool refers to a university or place, not general vocabulary.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ross",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Pool names a historical explorer.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "clark",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Pool names a historical explorer.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "roberts",
+      "provisional_level": "C1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Pool names a scientist, not a general noun.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "collins",
+      "provisional_level": "C1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Pool names a writer, not general vocabulary.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "costa",
+      "provisional_level": "C1",
+      "risk": "ANATOMY_BOTANY_SPECIALISM",
+      "evidence_note": "Pool means a rib-like anatomical or botanical structure; specialist level unsubstantiated.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
