@@ -1,0 +1,436 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-26",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "independently_approved": 0,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "description": "Batch43 reversible holds; no claim of independently observed sources.",
+  "counts_by_provisional_level": {
+    "A2": 0,
+    "B1": 2,
+    "B2": 15,
+    "C1": 25
+  },
+  "records": [
+    {
+      "word": "tank",
+      "provisional_level": "B1",
+      "risk": "WORDNET_SENSE_AND_B1_TIER_REVIEW_REQUIRED",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "crash",
+      "provisional_level": "B1",
+      "risk": "WORDNET_SENSE_AND_B1_TIER_REVIEW_REQUIRED",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "tail",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "difficulty",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "teen",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "mouse",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "piano",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "toilet",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "bat",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "darkness",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "sauce",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "toy",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "candy",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "furniture",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "mall",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "lion",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "garage",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "paradise",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "spirits",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "vocal",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "colours",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "lesbian",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "southeast",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "twins",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "blank",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "buffalo",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "curve",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "heights",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "horn",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "hurry",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "missile",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "northwest",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "pepper",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "alike",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "arrow",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "bend",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "cabin",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "cage",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "closet",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "companion",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "disc",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "dozens",
+      "provisional_level": "C1",
+      "risk": "PROVISIONAL_C1_UNSUPPORTED_COMMON_OR_INFLECTED_SENSE",
+      "evidence_note": "Heuristic editorial hold based on candidate clue and common learner usage; source evidence not yet checked. Re-evaluate correct lemma, sense and tier before any promotion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
