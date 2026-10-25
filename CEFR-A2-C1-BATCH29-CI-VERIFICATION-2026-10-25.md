@@ -4,7 +4,7 @@
 
 ## Actual GitHub commits and scope
 - First atomic commit [de1a931e5d52a983957ad4ea62fb73f4b69c3c41](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/de1a931e5d52a983957ad4ea62fb73f4b69c3c41): attempted 52 drafts, but duplicated previously used Batch26 candidates. Its CI failure is retained in history.
-- Corrective commit [6958fd8520f7dbd64c8ec5d6c995625c80ad5a78](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/6958fd8520f7dbd64c8ec5d6c995625c80ad5a78): removed 27 already-drafted words and 12 already-held words, authored 17 fresh bilingual drafts and 5 fresh reversible holds. Corrected result: **42 distinct drafts and 10 distinct holds**.
+- Corrective commit [6958fd8520f7dbd64c8ec5d6c995625c80ad5a78](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/6958fd8520f7dbd64c8ec5d6c995625c80ad5a78): removed 27 already-drafted words and 12 already-held words, authored 17 fresh bilingual drafts and 5 fresh reversible holds. Result at this intermediate commit: **42 distinct drafts and 9 distinct holds**; the later sense-integrity commit added one further hold.
 - Compared baseline `7708cbd06a44f22e164338044a8ba2d89565ab49` against corrective commit: two commits, exactly six changed staging-only paths (draft, review, quarantine, auditor, CI workflow, checkpoint); **no production site files changed**.
 
 ## Observed GitHub Actions runs and decoded logs
