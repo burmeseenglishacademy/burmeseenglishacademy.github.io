@@ -1,0 +1,626 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-26",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "independently_approved": 0,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "description": "Batch45 reversible heuristic candidate holds; no independent linguistic/source approval.",
+  "counts_by_provisional_level": {
+    "A2": 0,
+    "B1": 0,
+    "B2": 29,
+    "C1": 32
+  },
+  "records": [
+    {
+      "word": "wounded",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Inflected collective noun; confirm lemma and whether adjective is more useful. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "boards",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Theatre-stage plural noun is an obscure WordNet sense. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "dynamic",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: WordNet noun sense is unusual; common adjective is a different POS. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "fewer",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Comparative quantifier is likely substantially earlier than B2. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "bow",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Ambiguous pronunciation and multiple unrelated noun senses. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "throat",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common body-part noun is likely below B2. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ton",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common weight measure; B2 allocation lacks sense-level evidence. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "bloody",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: WordNet verb is uncommon; adjective and interjection have different registers. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "butt",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Multiple meanings and potentially inappropriate register. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "con",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Noun has unrelated meanings; WordNet sense requires disambiguation. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "globe",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: WordNet 'Earth' definition risks confusing planet with spherical model. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "nazi",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Historical ideology label needs careful context and CEFR support. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "peaceful",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common adjective appears likely earlier than B2. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "photographer",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Occupation noun likely earlier than B2. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "pin",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Polysemous everyday noun likely earlier than B2. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "stocks",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Obscure nautical WordNet first sense, plural lemma. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "stranger",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common noun likely earlier than B2. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "tap",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Basic noun/verb with several senses and early-level risk. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "auction",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: WordNet bridge-card-game sense is inappropriate for general learners. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "classical",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: WordNet noun is a genre; adjective is a separate POS. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "clip",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: First sense is specialised firearm equipment; common senses differ. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "exam",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common learner noun likely earlier than B2. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "menu",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Basic restaurant word likely A1/A2, not B2. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "realise",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: WordNet commercial-earn sense differs from usual 'understand' verb. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "yea",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Nonstandard affirmative; unsuitable core general vocabulary. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "aids",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Acronym/medical disease vs plural 'aids'; sensitive lemma and case. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "dvd",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Abbreviation/format likely early-level, not B2. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "lonely",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Everyday emotional adjective likely earlier than B2. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "poem",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Basic school/literature noun likely earlier than B2. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "keen",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: WordNet noun means funeral lament; common adjective is a different POS. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "mere",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: WordNet noun means a small lake; common adjective is a different POS. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "owe",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common obligation verb likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "publisher",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Occupation/business noun likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "banner",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common sign noun likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "cruel",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common adjective likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "heal",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common verb likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "jewelry",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common object noun likely earlier than C1; US spelling needs policy. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "babe",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Informal register and likely earlier level. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "drum",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Basic musical instrument noun likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "happily",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Transparent adverb from happy likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "keyboard",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Everyday technology noun likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "mild",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common adjective likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "selfish",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common personality adjective likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "silk",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Everyday material noun likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "voter",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common civic noun likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "belly",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common body-part noun likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "booth",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common venue noun likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "cliff",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common geographical noun likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "hunger",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common feeling noun likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "lung",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common anatomical noun likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "pour",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common everyday verb likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "publish",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common writing/publishing verb likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "diary",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common personal-writing noun likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "disagree",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common opinion verb likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "disappear",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common everyday verb likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "euro",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Currency name not suitable for unsupported C1 tier. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "indoor",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common location adjective likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "intend",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common planning verb likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "invisible",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common descriptive adjective likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "teenager",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Common age noun likely earlier than C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "sierra",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_TIER_OR_UNSUITABLE_WORDNET_FIRST_SENSE",
+      "evidence_note": "Heuristic editorial hold only: Geographic proper-noun/rare landscape sense ambiguity. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
