@@ -1,0 +1,17 @@
+name: CEFR batch34 current-corpus candidate preview (staging only; never deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - .github/workflows/cefr-batch34-candidate-preview.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  current-corpus-candidates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Exclude all drafted and quarantined words; print candidate senses, not CEFR approvals
+        run: python3 tools/list_cefr_next_candidates.py --limit 110
