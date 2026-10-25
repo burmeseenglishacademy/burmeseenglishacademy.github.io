@@ -1,0 +1,246 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-26",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "independently_approved": 0,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "description": "Batch46 23 reversible candidate holds; not independently approved.",
+  "counts_by_provisional_level": {
+    "A2": 0,
+    "B1": 0,
+    "B2": 11,
+    "C1": 12
+  },
+  "records": [
+    {
+      "word": "tune",
+      "provisional_level": "B2",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Common musical noun likely below B2. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "wherever",
+      "provisional_level": "B2",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Common location adverb likely below B2. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "announce",
+      "provisional_level": "B2",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Common verb likely below B2. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "breathe",
+      "provisional_level": "B2",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Basic action likely below B2. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "homeless",
+      "provisional_level": "B2",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: WordNet noun sense and person-first register require review. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "occasions",
+      "provisional_level": "B2",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Plural inflection and misleading sense. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "peoples",
+      "provisional_level": "B2",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Specialised plural collective requires review. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "rip",
+      "provisional_level": "B2",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Obscure archaic noun sense. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "brick",
+      "provisional_level": "B2",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Common material noun likely below B2. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "enormous",
+      "provisional_level": "B2",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Common adjective likely below B2; malformed clue. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "forgive",
+      "provisional_level": "B2",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Common verb likely below B2. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "goodness",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Vague abstract noun sense. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "sexually",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Sensitive register and tier. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ham",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Basic food noun likely below C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "rap",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: First sense differs from common musical use. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "resume",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Ambiguous pronunciation and homographs. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ace",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Obscure numeral sense. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "chains",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Inflected plural and shackles sense. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "freeze",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Noun sense versus common verb. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "stamp",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Multiple competing noun senses. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "witch",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Common folklore noun likely below C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "derby",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Hat sense versus sports and proper names. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "grocery",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Shop sense differs from groceries usage. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
