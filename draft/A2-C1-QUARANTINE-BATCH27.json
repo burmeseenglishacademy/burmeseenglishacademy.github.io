@@ -1,0 +1,179 @@
+{
+  "schema": 1,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "created_on": "2026-10-25",
+  "independently_approved": 0,
+  "description": "17 reversible unreviewed candidate holds.",
+  "records": [
+    {
+      "word": "major",
+      "provisional_level": "A2",
+      "risk": "MILITARY_SENSE_WRONG_LEVEL",
+      "evidence_note": "Military officer sense appears in an A2 tier; verify rank-specific level.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "works",
+      "provisional_level": "A2",
+      "risk": "PLURAL_OR_INDUSTRIAL_SENSE",
+      "evidence_note": "Industrial plant sense is plural, unlike everyday verb works.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ways",
+      "provisional_level": "A2",
+      "risk": "PLURAL_SPECIALIST_SENSE",
+      "evidence_note": "Shipbuilding slipway sense is not ordinary plural ways.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "lower",
+      "provisional_level": "A2",
+      "risk": "RARE_NOUN_SENSE",
+      "evidence_note": "Lower berth noun differs from common comparative adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "holy",
+      "provisional_level": "B1",
+      "risk": "RARE_NOUN_SENSE",
+      "evidence_note": "Pilgrimage site as a noun is not the common adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "putting",
+      "provisional_level": "B1",
+      "risk": "SPORT_SPECIFIC_SENSE",
+      "evidence_note": "Golf noun requires register and CEFR evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "links",
+      "provisional_level": "B1",
+      "risk": "SPORT_SPECIFIC_PLURAL",
+      "evidence_note": "Golf course sense is plural and specialized.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "upper",
+      "provisional_level": "B1",
+      "risk": "RARE_NOUN_SENSE",
+      "evidence_note": "Upper berth noun differs from common adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "stations",
+      "provisional_level": "B2",
+      "risk": "RELIGIOUS_PROPER_TERM",
+      "evidence_note": "Stations of the Cross is a specialized fixed expression.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "islamic",
+      "provisional_level": "B2",
+      "risk": "INCORRECT_WORDNET_GLOSS",
+      "evidence_note": "WordNet gloss conflates Islamic with Islamism.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "organic",
+      "provisional_level": "B2",
+      "risk": "RARE_NOUN_SENSE",
+      "evidence_note": "Organic fertilizer noun differs from common adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "signing",
+      "provisional_level": "B2",
+      "risk": "WRONG_SENSE_OR_FORM",
+      "evidence_note": "Sign language activity differs from signing a document.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "magical",
+      "provisional_level": "C1",
+      "risk": "ARCHAIC_SENSE_EXAMPLE",
+      "evidence_note": "Candidate clue relies on archaic literary usage.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "eighth",
+      "provisional_level": "C1",
+      "risk": "UNSUPPORTED_HIGH_CEFR",
+      "evidence_note": "Basic ordinal unlikely C1 without specific evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "chips",
+      "provisional_level": "C1",
+      "risk": "UNSUPPORTED_HIGH_CEFR",
+      "evidence_note": "Ordinary British food sense unlikely C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "useless",
+      "provisional_level": "C1",
+      "risk": "UNSUPPORTED_HIGH_CEFR",
+      "evidence_note": "Common adjective unlikely C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "palm",
+      "provisional_level": "C1",
+      "risk": "UNSUPPORTED_HIGH_CEFR",
+      "evidence_note": "Common body-part noun likely needs re-tiering.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
