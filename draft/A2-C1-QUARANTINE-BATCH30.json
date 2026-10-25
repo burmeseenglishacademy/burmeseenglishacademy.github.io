@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "created_on": "2026-10-25",
+  "independently_approved": 0,
+  "description": "10 reversible holds for WordNet sense conflicts, names and unsupported candidate clues.",
+  "records": [
+    {
+      "word": "yeah",
+      "provisional_level": "A2",
+      "risk": "WORDNET_SENSE_CONFLICT",
+      "evidence_note": "Candidate clue 'not only so, but' is not a reliable adverbial sense for conversational 'yeah'.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "lord",
+      "provisional_level": "A2",
+      "risk": "RELIGIOUS_TITLE_OR_NAMED_REFERENCE",
+      "evidence_note": "Capitalisation and religious title/name senses require editorial policy and evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "wow",
+      "provisional_level": "A2",
+      "risk": "WORDNET_SENSE_CONFLICT",
+      "evidence_note": "Pool clue describes a joke; the usual exclamation 'wow' does not match this noun clue.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "jersey",
+      "provisional_level": "B1",
+      "risk": "PROPER_NAME_OR_WRONG_SENSE",
+      "evidence_note": "Pool clue is a US state; the lowercase headword could instead denote a garment.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "taylor",
+      "provisional_level": "B1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Pool clue identifies a composer by surname rather than a general learner headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "sam",
+      "provisional_level": "B1",
+      "risk": "ACRONYM_OR_NAMED_ENTITY",
+      "evidence_note": "Pool clue is a surface-to-air missile abbreviation, not a general lowercase lemma.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ross",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Pool clue identifies a named explorer rather than a common noun.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "melbourne",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY_OR_WRONG_LOCATION",
+      "evidence_note": "Pool clue is a Florida town; ordinary learners may infer the Australian city.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "morris",
+      "provisional_level": "C1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Pool clue identifies a named suffragist rather than a common vocabulary sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "tattoo",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_CONFLICT",
+      "evidence_note": "Pool clue is a military drum signal, while a common tattoo means a design on skin.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
