@@ -1,29 +1,30 @@
-# Burmese English Academy — Batch29 staging checkpoint (2026-10-25)
-**UNVERIFIED FIRST-PASS DRAFTS ONLY. NEVER MERGE OR PUBLISH.**
+# Burmese English Academy — Batch29 corrected staging checkpoint (25 October 2026)
+**HOLD: unverified first-pass drafts only; never merge or publish.**
 
-## This iteration
-- 52 original bilingual drafts: A2 12, B1 14, B2 14, C1 12. English definitions, Myanmar meanings and original examples remain distinct DRAFT fields.
-- 52 independent-review packets; English POS/sense, Myanmar naturalness, examples, sense-specific CEFR and George/Emma real listening remain separately pending.
-- 16 reversible quarantines: A2 4, B1 4, B2 4, C1 4; named entities, WordNet mismatches, rare POS and inappropriate senses.
-- Provisional CEFR tiers are **not** independently verified. Several obvious tier mismatches are explicitly flagged; the pool must be re-tiered or quarantined before publication.
+## Real QA finding and correction
+The first Batch29 CI run [40167162660](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40167162660) failed all five level-specific jobs at the duplicate-prevention assertion. Inspected decoded ALL and A2 logs; the original candidate preview preceded Batch26, so 27 proposed drafts and 12 proposed holds had already been used in Batch26. The draft/quarantine collisions were **removed**, not counted twice. Added 17 new original bilingual drafts and 5 new distinct reversible holds. The original failing run remains historical evidence, not a pass.
 
-## Exact unique written inventory (not approved)
-| Level | Target | Written | Independently checked | Unwritten |
+## This corrected iteration
+- **42 distinct original bilingual drafts:** A2 8, B1 10, B2 12, C1 12.
+- **42 separate review packets:** English definition/POS, natural Myanmar, grammatical example, sense-specific CEFR and audio/listening, all pending.
+- **9 distinct reversible candidate holds:** named/capitalisation problems, wrong WordNet senses, slang/register and unsuitable POS.
+- Candidate WordNet senses and provisional levels are NOT authoritative. C1 contains likely lower-level words explicitly flagged for re-tier or quarantine.
+
+## Exact unique written inventory — not independently checked
+| Level | Target | Written | Independently approved | Unwritten |
 |---|---:|---:|---:|---:|
 | A1 | 500 | 500 | 0 | 0 |
-| A2 | 700 | 498 | 0 | 202 |
-| B1 | 1,000 | 511 | 0 | 489 |
-| B2 | 1,300 | 509 | 0 | 791 |
+| A2 | 700 | 494 | 0 | 206 |
+| B1 | 1,000 | 507 | 0 | 493 |
+| B2 | 1,300 | 507 | 0 | 793 |
 | C1 | 1,500 | 362 | 0 | 1,138 |
-| **Total** | **5,000** | **2,380** | **0** | **2,620** |
+| **Total** | **5,000** | **2,370** | **0** | **2,630** |
 
-A2–C1 unique drafted: **1,880**. Quarantined candidates: **456** (440 prior + 16 new). Prior 182 identical legacy duplicate draft rows excluded from unique totals.
+A2–C1 unique written 1,870; quarantine 449 total (440 prior + 9 distinct new); 182 prior identical legacy duplicates excluded.
 
-## Structural checks and evidence
-- Five parallel GitHub Actions jobs for A2, B1, B2, C1 and ALL are configured to check draft structure, original examples, duplicate prevention, candidate pool POS/tier consistency, quarantine disjointness and unpublished status. **CI results are pending at initial checkpoint creation**; only actual completed job objects and logs can establish pass/fail.
-- No independent dictionary page observations, Myanmar reviewer sign-off, grammatical example review, sense-specific CEFR confirmation or listening.
-- No complete CEFR George/Emma audio generation or human listening, physical iPhone Safari, hosting limits approval, or live CEFR deployment.
-- Production 54 lessons, IELTS 1,000 bank, existing audio, privacy and live main are untouched by this staging-only commit. Staging `cefr-vocabulary-data.js` must remain `entries:[]`.
+## Quality and release blockers
+No independent dictionary/POS/CEFR source observations, Myanmar sign-off, example sign-off, full new CEFR George/Emma generation, listening, real-device iPhone Safari, hosting-limit sign-off or live deployment. GitHub Actions check structure, not linguistic correctness.
+Staging `cefr-vocabulary-data.js` stays `entries:[]`. No production lesson, IELTS, existing audio, privacy or main changes.
 
-## Publication gate
-Do not merge, publish, count these as independently checked or claim audio validation until all independent reviews, listening, real-device and hosting checks are evidenced. Structural QA success is not linguistic validation.
+## CI
+The corrected atomic staging commit triggers five parallel jobs A2/B1/B2/C1/ALL; their real status and decoded logs must be checked before marking structural QA successful.
