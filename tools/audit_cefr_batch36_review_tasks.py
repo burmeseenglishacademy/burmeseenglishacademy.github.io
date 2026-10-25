@@ -28,9 +28,9 @@ def audit(level):
         if previous.returncode:
             raise AssertionError("Batch34 baseline failed: " + previous.stdout + previous.stderr)
         print(previous.stdout.strip())
-    draft = read("draft/A2-C1-EDITORIAL-BATCH35.json")
-    tasks = read("draft/A2-C1-REVIEW-TASKS-BATCH35.json")
-    held = read("draft/A2-C1-QUARANTINE-BATCH35.json")
+    draft = read("draft/A2-C1-EDITORIAL-BATCH36.json")
+    tasks = read("draft/A2-C1-REVIEW-TASKS-BATCH36.json")
+    held = read("draft/A2-C1-QUARANTINE-BATCH36.json")
     poolrows = read("draft/UNVERIFIED_CEFR_CANDIDATES.json")["entries"]
     pool = {row["word"]: row for row in poolrows}
     assert len(poolrows) == len(pool) == 5000
