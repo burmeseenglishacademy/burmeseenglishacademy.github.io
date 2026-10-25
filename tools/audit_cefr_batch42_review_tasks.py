@@ -4,8 +4,8 @@ import argparse,collections,json,re,subprocess,sys
 from pathlib import Path
 R=Path(__file__).resolve().parents[1]
 LEVELS=("A2","B1","B2","C1")
-EXPECTED={'A2':0,'B1':8,'B2':21,'C1':17}
-HELD={'A2':0,'B1':3,'B2':10,'C1':7}
+EXPECTED={'A2':0,'B1':8,'B2':21,'C1':16}
+HELD={'A2':0,'B1':3,'B2':10,'C1':8}
 POS={"n":"noun","v":"verb","a":"adjective","s":"adjective","r":"adverb"}
 FLAGS=("reviewed_english","reviewed_burmese","reviewed_example","reviewed_level","reviewed_pronunciation")
 def read(p):return json.loads((R/p).read_text(encoding="utf-8"))
@@ -17,13 +17,17 @@ def audit(level):
     d=read("draft/A2-C1-EDITORIAL-BATCH42.json")
     t=read("draft/A2-C1-REVIEW-TASKS-BATCH42.json")
     q=read("draft/A2-C1-QUARANTINE-BATCH42.json")
+    observations=read("draft/A2-C1-SOURCE-OBSERVATIONS-BATCH42.json")
+    assert observations["independently_approved"]==0 and len(observations["observations"])==3
+    assert {x["word"] for x in observations["observations"]}=={"beneficial","governance","diameter"}
+    assert all(not x["english_approved"] and not x["burmese_approved"] and not x["cefr_approved"] for x in observations["observations"])
     pool={x["word"]:x for x in read("draft/UNVERIFIED_CEFR_CANDIDATES.json")["entries"]}
     assert len(pool)==5000
     assert d["release_status"]==q["release_status"]=="UNVERIFIED_DRAFT_DO_NOT_PUBLISH"
     assert t["release_status"]=="UNVERIFIED_REVIEW_TASKS_DO_NOT_PUBLISH"
     assert t["source_pages_not_yet_checked"] is True
     assert d["independently_approved"]==t["independently_approved"]==q["independently_approved"]==0
-    assert len(d["entries"])==len(t["entries"])==46 and len(q["records"])==20
+    assert len(d["entries"])==len(t["entries"])==45 and len(q["records"])==21
     assert d["counts_by_provisional_level"]==t["counts_by_provisional_level"]==EXPECTED
     assert q["counts_by_provisional_level"]==HELD
     assert collections.Counter(x["level"] for x in d["entries"])=={k:v for k,v in EXPECTED.items() if v}
@@ -31,9 +35,9 @@ def audit(level):
     drafts={x["word"]:x for x in d["entries"]}
     tasks={x["word"]:x for x in t["entries"]}
     holds={x["word"]:x for x in q["records"]}
-    assert len(drafts)==len(tasks)==46 and len(holds)==20
+    assert len(drafts)==len(tasks)==45 and len(holds)==21
     assert set(drafts)==set(tasks) and not (set(drafts)&set(holds))
-    assert len({x["example_sentence"] for x in drafts.values()})==46
+    assert len({x["example_sentence"] for x in drafts.values()})==45
     for word,r in drafts.items():
         if level!="ALL" and r["level"]!=level:continue
         assert re.fullmatch("[a-z]{3,}",word) and word in pool and pool[word]["level"]==r["level"],word
@@ -55,7 +59,8 @@ def audit(level):
     for word,r in holds.items():
         assert word in pool and pool[word]["level"]==r["provisional_level"],word
         assert r["reviewed_independently"] is False and r["release_approved"] is False,word
-        assert r["source_observed"] is False,word
+        if word=="beneficial": assert r["source_observed"] and r["source_url"] and r["source_review_date"],word
+        else: assert r["source_observed"] is False,word
     if level=="ALL":
         oldfiles=["draft/A2-C1-EDITORIAL-STARTER.json"]+[f"draft/A2-C1-EDITORIAL-BATCH{i:02d}.json" for i in range(9,42)]
         olddrafts={r["word"] for p in oldfiles for r in read(p)["entries"]}
@@ -67,15 +72,15 @@ def audit(level):
         allrows=[r for p in oldfiles for r in read(p)["entries"]]+d["entries"]
         byword=collections.defaultdict(list)
         for r in allrows:byword[r["word"]].append(r)
-        assert len(byword)==2574
+        assert len(byword)==2573
         assert sum(len(v)-1 for v in byword.values())==182
         counts=collections.Counter(v[0]["level"] for v in byword.values())
-        assert counts=={"A2":521,"B1":747,"B2":790,"C1":516},counts
-        assert len(oldholds|set(holds))==830
-        print("UNIQUE A2-C1 A2=521 B1=747 B2=790 C1=516 total=2574; independently approved=0")
-        print("A1=500; A1-C1 written=3074; outstanding=1926; quarantine=830; legacy duplicate rows=182")
+        assert counts=={"A2":521,"B1":747,"B2":790,"C1":515},counts
+        assert len(oldholds|set(holds))==831
+        print("UNIQUE A2-C1 A2=521 B1=747 B2=790 C1=515 total=2573; independently approved=0")
+        print("A1=500; A1-C1 written=3073; outstanding=1927; quarantine=831; legacy duplicate rows=182")
     assert "entries:[]" in (R/"cefr-vocabulary-data.js").read_text(encoding="utf-8")
-    print(f"STAGING ONLY batch42 {level} PASS: 46 drafts, 20 holds, zero approvals; no audio/deploy")
+    print(f"STAGING ONLY batch42 {level} PASS: 45 drafts, 21 holds, zero approvals; no audio/deploy")
 if __name__=="__main__":
     p=argparse.ArgumentParser()
     p.add_argument("--level",choices=(*LEVELS,"ALL"),default="ALL")

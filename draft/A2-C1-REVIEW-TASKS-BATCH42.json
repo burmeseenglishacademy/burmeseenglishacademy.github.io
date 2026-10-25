@@ -9,7 +9,7 @@
     "A2": 0,
     "B1": 8,
     "B2": 21,
-    "C1": 17
+    "C1": 16
   },
   "entries": [
     {
@@ -1259,7 +1259,7 @@
       "cefr_review": {
         "task": "Consult sense-specific CEFR evidence from an authoritative graded learner source; re-tier or quarantine unsupported levels.",
         "completed": false,
-        "provisional_level_risk": "C1_TIER_LIKELY_OVERSTATED_REQUIRES_INDEPENDENT_SENSE_SPECIFIC_RECLASSIFICATION",
+        "provisional_level_risk": "CAMBRIDGE_GOVERNANCE_SENSE_OBSERVED_BUT_C1_TIER_AND_MYANMAR_UNVERIFIED",
         "observed_evidence": null,
         "reviewer": null
       },
@@ -1451,48 +1451,6 @@
         "completed": false,
         "source_observed": false,
         "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/vacuum",
-        "observed_evidence": null,
-        "reviewer": null
-      },
-      "burmese_review": {
-        "task": "Qualified independent Burmese reviewer must check semantic accuracy, natural Myanmar wording and register.",
-        "completed": false,
-        "observed_evidence": null,
-        "reviewer": null
-      },
-      "example_review": {
-        "task": "Independently assess original sentence grammar, collocations and sense alignment.",
-        "completed": false,
-        "observed_evidence": null,
-        "reviewer": null
-      },
-      "cefr_review": {
-        "task": "Consult sense-specific CEFR evidence from an authoritative graded learner source; re-tier or quarantine unsupported levels.",
-        "completed": false,
-        "provisional_level_risk": "C1_TIER_LIKELY_OVERSTATED_REQUIRES_INDEPENDENT_SENSE_SPECIFIC_RECLASSIFICATION",
-        "observed_evidence": null,
-        "reviewer": null
-      },
-      "audio_review": {
-        "task": "After text approval generate George and Emma recordings; independently listen and test actual iPhone Safari.",
-        "completed": false,
-        "real_listening": false,
-        "real_device_test": false,
-        "reviewer": null
-      },
-      "release_approved": false
-    },
-    {
-      "word": "beneficial",
-      "provisional_level": "C1",
-      "part_of_speech": "adjective",
-      "review_status": "PENDING_INDEPENDENT_REVIEW",
-      "priority": "SENSE_AND_CEFR_REVIEW_REQUIRED",
-      "english_definition_review": {
-        "task": "Consult a credible independent learner dictionary; verify POS, exact sense and collocations; record observed evidence, URL, date and reviewer.",
-        "completed": false,
-        "source_observed": false,
-        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/beneficial",
         "observed_evidence": null,
         "reviewer": null
       },

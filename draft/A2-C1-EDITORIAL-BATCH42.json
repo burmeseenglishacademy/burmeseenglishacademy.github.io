@@ -4,7 +4,7 @@
   "branch": "cefr-5000-bilingual-qa-staging",
   "independently_approved": 0,
   "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
-  "description": "Original first-pass bilingual drafts, not source-checked, audio-approved or published.",
+  "description": "45 original first-pass bilingual drafts after Cambridge source-observed beneficial C1 conflict was quarantined; not independently approved.",
   "stages": {
     "english": "FIRST_PASS",
     "myanmar": "FIRST_PASS",
@@ -15,7 +15,7 @@
     "A2": 0,
     "B1": 8,
     "B2": 21,
-    "C1": 17
+    "C1": 16
   },
   "entries": [
     {
@@ -572,8 +572,8 @@
     {
       "level": "C1",
       "word": "governance",
-      "english_definition": "The people and structures responsible for directing an organisation.",
-      "burmese_meaning": "အဖွဲ့အစည်းတစ်ခုကို စီမံဦးဆောင်ကြီးကြပ်သည့် လူများနှင့် ဖွဲ့စည်းပုံစနစ်",
+      "english_definition": "The system and processes used to direct and manage an organisation.",
+      "burmese_meaning": "အဖွဲ့အစည်းတစ်ခုကို ဦးဆောင်စီမံကြီးကြပ်ရာတွင် အသုံးပြုသော စနစ်နှင့် လုပ်ငန်းစဉ်များ",
       "example_sentence": "The report recommended clearer governance for the public agency.",
       "part_of_speech": "noun",
       "source_english": "",
@@ -585,8 +585,8 @@
       "reviewed_level": false,
       "reviewed_pronunciation": false,
       "status": "AI_ASSISTED_DRAFT_PENDING_INDEPENDENT_REVIEW",
-      "editorial_risk": "C1_TIER_LIKELY_OVERSTATED_REQUIRES_INDEPENDENT_SENSE_SPECIFIC_RECLASSIFICATION",
-      "source_note": "Original first-pass draft; candidate WordNet clue and provisional CEFR tier are not independent evidence."
+      "editorial_risk": "CAMBRIDGE_GOVERNANCE_SENSE_OBSERVED_BUT_C1_TIER_AND_MYANMAR_UNVERIFIED",
+      "source_note": "AI-assisted Cambridge headword observation prompted a narrower system/process sense; no independent bilingual or CEFR approval."
     },
     {
       "level": "C1",
@@ -671,25 +671,6 @@
       "burmese_meaning": "အရာဝတ္ထု အလွန်နည်းပါးသော သို့မဟုတ် လုံးဝမရှိသော နေရာလွတ်",
       "example_sentence": "Scientists created a vacuum inside the sealed chamber.",
       "part_of_speech": "noun",
-      "source_english": "",
-      "source_burmese": "",
-      "source_level": "",
-      "reviewed_english": false,
-      "reviewed_burmese": false,
-      "reviewed_example": false,
-      "reviewed_level": false,
-      "reviewed_pronunciation": false,
-      "status": "AI_ASSISTED_DRAFT_PENDING_INDEPENDENT_REVIEW",
-      "editorial_risk": "C1_TIER_LIKELY_OVERSTATED_REQUIRES_INDEPENDENT_SENSE_SPECIFIC_RECLASSIFICATION",
-      "source_note": "Original first-pass draft; candidate WordNet clue and provisional CEFR tier are not independent evidence."
-    },
-    {
-      "level": "C1",
-      "word": "beneficial",
-      "english_definition": "Producing a helpful or positive effect.",
-      "burmese_meaning": "အကျိုးကျေးဇူးရှိသော သို့မဟုတ် ကောင်းကျိုးဖြစ်စေသော",
-      "example_sentence": "Regular maintenance is beneficial to the long-term performance of the machine.",
-      "part_of_speech": "adjective",
       "source_english": "",
       "source_burmese": "",
       "source_level": "",

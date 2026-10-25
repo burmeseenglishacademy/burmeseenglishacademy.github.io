@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-26",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "stage": "PRELIMINARY_AI_ASSISTED_SOURCE_OBSERVATIONS_NOT_INDEPENDENT_APPROVAL",
+  "independently_approved": 0,
+  "observations": [
+    {
+      "word": "beneficial",
+      "source": "Cambridge Advanced Learner's Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/beneficial",
+      "observed_on": "2026-10-26",
+      "observed_by": "AI-assisted web source inspection",
+      "observation": "Beneficial is an adjective with B2 displayed for the helpful/useful sense; the staging candidate assigns C1.",
+      "action": "QUARANTINE_PROVISIONAL_C1_PENDING_RE_TIER",
+      "english_approved": false,
+      "burmese_approved": false,
+      "cefr_approved": false
+    },
+    {
+      "word": "governance",
+      "source": "Cambridge Advanced Learner's Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/governance",
+      "observed_on": "2026-10-26",
+      "observed_by": "AI-assisted web source inspection",
+      "observation": "Governance is an uncountable noun referring to the way organisations or countries are managed and the systems for this; first-pass draft was adjusted from people/structures to system/processes. No C1 label observed.",
+      "action": "REVISE_ENGLISH_SENSE_KEEP_C1_TIER_UNVERIFIED",
+      "english_approved": false,
+      "burmese_approved": false,
+      "cefr_approved": false
+    },
+    {
+      "word": "diameter",
+      "source": "Cambridge Learner's Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/learner-english/diameter",
+      "observed_on": "2026-10-26",
+      "observed_by": "AI-assisted web source inspection",
+      "observation": "A geometry noun describing a line through a circle's centre; no C1 CEFR tag observed on the inspected page.",
+      "action": "RETAIN_DRAFT_WITH_C1_TIER_BLOCKER",
+      "english_approved": false,
+      "burmese_approved": false,
+      "cefr_approved": false
+    }
+  ]
+}
