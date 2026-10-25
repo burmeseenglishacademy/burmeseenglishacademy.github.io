@@ -5,7 +5,7 @@
   "independently_approved": 0,
   "release_status": "UNVERIFIED_REVIEW_TASKS_DO_NOT_PUBLISH",
   "source_pages_not_yet_checked": true,
-  "description": "44 separate source-evidence and real listening review packets, all pending; URLs are unvisited reference leads.",
+  "description": "44 independent review packets, including replacement hunter/monitor tasks; all pending, URLs unvisited.",
   "entries": [
     {
       "word": "okay",
@@ -932,7 +932,7 @@
       "release_approved": false
     },
     {
-      "word": "pants",
+      "word": "hunter",
       "provisional_level": "B2",
       "part_of_speech": "noun",
       "review_status": "PENDING_INDEPENDENT_REVIEW",
@@ -941,7 +941,7 @@
         "task": "Observe exact authoritative dictionary POS and sense; record source URL, dated evidence and independent reviewer.",
         "completed": false,
         "source_observed": false,
-        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/pants",
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/hunter",
         "observed_evidence": null,
         "reviewer": null
       },
@@ -1310,7 +1310,7 @@
       "release_approved": false
     },
     {
-      "word": "bother",
+      "word": "monitor",
       "provisional_level": "B2",
       "part_of_speech": "noun",
       "review_status": "PENDING_INDEPENDENT_REVIEW",
@@ -1319,7 +1319,7 @@
         "task": "Observe exact authoritative dictionary POS and sense; record source URL, dated evidence and independent reviewer.",
         "completed": false,
         "source_observed": false,
-        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/bother",
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/monitor",
         "observed_evidence": null,
         "reviewer": null
       },
