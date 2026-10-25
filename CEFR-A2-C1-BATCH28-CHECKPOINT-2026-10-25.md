@@ -26,4 +26,9 @@ No independent English dictionary sense/POS evidence, natural Myanmar sign-off, 
 No change requested to production 54 lessons, existing IELTS 1000 bank, existing George/Emma audio, learner privacy, or live site. Staging `cefr-vocabulary-data.js` remains empty. This batch adds only staging draft, review, quarantine, auditor, workflow and checkpoint files.
 
 ## Commit and CI evidence
-Batch28 initial atomic staging commit and actual workflow job outcomes: **pending inspection**. Do not claim CI success until actual GitHub Actions jobs and logs are observed.
+**Observed GitHub Actions evidence (25 October 2026, 05:24 UTC):**
+- Initial atomic staging commit `9f5abefaacd0c9a10d30a96e240a3030c1908e08` added **exactly six staging-only files**; GitHub compare against baseline `761b2f6c1391d0af0aa5902f545c1da4bbf7bd44` confirmed one commit, six additions, no production files modified.
+- [Batch28 five-job CI run 40165436565](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40165436565) **completed/success**. Inspected all five actual job objects and decoded logs: A2 job `121085402556`, B1 `121085402432`, B2 `121085402592`, C1 `121085402566`, ALL `121085402583` — each completed/success.
+- ALL log explicitly reports `A2=486 B1=497 B2=495 C1=350; A2-C1 unique=1828; independently approved=0`, `A1=500; total written=2328; unwritten=2672; legacy identical duplicate rows=182`, and `63 drafts, 14 held, zero approvals; no audio/deploy`.
+- Checked live `main` at `dca0db7aa30118ecc18350db8dc406e6cac91554`, unchanged since prior checkpoint.
+- **Scope limitation:** these five jobs test structural consistency and unpublished status only; they do **not** verify dictionary truth, natural Myanmar, CEFR evidence, grammar by an independent reviewer, audio listening, mobile hardware or hosting limits.
