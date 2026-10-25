@@ -1,0 +1,866 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-25",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "independently_approved": 0,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "description": "Reversible candidate holds for weak WordNet senses, POS/lemma ambiguity, identity/named entities, unsupported provisional CEFR and register concerns. No observed dictionary evidence; no final exclusion.",
+  "counts_by_provisional_level": {
+    "A2": 3,
+    "B1": 15,
+    "B2": 20,
+    "C1": 47
+  },
+  "records": [
+    {
+      "word": "hell",
+      "provisional_level": "A2",
+      "risk": "RELIGIOUS_OR_FIGURATIVE_SENSE",
+      "evidence_note": "WordNet broad place-of-turmoil sense is not a reliable A2 teaching sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "kill",
+      "provisional_level": "A2",
+      "risk": "NOMINAL_SPECIAL_SENSE",
+      "evidence_note": "The kill as a noun is hunting-specific and should not inherit the common verb's level.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "particular",
+      "provisional_level": "A2",
+      "risk": "RARE_NOMINAL_SENSE",
+      "evidence_note": "A particular as a detail is usually plural particulars; POS and tier need evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "mid",
+      "provisional_level": "B1",
+      "risk": "BOUND_FORM_LEMMA_RISK",
+      "evidence_note": "Usually a combining form or prefix rather than a free-standing adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "supreme",
+      "provisional_level": "B1",
+      "risk": "WORDNET_NONSTANDARD_SENSE",
+      "evidence_note": "The pool's final-or-last-in-life gloss is not a safe default sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "muslim",
+      "provisional_level": "B1",
+      "risk": "IDENTITY_AND_LEVEL_REVIEW",
+      "evidence_note": "Religious identity noun requires careful register and sense-specific level evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "dying",
+      "provisional_level": "B1",
+      "risk": "NOMINAL_SENSE_RISK",
+      "evidence_note": "The pool's time-when-something-ends sense is not an ordinary noun use.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "zero",
+      "provisional_level": "B1",
+      "risk": "MISLEADING_ABSTRACT_SENSE",
+      "evidence_note": "The pool's quantity-of-no-importance gloss is distinct from the numeral.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "chosen",
+      "provisional_level": "B1",
+      "risk": "RARE_NOMINAL_SENSE",
+      "evidence_note": "One who is chosen is not a safe independent B1 noun lemma without evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "drunk",
+      "provisional_level": "B1",
+      "risk": "DEROGATORY_NOMINAL_REGISTER",
+      "evidence_note": "Person-label noun may be stigmatising; pool implies a chronic drinker.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "essential",
+      "provisional_level": "B1",
+      "risk": "NOMINAL_LEMMA_RISK",
+      "evidence_note": "An essential as an indispensable item is more commonly plural.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "humans",
+      "provisional_level": "B1",
+      "risk": "PLURAL_LEMMA_POLICY",
+      "evidence_note": "Plural headword duplicates human and requires explicit lemma policy.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "jewish",
+      "provisional_level": "B1",
+      "risk": "IDENTITY_AND_LEVEL_REVIEW",
+      "evidence_note": "Identity adjective needs sensitive treatment and independent CEFR evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "sending",
+      "provisional_level": "B1",
+      "risk": "NOMINALIZATION_LEVEL_RISK",
+      "evidence_note": "The act-of-sending noun is not an independent common learner lemma.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "dealing",
+      "provisional_level": "B1",
+      "risk": "ABSTRACT_NOMINAL_SENSE",
+      "evidence_note": "Manner-of-conduct noun requires a natural example and source evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "scottish",
+      "provisional_level": "B1",
+      "risk": "DEMONYM_LANGUAGE_SENSE",
+      "evidence_note": "Pool uses a regional language noun; lexical identity and level need evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ministry",
+      "provisional_level": "B1",
+      "risk": "RELIGIOUS_SPECIAL_SENSE",
+      "evidence_note": "Pool specifically means a group of religious ministers, not government ministry.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "suicide",
+      "provisional_level": "B1",
+      "risk": "SENSITIVE_TOPIC_LEVEL_CHECK",
+      "evidence_note": "Exact noun sense and pedagogical suitability need independent review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "auto",
+      "provisional_level": "B2",
+      "risk": "LOWER_LEVEL_COLLOQUIALISM",
+      "evidence_note": "Informal motor-vehicle noun should not inherit an unsupported B2 level.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "suck",
+      "provisional_level": "B2",
+      "risk": "RARE_NOMINAL_SENSE",
+      "evidence_note": "The act-of-sucking noun needs idiomatic usage evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "crap",
+      "provisional_level": "B2",
+      "risk": "VULGAR_REGISTER",
+      "evidence_note": "Obscene noun requires register policy and evidence before classroom use.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "silly",
+      "provisional_level": "B2",
+      "risk": "NONSTANDARD_NOMINAL_SENSE",
+      "evidence_note": "A silly as a term for a misbehaving child is not a safe B2 noun lemma.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "defensive",
+      "provisional_level": "B2",
+      "risk": "NOMINAL_ADJECTIVE_MISMATCH",
+      "evidence_note": "On the defensive is a fixed adjectival construction, not an ordinary noun.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "sixth",
+      "provisional_level": "B2",
+      "risk": "LOWER_LEVEL_ORDINAL",
+      "evidence_note": "Basic ordinal number does not have credible provisional B2 support.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "thirty",
+      "provisional_level": "B2",
+      "risk": "LOWER_LEVEL_CARDINAL",
+      "evidence_note": "Basic cardinal number does not have credible provisional B2 support.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "doc",
+      "provisional_level": "B2",
+      "risk": "INFORMAL_LOWER_LEVEL_SENSE",
+      "evidence_note": "Informal doctor synonym requires register and level evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "daddy",
+      "provisional_level": "B2",
+      "risk": "LOWER_LEVEL_FAMILY_WORD",
+      "evidence_note": "Informal father word is unlikely to be B2 in its common sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "comprehensive",
+      "provisional_level": "B2",
+      "risk": "SPECIAL_EXAM_NOUN",
+      "evidence_note": "Shortening for comprehensive examination is specialised and may be US-specific.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "profits",
+      "provisional_level": "B2",
+      "risk": "PLURAL_LEMMA_POLICY",
+      "evidence_note": "Plural form should not automatically count separately from profit.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "reducing",
+      "provisional_level": "B2",
+      "risk": "CHEMISTRY_SENSE_MISMATCH",
+      "evidence_note": "Pool's electron-gain chemistry noun should not be confused with everyday reducing.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "cant",
+      "provisional_level": "B2",
+      "risk": "RARE_OR_AMBIGUOUS_SENSE",
+      "evidence_note": "Pool means worn-out jargon; many learners will misread as can't.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "exception",
+      "provisional_level": "B2",
+      "risk": "WORDNET_SENSE_MISMATCH",
+      "evidence_note": "Deliberate omission is not the ordinary exception meaning.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "asshole",
+      "provisional_level": "B2",
+      "risk": "OFFENSIVE_PERSON_LABEL",
+      "evidence_note": "Vulgar insult requires register and educational suitability review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ate",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY_MYTHOLOGY",
+      "evidence_note": "WordNet refers to a Greek goddess, not a general English word.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "bruce",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY_PERSON",
+      "evidence_note": "WordNet refers to a named scientist, not a general learner headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "commonwealth",
+      "provisional_level": "B2",
+      "risk": "SPECIAL_POLITICAL_NAME_SENSE",
+      "evidence_note": "Pool refers to US state titles, not the general political noun.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "delicious",
+      "provisional_level": "B2",
+      "risk": "BOTANICAL_CULTIVAR_SENSE",
+      "evidence_note": "Pool is a named apple variety rather than the common adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "sexy",
+      "provisional_level": "B2",
+      "risk": "LOWER_LEVEL_AND_REGISTER_RISK",
+      "evidence_note": "Common adjective sense may be lower-tier; requires age and CEFR policy.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "touching",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_NOMINALIZATION",
+      "evidence_note": "Physical contact sense is common and lacks evidence for C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "skip",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_MOTION_SENSE",
+      "evidence_note": "Hop-and-step gait is not clearly C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "snap",
+      "provisional_level": "C1",
+      "risk": "SPECIAL_ACTION_SENSE",
+      "evidence_note": "Catching an object with hands is not a reliable generic noun sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "caring",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_NOMINALIZATION",
+      "evidence_note": "Affectionate feeling noun lacks C1-specific evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "cheating",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_NOMINALIZATION",
+      "evidence_note": "Deception noun is likely lower-level and needs source review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "flip",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_ACROBATIC_SENSE",
+      "evidence_note": "Somersault-like action is not clearly C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "chill",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_TEMPERATURE_SENSE",
+      "evidence_note": "Coldness sense lacks C1-specific support.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "floating",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_NOMINALIZATION",
+      "evidence_note": "Act of floating is not clearly C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "victor",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_NOUN",
+      "evidence_note": "Winner sense requires level re-tiering.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "bless",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_VERB",
+      "evidence_note": "Give a blessing is not automatically C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "boxing",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_SPORTS_NOUN",
+      "evidence_note": "Sport noun lacks C1-specific support.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "shine",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_LIGHT_NOUN",
+      "evidence_note": "Brightness noun lacks C1-specific support.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "treasure",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_NOUN",
+      "evidence_note": "Valuable possessions sense needs re-tiering.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "trophy",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_NOUN",
+      "evidence_note": "Award object sense needs re-tiering.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "tweet",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_BIRD_SOUND",
+      "evidence_note": "Bird chirp sense does not justify C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ash",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_NOUN",
+      "evidence_note": "Burnt residue sense needs re-tiering.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "creature",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_NOUN",
+      "evidence_note": "Living animal sense lacks C1-specific evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "deadly",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_ADJECTIVE",
+      "evidence_note": "Able to cause death is not clearly C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "gentleman",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_NOUN",
+      "evidence_note": "Polite man sense needs re-tiering.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "icon",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMPUTING_NOUN",
+      "evidence_note": "Graphical symbol sense is common digital vocabulary.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "parade",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_NOUN",
+      "evidence_note": "Public procession sense needs re-tiering.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "politician",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_NOUN",
+      "evidence_note": "Political leader noun lacks C1-specific evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "rocky",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_ADJECTIVE",
+      "evidence_note": "Full-of-rocks sense is not clearly C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "scratch",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_NOUN",
+      "evidence_note": "Skin mark sense needs re-tiering.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "sunshine",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_NOUN",
+      "evidence_note": "Sunlight sense lacks C1-specific evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "warrior",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_NOUN",
+      "evidence_note": "Fighter sense needs re-tiering.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "burst",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_NOUN",
+      "evidence_note": "Sudden breaking or explosion sense lacks C1-specific evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "crop",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_AGRICULTURE_NOUN",
+      "evidence_note": "Seasonal plant yield sense needs re-tiering.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "elderly",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COLLECTIVE_NOUN",
+      "evidence_note": "Collective people noun requires lemma and level policy.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "harbor",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_NOUN",
+      "evidence_note": "Sheltered port sense needs re-tiering.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "mathematics",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_ACADEMIC_NOUN",
+      "evidence_note": "School subject is unlikely to be C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "quietly",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_ADVERB",
+      "evidence_note": "Softly adverb is unlikely to be C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "aboard",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_TRAVEL_ADVERB",
+      "evidence_note": "On a vehicle is not clearly C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "awake",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_VERB",
+      "evidence_note": "Stop sleeping is not clearly C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "install",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_TECH_VERB",
+      "evidence_note": "Set up software or equipment is not clearly C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "instruction",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_NOUN",
+      "evidence_note": "Direction or order sense needs re-tiering.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "invitation",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_NOUN",
+      "evidence_note": "Request to attend sense needs re-tiering.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "organ",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_ANATOMY_NOUN",
+      "evidence_note": "Body organ sense lacks C1-specific evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "pearl",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_NOUN",
+      "evidence_note": "Gem from shell sense needs re-tiering.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "pile",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_NOUN",
+      "evidence_note": "Stack of objects sense needs re-tiering.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "plug",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_NOUN",
+      "evidence_note": "Object closing a hole sense needs re-tiering.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "rod",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_NOUN",
+      "evidence_note": "Long thin bar sense needs re-tiering.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "scream",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_NOUN",
+      "evidence_note": "Loud cry sense needs re-tiering.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "stairs",
+      "provisional_level": "C1",
+      "risk": "PLURAL_LEMMA_AND_LEVEL",
+      "evidence_note": "Plural headword and basic meaning require re-tiering.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "sweat",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_NOUN",
+      "evidence_note": "Body perspiration sense needs re-tiering.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "teenage",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_COMMON_ADJECTIVE",
+      "evidence_note": "Age 13-19 adjective is not clearly C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "thunder",
+      "provisional_level": "C1",
+      "risk": "LOWER_LEVEL_WEATHER_NOUN",
+      "evidence_note": "Loud storm sound is not clearly C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
