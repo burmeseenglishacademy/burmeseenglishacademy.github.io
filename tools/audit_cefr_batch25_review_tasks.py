@@ -31,7 +31,7 @@ def audit(level):
  assert not set(held)&{x["word"] for x in prior+d["entries"]}
  assert all(x["reviewed_independently"] is False and x["release_approved"] is False for p in holds for x in read(p)["records"])
  taskmap={x["word"]:x for x in t["entries"]}
- assert len(taskmap)==48
+ assert len(taskmap)==50
  for x in d["entries"]:
   if level!="ALL" and x["level"]!=level: continue
   w=x["word"]
