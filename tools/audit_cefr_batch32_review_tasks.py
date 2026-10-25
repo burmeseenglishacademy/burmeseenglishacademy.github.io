@@ -27,12 +27,12 @@ def audit(level):
     assert d["counts_by_provisional_level"]==expected
     assert len({x["word"] for x in d["entries"]})==56
     assert len({x["example_sentence"] for x in d["entries"]})==56
-    assert len(q["records"])==len({x["word"] for x in q["records"]})==12
+    assert len(q["records"])==len({x["word"] for x in q["records"]})==7
     olddraft=["draft/A2-C1-EDITORIAL-STARTER.json"]+[f"draft/A2-C1-EDITORIAL-BATCH{i:02d}.json" for i in range(9,32)]
     prior=[x for p in olddraft for x in read(p)["entries"]]
     heldfiles=["draft/A2-C1-CANDIDATE-QUARANTINE.json"]+[f"draft/A2-C1-QUARANTINE-BATCH{i:02d}.json" for i in range(14,33)]
     held=[x for p in heldfiles for x in read(p)["records"]]
-    assert len({x["word"] for x in held})==len(held)==484, ("held_count",len(held),"unique",len({x["word"] for x in held}),"duplicates",[w for w,c in Counter(x["word"] for x in held).items() if c>1])
+    assert len({x["word"] for x in held})==len(held)==479, ("held_count",len(held),"unique",len({x["word"] for x in held}),"duplicates",[w for w,c in Counter(x["word"] for x in held).items() if c>1])
     assert not {x["word"] for x in prior}&{x["word"] for x in d["entries"]}
     assert not {x["word"] for x in held}&{x["word"] for x in prior+d["entries"]}
     assert all(x["word"] in pool and x["provisional_level"]==pool[x["word"]]["level"] and not x["source_observed"] and not x["reviewed_independently"] and not x["release_approved"] for x in held)
@@ -68,7 +68,7 @@ def audit(level):
         print("UNIQUE A2-C1 A2=518 B1=557 B2=555 C1=408 total=2038; independently approved=0")
         print("A1=500; A1-C1 written=2538; first drafts outstanding=2462; legacy duplicate rows=",sum(len(v)-1 for v in byword.values()))
     assert "entries:[]" in (R/"cefr-vocabulary-data.js").read_text(encoding="utf-8")
-    print("STAGING ONLY batch32",level,"PASS: 56 drafts, 12 held, zero approvals; no audio/deploy")
+    print("STAGING ONLY batch32",level,"PASS: 56 drafts, 7 new held, zero approvals; no audio/deploy")
 if __name__=="__main__":
     p=argparse.ArgumentParser()
     p.add_argument("--level",choices=("A2","B1","B2","C1","ALL"),default="ALL")

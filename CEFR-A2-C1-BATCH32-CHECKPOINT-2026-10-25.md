@@ -4,7 +4,7 @@
 ## New editorial work
 - **56** original first-pass bilingual drafts: A2 **8**, B1 **16**, B2 **16**, C1 **16**. English definitions, natural Myanmar meanings and original complete usage examples are separate fields.
 - **56** independent source-evidence task packets (English sense/POS, Myanmar meaning, grammatical example, sense-specific CEFR, both-voice audio listening). All remain **pending**. Reference URLs are not evidence observed.
-- **12** reversible holds: A2 3, B1 3, B2 3, C1 3. Named entities, acronyms, grammatical jargon and WordNet sense mismatches quarantined.
+- **7** genuinely new reversible holds: A2 2, B1 0, B2 2, C1 3. Five additional flagged candidates were already quarantined in earlier batches and were omitted rather than counted twice. Named entities, acronyms, grammatical jargon and WordNet sense mismatches quarantined.
 - All provisional C1 tiers explicitly flagged likely misplaced and require re-tiering or quarantine. No automatic approval.
 - No dictionary source was observed; no real listening or physical iPhone Safari testing occurred.
 
@@ -18,7 +18,7 @@
 | C1 | 1,500 | 408 | 0 | 1,092 |
 | **Total** | **5,000** | **2,538** | **0** | **2,462** |
 
-A2–C1 unique first drafts **2,038**. Unique quarantines **484**. Existing **182** duplicate legacy draft rows excluded from written totals. CI must confirm counts.
+A2–C1 unique first drafts **2,038**. Unique quarantines **479**. Existing **182** duplicate legacy draft rows excluded from written totals. CI must confirm counts.
 
 ## Safety and review blockers
 - Staging-only additions under `draft/`, `tools/`, `.github/workflows/` and this report. `cefr-vocabulary-data.js` remains `entries:[]`.
