@@ -1,0 +1,21 @@
+name: CEFR batch39 unpublished candidate preview (no deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - .github/workflows/cefr-batch39-candidate-preview.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  candidate-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Print undrafted unheld candidate words for editorial triage
+        run: python3 tools/list_cefr_next_candidates.py --limit 180
+      - name: Confirm CEFR release data is disabled
+        run: |
+          grep -q 'entries:\[\]' cefr-vocabulary-data.js
+          echo 'STAGING ONLY: candidates not approved; no text/audio deploy'
