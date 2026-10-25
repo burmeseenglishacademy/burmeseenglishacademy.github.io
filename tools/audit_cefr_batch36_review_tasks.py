@@ -40,10 +40,10 @@ def audit(level):
     assert tasks["source_pages_not_yet_checked"] is True
     assert draft["independently_approved"] == tasks["independently_approved"] == held["independently_approved"] == 0
     assert len(draft["entries"]) == len(tasks["entries"]) == 60
-    assert collections.Counter(x["level"] for x in draft["entries"]) == EXPECTED
+    assert collections.Counter(x["level"] for x in draft["entries"]) == {k:v for k,v in EXPECTED.items() if v}
     assert draft["counts_by_provisional_level"] == EXPECTED
     assert len(held["records"]) == 45
-    assert collections.Counter(x["provisional_level"] for x in held["records"]) == HELD
+    assert collections.Counter(x["provisional_level"] for x in held["records"]) == {k:v for k,v in HELD.items() if v}
     assert held["counts_by_provisional_level"] == HELD
     newwords = {x["word"] for x in draft["entries"]}
     heldwords = {x["word"] for x in held["records"]}
