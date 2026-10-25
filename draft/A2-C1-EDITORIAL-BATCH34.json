@@ -4,7 +4,7 @@
   "branch": "cefr-5000-bilingual-qa-staging",
   "independently_approved": 0,
   "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
-  "description": "Batch34 original bilingual editorial first drafts; English definition, Myanmar gloss and original example kept as distinct unverified stages; no source observation or listening.",
+  "description": "95 original bilingual first-pass drafts after removing two weak or misleading pool senses for quarantine; no independent approval.",
   "stages": {
     "english": "ORIGINAL_DEFINITION_DRAFT",
     "myanmar": "NATURAL_MYANMAR_GLOSS_DRAFT",
@@ -14,8 +14,8 @@
   },
   "counts_by_provisional_level": {
     "A2": 3,
-    "B1": 48,
-    "B2": 41,
+    "B1": 47,
+    "B2": 40,
     "C1": 5
   },
   "entries": [
@@ -115,31 +115,12 @@
       "source_note": "Original bilingual first-pass draft; candidate WordNet sense and provisional CEFR tier not independently validated. No observed dictionary evidence, independent Burmese/example review or real listening."
     },
     {
-      "word": "supporting",
-      "level": "B1",
-      "part_of_speech": "noun",
-      "english_definition": "The act of holding something up or helping it remain strong.",
-      "burmese_meaning": "အရာတစ်ခုကို ထောက်ကူခြင်း သို့မဟုတ် ခိုင်မာအောင် အားဖြည့်ခြင်း",
-      "example_sentence": "The supporting of the damaged roof required extra beams.",
-      "source_english": "",
-      "source_burmese": "",
-      "source_level": "",
-      "reviewed_english": false,
-      "reviewed_burmese": false,
-      "reviewed_example": false,
-      "reviewed_level": false,
-      "reviewed_pronunciation": false,
-      "status": "AI_ASSISTED_DRAFT_PENDING_INDEPENDENT_REVIEW",
-      "editorial_risk": "WORDNET_SENSE_AND_LEVEL_REQUIRES_SOURCE_CHECK",
-      "source_note": "Original bilingual first-pass draft; candidate WordNet sense and provisional CEFR tier not independently validated. No observed dictionary evidence, independent Burmese/example review or real listening."
-    },
-    {
       "word": "beer",
       "level": "B1",
       "part_of_speech": "noun",
       "english_definition": "An alcoholic drink made by fermenting grain, often flavoured with hops.",
       "burmese_meaning": "ကောက်နှံကို အချဉ်ဖောက်၍ ပြုလုပ်သော ဘီယာအရက်ယမကာ",
-      "example_sentence": "The restaurant offers non-alcoholic beer as well.",
+      "example_sentence": "He ordered a bottle of beer with his meal.",
       "source_english": "",
       "source_burmese": "",
       "source_level": "",
@@ -150,15 +131,15 @@
       "reviewed_pronunciation": false,
       "status": "AI_ASSISTED_DRAFT_PENDING_INDEPENDENT_REVIEW",
       "editorial_risk": "WORDNET_SENSE_AND_LEVEL_REQUIRES_SOURCE_CHECK",
-      "source_note": "Original bilingual first-pass draft; candidate WordNet sense and provisional CEFR tier not independently validated. No observed dictionary evidence, independent Burmese/example review or real listening."
+      "source_note": "Original bilingual first-pass draft; candidate WordNet sense and provisional CEFR tier not independently validated. No observed dictionary evidence, independent Burmese/example review or real listening. Sense wording refined against provisional pool clue; not independently verified."
     },
     {
       "word": "labour",
       "level": "B1",
       "part_of_speech": "noun",
-      "english_definition": "People who work for wages, especially in manual jobs, considered as a group.",
-      "burmese_meaning": "အထူးသဖြင့် လက်လုပ်လက်စား အလုပ်သမားအင်အားစု",
-      "example_sentence": "The new factory increased demand for skilled labour.",
+      "english_definition": "Workers considered together as a social or economic group.",
+      "burmese_meaning": "လူမှုစီးပွားရေး အုပ်စုတစ်ခုအဖြစ် သတ်မှတ်သော အလုပ်သမားလူတန်းစား",
+      "example_sentence": "Organised labour demanded safer working conditions.",
       "source_english": "",
       "source_burmese": "",
       "source_level": "",
@@ -169,7 +150,7 @@
       "reviewed_pronunciation": false,
       "status": "AI_ASSISTED_DRAFT_PENDING_INDEPENDENT_REVIEW",
       "editorial_risk": "WORDNET_SENSE_AND_LEVEL_REQUIRES_SOURCE_CHECK",
-      "source_note": "Original bilingual first-pass draft; candidate WordNet sense and provisional CEFR tier not independently validated. No observed dictionary evidence, independent Burmese/example review or real listening."
+      "source_note": "Original bilingual first-pass draft; candidate WordNet sense and provisional CEFR tier not independently validated. No observed dictionary evidence, independent Burmese/example review or real listening. Sense wording refined against provisional pool clue; not independently verified."
     },
     {
       "word": "pack",
@@ -1011,9 +992,9 @@
       "word": "incredibly",
       "level": "B2",
       "part_of_speech": "adverb",
-      "english_definition": "To a degree that is difficult to believe; extremely.",
-      "burmese_meaning": "မယုံနိုင်လောက်အောင် သို့မဟုတ် အလွန်အမင်း",
-      "example_sentence": "The rescue team worked incredibly quickly.",
+      "english_definition": "In a way that is very difficult to believe.",
+      "burmese_meaning": "မယုံနိုင်လောက်အောင် ထူးဆန်းစွာ",
+      "example_sentence": "Incredibly, the small boat survived the storm.",
       "source_english": "",
       "source_burmese": "",
       "source_level": "",
@@ -1024,7 +1005,7 @@
       "reviewed_pronunciation": false,
       "status": "AI_ASSISTED_DRAFT_PENDING_INDEPENDENT_REVIEW",
       "editorial_risk": "WORDNET_SENSE_AND_LEVEL_REQUIRES_SOURCE_CHECK",
-      "source_note": "Original bilingual first-pass draft; candidate WordNet sense and provisional CEFR tier not independently validated. No observed dictionary evidence, independent Burmese/example review or real listening."
+      "source_note": "Original bilingual first-pass draft; candidate WordNet sense and provisional CEFR tier not independently validated. No observed dictionary evidence, independent Burmese/example review or real listening. Sense wording refined against provisional pool clue; not independently verified."
     },
     {
       "word": "regard",
@@ -1600,9 +1581,9 @@
       "word": "contribute",
       "level": "B2",
       "part_of_speech": "verb",
-      "english_definition": "To help create a result by adding something useful or valuable.",
-      "burmese_meaning": "ရလဒ်တစ်ခု ဖြစ်ပေါ်စေရန် အထောက်အကူတစ်ခု ပံ့ပိုးဖြည့်စွက်သည်",
-      "example_sentence": "Good ventilation can contribute to a healthier workplace.",
+      "english_definition": "To add a particular quality or effect to something.",
+      "burmese_meaning": "အရာတစ်ခုတွင် အရည်အသွေး သို့မဟုတ် အကျိုးသက်ရောက်မှုတစ်ခု ထပ်မံဖြည့်စွက်ပေးသည်",
+      "example_sentence": "The warm colours contribute a welcoming feeling to the room.",
       "source_english": "",
       "source_burmese": "",
       "source_level": "",
@@ -1613,7 +1594,7 @@
       "reviewed_pronunciation": false,
       "status": "AI_ASSISTED_DRAFT_PENDING_INDEPENDENT_REVIEW",
       "editorial_risk": "WORDNET_SENSE_AND_LEVEL_REQUIRES_SOURCE_CHECK",
-      "source_note": "Original bilingual first-pass draft; candidate WordNet sense and provisional CEFR tier not independently validated. No observed dictionary evidence, independent Burmese/example review or real listening."
+      "source_note": "Original bilingual first-pass draft; candidate WordNet sense and provisional CEFR tier not independently validated. No observed dictionary evidence, independent Burmese/example review or real listening. Sense wording refined against provisional pool clue; not independently verified."
     },
     {
       "word": "honey",
@@ -1638,9 +1619,9 @@
       "word": "reverse",
       "level": "B2",
       "part_of_speech": "noun",
-      "english_definition": "The opposite side, direction or condition of something.",
-      "burmese_meaning": "အရာတစ်ခု၏ ပြောင်းပြန်ဘက် သို့မဟုတ် ဆန့်ကျင်ဘက်အခြေအနေ",
-      "example_sentence": "The reverse of the coin shows a flower.",
+      "english_definition": "The direct opposite of a statement, situation or relationship.",
+      "burmese_meaning": "အဆိုတစ်ခု သို့မဟုတ် အခြေအနေတစ်ခု၏ ဆန့်ကျင်ဘက်အနေအထား",
+      "example_sentence": "In summer the days are long, but the reverse is true in winter.",
       "source_english": "",
       "source_burmese": "",
       "source_level": "",
@@ -1651,7 +1632,7 @@
       "reviewed_pronunciation": false,
       "status": "AI_ASSISTED_DRAFT_PENDING_INDEPENDENT_REVIEW",
       "editorial_risk": "WORDNET_SENSE_AND_LEVEL_REQUIRES_SOURCE_CHECK",
-      "source_note": "Original bilingual first-pass draft; candidate WordNet sense and provisional CEFR tier not independently validated. No observed dictionary evidence, independent Burmese/example review or real listening."
+      "source_note": "Original bilingual first-pass draft; candidate WordNet sense and provisional CEFR tier not independently validated. No observed dictionary evidence, independent Burmese/example review or real listening. Sense wording refined against provisional pool clue; not independently verified."
     },
     {
       "word": "scoring",
@@ -1679,25 +1660,6 @@
       "english_definition": "The planning and scheduling of activities or events in a particular order.",
       "burmese_meaning": "အစီအစဉ်များကို အချိန်နှင့် အစဉ်အလိုက် စီစဉ်သတ်မှတ်ခြင်း",
       "example_sentence": "Festival programming includes music, talks and workshops.",
-      "source_english": "",
-      "source_burmese": "",
-      "source_level": "",
-      "reviewed_english": false,
-      "reviewed_burmese": false,
-      "reviewed_example": false,
-      "reviewed_level": false,
-      "reviewed_pronunciation": false,
-      "status": "AI_ASSISTED_DRAFT_PENDING_INDEPENDENT_REVIEW",
-      "editorial_risk": "WORDNET_SENSE_AND_LEVEL_REQUIRES_SOURCE_CHECK",
-      "source_note": "Original bilingual first-pass draft; candidate WordNet sense and provisional CEFR tier not independently validated. No observed dictionary evidence, independent Burmese/example review or real listening."
-    },
-    {
-      "word": "seed",
-      "level": "B2",
-      "part_of_speech": "noun",
-      "english_definition": "A small hard part of a plant from which a new plant can grow.",
-      "burmese_meaning": "အပင်အသစ် ပေါက်ရောက်နိုင်သော အစေ့",
-      "example_sentence": "Plant each seed in a separate pot.",
       "source_english": "",
       "source_burmese": "",
       "source_level": "",
