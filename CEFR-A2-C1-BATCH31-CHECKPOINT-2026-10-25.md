@@ -28,4 +28,12 @@ A2–C1 unique written **1,982**; quarantine **472** unique; **182** legacy dupl
 - Outstanding: external source-based CEFR and English review; independent Myanmar/example review; re-tiering; all CEFR audio generation/listening; browser/mobile and physical iPhone Safari; hosting capacity; verified live deployment.
 
 ## GitHub Actions evidence
-To be filled **only after observing actual jobs and decoded logs**. This document is deliberately not claiming a pass before CI runs.
+- Atomic batch31 content/workflow/auditor/report commit: `43cfe4107909da213efd6735dd226ace8e40b751`.
+- Actual [batch31 GitHub Actions run 40178016350](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40178016350): **completed / success**, five matrix jobs inspected.
+- A2 job `121122823084`: completed / success; decoded log `STAGING ONLY batch31 A2 PASS`.
+- B1 job `121122823071`: completed / success; decoded log `STAGING ONLY batch31 B1 PASS`.
+- B2 job `121122823057`: completed / success; decoded log `STAGING ONLY batch31 B2 PASS`.
+- C1 job `121122823198`: completed / success; decoded log `STAGING ONLY batch31 C1 PASS`.
+- ALL job `121122822896`: completed / success; decoded log reconciles **A2 510, B1 541, B2 539, C1 392**, A2–C1 **1,982**, A1–C1 **2,482**, **2,518** outstanding, **182** legacy duplicate rows excluded and **0** independent approvals.
+- All five decoded job logs were inspected. These are **structural checks only**: no independent linguistic verification, actual audio listening, physical iPhone Safari test or production deployment.
+
