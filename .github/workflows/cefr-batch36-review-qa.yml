@@ -3,9 +3,9 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
-      - draft/A2-C1-EDITORIAL-BATCH35.json
-      - draft/A2-C1-REVIEW-TASKS-BATCH35.json
-      - draft/A2-C1-QUARANTINE-BATCH35.json
+      - draft/A2-C1-EDITORIAL-BATCH36.json
+      - draft/A2-C1-REVIEW-TASKS-BATCH36.json
+      - draft/A2-C1-QUARANTINE-BATCH36.json
       - tools/audit_cefr_batch36_review_tasks.py
       - .github/workflows/cefr-batch36-review-qa.yml
   workflow_dispatch:
