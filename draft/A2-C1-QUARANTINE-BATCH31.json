@@ -1,0 +1,129 @@
+{
+  "schema": 1,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "created_on": "2026-10-25",
+  "independently_approved": 0,
+  "description": "12 reversible candidate holds; no held word counted as drafted.",
+  "records": [
+    {
+      "word": "running",
+      "provisional_level": "A2",
+      "risk": "WORDNET_SPORTS_SENSE_MISMATCH",
+      "evidence_note": "Candidate describes a specific American-football play rather than ordinary running.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "except",
+      "provisional_level": "A2",
+      "risk": "RARE_VERB_SENSE",
+      "evidence_note": "Verb 'except' means object to, unlike common preposition/conjunction use; no CEFR evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "limited",
+      "provisional_level": "A2",
+      "risk": "RARE_NOUN_SENSE",
+      "evidence_note": "Candidate means a limited-stop transport service, not the common adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "max",
+      "provisional_level": "B1",
+      "risk": "DRUG_SLANG_OR_NAMED_ENTITY",
+      "evidence_note": "WordNet clue is drug slang; no reliable general-learner sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "seek",
+      "provisional_level": "B1",
+      "risk": "TECHNICAL_NOUN_SENSE",
+      "evidence_note": "Candidate means a disk-drive head movement, not the common verb.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "iii",
+      "provisional_level": "B1",
+      "risk": "ROMAN_NUMERAL_NOT_LEMMA",
+      "evidence_note": "Roman numeral III is not a suitable ordinary lowercase lexical headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "collect",
+      "provisional_level": "B2",
+      "risk": "RELIGIOUS_NOUN_SENSE",
+      "evidence_note": "Candidate is a liturgical prayer, not the common verb 'collect'.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "anna",
+      "provisional_level": "B2",
+      "risk": "HISTORICAL_CURRENCY_OR_NAME",
+      "evidence_note": "Candidate is an obsolete South Asian coin; also a personal name.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "automatic",
+      "provisional_level": "B2",
+      "risk": "WEAPON_NOUN_SENSE",
+      "evidence_note": "Candidate noun is a type of firearm, while common learner sense is adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "mason",
+      "provisional_level": "C1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Candidate names an American historical figure rather than a general common noun.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "mps",
+      "provisional_level": "C1",
+      "risk": "ACRONYM_SPECIALISED_SENSE",
+      "evidence_note": "Candidate describes a specialist macrophage system, not an ordinary learner word.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "norman",
+      "provisional_level": "C1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Candidate is a named opera singer rather than a common vocabulary item.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
