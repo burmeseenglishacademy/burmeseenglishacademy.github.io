@@ -77,7 +77,7 @@ def audit(level):
         for word,versions in byword.items():
             assert all((v["level"],v["part_of_speech"],v["english_definition"],v["burmese_meaning"],v["example_sentence"])==(versions[0]["level"],versions[0]["part_of_speech"],versions[0]["english_definition"],versions[0]["burmese_meaning"],versions[0]["example_sentence"]) for v in versions[1:]),("conflicting legacy duplicates",word)
         print("UNIQUE A2-C1 A2=516 B1=569 B2=572 C1=409 total=2066; independently approved=0")
-        print("A1=500; A1-C1 written=2566; first drafts outstanding=2434; unique quarantine=507; legacy duplicate rows=",sum(len(v)-1 for v in byword.values()))
+        print("A1=500; A1-C1 written=2566; first drafts outstanding=2434; unique quarantine=509; legacy duplicate rows=",sum(len(v)-1 for v in byword.values()))
     assert "entries:[]" in (R/"cefr-vocabulary-data.js").read_text(encoding="utf-8")
     print("STAGING ONLY batch33",level,"PASS: 44 drafts, 30 new held, zero approvals; no audio/deploy")
 if __name__=="__main__":
