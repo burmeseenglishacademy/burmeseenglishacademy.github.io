@@ -1,0 +1,229 @@
+{
+  "schema": 1,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "created_on": "2026-10-25",
+  "independently_approved": 0,
+  "description": "22 reversible, unreviewed candidate holds from real GitHub preview; not source-confirmed rejections.",
+  "records": [
+    {
+      "word": "india",
+      "provisional_level": "A2",
+      "risk": "PROPER_NAME_COUNTRY",
+      "evidence_note": "Country name, not an ordinary A2 lexical headword; candidate normalization should separate names.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "paul",
+      "provisional_level": "A2",
+      "risk": "PROPER_NAME_PERSON",
+      "evidence_note": "WordNet points to a named historical individual, not a common learner vocabulary sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "despite",
+      "provisional_level": "A2",
+      "risk": "WRONG_WORDNET_POS",
+      "evidence_note": "Candidate incorrectly treats the preposition despite as a noun with an unrelated contempt sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "specific",
+      "provisional_level": "A2",
+      "risk": "RARE_WORDNET_NOUN",
+      "evidence_note": "Candidate selects the unusual noun 'a specific' rather than the common adjective.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "chinese",
+      "provisional_level": "A2",
+      "risk": "PROPER_LANGUAGE_NAME",
+      "evidence_note": "Language/demonym capitalisation and sense must be reviewed separately from ordinary headwords.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "dick",
+      "provisional_level": "B1",
+      "risk": "SLANG_OR_WRONG_SENSE",
+      "evidence_note": "Rare detective slang sense is not a neutral general B1 noun entry.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "wearing",
+      "provisional_level": "B1",
+      "risk": "SPECIALIST_WORDNET_SENSE",
+      "evidence_note": "Candidate geology process of erosion is mismatched with common clothing sense and level.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "younger",
+      "provisional_level": "B1",
+      "risk": "RARE_NAME_SUFFIX_SENSE",
+      "evidence_note": "Candidate points to younger of two people with same name, not normal comparative use.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "domestic",
+      "provisional_level": "B1",
+      "risk": "ARCHAIC_NOUN_SENSE",
+      "evidence_note": "Servant noun is dated and does not match common adjective domestic.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "launch",
+      "provisional_level": "B1",
+      "risk": "RARE_WORDNET_NOUN",
+      "evidence_note": "Candidate motorboat noun differs from high-frequency launch event/verb; hold until sense-level evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "iraq",
+      "provisional_level": "B2",
+      "risk": "PROPER_NAME_COUNTRY",
+      "evidence_note": "Country name is not a general B2 vocabulary headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "judges",
+      "provisional_level": "B2",
+      "risk": "NAMED_BOOK_OR_INFLECTED_LEMMA",
+      "evidence_note": "WordNet clue refers to a named biblical book; plural judges needs normalisation.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "syria",
+      "provisional_level": "B2",
+      "risk": "PROPER_NAME_COUNTRY",
+      "evidence_note": "Country name requires separate proper-name handling.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "atlantic",
+      "provisional_level": "B2",
+      "risk": "PROPER_NAME_OCEAN",
+      "evidence_note": "WordNet selects the named Atlantic Ocean, not a generic B2 noun.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "mum",
+      "provisional_level": "B2",
+      "risk": "WRONG_WORDNET_SENSE",
+      "evidence_note": "Candidate clue 'of China' is not a usable everyday noun definition for mum.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "stops",
+      "provisional_level": "B2",
+      "risk": "OBSCURE_GAME_SENSE",
+      "evidence_note": "WordNet picks a rare card game, not ordinary plural stops.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "thai",
+      "provisional_level": "C1",
+      "risk": "PROPER_DEMONYM",
+      "evidence_note": "Nationality/demonym is not automatically a C1 general vocabulary headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "gentle",
+      "provisional_level": "C1",
+      "risk": "RARE_WORDNET_VERB",
+      "evidence_note": "Candidate rare verb 'gentle' differs from frequent adjective; C1 sense requires independent evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "chuck",
+      "provisional_level": "C1",
+      "risk": "SLANG_WRONG_SENSE",
+      "evidence_note": "Candidate obscure meal noun is unsuitable without clear learner register and sense evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "crush",
+      "provisional_level": "C1",
+      "risk": "RARE_TECHNICAL_NOUN",
+      "evidence_note": "Candidate leather finishing sense is highly specialised and likely not C1 general vocabulary.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "acres",
+      "provisional_level": "C1",
+      "risk": "INFLECTED_OR_WRONG_SENSE",
+      "evidence_note": "Plural candidate maps to landed estate rather than standard unit acre.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "piss",
+      "provisional_level": "C1",
+      "risk": "VULGAR_REGISTER",
+      "evidence_note": "Vulgar noun requires explicit register policy and level evidence, not automatic C1 inclusion.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
