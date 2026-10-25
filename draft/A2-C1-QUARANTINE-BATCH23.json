@@ -1,0 +1,249 @@
+{
+  "schema": 1,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "created_on": "2026-10-25",
+  "independently_approved": 0,
+  "description": "24 reversible high-risk candidate holds, no independent adjudication.",
+  "records": [
+    {
+      "word": "making",
+      "provisional_level": "A2",
+      "risk": "GERUND_NOT_LEMMA",
+      "evidence_note": "Nominalised action; lemma policy needed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "following",
+      "provisional_level": "A2",
+      "risk": "WORDNET_SENSE_COLLISION",
+      "evidence_note": "WordNet noun differs from ordinary adjective/preposition.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "given",
+      "provisional_level": "A2",
+      "risk": "INFLECTED_PARTICIPLE",
+      "evidence_note": "Participle rather than clear separate lemma.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "playing",
+      "provisional_level": "A2",
+      "risk": "GERUND_NOT_LEMMA",
+      "evidence_note": "Action nominalisation duplicates base verb.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "minutes",
+      "provisional_level": "A2",
+      "risk": "PLURAL_SENSE_COLLISION",
+      "evidence_note": "Meeting minutes versus units of time.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "australia",
+      "provisional_level": "A2",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Country name requires capitalization and named-entity policy.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "details",
+      "provisional_level": "B1",
+      "risk": "INFLECTED_PLURAL",
+      "evidence_note": "Plural of detail.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "names",
+      "provisional_level": "B1",
+      "risk": "WORDNET_SENSE_COLLISION",
+      "evidence_note": "WordNet verbal-abuse sense conflicts with ordinary plural.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "driving",
+      "provisional_level": "B1",
+      "risk": "GERUND_SPECIALISED_SENSE",
+      "evidence_note": "WordNet golf sense differs from everyday driving.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "laws",
+      "provisional_level": "B1",
+      "risk": "NAMED_ENTITY_OR_PLURAL",
+      "evidence_note": "Scriptural title collides with plural law.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "rates",
+      "provisional_level": "B1",
+      "risk": "INFLECTED_PLURAL",
+      "evidence_note": "Plural of rate; specialised tax sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "scott",
+      "provisional_level": "B1",
+      "risk": "NAMED_ENTITY",
+      "evidence_note": "Surname/person, not generic headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "causing",
+      "provisional_level": "B2",
+      "risk": "GERUND_NOT_LEMMA",
+      "evidence_note": "Action noun of cause.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "letting",
+      "provisional_level": "B2",
+      "risk": "WORDNET_SENSE_COLLISION",
+      "evidence_note": "Specialised rental meaning and gerund.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "seats",
+      "provisional_level": "B2",
+      "risk": "INFLECTED_PLURAL",
+      "evidence_note": "Plural of seat.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "aged",
+      "provisional_level": "B2",
+      "risk": "ADJECTIVE_NOUN_SENSE",
+      "evidence_note": "Collective noun in WordNet is an awkward learner sense.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "porn",
+      "provisional_level": "B2",
+      "risk": "REGISTER_SENSITIVE",
+      "evidence_note": "Adult register requires audience policy.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "fbi",
+      "provisional_level": "B2",
+      "risk": "NAMED_ENTITY_ACRONYM",
+      "evidence_note": "US agency acronym, not generic lower-case lemma.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "pussy",
+      "provisional_level": "C1",
+      "risk": "REGISTER_SENSITIVE_POLYSEMY",
+      "evidence_note": "Vulgar anatomical meaning collides with other senses.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "cock",
+      "provisional_level": "C1",
+      "risk": "REGISTER_SENSITIVE_POLYSEMY",
+      "evidence_note": "Vulgar anatomical sense collides with other senses.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "jumping",
+      "provisional_level": "C1",
+      "risk": "GERUND_NOT_LEMMA",
+      "evidence_note": "Nominalised action with unsupported C1 level.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "stealing",
+      "provisional_level": "C1",
+      "risk": "GERUND_NOT_LEMMA",
+      "evidence_note": "Nominalisation of steal, C1 unsupported.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "loads",
+      "provisional_level": "C1",
+      "risk": "INFLECTED_PLURAL",
+      "evidence_note": "Plural and colloquial quantifier senses differ.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "viewers",
+      "provisional_level": "C1",
+      "risk": "INFLECTED_PLURAL",
+      "evidence_note": "Plural of viewer.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
