@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-26",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "stage": "PRELIMINARY_SOURCE_OBSERVATIONS_NOT_INDEPENDENT_APPROVAL",
+  "independently_approved": 0,
+  "observations": [
+    {
+      "word": "finishing",
+      "candidate_pos": "noun",
+      "source": "Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/finishing",
+      "related_url": "https://dictionary.cambridge.org/dictionary/english/finish",
+      "observed_on": "2026-10-26",
+      "observed_by": "AI-assisted web source inspection",
+      "observation": "The finishing headword is shown as a present participle of finish; the wood coating or surface condition is defined under finish as a noun.",
+      "action": "QUARANTINE_AND_REPLACE_WITH_JUDGMENT",
+      "cefr_approved": false,
+      "english_approved": false,
+      "burmese_approved": false
+    },
+    {
+      "word": "unlike",
+      "candidate_pos": "adjective",
+      "source": "Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/unlike",
+      "observed_on": "2026-10-26",
+      "observed_by": "AI-assisted web source inspection",
+      "observation": "The adjective use meaning different is listed; the displayed B2 tag applies to the preposition entry, not a confirmed B1 adjective level.",
+      "action": "RETAIN_DRAFT_WITH_CEFR_TIER_BLOCKER_AND_ADJECTIVE_EXAMPLE",
+      "cefr_approved": false,
+      "english_approved": false,
+      "burmese_approved": false
+    },
+    {
+      "word": "carrier",
+      "candidate_pos": "noun",
+      "source": "Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/carrier",
+      "observed_on": "2026-10-26",
+      "observed_by": "AI-assisted web source inspection",
+      "observation": "The transportation sense includes a person or thing that carries something, and a business transport sense is also listed; revised draft to the person sense indicated by the candidate clue.",
+      "action": "RETAIN_REVISED_DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "cefr_approved": false,
+      "english_approved": false,
+      "burmese_approved": false
+    }
+  ],
+  "note": "These are observed external English dictionary signals only. No qualified independent bilingual, CEFR, example or audio review has been completed. The linked dictionary text is not copied into the drafted definitions."
+}

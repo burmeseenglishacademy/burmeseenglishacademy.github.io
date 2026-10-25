@@ -83,7 +83,7 @@
       "cefr_review": {
         "task": "Consult sense-specific CEFR evidence from a credible graded learner resource; change tier or hold if unsupported.",
         "completed": false,
-        "provisional_level_risk": "WORDNET_SENSE_AND_CEFR_TIER_UNVERIFIED",
+        "provisional_level_risk": "CAMBRIDGE_ADJECTIVE_ATTESTED_BUT_B1_TIER_UNSUPPORTED_PREPOSITION_B2",
         "observed_evidence": null,
         "reviewer": null
       },
@@ -737,48 +737,6 @@
         "completed": false,
         "source_observed": false,
         "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/cape",
-        "observed_evidence": null,
-        "reviewer": null
-      },
-      "burmese_review": {
-        "task": "Independent qualified Burmese speaker to check semantic accuracy, natural Myanmar wording and register.",
-        "completed": false,
-        "observed_evidence": null,
-        "reviewer": null
-      },
-      "example_review": {
-        "task": "Independently assess original sentence grammar, collocation, naturalness and sense alignment.",
-        "completed": false,
-        "observed_evidence": null,
-        "reviewer": null
-      },
-      "cefr_review": {
-        "task": "Consult sense-specific CEFR evidence from a credible graded learner resource; change tier or hold if unsupported.",
-        "completed": false,
-        "provisional_level_risk": "WORDNET_SENSE_AND_CEFR_TIER_UNVERIFIED",
-        "observed_evidence": null,
-        "reviewer": null
-      },
-      "audio_review": {
-        "task": "After text approval, generate both George and Emma files; listen to each and test physical iPhone Safari.",
-        "completed": false,
-        "real_listening": false,
-        "real_device_test": false,
-        "reviewer": null
-      },
-      "release_approved": false
-    },
-    {
-      "word": "finishing",
-      "provisional_level": "B2",
-      "part_of_speech": "noun",
-      "review_status": "PENDING_INDEPENDENT_REVIEW",
-      "priority": "SENSE_AND_CEFR_REVIEW_REQUIRED",
-      "english_definition_review": {
-        "task": "Open an independent learner dictionary and verify exact part of speech, word sense and usage; record URL, date, reviewer and observed evidence.",
-        "completed": false,
-        "source_observed": false,
-        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/finishing",
         "observed_evidence": null,
         "reviewer": null
       },
@@ -2268,6 +2226,48 @@
         "task": "Consult sense-specific CEFR evidence from a credible graded learner resource; change tier or hold if unsupported.",
         "completed": false,
         "provisional_level_risk": "HIGH_RISK_C1_LEVEL_MAY_BE_LOWER_OR_SENSE_SPECIFIC",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "After text approval, generate both George and Emma files; listen to each and test physical iPhone Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "judgment",
+      "provisional_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "priority": "SENSE_AND_CEFR_REVIEW_REQUIRED",
+      "english_definition_review": {
+        "task": "Open an independent learner dictionary and verify exact part of speech, word sense and usage; record URL, date, reviewer and observed evidence.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/judgment",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent qualified Burmese speaker to check semantic accuracy, natural Myanmar wording and register.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independently assess original sentence grammar, collocation, naturalness and sense alignment.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Consult sense-specific CEFR evidence from a credible graded learner resource; change tier or hold if unsupported.",
+        "completed": false,
+        "provisional_level_risk": "WORDNET_SENSE_AND_CEFR_TIER_UNVERIFIED",
         "observed_evidence": null,
         "reviewer": null
       },

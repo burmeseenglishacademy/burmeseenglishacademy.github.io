@@ -4,11 +4,11 @@
   "branch": "cefr-5000-bilingual-qa-staging",
   "independently_approved": 0,
   "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
-  "description": "13 reversible WordNet-sense, level and named-entity holds; no independent evidence observed.",
+  "description": "14 reversible candidate holds, including source-observed finishing/finish headword mismatch; no independently approved words.",
   "counts_by_provisional_level": {
     "A2": 0,
     "B1": 3,
-    "B2": 5,
+    "B2": 6,
     "C1": 5
   },
   "records": [
@@ -138,6 +138,19 @@
       "risk": "WORDNET_SENSE_MISMATCH",
       "evidence_note": "Candidate clue describes newspapers collectively, not the common profession or practice.",
       "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "finishing",
+      "provisional_level": "B2",
+      "risk": "SOURCE_OBSERVED_WORDNET_HEADWORD_SENSE_MISMATCH",
+      "evidence_note": "Cambridge's finishing headword presents the present participle of finish; the decorative wood surface coating is documented under the noun finish, not this proposed finishing noun sense. Quarantine pending qualified review.",
+      "source_observed": true,
+      "source_url": "https://dictionary.cambridge.org/dictionary/english/finishing",
+      "source_review_date": "2026-10-26",
+      "source_observation": "Cambridge page identifies finishing as present participle of finish; separate finish page describes the wood surface noun.",
       "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
       "reviewed_independently": false,
       "release_approved": false

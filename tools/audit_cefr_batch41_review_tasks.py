@@ -5,7 +5,7 @@ from pathlib import Path
 R=Path(__file__).resolve().parents[1]
 LEVELS=("A2","B1","B2","C1")
 EXPECTED={"A2":0,"B1":12,"B2":25,"C1":17}
-HELD={"A2":0,"B1":3,"B2":5,"C1":5}
+HELD={"A2":0,"B1":3,"B2":6,"C1":5}
 POS={"n":"noun","v":"verb","a":"adjective","s":"adjective","r":"adverb"}
 FLAGS=("reviewed_english","reviewed_burmese","reviewed_example","reviewed_level","reviewed_pronunciation")
 def read(p):return json.loads((R/p).read_text(encoding="utf-8"))
@@ -23,7 +23,7 @@ def audit(level):
     assert t["release_status"]=="UNVERIFIED_REVIEW_TASKS_DO_NOT_PUBLISH"
     assert t["source_pages_not_yet_checked"] is True
     assert d["independently_approved"]==t["independently_approved"]==q["independently_approved"]==0
-    assert len(d["entries"])==len(t["entries"])==54 and len(q["records"])==13
+    assert len(d["entries"])==len(t["entries"])==54 and len(q["records"])==14
     assert d["counts_by_provisional_level"]==t["counts_by_provisional_level"]==EXPECTED
     assert q["counts_by_provisional_level"]==HELD
     assert collections.Counter(x["level"] for x in d["entries"])=={k:v for k,v in EXPECTED.items() if v}
@@ -54,7 +54,7 @@ def audit(level):
         assert x["audio_review"]["completed"] is False and x["audio_review"]["real_listening"] is False and x["audio_review"]["real_device_test"] is False,word
     for word,r in holds.items():
         assert word in pool and pool[word]["level"]==r["provisional_level"],word
-        assert r["source_observed"] is False and r["reviewed_independently"] is False and r["release_approved"] is False,word
+        assert r["reviewed_independently"] is False and r["release_approved"] is False,word\n        if r["source_observed"]: assert word=="finishing" and r["source_url"] and r["source_review_date"] and r["source_observation"],word
     if level=="ALL":
         oldfiles=["draft/A2-C1-EDITORIAL-STARTER.json"]+[f"draft/A2-C1-EDITORIAL-BATCH{i:02d}.json" for i in range(9,41)]
         olddrafts={r["word"] for p in oldfiles for r in read(p)["entries"]}
@@ -70,11 +70,11 @@ def audit(level):
         assert sum(len(v)-1 for v in byword.values())==182
         counts=collections.Counter(v[0]["level"] for v in byword.values())
         assert counts=={"A2":521,"B1":739,"B2":769,"C1":499},counts
-        assert len(oldholds|set(holds))==809
+        assert len(oldholds|set(holds))==810
         print("UNIQUE A2-C1 A2=521 B1=739 B2=769 C1=499 total=2528; independently approved=0")
-        print("A1=500; A1-C1 written=3028; outstanding=1972; quarantine=809; legacy duplicate rows=182")
+        print("A1=500; A1-C1 written=3028; outstanding=1972; quarantine=810; legacy duplicate rows=182")
     assert "entries:[]" in (R/"cefr-vocabulary-data.js").read_text(encoding="utf-8")
-    print(f"STAGING ONLY batch41 {level} PASS: 54 drafts, 13 holds, zero approvals; no audio/deploy")
+    print(f"STAGING ONLY batch41 {level} PASS: 54 drafts, 14 holds, zero approvals; no audio/deploy")
 if __name__=="__main__":
     p=argparse.ArgumentParser()
     p.add_argument("--level",choices=(*LEVELS,"ALL"),default="ALL")
