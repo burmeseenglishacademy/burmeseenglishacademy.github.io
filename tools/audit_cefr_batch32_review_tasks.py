@@ -21,12 +21,12 @@ def audit(level):
     assert t["release_status"]=="UNVERIFIED_REVIEW_TASKS_DO_NOT_PUBLISH"
     assert t["source_pages_not_yet_checked"] is True
     assert d["independently_approved"]==t["independently_approved"]==q["independently_approved"]==0
-    expected={"A2":8,"B1":16,"B2":16,"C1":16}
-    assert len(d["entries"])==len(t["entries"])==56
+    expected={"A2":3,"B1":9,"B2":13,"C1":15}
+    assert len(d["entries"])==len(t["entries"])==40
     assert Counter(x["level"] for x in d["entries"])==expected
     assert d["counts_by_provisional_level"]==expected
-    assert len({x["word"] for x in d["entries"]})==56
-    assert len({x["example_sentence"] for x in d["entries"]})==56
+    assert len({x["word"] for x in d["entries"]})==40
+    assert len({x["example_sentence"] for x in d["entries"]})==40
     assert len(q["records"])==len({x["word"] for x in q["records"]})==7
     olddraft=["draft/A2-C1-EDITORIAL-STARTER.json"]+[f"draft/A2-C1-EDITORIAL-BATCH{i:02d}.json" for i in range(9,32)]
     prior=[x for p in olddraft for x in read(p)["entries"]]
@@ -37,7 +37,7 @@ def audit(level):
     assert not {x["word"] for x in held}&{x["word"] for x in prior+d["entries"]},("held_drafted",sorted({x["word"] for x in held}&{x["word"] for x in prior+d["entries"]}))
     assert all(x["word"] in pool and x["provisional_level"]==pool[x["word"]]["level"] and not x["source_observed"] and not x["reviewed_independently"] and not x["release_approved"] for x in held)
     taskmap={x["word"]:x for x in t["entries"]}
-    assert len(taskmap)==56
+    assert len(taskmap)==40
     posmap={"n":"noun","v":"verb","a":"adjective","s":"adjective","r":"adverb"}
     for x in d["entries"]:
         if level!="ALL" and x["level"]!=level: continue
@@ -62,13 +62,13 @@ def audit(level):
     if level=="ALL":
         byword=defaultdict(list)
         for x in prior+d["entries"]: byword[x["word"]].append(x)
-        assert len(byword)==2038,len(byword)
-        assert Counter(v[0]["level"] for v in byword.values())=={"A2":518,"B1":557,"B2":555,"C1":408}
+        assert len(byword)==2022,len(byword)
+        assert Counter(v[0]["level"] for v in byword.values())=={"A2":513,"B1":550,"B2":552,"C1":407}
         assert all(all((x["level"],x["part_of_speech"],x["english_definition"],x["burmese_meaning"],x["example_sentence"])==(v[0]["level"],v[0]["part_of_speech"],v[0]["english_definition"],v[0]["burmese_meaning"],v[0]["example_sentence"]) for x in v[1:]) for v in byword.values()),"legacy duplicate conflict"
-        print("UNIQUE A2-C1 A2=518 B1=557 B2=555 C1=408 total=2038; independently approved=0")
-        print("A1=500; A1-C1 written=2538; first drafts outstanding=2462; legacy duplicate rows=",sum(len(v)-1 for v in byword.values()))
+        print("UNIQUE A2-C1 A2=513 B1=550 B2=552 C1=407 total=2022; independently approved=0")
+        print("A1=500; A1-C1 written=2522; first drafts outstanding=2478; legacy duplicate rows=",sum(len(v)-1 for v in byword.values()))
     assert "entries:[]" in (R/"cefr-vocabulary-data.js").read_text(encoding="utf-8")
-    print("STAGING ONLY batch32",level,"PASS: 56 drafts, 7 new held, zero approvals; no audio/deploy")
+    print("STAGING ONLY batch32",level,"PASS: 40 drafts, 7 new held, zero approvals; no audio/deploy")
 if __name__=="__main__":
     p=argparse.ArgumentParser()
     p.add_argument("--level",choices=("A2","B1","B2","C1","ALL"),default="ALL")
