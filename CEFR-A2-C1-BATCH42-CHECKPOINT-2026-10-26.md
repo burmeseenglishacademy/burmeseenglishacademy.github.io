@@ -36,3 +36,8 @@ Expected A2–C1 unique 2573, plus A1 500. Historical duplicate rows 182 exclude
 
 ## Release blockers
 1,927 headwords unwritten; 831 candidate holds; **0/5000 independent linguistic/CEFR/example approvals**; full new George/Emma collection, actual listening, browser/mobile/physical iPhone Safari, hosting limits and live deployment are unconfirmed. **Do not merge, publish or notify completion.**
+
+## Additional candidate-quality hardening (same staging iteration)
+- Candidate-preview triage was expanded earlier to 300 possible words per level; later changed to flag more proper-name clues, named entities, misleading WordNet first senses and noun -ing lemma risks. Commits `4529bb8fcd442b25edf9ca69db04b0de9d91d804` and regex escape correction `9ef0bb601da9296abce0e4d958d497b528c16f91`. The earlier successful run used an over-escaped word-boundary expression; this was corrected before the final run, not silently treated as equivalent.
+- [Corrected candidate-preview run 40226321456](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40226321456) completed **success**. Actual decoded job `121268356886` log showed **A2 521 drafted / 19 unheld / 0 unflagged**, **B1 747 / 43 / 2**, **B2 790 / 259 / 167**, **C1 515 / 642 / 520**. The unflagged label is a **heuristic triage result, not independent word/sense/CEFR approval**; all remaining candidate clues require editorial review.
+- Latest report-only commit does not change the staged vocabulary or trigger a new vocabulary CI run. Final content QA evidence remains successful run `40226233742` on commit `56b4d1de4ef1dc857254f8495ec472930bcb04ef`.
