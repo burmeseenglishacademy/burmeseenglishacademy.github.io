@@ -1,0 +1,129 @@
+{
+  "schema": 1,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "created_on": "2026-10-25",
+  "independently_approved": 0,
+  "description": "12 reversible WordNet-sense, named-entity, acronym and implausible CEFR candidate holds. Not independently adjudicated.",
+  "records": [
+    {
+      "word": "recent",
+      "provisional_level": "A2",
+      "risk": "RARE_WORDNET_NOUN",
+      "evidence_note": "WordNet candidate is a geological time period, not the frequent adjective 'recent'.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "centre",
+      "provisional_level": "A2",
+      "risk": "GEOGRAPHIC_PROPER_NAME_SENSE",
+      "evidence_note": "WordNet candidate describes a region in France, not the everyday centre of an object.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "active",
+      "provisional_level": "A2",
+      "risk": "SPECIALIST_NOUN_SENSE",
+      "evidence_note": "WordNet candidate refers to an active chemical agent, not the common adjective 'active'.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "dating",
+      "provisional_level": "B1",
+      "risk": "SPECIALIST_GERUND_NOUN",
+      "evidence_note": "WordNet candidate concerns geological dating; gerund lemma and ordinary dating meaning are not aligned.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "tech",
+      "provisional_level": "B1",
+      "risk": "INFORMAL_OR_INSTITUTION_SENSE",
+      "evidence_note": "WordNet candidate is a technical school rather than the everyday informal short form for technology.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "express",
+      "provisional_level": "B1",
+      "risk": "RARE_MAIL_NOUN_SENSE",
+      "evidence_note": "WordNet candidate is rapid mail as a noun; common adjective and verb senses differ.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "alexander",
+      "provisional_level": "B2",
+      "risk": "PROPER_PERSON_NAME",
+      "evidence_note": "Likely proper name; not suitable as a general learner headword without independent evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "mac",
+      "provisional_level": "B2",
+      "risk": "AMBIGUOUS_NAME_OR_ABBREVIATION",
+      "evidence_note": "Ambiguous informal abbreviation, name or product reference; sense and headword policy unclear.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "min",
+      "provisional_level": "B2",
+      "risk": "ABBREVIATION_NOT_BASE_LEMMA",
+      "evidence_note": "Shortened form or abbreviation; not a clear independent general-purpose learner headword.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "hiv",
+      "provisional_level": "C1",
+      "risk": "ACRONYM_AND_TIER_UNVERIFIED",
+      "evidence_note": "Medical acronym; CEFR and lemma policy require independent evidence before any release.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "forty",
+      "provisional_level": "C1",
+      "risk": "IMPLAUSIBLE_C1_NUMERAL",
+      "evidence_note": "Everyday number word is unlikely to be C1; WordNet level assignment needs source review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "sheep",
+      "provisional_level": "C1",
+      "risk": "IMPLAUSIBLE_C1_EVERYDAY_NOUN",
+      "evidence_note": "Common animal noun unlikely to belong at C1; requires level-specific re-tiering evidence.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
