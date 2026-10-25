@@ -38,3 +38,10 @@
 
 ## Release blockers
 **1757 unwritten, 1006 held, 0/5000 independently approved**, complete George/Emma generation and listening, browser/mobile and physical iPhone Safari checks, hosting limits and confirmed live production deployment pending. No merge, no publication and no completion notification.
+
+## Observed GitHub Actions verification — 26 October 2026
+- [Run 40245594962](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40245594962) on exact workflow SHA `10050d1510074d786ec755177343d4874720d3b6`: **all five matrix jobs completed successfully**; decoded logs actually inspected.
+- A2 job `121326362396` success; B1 `121326362546` success; B2 `121326362515` success; C1 `121326362577` success; ALL `121326362551` success.
+- ALL log: **A2 521, B1 747, B2 879, C1 596** = **2743 unique A2–C1**; plus A1 500 = **3243 written, 1757 unwritten, 1006 held, 182 historical duplicate rows excluded**, **zero independently approved**.
+- ALL log explicitly printed `PASS: production lesson, IELTS, George/Emma audio and privacy assets unchanged` after diffing against `main`. The CEFR public bank remains empty by structural assertion.
+- This confirms only **structural staging checks**, not correct senses, natural Myanmar, CEFR levels, original-example linguistic approval, listening, real-device Safari or release readiness.
