@@ -11,7 +11,7 @@ FLAGS=("reviewed_english","reviewed_burmese","reviewed_example","reviewed_level"
 def read(p):return json.loads((R/p).read_text(encoding="utf-8"))
 def audit(level):
     if level=="ALL":
-        old=subprocess.run([sys.executable,"tools/audit_cefr_batch40_review_tasks.py","--level","ALL"],cwd=R,capture_output=True,text=True)
+        old=subprocess.run([sys.executable,"tools/audit_cefr_batch41_review_tasks.py","--level","ALL"],cwd=R,capture_output=True,text=True)
         assert old.returncode==0,old.stdout+old.stderr
         print(old.stdout.strip())
     d=read("draft/A2-C1-EDITORIAL-BATCH42.json")
