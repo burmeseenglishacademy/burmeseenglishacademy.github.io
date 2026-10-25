@@ -1,0 +1,25 @@
+name: CEFR batch36 current-corpus candidate triage (staging only; never deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - .github/workflows/cefr-batch36-candidate-triage.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inventory-and-screen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Show current unheld and undrafted candidates without claiming approval
+        run: python3 tools/list_cefr_next_candidates.py --limit 200
+      - name: Check fail-closed staging loader
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          text=Path("cefr-vocabulary-data.js").read_text(encoding="utf-8")
+          assert "entries:[]" in text, "CEFR release loader must stay empty"
+          print("STAGING SAFE: empty CEFR loader, no release or audio")
+          PY
