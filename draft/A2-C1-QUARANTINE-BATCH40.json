@@ -1,0 +1,166 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-26",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "independently_approved": 0,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "description": "15 reversible lower-tier holds; no independently observed CEFR source.",
+  "counts_by_provisional_level": {
+    "A2": 0,
+    "B1": 5,
+    "B2": 5,
+    "C1": 5
+  },
+  "records": [
+    {
+      "word": "golf",
+      "provisional_level": "B1",
+      "risk": "LIKELY_LOWER_CEFR_TIER",
+      "evidence_note": "Common sport name may be below provisional B1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "error",
+      "provisional_level": "B1",
+      "risk": "LIKELY_LOWER_CEFR_TIER",
+      "evidence_note": "Everyday mistake noun likely belongs to an earlier level.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "factory",
+      "provisional_level": "B1",
+      "risk": "LIKELY_LOWER_CEFR_TIER",
+      "evidence_note": "Common workplace noun may be A2 rather than B1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "joy",
+      "provisional_level": "B1",
+      "risk": "LIKELY_LOWER_CEFR_TIER",
+      "evidence_note": "Basic emotion noun may be below B1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "nearby",
+      "provisional_level": "B1",
+      "risk": "LIKELY_LOWER_CEFR_TIER",
+      "evidence_note": "Common location adjective may be below B1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "glasses",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_CEFR_TIER",
+      "evidence_note": "Everyday eyewear sense may belong below B2.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "knee",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_CEFR_TIER",
+      "evidence_note": "Common body-part noun likely belongs to an earlier level.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "twin",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_CEFR_TIER",
+      "evidence_note": "Common family noun may be below B2.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "wooden",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_CEFR_TIER",
+      "evidence_note": "Common material adjective may be below B2.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "midnight",
+      "provisional_level": "B2",
+      "risk": "LIKELY_LOWER_CEFR_TIER",
+      "evidence_note": "Basic time noun may be below B2.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "grandma",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_CEFR_TIER",
+      "evidence_note": "Everyday family noun likely belongs below C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "lip",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_CEFR_TIER",
+      "evidence_note": "Basic body-part noun likely belongs below C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "noon",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_CEFR_TIER",
+      "evidence_note": "Basic time word likely belongs below C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "deer",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_CEFR_TIER",
+      "evidence_note": "Common animal noun likely belongs below C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "lemon",
+      "provisional_level": "C1",
+      "risk": "LIKELY_LOWER_CEFR_TIER",
+      "evidence_note": "Common fruit noun likely belongs below C1.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
