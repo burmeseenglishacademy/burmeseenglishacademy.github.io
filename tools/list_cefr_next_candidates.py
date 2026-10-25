@@ -36,10 +36,10 @@ def main():
     # Heuristic risk clues are NOT linguistic/CEFR approval. Prevent obvious named
     # entities and misleading first-WordNet-sense rows from looking "clear".
     proper_clue = re.compile(
-        r"(?i)\\b(?:republic|capital and largest city|capital city|president of|"
+        r"(?i)\b(?:republic|capital and largest city|capital city|president of|"
         r"state in (?:the|south|north)|born in|United States (?:writer|actor|composer|"
         r"poet|jurist|politician|industrialist|scientist)|Egyptian goddess|"
-        r"province in|kingdom of|a borough of|a republic in)\\b"
+        r"province in|kingdom of|a borough of|a republic in)\b"
     )
     risky_headwords = {
         "anime", "invite", "kennedy", "moore", "tokyo", "greece", "malaysia",
