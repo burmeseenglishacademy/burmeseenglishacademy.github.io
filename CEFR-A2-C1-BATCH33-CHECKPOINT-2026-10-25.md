@@ -8,7 +8,8 @@
 - **44** separate source-evidence and independent editorial review tasks. All remain pending: English POS/sense, Myanmar exact meaning, example grammar, sense-specific CEFR, George/Emma listening and real iPhone Safari. Cambridge dictionary URLs are unvisited lookup destinations, **not observed source evidence**.
 - **30** newly quarantined headwords for bad WordNet sense, named entities, abbreviations, unsupported tiers or harmful/outdated pool wording. These are reversible holds; no dictionary review or CEFR approval is claimed.
 - Candidate preview was generated from the current post-batch32 staging checkout, not a stale preview. Actual GitHub Actions preview run [40182582252](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40182582252), job `121136570008`, completed/success. Its log showed A2 513, B1 550, B2 552, C1 407 already drafted; 46/332/614/874 remaining unheld candidates respectively. The preview does not independently validate WordNet sense or CEFR.
-- Six original draft senses were refined after an internal WordNet-clue consistency review; two misleading candidates (\`pants\`, \`bother\`) were removed from the draft queue, replaced by \`hunter\` and \`monitor\`, and separately quarantined. This is editorial self-correction, not independent source verification.\n- Only **2** C1 entries drafted because most previewed C1 candidates have obviously unsupported or lower-level senses. Both new C1 entries remain marked high-risk for re-tiering. Quality takes precedence over a balanced-looking count.
+- Six original draft senses were refined after an internal WordNet-clue consistency review; two misleading candidates (`pants`, `bother`) were removed from the draft queue, replaced by `hunter` and `monitor`, and separately quarantined. This is editorial self-correction, not independent source verification.
+- Only **2** C1 entries drafted because most previewed C1 candidates have obviously unsupported or lower-level senses. Both new C1 entries remain marked high-risk for re-tiering. Quality takes precedence over a balanced-looking count.
 
 ## Exact unique first-draft inventory (confirmed by GitHub Actions ALL job)
 | CEFR | Target | Written first drafts | Independently checked and approved | Still unwritten |
@@ -29,6 +30,9 @@ Unique A2–C1 first drafts **2,066**; unique quarantined candidate headwords **
 - Reversible quarantine JSON: `c98a6676b52d59fa6128b52d52502b1d08e4ed4d`.
 - Batch33 structural auditor: `3f44a15c97c654793f180dd8b4094fa8513dd778`.
 - Five-way no-deploy workflow: `b467ffa4572c57cfeb7fd5de01f8bddc783a55c8`.
+- Sense and candidate corrections: `6ad7ebf507148934b952bad19f9d59be4331db0e`, `f0595792b19dd3ec5481a79c22e94d3b65615297`, `2db886d2e56e593792217839465fd4dbe5c244aa`, `f87b802c2d3649d9638d4d5031926f8b24c46e43`.
+- Corrected ALL-job quarantine count: `8cc6a782fda2629f16630720483b201163bfd14f`.
+- Reduced CI on report-only edits: `32c135f24108013381a5ae3372ca5fe119dd46c9`.
 
 ## Inspected CI — structural checks, not linguistic approval
 - Latest full [GitHub Actions batch33 run 40182851178](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40182851178), tested head commit `32c135f24108013381a5ae3372ca5fe119dd46c9`. All five job statuses were inspected and all five decoded job logs were read: **completed / success**.
