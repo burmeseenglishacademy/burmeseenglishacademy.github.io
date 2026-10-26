@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-26",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "independently_approved": 0,
+  "release_status": "UNVERIFIED_CANDIDATE_HOLDS_DO_NOT_PUBLISH",
+  "counts_by_source_pool_level": {
+    "C1": 10
+  },
+  "records": [
+    {
+      "word": "tackle",
+      "source_pool_level": "C1",
+      "risk": "WordNet-first-sense is an American-football position, not the common verb; POS/level confusion",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "unfortunate",
+      "source_pool_level": "C1",
+      "risk": "Rare noun meaning a person suffering misfortune, not common adjective",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "worrying",
+      "source_pool_level": "C1",
+      "risk": "WordNet nominal harassment sense differs from familiar anxiety adjective",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "pale",
+      "source_pool_level": "C1",
+      "risk": "Technical fence-strip noun conflicts with common adjective pale",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "shallow",
+      "source_pool_level": "C1",
+      "risk": "WordNet noun stretch of shallow water is often plural shallows; not ordinary adjective",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "hack",
+      "source_pool_level": "C1",
+      "risk": "WordNet noun dull-task worker is uncommon and collides with common technology senses",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "loading",
+      "source_pool_level": "C1",
+      "risk": "WordNet nominal weight borne differs from familiar loading action",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "fitting",
+      "source_pool_level": "C1",
+      "risk": "WordNet noun adjustment process is vague and easily confused with adjective",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "investigating",
+      "source_pool_level": "C1",
+      "risk": "Nominalized -ing form is not a priority headword without graded evidence",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "conducting",
+      "source_pool_level": "C1",
+      "risk": "WordNet business-administration noun differs from music-conducting sense",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    }
+  ]
+}
