@@ -35,7 +35,7 @@ def run(level):
         assert re.fullmatch('[a-z]{3,}',w),w
         assert e['part_of_speech'] in ('noun','verb','adjective','adverb'),w
         assert len(e['english_definition'])>=30,w
-        assert re.search('[\\u1000-\\u109f]',e['burmese_meaning']),w
+        assert re.search('[\u1000-\u109f]',e['burmese_meaning']),w
         s=e['example_sentence']
         assert len(s)>=35 and s[0].isupper() and s[-1] in '.?!',w
         assert re.search(r'(?<![a-z])'+re.escape(w)+r'(?![a-z])',s.casefold()),w
@@ -55,11 +55,11 @@ def run(level):
         if w in prior: problems.append({'word':w,'issue':'PRIOR_AUTHORED_COLLISION','files':prior[w]})
         p=pool.get(w)
         if p and p.get('level')!=e['proposed_level']: problems.append({'word':w,'issue':'UNVERIFIED_POOL_TIER_DISAGREEMENT','pool_level':p.get('level')})
-        if p and re.search(r'\\b(?:surname|given name|capital of|city in|genus|species|trademark)\\b',str(p.get('english_definition_draft','')),re.I): problems.append({'word':w,'issue':'SUSPECT_WORDNET_SENSE'})
+        if p and re.search(r'\b(?:surname|given name|capital of|city in|genus|species|trademark)\b',str(p.get('english_definition_draft','')),re.I): problems.append({'word':w,'issue':'SUSPECT_WORDNET_SENSE'})
     if level=='ALL':
         assert 'UNVERIFIED_DRAFT_DO_NOT_PUBLISH' in (ROOT/'cefr-vocabulary-data.js').read_text(encoding='utf-8')
-        assert re.search(r'entries:\\s*\\[\\s*\\]',(ROOT/'cefr-vocabulary-data.js').read_text(encoding='utf-8'))
-        (ROOT/'batch69-triage-results.json').write_text(json.dumps({'batch':69,'drafts':60,'by_level':COUNTS,'independently_approved':0,'audio_generated':0,'problems':problems},ensure_ascii=False,indent=2)+'\\n',encoding='utf-8')
+        assert re.search(r'entries:\s*\[\s*\]',(ROOT/'cefr-vocabulary-data.js').read_text(encoding='utf-8'))
+        (ROOT/'batch69-triage-results.json').write_text(json.dumps({'batch':69,'drafts':60,'by_level':COUNTS,'independently_approved':0,'audio_generated':0,'problems':problems},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print('BATCH69',level,'structurally checked',selected,'cross-corpus problems',json.dumps(problems,ensure_ascii=False))
     assert not problems,'Cross-corpus problems: quarantine and repair before considering structural-clear'
     print('PASS: structural-only. All held. No independent approval, no audio, no publication.')
