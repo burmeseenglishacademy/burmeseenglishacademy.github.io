@@ -42,11 +42,11 @@ def main(level):
   assert x["english_definition_review"]["source_observed"] is False
   assert x["audio_review"]["generated"] is False and x["audio_review"]["real_listening"] is False and x["audio_review"]["real_device_test"] is False
  bank=(R/"cefr-vocabulary-data.js").read_text(encoding="utf-8")
- assert "UNVERIFIED_DRAFT_DO_NOT_PUBLISH" in bank and re.search(r"entries:\\s*\\[\\s*\\]",bank)
+ assert "UNVERIFIED_DRAFT_DO_NOT_PUBLISH" in bank and re.search(r"entries:\s*\[\s*\]",bank)
  output={"batch":57,"stage":"STRUCTURAL_CANDIDATE_TRIAGE_NOT_LINGUISTIC_APPROVAL","proposals":len(E),"proposed_levels":dict(collections.Counter(e["proposed_level"] for e in E)),"new_unique_first_pass_proposals":len(eligible),"new_unique_by_level":dict(collections.Counter(e["proposed_level"] for e in eligible)),"quarantined_collisions":len(quarantined),"quarantined_by_level":dict(collections.Counter(x["level"] for x in quarantined)),"quarantined_records":quarantined,"independently_approved":0}
  if level=="ALL":
   subprocess.run(["python3","tools/audit_cefr_batch56_retier.py","--level","ALL"],cwd=R,check=True,stdout=subprocess.DEVNULL)
-  out=R/"batch57-triage-results.json";out.write_text(json.dumps(output,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+  out=R/"batch57-triage-results.json";out.write_text(json.dumps(output,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
   print("BATCH57 TRIAGE RESULTS "+json.dumps(output,ensure_ascii=False))
   print("BATCH57 PASS: structural audit only; quarantine collisions; all editorial and audio flags false; public bank empty")
  else:
