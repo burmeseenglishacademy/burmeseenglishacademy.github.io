@@ -1,0 +1,40 @@
+name: CEFR batch67 candidate preflight (never deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - draft/BATCH67-CANDIDATE-PREFLIGHT.txt
+      - .github/workflows/cefr-batch67-preflight.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  level-preflight:
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A2, B1, B2, C1]
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scan headwords against existing authored drafts and candidate-risk clues
+        shell: bash
+        run: |
+          grep '^\${{ matrix.level }}|' draft/BATCH67-CANDIDATE-PREFLIGHT.txt > batch67-level-input.txt
+          python3 tools/preflight_cefr_draft_candidates.py --file batch67-level-input.txt --json > batch67-preflight.json
+          python3 - <<'PY'
+          import json
+          d=json.load(open("batch67-preflight.json"))
+          print("PREFLIGHT SUMMARY",d["summary"])
+          for row in d["candidates"]:
+              print("PREFLIGHT",row["proposed_level"],row["word"],"CLEAR" if row["preflight_clear_only_not_approved"] else "HOLD",",".join(row["risk_flags"]))
+          assert d["summary"]["input_candidates"]==30
+          assert d["summary"]["unverified_seed_pool"]==5000
+          PY
+      - name: Store staging-only preflight diagnostics
+        uses: actions/upload-artifact@v4
+        with:
+          name: batch67-preflight-${{ matrix.level }}
+          path: batch67-preflight.json
+          retention-days: 14
