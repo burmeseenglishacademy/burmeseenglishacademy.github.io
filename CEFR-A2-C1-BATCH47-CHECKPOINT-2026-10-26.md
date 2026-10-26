@@ -32,3 +32,11 @@ Atomic staging commit adds six files: drafts, review tasks, holds, structural au
 
 ## Release blockers
 **1,713 unwritten, 1,030 held, 0/5,000 independently approved**, complete George/Emma generation and listening, browser/mobile and real iPhone Safari, hosting limits and confirmed live production deployment pending. Do not merge or notify.
+
+## Observed GitHub Actions verification — 26 October 2026
+- **Content/QA workflow commit:** `b777a47fcd824a3d081f3916706ef2efbbd26c29` (staging only).
+- [Run 40249635331](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40249635331): all five actual matrix jobs completed **successfully**; decoded job logs inspected, not inferred from queued state.
+- **A2** job `121338497712` success; **B1** `121338497767` success; **B2** `121338497748` success; **C1** `121338497677` success; **ALL** `121338497753` success.
+- ALL decoded log confirmed **A2 521 / B1 747 / B2 886 / C1 633** = **2,787 unique A2–C1**; with **A1 500 = 3,287 written**, **1,713 unwritten**, **1,030 held**, **182 historical duplicate rows excluded**, and **zero independently approved**.
+- ALL job log also printed `PASS: production lesson, IELTS, George/Emma audio and privacy assets unchanged` after comparing protected assets with `main`; public CEFR data remains empty by structural assertion.
+- This is **automated structural staging verification only**. It does not establish independently correct meanings, natural Myanmar, sense-level CEFR, example grammar, pronunciation listening, physical iPhone Safari or hosting readiness. This appendix is a report-only follow-up commit; the successful CI was on the preceding content/QA commit.
