@@ -11,6 +11,12 @@ def main(level):
  assert d["release_status"]=="UNVERIFIED_SOURCE_RECOVERY_DO_NOT_PUBLISH"
  assert t["release_status"]=="UNVERIFIED_REVIEW_TASKS_DO_NOT_PUBLISH" and t["source_pages_not_yet_checked"] is True
  assert len(E)==len(T)==55 and len({e["word"].casefold() for e in E})==55
+ q=read(ROOT/"draft/A2-C1-SOURCE-RECOVERY-QUARANTINE-BATCH67.json")
+ assert q["release_status"]=="REVERSIBLE_EDITORIAL_QUARANTINE_NOT_APPROVED_DO_NOT_PUBLISH"
+ assert len(q["records"])==17
+ expected={e["word"]:(e["proposed_level"],e["editorial_hold_reasons"]) for e in E if e["editorial_hold"]}
+ actual={x["word"]:(x["proposed_level"],x["reason_codes"]) for x in q["records"]}
+ assert expected==actual and all(x["hold_reversible"] is True and x["independently_approved"] is False and x["release_approved"] is False for x in q["records"])
  assert {e["word"] for e in E}=={x["word"] for x in T}
  assert dict(collections.Counter(e["proposed_level"] for e in E))==d["counts_by_proposed_level"]=={"A2":12,"B1":14,"B2":13,"C1":16}
  pool={x["word"].casefold():x for x in read(ROOT/"draft/UNVERIFIED_CEFR_CANDIDATES.json")["entries"]}
