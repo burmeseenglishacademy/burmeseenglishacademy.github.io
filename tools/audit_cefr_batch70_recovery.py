@@ -28,10 +28,23 @@ def run(level):
     task={x['word']:x for x in T};hold={x['word']:x for x in Q}
     prior=prior_index()
     pool={x['word'].casefold():x for x in load('UNVERIFIED_CEFR_CANDIDATES.json')['entries']}
+    triage=load('BATCH70-CANDIDATE-TRIAGE.json')
+    assert triage['stage']=='MECHANICAL_CANDIDATE_TRIAGE_ONLY_NOT_EDITORIAL_APPROVAL'
+    assert triage['total']==350 and triage['mechanically_clear_only']==183 and triage['quarantined']==167
+    assert sum(x['mechanical_preflight']=='QUARANTINE' for x in triage['records'])==167
+    assert all(x['risk_flags'] for x in triage['records'] if x['mechanical_preflight']=='QUARANTINE')
+    assert all(not x['risk_flags'] for x in triage['records'] if x['mechanical_preflight']=='CLEAR_ONLY_NOT_APPROVED')
+    screened={(x['proposed_level'],x['word']):x for x in triage['records']}
+    assert len(screened)==350
     problems=[];selected=0
     for e in E:
         if level!='ALL' and e['proposed_level']!=level: continue
         selected+=1;w=e['word']; x=task[w];h=hold[w]
+        screening=screened.get((e['proposed_level'],w))
+        if not screening or screening['mechanical_preflight']!='CLEAR_ONLY_NOT_APPROVED':
+            problems.append({'word':w,'issue':'NOT_CLEARED_IN_OBSERVED_CANDIDATE_PREFLIGHT'})
+        elif screening['independent_linguistic_review'] or screening['independent_cefr_review'] or screening['release_approved']:
+            problems.append({'word':w,'issue':'FALSE_CANDIDATE_APPROVAL_FLAG'})
         assert re.fullmatch('[a-z]{3,}',w),w
         assert e['part_of_speech'] in ('noun','verb','adjective','adverb'),w
         assert len(e['english_definition'])>=30,w
