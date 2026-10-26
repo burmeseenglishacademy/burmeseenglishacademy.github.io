@@ -1,0 +1,3619 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-27",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "source": "Observed GitHub Actions run 40419149681 completed/success; four actual job logs",
+  "stage": "MECHANICAL_CANDIDATE_TRIAGE_ONLY_NOT_EDITORIAL_APPROVAL",
+  "no_publish": true,
+  "counts": {
+    "A2": {
+      "total": 73,
+      "mechanically_clear": 36,
+      "quarantined": 37,
+      "github_job_id": 121908903801
+    },
+    "B1": {
+      "total": 70,
+      "mechanically_clear": 18,
+      "quarantined": 52,
+      "github_job_id": 121908903596
+    },
+    "B2": {
+      "total": 73,
+      "mechanically_clear": 34,
+      "quarantined": 39,
+      "github_job_id": 121908903934
+    },
+    "C1": {
+      "total": 134,
+      "mechanically_clear": 95,
+      "quarantined": 39,
+      "github_job_id": 121908903898
+    }
+  },
+  "total": 350,
+  "mechanically_clear_only": 183,
+  "quarantined": 167,
+  "notes": "Held candidates have real mechanical collision, provisional tier disagreement or previous editorial hold flags. Clear candidates still require sense-specific CEFR, English, Myanmar and example evidence. WordNet seed meanings and proper-name senses must be independently checked; preflight is not semantic approval.",
+  "records": [
+    {
+      "proposed_level": "A2",
+      "word": "ankle",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "bakery",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "balcony",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "bandage",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "battery",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "beard",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "bench",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "bicycle",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "blouse",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "bracelet",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "brush",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "calendar",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "cashier",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "ceiling",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "charger",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "checkout",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "clerk",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "comb",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "compass",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "cough",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "cupboard",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "dessert",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "drawer",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "elbow",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "entrance",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "faucet",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "freezer",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "frying",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "garden",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "gate",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "grocery",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "hanger",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "honey",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "island",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "jacket",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "laundry",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "lemon",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "luggage",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "magnet",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "mirror",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "necklace",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "notebook",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "oven",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "parcel",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "passenger",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "pavement",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "pepper",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "picnic",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "platform",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "pocket",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "pond",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "postcard",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "printer",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "puzzle",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "raincoat",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "ribbon",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "saucepan",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "shelf",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "shelter",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "slipper",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "soap",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "socket",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "staircase",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "strawberry",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "sweater",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "ticket",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "toolbox",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "toothpaste",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "umbrella",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "uniform",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "visitor",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "waterfall",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "A2",
+      "word": "zipper",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "adaptation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "advertisement",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "allowance",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "ambition",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "approval",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "arrival",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "assessment",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "attachment",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "boundary",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "cancellation",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "commitment",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "comparison",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "competition",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "concentration",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "contribution",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "cooperation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "curiosity",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "declaration",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "departure",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "destination",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "disappointment",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "discovery",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "disturbance",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "diversity",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "donation",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "efficiency",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "emergency",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "encouragement",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "enjoyment",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "explanation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "familiarity",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "generation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "generosity",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "improvement",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "independence",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "inspection",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "instruction",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "interaction",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "interruption",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "introduction",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "invitation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "involvement",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "judgement",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "leadership",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "motivation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "observation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "occupation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "opportunity",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "organisation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "orientation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "outcome",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "permission",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "preparation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "prevention",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "promotion",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "recommendation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "recovery",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "replacement",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "representation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "satisfaction",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "separation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "significance",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "solution",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "supervision",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "temptation",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "translation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "uncertainty",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "usefulness",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "willingness",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B1",
+      "word": "withdrawal",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "abundance",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "allocation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "anticipation",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "appraisal",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "articulation",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "authenticity",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "benchmark",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "capacity",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "cohesion",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "collaboration",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "compatibility",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "complexity",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "constraint",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "consultation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "coordination",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "correlation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "credibility",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "deduction",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "delegation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "dependency",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "deployment",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "deviation",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "diagnosis",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "dilemma",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "disclosure",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "discrepancy",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "distribution",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "duration",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "elasticity",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "endorsement",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "evaluation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "exception",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "exposure",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "facilitation",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "fluctuation",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "forecast",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "formulation",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "framework",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "functionality",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "governance",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "implication",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "incentive",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "inclusion",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "integration",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "justification",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "limitation",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "magnitude",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "mediation",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "mitigation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "modification",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "momentum",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "obligation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "oversight",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "parameter",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "perception",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "precision",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "projection",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "provision",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "redundancy",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "regulation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "reliability",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "retention",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "revision",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "scenario",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "specification",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "stability",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "stakeholder",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "threshold",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "transaction",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "transition",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "validation",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "volatility",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "B2",
+      "word": "vulnerability",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "abrogation",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "abstemiousness",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "acquittal",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "adversarial",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "affinity",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "aggrandisement",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "ambivalence",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "anarchy",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "animosity",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "antecedent",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "apocryphal",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "apprehension",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "arbitrariness",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "ascendance",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "assiduous",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "astuteness",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "austerity",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "backlash",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "bellicose",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "bifurcation",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "brazen",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "brevity",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "brinkmanship",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "broach",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "cacophony",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "callousness",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "candour",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "censure",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "chicanery",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "circumlocution",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "cogency",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "complacency",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "concision",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "conjecture",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "connotation",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "constancy",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "contentiousness",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "contravention",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "corollary",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "corroboration",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "deference",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "defiance",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "delineation",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "demarcation",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "dereliction",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "despondency",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "deterrence",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "dichotomy",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "disarray",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "disavowal",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "discernment",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "discomposure",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "disenchantment",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "disinclination",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "dispassionate",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "dissent",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "divergence",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "doggedness",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "eclecticism",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "effrontery",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "elation",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "embellishment",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "embezzlement",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "encumbrance",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "endemic",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "enmity",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "equivocation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "erosion",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "estrangement",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "exoneration",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "extrapolation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "fallibility",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "forethought",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "fortitude",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "galvanise",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "grandiosity",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "grievance",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "hubris",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "implacable",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "impunity",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "intransigence",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "introspection",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "invective",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "irreverence",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "juxtaposition",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "magnanimity",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "malfeasance",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "mendacity",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "misgivings",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "mollification",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "notoriety",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "obfuscation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "obstinacy",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "omnipresence",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "opportunism",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "oscillation",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "overreach",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "paradoxical",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "perfunctory",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "perjury",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "perseverance",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "pertinence",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "preclusion",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "pretext",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "procrastination",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "profundity",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "protracted",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "quagmire",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "recalcitrance",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "reciprocity",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "recrimination",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "redress",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "refutation",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "relentlessness",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "remonstrance",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "reprisal",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "reticence",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "reverberation",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "sanctimony",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "selflessness",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "subjugation",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "subterfuge",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "surreptitious",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "tenacity",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "transgression",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "trepidation",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "triviality",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "unequivocal",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "unscrupulous",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "upheaval",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "vehemence",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "veracity",
+      "mechanical_preflight": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "vestige",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "proposed_level": "C1",
+      "word": "vilification",
+      "mechanical_preflight": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independent_linguistic_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    }
+  ]
+}
