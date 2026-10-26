@@ -45,11 +45,11 @@ def main(level):
   assert x["english_definition_review"]["source_observed"] is False
   assert x["audio_review"]["generated"] is False and x["audio_review"]["real_listening"] is False and x["audio_review"]["real_device_test"] is False
  bank=(ROOT/"cefr-vocabulary-data.js").read_text(encoding="utf-8")
- assert "UNVERIFIED_DRAFT_DO_NOT_PUBLISH" in bank and re.search(r"entries:\\s*\\[\\s*\\]",bank)
+ assert "UNVERIFIED_DRAFT_DO_NOT_PUBLISH" in bank and re.search(r"entries:\s*\[\s*\]",bank)
  out={"batch":60,"stage":"STRUCTURAL_TRIAGE_NOT_LINGUISTIC_APPROVAL","proposals":len(E),"proposed_levels":d["counts_by_proposed_level"],"eligible_unapproved_first_pass":len(eligible),"eligible_by_level":dict(collections.Counter(e["proposed_level"] for e in eligible)),"quarantined_total":len(quarantined),"duplicate_collisions":sum("ALREADY_IN_ORIGINAL_5000_POOL_OR_PREVIOUS_DRAFT" in x["reasons"] for x in quarantined),"explicit_unsupported_level_holds":sum(any("UNSUPPORTED" in reason for reason in x["reasons"]) for x in quarantined),"quarantined_by_level":dict(collections.Counter(x["level"] for x in quarantined)),"quarantined_records":quarantined,"independently_approved":0}
  if level=="ALL":
   subprocess.run(["python3","tools/audit_cefr_batch59_recovery.py","--level","ALL"],cwd=ROOT,check=True,stdout=subprocess.DEVNULL)
-  (ROOT/"batch60-triage-results.json").write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+  (ROOT/"batch60-triage-results.json").write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
   print("BATCH60 TRIAGE RESULTS "+json.dumps(out,ensure_ascii=False))
   print("BATCH60 PASS: only structural and preservation checks, not source or listening approval")
  else:
