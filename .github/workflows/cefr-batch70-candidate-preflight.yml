@@ -1,0 +1,42 @@
+name: CEFR batch70 candidate preflight by level (never deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - draft/BATCH70-CANDIDATE-PREFLIGHT.txt
+      - .github/workflows/cefr-batch70-candidate-preflight.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  candidate-triage:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A2, B1, B2, C1]
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run nonapproval preflight and report all flags
+        shell: bash
+        run: |
+          grep '^${{ matrix.level }}|' draft/BATCH70-CANDIDATE-PREFLIGHT.txt > candidate-input.txt
+          python3 tools/preflight_cefr_draft_candidates.py --file candidate-input.txt --json > candidate-preflight.json
+          python3 - <<'PY'
+          import json
+          d=json.load(open('candidate-preflight.json'))
+          print('BATCH70 PREFLIGHT',d['summary'])
+          for x in d['candidates']:
+              print('CANDIDATE',x['proposed_level'],x['word'],'CLEAR' if x['preflight_clear_only_not_approved'] else 'HOLD',','.join(x['risk_flags']))
+          assert d['summary']['unverified_seed_pool']==5000
+          assert d['summary']['input_candidates']>=40
+          assert d['summary']['preflight_clear']+d['summary']['requires_triage']==d['summary']['input_candidates']
+          print('NO LINGUISTIC OR CEFR APPROVAL. NO PUBLISH.')
+          PY
+      - name: Archive reversible candidate triage
+        uses: actions/upload-artifact@v4
+        with:
+          name: batch70-preflight-${{ matrix.level }}
+          path: candidate-preflight.json
+          retention-days: 21
