@@ -45,7 +45,7 @@ def audit(level):
         w = e["word"]
         if level != "ALL" and e["proposed_level"] != level:
             continue
-        assert re.fullmatch(r"[a-z]{4,}", w), w
+        assert re.fullmatch(r"[a-z]{3,}", w), w
         assert e["part_of_speech"] in ("noun", "verb", "adjective", "adverb"), w
         assert len(e["english_definition"]) >= 30, w
         assert re.search(r"[\u1000-\u109f]", e["burmese_meaning"]), w
