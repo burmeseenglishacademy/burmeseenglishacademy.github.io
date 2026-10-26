@@ -1,0 +1,486 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-26",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "independently_approved": 0,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "description": "Batch48 47 reversible holds on named entities, first-WordNet-sense mismatches and unsupported tier/POS; not linguistic approvals.",
+  "counts_by_provisional_level": {
+    "A2": 3,
+    "B1": 6,
+    "B2": 22,
+    "C1": 16
+  },
+  "records": [
+    {
+      "word": "washington",
+      "provisional_level": "A2",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "george",
+      "provisional_level": "A2",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "longer",
+      "provisional_level": "A2",
+      "risk": "WORDNET_FIRST_SENSE_POS_OR_LEARNER_LEVEL_MISMATCH",
+      "evidence_note": "Reversible heuristic hold: candidate's first WordNet sense or part of speech is misleading, unusual, or inconsistent with its common learner use and assigned tier. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "martin",
+      "provisional_level": "B1",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "charles",
+      "provisional_level": "B1",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "windows",
+      "provisional_level": "B1",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "andrew",
+      "provisional_level": "B1",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ancient",
+      "provisional_level": "B1",
+      "risk": "WORDNET_FIRST_SENSE_POS_OR_LEARNER_LEVEL_MISMATCH",
+      "evidence_note": "Reversible heuristic hold: candidate's first WordNet sense or part of speech is misleading, unusual, or inconsistent with its common learner use and assigned tier. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "familiar",
+      "provisional_level": "B1",
+      "risk": "WORDNET_FIRST_SENSE_POS_OR_LEARNER_LEVEL_MISMATCH",
+      "evidence_note": "Reversible heuristic hold: candidate's first WordNet sense or part of speech is misleading, unusual, or inconsistent with its common learner use and assigned tier. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "rome",
+      "provisional_level": "B2",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "liverpool",
+      "provisional_level": "B2",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "dallas",
+      "provisional_level": "B2",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "houston",
+      "provisional_level": "B2",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "moscow",
+      "provisional_level": "B2",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "philadelphia",
+      "provisional_level": "B2",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "walker",
+      "provisional_level": "B2",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "berlin",
+      "provisional_level": "B2",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "oxford",
+      "provisional_level": "B2",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "patrick",
+      "provisional_level": "B2",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "austin",
+      "provisional_level": "B2",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "detroit",
+      "provisional_level": "B2",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "singapore",
+      "provisional_level": "B2",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "delhi",
+      "provisional_level": "B2",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "edinburgh",
+      "provisional_level": "B2",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "thompson",
+      "provisional_level": "B2",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "cleveland",
+      "provisional_level": "B2",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "maryland",
+      "provisional_level": "B2",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "desperate",
+      "provisional_level": "B2",
+      "risk": "WORDNET_FIRST_SENSE_POS_OR_LEARNER_LEVEL_MISMATCH",
+      "evidence_note": "Reversible heuristic hold: candidate's first WordNet sense or part of speech is misleading, unusual, or inconsistent with its common learner use and assigned tier. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "hardware",
+      "provisional_level": "B2",
+      "risk": "WORDNET_FIRST_SENSE_POS_OR_LEARNER_LEVEL_MISMATCH",
+      "evidence_note": "Reversible heuristic hold: candidate's first WordNet sense or part of speech is misleading, unusual, or inconsistent with its common learner use and assigned tier. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ethnic",
+      "provisional_level": "B2",
+      "risk": "WORDNET_FIRST_SENSE_POS_OR_LEARNER_LEVEL_MISMATCH",
+      "evidence_note": "Reversible heuristic hold: candidate's first WordNet sense or part of speech is misleading, unusual, or inconsistent with its common learner use and assigned tier. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "soil",
+      "provisional_level": "B2",
+      "risk": "WORDNET_FIRST_SENSE_POS_OR_LEARNER_LEVEL_MISMATCH",
+      "evidence_note": "Reversible heuristic hold: candidate's first WordNet sense or part of speech is misleading, unusual, or inconsistent with its common learner use and assigned tier. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "harvey",
+      "provisional_level": "C1",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "nancy",
+      "provisional_level": "C1",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "pittsburgh",
+      "provisional_level": "C1",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "richmond",
+      "provisional_level": "C1",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "carlos",
+      "provisional_level": "C1",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "spencer",
+      "provisional_level": "C1",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "chambers",
+      "provisional_level": "C1",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "montreal",
+      "provisional_level": "C1",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "newcastle",
+      "provisional_level": "C1",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "dylan",
+      "provisional_level": "C1",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "milan",
+      "provisional_level": "C1",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "montana",
+      "provisional_level": "C1",
+      "risk": "LIKELY_NAMED_ENTITY_OR_PROPER_NAME_WORDNET_CLUE",
+      "evidence_note": "Reversible heuristic hold: candidate appears to represent a geographic name, person, branded operating system or named entity rather than an independently supported general learner headword. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "generic",
+      "provisional_level": "C1",
+      "risk": "WORDNET_FIRST_SENSE_POS_OR_LEARNER_LEVEL_MISMATCH",
+      "evidence_note": "Reversible heuristic hold: candidate's first WordNet sense or part of speech is misleading, unusual, or inconsistent with its common learner use and assigned tier. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "intensive",
+      "provisional_level": "C1",
+      "risk": "WORDNET_FIRST_SENSE_POS_OR_LEARNER_LEVEL_MISMATCH",
+      "evidence_note": "Reversible heuristic hold: candidate's first WordNet sense or part of speech is misleading, unusual, or inconsistent with its common learner use and assigned tier. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "rational",
+      "provisional_level": "C1",
+      "risk": "WORDNET_FIRST_SENSE_POS_OR_LEARNER_LEVEL_MISMATCH",
+      "evidence_note": "Reversible heuristic hold: candidate's first WordNet sense or part of speech is misleading, unusual, or inconsistent with its common learner use and assigned tier. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "provincial",
+      "provisional_level": "C1",
+      "risk": "WORDNET_FIRST_SENSE_POS_OR_LEARNER_LEVEL_MISMATCH",
+      "evidence_note": "Reversible heuristic hold: candidate's first WordNet sense or part of speech is misleading, unusual, or inconsistent with its common learner use and assigned tier. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
