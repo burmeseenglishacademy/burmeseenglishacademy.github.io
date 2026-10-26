@@ -1,0 +1,22 @@
+name: CEFR full remaining candidate triage (never deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - tools/cefr_remaining_candidate_triage.py
+      - .github/workflows/cefr-remaining-candidate-triage.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  provisional-unheld:
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A2, B1, B2, C1]
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect unheld candidate sense clues (NOT CEFR approvals)
+        run: python3 tools/cefr_remaining_candidate_triage.py --level ${{ matrix.level }} --limit 800
