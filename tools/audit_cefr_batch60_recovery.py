@@ -16,6 +16,8 @@ def main(level):
  pool={x["word"].casefold() for x in load("draft/UNVERIFIED_CEFR_CANDIDATES.json")["entries"]}
  files=[ROOT/"draft/A2-C1-EDITORIAL-STARTER.json",*sorted((ROOT/"draft").glob("A2-C1-EDITORIAL-BATCH*.json")),*sorted((ROOT/"draft").glob("A2-C1-RETIER-EDITORIAL-BATCH*.json")),*[p for p in sorted((ROOT/"draft").glob("A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH*.json")) if p.name!="A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json"]]
  prior=set()
+ # A1 is a separate first-pass ledger; its headwords must also be protected from accidental reuse.
+ files += [ROOT/"draft/A1-EDITORIAL-STARTER.json",*sorted((ROOT/"draft").glob("A1-EXPANSION-BATCH*.json"))]
  for p in files: prior.update(x["word"].casefold() for x in json.loads(p.read_text(encoding="utf-8"))["entries"])
  quarantined=[];eligible=[]
  for e in E:
@@ -32,6 +34,8 @@ def main(level):
   reasons=[]
   if w.casefold() in pool or w.casefold() in prior: reasons.append("ALREADY_IN_ORIGINAL_5000_POOL_OR_PREVIOUS_DRAFT")
   if e["editorial_hold"]: reasons.extend(e["editorial_hold_reasons"])
+  if any(k in e for k in ("wordnet_synset","wordnet_definition","unreviewed_wordnet_sense")): reasons.append("UNREVIEWED_WORDNET_SENSE")
+  if w in {"amazon","google","microsoft","singapore","myanmar","london","oxford"}: reasons.append("NAMED_ENTITY_UNSUPPORTED")
   assert e["editorial_hold"]==bool(e["editorial_hold_reasons"]),w
   if e["editorial_hold"]: assert e["status"]=="REVERSIBLE_QUARANTINE_LEVEL_UNSUPPORTED",w
   else: assert e["status"]=="FIRST_PASS_UNVERIFIED_PENDING_CROSS_CORPUS_TRIAGE",w
