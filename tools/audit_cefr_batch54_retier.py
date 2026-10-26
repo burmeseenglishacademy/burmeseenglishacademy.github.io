@@ -18,11 +18,11 @@ def audit(level):
  assert q["release_status"]=="UNVERIFIED_CANDIDATE_HOLDS_DO_NOT_PUBLISH"
  assert all(x["independently_approved"]==0 for x in (d,t,q))
  assert d["counts_by_proposed_level"]==t["counts_by_proposed_level"]==COUNTS
- assert len(d["entries"])==len(t["entries"])==48 and len(q["records"])==12
+ assert len(d["entries"])==len(t["entries"])==48 and len(q["records"])==13
  words={x["word"]:x for x in d["entries"]}
  tasks={x["word"]:x for x in t["entries"]}
  held={x["word"]:x for x in q["records"]}
- assert len(words)==len(tasks)==48 and len(held)==12 and set(words)==set(tasks) and not set(words)&set(held)
+ assert len(words)==len(tasks)==48 and len(held)==13 and set(words)==set(tasks) and not set(words)&set(held)
  assert collections.Counter(x["proposed_level"] for x in d["entries"])==COUNTS
  assert len({x["example_sentence"] for x in d["entries"]})==48
  prior=[R/"draft/A2-C1-EDITORIAL-STARTER.json",*sorted((R/"draft").glob("A2-C1-EDITORIAL-BATCH*.json")),R/"draft/A2-C1-RETIER-EDITORIAL-BATCH52.json",R/"draft/A2-C1-RETIER-EDITORIAL-BATCH53.json"]
@@ -57,7 +57,7 @@ def audit(level):
  assert "UNVERIFIED_DRAFT_DO_NOT_PUBLISH" in bank and re.search(r"entries:\s*\[\s*\]",bank)
  if level=="ALL":
   subprocess.run(["python3","tools/audit_cefr_batch53_retier.py","--level","ALL"],cwd=R,check=True)
-  print("BATCH54 ALL structural pass; canonical prior=3478; separate retier=128; combined first-pass=3606; independent approvals=0; new holds=12; cumulative holds=1179")
+  print("BATCH54 ALL structural pass; canonical prior=3478; separate retier=128; combined first-pass=3606; independent approvals=0; new holds=13; cumulative holds=1180")
  else:print("BATCH54",level,"structural pass",COUNTS[level])
 if __name__=="__main__":
  ap=argparse.ArgumentParser();ap.add_argument("--level",choices=["A2","B1","B2","C1","ALL"],required=True)

@@ -5,7 +5,7 @@
   "independently_approved": 0,
   "release_status": "UNVERIFIED_CANDIDATE_HOLDS_DO_NOT_PUBLISH",
   "counts_by_source_pool_level": {
-    "C1": 12
+    "C1": 13
   },
   "records": [
     {
@@ -111,6 +111,15 @@
       "word": "diana",
       "source_pool_level": "C1",
       "risk": "PROPER_NAME_PERSON_AND_WORDNET_FIRST_SENSE",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "lighter",
+      "source_pool_level": "C1",
+      "risk": "WORDNET_FIRST_SENSE_LIGHTING_SUBSTANCE_CONFLICTS_WITH_COMMON_IGNITION_DEVICE_SENSE",
       "source_observed": false,
       "reviewed_independently": false,
       "release_approved": false,
