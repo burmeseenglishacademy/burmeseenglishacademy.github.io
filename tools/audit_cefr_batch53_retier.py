@@ -54,7 +54,7 @@ def audit(level):
   assert w in pool and pool[w]["level"]=="C1" and h["source_observed"] is False and h["release_approved"] is False,w
   assert h["reviewed_independently"] is False,w
  bank=(R/"cefr-vocabulary-data.js").read_text(encoding="utf-8")
- assert "UNVERIFIED_DRAFT_DO_NOT_PUBLISH" in bank and re.search(r"entries:\\s*\\[\\s*\\]",bank)
+ assert "UNVERIFIED_DRAFT_DO_NOT_PUBLISH" in bank and re.search(r"entries:\s*\[\s*\]",bank)
  if level=="ALL":
   subprocess.run(["python3","tools/audit_cefr_batch52_retier.py","--level","ALL"],cwd=R,check=True)
   print("BATCH53 ALL structural pass; canonical prior=3478; separate retier=80; combined first-pass=3558; independent approvals=0; new holds=10; cumulative holds=1167")
