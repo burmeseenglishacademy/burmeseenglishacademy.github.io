@@ -27,7 +27,7 @@ def audit(level):
  assert d["counts_by_provisional_level"]==t["counts_by_provisional_level"]==EXPECTED
  assert q["counts_by_provisional_level"]==HELD
  assert len(d["entries"])==len(t["entries"])==40 and len(q["records"])==34
- assert collections.Counter(x["level"] for x in d["entries"])==EXPECTED
+ assert set(x["level"] for x in d["entries"])<=set(EXPECTED) and all(sum(x["level"]==k for x in d["entries"])==v for k,v in EXPECTED.items())
  assert collections.Counter(x["provisional_level"] for x in q["records"])==HELD
  assert d["stages"]=={"english":"FIRST_PASS_NOT_INDEPENDENTLY_REVIEWED","myanmar":"FIRST_PASS_NOT_INDEPENDENTLY_REVIEWED","example":"FIRST_PASS_NOT_INDEPENDENTLY_REVIEWED","source_evidence":"PENDING_SEPARATE_REVIEW_TASKS"}
  drafts={x["word"]:x for x in d["entries"]}
