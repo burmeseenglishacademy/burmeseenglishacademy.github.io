@@ -1,0 +1,39 @@
+name: CEFR batch66 80-proposal parallel structural QA (never deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH65.json
+      - draft/A2-C1-SOURCE-RECOVERY-REVIEW-TASKS-BATCH65.json
+      - tools/audit_cefr_batch66_recovery.py
+      - .github/workflows/cefr-batch66-recovery-qa.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  independent-level-structural-audit:
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A2, B1, B2, C1, ALL]
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Structural and reversible candidate quarantine (not linguistic approval)
+        run: python3 tools/audit_cefr_batch66_recovery.py --level ${{ matrix.level }}
+      - name: Guard production lessons IELTS audio and privacy
+        if: ${{ matrix.level == 'ALL' }}
+        shell: bash
+        run: |
+          git fetch --no-tags --depth=1 origin main
+          changed="$(git diff --name-only origin/main HEAD -- content.js ielts-vocabulary-data.js audio-manifest.js audio-player.js audio-integration.js privacy-tools.js site-config.js audio/)"
+          if [ -n "$changed" ]; then printf 'PRODUCTION ASSET DRIFT: %s\n' "$changed"; exit 1; fi
+          echo 'PASS: protected production assets unchanged'
+      - name: Archive reversible candidate quarantine
+        if: ${{ matrix.level == 'ALL' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: batch66-reversible-quarantine
+          path: batch66-triage-results.json
+          retention-days: 30
