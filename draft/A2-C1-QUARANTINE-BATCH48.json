@@ -4,12 +4,12 @@
   "branch": "cefr-5000-bilingual-qa-staging",
   "independently_approved": 0,
   "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
-  "description": "Batch48 47 reversible holds on named entities, first-WordNet-sense mismatches and unsupported tier/POS; not linguistic approvals.",
+  "description": "Batch48 49 reversible holds: named entities, WordNet first-sense mismatches, POS and unsupported level concerns.",
   "counts_by_provisional_level": {
     "A2": 3,
     "B1": 6,
     "B2": 22,
-    "C1": 16
+    "C1": 18
   },
   "records": [
     {
@@ -477,6 +477,26 @@
       "provisional_level": "C1",
       "risk": "WORDNET_FIRST_SENSE_POS_OR_LEARNER_LEVEL_MISMATCH",
       "evidence_note": "Reversible heuristic hold: candidate's first WordNet sense or part of speech is misleading, unusual, or inconsistent with its common learner use and assigned tier. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "cope",
+      "provisional_level": "C1",
+      "risk": "WORDNET_FIRST_SENSE_POS_OR_LEARNER_LEVEL_MISMATCH",
+      "evidence_note": "Reversible heuristic hold: First WordNet noun sense describes a roofing brick; learner-useful verb 'cope' conflicts with candidate noun POS. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "rebel",
+      "provisional_level": "C1",
+      "risk": "WORDNET_FIRST_SENSE_POS_OR_LEARNER_LEVEL_MISMATCH",
+      "evidence_note": "Reversible heuristic hold: First WordNet noun sense refers to a specific US Civil War nickname, not a general learner-friendly definition. No independent dictionary or graded CEFR approval.",
       "source_observed": false,
       "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
       "reviewed_independently": false,
