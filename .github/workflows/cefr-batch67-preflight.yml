@@ -21,7 +21,7 @@ jobs:
       - name: Scan headwords against existing authored drafts and candidate-risk clues
         shell: bash
         run: |
-          grep '^\${{ matrix.level }}|' draft/BATCH67-CANDIDATE-PREFLIGHT.txt > batch67-level-input.txt
+          grep '^${{ matrix.level }}|' draft/BATCH67-CANDIDATE-PREFLIGHT.txt > batch67-level-input.txt
           python3 tools/preflight_cefr_draft_candidates.py --file batch67-level-input.txt --json > batch67-preflight.json
           python3 - <<'PY'
           import json
