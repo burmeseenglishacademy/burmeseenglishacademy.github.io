@@ -21,6 +21,9 @@
 
 ## QA and release blockers
 
+Initial workflow run 40276058485 failed all five jobs on a real prior-draft/hold collision, not a linguistic failure. Diagnostic run 40276101988 identified ten colliding words (nine previously drafted and one previously held); these have been replaced with ten fresh candidate drafts without changing the 40-entry count. A new CI run must verify the corrected set. Do not describe either failed run as passed.
+
+
 A new nondeploying five-job A2/B1/B2/C1/ALL workflow checks source-pool POS and source-tier, unique words, prior draft/hold collisions, original examples, separate review flags, zero approvals and production drift. It recursively runs batch51's existing structural audit. **Job success must be confirmed from actual GitHub Actions run/job status and logs; no success is asserted here.** Batch51 prior verified structural run 40266428089 completed success; that did not verify any linguistic claims.
 
-The 40 words have **no observed learner-dictionary pages, no independent fluent Myanmar signoff, no sense-specific CEFR grading, no generated or listened-to new George/Emma audio, and no real-device Safari test**. Specialist C1 noun senses `dental` and `intensive` require special teaching-utility checks. The production 54 lessons, IELTS 1000 bank, audio and privacy remain protected, and the CEFR production data file stays empty. The 5,000 approvals, full audio generation/listening, mobile/iPhone Safari, hosting limits and confirmed live deployment are all outstanding.
+The 40 words have **no observed learner-dictionary pages, no independent fluent Myanmar signoff, no sense-specific CEFR grading, no generated or listened-to new George/Emma audio, and no real-device Safari test**. Specialist C1 noun senses `dental`, `hull` and `spectacular` require special teaching-utility checks. The production 54 lessons, IELTS 1000 bank, audio and privacy remain protected, and the CEFR production data file stays empty. The 5,000 approvals, full audio generation/listening, mobile/iPhone Safari, hosting limits and confirmed live deployment are all outstanding.
