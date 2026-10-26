@@ -1,0 +1,166 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-26",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "independently_approved": 0,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "description": "Batch49 15 reversible holds for morphology, named entity, misleading WordNet sense or unsupported level.",
+  "counts_by_provisional_level": {
+    "A2": 5,
+    "B1": 4,
+    "B2": 3,
+    "C1": 3
+  },
+  "records": [
+    {
+      "word": "i'll",
+      "provisional_level": "A2",
+      "risk": "CONTRACTION_AS_HEADWORD_AND_WRONG_WORDNET_SENSE",
+      "evidence_note": "Reversible heuristic hold based on WordNet clue and candidate morphology. No independent source-based linguistic or CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "oh",
+      "provisional_level": "A2",
+      "risk": "WORDNET_US_STATE_MISREAD_AS_INTERJECTION",
+      "evidence_note": "Reversible heuristic hold based on WordNet clue and candidate morphology. No independent source-based linguistic or CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "we're",
+      "provisional_level": "A2",
+      "risk": "CONTRACTION_AND_COPULA_MISMATCH",
+      "evidence_note": "Reversible heuristic hold based on WordNet clue and candidate morphology. No independent source-based linguistic or CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "i'd",
+      "provisional_level": "A2",
+      "risk": "CONTRACTION_MISREAD_AS_US_STATE",
+      "evidence_note": "Reversible heuristic hold based on WordNet clue and candidate morphology. No independent source-based linguistic or CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "won't",
+      "provisional_level": "A2",
+      "risk": "CONTRACTION_AND_WRONG_WORDNET_NOUN",
+      "evidence_note": "Reversible heuristic hold based on WordNet clue and candidate morphology. No independent source-based linguistic or CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "who's",
+      "provisional_level": "B1",
+      "risk": "CONTRACTION_MISREAD_AS_ORGANISATION",
+      "evidence_note": "Reversible heuristic hold based on WordNet clue and candidate morphology. No independent source-based linguistic or CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "closer",
+      "provisional_level": "B1",
+      "risk": "WORDNET_PERSON_NOUN_NOT_COMPARATIVE_ADVERB",
+      "evidence_note": "Reversible heuristic hold based on WordNet clue and candidate morphology. No independent source-based linguistic or CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "pm",
+      "provisional_level": "B1",
+      "risk": "ABBREVIATION_AND_WORDNET_AUTOPSY_SENSE",
+      "evidence_note": "Reversible heuristic hold based on WordNet clue and candidate morphology. No independent source-based linguistic or CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ms",
+      "provisional_level": "B1",
+      "risk": "AMBIGUOUS_ABBREVIATION_OR_MEDICAL_TERM",
+      "evidence_note": "Reversible heuristic hold based on WordNet clue and candidate morphology. No independent source-based linguistic or CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "pc",
+      "provisional_level": "B2",
+      "risk": "ABBREVIATION_REQUIRES_LEMMA_POLICY",
+      "evidence_note": "Reversible heuristic hold based on WordNet clue and candidate morphology. No independent source-based linguistic or CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "lighting",
+      "provisional_level": "B2",
+      "risk": "WORDNET_FIRST_SENSE_AND_LEVEL_MISMATCH",
+      "evidence_note": "Reversible heuristic hold based on WordNet clue and candidate morphology. No independent source-based linguistic or CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "virgin",
+      "provisional_level": "B2",
+      "risk": "SENSITIVE_WORD_AND_LEARNER_LEVEL_RECHECK",
+      "evidence_note": "Reversible heuristic hold based on WordNet clue and candidate morphology. No independent source-based linguistic or CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "burger",
+      "provisional_level": "C1",
+      "risk": "WORDNET_PERSON_NAME_VS_COMMON_FOOD",
+      "evidence_note": "Reversible heuristic hold based on WordNet clue and candidate morphology. No independent source-based linguistic or CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "lodge",
+      "provisional_level": "C1",
+      "risk": "WORDNET_PERSON_NAME_VS_COMMON_BUILDING",
+      "evidence_note": "Reversible heuristic hold based on WordNet clue and candidate morphology. No independent source-based linguistic or CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "shy",
+      "provisional_level": "C1",
+      "risk": "WORDNET_NOUN_THROW_VS_COMMON_ADJECTIVE",
+      "evidence_note": "Reversible heuristic hold based on WordNet clue and candidate morphology. No independent source-based linguistic or CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}

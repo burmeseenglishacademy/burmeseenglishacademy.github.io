@@ -1,0 +1,36 @@
+name: CEFR batch49 parallel bilingual draft and quarantine QA (never deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - draft/A2-C1-EDITORIAL-BATCH49.json
+      - draft/A2-C1-REVIEW-TASKS-BATCH49.json
+      - draft/A2-C1-QUARANTINE-BATCH49.json
+      - tools/audit_cefr_batch49_review_tasks.py
+      - .github/workflows/cefr-batch49-review-qa.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  unpublished-structural-review:
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A2, B1, B2, C1, ALL]
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate batch49 drafts, quarantine and review tasks
+        run: python3 tools/audit_cefr_batch49_review_tasks.py --level ${{ matrix.level }}
+      - name: Check production lessons, IELTS, audio and privacy unchanged
+        if: ${{ matrix.level == 'ALL' }}
+        shell: bash
+        run: |
+          git fetch --no-tags --depth=1 origin main
+          changed="$(git diff --name-only origin/main HEAD -- content.js ielts-vocabulary-data.js audio-manifest.js audio-player.js audio-integration.js privacy-tools.js site-config.js audio/)"
+          if [ -n "$changed" ]; then
+            printf 'PRODUCTION ASSET DRIFT: %s\n' "$changed"
+            exit 1
+          fi
+          echo 'PASS: production lesson, IELTS, George/Emma audio and privacy assets unchanged'
