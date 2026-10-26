@@ -22,7 +22,7 @@ NAMED_WORDS = {"singapore", "myanmar", "london", "tokyo", "amazon", "google", "m
 def load(path):
     return json.loads(path.read_text(encoding="utf-8"))
 
-def build_index():
+def build_index(exclude_current_batch68=False):
     pool_file = ROOT / "draft/UNVERIFIED_CEFR_CANDIDATES.json"
     pool_data = load(pool_file)
     assert pool_data["release_status"] == "UNVERIFIED_DRAFT_DO_NOT_PUBLISH"
@@ -40,6 +40,8 @@ def build_index():
     prior = collections.defaultdict(list)
     held = set()
     for path in paths:
+        if exclude_current_batch68 and path.name == "A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH68.json":
+            continue
         for row in load(path)["entries"]:
             word = row["word"].casefold()
             prior[word].append(path.name)
@@ -82,8 +84,9 @@ def main():
     parser.add_argument("--level", choices=LEVELS, help="Proposed tier for --words")
     parser.add_argument("--json", action="store_true", help="Machine-readable output")
     parser.add_argument("--self-test", action="store_true", help="Assert collision semantics")
+    parser.add_argument("--exclude-current-batch68", action="store_true", help="Only for retrospective batch68 preflight: exclude its own draft file from prior-authored collisions")
     args = parser.parse_args()
-    pool, prior, held = build_index()
+    pool, prior, held = build_index(exclude_current_batch68=args.exclude_current_batch68)
     if args.self_test:
         known = next(iter(prior))
         assert "ALREADY_IN_AUTHORED_DRAFT" in classify(known, None, pool, prior, held)["risk_flags"]
