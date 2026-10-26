@@ -1,0 +1,41 @@
+name: CEFR batch68 candidate preflight (never deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - draft/BATCH68-CANDIDATE-PREFLIGHT.txt
+      - .github/workflows/cefr-batch68-preflight.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  level-preflight:
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A2, B1, B2, C1]
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check all provisional headwords against authored corpus and suspect seed senses
+        shell: bash
+        run: |
+          grep '^\${{ matrix.level }}|' draft/BATCH68-CANDIDATE-PREFLIGHT.txt > batch68-level-input.txt
+          python3 tools/preflight_cefr_draft_candidates.py --file batch68-level-input.txt --json > batch68-preflight.json
+          python3 - <<'PY'
+          import json
+          d=json.load(open('batch68-preflight.json'))
+          print('BATCH68 PREFLIGHT SUMMARY',d['summary'])
+          for row in d['candidates']:
+              print('CANDIDATE',row['proposed_level'],row['word'],'CLEAR' if row['preflight_clear_only_not_approved'] else 'HOLD',','.join(row['risk_flags']))
+          assert d['summary']['input_candidates'] >= 40
+          assert d['summary']['unverified_seed_pool'] == 5000
+          assert d['summary']['preflight_clear'] + d['summary']['requires_triage'] == d['summary']['input_candidates']
+          PY
+      - name: Upload preflight evidence only
+        uses: actions/upload-artifact@v4
+        with:
+          name: batch68-preflight-${{ matrix.level }}
+          path: batch68-preflight.json
+          retention-days: 14
