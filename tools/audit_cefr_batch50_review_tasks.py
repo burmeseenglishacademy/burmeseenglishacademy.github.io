@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Batch49 staging structural checks; never linguistic or CEFR certification."""
+"""Batch50 staging structural checks; never linguistic or CEFR certification."""
 import argparse, collections, json, re, subprocess, sys
 from pathlib import Path
 R=Path(__file__).resolve().parents[1]
@@ -12,7 +12,7 @@ FLAGS=("reviewed_english","reviewed_burmese","reviewed_example","reviewed_level"
 def read(p):return json.loads((R/p).read_text(encoding="utf-8"))
 def audit(level):
  if level=="ALL":
-  prev=subprocess.run([sys.executable,"tools/audit_cefr_batch48_review_tasks.py","--level","ALL"],cwd=R,text=True,capture_output=True)
+  prev=subprocess.run([sys.executable,"tools/audit_cefr_batch49_review_tasks.py","--level","ALL"],cwd=R,text=True,capture_output=True)
   assert prev.returncode==0,prev.stdout+prev.stderr
   print(prev.stdout.strip())
  d=read("draft/A2-C1-EDITORIAL-BATCH50.json")
