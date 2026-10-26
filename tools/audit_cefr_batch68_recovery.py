@@ -74,14 +74,14 @@ def audit(level):
         p = pool.get(w)
         if p and p.get("level") != e["proposed_level"]:
             tier_disagreements.append({"word": w, "pool_level": p.get("level"), "draft_level": e["proposed_level"]})
-        if p and re.search(r"\\b(?:surname|given name|capital of|city in|genus|species|trademark)\\b", str(p.get("english_definition_draft", "")), re.I):
+        if p and re.search(r"\b(?:surname|given name|capital of|city in|genus|species|trademark)\b", str(p.get("english_definition_draft", "")), re.I):
             suspicious_pool_senses.append(w)
     if level == "ALL":
         bank = (ROOT / "cefr-vocabulary-data.js").read_text(encoding="utf-8")
         assert "UNVERIFIED_DRAFT_DO_NOT_PUBLISH" in bank
-        assert re.search(r"entries:\\s*\\[\\s*\\]", bank)
+        assert re.search(r"entries:\s*\[\s*\]", bank)
         out = {"batch":68,"stage":"STRUCTURAL_AUDIT_ONLY","drafts_written":60,"written_by_level":COUNTS,"independently_approved":0,"eligible_new_entries":0,"reversible_holds":60,"prior_authored_collisions":collisions,"unverified_pool_tier_disagreements":tier_disagreements,"suspect_wordnet_pool_senses":suspicious_pool_senses,"source_pages_observed":0,"audio_generated":0,"real_listening_validated":0,"production_deployed":False}
-        (ROOT / "batch68-triage-results.json").write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+        (ROOT / "batch68-triage-results.json").write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
         print("BATCH68 TRIAGE "+json.dumps(out,ensure_ascii=False))
     else:
         print("BATCH68",level,"drafts",COUNTS[level],"held",COUNTS[level],"independently approved 0")
