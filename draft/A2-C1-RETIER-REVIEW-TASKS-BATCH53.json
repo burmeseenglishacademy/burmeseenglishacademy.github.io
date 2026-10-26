@@ -1,0 +1,1696 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-26",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "independently_approved": 0,
+  "release_status": "UNVERIFIED_REVIEW_TASKS_DO_NOT_PUBLISH",
+  "source_pages_not_yet_checked": true,
+  "counts_by_proposed_level": {
+    "A2": 10,
+    "B1": 12,
+    "B2": 12,
+    "C1": 6
+  },
+  "entries": [
+    {
+      "word": "fridge",
+      "source_pool_level": "C1",
+      "proposed_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/fridge",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_A2_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "bee",
+      "source_pool_level": "C1",
+      "proposed_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/bee",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_A2_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "goat",
+      "source_pool_level": "C1",
+      "proposed_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/goat",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_A2_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "dictionary",
+      "source_pool_level": "C1",
+      "proposed_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/dictionary",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_A2_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "shelf",
+      "source_pool_level": "C1",
+      "proposed_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/shelf",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_A2_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "doll",
+      "source_pool_level": "C1",
+      "proposed_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/doll",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_A2_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "oven",
+      "source_pool_level": "C1",
+      "proposed_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/oven",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_A2_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "tooth",
+      "source_pool_level": "C1",
+      "proposed_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/tooth",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_A2_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "penny",
+      "source_pool_level": "C1",
+      "proposed_level": "A2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/penny",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_A2_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "sunny",
+      "source_pool_level": "C1",
+      "proposed_level": "A2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/sunny",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_A2_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "inn",
+      "source_pool_level": "C1",
+      "proposed_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/inn",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_B1_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "container",
+      "source_pool_level": "C1",
+      "proposed_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/container",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_B1_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "buyer",
+      "source_pool_level": "C1",
+      "proposed_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/buyer",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_B1_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "collar",
+      "source_pool_level": "C1",
+      "proposed_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/collar",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_B1_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "password",
+      "source_pool_level": "C1",
+      "proposed_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/password",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_B1_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "rider",
+      "source_pool_level": "C1",
+      "proposed_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/rider",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_B1_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "instructor",
+      "source_pool_level": "C1",
+      "proposed_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/instructor",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_B1_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "ferry",
+      "source_pool_level": "C1",
+      "proposed_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/ferry",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_B1_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "sunset",
+      "source_pool_level": "C1",
+      "proposed_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/sunset",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_B1_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "ladder",
+      "source_pool_level": "C1",
+      "proposed_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/ladder",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_B1_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "dairy",
+      "source_pool_level": "C1",
+      "proposed_level": "B1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/dairy",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_B1_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "warn",
+      "source_pool_level": "C1",
+      "proposed_level": "B1",
+      "part_of_speech": "verb",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/warn",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_B1_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "delicate",
+      "source_pool_level": "C1",
+      "proposed_level": "B2",
+      "part_of_speech": "adjective",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/delicate",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_B2_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "convenience",
+      "source_pool_level": "C1",
+      "proposed_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/convenience",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_B2_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "disappointment",
+      "source_pool_level": "C1",
+      "proposed_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/disappointment",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_B2_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "advisor",
+      "source_pool_level": "C1",
+      "proposed_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/advisor",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_B2_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "tin",
+      "source_pool_level": "C1",
+      "proposed_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/tin",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_B2_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "kidney",
+      "source_pool_level": "C1",
+      "proposed_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/kidney",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_B2_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "anchor",
+      "source_pool_level": "C1",
+      "proposed_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/anchor",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_B2_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "width",
+      "source_pool_level": "C1",
+      "proposed_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/width",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_B2_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "broadcasting",
+      "source_pool_level": "C1",
+      "proposed_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/broadcasting",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_B2_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "badge",
+      "source_pool_level": "C1",
+      "proposed_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/badge",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_B2_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "trunk",
+      "source_pool_level": "C1",
+      "proposed_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/trunk",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_B2_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "arch",
+      "source_pool_level": "C1",
+      "proposed_level": "B2",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/arch",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_B2_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "cannon",
+      "source_pool_level": "C1",
+      "proposed_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/cannon",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_C1_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "mercury",
+      "source_pool_level": "C1",
+      "proposed_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/mercury",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_C1_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "goddess",
+      "source_pool_level": "C1",
+      "proposed_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/goddess",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_C1_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "liquor",
+      "source_pool_level": "C1",
+      "proposed_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/liquor",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_C1_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "coke",
+      "source_pool_level": "C1",
+      "proposed_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/coke",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_C1_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    },
+    {
+      "word": "demon",
+      "source_pool_level": "C1",
+      "proposed_level": "C1",
+      "part_of_speech": "noun",
+      "review_status": "PENDING_INDEPENDENT_REVIEW",
+      "english_definition_review": {
+        "task": "Observe the exact learner-dictionary sense and POS, record citation, access date, reviewer and decision.",
+        "completed": false,
+        "source_observed": false,
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/demon",
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar check for sense, naturalness, register and spelling.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation and exact-sense check.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR evidence; re-tier or hold if unsupported.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null,
+        "provisional_level_risk": "SOURCE_POOL_C1_PROPOSED_C1_SENSE_SPECIFIC_CEFR_UNVERIFIED"
+      },
+      "audio_review": {
+        "task": "After lexical approval, generate George and Emma and listen to each recording; test physical Safari.",
+        "completed": false,
+        "real_listening": false,
+        "real_device_test": false,
+        "reviewer": null
+      },
+      "release_approved": false
+    }
+  ]
+}
