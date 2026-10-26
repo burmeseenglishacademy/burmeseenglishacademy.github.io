@@ -5,7 +5,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 LEVELS=("A2","B1","B2","C1")
 EXPECTED={"A2":8,"B1":18,"B2":20,"C1":20}
-HELD={"A2":3,"B1":6,"B2":22,"C1":16}
+HELD={"A2":3,"B1":6,"B2":22,"C1":18}
 TOTAL={"A2":529,"B1":765,"B2":906,"C1":653}
 POS={"n":"noun","v":"verb","a":"adjective","s":"adjective","r":"adverb"}
 FLAGS=("reviewed_english","reviewed_burmese","reviewed_example","reviewed_level","reviewed_pronunciation")
@@ -29,14 +29,14 @@ def audit(level):
     assert d["counts_by_provisional_level"]==t["counts_by_provisional_level"]==EXPECTED
     assert q["counts_by_provisional_level"]==HELD
     assert len(d["entries"])==len(t["entries"])==66
-    assert len(q["records"])==47
+    assert len(q["records"])==49
     assert collections.Counter(r["level"] for r in d["entries"])==EXPECTED
     assert collections.Counter(r["provisional_level"] for r in q["records"])==HELD
     assert d["stages"]=={"english":"FIRST_PASS_NOT_INDEPENDENTLY_REVIEWED","myanmar":"FIRST_PASS_NOT_INDEPENDENTLY_REVIEWED","example":"FIRST_PASS_NOT_INDEPENDENTLY_REVIEWED","source_evidence":"PENDING_SEPARATE_REVIEW_TASKS"}
     drafts={r["word"]:r for r in d["entries"]}
     tasks={r["word"]:r for r in t["entries"]}
     holds={r["word"]:r for r in q["records"]}
-    assert len(drafts)==len(tasks)==66 and len(holds)==47
+    assert len(drafts)==len(tasks)==66 and len(holds)==49
     assert set(drafts)==set(tasks) and not set(drafts)&set(holds)
     assert len({r["example_sentence"] for r in d["entries"]})==66
     for word,row in drafts.items():
@@ -78,13 +78,13 @@ def audit(level):
         bylevel=collections.Counter(rows[0]["level"] for rows in grouped.values())
         assert bylevel==TOTAL,bylevel
         heldwords=[r["word"] for p in holdpaths for r in read(p)["records"]]
-        assert len(heldwords)==len(set(heldwords))==1077,len(heldwords)
+        assert len(heldwords)==len(set(heldwords))==1079,len(heldwords)
         assert not set(heldwords)&set(grouped)
         assert all(all(row[f] is False for f in FLAGS) for rows in grouped.values() for row in rows)
         assert "entries:[]" in (ROOT/"cefr-vocabulary-data.js").read_text(encoding="utf-8")
         print(f"UNIQUE A2-C1 {dict(bylevel)} total=2853; independently approved=0")
-        print("A1=500; A1-C1 written=3353; outstanding=1647; quarantine=1077; historical duplicate rows excluded=182")
-    print(f"STAGING ONLY batch48 {level} PASS: 66 new drafts, 47 reversible holds, zero independent approvals; no audio/deploy")
+        print("A1=500; A1-C1 written=3353; outstanding=1647; quarantine=1079; historical duplicate rows excluded=182")
+    print(f"STAGING ONLY batch48 {level} PASS: 66 new drafts, 49 reversible holds, zero independent approvals; no audio/deploy")
 if __name__=="__main__":
     ap=argparse.ArgumentParser()
     ap.add_argument("--level",choices=(*LEVELS,"ALL"),default="ALL")
