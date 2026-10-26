@@ -56,7 +56,7 @@ def audit(level):
  bank=(R/"cefr-vocabulary-data.js").read_text(encoding="utf-8")
  assert "UNVERIFIED_DRAFT_DO_NOT_PUBLISH" in bank and re.search(r"entries:\s*\[\s*\]",bank)
  if level=="ALL":
-  subprocess.run(["python3","tools/audit_cefr_batch52_retier.py","--level","ALL"],cwd=R,check=True)
+  subprocess.run(["python3","tools/audit_cefr_batch53_retier.py","--level","ALL"],cwd=R,check=True)
   print("BATCH54 ALL structural pass; canonical prior=3478; separate retier=128; combined first-pass=3606; independent approvals=0; new holds=12; cumulative holds=1179")
  else:print("BATCH54",level,"structural pass",COUNTS[level])
 if __name__=="__main__":
