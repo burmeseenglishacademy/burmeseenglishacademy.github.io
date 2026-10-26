@@ -1,0 +1,356 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-26",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "independently_approved": 0,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "description": "Batch51 reversible headword, WordNet sense, name and CEFR-tier risk holds; no independent review.",
+  "counts_by_provisional_level": {
+    "A2": 3,
+    "B1": 3,
+    "B2": 14,
+    "C1": 14
+  },
+  "records": [
+    {
+      "word": "married",
+      "provisional_level": "A2",
+      "risk": "INFLECTED_NOMINAL_PERSON_SENSE_NOT_LEARNER_LEMMA",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "anti",
+      "provisional_level": "A2",
+      "risk": "INFORMAL_NOUN_PROVISIONAL_A2_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "stupid",
+      "provisional_level": "A2",
+      "risk": "DEROGATORY_NOMINAL_PERSON_SENSE",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "teeth",
+      "provisional_level": "B1",
+      "risk": "PLURAL_INFLECTION_NOT_SEPARATE_LEMMA",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "grace",
+      "provisional_level": "B1",
+      "risk": "RELIGIOUS_TECHNICAL_SENSE_NOT_GRADED",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "sleeping",
+      "provisional_level": "B1",
+      "risk": "GERUND_NOMINAL_LEMMA_POLICY",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "idiot",
+      "provisional_level": "B2",
+      "risk": "DEROGATORY_LABEL_REQUIRES_REGISTER_POLICY",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "rep",
+      "provisional_level": "B2",
+      "risk": "ABBREVIATION_NOT_FULL_LEMMA",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "grave",
+      "provisional_level": "B2",
+      "risk": "WORDNET_DEATH_SENSE_MISLEADING",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "worthy",
+      "provisional_level": "B2",
+      "risk": "RARE_NOMINAL_SENSE",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "isis",
+      "provisional_level": "B2",
+      "risk": "NAMED_MYTHOLOGICAL_ENTITY",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "murray",
+      "provisional_level": "B2",
+      "risk": "PERSON_NAME_WORDNET",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "oklahoma",
+      "provisional_level": "B2",
+      "risk": "GEOGRAPHICAL_NAMED_ENTITY",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "cooper",
+      "provisional_level": "B2",
+      "risk": "PERSON_NAME_WORDNET_AMBIGUITY",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "jerry",
+      "provisional_level": "B2",
+      "risk": "OFFENSIVE_ETHNIC_LABEL_WORDNET",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "warren",
+      "provisional_level": "B2",
+      "risk": "PERSON_NAME_WORDNET",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "brooklyn",
+      "provisional_level": "B2",
+      "risk": "GEOGRAPHICAL_NAMED_ENTITY",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "indonesia",
+      "provisional_level": "B2",
+      "risk": "COUNTRY_NAMED_ENTITY",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "stopping",
+      "provisional_level": "B2",
+      "risk": "UNNATURAL_SPECIALIST_WORDNET_SENSE",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "attending",
+      "provisional_level": "B2",
+      "risk": "GERUND_AND_WORDNET_ATTENTION_SENSE",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "tours",
+      "provisional_level": "C1",
+      "risk": "PLACE_NAME_WORDNET",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "portugal",
+      "provisional_level": "C1",
+      "risk": "COUNTRY_NAMED_ENTITY",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "chile",
+      "provisional_level": "C1",
+      "risk": "COUNTRY_NAMED_ENTITY",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "owen",
+      "provisional_level": "C1",
+      "risk": "PERSON_NAME_WORDNET",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ruth",
+      "provisional_level": "C1",
+      "risk": "PERSON_NAME_WORDNET",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "diesel",
+      "provisional_level": "C1",
+      "risk": "PERSON_NAME_WORDNET",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "interactive",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_MISMATCH_WITH_MODERN_USAGE",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "cheat",
+      "provisional_level": "C1",
+      "risk": "UNEXPECTED_GRASS_NOUN_SENSE",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "hostile",
+      "provisional_level": "C1",
+      "risk": "UNCOMMON_MILITARY_NOMINAL_SENSE",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "mansion",
+      "provisional_level": "C1",
+      "risk": "ASTROLOGICAL_WORDNET_SENSE",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "eager",
+      "provisional_level": "C1",
+      "risk": "RARE_TIDAL_BORE_NOMINAL_SENSE",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "savage",
+      "provisional_level": "C1",
+      "risk": "DEROGATORY_HISTORICAL_NOMINAL_SENSE",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "spam",
+      "provisional_level": "C1",
+      "risk": "TRADEMARKED_FOOD_WORDNET_SENSE",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "phd",
+      "provisional_level": "C1",
+      "risk": "DEGREE_ABBREVIATION_NOT_LEMMA",
+      "evidence_note": "Heuristic WordNet/headword/level triage; reversible hold pending independent source and editorial review. No external source observed.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
