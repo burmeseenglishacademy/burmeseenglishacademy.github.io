@@ -1,0 +1,166 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-26",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "independently_approved": 0,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "description": "Batch50 reversible candidate holds; heuristic WordNet/headword risk, not independent linguistic approval.",
+  "counts_by_provisional_level": {
+    "A2": 5,
+    "B1": 4,
+    "B2": 4,
+    "C1": 2
+  },
+  "records": [
+    {
+      "word": "b",
+      "provisional_level": "A2",
+      "risk": "SINGLE_LETTER_WORDNET_BACTERIUM",
+      "evidence_note": "Unverified candidate WordNet clue: aerobic rod-shaped spore-producing bacterium; often occurring in chainlike formations; found primarily in soil. Reversible heuristic hold, no independent source review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "c",
+      "provisional_level": "A2",
+      "risk": "SINGLE_LETTER_UNIT_AMBIGUITY",
+      "evidence_note": "Unverified candidate WordNet clue: a degree on the centigrade scale of temperature. Reversible heuristic hold, no independent source review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "de",
+      "provisional_level": "A2",
+      "risk": "STATE_ABBREVIATION_NOT_LEMMA",
+      "evidence_note": "Unverified candidate WordNet clue: a Mid-Atlantic state; one of the original 13 colonies. Reversible heuristic hold, no independent source review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "re",
+      "provisional_level": "A2",
+      "risk": "CHEMICAL_SYMBOL_NOT_LEMMA",
+      "evidence_note": "Unverified candidate WordNet clue: a rare heavy polyvalent metallic element that resembles manganese chemically and is used in some alloys; is obtained as a by-product in refining molybdenum. Reversible heuristic hold, no independent source review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "co",
+      "provisional_level": "A2",
+      "risk": "CHEMICAL_SYMBOL_OR_ABBREVIATION",
+      "evidence_note": "Unverified candidate WordNet clue: an odorless very poisonous gas that is a product of incomplete combustion of carbon. Reversible heuristic hold, no independent source review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "here's",
+      "provisional_level": "B1",
+      "risk": "CONTRACTION_NOT_LEMMA",
+      "evidence_note": "Unverified candidate WordNet clue: the present location; this place. Reversible heuristic hold, no independent source review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ed",
+      "provisional_level": "B1",
+      "risk": "MEDICAL_ABBREVIATION_SENSE",
+      "evidence_note": "Unverified candidate WordNet clue: impotence resulting from a man's inability to have or maintain an erection of his penis. Reversible heuristic hold, no independent source review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "eu",
+      "provisional_level": "B1",
+      "risk": "CHEMICAL_SYMBOL_NOT_LEMMA",
+      "evidence_note": "Unverified candidate WordNet clue: a bivalent and trivalent metallic element of the rare earth group. Reversible heuristic hold, no independent source review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "un",
+      "provisional_level": "B1",
+      "risk": "ACRONYM_OR_ORGANISATION",
+      "evidence_note": "Unverified candidate WordNet clue: an organization of independent states formed in 1945 to promote international peace and security. Reversible heuristic hold, no independent source review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "en",
+      "provisional_level": "B2",
+      "risk": "TYPOGRAPHIC_UNIT_AND_HEADWORD_POLICY",
+      "evidence_note": "Unverified candidate WordNet clue: half the width of an em. Reversible heuristic hold, no independent source review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "le",
+      "provisional_level": "B2",
+      "risk": "ABBREVIATION_WORDNET_MEDICAL_SENSE",
+      "evidence_note": "Unverified candidate WordNet clue: a chronic inflammatory collagen disease affecting connective tissue (skin or joints). Reversible heuristic hold, no independent source review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ny",
+      "provisional_level": "B2",
+      "risk": "STATE_ABBREVIATION",
+      "evidence_note": "Unverified candidate WordNet clue: a Mid-Atlantic state; one of the original 13 colonies. Reversible heuristic hold, no independent source review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "bc",
+      "provisional_level": "B2",
+      "risk": "HISTORICAL_DATE_ABBREVIATION",
+      "evidence_note": "Unverified candidate WordNet clue: before the Christian era; used following dates before the supposed year Christ was born. Reversible heuristic hold, no independent source review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "er",
+      "provisional_level": "C1",
+      "risk": "CHEMICAL_SYMBOL_NOT_LEMMA",
+      "evidence_note": "Unverified candidate WordNet clue: a trivalent metallic element of the rare earth group; occurs with yttrium. Reversible heuristic hold, no independent source review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "ho",
+      "provisional_level": "C1",
+      "risk": "CHEMICAL_SYMBOL_NOT_LEMMA",
+      "evidence_note": "Unverified candidate WordNet clue: a trivalent metallic element of the rare earth group; occurs together with yttrium; forms highly magnetic compounds. Reversible heuristic hold, no independent source review.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
