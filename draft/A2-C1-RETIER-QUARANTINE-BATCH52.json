@@ -1,0 +1,138 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-26",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "release_status": "UNVERIFIED_CANDIDATE_HOLDS_DO_NOT_PUBLISH",
+  "independently_approved": 0,
+  "counts_by_source_pool_level": {
+    "C1": 14
+  },
+  "records": [
+    {
+      "word": "dive",
+      "source_pool_level": "C1",
+      "risk": "MISLEADING_NIGHTCLUB_WORDNET_SENSE",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "rev",
+      "source_pool_level": "C1",
+      "risk": "ABBREVIATION_NOT_LEMMA",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "victorian",
+      "source_pool_level": "C1",
+      "risk": "HISTORICAL_LABEL_AMBIGUITY",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "flies",
+      "source_pool_level": "C1",
+      "risk": "SPECIALIST_PLURAL_THEATRE_SENSE",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "freak",
+      "source_pool_level": "C1",
+      "risk": "DEROGATORY_PERSON_LABEL",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "petty",
+      "source_pool_level": "C1",
+      "risk": "RARE_NOMINAL_LEGAL_SENSE",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "shook",
+      "source_pool_level": "C1",
+      "risk": "RARE_BARREL_PART_SENSE",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "airline",
+      "source_pool_level": "C1",
+      "risk": "MISLEADING_HOSE_WORDNET_SENSE",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "cum",
+      "source_pool_level": "C1",
+      "risk": "EXPLICIT_SLANG_REGISTER",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "wallace",
+      "source_pool_level": "C1",
+      "risk": "HISTORICAL_PERSON_NAME",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "denmark",
+      "source_pool_level": "C1",
+      "risk": "COUNTRY_PROPER_NAME",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "yorkshire",
+      "source_pool_level": "C1",
+      "risk": "GEOGRAPHIC_PROPER_NAME",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "superman",
+      "source_pool_level": "C1",
+      "risk": "FICTIONAL_TRADEMARK_AMBIGUITY",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "apr",
+      "source_pool_level": "C1",
+      "risk": "ABBREVIATION_NOT_LEMMA",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    }
+  ]
+}
