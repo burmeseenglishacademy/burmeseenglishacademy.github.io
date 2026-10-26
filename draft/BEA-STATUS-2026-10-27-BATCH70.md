@@ -30,3 +30,9 @@ The observed preflight indexed 4,416 distinct earlier-authored wordforms. With 8
 
 ## Outstanding blockers
 No independent English/Myanmar/example/CEFR review approvals; no new George/Emma audio generated or listened to; no full browser/mobile or real iPhone Safari testing; no hosting-limit approval or live release. Production 54 lessons, existing IELTS 1,000 bank, George/Emma audio and privacy assets were not edited. **No staging merge and no production deployment.**
+
+
+## Final observed batch70 candidate-to-draft cross-check
+- Cross-check audit commit `0b813ee7318d73fe16171a0c552e892c66382dbd` validates the persisted 350-candidate log-derived ledger (183 clear-only, 167 quarantined), and rejects any batch70 draft that was flagged or absent from the observed clear-only candidate set.
+- Workflow path guard update `3d96bbdf892d2913497da518a5faa74295dbd562` ensures edits to the candidate triage file retrigger nonpublishing five-level checks.
+- Latest actual workflow run **40419588695** at SHA `3d96bbdf892d2913497da518a5faa74295dbd562`: **A2, B1, B2, C1, ALL completed/success**. Decoded ALL job log confirmed **80 structurally checked**, **zero cross-corpus problems**, and **PASS: protected production assets unchanged**. This is mechanical consistency only, not a verified word or recording.
