@@ -1,0 +1,40 @@
+# BEA CEFR 5,000 — Batch67 substantive staging checkpoint
+**27 October 2026, 04:33 Singapore time. STAGING ONLY — NOT APPROVED, NOT MERGED, NOT DEPLOYED.**
+
+## Actual authored work (not a completion claim)
+- A parallel GitHub Actions **preflight checked 120 provisional headwords** (30 per level). The successful corrected run **40395958718** on commit `7a8fee12ab7aeceb7e40d7ba1dfa3eb665116daf` found **59 preflight-clear** and **61 held** for prior-authored collisions, tier disagreement or other risk: A2 **14 clear / 16 flagged**, B1 **14 / 16**, B2 **13 / 17**, C1 **18 / 12**. These checks do **not** approve meaning, level or pronunciation. Four apparently clear words were deliberately not drafted because of editorial tier/sense uncertainty: *breadboard*, *shoemaker*, *paradox* and *nuance*.
+- Wrote **55 original first-pass English definitions, Myanmar meanings and grammatical example sentences**, spread A2 **12**, B1 **14**, B2 **13**, C1 **16**. The independent dictionary/graded-CEFR, fluent Myanmar, example and audio tasks are **55 separate records**, all still open. Nothing was copied from an unreviewed WordNet sense.
+- Explicitly **quarantined 17** draft words in a separate persistent file with reversible reasons: A2 **4**, B1 **5**, B2 **5**, C1 **3**. **38** unique first-pass drafts are structurally eligible for independent linguistic review (A2 **8**, B1 **9**, B2 **8**, C1 **13**). **Zero** prior-authored collisions, named entities or provisional seed-pool tier disagreements were found in the final 55, but passing structural QA is **not** source-based CEFR validation.
+- Improved the audit to require exact equality between the persistent 17-record quarantine and the held bilingual drafts, while checking that no held item is marked approved. The independent source-evidence stage remains separate from authoring.
+
+## Exact cumulative written ledger — structurally eligible, not approved
+| Level | Target | Prior written eligible | Batch67 new eligible | Current written eligible | Independently approved | Still unwritten |
+|---|---:|---:|---:|---:|---:|---:|
+| A1 | 500 | 500 | 0 | **500** | **0** | 0 |
+| A2 | 700 | 646 | 8 | **654** | **0** | 46 |
+| B1 | 1,000 | 938 | 9 | **947** | **0** | 53 |
+| B2 | 1,300 | 1,125 | 8 | **1,133** | **0** | 167 |
+| C1 | 1,500 | 943 | 13 | **956** | **0** | 544 |
+| **Total** | **5,000** | **4,152** | **38** | **4,190** | **0** | **810** |
+
+Counts are the batch66 eligible-written ledger plus **38** newly structurally eligible first-pass entries. The 17 reversible holds and undrafted preflight words are **not** included. The larger pre-existing draft corpus also contains historical collisions and holds; do not confuse raw files, the unverified 5,000-item WordNet candidate pool, and approved educational content.
+
+## Independent evidence and release gates — none falsely approved
+1. **English sense/POS/register:** 55 original definitions drafted; **0** source-based independent sign-offs.
+2. **Natural Myanmar meanings:** 55 first-pass meanings drafted; **0** independent fluent-editor sign-offs.
+3. **Original example grammar/collocation:** 55 sentences drafted; **0** independent linguistic sign-offs.
+4. **Graded sense-specific CEFR:** 55 separate source-evidence tasks with dictionary links *to consult*; **0** observed source-based graded CEFR approvals. A URL in a review task is not evidence that a page was checked.
+5. **George/Emma pronunciation:** **0** new audio files generated in this batch; **0** listening validations. Existing production audio preserved.
+6. **Browser/mobile and real iPhone Safari:** no new physical-device checks; **not passed**.
+7. **Hosting/storage/bandwidth and release:** no new hosting pass; **no merge or live deployment**. The protected production assets (54-lesson content, IELTS 1,000 bank, existing audio and privacy scripts) were checked unchanged against `main` by the nondeploy CI guard.
+
+## GitHub commits and observed CI, including repaired failures
+- [Candidate list](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/3ff65eac6df0647fe1da73d5e20e80061ece3617) and [preflight workflow](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/36df91d7de7277fc2e91c2a9adbbf12e7b5c1bd1); an initial workflow had an escaped matrix-expression bug and **failed** run **40395912615**. [Repair](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/7a8fee12ab7aeceb7e40d7ba1dfa3eb665116daf) led to [run 40395958718](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40395958718), **completed/success**, all four level jobs individually inspected and decoded logs read. Preflight artifacts were uploaded for A2/B1/B2/C1.
+- [55 bilingual draft entries](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/d0f86f7af284c213f25fe43275c29aed14df793c), [55 separate review packets](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/de15be729f222e395bae38033fbf1cb7257e6eb6), [structural auditor](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/a07b44524c9a3260b58f3d28c6886d4cc6a5cabe), [parallel nondeploy QA workflow](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/7363de72b679cbad28ad201d98ddc98e5da21733).
+- The initial structural runs **40396315217** and **40396370161** **failed**, revealing an inherited auditor cardinality of 80 (instead of 55) and a 34-character example for *zipper*. Both were corrected in commits [`4362515`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/436251534f00d5ec3d6ad942eebce028c3276132) and [`f100b57`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/f100b5710688409a990f5119be43d50f0c46bf44). The repaired run **40396417060** succeeded.
+- [Persistent quarantine commit](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/0ed35580b7d675c4f997e290b888734241c8fe43), [auditor quarantine-equality gate](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/4ef8a43a31d5275dc02e14b6495a5773aa7a5b5b), and [watch-path correction](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/d8414948d7ad10eebde192649f4459618acb7c1e).
+- **Final exact-head QA:** [GitHub Actions run 40396605958](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40396605958) at commit `d8414948d7ad10eebde192649f4459618acb7c1e`, **completed/success** on **26 October 2026 20:33:06 UTC**. Five jobs **A2 121831197718, B1 121831197642, B2 121831197553, C1 121831197754, ALL 121831197316** each **completed/success**. Decoded ALL log: `55 proposals / 38 structurally eligible / 17 quarantined / 0 prior collisions / 0 independent approvals`, preflight self-test PASS, production asset drift guard PASS. Quarantine artifact **12686776875** (`batch67-reversible-quarantine`) was observed uploaded and not expired. **These are structural CI passes, not editorial, audio or device approvals.**
+- This report is a later documentation-only commit; the last exact QA head above remains the tested source/content head.
+
+## Blockers and next high-value iteration
+The provisional corpus has **810 structurally eligible writing slots still unfilled**, including **544 at C1**. The original unverified 5,000-word candidate pool has **no remaining clean shortlist entries** under the conservative pool filters; future drafting must preflight independently chosen common/academic headwords, or repair older held items using actual graded sense-specific sources, rather than reusing earlier words or inventing obscure filler. Most critically, **0/5,000 entries have independent English/Myanmar/sense-specific CEFR/example approval**. Full George/Emma generation plus listening, browser/mobile and physical iPhone Safari verification, hosting limits and live production deployment all remain blocked. **No completion notification; do not merge unverified content.**
