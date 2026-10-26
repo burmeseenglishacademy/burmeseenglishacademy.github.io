@@ -17,7 +17,7 @@ def main(level):
  assert {e["word"] for e in E if e["editorial_hold"]}=={x["word"] for x in T if x["editorial_hold"]}
  assert dict(collections.Counter(e["proposed_level"] for e in E))==d["counts_by_proposed_level"]
  pool={x["word"].casefold() for x in read("draft/UNVERIFIED_CEFR_CANDIDATES.json")["entries"]}
- files=[R/"draft/A2-C1-EDITORIAL-STARTER.json",*sorted((R/"draft").glob("A2-C1-EDITORIAL-BATCH*.json")),*sorted((R/"draft").glob("A2-C1-RETIER-EDITORIAL-BATCH*.json")),*[f for f in sorted((R/"draft").glob("A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH*.json")) if f.name != "A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH59.json"]]
+ files=[R/"draft/A2-C1-EDITORIAL-STARTER.json",*sorted((R/"draft").glob("A2-C1-EDITORIAL-BATCH*.json")),*sorted((R/"draft").glob("A2-C1-RETIER-EDITORIAL-BATCH*.json")),*[f for f in sorted((R/"draft").glob("A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH*.json")) if re.search(r"BATCH(\\d+)\\.json$",f.name) and int(re.search(r"BATCH(\\d+)\\.json$",f.name).group(1)) < 59]]
  existing=set()
  for f in files:
   existing.update(x["word"].casefold() for x in json.loads(f.read_text(encoding="utf-8"))["entries"])
