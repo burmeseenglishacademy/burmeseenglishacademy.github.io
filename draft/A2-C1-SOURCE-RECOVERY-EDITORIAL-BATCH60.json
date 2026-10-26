@@ -136,7 +136,8 @@
       "release_approved": false,
       "status": "FIRST_PASS_UNVERIFIED_PENDING_CROSS_CORPUS_TRIAGE",
       "editorial_hold": false,
-      "editorial_hold_reasons": []
+      "editorial_hold_reasons": [],
+      "editorial_note": "Broadly compatible with draft; add mainly-UK usage note. No CEFR label observed."
     },
     {
       "word": "booklet",
@@ -1002,9 +1003,12 @@
       "reviewed_level": false,
       "reviewed_pronunciation": false,
       "release_approved": false,
-      "status": "FIRST_PASS_UNVERIFIED_PENDING_CROSS_CORPUS_TRIAGE",
-      "editorial_hold": false,
-      "editorial_hold_reasons": []
+      "status": "REVERSIBLE_QUARANTINE_EDITORIAL_RISK",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_CONFLATION_DICTIONARY_SOURCE"
+      ],
+      "editorial_note": "Draft combines two senses with 'instrument or approach'; quarantine until a single sense is chosen or two separate records are explicitly approved. No CEFR label observed."
     },
     {
       "word": "reconfigure",
@@ -1066,7 +1070,8 @@
       "release_approved": false,
       "status": "FIRST_PASS_UNVERIFIED_PENDING_CROSS_CORPUS_TRIAGE",
       "editorial_hold": false,
-      "editorial_hold_reasons": []
+      "editorial_hold_reasons": [],
+      "editorial_note": "Draft verb sense broadly compatible, but formal register should be recorded. No CEFR label observed."
     },
     {
       "word": "rescind",
