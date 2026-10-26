@@ -29,7 +29,7 @@ def audit(level):
  priorq=[R/"draft/A2-C1-CANDIDATE-QUARANTINE.json",*sorted((R/"draft").glob("A2-C1-QUARANTINE-BATCH*.json"))]
  used={r["word"] for p in prior for r in json.loads(p.read_text(encoding="utf-8"))["entries"]}
  used|={r["word"] for p in priorq for r in json.loads(p.read_text(encoding="utf-8"))["records"]}
- assert not (set(words)|set(held))&used,"existing draft/hold collision"
+ assert not (set(words)|set(held))&used,f"existing draft/hold collision: {sorted((set(words)|set(held))&used)}"
  assert len({r["example_sentence"] for r in d["entries"]})==40
  for w,r in words.items():
   if level!="ALL" and r["proposed_level"]!=level:continue
