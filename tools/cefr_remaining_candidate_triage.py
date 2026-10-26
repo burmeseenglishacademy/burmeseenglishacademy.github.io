@@ -15,12 +15,14 @@ def main():
     pool=read(ROOT/"draft/UNVERIFIED_CEFR_CANDIDATES.json")
     assert pool["release_status"]=="UNVERIFIED_DRAFT_DO_NOT_PUBLISH"
     assert len(pool["entries"])==5000
-    draft_paths=[ROOT/"draft/A2-C1-EDITORIAL-STARTER.json",*sorted((ROOT/"draft").glob("A2-C1-EDITORIAL-BATCH*.json"))]
-    hold_paths=[ROOT/"draft/A2-C1-CANDIDATE-QUARANTINE.json",*sorted((ROOT/"draft").glob("A2-C1-QUARANTINE-BATCH*.json"))]
+    draft_paths=[ROOT/"draft/A2-C1-EDITORIAL-STARTER.json",*sorted((ROOT/"draft").glob("A2-C1-EDITORIAL-BATCH*.json")),*sorted((ROOT/"draft").glob("A2-C1-RETIER-EDITORIAL-BATCH*.json"))]
+    hold_paths=[ROOT/"draft/A2-C1-CANDIDATE-QUARANTINE.json",*sorted((ROOT/"draft").glob("A2-C1-QUARANTINE-BATCH*.json")),*sorted((ROOT/"draft").glob("A2-C1-RETIER-QUARANTINE-BATCH*.json"))]
     drafted={r["word"] for p in draft_paths for r in read(p)["entries"]}
     held={r["word"] for p in hold_paths for r in read(p)["records"]}
     assert not drafted & held
     rows=[r for r in pool["entries"] if r["level"]==args.level and r["word"] not in drafted and r["word"] not in held]
+    assert len(drafted)==len(set(drafted)) and not drafted & held
+    print(f"ALL_STAGE_LEDGER drafted={len(drafted)} held={len(held)} remaining_unheld_total={sum(r['word'] not in drafted and r['word'] not in held for r in pool['entries'])}")
     risks=collections.Counter()
     print(f"STAGING_CANDIDATE_TRIAGE level={args.level} remaining_unheld={len(rows)} drafted_unique={len(drafted)} held_unique={len(held)}")
     for row in rows[:args.limit]:
