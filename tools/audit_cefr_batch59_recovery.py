@@ -13,6 +13,8 @@ def main(level):
  assert len(E)==len(T)==80
  assert len({e["word"] for e in E})==80
  assert {e["word"] for e in E}=={x["word"] for x in T}
+ assert d["editorial_holds"]["count"]==t["editorial_holds"]["count"]==15
+ assert {e["word"] for e in E if e["editorial_hold"]}=={x["word"] for x in T if x["editorial_hold"]}
  assert dict(collections.Counter(e["proposed_level"] for e in E))==d["counts_by_proposed_level"]
  pool={x["word"].casefold() for x in read("draft/UNVERIFIED_CEFR_CANDIDATES.json")["entries"]}
  files=[R/"draft/A2-C1-EDITORIAL-STARTER.json",*sorted((R/"draft").glob("A2-C1-EDITORIAL-BATCH*.json")),*sorted((R/"draft").glob("A2-C1-RETIER-EDITORIAL-BATCH*.json")),*[f for f in sorted((R/"draft").glob("A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH*.json")) if f.name != "A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH59.json"]]
@@ -40,18 +42,23 @@ def main(level):
   if w.casefold() in pool or w.casefold() in existing: reasons.append("ALREADY_IN_ORIGINAL_5000_POOL_OR_PREVIOUS_DRAFT")
   if w in high_risk_c1_c2: reasons.append("C1_VS_C2_UNSUPPORTED_REQUIRES_GRADED_SENSE_SOURCE")
   if w in high_risk_level: reasons.append(high_risk_level[w])
+  assert e["editorial_hold"] == bool(reasons),w
+  assert e["editorial_hold_reasons"] == [r for r in reasons if r!="ALREADY_IN_ORIGINAL_5000_POOL_OR_PREVIOUS_DRAFT"],w
   if reasons:
+   assert e["status"]=="REVERSIBLE_QUARANTINE_LEVEL_UNSUPPORTED",w
    quarantined.append({"word":w,"level":e["proposed_level"],"reasons":reasons,"reversible":True,"approved":False})
-  else: eligible.append(e)
+  else:
+   assert e["status"]=="FIRST_PASS_UNVERIFIED_REQUIRES_INDEPENDENT_EVIDENCE",w
+   eligible.append(e)
  for x in T:
-  assert x["release_approved"] is False
+  assert x["release_approved"] is False and x["editorial_hold_reasons"] == next(e["editorial_hold_reasons"] for e in E if e["word"]==x["word"])
   for k in ("english_definition_review","burmese_review","example_review","cefr_review"):
    assert x[k]["completed"] is False and x[k]["observed_evidence"] is None and x[k]["reviewer"] is None,x["word"]
   assert x["english_definition_review"]["source_observed"] is False
   assert x["audio_review"]["generated"] is False and x["audio_review"]["real_listening"] is False and x["audio_review"]["real_device_test"] is False
  bank=(R/"cefr-vocabulary-data.js").read_text(encoding="utf-8")
  assert "UNVERIFIED_DRAFT_DO_NOT_PUBLISH" in bank and re.search(r"entries:\s*\[\s*\]",bank)
- output={"batch":59,"stage":"STRUCTURAL_CANDIDATE_TRIAGE_NOT_LINGUISTIC_APPROVAL","proposals":len(E),"proposed_levels":dict(collections.Counter(e["proposed_level"] for e in E)),"new_unique_first_pass_proposals":len(eligible),"new_unique_by_level":dict(collections.Counter(e["proposed_level"] for e in eligible)),"quarantined_collisions":len(quarantined),"quarantined_by_level":dict(collections.Counter(x["level"] for x in quarantined)),"quarantined_records":quarantined,"independently_approved":0}
+ output={"batch":59,"stage":"STRUCTURAL_CANDIDATE_TRIAGE_NOT_LINGUISTIC_APPROVAL","proposals":len(E),"proposed_levels":dict(collections.Counter(e["proposed_level"] for e in E)),"eligible_unapproved_first_pass_proposals":len(eligible),"new_unique_by_level":dict(collections.Counter(e["proposed_level"] for e in eligible)),"quarantined_total":len(quarantined),"quarantined_duplicate_collisions":sum("ALREADY_IN_ORIGINAL_5000_POOL_OR_PREVIOUS_DRAFT" in x["reasons"] for x in quarantined),"quarantined_unsupported_level":sum(any("UNSUPPORTED" in reason for reason in x["reasons"]) for x in quarantined),"quarantined_by_level":dict(collections.Counter(x["level"] for x in quarantined)),"quarantined_records":quarantined,"independently_approved":0}
  if level=="ALL":
   subprocess.run(["python3","tools/audit_cefr_batch56_retier.py","--level","ALL"],cwd=R,check=True,stdout=subprocess.DEVNULL)
   out=R/"batch59-triage-results.json";out.write_text(json.dumps(output,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
