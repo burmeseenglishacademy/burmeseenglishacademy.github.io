@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Batch66: nondeploy structural triage only; no source-based linguistic or audio approval."""
+"""Batch66: distinguish candidate-pool membership from authored duplicate; no linguistic approval."""
 import argparse,collections,json,re,subprocess
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -13,11 +13,11 @@ def main(level):
  assert len(E)==len(T)==80 and len({e["word"].casefold() for e in E})==80
  assert {e["word"] for e in E}=={x["word"] for x in T}
  assert dict(collections.Counter(e["proposed_level"] for e in E))==d["counts_by_proposed_level"]=={"A2":20,"B1":20,"B2":20,"C1":20}
- pool={x["word"].casefold() for x in read(ROOT/"draft/UNVERIFIED_CEFR_CANDIDATES.json")["entries"]}
+ pool={x["word"].casefold():x for x in read(ROOT/"draft/UNVERIFIED_CEFR_CANDIDATES.json")["entries"]}
  prior=set()
  files=[ROOT/"draft/A2-C1-EDITORIAL-STARTER.json",*sorted((ROOT/"draft").glob("A2-C1-EDITORIAL-BATCH*.json")),*sorted((ROOT/"draft").glob("A2-C1-RETIER-EDITORIAL-BATCH*.json")),*[p for p in sorted((ROOT/"draft").glob("A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH*.json")) if p.name!="A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH66.json"],ROOT/"draft/A1-EDITORIAL-STARTER.json",*sorted((ROOT/"draft").glob("A1-EXPANSION-BATCH*.json"))]
  for p in files: prior.update(x["word"].casefold() for x in read(p)["entries"])
- eligible=[];held=[]
+ eligible=[];held=[];pool_members=[];pool_tier_disagreements=[];prior_collisions=[]
  for e in E:
   w=e["word"];s=e["example_sentence"]
   assert re.fullmatch(r"[a-z]{4,}",w),w
@@ -30,7 +30,17 @@ def main(level):
   assert e["editorial_hold"]==bool(e["editorial_hold_reasons"]),w
   assert e["status"]==("REVERSIBLE_QUARANTINE_EDITORIAL_RISK" if e["editorial_hold"] else "FIRST_PASS_UNVERIFIED_PENDING_CROSS_CORPUS_TRIAGE"),w
   reasons=[]
-  if w.casefold() in pool or w.casefold() in prior: reasons.append("ALREADY_IN_ORIGINAL_5000_POOL_OR_PREVIOUS_DRAFT")
+  # Candidate-pool entries are not already-authored bilingual drafts.
+  # Only previously authored draft wordforms are true duplicate collisions.
+  if w.casefold() in prior:
+   reasons.append("ALREADY_IN_PREVIOUS_AUTHORED_DRAFT")
+   prior_collisions.append(w)
+  if w.casefold() in pool:
+   pool_members.append(w)
+   pool_level=pool[w.casefold()].get("level")
+   if pool_level!=e["proposed_level"]:
+    reasons.append("UNVERIFIED_POOL_TIER_DISAGREEMENT_REQUIRES_GRADED_SOURCE")
+    pool_tier_disagreements.append({"word":w,"pool_provisional_level":pool_level,"proposed_level":e["proposed_level"]})
   reasons.extend(e["editorial_hold_reasons"])
   if any(k in e for k in ("wordnet_synset","wordnet_definition","unreviewed_wordnet_sense")): reasons.append("UNREVIEWED_WORDNET_SENSE")
   if w in {"amazon","google","microsoft","singapore","myanmar","london","oxford"}: reasons.append("NAMED_ENTITY_UNSUPPORTED")
@@ -45,7 +55,7 @@ def main(level):
   assert x["audio_review"]["generated"] is False and x["audio_review"]["real_listening"] is False and x["audio_review"]["real_device_test"] is False
  bank=(ROOT/"cefr-vocabulary-data.js").read_text(encoding="utf-8")
  assert "UNVERIFIED_DRAFT_DO_NOT_PUBLISH" in bank and re.search(r"entries:\s*\[\s*\]",bank)
- out={"batch":66,"stage":"STRUCTURAL_TRIAGE_NOT_LINGUISTIC_APPROVAL","proposals":len(E),"proposed_levels":d["counts_by_proposed_level"],"eligible_unapproved_first_pass":len(eligible),"eligible_by_level":dict(collections.Counter(e["proposed_level"] for e in eligible)),"quarantined_total":len(held),"duplicate_collisions":sum("ALREADY_IN_ORIGINAL_5000_POOL_OR_PREVIOUS_DRAFT" in x["reasons"] for x in held),"explicit_editorial_holds":sum(e["editorial_hold"] for e in E),"quarantined_by_level":dict(collections.Counter(x["level"] for x in held)),"quarantined_records":held,"dictionary_pages_observed":0,"independently_approved":0}
+ out={"batch":66,"stage":"STRUCTURAL_TRIAGE_NOT_LINGUISTIC_APPROVAL","proposals":len(E),"proposed_levels":d["counts_by_proposed_level"],"eligible_unapproved_first_pass":len(eligible),"eligible_by_level":dict(collections.Counter(e["proposed_level"] for e in eligible)),"quarantined_total":len(held),"duplicate_collisions":len(prior_collisions),"candidate_pool_membership_not_a_duplicate":len(pool_members),"unverified_pool_tier_disagreements":pool_tier_disagreements,"explicit_editorial_holds":sum(e["editorial_hold"] for e in E),"quarantined_by_level":dict(collections.Counter(x["level"] for x in held)),"quarantined_records":held,"dictionary_pages_observed":0,"independently_approved":0}
  if level=="ALL":
   subprocess.run(["python3","tools/audit_cefr_batch64_recovery.py","--level","ALL"],cwd=ROOT,check=True,stdout=subprocess.DEVNULL)
   (ROOT/"batch66-triage-results.json").write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
