@@ -2,7 +2,7 @@
   "schema": 1,
   "created_on": "2026-10-26",
   "release_status": "UNVERIFIED_REVIEW_TASKS_DO_NOT_PUBLISH",
-  "source_pages_not_yet_checked": true,
+  "source_pages_not_yet_checked": false,
   "entries": [
     {
       "word": "shoebox",
@@ -206,8 +206,18 @@
         "task": "Independently verify exact sense, POS, register with dated source and reviewer.",
         "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/footpath",
         "completed": false,
-        "source_observed": false,
-        "observed_evidence": null,
+        "source_observed": true,
+        "observed_evidence": {
+          "url": "https://dictionary.cambridge.org/dictionary/english/footpath",
+          "observed_on": "2026-10-26",
+          "source": "Cambridge Dictionary",
+          "observed_pos": "noun [C]",
+          "observed_register": "mainly UK",
+          "observed_sense_summary": "A walking path, particularly one in the countryside.",
+          "draft_comparison": "Broadly compatible with draft; add mainly-UK usage note. No CEFR label observed.",
+          "review_completed": false,
+          "independent_reviewer": null
+        },
         "reviewer": null
       },
       "burmese_review": {
@@ -1891,8 +1901,18 @@
         "task": "Independently verify exact sense, POS, register with dated source and reviewer.",
         "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/recalibrate",
         "completed": false,
-        "source_observed": false,
-        "observed_evidence": null,
+        "source_observed": true,
+        "observed_evidence": {
+          "url": "https://dictionary.cambridge.org/dictionary/english/recalibrate",
+          "observed_on": "2026-10-26",
+          "source": "Cambridge Dictionary",
+          "observed_pos": "verb [T]",
+          "observed_register": "",
+          "observed_sense_summary": "Two distinct uses: adjust a measuring instrument; change an approach or expectation.",
+          "draft_comparison": "Draft combines two senses with 'instrument or approach'; quarantine until a single sense is chosen or two separate records are explicitly approved. No CEFR label observed.",
+          "review_completed": false,
+          "independent_reviewer": null
+        },
         "reviewer": null
       },
       "burmese_review": {
@@ -1920,8 +1940,10 @@
         "real_device_test": false
       },
       "release_approved": false,
-      "editorial_hold": false,
-      "editorial_hold_reasons": []
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_CONFLATION_DICTIONARY_SOURCE"
+      ]
     },
     {
       "word": "reconfigure",
@@ -2010,8 +2032,18 @@
         "task": "Independently verify exact sense, POS, register with dated source and reviewer.",
         "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/reprimand",
         "completed": false,
-        "source_observed": false,
-        "observed_evidence": null,
+        "source_observed": true,
+        "observed_evidence": {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/reprimand",
+          "observed_on": "2026-10-26",
+          "source": "Cambridge Dictionary",
+          "observed_pos": "verb [T]",
+          "observed_register": "formal",
+          "observed_sense_summary": "Express strong official disapproval to someone for conduct.",
+          "draft_comparison": "Draft verb sense broadly compatible, but formal register should be recorded. No CEFR label observed.",
+          "review_completed": false,
+          "independent_reviewer": null
+        },
         "reviewer": null
       },
       "burmese_review": {
@@ -2122,5 +2154,6 @@
       "editorial_hold": false,
       "editorial_hold_reasons": []
     }
-  ]
+  ],
+  "source_pages_partially_checked": true
 }
