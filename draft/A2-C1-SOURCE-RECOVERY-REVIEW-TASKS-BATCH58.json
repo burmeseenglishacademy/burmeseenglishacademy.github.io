@@ -1816,6 +1816,43 @@
         "real_device_test": false
       },
       "release_approved": false
+    },
+    {
+      "word": "salience",
+      "proposed_level": "C1",
+      "english_definition_review": {
+        "task": "Observe exact dictionary sense, part of speech and register; record reviewer and evidence.",
+        "reference_url_to_consult": "https://dictionary.cambridge.org/dictionary/english/salience",
+        "completed": false,
+        "source_observed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "burmese_review": {
+        "task": "Independent fluent Myanmar reviewer to assess natural sense-aligned translation.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "example_review": {
+        "task": "Independent grammar, collocation, POS and original sentence assessment.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "cefr_review": {
+        "task": "Find sense-specific graded CEFR source evidence; proposed level is NOT verified.",
+        "completed": false,
+        "observed_evidence": null,
+        "reviewer": null
+      },
+      "audio_review": {
+        "task": "Only after signoff, generate and listen to George and Emma; physically test iPhone Safari.",
+        "generated": false,
+        "real_listening": false,
+        "real_device_test": false
+      },
+      "release_approved": false
     }
   ]
 }
