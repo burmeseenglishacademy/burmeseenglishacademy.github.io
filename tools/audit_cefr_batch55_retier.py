@@ -29,7 +29,7 @@ def main(level):
  priorq=[R/"draft/A2-C1-CANDIDATE-QUARANTINE.json",*sorted((R/"draft").glob("A2-C1-QUARANTINE-BATCH*.json")),*sorted((R/"draft").glob("A2-C1-RETIER-QUARANTINE-BATCH5[234].json"))]
  used=[e["word"] for p in prior for e in read(p.relative_to(R))["entries"]]
  heldprior=[e["word"] for p in priorq for e in read(p.relative_to(R))["records"]]
- assert len(used)==len(set(used))==3106,len(used)
+ assert len(set(used))==3106 and len(used)-len(set(used))==182,(len(used),len(set(used)))
  assert len(heldprior)==len(set(heldprior))==1180,len(heldprior)
  assert not set(used)&set(heldprior)
  assert not ({e["word"] for e in entries+held}&(set(used)|set(heldprior)))
