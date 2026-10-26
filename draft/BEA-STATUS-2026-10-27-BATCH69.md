@@ -22,3 +22,11 @@ The 60 batch68 and 60 batch69 additional first-pass quarantined records are excl
 
 ## Remaining blockers
 Source-based English sense, CEFR and original usage review; fluent independent Myanmar review; named-entity and WordNet sense checks; production-grade George/Emma recordings and actual listening; browser/mobile and real iPhone Safari device checks; hosting storage/bandwidth verification; final production release verification. No merge or publication authorised. 
+
+
+## Actual batch69 commits and observed GitHub Actions evidence
+- Original **60-draft + 60-review-task + 60-quarantine-record** staging commit: `f65838f4c2c8f4cae43b4ba3157244cbbe4042ed`.
+- Initial run [40413858523](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40413858523): A2, B1, B2, C1 jobs **completed/success**; ALL **completed/failure**. The actual ALL job log showed a malformed doubly escaped `entries:\\s*\\[\\s*\\]` regex in the audit, NOT an observed production-data defect. No passing ALL claim for this run.
+- Audit regex corrected in staging commit `08a5d8b445e2352631f4041a8a3ddf8736fbb94c`.
+- Corrected run [40413889249](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40413889249), exact SHA `08a5d8b445e2352631f4041a8a3ddf8736fbb94c`, inspected after completion: **A2 SUCCESS (12), B1 SUCCESS (10), B2 SUCCESS (16), C1 SUCCESS (22), ALL SUCCESS (60)**. Actual decoded job logs state **zero earlier-authored collisions, zero provisional pool-tier disagreements and zero suspicious WordNet seed-sense clues** for these 60. ALL job also logged **PASS: protected production assets unchanged**, and uploaded structural triage artifact ID `12693954330`.
+- This successful check is **only mechanical/structural QA**, not independently sourced English/Myanmar sense, grammatical naturalness, CEFR tier, real George/Emma listening, iPhone Safari, hosting or release validation. All 60 remain held and **zero** become eligible/approved.
