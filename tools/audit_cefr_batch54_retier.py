@@ -24,7 +24,7 @@ def audit(level):
  held={x["word"]:x for x in q["records"]}
  assert len(words)==len(tasks)==48 and len(held)==12 and set(words)==set(tasks) and not set(words)&set(held)
  assert collections.Counter(x["proposed_level"] for x in d["entries"])==COUNTS
- assert len({x["example_sentence"] for x in d["entries"]})==40
+ assert len({x["example_sentence"] for x in d["entries"]})==48
  prior=[R/"draft/A2-C1-EDITORIAL-STARTER.json",*sorted((R/"draft").glob("A2-C1-EDITORIAL-BATCH*.json")),R/"draft/A2-C1-RETIER-EDITORIAL-BATCH52.json",R/"draft/A2-C1-RETIER-EDITORIAL-BATCH53.json"]
  priorq=[R/"draft/A2-C1-CANDIDATE-QUARANTINE.json",*sorted((R/"draft").glob("A2-C1-QUARANTINE-BATCH*.json")),R/"draft/A2-C1-RETIER-QUARANTINE-BATCH52.json",R/"draft/A2-C1-RETIER-QUARANTINE-BATCH53.json"]
  used={x["word"] for p in prior for x in read(p.relative_to(R))["entries"]}
