@@ -1,0 +1,256 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-26",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "independently_approved": 0,
+  "release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
+  "description": "Batch47 24 reversible candidate holds.",
+  "counts_by_provisional_level": {
+    "A2": 0,
+    "B1": 0,
+    "B2": 1,
+    "C1": 23
+  },
+  "records": [
+    {
+      "word": "steady",
+      "provisional_level": "B2",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Rare noun meaning a regular romantic partner; first-sense learner usefulness and B2 assignment uncertain. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "pipeline",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: WordNet first sense is informal gossip; ordinary learner sense is a pipe system or development sequence. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "transform",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Candidate first WordNet sense is a mathematical transformation; everyday verb sense differs. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "resignation",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: WordNet first sense is acceptance of despair; common employment departure sense is different. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "subscribe",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: WordNet first sense refers to buying shares; common subscription-to-service sense differs. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "viewing",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Candidate first sense is a motion-picture showing; common viewing/inspection sense requires review. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "fabulous",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Highly common positive adjective likely below provisional C1; needs graded sense evidence. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "elder",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Common noun for an older person likely below provisional C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "leak",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Common physical noun likely below provisional C1 and may need specialised sense. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "donate",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Common charitable verb may belong below provisional C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "immigrant",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Common social noun may belong below provisional C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "workplace",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Everyday noun likely below provisional C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "formally",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Common adverb likely below provisional C1 without a specialised sense. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "pending",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Common adjective awaiting decision likely below provisional C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "recreation",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Common leisure noun likely below provisional C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "sponsor",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Common financial supporter noun likely below provisional C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "mathematical",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Common subject adjective likely below provisional C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "profitable",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Common business adjective likely below provisional C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "differ",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Common verb likely below provisional C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "insist",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Common verb likely below provisional C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "lobby",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Common building entrance noun likely below provisional C1; political verb is a different POS. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "bleeding",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Common physical noun likely below provisional C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "breed",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Common animal variety noun likely below provisional C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    },
+    {
+      "word": "magnificent",
+      "provisional_level": "C1",
+      "risk": "WORDNET_SENSE_OR_CEFR_TIER_UNSUPPORTED",
+      "evidence_note": "Heuristic reversible editorial hold only: Common descriptive adjective likely below provisional C1. No independent dictionary or graded CEFR approval.",
+      "source_observed": false,
+      "action": "HOLD_FOR_SENSE_SPECIFIC_SOURCE_REVIEW_OR_REPLACEMENT",
+      "reviewed_independently": false,
+      "release_approved": false
+    }
+  ]
+}
