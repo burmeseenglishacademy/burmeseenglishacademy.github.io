@@ -24,7 +24,7 @@ jobs:
       - name: Audit original bilingual drafts and pending independent review without granting approval
         run: python3 tools/audit_cefr_batch68_recovery.py --level ${{ matrix.level }}
       - name: Preserve 54 lessons IELTS 1000 George Emma audio and privacy
-        if: ${{ matrix.level }} == 'ALL'
+        if: ${{ matrix.level == 'ALL' }}
         shell: bash
         run: |
           git fetch --no-tags --depth=1 origin main
@@ -32,7 +32,7 @@ jobs:
           if [ -n "$changed" ]; then printf 'PRODUCTION ASSET DRIFT: %s\n' "$changed"; exit 1; fi
           echo 'PASS: protected production assets unchanged'
       - name: Archive reversible hold and cross-corpus collision diagnostics
-        if: ${{ matrix.level }} == 'ALL'
+        if: ${{ matrix.level == 'ALL' }}
         uses: actions/upload-artifact@v4
         with:
           name: batch68-reversible-hold-audit
