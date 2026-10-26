@@ -21,7 +21,7 @@ jobs:
       - name: Check all provisional headwords against authored corpus and suspect seed senses
         shell: bash
         run: |
-          grep '^\${{ matrix.level }}|' draft/BATCH68-CANDIDATE-PREFLIGHT.txt > batch68-level-input.txt
+          grep '^${{ matrix.level }}|' draft/BATCH68-CANDIDATE-PREFLIGHT.txt > batch68-level-input.txt
           python3 tools/preflight_cefr_draft_candidates.py --file batch68-level-input.txt --json > batch68-preflight.json
           python3 - <<'PY'
           import json
