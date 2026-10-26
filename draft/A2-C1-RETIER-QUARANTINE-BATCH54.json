@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-26",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "independently_approved": 0,
+  "release_status": "UNVERIFIED_CANDIDATE_HOLDS_DO_NOT_PUBLISH",
+  "counts_by_source_pool_level": {
+    "C1": 12
+  },
+  "records": [
+    {
+      "word": "fa",
+      "source_pool_level": "C1",
+      "risk": "SHORT_SOLFEGE_SYLLABLE_NOT_GENERAL_C1_LEMMA",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "hr",
+      "source_pool_level": "C1",
+      "risk": "ABBREVIATION_HOUR_NOT_GENERAL_C1_LEMMA",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "md",
+      "source_pool_level": "C1",
+      "risk": "CHEMICAL_SYMBOL_OR_PROFESSIONAL_ABBREVIATION_AMBIGUOUS",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "th",
+      "source_pool_level": "C1",
+      "risk": "WEEKDAY_ABBREVIATION_NOT_C1_HEADWORD",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "pr",
+      "source_pool_level": "C1",
+      "risk": "WORDNET_CHEMICAL_SYMBOL_CONFLICTS_WITH_COMMON_PR_ABBREVIATION",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "si",
+      "source_pool_level": "C1",
+      "risk": "CHEMICAL_SYMBOL_OR_SOLFEGE_SYLLABLE_AMBIGUOUS",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "milwaukee",
+      "source_pool_level": "C1",
+      "risk": "PROPER_NAME_CITY",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "columbus",
+      "source_pool_level": "C1",
+      "risk": "PROPER_NAME_CITY_OR_PERSON",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "logan",
+      "source_pool_level": "C1",
+      "risk": "PROPER_NAME_PERSON_OR_MOUNTAIN",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "nevada",
+      "source_pool_level": "C1",
+      "risk": "PROPER_NAME_US_STATE",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "bristol",
+      "source_pool_level": "C1",
+      "risk": "PROPER_NAME_CITY",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    },
+    {
+      "word": "diana",
+      "source_pool_level": "C1",
+      "risk": "PROPER_NAME_PERSON_AND_WORDNET_FIRST_SENSE",
+      "source_observed": false,
+      "reviewed_independently": false,
+      "release_approved": false,
+      "action": "HOLD_PENDING_SENSE_SOURCE_AND_LEVEL_REVIEW"
+    }
+  ]
+}
