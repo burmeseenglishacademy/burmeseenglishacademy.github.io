@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "batch": 64,
+  "observation_date": "2026-10-27",
+  "stage": "EXPLORATORY_SOURCE_SPOT_CHECK_NOT_INDEPENDENT_EDITORIAL_APPROVAL",
+  "source_pages_retrieved": 3,
+  "independent_approvals": 0,
+  "observations": [
+    {
+      "word": "doorbell",
+      "proposed_level": "A2",
+      "source": "Cambridge Learner's Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/learner-english/doorbell",
+      "observed": "noun, countable; button at a door that produces an audible signal to announce a visitor. Intended draft sense aligns broadly.",
+      "graded_cefr_for_exact_sense_observed": false,
+      "independent_review": false,
+      "review_blocker": "No graded CEFR level and no independent Myanmar/example review."
+    },
+    {
+      "word": "streamline",
+      "proposed_level": "B2",
+      "source": "Cambridge English Dictionary",
+      "url": "https://dictionary.cambridge.org/us/dictionary/english/streamline",
+      "observed": "Verb has distinct aerodynamic SHAPE and organisational IMPROVE senses. Draft targets IMPROVE; word already collides with existing candidate/draft and remains quarantined.",
+      "graded_cefr_for_exact_sense_observed": false,
+      "independent_review": false,
+      "review_blocker": "Duplicate wordform and no graded CEFR evidence; do not count."
+    },
+    {
+      "word": "coerce",
+      "proposed_level": "C1",
+      "source": "Cambridge English Dictionary",
+      "url": "https://dictionary.cambridge.org/us/dictionary/english/coerce",
+      "observed": "Formal transitive verb describing pressure to make someone do something unwillingly. Draft targets that sense; no CEFR tier shown in retrieved excerpt.",
+      "graded_cefr_for_exact_sense_observed": false,
+      "independent_review": false,
+      "review_blocker": "No independently approved Myanmar translation, usage example or sense-specific CEFR."
+    }
+  ],
+  "note": "Observed via public search results, not a formal source-evidence task sign-off; dictionary pages do not automatically substantiate CEFR tier. No audio generated or listened to."
+}
