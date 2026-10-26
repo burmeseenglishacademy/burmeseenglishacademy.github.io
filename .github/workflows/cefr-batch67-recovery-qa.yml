@@ -5,6 +5,7 @@ on:
     paths:
       - draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH67.json
       - draft/A2-C1-SOURCE-RECOVERY-REVIEW-TASKS-BATCH67.json
+      - draft/A2-C1-SOURCE-RECOVERY-QUARANTINE-BATCH67.json
       - tools/audit_cefr_batch67_recovery.py
       - tools/preflight_cefr_draft_candidates.py
       - draft/BATCH67-CANDIDATE-PREFLIGHT.txt
