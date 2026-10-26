@@ -53,7 +53,7 @@ def main(level):
    assert x[k]["completed"] is False and x[k]["reviewer"] is None
    if k!="english_definition_review" or x["word"] not in observed: assert x[k]["observed_evidence"] is None
   assert x["english_definition_review"]["source_observed"] is (x["word"] in observed)
-  if x["word"] in observed: assert x["english_definition_review"]["observed_evidence"]==observed[x["word"]]
+  if x["word"] in observed: assert x["english_definition_review"]["observed_evidence"]=={k:v for k,v in observed[x["word"]].items() if k!="word"}
   assert x["word"]!="recalibrate" or "SENSE_CONFLATION_DICTIONARY_SOURCE" in x["editorial_hold_reasons"]
   assert x["audio_review"]["generated"] is False and x["audio_review"]["real_listening"] is False and x["audio_review"]["real_device_test"] is False
  bank=(ROOT/"cefr-vocabulary-data.js").read_text(encoding="utf-8")
