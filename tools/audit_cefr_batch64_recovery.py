@@ -10,7 +10,7 @@ def main(level):
  E,T=d["entries"],t["entries"]
  assert d["release_status"]=="UNVERIFIED_SOURCE_RECOVERY_DO_NOT_PUBLISH"
  assert t["release_status"]=="UNVERIFIED_REVIEW_TASKS_DO_NOT_PUBLISH" and t["source_pages_not_yet_checked"] is True
- assert len(E)==len(T)==64 and len({e["word"].casefold() for e in E})==80
+ assert len(E)==len(T)==64 and len({e["word"].casefold() for e in E})==64
  assert {e["word"] for e in E}=={x["word"] for x in T}
  assert dict(collections.Counter(e["proposed_level"] for e in E))==d["counts_by_proposed_level"]=={"A2":16,"B1":16,"B2":16,"C1":16}
  pool={x["word"].casefold() for x in read(ROOT/"draft/UNVERIFIED_CEFR_CANDIDATES.json")["entries"]}
