@@ -15,7 +15,7 @@ def main(level):
  assert {e["word"] for e in E}=={x["word"] for x in T}
  assert dict(collections.Counter(e["proposed_level"] for e in E))==d["counts_by_proposed_level"]
  pool={x["word"].casefold() for x in read("draft/UNVERIFIED_CEFR_CANDIDATES.json")["entries"]}
- files=[R/"draft/A2-C1-EDITORIAL-STARTER.json",*sorted((R/"draft").glob("A2-C1-EDITORIAL-BATCH*.json")),*sorted((R/"draft").glob("A2-C1-RETIER-EDITORIAL-BATCH*.json")),R/"draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json"]
+ files=[R/"draft/A2-C1-EDITORIAL-STARTER.json",*sorted((R/"draft").glob("A2-C1-EDITORIAL-BATCH*.json")),*sorted((R/"draft").glob("A2-C1-RETIER-EDITORIAL-BATCH*.json")),*[f for f in sorted((R/"draft").glob("A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH*.json")) if f.name != "A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json"]]
  existing=set()
  for f in files:
   existing.update(x["word"].casefold() for x in json.loads(f.read_text(encoding="utf-8"))["entries"])
@@ -43,7 +43,7 @@ def main(level):
   assert x["audio_review"]["generated"] is False and x["audio_review"]["real_listening"] is False and x["audio_review"]["real_device_test"] is False
  bank=(R/"cefr-vocabulary-data.js").read_text(encoding="utf-8")
  assert "UNVERIFIED_DRAFT_DO_NOT_PUBLISH" in bank and re.search(r"entries:\s*\[\s*\]",bank)
- output={"batch":57,"stage":"STRUCTURAL_CANDIDATE_TRIAGE_NOT_LINGUISTIC_APPROVAL","proposals":len(E),"proposed_levels":dict(collections.Counter(e["proposed_level"] for e in E)),"new_unique_first_pass_proposals":len(eligible),"new_unique_by_level":dict(collections.Counter(e["proposed_level"] for e in eligible)),"quarantined_collisions":len(quarantined),"quarantined_by_level":dict(collections.Counter(x["level"] for x in quarantined)),"quarantined_records":quarantined,"independently_approved":0}
+ output={"batch":58,"stage":"STRUCTURAL_CANDIDATE_TRIAGE_NOT_LINGUISTIC_APPROVAL","proposals":len(E),"proposed_levels":dict(collections.Counter(e["proposed_level"] for e in E)),"new_unique_first_pass_proposals":len(eligible),"new_unique_by_level":dict(collections.Counter(e["proposed_level"] for e in eligible)),"quarantined_collisions":len(quarantined),"quarantined_by_level":dict(collections.Counter(x["level"] for x in quarantined)),"quarantined_records":quarantined,"independently_approved":0}
  if level=="ALL":
   subprocess.run(["python3","tools/audit_cefr_batch56_retier.py","--level","ALL"],cwd=R,check=True,stdout=subprocess.DEVNULL)
   out=R/"batch58-triage-results.json";out.write_text(json.dumps(output,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
