@@ -1,0 +1,274 @@
+{
+  "schema": 1,
+  "batch": 72,
+  "stage": "TARGETED_EDITORIAL_RISK_TRIAGE_NOT_INDEPENDENT_VERIFICATION",
+  "all_40_entries_held": true,
+  "flagged_count": 29,
+  "approval_count": 0,
+  "explanation": "These are specific unresolved editorial hypotheses, not verified CEFR errors or independently checked senses. Do not publish.",
+  "records": [
+    {
+      "word": "frying",
+      "proposed_level": "A2",
+      "risk_flags": [
+        "NOMINALISATION_OF_VERB",
+        "A2_POS_SENSE_CEFR_PENDING"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "slipper",
+      "proposed_level": "A2",
+      "risk_flags": [
+        "SINGULAR_SHOE_VS_PAIR",
+        "A2_SOURCE_PENDING"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "colander",
+      "proposed_level": "A2",
+      "risk_flags": [
+        "SPECIALIST_KITCHEN_NOUN_A2_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "ladle",
+      "proposed_level": "A2",
+      "risk_flags": [
+        "KITCHEN_TOOL_NOUN_A2_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "sponge",
+      "proposed_level": "A2",
+      "risk_flags": [
+        "CLEANING_VS_ANIMAL_POLYSEMY"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "pebble",
+      "proposed_level": "A2",
+      "risk_flags": [
+        "A2_LEVEL_SOURCE_PENDING"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "usefulness",
+      "proposed_level": "B1",
+      "risk_flags": [
+        "DERIVED_ABSTRACT_NOUN_B1_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "oversleep",
+      "proposed_level": "B1",
+      "risk_flags": [
+        "B1_LEVEL_SOURCE_PENDING"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "restock",
+      "proposed_level": "B1",
+      "risk_flags": [
+        "BUSINESS_VERB_B1_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "reluctant",
+      "proposed_level": "B1",
+      "risk_flags": [
+        "REGISTER_AND_LEVEL_SOURCE_PENDING"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "hesitant",
+      "proposed_level": "B1",
+      "risk_flags": [
+        "ADJECTIVE_LEVEL_SOURCE_PENDING"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "facilitation",
+      "proposed_level": "B2",
+      "risk_flags": [
+        "ABSTRACT_PROCESS_NOUN_B2_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "parameter",
+      "proposed_level": "B2",
+      "risk_flags": [
+        "TECHNICAL_VS_GENERAL_SENSE"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "rectification",
+      "proposed_level": "B2",
+      "risk_flags": [
+        "TECHNICAL_REMEDY_SENSE_CEFR_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "insolvency",
+      "proposed_level": "B2",
+      "risk_flags": [
+        "LEGAL_FINANCIAL_SENSE_CEFR_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "outsourcing",
+      "proposed_level": "B2",
+      "risk_flags": [
+        "BUSINESS_NOUN_B2_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "proficiency",
+      "proposed_level": "B2",
+      "risk_flags": [
+        "LEVEL_AND_REGISTER_PENDING"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "forecasting",
+      "proposed_level": "B2",
+      "risk_flags": [
+        "DERIVED_PROCESS_NOUN_B2_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "streamlining",
+      "proposed_level": "B2",
+      "risk_flags": [
+        "GERUND_PROCESS_NOUN_LEVEL_PENDING"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "diligence",
+      "proposed_level": "B2",
+      "risk_flags": [
+        "POLYSEMY_LEGAL_DUE_DILIGENCE_VS_CARE"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "despondency",
+      "proposed_level": "C1",
+      "risk_flags": [
+        "RARE_ABSTRACT_NOUN_C1_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "disavowal",
+      "proposed_level": "C1",
+      "risk_flags": [
+        "FORMAL_NOUN_C1_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "disinclination",
+      "proposed_level": "C1",
+      "risk_flags": [
+        "RARE_NOUN_C1_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "preclusion",
+      "proposed_level": "C1",
+      "risk_flags": [
+        "LEGAL_REGISTER_C1_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "selflessness",
+      "proposed_level": "C1",
+      "risk_flags": [
+        "DERIVED_ABSTRACT_NOUN_C1_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "subjugation",
+      "proposed_level": "C1",
+      "risk_flags": [
+        "HISTORICAL_POLITICAL_SENSE_CEFR_PENDING"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "surreptitious",
+      "proposed_level": "C1",
+      "risk_flags": [
+        "FORMAL_ADJECTIVE_LEVEL_PENDING"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "unscrupulous",
+      "proposed_level": "C1",
+      "risk_flags": [
+        "ADJECTIVE_REGISTER_AND_LEVEL_PENDING"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "transgression",
+      "proposed_level": "C1",
+      "risk_flags": [
+        "MORAL_VS_LEGAL_SENSE_CEFR_PENDING"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    }
+  ]
+}
