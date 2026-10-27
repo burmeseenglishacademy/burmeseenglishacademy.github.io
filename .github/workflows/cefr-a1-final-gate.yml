@@ -12,6 +12,7 @@ on:
       - tools/inventory_cefr_a1_audio.py
       - cefr-vocabulary.js
       - cefr-vocabulary-data.js
+      - tests/cefr-ui.cjs
   workflow_dispatch:
 permissions:
   contents: read
@@ -24,7 +25,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Confirm A1 500 word sense drafts match all 5000 provisional CEFR candidates
+      - name: Confirm legacy A1 500 draft corpus against historical 5000 candidate inventory (NOT release target)
         run: python3 tests/cefr-editorial-draft.py
       - name: Require 500 unique original A1 entries with no structural faults
         run: python3 tools/audit_a1_500_drafts.py
@@ -42,7 +43,7 @@ jobs:
           assert c['release_status']=='UNVERIFIED_DRAFT_DO_NOT_PUBLISH'
           print('PASS exact 500 A1 drafts; content/audio NOT falsely certified')
           PY
-      - name: Check browser JS and CEFR 5000-word synthetic interaction safety
+      - name: Check browser JS and CEFR 1000-word synthetic interaction safety
         run: |
           for f in script.js cefr-vocabulary.js cefr-vocabulary-data.js audio-player.js audio-integration.js tests/cefr-ui.cjs; do node --check "$f"; done
           node tests/cefr-ui.cjs
