@@ -25,7 +25,7 @@ jobs:
           LEVEL: ${{ matrix.level }}
         run: |
           if [ "$LEVEL" = ALL ]; then
-            grep -E '^(A2|B1|B2|C1)\\|' draft/BATCH74-CANDIDATES.txt > /tmp/candidates.txt
+            grep -E '^(A2|B1|B2|C1)[|]' draft/BATCH74-CANDIDATES.txt > /tmp/candidates.txt
           else
             grep "^$LEVEL|" draft/BATCH74-CANDIDATES.txt > /tmp/candidates.txt
           fi
