@@ -240,11 +240,22 @@ def audit(ledger=None, after_deployment=False):
                 or not specific_url(rec.get("source_url"))
                 or entry["word"] not in urlparse(rec["source_url"]).path.lower()):
             continue
-        # The existing A2 business draft defines A1 selling activity while the
-        # example depicts an A2 countable company. Do not accept a copied draft.
+        # Certain drafts use a different source-labelled sense from their
+        # target level. A receipt cannot bless an unchanged mixed/mislevelled
+        # example: edit it and obtain new independent review, or replace/retier.
         if (entry["word"] == "business"
                 and entry.get("english_definition") == flag.get("shortlist_english_definition")
                 and entry.get("example_sentence") == flag.get("shortlist_example")):
+            continue
+        if (entry["word"] == "hardly"
+                and entry.get("example_sentence") == flag.get("shortlist_example")):
+            continue
+        # If a lower-level sense is deliberately retained at a higher level,
+        # demand a specific independent teaching rationale in addition to the
+        # generic independent CEFR review and source URL.
+        if (str(flag.get("triage", "")).startswith("SAME_SENSE_LOWER_SOURCE_LEVEL")
+                and (not isinstance(rec.get("sense_level_rationale"), str)
+                     or len(rec["sense_level_rationale"].strip()) < 24)):
             continue
         report["cambridge_sense_retained_resolved"] += 1
     if (report["cambridge_sense_retained_requiring_resolution"]
