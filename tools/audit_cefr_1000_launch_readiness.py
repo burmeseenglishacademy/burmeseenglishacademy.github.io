@@ -220,6 +220,9 @@ def audit(ledger=None, after_deployment=False):
               "oxford_dictionary_c1_source_observations": 0,
               "oxford_dictionary_c1_retained_requiring_resolution": 0,
               "oxford_dictionary_c1_retained_resolved": 0,
+              "oxford_c1_five_direct_source_observations": 0,
+              "oxford_c1_five_retained_requiring_resolution": 0,
+              "oxford_c1_five_retained_resolved": 0,
               "validated_audio_voice_text_pairs": 0,
               "check_type": "DOCUMENTARY_EVIDENCE_INTEGRITY_NOT_REAL_WORLD_CONFIRMATION"}
     if d.get("scope_targets") != TARGETS:
@@ -567,6 +570,65 @@ def audit(ledger=None, after_deployment=False):
     if oxford_dictionary_index and set(oxford_dictionary_index) - {
             (x.get("word"), x.get("shortlist_level")) for x in oxford_dictionary_flags if isinstance(x, dict)}:
         issues.append("Unknown Oxford C1 dictionary sense review receipts")
+
+    # Five more directly inspected Oxford C1 shortlist entries. These are
+    # dictionary sense/register observations, not independent CEFR or Burmese
+    # approvals. A C2 Oxford topic tag is not a C1 exact-sense source.
+    five_packet = read_json(
+        ROOT / "draft/CEFR-1000-OXFORD-C1-FIVE-DIRECT-SENSE-LEADS-2026-10-27.json")
+    five_flags = five_packet.get("records", [])
+    five_words = {"meticulous", "nuanced", "tenacious", "mitigate", "ubiquitous"}
+    report["oxford_c1_five_direct_source_observations"] = len(five_flags)
+    if (five_packet.get("status") != "EDITORIAL_HOLD_NOT_INDEPENDENTLY_REVIEWED"
+            or len(five_flags) != 5
+            or {x.get("word") for x in five_flags if isinstance(x, dict)} != five_words
+            or five_packet.get("independently_approved_count") != 0):
+        issues.append("Five Oxford C1 source observations missing, incomplete or falsely approved")
+    five_receipts = d.get("oxford_c1_five_sense_review_receipts", [])
+    if not isinstance(five_receipts, list):
+        issues.append("Oxford C1 five-sense independent receipts are not an array")
+        five_receipts = []
+    five_index = {}
+    for rec in five_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Invalid five-sense independent receipt")
+            continue
+        key = (rec.get("word"), rec.get("proposed_level"))
+        if key in five_index:
+            issues.append("Duplicate Oxford C1 five-sense receipt")
+        five_index[key] = rec
+    for flag in five_flags:
+        if not isinstance(flag, dict):
+            issues.append("Malformed Oxford C1 five-sense source observation")
+            continue
+        key = (flag.get("word"), flag.get("level"))
+        entry = entry_lookup.get(key)
+        if entry is None:
+            continue  # A replacement still needs all 1000 independent stage receipts.
+        report["oxford_c1_five_retained_requiring_resolution"] += 1
+        rec = five_index.get(key)
+        if not independent_word_stage(rec, entry["word"], "sense_specific_cefr",
+                                      expected_level=entry["level"]):
+            continue
+        if (rec.get("decision") != "RETAIN_WITH_INDEPENDENT_EXACT_SENSE_C1_EVIDENCE"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or rec.get("verified_part_of_speech") != entry.get("part_of_speech")
+                or rec.get("verified_cefr_level") != "C1"
+                or rec.get("oxford_source_url") != flag.get("publisher_source", {}).get("url")
+                or not isinstance(rec.get("source_scope_and_register_rationale"), str)
+                or len(rec["source_scope_and_register_rationale"].strip()) < 50):
+            continue
+        if (entry["word"] == "meticulous"
+                and (not isinstance(rec.get("cambridge_c2_conflict_resolution"), str)
+                     or len(rec["cambridge_c2_conflict_resolution"].strip()) < 50)):
+            continue
+        report["oxford_c1_five_retained_resolved"] += 1
+    if (report["oxford_c1_five_retained_requiring_resolution"]
+            != report["oxford_c1_five_retained_resolved"]):
+        issues.append("Five retained Oxford C1 direct-source senses lack independent C1 exact-sense resolution")
+    if five_index and set(five_index) - {(x.get("word"), x.get("level"))
+                                        for x in five_flags if isinstance(x, dict)}:
+        issues.append("Unknown Oxford C1 five-sense reviewer receipts")
 
     # Cross-bank duplication is not automatically wrong, but each retained
     # overlap must have an independent documented semantic/teaching rationale.
