@@ -6,7 +6,7 @@ D=Path(__file__).resolve().parents[1]/'draft'
 def load(n):return json.loads((D/n).read_text(encoding='utf-8'))
 def main(level):
     proposed=load('BATCH72-EXTRA-CANDIDATES.json')['proposed_by_level']
-    files=[D/'A1-EDITORIAL-STARTER.json',*sorted(D.glob('A1-EXPANSION-BATCH*.json')),D/'A2-C1-EDITORIAL-STARTER.json',*sorted(D.glob('A2-C1-EDITORIAL-BATCH*.json')),*sorted(D.glob('A2-C1-RETIER-EDITORIAL-BATCH*.json')),*sorted(D.glob('A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH*.json'))]
+    files=[D/'A1-EDITORIAL-STARTER.json',*sorted(D.glob('A1-EXPANSION-BATCH*.json')),D/'A2-C1-EDITORIAL-STARTER.json',*sorted(D.glob('A2-C1-EDITORIAL-BATCH*.json')),*sorted(D.glob('A2-C1-RETIER-EDITORIAL-BATCH*.json')),*[p for p in sorted(D.glob('A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH*.json')) if 'BATCH72' not in p.name]]
     prior=collections.defaultdict(list)
     for f in files:
         for r in json.loads(f.read_text(encoding='utf-8'))['entries']:prior[r['word'].casefold()].append(f.name)
