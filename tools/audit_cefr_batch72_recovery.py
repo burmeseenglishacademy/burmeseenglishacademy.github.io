@@ -18,6 +18,14 @@ def run(level):
     t=load('A2-C1-SOURCE-RECOVERY-REVIEW-TASKS-BATCH72.json')
     q=load('A2-C1-SOURCE-RECOVERY-QUARANTINE-BATCH72.json')
     E,T,Q=d['entries'],t['entries'],q['records']
+    risks=load('BATCH72-TARGETED-EDITORIAL-RISKS.json')
+    assert risks['all_40_entries_held'] is True and risks['approval_count']==0
+    assert risks['flagged_count']==len(risks['records'])==29
+    assert {x['word'] for x in risks['records']} <= {e['word'] for e in E}
+    assert all(x['status']=='QUARANTINED_PENDING_SOURCE_EVIDENCE' and x['independently_verified'] is False for x in risks['records'])
+    observed=load('BATCH72-PRELIMINARY-SOURCE-OBSERVATIONS.json')
+    assert observed['reviewer_approved_count']==0
+    assert all(x['review_complete'] is False and x['cefr_evidence_observed'] is False for x in observed['records'])
     assert d['release_status']=='UNVERIFIED_SOURCE_RECOVERY_DO_NOT_PUBLISH'
     assert t['release_status']=='UNVERIFIED_REVIEW_TASKS_DO_NOT_PUBLISH' and t['source_pages_not_yet_checked'] is True
     assert q['release_status']=='REVERSIBLE_EDITORIAL_QUARANTINE_NOT_APPROVED_DO_NOT_PUBLISH'
@@ -85,6 +93,10 @@ def run(level):
         staged_counts={lvl:len(unique[lvl]) for lvl in ('A1','A2','B1','B2','C1')}
         cross_level_detail={w:[lvl for lvl in ('A1','A2','B1','B2','C1') if w in unique[lvl]] for w in sorted(distinct) if sum(w in s for s in unique.values())>1}
         cross_tier=len(cross_level_detail)
+        historical=load('BATCH72-HISTORICAL-CROSS-LEVEL-HOLDS.json')
+        assert historical['wordforms']==cross_tier==24 and historical['all_held'] is True
+        assert {r['word']:r['proposed_levels'] for r in historical['records']}==cross_level_detail
+        assert all(x['review_completed'] is False and x['release_approved'] is False for x in historical['records'])
         print('BATCH72 CROSS_LEVEL_HOLD_WORDS',json.dumps(cross_level_detail,ensure_ascii=False))
         print('BATCH72 STAGED DISTINCT HEADWORDS',len(distinct),'PER_LEVEL',json.dumps(staged_counts),'CROSS_LEVEL',cross_tier,'REPEATED_OCCURRENCES',sum(v-1 for v in occurrences.values()))
         assert 'UNVERIFIED_DRAFT_DO_NOT_PUBLISH' in (ROOT/'cefr-vocabulary-data.js').read_text(encoding='utf-8')
