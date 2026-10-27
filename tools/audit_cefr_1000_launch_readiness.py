@@ -169,6 +169,9 @@ def audit(ledger=None, after_deployment=False):
               "cambridge_second_sense_observations": 0,
               "cambridge_second_sense_retained_requiring_resolution": 0,
               "cambridge_second_sense_retained_resolved": 0,
+              "oxford_dictionary_c1_source_observations": 0,
+              "oxford_dictionary_c1_retained_requiring_resolution": 0,
+              "oxford_dictionary_c1_retained_resolved": 0,
               "validated_audio_voice_text_pairs": 0,
               "check_type": "DOCUMENTARY_EVIDENCE_INTEGRITY_NOT_REAL_WORLD_CONFIRMATION"}
     if d.get("scope_targets") != TARGETS:
@@ -399,6 +402,67 @@ def audit(ledger=None, after_deployment=False):
     if second_index and set(second_index) - {
             (x.get("word"), x.get("shortlist_level")) for x in second_flags if isinstance(x, dict)}:
         issues.append("Unknown second Cambridge sense receipts supplied")
+
+    # Directly observed Oxford dictionary senses/register and topic CEFR
+    # labels are separate from Oxford 3000/5000 PDF word/POS lists. The C2
+    # Personal qualities topic tag for affable must not silently become C1.
+    oxford_dictionary = read_json(
+        ROOT / "draft/CEFR-1000-OXFORD-DICTIONARY-C1-SENSE-TRIAGE-2026-10-27.json")
+    oxford_dictionary_flags = oxford_dictionary.get("records", [])
+    report["oxford_dictionary_c1_source_observations"] = len(oxford_dictionary_flags)
+    if (oxford_dictionary.get("status") != "OXFORD_DIRECT_DICTIONARY_C1_SENSE_TRIAGE_STAGING_HOLD"
+            or len(oxford_dictionary_flags) != 8
+            or oxford_dictionary.get("independently_approved_count") != 0):
+        issues.append("Oxford C1 dictionary direct-source packet missing or malformed")
+    oxford_dictionary_receipts = d.get("oxford_dictionary_c1_sense_review_receipts", [])
+    if not isinstance(oxford_dictionary_receipts, list):
+        issues.append("Oxford dictionary sense receipts are not an array")
+        oxford_dictionary_receipts = []
+    oxford_dictionary_index = {}
+    for rec in oxford_dictionary_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Invalid Oxford dictionary reviewer receipt")
+            continue
+        key = (rec.get("word"), rec.get("proposed_level"))
+        if key in oxford_dictionary_index:
+            issues.append("Duplicate Oxford dictionary sense receipt")
+        oxford_dictionary_index[key] = rec
+    for flag in oxford_dictionary_flags:
+        if not isinstance(flag, dict):
+            issues.append("Malformed Oxford dictionary sense observation")
+            continue
+        key = (flag.get("word"), flag.get("shortlist_level"))
+        entry = entry_lookup.get(key)
+        if entry is None:
+            continue
+        report["oxford_dictionary_c1_retained_requiring_resolution"] += 1
+        rec = oxford_dictionary_index.get(key)
+        if not independent_word_stage(rec, entry["word"], "english_sense"):
+            continue
+        if (rec.get("decision") != "RETAIN_WITH_INDEPENDENT_DICTIONARY_SENSE_REVIEW"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or rec.get("verified_cefr_level") != entry.get("level")
+                or rec.get("verified_part_of_speech") != entry.get("part_of_speech")
+                or rec.get("source_url") != flag.get("source_url")
+                or rec.get("source_cefr_evidence_scope") != flag.get("source_cefr_evidence_scope")
+                or not isinstance(rec.get("publisher_scope_rationale"), str)
+                or len(rec["publisher_scope_rationale"].strip()) < 40):
+            continue
+        if (entry["word"] == "affable"
+                and (not isinstance(rec.get("c2_topic_vs_c1_teaching_rationale"), str)
+                     or len(rec["c2_topic_vs_c1_teaching_rationale"].strip()) < 40)):
+            continue
+        if (entry["word"] == "obfuscate"
+                and entry.get("english_definition") == flag.get("shortlist_english_definition")
+                and entry.get("example_sentence") == flag.get("shortlist_example")):
+            continue  # Original definition implies intention; example does not establish it.
+        report["oxford_dictionary_c1_retained_resolved"] += 1
+    if (report["oxford_dictionary_c1_retained_requiring_resolution"]
+            != report["oxford_dictionary_c1_retained_resolved"]):
+        issues.append("Retained Oxford C1 dictionary senses and register/CEFR topic conflicts lack independent resolution")
+    if oxford_dictionary_index and set(oxford_dictionary_index) - {
+            (x.get("word"), x.get("shortlist_level")) for x in oxford_dictionary_flags if isinstance(x, dict)}:
+        issues.append("Unknown Oxford C1 dictionary sense review receipts")
 
     # Cross-bank duplication is not automatically wrong, but each retained
     # overlap must have an independent documented semantic/teaching rationale.
