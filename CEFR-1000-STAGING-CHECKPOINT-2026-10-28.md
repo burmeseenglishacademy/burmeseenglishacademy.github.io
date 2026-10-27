@@ -68,3 +68,34 @@ Source packet: [CEFR-1000-CAMBRIDGE-C1-TEN-SENSE-LEADS-2026-10-28.json](draft/CE
 [Documentary launch-gate run 40564426819](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40564426819), job `122401750375`, concluded **success** as a **report-only, no-deploy** check. Its real log reports **0/1,000** independent review packets and **0/1,000** both-voice listening receipts, with missing physical iPhone, mobile/desktop, hosting measurements, approved manifest and production confirmation. The job also reported protected production assets untouched by staging, and uploaded a blocker artifact (ID `12762118198`). A successful documentary-gate workflow **does not mean release readiness**.
 
 **Counts remain unchanged:** A1 200 written/0 independently checked; A2 200/0; B1 200/0; B2 200/0; C1 200/0; total **1,000 provisional, 0 independently approved**. No final George/Emma listening or physical iPhone evidence is claimed. **Release remains BLOCKED / STAGING ONLY; main and production are not modified.**
+
+## Additional B1 publisher exact-sense triage and staging CI — 2026-10-28
+
+**Scope and counts unchanged:** A1 **200 written / 0 independently checked**; A2 **200/0**; B1 **200/0**; B2 **200/0**; C1 **200/0**. Total **1,000 provisional bilingual entries, 0 independently approved**. Every entry remains on editorial hold. No new approved manifest, voice listening receipts, real physical iPhone Safari checks, hosting measurement, or production deployment.
+
+New [twelve-word B1 Cambridge source packet](draft/CEFR-1000-CAMBRIDGE-B1-TWELVE-SENSE-LEADS-2026-10-28.json) committed at `216fc0771d246e4f95f8c394a4447a4bc88d1508`. Publisher-owned Cambridge search-indexed page excerpts observed **2026-10-28** (direct dictionary pages returned HTTP 403; not independent or full-page verification):
+
+| B1 draft word | Cambridge source label observed | Specific editorial issue |
+| --- | --- | --- |
+| independent | B2 NOT INFLUENCED | The draft's independent decision invokes autonomy from control, not B1 self-sufficiency |
+| impact | B2 EFFECT | The draft policy's impact on businesses is the B2 effect sense |
+| effective | B2 SUCCESSFUL | Regular practice as an effective method is the B2 achieving-results sense |
+| analysis | B2 detailed examination | Survey-results analysis uses the B2 careful-study sense |
+| complex | B2 connected parts / hard to understand | Both aspects of the draft adjective are B2 |
+| critical | B2 IMPORTANT | Emergency drinking water is the B2 importance sense, not critical illness |
+| necessary | B1 NEEDED | Matching sense lead; still needs independent Myanmar/example/CEFR review |
+| equipment | B1 uncountable tools | Matching sense lead; independently check uncountable grammar |
+| application | B1 REQUEST | Distinguish the formal request from the B2 computer-program sense |
+| purpose | B1 REASON | Distinguish the meeting's aim from idiomatic `on purpose` |
+| solution | B1 ANSWER | Distinguish solving a problem from a chemical solution |
+| otherwise | B1 conditional **conjunction**, B2 adverb EXCEPT | Draft conditional `otherwise` is recorded as an **adverb**; exact POS needs independent resolution |
+
+Publisher URLs, dates, exact original English/Myanmar/example snapshots, observed sense headings and individual reviewer tasks are stored in the JSON packet. These are **12 source leads, not 12 approved entries**. Six same-sense higher-source-level discrepancies and one explicit POS mismatch remain editorial blockers, not grounds for automatic retiering.
+
+New [B1 structural auditor](tools/audit_cefr_1000_cambridge_b1_twelve.py), commit `f4b874394736acae7fbc87a54df5f9dfd1ffcef4`, binds the 12 observations to the pinned shortlist blob, verifies original bilingual/POS/example snapshots, URLs and source labels, and rejects false independent approval with **13 negative mutations**. [Six-job parallel matrix](.github/workflows/cefr-1000-selection-structural-qa.yml) updated at `59749d80d3c80917485ae0ba71321bcc7cf2b783`. [Release auditor](tools/audit_cefr_1000_launch_readiness.py) updated at `57060db81d10984ff42862fbb9c7e20fb67bbeec` to require separate real independent B1 exact-sense, conflict and POS resolution receipts for retained entries; [release ledger](draft/CEFR-1000-RELEASE-EVIDENCE.json) at `8d5298d141b3d3ceb7e06c87343abf7e9c542883` contains **zero** B1 receipts. Documentary no-deploy workflow updated at `2be5b2e85f0049d059f99940143bb9eaa31d7d23`.
+
+**Actual GitHub Actions evidence:** [structural run 40578791052](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40578791052), head `59749d80d3c80917485ae0ba71321bcc7cf2b783`, concluded **success** across A1, A2, B1, B2, C1 and ALL jobs. The actual ALL job `122452295318` log reports **12 B1 source leads / 0 independent approvals / 0 errors**, **13 negative mutations rejected**, and protected production assets unchanged. This verifies structural safeguards, **not** human linguistic review or physical listening.
+
+The newer [documentary launch gate run 40578849751](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40578849751) for head `2be5b2e85f0049d059f99940143bb9eaa31d7d23` was **in progress at this checkpoint**, so no success or failure is claimed. The documentary workflow has no deploy step; a future successful report-only conclusion cannot prove release readiness.
+
+**Release remains BLOCKED / STAGING ONLY.** Main, 54 lessons, protected IELTS 1,000 bank, production George/Emma recordings and privacy settings have not been edited in this work. Independent reviewer, both-voice human listening, browser/mobile, physical iPhone Safari, hosting, final asset-preservation and confirmed live deployment evidence remain absent.
