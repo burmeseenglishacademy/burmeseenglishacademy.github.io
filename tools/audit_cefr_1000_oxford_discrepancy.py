@@ -16,6 +16,7 @@ SCOPE = {x: 200 for x in LEVELS}
 MATRIX = ROOT / "draft/CEFR-1000-OXFORD-LEVEL-POS-CROSSCHECK.json"
 HOLDS = ROOT / "draft/CEFR-1000-OXFORD-DISCREPANCY-QUARANTINE.json"
 DRAFTS = ROOT / "draft/CEFR-1000-PROVISIONAL-SHORTLIST.json"
+REVIEW_PACKETS = ROOT / "draft/CEFR-1000-BILINGUAL-DISCREPANCY-REVIEW-PACKETS.json"
 MATCH = "SAME_POS_AND_LEVEL_IN_WORDLIST_SENSE_UNVERIFIED"
 WARN = (
     "NOT_IN_TRANSCRIBED_OXFORD_CORE_WORDLIST",
@@ -81,6 +82,51 @@ def check():
             problems.append(f"{n}: unknown or unmatched level must not have distance")
     if len(expected_holds) != len(held):
         problems.append("Risk flag count not equal to actual held row count")
+    packets = json.loads(REVIEW_PACKETS.read_text("utf-8"))
+    cards = packets.get("packets", [])
+    if packets.get("status") != "HIGH_PRIORITY_BILINGUAL_EDITORIAL_QA_QUEUE_NOT_APPROVED" or packets.get("independently_completed_tasks") != 0:
+        problems.append("Bilingual source review packet cannot claim approval")
+    if packets.get("pending_tasks") != len(expected_holds) or len(cards) != len(expected_holds):
+        problems.append("Bilingual review cards must have one-to-one parity with all reversible Oxford holds")
+    draft_index = {(r["level"], r["word"]): r for r in drafts_rows}
+    flagged_index = {(r["proposed_level"], r["word"]): r for r in expected_holds}
+    priority_counter = collections.Counter()
+    card_level_counts = collections.Counter()
+    observed_cards = set()
+    for n, card in enumerate(cards):
+        key = (card.get("proposed_level"), card.get("word"))
+        if key in observed_cards:
+            problems.append(f"Repeated flagged bilingual review card: {key}")
+        observed_cards.add(key)
+        src = draft_index.get(key)
+        flagged = flagged_index.get(key)
+        if not src or not flagged:
+            problems.append(f"Unknown bilingual review card: {key}")
+            continue
+        if card.get("proposed_pos") != src["part_of_speech"] or card.get("priority") != flagged["review_priority"] or card.get("trigger_reason") != flagged["category"]:
+            problems.append(f"Card mismatch against Oxford word+POS risk: {key}")
+        fields = card.get("original_draft", {})
+        for field, expected in (("english_definition", src["english_definition"]),
+                                ("burmese_meaning", src["burmese_meaning"]),
+                                ("original_example", src["example_sentence"]),
+                                ("original_source_file", src["source_path"])):
+            if fields.get(field) != expected:
+                problems.append(f"Original source text drift in review card: {key} / {field}")
+        for stage in ("english_exact_sense", "myanmar_naturalness", "original_example", "cefr_source"):
+            t = card.get("independent_review_stages", {}).get(stage, {})
+            if t.get("review_complete") is not False or t.get("reviewer") is not None or not t.get("task"):
+                problems.append(f"Premature independent reviewer approval: {key} / {stage}")
+        resolution = card.get("resolution", {})
+        if resolution.get("status") != "PENDING_INDEPENDENT_REVIEW" or resolution.get("approved") is not False or resolution.get("decision") is not None or resolution.get("reviewer") is not None:
+            problems.append(f"Editorial CEFR risk review was prematurely resolved: {key}")
+        priority_counter[card.get("priority")] += 1
+        card_level_counts[card.get("proposed_level")] += 1
+    if observed_cards != set(flagged_index):
+        problems.append("Not all Oxford risk flags received independent bilingual review packets")
+    if dict(priority_counter) != packets.get("priority_counts"):
+        problems.append("Risk reviewer priority packet totals differ")
+    if {level: card_level_counts[level] for level in LEVELS} != packets.get("per_level_counts"):
+        problems.append("Bilingual risk review cards per-level counts differ")
     for n, (ref, h) in enumerate(zip(expected_holds, held)):
         for k in ("word", "proposed_level", "proposed_part_of_speech", "category", "observed_oxford_list_levels_for_pos"):
             if ref[k] != h[k]:
