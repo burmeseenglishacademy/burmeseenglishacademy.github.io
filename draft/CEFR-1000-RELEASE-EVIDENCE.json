@@ -24,6 +24,11 @@
     "Never manufacture reviewer identities, source observations or physical-device listening checks.",
     "Any changed approved definition, Myanmar meaning, example, level or part of speech invalidates its previous content-hash receipt.",
     "An audit of fields and URLs is mechanical evidence-integrity checking, not independent linguistic judgement.",
-    "Never publish without all gates and real human-supplied attestations."
-  ]
+    "Never publish without all gates and real human-supplied attestations.",
+    "Oxford source-list mismatches and absent-core-list headwords require actual reviewer resolution for each retained flagged entry, never automatic retiering.",
+    "Shared headwords with the protected IELTS 1000 bank require an actual documented semantic/pedagogical review; some overlap is legitimate.",
+    "Audio listening receipts must match the cryptographic digest of each actual George/Emma recording; mismatched or missing recordings count as unverified."
+  ],
+  "oxford_level_discrepancy_review_receipts": [],
+  "ielts_cross_bank_overlap_review_receipts": []
 }
