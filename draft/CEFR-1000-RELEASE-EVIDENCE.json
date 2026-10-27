@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-27",
+  "scope_targets": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "status": "BLOCKED_PENDING_INDEPENDENT_QC_DO_NOT_PUBLISH",
+  "release_policy": "Authorised to go live ONLY AFTER all independent CEFR/English/Myanmar/example review, real George and Emma listening, automated desktop/mobile and physical iPhone Safari, hosting and privacy QC are documented and passed. This file is a template, not evidence of approval.",
+  "approved_dataset_path": "draft/CEFR-1000-APPROVED-RELEASE.json",
+  "approved_dataset_sha256": null,
+  "independent_word_review_receipts": [],
+  "audio_listening_receipts": [],
+  "automated_browser_checks": [],
+  "physical_iphone_safari_check": null,
+  "hosting_limits_check": null,
+  "protected_production_assets_check": null,
+  "production_deployment_confirmation": null,
+  "notes": [
+    "Record actual evidence separately from the 1000 provisional first-pass drafts and their review tasks.",
+    "Never manufacture reviewer identities, source observations or physical-device listening checks.",
+    "Any changed approved definition, Myanmar meaning, example, level or part of speech invalidates its previous content-hash receipt.",
+    "An audit of fields and URLs is mechanical evidence-integrity checking, not independent linguistic judgement.",
+    "Never publish without all gates and real human-supplied attestations."
+  ]
+}
