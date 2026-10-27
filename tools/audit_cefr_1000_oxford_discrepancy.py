@@ -17,6 +17,7 @@ MATRIX = ROOT / "draft/CEFR-1000-OXFORD-LEVEL-POS-CROSSCHECK.json"
 HOLDS = ROOT / "draft/CEFR-1000-OXFORD-DISCREPANCY-QUARANTINE.json"
 DRAFTS = ROOT / "draft/CEFR-1000-PROVISIONAL-SHORTLIST.json"
 REVIEW_PACKETS = ROOT / "draft/CEFR-1000-BILINGUAL-DISCREPANCY-REVIEW-PACKETS.json"
+PRIMARY_OBSERVATIONS = ROOT / "draft/CEFR-1000-OXFORD-PRIMARY-SOURCE-SPOT-OBSERVATIONS.json"
 MATCH = "SAME_POS_AND_LEVEL_IN_WORDLIST_SENSE_UNVERIFIED"
 WARN = (
     "NOT_IN_TRANSCRIBED_OXFORD_CORE_WORDLIST",
@@ -127,6 +128,35 @@ def check():
         problems.append("Risk reviewer priority packet totals differ")
     if {level: card_level_counts[level] for level in LEVELS} != packets.get("per_level_counts"):
         problems.append("Bilingual risk review cards per-level counts differ")
+    # A small number of actual publisher PDF page entries were directly
+    # observed. Distinguish factual wordlist labels from *unperformed* human
+    # translation, exact dictionary sense and CEFR approval.
+    primary = json.loads(PRIMARY_OBSERVATIONS.read_text("utf-8"))
+    primary_rows = primary.get("records", [])
+    if primary.get("review_status") != "DIRECT_PUBLISHER_WORDLIST_SPOT_OBSERVATIONS_NOT_INDEPENDENT_SENSE_VERIFICATION":
+        problems.append("Publisher source observations falsely treated as independent approvals")
+    if primary.get("observed_primary_source_rows") != len(primary_rows) or len(primary_rows) != 16:
+        problems.append("Publisher spot-check row ledger differs")
+    if primary.get("independently_approved_rows") != 0:
+        problems.append("Spot observations cannot constitute independent review")
+    checked_words = set()
+    for entry in primary_rows:
+        key = (entry.get("proposed_level"), entry.get("word"))
+        if key in checked_words:
+            problems.append(f"Duplicate primary source observation: {key}")
+        checked_words.add(key)
+        src = draft_index.get(key)
+        if not src:
+            problems.append(f"Publisher source observation does not match a shortlist entry: {key}")
+            continue
+        if entry.get("proposed_part_of_speech") != src.get("part_of_speech") or entry.get("proposed_english_definition") != src.get("english_definition") or entry.get("proposed_original_example") != src.get("example_sentence"):
+            problems.append(f"Publisher observation source draft drift: {key}")
+        if entry.get("independent_sense_cefr_approved") is not False or entry.get("independent_myanmar_approved") is not False or entry.get("independent_example_approved") is not False or entry.get("reviewer") is not None:
+            problems.append(f"Publisher observation falsely approved: {key}")
+        if entry.get("source_pdf_page_one_based", 0) < 1 or "oxfordlearnersdictionaries.com/external/pdf/wordlists/" not in entry.get("source_pdf", ""):
+            problems.append(f"No grounded original Oxford PDF page evidence for {key}")
+        if entry.get("source_observation_type") != "DIRECT_PUBLISHER_PDF_TEXT_READ_SPOTCHECK_ONLY":
+            problems.append(f"Source stage incorrectly described for {key}")
     for n, (ref, h) in enumerate(zip(expected_holds, held)):
         for k in ("word", "proposed_level", "proposed_part_of_speech", "category", "observed_oxford_list_levels_for_pos"):
             if ref[k] != h[k]:
