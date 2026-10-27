@@ -16,7 +16,7 @@ EVIDENCE = ROOT / "draft/CEFR-1000-OXFORD-C1-FIVE-DIRECT-SENSE-LEADS-2026-10-27.
 LEVELS = ("A1", "A2", "B1", "B2", "C1")
 EXPECTED = {
     "meticulous": ("adjective", (88, 114), "TOPIC_PERSONAL_QUALITIES_C2_NOT_WORDLIST",
-                   "Oxford entry describes detailed care", "HIGH_C1_VS_C2_SENSE_LEVEL_CONFLICT"),
+                   "The Oxford entry describes detailed care", "HIGH_C1_VS_C2_SENSE_LEVEL_CONFLICT"),
     "nuanced": ("adjective", (88, 105), "NO_ENTRY_SPECIFIC_CEFR_LABEL",
                 "Oxford describes subtle distinctions", "NO_WORD_SPECIFIC_CEFR_EVIDENCE"),
     "tenacious": ("adjective", (88, 114), "NO_ENTRY_SPECIFIC_CEFR_LABEL",
