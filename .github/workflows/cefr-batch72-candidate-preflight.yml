@@ -1,0 +1,30 @@
+name: CEFR batch72 extra candidate preflight (never deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - draft/BATCH72-EXTRA-CANDIDATES.json
+      - tools/audit_cefr_batch72_candidates.py
+      - .github/workflows/cefr-batch72-candidate-preflight.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  level-candidate-preflight:
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A2, B1, B2, C1, ALL]
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Screen candidate words against every staged authored headword
+        run: python3 tools/audit_cefr_batch72_candidates.py --level ${{ matrix.level }}
+      - name: Archive nonapproving candidate screen
+        if: ${{ matrix.level == 'ALL' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: batch72-extra-candidate-triage
+          path: draft/BATCH72-EXTRA-CANDIDATE-TRIAGE.json
+          retention-days: 30
