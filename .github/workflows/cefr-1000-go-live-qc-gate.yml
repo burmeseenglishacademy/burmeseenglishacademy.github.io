@@ -12,6 +12,7 @@ on:
       - tools/audit_cefr_1000_cambridge_second_sense.py
       - tools/validate_cefr_release.py
       - tests/cefr-release-evidence-gate.py
+      - tests/cefr-1000-independent-stage-source-binding.py
       - tests/cefr-ui.cjs
       - cefr-vocabulary.js
       - cefr-vocabulary-data.js
@@ -38,6 +39,7 @@ jobs:
         run: |
           python3 -m py_compile tools/audit_cefr_1000_launch_readiness.py tools/validate_cefr_release.py
           python3 tests/cefr-release-evidence-gate.py
+          python3 tests/cefr-1000-independent-stage-source-binding.py
           python3 tools/audit_cefr_1000_cambridge_sense.py --level ALL --self-test
           python3 tools/audit_cefr_1000_cambridge_second_sense.py --level ALL --self-test
           node --check cefr-vocabulary.js
