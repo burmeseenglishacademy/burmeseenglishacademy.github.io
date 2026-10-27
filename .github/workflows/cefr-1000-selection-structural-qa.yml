@@ -27,6 +27,8 @@ on:
       - draft/CEFR-1000-SENSE-REWRITE-CANDIDATES-2026-10-27.json
       - draft/CEFR-1000-CAMBRIDGE-SIX-SENSE-LEADS-2026-10-27.json
       - draft/CEFR-1000-CAMBRIDGE-B2-SIX-SENSE-LEADS-2026-10-28.json
+      - draft/CEFR-1000-CAMBRIDGE-A2-EIGHT-SENSE-LEADS-2026-10-28.json
+      - tools/audit_cefr_1000_cambridge_a2_eight.py
       - tools/audit_cefr_1000_cambridge_b2_six.py
       - draft/CEFR-1000-CAMBRIDGE-C1-TEN-SENSE-LEADS-2026-10-28.json
       - tools/audit_cefr_1000_cambridge_c1_ten.py
@@ -106,6 +108,11 @@ jobs:
       - name: Reject fake B2 publisher provenance and reviewer approvals
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_cambridge_b2_six.py --level ALL --self-test
+      - name: Audit eight A2 Cambridge source-indexed sense leads (not human review)
+        run: python3 tools/audit_cefr_1000_cambridge_a2_eight.py --level "${{ matrix.level }}"
+      - name: Reject forged A2 source, changed Myanmar and fake reviewer signoff
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_cambridge_a2_eight.py --level ALL --self-test
       - name: Cross-check actual shared wordforms with protected IELTS 1000 dataset
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_ielts_overlap.py
@@ -132,5 +139,6 @@ jobs:
             cefr-1000-oxford-c1-five-${{ matrix.level }}.json
             cefr-1000-cambridge-c1-ten-${{ matrix.level }}.json
             cefr-1000-cambridge-b2-six-${{ matrix.level }}.json
+            cefr-1000-cambridge-a2-eight-${{ matrix.level }}.json
           if-no-files-found: error
           retention-days: 30
