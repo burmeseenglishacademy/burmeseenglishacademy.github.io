@@ -12,6 +12,7 @@ on:
       - draft/CEFR-1000-OXFORD-LEVEL-POS-CROSSCHECK.json
       - draft/CEFR-1000-OXFORD-DISCREPANCY-QUARANTINE.json
       - draft/CEFR-1000-BILINGUAL-DISCREPANCY-REVIEW-PACKETS.json
+      - draft/CEFR-1000-OXFORD-PRIMARY-SOURCE-SPOT-OBSERVATIONS.json
       - tools/audit_cefr_1000_oxford_discrepancy.py
       - draft/CEFR-1000-OXFORD-DIRECT-PDF-SPOTCHECK-2026-10-27.json
       - tools/audit_cefr_1000_oxford_direct_spotcheck.py
