@@ -12,6 +12,8 @@ on:
       - tools/audit_cefr_1000_cambridge_second_sense.py
       - draft/CEFR-1000-CAMBRIDGE-SIX-SENSE-LEADS-2026-10-27.json
       - tools/audit_cefr_1000_six_sense.py
+      - draft/CEFR-1000-CAMBRIDGE-C1-TEN-SENSE-LEADS-2026-10-28.json
+      - tools/audit_cefr_1000_cambridge_c1_ten.py
       - tools/audit_cefr_1000_oxford_dictionary_c1.py
       - draft/CEFR-1000-OXFORD-DICTIONARY-C1-SENSE-TRIAGE-2026-10-27.json
       - draft/CEFR-1000-OXFORD-C1-FIVE-DIRECT-SENSE-LEADS-2026-10-27.json
@@ -49,6 +51,7 @@ jobs:
           python3 tools/audit_cefr_1000_cambridge_sense.py --level ALL --self-test
           python3 tools/audit_cefr_1000_cambridge_second_sense.py --level ALL --self-test
           python3 tools/audit_cefr_1000_six_sense.py --level ALL --self-test
+          python3 tools/audit_cefr_1000_cambridge_c1_ten.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_dictionary_c1.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_c1_five.py --level ALL --self-test
           node --check cefr-vocabulary.js
