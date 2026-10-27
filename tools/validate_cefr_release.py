@@ -58,6 +58,11 @@ def validate(data,root=None,verify_audio=False):
         if not isinstance(row,dict):fail(f'{n}: entry not an object');continue
         word=normalize(row.get('word','')).lower()
         if not ASCII_WORD.fullmatch(word):fail(f'{n}: noncanonical English word')
+        # The English first-person singular pronoun is obligatorily capitalised.
+        # The provisional shortlist currently has lowercase 'i'; never silently
+        # promote that unreviewed spelling into a release manifest.
+        if word == 'i' and row.get('word') != 'I':
+            fail(f'{n}: first-person singular pronoun must be displayed as capital I')
         if word in seen:fail(f'{n}: duplicate headword {word}')
         seen.add(word)
         level=row.get('level')
