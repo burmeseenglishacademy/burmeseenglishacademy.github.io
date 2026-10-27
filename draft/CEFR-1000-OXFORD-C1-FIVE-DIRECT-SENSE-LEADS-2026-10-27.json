@@ -1,0 +1,192 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "EDITORIAL_HOLD_NOT_INDEPENDENTLY_REVIEWED",
+  "observed_on": "2026-10-27",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 5,
+  "independently_approved_count": 0,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 5
+  },
+  "source_limitations": "Five Oxford publisher dictionary pages directly inspected via web text viewer on 2026-10-27. Page line locators are 0-based web-view lines and may shift. These observations establish dictionary meaning, POS, register and select topic labels; they do NOT independently certify the provisional C1 CEFR level, fluent Myanmar or example grammar. Meticulous has a separate Cambridge publisher search-indexed C2 lead; direct Cambridge access returned 403. Unrelated sidebar Word-of-the-Day CEFR labels are not headword labels.",
+  "records": [
+    {
+      "word": "meticulous",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Extremely careful about small details and accuracy.",
+        "myanmar_meaning": "အသေးစိတ်အချက်များနှင့် တိကျမှုကို အလွန်ဂရုစိုက်သော",
+        "example_sentence": "Her meticulous records helped the auditors trace every payment."
+      },
+      "publisher_source": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/meticulous",
+        "publisher": "Oxford University Press",
+        "dictionary": "Oxford Advanced Learner's Dictionary",
+        "observed_on": "2026-10-27",
+        "access": "DIRECT_PUBLISHER_DICTIONARY_WEB_VIEW",
+        "line_range_0_based": [
+          88,
+          114
+        ],
+        "source_word_pos": "adjective",
+        "cefr_evidence_scope": "TOPIC_PERSONAL_QUALITIES_C2_NOT_WORDLIST",
+        "observation": "The Oxford entry describes detailed care and marks the Personal qualities topic c2; Cambridge Advanced Learner's search-indexed page labels the same careful-detail adjective C2. A topic label alone is not a headword CEFR assignment."
+      },
+      "editorial_risk": "HIGH_C1_VS_C2_SENSE_LEVEL_CONFLICT",
+      "independent_reviewer_task": "Check whether C1 teaching placement is defensible with exact-sense CEFR evidence; otherwise propose a separately reviewed C1 replacement. Independently verify Burmese and audit-record example grammar.",
+      "editorial_hold": true,
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_cefr_sense_review": false,
+      "independent_reviewer_receipt": null,
+      "release_approved": false,
+      "additional_publisher_evidence": {
+        "url": "https://dictionary.cambridge.org/us/dictionary/english/meticulous",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-27",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_403",
+        "sense_label": "C2 careful attention to every detail",
+        "limitation": "Search-indexed Cambridge publisher excerpt only, not full direct page or independent human review"
+      }
+    },
+    {
+      "word": "nuanced",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Showing awareness of small but important differences.",
+        "myanmar_meaning": "သေးငယ်သော်လည်း အရေးပါသော ကွာခြားချက်များကို ထည့်သွင်းစဉ်းစားထားသော",
+        "example_sentence": "The report offers a nuanced view of migration patterns."
+      },
+      "publisher_source": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/nuanced",
+        "publisher": "Oxford University Press",
+        "dictionary": "Oxford Advanced Learner's Dictionary",
+        "observed_on": "2026-10-27",
+        "access": "DIRECT_PUBLISHER_DICTIONARY_WEB_VIEW",
+        "line_range_0_based": [
+          88,
+          105
+        ],
+        "source_word_pos": "adjective",
+        "cefr_evidence_scope": "NO_ENTRY_SPECIFIC_CEFR_LABEL",
+        "observation": "Oxford describes subtle distinctions in meaning or expression. The draft's nuanced view of migration patterns is broadly consistent, but the page provides no entry-specific CEFR label; the unrelated Word-of-the-Day OPAL label must not be used."
+      },
+      "editorial_risk": "NO_WORD_SPECIFIC_CEFR_EVIDENCE",
+      "independent_reviewer_task": "Seek independent exact-sense C1 evidence and fluent Myanmar review; check that the example expresses complexity and subtle distinctions rather than merely a detailed report.",
+      "editorial_hold": true,
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_cefr_sense_review": false,
+      "independent_reviewer_receipt": null,
+      "release_approved": false
+    },
+    {
+      "word": "tenacious",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Very determined and unwilling to give up.",
+        "myanmar_meaning": "အလွန်စိတ်ပိုင်းဖြတ်ထားပြီး အလွယ်တကူ လက်မလျှော့သော",
+        "example_sentence": "The tenacious researcher continued despite repeated setbacks."
+      },
+      "publisher_source": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/tenacious",
+        "publisher": "Oxford University Press",
+        "dictionary": "Oxford Advanced Learner's Dictionary",
+        "observed_on": "2026-10-27",
+        "access": "DIRECT_PUBLISHER_DICTIONARY_WEB_VIEW",
+        "line_range_0_based": [
+          88,
+          114
+        ],
+        "source_word_pos": "adjective",
+        "cefr_evidence_scope": "NO_ENTRY_SPECIFIC_CEFR_LABEL",
+        "observation": "Oxford distinguishes determined refusal to give up (sense 1) from something persisting unexpectedly (sense 2). The draft researcher example fits determination; no word-specific CEFR label is shown on the page."
+      },
+      "editorial_risk": "SENSE_DISAMBIGUATION_AND_LEVEL_SOURCE_GAP",
+      "independent_reviewer_task": "Review formal register, distinguish determined person from persistent illness, and obtain a separate sense-linked CEFR source for C1. The unrelated Oxford 5000 Word-of-the-Day card is not headword evidence.",
+      "editorial_hold": true,
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_cefr_sense_review": false,
+      "independent_reviewer_receipt": null,
+      "release_approved": false
+    },
+    {
+      "word": "mitigate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To make the harmful effects of something less serious.",
+        "myanmar_meaning": "အရာတစ်ခု၏ ဆိုးကျိုးသက်ရောက်မှုများကို လျော့နည်းစေသည်",
+        "example_sentence": "Planting trees can help mitigate extreme summer heat."
+      },
+      "publisher_source": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mitigate",
+        "publisher": "Oxford University Press",
+        "dictionary": "Oxford Advanced Learner's Dictionary",
+        "observed_on": "2026-10-27",
+        "access": "DIRECT_PUBLISHER_DICTIONARY_WEB_VIEW",
+        "line_range_0_based": [
+          88,
+          121
+        ],
+        "source_word_pos": "verb",
+        "cefr_evidence_scope": "NO_ENTRY_SPECIFIC_CEFR_LABEL",
+        "observation": "Oxford records a formal transitive verb meaning to lessen a harmful or serious effect, with objects such as impact or problem. The draft extreme-heat example fits the harm-reduction sense, but the entry does not assign a CEFR level."
+      },
+      "editorial_risk": "SENSE_MATCH_CEFR_SOURCE_MISSING",
+      "independent_reviewer_task": "Check if mitigating heat is semantically precise versus mitigating the harmful effects of heat; independently review the Myanmar verb gloss, original example and C1 level.",
+      "editorial_hold": true,
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_cefr_sense_review": false,
+      "independent_reviewer_receipt": null,
+      "release_approved": false
+    },
+    {
+      "word": "ubiquitous",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Present or found almost everywhere.",
+        "myanmar_meaning": "နေရာတိုင်းနီးပါးတွင် တွေ့ရှိနိုင်သော",
+        "example_sentence": "Smartphones have become ubiquitous in large cities."
+      },
+      "publisher_source": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/ubiquitous",
+        "publisher": "Oxford University Press",
+        "dictionary": "Oxford Advanced Learner's Dictionary",
+        "observed_on": "2026-10-27",
+        "access": "DIRECT_PUBLISHER_DICTIONARY_WEB_VIEW",
+        "line_range_0_based": [
+          88,
+          115
+        ],
+        "source_word_pos": "adjective",
+        "cefr_evidence_scope": "NO_ENTRY_SPECIFIC_CEFR_LABEL",
+        "observation": "Oxford describes something apparently everywhere or very common and marks formal/humorous register, usually attributive. The draft predicative 'have become ubiquitous' is grammatical in usage but needs independent naturalness review. An unrelated OPAL Word-of-the-Day card is not word-specific CEFR evidence."
+      },
+      "editorial_risk": "REGISTER_AND_CEFR_SOURCE_GAP",
+      "independent_reviewer_task": "Verify predicative use and Myanmar naturalness, then source C1 for the intended widespread-presence sense rather than relying on unrelated sidebar labels.",
+      "editorial_hold": true,
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_cefr_sense_review": false,
+      "independent_reviewer_receipt": null,
+      "release_approved": false
+    }
+  ]
+}
