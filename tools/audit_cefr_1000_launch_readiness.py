@@ -113,6 +113,9 @@ def audit(ledger=None, after_deployment=False):
               "cambridge_sense_observations": 0,
               "cambridge_sense_retained_requiring_resolution": 0,
               "cambridge_sense_retained_resolved": 0,
+              "cambridge_second_sense_observations": 0,
+              "cambridge_second_sense_retained_requiring_resolution": 0,
+              "cambridge_second_sense_retained_resolved": 0,
               "validated_audio_voice_text_pairs": 0,
               "check_type": "DOCUMENTARY_EVIDENCE_INTEGRITY_NOT_REAL_WORLD_CONFIRMATION"}
     if d.get("scope_targets") != TARGETS:
@@ -290,6 +293,62 @@ def audit(ledger=None, after_deployment=False):
         issues.append("Retained Cambridge sense/POS/CEFR observations lack independent resolution")
     if sense_index and set(sense_index) - {(x["word"], x["level"]) for x in sense_flags}:
         issues.append("Unknown Cambridge sense reviewer receipts supplied")
+
+    # Five additional publisher-indexed exact-sense leads are distinct from
+    # Oxford word/POS labels. In particular Cambridge labels print(TEXT),
+    # consistently(unchanging) and integrity(HONESTY) C2, while Oxford's
+    # word/POS lists show B2/B2/C1. Never silently collapse this distinction.
+    second_cambridge = read_json(
+        ROOT / "draft/CEFR-1000-CAMBRIDGE-SECOND-SENSE-LEADS-2026-10-27.json")
+    second_flags = second_cambridge.get("records", [])
+    expected_second_words = {"print", "racism", "consistently", "diverse", "integrity"}
+    report["cambridge_second_sense_observations"] = len(second_flags)
+    if (second_cambridge.get("status") != "CAMBRIDGE_SECOND_SENSE_SOURCE_LEADS_STAGING_HOLD"
+            or len(second_flags) != 5
+            or {x.get("word") for x in second_flags if isinstance(x, dict)} != expected_second_words):
+        issues.append("Second Cambridge publisher-sense packet missing, truncated or tampered")
+    second_receipts = d.get("cambridge_second_sense_review_receipts", [])
+    if not isinstance(second_receipts, list):
+        issues.append("Second Cambridge sense receipts are not an array")
+        second_receipts = []
+    second_index = {}
+    for rec in second_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Invalid second Cambridge sense receipt")
+            continue
+        key = (rec.get("word"), rec.get("proposed_level"))
+        if key in second_index:
+            issues.append("Duplicate second Cambridge sense receipt")
+        second_index[key] = rec
+    for flag in second_flags:
+        if not isinstance(flag, dict):
+            issues.append("Invalid second Cambridge publisher observation")
+            continue
+        key = (flag.get("word"), flag.get("shortlist_level"))
+        entry = entry_lookup.get(key)
+        if entry is None:
+            continue  # Replaced/retiered words still require new full independent signoff.
+        report["cambridge_second_sense_retained_requiring_resolution"] += 1
+        rec = second_index.get(key)
+        if not real_observation(rec, ("reviewer_id", "notes", "source_url",
+                                      "publisher_level_conflict_rationale")):
+            continue
+        if (rec.get("decision") != "RETAIN_AFTER_INDEPENDENT_SENSE_LEVEL_REVIEW"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or rec.get("verified_cefr_level") != entry.get("level")
+                or rec.get("verified_part_of_speech") != entry.get("part_of_speech")
+                or rec.get("source_sense_cefr") != flag.get("source_sense_cefr")
+                or rec.get("source_sense_heading") != flag.get("source_sense_heading")
+                or rec.get("source_url") != flag.get("source_url")
+                or len(rec["publisher_level_conflict_rationale"].strip()) < 40):
+            continue
+        report["cambridge_second_sense_retained_resolved"] += 1
+    if (report["cambridge_second_sense_retained_requiring_resolution"]
+            != report["cambridge_second_sense_retained_resolved"]):
+        issues.append("Five Cambridge publisher exact-sense conflicts need independent reviewer resolution")
+    if second_index and set(second_index) - {
+            (x.get("word"), x.get("shortlist_level")) for x in second_flags if isinstance(x, dict)}:
+        issues.append("Unknown second Cambridge sense receipts supplied")
 
     # Cross-bank duplication is not automatically wrong, but each retained
     # overlap must have an independent documented semantic/teaching rationale.
