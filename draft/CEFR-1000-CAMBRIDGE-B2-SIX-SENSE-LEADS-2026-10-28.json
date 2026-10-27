@@ -1,0 +1,175 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "SIX_NEW_PUBLISHER_INDEXED_SENSE_OBSERVATIONS_NO_INDEPENDENT_SIGNOFF",
+  "observed_on": "2026-10-28",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 6,
+  "independently_approved_count": 0,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 6,
+    "C1": 0
+  },
+  "provenance_note": "Six publisher-owned Cambridge search-indexed English headword pages were surfaced on 2026-10-28. Direct opening of all six dictionary pages returned HTTP 403. Observations concern sense labels in indexed publisher excerpts, not full-page access or independent CEFR/Myanmar/example review. No definitions copied. Canonical 1,000-entry shortlist and production unchanged.",
+  "records": [
+    {
+      "word": "absolute",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Complete or total, without any limitation.",
+        "myanmar_meaning": "လုံးဝပြည့်စုံသော၊ အကြွင်းမဲ့",
+        "example_sentence": "The manager demanded absolute silence during the test."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/dictionary/english/absolute",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "source_sense_heading": "adjective (VERY GREAT)",
+        "source_cefr_level": "B2",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "triage": "EXACT_SENSE_SUPPORT_WITH_DEFINITION_SCOPE_CHECK",
+      "editorial_risk": "The B2 strong-intensity sense fits 'absolute silence'; the broad 'without any limitation' gloss risks confusing this with ungraded or absolute-rule senses.",
+      "independent_reviewer_task": "Independently check exact English sense and CEFR against primary source, fluent Myanmar gloss, original example grammar, and any same-sense cross-level conflicts. Retain dated reviewer identity and content hash; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "constant",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Continuing without stopping or changing.",
+        "myanmar_meaning": "အဆက်မပြတ်ဖြစ်သော၊ တည်မြဲသော",
+        "example_sentence": "The constant noise made it hard to study."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/dictionary/english/constant",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "source_sense_heading": "adjective (FREQUENT) vs (STAYING SAME)",
+        "source_cefr_level": "B2 frequent; C2 staying same",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "triage": "MIXED_SENSE_DEFINITION_REWRITE_REQUIRED",
+      "editorial_risk": "The example constant noise supports B2 frequent/repeated sense; the first-pass 'without stopping or changing' definition merges frequent noise with C2 unchanged-level sense. Independent English and Burmese reviewers should narrow it.",
+      "independent_reviewer_task": "Independently check exact English sense and CEFR against primary source, fluent Myanmar gloss, original example grammar, and any same-sense cross-level conflicts. Retain dated reviewer identity and content hash; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "relief",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The pleasant feeling when worry, pain or difficulty ends.",
+        "myanmar_meaning": "စိတ်သက်သာရာရမှု",
+        "example_sentence": "He felt relief when the missing bag was found."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/dictionary/learner-english/relief",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "source_sense_heading": "noun (EMOTION)",
+        "source_cefr_level": "B2",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "triage": "EXACT_SENSE_SOURCE_SUPPORT",
+      "editorial_risk": "The emotional release when a worry ends fits the missing-bag example and B2 publisher sense. Independently check Burmese emotional nuance, example and pedagogy.",
+      "independent_reviewer_task": "Independently check exact English sense and CEFR against primary source, fluent Myanmar gloss, original example grammar, and any same-sense cross-level conflicts. Retain dated reviewer identity and content hash; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "client",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A person or organisation that pays for professional services.",
+        "myanmar_meaning": "ဖောက်သည်",
+        "example_sentence": "The consultant met a new client."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/us/dictionary/english/client",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "source_sense_heading": "noun (CUSTOMER)",
+        "source_cefr_level": "B2",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "triage": "EXACT_SENSE_SOURCE_SUPPORT",
+      "editorial_risk": "The paid professional-services customer matches the consultant example and Cambridge B2 customer/client sense; distinguish from general shop customer in Myanmar.",
+      "independent_reviewer_task": "Independently check exact English sense and CEFR against primary source, fluent Myanmar gloss, original example grammar, and any same-sense cross-level conflicts. Retain dated reviewer identity and content hash; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "decade",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A period of ten years.",
+        "myanmar_meaning": "ဆယ်စုနှစ်",
+        "example_sentence": "The town has changed a lot in the past decade."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/dictionary/english/decade",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "source_sense_heading": "noun (TEN YEARS)",
+        "source_cefr_level": "B2",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "triage": "EXACT_SENSE_SOURCE_SUPPORT",
+      "editorial_risk": "The ten-year period sense matches the town-changed example and publisher B2 label. Independent Myanmar idiom and grammar review still mandatory.",
+      "independent_reviewer_task": "Independently check exact English sense and CEFR against primary source, fluent Myanmar gloss, original example grammar, and any same-sense cross-level conflicts. Retain dated reviewer identity and content hash; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "quit",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To stop doing an activity or leave a job.",
+        "myanmar_meaning": "ရပ်တန့်သည်၊ အလုပ်မှထွက်သည်",
+        "example_sentence": "He decided to quit his job and return to university."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/dictionary/english/quit",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "source_sense_heading": "verb (STOP/LEAVE JOB)",
+        "source_cefr_level": "B1",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "triage": "SAME_SENSE_LOWER_SOURCE_LEVEL",
+      "editorial_risk": "The current B2 leave-job example and English draft match Cambridge B1 same sense. Needs independent B2 teaching rationale or reviewed retier/replacement; not automatically approved.",
+      "independent_reviewer_task": "Independently check exact English sense and CEFR against primary source, fluent Myanmar gloss, original example grammar, and any same-sense cross-level conflicts. Retain dated reviewer identity and content hash; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
