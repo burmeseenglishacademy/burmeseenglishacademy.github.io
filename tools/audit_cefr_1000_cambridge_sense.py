@@ -23,7 +23,7 @@ STATUS = "SENSE_SPECIFIC_PUBLISHER_SOURCE_TRIAGE_NO_INDEPENDENT_APPROVAL"
 
 
 def blob_sha(raw):
-    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(raw)).encode() + bytes([0]) + raw).hexdigest()
 
 
 def audit(data, shortlist, raw, level="ALL"):
@@ -116,7 +116,7 @@ def main():
         report["negative_tests"] = "PASS" if not errors else "FAIL"
     report["errors"] = errors
     out = ROOT / ("cefr-1000-cambridge-sense-" + args.level + ".json")
-    out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\\n", encoding="utf8")
+    out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + chr(10), encoding="utf8")
     print(json.dumps(report, ensure_ascii=False))
     if errors:
         raise SystemExit(1)
