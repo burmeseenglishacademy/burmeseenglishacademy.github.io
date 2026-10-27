@@ -1,0 +1,244 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_A1_TO_C1_STAGING_ONLY",
+  "status": "PROPOSED_EDITORIAL_REWRITES_NOT_INDEPENDENTLY_REVIEWED",
+  "observed_on": "2026-10-27",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 8,
+  "independently_approved_count": 0,
+  "source_limitations": "Cambridge publisher CEFR labels refer to identified senses, not an independent bilingual signoff. Web search publisher-page text was checked on 2026-10-27; it is not a separate human review. Candidate English, Myanmar and examples are original editorial proposals only. Nothing is applied to the canonical shortlist or published.",
+  "records": [
+    {
+      "word": "business",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "original": {
+        "english_definition": "Work involving buying, selling, or providing goods and services.",
+        "myanmar_meaning": "စီးပွားရေးလုပ်ငန်း၊ ကုန်သွယ်မှု",
+        "example_sentence": "Her family runs a small business near the market."
+      },
+      "action": "REWRITE_SENSE_ALIGNMENT",
+      "publisher_cefr_sense": "A2 (company, countable)",
+      "diagnosis": "The A2 company sense matches the original example, but the current definition describes general commerce.",
+      "candidate": {
+        "english_definition": "A company that sells goods or services.",
+        "myanmar_meaning": "စီးပွားရေးလုပ်ငန်းတစ်ခု",
+        "example_sentence": "Her family runs a small business near the market."
+      },
+      "source": {
+        "url": "https://dictionary.cambridge.org/dictionary/english/business",
+        "observed_on": "2026-10-27",
+        "publisher": "Cambridge University Press & Assessment",
+        "access": "Publisher-owned dictionary page text surfaced in web search; not a separate independent human review"
+      },
+      "reviewer_task": "Retain A2 only if independent reviewers approve company sense and Burmese countability.",
+      "editorial_hold": true,
+      "independently_approved": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "attractive",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "original": {
+        "english_definition": "Pleasant to look at or appealing.",
+        "myanmar_meaning": "ဆွဲဆောင်မှုရှိသော",
+        "example_sentence": "The new packaging has an attractive design."
+      },
+      "action": "REWRITE_FOR_TARGET_SENSE",
+      "publisher_cefr_sense": "B2 (interesting or beneficial offer)",
+      "diagnosis": "Existing packaging-design example illustrates Cambridge A2 appearance, not B2 beneficial-offer sense.",
+      "candidate": {
+        "english_definition": "Interesting because it offers something useful or beneficial.",
+        "myanmar_meaning": "အကျိုးကျေးဇူးရှိ၍ စိတ်ဝင်စားဖွယ်ကောင်းသော",
+        "example_sentence": "The supplier offered an attractive payment plan."
+      },
+      "source": {
+        "url": "https://dictionary.cambridge.org/dictionary/english/attractive",
+        "observed_on": "2026-10-27",
+        "publisher": "Cambridge University Press & Assessment",
+        "access": "Publisher-owned dictionary page text surfaced in web search; not a separate independent human review"
+      },
+      "reviewer_task": "Check the nuance of Burmese adjective and original example with a fluent reviewer.",
+      "editorial_hold": true,
+      "independently_approved": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "appointment",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "original": {
+        "english_definition": "An arranged time to meet someone, especially for a service or professional discussion.",
+        "myanmar_meaning": "ကြိုတင်ချိန်းဆိုထားသော တွေ့ဆုံချိန်",
+        "example_sentence": "I made a dental appointment for Friday morning."
+      },
+      "action": "REPLACE_OR_RETIER_REQUIRED",
+      "publisher_cefr_sense": "A2 (arranged meeting); C2 (official job selection)",
+      "diagnosis": "Draft dental-visit sense is A2; job appointment is C2, not an evidenced B2 substitute.",
+      "candidate": {
+        "english_definition": null,
+        "myanmar_meaning": null,
+        "example_sentence": null
+      },
+      "source": {
+        "url": "https://dictionary.cambridge.org/dictionary/english/appointment",
+        "observed_on": "2026-10-27",
+        "publisher": "Cambridge University Press & Assessment",
+        "access": "Publisher-owned dictionary page text surfaced in web search; not a separate independent human review"
+      },
+      "reviewer_task": "Independent reviewer must select a genuinely B2-supported replacement without changing the 200 B2 quota.",
+      "editorial_hold": true,
+      "independently_approved": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "hardly",
+      "level": "B2",
+      "part_of_speech": "adverb",
+      "original": {
+        "english_definition": "Almost not at all.",
+        "myanmar_meaning": "မ…သလောက်၊ လုံးဝနီးပါး မ…",
+        "example_sentence": "I could hardly hear the speaker."
+      },
+      "action": "REWRITE_FOR_TARGET_SENSE",
+      "publisher_cefr_sense": "B1 (almost not); B2 (emphatic denial)",
+      "diagnosis": "Existing 'could hardly hear' example matches B1; B2 needs an emphatic not-true/not-reasonable use.",
+      "candidate": {
+        "english_definition": "Used to stress that something is not true or reasonable.",
+        "myanmar_meaning": "အကြောင်းအရာတစ်ခု မမှန်ကန်နိုင်ကြောင်း သို့မဟုတ် မသင့်လျော်ကြောင်း အလေးအနက် ငြင်းဆိုရာတွင် သုံးသည်",
+        "example_sentence": "You can hardly expect a refund without a receipt."
+      },
+      "source": {
+        "url": "https://dictionary.cambridge.org/dictionary/english/hardly",
+        "observed_on": "2026-10-27",
+        "publisher": "Cambridge University Press & Assessment",
+        "access": "Publisher-owned dictionary page text surfaced in web search; not a separate independent human review"
+      },
+      "reviewer_task": "Check pragmatic register, Myanmar naturalness and original grammar independently.",
+      "editorial_hold": true,
+      "independently_approved": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "cash",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "original": {
+        "english_definition": "Money in the form of notes and coins.",
+        "myanmar_meaning": "ငွေသား",
+        "example_sentence": "The small shop accepts cash only."
+      },
+      "action": "REWRITE_FOR_TARGET_SENSE",
+      "publisher_cefr_sense": "A2 (physical notes and coins); B1 (money in any form)",
+      "diagnosis": "Current cash-only example and notes-and-coins definition target A2; B1 broader financial resources is different.",
+      "candidate": {
+        "english_definition": "Money that a person or organisation has available to spend.",
+        "myanmar_meaning": "သုံးစွဲရန် လက်ဝယ်ရှိသော ငွေကြေး",
+        "example_sentence": "The company is short of cash this month."
+      },
+      "source": {
+        "url": "https://dictionary.cambridge.org/dictionary/learner-english/cash",
+        "observed_on": "2026-10-27",
+        "publisher": "Cambridge University Press & Assessment",
+        "access": "Publisher-owned dictionary page text surfaced in web search; not a separate independent human review"
+      },
+      "reviewer_task": "Distinguish cash-flow use from physical currency; human review required.",
+      "editorial_hold": true,
+      "independently_approved": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "prepare",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "original": {
+        "english_definition": "To make someone or something ready for an activity.",
+        "myanmar_meaning": "ပြင်ဆင်သည်",
+        "example_sentence": "We need to prepare the documents before the meeting."
+      },
+      "action": "REPLACE_OR_RETIER_REQUIRED",
+      "publisher_cefr_sense": "A2 (get ready); B1 (mentally ready for difficult event)",
+      "diagnosis": "Meeting-document preparation is Cambridge A2; publisher evidence here supplies no B2 equivalent.",
+      "candidate": {
+        "english_definition": null,
+        "myanmar_meaning": null,
+        "example_sentence": null
+      },
+      "source": {
+        "url": "https://dictionary.cambridge.org/dictionary/english/prepare",
+        "observed_on": "2026-10-27",
+        "publisher": "Cambridge University Press & Assessment",
+        "access": "Publisher-owned dictionary page text surfaced in web search; not a separate independent human review"
+      },
+      "reviewer_task": "Do not invent a B2 sense; replace with another sourced B2 headword/sense or independently justify a curriculum exception.",
+      "editorial_hold": true,
+      "independently_approved": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "implement",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "original": {
+        "english_definition": "To put a plan, decision, or system into practice.",
+        "myanmar_meaning": "အစီအစဉ် သို့မဟုတ် ဆုံးဖြတ်ချက်ကို လက်တွေ့အကောင်အထည်ဖော်သည်",
+        "example_sentence": "The team will implement the new safety procedure next month."
+      },
+      "action": "REPLACE_OR_RETIER_REQUIRED",
+      "publisher_cefr_sense": "B2 (put plan or system into use)",
+      "diagnosis": "C1 provisional safety-procedure example matches Cambridge B2. Complexity of workplace context alone does not raise sense level.",
+      "candidate": {
+        "english_definition": null,
+        "myanmar_meaning": null,
+        "example_sentence": null
+      },
+      "source": {
+        "url": "https://dictionary.cambridge.org/dictionary/english/implement",
+        "observed_on": "2026-10-27",
+        "publisher": "Cambridge University Press & Assessment",
+        "access": "Publisher-owned dictionary page text surfaced in web search; not a separate independent human review"
+      },
+      "reviewer_task": "Independently source a C1 sense or choose a different C1 headword/sense.",
+      "editorial_hold": true,
+      "independently_approved": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "upgrade",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "original": {
+        "english_definition": "To improve something by replacing it with a newer or better version.",
+        "myanmar_meaning": "အဆင့်မြှင့်တင်သည်",
+        "example_sentence": "We will upgrade the software next month."
+      },
+      "action": "REPLACE_OR_RETIER_REQUIRED",
+      "publisher_cefr_sense": "B2 (improve or replace with better version)",
+      "diagnosis": "C1 provisional software-upgrade example matches Cambridge B2; a C1 placement lacks current sense-level support.",
+      "candidate": {
+        "english_definition": null,
+        "myanmar_meaning": null,
+        "example_sentence": null
+      },
+      "source": {
+        "url": "https://dictionary.cambridge.org/dictionary/english/upgrade",
+        "observed_on": "2026-10-27",
+        "publisher": "Cambridge University Press & Assessment",
+        "access": "Publisher-owned dictionary page text surfaced in web search; not a separate independent human review"
+      },
+      "reviewer_task": "Seek independent C1 source or replace; no automatic change to shortlist.",
+      "editorial_hold": true,
+      "independently_approved": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    }
+  ]
+}
