@@ -72,9 +72,21 @@ def run(level):
         if p and re.search(r'\b(?:surname|given name|capital of|city in|genus|species|trademark)\b',str(p.get('english_definition_draft','')),re.I):
             problems.append({'word':w,'issue':'SUSPECT_WORDNET_SENSE'})
     if level=='ALL':
+        files=[D/'A1-EDITORIAL-STARTER.json',*sorted(D.glob('A1-EXPANSION-BATCH*.json')),D/'A2-C1-EDITORIAL-STARTER.json',*sorted(D.glob('A2-C1-EDITORIAL-BATCH*.json')),*sorted(D.glob('A2-C1-RETIER-EDITORIAL-BATCH*.json')),*sorted(D.glob('A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH*.json'))]
+        unique=collections.defaultdict(set); occurrences=collections.Counter(); unlevelled=[]
+        for p in files:
+            for row in json.loads(p.read_text(encoding='utf-8'))['entries']:
+                w=row['word'].casefold();lvl=row.get('proposed_level') or row.get('level')
+                if lvl not in ('A1','A2','B1','B2','C1'):unlevelled.append((p.name,w,lvl));continue
+                unique[lvl].add(w);occurrences[w]+=1
+        assert not unlevelled,unlevelled[:10]
+        distinct=set().union(*unique.values())
+        staged_counts={lvl:len(unique[lvl]) for lvl in ('A1','A2','B1','B2','C1')}
+        cross_tier=sum(1 for w in distinct if sum(w in s for s in unique.values())>1)
+        print('BATCH72 STAGED DISTINCT HEADWORDS',len(distinct),'PER_LEVEL',json.dumps(staged_counts),'CROSS_LEVEL',cross_tier,'REPEATED_OCCURRENCES',sum(v-1 for v in occurrences.values()))
         assert 'UNVERIFIED_DRAFT_DO_NOT_PUBLISH' in (ROOT/'cefr-vocabulary-data.js').read_text(encoding='utf-8')
         assert re.search(r'entries:\s*\[\s*\]',(ROOT/'cefr-vocabulary-data.js').read_text(encoding='utf-8'))
-        (ROOT/'batch72-triage-results.json').write_text(json.dumps({'batch':72,'drafts':40,'by_level':COUNTS,'batch70_mechanically_clear_only':previous_clear,'new_batch72_mechanically_clear_only':new_unscreened,'independently_approved':0,'audio_generated':0,'problems':problems},ensure_ascii=False,indent=2)+'\\n',encoding='utf-8')
+        (ROOT/'batch72-triage-results.json').write_text(json.dumps({'batch':72,'drafts':40,'by_level':COUNTS,'batch70_mechanically_clear_only':previous_clear,'new_batch72_mechanically_clear_only':new_unscreened,'independently_approved':0,'audio_generated':0,'problems':problems,'staged_distinct_headwords':len(distinct),'staged_per_level_unique_headwords':staged_counts,'cross_level_wordforms':cross_tier,'repeated_occurrences':sum(v-1 for v in occurrences.values())},ensure_ascii=False,indent=2)+'\\n',encoding='utf-8')
     print('BATCH72',level,'structurally checked',selected,'earlier-preflight-clear-only',previous_clear,'new-batch72-preflight-clear-only',new_unscreened,'cross-corpus problems',json.dumps(problems,ensure_ascii=False))
     assert not problems,'Cross-corpus problems require repair; all drafts stay held'
     print('PASS: structural-only. All quarantined. No independent approval, audio or publication.')
