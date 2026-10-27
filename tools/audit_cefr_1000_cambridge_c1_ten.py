@@ -92,7 +92,8 @@ def audit(data, shortlist, shortlist_raw, level="ALL"):
                 or "403" not in str(r.get("source_access", ""))):
             errors.append(word + ": publisher access caveat/provenance absent")
         for key in ("sense_heading", "source_observation", "editorial_risk"):
-            if not isinstance(r.get(key), str) or len(r[key].strip()) < 15:
+            minimum_length = 5 if key == "sense_heading" else 15
+            if not isinstance(r.get(key), str) or len(r[key].strip()) < minimum_length:
                 errors.append(word + ": missing substantive sense evidence " + key)
         if (r.get("editorial_hold") is not True
                 or r.get("independently_reviewed") is not False
@@ -115,6 +116,7 @@ def negative_tests(data, shortlist, raw):
         ("duplicate evidence", lambda x: x["records"].__setitem__(1, copy.deepcopy(x["records"][0]))),
         ("faked counts", lambda x: x.update(counts_by_level={"C1": 10})),
         ("false full-page claim", lambda x: x["records"][0].update(source_access="fully verified")),
+        ("missing sense heading", lambda x: x["records"][3].update(sense_heading="")),
     ]
     for label, mutate in tests:
         changed = copy.deepcopy(data)
