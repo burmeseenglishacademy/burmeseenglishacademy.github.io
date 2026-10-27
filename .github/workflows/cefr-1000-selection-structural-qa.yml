@@ -16,6 +16,8 @@ on:
       - tools/audit_cefr_1000_oxford_discrepancy.py
       - draft/CEFR-1000-OXFORD-DIRECT-PDF-SPOTCHECK-2026-10-27.json
       - tools/audit_cefr_1000_oxford_direct_spotcheck.py
+      - draft/CEFR-1000-OXFORD-A1-TWELVE-DIRECT-PDF-2026-10-28.json
+      - tools/audit_cefr_1000_oxford_a1_twelve.py
       - draft/CEFR-1000-OXFORD-SECOND-DIRECT-PDF-BATCH-2026-10-27.json
       - tools/audit_cefr_1000_oxford_second_batch.py
       - draft/CEFR-1000-CAMBRIDGE-SECOND-SENSE-LEADS-2026-10-27.json
@@ -65,6 +67,11 @@ jobs:
       - name: Reject forged PDF provenance, level drift and fake independent approval
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_direct_spotcheck.py --level ALL --self-test
+      - name: Validate twelve direct Oxford A1 word-POS observations without independent signoff
+        run: python3 tools/audit_cefr_1000_oxford_a1_twelve.py --level "${{ matrix.level }}"
+      - name: Reject 15 forged A1 publisher, Myanmar, and independent-review mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_oxford_a1_twelve.py --level ALL --self-test
       - name: Validate 27 more official Oxford 3000/5000 PDF word-POS observations (not sense approval)
         run: python3 tools/audit_cefr_1000_oxford_second_batch.py --level "${{ matrix.level }}"
       - name: Reject forged second-batch publisher source and fake review receipts
@@ -137,6 +144,7 @@ jobs:
           path: |
             cefr-1000-shortlist-qa-${{ matrix.level }}.json
             cefr-1000-oxford-direct-spotcheck-${{ matrix.level }}.json
+            cefr-1000-oxford-a1-twelve-${{ matrix.level }}.json
             cefr-1000-oxford-second-batch-${{ matrix.level }}.json
             cefr-1000-cambridge-second-sense-${{ matrix.level }}.json
             cefr-1000-cambridge-sense-${{ matrix.level }}.json
