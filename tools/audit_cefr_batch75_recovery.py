@@ -18,7 +18,7 @@ HOLD = [
 def read(name):
     return json.loads((D / name).read_text(encoding="utf-8"))
 
-def authored_before_batch74():
+def authored_before_batch75():
     paths = [D / "A1-EDITORIAL-STARTER.json"]
     paths += sorted(D.glob("A1-EXPANSION-BATCH*.json"))
     paths += [D / "A2-C1-EDITORIAL-STARTER.json"]
@@ -71,7 +71,7 @@ def audit(level):
     assert all(r["hold_reversible"] and not r["independently_approved"] and not r["release_approved"] for r in cross["records"])
     assert not ({e["word"] for e in E} & set(expected_conflicts)), "Selected drafts include unresolved cross-level candidate conflicts"
     screened = {(r["level"], r["word"]): r for r in triage["records"]}
-    previous = authored_before_batch74()
+    previous = authored_before_batch75()
     pool = {r["word"].casefold(): r for r in read("UNVERIFIED_CEFR_CANDIDATES.json")["entries"]}
     tasks = {x["word"]: x for x in T}
     holds = {x["word"]: x for x in Q}
@@ -124,7 +124,7 @@ def audit(level):
         assert re.search(r"entries:\s*\[\s*\]", publication)
         historical = read("BATCH72-HISTORICAL-CROSS-LEVEL-HOLDS.json")
         assert historical["wordforms"] == 24 and historical["all_held"] is True
-        (ROOT / "batch74-structural-hold-report.json").write_text(json.dumps({
+        (ROOT / "batch75-structural-hold-report.json").write_text(json.dumps({
             "batch": 75, "drafts": len(E), "by_level": EXPECTED,
             "independently_approved": 0, "audio_generated": 0,
             "source_verified": 0, "release_approved": 0,
