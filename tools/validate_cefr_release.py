@@ -29,6 +29,20 @@ def source_url_is_specific(url):
         return False
     return True
 def normalize(s):return ' '.join(str(s).strip().split())
+def example_has_headword_or_regular_form(word, sentence):
+    """Punctuation-aware *structural* token check, NOT grammatical approval.
+    Irregular or genuinely unusual forms require a separately reviewed override.
+    """
+    tokens=set(re.findall(r"[a-z]+(?:[-'][a-z]+)*", sentence.lower()))
+    forms={word, word+'s', word+'es', word+'ed', word+'ing'}
+    if word.endswith('e') and len(word)>1:
+        forms.update((word+'d', word[:-1]+'ing'))
+    if len(word)>=3 and word[-1] not in 'aeiouwxy' and word[-2] in 'aeiou' and word[-3] not in 'aeiou':
+        forms.update((word+word[-1]+'ed', word+word[-1]+'ing'))
+    if word.endswith('y') and len(word)>1 and word[-2] not in 'aeiou':
+        forms.add(word[:-1]+'ies')
+    return any(form in tokens for form in forms)
+
 def validate(data,root=None,verify_audio=False):
     errors=[]
     def fail(s):errors.append(s)
@@ -57,9 +71,8 @@ def validate(data,root=None,verify_audio=False):
         if len(str(row.get('burmese_meaning','')))>250:fail(f'{n}: overly long Burmese gloss')
         if 'english_definition' in row and 'burmese_meaning' in row and normalize(row.get('english_definition',''))==normalize(row.get('burmese_meaning','')):
             fail(f'{n}: unchanged translation')
-        if not any(t in str(row.get('example_sentence','')).lower().split() for t in
-                   [word,word+'s',word+'ed',word+'ing',word+'es']) and not row.get('example_word_form_reviewed'):
-            fail(f'{n}: example needs headword or manually approved inflected form')
+        if not example_has_headword_or_regular_form(word,str(row.get('example_sentence',''))) and row.get('example_word_form_reviewed') is not True:
+            fail(f'{n}: example needs a standalone headword, regular inflection or independently approved irregular form')
         for field in REVIEW_FIELDS:
             if row.get(field) is not True:fail(f'{n}: {field} not independently verified')
         for field in SOURCE_FIELDS:
