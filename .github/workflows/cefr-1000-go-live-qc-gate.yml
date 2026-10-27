@@ -1,0 +1,56 @@
+name: CEFR 1000 go-live evidence QC (staging only; NO deployment)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - draft/CEFR-1000-RELEASE-EVIDENCE.json
+      - draft/CEFR-1000-APPROVED-RELEASE.json
+      - tools/audit_cefr_1000_launch_readiness.py
+      - tools/validate_cefr_release.py
+      - tests/cefr-release-evidence-gate.py
+      - tests/cefr-ui.cjs
+      - cefr-vocabulary.js
+      - cefr-vocabulary-data.js
+      - .github/workflows/cefr-1000-go-live-qc-gate.yml
+  workflow_dispatch:
+    inputs:
+      enforce_full_qc:
+        description: "Require all real human, audio, device and hosting evidence (NEVER DEPLOYS)"
+        type: boolean
+        required: true
+        default: false
+permissions:
+  contents: read
+jobs:
+  documentary-launch-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check release gate, QC audit and browser UI syntax
+        run: |
+          python3 -m py_compile tools/audit_cefr_1000_launch_readiness.py tools/validate_cefr_release.py
+          python3 tests/cefr-release-evidence-gate.py
+          node --check cefr-vocabulary.js
+          node tests/cefr-ui.cjs
+      - name: Report missing real approvals, voice listening, iPhone and hosting QC
+        run: python3 tools/audit_cefr_1000_launch_readiness.py --report-only --self-test
+      - name: Explicitly enforce ALL evidence if release candidate manually checked
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.enforce_full_qc }}
+        run: python3 tools/audit_cefr_1000_launch_readiness.py
+      - name: Protect production lessons, IELTS vocabulary, George Emma and privacy
+        run: |
+          git fetch --no-tags --depth=1 origin main
+          drift="$(git diff --name-only origin/main HEAD -- content.js ielts-vocabulary-data.js audio-manifest.js audio-player.js audio-integration.js privacy-tools.js site-config.js audio/)"
+          if [ -n "$drift" ]; then echo "BLOCK: existing production assets changed: $drift"; exit 1; fi
+          echo 'PASS: protected production assets untouched by staging migration'
+      - name: Upload truthful QC blockers as an artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cefr-1000-go-live-blocker-report
+          path: cefr-1000-launch-gate-report.json
+          if-no-files-found: error
+          retention-days: 30
