@@ -1,0 +1,49 @@
+name: CEFR batch74 candidate preflight (staging only; never deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - draft/BATCH74-CANDIDATES.txt
+      - .github/workflows/cefr-batch74-candidate-preflight.yml
+      - tools/preflight_cefr_draft_candidates.py
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  level-candidate-preflight:
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A2, B1, B2, C1, ALL]
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Screen candidate headwords against all staged authored files
+        shell: bash
+        env:
+          LEVEL: ${{ matrix.level }}
+        run: |
+          if [ "$LEVEL" = ALL ]; then
+            grep -E '^(A2|B1|B2|C1)\\|' draft/BATCH74-CANDIDATES.txt > /tmp/candidates.txt
+          else
+            grep "^$LEVEL|" draft/BATCH74-CANDIDATES.txt > /tmp/candidates.txt
+          fi
+          python3 tools/preflight_cefr_draft_candidates.py --file /tmp/candidates.txt --json > "batch74-preflight-$LEVEL.json"
+          python3 - "$LEVEL" <<'PY'
+          import json,sys
+          level=sys.argv[1]
+          data=json.load(open(f"batch74-preflight-{level}.json"))
+          print("BATCH74_PREFLIGHT_SUMMARY",level,json.dumps(data["summary"],sort_keys=True))
+          clear=[x["word"] for x in data["candidates"] if x["preflight_clear_only_not_approved"]]
+          held=[{"word":x["word"],"risks":x["risk_flags"]} for x in data["candidates"] if not x["preflight_clear_only_not_approved"]]
+          print("CLEAR_ONLY_WORDS",level,json.dumps(clear))
+          print("QUARANTINE_WORDS",level,json.dumps(held))
+          print("NO independent English/Myanmar/CEFR approval, audio, merge or deploy")
+          PY
+      - name: Archive mechanical preflight only
+        uses: actions/upload-artifact@v4
+        with:
+          name: batch74-preflight-${{ matrix.level }}
+          path: batch74-preflight-${{ matrix.level }}.json
+          retention-days: 30
