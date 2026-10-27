@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "batch": 72,
+  "created_on": "2026-10-27",
+  "stage": "PRELIMINARY_EXTERNAL_SOURCE_OBSERVATION_NOT_INDEPENDENT_EDITORIAL_APPROVAL",
+  "reviewer_approved_count": 0,
+  "records": [
+    {
+      "word": "surreptitious",
+      "proposed_level": "C1",
+      "source_url": "https://dictionary.cambridge.org/dictionary/english/surreptitious",
+      "source_name": "Cambridge Dictionary",
+      "observed_on": "2026-10-27",
+      "observed_source_sense": "done secretly without being seen or known",
+      "draft_sense_alignment": "Plausible semantic match, not yet signed off by an independent linguistic reviewer",
+      "cefr_evidence_observed": false,
+      "burmese_evidence_observed": false,
+      "example_approved": false,
+      "review_complete": false
+    },
+    {
+      "word": "oversleep",
+      "proposed_level": "B1",
+      "source_url": "https://dictionary.cambridge.org/dictionary/english/oversleep",
+      "source_name": "Cambridge Dictionary",
+      "observed_on": "2026-10-27",
+      "observed_source_sense": "sleep longer than intended and wake late; intransitive verb",
+      "draft_sense_alignment": "Plausible semantic and part-of-speech match; independent reviewer and CEFR evidence still pending",
+      "cefr_evidence_observed": false,
+      "burmese_evidence_observed": false,
+      "example_approved": false,
+      "review_complete": false
+    },
+    {
+      "word": "ALL",
+      "proposed_level": null,
+      "source_url": "https://www.oxfordlearnersdictionaries.co.uk/about/wordlists/cefr",
+      "source_name": "Oxford Learner's Dictionaries CEFR explanation",
+      "observed_on": "2026-10-27",
+      "observed_source_sense": "CEFR grades language ability rather than individual vocabulary; Oxford aligns its selected wordlists to CEFR for teaching guidance",
+      "draft_sense_alignment": "Do not infer individual sense-specific level from a general CEFR definition or an unsourced WordNet candidate",
+      "cefr_evidence_observed": false,
+      "burmese_evidence_observed": false,
+      "example_approved": false,
+      "review_complete": false
+    }
+  ],
+  "notes": "These URLs were inspected, but the observations are not independent bilingual review, not a verified CEFR level, and not an audio listening test. All entries remain held."
+}
