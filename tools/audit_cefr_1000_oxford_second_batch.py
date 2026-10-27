@@ -65,7 +65,7 @@ DRAFT_FIELDS = {
 
 
 def git_blob_sha(raw):
-    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
 
 
 def validate(packet, shortlist, raw_shortlist, level="ALL"):
@@ -171,7 +171,7 @@ def main():
         report["negative_tests"] = "PASS" if not errors else "FAIL"
     report["errors"] = errors
     out = ROOT / f"cefr-1000-oxford-second-batch-{args.level}.json"
-    out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\\n", "utf-8")
+    out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", "utf-8")
     print(json.dumps(report, ensure_ascii=False))
     if errors:
         raise SystemExit(1)
