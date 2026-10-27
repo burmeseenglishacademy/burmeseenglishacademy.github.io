@@ -1,0 +1,227 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A2_CAMBRIDGE_EIGHT_SOURCE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-28",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 8,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 8,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "independently_approved_count": 0,
+  "source_limitations": "Cambridge publisher-owned search-indexed page excerpts observed 2026-10-28; direct full-page requests returned HTTP 403. Not direct full-page dictionary inspection, not independent bilingual review, and not CEFR teaching approval. Source CEFR is sense-specific where indicated; source labels do not automatically mandate retiering. All eight draft snapshots are unchanged and held.",
+  "records": [
+    {
+      "word": "public",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "People in a community or society in general.",
+        "myanmar_meaning": "ပြည်သူလူထု",
+        "example_sentence": "The library is open to the public."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/dictionary/english/public",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "source_sense_heading": "the public / ordinary people",
+        "source_cefr_level": "B1",
+        "source_observation": "Cambridge publisher-indexed entry labels the noun 'the public' B1, while the A2 draft uses exactly this group-of-people sense.",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "editorial_risk": "SAME_SENSE_SOURCE_LEVEL_B1_VS_A2",
+      "independent_reviewer_task": "Review A2 suitability; independently select a source-supported A2 sense or replace/retier while maintaining 200 A2 entries.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "system",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A set of connected parts that work together.",
+        "myanmar_meaning": "စနစ်",
+        "example_sentence": "The new system keeps track of our orders."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/us/dictionary/english/system",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "source_sense_heading": "system noun (SET); Learner's METHOD",
+        "source_cefr_level": "B1 connected equipment; B2 method",
+        "source_observation": "Cambridge English entry labels interconnected devices/computer equipment B1; Learner's Dictionary distinguishes B2 method-of-doing-things. Draft example about tracking orders may describe software or an organisational method.",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "editorial_risk": "SENSE_AMBIGUITY_B1_B2_VS_A2",
+      "independent_reviewer_task": "Independent reviewer must identify whether the order-tracking system means equipment/software or an organisational method, then establish a defensible A2 placement or replace/retier.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "support",
+      "level": "A2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To help someone succeed or manage a difficulty.",
+        "myanmar_meaning": "ကူညီပံ့ပိုးသည်",
+        "example_sentence": "My colleagues support me when I need help."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/dictionary/english/support",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "source_sense_heading": "support verb (HELP)",
+        "source_cefr_level": "B1",
+        "source_observation": "Cambridge labels emotional or practical assistance B1; draft colleagues-helping example targets that help sense, not the B2 encourage-a-cause sense.",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "editorial_risk": "SAME_SENSE_SOURCE_LEVEL_B1_VS_A2",
+      "independent_reviewer_task": "Review B1-labelled help sense; do not silently use an unrelated source sense to justify A2.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "power",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The ability to control or influence what happens.",
+        "myanmar_meaning": "အာဏာ၊ စွမ်းအား",
+        "example_sentence": "The manager has the power to approve requests."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/dictionary/english/power",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "source_sense_heading": "power noun (CONTROL)",
+        "source_cefr_level": "B2",
+        "source_observation": "Cambridge labels ability to control people and events B2; the manager's authority to approve requests appears to target control/authority rather than electrical energy.",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "editorial_risk": "SAME_SENSE_SOURCE_LEVEL_B2_VS_A2",
+      "independent_reviewer_task": "Independent reviewer must evaluate manager-authority meaning, Myanmar distinction အာဏာ versus စွမ်းအား, and replacement or retiering.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "actually",
+      "level": "A2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Used to say what is true, especially when it differs from what someone expected.",
+        "myanmar_meaning": "တကယ်တော့၊ အမှန်တကယ်",
+        "example_sentence": "I thought it was Tuesday, but it is actually Wednesday."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/dictionary/english/actually",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "source_sense_heading": "actually adverb (IN FACT) versus (SURPRISE)",
+        "source_cefr_level": "A2 IN FACT; B1 SURPRISE",
+        "source_observation": "Cambridge distinguishes A2 factual truth from B1 surprising or unexpected correction. Draft contrasts a mistaken Tuesday belief with Wednesday, potentially straddling these uses.",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "editorial_risk": "POLYSEMY_AND_DISCOURSE_FUNCTION_AMBIGUITY",
+      "independent_reviewer_task": "Independent reviewer should determine whether the draft sentence is merely factual correction or a B1 surprise/discourse function; align Burmese and example.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "however",
+      "level": "A2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Used to introduce a fact that contrasts with what was just said.",
+        "myanmar_meaning": "သို့သော်၊ ဒါပေမဲ့",
+        "example_sentence": "The room was small; however, it was comfortable."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/us/dictionary/english/however",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "source_sense_heading": "however adverb (DESPITE THIS)",
+        "source_cefr_level": "A2",
+        "source_observation": "Cambridge labels contrastive sentence-linking however A2, distinct from B2 degree however and C2 manner however; draft uses contrastive connector.",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "editorial_risk": "SOURCE_SUPPORTS_PROVISIONAL_A2_SENSE_NOT_SIGNOFF",
+      "independent_reviewer_task": "Independent reviewer must still assess punctuation, register, Burmese gloss, and grammar.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "whole",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Complete, with no part missing.",
+        "myanmar_meaning": "တစ်ခုလုံးသော၊ အပြည့်အစုံဖြစ်သော",
+        "example_sentence": "We spent the whole afternoon cleaning the classroom."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/dictionary/learner-english/whole",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "source_sense_heading": "whole adjective (COMPLETE)",
+        "source_cefr_level": "A2",
+        "source_observation": "Cambridge Learner's Dictionary labels complete adjective A2; draft's whole afternoon illustrates complete duration, not B1 noun 'the whole of'.",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "editorial_risk": "SOURCE_SUPPORTS_PROVISIONAL_A2_SENSE_NOT_SIGNOFF",
+      "independent_reviewer_task": "Independent reviewer to check Myanmar naturalness and whether the adjective and sentence are consistent.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "less",
+      "level": "A2",
+      "part_of_speech": "determiner",
+      "shortlist_snapshot": {
+        "english_definition": "A smaller amount of something that cannot usually be counted.",
+        "myanmar_meaning": "ပိုနည်းသော၊ လျော့နည်းသော",
+        "example_sentence": "Please add less sugar to my tea."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/dictionary/english/less",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "source_sense_heading": "less determiner (SMALLER AMOUNT)",
+        "source_cefr_level": "A2",
+        "source_observation": "Cambridge labels smaller amount determiner/quantifier A2; draft less sugar illustrates an uncountable quantity, not plural-count fewer.",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "editorial_risk": "SOURCE_SUPPORTS_PROVISIONAL_A2_SENSE_NOT_SIGNOFF",
+      "independent_reviewer_task": "Independent reviewer to check Burmese comparative nuance and grammar distinction less versus fewer.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
