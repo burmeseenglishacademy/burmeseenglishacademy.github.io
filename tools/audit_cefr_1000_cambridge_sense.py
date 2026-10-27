@@ -35,6 +35,10 @@ EXPECTED = {
     "manufacturer": ("C1", "B2"),
     "implement": ("C1", "B2"),
     "permit": ("C1", "C1"),
+    "prepare": ("B2", "A2"),
+    "calm": ("B2", "B1"),
+    "upgrade": ("C1", "B2"),
+    "insight": ("C1", "C1"),
 }
 STATUS = "SENSE_SPECIFIC_PUBLISHER_SOURCE_TRIAGE_NO_INDEPENDENT_APPROVAL"
 
