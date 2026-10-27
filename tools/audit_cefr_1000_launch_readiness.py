@@ -217,6 +217,9 @@ def audit(ledger=None, after_deployment=False):
               "cambridge_six_sense_observations": 0,
               "cambridge_six_sense_retained_requiring_resolution": 0,
               "cambridge_six_sense_retained_resolved": 0,
+              "cambridge_c1_ten_observations": 0,
+              "cambridge_c1_ten_retained_requiring_resolution": 0,
+              "cambridge_c1_ten_retained_resolved": 0,
               "oxford_dictionary_c1_source_observations": 0,
               "oxford_dictionary_c1_retained_requiring_resolution": 0,
               "oxford_dictionary_c1_retained_resolved": 0,
@@ -509,6 +512,70 @@ def audit(ledger=None, after_deployment=False):
     if six_index and set(six_index) - {
             (x.get("word"), x.get("level")) for x in six_flags if isinstance(x, dict)}:
         issues.append("Unknown six-sense independent receipts supplied")
+
+    # Ten publisher-indexed Cambridge C1 exact-sense leads observed 2026-10-28.
+    # Search snippets are editorial leads only; retained entries need a separate
+    # human independent direct-publisher C1 exact-sense attestation. A C2 or B2
+    # source label cannot silently be treated as C1, nor can a mixed definition
+    # be approved unchanged merely because both separate senses are C1.
+    c1_ten_packet = read_json(
+        ROOT / "draft/CEFR-1000-CAMBRIDGE-C1-TEN-SENSE-LEADS-2026-10-28.json")
+    c1_ten_flags = c1_ten_packet.get("records", [])
+    c1_ten_expected = {"tribute", "popularity", "controversial", "exclusively",
+                       "sacred", "asset", "neutral", "noble", "burden", "dominant"}
+    report["cambridge_c1_ten_observations"] = len(c1_ten_flags)
+    if (c1_ten_packet.get("status") != "PUBLISHER_INDEXED_SENSE_TRIAGE_NOT_INDEPENDENT_APPROVAL"
+            or len(c1_ten_flags) != 10
+            or {x.get("word") for x in c1_ten_flags if isinstance(x, dict)} != c1_ten_expected
+            or c1_ten_packet.get("independently_approved_count") != 0):
+        issues.append("Ten Cambridge C1 source observations missing, incomplete or falsely approved")
+    c1_ten_receipts = d.get("cambridge_c1_ten_sense_review_receipts", [])
+    if not isinstance(c1_ten_receipts, list):
+        issues.append("Cambridge C1 ten-sense independent receipts are not an array")
+        c1_ten_receipts = []
+    c1_ten_index = {}
+    for rec in c1_ten_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Malformed Cambridge C1 ten-sense receipt")
+            continue
+        key = (rec.get("word"), rec.get("proposed_level"))
+        if key in c1_ten_index:
+            issues.append("Duplicate Cambridge C1 ten-sense receipt")
+        c1_ten_index[key] = rec
+    for flag in c1_ten_flags:
+        if not isinstance(flag, dict):
+            issues.append("Malformed Cambridge C1 ten-sense source observation")
+            continue
+        key = (flag.get("word"), flag.get("level"))
+        entry = entry_lookup.get(key)
+        if entry is None:
+            continue  # A replacement/retier still needs all 1000 human stage receipts.
+        report["cambridge_c1_ten_retained_requiring_resolution"] += 1
+        rec = c1_ten_index.get(key)
+        if not independent_word_stage(rec, entry["word"], "sense_specific_cefr",
+                                      expected_level=entry["level"]):
+            continue
+        if (rec.get("decision") != "RETAIN_AFTER_INDEPENDENT_C1_EXACT_SENSE_REVIEW"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or rec.get("verified_part_of_speech") != entry.get("part_of_speech")
+                or rec.get("verified_cefr_level") != "C1"
+                or not isinstance(rec.get("source_scope_rationale"), str)
+                or len(rec["source_scope_rationale"].strip()) < 50):
+            continue
+        if (flag.get("source_cefr") in ("B2", "C2")
+                and (not isinstance(rec.get("cambridge_conflict_resolution"), str)
+                     or len(rec["cambridge_conflict_resolution"].strip()) < 50)):
+            continue
+        if (entry["word"] == "asset"
+                and entry.get("english_definition") == flag.get("shortlist_english_definition")):
+            continue  # Mixed useful-person/property definition needs review and rewrite.
+        report["cambridge_c1_ten_retained_resolved"] += 1
+    if (report["cambridge_c1_ten_retained_requiring_resolution"]
+            != report["cambridge_c1_ten_retained_resolved"]):
+        issues.append("Ten retained Cambridge C1 sense observations lack independent exact-sense resolution")
+    if c1_ten_index and set(c1_ten_index) - {
+            (x.get("word"), x.get("level")) for x in c1_ten_flags if isinstance(x, dict)}:
+        issues.append("Unknown Cambridge C1 ten-sense independent receipts supplied")
 
     # Directly observed Oxford dictionary senses/register and topic CEFR
     # labels are separate from Oxford 3000/5000 PDF word/POS lists. The C2
