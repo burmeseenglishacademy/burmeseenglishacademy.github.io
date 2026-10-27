@@ -72,8 +72,13 @@ def check():
         if cat != MATCH:
             expected_holds.append(ref)
             reasons[cat] += 1
-        if ref.get("level_gap_when_comparable") is not None:
-            assert cat == "PROPOSED_CEFR_LEVEL_DIFFERS_FOR_SAME_PART_OF_SPEECH", (n, cat)
+        gap = ref.get("level_gap_when_comparable")
+        if cat == MATCH and gap != 0:
+            problems.append(f"{n}: matching Oxford level should have zero distance")
+        if cat == "PROPOSED_CEFR_LEVEL_DIFFERS_FOR_SAME_PART_OF_SPEECH" and (not isinstance(gap, int) or gap < 1):
+            problems.append(f"{n}: mismatch must have at least one CEFR band distance")
+        if cat in ("NOT_IN_TRANSCRIBED_OXFORD_CORE_WORDLIST", "PART_OF_SPEECH_DOES_NOT_MATCH_TRANSCRIPTION") and gap is not None:
+            problems.append(f"{n}: unknown or unmatched level must not have distance")
     if len(expected_holds) != len(held):
         problems.append("Risk flag count not equal to actual held row count")
     for n, (ref, h) in enumerate(zip(expected_holds, held)):
