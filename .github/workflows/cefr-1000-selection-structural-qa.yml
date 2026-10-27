@@ -1,0 +1,43 @@
+name: CEFR 1000 review selection structural QA (staging only, never deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - draft/CEFR-1000-PROVISIONAL-SHORTLIST.json
+      - draft/CEFR-1000-INDEPENDENT-REVIEW-TASKS.json
+      - draft/CEFR-1000-SELECTION-TRIAGE.json
+      - tools/audit_cefr_1000_shortlist.py
+      - .github/workflows/cefr-1000-selection-structural-qa.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  level-review-shortlist-structure:
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A1, A2, B1, B2, C1, ALL]
+    name: 1000-word structural preflight ${{ matrix.level }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check independent-task parity, provenance, cross-level holds and safe staging
+        run: python3 tools/audit_cefr_1000_shortlist.py --level "${{ matrix.level }}"
+      - name: Reject fake approval or duplicate word in negative tests
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_shortlist.py --level ALL --self-test
+      - name: Confirm existing production lessons, IELTS, George Emma and privacy untouched
+        if: ${{ matrix.level == 'ALL' }}
+        run: |
+          git fetch --no-tags --depth=1 origin main
+          changed="$(git diff --name-only origin/main HEAD -- content.js ielts-vocabulary-data.js audio-manifest.js audio-player.js audio-integration.js privacy-tools.js site-config.js audio/)"
+          if [ -n "$changed" ]; then echo "BLOCK: protected production assets drift: $changed"; exit 1; fi
+          echo "PASS: protected production assets unchanged; no deploy"
+      - name: Save structural QA record (not linguistic verification)
+        uses: actions/upload-artifact@v4
+        with:
+          name: cefr-1000-provisional-${{ matrix.level }}
+          path: cefr-1000-shortlist-qa-${{ matrix.level }}.json
+          if-no-files-found: error
+          retention-days: 30
