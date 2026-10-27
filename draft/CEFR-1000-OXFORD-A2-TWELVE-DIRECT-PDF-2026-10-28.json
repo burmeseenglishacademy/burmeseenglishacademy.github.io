@@ -1,0 +1,359 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A2_OXFORD_TWELVE_DIRECT_PDF_WORD_POS_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-28",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 12,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 11,
+    "A2": 1
+  },
+  "independently_approved_count": 0,
+  "source_limitations": "Directly inspected Oxford University Press Oxford 3000 by CEFR level PDF on 2026-10-28. Word/POS classification only, not exact-sense CEFR proof. A1 on Oxford for 11 provisional A2 entries is a review discrepancy, not automatic evidence that the draft is wrong. Independent human English, Myanmar, example and exact-sense publisher review is absent. No curriculum or production changes.",
+  "records": [
+    {
+      "word": "world",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The Earth and all the people and places on it.",
+        "myanmar_meaning": "ကမ္ဘာကြီး",
+        "example_sentence": "People around the world speak different languages."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 4,
+        "extracted_line": 893,
+        "source_excerpt": "world n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_WORD_POS_VS_A2_DRAFT",
+      "independent_reviewer_task": "Check whether the Earth-and-people sense and Myanmar gloss justify A2, or whether this common A1 noun should be replaced by a genuinely A2 exact sense.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "life",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A person's experience of being alive.",
+        "myanmar_meaning": "ဘဝ",
+        "example_sentence": "Living in a new city changed her life."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 2,
+        "extracted_line": 439,
+        "source_excerpt": "life n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_WORD_POS_VS_A2_DRAFT",
+      "independent_reviewer_task": "Distinguish life as existence, lifespan and lived experience; verify which exact sense the new-city example uses and whether A2 is independently supported.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "through",
+      "level": "A2",
+      "part_of_speech": "preposition",
+      "shortlist_snapshot": {
+        "english_definition": "From one side or end of a place to the other.",
+        "myanmar_meaning": "တစ်ဖက်မှ တစ်ဖက်သို့ ဖြတ်သန်း၍",
+        "example_sentence": "We walked through the park to reach the station."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 3,
+        "extracted_line": 798,
+        "source_excerpt": "through prep., adv.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_PREPOSITION_VS_A2_DRAFT",
+      "independent_reviewer_task": "Confirm the park-passage preposition sense, not the completion/time adverb senses; independently substantiate A2 or replace.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "while",
+      "level": "A2",
+      "part_of_speech": "conjunction",
+      "shortlist_snapshot": {
+        "english_definition": "During the time that something else is happening.",
+        "myanmar_meaning": "နေစဉ်၊ အချိန်အတွင်း",
+        "example_sentence": "I listened to music while I cooked dinner."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 7,
+        "extracted_line": 1762,
+        "source_excerpt": "while conj.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A2_WORD_POS_MATCH_NOT_EXACT_SENSE",
+      "independent_reviewer_task": "Check simultaneity conjunction, example tense agreement and Myanmar temporal translation; do not confuse with contrastive while.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "part",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "One piece or section of a larger whole.",
+        "myanmar_meaning": "အစိတ်အပိုင်း",
+        "example_sentence": "The final part of the lesson is a short quiz."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 3,
+        "extracted_line": 574,
+        "source_excerpt": "part n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_WORD_POS_VS_A2_DRAFT",
+      "independent_reviewer_task": "Check piece-of-whole noun and whether lesson-section usage merits A2 rather than the Oxford A1 word/POS listing.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "better",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Of a higher quality or more suitable than something else.",
+        "myanmar_meaning": "ပိုကောင်းသော",
+        "example_sentence": "The second plan is better for our budget."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 1,
+        "extracted_line": 82,
+        "source_excerpt": "better adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_ADJECTIVE_VS_A2_DRAFT",
+      "independent_reviewer_task": "Check comparative adjective and its 'more suitable' sense in the budget example; distinguish the B1 noun and adverb.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "team",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A group of people who work or play together.",
+        "myanmar_meaning": "အသင်း၊ အဖွဲ့",
+        "example_sentence": "Our team meets every Monday morning."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 3,
+        "extracted_line": 768,
+        "source_excerpt": "team n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_WORD_POS_VS_A2_DRAFT",
+      "independent_reviewer_task": "Check people-working-together noun, Burmese rendering and whether the everyday team example supports A2.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "someone",
+      "level": "A2",
+      "part_of_speech": "pronoun",
+      "shortlist_snapshot": {
+        "english_definition": "A person whose name or identity is not known or stated.",
+        "myanmar_meaning": "တစ်စုံတစ်ယောက်",
+        "example_sentence": "Someone left an umbrella on the bus."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 3,
+        "extracted_line": 716,
+        "source_excerpt": "someone pron.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_WORD_POS_VS_A2_DRAFT",
+      "independent_reviewer_task": "Check indefinite person pronoun, Myanmar idiomatic register and whether the lost-umbrella example supports A2.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "must",
+      "level": "A2",
+      "part_of_speech": "modal verb",
+      "shortlist_snapshot": {
+        "english_definition": "Used to say that something is necessary or required.",
+        "myanmar_meaning": "မဖြစ်မနေ လုပ်ရမည်",
+        "example_sentence": "You must wear a helmet at work."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 2,
+        "extracted_line": 507,
+        "source_excerpt": "must modal v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_MODAL_VS_A2_DRAFT",
+      "independent_reviewer_task": "Check obligation versus deduction modal senses, and whether 'must wear a helmet' is an A1 obligation or A2-specific use.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "show",
+      "level": "A2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To let another person see something.",
+        "myanmar_meaning": "ပြသည်၊ ပြသသည်",
+        "example_sentence": "Can you show me the picture?"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 3,
+        "extracted_line": 694,
+        "source_excerpt": "show v., n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_VERB_VS_A2_DRAFT",
+      "independent_reviewer_task": "Check showing a picture as ordinary transitive verb, not noun show or a more advanced verb sense.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "company",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A business that sells goods or services.",
+        "myanmar_meaning": "ကုမ္ပဏီ၊ လုပ်ငန်း",
+        "example_sentence": "She works for a small company."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 1,
+        "extracted_line": 165,
+        "source_excerpt": "company n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_BUSINESS_NOUN_VS_A2_DRAFT",
+      "independent_reviewer_task": "Distinguish business organisation from companionship; verify that Myanmar and employment example match and whether A2 is supportable.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "group",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Several people or things considered together.",
+        "myanmar_meaning": "အုပ်စု",
+        "example_sentence": "Our group meets every Saturday."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 2,
+        "extracted_line": 340,
+        "source_excerpt": "group n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_WORD_POS_VS_A2_DRAFT",
+      "independent_reviewer_task": "Check collective noun and meeting example, not a specialised grouping sense; independently substantiate A2 or replace.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
