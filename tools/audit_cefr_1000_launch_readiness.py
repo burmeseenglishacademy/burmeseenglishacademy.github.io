@@ -217,6 +217,9 @@ def audit(ledger=None, after_deployment=False):
               "cambridge_six_sense_observations": 0,
               "cambridge_six_sense_retained_requiring_resolution": 0,
               "cambridge_six_sense_retained_resolved": 0,
+              "cambridge_b2_six_observations": 0,
+              "cambridge_b2_six_retained_requiring_resolution": 0,
+              "cambridge_b2_six_retained_resolved": 0,
               "cambridge_c1_ten_observations": 0,
               "cambridge_c1_ten_retained_requiring_resolution": 0,
               "cambridge_c1_ten_retained_resolved": 0,
@@ -576,6 +579,66 @@ def audit(ledger=None, after_deployment=False):
     if c1_ten_index and set(c1_ten_index) - {
             (x.get("word"), x.get("level")) for x in c1_ten_flags if isinstance(x, dict)}:
         issues.append("Unknown Cambridge C1 ten-sense independent receipts supplied")
+
+    # Additional Cambridge B2 publisher-indexed leads: independent DIRECT
+    # exact-sense verification is required before any retained word can pass.
+    b2_six = read_json(ROOT / "draft/CEFR-1000-CAMBRIDGE-B2-SIX-SENSE-LEADS-2026-10-28.json")
+    b2_flags = b2_six.get("records", [])
+    b2_expected = {"absolute", "constant", "relief", "client", "decade", "quit"}
+    report["cambridge_b2_six_observations"] = len(b2_flags)
+    if (b2_six.get("status") != "SIX_NEW_PUBLISHER_INDEXED_SENSE_OBSERVATIONS_NO_INDEPENDENT_SIGNOFF"
+            or len(b2_flags) != 6
+            or {x.get("word") for x in b2_flags if isinstance(x, dict)} != b2_expected
+            or b2_six.get("independently_approved_count") != 0):
+        issues.append("Six Cambridge B2 publisher-indexed observations missing or falsely approved")
+    b2_receipts = d.get("cambridge_b2_six_sense_review_receipts", [])
+    if not isinstance(b2_receipts, list):
+        issues.append("Cambridge B2 six independent receipts must be an array")
+        b2_receipts = []
+    b2_index = {}
+    for rec in b2_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Malformed Cambridge B2 independent receipt")
+            continue
+        key = (rec.get("word"), rec.get("proposed_level"))
+        if key in b2_index:
+            issues.append("Duplicate Cambridge B2 independent receipt")
+        b2_index[key] = rec
+    for flag in b2_flags:
+        if not isinstance(flag, dict):
+            issues.append("Malformed Cambridge B2 source observation")
+            continue
+        key = (flag.get("word"), flag.get("level"))
+        entry = entry_lookup.get(key)
+        if entry is None:
+            continue  # A replacement must still receive all full independent receipts.
+        report["cambridge_b2_six_retained_requiring_resolution"] += 1
+        rec = b2_index.get(key)
+        if not independent_word_stage(rec, entry["word"], "sense_specific_cefr",
+                                      expected_level=entry["level"]):
+            continue
+        if (rec.get("decision") != "RETAIN_AFTER_INDEPENDENT_B2_EXACT_SENSE_REVIEW"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or rec.get("verified_part_of_speech") != entry.get("part_of_speech")
+                or rec.get("verified_cefr_level") != "B2"
+                or not isinstance(rec.get("source_scope_rationale"), str)
+                or len(rec["source_scope_rationale"].strip()) < 50):
+            continue
+        if (flag["word"] == "quit"
+                and (not isinstance(rec.get("cambridge_conflict_resolution"), str)
+                     or len(rec["cambridge_conflict_resolution"].strip()) < 50)):
+            continue  # B1 same-sense source cannot be silently blessed as B2.
+        if (flag["word"] == "constant"
+                and entry.get("english_definition") ==
+                    flag.get("shortlist_snapshot", {}).get("english_definition")):
+            continue  # Draft conflates B2 frequency and C2 unchanged-level senses.
+        report["cambridge_b2_six_retained_resolved"] += 1
+    if (report["cambridge_b2_six_retained_requiring_resolution"]
+            != report["cambridge_b2_six_retained_resolved"]):
+        issues.append("Six retained Cambridge B2 observations lack independent exact-sense resolution")
+    if b2_index and set(b2_index) - {
+            (x.get("word"), x.get("level")) for x in b2_flags if isinstance(x, dict)}:
+        issues.append("Unknown Cambridge B2 six-sense independent receipts supplied")
 
     # Directly observed Oxford dictionary senses/register and topic CEFR
     # labels are separate from Oxford 3000/5000 PDF word/POS lists. The C2
