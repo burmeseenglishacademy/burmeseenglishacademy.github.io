@@ -252,11 +252,23 @@ def audit(ledger=None, after_deployment=False):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--expect-blocked", action="store_true", help="Staging regression: pass only while release remains blocked")
+    parser.add_argument("--expect-blocked", action="store_true", help="Temporary diagnostic: expect release to remain blocked")
+    parser.add_argument("--report-only", action="store_true", help="Report readiness without treating legitimate pending QC as a workflow failure")
+    parser.add_argument("--self-test", action="store_true", help="Prove missing human review and false ready flag are rejected")
     parser.add_argument("--after-deployment", action="store_true", help="Final production confirmation (never claims success prelaunch)")
     parser.add_argument("--report", default="cefr-1000-launch-gate-report.json")
     args = parser.parse_args()
     issues, report = audit(after_deployment=args.after_deployment)
+    if args.self_test:
+        import copy
+        false_ready = copy.deepcopy(read_json(LEDGER))
+        false_ready["status"] = "INDEPENDENT_QC_COMPLETE_RELEASE_CANDIDATE"
+        fake_issues, fake_report = audit(false_ready, after_deployment=True)
+        assert fake_issues and not fake_report["release_ready"]
+        assert any("independently approved 1000-entry" in item for item in fake_issues)
+        assert any("physical iPhone Safari" in item for item in fake_issues)
+        assert any("Listening coverage" in item for item in fake_issues)
+        print("PASS: false ready flag cannot override missing independent, listening, iPhone or hosting evidence")
     pathlib.Path(args.report).write_text(json.dumps({"report": report, "blockers": issues[:100]},
                                            ensure_ascii=False, indent=2) + "\n", encoding="utf8")
     print("CEFR 1000: source-reviewed", sum(report["independent_stage_complete"].values()),
@@ -264,6 +276,9 @@ def main():
           "/1000; actual production confirmed", report["live_site_confirmed"])
     for issue in issues[:25]:
         print("BLOCK:", issue)
+    if args.report_only:
+        print("REPORT ONLY: readiness blockers remain recorded; this is NOT a release approval" if issues else "REPORT ONLY: documentary checklist complete, independent evidence/authenticity must still be confirmed")
+        return 0
     if args.expect_blocked:
         if not issues:
             print("UNEXPECTED UNBLOCKED RELEASE: staging-only safeguard needs review", file=sys.stderr)
