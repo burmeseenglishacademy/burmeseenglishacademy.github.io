@@ -60,6 +60,16 @@ def audit(level):
         lvl, word = line.split("|")
         candidate_pairs.add((lvl, word))
     assert candidate_pairs == {(r["level"], r["word"]) for r in triage["records"]}
+    cross = read("BATCH74-CROSS-LEVEL-CANDIDATE-HOLDS.json")
+    assert cross["release_status"] == "CANDIDATE_CROSS_LEVEL_HOLDS_DO_NOT_PUBLISH"
+    assert cross["conflicting_wordforms"] == len(cross["records"]) == 9
+    duplicates = collections.defaultdict(set)
+    for lvl, word in candidate_pairs:
+        duplicates[word].add(lvl)
+    expected_conflicts = {w: levels for w, levels in duplicates.items() if len(levels) > 1}
+    assert {r["word"]: set(r["proposed_levels"]) for r in cross["records"]} == expected_conflicts
+    assert all(r["hold_reversible"] and not r["independently_approved"] and not r["release_approved"] for r in cross["records"])
+    assert not ({e["word"] for e in E} & set(expected_conflicts)), "Selected drafts include unresolved cross-level candidate conflicts"
     screened = {(r["level"], r["word"]): r for r in triage["records"]}
     previous = authored_before_batch74()
     pool = {r["word"].casefold(): r for r in read("UNVERIFIED_CEFR_CANDIDATES.json")["entries"]}
@@ -120,6 +130,7 @@ def audit(level):
             "source_verified": 0, "release_approved": 0,
             "editorial_risk_flags": risk_count, "problems": problems,
             "historical_cross_level_holds_unresolved": 24,
+            "batch74_candidate_cross_level_holds": 9,
             "preflight_run": 40440285272
         }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print("BATCH74", level, "checked", count, "risk flags", risk_count, "problems", json.dumps(problems))
