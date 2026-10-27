@@ -1,0 +1,1971 @@
+{
+  "schema": 1,
+  "release_status": "NOT_A_LINGUISTIC_OR_CEFR_VERIFICATION",
+  "screened_source_candidate_rows": 2225,
+  "selected": 1000,
+  "explicit_historical_holds_count": 46,
+  "cross_level_conflicting_wordforms": [
+    {
+      "word": "widespread",
+      "levels": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "word": "outweigh",
+      "levels": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "word": "staircase",
+      "levels": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "word": "handrail",
+      "levels": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "word": "counterproductive",
+      "levels": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "word": "intermittent",
+      "levels": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "word": "pothole",
+      "levels": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "word": "rainwater",
+      "levels": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "word": "bystander",
+      "levels": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "word": "understaffed",
+      "levels": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "word": "workload",
+      "levels": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "word": "footpath",
+      "levels": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "word": "windscreen",
+      "levels": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "word": "disruption",
+      "levels": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "word": "safeguard",
+      "levels": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "word": "reconfigure",
+      "levels": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "word": "austerity",
+      "levels": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "word": "turnover",
+      "levels": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "word": "dustpan",
+      "levels": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "word": "backtrack",
+      "levels": [
+        "B1",
+        "B2"
+      ]
+    }
+  ],
+  "rejected_before_quota": [
+    {
+      "word": "can",
+      "level": "A1",
+      "source_path": "draft/A1-EDITORIAL-STARTER.json",
+      "reason": "MISSING_OR_INVALID_DRAFT_FIELD"
+    },
+    {
+      "word": "am",
+      "level": "A1",
+      "source_path": "draft/A1-EDITORIAL-STARTER.json",
+      "reason": "MISSING_OR_INVALID_DRAFT_FIELD"
+    },
+    {
+      "word": "clean",
+      "level": "A1",
+      "source_path": "draft/A1-EDITORIAL-STARTER.json",
+      "reason": "MISSING_OR_INVALID_DRAFT_FIELD"
+    },
+    {
+      "word": "dirty",
+      "level": "A1",
+      "source_path": "draft/A1-EDITORIAL-STARTER.json",
+      "reason": "MISSING_OR_INVALID_DRAFT_FIELD"
+    },
+    {
+      "word": "wrong",
+      "level": "A1",
+      "source_path": "draft/A1-EDITORIAL-STARTER.json",
+      "reason": "MISSING_OR_INVALID_DRAFT_FIELD"
+    },
+    {
+      "word": "never",
+      "level": "A1",
+      "source_path": "draft/A1-EDITORIAL-STARTER.json",
+      "reason": "MISSING_OR_INVALID_DRAFT_FIELD"
+    },
+    {
+      "word": "so",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "will",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "other",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "then",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "back",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "even",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "still",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "too",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "up",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "out",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "get",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "over",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "well",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "way",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "may",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "off",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "down",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "great",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "best",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "such",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "around",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "own",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "state",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "thing",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "end",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "sure",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "ever",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "keep",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "second",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "away",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "number",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "lot",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "few",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "left",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "might",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "top",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "care",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "already",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "point",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "yet",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "hard",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "once",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "law",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "court",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "control",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "research",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "several",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "national",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "international",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "million",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "policy",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "development",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "further",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "political",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "former",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "department",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "issue",
+      "level": "A2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "pothole",
+      "level": "A2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH59.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "doormat",
+      "level": "A2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "bookshelf",
+      "level": "A2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "lunchbox",
+      "level": "A2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "raincoat",
+      "level": "A2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "shoelace",
+      "level": "A2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "handrail",
+      "level": "A2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "windscreen",
+      "level": "A2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "staircase",
+      "level": "A2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "footpath",
+      "level": "A2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH64.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "rainwater",
+      "level": "A2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH64.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "shoebox",
+      "level": "A2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH64.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "dustpan",
+      "level": "A2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH66.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "shoelace",
+      "level": "A2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH66.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "doormat",
+      "level": "A2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH66.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "raincoat",
+      "level": "A2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH66.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "bookshelf",
+      "level": "A2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH66.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "lunchbox",
+      "level": "A2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH66.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "handrail",
+      "level": "A2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH66.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "washcloth",
+      "level": "A2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH66.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "footpath",
+      "level": "A2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH66.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "hairbrush",
+      "level": "A2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH66.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "commercial",
+      "level": "B1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "defense",
+      "level": "B1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "master",
+      "level": "B1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "stock",
+      "level": "B1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "latest",
+      "level": "B1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "senior",
+      "level": "B1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "literally",
+      "level": "B1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "awesome",
+      "level": "B1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "color",
+      "level": "B1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "commission",
+      "level": "B1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "overall",
+      "level": "B1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "professor",
+      "level": "B1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "captain",
+      "level": "B1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "executive",
+      "level": "B1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "trial",
+      "level": "B1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "digital",
+      "level": "B1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "grand",
+      "level": "B1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "prior",
+      "level": "B1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "twice",
+      "level": "B1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "MISSING_OR_INVALID_DRAFT_FIELD"
+    },
+    {
+      "word": "totally",
+      "level": "B1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "MISSING_OR_INVALID_DRAFT_FIELD"
+    },
+    {
+      "word": "estate",
+      "level": "B1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "chairman",
+      "level": "B1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "institute",
+      "level": "B1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "staircase",
+      "level": "B1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "handrail",
+      "level": "B1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "rainwater",
+      "level": "B1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH59.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "footpath",
+      "level": "B1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "windscreen",
+      "level": "B1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "pothole",
+      "level": "B1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "understaffed",
+      "level": "B1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "workload",
+      "level": "B1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "workshop",
+      "level": "B1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH62.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "dustpan",
+      "level": "B1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH63.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "bystander",
+      "level": "B1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH64.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "safeguard",
+      "level": "B1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH66.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "widespread",
+      "level": "B1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH66.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "outweigh",
+      "level": "B1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH66.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "workload",
+      "level": "B1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH66.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "turnover",
+      "level": "B1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH66.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "backtrack",
+      "level": "B1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH66.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "disruption",
+      "level": "B1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH68.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "roof",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "tip",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "baseball",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "cable",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "championship",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "wet",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "burn",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "loud",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "battery",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "chest",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "debut",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "license",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "pilot",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "campus",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "fee",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "musical",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "cap",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "lock",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "neighborhood",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "shoulder",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "shower",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "wheel",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "coal",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "inch",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "monster",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "smell",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "finger",
+      "level": "B2",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "outweigh",
+      "level": "B2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "credibility",
+      "level": "B2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "bystander",
+      "level": "B2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH59.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "understaffed",
+      "level": "B2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH59.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "workload",
+      "level": "B2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH59.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "disruption",
+      "level": "B2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "understaffed",
+      "level": "B2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "safeguard",
+      "level": "B2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "compliance",
+      "level": "B2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "credibility",
+      "level": "B2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "disruption",
+      "level": "B2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "jurisdiction",
+      "level": "B2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "liability",
+      "level": "B2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "resilience",
+      "level": "B2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "transparency",
+      "level": "B2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "turnover",
+      "level": "B2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH62.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "backtrack",
+      "level": "B2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH63.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "reconfigure",
+      "level": "B2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH64.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "intermittent",
+      "level": "B2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH66.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "counterproductive",
+      "level": "B2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH66.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "resilience",
+      "level": "B2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH66.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "austerity",
+      "level": "B2",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH68.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "tracking",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "vary",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "venue",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "wages",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "accuracy",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "artificial",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "beneath",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "shelter",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "powder",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "rude",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "screw",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "seventh",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "sooner",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "spider",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "bullet",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "deposit",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "destination",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "export",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "gather",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "formerly",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "jealous",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "relate",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "dirt",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "lazy",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "habit",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "pat",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "robot",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "tunnel",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "wound",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "casual",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "essay",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "expense",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "substance",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "tension",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "motivation",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "affordable",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "biology",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "departure",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "employer",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "explosion",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "generate",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "imagination",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "pension",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "graphic",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "reception",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "serial",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "strict",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "accidentally",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "briefly",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "completion",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "gravity",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "shed",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "flesh",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "twist",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "arc",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "bitter",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "opponent",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "occupation",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "dose",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "laser",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "loyal",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "patch",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "bronze",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "canal",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "cave",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "pollution",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "prisoner",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "attract",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "wealthy",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "lightning",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "exploration",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "cargo",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "bacteria",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "confusion",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "humor",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "nasty",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "nonsense",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "highlight",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "detective",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "mentally",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "radar",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "bulk",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "distant",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "blade",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "transit",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "villa",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "communicate",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "creator",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "poet",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "backup",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "slight",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "practically",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "CURRICULUM_OR_SENSE_LEVEL_DOUBT"
+    },
+    {
+      "word": "widespread",
+      "level": "C1",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "complacency",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "disillusionment",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "counterproductive",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "intermittent",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "circumvent",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "coalesce",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "corroborate",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "disparage",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "elucidate",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "exacerbate",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "extrapolate",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "inadvertent",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "incongruous",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "misconstrue",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "reconfigure",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "relinquish",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "ameliorate",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "austerity",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "corroborate",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "delineate",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "dichotomy",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "disproportionate",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "exacerbate",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "inadvertent",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "obfuscate",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "entrench",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH64.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "exonerate",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH64.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "misconstrue",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH64.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "perpetuate",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH64.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "relinquish",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH64.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "vindicate",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH64.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "juxtapose",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH66.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "obfuscate",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH66.json",
+      "reason": "DUPLICATE_HEADWORD_SOURCE"
+    },
+    {
+      "word": "reciprocity",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH67.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    },
+    {
+      "word": "corroboration",
+      "level": "C1",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH67.json",
+      "reason": "EXISTING_CANDIDATE_OR_CROSS_LEVEL_HOLD"
+    }
+  ],
+  "selection_after_quota_not_reviewed": true,
+  "notes": "Discard/skip is not definitive lexical judgement: editorial decisions are reversible after source-supported review. Selected 1000 are held, not independently approved."
+}
