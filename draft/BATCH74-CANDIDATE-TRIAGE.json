@@ -1,0 +1,4603 @@
+{
+  "schema": 1,
+  "batch": 74,
+  "source": "Actual successful GitHub Actions run 40440285272, ALL job 121978723102; decoded job log",
+  "stage": "MECHANICAL_CANDIDATE_TRIAGE_ONLY_NOT_EDITORIAL_APPROVAL",
+  "screened": 549,
+  "clear_only": 261,
+  "quarantined": 288,
+  "records": [
+    {
+      "level": "A2",
+      "word": "birdhouse",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "bookmark",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "breadboard",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "bookshelf",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "campsite",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "carpool",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "caterpillar",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "cookbook",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "cupcake",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "daydream",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "doorknob",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "driveway",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "earache",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "earthworm",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "flashlight",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "footpath",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "footstep",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "goldfish",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "grasshopper",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "greenhouse",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "haircut",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "hairdryer",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "hairbrush",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "headache",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "houseplant",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "keyring",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "ladybird",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "laundry",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "lifeboat",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "mailbox",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "milkshake",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "moonlight",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "motorway",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "necklace",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "oatmeal",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "overcoat",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "playground",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "raincoat",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "raindrop",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "rainwater",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "roadside",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "rowboat",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "sailboat",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "skateboard",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "snowman",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "sunflower",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "toothpaste",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "toothbrush",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "treadmill",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "wallpaper",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "watermelon",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "windmill",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "windshield",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "woodwork",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "workbook",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "workshop",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "wristwatch",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "yoghurt",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "zebra",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "seashore",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "lighthouse",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "drainpipe",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "headlamp",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "snowflake",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "pinecone",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "seashell",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "fishpond",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "doorbell",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "armchair",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "rainstorm",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "teapot",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "shoelace",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "sandcastle",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "wheelbarrow",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "handrail",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "backpack",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "backache",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "dishwasher",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "handkerchief",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "hairpin",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "jellyfish",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "saucepan",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "affordability",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "accessibility",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "accountability",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "adaptable",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "adjustment",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "alignment",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "ambiguity",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "anticipation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "appliance",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "apprenticeship",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "appreciation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "arrangement",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "assessment",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "attachment",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "awareness",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "beneficiary",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "collaboration",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "commitment",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "compliance",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "consultation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "contribution",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "coordination",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "creativity",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "credibility",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "dedication",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "deforestation",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "delivery",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "dependence",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "deployment",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "disruption",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "diversity",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "eligibility",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "empathy",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "encouragement",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "engagement",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "enrolment",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "equality",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "evaluation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "expectation",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "flexibility",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "forecasting",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "frustration",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "guidance",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "implementation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "improvement",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "inclusion",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "initiative",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "innovation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "inspection",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "integration",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "interaction",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "interruption",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "investment",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "leadership",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "livelihood",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "maintenance",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "manufacturing",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "mentorship",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "motivation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "negotiation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "networking",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "objection",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "obligation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "opportunity",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "optimism",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "ownership",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "partnership",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "productivity",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "qualification",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "reliability",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "resilience",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "responsibility",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "retention",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "satisfaction",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "scholarship",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "sustainability",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "transparency",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "uncertainty",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "unemployment",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "wellbeing",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "withdrawal",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "workload",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "unfairness",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "inequality",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "unsuitable",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "outdated",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "overpriced",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "discounted",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "damaged",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "refill",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "renewal",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "cautionary",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "coauthor",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "coworker",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "commuter",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "complaint",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "congestion",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "decoration",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "donation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "endurance",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "familiarity",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "frequency",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "gratitude",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "hesitation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "hostility",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "immunity",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "inaccuracy",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "indecision",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "inflation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "insecurity",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "jealousy",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "kindness",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "literacy",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "loneliness",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "mobility",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "originality",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "pension",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "punctuality",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "recovery",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "recycling",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "referral",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "relocation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "replacement",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "resignation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "settlement",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "shortage",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "specialty",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "starvation",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "taxation",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "tenancy",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "timetable",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "vacancy",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "warehouse",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "adaptability",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "adversity",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "allocation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "ambivalent",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "amplification",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "arbitration",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "assimilation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "autonomy",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "benchmarking",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "bureaucracy",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "catalyst",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "coherence",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "complacency",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "concession",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "consensus",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "contingency",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "convergence",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "correlation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "credibility",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "deterioration",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "deterrent",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "diligence",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "discrepancy",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "diversification",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "efficiency",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "elasticity",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "endorsement",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "enforcement",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "equilibrium",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "escalation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "feasibility",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "fluctuation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "fragmentation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "governance",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "hierarchy",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "holistic",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "incentive",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "inconsistency",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "inefficiency",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "infrastructure",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "infringement",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "ingenuity",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "interdependence",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "interoperability",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "intervention",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "legitimacy",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "liability",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "marginal",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "mitigation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "negligence",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "optimisation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "oversight",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "paradox",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "permeability",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "plausibility",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "prerequisite",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "prioritisation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "proportionality",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "reconciliation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "redundancy",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "reinforcement",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "relevance",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "remuneration",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "resilience",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "scalability",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "scrutiny",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "sensitivity",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "standardisation",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "susceptibility",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "synthesis",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "threshold",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "tradeoff",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "trajectory",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "transparency",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "volatility",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "vulnerability",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "aptitude",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "asymmetry",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "austerity",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "bewilderment",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "cohesion",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "commemoration",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "compassion",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "compensation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "confidentiality",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "conformity",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "corroboration",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "deceleration",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "defiance",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "delegation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "dependency",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "detachment",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "diplomacy",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "disillusionment",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "disposal",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "dominance",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "empowerment",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "encroachment",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "entanglement",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "entrepreneurship",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "exemption",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "exploitation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "foresight",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "formulation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "grievance",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "impairment",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "improvisation",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "inclination",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "instability",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "intuition",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "leverage",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "misconception",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "moderation",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "momentum",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "neutrality",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "notoriety",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "obsolescence",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "persuasion",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "prejudice",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "propensity",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "provocation",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "proximity",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "rationalisation",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "realignment",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "reciprocity",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "reluctance",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "resentment",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "restoration",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "restraint",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "resurgence",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "scepticism",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "solidarity",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "speculation",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "stewardship",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "subsidy",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "turbulence",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "upheaval",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "aberration",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "acquiescence",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "adulation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "affability",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "ambivalence",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "anachronism",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "animosity",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "antipathy",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "appeasement",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "arbitrariness",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "austerity",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "belligerence",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "benevolence",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "capriciousness",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "circumspection",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "coercion",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "commensurate",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "complacency",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "condescension",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "conflation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "conscientiousness",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "contrition",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "contrivance",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "corroboration",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "credulity",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "culpability",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "deference",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "delineation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "demagoguery",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "denigration",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "derision",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "despondency",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "dichotomy",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "diffidence",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "disambiguation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "disillusionment",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "disingenuous",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "dissonance",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "dogmatism",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "duplicity",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "equivocation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "erudition",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "exacerbation",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "expediency",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "fallibility",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "fastidiousness",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "fortitude",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "futility",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "hegemony",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "hypocrisy",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "idiosyncrasy",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "impasse",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "impermanence",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "incongruity",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "incredulity",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "indifference",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "intransigence",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "introspection",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "irrefutable",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "juxtaposition",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "magnanimity",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "malfeasance",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "mendacity",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "meticulousness",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "obfuscation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "obstinacy",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "omniscience",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "ostentation",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "paradoxical",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "parsimony",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "perfunctory",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "pernicious",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "pertinacity",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "pragmatism",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "prevarication",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "proclivity",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "profundity",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "propriety",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "recalcitrance",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "reciprocity",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "rectitude",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "retribution",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "reverence",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "rhetoric",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "salience",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "scepticism",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "sophistry",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "subterfuge",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "taciturnity",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "tenuous",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "transience",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "trepidation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "ubiquity",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "vacillation",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "vindication",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "volition",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "zealotry",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "abnegation",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "acculturation",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "acrimony",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "admonition",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "anathema",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "antithesis",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "apathy",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "assiduity",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "atonement",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "avarice",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "blasphemy",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "candour",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "catharsis",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "coerciveness",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "commiseration",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "complicity",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "conciliation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "confluence",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "conjecture",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "consternation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "contemptuousness",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "contumacy",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "debasement",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "decorum",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "defamation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "demureness",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "dereliction",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "desolation",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "deterrence",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "didacticism",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "disavowal",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "disconcertion",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "disempowerment",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "disenchantment",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "disparagement",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "dissidence",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "effrontery",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "elusiveness",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "embitterment",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "emulation",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "enervation",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "equivocality",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "exasperation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "exhortation",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "exoneration",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "expedience",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "fallaciousness",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "frivolity",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "garrulousness",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "gravitas",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "heedlessness",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "hyperbole",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "imperviousness",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "implacability",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "incongruousness",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "indefatigability",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "indolence",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "inexorability",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "infallibility",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "insularity",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "intercession",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "irascibility",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "irreverence",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "jurisprudence",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "laconicism",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "malleability",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "misanthropy",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "munificence",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "nonchalance",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "obduracy",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "obscurantism",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "omnipotence",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "opportunism",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "orthodoxy",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "overreach",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "pedantry",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "perfidy",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "perspicacity",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "polemic",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "prescience",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "presumption",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "quiescence",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "rancour",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "recidivism",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "recrimination",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "remonstration",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "reticence",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "sanctimony",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "scornfulness",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "selflessness",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "solipsism",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "stoicism",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "subservience",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "superfluity",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "tacitness",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "temerity",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "transgression",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "ALREADY_IN_AUTHORED_DRAFT",
+        "EXISTING_EDITORIAL_HOLD"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "unassailability",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "vindictiveness",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "vitriol",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    }
+  ]
+}
