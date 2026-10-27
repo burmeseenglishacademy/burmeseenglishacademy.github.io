@@ -58,6 +58,7 @@ jobs:
           python3 tools/audit_cefr_1000_cambridge_c1_ten.py --level ALL --self-test
           python3 tools/audit_cefr_1000_cambridge_b1_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_a2_twelve.py --level ALL --self-test
+          python3 tools/audit_cefr_1000_oxford_b1_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_dictionary_c1.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_c1_five.py --level ALL --self-test
           node --check cefr-vocabulary.js
