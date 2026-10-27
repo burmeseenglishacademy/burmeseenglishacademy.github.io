@@ -51,6 +51,18 @@ assert any("generic non-word-specific reference" in x for x in issues), issues
 assert any("reviewed_burmese not independently verified" in x for x in issues), issues
 assert any("Exactly 1000 entries required" in x for x in issues), issues
 assert any("Release status" in x for x in issues), issues
+# The provisional A1 'i' spelling is not acceptable in a future approved
+# manifest even though all word matching is case-insensitive.
+entry["word"] = "i"
+entry["example_sentence"] = "I am ready."
+issues = module.validate(data)
+assert any("first-person singular pronoun must be displayed as capital I" in x for x in issues), issues
+entry["word"] = "I"
+issues = module.validate(data)
+assert not any("first-person singular pronoun must be displayed as capital I" in x for x in issues), issues
+entry["word"] = "apple"
+entry["example_sentence"] = "I eat an apple."
+
 entry["source_burmese"] = "https://dictionary.cambridge.org/dictionary/english/apple"
 entry["source_level"] = "https://dictionary.cambridge.org/dictionary/english/apple"
 issues = module.validate(data)
