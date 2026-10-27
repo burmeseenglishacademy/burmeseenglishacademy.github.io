@@ -56,8 +56,10 @@ Actual CI runs and logs examined:
 | Final George and Emma headword+example audio | **No final-shortlist generated-audio manifest or independent listening signoff established**; 0 verified listening receipts; do not alter existing production audio |
 | Desktop/mobile Chromium and WebKit | No completed release-candidate regression receipts |
 | Real physical iPhone Safari | No device/audio reviewer evidence; never infer from desktop emulation |
-| GitHub Pages limits | Official 1 GB published-site cap and 100 GB/month soft bandwidth referenced by existing tests; **no measured final artifact/bandwidth evidence** |
+| GitHub Pages limits | Official 1 GB published-site cap and 100 GB/month soft bandwidth confirmed from GitHub Docs on 2026-10-27; **no measured final artifact/bandwidth evidence** |
 | Preserve 54 lessons, separate IELTS 1,000, production George/Emma audio and privacy | Staging CI comparison with `main` reports protected files unchanged; final release preservation attestation missing |
 | Approved 1,000-entry manifest and confirmed live deployment | **Missing; production unchanged** |
+
+**Hosting source verification (2026-10-27):** [GitHub Pages official limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits) specify a recommended 1 GB source-repository limit, 1 GB maximum published site, 10-minute deployment timeout, 100 GB/month soft bandwidth limit and 10 builds/hour soft limit (custom GitHub Actions publishing exempt from that last limit). This is policy verification only, **not a measured website or traffic signoff**.
 
 **Next work:** collect further exact-sense primary-source observations and high-risk Myanmar/example discrepancies; route independent review to actual qualified humans; preserve immutable reviewer receipts. Only after 1,000 approvals, real audio generation/listening, physical iPhone, desktop/mobile, measured hosting and protected-assets checks may a release candidate be prepared. Never use a green report-only Actions run as permission to publish.
