@@ -83,11 +83,13 @@ def run(level):
         assert not unlevelled,unlevelled[:10]
         distinct=set().union(*unique.values())
         staged_counts={lvl:len(unique[lvl]) for lvl in ('A1','A2','B1','B2','C1')}
-        cross_tier=sum(1 for w in distinct if sum(w in s for s in unique.values())>1)
+        cross_level_detail={w:[lvl for lvl in ('A1','A2','B1','B2','C1') if w in unique[lvl]] for w in sorted(distinct) if sum(w in s for s in unique.values())>1}
+        cross_tier=len(cross_level_detail)
+        print('BATCH72 CROSS_LEVEL_HOLD_WORDS',json.dumps(cross_level_detail,ensure_ascii=False))
         print('BATCH72 STAGED DISTINCT HEADWORDS',len(distinct),'PER_LEVEL',json.dumps(staged_counts),'CROSS_LEVEL',cross_tier,'REPEATED_OCCURRENCES',sum(v-1 for v in occurrences.values()))
         assert 'UNVERIFIED_DRAFT_DO_NOT_PUBLISH' in (ROOT/'cefr-vocabulary-data.js').read_text(encoding='utf-8')
         assert re.search(r'entries:\s*\[\s*\]',(ROOT/'cefr-vocabulary-data.js').read_text(encoding='utf-8'))
-        (ROOT/'batch72-triage-results.json').write_text(json.dumps({'batch':72,'drafts':40,'by_level':COUNTS,'batch70_mechanically_clear_only':previous_clear,'new_batch72_mechanically_clear_only':new_unscreened,'independently_approved':0,'audio_generated':0,'problems':problems,'staged_distinct_headwords':len(distinct),'staged_per_level_unique_headwords':staged_counts,'cross_level_wordforms':cross_tier,'repeated_occurrences':sum(v-1 for v in occurrences.values())},ensure_ascii=False,indent=2)+'\\n',encoding='utf-8')
+        (ROOT/'batch72-triage-results.json').write_text(json.dumps({'batch':72,'drafts':40,'by_level':COUNTS,'batch70_mechanically_clear_only':previous_clear,'new_batch72_mechanically_clear_only':new_unscreened,'independently_approved':0,'audio_generated':0,'problems':problems,'staged_distinct_headwords':len(distinct),'staged_per_level_unique_headwords':staged_counts,'cross_level_wordforms':cross_tier,'cross_level_detail':cross_level_detail,'repeated_occurrences':sum(v-1 for v in occurrences.values())},ensure_ascii=False,indent=2)+'\\n',encoding='utf-8')
     print('BATCH72',level,'structurally checked',selected,'earlier-preflight-clear-only',previous_clear,'new-batch72-preflight-clear-only',new_unscreened,'cross-corpus problems',json.dumps(problems,ensure_ascii=False))
     assert not problems,'Cross-corpus problems require repair; all drafts stay held'
     print('PASS: structural-only. All quarantined. No independent approval, audio or publication.')
