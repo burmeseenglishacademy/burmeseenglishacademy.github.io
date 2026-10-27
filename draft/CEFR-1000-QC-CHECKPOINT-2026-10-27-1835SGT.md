@@ -53,3 +53,23 @@ Oxford direct dictionary entries did **not** show a word-specific CEFR level for
 ## Release decision
 
 **BLOCKED / STAGING ONLY.** Every retained word needs independent English, fluent Myanmar, original-example and source-backed sense/CEFR review, then final both-voice word+example recordings with real human listening, desktop/mobile regressions, physical iPhone Safari evidence, measured GitHub Pages capacity/bandwidth, final protected-assets attestation and confirmed live deployment. No user notification before all gates truly pass.
+
+
+## 2026-10-27 19:22 SGT — exact-sense receipt hardening (no human approval)
+
+**Staging code commit:** [`ad40bacb773845365074047cddfd2d541f6f9251`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/ad40bacb773845365074047cddfd2d541f6f9251). Only `tools/audit_cefr_1000_launch_readiness.py` and mock-only `tests/cefr-1000-independent-stage-source-binding.py` changed; no production content or audio was edited.
+
+A generic dictionary URL mentioning the headword, an Oxford word/POS list PDF, a publisher search-index snippet, or an Oxford topic CEFR tag can no longer count as independent **exact-sense** English/CEFR review evidence. The future independent-human receipt must identify a directly observed approved publisher dictionary entry, a dated source observation not later than review, a sense heading and substantive source observation. For exact-sense CEFR signoff it must additionally declare a word-specific publisher CEFR label, quote a short source fragment, and match the approved entry's CEFR level. Receipt shape validation cannot authenticate the reviewer or independently prove that the source text is genuine; an external human still must check both.
+
+**Executed GitHub Actions:** [run 40495608585](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40495608585), commit `ad40bacb773845365074047cddfd2d541f6f9251`, job **122160146940**: **completed/success**. Actual decoded job log confirms mock-only publisher exact-sense/date/CEFR negative tests PASS, release-auditor self-tests PASS, production-protection diff PASS. The workflow is explicitly **report-only**, not a go-live authorisation; log says `source-reviewed 0 /1000`, `both-voice listening 0 /1000`, production confirmed `False`.
+
+| Level | First-pass bilingual written | Independently signed off | Final two-voice word+example listening signed off |
+|---|---:|---:|---:|
+| A1 | 200 | 0 | 0 |
+| A2 | 200 | 0 | 0 |
+| B1 | 200 | 0 | 0 |
+| B2 | 200 | 0 | 0 |
+| C1 | 200 | 0 | 0 |
+| **Total** | **1,000** | **0** | **0** |
+
+**Release remains BLOCKED, staging only.** No approved release manifest; all human English/Myanmar/example/exact-sense CEFR receipts, final George/Emma generated audio and real listening signoff, browser/mobile regressions, physical iPhone Safari evidence, measured hosting limits, final protected-production-asset attestation and live deployment confirmation remain outstanding. Do not merge, deploy, or notify completion.
