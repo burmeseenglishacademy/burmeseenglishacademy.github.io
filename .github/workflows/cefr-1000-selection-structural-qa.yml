@@ -16,6 +16,8 @@ on:
       - tools/audit_cefr_1000_oxford_discrepancy.py
       - draft/CEFR-1000-OXFORD-DIRECT-PDF-SPOTCHECK-2026-10-27.json
       - tools/audit_cefr_1000_oxford_direct_spotcheck.py
+      - draft/CEFR-1000-CAMBRIDGE-SENSE-TRIAGE-2026-10-27.json
+      - tools/audit_cefr_1000_cambridge_sense.py
       - .github/workflows/cefr-1000-selection-structural-qa.yml
   workflow_dispatch:
 permissions:
@@ -43,6 +45,11 @@ jobs:
       - name: Reject forged PDF provenance, level drift and fake independent approval
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_direct_spotcheck.py --level ALL --self-test
+      - name: Audit Cambridge publisher sense-level editorial leads without independent approval
+        run: python3 tools/audit_cefr_1000_cambridge_sense.py --level "${{ matrix.level }}"
+      - name: Reject forged Cambridge sense labels and false independent approval
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_cambridge_sense.py --level ALL --self-test
       - name: Cross-check actual shared wordforms with protected IELTS 1000 dataset
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_ielts_overlap.py
@@ -60,5 +67,6 @@ jobs:
           path: |
             cefr-1000-shortlist-qa-${{ matrix.level }}.json
             cefr-1000-oxford-direct-spotcheck-${{ matrix.level }}.json
+            cefr-1000-cambridge-sense-${{ matrix.level }}.json
           if-no-files-found: error
           retention-days: 30
