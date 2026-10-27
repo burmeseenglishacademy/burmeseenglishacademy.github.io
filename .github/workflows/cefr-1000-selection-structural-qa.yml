@@ -9,6 +9,9 @@ on:
       - tools/audit_cefr_1000_shortlist.py
       - draft/CEFR-1000-IELTS-OVERLAP-REVIEW.json
       - tools/audit_cefr_1000_ielts_overlap.py
+      - draft/CEFR-1000-OXFORD-LEVEL-POS-CROSSCHECK.json
+      - draft/CEFR-1000-OXFORD-DISCREPANCY-QUARANTINE.json
+      - tools/audit_cefr_1000_oxford_discrepancy.py
       - .github/workflows/cefr-1000-selection-structural-qa.yml
   workflow_dispatch:
 permissions:
@@ -29,6 +32,8 @@ jobs:
       - name: Reject fake approval or duplicate word in negative tests
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_shortlist.py --level ALL --self-test
+      - name: Audit Oxford 3000/5000 CEFR-POS level discrepancies without automatic retiering
+        run: python3 tools/audit_cefr_1000_oxford_discrepancy.py --level "${{ matrix.level }}"
       - name: Cross-check actual shared wordforms with protected IELTS 1000 dataset
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_ielts_overlap.py
