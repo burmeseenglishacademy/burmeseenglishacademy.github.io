@@ -82,7 +82,11 @@ def audit(packet, shortlist):
         if original is None:
             issues.append(word + ": absent from shortlist")
             continue
-        snapshot = {k: original.get(k) for k in ("english_definition", "myanmar_meaning", "example_sentence")}
+        snapshot = {
+            "english_definition": original.get("english_definition"),
+            "myanmar_meaning": original.get("burmese_meaning"),
+            "example_sentence": original.get("example_sentence"),
+        }
         if rec.get("shortlist_snapshot") != snapshot or rec.get("part_of_speech") != original.get("part_of_speech"):
             issues.append(word + ": original English/Myanmar/example/POS drift")
         if rec.get("editorial_hold") is not True or original.get("editorial_hold") is not True:
