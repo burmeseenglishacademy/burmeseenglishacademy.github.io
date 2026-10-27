@@ -7,6 +7,8 @@ on:
       - draft/CEFR-1000-INDEPENDENT-REVIEW-TASKS.json
       - draft/CEFR-1000-SELECTION-TRIAGE.json
       - tools/audit_cefr_1000_shortlist.py
+      - draft/CEFR-1000-IELTS-OVERLAP-REVIEW.json
+      - tools/audit_cefr_1000_ielts_overlap.py
       - .github/workflows/cefr-1000-selection-structural-qa.yml
   workflow_dispatch:
 permissions:
@@ -27,6 +29,9 @@ jobs:
       - name: Reject fake approval or duplicate word in negative tests
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_shortlist.py --level ALL --self-test
+      - name: Cross-check actual shared wordforms with protected IELTS 1000 dataset
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_ielts_overlap.py
       - name: Confirm existing production lessons, IELTS, George Emma and privacy untouched
         if: ${{ matrix.level == 'ALL' }}
         run: |
