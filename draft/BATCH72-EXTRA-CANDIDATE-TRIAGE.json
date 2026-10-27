@@ -1,0 +1,1335 @@
+{
+  "schema": 1,
+  "batch": 72,
+  "source": "Actual successful GitHub Actions run 40427541316 ALL job 121936961515",
+  "stage": "MECHANICAL_CANDIDATE_TRIAGE_ONLY_NOT_APPROVAL",
+  "screened": 164,
+  "clear_only": 82,
+  "quarantined": 82,
+  "records": [
+    {
+      "level": "A2",
+      "word": "colander",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "ladle",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "saucepan",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "chopsticks",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "sponge",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "mop",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "dustpan",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "pillowcase",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "pothole",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "crosswalk",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "headlamp",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "thermos",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "lunchbox",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "shoelace",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "bookcase",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "doormat",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "firewood",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "rainfall",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "sunlight",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "snowfall",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "eyelid",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "eyebrow",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "wristband",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "apron",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "sleeve",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "zipper",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "pocket",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "bathrobe",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "blanket",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "mattress",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "stool",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "stepladder",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "toolbox",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "drainpipe",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "doorstep",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "handbag",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "recycling",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "litter",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "pebble",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "puddle",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "fountain",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "waterfall",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "valley",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "cliff",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "seashore",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "backyard",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "lighthouse",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "traffic",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "pedestrian",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "A2",
+      "word": "umbrella",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "oversleep",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "unplug",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "rewind",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "reheat",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "repaint",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "restock",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "reschedule",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "misjudge",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "reassemble",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "shortage",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "wastage",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "shipment",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "reminder",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "overdue",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "understaffed",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "unavailable",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "reliable",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "affordable",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "inconvenient",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "unexpected",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "misleading",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "suspicious",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "permission",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "reluctant",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "hesitant",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "courteous",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "outspoken",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "thoughtful",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "compassionate",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "conscientious",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "enthusiastic",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "considerate",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "disagreement",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "misunderstanding",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "dissatisfaction",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "irregularity",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "unfairness",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "inequality",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "clarification",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "reassessment",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "improvement",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "safeguard",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "unintended",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "impractical",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "unsuitable",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "outdated",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "overpriced",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "discounted",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "damaged",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "replacement",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "refundable",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "refill",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B1",
+      "word": "renewal",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "reconciliation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "decentralisation",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "interdependency",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "auditability",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "decarbonisation",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "noncompliance",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "redundancy",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "intermittent",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "rectification",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "reimbursement",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "insolvency",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "depreciation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "procurement",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "allocation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "discrepancy",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "mitigation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "repercussion",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "deviation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "inconsistency",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "inadequacy",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "proficiency",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "competency",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "integrity",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION",
+        "UNVERIFIED_POOL_TIER_DISAGREEMENT"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "accountability",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "adaptability",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "resilience",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "feasibility",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "viability",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "sustainability",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "utilisation",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "incentive",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "restructuring",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "streamlining",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "reconfiguration",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "prioritisation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "transparency",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "vulnerability",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "confidentiality",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "diligence",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "complacency",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "arbitration",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "mediation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "negotiation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "facilitation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "oversight",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "escalation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "justification",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "substantiation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "implication",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "intervention",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "B2",
+      "word": "compensation",
+      "mechanical_status": "QUARANTINE",
+      "risk_flags": [
+        "PRIOR_AUTHORED_COLLISION"
+      ],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "vehemence",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "vilification",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "remonstrance",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "relentlessness",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "triviality",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "mollification",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "grandiosity",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "sanctimony",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "omnipresence",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    },
+    {
+      "level": "C1",
+      "word": "discomposure",
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
+      "independently_checked": false
+    }
+  ]
+}
