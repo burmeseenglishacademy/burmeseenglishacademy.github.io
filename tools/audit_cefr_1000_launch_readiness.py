@@ -77,6 +77,13 @@ def audit(ledger=None, after_deployment=False):
               "hosting_evidence_verified": False,
               "production_assets_preserved": False,
               "live_site_confirmed": False,
+              "oxford_reference_flags_in_provisional_shortlist": 0,
+              "oxford_conflicts_requiring_independent_resolution": 0,
+              "oxford_conflicts_resolution_receipts_valid": 0,
+              "ielts_shared_headwords_in_provisional_shortlist": 0,
+              "ielts_overlaps_requiring_independent_resolution": 0,
+              "ielts_overlaps_resolution_receipts_valid": 0,
+              "validated_audio_voice_text_pairs": 0,
               "check_type": "DOCUMENTARY_EVIDENCE_INTEGRITY_NOT_REAL_WORLD_CONFIRMATION"}
     if d.get("scope_targets") != TARGETS:
         issues.append("Wrong 200-per-level approved scope")
@@ -153,6 +160,82 @@ def audit(ledger=None, after_deployment=False):
     if report["independent_stage_complete"] != TARGETS:
         issues.append("Not all 200 entries in every level have independent stage signoffs")
 
+    # Check prior Oxford wordlist CEFR/POS differences are not forgotten when
+    # the final approved shortlist is selected. An alternate CEFR score is a
+    # review task, NOT proof of an error, and resolved claims need real reviewers.
+    oxford_holds = read_json(ROOT / "draft/CEFR-1000-OXFORD-DISCREPANCY-QUARANTINE.json")
+    reported_risks = oxford_holds.get("records", [])
+    report["oxford_reference_flags_in_provisional_shortlist"] = len(reported_risks)
+    ox_receipts = d.get("oxford_level_discrepancy_review_receipts", [])
+    if not isinstance(ox_receipts, list):
+        issues.append("Oxford discrepancy review receipts are not a list")
+        ox_receipts = []
+    ox_index = {}
+    for rec in ox_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Invalid Oxford discrepancy reviewer record")
+            continue
+        key = (rec.get("word"), rec.get("proposed_level"))
+        if key in ox_index:
+            issues.append("Duplicate Oxford discrepancy reviewer record")
+        ox_index[key] = rec
+    entry_lookup = {(x.get("word"), x.get("level")): x for x in entries if isinstance(x, dict)}
+    for hold in reported_risks:
+        key = (hold["word"], hold["proposed_level"])
+        if key not in entry_lookup:
+            continue  # Replaced/retiered entries must undergo independent new-entry review.
+        report["oxford_conflicts_requiring_independent_resolution"] += 1
+        rec = ox_index.get(key)
+        entry = entry_lookup[key]
+        if not real_observation(rec, ("reviewer_id", "notes", "source_url")):
+            continue
+        if (rec.get("decision") != "RETAIN_WITH_INDEPENDENT_SENSE_LEVEL_EVIDENCE"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or rec.get("verified_part_of_speech") != entry.get("part_of_speech")
+                or rec.get("verified_cefr_level") != entry.get("level")
+                or not specific_url(rec.get("source_url"))
+                or entry["word"] not in urlparse(rec["source_url"]).path.lower()):
+            continue
+        report["oxford_conflicts_resolution_receipts_valid"] += 1
+    if report["oxford_conflicts_requiring_independent_resolution"] != report["oxford_conflicts_resolution_receipts_valid"]:
+        issues.append("Oxford POS/level/source or absent-core-list discrepancies remain unresolved for retained entries")
+    if ox_index and set(ox_index) - {(x["word"], x["proposed_level"]) for x in reported_risks}:
+        issues.append("Unknown Oxford discrepancy receipts supplied")
+
+    # Cross-bank duplication is not automatically wrong, but each retained
+    # overlap must have an independent documented semantic/teaching rationale.
+    crossbank = read_json(ROOT / "draft/CEFR-1000-IELTS-OVERLAP-REVIEW.json")
+    shared = crossbank.get("entries", [])
+    report["ielts_shared_headwords_in_provisional_shortlist"] = len(shared)
+    decisions = d.get("ielts_cross_bank_overlap_review_receipts", [])
+    if not isinstance(decisions, list):
+        issues.append("IELTS overlap decisions are not a list")
+        decisions = []
+    decisions_by_word = {}
+    for rec in decisions:
+        if not isinstance(rec, dict):
+            issues.append("Invalid IELTS overlap decision")
+            continue
+        key = (rec.get("word"), rec.get("proposed_cefr_level"))
+        if key in decisions_by_word:
+            issues.append("Duplicate IELTS overlap decision")
+        decisions_by_word[key] = rec
+    for record in shared:
+        key = (record["word"], record["proposed_cefr_level"])
+        if key not in entry_lookup:
+            continue
+        report["ielts_overlaps_requiring_independent_resolution"] += 1
+        rec = decisions_by_word.get(key)
+        entry = entry_lookup[key]
+        if (real_observation(rec, ("reviewer_id", "notes"))
+                and rec.get("decision") in ("RETAIN_DISTINCT_SENSE", "RETAIN_DISTINCT_CEFR_TEACHING_CONTEXT")
+                and rec.get("reviewed_content_sha256") == content_hash(entry)):
+            report["ielts_overlaps_resolution_receipts_valid"] += 1
+    if report["ielts_overlaps_requiring_independent_resolution"] != report["ielts_overlaps_resolution_receipts_valid"]:
+        issues.append("Retained CEFR/IELTS headword overlaps have not undergone independent sense/usefulness review")
+    if decisions_by_word and set(decisions_by_word) - {(x["word"], x["proposed_cefr_level"]) for x in shared}:
+        issues.append("Unknown IELTS overlap reviewer decisions supplied")
+
     # Audio real-listening receipts are 1 per unique word/example text and voice.
     # The separate validator must ALSO confirm files exist and decode.
     audio = d.get("audio_listening_receipts", [])
@@ -181,20 +264,24 @@ def audit(ledger=None, after_deployment=False):
         issues.append(f"Listening coverage {len(audio_seen)} records / {len(expected_audio)} required voice-text pairs")
     if audio_seen and set(audio_seen) != expected_audio:
         issues.append("Listening receipts do not exactly cover the approved headword/example corpus")
+    verified_pairs = set()
     for key in expected_audio:
         r = audio_seen.get(key)
         if not real_observation(r, ("reviewer_id", "notes", "recording_sha256")) or not SHA256.fullmatch(str((r or {}).get("recording_sha256", ""))):
             continue
-        # A recording digest must actually correspond to the immutable file.
+        # Counting as listened requires matching the actual immutable MP3 bytes.
         text, voice = key
         file = ROOT / "audio" / voice / (hashlib.sha256(text.encode("utf8")).hexdigest()[:24] + ".mp3")
         if not file.is_file() or hashlib.sha256(file.read_bytes()).hexdigest() != r["recording_sha256"]:
             issues.append("Audio listening fingerprint mismatch: " + text[:30] + "/" + voice)
+            continue
+        verified_pairs.add(key)
+    report["validated_audio_voice_text_pairs"] = len(verified_pairs)
     for entry in entries:
         if not isinstance(entry, dict) or entry.get("level") not in TARGETS:
             continue
         necessary = {(t, v) for t in (entry.get("word"), entry.get("example_sentence")) for v in VOICES}
-        if all(k in audio_seen and real_observation(audio_seen[k], ("reviewer_id", "notes", "recording_sha256")) for k in necessary):
+        if necessary.issubset(verified_pairs):
             report["both_voice_listening_complete_words"][entry["level"]] += 1
     if report["both_voice_listening_complete_words"] != TARGETS:
         issues.append("Real George/Emma listening unverified for some or all words and sentences")
