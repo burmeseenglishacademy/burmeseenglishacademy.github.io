@@ -220,6 +220,9 @@ def audit(ledger=None, after_deployment=False):
               "cambridge_b2_six_observations": 0,
               "cambridge_b2_six_retained_requiring_resolution": 0,
               "cambridge_b2_six_retained_resolved": 0,
+              "cambridge_b1_twelve_observations": 0,
+              "cambridge_b1_twelve_retained_requiring_resolution": 0,
+              "cambridge_b1_twelve_retained_resolved": 0,
               "cambridge_a2_eight_observations": 0,
               "cambridge_a2_eight_retained_requiring_resolution": 0,
               "cambridge_a2_eight_retained_resolved": 0,
@@ -468,6 +471,75 @@ def audit(ledger=None, after_deployment=False):
         issues.append("Retained A2 Cambridge sense/CEFR conflicts lack independently attested direct exact-sense A2 resolution")
     if a2_index and set(a2_index) - {(x.get("word"), x.get("level")) for x in a2_flags if isinstance(x, dict)}:
         issues.append("Unknown A2 Cambridge independent resolution receipt supplied")
+
+    # Twelve Cambridge publisher-indexed B1 source leads. Six B1 drafts
+    # appear to target a Cambridge B2 exact sense; "otherwise" also has a
+    # B1 conjunction versus provisional adverb classification issue.
+    # Indexed excerpts are research leads, never independent review.
+    b1_packet = read_json(ROOT / "draft/CEFR-1000-CAMBRIDGE-B1-TWELVE-SENSE-LEADS-2026-10-28.json")
+    b1_flags = b1_packet.get("records", [])
+    b1_expected = {"independent", "impact", "effective", "analysis", "complex",
+                   "critical", "necessary", "equipment", "application", "purpose",
+                   "solution", "otherwise"}
+    report["cambridge_b1_twelve_observations"] = len(b1_flags)
+    if (b1_packet.get("status") != "B1_TWELVE_PUBLISHER_INDEXED_SENSE_LEADS_EDITORIAL_HOLD"
+            or len(b1_flags) != 12
+            or {x.get("word") for x in b1_flags if isinstance(x, dict)} != b1_expected
+            or b1_packet.get("independently_approved_count") != 0):
+        issues.append("Twelve B1 Cambridge source observations missing, malformed or falsely approved")
+    b1_receipts = d.get("cambridge_b1_twelve_review_receipts", [])
+    if not isinstance(b1_receipts, list):
+        issues.append("B1 Cambridge resolution receipts must be an array")
+        b1_receipts = []
+    b1_index = {}
+    for rec in b1_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Malformed B1 Cambridge independent receipt")
+            continue
+        key = (rec.get("word"), rec.get("proposed_level"))
+        if key in b1_index:
+            issues.append("Duplicate B1 Cambridge independent receipt")
+        b1_index[key] = rec
+    for flag in b1_flags:
+        if not isinstance(flag, dict):
+            issues.append("Malformed B1 Cambridge publisher observation")
+            continue
+        word = flag.get("word")
+        key = (word, flag.get("level"))
+        entry = entry_lookup.get(key)
+        if entry is None:
+            continue  # Replacements still need the full independent-review gate.
+        report["cambridge_b1_twelve_retained_requiring_resolution"] += 1
+        rec = b1_index.get(key)
+        if not independent_word_stage(rec, word, "sense_specific_cefr", expected_level="B1"):
+            continue
+        if (rec.get("decision") != "RETAIN_AFTER_INDEPENDENT_B1_EXACT_SENSE_REVIEW"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or rec.get("verified_part_of_speech") != entry.get("part_of_speech")
+                or rec.get("verified_cefr_level") != "B1"
+                or rec.get("source_cefr_level") != "B1"
+                or not isinstance(rec.get("source_scope_rationale"), str)
+                or len(rec["source_scope_rationale"].strip()) < 50):
+            continue
+        if word in {"independent", "impact", "effective", "analysis", "complex", "critical"}:
+            if (not isinstance(rec.get("cambridge_conflict_resolution"), str)
+                    or len(rec["cambridge_conflict_resolution"].strip()) < 50):
+                continue
+            if (entry.get("english_definition") == flag.get("shortlist_snapshot", {}).get("english_definition")
+                    and entry.get("example_sentence") == flag.get("shortlist_snapshot", {}).get("example_sentence")):
+                continue  # A same-sense B2 draft cannot be silently blessed as B1.
+        if word == "otherwise":
+            if (not isinstance(rec.get("part_of_speech_resolution"), str)
+                    or len(rec["part_of_speech_resolution"].strip()) < 60
+                    or rec.get("verified_source_part_of_speech") != entry.get("part_of_speech")):
+                continue  # B1 conjunction is not evidence for B1 adverb.
+        report["cambridge_b1_twelve_retained_resolved"] += 1
+    if (report["cambridge_b1_twelve_retained_requiring_resolution"]
+            != report["cambridge_b1_twelve_retained_resolved"]):
+        issues.append("Retained B1 Cambridge sense/CEFR/POS conflicts lack independent exact-sense resolution")
+    if b1_index and set(b1_index) - {
+            (x.get("word"), x.get("level")) for x in b1_flags if isinstance(x, dict)}:
+        issues.append("Unknown B1 Cambridge independent resolution receipt supplied")
 
     # Five additional publisher-indexed exact-sense leads are distinct from
     # Oxford word/POS labels. In particular Cambridge labels print(TEXT),
