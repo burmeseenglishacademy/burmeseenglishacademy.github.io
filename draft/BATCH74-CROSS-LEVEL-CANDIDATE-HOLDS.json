@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "batch": 74,
+  "release_status": "CANDIDATE_CROSS_LEVEL_HOLDS_DO_NOT_PUBLISH",
+  "description": "Overlay holds identified after mechanical preflight; raw observed 261/288 counts are preserved without retroactive alteration. No CEFR decisions are made.",
+  "conflicting_wordforms": 9,
+  "records": [
+    {
+      "word": "credibility",
+      "proposed_levels": [
+        "B1",
+        "B2"
+      ],
+      "hold_reversible": true,
+      "reason": "CROSS_LEVEL_CANDIDATE_CONFLICT_REQUIRES_SENSE_SPECIFIC_CEFR_EVIDENCE",
+      "independently_approved": false,
+      "release_approved": false
+    },
+    {
+      "word": "resilience",
+      "proposed_levels": [
+        "B1",
+        "B2"
+      ],
+      "hold_reversible": true,
+      "reason": "CROSS_LEVEL_CANDIDATE_CONFLICT_REQUIRES_SENSE_SPECIFIC_CEFR_EVIDENCE",
+      "independently_approved": false,
+      "release_approved": false
+    },
+    {
+      "word": "transparency",
+      "proposed_levels": [
+        "B1",
+        "B2"
+      ],
+      "hold_reversible": true,
+      "reason": "CROSS_LEVEL_CANDIDATE_CONFLICT_REQUIRES_SENSE_SPECIFIC_CEFR_EVIDENCE",
+      "independently_approved": false,
+      "release_approved": false
+    },
+    {
+      "word": "complacency",
+      "proposed_levels": [
+        "B2",
+        "C1"
+      ],
+      "hold_reversible": true,
+      "reason": "CROSS_LEVEL_CANDIDATE_CONFLICT_REQUIRES_SENSE_SPECIFIC_CEFR_EVIDENCE",
+      "independently_approved": false,
+      "release_approved": false
+    },
+    {
+      "word": "austerity",
+      "proposed_levels": [
+        "B2",
+        "C1"
+      ],
+      "hold_reversible": true,
+      "reason": "CROSS_LEVEL_CANDIDATE_CONFLICT_REQUIRES_SENSE_SPECIFIC_CEFR_EVIDENCE",
+      "independently_approved": false,
+      "release_approved": false
+    },
+    {
+      "word": "corroboration",
+      "proposed_levels": [
+        "B2",
+        "C1"
+      ],
+      "hold_reversible": true,
+      "reason": "CROSS_LEVEL_CANDIDATE_CONFLICT_REQUIRES_SENSE_SPECIFIC_CEFR_EVIDENCE",
+      "independently_approved": false,
+      "release_approved": false
+    },
+    {
+      "word": "disillusionment",
+      "proposed_levels": [
+        "B2",
+        "C1"
+      ],
+      "hold_reversible": true,
+      "reason": "CROSS_LEVEL_CANDIDATE_CONFLICT_REQUIRES_SENSE_SPECIFIC_CEFR_EVIDENCE",
+      "independently_approved": false,
+      "release_approved": false
+    },
+    {
+      "word": "reciprocity",
+      "proposed_levels": [
+        "B2",
+        "C1"
+      ],
+      "hold_reversible": true,
+      "reason": "CROSS_LEVEL_CANDIDATE_CONFLICT_REQUIRES_SENSE_SPECIFIC_CEFR_EVIDENCE",
+      "independently_approved": false,
+      "release_approved": false
+    },
+    {
+      "word": "scepticism",
+      "proposed_levels": [
+        "B2",
+        "C1"
+      ],
+      "hold_reversible": true,
+      "reason": "CROSS_LEVEL_CANDIDATE_CONFLICT_REQUIRES_SENSE_SPECIFIC_CEFR_EVIDENCE",
+      "independently_approved": false,
+      "release_approved": false
+    }
+  ]
+}
