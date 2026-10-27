@@ -1,0 +1,1979 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-27",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "release_status": "UNVERIFIED_SOURCE_RECOVERY_DO_NOT_PUBLISH",
+  "description": "Batch76 original bilingual first-pass drafts; all quarantined. Mechanical candidate screening is not independent CEFR or linguistic evidence.",
+  "candidate_preflight_run": "40440285272",
+  "counts_by_proposed_level": {
+    "A2": 10,
+    "B1": 13,
+    "B2": 25,
+    "C1": 26
+  },
+  "stages": {
+    "english_definition": "ORIGINAL_FIRST_PASS_UNVERIFIED",
+    "myanmar_meaning": "ORIGINAL_FIRST_PASS_UNVERIFIED",
+    "original_examples": "ORIGINAL_FIRST_PASS_UNVERIFIED",
+    "independent_source_evidence": "NOT_OBSERVED",
+    "pronunciation": "NOT_GENERATED_NOT_LISTENED"
+  },
+  "entries": [
+    {
+      "proposed_level": "A2",
+      "word": "headache",
+      "part_of_speech": "noun",
+      "english_definition": "A pain felt in the head, which may make it difficult to concentrate.",
+      "burmese_meaning": "ခေါင်းကိုက်ခြင်း",
+      "example_sentence": "I had a headache after studying under the bright light for hours.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": []
+    },
+    {
+      "proposed_level": "A2",
+      "word": "woodwork",
+      "part_of_speech": "noun",
+      "english_definition": "The activity of making or repairing objects using wood.",
+      "burmese_meaning": "သစ်သားဖြင့် ပစ္စည်းများ ပြုလုပ်ခြင်း သို့မဟုတ် ပြုပြင်ခြင်း လက်မှုလုပ်ငန်း",
+      "example_sentence": "Our teacher showed us how to do simple woodwork safely.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "LEVEL_PLACEMENT_NEEDS_EVIDENCE"
+      ]
+    },
+    {
+      "proposed_level": "A2",
+      "word": "pinecone",
+      "part_of_speech": "noun",
+      "english_definition": "The hard, woody part of a pine tree that contains its seeds.",
+      "burmese_meaning": "ထင်းရှူးပင်၏ အစေ့များပါဝင်သော ခဲမာသည့် အသီးခွံ",
+      "example_sentence": "She picked up a pinecone during our walk through the park.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "COMPOUND_WORD_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "A2",
+      "word": "seashell",
+      "part_of_speech": "noun",
+      "english_definition": "The hard outer covering of a sea animal, often found on a beach.",
+      "burmese_meaning": "ကမ်းခြေတွင် တွေ့ရတတ်သည့် ပင်လယ်သတ္တဝါ၏ အခွံ",
+      "example_sentence": "My sister found a small seashell near the water after lunch.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": []
+    },
+    {
+      "proposed_level": "A2",
+      "word": "armchair",
+      "part_of_speech": "noun",
+      "english_definition": "A comfortable chair with a support on each side for resting the arms.",
+      "burmese_meaning": "လက်တင်နှစ်ဖက်ပါသော သက်သောင့်သက်သာ ထိုင်ခုံ",
+      "example_sentence": "Grandfather reads the newspaper in his favourite armchair every morning.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": []
+    },
+    {
+      "proposed_level": "A2",
+      "word": "rainstorm",
+      "part_of_speech": "noun",
+      "english_definition": "A period of very heavy rain, sometimes accompanied by strong wind.",
+      "burmese_meaning": "တစ်ခါတစ်ရံ လေပြင်းပါသည့် မိုးသည်းထန်စွာ ရွာသွန်းမှု",
+      "example_sentence": "The rainstorm stopped just before the children left school.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "COMPOUND_WORD_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "A2",
+      "word": "sandcastle",
+      "part_of_speech": "noun",
+      "english_definition": "A model of a castle made from wet sand, usually on a beach.",
+      "burmese_meaning": "ကမ်းခြေတွင် သဲစိုဖြင့် ဆောက်ထားသော ရဲတိုက်ပုံစံ သဲပုံ",
+      "example_sentence": "The children built a sandcastle near the edge of the beach.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": []
+    },
+    {
+      "proposed_level": "A2",
+      "word": "hairpin",
+      "part_of_speech": "noun",
+      "english_definition": "A small metal or plastic object used to hold hair in place.",
+      "burmese_meaning": "ဆံပင်ကို ညှပ်ထိန်းရန် အသုံးပြုသော ဆံညှပ်",
+      "example_sentence": "She used a hairpin to keep her fringe away from her eyes.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "POLYSEMY_HAIRPIN_BEND"
+      ]
+    },
+    {
+      "proposed_level": "A2",
+      "word": "jellyfish",
+      "part_of_speech": "noun",
+      "english_definition": "A sea animal with a soft body and trailing tentacles.",
+      "burmese_meaning": "ကိုယ်ထည်ပျော့ပြီး ရွက်ဆွဲအမျှင်များရှိသော ဂျယ်လီငါး",
+      "example_sentence": "We saw a jellyfish floating close to the shore this morning.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": []
+    },
+    {
+      "proposed_level": "A2",
+      "word": "headlamp",
+      "part_of_speech": "noun",
+      "english_definition": "A light worn on the head so that both hands remain free.",
+      "burmese_meaning": "လက်နှစ်ဖက်လွတ်စေရန် ဦးခေါင်းတွင် တပ်ဆင်အသုံးပြုသည့် မီးအိမ်",
+      "example_sentence": "The camper switched on her headlamp before entering the dark cave.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "POLYSEMY_VEHICLE_HEADLIGHT",
+        "LEVEL_PLACEMENT_NEEDS_EVIDENCE"
+      ]
+    },
+    {
+      "proposed_level": "B1",
+      "word": "cautionary",
+      "part_of_speech": "adjective",
+      "english_definition": "Intended to warn people about a danger or an unwanted result.",
+      "burmese_meaning": "ဖြစ်လာနိုင်သော အန္တရာယ် သို့မဟုတ် ဆိုးကျိုးကို သတိပေးသည့်",
+      "example_sentence": "The film tells a cautionary story about sharing passwords with strangers.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "REGISTER_LEVEL_NEEDS_EVIDENCE"
+      ]
+    },
+    {
+      "proposed_level": "B1",
+      "word": "coauthor",
+      "part_of_speech": "noun",
+      "english_definition": "Someone who writes a book or article together with another person.",
+      "burmese_meaning": "စာအုပ် သို့မဟုတ် ဆောင်းပါးကို အခြားသူနှင့် ပူးတွဲရေးသားသူ",
+      "example_sentence": "Her coauthor checked the final chapter before they sent it to the publisher.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "SPELLING_VARIANT_CO_AUTHOR"
+      ]
+    },
+    {
+      "proposed_level": "B1",
+      "word": "hostility",
+      "part_of_speech": "noun",
+      "english_definition": "Angry or unfriendly feelings or behaviour towards someone.",
+      "burmese_meaning": "တစ်ဦးဦးအပေါ် ရန်လိုသည့် စိတ်ထား သို့မဟုတ် အပြုအမူ",
+      "example_sentence": "The two neighbours spoke calmly despite years of hostility.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": []
+    },
+    {
+      "proposed_level": "B1",
+      "word": "jealousy",
+      "part_of_speech": "noun",
+      "english_definition": "The unhappy feeling of wanting what another person has or fearing the loss of affection.",
+      "burmese_meaning": "သူတစ်ပါးရှိသည့်အရာကို မနာလိုခြင်း သို့မဟုတ် ချစ်ခင်မှုဆုံးရှုံးမည်ကို သဝန်တိုခြင်း",
+      "example_sentence": "He recognised his jealousy when his friend received the award.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "POLYSEMY_ENVY_VS_ROMANTIC_JEALOUSY"
+      ]
+    },
+    {
+      "proposed_level": "B1",
+      "word": "kindness",
+      "part_of_speech": "noun",
+      "english_definition": "The quality of being caring, considerate and helpful towards others.",
+      "burmese_meaning": "အခြားသူများအပေါ် ကြင်နာ၍ ကူညီဖေးမတတ်သော စိတ်ထား",
+      "example_sentence": "A small act of kindness made the new student feel welcome.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": []
+    },
+    {
+      "proposed_level": "B1",
+      "word": "literacy",
+      "part_of_speech": "noun",
+      "english_definition": "The ability to read and write in a language.",
+      "burmese_meaning": "ဘာသာစကားတစ်ခုဖြင့် စာဖတ်စာရေးတတ်မြောက်မှု",
+      "example_sentence": "The programme aims to improve adult literacy in rural communities.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "POLYSEMY_DIGITAL_LITERACY"
+      ]
+    },
+    {
+      "proposed_level": "B1",
+      "word": "loneliness",
+      "part_of_speech": "noun",
+      "english_definition": "The unhappy feeling of having too little companionship or human connection.",
+      "burmese_meaning": "အဖော်မဲ့၍ လူမှုဆက်ဆံရေးကင်းမဲ့နေသလို ခံစားရသော အထီးကျန်မှု",
+      "example_sentence": "She felt loneliness after moving to a city where she knew nobody.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": []
+    },
+    {
+      "proposed_level": "B1",
+      "word": "originality",
+      "part_of_speech": "noun",
+      "english_definition": "The quality of producing ideas that are new rather than copied.",
+      "burmese_meaning": "အခြားသူကို မကူးယူဘဲ ကိုယ်ပိုင်အတွေးအခေါ် ဆန်းသစ်စွာ ဖန်တီးနိုင်မှု",
+      "example_sentence": "The judges praised the originality of his science project.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "ABSTRACT_NOUN_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "B1",
+      "word": "punctuality",
+      "part_of_speech": "noun",
+      "english_definition": "The habit of arriving or completing things at the agreed time.",
+      "burmese_meaning": "ချိန်းဆိုထားသည့်အချိန်အတိုင်း အချိန်မှန် ရောက်ရှိဆောင်ရွက်တတ်မှု",
+      "example_sentence": "Punctuality matters when a whole team is waiting to begin.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": []
+    },
+    {
+      "proposed_level": "B1",
+      "word": "referral",
+      "part_of_speech": "noun",
+      "english_definition": "The act of directing a person to another professional or service for help.",
+      "burmese_meaning": "အကူအညီရရန် အခြားကျွမ်းကျင်သူ သို့မဟုတ် ဝန်ဆောင်မှုထံ လွှဲပြောင်းညွှန်းဆိုမှု",
+      "example_sentence": "The clinic gave her a referral to a specialist for further tests.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "POLYSEMY_JOB_REFERRAL",
+        "LEVEL_PLACEMENT_NEEDS_EVIDENCE"
+      ]
+    },
+    {
+      "proposed_level": "B1",
+      "word": "starvation",
+      "part_of_speech": "noun",
+      "english_definition": "Severe suffering caused by having too little food over a long period.",
+      "burmese_meaning": "အချိန်ကြာမြင့်စွာ အစာမလုံလောက်မှုကြောင့် ပြင်းထန်စွာ ငတ်မွတ်ခြင်း",
+      "example_sentence": "Aid workers delivered supplies to villages facing starvation.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": []
+    },
+    {
+      "proposed_level": "B1",
+      "word": "tenancy",
+      "part_of_speech": "noun",
+      "english_definition": "An arrangement giving someone the right to rent and occupy a property.",
+      "burmese_meaning": "အိမ် သို့မဟုတ် အဆောက်အအုံကို ငှားရမ်းအသုံးပြုခွင့်ပေးသည့် သဘောတူညီမှု",
+      "example_sentence": "The tenancy ends in December unless both sides agree to renew it.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "LEGAL_REGISTER_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "B1",
+      "word": "vacancy",
+      "part_of_speech": "noun",
+      "english_definition": "An available room in a hotel or another building.",
+      "burmese_meaning": "ဟိုတယ် သို့မဟုတ် အဆောက်အအုံတစ်ခုတွင် လွတ်နေသော အခန်း",
+      "example_sentence": "The hotel had one vacancy left for the weekend.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "POLYSEMY_JOB_OPENING"
+      ]
+    },
+    {
+      "proposed_level": "B2",
+      "word": "susceptibility",
+      "part_of_speech": "noun",
+      "english_definition": "The tendency to be affected easily by a particular problem or influence.",
+      "burmese_meaning": "ပြဿနာ သို့မဟုတ် သက်ရောက်မှုတစ်ခုကို လွယ်ကူစွာ ခံရနိုင်ခြင်း",
+      "example_sentence": "A lack of sleep can increase susceptibility to illness.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "TECHNICAL_REGISTER_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "B2",
+      "word": "tradeoff",
+      "part_of_speech": "noun",
+      "english_definition": "A situation in which gaining one benefit requires giving up another.",
+      "burmese_meaning": "အကျိုးတစ်ခုရရန် အခြားအကျိုးတစ်ခုကို စွန့်လွှတ်ရသည့် အပေးအယူ",
+      "example_sentence": "There is a tradeoff between lower costs and faster delivery.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "SPELLING_VARIANT_TRADE_OFF"
+      ]
+    },
+    {
+      "proposed_level": "B2",
+      "word": "deceleration",
+      "part_of_speech": "noun",
+      "english_definition": "A decrease in the speed at which something is moving.",
+      "burmese_meaning": "ရွေ့လျားနေသည့် အရာတစ်ခု၏ အမြန်နှုန်း လျော့ကျခြင်း",
+      "example_sentence": "The sudden deceleration made passengers lean forward in their seats.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "TECHNICAL_REGISTER_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "B2",
+      "word": "detachment",
+      "part_of_speech": "noun",
+      "english_definition": "The ability to judge a situation without becoming emotionally involved.",
+      "burmese_meaning": "စိတ်ခံစားချက်မပါဘဲ အကွာအဝေးထား၍ အခြေအနေကို သုံးသပ်နိုင်မှု",
+      "example_sentence": "Her professional detachment helped her assess the complaint fairly.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "POLYSEMY_PHYSICAL_SEPARATION"
+      ]
+    },
+    {
+      "proposed_level": "B2",
+      "word": "entanglement",
+      "part_of_speech": "noun",
+      "english_definition": "A complicated involvement in a situation that is hard to escape.",
+      "burmese_meaning": "လွတ်မြောက်ရန် ခက်ခဲသည့် ရှုပ်ထွေးသော ကိစ္စတွင် ပတ်သက်ငြိတွယ်နေမှု",
+      "example_sentence": "He wanted to avoid further entanglement in the dispute.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "POLYSEMY_PHYSICAL_ENTANGLEMENT"
+      ]
+    },
+    {
+      "proposed_level": "B2",
+      "word": "impairment",
+      "part_of_speech": "noun",
+      "english_definition": "A reduction in the normal functioning of a physical or mental ability.",
+      "burmese_meaning": "ကိုယ်ခန္ဓာ သို့မဟုတ် စိတ်ပိုင်းဆိုင်ရာ စွမ်းရည် လုပ်ဆောင်နိုင်မှု ချို့ယွင်းခြင်း",
+      "example_sentence": "The study examined how hearing impairment affects communication.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "MEDICAL_REGISTER_SENSE_REVIEW"
+      ]
+    },
+    {
+      "proposed_level": "B2",
+      "word": "improvisation",
+      "part_of_speech": "noun",
+      "english_definition": "The act of creating or performing something without advance preparation.",
+      "burmese_meaning": "ကြိုတင်ပြင်ဆင်မှုမရှိဘဲ အခြေအနေအလိုက် တီထွင်လုပ်ဆောင်ခြင်း",
+      "example_sentence": "The actor's improvisation made the audience laugh unexpectedly.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": []
+    },
+    {
+      "proposed_level": "B2",
+      "word": "inclination",
+      "part_of_speech": "noun",
+      "english_definition": "A natural preference or tendency to do something.",
+      "burmese_meaning": "တစ်ခုခုလုပ်လိုသည့် သဘောထားယိမ်းညွတ်မှု သို့မဟုတ် ဆန္ဒ",
+      "example_sentence": "She had little inclination to argue after a long day.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "POLYSEMY_PHYSICAL_SLOPE"
+      ]
+    },
+    {
+      "proposed_level": "B2",
+      "word": "instability",
+      "part_of_speech": "noun",
+      "english_definition": "A condition in which something may change suddenly or fail to remain steady.",
+      "burmese_meaning": "အခြေအနေတစ်ခု ရုတ်တရက်ပြောင်းလဲနိုင်သော သို့မဟုတ် မတည်မြဲသော မတည်ငြိမ်မှု",
+      "example_sentence": "Financial instability made long-term planning difficult for the company.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": []
+    },
+    {
+      "proposed_level": "B2",
+      "word": "intuition",
+      "part_of_speech": "noun",
+      "english_definition": "An understanding reached quickly without deliberate step-by-step reasoning.",
+      "burmese_meaning": "အဆင့်ဆင့် စဉ်းစားတွက်ချက်ခြင်းမရှိဘဲ အလိုလို သိမြင်နားလည်နိုင်စွမ်း",
+      "example_sentence": "His intuition told him that the figures needed another check.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": []
+    },
+    {
+      "proposed_level": "B2",
+      "word": "leverage",
+      "part_of_speech": "noun",
+      "english_definition": "An advantage that can be used to influence a decision or result.",
+      "burmese_meaning": "ဆုံးဖြတ်ချက် သို့မဟုတ် ရလဒ်ကို လွှမ်းမိုးရန် အသုံးချနိုင်သော အသာစီးရမှု",
+      "example_sentence": "The supplier gained leverage by offering a faster delivery schedule.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "POLYSEMY_FINANCE_MECHANICS"
+      ]
+    },
+    {
+      "proposed_level": "B2",
+      "word": "moderation",
+      "part_of_speech": "noun",
+      "english_definition": "The practice of avoiding extremes and keeping behaviour within sensible limits.",
+      "burmese_meaning": "အလွန်အကျွံမဖြစ်စေဘဲ အပြုအမူကို မျှတစွာ ထိန်းညှိခြင်း",
+      "example_sentence": "The coach encouraged moderation rather than intense daily exercise.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "POLYSEMY_CONTENT_MODERATION"
+      ]
+    },
+    {
+      "proposed_level": "B2",
+      "word": "neutrality",
+      "part_of_speech": "noun",
+      "english_definition": "The position of not supporting either side in a disagreement.",
+      "burmese_meaning": "အငြင်းပွားမှုတွင် မည်သည့်ဘက်ကိုမျှ မထောက်ခံသော ဘက်မလိုက်မှု",
+      "example_sentence": "The mediator's neutrality helped both teams trust the discussion.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": []
+    },
+    {
+      "proposed_level": "B2",
+      "word": "persuasion",
+      "part_of_speech": "noun",
+      "english_definition": "The process of convincing someone to believe or do something.",
+      "burmese_meaning": "တစ်ဦးဦးကို ယုံကြည်လက်ခံလာစေရန် သို့မဟုတ် လုပ်ဆောင်လာစေရန် စည်းရုံးခြင်း",
+      "example_sentence": "Gentle persuasion worked better than repeated demands.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": []
+    },
+    {
+      "proposed_level": "B2",
+      "word": "prejudice",
+      "part_of_speech": "noun",
+      "english_definition": "An unfair opinion about a person or group formed without enough knowledge.",
+      "burmese_meaning": "လုံလောက်သော အချက်အလက်မရှိဘဲ လူတစ်ဦး သို့မဟုတ် အုပ်စုအပေါ် ကြိုတင်ထားသည့် ဘက်လိုက်အမြင်",
+      "example_sentence": "The training encouraged staff to question their own prejudice.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": []
+    },
+    {
+      "proposed_level": "B2",
+      "word": "provocation",
+      "part_of_speech": "noun",
+      "english_definition": "An action or remark intended to make someone angry or react strongly.",
+      "burmese_meaning": "တစ်ဦးဦးကို ဒေါသထွက်စေရန် သို့မဟုတ် ပြင်းထန်စွာ တုံ့ပြန်စေရန် ရည်ရွယ်သည့် လှုံ့ဆော်မှု",
+      "example_sentence": "She stayed calm despite the deliberate provocation.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": []
+    },
+    {
+      "proposed_level": "B2",
+      "word": "proximity",
+      "part_of_speech": "noun",
+      "english_definition": "The state of being physically close to another place or object.",
+      "burmese_meaning": "နေရာ သို့မဟုတ် အရာဝတ္ထုတစ်ခုနှင့် အနီးကပ် တည်ရှိမှု",
+      "example_sentence": "The house's proximity to the station made commuting easier.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": []
+    },
+    {
+      "proposed_level": "B2",
+      "word": "reluctance",
+      "part_of_speech": "noun",
+      "english_definition": "A feeling of not wanting or being hesitant to do something.",
+      "burmese_meaning": "တစ်ခုခုလုပ်ရန် မလိုလားခြင်း သို့မဟုတ် တွန့်ဆုတ်ခြင်း",
+      "example_sentence": "His reluctance to ask questions slowed his progress.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": []
+    },
+    {
+      "proposed_level": "B2",
+      "word": "resentment",
+      "part_of_speech": "noun",
+      "english_definition": "A lasting feeling of anger caused by treatment seen as unfair.",
+      "burmese_meaning": "မမျှတစွာ ဆက်ဆံခံရသည်ဟု ယူဆမှုကြောင့် ကြာရှည်စွာ မကျေနပ်သည့် စိတ်",
+      "example_sentence": "Resentment grew when the workers felt their concerns were ignored.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": []
+    },
+    {
+      "proposed_level": "B2",
+      "word": "restraint",
+      "part_of_speech": "noun",
+      "english_definition": "The ability to control one's feelings or actions.",
+      "burmese_meaning": "မိမိ၏ စိတ်ခံစားချက်နှင့် အပြုအမူကို ထိန်းချုပ်နိုင်မှု",
+      "example_sentence": "She showed remarkable restraint during the heated meeting.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "POLYSEMY_PHYSICAL_RESTRAINT"
+      ]
+    },
+    {
+      "proposed_level": "B2",
+      "word": "solidarity",
+      "part_of_speech": "noun",
+      "english_definition": "Unity and mutual support among people with shared concerns.",
+      "burmese_meaning": "ရည်ရွယ်ချက်တူသူများအကြား စည်းလုံးညီညွတ်မှုနှင့် အပြန်အလှန် ပံ့ပိုးမှု",
+      "example_sentence": "The volunteers expressed solidarity with families affected by the flood.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": []
+    },
+    {
+      "proposed_level": "B2",
+      "word": "subsidy",
+      "part_of_speech": "noun",
+      "english_definition": "Money given by a government or organisation to reduce a particular cost.",
+      "burmese_meaning": "ကုန်ကျစရိတ်လျော့စေရန် အစိုးရ သို့မဟုတ် အဖွဲ့အစည်းက ပေးအပ်သည့် ထောက်ပံ့ငွေ",
+      "example_sentence": "The subsidy helped small farms buy safer equipment.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": []
+    },
+    {
+      "proposed_level": "B2",
+      "word": "turbulence",
+      "part_of_speech": "noun",
+      "english_definition": "Strong irregular movements of air that can shake an aircraft.",
+      "burmese_meaning": "လေယာဉ်ကို လှုပ်ခါစေနိုင်သည့် လေထုအတွင်း မညီမညာ လှုပ်ရှားမှု",
+      "example_sentence": "The pilot warned passengers about turbulence ahead.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "POLYSEMY_SOCIAL_UNREST"
+      ]
+    },
+    {
+      "proposed_level": "B2",
+      "word": "speculation",
+      "part_of_speech": "noun",
+      "english_definition": "Ideas or guesses about a situation made without enough evidence.",
+      "burmese_meaning": "လုံလောက်သော သက်သေမရှိဘဲ အခြေအနေတစ်ခုအပေါ် ခန့်မှန်းပြောဆိုမှု",
+      "example_sentence": "There was speculation about why the project had been delayed.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "POLYSEMY_FINANCIAL_TRADING"
+      ]
+    },
+    {
+      "proposed_level": "B2",
+      "word": "stewardship",
+      "part_of_speech": "noun",
+      "english_definition": "Responsible management and protection of something entrusted to one's care.",
+      "burmese_meaning": "မိမိအား တာဝန်ပေးအပ်ထားသည့် အရာကို ဂရုတစိုက် စီမံထိန်းသိမ်းခြင်း",
+      "example_sentence": "Good stewardship of the forest protects resources for future generations.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "ABSTRACT_REGISTER_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "indifference",
+      "part_of_speech": "noun",
+      "english_definition": "A lack of interest or concern about a person, issue or outcome.",
+      "burmese_meaning": "လူတစ်ဦး သို့မဟုတ် ကိစ္စတစ်ခုအပေါ် စိတ်ဝင်စားဂရုစိုက်မှု မရှိခြင်း",
+      "example_sentence": "The committee's indifference to complaints damaged public trust.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "LEVEL_PLACEMENT_NEEDS_EVIDENCE"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "meticulousness",
+      "part_of_speech": "noun",
+      "english_definition": "The quality of paying extremely careful attention to small details.",
+      "burmese_meaning": "အသေးစိတ်အချက်များကို အလွန်ဂရုတစိုက် စစ်ဆေးဆောင်ရွက်တတ်မှု",
+      "example_sentence": "Her meticulousness prevented several errors in the final report.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "DERIVED_FORM_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "vacillation",
+      "part_of_speech": "noun",
+      "english_definition": "Repeated changes of opinion or decision caused by uncertainty.",
+      "burmese_meaning": "မသေချာမှုကြောင့် အမြင် သို့မဟုတ် ဆုံးဖြတ်ချက်ကို အကြိမ်ကြိမ် ပြောင်းလဲနေခြင်း",
+      "example_sentence": "His vacillation delayed the team's decision for another week.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "FORMAL_REGISTER_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "acculturation",
+      "part_of_speech": "noun",
+      "english_definition": "The process of adopting some customs or practices of another culture.",
+      "burmese_meaning": "အခြားယဉ်ကျေးမှုတစ်ခု၏ ဓလေ့ထုံးစံအချို့ကို တဖြည်းဖြည်း လက်ခံကျင့်သုံးလာခြင်း",
+      "example_sentence": "The study explored acculturation among families who had recently migrated.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "ACADEMIC_REGISTER_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "commiseration",
+      "part_of_speech": "noun",
+      "english_definition": "An expression of sympathy towards someone experiencing difficulty or disappointment.",
+      "burmese_meaning": "အခက်အခဲ သို့မဟုတ် စိတ်ပျက်မှုကြုံသူအပေါ် ကိုယ်ချင်းစာနာကြောင်း ဖော်ပြခြင်း",
+      "example_sentence": "Her colleagues offered commiseration after the disappointing result.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "REGISTER_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "disempowerment",
+      "part_of_speech": "noun",
+      "english_definition": "The process of taking away a person's ability to make choices or exercise control.",
+      "burmese_meaning": "လူတစ်ဦး၏ ရွေးချယ်ဆုံးဖြတ်ခွင့် သို့မဟုတ် ကိုယ်တိုင်ထိန်းချုပ်နိုင်စွမ်းကို လျော့နည်းစေခြင်း",
+      "example_sentence": "The report linked disempowerment to a lack of access to information.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "ACADEMIC_REGISTER_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "elusiveness",
+      "part_of_speech": "noun",
+      "english_definition": "The quality of being difficult to find, understand or describe clearly.",
+      "burmese_meaning": "ရှာဖွေရန် နားလည်ရန် သို့မဟုတ် တိတိကျကျ ဖော်ပြရန် ခက်ခဲနေခြင်း",
+      "example_sentence": "The answer's elusiveness frustrated even the experienced researchers.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "ABSTRACT_DERIVATION_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "embitterment",
+      "part_of_speech": "noun",
+      "english_definition": "The development of deep and lasting anger after disappointment or unfair treatment.",
+      "burmese_meaning": "စိတ်ပျက်မှု သို့မဟုတ် မမျှတမှုကြောင့် ကြာရှည်စွာ နာကြည်းမကျေနပ်လာခြင်း",
+      "example_sentence": "Years of unresolved conflict led to his embitterment.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "RARE_DERIVED_NOUN_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "expedience",
+      "part_of_speech": "noun",
+      "english_definition": "The choice of what is convenient or useful now rather than what is principled.",
+      "burmese_meaning": "မူဝါဒသဘောတရားထက် လတ်တလော အဆင်ပြေမှု သို့မဟုတ် အကျိုးရှိမှုကို ဦးစားပေးခြင်း",
+      "example_sentence": "The board chose expedience over a more transparent process.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "FORMAL_REGISTER_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "frivolity",
+      "part_of_speech": "noun",
+      "english_definition": "Behaviour or activities that are playful and not serious.",
+      "burmese_meaning": "လေးနက်မှုမရှိဘဲ ပေါ့ပေါ့ပါးပါး ပျော်ရွှင်ကစားသည့် အပြုအမူ",
+      "example_sentence": "A moment of frivolity eased the tension after the long meeting.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "REGISTER_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "gravitas",
+      "part_of_speech": "noun",
+      "english_definition": "A serious and dignified manner that makes others respect a person.",
+      "burmese_meaning": "အခြားသူများ၏ လေးစားမှုရစေသည့် တည်ကြည်လေးနက်သော ဟန်ပန်",
+      "example_sentence": "The new director spoke with gravitas during the difficult announcement.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "LATIN_LOAN_REGISTER_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "imperviousness",
+      "part_of_speech": "noun",
+      "english_definition": "The quality of not being affected by something that would influence others.",
+      "burmese_meaning": "အခြားသူများကို သက်ရောက်စေနိုင်သော အရာတစ်ခု၏ သက်ရောက်မှုကို မခံရလွယ်ခြင်း",
+      "example_sentence": "Her imperviousness to criticism surprised the entire committee.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "DERIVED_FORM_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "indolence",
+      "part_of_speech": "noun",
+      "english_definition": "A persistent unwillingness to make an effort or be active.",
+      "burmese_meaning": "ကြိုးစားအားထုတ်ရန် မလိုလားဘဲ ပျင်းရိနေတတ်ခြင်း",
+      "example_sentence": "His indolence became obvious when he repeatedly avoided simple tasks.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "FORMAL_REGISTER_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "insularity",
+      "part_of_speech": "noun",
+      "english_definition": "A narrow outlook caused by limited contact with different people or ideas.",
+      "burmese_meaning": "မတူညီသော လူများနှင့် အယူအဆများကို ထိတွေ့မှုနည်း၍ အမြင်ကျဉ်းမြောင်းနေခြင်း",
+      "example_sentence": "The organisation's insularity prevented it from learning from others.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "POLYSEMY_ISLAND_CHARACTER"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "intercession",
+      "part_of_speech": "noun",
+      "english_definition": "An attempt to help someone by speaking or acting on their behalf.",
+      "burmese_meaning": "တစ်ဦးဦးကို ကူညီရန် ၎င်းကိုယ်စား ဝင်ရောက်ပြောဆိုဆောင်ရွက်ပေးခြင်း",
+      "example_sentence": "Her intercession helped the two groups reopen negotiations.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "RELIGIOUS_LEGAL_REGISTER_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "jurisprudence",
+      "part_of_speech": "noun",
+      "english_definition": "The study of legal principles and the philosophy of law.",
+      "burmese_meaning": "ဥပဒေ၏ အခြေခံသဘောတရားများနှင့် ဥပဒေဒဿနကို လေ့လာသည့် ပညာရပ်",
+      "example_sentence": "The professor introduced jurisprudence through a debate about fairness.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "SPECIALISED_ACADEMIC_TERM"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "nonchalance",
+      "part_of_speech": "noun",
+      "english_definition": "A calm, relaxed manner that appears unconcerned about a situation.",
+      "burmese_meaning": "အခြေအနေတစ်ခုအပေါ် စိုးရိမ်ပူပန်မှုမရှိသကဲ့သို့ အေးအေးဆေးဆေး နေထိုင်သည့် ဟန်ပန်",
+      "example_sentence": "His nonchalance during the interview surprised the other candidates.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "REGISTER_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "orthodoxy",
+      "part_of_speech": "noun",
+      "english_definition": "A set of beliefs or practices widely accepted as correct within a group.",
+      "burmese_meaning": "အုပ်စုတစ်ခုအတွင်း မှန်ကန်သည်ဟု အများလက်ခံထားသော ယုံကြည်ချက် သို့မဟုတ် လုပ်ထုံးလုပ်နည်းများ",
+      "example_sentence": "The researcher challenged orthodoxy by presenting new evidence.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "POLYSEMY_RELIGIOUS_SENSE"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "pedantry",
+      "part_of_speech": "noun",
+      "english_definition": "Excessive attention to minor rules or details, especially when correcting others.",
+      "burmese_meaning": "အသေးအဖွဲ စည်းမျဉ်းနှင့် အချက်များကို အလွန်အကျွံ အလေးထား၍ အခြားသူများကို ပြင်ဆင်ပြောဆိုတတ်ခြင်း",
+      "example_sentence": "His pedantry distracted the group from the main question.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "FORMAL_REGISTER_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "polemic",
+      "part_of_speech": "noun",
+      "english_definition": "A forceful written or spoken argument attacking an opposing view.",
+      "burmese_meaning": "ဆန့်ကျင်ဘက်အမြင်ကို ပြင်းထန်စွာ ဝေဖန်တိုက်ခိုက်သည့် စာ သို့မဟုတ် ဟောပြောချက်",
+      "example_sentence": "The article became a polemic against the proposed policy.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "FORMAL_REGISTER_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "presumption",
+      "part_of_speech": "noun",
+      "english_definition": "A belief accepted as true before enough evidence has been considered.",
+      "burmese_meaning": "လုံလောက်သော သက်သေမစစ်ဆေးမီ မှန်သည်ဟု ကြိုတင်ယူဆချက်",
+      "example_sentence": "The plan rested on the presumption that funding would continue.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "POLYSEMY_ARROGANCE_LEGAL_PRESUMPTION"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "recidivism",
+      "part_of_speech": "noun",
+      "english_definition": "The tendency to commit crimes again after having been punished.",
+      "burmese_meaning": "ပြစ်ဒဏ်ခံယူပြီးနောက် ပြစ်မှုထပ်မံကျူးလွန်တတ်ခြင်း",
+      "example_sentence": "The programme aims to reduce recidivism by helping former prisoners find work.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "SPECIALISED_CRIMINOLOGY_TERM"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "stoicism",
+      "part_of_speech": "noun",
+      "english_definition": "The practice of enduring difficulty without showing strong emotion or complaint.",
+      "burmese_meaning": "အခက်အခဲများကို စိတ်ခံစားချက်ပြင်းပြင်းထန်ထန် မပြဘဲ တည်ငြိမ်စွာ ခံနိုင်ရည်ရှိခြင်း",
+      "example_sentence": "Her stoicism helped her remain calm throughout the long recovery.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "POLYSEMY_PHILOSOPHICAL_SCHOOL"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "subservience",
+      "part_of_speech": "noun",
+      "english_definition": "A willingness to obey others excessively without asserting one's own judgment.",
+      "burmese_meaning": "မိမိအမြင်ကို မဖော်ပြရဲဘဲ အခြားသူ၏ အမိန့်ကို အလွန်အကျွံ နာခံလိုက်လျောခြင်း",
+      "example_sentence": "The manager discouraged subservience and invited staff to disagree openly.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "FORMAL_REGISTER_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "temerity",
+      "part_of_speech": "noun",
+      "english_definition": "Excessive confidence in taking a risk or challenging someone in authority.",
+      "burmese_meaning": "အန္တရာယ်ကို မတွက်ဆဘဲ သို့မဟုတ် အာဏာရှိသူကို ရင်ဆိုင်ရာတွင် ရဲတင်းလွန်ကဲခြင်း",
+      "example_sentence": "She had the temerity to question the director during the meeting.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "RARE_REGISTER_LEVEL_UNCERTAIN"
+      ]
+    },
+    {
+      "proposed_level": "C1",
+      "word": "vitriol",
+      "part_of_speech": "noun",
+      "english_definition": "Extremely harsh and bitter criticism expressed in speech or writing.",
+      "burmese_meaning": "စကား သို့မဟုတ် စာဖြင့် ပြင်းထန်ခါးသီးစွာ ဝေဖန်တိုက်ခိုက်မှု",
+      "example_sentence": "The debate was overshadowed by vitriol rather than useful ideas.",
+      "source_english": "",
+      "source_burmese": "",
+      "source_level": "",
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false,
+      "status": "REVERSIBLE_QUARANTINE_PENDING_INDEPENDENT_EVIDENCE",
+      "editorial_hold": true,
+      "editorial_hold_reasons": [
+        "SENSE_SPECIFIC_CEFR_SOURCE_NOT_OBSERVED",
+        "INDEPENDENT_ENGLISH_MYANMAR_EXAMPLE_REVIEW_PENDING",
+        "REAL_PRONUNCIATION_LISTENING_NOT_DONE"
+      ],
+      "editorial_risks": [
+        "POLYSEMY_CHEMICAL_SENSE"
+      ]
+    }
+  ]
+}
