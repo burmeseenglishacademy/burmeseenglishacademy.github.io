@@ -17,6 +17,12 @@ def run(level):
     t=load('A2-C1-SOURCE-RECOVERY-REVIEW-TASKS-BATCH71.json')
     q=load('A2-C1-SOURCE-RECOVERY-QUARANTINE-BATCH71.json')
     E,T,Q=d['entries'],t['entries'],q['records']
+    risks=load('BATCH71-TARGETED-EDITORIAL-RISKS.json')
+    assert risks['stage']=='TARGETED_EDITORIAL_RISK_TRIAGE_NOT_INDEPENDENT_VERIFICATION'
+    assert risks['all_72_entries_held'] is True and risks['approval_count']==0
+    assert risks['flagged_count']==len(risks['records'])==23
+    assert {r['word'] for r in risks['records']} <= {e['word'] for e in E}
+    assert all(r['status']=='QUARANTINED_PENDING_SOURCE_EVIDENCE' and r['independently_verified'] is False for r in risks['records'])
     assert d['release_status']=='UNVERIFIED_SOURCE_RECOVERY_DO_NOT_PUBLISH'
     assert t['release_status']=='UNVERIFIED_REVIEW_TASKS_DO_NOT_PUBLISH' and t['source_pages_not_yet_checked'] is True
     assert q['release_status']=='REVERSIBLE_EDITORIAL_QUARANTINE_NOT_APPROVED_DO_NOT_PUBLISH'
@@ -28,7 +34,7 @@ def run(level):
     task={x['word']:x for x in T};hold={x['word']:x for x in Q}
     prior=prior_index()
     pool={x['word'].casefold():x for x in load('UNVERIFIED_CEFR_CANDIDATES.json')['entries']}
-    triage=load('BATCH71-CANDIDATE-TRIAGE.json')
+    triage=load('BATCH70-CANDIDATE-TRIAGE.json')
     assert triage['stage']=='MECHANICAL_CANDIDATE_TRIAGE_ONLY_NOT_EDITORIAL_APPROVAL'
     assert triage['total']==350 and triage['mechanically_clear_only']==183 and triage['quarantined']==167
     assert sum(x['mechanical_preflight']=='QUARANTINE' for x in triage['records'])==167
@@ -58,7 +64,6 @@ def run(level):
         assert all(e[k] is False for k in ('reviewed_english','reviewed_burmese','reviewed_example','reviewed_level','reviewed_pronunciation')),w
         assert all(e[k]=='' for k in ('source_english','source_burmese','source_level')),w
         assert x['editorial_hold'] is True and x['release_approved'] is False,w
-        assert x['editorial_hold'] is True,w
         for k in ('english_definition_review','burmese_review','example_review','cefr_review'):
             assert x[k]['completed'] is False and x[k]['reviewer'] is None and x[k]['observed_evidence'] is None,w
         assert x['english_definition_review']['source_observed'] is False,w
