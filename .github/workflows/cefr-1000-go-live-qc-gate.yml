@@ -6,6 +6,8 @@ on:
       - draft/CEFR-1000-RELEASE-EVIDENCE.json
       - draft/CEFR-1000-APPROVED-RELEASE.json
       - tools/audit_cefr_1000_launch_readiness.py
+      - tools/audit_cefr_1000_cambridge_sense.py
+      - draft/CEFR-1000-CAMBRIDGE-SENSE-TRIAGE-2026-10-27.json
       - tools/validate_cefr_release.py
       - tests/cefr-release-evidence-gate.py
       - tests/cefr-ui.cjs
@@ -34,6 +36,7 @@ jobs:
         run: |
           python3 -m py_compile tools/audit_cefr_1000_launch_readiness.py tools/validate_cefr_release.py
           python3 tests/cefr-release-evidence-gate.py
+          python3 tools/audit_cefr_1000_cambridge_sense.py --level ALL --self-test
           node --check cefr-vocabulary.js
           node tests/cefr-ui.cjs
       - name: Report missing real approvals, voice listening, iPhone and hosting QC
