@@ -1,0 +1,222 @@
+{
+  "schema": 1,
+  "batch": 71,
+  "stage": "TARGETED_EDITORIAL_RISK_TRIAGE_NOT_INDEPENDENT_VERIFICATION",
+  "all_72_entries_held": true,
+  "explanation": "Flags identify questions requiring independent dictionary/CEFR/Myanmar review; they do not assert a verified CEFR error or a false WordNet sense.",
+  "flagged_count": 23,
+  "records": [
+    {
+      "word": "faucet",
+      "proposed_level": "A2",
+      "risk_flags": [
+        "DIALECT_US_VS_BRITISH_TAP",
+        "A2_SENSE_LEVEL_SOURCE_PENDING"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "socket",
+      "proposed_level": "A2",
+      "risk_flags": [
+        "POLYSEMY_ELECTRICAL_VS_ANATOMICAL",
+        "SENSE_SPECIFIC_CEFR_PENDING"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "judgement",
+      "proposed_level": "B1",
+      "risk_flags": [
+        "BRITISH_SPELLING_VARIANT_JUDGMENT",
+        "SENSE_SPECIFIC_CEFR_PENDING"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "willingness",
+      "proposed_level": "B1",
+      "risk_flags": [
+        "DERIVED_NOUN_CEFR_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "magnitude",
+      "proposed_level": "B2",
+      "risk_flags": [
+        "ABSTRACT_NOUN_CEFR_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "mediation",
+      "proposed_level": "B2",
+      "risk_flags": [
+        "LEGAL_NEGOTIATION_SENSE_CEFR_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "projection",
+      "proposed_level": "B2",
+      "risk_flags": [
+        "FORECAST_VS_PROJECTED_IMAGE_SENSE_RISK"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "retention",
+      "proposed_level": "B2",
+      "risk_flags": [
+        "EMPLOYEE_VS_MEMORY_SENSE_RISK"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "specification",
+      "proposed_level": "B2",
+      "risk_flags": [
+        "TECHNICAL_SENSE_CEFR_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "validation",
+      "proposed_level": "B2",
+      "risk_flags": [
+        "TECHNICAL_NOUN_CEFR_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "doggedness",
+      "proposed_level": "C1",
+      "risk_flags": [
+        "DERIVED_NOUN_C1_VS_C2_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "eclecticism",
+      "proposed_level": "C1",
+      "risk_flags": [
+        "LOW_FREQUENCY_C1_VS_C2_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "effrontery",
+      "proposed_level": "C1",
+      "risk_flags": [
+        "LOW_FREQUENCY_C1_VS_C2_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "embellishment",
+      "proposed_level": "C1",
+      "risk_flags": [
+        "DECORATION_VS_EXAGGERATION_SENSE_RISK"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "encumbrance",
+      "proposed_level": "C1",
+      "risk_flags": [
+        "GENERAL_VS_LEGAL_SENSE_RISK"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "malfeasance",
+      "proposed_level": "C1",
+      "risk_flags": [
+        "SPECIALISED_LEGAL_SENSE_C1_VS_C2_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "mendacity",
+      "proposed_level": "C1",
+      "risk_flags": [
+        "LOW_FREQUENCY_C1_VS_C2_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "notoriety",
+      "proposed_level": "C1",
+      "risk_flags": [
+        "NEGATIVE_REPUTATION_NOT_NEUTRAL_FAME"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "oscillation",
+      "proposed_level": "C1",
+      "risk_flags": [
+        "PHYSICAL_VS_FIGURATIVE_SENSE_RISK"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "profundity",
+      "proposed_level": "C1",
+      "risk_flags": [
+        "ABSTRACT_NOUN_C1_VS_C2_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "recalcitrance",
+      "proposed_level": "C1",
+      "risk_flags": [
+        "LOW_FREQUENCY_C1_VS_C2_UNSUPPORTED"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "redress",
+      "proposed_level": "C1",
+      "risk_flags": [
+        "NOUN_VS_VERB_SENSE_RISK"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    },
+    {
+      "word": "reprisal",
+      "proposed_level": "C1",
+      "risk_flags": [
+        "SINGULAR_VS_PLURAL_USAGE_REVIEW"
+      ],
+      "status": "QUARANTINED_PENDING_SOURCE_EVIDENCE",
+      "independently_verified": false
+    }
+  ],
+  "named_entity_safety": "No selected headword is a proper name by authorial inspection; source-based named-entity and WordNet-sense checks remain pending.",
+  "approval_count": 0
+}
