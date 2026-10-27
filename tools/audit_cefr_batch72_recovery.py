@@ -31,6 +31,9 @@ def run(level):
     pool={x['word'].casefold():x for x in load('UNVERIFIED_CEFR_CANDIDATES.json')['entries']}
     triage=load('BATCH70-CANDIDATE-TRIAGE.json')
     screened={(x['proposed_level'],x['word']):x for x in triage['records']}
+    extra=load('BATCH72-EXTRA-CANDIDATE-TRIAGE.json')
+    assert extra['screened']==164 and extra['clear_only']==82 and extra['quarantined']==82
+    extra_screened={(x['level'],x['word']):x for x in extra['records']}
     problems=[];selected=0;previous_clear=0;new_unscreened=0
     for e in E:
         if level!='ALL' and e['proposed_level']!=level:continue
@@ -39,7 +42,11 @@ def run(level):
         if screening:
             if screening['mechanical_preflight']!='CLEAR_ONLY_NOT_APPROVED':problems.append({'word':w,'issue':'BATCH70_PREFLIGHT_QUARANTINE'})
             else:previous_clear+=1
-        else:new_unscreened+=1
+        else:
+            extra_record=extra_screened.get((e['proposed_level'],w))
+            if not extra_record or extra_record['mechanical_status']!='CLEAR_ONLY_NOT_APPROVED':
+                problems.append({'word':w,'issue':'NOT_CLEAR_IN_OBSERVED_BATCH72_PREFLIGHT'})
+            else: new_unscreened+=1
         assert re.fullmatch('[a-z]{3,}',w),w
         assert e['part_of_speech'] in ('noun','verb','adjective','adverb','plural noun'),w
         assert len(e['english_definition'])>=30,w
@@ -67,8 +74,8 @@ def run(level):
     if level=='ALL':
         assert 'UNVERIFIED_DRAFT_DO_NOT_PUBLISH' in (ROOT/'cefr-vocabulary-data.js').read_text(encoding='utf-8')
         assert re.search(r'entries:\s*\[\s*\]',(ROOT/'cefr-vocabulary-data.js').read_text(encoding='utf-8'))
-        (ROOT/'batch72-triage-results.json').write_text(json.dumps({'batch':72,'drafts':40,'by_level':COUNTS,'batch70_mechanically_clear_only':previous_clear,'new_not_preflighted':new_unscreened,'independently_approved':0,'audio_generated':0,'problems':problems},ensure_ascii=False,indent=2)+'\\n',encoding='utf-8')
-    print('BATCH72',level,'structurally checked',selected,'earlier-preflight-clear-only',previous_clear,'new-unscreened',new_unscreened,'cross-corpus problems',json.dumps(problems,ensure_ascii=False))
+        (ROOT/'batch72-triage-results.json').write_text(json.dumps({'batch':72,'drafts':40,'by_level':COUNTS,'batch70_mechanically_clear_only':previous_clear,'new_batch72_mechanically_clear_only':new_unscreened,'independently_approved':0,'audio_generated':0,'problems':problems},ensure_ascii=False,indent=2)+'\\n',encoding='utf-8')
+    print('BATCH72',level,'structurally checked',selected,'earlier-preflight-clear-only',previous_clear,'new-batch72-preflight-clear-only',new_unscreened,'cross-corpus problems',json.dumps(problems,ensure_ascii=False))
     assert not problems,'Cross-corpus problems require repair; all drafts stay held'
     print('PASS: structural-only. All quarantined. No independent approval, audio or publication.')
 if __name__=='__main__':
