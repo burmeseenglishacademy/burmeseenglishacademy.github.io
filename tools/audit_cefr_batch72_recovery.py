@@ -77,7 +77,7 @@ def run(level):
         unique=collections.defaultdict(set); occurrences=collections.Counter(); unlevelled=[]
         for p in files:
             for row in json.loads(p.read_text(encoding='utf-8'))['entries']:
-                w=row['word'].casefold();lvl=row.get('proposed_level') or row.get('level')
+                w=row['word'].casefold();lvl=row.get('proposed_level') or row.get('level') or ('A1' if p.name.startswith('A1-') else None)
                 if lvl not in ('A1','A2','B1','B2','C1'):unlevelled.append((p.name,w,lvl));continue
                 unique[lvl].add(w);occurrences[w]+=1
         assert not unlevelled,unlevelled[:10]
