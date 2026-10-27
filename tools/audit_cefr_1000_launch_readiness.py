@@ -175,6 +175,8 @@ def audit(ledger=None, after_deployment=False):
         for text in (entry.get("word"), entry.get("example_sentence")):
             if isinstance(text, str):
                 expected_audio.update((text, voice) for voice in VOICES)
+    if not audio_seen:
+        issues.append("No real George/Emma audio listening receipts provided")
     if len(audio_seen) != len(expected_audio):
         issues.append(f"Listening coverage {len(audio_seen)} records / {len(expected_audio)} required voice-text pairs")
     if audio_seen and set(audio_seen) != expected_audio:
@@ -267,7 +269,7 @@ def main():
         assert fake_issues and not fake_report["release_ready"]
         assert any("independently approved 1000-entry" in item for item in fake_issues)
         assert any("physical iPhone Safari" in item for item in fake_issues)
-        assert any("Listening coverage" in item for item in fake_issues)
+        assert any("No real George/Emma audio listening receipts" in item for item in fake_issues)
         print("PASS: false ready flag cannot override missing independent, listening, iPhone or hosting evidence")
     pathlib.Path(args.report).write_text(json.dumps({"report": report, "blockers": issues[:100]},
                                            ensure_ascii=False, indent=2) + "\n", encoding="utf8")
