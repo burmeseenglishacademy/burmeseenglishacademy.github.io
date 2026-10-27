@@ -1,0 +1,360 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B1_OXFORD_TWELVE_DIRECT_PDF_WORD_POS_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-28",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 12,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 3,
+    "A2": 6,
+    "B1": 3
+  },
+  "independently_approved_count": 0,
+  "source_limitations": "Direct Oxford University Press Oxford 3000 by CEFR level PDF checked 2026-10-28, line indices are zero-based and PDF page numbers one-based. Source evidence is word/POS level, not exact-sense CEFR proof. Oxford A1/A2 versus B1 differences are review prompts, not automatic retiering. No independent human English/Myanmar/example/CEFR review, listening, iPhone QA or publication.",
+  "records": [
+    {
+      "word": "direction",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The way in which someone or something moves or points.",
+        "myanmar_meaning": "ဦးတည်ရာ၊ ဦးတည်ချက်",
+        "example_sentence": "The driver asked which direction to take."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 5,
+        "extracted_line": 1128,
+        "source_excerpt": "direction n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_B1_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "Direction of movement is an ordinary A2 noun on Oxford's word/POS list; reviewer must independently verify any B1 exact-sense rationale and Myanmar phrasing.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "weekend",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Saturday and Sunday, when many people do not work.",
+        "myanmar_meaning": "သီတင်းပတ်ကုန်",
+        "example_sentence": "We visited our grandparents at the weekend."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 4,
+        "extracted_line": 869,
+        "source_excerpt": "weekend n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_B1_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "Draft weekend definition and at-the-weekend example express a basic A1 time concept; require independent B1 exact-sense justification or replacement.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "wonder",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To think about something because you want to know more.",
+        "myanmar_meaning": "သိချင်မိသည်၊ စဉ်းစားမိသည်",
+        "example_sentence": "I wonder why the shop is closed today."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 10,
+        "extracted_line": 2580,
+        "source_excerpt": "wonder v., n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "SAME_LEVEL_WORD_POS_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "Oxford lists verb and noun at B1; review the draft verb's curiosity sense, natural Myanmar rendering and original question example.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "cash",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Money in the form of notes and coins.",
+        "myanmar_meaning": "ငွေသား",
+        "example_sentence": "The small shop accepts cash only."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 4,
+        "extracted_line": 1028,
+        "source_excerpt": "cash n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_B1_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "Oxford labels the everyday notes-and-coins noun A2; investigate whether the draft B1 placement adds any distinct exact sense.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "clearly",
+      "level": "B1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "In a way that is easy to see, hear or understand.",
+        "myanmar_meaning": "ရှင်းလင်းစွာ",
+        "example_sentence": "Please speak clearly during the presentation."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 4,
+        "extracted_line": 1050,
+        "source_excerpt": "clearly adv.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_B1_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "The draft speech example uses ordinary manner-of-speaking clearly; review A2 word/POS conflict with B1 draft and Myanmar style.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "effort",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Physical or mental energy used to achieve something.",
+        "myanmar_meaning": "ကြိုးစားအားထုတ်မှု",
+        "example_sentence": "Learning a language requires regular effort."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 8,
+        "extracted_line": 2008,
+        "source_excerpt": "effort n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "SAME_LEVEL_WORD_POS_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "Oxford B1 word/POS matches draft; still require independent exact-sense, Myanmar and original example review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "imagine",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To create a picture or idea in your mind.",
+        "myanmar_meaning": "စိတ်ကူးကြည့်သည်",
+        "example_sentence": "Can you imagine living beside the sea?"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 2,
+        "extracted_line": 391,
+        "source_excerpt": "imagine v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_B1_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "Oxford A1 verb and draft mental-picture example may align at an earlier level than B1; require independent sense-specific evidence.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "ship",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A large boat used to carry people or goods across water.",
+        "myanmar_meaning": "သင်္ဘော",
+        "example_sentence": "The ship arrived at the port this morning."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 6,
+        "extracted_line": 1608,
+        "source_excerpt": "ship n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_B1_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "Oxford A2 noun lists the vessel sense; draft B1 ship/port example appears ordinary, requiring exact-sense B1 justification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "band",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A group of musicians who perform together.",
+        "myanmar_meaning": "တေးဂီတအဖွဲ့",
+        "example_sentence": "The band played at the school festival."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 1,
+        "extracted_line": 61,
+        "source_excerpt": "band n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_B1_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "Oxford A1 noun is not sense-disambiguated here; the draft musicians example may be elementary, but a band can also be a strip/ring. Review exact musical sense.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "fan",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A device that moves air to help cool a room or person.",
+        "myanmar_meaning": "ပန်ကာ",
+        "example_sentence": "She turned on the fan because the room was warm."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 5,
+        "extracted_line": 1198,
+        "source_excerpt": "fan n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_B1_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "Oxford A2 noun is polysemous: cooling device versus supporter; draft specifies a cooling device. Need independent exact-sense CEFR and Myanmar review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "none",
+      "level": "B1",
+      "part_of_speech": "pronoun",
+      "shortlist_snapshot": {
+        "english_definition": "Not one person or thing from a group.",
+        "myanmar_meaning": "တစ်ယောက်မျှ၊ တစ်ခုမျှ မရှိ",
+        "example_sentence": "None of the boxes were damaged."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 6,
+        "extracted_line": 1423,
+        "source_excerpt": "none pron.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_B1_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "Oxford A2 pronoun, draft B1 zero-of-group sense and damaged-box example need independent B1 rationale; also inspect agreement in 'None ... were'.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "lack",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The state of not having enough of something needed.",
+        "myanmar_meaning": "မလုံလောက်မှု၊ ချို့တဲ့မှု",
+        "example_sentence": "A lack of sleep can make it difficult to concentrate."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 8,
+        "extracted_line": 2174,
+        "source_excerpt": "lack n., v.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "SAME_LEVEL_WORD_POS_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "Oxford B1 noun/verb; draft uses noun lack of sleep. Check natural Myanmar, example and sense alignment independently.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
