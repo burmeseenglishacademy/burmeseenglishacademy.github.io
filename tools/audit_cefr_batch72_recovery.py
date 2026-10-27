@@ -62,11 +62,11 @@ def run(level):
         if w.casefold() in prior:problems.append({'word':w,'issue':'PRIOR_AUTHORED_COLLISION','files':prior[w.casefold()]})
         p=pool.get(w.casefold())
         if p and p.get('level')!=e['proposed_level']:problems.append({'word':w,'issue':'UNVERIFIED_POOL_TIER_DISAGREEMENT','pool_level':p.get('level')})
-        if p and re.search(r'\\b(?:surname|given name|capital of|city in|genus|species|trademark)\\b',str(p.get('english_definition_draft','')),re.I):
+        if p and re.search(r'\b(?:surname|given name|capital of|city in|genus|species|trademark)\b',str(p.get('english_definition_draft','')),re.I):
             problems.append({'word':w,'issue':'SUSPECT_WORDNET_SENSE'})
     if level=='ALL':
         assert 'UNVERIFIED_DRAFT_DO_NOT_PUBLISH' in (ROOT/'cefr-vocabulary-data.js').read_text(encoding='utf-8')
-        assert re.search(r'entries:\\s*\\[\\s*\\]',(ROOT/'cefr-vocabulary-data.js').read_text(encoding='utf-8'))
+        assert re.search(r'entries:\s*\[\s*\]',(ROOT/'cefr-vocabulary-data.js').read_text(encoding='utf-8'))
         (ROOT/'batch72-triage-results.json').write_text(json.dumps({'batch':72,'drafts':40,'by_level':COUNTS,'batch70_mechanically_clear_only':previous_clear,'new_not_preflighted':new_unscreened,'independently_approved':0,'audio_generated':0,'problems':problems},ensure_ascii=False,indent=2)+'\\n',encoding='utf-8')
     print('BATCH72',level,'structurally checked',selected,'earlier-preflight-clear-only',previous_clear,'new-unscreened',new_unscreened,'cross-corpus problems',json.dumps(problems,ensure_ascii=False))
     assert not problems,'Cross-corpus problems require repair; all drafts stay held'
