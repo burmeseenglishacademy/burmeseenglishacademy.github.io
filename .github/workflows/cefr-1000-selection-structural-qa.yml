@@ -26,6 +26,8 @@ on:
       - tools/audit_cefr_1000_cambridge_sense.py
       - draft/CEFR-1000-SENSE-REWRITE-CANDIDATES-2026-10-27.json
       - draft/CEFR-1000-CAMBRIDGE-SIX-SENSE-LEADS-2026-10-27.json
+      - draft/CEFR-1000-OXFORD-C1-FIVE-DIRECT-SENSE-LEADS-2026-10-27.json
+      - tools/audit_cefr_1000_oxford_c1_five.py
       - tools/audit_cefr_1000_six_sense.py
       - tools/audit_cefr_1000_editorial_candidates.py
       - .github/workflows/cefr-1000-selection-structural-qa.yml
@@ -85,6 +87,11 @@ jobs:
       - name: Reject forged source sense, draft snapshots and fake reviewer signoff
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_six_sense.py --level ALL --self-test
+      - name: Audit five directly observed Oxford C1 sense and register leads (not human review)
+        run: python3 tools/audit_cefr_1000_oxford_c1_five.py --level "${{ matrix.level }}"
+      - name: Reject false signoff, forged source scopes, altered draft snapshots and Cambridge C2 downgrades
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_oxford_c1_five.py --level ALL --self-test
       - name: Cross-check actual shared wordforms with protected IELTS 1000 dataset
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_ielts_overlap.py
@@ -108,5 +115,6 @@ jobs:
             cefr-1000-editorial-candidates-${{ matrix.level }}.json
             cefr-1000-cambridge-six-sense-${{ matrix.level }}.json
             cefr-1000-oxford-dictionary-${{ matrix.level }}.json
+            cefr-1000-oxford-c1-five-${{ matrix.level }}.json
           if-no-files-found: error
           retention-days: 30
