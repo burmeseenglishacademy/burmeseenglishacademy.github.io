@@ -1,0 +1,331 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B1_TWELVE_PUBLISHER_INDEXED_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-28",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 12,
+    "B2": 0,
+    "C1": 0
+  },
+  "independently_approved_count": 0,
+  "source_limitations": "Publisher-owned Cambridge search-indexed English dictionary excerpts observed 2026-10-28; direct full-page access returned HTTP 403. These are editorial source leads, not direct full-page verification, not independently approved exact-sense/CEFR/English/Myanmar/example review. No copyrighted dictionary definitions copied into learner content. All canonical drafts and production assets unchanged.",
+  "records": [
+    {
+      "word": "independent",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Not controlled by another person or organisation.",
+        "myanmar_meaning": "အမှီအခိုကင်းသော၊ လွတ်လပ်သော",
+        "example_sentence": "The team made an independent decision."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/us/dictionary/english/independent",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "source_sense_heading": "adjective (NOT INFLUENCED / NOT RULED)",
+        "source_cefr_level": "B2",
+        "source_observation": "Cambridge marks freedom from another person's control or influence B2, while B1 is not needing help. The B1 draft's independent decision uses autonomy from control, not self-sufficiency.",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "editorial_risk": "SAME_SENSE_B2_VS_PROVISIONAL_B1",
+      "independent_reviewer_task": "Verify whether the independent decision refers to autonomous judgement (B2); independently replace or justify B1 with a credible exact-sense B1 source.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "impact",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A strong effect that something has on a situation.",
+        "myanmar_meaning": "သက်ရောက်မှု",
+        "example_sentence": "The new policy had an impact on small businesses."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/us/dictionary/english/impact",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "source_sense_heading": "noun (EFFECT)",
+        "source_cefr_level": "B2",
+        "source_observation": "Cambridge labels a strong effect on a person or situation B2; the draft policy's impact on businesses is that effect, not physical collision.",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "editorial_risk": "SAME_SENSE_B2_VS_PROVISIONAL_B1",
+      "independent_reviewer_task": "Require independently supported B1 sense or retier/replace; check Myanmar gloss distinguishes influence from collision.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "effective",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Producing the result that was wanted.",
+        "myanmar_meaning": "ထိရောက်သော",
+        "example_sentence": "Regular practice is an effective way to learn."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/us/dictionary/english/effective",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "source_sense_heading": "adjective (SUCCESSFUL)",
+        "source_cefr_level": "B2",
+        "source_observation": "Cambridge labels achieving a desired result B2; the draft describes regular practice as a successful method.",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "editorial_risk": "SAME_SENSE_B2_VS_PROVISIONAL_B1",
+      "independent_reviewer_task": "Check a direct B1 exact-sense reference or retier/replace; independently validate example and natural Myanmar.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "analysis",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A careful examination of information to understand it.",
+        "myanmar_meaning": "အသေးစိတ် ခွဲခြမ်းစိတ်ဖြာလေ့လာမှု",
+        "example_sentence": "The team completed an analysis of the survey results."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/dictionary/english/analysis",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "source_sense_heading": "noun (DETAILED EXAMINATION)",
+        "source_cefr_level": "B2",
+        "source_observation": "Cambridge labels the careful examination of information B2; the survey-results example uses this detailed-study sense.",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "editorial_risk": "SAME_SENSE_B2_VS_PROVISIONAL_B1",
+      "independent_reviewer_task": "Independently assess B1 placement and whether an alternative easier B1 noun is preferable.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "complex",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Made of many connected parts and difficult to understand.",
+        "myanmar_meaning": "ရှုပ်ထွေးသော၊ အစိတ်အပိုင်းများစွာပါဝင်သော",
+        "example_sentence": "The engineer explained the complex process clearly."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/dictionary/english/complex",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "source_sense_heading": "adjective (MANY CONNECTED PARTS / HARD TO UNDERSTAND)",
+        "source_cefr_level": "B2",
+        "source_observation": "Cambridge labels both many-related-parts and difficult-to-understand adjective senses B2; the draft combines these two related B2 aspects.",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "editorial_risk": "SAME_SENSE_B2_VS_PROVISIONAL_B1",
+      "independent_reviewer_task": "Independently review level, avoid conflating with C1 building-complex noun, and replace/retier if B1 cannot be substantiated.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "critical",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Extremely important for success or safety.",
+        "myanmar_meaning": "အလွန်အရေးကြီးသော၊ မရှိမဖြစ်လိုအပ်သော",
+        "example_sentence": "Clean drinking water is critical during an emergency."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/dictionary/english/critical",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "source_sense_heading": "adjective (IMPORTANT)",
+        "source_cefr_level": "B2",
+        "source_observation": "Cambridge labels the extremely-important adjective sense B2; draft emergency-water example is about importance, not critical illness or negative criticism.",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "editorial_risk": "SAME_SENSE_B2_VS_PROVISIONAL_B1",
+      "independent_reviewer_task": "Independently substantiate B1 or replace/retier; check precise Burmese distinction from negative criticism.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "necessary",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Needed in order to achieve something.",
+        "myanmar_meaning": "လိုအပ်သော၊ မဖြစ်မနေလိုအပ်သော",
+        "example_sentence": "Is a ticket necessary for this event?"
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/dictionary/english/necessary",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "source_sense_heading": "adjective (NEEDED)",
+        "source_cefr_level": "B1",
+        "source_observation": "Cambridge labels required-for-a-result adjective B1; the draft question about whether a ticket is needed matches.",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "editorial_risk": "PUBLISHER_B1_SENSE_LEAD",
+      "independent_reviewer_task": "Independently confirm direct source, English definition, Myanmar meaning and natural question grammar.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "equipment",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The tools or machines needed for a particular activity.",
+        "myanmar_meaning": "ကိရိယာပစ္စည်းများ၊ အသုံးအဆောင်စက်ပစ္စည်းများ",
+        "example_sentence": "The team checked its safety equipment before entering the site."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/us/dictionary/learner-english/equipment",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "source_sense_heading": "noun (TOOLS FOR AN ACTIVITY; UNCOUNTABLE)",
+        "source_cefr_level": "B1",
+        "source_observation": "Cambridge labels the collective uncountable tools/gear noun B1; draft safety-equipment use fits and does not pluralise equipment.",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "editorial_risk": "PUBLISHER_B1_SENSE_LEAD",
+      "independent_reviewer_task": "Independently verify uncountable grammar, original Myanmar translation and example.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "application",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A formal request for a job, course, or permission.",
+        "myanmar_meaning": "လျှောက်လွှာ၊ တရားဝင်လျှောက်ထားမှု",
+        "example_sentence": "Please submit your application before Friday."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/dictionary/learner-english/application",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "source_sense_heading": "noun (FORMAL REQUEST)",
+        "source_cefr_level": "B1",
+        "source_observation": "Cambridge labels the formal request noun B1, while computer-program sense is B2 in the Learner's Dictionary; draft submit-your-application context is a request.",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "editorial_risk": "PUBLISHER_B1_SENSE_LEAD_WITH_POLYSEMY",
+      "independent_reviewer_task": "Confirm Myanmar refers to application/request, not a mobile app; independently verify original example and exact sense.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "purpose",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The reason why something is done or exists.",
+        "myanmar_meaning": "ရည်ရွယ်ချက်၊ အကြောင်းရင်း",
+        "example_sentence": "The purpose of the meeting is to agree on a delivery date."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/dictionary/learner-english/purpose",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "source_sense_heading": "noun (REASON)",
+        "source_cefr_level": "B1",
+        "source_observation": "Cambridge Learner's Dictionary labels why something is done B1; draft meeting's purpose is this reason, not the 'on purpose' idiom.",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "editorial_risk": "PUBLISHER_B1_SENSE_LEAD",
+      "independent_reviewer_task": "Independently check the reason/aim Myanmar gloss and meeting-example grammar.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "solution",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A way of dealing with or solving a problem.",
+        "myanmar_meaning": "ပြဿနာဖြေရှင်းနည်း",
+        "example_sentence": "The team proposed a practical solution to reduce waste."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/dictionary/learner-english/solution",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "source_sense_heading": "noun (ANSWER TO A PROBLEM)",
+        "source_cefr_level": "B1",
+        "source_observation": "Cambridge labels answer-to-a-problem B1; draft waste-reduction proposal uses this sense, not the chemical-mixture sense.",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "editorial_risk": "PUBLISHER_B1_SENSE_LEAD_WITH_POLYSEMY",
+      "independent_reviewer_task": "Confirm that the original Myanmar gloss refers to problem-solving rather than a liquid mixture.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "otherwise",
+      "level": "B1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "If not; used to explain what will happen without a particular action.",
+        "myanmar_meaning": "မဟုတ်လျှင်၊ သို့မဟုတ်ပါက",
+        "example_sentence": "Leave now; otherwise, you may miss the train."
+      },
+      "publisher_source": {
+        "url": "https://dictionary.cambridge.org/dictionary/english/otherwise",
+        "publisher": "Cambridge University Press & Assessment",
+        "observed_on": "2026-10-28",
+        "source_sense_heading": "conjunction (IF NOT / OR ELSE); adverb (EXCEPT) B2",
+        "source_cefr_level": "B1",
+        "source_observation": "Cambridge labels the conditional result after a command or suggestion as B1 under conjunction; draft uses 'Leave now; otherwise, you may miss the train' but records part_of_speech as adverb. Its separately labelled adverb 'except' sense is B2.",
+        "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+        "observation_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW"
+      },
+      "editorial_risk": "PART_OF_SPEECH_AND_SENSE_MISMATCH",
+      "independent_reviewer_task": "Independently resolve whether conditional connector is a conjunction or sentence adverb for the intended syllabus; do not equate the B1 conjunction label with B1 adverb approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
