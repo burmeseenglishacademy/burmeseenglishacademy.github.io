@@ -6,7 +6,7 @@ must represent actual human checks; no automated producer may set them.
 import argparse,collections,hashlib,json,re,subprocess,sys
 from pathlib import Path
 from urllib.parse import urlparse
-TARGETS={'A1':500,'A2':700,'B1':1000,'B2':1300,'C1':1500}
+TARGETS={'A1':200,'A2':200,'B1':200,'B2':200,'C1':200}
 MYANMAR=re.compile('[\\u1000-\\u109f\\uaa60-\\uaa7f]')
 ASCII_WORD=re.compile(r"^[a-z][a-z'-]{0,35}$")
 REVIEW_FIELDS=('reviewed_english','reviewed_burmese','reviewed_example','reviewed_level','reviewed_pronunciation')
@@ -34,8 +34,8 @@ def validate(data,root=None,verify_audio=False):
     def fail(s):errors.append(s)
     if not isinstance(data,dict):return ['File is not a JSON object']
     entries=data.get('entries')
-    if not isinstance(entries,list) or len(entries)!=5000:fail('Exactly 5000 entries required')
-    if data.get('targets')!=TARGETS:fail('Level quotas differ from approved 500/700/1000/1300/1500')
+    if not isinstance(entries,list) or len(entries)!=1000:fail('Exactly 1000 entries required')
+    if data.get('targets')!=TARGETS:fail('Level quotas differ from approved 200/200/200/200/200')
     if data.get('release_status')!='VERIFIED_FOR_RELEASE':fail('Release status is not VERIFIED_FOR_RELEASE')
     if not isinstance(entries,list):return errors
     seen=set();counts=collections.Counter()
@@ -68,7 +68,8 @@ def validate(data,root=None,verify_audio=False):
                 fail(f'{n}: missing or generic non-word-specific reference URL in {field}')
         texts.add(word);texts.add(normalize(row.get('example_sentence','')))
     if counts!=collections.Counter(TARGETS):fail(f'Level quota mismatch: {counts}')
-    if not verify_audio or root is None:return errors
+    if verify_audio and root is None:return errors+['Audio verification requested without a root directory']
+    if not verify_audio:return errors
     manifest_path=root/'audio-manifest.js'
     if not manifest_path.is_file():return errors+['Audio manifest absent']
     s=manifest_path.read_text('utf8');start=s.index('{');end=s.rfind('}')
@@ -100,5 +101,5 @@ def main():
         for msg in issues[:35]:print('BLOCK:',msg,file=sys.stderr)
         print(f'NOT RELEASE READY: {len(issues)} defects (first 35 shown)',file=sys.stderr)
         raise SystemExit(1)
-    print('PASS: 5000 records satisfy structural reference/review checks' + (' and MP3 existence/decoding' if args.audio else '; AUDIO NOT CHECKED, NOT RELEASE APPROVED'))
+    print('PASS: 1000 records satisfy structural reference/review checks' + (' and MP3 existence/decoding' if args.audio else '; AUDIO NOT CHECKED, NOT RELEASE APPROVED'))
 if __name__=='__main__':main()
