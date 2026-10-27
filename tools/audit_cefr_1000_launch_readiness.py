@@ -69,6 +69,59 @@ def specific_url(url):
                 and "example." not in p.hostname.lower())
 
 
+def independent_source_for_word(record, word):
+    """Documentary source-to-headword binding, not an exact-sense judgement.
+
+    Dictionary pages must point to the reviewed headword, not a plausible
+    unrelated dictionary entry. Broad publisher PDFs require a verifiable
+    page/line locator and a verbatim short observation containing the word.
+    Reviewers still have to independently judge POS, sense and CEFR.
+    """
+    from urllib.parse import unquote
+    url = record.get("source_url")
+    if not specific_url(url) or not isinstance(word, str) or not word:
+        return False
+    p = urlparse(url)
+    path = unquote(p.path).casefold()
+    word = word.casefold().strip()
+    if path.endswith(".pdf"):
+        locator = record.get("source_locator")
+        if not isinstance(locator, dict):
+            return False
+        page, line = locator.get("pdf_page"), locator.get("extracted_line")
+        quote = locator.get("source_excerpt")
+        if type(page) is not int or page < 1 or type(line) is not int or line < 0:
+            return False
+        if not isinstance(quote, str) or len(quote.strip()) < 3 or len(quote) > 350:
+            return False
+        return word in re.findall(r"[a-z]+(?:[-'][a-z]+)*", quote.casefold())
+    segments = [segment.split("_")[0] for segment in path.strip("/").split("/")]
+    return word in segments
+
+
+def independent_word_stage(record, word, stage):
+    """Reject unsupported or anonymous independent signoff assertions.
+
+    A receipt URL and declared independent HUMAN role are required. Their
+    authenticity must still be checked against the original reviewer by a
+    separate human; this validator does not authenticate identities.
+    """
+    if not real_observation(record, ("reviewer_id", "notes",
+                                     "reviewer_attestation_url", "reviewer_role")):
+        return False
+    if record.get("reviewer_role") not in (
+            "INDEPENDENT_HUMAN_EDITOR", "INDEPENDENT_HUMAN_LINGUIST"):
+        return False
+    if not specific_url(record.get("reviewer_attestation_url")):
+        return False
+    reviewer = record["reviewer_id"].casefold()
+    if re.search(r"(?:^|[^a-z])(?:ai|gpt|chatgpt|llm|bot|automation|automated|agent)(?:[^a-z]|$)", reviewer):
+        return False
+    if stage in ("english_sense", "sense_specific_cefr"):
+        return independent_source_for_word(record, word)
+    return True
+
+
 def hosting_limits_valid(hosting, approved_sha):
     """Check a documented measurement against actual GitHub Pages policy caps.
 
@@ -180,12 +233,9 @@ def audit(ledger=None, after_deployment=False):
         good = True
         for stage in STAGES:
             c = checks.get(stage, {}) if isinstance(checks, dict) else {}
-            if not real_observation(c, ("reviewer_id", "notes")):
+            if not independent_word_stage(c, word, stage):
                 good = False
-                issues.append(f"{word}: {stage} lacks independent review receipt")
-            if stage in ("english_sense", "sense_specific_cefr") and not specific_url(c.get("source_url")):
-                good = False
-                issues.append(f"{word}: {stage} lacks exact-sense public source URL")
+                issues.append(f"{word}: {stage} lacks independent human attestation or word-linked source evidence")
         if good and level in TARGETS:
             report["independent_stage_complete"][level] += 1
     if len(receipt_index) and set(receipt_index) != expected_keys:
