@@ -24,6 +24,8 @@ on:
       - tools/audit_cefr_1000_oxford_dictionary_c1.py
       - draft/CEFR-1000-CAMBRIDGE-SENSE-TRIAGE-2026-10-27.json
       - tools/audit_cefr_1000_cambridge_sense.py
+      - draft/CEFR-1000-SENSE-REWRITE-CANDIDATES-2026-10-27.json
+      - tools/audit_cefr_1000_editorial_candidates.py
       - .github/workflows/cefr-1000-selection-structural-qa.yml
   workflow_dispatch:
 permissions:
@@ -71,6 +73,11 @@ jobs:
       - name: Reject forged Oxford dictionary scope, approval and changed examples
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_dictionary_c1.py --level ALL --self-test
+      - name: Audit eight Cambridge-supported editorial rewrite/replacement proposals (not independent review)
+        run: python3 tools/audit_cefr_1000_editorial_candidates.py --level "${{ matrix.level }}"
+      - name: Reject forged editorial proposal evidence and fake approvals
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_editorial_candidates.py --level ALL --self-test
       - name: Cross-check actual shared wordforms with protected IELTS 1000 dataset
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_ielts_overlap.py
@@ -91,6 +98,7 @@ jobs:
             cefr-1000-oxford-second-batch-${{ matrix.level }}.json
             cefr-1000-cambridge-second-sense-${{ matrix.level }}.json
             cefr-1000-cambridge-sense-${{ matrix.level }}.json
+            cefr-1000-editorial-candidates-${{ matrix.level }}.json
             cefr-1000-oxford-dictionary-${{ matrix.level }}.json
           if-no-files-found: error
           retention-days: 30
