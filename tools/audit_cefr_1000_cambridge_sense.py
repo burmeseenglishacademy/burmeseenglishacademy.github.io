@@ -26,6 +26,15 @@ EXPECTED = {
     "employee": ("B2", "B1 (paid worker)"),
     "engineer": ("B2", "A2 (professional who designs/builds machines or structures)"),
     "appointment": ("B2", "A2 (arranged meeting); C2 (official job selection)"),
+    "weekend": ("B1", "A1"),
+    "cash": ("B1", "A2 (notes and coins); B1 (money in any form)"),
+    "manage": ("B2", "B1"),
+    "hardly": ("B2", "B1 (almost not); B2 (certainly not)"),
+    "signature": ("C1", "B1"),
+    "identical": ("C1", "B2"),
+    "manufacturer": ("C1", "B2"),
+    "implement": ("C1", "B2"),
+    "permit": ("C1", "C1"),
 }
 STATUS = "SENSE_SPECIFIC_PUBLISHER_SOURCE_TRIAGE_NO_INDEPENDENT_APPROVAL"
 
