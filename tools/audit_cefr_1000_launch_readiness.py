@@ -83,6 +83,9 @@ def audit(ledger=None, after_deployment=False):
               "ielts_shared_headwords_in_provisional_shortlist": 0,
               "ielts_overlaps_requiring_independent_resolution": 0,
               "ielts_overlaps_resolution_receipts_valid": 0,
+              "cambridge_sense_observations": 0,
+              "cambridge_sense_retained_requiring_resolution": 0,
+              "cambridge_sense_retained_resolved": 0,
               "validated_audio_voice_text_pairs": 0,
               "check_type": "DOCUMENTARY_EVIDENCE_INTEGRITY_NOT_REAL_WORLD_CONFIRMATION"}
     if d.get("scope_targets") != TARGETS:
@@ -201,6 +204,54 @@ def audit(ledger=None, after_deployment=False):
         issues.append("Oxford POS/level/source or absent-core-list discrepancies remain unresolved for retained entries")
     if ox_index and set(ox_index) - {(x["word"], x["proposed_level"]) for x in reported_risks}:
         issues.append("Unknown Oxford discrepancy receipts supplied")
+
+    # Publisher sense-level observations must be reconciled for retained entries.
+    # This catches polysemy and definition/example divergence (especially 'business')
+    # that a coarse headword/POS Oxford check cannot establish.
+    cambridge = read_json(ROOT / "draft/CEFR-1000-CAMBRIDGE-SENSE-TRIAGE-2026-10-27.json")
+    sense_flags = cambridge.get("records", [])
+    report["cambridge_sense_observations"] = len(sense_flags)
+    sense_receipts = d.get("cambridge_sense_triage_review_receipts", [])
+    if not isinstance(sense_receipts, list):
+        issues.append("Cambridge sense review receipts are not a list")
+        sense_receipts = []
+    sense_index = {}
+    for rec in sense_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Invalid Cambridge sense receipt")
+            continue
+        key = (rec.get("word"), rec.get("proposed_level"))
+        if key in sense_index:
+            issues.append("Duplicate Cambridge sense receipt")
+        sense_index[key] = rec
+    for flag in sense_flags:
+        key = (flag["word"], flag["level"])
+        entry = entry_lookup.get(key)
+        if entry is None:
+            continue  # Replacement/retiering still needs full new independent review.
+        report["cambridge_sense_retained_requiring_resolution"] += 1
+        rec = sense_index.get(key)
+        if not real_observation(rec, ("reviewer_id", "notes", "source_url")):
+            continue
+        if (rec.get("decision") != "RETAIN_WITH_INDEPENDENT_SENSE_EVIDENCE"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or rec.get("verified_cefr_level") != entry.get("level")
+                or rec.get("verified_part_of_speech") != entry.get("part_of_speech")
+                or not specific_url(rec.get("source_url"))
+                or entry["word"] not in urlparse(rec["source_url"]).path.lower()):
+            continue
+        # The existing A2 business draft defines A1 selling activity while the
+        # example depicts an A2 countable company. Do not accept a copied draft.
+        if (entry["word"] == "business"
+                and entry.get("english_definition") == flag.get("shortlist_english_definition")
+                and entry.get("example_sentence") == flag.get("shortlist_example")):
+            continue
+        report["cambridge_sense_retained_resolved"] += 1
+    if (report["cambridge_sense_retained_requiring_resolution"]
+            != report["cambridge_sense_retained_resolved"]):
+        issues.append("Retained Cambridge sense/POS/CEFR observations lack independent resolution")
+    if sense_index and set(sense_index) - {(x["word"], x["level"]) for x in sense_flags}:
+        issues.append("Unknown Cambridge sense reviewer receipts supplied")
 
     # Cross-bank duplication is not automatically wrong, but each retained
     # overlap must have an independent documented semantic/teaching rationale.
