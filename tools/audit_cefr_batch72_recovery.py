@@ -32,7 +32,8 @@ def run(level):
     triage=load('BATCH70-CANDIDATE-TRIAGE.json')
     screened={(x['proposed_level'],x['word']):x for x in triage['records']}
     extra=load('BATCH72-EXTRA-CANDIDATE-TRIAGE.json')
-    assert extra['screened']==164 and extra['clear_only']==82 and extra['quarantined']==82
+    assert extra['screened']==len(extra['records']) and extra['screened']==extra['clear_only']+extra['quarantined']
+    assert all(x['independently_checked'] is False for x in extra['records'])
     extra_screened={(x['level'],x['word']):x for x in extra['records']}
     problems=[];selected=0;previous_clear=0;new_unscreened=0
     for e in E:
