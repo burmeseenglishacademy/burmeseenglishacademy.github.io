@@ -27,7 +27,7 @@ def audit(evidence, shortlist, level):
     import hashlib
     # GitHub Git blob SHA-1, NOT SHA-1 of file bytes.
     b = SHORTLIST.read_bytes()
-    git_sha = hashlib.sha1(b"blob " + str(len(b)).encode("ascii") + b"\\0" + b).hexdigest()
+    git_sha = hashlib.sha1(b"blob " + str(len(b)).encode("ascii") + bytes([0]) + b).hexdigest()
     if evidence.get("shortlist_blob_sha") != git_sha:
         problems.append("Pinned canonical shortlist Git blob SHA differs")
     if evidence.get("scope") != "CEFR_1000_TOTAL_STAGING_ONLY":
@@ -141,7 +141,7 @@ def main():
               "errors": issues, "source_access": "search-indexed; direct 403",
               "is_independent_review": False}
     output = ROOT / f"cefr-1000-cambridge-b2-six-{args.level}.json"
-    output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + chr(10), encoding="utf-8")
     print(f"Cambridge B2 six source leads: {relevant} in {args.level}, independent approvals 0, issues {len(issues)}")
     for issue in issues:
         print("BLOCK:", issue, file=sys.stderr)
