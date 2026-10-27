@@ -220,6 +220,9 @@ def audit(ledger=None, after_deployment=False):
               "cambridge_b2_six_observations": 0,
               "cambridge_b2_six_retained_requiring_resolution": 0,
               "cambridge_b2_six_retained_resolved": 0,
+              "cambridge_a2_eight_observations": 0,
+              "cambridge_a2_eight_retained_requiring_resolution": 0,
+              "cambridge_a2_eight_retained_resolved": 0,
               "cambridge_c1_ten_observations": 0,
               "cambridge_c1_ten_retained_requiring_resolution": 0,
               "cambridge_c1_ten_retained_resolved": 0,
@@ -403,6 +406,68 @@ def audit(ledger=None, after_deployment=False):
         issues.append("Retained Cambridge sense/POS/CEFR observations lack independent resolution")
     if sense_index and set(sense_index) - {(x["word"], x["level"]) for x in sense_flags}:
         issues.append("Unknown Cambridge sense reviewer receipts supplied")
+
+    # A2 publisher sense leads are independent review prompts, not proof of
+    # approval. The A2 draft has four high-risk source-level mismatches,
+    # one discourse-function ambiguity, and three source-supported senses.
+    # Every retained entry needs a separate actual human receipt tied to
+    # the final content, with a DIRECT publisher exact-sense A2 label.
+    a2_packet = read_json(ROOT / "draft/CEFR-1000-CAMBRIDGE-A2-EIGHT-SENSE-LEADS-2026-10-28.json")
+    a2_flags = a2_packet.get("records", [])
+    expected_a2 = {"public", "system", "support", "power", "actually", "however", "whole", "less"}
+    report["cambridge_a2_eight_observations"] = len(a2_flags)
+    if (a2_packet.get("status") != "A2_CAMBRIDGE_EIGHT_SOURCE_LEADS_EDITORIAL_HOLD"
+            or len(a2_flags) != 8
+            or {x.get("word") for x in a2_flags if isinstance(x, dict)} != expected_a2):
+        issues.append("A2 Cambridge eight-source evidence missing, truncated or tampered")
+    a2_receipts = d.get("cambridge_a2_eight_review_receipts", [])
+    if not isinstance(a2_receipts, list):
+        issues.append("A2 Cambridge independent resolution receipts are not an array")
+        a2_receipts = []
+    a2_index = {}
+    for rec in a2_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Invalid A2 Cambridge resolution receipt")
+            continue
+        key = (rec.get("word"), rec.get("proposed_level"))
+        if key in a2_index:
+            issues.append("Duplicate A2 Cambridge resolution receipt")
+        a2_index[key] = rec
+    for flag in a2_flags:
+        if not isinstance(flag, dict):
+            issues.append("Invalid A2 Cambridge publisher observation")
+            continue
+        word = flag.get("word")
+        key = (word, flag.get("level"))
+        entry = entry_lookup.get(key)
+        if entry is None:
+            continue  # Replacement/retiering still requires full independent review.
+        report["cambridge_a2_eight_retained_requiring_resolution"] += 1
+        rec = a2_index.get(key)
+        if not independent_word_stage(rec, word, "sense_specific_cefr", expected_level="A2"):
+            continue
+        if (rec.get("decision") != "RETAIN_WITH_INDEPENDENT_A2_EXACT_SENSE_EVIDENCE"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or rec.get("verified_part_of_speech") != entry.get("part_of_speech")
+                or rec.get("verified_cefr_level") != "A2"
+                or rec.get("source_cefr_level") != "A2"):
+            continue
+        # For a lower-level mismatch, an unchanged definition/example cannot
+        # be blessed using an unrelated A2 source sense.
+        if (word in {"public", "system", "support", "power"}
+                and entry.get("english_definition") == flag.get("shortlist_snapshot", {}).get("english_definition")
+                and entry.get("example_sentence") == flag.get("shortlist_snapshot", {}).get("example_sentence")):
+            continue
+        if (word in {"public", "system", "support", "power", "actually"}
+                and (not isinstance(rec.get("sense_conflict_resolution"), str)
+                     or len(rec["sense_conflict_resolution"].strip()) < 40)):
+            continue
+        report["cambridge_a2_eight_retained_resolved"] += 1
+    if (report["cambridge_a2_eight_retained_requiring_resolution"]
+            != report["cambridge_a2_eight_retained_resolved"]):
+        issues.append("Retained A2 Cambridge sense/CEFR conflicts lack independently attested direct exact-sense A2 resolution")
+    if a2_index and set(a2_index) - {(x.get("word"), x.get("level")) for x in a2_flags if isinstance(x, dict)}:
+        issues.append("Unknown A2 Cambridge independent resolution receipt supplied")
 
     # Five additional publisher-indexed exact-sense leads are distinct from
     # Oxford word/POS labels. In particular Cambridge labels print(TEXT),
