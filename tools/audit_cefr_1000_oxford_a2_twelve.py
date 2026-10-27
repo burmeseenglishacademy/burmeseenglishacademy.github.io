@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Fail-closed A2-draft direct Oxford PDF word/POS provenance audit; NOT independent review.
 
-The observed publisher PDF supplies A1 word/POS evidence only, never proof
+The observed publisher PDF supplies A1/A2 word/POS evidence only, never proof
 of exact sense, Burmese accuracy, original example grammar or real human QA.
 """
 import argparse
