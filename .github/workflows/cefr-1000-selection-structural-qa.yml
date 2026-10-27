@@ -11,6 +11,7 @@ on:
       - tools/audit_cefr_1000_ielts_overlap.py
       - draft/CEFR-1000-OXFORD-LEVEL-POS-CROSSCHECK.json
       - draft/CEFR-1000-OXFORD-DISCREPANCY-QUARANTINE.json
+      - draft/CEFR-1000-BILINGUAL-DISCREPANCY-REVIEW-PACKETS.json
       - tools/audit_cefr_1000_oxford_discrepancy.py
       - .github/workflows/cefr-1000-selection-structural-qa.yml
   workflow_dispatch:
