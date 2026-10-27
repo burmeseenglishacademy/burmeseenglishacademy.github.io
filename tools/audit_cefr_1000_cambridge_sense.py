@@ -18,6 +18,14 @@ EXPECTED = {
     "cancer": ("B1", "B1"),
     "abandon": ("C1", "C1"),
     "acknowledge": ("C1", "C1"),
+    "direction": ("B1", "B1 (position/movement); A2 (plural route instructions)"),
+    "budget": ("B1", "B2 (financial plan); B2 (available spending amount)"),
+    "advertising": ("B2", "B2 (business/industry of promoting goods and services)"),
+    "attractive": ("B2", "A2 (pleasant appearance); B2 (interesting or beneficial offer)"),
+    "destroy": ("B2", "B1 (severe physical damage)"),
+    "employee": ("B2", "B1 (paid worker)"),
+    "engineer": ("B2", "A2 (professional who designs/builds machines or structures)"),
+    "appointment": ("B2", "A2 (arranged meeting); C2 (official job selection)"),
 }
 STATUS = "SENSE_SPECIFIC_PUBLISHER_SOURCE_TRIAGE_NO_INDEPENDENT_APPROVAL"
 
@@ -37,7 +45,7 @@ def audit(data, shortlist, raw, level="ALL"):
         errors.append("observation date changed without new source inspection")
     if data.get("shortlist_blob_sha") != blob_sha(raw):
         errors.append("source shortlist changed: sense evidence requires refresh")
-    if data.get("record_count") != 6 or len(rows) != 6:
+    if data.get("record_count") != len(EXPECTED) or len(rows) != len(EXPECTED):
         errors.append("unexpected record count")
     if data.get("reviewed_and_approved_count") != 0:
         errors.append("unearned independent approvals")
@@ -101,7 +109,7 @@ def main():
     errors, report = audit(data, shortlist, raw, args.level)
     if args.self_test:
         for mutate in (
-            lambda d: d.update(reviewed_and_approved_count=6),
+            lambda d: d.update(reviewed_and_approved_count=len(EXPECTED)),
             lambda d: d["records"][0].update(independently_reviewed=True),
             lambda d: d["records"][0].update(source_url="https://example.org/false"),
             lambda d: d["records"][0].update(source_cefr="C2"),
