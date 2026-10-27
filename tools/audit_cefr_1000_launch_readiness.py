@@ -23,6 +23,10 @@ STAGES = ("english_sense", "myanmar_meaning", "original_example", "sense_specifi
 BROWSERS = ("desktop-chromium", "desktop-webkit", "mobile-chromium", "mobile-webkit")
 SHA256 = re.compile(r"^[0-9a-f]{64}$")
 COMMIT = re.compile(r"^[0-9a-f]{40}$")
+PAGES_LIMITS_URL = "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits"
+PAGES_SITE_BYTES_CAP = 1_000_000_000  # conservative decimal interpretation of 1 GB
+PAGES_BANDWIDTH_SOFT_BYTES = 100_000_000_000  # 100 GB/month soft limit
+
 
 
 def read_json(path):
@@ -63,6 +67,29 @@ def specific_url(url):
     p = urlparse(url)
     return bool(p.hostname and len([x for x in p.path.split("/") if x]) >= 2
                 and "example." not in p.hostname.lower())
+
+
+def hosting_limits_valid(hosting, approved_sha):
+    """Check a documented measurement against actual GitHub Pages policy caps.
+
+    This verifies receipt shape and conservative numerical constraints only.
+    It does NOT independently measure hosting usage or authenticate the human.
+    """
+    if not real_observation(hosting, ("reviewer_id", "notes", "evidence_url",
+                                      "measurement_method")):
+        return False
+    if (not specific_url(hosting.get("evidence_url"))
+            or hosting.get("policy_url") != PAGES_LIMITS_URL
+            or hosting.get("approved_dataset_sha256") != approved_sha
+            or not SHA256.fullmatch(str(hosting.get("site_artifact_sha256", "")))):
+        return False
+    for key, maximum in (("measured_bytes", PAGES_SITE_BYTES_CAP),
+                         ("source_repository_bytes", PAGES_SITE_BYTES_CAP),
+                         ("forecast_monthly_bandwidth_bytes", PAGES_BANDWIDTH_SOFT_BYTES)):
+        value = hosting.get(key)
+        if type(value) is not int or value <= 0 or value > maximum:
+            return False
+    return True
 
 
 def audit(ledger=None, after_deployment=False):
@@ -369,13 +396,8 @@ def audit(ledger=None, after_deployment=False):
     if not report["physical_iphone_safari_verified"]:
         issues.append("No verified physical iPhone Safari and British audio test evidence")
     hosting = d.get("hosting_limits_check")
-    report["hosting_evidence_verified"] = (
-        real_observation(hosting, ("reviewer_id", "notes", "evidence_url"))
-        and specific_url(hosting.get("evidence_url"))
-        and isinstance(hosting.get("measured_bytes"), int)
-        and isinstance(hosting.get("hosted_limit_bytes"), int)
-        and 0 < hosting["measured_bytes"] <= hosting["hosted_limit_bytes"]
-        and hosting.get("approved_dataset_sha256") == d.get("approved_dataset_sha256"))
+    report["hosting_evidence_verified"] = hosting_limits_valid(
+        hosting, d.get("approved_dataset_sha256"))
     if not report["hosting_evidence_verified"]:
         issues.append("No evidence of actual measured GitHub Pages hosting limits")
     preservation = d.get("protected_production_assets_check")
@@ -419,6 +441,20 @@ def main():
         assert any("independently approved 1000-entry" in item for item in fake_issues)
         assert any("physical iPhone Safari" in item for item in fake_issues)
         assert any("No real George/Emma audio listening receipts" in item for item in fake_issues)
+        # A user-supplied inflated 'hosted_limit_bytes' must never override
+        # official Pages caps; missing bandwidth and artifact digests also fail.
+        assert not hosting_limits_valid({
+            "result": "PASS", "reviewer_id": "TEST_ONLY", "notes": "TEST_ONLY",
+            "reviewed_on": "2026-10-27", "evidence_url": "https://github.com/test/evidence",
+            "measurement_method": "TEST_ONLY", "policy_url": PAGES_LIMITS_URL,
+            "approved_dataset_sha256": "0" * 64,
+            "site_artifact_sha256": "0" * 64,
+            "measured_bytes": 2_000_000_000,
+            "source_repository_bytes": 1000,
+            "forecast_monthly_bandwidth_bytes": 1000,
+            "hosted_limit_bytes": 10_000_000_000
+        }, "0" * 64)
+        print("PASS: official Pages size/bandwidth caps reject inflated self-reported limits")
         print("PASS: false ready flag cannot override missing independent, listening, iPhone or hosting evidence")
     pathlib.Path(args.report).write_text(json.dumps({"report": report, "blockers": issues[:100]},
                                            ensure_ascii=False, indent=2) + "\n", encoding="utf8")
