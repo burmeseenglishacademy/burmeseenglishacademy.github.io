@@ -27,8 +27,10 @@
     "Never publish without all gates and real human-supplied attestations.",
     "Oxford source-list mismatches and absent-core-list headwords require actual reviewer resolution for each retained flagged entry, never automatic retiering.",
     "Shared headwords with the protected IELTS 1000 bank require an actual documented semantic/pedagogical review; some overlap is legitimate.",
-    "Audio listening receipts must match the cryptographic digest of each actual George/Emma recording; mismatched or missing recordings count as unverified."
+    "Audio listening receipts must match the cryptographic digest of each actual George/Emma recording; mismatched or missing recordings count as unverified.",
+    "Six Cambridge publisher sense-level observations are editorial leads only; retained entries need independent exact-sense CEFR/English/Myanmar/example resolution, with A2 business mixed-sense draft corrected. No reviewer receipts currently exist."
   ],
   "oxford_level_discrepancy_review_receipts": [],
-  "ielts_cross_bank_overlap_review_receipts": []
+  "ielts_cross_bank_overlap_review_receipts": [],
+  "cambridge_sense_triage_review_receipts": []
 }
