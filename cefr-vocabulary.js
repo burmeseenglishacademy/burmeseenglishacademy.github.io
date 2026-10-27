@@ -1,10 +1,10 @@
 /* BEA CEFR Word Bank — pure client-side rendering; no API, tracking or storage.
  * This module is intentionally not linked from the production site until all
- * 5000 entries and British recordings pass the release QC gate.
+ * 1000 independently approved entries and British recordings pass the release QC gate.
  */
 (function(root){
  'use strict';
- const GOALS={A1:500,A2:700,B1:1000,B2:1300,C1:1500};
+ const GOALS={A1:200,A2:200,B1:200,B2:200,C1:200};
  const order=Object.keys(GOALS),size=24;
  let level='A1',query='',page=0;
  function safe(value){
@@ -12,7 +12,7 @@
  }
  function ready(){
   const data=root.CEFR_VOCAB_BANK;
-  if(!data||data.release_status!=='VERIFIED_FOR_RELEASE'||!Array.isArray(data.entries)||data.entries.length!==5000)return false;
+  if(!data||data.release_status!=='VERIFIED_FOR_RELEASE'||!Array.isArray(data.entries)||data.entries.length!==1000)return false;
   const levels={A1:0,A2:0,B1:0,B2:0,C1:0},seen=new Set();
   for(const row of data.entries){
    if(!row||!Object.hasOwn(levels,row.level)||!row.word||!row.english_definition||!row.burmese_meaning||!row.example_sentence||!row.part_of_speech)return false;
@@ -57,7 +57,7 @@
   page=Math.min(page,maxPage-1);
   const cards=items.slice(page*size,(page+1)*size);
   return `<div class="page" id="cefrVocabularyPage"><div class="eyebrow">ENGLISH + မြန်မာ · A1–C1</div>
-   <h1>5,000 English words. Five steps forward.</h1>
+   <h1>1,000 English words. Five steps forward.</h1>
    <p>English definitions, Burmese meanings and original example sentences. Choose George or Emma from <strong>Voices</strong> to hear prerecorded British audio.</p>
    <p class="mm" lang="my">အဆင့်အလိုက် ဝေါဟာရများကို ရှာဖွေဖတ်ရှုပြီး George သို့မဟုတ် Emma အသံကို ရွေးချယ်နားထောင်နိုင်ပါတယ်။</p>
    <div class="toolbar-actions" role="group" aria-label="Choose vocabulary level">
