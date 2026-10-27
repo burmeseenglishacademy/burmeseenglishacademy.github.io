@@ -214,6 +214,9 @@ def audit(ledger=None, after_deployment=False):
               "cambridge_second_sense_observations": 0,
               "cambridge_second_sense_retained_requiring_resolution": 0,
               "cambridge_second_sense_retained_resolved": 0,
+              "cambridge_six_sense_observations": 0,
+              "cambridge_six_sense_retained_requiring_resolution": 0,
+              "cambridge_six_sense_retained_resolved": 0,
               "oxford_dictionary_c1_source_observations": 0,
               "oxford_dictionary_c1_retained_requiring_resolution": 0,
               "oxford_dictionary_c1_retained_resolved": 0,
@@ -447,6 +450,62 @@ def audit(ledger=None, after_deployment=False):
     if second_index and set(second_index) - {
             (x.get("word"), x.get("shortlist_level")) for x in second_flags if isinstance(x, dict)}:
         issues.append("Unknown second Cambridge sense receipts supplied")
+
+    # Six additional publisher-indexed Cambridge leads: indexed snippets are
+    # not direct source access and cannot be used as human CEFR receipts.
+    # For every retained sense, require an independently attested direct
+    # publisher exact-sense review (and specific rationale for conflicts).
+    six_packet = read_json(
+        ROOT / "draft/CEFR-1000-CAMBRIDGE-SIX-SENSE-LEADS-2026-10-27.json")
+    six_flags = six_packet.get("records", [])
+    six_expected = {"independent", "impact", "retail", "resistance",
+                    "personality", "municipal"}
+    report["cambridge_six_sense_observations"] = len(six_flags)
+    if (six_packet.get("status") != "SOURCE_INDEXED_EDITORIAL_LEADS_UNVERIFIED_HUMAN_REVIEW"
+            or len(six_flags) != 6
+            or {x.get("word") for x in six_flags if isinstance(x, dict)} != six_expected
+            or six_packet.get("independently_approved_count") != 0):
+        issues.append("Six Cambridge publisher-indexed sense leads missing or malformed")
+    six_receipts = d.get("cambridge_six_sense_review_receipts", [])
+    if not isinstance(six_receipts, list):
+        issues.append("Six-sense review receipts are not an array")
+        six_receipts = []
+    six_index = {}
+    for rec in six_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Invalid six-sense independent receipt")
+            continue
+        key = (rec.get("word"), rec.get("proposed_level"))
+        if key in six_index:
+            issues.append("Duplicate six-sense independent receipt")
+        six_index[key] = rec
+    for flag in six_flags:
+        if not isinstance(flag, dict):
+            issues.append("Malformed six-sense publisher observation")
+            continue
+        key = (flag.get("word"), flag.get("level"))
+        entry = entry_lookup.get(key)
+        if entry is None:
+            continue  # Replacement or retiering still needs full 1000-word review.
+        report["cambridge_six_sense_retained_requiring_resolution"] += 1
+        rec = six_index.get(key)
+        if not independent_word_stage(rec, entry["word"], "sense_specific_cefr",
+                                      expected_level=entry["level"]):
+            continue
+        if (rec.get("decision") != "RETAIN_AFTER_INDEPENDENT_EXACT_SENSE_CEFR_REVIEW"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or rec.get("verified_part_of_speech") != entry.get("part_of_speech")
+                or rec.get("verified_cefr_level") != entry.get("level")
+                or not isinstance(rec.get("publisher_level_conflict_rationale"), str)
+                or len(rec["publisher_level_conflict_rationale"].strip()) < 40):
+            continue
+        report["cambridge_six_sense_retained_resolved"] += 1
+    if (report["cambridge_six_sense_retained_requiring_resolution"]
+            != report["cambridge_six_sense_retained_resolved"]):
+        issues.append("Six new Cambridge indexed sense leads require direct-source independent review")
+    if six_index and set(six_index) - {
+            (x.get("word"), x.get("level")) for x in six_flags if isinstance(x, dict)}:
+        issues.append("Unknown six-sense independent receipts supplied")
 
     # Directly observed Oxford dictionary senses/register and topic CEFR
     # labels are separate from Oxford 3000/5000 PDF word/POS lists. The C2
