@@ -1,28 +1,24 @@
 {
   "schema": 1,
   "batch": 72,
-  "source": "Actual successful GitHub Actions run 40427685774 ALL job 121937449646",
+  "source": "Actual successful GitHub Actions run 40427761888 ALL job 121937700280",
   "stage": "MECHANICAL_CANDIDATE_TRIAGE_ONLY_NOT_APPROVAL",
   "screened": 167,
-  "clear_only": 66,
-  "quarantined": 101,
+  "clear_only": 86,
+  "quarantined": 81,
   "records": [
     {
       "level": "A2",
       "word": "colander",
-      "mechanical_status": "QUARANTINE",
-      "risk_flags": [
-        "PRIOR_AUTHORED_COLLISION"
-      ],
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
       "independently_checked": false
     },
     {
       "level": "A2",
       "word": "ladle",
-      "mechanical_status": "QUARANTINE",
-      "risk_flags": [
-        "PRIOR_AUTHORED_COLLISION"
-      ],
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
       "independently_checked": false
     },
     {
@@ -44,10 +40,8 @@
     {
       "level": "A2",
       "word": "sponge",
-      "mechanical_status": "QUARANTINE",
-      "risk_flags": [
-        "PRIOR_AUTHORED_COLLISION"
-      ],
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
       "independently_checked": false
     },
     {
@@ -327,19 +321,15 @@
     {
       "level": "A2",
       "word": "pebble",
-      "mechanical_status": "QUARANTINE",
-      "risk_flags": [
-        "PRIOR_AUTHORED_COLLISION"
-      ],
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
       "independently_checked": false
     },
     {
       "level": "A2",
       "word": "puddle",
-      "mechanical_status": "QUARANTINE",
-      "risk_flags": [
-        "PRIOR_AUTHORED_COLLISION"
-      ],
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
       "independently_checked": false
     },
     {
@@ -429,19 +419,15 @@
     {
       "level": "B1",
       "word": "oversleep",
-      "mechanical_status": "QUARANTINE",
-      "risk_flags": [
-        "PRIOR_AUTHORED_COLLISION"
-      ],
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
       "independently_checked": false
     },
     {
       "level": "B1",
       "word": "unplug",
-      "mechanical_status": "QUARANTINE",
-      "risk_flags": [
-        "PRIOR_AUTHORED_COLLISION"
-      ],
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
       "independently_checked": false
     },
     {
@@ -454,10 +440,8 @@
     {
       "level": "B1",
       "word": "reheat",
-      "mechanical_status": "QUARANTINE",
-      "risk_flags": [
-        "PRIOR_AUTHORED_COLLISION"
-      ],
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
       "independently_checked": false
     },
     {
@@ -470,10 +454,8 @@
     {
       "level": "B1",
       "word": "restock",
-      "mechanical_status": "QUARANTINE",
-      "risk_flags": [
-        "PRIOR_AUTHORED_COLLISION"
-      ],
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
       "independently_checked": false
     },
     {
@@ -626,19 +608,15 @@
     {
       "level": "B1",
       "word": "reluctant",
-      "mechanical_status": "QUARANTINE",
-      "risk_flags": [
-        "PRIOR_AUTHORED_COLLISION"
-      ],
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
       "independently_checked": false
     },
     {
       "level": "B1",
       "word": "hesitant",
-      "mechanical_status": "QUARANTINE",
-      "risk_flags": [
-        "PRIOR_AUTHORED_COLLISION"
-      ],
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
       "independently_checked": false
     },
     {
@@ -856,10 +834,8 @@
     {
       "level": "B1",
       "word": "postpone",
-      "mechanical_status": "QUARANTINE",
-      "risk_flags": [
-        "PRIOR_AUTHORED_COLLISION"
-      ],
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
       "independently_checked": false
     },
     {
@@ -929,10 +905,8 @@
     {
       "level": "B2",
       "word": "rectification",
-      "mechanical_status": "QUARANTINE",
-      "risk_flags": [
-        "PRIOR_AUTHORED_COLLISION"
-      ],
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
       "independently_checked": false
     },
     {
@@ -947,10 +921,8 @@
     {
       "level": "B2",
       "word": "insolvency",
-      "mechanical_status": "QUARANTINE",
-      "risk_flags": [
-        "PRIOR_AUTHORED_COLLISION"
-      ],
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
       "independently_checked": false
     },
     {
@@ -1033,10 +1005,8 @@
     {
       "level": "B2",
       "word": "proficiency",
-      "mechanical_status": "QUARANTINE",
-      "risk_flags": [
-        "PRIOR_AUTHORED_COLLISION"
-      ],
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
       "independently_checked": false
     },
     {
@@ -1138,10 +1108,8 @@
     {
       "level": "B2",
       "word": "streamlining",
-      "mechanical_status": "QUARANTINE",
-      "risk_flags": [
-        "PRIOR_AUTHORED_COLLISION"
-      ],
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
       "independently_checked": false
     },
     {
@@ -1188,10 +1156,8 @@
     {
       "level": "B2",
       "word": "diligence",
-      "mechanical_status": "QUARANTINE",
-      "risk_flags": [
-        "PRIOR_AUTHORED_COLLISION"
-      ],
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
       "independently_checked": false
     },
     {
@@ -1233,10 +1199,8 @@
     {
       "level": "B2",
       "word": "facilitation",
-      "mechanical_status": "QUARANTINE",
-      "risk_flags": [
-        "PRIOR_AUTHORED_COLLISION"
-      ],
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
       "independently_checked": false
     },
     {
@@ -1305,19 +1269,15 @@
     {
       "level": "B2",
       "word": "outsourcing",
-      "mechanical_status": "QUARANTINE",
-      "risk_flags": [
-        "PRIOR_AUTHORED_COLLISION"
-      ],
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
       "independently_checked": false
     },
     {
       "level": "B2",
       "word": "forecasting",
-      "mechanical_status": "QUARANTINE",
-      "risk_flags": [
-        "PRIOR_AUTHORED_COLLISION"
-      ],
+      "mechanical_status": "CLEAR_ONLY_NOT_APPROVED",
+      "risk_flags": [],
       "independently_checked": false
     },
     {
