@@ -10,6 +10,15 @@ module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
 
 assert module.TARGETS == {level: 200 for level in ("A1","A2","B1","B2","C1")}
+# Punctuation and ordinary inflections must not cause false release failures.
+assert module.example_has_headword_or_regular_form("student", "I am a student.")
+assert module.example_has_headword_or_regular_form("however", "However, the room was small.")
+assert module.example_has_headword_or_regular_form("manage", "We managed to finish the work.")
+assert module.example_has_headword_or_regular_form("grab", "She grabbed her bag.")
+assert module.example_has_headword_or_regular_form("hand", "Please wash your hands.")
+assert not module.example_has_headword_or_regular_form("cat", "The catalogue is on a shelf.")
+assert not module.example_has_headword_or_regular_form("go", "They went to school.")
+
 assert module.source_url_is_specific("https://dictionary.cambridge.org/dictionary/english/apple")
 assert module.source_url_is_specific("https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2-grammar/articles-a-an-the")
 for url in (
