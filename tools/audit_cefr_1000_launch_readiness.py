@@ -99,12 +99,57 @@ def independent_source_for_word(record, word):
     return word in segments
 
 
-def independent_word_stage(record, word, stage):
-    """Reject unsupported or anonymous independent signoff assertions.
+# A link that merely contains the headword (or a general Oxford PDF entry)
+# is NOT evidence for the exact sense, much less for its CEFR label. Require
+# declared, dated publisher-page observations; external human authentication
+# remains mandatory, because a JSON receipt cannot prove a person reviewed it.
+EXACT_SENSE_PUBLISHER_HOSTS = frozenset((
+    "dictionary.cambridge.org",
+    "www.oxfordlearnersdictionaries.com",
+    "oxfordlearnersdictionaries.com",
+))
 
-    A receipt URL and declared independent HUMAN role are required. Their
-    authenticity must still be checked against the original reviewer by a
-    separate human; this validator does not authenticate identities.
+
+def publisher_exact_sense_receipt(record, word, stage, expected_level=None):
+    if not independent_source_for_word(record, word):
+        return False
+    url = urlparse(record["source_url"])
+    if (url.hostname not in EXACT_SENSE_PUBLISHER_HOSTS
+            or url.path.lower().endswith(".pdf")
+            or record.get("source_access") != "DIRECT_PUBLISHER_DICTIONARY_PAGE"
+            or record.get("source_evidence_scope") != "EXACT_SENSE"):
+        return False
+    if not isinstance(record.get("source_sense_heading"), str) or len(record["source_sense_heading"].strip()) < 3:
+        return False
+    if not isinstance(record.get("source_observation"), str) or len(record["source_observation"].strip()) < 25:
+        return False
+    try:
+        observed = datetime.date.fromisoformat(record["source_observed_on"])
+        reviewed = datetime.date.fromisoformat(record["reviewed_on"])
+        if not datetime.date(2026, 10, 1) <= observed <= reviewed <= datetime.date.today():
+            return False
+    except (KeyError, ValueError, TypeError):
+        return False
+    if stage == "sense_specific_cefr":
+        # Oxford word/POS lists, Oxford topic labels, unlabelled dictionary
+        # pages and secondary indexed snippets do not qualify as a direct
+        # exact-sense CEFR label. A human still needs to verify the quotation.
+        level = record.get("source_cefr_level")
+        if (level not in ("A1", "A2", "B1", "B2", "C1", "C2")
+                or (expected_level is not None and level != expected_level)
+                or record.get("source_cefr_evidence_scope") != "PUBLISHER_EXACT_SENSE_CEFR_LABEL"
+                or not isinstance(record.get("source_cefr_evidence_quote"), str)
+                or not 10 <= len(record["source_cefr_evidence_quote"].strip()) <= 250):
+            return False
+    return True
+
+
+def independent_word_stage(record, word, stage, expected_level=None):
+    """Check declared independent-human receipt structure, NOT human identity.
+
+    Publisher word/POS-level evidence alone cannot sign off an exact sense.
+    Every final CEFR receipt needs an exact-sense publisher label, not an
+    inferred level from an Oxford topic tag or general wordlist.
     """
     if not real_observation(record, ("reviewer_id", "notes",
                                      "reviewer_attestation_url", "reviewer_role")):
@@ -118,7 +163,7 @@ def independent_word_stage(record, word, stage):
     if re.search(r"(?:^|[^a-z])(?:ai|gpt|chatgpt|llm|bot|automation|automated|agent)(?:[^a-z]|$)", reviewer):
         return False
     if stage in ("english_sense", "sense_specific_cefr"):
-        return independent_source_for_word(record, word)
+        return publisher_exact_sense_receipt(record, word, stage, expected_level)
     return True
 
 
@@ -236,7 +281,7 @@ def audit(ledger=None, after_deployment=False):
         good = True
         for stage in STAGES:
             c = checks.get(stage, {}) if isinstance(checks, dict) else {}
-            if not independent_word_stage(c, word, stage):
+            if not independent_word_stage(c, word, stage, expected_level=level):
                 good = False
                 issues.append(f"{word}: {stage} lacks independent human attestation or word-linked source evidence")
         if good and level in TARGETS:
