@@ -9,6 +9,7 @@ spec = importlib.util.spec_from_file_location("release_gate", root / "tools/vali
 module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
 
+assert module.TARGETS == {level: 200 for level in ("A1","A2","B1","B2","C1")}
 assert module.source_url_is_specific("https://dictionary.cambridge.org/dictionary/english/apple")
 assert module.source_url_is_specific("https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2-grammar/articles-a-an-the")
 for url in (
@@ -39,7 +40,7 @@ data = {"release_status": "UNVERIFIED_DRAFT_DO_NOT_PUBLISH",
 issues = module.validate(data)
 assert any("generic non-word-specific reference" in x for x in issues), issues
 assert any("reviewed_burmese not independently verified" in x for x in issues), issues
-assert any("Exactly 5000 entries required" in x for x in issues), issues
+assert any("Exactly 1000 entries required" in x for x in issues), issues
 assert any("Release status" in x for x in issues), issues
 entry["source_burmese"] = "https://dictionary.cambridge.org/dictionary/english/apple"
 entry["source_level"] = "https://dictionary.cambridge.org/dictionary/english/apple"
@@ -48,4 +49,5 @@ assert not any("generic non-word-specific reference" in x for x in issues)
 with tempfile.TemporaryDirectory() as folder:
     issues = module.validate(data, pathlib.Path(folder), verify_audio=True)
     assert "Audio manifest absent" in issues
+assert "Audio verification requested without a root directory" in module.validate(data, verify_audio=True)
 print("PASS: generic/placeholder references rejected; review flags and incomplete audio block publication.")
