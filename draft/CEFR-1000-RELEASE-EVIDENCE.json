@@ -28,9 +28,11 @@
     "Oxford source-list mismatches and absent-core-list headwords require actual reviewer resolution for each retained flagged entry, never automatic retiering.",
     "Shared headwords with the protected IELTS 1000 bank require an actual documented semantic/pedagogical review; some overlap is legitimate.",
     "Audio listening receipts must match the cryptographic digest of each actual George/Emma recording; mismatched or missing recordings count as unverified.",
-    "Twenty-three Cambridge publisher exact-sense observations are editorial leads only, including nine additional observations dated 2026-10-27. Retained entries require independent English/Myanmar/example/CEFR resolution; unchanged mixed-sense A2 business and mismatched B2 hardly examples cannot pass. Lower-level same-sense placements require specific independently reviewed teaching rationale. No reviewer receipts currently exist."
+    "Twenty-three Cambridge publisher exact-sense observations are editorial leads only, including nine additional observations dated 2026-10-27. Retained entries require independent English/Myanmar/example/CEFR resolution; unchanged mixed-sense A2 business and mismatched B2 hardly examples cannot pass. Lower-level same-sense placements require specific independently reviewed teaching rationale. No reviewer receipts currently exist.",
+    "Second publisher sense leads (print TEXT, racism, consistently, diverse, integrity) are source-indexed Cambridge observations, NOT independent signoffs. Cambridge C2 labels for print(TEXT), consistently, integrity(HONESTY) differ from Oxford word/POS B2/B2/C1; retained entries require real independently reviewed sense-specific CEFR rationale and content-hash receipts. Do not silently equate word/POS and sense CEFR."
   ],
   "oxford_level_discrepancy_review_receipts": [],
   "ielts_cross_bank_overlap_review_receipts": [],
-  "cambridge_sense_triage_review_receipts": []
+  "cambridge_sense_triage_review_receipts": [],
+  "cambridge_second_sense_review_receipts": []
 }
