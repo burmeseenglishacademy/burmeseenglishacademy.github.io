@@ -54,7 +54,7 @@ def audit(packet, shortlist):
     originals = {(e.get("level"), e.get("word")): e for e in shortlist.get("entries", []) if isinstance(e, dict)}
     records = packet.get("records")
     if not isinstance(records, list) or len(records) != 12:
-        return issues + ["Expected exactly twelve A1 records"]
+        return issues + ["Expected exactly twelve A2-draft records"]
     seen = set()
     for record in records:
         if not isinstance(record, dict):
@@ -120,7 +120,7 @@ def negative_tests(packet, shortlist):
     for field, value in [
         ("editorial_hold", False), ("independently_reviewed", True),
         ("release_approved", True), ("independent_reviewer_receipt", {"reviewer_id": "invented"}),
-        ("level", "A2"), ("word", "be"), ("part_of_speech", "noun"),
+        ("level", "A1"), ("word", "be"), ("part_of_speech", "noun"),
     ]:
         mutant = copy.deepcopy(packet)
         mutant["records"][0][field] = value
