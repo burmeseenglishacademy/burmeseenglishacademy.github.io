@@ -52,6 +52,8 @@ on:
       - tools/audit_cefr_1000_cambridge_b2_six.py
       - draft/CEFR-1000-CAMBRIDGE-C1-TEN-SENSE-LEADS-2026-10-28.json
       - tools/audit_cefr_1000_cambridge_c1_ten.py
+      - draft/CEFR-1000-CAMBRIDGE-UNLABELLED-C1-SIX-2026-10-28.json
+      - tools/audit_cefr_1000_unlabelled_c1_six.py
       - draft/CEFR-1000-OXFORD-C1-FIVE-DIRECT-SENSE-LEADS-2026-10-27.json
       - tools/audit_cefr_1000_oxford_c1_five.py
       - tools/audit_cefr_1000_six_sense.py
@@ -163,6 +165,11 @@ jobs:
       - name: Reject forged publisher labels, Myanmar drift and fabricated signoff
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_cambridge_c1_ten.py --level ALL --self-test
+      - name: Audit six formal C1 Cambridge senses with no observed CEFR label (editorial hold)
+        run: python3 tools/audit_cefr_1000_unlabelled_c1_six.py --level "${{ matrix.level }}"
+      - name: Reject 20 invented C1 labels, forged signoffs and source snapshot mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_unlabelled_c1_six.py --level ALL --self-test
       - name: Audit six additional B2 Cambridge exact-sense leads (publisher indexed, not signoff)
         run: python3 tools/audit_cefr_1000_cambridge_b2_six.py --level "${{ matrix.level }}"
       - name: Reject fake B2 publisher provenance and reviewer approvals
