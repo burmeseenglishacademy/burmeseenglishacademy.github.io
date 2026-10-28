@@ -247,6 +247,9 @@ def audit(ledger=None, after_deployment=False):
               "cambridge_c1_ten_observations": 0,
               "cambridge_c1_ten_retained_requiring_resolution": 0,
               "cambridge_c1_ten_retained_resolved": 0,
+              "cambridge_unlabelled_c1_six_observations": 0,
+              "cambridge_unlabelled_c1_six_retained_requiring_resolution": 0,
+              "cambridge_unlabelled_c1_six_retained_resolved": 0,
               "oxford_dictionary_c1_source_observations": 0,
               "oxford_dictionary_c1_retained_requiring_resolution": 0,
               "oxford_dictionary_c1_retained_resolved": 0,
@@ -1446,6 +1449,76 @@ def audit(ledger=None, after_deployment=False):
     if (report["a2_recovery_twelve_retained_requiring_resolution"]
             != report["a2_recovery_twelve_retained_resolved"]):
         issues.append("Retained A2 recovery entries lack independent exact-sense CEFR, British-usage and bilingual reconciliation")
+
+    # Six formal C1 publisher-indexed words have NO observed CEFR label.
+    # Formal register and a dictionary definition are not C1 evidence.
+    # Any retained final entry needs independent direct-publisher exact-sense C1
+    # proof, real English/Myanmar/example review and a content-bound receipt.
+    unlabelled = read_json(ROOT / "draft/CEFR-1000-CAMBRIDGE-UNLABELLED-C1-SIX-2026-10-28.json")
+    unlabelled_flags = unlabelled.get("records", [])
+    unlabelled_words = {"abstruse", "equivocate", "obfuscate",
+                        "fortitude", "alacrity", "salience"}
+    unlabelled_keys = {("C1", w) for w in unlabelled_words}
+    report["cambridge_unlabelled_c1_six_observations"] = len(unlabelled_flags)
+    if (unlabelled.get("status") != "UNLABELLED_CAMBRIDGE_C1_FORMAL_SENSE_TRIAGE_NOT_APPROVAL"
+            or unlabelled.get("independently_approved_count") != 0
+            or len(unlabelled_flags) != 6
+            or {(r.get("level"), r.get("word")) for r in unlabelled_flags
+                if isinstance(r, dict)} != unlabelled_keys
+            or any(not isinstance(r, dict) or r.get("source_cefr") is not None
+                   or r.get("editorial_hold") is not True
+                   or r.get("release_approved") is not False
+                   for r in unlabelled_flags)):
+        issues.append("Six unlabelled Cambridge C1 sense observations missing, malformed or falsely approved")
+    unlabelled_receipts = d.get("cambridge_unlabelled_c1_six_review_receipts", [])
+    if not isinstance(unlabelled_receipts, list):
+        issues.append("Unlabelled C1 independent review receipts must be an array")
+        unlabelled_receipts = []
+    unlabelled_index = {}
+    for rec in unlabelled_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Malformed unlabelled C1 independent review receipt")
+            continue
+        key = (rec.get("level"), rec.get("word"))
+        if key in unlabelled_index:
+            issues.append("Duplicate unlabelled C1 independent review receipt")
+        unlabelled_index[key] = rec
+    if set(unlabelled_index) - unlabelled_keys:
+        issues.append("Unknown unlabelled C1 independent review receipt")
+    for flag in unlabelled_flags:
+        if not isinstance(flag, dict):
+            continue
+        key = (flag.get("level"), flag.get("word"))
+        entry = final_lookup.get(key)
+        if entry is None:
+            continue
+        report["cambridge_unlabelled_c1_six_retained_requiring_resolution"] += 1
+        rec = unlabelled_index.get(key)
+        if not isinstance(rec, dict):
+            continue
+        rationale = rec.get("conflict_resolution")
+        if (rec.get("decision") != "RETAIN_WITH_INDEPENDENT_DIRECT_PUBLISHER_C1_EXACT_SENSE"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or rec.get("verified_part_of_speech") != entry.get("part_of_speech")
+                or rec.get("verified_cefr_level") != "C1"
+                or rec.get("cambridge_source_url") != flag.get("source_url")
+                or rec.get("source_access_disclaimer") != "CAMBRIDGE_INDEXED_UNLABELLED_NOT_CEFR_PROOF"
+                or not isinstance(rationale, str) or len(rationale.strip()) < 110
+                or "unlabelled" not in rationale.casefold()
+                or not independent_word_stage(rec, entry["word"], "sense_specific_cefr",
+                                              expected_level="C1")):
+            continue
+        # The original obfuscate example does not imply intent while its
+        # definition insists on it; salience mixes contextual importance and
+        # perceptual prominence. Do not rubber-stamp those unchanged.
+        if (entry["word"] in {"obfuscate", "salience"}
+                and entry.get("english_definition") == flag.get("shortlist_english_definition")
+                and entry.get("example_sentence") == flag.get("shortlist_example")):
+            continue
+        report["cambridge_unlabelled_c1_six_retained_resolved"] += 1
+    if (report["cambridge_unlabelled_c1_six_retained_requiring_resolution"]
+            != report["cambridge_unlabelled_c1_six_retained_resolved"]):
+        issues.append("Retained formal C1 words without Cambridge CEFR labels lack independent exact-sense C1 and bilingual reconciliation")
 
     # Audio real-listening receipts are 1 per unique word/example text and voice.
     # The separate validator must ALSO confirm files exist and decode.
