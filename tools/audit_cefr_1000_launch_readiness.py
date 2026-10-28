@@ -2393,6 +2393,16 @@ def main():
         assert any("Unknown C1 mixed Oxford independent receipt" in item
                    for item in c1_mixed_issues)
         print("PASS: forged C1 mixed Oxford independent receipt rejected")
+        forged_b2_fourth = copy.deepcopy(read_json(LEDGER))
+        forged_b2_fourth["oxford_b2_fourth_twentyfour_review_receipts"] = [
+            {"word": "FAKE", "proposed_level": "B2",
+             "decision": "RETAIN_AFTER_INDEPENDENT_B2_EXACT_SENSE_REVIEW"}
+        ]
+        fourth_issues, fourth_report = audit(forged_b2_fourth)
+        assert any("Unknown fourth B2 independent receipt" in item for item in fourth_issues)
+        assert fourth_report["oxford_b2_fourth_twentyfour_retained_resolved"] == 0
+        assert fourth_report["oxford_b2_fourth_twentyfour_retained_requiring_resolution"] == 24
+        print("PASS: fabricated fourth B2 reviewer receipt rejected; 24/24 remain on hold")
         print("PASS: unknown cross-publisher reconciliation receipt rejected")
         print("PASS: official Pages size/bandwidth caps reject inflated self-reported limits")
         print("PASS: false ready flag cannot override missing independent, listening, iPhone or hosting evidence")
