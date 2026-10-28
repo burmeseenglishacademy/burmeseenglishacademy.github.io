@@ -1,0 +1,843 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B1_FOURTH_TWENTYFOUR_DIRECT_OXFORD_WORD_POS_TRIAGE_EDITORIAL_HOLD",
+  "observed_on": "2026-10-29",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 24,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 24,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 2,
+    "A2": 10,
+    "B1": 11,
+    "B2": 1,
+    "C1": 0
+  },
+  "word_pos_discrepancies": 13,
+  "independently_approved_count": 0,
+  "source_limitations": "Official Oxford PDF opened directly via web on 2026-10-29; word/POS labels only, NOT exact-sense CEFR, independent Myanmar/English review, audio listening or device QA. No automatic retiering or publication.",
+  "records": [
+    {
+      "word": "worst",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "The least good or most unpleasant of a group.",
+        "myanmar_meaning": "အဆိုးဆုံး",
+        "example_sentence": "That was the worst storm of the year."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 57,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 7,
+        "extracted_line": 1776,
+        "source_excerpt": "worst adj.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "SUPERLATIVE_A2_VS_B1",
+      "editorial_risk": "The superlative adjective appears at A2 in Oxford; determine whether the storm example or definition justifies a different exact-sense level.",
+      "independent_reviewer_task": "Independent human bilingual and exact-sense review required for worst (SUPERLATIVE_A2_VS_B1). Verify original English definition, fluent Myanmar meaning, grammatical example, British pronunciation and exact-sense CEFR using directly observed publisher dictionary sense/label with dated URL and locator. Oxford word/POS level A2 is not exact-sense approval. Preserve signed independent reviewer receipt bound to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "anyway",
+      "level": "B1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Despite a difficulty or what has been said.",
+        "myanmar_meaning": "ဘာပဲဖြစ်ဖြစ်၊ သို့ပေမယ့်လည်း",
+        "example_sentence": "It was raining, but we went anyway."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 131,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 947,
+        "source_excerpt": "anyway adv.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "CONCESSION_A2_VS_B1",
+      "editorial_risk": "Oxford gives the adverb A2; review whether the concessive use after but matches the intended sense and Myanmar discourse register.",
+      "independent_reviewer_task": "Independent human bilingual and exact-sense review required for anyway (CONCESSION_A2_VS_B1). Verify original English definition, fluent Myanmar meaning, grammatical example, British pronunciation and exact-sense CEFR using directly observed publisher dictionary sense/label with dated URL and locator. Oxford word/POS level A2 is not exact-sense approval. Preserve signed independent reviewer receipt bound to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "direct",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To guide and control an activity.",
+        "myanmar_meaning": "ညွှန်ကြားသည်၊ ဦးဆောင်သည်",
+        "example_sentence": "She will direct the school play."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 133,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 8,
+        "extracted_line": 1977,
+        "source_excerpt": "direct v., adv.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "DIRECT_VERB_GUIDE_VS_ADVERB",
+      "editorial_risk": "Oxford combines verb and adverb in one B1 entry; verify the theatre-production verb sense rather than direction or adverb usage.",
+      "independent_reviewer_task": "Independent human bilingual and exact-sense review required for direct (DIRECT_VERB_GUIDE_VS_ADVERB). Verify original English definition, fluent Myanmar meaning, grammatical example, British pronunciation and exact-sense CEFR using directly observed publisher dictionary sense/label with dated URL and locator. Oxford word/POS level B1 is not exact-sense approval. Preserve signed independent reviewer receipt bound to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "dream",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A series of images or thoughts experienced during sleep.",
+        "myanmar_meaning": "အိပ်မက်",
+        "example_sentence": "I had a strange dream last night."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 134,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 5,
+        "extracted_line": 1145,
+        "source_excerpt": "dream n., v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "DREAM_SLEEP_VS_ASPIRATION",
+      "editorial_risk": "The sleep-image noun differs from an ambition or aspiration noun; independently check which sense the example and Myanmar gloss express.",
+      "independent_reviewer_task": "Independent human bilingual and exact-sense review required for dream (DREAM_SLEEP_VS_ASPIRATION). Verify original English definition, fluent Myanmar meaning, grammatical example, British pronunciation and exact-sense CEFR using directly observed publisher dictionary sense/label with dated URL and locator. Oxford word/POS level A2 is not exact-sense approval. Preserve signed independent reviewer receipt bound to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "easily",
+      "level": "B1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Without much difficulty.",
+        "myanmar_meaning": "လွယ်ကူစွာ",
+        "example_sentence": "She can easily solve the puzzle."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 135,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 5,
+        "extracted_line": 1153,
+        "source_excerpt": "easily adv.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "EASILY_WITHOUT_DIFFICULTY_A2",
+      "editorial_risk": "Oxford lists easily at A2, not the provisional B1; confirm the ability/puzzle example and avoid inferring exact-sense CEFR from the wordlist.",
+      "independent_reviewer_task": "Independent human bilingual and exact-sense review required for easily (EASILY_WITHOUT_DIFFICULTY_A2). Verify original English definition, fluent Myanmar meaning, grammatical example, British pronunciation and exact-sense CEFR using directly observed publisher dictionary sense/label with dated URL and locator. Oxford word/POS level A2 is not exact-sense approval. Preserve signed independent reviewer receipt bound to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "luck",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Good or bad things that happen by chance.",
+        "myanmar_meaning": "ကံ၊ ကံအခြေအနေ",
+        "example_sentence": "We had good luck with the weather."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 137,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 6,
+        "extracted_line": 1374,
+        "source_excerpt": "luck n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "LUCK_CHANCE_VS_GOOD_FORTUNE",
+      "editorial_risk": "The draft defines both favourable and unfavourable chance while the example specifically describes good luck; check Myanmar nuance.",
+      "independent_reviewer_task": "Independent human bilingual and exact-sense review required for luck (LUCK_CHANCE_VS_GOOD_FORTUNE). Verify original English definition, fluent Myanmar meaning, grammatical example, British pronunciation and exact-sense CEFR using directly observed publisher dictionary sense/label with dated URL and locator. Oxford word/POS level A2 is not exact-sense approval. Preserve signed independent reviewer receipt bound to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "marriage",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The legally recognised relationship of two people as spouses.",
+        "myanmar_meaning": "အိမ်ထောင်ရေး၊ လက်ထပ်ထိမ်းမြားမှု",
+        "example_sentence": "They celebrated ten years of marriage."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 138,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 9,
+        "extracted_line": 2208,
+        "source_excerpt": "marriage n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "MARRIAGE_LEGAL_STATE_VS_MARRIED_LIFE",
+      "editorial_risk": "The legal relationship and the duration of married life may not be identical dictionary senses; verify Myanmar distinctions.",
+      "independent_reviewer_task": "Independent human bilingual and exact-sense review required for marriage (MARRIAGE_LEGAL_STATE_VS_MARRIED_LIFE). Verify original English definition, fluent Myanmar meaning, grammatical example, British pronunciation and exact-sense CEFR using directly observed publisher dictionary sense/label with dated URL and locator. Oxford word/POS level B1 is not exact-sense approval. Preserve signed independent reviewer receipt bound to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "fighting",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Physical conflict or an attempt to stop an opponent.",
+        "myanmar_meaning": "တိုက်ခိုက်မှု၊ ရန်ဖြစ်မှု",
+        "example_sentence": "The fighting stopped before sunrise."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 167,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 8,
+        "extracted_line": 2060,
+        "source_excerpt": "fighting n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "FIGHTING_PHYSICAL_CONFLICT_VS_OPPOSITION",
+      "editorial_risk": "The definition combines physical fighting with opposing an adversary; the example is non-specific and requires exact-sense review.",
+      "independent_reviewer_task": "Independent human bilingual and exact-sense review required for fighting (FIGHTING_PHYSICAL_CONFLICT_VS_OPPOSITION). Verify original English definition, fluent Myanmar meaning, grammatical example, British pronunciation and exact-sense CEFR using directly observed publisher dictionary sense/label with dated URL and locator. Oxford word/POS level B1 is not exact-sense approval. Preserve signed independent reviewer receipt bound to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "rich",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Having a great deal of money or valuable possessions.",
+        "myanmar_meaning": "ချမ်းသာကြွယ်ဝသော",
+        "example_sentence": "He became rich after building a successful business."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 170,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 653,
+        "source_excerpt": "rich adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "RICH_WEALTH_A1_VS_B1",
+      "editorial_risk": "Oxford gives rich adjective A1; the wealth sense in the example is ordinary, so provisional B1 needs independent justification.",
+      "independent_reviewer_task": "Independent human bilingual and exact-sense review required for rich (RICH_WEALTH_A1_VS_B1). Verify original English definition, fluent Myanmar meaning, grammatical example, British pronunciation and exact-sense CEFR using directly observed publisher dictionary sense/label with dated URL and locator. Oxford word/POS level A1 is not exact-sense approval. Preserve signed independent reviewer receipt bound to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "skin",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The outer covering of a person's or animal's body.",
+        "myanmar_meaning": "အရေပြား",
+        "example_sentence": "The cold weather makes my skin dry."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 171,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 6,
+        "extracted_line": 1624,
+        "source_excerpt": "skin n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "SKIN_BODY_COVERING_A2_VS_B1",
+      "editorial_risk": "Oxford gives skin noun A2; distinguish human skin from fruit or animal hide senses before deciding the intended level.",
+      "independent_reviewer_task": "Independent human bilingual and exact-sense review required for skin (SKIN_BODY_COVERING_A2_VS_B1). Verify original English definition, fluent Myanmar meaning, grammatical example, British pronunciation and exact-sense CEFR using directly observed publisher dictionary sense/label with dated URL and locator. Oxford word/POS level A2 is not exact-sense approval. Preserve signed independent reviewer receipt bound to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "damage",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Harm that makes something less useful, safe, or valuable.",
+        "myanmar_meaning": "ပျက်စီးမှု၊ ထိခိုက်မှု",
+        "example_sentence": "The storm caused damage to the roof."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 209,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 8,
+        "extracted_line": 1959,
+        "source_excerpt": "damage n., v.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "DAMAGE_NOUN_VS_VERB",
+      "editorial_risk": "Oxford lists damage as noun and verb at B1; verify the uncountable harm noun, Myanmar translation and roof example.",
+      "independent_reviewer_task": "Independent human bilingual and exact-sense review required for damage (DAMAGE_NOUN_VS_VERB). Verify original English definition, fluent Myanmar meaning, grammatical example, British pronunciation and exact-sense CEFR using directly observed publisher dictionary sense/label with dated URL and locator. Oxford word/POS level B1 is not exact-sense approval. Preserve signed independent reviewer receipt bound to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "directly",
+      "level": "B1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Without going through another person or place.",
+        "myanmar_meaning": "တိုက်ရိုက်",
+        "example_sentence": "Please contact the supplier directly."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 210,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 8,
+        "extracted_line": 1978,
+        "source_excerpt": "directly adv.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "DIRECTLY_WITHOUT_INTERMEDIARY_VS_IMMEDIATELY",
+      "editorial_risk": "The supplier-contact example means without an intermediary, not immediately; verify the exact dictionary sense and Myanmar wording.",
+      "independent_reviewer_task": "Independent human bilingual and exact-sense review required for directly (DIRECTLY_WITHOUT_INTERMEDIARY_VS_IMMEDIATELY). Verify original English definition, fluent Myanmar meaning, grammatical example, British pronunciation and exact-sense CEFR using directly observed publisher dictionary sense/label with dated URL and locator. Oxford word/POS level B1 is not exact-sense approval. Preserve signed independent reviewer receipt bound to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "doubt",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A feeling that something may not be true or certain.",
+        "myanmar_meaning": "သံသယ",
+        "example_sentence": "I have some doubt about the figures."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 212,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 8,
+        "extracted_line": 1989,
+        "source_excerpt": "doubt n., v.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "DOUBT_NOUN_COLLOCATION",
+      "editorial_risk": "The example 'some doubt about the figures' is grammatical but may be less idiomatic than 'some doubts'; independent grammar review required.",
+      "independent_reviewer_task": "Independent human bilingual and exact-sense review required for doubt (DOUBT_NOUN_COLLOCATION). Verify original English definition, fluent Myanmar meaning, grammatical example, British pronunciation and exact-sense CEFR using directly observed publisher dictionary sense/label with dated URL and locator. Oxford word/POS level B1 is not exact-sense approval. Preserve signed independent reviewer receipt bound to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "crime",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An action that breaks the law.",
+        "myanmar_meaning": "ရာဇဝတ်မှု",
+        "example_sentence": "The police are investigating the crime."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 221,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 5,
+        "extracted_line": 1093,
+        "source_excerpt": "crime n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "CRIME_GENERAL_VS_SPECIFIC_OFFENCE",
+      "editorial_risk": "Oxford lists crime noun at A2; distinguish crime as a general activity from an individual offence under investigation.",
+      "independent_reviewer_task": "Independent human bilingual and exact-sense review required for crime (CRIME_GENERAL_VS_SPECIFIC_OFFENCE). Verify original English definition, fluent Myanmar meaning, grammatical example, British pronunciation and exact-sense CEFR using directly observed publisher dictionary sense/label with dated URL and locator. Oxford word/POS level A2 is not exact-sense approval. Preserve signed independent reviewer receipt bound to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "fully",
+      "level": "B1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Completely, with nothing missing.",
+        "myanmar_meaning": "အပြည့်အဝ",
+        "example_sentence": "The battery is fully charged."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 224,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 11,
+        "extracted_line": 2880,
+        "source_excerpt": "fully adv.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "FULLY_COMPLETELY_B2_VS_B1",
+      "editorial_risk": "Oxford labels fully adverb B2, higher than provisional B1; verify the fully charged collocation and whether exact-sense CEFR supports B1.",
+      "independent_reviewer_task": "Independent human bilingual and exact-sense review required for fully (FULLY_COMPLETELY_B2_VS_B1). Verify original English definition, fluent Myanmar meaning, grammatical example, British pronunciation and exact-sense CEFR using directly observed publisher dictionary sense/label with dated URL and locator. Oxford word/POS level B2 is not exact-sense approval. Preserve signed independent reviewer receipt bound to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "male",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Of the sex that typically produces sperm.",
+        "myanmar_meaning": "အမျိုးသား၊ အထီးဖြစ်သော",
+        "example_sentence": "The survey included male and female participants."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 226,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 6,
+        "extracted_line": 1378,
+        "source_excerpt": "male adj., n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "MALE_ADJECTIVE_VS_NOUN_MYANMAR",
+      "editorial_risk": "Oxford combines adjective and noun at A2; the Myanmar gloss includes a noun-like 'အမျိုးသား', so review the adjective sense and register.",
+      "independent_reviewer_task": "Independent human bilingual and exact-sense review required for male (MALE_ADJECTIVE_VS_NOUN_MYANMAR). Verify original English definition, fluent Myanmar meaning, grammatical example, British pronunciation and exact-sense CEFR using directly observed publisher dictionary sense/label with dated URL and locator. Oxford word/POS level A2 is not exact-sense approval. Preserve signed independent reviewer receipt bound to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "plant",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A living thing that usually grows in soil and has leaves.",
+        "myanmar_meaning": "အပင်",
+        "example_sentence": "The plant needs sunlight and water."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 227,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 601,
+        "source_excerpt": "plant n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "PLANT_LIVING_ORGANISM_VS_FACTORY",
+      "editorial_risk": "Oxford lists plant noun at A1; ensure the living organism sense rather than industrial plant, and check example against the definition.",
+      "independent_reviewer_task": "Independent human bilingual and exact-sense review required for plant (PLANT_LIVING_ORGANISM_VS_FACTORY). Verify original English definition, fluent Myanmar meaning, grammatical example, British pronunciation and exact-sense CEFR using directly observed publisher dictionary sense/label with dated URL and locator. Oxford word/POS level A1 is not exact-sense approval. Preserve signed independent reviewer receipt bound to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "reality",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The way things actually are, rather than how they are imagined.",
+        "myanmar_meaning": "လက်တွေ့အခြေအနေ၊ အမှန်တရား",
+        "example_sentence": "The plan sounded easy, but reality was different."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 228,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 9,
+        "extracted_line": 2355,
+        "source_excerpt": "reality n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "REALITY_FACT_VS_ACTUAL_CONDITIONS",
+      "editorial_risk": "The example contrasts a plan with actual conditions; verify the noun's exact sense and whether the Myanmar gloss fits that contrast.",
+      "independent_reviewer_task": "Independent human bilingual and exact-sense review required for reality (REALITY_FACT_VS_ACTUAL_CONDITIONS). Verify original English definition, fluent Myanmar meaning, grammatical example, British pronunciation and exact-sense CEFR using directly observed publisher dictionary sense/label with dated URL and locator. Oxford word/POS level B1 is not exact-sense approval. Preserve signed independent reviewer receipt bound to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "spot",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A small mark or area that differs from its surroundings.",
+        "myanmar_meaning": "အစက်အပြောက်",
+        "example_sentence": "There is a dark spot on the wall."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 229,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 9,
+        "extracted_line": 2458,
+        "source_excerpt": "spot n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "SPOT_MARK_VS_PLACE",
+      "editorial_risk": "The dark mark sense differs from a location or place; Oxford word/POS level cannot establish the precise marked-surface sense.",
+      "independent_reviewer_task": "Independent human bilingual and exact-sense review required for spot (SPOT_MARK_VS_PLACE). Verify original English definition, fluent Myanmar meaning, grammatical example, British pronunciation and exact-sense CEFR using directly observed publisher dictionary sense/label with dated URL and locator. Oxford word/POS level B1 is not exact-sense approval. Preserve signed independent reviewer receipt bound to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "agreement",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An arrangement accepted by two or more people or groups.",
+        "myanmar_meaning": "သဘောတူညီချက်",
+        "example_sentence": "Both companies signed an agreement."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 231,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 7,
+        "extracted_line": 1800,
+        "source_excerpt": "agreement n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "AGREEMENT_DOCUMENT_VS_MUTUAL_ASSENT",
+      "editorial_risk": "The definition describes an accepted arrangement while the example may refer to a signed document; independent sense alignment needed.",
+      "independent_reviewer_task": "Independent human bilingual and exact-sense review required for agreement (AGREEMENT_DOCUMENT_VS_MUTUAL_ASSENT). Verify original English definition, fluent Myanmar meaning, grammatical example, British pronunciation and exact-sense CEFR using directly observed publisher dictionary sense/label with dated URL and locator. Oxford word/POS level B1 is not exact-sense approval. Preserve signed independent reviewer receipt bound to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "award",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A prize or honour given for an achievement.",
+        "myanmar_meaning": "ဆု၊ ဂုဏ်ပြုဆု",
+        "example_sentence": "He received an award for his research."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 232,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 974,
+        "source_excerpt": "award n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "AWARD_NOUN_A2_VS_VERB_B1",
+      "editorial_risk": "Oxford lists award noun at A2 and separately award verb at B1; the provisional noun must not inherit the verb's B1 label.",
+      "independent_reviewer_task": "Independent human bilingual and exact-sense review required for award (AWARD_NOUN_A2_VS_VERB_B1). Verify original English definition, fluent Myanmar meaning, grammatical example, British pronunciation and exact-sense CEFR using directly observed publisher dictionary sense/label with dated URL and locator. Oxford word/POS level A2 is not exact-sense approval. Preserve signed independent reviewer receipt bound to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "eventually",
+      "level": "B1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "In the end, after a period of time or several difficulties.",
+        "myanmar_meaning": "နောက်ဆုံးတွင်၊ အချိန်ကြာပြီးနောက်",
+        "example_sentence": "After several attempts, she eventually solved the problem."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 302,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 8,
+        "extracted_line": 2031,
+        "source_excerpt": "eventually adv.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "EVENTUALLY_AFTER_TIME_VS_FINAL_RESULT",
+      "editorial_risk": "Oxford lists eventually adverb B1; verify delayed successful outcome, original example grammar and natural Myanmar translation.",
+      "independent_reviewer_task": "Independent human bilingual and exact-sense review required for eventually (EVENTUALLY_AFTER_TIME_VS_FINAL_RESULT). Verify original English definition, fluent Myanmar meaning, grammatical example, British pronunciation and exact-sense CEFR using directly observed publisher dictionary sense/label with dated URL and locator. Oxford word/POS level B1 is not exact-sense approval. Preserve signed independent reviewer receipt bound to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "challenge",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A difficult task that requires effort and skill.",
+        "myanmar_meaning": "စိန်ခေါ်မှု၊ ခက်ခဲသည့်တာဝန်",
+        "example_sentence": "Learning to speak confidently was a challenge for him."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 299,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 7,
+        "extracted_line": 1885,
+        "source_excerpt": "challenge n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "CHALLENGE_DIFFICULT_TASK_VS_CONTEST",
+      "editorial_risk": "The difficult-task noun differs from a challenge to authority or a contest; confirm exact sense and the learner's original example.",
+      "independent_reviewer_task": "Independent human bilingual and exact-sense review required for challenge (CHALLENGE_DIFFICULT_TASK_VS_CONTEST). Verify original English definition, fluent Myanmar meaning, grammatical example, British pronunciation and exact-sense CEFR using directly observed publisher dictionary sense/label with dated URL and locator. Oxford word/POS level B1 is not exact-sense approval. Preserve signed independent reviewer receipt bound to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "comment",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Something you say or write to express an opinion about a subject.",
+        "myanmar_meaning": "မှတ်ချက်၊ ထင်မြင်ချက်",
+        "example_sentence": "The teacher wrote a helpful comment on my essay."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 300,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 1065,
+        "source_excerpt": "comment n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "COMMENT_NOUN_A2_VS_VERB_B1",
+      "editorial_risk": "Oxford lists comment noun at A2 and comment verb at B1; do not transfer the B1 verb label to the draft noun.",
+      "independent_reviewer_task": "Independent human bilingual and exact-sense review required for comment (COMMENT_NOUN_A2_VS_VERB_B1). Verify original English definition, fluent Myanmar meaning, grammatical example, British pronunciation and exact-sense CEFR using directly observed publisher dictionary sense/label with dated URL and locator. Oxford word/POS level A2 is not exact-sense approval. Preserve signed independent reviewer receipt bound to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
