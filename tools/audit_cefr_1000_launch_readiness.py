@@ -235,6 +235,9 @@ def audit(ledger=None, after_deployment=False):
               "oxford_b1_twelve_direct_word_pos_observations": 0,
               "oxford_b1_twelve_retained_requiring_resolution": 0,
               "oxford_b1_twelve_retained_resolved": 0,
+              "oxford_b2_fourth_twentyfour_direct_word_pos_observations": 0,
+              "oxford_b2_fourth_twentyfour_retained_requiring_resolution": 0,
+              "oxford_b2_fourth_twentyfour_retained_resolved": 0,
               "oxford_b2_additional_twelve_direct_word_pos_observations": 0,
               "oxford_b2_additional_twelve_retained_requiring_resolution": 0,
               "oxford_b2_additional_twelve_retained_resolved": 0,
@@ -1377,6 +1380,73 @@ def audit(ledger=None, after_deployment=False):
     if (report["oxford_b2_additional_twelve_retained_requiring_resolution"] !=
             report["oxford_b2_additional_twelve_retained_resolved"]):
         issues.append("Retained additional B2 Oxford word/POS leads lack independent exact-sense reconciliation")
+
+    # Fourth B2 24-word Oxford publisher research packet (29 Oct 2026).
+    # Publisher word/POS entries, including a C1 or absent-list finding,
+    # NEVER substitute for independently attested exact-sense CEFR evidence.
+    b2_fourth = read_json(
+        ROOT / "draft/CEFR-1000-OXFORD-B2-FOURTH-TWENTYFOUR-2026-10-29.json")
+    b2_fourth_flags = b2_fourth.get("records", [])
+    b2_fourth_expected = {"resistance", "retail", "calm", "client",
+                          "expansion", "empire", "significantly", "reporting",
+                          "closely", "constantly", "contest", "hardly", "motor",
+                          "officially", "portion", "peak", "reform", "retirement",
+                          "solar", "somehow", "ultimate", "unknown",
+                          "automatically", "blind"}
+    report["oxford_b2_fourth_twentyfour_direct_word_pos_observations"] = len(b2_fourth_flags)
+    if (b2_fourth.get("status") != "B2_FOURTH_TWENTYFOUR_OXFORD_CORE_LIST_EDITORIAL_HOLD"
+            or len(b2_fourth_flags) != 24
+            or {x.get("word") for x in b2_fourth_flags if isinstance(x, dict)} != b2_fourth_expected
+            or b2_fourth.get("word_pos_discrepancies") != 7
+            or b2_fourth.get("independently_approved_count") != 0):
+        issues.append("Fourth B2 Oxford publisher packet missing or falsely approved")
+    b2_fourth_receipts = d.get("oxford_b2_fourth_twentyfour_review_receipts")
+    if not isinstance(b2_fourth_receipts, list):
+        issues.append("Fourth B2 independent exact-sense receipts missing or malformed")
+        b2_fourth_receipts = []
+    b2_fourth_index = {}
+    for rec in b2_fourth_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Malformed fourth B2 independent receipt")
+            continue
+        key = (rec.get("word"), rec.get("proposed_level"))
+        if key in b2_fourth_index:
+            issues.append("Duplicate fourth B2 independent receipt")
+        b2_fourth_index[key] = rec
+    if set(b2_fourth_index) - {(word, "B2") for word in b2_fourth_expected}:
+        issues.append("Unknown fourth B2 independent receipt")
+    for flag in b2_fourth_flags:
+        if not isinstance(flag, dict):
+            continue
+        word = flag.get("word")
+        entry = entry_lookup.get((word, "B2"))
+        if entry is None:
+            continue
+        report["oxford_b2_fourth_twentyfour_retained_requiring_resolution"] += 1
+        rec = b2_fourth_index.get((word, "B2"))
+        if not independent_word_stage(rec, word, "sense_specific_cefr", expected_level="B2"):
+            continue
+        if (rec.get("decision") != "RETAIN_AFTER_INDEPENDENT_B2_EXACT_SENSE_REVIEW"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or rec.get("verified_part_of_speech") != entry.get("part_of_speech")
+                or rec.get("verified_cefr_level") != "B2"
+                or rec.get("source_cefr_level") != "B2"
+                or not isinstance(rec.get("source_scope_rationale"), str)
+                or len(rec["source_scope_rationale"].strip()) < 60):
+            continue
+        observed = flag.get("publisher_source", {}).get("source_cefr_level")
+        if observed != "B2":
+            rationale = rec.get("oxford_word_pos_level_difference_resolution")
+            if not isinstance(rationale, str) or len(rationale.strip()) < 80:
+                continue
+            if observed is None and rec.get("source_url") in {
+                "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+                "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf"}:
+                continue
+        report["oxford_b2_fourth_twentyfour_retained_resolved"] += 1
+    if (report["oxford_b2_fourth_twentyfour_retained_requiring_resolution"] !=
+            report["oxford_b2_fourth_twentyfour_retained_resolved"]):
+        issues.append("Retained fourth B2 Oxford word/POS leads lack independent exact-sense reconciliation")
 
     # B2 provisional draft: direct Oxford PDF word/POS labels, not exact-sense
     # CEFR evidence. Ten of twelve Oxford labels are A1/A2/B1. Every retained
