@@ -885,7 +885,7 @@ def audit(ledger=None, after_deployment=False):
         report["oxford_c1_b2_conflict_twelve_retained_resolved"] += 1
     if (report["oxford_c1_b2_conflict_twelve_retained_requiring_resolution"]
             != report["oxford_c1_b2_conflict_twelve_retained_resolved"]):
-        issues.append("Additional retained Oxford C1/B2 word/POS word/POS conflicts lack independent exact-sense B2 resolution")
+        issues.append("Additional retained Oxford C1 draft / Oxford B2 word-POS conflicts lack independent C1 exact-sense resolution")
 
     b2_lower = read_json(
         ROOT / "draft/CEFR-1000-OXFORD-B2-LOWER-LEVEL-TWELVE-2026-10-28.json")
