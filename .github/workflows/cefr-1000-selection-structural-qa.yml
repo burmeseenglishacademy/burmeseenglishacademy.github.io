@@ -19,6 +19,8 @@ on:
       - draft/CEFR-1000-OXFORD-A1-TWELVE-DIRECT-PDF-2026-10-28.json
       - draft/CEFR-1000-OXFORD-A1-SECOND-TWELVE-2026-10-28.json
       - tools/audit_cefr_1000_oxford_a1_second_twelve.py
+      - draft/CEFR-1000-OXFORD-A1-THIRD-TWELVE-2026-10-28.json
+      - tools/audit_cefr_1000_oxford_a1_third_twelve.py
       - tools/audit_cefr_1000_oxford_a1_twelve.py
       - draft/CEFR-1000-CAMBRIDGE-A2-RECOVERY-TWELVE-2026-10-28.json
       - tools/audit_cefr_1000_a2_recovery_twelve.py
@@ -107,6 +109,11 @@ jobs:
       - name: Reject 26 forged A1 publisher, Myanmar, example and signoff mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_a1_second_twelve.py --level ALL --self-test
+      - name: Audit third twelve Oxford A1 word-POS leads and noun-adverb mismatch (not independent review)
+        run: python3 tools/audit_cefr_1000_oxford_a1_third_twelve.py --level "${{ matrix.level }}"
+      - name: Reject 28 forged third-batch Oxford A1 provenance, bilingual and review mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_oxford_a1_third_twelve.py --level ALL --self-test
       - name: Audit Oxford A2 follow-up twelve publisher word/POS observations (not independent signoff)
         run: python3 tools/audit_cefr_1000_oxford_a2_followup_twelve.py --level "${{ matrix.level }}"
       - name: Reject 24 forged Oxford A2 follow-up source, snapshot and review mutations
