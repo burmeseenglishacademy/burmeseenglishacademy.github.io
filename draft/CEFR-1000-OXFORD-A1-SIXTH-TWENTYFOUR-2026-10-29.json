@@ -1,0 +1,894 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A1_SIXTH_TWENTYFOUR_DIRECT_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-29",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 24,
+  "counts_by_level": {
+    "A1": 24,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "independently_approved_count": 0,
+  "distinct_A1_oxford_word_pos_coverage_after_batch": 100,
+  "source_limitations": "Official Oxford 3000 by CEFR level PDF directly inspected via web text on 2026-10-29. PDF pages one-based; extracted web lines zero-based. This is word/POS CEFR evidence only, NOT exact-sense CEFR, independent English or fluent Myanmar verification, example grammar signoff or listening. No human-independent approvals. All proposals are unreviewed and unapplied; no audio, physical iPhone QA, hosting measurement or deployment. The 100/200 coverage is unique word/POS observations, not 100 reviewed words.",
+  "editorial_priority": [
+    "FRIEND_PERSON_VS_FRIENDLY_ADJECTIVE",
+    "NAME_PEOPLE_VS_OBJECT_OR_PLACE_AND_VERB",
+    "RED_COLOUR_ADJECTIVE_VS_NOUN",
+    "BLUE_COLOUR_ADJECTIVE_VS_MOOD",
+    "GREEN_COLOUR_VS_ENVIRONMENTAL_SENSE",
+    "BLACK_COLOUR_VS_NOUN",
+    "WHITE_COLOUR_VS_NOUN",
+    "GIRL_CHILD_VS_ADULT_INFORMAL_USE",
+    "BOY_CHILD_VS_ADULT_INFORMAL_USE",
+    "WOMAN_ADULT_VS_GIRL_CHILD",
+    "CHILD_PERSON_VS_CHILD_OF_PARENT",
+    "CAR_ROAD_VEHICLE_VS_RAILWAY_CARRIAGE",
+    "BUS_PASSENGER_VEHICLE_VS_VERB",
+    "TRAIN_RAIL_VEHICLE_VS_TRAIN_VERB",
+    "CITY_VS_TOWN_CONTEXT",
+    "COUNTRY_NATION_VS_RURAL_AREA",
+    "STREET_ROAD_VS_ADDRESS_NAME",
+    "TABLE_FURNITURE_VS_DATA_TABLE",
+    "CHAIR_SEAT_VS_MEETING_CHAIRPERSON",
+    "DOOR_PANEL_VS_ENTRANCE",
+    "WINDOW_BUILDING_VS_COMPUTER_INTERFACE",
+    "PEN_WRITING_INSTRUMENT_VS_ANIMAL_ENCLOSURE",
+    "APPLE_FRUIT_VS_BRAND_NAMED_ENTITY",
+    "AND_COORDINATING_CONJUNCTION_VS_SEQUENCE"
+  ],
+  "records": [
+    {
+      "word": "friend",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Someone you know and like.",
+        "myanmar_meaning": "သူငယ်ချင်း၊ မိတ်ဆွေ",
+        "example_sentence": "My friend lives nearby."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 77,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 314,
+        "source_excerpt": "friend n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "FRIEND_PERSON_VS_FRIENDLY_ADJECTIVE",
+      "independent_reviewer_task": "Human-independent reviewer must check friend as A1 in the exact intended sense, distinguish FRIEND_PERSON_VS_FRIENDLY_ADJECTIVE, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "name",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A word or words used to identify someone.",
+        "myanmar_meaning": "အမည်၊ နာမည်",
+        "example_sentence": "What is your name?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 78,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 509,
+        "source_excerpt": "name n., v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "NAME_PEOPLE_VS_OBJECT_OR_PLACE_AND_VERB",
+      "independent_reviewer_task": "Human-independent reviewer must check name as A1 in the exact intended sense, distinguish NAME_PEOPLE_VS_OBJECT_OR_PLACE_AND_VERB, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "red",
+      "level": "A1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Having the colour of a ripe tomato.",
+        "myanmar_meaning": "အနီရောင်ဖြစ်သော",
+        "example_sentence": "My bag is red."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 79,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 644,
+        "source_excerpt": "red adj., n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "RED_COLOUR_ADJECTIVE_VS_NOUN",
+      "independent_reviewer_task": "Human-independent reviewer must check red as A1 in the exact intended sense, distinguish RED_COLOUR_ADJECTIVE_VS_NOUN, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "blue",
+      "level": "A1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Having the colour of a clear sky.",
+        "myanmar_meaning": "အပြာရောင်ဖြစ်သော",
+        "example_sentence": "The sky is blue."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 80,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 93,
+        "source_excerpt": "blue adj., n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "BLUE_COLOUR_ADJECTIVE_VS_MOOD",
+      "independent_reviewer_task": "Human-independent reviewer must check blue as A1 in the exact intended sense, distinguish BLUE_COLOUR_ADJECTIVE_VS_MOOD, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "green",
+      "level": "A1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Having the colour of fresh grass.",
+        "myanmar_meaning": "အစိမ်းရောင်ဖြစ်သော",
+        "example_sentence": "The leaves are green."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 81,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 338,
+        "source_excerpt": "green adj., n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "GREEN_COLOUR_VS_ENVIRONMENTAL_SENSE",
+      "independent_reviewer_task": "Human-independent reviewer must check green as A1 in the exact intended sense, distinguish GREEN_COLOUR_VS_ENVIRONMENTAL_SENSE, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "black",
+      "level": "A1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Having the darkest colour.",
+        "myanmar_meaning": "အနက်ရောင်ဖြစ်သော",
+        "example_sentence": "My shoes are black."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 82,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 90,
+        "source_excerpt": "black adj., n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "BLACK_COLOUR_VS_NOUN",
+      "independent_reviewer_task": "Human-independent reviewer must check black as A1 in the exact intended sense, distinguish BLACK_COLOUR_VS_NOUN, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "white",
+      "level": "A1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Having the colour of fresh snow.",
+        "myanmar_meaning": "အဖြူရောင်ဖြစ်သော",
+        "example_sentence": "The wall is white."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 83,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 877,
+        "source_excerpt": "white adj., n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "WHITE_COLOUR_VS_NOUN",
+      "independent_reviewer_task": "Human-independent reviewer must check white as A1 in the exact intended sense, distinguish WHITE_COLOUR_VS_NOUN, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "girl",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A female child.",
+        "myanmar_meaning": "မိန်းကလေး",
+        "example_sentence": "The girl is reading."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 84,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 327,
+        "source_excerpt": "girl n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "GIRL_CHILD_VS_ADULT_INFORMAL_USE",
+      "independent_reviewer_task": "Human-independent reviewer must check girl as A1 in the exact intended sense, distinguish GIRL_CHILD_VS_ADULT_INFORMAL_USE, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "boy",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A male child.",
+        "myanmar_meaning": "ယောက်ျားလေး",
+        "example_sentence": "The boy is playing."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 85,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 104,
+        "source_excerpt": "boy n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "BOY_CHILD_VS_ADULT_INFORMAL_USE",
+      "independent_reviewer_task": "Human-independent reviewer must check boy as A1 in the exact intended sense, distinguish BOY_CHILD_VS_ADULT_INFORMAL_USE, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "woman",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An adult female person.",
+        "myanmar_meaning": "အရွယ်ရောက်ပြီးသော အမျိုးသမီး",
+        "example_sentence": "The woman is a doctor."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 86,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 888,
+        "source_excerpt": "woman n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "WOMAN_ADULT_VS_GIRL_CHILD",
+      "independent_reviewer_task": "Human-independent reviewer must check woman as A1 in the exact intended sense, distinguish WOMAN_ADULT_VS_GIRL_CHILD, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "child",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A young person who is not yet an adult.",
+        "myanmar_meaning": "ကလေး",
+        "example_sentence": "The child is sleeping."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 87,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 145,
+        "source_excerpt": "child n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "CHILD_PERSON_VS_CHILD_OF_PARENT",
+      "independent_reviewer_task": "Human-independent reviewer must check child as A1 in the exact intended sense, distinguish CHILD_PERSON_VS_CHILD_OF_PARENT, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "car",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A road vehicle with four wheels that carries people.",
+        "myanmar_meaning": "ကား၊ မော်တော်ကား",
+        "example_sentence": "The car is outside."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 88,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 129,
+        "source_excerpt": "car n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "CAR_ROAD_VEHICLE_VS_RAILWAY_CARRIAGE",
+      "independent_reviewer_task": "Human-independent reviewer must check car as A1 in the exact intended sense, distinguish CAR_ROAD_VEHICLE_VS_RAILWAY_CARRIAGE, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "bus",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A large road vehicle carrying many passengers.",
+        "myanmar_meaning": "ဘတ်စ်ကား",
+        "example_sentence": "I go to school by bus."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 89,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 114,
+        "source_excerpt": "bus n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "BUS_PASSENGER_VEHICLE_VS_VERB",
+      "independent_reviewer_task": "Human-independent reviewer must check bus as A1 in the exact intended sense, distinguish BUS_PASSENGER_VEHICLE_VS_VERB, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "train",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A set of connected vehicles that travels on railway tracks.",
+        "myanmar_meaning": "ရထား",
+        "example_sentence": "The train arrives at nine."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 90,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 817,
+        "source_excerpt": "train n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "TRAIN_RAIL_VEHICLE_VS_TRAIN_VERB",
+      "independent_reviewer_task": "Human-independent reviewer must check train as A1 in the exact intended sense, distinguish TRAIN_RAIL_VEHICLE_VS_TRAIN_VERB, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "city",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A large town where many people live and work.",
+        "myanmar_meaning": "မြို့ကြီး",
+        "example_sentence": "This city is beautiful."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 91,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 149,
+        "source_excerpt": "city n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "CITY_VS_TOWN_CONTEXT",
+      "independent_reviewer_task": "Human-independent reviewer must check city as A1 in the exact intended sense, distinguish CITY_VS_TOWN_CONTEXT, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "country",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A nation with its own land and government.",
+        "myanmar_meaning": "နိုင်ငံ",
+        "example_sentence": "Myanmar is a country in Asia."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 92,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 177,
+        "source_excerpt": "country n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "COUNTRY_NATION_VS_RURAL_AREA",
+      "independent_reviewer_task": "Human-independent reviewer must check country as A1 in the exact intended sense, distinguish COUNTRY_NATION_VS_RURAL_AREA, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "street",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A road with buildings along it.",
+        "myanmar_meaning": "လမ်း",
+        "example_sentence": "Our shop is on this street."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 93,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 743,
+        "source_excerpt": "street n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "STREET_ROAD_VS_ADDRESS_NAME",
+      "independent_reviewer_task": "Human-independent reviewer must check street as A1 in the exact intended sense, distinguish STREET_ROAD_VS_ADDRESS_NAME, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "table",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A piece of furniture with a flat top and legs.",
+        "myanmar_meaning": "စားပွဲ",
+        "example_sentence": "The book is on the table."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 94,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 760,
+        "source_excerpt": "table n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "TABLE_FURNITURE_VS_DATA_TABLE",
+      "independent_reviewer_task": "Human-independent reviewer must check table as A1 in the exact intended sense, distinguish TABLE_FURNITURE_VS_DATA_TABLE, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "chair",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A piece of furniture for one person to sit on.",
+        "myanmar_meaning": "ထိုင်ခုံ",
+        "example_sentence": "Please sit on the chair."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 95,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 138,
+        "source_excerpt": "chair n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "CHAIR_SEAT_VS_MEETING_CHAIRPERSON",
+      "independent_reviewer_task": "Human-independent reviewer must check chair as A1 in the exact intended sense, distinguish CHAIR_SEAT_VS_MEETING_CHAIRPERSON, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "door",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A movable panel used to open and close an entrance.",
+        "myanmar_meaning": "တံခါး",
+        "example_sentence": "Close the door, please."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 96,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 220,
+        "source_excerpt": "door n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "DOOR_PANEL_VS_ENTRANCE",
+      "independent_reviewer_task": "Human-independent reviewer must check door as A1 in the exact intended sense, distinguish DOOR_PANEL_VS_ENTRANCE, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "window",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An opening with glass in a wall to let in light.",
+        "myanmar_meaning": "ပြတင်းပေါက်",
+        "example_sentence": "Open the window, please."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 97,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 883,
+        "source_excerpt": "window n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "WINDOW_BUILDING_VS_COMPUTER_INTERFACE",
+      "independent_reviewer_task": "Human-independent reviewer must check window as A1 in the exact intended sense, distinguish WINDOW_BUILDING_VS_COMPUTER_INTERFACE, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "pen",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A tool used for writing with ink.",
+        "myanmar_meaning": "ဘောပင်",
+        "example_sentence": "I write with a pen."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 98,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 580,
+        "source_excerpt": "pen n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "PEN_WRITING_INSTRUMENT_VS_ANIMAL_ENCLOSURE",
+      "independent_reviewer_task": "Human-independent reviewer must check pen as A1 in the exact intended sense, distinguish PEN_WRITING_INSTRUMENT_VS_ANIMAL_ENCLOSURE, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "apple",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A round fruit with firm flesh and red, green or yellow skin.",
+        "myanmar_meaning": "ပန်းသီး",
+        "example_sentence": "She eats an apple."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 99,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 39,
+        "source_excerpt": "apple n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "APPLE_FRUIT_VS_BRAND_NAMED_ENTITY",
+      "independent_reviewer_task": "Human-independent reviewer must check apple as A1 in the exact intended sense, distinguish APPLE_FRUIT_VS_BRAND_NAMED_ENTITY, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "and",
+      "level": "A1",
+      "part_of_speech": "conjunction",
+      "shortlist_snapshot": {
+        "english_definition": "Used to connect two words or ideas.",
+        "myanmar_meaning": "နှင့်၊ ပြီးတော့",
+        "example_sentence": "My brother and sister are here."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 100,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 30,
+        "source_excerpt": "and conj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "AND_COORDINATING_CONJUNCTION_VS_SEQUENCE",
+      "independent_reviewer_task": "Human-independent reviewer must check and as A1 in the exact intended sense, distinguish AND_COORDINATING_CONJUNCTION_VS_SEQUENCE, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ],
+  "unreviewed_editorial_proposals": [
+    {
+      "word": "name",
+      "issue": "Draft definition covers a person only, but names also identify places and things.",
+      "suggested_english_definition": "The word or words by which a person, place or thing is known.",
+      "suggested_myanmar_meaning": "လူ၊ နေရာ သို့မဟုတ် အရာတစ်ခုကို ခေါ်ဝေါ်သည့် အမည်",
+      "suggested_example_sentence": "Please write your name here.",
+      "review_status": "UNREVIEWED_UNAPPLIED_PROPOSAL",
+      "human_independent_approval": false
+    },
+    {
+      "word": "red",
+      "issue": "Definition by tomato colour is understandable but should be a learner-friendly colour gloss.",
+      "suggested_english_definition": "Having the colour of blood or a ripe tomato.",
+      "suggested_myanmar_meaning": "အနီရောင်ရှိသော",
+      "suggested_example_sentence": "She has a red bag.",
+      "review_status": "UNREVIEWED_UNAPPLIED_PROPOSAL",
+      "human_independent_approval": false
+    },
+    {
+      "word": "woman",
+      "issue": "Adult female sense must not be confused with girl or informal address.",
+      "suggested_english_definition": "An adult female person.",
+      "suggested_myanmar_meaning": "အရွယ်ရောက်ပြီးသော အမျိုးသမီး",
+      "suggested_example_sentence": "The woman is waiting for the bus.",
+      "review_status": "UNREVIEWED_UNAPPLIED_PROPOSAL",
+      "human_independent_approval": false
+    },
+    {
+      "word": "city",
+      "issue": "City versus town can be jurisdiction-specific; draft gloss should not be presented as a strict population threshold.",
+      "suggested_english_definition": "A large and important town where many people live and work.",
+      "suggested_myanmar_meaning": "လူဦးရေများပြီး အလုပ်အကိုင်နှင့် အဆောက်အအုံများစွာရှိသော မြို့ကြီး",
+      "suggested_example_sentence": "We live in a big city.",
+      "review_status": "UNREVIEWED_UNAPPLIED_PROPOSAL",
+      "human_independent_approval": false
+    },
+    {
+      "word": "train",
+      "issue": "Draft railway definition should be clear for passenger and goods trains without confusing verb train.",
+      "suggested_english_definition": "A railway vehicle made up of connected carriages that carries people or goods.",
+      "suggested_myanmar_meaning": "သံလမ်းပေါ်တွင် ပြေးဆွဲသည့် ရထား",
+      "suggested_example_sentence": "We travel to the city by train.",
+      "review_status": "UNREVIEWED_UNAPPLIED_PROPOSAL",
+      "human_independent_approval": false
+    },
+    {
+      "word": "and",
+      "issue": "Draft mentions words or ideas but does not explain phrase and clause coordination.",
+      "suggested_english_definition": "Used to join words, phrases or parts of sentences.",
+      "suggested_myanmar_meaning": "စကားလုံး၊ စကားစု သို့မဟုတ် ဝါကျအစိတ်အပိုင်းများကို ဆက်ရန် သုံးသည့် ‘နှင့်၊ ပြီးတော့’",
+      "suggested_example_sentence": "My brother and sister are here.",
+      "review_status": "UNREVIEWED_UNAPPLIED_PROPOSAL",
+      "human_independent_approval": false
+    }
+  ]
+}
