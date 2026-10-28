@@ -37,11 +37,22 @@ Directly inspected the [official Oxford 3000 by CEFR level PDF](https://www.oxfo
 
 **High-priority cases:** `award` is an A2 noun in the Oxford list but has a separate B1 verb entry; `comment` similarly has an A2 noun and B1 verb. `fully` is Oxford B2 (higher than draft B1). `rich` and `plant` are Oxford A1; `worst`, `anyway`, `dream`, `easily`, `luck`, `skin`, `crime`, `male`, `award` and `comment` are A2. Review `marriage` for legal relationship versus married life, `agreement` for arrangement versus signed document, `doubt` for idiomatic noun collocation, and `male` for adjective-versus-noun Myanmar register. These are editorial tasks, not final corrections.
 
+## Cross-publisher exact-sense research leads (NOT direct verification)
+
+Cambridge Dictionary publisher-indexed search results on **2026-10-29** identify four sense-labelled leads. **Direct Cambridge dictionary page fetches returned HTTP 403**, so these are search-indexed observations only and cannot qualify as independent exact-sense review receipts. They are preserved with URLs, dates, sense headings and source-access limitations in the same research packet.
+
+| Word | Oxford word/POS | Cambridge indexed exact-sense lead | Review implication |
+|---|---|---|---|
+| `fully` | B2 adverb | [COMPLETELY B1](https://dictionary.cambridge.org/dictionary/english/fully) | Oxford B2 versus Cambridge B1; the B1 draft may be defensible for this sense but needs independent direct-page verification |
+| `award` | A2 noun | [noun PRIZE B2](https://dictionary.cambridge.org/dictionary/english/award) | Oxford A2 versus Cambridge B2; separate prize from court/official monetary award and noun from verb |
+| `comment` | A2 noun | [opinion comment noun B1](https://dictionary.cambridge.org/dictionary/english/comment) | Oxford A2 versus Cambridge B1; do not confuse with Oxford B1 verb |
+| `marriage` | B1 noun | [TWO PEOPLE B1](https://dictionary.cambridge.org/dictionary/english/marriage) | Matching B1 labels at different evidence scopes; still verify legal relationship versus ceremony and duration |
+
 ## Fail-closed safeguards and actual CI
 
-Added [B1 24-word source auditor](tools/audit_cefr_1000_oxford_b1_fourth_twentyfour.py), checking exact Oxford metadata, frozen bilingual/example snapshots, source Git provenance, word/POS distinctions, independent reviewer tasks, hold flags and rejecting hidden approval fields. Self-test has **105 authored negative mutation cases** (24 each for forged publisher excerpts, Myanmar translations, false reviewer receipts and altered editorial risks; 7 metadata mutations; 2 hidden approval fields). Structural workflow runs it in the B1 and ALL lanes of the existing six-job A1/A2/B1/B2/C1/ALL matrix; documentary no-deploy workflow also runs the self-test. The auditor cannot independently authenticate human review or publisher semantics.
+Added [B1 24-word source auditor](tools/audit_cefr_1000_oxford_b1_fourth_twentyfour.py), checking exact Oxford metadata, frozen bilingual/example snapshots, source Git provenance, word/POS distinctions, independent reviewer tasks, hold flags and rejecting hidden approval fields. Self-test has **113 authored negative mutation cases** (24 each for forged publisher excerpts, Myanmar translations, false reviewer receipts and altered editorial risks; 7 metadata mutations; 2 hidden approval fields; 8 Cambridge source-label/false-verification mutations). Structural workflow runs it in the B1 and ALL lanes of the existing six-job A1/A2/B1/B2/C1/ALL matrix; documentary no-deploy workflow also runs the self-test. The auditor cannot independently authenticate human review or publisher semantics.
 
-**Current verification checkpoint:** CI runs [structural 40740376703](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40740376703) and [documentary 40740377311](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40740377311) were triggered after the strict 105-test update; their final job conclusions must be checked before any success claim. No release gate was bypassed.
+**Current verification checkpoint:** CI runs [structural 40740620860](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40740620860) and [documentary 40740610140](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40740610140) were triggered after the strict 105-test update; their final job conclusions must be checked before any success claim. No release gate was bypassed.
 
 ## Exact release evidence status
 
