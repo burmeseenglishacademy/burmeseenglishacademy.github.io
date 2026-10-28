@@ -98,7 +98,9 @@ def audit(packet, shortlist, sources):
         if not original:
             issues.append(word + ": missing canonical word/level")
             continue
-        snapshot = {k: original.get(k) for k in ("english_definition", "burmese_meaning", "example_sentence")}
+        snapshot = {"english_definition": original.get("english_definition"),
+                    "myanmar_meaning": original.get("burmese_meaning"),
+                    "example_sentence": original.get("example_sentence")}
         if (row.get("level") != level or row.get("part_of_speech") != original.get("part_of_speech")
                 or row.get("shortlist_snapshot") != snapshot):
             issues.append(word + ": English/Myanmar/example/POS snapshot drift")
