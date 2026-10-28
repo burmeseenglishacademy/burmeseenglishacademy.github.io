@@ -220,6 +220,9 @@ def audit(ledger=None, after_deployment=False):
               "cambridge_b2_six_observations": 0,
               "cambridge_b2_six_retained_requiring_resolution": 0,
               "cambridge_b2_six_retained_resolved": 0,
+              "oxford_a2_followup_twelve_direct_word_pos_observations": 0,
+              "oxford_a2_followup_twelve_retained_requiring_resolution": 0,
+              "oxford_a2_followup_twelve_retained_resolved": 0,
               "oxford_a2_twelve_direct_word_pos_observations": 0,
               "oxford_a2_twelve_retained_requiring_resolution": 0,
               "oxford_a2_twelve_retained_resolved": 0,
@@ -689,6 +692,67 @@ def audit(ledger=None, after_deployment=False):
             (x.get("word"), x.get("level")) for x in a2_oxford_flags if isinstance(x, dict)}:
         issues.append("Unknown Oxford A2 draft resolution receipt supplied")
 
+
+    # Second directly observed Oxford 3000 A2-draft word/POS packet.
+    # Nine Oxford A1 labels and three Oxford A2 labels are research leads,
+    # not independently authenticated A2 exact-sense CEFR approval.
+    a2_followup = read_json(
+        ROOT / "draft/CEFR-1000-OXFORD-A2-FOLLOWUP-TWELVE-2026-10-28.json")
+    a2_followup_flags = a2_followup.get("records", [])
+    a2_followup_expected = {"case", "person", "change", "enough", "believe",
+                            "job", "later", "line", "order", "service", "season", "area"}
+    report["oxford_a2_followup_twelve_direct_word_pos_observations"] = len(a2_followup_flags)
+    if (a2_followup.get("status") !=
+            "DIRECT_OXFORD_A2_FOLLOWUP_WORD_POS_TRIAGE_NOT_INDEPENDENT_APPROVAL"
+            or len(a2_followup_flags) != 12
+            or {x.get("word") for x in a2_followup_flags if isinstance(x, dict)}
+               != a2_followup_expected
+            or a2_followup.get("publisher_reference_level_counts") != {"A1": 9, "A2": 3}
+            or a2_followup.get("word_pos_discrepancies") != 9
+            or a2_followup.get("independently_approved_count") != 0):
+        issues.append("Oxford A2 follow-up publisher packet missing, altered or falsely approved")
+    followup_receipts = d.get("oxford_a2_followup_twelve_review_receipts")
+    if not isinstance(followup_receipts, list):
+        issues.append("Oxford A2 follow-up independent receipt array missing or malformed")
+        followup_receipts = []
+    followup_index = {}
+    for rec in followup_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Malformed Oxford A2 follow-up independent receipt")
+            continue
+        key = (rec.get("word"), rec.get("proposed_level"))
+        if key in followup_index:
+            issues.append("Duplicate Oxford A2 follow-up independent receipt")
+        followup_index[key] = rec
+    if set(followup_index) - {(w, "A2") for w in a2_followup_expected}:
+        issues.append("Unknown Oxford A2 follow-up independent receipt")
+    for flag in a2_followup_flags:
+        if not isinstance(flag, dict):
+            continue
+        word = flag.get("word")
+        entry = entry_lookup.get((word, "A2"))
+        if entry is None:
+            continue  # Replacement/retiering requires complete independent approval.
+        report["oxford_a2_followup_twelve_retained_requiring_resolution"] += 1
+        rec = followup_index.get((word, "A2"))
+        if not independent_word_stage(rec, word, "sense_specific_cefr", expected_level="A2"):
+            continue
+        if (rec.get("decision") != "RETAIN_AFTER_INDEPENDENT_A2_EXACT_SENSE_REVIEW"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or rec.get("verified_part_of_speech") != entry.get("part_of_speech")
+                or rec.get("verified_cefr_level") != "A2"
+                or rec.get("source_cefr_level") != "A2"
+                or not isinstance(rec.get("source_scope_rationale"), str)
+                or len(rec["source_scope_rationale"].strip()) < 50):
+            continue
+        if flag.get("source_cefr") == "A1":
+            explanation = rec.get("oxford_word_pos_level_difference_resolution")
+            if not isinstance(explanation, str) or len(explanation.strip()) < 60:
+                continue
+        report["oxford_a2_followup_twelve_retained_resolved"] += 1
+    if (report["oxford_a2_followup_twelve_retained_requiring_resolution"] !=
+            report["oxford_a2_followup_twelve_retained_resolved"]):
+        issues.append("Retained A2 Oxford follow-up entries lack independent exact-sense A2 reconciliation")
 
     # B1 provisional draft: direct Oxford PDF word/POS labels, not exact-sense
     # CEFR evidence. Nine of twelve Oxford labels are A1/A2. Every retained
