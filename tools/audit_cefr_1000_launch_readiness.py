@@ -1932,6 +1932,13 @@ def main():
         ]
         forged_issues, _ = audit(forged_cross)
         assert any("Unknown cross-publisher reconciliation receipt" in item for item in forged_issues)
+        forged_mixed = copy.deepcopy(read_json(LEDGER))
+        forged_mixed["oxford_b1_mixed_twelve_review_receipts"] = [
+            {"word": "FAKE", "proposed_level": "B1", "decision": "RETAIN_AFTER_INDEPENDENT_B1_EXACT_SENSE_REVIEW"}
+        ]
+        mixed_issues, _ = audit(forged_mixed)
+        assert any("Unknown Oxford B1 mixed-level independent receipt" in item for item in mixed_issues)
+        print("PASS: unknown Oxford B1 mixed-level independent receipt rejected")
         print("PASS: unknown cross-publisher reconciliation receipt rejected")
         print("PASS: official Pages size/bandwidth caps reject inflated self-reported limits")
         print("PASS: false ready flag cannot override missing independent, listening, iPhone or hosting evidence")
