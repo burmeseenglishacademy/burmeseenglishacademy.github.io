@@ -1,0 +1,359 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "C1_OXFORD_TWELVE_DIRECT_PDF_WORD_POS_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-28",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 12
+  },
+  "publisher_reference_level_counts": {
+    "B2": 6,
+    "C1": 6
+  },
+  "independently_approved_count": 0,
+  "source_limitations": "Directly inspected official Oxford University Press Oxford 5000 by CEFR level PDF on 2026-10-28. One-based PDF page numbers, zero-based web-extracted PDF line locators. Oxford evidence is word/POS-level only, NOT publisher exact-sense CEFR evidence, independent English/Myanmar/example review, audio listening or release approval. Six lower-level B2/C1 conflicts are editorial prompts, not automatic retiering. All 1,000 remain on hold.",
+  "records": [
+    {
+      "word": "trigger",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To cause a particular event or reaction to happen.",
+        "myanmar_meaning": "ဖြစ်ပေါ်စေသည်၊ အစပျိုးစေသည်",
+        "example_sentence": "A sudden price rise could trigger more complaints."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 3,
+        "extracted_line": 659,
+        "source_excerpt": "trigger v.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_C1_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "The draft ordinary cause/reaction sense is B2 in the publisher word/POS list; independently justify a distinct C1 sense or replace/retier. Verify Myanmar cause vs trigger nuance.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "racism",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Unfair treatment of people because of their race.",
+        "myanmar_meaning": "လူမျိုးရေးခွဲခြားဆက်ဆံမှု",
+        "example_sentence": "The organisation runs programmes to challenge racism."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 2,
+        "extracted_line": 503,
+        "source_excerpt": "racism n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_C1_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "The B2 publisher word/POS classification conflicts with provisional C1. Distinguish racist ideology from discriminatory acts and verify natural Myanmar without implying only individual behaviour.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "signature",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A person's name written in their own handwriting.",
+        "myanmar_meaning": "လက်မှတ်ရေးထိုးချက်",
+        "example_sentence": "Please add your signature at the bottom of the form."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 3,
+        "extracted_line": 569,
+        "source_excerpt": "signature n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_C1_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "The draft handwritten-name sense is ordinary B2; do not conflate it with the potentially advanced signature-style sense. Independent C1 exact-sense evidence or replacement required.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "consistently",
+      "level": "C1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "In the same way or to the same standard over time.",
+        "myanmar_meaning": "အမြဲတစေ တစ်သမတ်တည်း",
+        "example_sentence": "The factory consistently meets its quality targets."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 1,
+        "extracted_line": 121,
+        "source_excerpt": "consistently adv.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_C1_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "The Oxford B2 word/POS label and Cambridge C2 unchanging/steady sense lead need reconciliation. The draft same-standard-over-time example is not itself proof of C1.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "diverse",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Including people or things of many different types.",
+        "myanmar_meaning": "အမျိုးမျိုးကွဲပြားသော",
+        "example_sentence": "The conference brought together a diverse group of researchers."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 1,
+        "extracted_line": 185,
+        "source_excerpt": "diverse adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_C1_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "The draft 'many different types' sense corresponds to an ordinary B2 word/POS; independently source any genuinely C1 nuance and check natural Myanmar.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "neutral",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Not supporting either side in a disagreement.",
+        "myanmar_meaning": "ဘက်မလိုက်သော",
+        "example_sentence": "The mediator remained neutral during the talks."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 2,
+        "extracted_line": 419,
+        "source_excerpt": "neutral adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_C1_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "The draft impartial-in-disagreement sense appears at B2 word/POS; independently establish whether a separate C1 sense is taught or retier.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "tribute",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Something said or done to show respect or admiration.",
+        "myanmar_meaning": "ဂုဏ်ပြုမှု၊ လေးစားအသိအမှတ်ပြုမှု",
+        "example_sentence": "The concert was a tribute to the late musician."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 8,
+        "extracted_line": 1938,
+        "source_excerpt": "tribute n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "C1_OXFORD_WORD_POS_EXACT_SENSE_NOT_VERIFIED",
+      "independent_reviewer_task": "Oxford C1 word/POS supports candidacy, not the exact homage sense. Independently verify original concert example and Myanmar tribute/honour distinction.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "abortion",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The intentional ending of a pregnancy.",
+        "myanmar_meaning": "ကိုယ်ဝန်ကို ရည်ရွယ်ချက်ရှိရှိ ဖျက်ချခြင်း",
+        "example_sentence": "The article discussed access to abortion services."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 3,
+        "extracted_line": 706,
+        "source_excerpt": "abortion n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "C1_OXFORD_WORD_POS_EXACT_SENSE_NOT_VERIFIED",
+      "independent_reviewer_task": "Oxford C1 word/POS supports candidacy but not exact sense or sensitive medical terminology; human review must verify precise Myanmar and neutral example wording.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "conversion",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The process of changing something into a different form or use.",
+        "myanmar_meaning": "ပုံစံ သို့မဟုတ် အသုံးပြုမှု ပြောင်းလဲခြင်း",
+        "example_sentence": "The conversion of the old office into flats took a year."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 4,
+        "extracted_line": 988,
+        "source_excerpt": "conversion n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "C1_OXFORD_WORD_POS_EXACT_SENSE_NOT_VERIFIED",
+      "independent_reviewer_task": "Oxford C1 word/POS supports candidacy; independently verify transformation-of-building sense versus religious/financial conversion and Burmese phrasing.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "copyright",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The legal right to control how an original creative work is copied or used.",
+        "myanmar_meaning": "မူပိုင်ခွင့်",
+        "example_sentence": "The publisher owns the copyright to the illustrations."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 4,
+        "extracted_line": 999,
+        "source_excerpt": "copyright n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "C1_OXFORD_WORD_POS_EXACT_SENSE_NOT_VERIFIED",
+      "independent_reviewer_task": "Oxford C1 word/POS supports candidacy; verify legal-right sense versus work's copyright notice, fluent Myanmar and original example.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "municipal",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Relating to a city or town and its local government.",
+        "myanmar_meaning": "စည်ပင်သာယာရေးဆိုင်ရာ၊ မြို့အုပ်ချုပ်ရေးဆိုင်ရာ",
+        "example_sentence": "The municipal council approved the new park."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 6,
+        "extracted_line": 1498,
+        "source_excerpt": "municipal adj.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "C1_OXFORD_WORD_POS_EXACT_SENSE_NOT_VERIFIED",
+      "independent_reviewer_task": "Oxford C1 word/POS supports candidacy; verify local-government administrative sense, natural Myanmar terminology and example grammar.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "integrity",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The quality of being honest and following strong moral principles.",
+        "myanmar_meaning": "ဖြောင့်မတ်ရိုးသားမှု၊ ကိုယ်ကျင့်တရားခိုင်မာမှု",
+        "example_sentence": "A leader's integrity matters when difficult decisions arise."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 5,
+        "extracted_line": 1355,
+        "source_excerpt": "integrity n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "C1_OXFORD_WORD_POS_EXACT_SENSE_NOT_VERIFIED",
+      "independent_reviewer_task": "Oxford C1 word/POS contrasts with a Cambridge C2 honesty-sense lead. Independently distinguish honesty from structural wholeness and justify exact-sense C1.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
