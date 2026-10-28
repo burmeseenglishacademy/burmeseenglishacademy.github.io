@@ -25,7 +25,7 @@ def require(ok, why):
         raise ValueError(why)
 
 def git_blob_sha(data):
-    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\\0" + data).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(data)).encode() + bytes([0]) + data).hexdigest()
 
 def audit(packet, shortlist, sha, level="ALL"):
     require(sha == SHORTLIST_SHA, "Frozen shortlist Git blob mismatch")
