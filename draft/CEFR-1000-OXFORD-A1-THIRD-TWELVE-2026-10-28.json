@@ -1,0 +1,415 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A1_THIRD_TWELVE_DIRECT_OXFORD_WORD_POS_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-28",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 12,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "independently_approved_count": 0,
+  "source_limitations": "Direct official Oxford University Press Oxford 3000 CEFR PDF text inspected 2026-10-28. Page is one-based; extracted line is zero-based. These are A1 headword/POS observations, NOT independently verified exact-sense CEFR, fluent Myanmar, grammar, listening or human signoff. Original shortlist unchanged; all entries remain on hold.",
+  "records": [
+    {
+      "word": "goodbye",
+      "level": "A1",
+      "part_of_speech": "exclamation",
+      "shortlist_snapshot": {
+        "english_definition": "Used when leaving or ending a conversation.",
+        "myanmar_meaning": "သွားတော့မယ်နော်၊ နှုတ်ဆက်ပါတယ်",
+        "example_sentence": "Goodbye, see you tomorrow."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 18,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 2,
+        "extracted_line": 333,
+        "source_excerpt": "goodbye exclam./n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "EXCLAMATION_VS_NOUN_SCOPE",
+      "independent_reviewer_task": "Confirm the farewell interjection in the example, and whether the Burmese rendering is natural rather than an overly literal phrase. Require separate dated human exact-sense CEFR, English, fluent Myanmar and original-example review receipts bound to final content; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "thank",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To tell someone that you are grateful.",
+        "myanmar_meaning": "ကျေးဇူးတင်သည်",
+        "example_sentence": "I thank my teacher."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 19,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 3,
+        "extracted_line": 779,
+        "source_excerpt": "thank v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "STILTED_ORIGINAL_EXAMPLE",
+      "independent_reviewer_task": "The grammatical sentence 'I thank my teacher' is unusually formal for a beginner; assess an original everyday alternative such as 'I thanked my teacher for helping me' only after independent review. Require separate dated human exact-sense CEFR, English, fluent Myanmar and original-example review receipts bound to final content; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "water",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A clear liquid that people drink.",
+        "myanmar_meaning": "ရေ",
+        "example_sentence": "I drink water every day."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 20,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 4,
+        "extracted_line": 861,
+        "source_excerpt": "water n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "OVER_NARROW_ENGLISH_DEFINITION",
+      "independent_reviewer_task": "The English definition describes drinking water but omits water in rivers, rain or other contexts; check whether a narrow drinking-water teaching sense is intended. Require separate dated human exact-sense CEFR, English, fluent Myanmar and original-example review receipts bound to final content; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "food",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Things that people or animals eat.",
+        "myanmar_meaning": "အစားအစာ",
+        "example_sentence": "The food is ready."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 21,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 2,
+        "extracted_line": 302,
+        "source_excerpt": "food n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "COLLECTIVE_UNCOUNTABLE_USAGE",
+      "independent_reviewer_task": "Confirm the collective uncountable use in 'The food is ready', and natural Myanmar wording for food in general. Require separate dated human exact-sense CEFR, English, fluent Myanmar and original-example review receipts bound to final content; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "home",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The place where someone lives.",
+        "myanmar_meaning": "အိမ်၊ နေအိမ်",
+        "example_sentence": "I go home after school."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 22,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 2,
+        "extracted_line": 372,
+        "source_excerpt": "home n., adv.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "HOME_NOUN_ADVERB_EXAMPLE_MISMATCH",
+      "independent_reviewer_task": "Critical POS mismatch: draft labels noun, but 'I go home after school' uses home adverbially. A noun example such as 'My home is near the school' would align, or POS and sense must be reviewed and amended. Require separate dated human exact-sense CEFR, English, fluent Myanmar and original-example review receipts bound to final content; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "family",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Parents, children and other relatives.",
+        "myanmar_meaning": "မိသားစု",
+        "example_sentence": "My family lives here."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 23,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 2,
+        "extracted_line": 268,
+        "source_excerpt": "family n., adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "FAMILY_NOUN_VS_ADJECTIVE_SCOPE",
+      "independent_reviewer_task": "Oxford lists both noun and adjective; the draft is the noun. Independently check inclusive relatives and context-dependent Myanmar wording without expanding to the adjective sense. Require separate dated human exact-sense CEFR, English, fluent Myanmar and original-example review receipts bound to final content; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "mother",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A female parent.",
+        "myanmar_meaning": "အမေ၊ မိခင်",
+        "example_sentence": "My mother is kind."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 24,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 2,
+        "extracted_line": 497,
+        "source_excerpt": "mother n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "PARENT_KINSHIP_REGISTER",
+      "independent_reviewer_task": "Check natural Myanmar kinship register and that the example describes a female parent rather than an unrelated title of address. Require separate dated human exact-sense CEFR, English, fluent Myanmar and original-example review receipts bound to final content; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "father",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A male parent.",
+        "myanmar_meaning": "အဖေ၊ ဖခင်",
+        "example_sentence": "My father works here."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 25,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 2,
+        "extracted_line": 276,
+        "source_excerpt": "father n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "PARENT_KINSHIP_REGISTER",
+      "independent_reviewer_task": "Check natural Myanmar kinship register and whether the example's subject and predicate are suitable for A1 learners. Require separate dated human exact-sense CEFR, English, fluent Myanmar and original-example review receipts bound to final content; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "school",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A place where children learn.",
+        "myanmar_meaning": "ကျောင်း",
+        "example_sentence": "Our school is near my home."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 26,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 3,
+        "extracted_line": 669,
+        "source_excerpt": "school n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "INSTITUTION_VS_BUILDING_SENSE",
+      "independent_reviewer_task": "The definition is building/place-oriented; check institution versus building senses and whether the original example matches the intended location sense. Require separate dated human exact-sense CEFR, English, fluent Myanmar and original-example review receipts bound to final content; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "teacher",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A person who helps students learn.",
+        "myanmar_meaning": "ဆရာ၊ ဆရာမ",
+        "example_sentence": "The teacher is friendly."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 27,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 3,
+        "extracted_line": 767,
+        "source_excerpt": "teacher n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "GENDER_NEUTRAL_OCCUPATION",
+      "independent_reviewer_task": "Confirm that ဆရာ၊ ဆရာမ appropriately covers the intended gender-neutral English noun, and example grammar. Require separate dated human exact-sense CEFR, English, fluent Myanmar and original-example review receipts bound to final content; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "student",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A person who studies at a school or college.",
+        "myanmar_meaning": "ကျောင်းသား၊ ကျောင်းသူ",
+        "example_sentence": "She is a good student."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 28,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 3,
+        "extracted_line": 745,
+        "source_excerpt": "student n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "STUDENT_SCOPE_AND_GENDER",
+      "independent_reviewer_task": "Draft English definition limits to school or college; check university learners and whether Myanmar gloss is sufficiently inclusive. Require separate dated human exact-sense CEFR, English, fluent Myanmar and original-example review receipts bound to final content; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "book",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Pages with words or pictures bound together.",
+        "myanmar_meaning": "စာအုပ်",
+        "example_sentence": "This book is interesting."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 29,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 1,
+        "extracted_line": 96,
+        "source_excerpt": "book n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "BOOK_NOUN_VS_VERB_SCOPE",
+      "independent_reviewer_task": "Oxford lists book as A1 noun and separately as A2 verb; the draft is physical book noun. Do not confuse with booking a reservation. Require separate dated human exact-sense CEFR, English, fluent Myanmar and original-example review receipts bound to final content; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
