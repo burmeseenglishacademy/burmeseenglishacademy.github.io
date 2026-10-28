@@ -1,0 +1,243 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_A1_TO_C1_STAGING_ONLY",
+  "status": "SIX_C1_CAMBRIDGE_EXACT_SENSE_LEADS_PENDING_INDEPENDENT_REVIEW",
+  "observed_on": "2026-10-28",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 6,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 6
+  },
+  "independently_approved_count": 0,
+  "source_limitations": "Cambridge publisher-owned search-indexed result excerpts, not direct full-page access; attempts to open pages returned HTTP 403. Oxford official PDF word/POS observations (when available) are not exact-sense CEFR labels. This is editorial research, not independent review, translation signoff, device testing, or publication.",
+  "records": [
+    {
+      "word": "signature",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A person's name written in their own handwriting.",
+        "myanmar_meaning": "လက်မှတ်ရေးထိုးချက်",
+        "example_sentence": "Please add your signature at the bottom of the form."
+      },
+      "classification": "C1_DRAFT_CAMBRIDGE_B1_EXACT_SENSE_OXFORD_B2_WORD_POS",
+      "editorial_analysis": "Cambridge labels the handwritten-name noun sense B1, while Oxford word/POS places it at B2. The C1 draft sentence uses this ordinary name-on-form sense. Independently justify a genuinely C1 sense and matching example or replace the C1 entry; do not relabel B1 as C1.",
+      "independent_reviewer_task": "Independently review exact-sense CEFR, English definition, fluent Myanmar meaning, and original example grammar. Cambridge labels the handwritten-name noun sense B1, while Oxford word/POS places it at B2. The C1 draft sentence uses this ordinary name-on-form sense. Independently justify a genuinely C1 sense and matching example or replace the C1 entry; do not relabel B1 as C1.",
+      "publisher_evidence": [
+        {
+          "publisher": "Cambridge University Press & Assessment",
+          "url": "https://dictionary.cambridge.org/dictionary/english/signature",
+          "observed_on": "2026-10-28",
+          "cefr_label": "B1",
+          "sense_heading": "NAME",
+          "access": "PUBLISHER_SEARCH_INDEXED_RESULT_DIRECT_PAGE_HTTP_403",
+          "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_NOT_INDEPENDENT_FULL_PAGE_REVIEW"
+        },
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+          "observed_on": "2026-10-28",
+          "cefr_label": "B2",
+          "sense_heading": "WORD_POS_ONLY",
+          "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT",
+          "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+          "pdf_page": 3,
+          "extracted_line": 569,
+          "source_excerpt": "signature n.",
+          "upstream_packet_path": "draft/CEFR-1000-OXFORD-C1-TWELVE-DIRECT-PDF-2026-10-28.json",
+          "upstream_packet_blob_sha": "331a29bb256510bca0c950318d8c62f6f59ad823"
+        }
+      ],
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "conversion",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The process of changing something into a different form or use.",
+        "myanmar_meaning": "ပုံစံ သို့မဟုတ် အသုံးပြုမှု ပြောင်းလဲခြင်း",
+        "example_sentence": "The conversion of the old office into flats took a year."
+      },
+      "classification": "C1_DRAFT_CAMBRIDGE_C2_CHANGE_SENSE_OXFORD_C1_WORD_POS",
+      "editorial_analysis": "Cambridge marks the general process-of-changing noun sense C2, Oxford lists conversion noun at C1 word/POS. The draft office-to-flats sentence demonstrates general change. Independent exact-sense C1 publisher evidence and a specific Myanmar gloss are required before retaining.",
+      "independent_reviewer_task": "Independently review exact-sense CEFR, English definition, fluent Myanmar meaning, and original example grammar. Cambridge marks the general process-of-changing noun sense C2, Oxford lists conversion noun at C1 word/POS. The draft office-to-flats sentence demonstrates general change. Independent exact-sense C1 publisher evidence and a specific Myanmar gloss are required before retaining.",
+      "publisher_evidence": [
+        {
+          "publisher": "Cambridge University Press & Assessment",
+          "url": "https://dictionary.cambridge.org/dictionary/english/conversion",
+          "observed_on": "2026-10-28",
+          "cefr_label": "C2",
+          "sense_heading": "CHANGE",
+          "access": "PUBLISHER_SEARCH_INDEXED_RESULT_DIRECT_PAGE_HTTP_403",
+          "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_NOT_INDEPENDENT_FULL_PAGE_REVIEW"
+        },
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+          "observed_on": "2026-10-28",
+          "cefr_label": "C1",
+          "sense_heading": "WORD_POS_ONLY",
+          "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT",
+          "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+          "pdf_page": 4,
+          "extracted_line": 988,
+          "source_excerpt": "conversion n.",
+          "upstream_packet_path": "draft/CEFR-1000-OXFORD-C1-TWELVE-DIRECT-PDF-2026-10-28.json",
+          "upstream_packet_blob_sha": "331a29bb256510bca0c950318d8c62f6f59ad823"
+        }
+      ],
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "municipal",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Relating to a city or town and its local government.",
+        "myanmar_meaning": "စည်ပင်သာယာရေးဆိုင်ရာ၊ မြို့အုပ်ချုပ်ရေးဆိုင်ရာ",
+        "example_sentence": "The municipal council approved the new park."
+      },
+      "classification": "C1_PUBLISHER_SUPPORT_STILL_REQUIRES_MYANMAR_AND_SENSE_REVIEW",
+      "editorial_analysis": "Cambridge labels municipal adjective C1, Oxford word/POS also lists C1. Review whether the Myanmar gloss accurately expresses local-city administration rather than just urban geography, and whether the council example matches the source sense.",
+      "independent_reviewer_task": "Independently review exact-sense CEFR, English definition, fluent Myanmar meaning, and original example grammar. Cambridge labels municipal adjective C1, Oxford word/POS also lists C1. Review whether the Myanmar gloss accurately expresses local-city administration rather than just urban geography, and whether the council example matches the source sense.",
+      "publisher_evidence": [
+        {
+          "publisher": "Cambridge University Press & Assessment",
+          "url": "https://dictionary.cambridge.org/dictionary/english/municipal",
+          "observed_on": "2026-10-28",
+          "cefr_label": "C1",
+          "sense_heading": "CITY_OR_TOWN",
+          "access": "PUBLISHER_SEARCH_INDEXED_RESULT_DIRECT_PAGE_HTTP_403",
+          "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_NOT_INDEPENDENT_FULL_PAGE_REVIEW"
+        },
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+          "observed_on": "2026-10-28",
+          "cefr_label": "C1",
+          "sense_heading": "WORD_POS_ONLY",
+          "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT",
+          "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+          "pdf_page": 6,
+          "extracted_line": 1498,
+          "source_excerpt": "municipal adj.",
+          "upstream_packet_path": "draft/CEFR-1000-OXFORD-C1-TWELVE-DIRECT-PDF-2026-10-28.json",
+          "upstream_packet_blob_sha": "331a29bb256510bca0c950318d8c62f6f59ad823"
+        }
+      ],
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "copyright",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The legal right to control how an original creative work is copied or used.",
+        "myanmar_meaning": "မူပိုင်ခွင့်",
+        "example_sentence": "The publisher owns the copyright to the illustrations."
+      },
+      "classification": "OXFORD_C1_WORD_POS_CAMBRIDGE_NO_VISIBLE_CEFR_EXACT_SENSE",
+      "editorial_analysis": "Oxford word/POS lists copyright noun at C1, but the Cambridge Advanced Learner entry returned by search has no visible CEFR badge for the legal-right noun sense. Do not infer Cambridge C1 from silence. Obtain direct exact-sense CEFR evidence and check Myanmar legal terminology.",
+      "independent_reviewer_task": "Independently review exact-sense CEFR, English definition, fluent Myanmar meaning, and original example grammar. Oxford word/POS lists copyright noun at C1, but the Cambridge Advanced Learner entry returned by search has no visible CEFR badge for the legal-right noun sense. Do not infer Cambridge C1 from silence. Obtain direct exact-sense CEFR evidence and check Myanmar legal terminology.",
+      "publisher_evidence": [
+        {
+          "publisher": "Cambridge University Press & Assessment",
+          "url": "https://dictionary.cambridge.org/dictionary/english/copyright",
+          "observed_on": "2026-10-28",
+          "cefr_label": "UNLABELLED",
+          "sense_heading": "LEGAL_RIGHT",
+          "access": "PUBLISHER_SEARCH_INDEXED_RESULT_DIRECT_PAGE_HTTP_403",
+          "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_NOT_INDEPENDENT_FULL_PAGE_REVIEW"
+        },
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+          "observed_on": "2026-10-28",
+          "cefr_label": "C1",
+          "sense_heading": "WORD_POS_ONLY",
+          "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT",
+          "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+          "pdf_page": 4,
+          "extracted_line": 999,
+          "source_excerpt": "copyright n.",
+          "upstream_packet_path": "draft/CEFR-1000-OXFORD-C1-TWELVE-DIRECT-PDF-2026-10-28.json",
+          "upstream_packet_blob_sha": "331a29bb256510bca0c950318d8c62f6f59ad823"
+        }
+      ],
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "functional",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Designed to work well for a particular practical purpose.",
+        "myanmar_meaning": "အသုံးဝင်စွာ လုပ်ဆောင်နိုင်သော",
+        "example_sentence": "The prototype is functional, but its appearance needs improvement."
+      },
+      "classification": "C1_DRAFT_USES_UNLABELLED_WORKING_SENSE_NOT_CAMBRIDGE_B2_USEFUL_SENSE",
+      "editorial_analysis": "Cambridge explicitly labels the practical-rather-than-attractive adjective B2; the separate working-normally sense has no visible CEFR badge. Draft prototype is functional contrasts working with appearance, mixing the two. Independent review must select a single exact sense, rewrite English/Myanmar/example if necessary and source a C1 label.",
+      "independent_reviewer_task": "Independently review exact-sense CEFR, English definition, fluent Myanmar meaning, and original example grammar. Cambridge explicitly labels the practical-rather-than-attractive adjective B2; the separate working-normally sense has no visible CEFR badge. Draft prototype is functional contrasts working with appearance, mixing the two. Independent review must select a single exact sense, rewrite English/Myanmar/example if necessary and source a C1 label.",
+      "publisher_evidence": [
+        {
+          "publisher": "Cambridge University Press & Assessment",
+          "url": "https://dictionary.cambridge.org/dictionary/english/functional",
+          "observed_on": "2026-10-28",
+          "cefr_label": "B2_USEFUL;WORKING_NORMALLY_UNLABELLED",
+          "sense_heading": "USEFUL_VS_WORKING_NORMALLY",
+          "access": "PUBLISHER_SEARCH_INDEXED_RESULT_DIRECT_PAGE_HTTP_403",
+          "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_NOT_INDEPENDENT_FULL_PAGE_REVIEW"
+        }
+      ],
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "naval",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Connected with a country's navy.",
+        "myanmar_meaning": "ရေတပ်ဆိုင်ရာ",
+        "example_sentence": "The port hosts an annual naval exercise."
+      },
+      "classification": "C1_DRAFT_CAMBRIDGE_C2_SAME_SENSE",
+      "editorial_analysis": "Cambridge labels the military-navy adjective C2; the draft annual naval exercise uses that same sense. Seek defensible C1 exact-sense evidence from an independent source or replace the word. Navy (B2 noun) is not evidence that naval adjective is C1.",
+      "independent_reviewer_task": "Independently review exact-sense CEFR, English definition, fluent Myanmar meaning, and original example grammar. Cambridge labels the military-navy adjective C2; the draft annual naval exercise uses that same sense. Seek defensible C1 exact-sense evidence from an independent source or replace the word. Navy (B2 noun) is not evidence that naval adjective is C1.",
+      "publisher_evidence": [
+        {
+          "publisher": "Cambridge University Press & Assessment",
+          "url": "https://dictionary.cambridge.org/dictionary/english/naval",
+          "observed_on": "2026-10-28",
+          "cefr_label": "C2",
+          "sense_heading": "NAVY_MILITARY_SHIPS",
+          "access": "PUBLISHER_SEARCH_INDEXED_RESULT_DIRECT_PAGE_HTTP_403",
+          "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_NOT_INDEPENDENT_FULL_PAGE_REVIEW"
+        }
+      ],
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    }
+  ]
+}

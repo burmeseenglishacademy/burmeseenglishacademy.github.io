@@ -1316,6 +1316,70 @@ def audit(ledger=None, after_deployment=False):
             != report["cross_publisher_four_retained_resolved"]):
         issues.append("Retained cross-publisher CEFR/sense conflicts lack independent direct-publisher reconciliation")
 
+    # Six new C1 Cambridge indexed exact-sense leads, including B1/C2
+    # conflicts and unlabelled senses. Indexed excerpts are not human review.
+    c1_six = read_json(ROOT / "draft/CEFR-1000-CAMBRIDGE-C1-SIX-FOLLOWUP-2026-10-28.json")
+    c1_six_flags = c1_six.get("records", [])
+    six_keys = {("C1", w) for w in ("signature", "conversion", "municipal",
+                                   "copyright", "functional", "naval")}
+    report["cambridge_c1_six_source_observations"] = len(c1_six_flags)
+    report["cambridge_c1_six_retained_requiring_resolution"] = 0
+    report["cambridge_c1_six_retained_resolved"] = 0
+    if (c1_six.get("status") != "SIX_C1_CAMBRIDGE_EXACT_SENSE_LEADS_PENDING_INDEPENDENT_REVIEW"
+            or c1_six.get("independently_approved_count") != 0
+            or len(c1_six_flags) != 6
+            or {(x.get("level"), x.get("word")) for x in c1_six_flags if isinstance(x, dict)} != six_keys):
+        issues.append("Six C1 Cambridge source conflicts missing or falsely approved")
+    c1_six_receipts = d.get("cambridge_c1_six_followup_review_receipts", [])
+    if not isinstance(c1_six_receipts, list):
+        issues.append("Six C1 source-conflict review receipts must be a list")
+        c1_six_receipts = []
+    six_index = {}
+    for rec in c1_six_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Malformed six C1 source-conflict receipt")
+            continue
+        key = (rec.get("level"), rec.get("word"))
+        if key in six_index:
+            issues.append("Duplicate six C1 source-conflict receipt")
+        six_index[key] = rec
+    if set(six_index) - six_keys:
+        issues.append("Unknown six C1 source-conflict receipt")
+    for flag in c1_six_flags:
+        if not isinstance(flag, dict):
+            continue
+        key = (flag.get("level"), flag.get("word"))
+        entry = final_lookup.get(key)
+        if entry is None:
+            continue
+        report["cambridge_c1_six_retained_requiring_resolution"] += 1
+        rec = six_index.get(key)
+        if not isinstance(rec, dict):
+            continue
+        rationale = rec.get("conflict_resolution")
+        evidence = flag.get("publisher_evidence", [])
+        if (rec.get("decision") != "RETAIN_WITH_INDEPENDENT_C1_EXACT_SENSE_EVIDENCE"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or rec.get("verified_part_of_speech") != entry.get("part_of_speech")
+                or rec.get("verified_cefr_level") != "C1"
+                or not isinstance(rationale, str) or len(rationale.strip()) < 110
+                or "Cambridge" not in rationale
+                or rec.get("cambridge_source_url") != evidence[0].get("url")
+                or rec.get("source_access_disclaimer") != "CAMBRIDGE_INDEXED_NOT_INDEPENDENT"
+                or not independent_word_stage(rec, entry["word"], "sense_specific_cefr",
+                                              expected_level="C1")):
+            continue
+        # A lower-level, C2 or unlabelled Cambridge sense must not be
+        # approved unchanged without a distinct source-backed C1 exact sense.
+        if (flag.get("word") in {"signature", "conversion", "copyright", "functional", "naval"}
+                and entry.get("english_definition") == flag.get("shortlist_snapshot", {}).get("english_definition")
+                and entry.get("example_sentence") == flag.get("shortlist_snapshot", {}).get("example_sentence")):
+            continue
+        report["cambridge_c1_six_retained_resolved"] += 1
+    if (report["cambridge_c1_six_retained_requiring_resolution"]
+            != report["cambridge_c1_six_retained_resolved"]):
+        issues.append("Retained six C1 Cambridge sense conflicts lack independent C1 exact-sense reconciliation")
+
     # Audio real-listening receipts are 1 per unique word/example text and voice.
     # The separate validator must ALSO confirm files exist and decode.
     audio = d.get("audio_listening_receipts", [])
