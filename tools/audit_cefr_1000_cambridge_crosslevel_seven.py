@@ -25,7 +25,7 @@ FIELDS = ("word", "level", "part_of_speech", "english_definition",
 
 
 def git_blob_sha(data):
-    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\\0" + data).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(data)).encode() + bytes([0]) + data).hexdigest()
 
 
 def validate(packet, shortlist, blob_sha, level="ALL"):
