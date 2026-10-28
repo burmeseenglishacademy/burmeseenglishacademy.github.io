@@ -120,7 +120,7 @@ def negative_tests(packet, shortlist):
     for field, value in [
         ("editorial_hold", False), ("independently_reviewed", True),
         ("release_approved", True), ("independent_reviewer_receipt", {"reviewer_id": "invented"}),
-        ("level", "A1"), ("word", "be"), ("part_of_speech", "verb"),
+        ("level", "A1"), ("word", "be"), ("part_of_speech", "noun"),
     ]:
         mutant = copy.deepcopy(packet)
         mutant["records"][0][field] = value
