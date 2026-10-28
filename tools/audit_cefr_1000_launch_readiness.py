@@ -812,7 +812,7 @@ def audit(ledger=None, after_deployment=False):
             resolution = rec.get("original_example_pos_resolution")
             if (not isinstance(revised, str)
                     or revised.strip() == entry.get("example_sentence")
-                    or not re.search(r"\\bhome\\b", revised, re.I)
+                    or not re.search(r"\bhome\b", revised, re.I)
                     or not isinstance(resolution, str)
                     or len(resolution.strip()) < 80):
                 continue
