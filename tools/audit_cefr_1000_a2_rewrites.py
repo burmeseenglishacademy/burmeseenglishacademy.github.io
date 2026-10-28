@@ -61,7 +61,7 @@ def audit(data, source):
               f"{word}: empty/placeholder rewrite")
         check(any("\u1000" <= ch <= "\u109f" for ch in p["burmese_meaning"]),
               f"{word}: missing Myanmar script")
-        check(re.search(r"\\b" + re.escape(word) + r"\\b",
+        check(re.search(r"\b" + re.escape(word) + r"\b",
                         p["example_sentence"], re.I) is not None,
               f"{word}: example missing headword")
         check(p["example_sentence"].endswith((".", "!", "?")),
