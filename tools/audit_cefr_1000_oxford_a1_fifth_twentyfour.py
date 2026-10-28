@@ -54,7 +54,7 @@ def require(ok, message):
 
 def git_blob_sha(path):
     data = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\\0" + data).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
 
 
 def audit(packet, shortlist, actual_sha, check_upstream=False):
@@ -123,7 +123,7 @@ def audit(packet, shortlist, actual_sha, check_upstream=False):
                 and proposal.get("human_independent_approval") is False, "Proposal falsely approved")
         for key in ("issue","suggested_english_definition","suggested_myanmar_meaning","suggested_example_sentence"):
             require(isinstance(proposal.get(key),str) and len(proposal[key]) >= 10, "Proposal missing " + key)
-        require(any("\\u1000" <= ch <= "\\u109f" for ch in proposal["suggested_myanmar_meaning"]),
+        require(any("\u1000" <= ch <= "\u109f" for ch in proposal["suggested_myanmar_meaning"]),
                 "Proposal Myanmar text missing")
     return len(records)
 
