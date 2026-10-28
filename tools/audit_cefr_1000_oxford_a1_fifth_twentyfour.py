@@ -45,6 +45,100 @@ EXPECTED = [
     ("happy", 2, 349, "happy adj.", "HAPPY_FEELING_VS_CONGRATULATORY_WISH"),
 ]
 PROPOSAL_WORDS = ("old", "little", "take", "year", "house", "love")
+# Publisher-owned indexed snippets only; direct Cambridge dictionary pages returned HTTP 403.
+EXPECTED_CAMBRIDGE = [
+    {
+        "word": "work",
+        "part_of_speech": "verb",
+        "sense_heading": "JOB",
+        "publisher": "Cambridge University Press",
+        "dictionary": "Cambridge Learner's Dictionary",
+        "source_url": "https://dictionary.cambridge.org/us/dictionary/learner-english/work",
+        "observed_on": "2026-10-29",
+        "indexed_excerpt": "to do a job, especially the job you do to earn money",
+        "indexed_cefr_level": "A1",
+        "access": "PUBLISHER_SEARCH_INDEXED_EXCERPT_DIRECT_PAGE_HTTP_403",
+        "evidence_scope": "SEARCH_INDEXED_SENSE_LEAD_NOT_DIRECT_PAGE_NOT_INDEPENDENT",
+        "editorial_concern": "Draft broad effort definition must align to occupational example; no independent Myanmar review.",
+        "independently_approved": false
+    },
+    {
+        "word": "little",
+        "part_of_speech": "adjective",
+        "sense_heading": "SMALL",
+        "publisher": "Cambridge University Press",
+        "dictionary": "Cambridge Learner's Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/learner-english/little",
+        "observed_on": "2026-10-29",
+        "indexed_excerpt": "small in size or amount",
+        "indexed_cefr_level": "A1",
+        "access": "PUBLISHER_SEARCH_INDEXED_EXCERPT_DIRECT_PAGE_HTTP_403",
+        "evidence_scope": "SEARCH_INDEXED_SENSE_LEAD_NOT_DIRECT_PAGE_NOT_INDEPENDENT",
+        "editorial_concern": "Dog example illustrates size; distinguish from short duration and quantifier.",
+        "independently_approved": false
+    },
+    {
+        "word": "old",
+        "part_of_speech": "adjective",
+        "sense_heading": "LIVED LONG",
+        "publisher": "Cambridge University Press",
+        "dictionary": "Cambridge Learner's Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/learner-english/old",
+        "observed_on": "2026-10-29",
+        "indexed_excerpt": "having lived or existed for a long time",
+        "indexed_cefr_level": "A1",
+        "access": "PUBLISHER_SEARCH_INDEXED_EXCERPT_DIRECT_PAGE_HTTP_403",
+        "evidence_scope": "SEARCH_INDEXED_SENSE_LEAD_NOT_DIRECT_PAGE_NOT_INDEPENDENT",
+        "editorial_concern": "Grandfather example is age of a person, not used clothes or past system.",
+        "independently_approved": false
+    },
+    {
+        "word": "little",
+        "part_of_speech": "adjective",
+        "sense_heading": "SHORT",
+        "publisher": "Cambridge University Press",
+        "dictionary": "Cambridge Learner's Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/learner-english/little",
+        "observed_on": "2026-10-29",
+        "indexed_excerpt": "short in time or distance",
+        "indexed_cefr_level": "B2",
+        "access": "PUBLISHER_SEARCH_INDEXED_EXCERPT_DIRECT_PAGE_HTTP_403",
+        "evidence_scope": "SEARCH_INDEXED_SENSE_LEAD_NOT_DIRECT_PAGE_NOT_INDEPENDENT",
+        "editorial_concern": "Contrasting sense; do not transfer B2 to A1 SMALL sense.",
+        "independently_approved": false
+    },
+    {
+        "word": "old",
+        "part_of_speech": "adjective",
+        "sense_heading": "USED A LOT",
+        "publisher": "Cambridge University Press",
+        "dictionary": "Cambridge Learner's Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/learner-english/old",
+        "observed_on": "2026-10-29",
+        "indexed_excerpt": "having been used or owned for a long time",
+        "indexed_cefr_level": "A2",
+        "access": "PUBLISHER_SEARCH_INDEXED_EXCERPT_DIRECT_PAGE_HTTP_403",
+        "evidence_scope": "SEARCH_INDEXED_SENSE_LEAD_NOT_DIRECT_PAGE_NOT_INDEPENDENT",
+        "editorial_concern": "Contrasts with LIVED LONG A1 and Essential British classification.",
+        "independently_approved": false
+    },
+    {
+        "word": "old",
+        "part_of_speech": "adjective",
+        "sense_heading": "USED OR OWNED LONG",
+        "publisher": "Cambridge University Press",
+        "dictionary": "Cambridge Essential British English Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/essential-british-english/old",
+        "observed_on": "2026-10-29",
+        "indexed_excerpt": "having been used or owned for a long time",
+        "indexed_cefr_level": "A1",
+        "access": "PUBLISHER_SEARCH_INDEXED_EXCERPT_DIRECT_PAGE_HTTP_403",
+        "evidence_scope": "SEARCH_INDEXED_SENSE_LEAD_NOT_DIRECT_PAGE_NOT_INDEPENDENT",
+        "editorial_concern": "Same broad sense appears A1 in Cambridge Essential British but A2 in Learner's Dictionary; reviewer must reconcile publisher-list differences.",
+        "independently_approved": false
+    }
+]
+
 
 
 def require(ok, message):
@@ -125,6 +219,9 @@ def audit(packet, shortlist, actual_sha, check_upstream=False):
             require(isinstance(proposal.get(key),str) and len(proposal[key]) >= (4 if key == "suggested_myanmar_meaning" else 10), "Proposal missing " + key)
         require(any("\u1000" <= ch <= "\u109f" for ch in proposal["suggested_myanmar_meaning"]),
                 "Proposal Myanmar text missing")
+    leads = packet.get("cambridge_publisher_indexed_sense_leads")
+    require(leads == EXPECTED_CAMBRIDGE, "Cambridge indexed sense labels, access caveats or provenance drift")
+    require("direct Cambridge pages returned HTTP 403" in limitations, "Cambridge 403 caveat omitted")
     return len(records)
 
 
@@ -155,6 +252,9 @@ def self_test(packet, shortlist, sha):
         lambda p: p["unreviewed_editorial_proposals"][3].update(word="wrong"),
         lambda p: p.update(source_limitations="approved"),
     ]
+    for i in range(6):
+        mutations.append(lambda p,i=i: p["cambridge_publisher_indexed_sense_leads"][i].update(indexed_cefr_level="C2"))
+        mutations.append(lambda p,i=i: p["cambridge_publisher_indexed_sense_leads"][i].update(independently_approved=True))
     for i, change in enumerate(mutations):
         altered = copy.deepcopy(packet)
         change(altered)
