@@ -1,0 +1,416 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B2_ADDITIONAL_TWELVE_DIRECT_OXFORD_WORD_POS_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-28",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 12,
+    "C1": 0
+  },
+  "word_pos_discrepancies": 4,
+  "independently_approved_count": 0,
+  "source_limitations": "Direct official Oxford University Press Oxford 3000 CEFR PDF inspected 2026-10-28. PDF page one-based, extracted line zero-based. Publisher word/POS classifications are NOT independently verified exact-sense CEFR evidence or English, Myanmar, example, audio or human approval. The provisional shortlist remains unchanged; all 12 entries on editorial hold.",
+  "records": [
+    {
+      "word": "relief",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The pleasant feeling when worry, pain or difficulty ends.",
+        "myanmar_meaning": "စိတ်သက်သာရာရမှု",
+        "example_sentence": "He felt relief when the missing bag was found."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 21,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 12,
+        "extracted_line": 3132,
+        "source_excerpt": "relief n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "RELIEF_EMOTION_VS_ASSISTANCE",
+      "independent_reviewer_task": "Human-independent reviewer: verify the intended relief noun exact sense and whether the Oxford B2 word/POS classification supports retaining the B2 draft. Check English definition, natural Myanmar translation, original example grammar and collocation; reconcile any CEFR discrepancy using a dated source URL and content-bound review receipt. Keep editorial hold until independently signed.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "shame",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A painful feeling of embarrassment or guilt.",
+        "myanmar_meaning": "အရှက်ကွဲမှု၊ အရှက်ရမှု",
+        "example_sentence": "He felt shame after lying to his friend."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 24,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 12,
+        "extracted_line": 3185,
+        "source_excerpt": "shame n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "SHAME_EMOTION_VS_DISGRACE",
+      "independent_reviewer_task": "Human-independent reviewer: verify the intended shame noun exact sense and whether the Oxford B2 word/POS classification supports retaining the B2 draft. Check English definition, natural Myanmar translation, original example grammar and collocation; reconcile any CEFR discrepancy using a dated source URL and content-bound review receipt. Keep editorial hold until independently signed.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "somewhat",
+      "level": "B2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "To a limited degree; rather than completely.",
+        "myanmar_meaning": "အတော်အသင့်၊ တစ်စိတ်တစ်ပိုင်း",
+        "example_sentence": "The second proposal is somewhat more practical."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 25,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 12,
+        "extracted_line": 3204,
+        "source_excerpt": "somewhat adv.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "DEGREE_ADVERB_MYANMAR_NATURALNESS",
+      "independent_reviewer_task": "Human-independent reviewer: verify the intended somewhat adverb exact sense and whether the Oxford B2 word/POS classification supports retaining the B2 draft. Check English definition, natural Myanmar translation, original example grammar and collocation; reconcile any CEFR discrepancy using a dated source URL and content-bound review receipt. Keep editorial hold until independently signed.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "surely",
+      "level": "B2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Used to express strong belief that something is true.",
+        "myanmar_meaning": "သေချာပေါက်၊ ဧကန်မုချ",
+        "example_sentence": "Surely there must be a better solution."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 26,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 10,
+        "extracted_line": 2487,
+        "source_excerpt": "surely adv.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_B1_EPISTEMIC_USAGE",
+      "independent_reviewer_task": "Human-independent reviewer: verify the intended surely adverb exact sense and whether the Oxford B1 word/POS classification supports retaining the B2 draft. Check English definition, natural Myanmar translation, original example grammar and collocation; reconcile any CEFR discrepancy using a dated source URL and content-bound review receipt. Keep editorial hold until independently signed.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "absolute",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Complete or total, without any limitation.",
+        "myanmar_meaning": "လုံးဝပြည့်စုံသော၊ အကြွင်းမဲ့",
+        "example_sentence": "The manager demanded absolute silence during the test."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 27,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 10,
+        "extracted_line": 2594,
+        "source_excerpt": "absolute adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "ABSOLUTE_SILENCE_COLLOCATION",
+      "independent_reviewer_task": "Human-independent reviewer: verify the intended absolute adjective exact sense and whether the Oxford B2 word/POS classification supports retaining the B2 draft. Check English definition, natural Myanmar translation, original example grammar and collocation; reconcile any CEFR discrepancy using a dated source URL and content-bound review receipt. Keep editorial hold until independently signed.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "incident",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An event that is unusual or unpleasant.",
+        "myanmar_meaning": "မမျှော်လင့်ထားသော သို့မဟုတ် မနှစ်မြို့ဖွယ် ဖြစ်ရပ်",
+        "example_sentence": "The supervisor recorded the incident in the safety report."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 100,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 11,
+        "extracted_line": 2932,
+        "source_excerpt": "incident n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "INCIDENT_SAFETY_REPORT_CONTEXT",
+      "independent_reviewer_task": "Human-independent reviewer: verify the intended incident noun exact sense and whether the Oxford B2 word/POS classification supports retaining the B2 draft. Check English definition, natural Myanmar translation, original example grammar and collocation; reconcile any CEFR discrepancy using a dated source URL and content-bound review receipt. Keep editorial hold until independently signed.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "quit",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To stop doing an activity or leave a job.",
+        "myanmar_meaning": "ရပ်တန့်သည်၊ အလုပ်မှထွက်သည်",
+        "example_sentence": "He decided to quit his job and return to university."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 102,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 9,
+        "extracted_line": 2346,
+        "source_excerpt": "quit v.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_B1_LEAVE_JOB_SENSE",
+      "independent_reviewer_task": "Human-independent reviewer: verify the intended quit verb exact sense and whether the Oxford B1 word/POS classification supports retaining the B2 draft. Check English definition, natural Myanmar translation, original example grammar and collocation; reconcile any CEFR discrepancy using a dated source URL and content-bound review receipt. Keep editorial hold until independently signed.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "widely",
+      "level": "B2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "By many people or across many places.",
+        "myanmar_meaning": "ကျယ်ကျယ်ပြန့်ပြန့်",
+        "example_sentence": "This teaching method is widely used in schools."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 105,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 12,
+        "extracted_line": 3307,
+        "source_excerpt": "widely adv.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "WIDELY_USED_COLLOCATION",
+      "independent_reviewer_task": "Human-independent reviewer: verify the intended widely adverb exact sense and whether the Oxford B2 word/POS classification supports retaining the B2 draft. Check English definition, natural Myanmar translation, original example grammar and collocation; reconcile any CEFR discrepancy using a dated source URL and content-bound review receipt. Keep editorial hold until independently signed.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "worldwide",
+      "level": "B2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "In or across many countries throughout the world.",
+        "myanmar_meaning": "ကမ္ဘာတစ်ဝန်းလုံးတွင်",
+        "example_sentence": "The company sells its products worldwide."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 106,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 10,
+        "extracted_line": 2582,
+        "source_excerpt": "worldwide adj., adv.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_B1_ADVERB_SENSE",
+      "independent_reviewer_task": "Human-independent reviewer: verify the intended worldwide adverb exact sense and whether the Oxford B1 word/POS classification supports retaining the B2 draft. Check English definition, natural Myanmar translation, original example grammar and collocation; reconcile any CEFR discrepancy using a dated source URL and content-bound review receipt. Keep editorial hold until independently signed.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "anniversary",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A date on which an important past event is remembered each year.",
+        "myanmar_meaning": "နှစ်ပတ်လည်နေ့",
+        "example_sentence": "The company celebrated its tenth anniversary."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 107,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 10,
+        "extracted_line": 2622,
+        "source_excerpt": "anniversary n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "ANNIVERSARY_YEARLY_RECURRENCE",
+      "independent_reviewer_task": "Human-independent reviewer: verify the intended anniversary noun exact sense and whether the Oxford B2 word/POS classification supports retaining the B2 draft. Check English definition, natural Myanmar translation, original example grammar and collocation; reconcile any CEFR discrepancy using a dated source URL and content-bound review receipt. Keep editorial hold until independently signed.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "attractive",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Pleasant to look at or appealing.",
+        "myanmar_meaning": "ဆွဲဆောင်မှုရှိသော",
+        "example_sentence": "The new packaging has an attractive design."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 108,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 4,
+        "extracted_line": 967,
+        "source_excerpt": "attractive adj.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_A2_DESIGN_APPEAL",
+      "independent_reviewer_task": "Human-independent reviewer: verify the intended attractive adjective exact sense and whether the Oxford A2 word/POS classification supports retaining the B2 draft. Check English definition, natural Myanmar translation, original example grammar and collocation; reconcile any CEFR discrepancy using a dated source URL and content-bound review receipt. Keep editorial hold until independently signed.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "broad",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Covering a wide range of subjects or ideas.",
+        "myanmar_meaning": "ကျယ်ပြန့်သော",
+        "example_sentence": "The course provides a broad understanding of management."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 109,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 10,
+        "extracted_line": 2668,
+        "source_excerpt": "broad adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "BROAD_ABSTRACT_SCOPE",
+      "independent_reviewer_task": "Human-independent reviewer: verify the intended broad adjective exact sense and whether the Oxford B2 word/POS classification supports retaining the B2 draft. Check English definition, natural Myanmar translation, original example grammar and collocation; reconcile any CEFR discrepancy using a dated source URL and content-bound review receipt. Keep editorial hold until independently signed.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
