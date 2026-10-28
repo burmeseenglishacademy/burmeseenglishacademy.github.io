@@ -102,6 +102,24 @@ def audit(packet, shortlist, actual_sha):
         require(row.get("editorial_hold") is True and row.get("independently_reviewed") is False
                 and row.get("release_approved") is False
                 and row.get("independent_reviewer_receipt") is None, f"{word}: false approval")
+    expected_secondary = [
+        ("all", "A2", "adverb", 4, 931, "all adv."),
+        ("like", "A1", "preposition", 2, 442, "like (similar) prep."),
+    ]
+    contrasts = packet.get("secondary_word_pos_observations")
+    require(isinstance(contrasts, list) and len(contrasts) == 2, "Missing homograph/POS contrasts")
+    for row, (word, level, pos, page, line, excerpt) in zip(contrasts, expected_secondary):
+        require(row.get("word") == word and row.get("contrasting_level") == level
+                and row.get("contrasting_part_of_speech") == pos, "Homograph identity/level/POS drift")
+        require(row.get("publisher") == "Oxford University Press"
+                and row.get("source_url") == URL
+                and row.get("observed_on") == "2026-10-29"
+                and row.get("pdf_page") == page
+                and row.get("extracted_line") == line
+                and row.get("source_excerpt") == excerpt
+                and row.get("scope") == "WORD_POS_NOT_EXACT_SENSE", "Homograph publisher provenance drift")
+        require(row.get("independently_approved") is False
+                and len(str(row.get("reviewer_action", ""))) >= 50, "Homograph falsely approved")
     return len(records)
 
 
@@ -139,6 +157,8 @@ def self_test(packet, shortlist, sha):
         lambda p: p["records"][14].update(editorial_hold=False),
         lambda p: p["records"][15]["shortlist_snapshot"].update(english_definition="Invented."),
         lambda p: p["records"].reverse(),
+        lambda p: p["secondary_word_pos_observations"][0].update(extracted_line=999),
+        lambda p: p["secondary_word_pos_observations"][1].update(independently_approved=True),
     ]
     for i, mutation in enumerate(mutations):
         bad = copy.deepcopy(packet)
