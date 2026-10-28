@@ -67,7 +67,7 @@ def audit(data, shortlist, raw, level="ALL"):
     if data.get("word_pos_discrepancies") != 11 or data.get("independently_approved_count") != 0:
         errors.append("discrepancy count or false approval")
     note = str(data.get("provenance_note", ""))
-    if not all(s in note for s in ("Direct official Oxford", "NOT", "independent")):
+    if not all(s in note.casefold() for s in ("direct official oxford", "not", "independent")):
         errors.append("provenance caveat missing")
     entries = shortlist.get("entries", [])
     if len(entries) != 1000 or shortlist.get("counts_by_level") != {x: 200 for x in ("A1", "A2", "B1", "B2", "C1")}:
