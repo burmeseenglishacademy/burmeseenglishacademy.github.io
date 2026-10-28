@@ -15,7 +15,7 @@
   "word_pos_discrepancies": 5,
   "unlisted_in_inspected_core_lists": 1,
   "independently_approved_count": 0,
-  "source_limitations": "Official Oxford 5000 and Oxford 3000 CEFR PDFs directly inspected 2026-10-29. Page numbers one-based, web extracted line numbers zero-based. Oxford list is word/POS evidence only, NOT exact-sense CEFR, fluent Myanmar, original example or independent reviewer evidence. The unlisted word is NOT assigned a CEFR level by absence. No independent approvals, audio signoffs, physical iPhone QA, hosting verification or production launch.",
+  "source_limitations": "Official Oxford 5000 and Oxford 3000 CEFR PDFs directly inspected 2026-10-29. Page numbers one-based, web extracted line numbers zero-based. Oxford list is word/POS evidence only, NOT exact-sense CEFR, fluent Myanmar, original example or independent reviewer evidence. The unlisted word is NOT assigned a CEFR level by absence. No independent approvals, audio signoffs, physical iPhone QA, hosting verification or production launch. Cambridge exact-sense leads are publisher-owned search-index excerpts only; attempted direct Cambridge pages returned HTTP 403. Indexed CEFR labels are unverified by direct-page inspection and cannot substitute for independent review.",
   "records": [
     {
       "word": "tribute",
@@ -450,6 +450,52 @@
       "proposed_original_example": "The school introduced lessons to challenge racism.",
       "status": "UNREVIEWED_NOT_APPLIED",
       "reason": "Avoid defining racism only as an individual act of unfair treatment."
+    }
+  ],
+  "cambridge_publisher_indexed_sense_leads": [
+    {
+      "word": "tribute",
+      "sense": "RESPECTFUL_ACTION",
+      "publisher": "Cambridge University Press",
+      "source_url": "https://dictionary.cambridge.org/us/dictionary/english/tribute",
+      "observed_on": "2026-10-29",
+      "indexed_cefr_label": "C2",
+      "indexed_observation": "The Cambridge Advanced Learner's Dictionary indexed RESPECTFUL ACTION noun sense as C2; this is a sense-specific lead, not a direct-page or independent review.",
+      "source_access": "PUBLISHER_SEARCH_INDEX_EXCERPT_DIRECT_PAGE_HTTP_403",
+      "editorial_risk": "CAMBRIDGE_C2_RESPECTFUL_ACTION_VS_OXFORD_C1_WORD_POS"
+    },
+    {
+      "word": "functional",
+      "sense": "PRACTICAL",
+      "publisher": "Cambridge University Press",
+      "source_url": "https://dictionary.cambridge.org/dictionary/learner-english/functional",
+      "observed_on": "2026-10-29",
+      "indexed_cefr_label": "B2",
+      "indexed_observation": "Cambridge Learner's Dictionary indexed PRACTICAL adjective as B2, designed for practical usefulness rather than appearance; the draft definition leans toward this sense.",
+      "source_access": "PUBLISHER_SEARCH_INDEX_EXCERPT_DIRECT_PAGE_HTTP_403",
+      "editorial_risk": "CAMBRIDGE_B2_PRACTICAL_VS_C1_DRAFT"
+    },
+    {
+      "word": "functional",
+      "sense": "WORKING",
+      "publisher": "Cambridge University Press",
+      "source_url": "https://dictionary.cambridge.org/dictionary/learner-english/functional",
+      "observed_on": "2026-10-29",
+      "indexed_cefr_label": null,
+      "indexed_observation": "Cambridge Learner's Dictionary separately indexed WORKING adjective as operating correctly, with no CEFR label visible in the retrieved excerpt; the draft example uses this sense.",
+      "source_access": "PUBLISHER_SEARCH_INDEX_EXCERPT_DIRECT_PAGE_HTTP_403",
+      "editorial_risk": "UNLABELLED_WORKING_EXAMPLE_VS_PRACTICAL_DEFINITION"
+    },
+    {
+      "word": "divine",
+      "sense": "GOD_LIKE",
+      "publisher": "Cambridge University Press",
+      "source_url": "https://dictionary.cambridge.org/dictionary/english/divine",
+      "observed_on": "2026-10-29",
+      "indexed_cefr_label": null,
+      "indexed_observation": "Cambridge Advanced Learner's Dictionary indexed GOD-LIKE adjective as connected with a god, distinct from SPLENDID adjective and GUESS verb; no CEFR label visible in retrieved excerpt.",
+      "source_access": "PUBLISHER_SEARCH_INDEX_EXCERPT_DIRECT_PAGE_HTTP_403",
+      "editorial_risk": "UNLABELLED_RELIGIOUS_ADJECTIVE_VS_OTHER_DIVINE_SENSES"
     }
   ]
 }
