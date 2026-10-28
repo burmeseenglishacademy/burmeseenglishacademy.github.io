@@ -22,6 +22,8 @@ on:
       - draft/CEFR-1000-OXFORD-B1-TWELVE-DIRECT-PDF-2026-10-28.json
       - draft/CEFR-1000-OXFORD-B2-TWELVE-DIRECT-PDF-2026-10-28.json
       - tools/audit_cefr_1000_oxford_b2_twelve.py
+      - draft/CEFR-1000-OXFORD-C1-TWELVE-DIRECT-PDF-2026-10-28.json
+      - tools/audit_cefr_1000_oxford_c1_twelve.py
       - tools/audit_cefr_1000_oxford_b1_twelve.py
       - tools/audit_cefr_1000_oxford_a2_twelve.py
       - draft/CEFR-1000-OXFORD-SECOND-DIRECT-PDF-BATCH-2026-10-27.json
@@ -93,6 +95,11 @@ jobs:
       - name: Reject forged B2 PDF provenance, changed Myanmar and fake human approval
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_b2_twelve.py --level ALL --self-test
+      - name: Audit twelve C1-draft direct Oxford 5000 word-POS observations
+        run: python3 tools/audit_cefr_1000_oxford_c1_twelve.py --level "${{ matrix.level }}"
+      - name: Reject 15 forged C1 Oxford source, Myanmar and fake human approval mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_oxford_c1_twelve.py --level ALL --self-test
       - name: Validate 27 more official Oxford 3000/5000 PDF word-POS observations (not sense approval)
         run: python3 tools/audit_cefr_1000_oxford_second_batch.py --level "${{ matrix.level }}"
       - name: Reject forged second-batch publisher source and fake review receipts
