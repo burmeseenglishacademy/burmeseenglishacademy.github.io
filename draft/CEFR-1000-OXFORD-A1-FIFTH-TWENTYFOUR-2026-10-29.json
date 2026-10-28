@@ -1,0 +1,877 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A1_FIFTH_TWENTYFOUR_DIRECT_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-29",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 24,
+  "counts_by_level": {
+    "A1": 24,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "independently_approved_count": 0,
+  "source_limitations": "Official Oxford 3000 by CEFR level PDF directly opened and inspected 2026-10-29. PDF pages one-based, extracted web lines zero-based. Oxford provides word/POS CEFR, NOT exact-sense CEFR or English/Myanmar/example validation. No human-independent approvals, audio listening, physical iPhone testing or release. All proposals remain unreviewed and unapplied.",
+  "editorial_priority": [
+    "WORK_EMPLOYMENT_VS_GENERAL_EFFORT",
+    "YEAR_TWELVE_MONTHS_VS_CALENDAR_YEAR",
+    "FAMILY_AFFECTION_VS_ROMANTIC_LOVE",
+    "OLD_PERSON_VS_OLD_OBJECT_MYANMAR_POLYSEMY",
+    "LITTLE_SMALL_SIZE_VS_SMALL_QUANTITY",
+    "TAKE_CHAIR_EXAMPLE_AMBIGUOUS_CARRY_VS_ACCEPT",
+    "MANY_COUNTABLE_NOUNS_VS_MUCH_UNCOUNTABLE",
+    "DRINK_LIQUID_VERB_VS_NOUN"
+  ],
+  "records": [
+    {
+      "word": "work",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To do a job or activity that needs effort.",
+        "myanmar_meaning": "အလုပ်လုပ်သည်",
+        "example_sentence": "I work in a shop."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 53,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 891,
+        "source_excerpt": "work v., n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "WORK_EMPLOYMENT_VS_GENERAL_EFFORT",
+      "independent_reviewer_task": "Human-independent reviewer must check work as A1 in the exact intended sense, distinguish WORK_EMPLOYMENT_VS_GENERAL_EFFORT, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "year",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A period of twelve months.",
+        "myanmar_meaning": "နှစ်၊ တစ်နှစ်",
+        "example_sentence": "This year is special."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 54,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 900,
+        "source_excerpt": "year n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "YEAR_TWELVE_MONTHS_VS_CALENDAR_YEAR",
+      "independent_reviewer_task": "Human-independent reviewer must check year as A1 in the exact intended sense, distinguish YEAR_TWELVE_MONTHS_VS_CALENDAR_YEAR, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "love",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To care very deeply about someone or something.",
+        "myanmar_meaning": "ချစ်သည်",
+        "example_sentence": "I love my family."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 55,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 455,
+        "source_excerpt": "love n., v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "FAMILY_AFFECTION_VS_ROMANTIC_LOVE",
+      "independent_reviewer_task": "Human-independent reviewer must check love as A1 in the exact intended sense, distinguish FAMILY_AFFECTION_VS_ROMANTIC_LOVE, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "man",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An adult male person.",
+        "myanmar_meaning": "အရွယ်ရောက်ပြီးသော အမျိုးသား",
+        "example_sentence": "The man is a teacher."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 56,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 461,
+        "source_excerpt": "man n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "ADULT_MALE_VS_GENERIC_HUMAN_USAGE",
+      "independent_reviewer_task": "Human-independent reviewer must check man as A1 in the exact intended sense, distinguish ADULT_MALE_VS_GENERIC_HUMAN_USAGE, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "use",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To do something with a tool or object for a purpose.",
+        "myanmar_meaning": "အသုံးပြုသည်",
+        "example_sentence": "I use a pen to write."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 57,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 842,
+        "source_excerpt": "use v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "USE_TOOL_VS_USE_SERVICE_OR_RESOURCE",
+      "independent_reviewer_task": "Human-independent reviewer must check use as A1 in the exact intended sense, distinguish USE_TOOL_VS_USE_SERVICE_OR_RESOURCE, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "come",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To move towards the speaker or a place.",
+        "myanmar_meaning": "လာသည်",
+        "example_sentence": "Please come here."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 58,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 163,
+        "source_excerpt": "come v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "COME_DEICTIC_DIRECTION_DEPENDS_ON_SPEAKER",
+      "independent_reviewer_task": "Human-independent reviewer must check come as A1 in the exact intended sense, distinguish COME_DEICTIC_DIRECTION_DEPENDS_ON_SPEAKER, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "help",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To make a task easier for someone.",
+        "myanmar_meaning": "ကူညီသည်",
+        "example_sentence": "Can you help me?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 59,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 361,
+        "source_excerpt": "help v., n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "HELP_VERB_VS_NOUN_AND_ABILITY_MODAL",
+      "independent_reviewer_task": "Human-independent reviewer must check help as A1 in the exact intended sense, distinguish HELP_VERB_VS_NOUN_AND_ABILITY_MODAL, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "old",
+      "level": "A1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Having lived or existed for many years.",
+        "myanmar_meaning": "အသက်ကြီးသော၊ ဟောင်းသော",
+        "example_sentence": "My grandfather is old."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 60,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 547,
+        "source_excerpt": "old adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "OLD_PERSON_VS_OLD_OBJECT_MYANMAR_POLYSEMY",
+      "independent_reviewer_task": "Human-independent reviewer must check old as A1 in the exact intended sense, distinguish OLD_PERSON_VS_OLD_OBJECT_MYANMAR_POLYSEMY, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "little",
+      "level": "A1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Small in size or amount.",
+        "myanmar_meaning": "သေးငယ်သော၊ နည်းသော",
+        "example_sentence": "I have a little dog."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 61,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 448,
+        "source_excerpt": "little adj., det./pron.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LITTLE_SMALL_SIZE_VS_SMALL_QUANTITY",
+      "independent_reviewer_task": "Human-independent reviewer must check little as A1 in the exact intended sense, distinguish LITTLE_SMALL_SIZE_VS_SMALL_QUANTITY, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "house",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A building in which people live.",
+        "myanmar_meaning": "အိမ်",
+        "example_sentence": "Our house has two rooms."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 62,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 380,
+        "source_excerpt": "house n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "HOUSE_BUILDING_VS_HOME_FAMILY",
+      "independent_reviewer_task": "Human-independent reviewer must check house as A1 in the exact intended sense, distinguish HOUSE_BUILDING_VS_HOME_FAMILY, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "place",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A particular location or area.",
+        "myanmar_meaning": "နေရာ",
+        "example_sentence": "This is a quiet place."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 63,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 598,
+        "source_excerpt": "place n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "PLACE_PHYSICAL_LOCATION_VS_ABSTRACT_POSITION",
+      "independent_reviewer_task": "Human-independent reviewer must check place as A1 in the exact intended sense, distinguish PLACE_PHYSICAL_LOCATION_VS_ABSTRACT_POSITION, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "give",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To hand something to someone.",
+        "myanmar_meaning": "ပေးသည်",
+        "example_sentence": "Please give me the book."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 64,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 329,
+        "source_excerpt": "give v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "GIVE_TRANSFER_VS_GIVE_INFORMATION",
+      "independent_reviewer_task": "Human-independent reviewer must check give as A1 in the exact intended sense, distinguish GIVE_TRANSFER_VS_GIVE_INFORMATION, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "new",
+      "level": "A1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Not old or recently made.",
+        "myanmar_meaning": "အသစ်သော",
+        "example_sentence": "I have a new bag."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 65,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 516,
+        "source_excerpt": "new adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "NEW_RECENTLY_MADE_VS_NEW_TO_SPEAKER",
+      "independent_reviewer_task": "Human-independent reviewer must check new as A1 in the exact intended sense, distinguish NEW_RECENTLY_MADE_VS_NEW_TO_SPEAKER, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "make",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To create or produce something.",
+        "myanmar_meaning": "ပြုလုပ်သည်၊ ဖန်တီးသည်",
+        "example_sentence": "We make a cake."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 66,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 460,
+        "source_excerpt": "make v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "MAKE_CREATE_VS_CAUSATIVE_MAKE",
+      "independent_reviewer_task": "Human-independent reviewer must check make as A1 in the exact intended sense, distinguish MAKE_CREATE_VS_CAUSATIVE_MAKE, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "look",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To direct your eyes towards something.",
+        "myanmar_meaning": "ကြည့်သည်",
+        "example_sentence": "Look at the board."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 67,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 452,
+        "source_excerpt": "look v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOOK_DIRECT_GAZE_VS_APPEAR",
+      "independent_reviewer_task": "Human-independent reviewer must check look as A1 in the exact intended sense, distinguish LOOK_DIRECT_GAZE_VS_APPEAR, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "take",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To pick up, carry or move something.",
+        "myanmar_meaning": "ယူသည်",
+        "example_sentence": "Please take this chair."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 68,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 761,
+        "source_excerpt": "take v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "TAKE_CHAIR_EXAMPLE_AMBIGUOUS_CARRY_VS_ACCEPT",
+      "independent_reviewer_task": "Human-independent reviewer must check take as A1 in the exact intended sense, distinguish TAKE_CHAIR_EXAMPLE_AMBIGUOUS_CARRY_VS_ACCEPT, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "very",
+      "level": "A1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Used to make an adjective or adverb stronger.",
+        "myanmar_meaning": "အလွန်၊ တော်တော်",
+        "example_sentence": "She is very happy."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 69,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 847,
+        "source_excerpt": "very adv.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "VERY_DEGREE_MODIFIER_NOT_STANDALONE",
+      "independent_reviewer_task": "Human-independent reviewer must check very as A1 in the exact intended sense, distinguish VERY_DEGREE_MODIFIER_NOT_STANDALONE, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "many",
+      "level": "A1",
+      "part_of_speech": "determiner",
+      "shortlist_snapshot": {
+        "english_definition": "A large number of people or things.",
+        "myanmar_meaning": "များစွာသော",
+        "example_sentence": "There are many books."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 70,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 462,
+        "source_excerpt": "many det./pron.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "MANY_COUNTABLE_NOUNS_VS_MUCH_UNCOUNTABLE",
+      "independent_reviewer_task": "Human-independent reviewer must check many as A1 in the exact intended sense, distinguish MANY_COUNTABLE_NOUNS_VS_MUCH_UNCOUNTABLE, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "three",
+      "level": "A1",
+      "part_of_speech": "number",
+      "shortlist_snapshot": {
+        "english_definition": "The number 3.",
+        "myanmar_meaning": "သုံး၊ သုံးခု",
+        "example_sentence": "I have three pencils."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 71,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 797,
+        "source_excerpt": "three number",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "THREE_NUMERAL_NOT_ORDINAL_THIRD",
+      "independent_reviewer_task": "Human-independent reviewer must check three as A1 in the exact intended sense, distinguish THREE_NUMERAL_NOT_ORDINAL_THIRD, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "small",
+      "level": "A1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Not large in size.",
+        "myanmar_meaning": "သေးငယ်သော",
+        "example_sentence": "The room is small."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 72,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 710,
+        "source_excerpt": "small adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "SMALL_PHYSICAL_SIZE_VS_IMPORTANCE",
+      "independent_reviewer_task": "Human-independent reviewer must check small as A1 in the exact intended sense, distinguish SMALL_PHYSICAL_SIZE_VS_IMPORTANCE, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "big",
+      "level": "A1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Large in size.",
+        "myanmar_meaning": "ကြီးမားသော",
+        "example_sentence": "The elephant is big."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 73,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 85,
+        "source_excerpt": "big adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "BIG_SIZE_VS_IMPORTANCE_OR_AGE",
+      "independent_reviewer_task": "Human-independent reviewer must check big as A1 in the exact intended sense, distinguish BIG_SIZE_VS_IMPORTANCE_OR_AGE, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "eat",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To put food in your mouth and swallow it.",
+        "myanmar_meaning": "စားသည်",
+        "example_sentence": "I eat breakfast at home."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 74,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 234,
+        "source_excerpt": "eat v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "EAT_BREAKFAST_NATURAL_COLLOCATION",
+      "independent_reviewer_task": "Human-independent reviewer must check eat as A1 in the exact intended sense, distinguish EAT_BREAKFAST_NATURAL_COLLOCATION, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "drink",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To take a liquid into your mouth and swallow it.",
+        "myanmar_meaning": "သောက်သည်",
+        "example_sentence": "They drink tea every morning."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 75,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 225,
+        "source_excerpt": "drink n., v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "DRINK_LIQUID_VERB_VS_NOUN",
+      "independent_reviewer_task": "Human-independent reviewer must check drink as A1 in the exact intended sense, distinguish DRINK_LIQUID_VERB_VS_NOUN, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "happy",
+      "level": "A1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Feeling pleasure or joy.",
+        "myanmar_meaning": "ပျော်ရွှင်သော",
+        "example_sentence": "I am happy today."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 76,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 349,
+        "source_excerpt": "happy adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "HAPPY_FEELING_VS_CONGRATULATORY_WISH",
+      "independent_reviewer_task": "Human-independent reviewer must check happy as A1 in the exact intended sense, distinguish HAPPY_FEELING_VS_CONGRATULATORY_WISH, independently evaluate the original English definition, fluent Myanmar meaning, example grammar and British pronunciation, and retain dated direct dictionary source evidence with content-bound human attestation. The Oxford list alone is word/POS evidence, not exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ],
+  "unreviewed_editorial_proposals": [
+    {
+      "word": "old",
+      "issue": "The source Burmese meaning combines person-age and object-age senses; example refers to a grandfather.",
+      "suggested_english_definition": "Having lived for many years (of a person).",
+      "suggested_myanmar_meaning": "အသက်ကြီးသော",
+      "suggested_example_sentence": "My grandfather is old.",
+      "review_status": "UNREVIEWED_UNAPPLIED_PROPOSAL",
+      "human_independent_approval": false
+    },
+    {
+      "word": "little",
+      "issue": "The original definition merges size and quantity, while the example is about the size of a dog.",
+      "suggested_english_definition": "Small in size.",
+      "suggested_myanmar_meaning": "သေးငယ်သော",
+      "suggested_example_sentence": "We have a little dog.",
+      "review_status": "UNREVIEWED_UNAPPLIED_PROPOSAL",
+      "human_independent_approval": false
+    },
+    {
+      "word": "take",
+      "issue": "Please take this chair could mean carry, accept or choose; clarify physical movement.",
+      "suggested_english_definition": "To pick something up and carry it to another place.",
+      "suggested_myanmar_meaning": "ယူဆောင်သွားသည်",
+      "suggested_example_sentence": "Please take this chair into the next room.",
+      "review_status": "UNREVIEWED_UNAPPLIED_PROPOSAL",
+      "human_independent_approval": false
+    },
+    {
+      "word": "year",
+      "issue": "The example uses calendar-year meaning; twelve-month duration definition is narrower.",
+      "suggested_english_definition": "A period of twelve months, especially from January to December.",
+      "suggested_myanmar_meaning": "နှစ်၊ တစ်နှစ်",
+      "suggested_example_sentence": "This year is special.",
+      "review_status": "UNREVIEWED_UNAPPLIED_PROPOSAL",
+      "human_independent_approval": false
+    },
+    {
+      "word": "house",
+      "issue": "Distinguish a physical residential building from home as personal or family place.",
+      "suggested_english_definition": "A building where people live.",
+      "suggested_myanmar_meaning": "လူနေအိမ်",
+      "suggested_example_sentence": "Our house has two rooms.",
+      "review_status": "UNREVIEWED_UNAPPLIED_PROPOSAL",
+      "human_independent_approval": false
+    },
+    {
+      "word": "love",
+      "issue": "Distinguish affectionate family love from romantic love and noun use.",
+      "suggested_english_definition": "To feel deep affection for someone.",
+      "suggested_myanmar_meaning": "ချစ်ခင်သည်",
+      "suggested_example_sentence": "I love my family.",
+      "review_status": "UNREVIEWED_UNAPPLIED_PROPOSAL",
+      "human_independent_approval": false
+    }
+  ]
+}
