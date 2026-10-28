@@ -33,6 +33,8 @@ on:
       - draft/CEFR-1000-OXFORD-B1-TWELVE-DIRECT-PDF-2026-10-28.json
       - tools/audit_cefr_1000_oxford_b1_twelve.py
       - draft/CEFR-1000-OXFORD-B2-TWELVE-DIRECT-PDF-2026-10-28.json
+      - draft/CEFR-1000-OXFORD-B2-LOWER-LEVEL-TWELVE-2026-10-28.json
+      - tools/audit_cefr_1000_oxford_b2_lower_twelve.py
       - tools/audit_cefr_1000_oxford_b2_twelve.py
       - draft/CEFR-1000-OXFORD-C1-TWELVE-DIRECT-PDF-2026-10-28.json
       - tools/audit_cefr_1000_oxford_c1_twelve.py
@@ -84,6 +86,7 @@ jobs:
           python3 tools/audit_cefr_1000_oxford_b1_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_b1_lower_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_b2_twelve.py --level ALL --self-test
+          python3 tools/audit_cefr_1000_oxford_b2_lower_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_c1_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_dictionary_c1.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_c1_five.py --level ALL --self-test
