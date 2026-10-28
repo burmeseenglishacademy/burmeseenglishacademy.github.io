@@ -60,7 +60,7 @@ EXPECTED_CAMBRIDGE = [
         "access": "PUBLISHER_SEARCH_INDEXED_EXCERPT_DIRECT_PAGE_HTTP_403",
         "evidence_scope": "SEARCH_INDEXED_SENSE_LEAD_NOT_DIRECT_PAGE_NOT_INDEPENDENT",
         "editorial_concern": "Draft broad effort definition must align to occupational example; no independent Myanmar review.",
-        "independently_approved": false
+        "independently_approved": False
     },
     {
         "word": "little",
@@ -75,7 +75,7 @@ EXPECTED_CAMBRIDGE = [
         "access": "PUBLISHER_SEARCH_INDEXED_EXCERPT_DIRECT_PAGE_HTTP_403",
         "evidence_scope": "SEARCH_INDEXED_SENSE_LEAD_NOT_DIRECT_PAGE_NOT_INDEPENDENT",
         "editorial_concern": "Dog example illustrates size; distinguish from short duration and quantifier.",
-        "independently_approved": false
+        "independently_approved": False
     },
     {
         "word": "old",
@@ -90,7 +90,7 @@ EXPECTED_CAMBRIDGE = [
         "access": "PUBLISHER_SEARCH_INDEXED_EXCERPT_DIRECT_PAGE_HTTP_403",
         "evidence_scope": "SEARCH_INDEXED_SENSE_LEAD_NOT_DIRECT_PAGE_NOT_INDEPENDENT",
         "editorial_concern": "Grandfather example is age of a person, not used clothes or past system.",
-        "independently_approved": false
+        "independently_approved": False
     },
     {
         "word": "little",
@@ -105,7 +105,7 @@ EXPECTED_CAMBRIDGE = [
         "access": "PUBLISHER_SEARCH_INDEXED_EXCERPT_DIRECT_PAGE_HTTP_403",
         "evidence_scope": "SEARCH_INDEXED_SENSE_LEAD_NOT_DIRECT_PAGE_NOT_INDEPENDENT",
         "editorial_concern": "Contrasting sense; do not transfer B2 to A1 SMALL sense.",
-        "independently_approved": false
+        "independently_approved": False
     },
     {
         "word": "old",
@@ -120,7 +120,7 @@ EXPECTED_CAMBRIDGE = [
         "access": "PUBLISHER_SEARCH_INDEXED_EXCERPT_DIRECT_PAGE_HTTP_403",
         "evidence_scope": "SEARCH_INDEXED_SENSE_LEAD_NOT_DIRECT_PAGE_NOT_INDEPENDENT",
         "editorial_concern": "Contrasts with LIVED LONG A1 and Essential British classification.",
-        "independently_approved": false
+        "independently_approved": False
     },
     {
         "word": "old",
@@ -135,7 +135,7 @@ EXPECTED_CAMBRIDGE = [
         "access": "PUBLISHER_SEARCH_INDEXED_EXCERPT_DIRECT_PAGE_HTTP_403",
         "evidence_scope": "SEARCH_INDEXED_SENSE_LEAD_NOT_DIRECT_PAGE_NOT_INDEPENDENT",
         "editorial_concern": "Same broad sense appears A1 in Cambridge Essential British but A2 in Learner's Dictionary; reviewer must reconcile publisher-list differences.",
-        "independently_approved": false
+        "independently_approved": False
     }
 ]
 
