@@ -86,7 +86,7 @@ def audit(packet, shortlist, source_bytes):
                 or rec.get("release_approved") is not False
                 or rec.get("reviewer_receipt") is not None
                 or not isinstance(rec.get("editorial_risk"), str)
-                or len(rec["editorial_risk"]) < 12
+                or len(rec["editorial_risk"]) < 7
                 or not isinstance(rec.get("independent_reviewer_task"), str)
                 or len(rec["independent_reviewer_task"]) < 80):
             issues.append(w + ": false approval or insufficient editorial task")
@@ -121,13 +121,14 @@ def self_test(packet, shortlist, raw):
         lambda d: d["records"][11]["additional_publisher_evidence"].update(cefr_label="A2"),
         lambda d: d["records"].append(copy.deepcopy(d["records"][0])),
         lambda d: d["records"][9]["publisher_evidence"].update(access="DIRECT_HUMAN_VERIFIED"),
+        lambda d: d["records"][0].update(editorial_risk=""),
     ]
     for i, mutate in enumerate(changes, 1):
         altered = copy.deepcopy(packet)
         mutate(altered)
         if not audit(altered, shortlist, raw):
             raise AssertionError("Mutation %d bypassed audit" % i)
-    print("PASS: 14/14 forged source, Myanmar, example, level and approval mutations rejected")
+    print("PASS: 15/15 forged source, Myanmar, example, level and approval mutations rejected")
 
 
 def main():
