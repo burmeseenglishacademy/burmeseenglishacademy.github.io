@@ -30,6 +30,7 @@ OBS = {
     "functional": ("C1", 5, 1241, "functional adj.", "WORKING_STATE_VS_DESIGNED_FOR_PRACTICAL_PURPOSE"),
     "divine": (None, None, None, None, "UNLISTED_OXFORD_CORE_PDFS_NOT_A_CEFR_LABEL"),
 }
+CAMBRIDGE_EXPECTED = json.loads(r'''[{"word":"tribute","sense":"RESPECTFUL_ACTION","publisher":"Cambridge University Press","source_url":"https://dictionary.cambridge.org/us/dictionary/english/tribute","observed_on":"2026-10-29","indexed_cefr_label":"C2","indexed_observation":"The Cambridge Advanced Learner's Dictionary indexed RESPECTFUL ACTION noun sense as C2; this is a sense-specific lead, not a direct-page or independent review.","source_access":"PUBLISHER_SEARCH_INDEX_EXCERPT_DIRECT_PAGE_HTTP_403","editorial_risk":"CAMBRIDGE_C2_RESPECTFUL_ACTION_VS_OXFORD_C1_WORD_POS"},{"word":"functional","sense":"PRACTICAL","publisher":"Cambridge University Press","source_url":"https://dictionary.cambridge.org/dictionary/learner-english/functional","observed_on":"2026-10-29","indexed_cefr_label":"B2","indexed_observation":"Cambridge Learner's Dictionary indexed PRACTICAL adjective as B2, designed for practical usefulness rather than appearance; the draft definition leans toward this sense.","source_access":"PUBLISHER_SEARCH_INDEX_EXCERPT_DIRECT_PAGE_HTTP_403","editorial_risk":"CAMBRIDGE_B2_PRACTICAL_VS_C1_DRAFT"},{"word":"functional","sense":"WORKING","publisher":"Cambridge University Press","source_url":"https://dictionary.cambridge.org/dictionary/learner-english/functional","observed_on":"2026-10-29","indexed_cefr_label":null,"indexed_observation":"Cambridge Learner's Dictionary separately indexed WORKING adjective as operating correctly, with no CEFR label visible in the retrieved excerpt; the draft example uses this sense.","source_access":"PUBLISHER_SEARCH_INDEX_EXCERPT_DIRECT_PAGE_HTTP_403","editorial_risk":"UNLABELLED_WORKING_EXAMPLE_VS_PRACTICAL_DEFINITION"},{"word":"divine","sense":"GOD_LIKE","publisher":"Cambridge University Press","source_url":"https://dictionary.cambridge.org/dictionary/english/divine","observed_on":"2026-10-29","indexed_cefr_label":null,"indexed_observation":"Cambridge Advanced Learner's Dictionary indexed GOD-LIKE adjective as connected with a god, distinct from SPLENDID adjective and GUESS verb; no CEFR label visible in retrieved excerpt.","source_access":"PUBLISHER_SEARCH_INDEX_EXCERPT_DIRECT_PAGE_HTTP_403","editorial_risk":"UNLABELLED_RELIGIOUS_ADJECTIVE_VS_OTHER_DIVINE_SENSES"}]''')
 RECORD_KEYS = {"word", "level", "part_of_speech", "shortlist_snapshot",
                "shortlist_provenance", "publisher_source", "editorial_risk",
                "independent_reviewer_task", "editorial_hold",
@@ -93,6 +94,7 @@ def audit(packet, shortlist):
         require(pub["evidence_scope"] == ("NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL" if expected_level is None else "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE"), word + " evidence scope")
         require(r["editorial_risk"] == risk and "Human-independent reviewer" in r["independent_reviewer_task"], word + " risk/task")
         require(r["editorial_hold"] is True and r["independently_reviewed"] is False and r["release_approved"] is False and r["independent_reviewer_receipt"] is None, word + " fabricated signoff")
+    require(packet.get("cambridge_publisher_indexed_sense_leads") == CAMBRIDGE_EXPECTED, "Cambridge indexed source/sense/level provenance")
     proposals = packet.get("unreviewed_editorial_proposals")
     require(isinstance(proposals, list) and [p.get("word") for p in proposals] == ["functional", "consistently", "racism"], "proposals")
     for p in proposals:
@@ -137,6 +139,21 @@ def negative_tests(packet, shortlist):
                 checks += 1
             else:
                 raise AssertionError("content/approval forgery accepted: " + str((i, field)))
+    for i in range(4):
+        for field, bad in (("indexed_cefr_label", "A1"),
+                           ("source_url", "https://invalid.example/forged"),
+                           ("observed_on", "2035-01-01"),
+                           ("source_access", "DIRECT_PAGE_VERIFIED"),
+                           ("indexed_observation", "invented source evidence"),
+                           ("editorial_risk", "NONE")):
+            forged = copy.deepcopy(packet)
+            forged["cambridge_publisher_indexed_sense_leads"][i][field] = bad
+            try:
+                audit(forged, shortlist)
+            except ValueError:
+                checks += 1
+            else:
+                raise AssertionError("Cambridge indexed-source forgery accepted: " + str((i, field)))
     for key, bad in (("record_count", 13), ("independently_approved_count", 1),
                      ("word_pos_discrepancies", 0), ("observed_on", "2030-01-01"),
                      ("shortlist_blob_sha", "0"*40)):
@@ -160,8 +177,8 @@ def main():
     result = audit(packet, shortlist)
     if args.self_test:
         result["negative_mutations_rejected"] = negative_tests(packet, shortlist)
-        require(result["negative_mutations_rejected"] == 185, "mutation count")
-        print("PASS: 185/185 forged Oxford source, Myanmar, provenance and false-review mutations rejected")
+        require(result["negative_mutations_rejected"] == 209, "mutation count")
+        print("PASS: 209/209 forged Oxford/Cambridge source, Myanmar, provenance and false-review mutations rejected")
     print("PASS: Oxford C1 followup source-integrity", args.level, json.dumps(result, sort_keys=True))
     print("NOTE: no independent English/Myanmar/exact-sense CEFR signoff; no audio/iPhone/launch")
     return 0
