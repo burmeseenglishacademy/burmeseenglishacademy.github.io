@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Fail-closed C1-draft direct Oxford PDF word/POS provenance audit; NOT independent review.
 
-The observed publisher PDF supplies A1/A2/B1/C1 word/POS evidence only, never proof
+The observed publisher PDF supplies B2/C1 word/POS evidence only, never proof
 of exact sense, Burmese accuracy, original example grammar or real human QA.
 """
 import argparse
@@ -14,7 +14,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 PACKET = ROOT / "draft/CEFR-1000-OXFORD-C1-TWELVE-DIRECT-PDF-2026-10-28.json"
 SHORTLIST = ROOT / "draft/CEFR-1000-PROVISIONAL-SHORTLIST.json"
-LEVELS = ("A1", "A2", "B1", "C1", "C1")
+LEVELS = ("A1", "A2", "B1", "B2", "C1")
 URL = "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf"
 EXPECTED = {
     "trigger": (3, 659, "trigger v.", "B2"),
