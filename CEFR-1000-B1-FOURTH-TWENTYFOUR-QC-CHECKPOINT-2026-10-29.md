@@ -6,7 +6,7 @@
 
 Directly inspected the [official Oxford 3000 by CEFR level PDF](https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf) on **2026-10-29**. Added [24 B1-shortlist evidence records](draft/CEFR-1000-OXFORD-B1-FOURTH-TWENTYFOUR-2026-10-29.json) containing publisher URL, observation date, PDF page (one-based), extracted text line (zero-based), short verbatim word/POS entry, original English definition, Myanmar meaning, example, source path/index/blob SHA, editorial risk and a separate independent-review task. Frozen provisional shortlist Git blob: `475e68ae17ab97bd937e73e5ce4794e0dcd76551`.
 
-**Oxford word/POS-level findings:** A1 **2**, A2 **10**, B1 **11**, B2 **1**. This means **13 of the 24** differ from the provisional B1 placement at word/POS level; **11** are lower and **1** higher? Correction: **12 lower** (2 A1 + 10 A2) and **1 higher** (B2). No automatic re-tiering. Publisher word/POS labels are not proof of the intended dictionary exact sense or CEFR; all 24 retain editorial hold.
+**Oxford word/POS-level findings:** A1 **2**, A2 **10**, B1 **11**, B2 **1**. This means **13 of the 24** differ from the provisional B1 placement at word/POS level; **12 are lower** (2 A1 + 10 A2) and **1 is higher** (B2). No automatic re-tiering. Publisher word/POS labels are not proof of the intended dictionary exact sense or CEFR; all 24 retain editorial hold.
 
 | Draft B1 headword | Draft POS | Oxford word/POS level | PDF page:line | Exact-sense or editorial issue |
 |---|---|---|---|---|
