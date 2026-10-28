@@ -21,7 +21,7 @@
   },
   "word_pos_discrepancies": 13,
   "independently_approved_count": 0,
-  "source_limitations": "Official Oxford PDF opened directly via web on 2026-10-29; word/POS labels only, NOT exact-sense CEFR, independent Myanmar/English review, audio listening or device QA. No automatic retiering or publication.",
+  "source_limitations": "Official Oxford PDF opened directly via web on 2026-10-29: word/POS labels only, NOT exact-sense CEFR, independent Myanmar/English review, audio listening or device QA. Cambridge exact-sense leads are publisher-indexed search results; direct Cambridge pages returned HTTP 403, so they are NOT direct-page verification or independent approval. No automatic retiering or publication.",
   "records": [
     {
       "word": "worst",
@@ -838,6 +838,68 @@
       "independently_reviewed": false,
       "release_approved": false,
       "independent_reviewer_receipt": null
+    }
+  ],
+  "secondary_indexed_sense_leads": [
+    {
+      "word": "fully",
+      "publisher": "Cambridge University Press",
+      "source_url": "https://dictionary.cambridge.org/dictionary/english/fully",
+      "source_sense_heading": "fully adverb (COMPLETELY)",
+      "indexed_cefr_level": "B1",
+      "source_excerpt": "completely",
+      "observed_on": "2026-10-29",
+      "access": "PUBLISHER_SEARCH_INDEX_ONLY_DIRECT_PAGE_HTTP_403",
+      "evidence_scope": "SEARCH_INDEXED_PUBLISHER_SENSE_LEAD_NOT_INDEPENDENT_EXACT_SENSE_VERIFICATION",
+      "independently_verified": false,
+      "editorial_hold": true,
+      "cross_publisher_risk": "Oxford lists fully adverb B2, while Cambridge publisher-indexed exact-sense COMPLETELY is B1. The draft 'fully charged' needs independent sense-specific reconciliation.",
+      "reviewer_task": "Independent human reviewer must directly verify Cambridge fully exact sense, label, English definition and original example; reconcile with Oxford word/POS and Myanmar gloss. Search-index snippet is not a direct-page receipt."
+    },
+    {
+      "word": "award",
+      "publisher": "Cambridge University Press",
+      "source_url": "https://dictionary.cambridge.org/dictionary/english/award",
+      "source_sense_heading": "award noun [C]",
+      "indexed_cefr_level": "B2",
+      "source_excerpt": "a prize or an amount of money that is given to someone following an official decision",
+      "observed_on": "2026-10-29",
+      "access": "PUBLISHER_SEARCH_INDEX_ONLY_DIRECT_PAGE_HTTP_403",
+      "evidence_scope": "SEARCH_INDEXED_PUBLISHER_SENSE_LEAD_NOT_INDEPENDENT_EXACT_SENSE_VERIFICATION",
+      "independently_verified": false,
+      "editorial_hold": true,
+      "cross_publisher_risk": "Oxford lists award noun A2 while Cambridge publisher-indexed award noun PRIZE is B2. Verify prize versus court monetary award and the research-award example.",
+      "reviewer_task": "Independent human reviewer must directly verify Cambridge award exact sense, label, English definition and original example; reconcile with Oxford word/POS and Myanmar gloss. Search-index snippet is not a direct-page receipt."
+    },
+    {
+      "word": "comment",
+      "publisher": "Cambridge University Press",
+      "source_url": "https://dictionary.cambridge.org/dictionary/english/comment",
+      "source_sense_heading": "comment noun [C or U]",
+      "indexed_cefr_level": "B1",
+      "source_excerpt": "something that you say or write that expresses your opinion",
+      "observed_on": "2026-10-29",
+      "access": "PUBLISHER_SEARCH_INDEX_ONLY_DIRECT_PAGE_HTTP_403",
+      "evidence_scope": "SEARCH_INDEXED_PUBLISHER_SENSE_LEAD_NOT_INDEPENDENT_EXACT_SENSE_VERIFICATION",
+      "independently_verified": false,
+      "editorial_hold": true,
+      "cross_publisher_risk": "Oxford lists comment noun A2 while Cambridge publisher-indexed opinion-comment noun is B1. Verify example and Myanmar sense, not verb.",
+      "reviewer_task": "Independent human reviewer must directly verify Cambridge comment exact sense, label, English definition and original example; reconcile with Oxford word/POS and Myanmar gloss. Search-index snippet is not a direct-page receipt."
+    },
+    {
+      "word": "marriage",
+      "publisher": "Cambridge University Press",
+      "source_url": "https://dictionary.cambridge.org/dictionary/english/marriage",
+      "source_sense_heading": "marriage noun (TWO PEOPLE)",
+      "indexed_cefr_level": "B1",
+      "source_excerpt": "a legally accepted relationship between two people",
+      "observed_on": "2026-10-29",
+      "access": "PUBLISHER_SEARCH_INDEX_ONLY_DIRECT_PAGE_HTTP_403",
+      "evidence_scope": "SEARCH_INDEXED_PUBLISHER_SENSE_LEAD_NOT_INDEPENDENT_EXACT_SENSE_VERIFICATION",
+      "independently_verified": false,
+      "editorial_hold": true,
+      "cross_publisher_risk": "Oxford and Cambridge publisher-indexed labels both give B1, but legal relationship versus ceremony and long-married-life usages need exact-sense review.",
+      "reviewer_task": "Independent human reviewer must directly verify Cambridge marriage exact sense, label, English definition and original example; reconcile with Oxford word/POS and Myanmar gloss. Search-index snippet is not a direct-page receipt."
     }
   ]
 }
