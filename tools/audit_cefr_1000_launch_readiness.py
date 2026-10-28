@@ -754,6 +754,77 @@ def audit(ledger=None, after_deployment=False):
             report["oxford_a2_followup_twelve_retained_resolved"]):
         issues.append("Retained A2 Oxford follow-up entries lack independent exact-sense A2 reconciliation")
 
+    # Third Oxford A1 word/POS batch. These are publisher word/POS observations,
+    # NOT independent exact-sense, Burmese or original-example approvals.
+    # Explicitly resolve 'home' noun/adverb mismatch and the stilted 'thank'
+    # example before accepting a retained item.
+    a1_third = read_json(ROOT / "draft/CEFR-1000-OXFORD-A1-THIRD-TWELVE-2026-10-28.json")
+    a1_third_flags = a1_third.get("records", [])
+    a1_third_expected = {"goodbye", "thank", "water", "food", "home", "family",
+                         "mother", "father", "school", "teacher", "student", "book"}
+    report["oxford_a1_third_twelve_observations"] = len(a1_third_flags)
+    report["oxford_a1_third_twelve_retained_requiring_resolution"] = 0
+    report["oxford_a1_third_twelve_retained_resolved"] = 0
+    if (a1_third.get("status") != "A1_THIRD_TWELVE_DIRECT_OXFORD_WORD_POS_LEADS_EDITORIAL_HOLD"
+            or len(a1_third_flags) != 12
+            or {x.get("word") for x in a1_third_flags if isinstance(x, dict)} != a1_third_expected
+            or a1_third.get("independently_approved_count") != 0):
+        issues.append("Third Oxford A1 publisher packet missing, changed or falsely approved")
+    a1_third_receipts = d.get("oxford_a1_third_twelve_review_receipts")
+    if not isinstance(a1_third_receipts, list):
+        issues.append("Third Oxford A1 independent review receipts missing or malformed")
+        a1_third_receipts = []
+    a1_third_index = {}
+    for rec in a1_third_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Malformed third Oxford A1 review receipt")
+            continue
+        key = (rec.get("word"), rec.get("proposed_level"))
+        if key in a1_third_index:
+            issues.append("Duplicate third Oxford A1 review receipt")
+        a1_third_index[key] = rec
+    if set(a1_third_index) - {(word, "A1") for word in a1_third_expected}:
+        issues.append("Unknown third Oxford A1 review receipt")
+    for flag in a1_third_flags:
+        if not isinstance(flag, dict):
+            continue
+        word = flag.get("word")
+        entry = entry_lookup.get((word, "A1"))
+        if entry is None:
+            continue  # Replaced/retiered entry still needs full manifest signoff.
+        report["oxford_a1_third_twelve_retained_requiring_resolution"] += 1
+        rec = a1_third_index.get((word, "A1"))
+        if not independent_word_stage(rec, word, "sense_specific_cefr", expected_level="A1"):
+            continue
+        if (rec.get("decision") != "RETAIN_AFTER_INDEPENDENT_A1_EXACT_SENSE_REVIEW"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or rec.get("verified_part_of_speech") != entry.get("part_of_speech")
+                or rec.get("verified_cefr_level") != "A1"
+                or rec.get("source_cefr_level") != "A1"
+                or not isinstance(rec.get("source_scope_rationale"), str)
+                or len(rec["source_scope_rationale"].strip()) < 50):
+            continue
+        if word == "home":
+            # The draft's 'I go home after school' is adverbial, not the
+            # noun sense claimed in the draft. An attestation without a
+            # genuinely revised noun example cannot clear this gate.
+            revised = rec.get("revised_noun_example_sentence")
+            resolution = rec.get("original_example_pos_resolution")
+            if (not isinstance(revised, str)
+                    or revised.strip() == entry.get("example_sentence")
+                    or not re.search(r"\\bhome\\b", revised, re.I)
+                    or not isinstance(resolution, str)
+                    or len(resolution.strip()) < 80):
+                continue
+        if word == "thank":
+            naturalness = rec.get("original_example_naturalness_review")
+            if not isinstance(naturalness, str) or len(naturalness.strip()) < 60:
+                continue
+        report["oxford_a1_third_twelve_retained_resolved"] += 1
+    if (report["oxford_a1_third_twelve_retained_requiring_resolution"] !=
+            report["oxford_a1_third_twelve_retained_resolved"]):
+        issues.append("Retained third Oxford A1 entries lack independent exact-sense and POS/example reconciliation")
+
     # B1 provisional draft: direct Oxford PDF word/POS labels, not exact-sense
     # CEFR evidence. Nine of twelve Oxford labels are A1/A2. Every retained
     # entry needs an independently attested direct-publisher B1 exact sense,
@@ -1996,6 +2067,15 @@ def main():
         ]
         forged_issues, _ = audit(forged_cross)
         assert any("Unknown cross-publisher reconciliation receipt" in item for item in forged_issues)
+        forged_a1_third = copy.deepcopy(read_json(LEDGER))
+        forged_a1_third["oxford_a1_third_twelve_review_receipts"] = [
+            {"word": "FAKE", "proposed_level": "A1",
+             "decision": "RETAIN_AFTER_INDEPENDENT_A1_EXACT_SENSE_REVIEW"}
+        ]
+        a1_third_issues, _ = audit(forged_a1_third)
+        assert any("Unknown third Oxford A1 review receipt" in item
+                   for item in a1_third_issues)
+        print("PASS: unknown third Oxford A1 independent receipt rejected")
         forged_followup = copy.deepcopy(read_json(LEDGER))
         forged_followup["oxford_a2_followup_twelve_review_receipts"] = [
             {"word": "FAKE", "proposed_level": "A2",
