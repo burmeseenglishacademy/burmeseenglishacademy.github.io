@@ -226,6 +226,9 @@ def audit(ledger=None, after_deployment=False):
               "oxford_b1_twelve_direct_word_pos_observations": 0,
               "oxford_b1_twelve_retained_requiring_resolution": 0,
               "oxford_b1_twelve_retained_resolved": 0,
+              "oxford_b2_twelve_direct_word_pos_observations": 0,
+              "oxford_b2_twelve_retained_requiring_resolution": 0,
+              "oxford_b2_twelve_retained_resolved": 0,
               "cambridge_b1_twelve_observations": 0,
               "cambridge_b1_twelve_retained_requiring_resolution": 0,
               "cambridge_b1_twelve_retained_resolved": 0,
@@ -676,6 +679,72 @@ def audit(ledger=None, after_deployment=False):
     if ox_b1_index and set(ox_b1_index) - {
             (x.get("word"), x.get("level")) for x in b1_oxford_flags if isinstance(x, dict)}:
         issues.append("Unknown Oxford B1 draft resolution receipt supplied")
+
+    # B2 provisional draft: direct Oxford PDF word/POS labels, not exact-sense
+    # CEFR evidence. Ten of twelve Oxford labels are A1/A2/B1. Every retained
+    # entry needs an independently attested direct-publisher B2 exact sense,
+    # original Myanmar and example review, plus conflict rationale.
+    b2_oxford = read_json(ROOT / "draft/CEFR-1000-OXFORD-B2-TWELVE-DIRECT-PDF-2026-10-28.json")
+    b2_oxford_flags = b2_oxford.get("records", [])
+    b2_oxford_expected = {"prepare", "attractive", "personality", "manage", "height", "hide",
+                          "respond", "sample", "heavily", "secondary", "anniversary", "constant"}
+    report["oxford_b2_twelve_direct_word_pos_observations"] = len(b2_oxford_flags)
+    if (b2_oxford.get("status") != "B2_OXFORD_TWELVE_DIRECT_PDF_WORD_POS_LEADS_EDITORIAL_HOLD"
+            or len(b2_oxford_flags) != 12
+            or {x.get("word") for x in b2_oxford_flags if isinstance(x, dict)} != b2_oxford_expected
+            or b2_oxford.get("publisher_reference_level_counts") != {"A1": 1, "A2": 6, "B1": 3, "B2": 2}
+            or b2_oxford.get("independently_approved_count") != 0):
+        issues.append("Oxford B2 draft direct PDF packet missing, changed or falsely approved")
+    ox_b2_receipts = d.get("oxford_b2_twelve_review_receipts", [])
+    if not isinstance(ox_b2_receipts, list):
+        issues.append("Oxford B2 draft independent resolution receipts must be an array")
+        ox_b2_receipts = []
+    ox_b2_index = {}
+    for rec in ox_b2_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Malformed Oxford B2 draft resolution receipt")
+            continue
+        key = (rec.get("word"), rec.get("proposed_level"))
+        if key in ox_b2_index:
+            issues.append("Duplicate Oxford B2 draft resolution receipt")
+        ox_b2_index[key] = rec
+    for flag in b2_oxford_flags:
+        if not isinstance(flag, dict):
+            issues.append("Malformed Oxford B2 direct PDF observation")
+            continue
+        word = flag.get("word")
+        key = (word, flag.get("level"))
+        entry = entry_lookup.get(key)
+        if entry is None:
+            continue  # Replacement/retiering still requires full independent review.
+        report["oxford_b2_twelve_retained_requiring_resolution"] += 1
+        rec = ox_b2_index.get(key)
+        if not independent_word_stage(rec, word, "sense_specific_cefr", expected_level="B2"):
+            continue
+        if (rec.get("decision") != "RETAIN_AFTER_INDEPENDENT_B2_EXACT_SENSE_REVIEW"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or rec.get("verified_part_of_speech") != entry.get("part_of_speech")
+                or rec.get("verified_cefr_level") != "B2"
+                or rec.get("source_cefr_level") != "B2"
+                or not isinstance(rec.get("source_scope_rationale"), str)
+                or len(rec["source_scope_rationale"].strip()) < 50):
+            continue
+        if flag.get("publisher_source", {}).get("source_cefr_level") in {"A1", "A2", "B1"}:
+            if (not isinstance(rec.get("oxford_word_pos_level_difference_resolution"), str)
+                    or len(rec["oxford_word_pos_level_difference_resolution"].strip()) < 60):
+                continue
+            # A different source sense is not permission to approve an unchanged
+            # basic example and definition as B2 without resolving the conflict.
+            if (entry.get("english_definition") == flag.get("shortlist_snapshot", {}).get("english_definition")
+                    and entry.get("example_sentence") == flag.get("shortlist_snapshot", {}).get("example_sentence")):
+                continue
+        report["oxford_b2_twelve_retained_resolved"] += 1
+    if (report["oxford_b2_twelve_retained_requiring_resolution"]
+            != report["oxford_b2_twelve_retained_resolved"]):
+        issues.append("Retained B2 Oxford word/POS differences lack independent exact-sense B2 resolution")
+    if ox_b2_index and set(ox_b2_index) - {
+            (x.get("word"), x.get("level")) for x in b2_oxford_flags if isinstance(x, dict)}:
+        issues.append("Unknown Oxford B2 draft resolution receipt supplied")
 
     # Five additional publisher-indexed exact-sense leads are distinct from
     # Oxford word/POS labels. In particular Cambridge labels print(TEXT),
