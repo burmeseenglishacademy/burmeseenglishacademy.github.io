@@ -2401,8 +2401,9 @@ def main():
         fourth_issues, fourth_report = audit(forged_b2_fourth)
         assert any("Unknown fourth B2 independent receipt" in item for item in fourth_issues)
         assert fourth_report["oxford_b2_fourth_twentyfour_retained_resolved"] == 0
-        assert fourth_report["oxford_b2_fourth_twentyfour_retained_requiring_resolution"] == 24
-        print("PASS: fabricated fourth B2 reviewer receipt rejected; 24/24 remain on hold")
+        assert fourth_report["oxford_b2_fourth_twentyfour_direct_word_pos_observations"] == 24
+        assert fourth_report["oxford_b2_fourth_twentyfour_retained_requiring_resolution"] == (24 if fourth_report["approved_manifest_present"] else 0)
+        print("PASS: fabricated fourth B2 reviewer receipt rejected; 24 source records remain unapproved")
         print("PASS: unknown cross-publisher reconciliation receipt rejected")
         print("PASS: official Pages size/bandwidth caps reject inflated self-reported limits")
         print("PASS: false ready flag cannot override missing independent, listening, iPhone or hosting evidence")
