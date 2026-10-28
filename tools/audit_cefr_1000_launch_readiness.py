@@ -238,6 +238,9 @@ def audit(ledger=None, after_deployment=False):
               "cambridge_a2_eight_observations": 0,
               "cambridge_a2_eight_retained_requiring_resolution": 0,
               "cambridge_a2_eight_retained_resolved": 0,
+              "cross_publisher_four_source_overlaps": 0,
+              "cross_publisher_four_retained_requiring_resolution": 0,
+              "cross_publisher_four_retained_resolved": 0,
               "cambridge_crosslevel_seven_source_observations": 0,
               "cambridge_crosslevel_seven_retained_requiring_resolution": 0,
               "cambridge_crosslevel_seven_retained_resolved": 0,
@@ -1256,6 +1259,63 @@ def audit(ledger=None, after_deployment=False):
     if decisions_by_word and set(decisions_by_word) - {(x["word"], x["proposed_cefr_level"]) for x in shared}:
         issues.append("Unknown IELTS overlap reviewer decisions supplied")
 
+    # Cross-publisher overlap reconciliation is separate from individual
+    # Oxford word/POS and Cambridge indexed-sense source packets. A direct
+    # exact-sense human review must explain BOTH publishers' different scopes.
+    # This checks documentary receipt structure only, not reviewer identity.
+    cross_packet = read_json(ROOT / "draft/CEFR-1000-CROSS-PUBLISHER-FOUR-RECONCILIATION-2026-10-28.json")
+    cross_flags = cross_packet.get("records", [])
+    cross_keys = {("B2", "constant"), ("B2", "personality"), ("C1", "neutral"), ("C1", "tribute")}
+    report["cross_publisher_four_source_overlaps"] = len(cross_flags)
+    if (len(cross_flags) != 4 or
+            {(r.get("level"), r.get("word")) for r in cross_flags if isinstance(r, dict)} != cross_keys):
+        issues.append("Cross-publisher four-source reconciliation packet missing or changed")
+    cross_receipts = d.get("cross_publisher_four_reconciliation_receipts", [])
+    if not isinstance(cross_receipts, list):
+        issues.append("Cross-publisher reconciliation receipts must be a list")
+        cross_receipts = []
+    cross_index = {}
+    for rec in cross_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Invalid cross-publisher reconciliation receipt")
+            continue
+        key = (rec.get("level"), rec.get("word"))
+        if key in cross_index:
+            issues.append("Duplicate cross-publisher reconciliation receipt")
+        cross_index[key] = rec
+    if set(cross_index) - cross_keys:
+        issues.append("Unknown cross-publisher reconciliation receipt")
+    for flag in cross_flags:
+        if not isinstance(flag, dict):
+            issues.append("Malformed cross-publisher reconciliation observation")
+            continue
+        key = (flag.get("level"), flag.get("word"))
+        entry = final_lookup.get(key)
+        if entry is None:
+            continue
+        report["cross_publisher_four_retained_requiring_resolution"] += 1
+        rec = cross_index.get(key)
+        if not isinstance(rec, dict):
+            continue
+        rationale = rec.get("conflict_resolution")
+        sources = flag.get("publisher_evidence", [])
+        if (rec.get("decision") != "RETAIN_WITH_INDEPENDENT_EXACT_SENSE_RECONCILIATION"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or not isinstance(rationale, str) or len(rationale.strip()) < 100
+                or "Oxford" not in rationale or "Cambridge" not in rationale
+                or not isinstance(sources, list) or len(sources) != 2
+                or rec.get("cambridge_source_url") != sources[0].get("source_url")
+                or rec.get("oxford_source_url") != sources[1].get("source_url")
+                or rec.get("evidence_scope_disclaimer") !=
+                   "OXFORD_WORD_POS_NOT_EXACT_SENSE_CAMBRIDGE_INDEXED_NOT_SIGNOFF"
+                or not independent_word_stage(rec, entry["word"], "sense_specific_cefr",
+                                              expected_level=entry["level"])):
+            continue
+        report["cross_publisher_four_retained_resolved"] += 1
+    if (report["cross_publisher_four_retained_requiring_resolution"]
+            != report["cross_publisher_four_retained_resolved"]):
+        issues.append("Retained cross-publisher CEFR/sense conflicts lack independent direct-publisher reconciliation")
+
     # Audio real-listening receipts are 1 per unique word/example text and voice.
     # The separate validator must ALSO confirm files exist and decode.
     audio = d.get("audio_listening_receipts", [])
@@ -1385,6 +1445,13 @@ def main():
             "forecast_monthly_bandwidth_bytes": 1000,
             "hosted_limit_bytes": 10_000_000_000
         }, "0" * 64)
+        forged_cross = copy.deepcopy(read_json(LEDGER))
+        forged_cross["cross_publisher_four_reconciliation_receipts"] = [
+            {"level": "C1", "word": "FAKE", "decision": "RETAIN_WITH_INDEPENDENT_EXACT_SENSE_RECONCILIATION"}
+        ]
+        forged_issues, _ = audit(forged_cross)
+        assert any("Unknown cross-publisher reconciliation receipt" in item for item in forged_issues)
+        print("PASS: unknown cross-publisher reconciliation receipt rejected")
         print("PASS: official Pages size/bandwidth caps reject inflated self-reported limits")
         print("PASS: false ready flag cannot override missing independent, listening, iPhone or hosting evidence")
     pathlib.Path(args.report).write_text(json.dumps({"report": report, "blockers": issues[:100]},
