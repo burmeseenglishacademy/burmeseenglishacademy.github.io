@@ -225,7 +225,7 @@ jobs:
         run: python3 tools/audit_cefr_1000_oxford_c1_b2_conflict_twelve.py --level ALL --self-test
       - name: Audit 12 C1 Oxford mixed word-POS and unlisted leads (no human approval)
         run: python3 tools/audit_cefr_1000_oxford_c1_mixed_twelve.py --level "${{ matrix.level }}"
-      - name: Reject 28 forged C1 mixed source, Myanmar, and fake reviewer mutations
+      - name: Reject 33 forged Oxford/Cambridge C1 source, Myanmar and fake reviewer mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_c1_mixed_twelve.py --level ALL --self-test
       - name: Audit six formal C1 Cambridge senses with no observed CEFR label (editorial hold)
