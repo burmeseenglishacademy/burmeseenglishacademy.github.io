@@ -1,0 +1,373 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "BILINGUAL_REWRITE_PROPOSALS_NOT_INDEPENDENTLY_VERIFIED",
+  "observed_on": "2026-10-29",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "source_evidence_packet": "draft/CEFR-1000-OXFORD-A2-THIRD-TWENTYFOUR-2026-10-29.json",
+  "candidate_count": 12,
+  "independent_approvals": 0,
+  "policy": "Original assistant editorial suggestions for human review, not replacements of the frozen 1000-word shortlist. Oxford word/POS and Cambridge search snippets do not prove exact-sense CEFR. No approval, no live change.",
+  "candidates": [
+    {
+      "word": "power",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_source": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 199,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "original_snapshot": {
+        "english_definition": "The ability to control or influence what happens.",
+        "myanmar_meaning": "အာဏာ၊ စွမ်းအား",
+        "example_sentence": "The manager has the power to approve requests."
+      },
+      "proposal": {
+        "english_definition": "The authority or right to make a decision or take action.",
+        "burmese_meaning": "လုပ်ပိုင်ခွင့်၊ ဆုံးဖြတ်ပိုင်ခွင့်",
+        "example_sentence": "The manager has the power to approve requests."
+      },
+      "rationale": "Original 'စွမ်းအား' can imply physical energy; manager's approval right is authority. Cambridge indexed CONTROL B2 is not necessarily this exact sense; requires human publisher review.",
+      "oxford_word_pos_level": "A2",
+      "source_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+      "source_observed_on": "2026-10-29",
+      "editorial_status": "UNREVIEWED_CANDIDATE_NOT_FOR_PRODUCTION",
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "word": "side",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_source": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 202,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "original_snapshot": {
+        "english_definition": "One of the surfaces or edges of an object.",
+        "myanmar_meaning": "ဘေးဘက်၊ တစ်ဖက်",
+        "example_sentence": "Write your name on this side of the paper."
+      },
+      "proposal": {
+        "english_definition": "One of the flat surfaces of an object.",
+        "burmese_meaning": "မျက်နှာပြင်တစ်ဖက်၊ ဘက်တစ်ဖက်",
+        "example_sentence": "Please write your name on this side of the paper."
+      },
+      "rationale": "Paper has two faces; the original 'edge' wording can incorrectly suggest the thin border.",
+      "oxford_word_pos_level": "A2",
+      "source_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+      "source_observed_on": "2026-10-29",
+      "editorial_status": "UNREVIEWED_CANDIDATE_NOT_FOR_PRODUCTION",
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "word": "nothing",
+      "provisional_level": "A2",
+      "part_of_speech": "pronoun",
+      "shortlist_source": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 286,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "original_snapshot": {
+        "english_definition": "Not anything; no single thing.",
+        "myanmar_meaning": "ဘာမှမရှိခြင်း၊ ဘာတစ်ခုမှမဟုတ်ခြင်း",
+        "example_sentence": "There was nothing in the empty box."
+      },
+      "proposal": {
+        "english_definition": "Not a single thing.",
+        "burmese_meaning": "ဘာတစ်ခုမှ မရှိခြင်း၊ ဘာမှမရှိ",
+        "example_sentence": "There was nothing inside the box."
+      },
+      "rationale": "Remove 'empty box' tautology; Myanmar must be natural when used with negative predicates.",
+      "oxford_word_pos_level": "A1",
+      "source_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+      "source_observed_on": "2026-10-29",
+      "editorial_status": "UNREVIEWED_CANDIDATE_NOT_FOR_PRODUCTION",
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "word": "whole",
+      "provisional_level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_source": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 291,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "original_snapshot": {
+        "english_definition": "Complete, with no part missing.",
+        "myanmar_meaning": "တစ်ခုလုံးသော၊ အပြည့်အစုံဖြစ်သော",
+        "example_sentence": "We spent the whole afternoon cleaning the classroom."
+      },
+      "proposal": {
+        "english_definition": "All of something, with no part left out.",
+        "burmese_meaning": "တစ်ခုလုံး၊ အပြည့်အစုံ",
+        "example_sentence": "We spent the whole afternoon cleaning the classroom."
+      },
+      "rationale": "'Whole afternoon' is the entire duration, not physically complete parts; reviewer should check context-sensitive Myanmar.",
+      "oxford_word_pos_level": "A2",
+      "source_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+      "source_observed_on": "2026-10-29",
+      "editorial_status": "UNREVIEWED_CANDIDATE_NOT_FOR_PRODUCTION",
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "word": "less",
+      "provisional_level": "A2",
+      "part_of_speech": "determiner",
+      "shortlist_source": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 288,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "original_snapshot": {
+        "english_definition": "A smaller amount of something that cannot usually be counted.",
+        "myanmar_meaning": "ပိုနည်းသော၊ လျော့နည်းသော",
+        "example_sentence": "Please add less sugar to my tea."
+      },
+      "proposal": {
+        "english_definition": "A smaller amount of something.",
+        "burmese_meaning": "ပိုနည်းသော ပမာဏ၊ လျော့နည်းသော",
+        "example_sentence": "Please put less sugar in my tea."
+      },
+      "rationale": "Use less with uncountable sugar; do not confuse fewer + plural count nouns. Cambridge indexed A2 is not a direct-page receipt.",
+      "oxford_word_pos_level": "A2",
+      "source_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+      "source_observed_on": "2026-10-29",
+      "editorial_status": "UNREVIEWED_CANDIDATE_NOT_FOR_PRODUCTION",
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "word": "business",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_source": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 284,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "original_snapshot": {
+        "english_definition": "Work involving buying, selling, or providing goods and services.",
+        "myanmar_meaning": "စီးပွားရေးလုပ်ငန်း၊ ကုန်သွယ်မှု",
+        "example_sentence": "Her family runs a small business near the market."
+      },
+      "proposal": {
+        "english_definition": "An activity or organisation that sells goods or services.",
+        "burmese_meaning": "စီးပွားရေးလုပ်ငန်း",
+        "example_sentence": "Her family runs a small business near the market."
+      },
+      "rationale": "'ကုန်သွယ်မှု' may imply trade rather than the small family business in the example; Oxford word/POS A1 conflicts with provisional A2.",
+      "oxford_word_pos_level": "A1",
+      "source_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+      "source_observed_on": "2026-10-29",
+      "editorial_status": "UNREVIEWED_CANDIDATE_NOT_FOR_PRODUCTION",
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "word": "however",
+      "provisional_level": "A2",
+      "part_of_speech": "adverb",
+      "shortlist_source": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 285,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "original_snapshot": {
+        "english_definition": "Used to introduce a fact that contrasts with what was just said.",
+        "myanmar_meaning": "သို့သော်၊ ဒါပေမဲ့",
+        "example_sentence": "The room was small; however, it was comfortable."
+      },
+      "proposal": {
+        "english_definition": "Used to introduce information that contrasts with an earlier statement.",
+        "burmese_meaning": "သို့သော်၊ ဒါပေမဲ့",
+        "example_sentence": "The room was small. However, it was comfortable."
+      },
+      "rationale": "Two-sentence example highlights sentence adverb and punctuation; Oxford word/POS A1 requires A2 sense review.",
+      "oxford_word_pos_level": "A1",
+      "source_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+      "source_observed_on": "2026-10-29",
+      "editorial_status": "UNREVIEWED_CANDIDATE_NOT_FOR_PRODUCTION",
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "word": "public",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_source": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 185,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "original_snapshot": {
+        "english_definition": "People in a community or society in general.",
+        "myanmar_meaning": "ပြည်သူလူထု",
+        "example_sentence": "The library is open to the public."
+      },
+      "proposal": {
+        "english_definition": "People in a community or society as a whole.",
+        "burmese_meaning": "အများပြည်သူ၊ လူထု",
+        "example_sentence": "The library is open to the public."
+      },
+      "rationale": "Noun 'the public', not adjective 'public'; Myanmar 'အများပြည်သူ' is natural in public-access context.",
+      "oxford_word_pos_level": "A2",
+      "source_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+      "source_observed_on": "2026-10-29",
+      "editorial_status": "UNREVIEWED_CANDIDATE_NOT_FOR_PRODUCTION",
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "word": "fact",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_source": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 348,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "original_snapshot": {
+        "english_definition": "Something that is known or proved to be true.",
+        "myanmar_meaning": "အမှန်တကယ်ဖြစ်သောအချက်၊ အချက်အလက်အမှန်",
+        "example_sentence": "It is a fact that plants need water."
+      },
+      "proposal": {
+        "english_definition": "Something that is true and can be checked.",
+        "burmese_meaning": "အမှန်တကယ်ဖြစ်သော အချက်၊ အချက်အလက်အမှန်",
+        "example_sentence": "That is a fact, not a guess."
+      },
+      "rationale": "Avoid stilted 'It is a fact that plants need water'; Oxford word/POS A1 requires A2 sense justification.",
+      "oxford_word_pos_level": "A1",
+      "source_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+      "source_observed_on": "2026-10-29",
+      "editorial_status": "UNREVIEWED_CANDIDATE_NOT_FOR_PRODUCTION",
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "word": "half",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_source": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 349,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "original_snapshot": {
+        "english_definition": "One of two equal parts of something.",
+        "myanmar_meaning": "နှစ်ပိုင်းညီညီခွဲထားသည့် တစ်ပိုင်း၊ တစ်ဝက်",
+        "example_sentence": "She ate half of the sandwich."
+      },
+      "proposal": {
+        "english_definition": "One of two equal parts of something.",
+        "burmese_meaning": "တစ်ဝက်၊ နှစ်ပိုင်းညီညီထဲက တစ်ပိုင်း",
+        "example_sentence": "She ate half of the sandwich."
+      },
+      "rationale": "The natural Myanmar gloss is short; check whether half of the sandwich functions as a noun phrase or quantifier.",
+      "oxford_word_pos_level": "A1",
+      "source_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+      "source_observed_on": "2026-10-29",
+      "editorial_status": "UNREVIEWED_CANDIDATE_NOT_FOR_PRODUCTION",
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "word": "course",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_source": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 344,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "original_snapshot": {
+        "english_definition": "A series of lessons about a particular subject.",
+        "myanmar_meaning": "ဘာသာရပ်တစ်ခုကို သင်ကြားပေးသော သင်တန်း",
+        "example_sentence": "She enrolled in a short English course."
+      },
+      "proposal": {
+        "english_definition": "A series of lessons about one subject.",
+        "burmese_meaning": "သင်တန်း၊ သင်ခန်းစာများဆက်တိုက်သင်ယူရသော အစီအစဉ်",
+        "example_sentence": "She signed up for an English course."
+      },
+      "rationale": "Disambiguate study course from route/meal course; Oxford noun A1 conflicts with provisional A2.",
+      "oxford_word_pos_level": "A1",
+      "source_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+      "source_observed_on": "2026-10-29",
+      "editorial_status": "UNREVIEWED_CANDIDATE_NOT_FOR_PRODUCTION",
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    },
+    {
+      "word": "information",
+      "provisional_level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_source": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 297,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "original_snapshot": {
+        "english_definition": "Facts or details that help someone understand something.",
+        "myanmar_meaning": "သတင်းအချက်အလက်၊ သိရှိရန်အချက်အလက်",
+        "example_sentence": "The notice gives information about the new bus route."
+      },
+      "proposal": {
+        "english_definition": "Facts or details about a person, thing or event.",
+        "burmese_meaning": "အချက်အလက်များ၊ သတင်းအချက်အလက်",
+        "example_sentence": "The notice gives information about the new bus route."
+      },
+      "rationale": "'Information' is uncountable; original extended Myanmar gloss was unnatural. Oxford noun A1 conflicts with provisional A2.",
+      "oxford_word_pos_level": "A1",
+      "source_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+      "source_observed_on": "2026-10-29",
+      "editorial_status": "UNREVIEWED_CANDIDATE_NOT_FOR_PRODUCTION",
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_cefr_review": false,
+      "release_approved": false
+    }
+  ]
+}
