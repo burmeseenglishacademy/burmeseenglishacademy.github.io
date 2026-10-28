@@ -166,7 +166,7 @@ def negative_cases(data):
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("--level", choices=["A1", "A2", "B2", "B2", "C1", "ALL"], default="ALL")
+    p.add_argument("--level", choices=["A1", "A2", "B1", "B2", "C1", "ALL"], default="ALL")
     p.add_argument("--self-test", action="store_true")
     args = p.parse_args()
     raw = SHORTLIST.read_bytes()
