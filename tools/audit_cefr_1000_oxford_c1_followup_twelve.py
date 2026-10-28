@@ -105,7 +105,7 @@ def audit(packet, shortlist):
 def negative_tests(packet, shortlist):
     checks = 0
     for i in range(12):
-        for field, bad in (("source_cefr_level", "C1" if i != 0 else "B2"),
+        for field, bad in (("source_cefr_level", "B2" if OBS[packet["records"][i]["word"]][0] == "C1" else "C1"),
                            ("source_excerpt", "forged n."),
                            ("pdf_page", 99),
                            ("extracted_line", 99999),
