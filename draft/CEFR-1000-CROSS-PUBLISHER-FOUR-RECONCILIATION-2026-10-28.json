@@ -1,0 +1,207 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_A1_TO_C1_STAGING_ONLY",
+  "status": "FOUR_CROSS_PUBLISHER_RECONCILIATIONS_PENDING_INDEPENDENT_REVIEW",
+  "observed_on": "2026-10-28",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 4,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 2,
+    "C1": 2
+  },
+  "independently_approved_count": 0,
+  "provenance_note": "Reconciles four headwords overlapping in already recorded Oxford official PDF word/POS observations and Cambridge publisher-owned search-indexed exact-sense leads (Cambridge direct full-page fetch returned HTTP 403). Evidence scopes differ: Oxford word/POS labels are NOT exact-sense levels. No fresh human review, no source publisher endorsement, no approval or automatic retiering. All source URLs, dates, original snapshots, source packet Git blob SHAs, and source-access limitations are preserved.",
+  "records": [
+    {
+      "word": "constant",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Continuing without stopping or changing.",
+        "myanmar_meaning": "အဆက်မပြတ်ဖြစ်သော၊ တည်မြဲသော",
+        "example_sentence": "The constant noise made it hard to study."
+      },
+      "classification": "MIXED_B2_C2_CAMBRIDGE_SENSE_VS_OXFORD_B2_WORD_POS",
+      "discrepancy": "The example refers to repeated noise, while the definition also says unchanging. Cambridge indexed snippets distinguish frequent B2 from staying-same C2; Oxford B2 is word/POS only. Require an independent exact-sense check and rewrite of English/Myanmar if retained.",
+      "independent_reviewer_task": "Candidate only: English 'Happening repeatedly or all the time.'; Myanmar 'အမြဲလိုလို ဖြစ်နေသော၊ အဆက်မပြတ် ဖြစ်သော'. Independent human reviewer must assess the distinction, example grammar and CEFR.",
+      "publisher_evidence": [
+        {
+          "source_packet_path": "draft/CEFR-1000-CAMBRIDGE-B2-SIX-SENSE-LEADS-2026-10-28.json",
+          "source_packet_blob_sha": "0e528dc93df8d31cc1174e5b0af8ede085aeac72",
+          "publisher": "Cambridge University Press & Assessment",
+          "source_url": "https://dictionary.cambridge.org/dictionary/english/constant",
+          "source_observed_on": "2026-10-28",
+          "source_cefr_label": "B2 frequent; C2 staying same",
+          "source_sense_heading": "adjective (FREQUENT) vs (STAYING SAME)",
+          "evidence_scope": "PUBLISHER_SEARCH_RESULT_SENSE_LABEL_NOT_INDEPENDENT_HUMAN_REVIEW",
+          "access": "PUBLISHER_OWNED_SEARCH_INDEXED_PAGE_TEXT_DIRECT_FETCH_HTTP_403",
+          "pdf_page": null,
+          "extracted_line": null,
+          "source_excerpt": null
+        },
+        {
+          "source_packet_path": "draft/CEFR-1000-OXFORD-B2-TWELVE-DIRECT-PDF-2026-10-28.json",
+          "source_packet_blob_sha": "4cf924312efae27aa9b067e33f55aa858a2049e2",
+          "publisher": "Oxford University Press",
+          "source_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+          "source_observed_on": "2026-10-28",
+          "source_cefr_label": "B2",
+          "source_sense_heading": "WORD_POS_ONLY",
+          "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+          "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT",
+          "pdf_page": 10,
+          "extracted_line": 2722,
+          "source_excerpt": "constant adj."
+        }
+      ],
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "personality",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The qualities of character that make a person different from others.",
+        "myanmar_meaning": "ကိုယ်ရည်ကိုယ်သွေး",
+        "example_sentence": "Her friendly personality helps her make new friends."
+      },
+      "classification": "CAMBRIDGE_B2_CHARACTER_SENSE_VS_OXFORD_A2_WORD_POS",
+      "discrepancy": "Cambridge indexed CHARACTER sense is B2, but Oxford's direct word/POS list places personality noun at A2. These are different evidence scopes; do not treat Oxford A2 as an exact-sense refutation or Cambridge indexed text as independent signoff.",
+      "independent_reviewer_task": "Require a human reviewer to open the Cambridge publisher entry, verify the CHARACTER sense/label and explain the Oxford A2 word/POS difference; check whether the Burmese gloss should include 'စရိုက်လက္ခဏာ'.",
+      "publisher_evidence": [
+        {
+          "source_packet_path": "draft/CEFR-1000-CAMBRIDGE-CROSSLEVEL-SEVEN-2026-10-28.json",
+          "source_packet_blob_sha": "886c958b54da5477a17a0d9cb323f3640f0d0d55",
+          "publisher": "Cambridge University Press & Assessment",
+          "source_url": "https://dictionary.cambridge.org/dictionary/english/personality",
+          "source_observed_on": "2026-10-28",
+          "source_cefr_label": "B2",
+          "source_sense_heading": "personality noun (CHARACTER)",
+          "evidence_scope": "Search-indexed publisher result observed 2026-10-28; direct page opens returned HTTP 403. Not independent verification; reviewer must revisit actual publisher page.",
+          "access": "PUBLISHER_OWNED_SEARCH_INDEX_EXCERPT_FULL_PAGE_HTTP_403",
+          "pdf_page": null,
+          "extracted_line": null,
+          "source_excerpt": null
+        },
+        {
+          "source_packet_path": "draft/CEFR-1000-OXFORD-B2-TWELVE-DIRECT-PDF-2026-10-28.json",
+          "source_packet_blob_sha": "4cf924312efae27aa9b067e33f55aa858a2049e2",
+          "publisher": "Oxford University Press",
+          "source_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+          "source_observed_on": "2026-10-28",
+          "source_cefr_label": "A2",
+          "source_sense_heading": "WORD_POS_ONLY",
+          "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+          "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT",
+          "pdf_page": 6,
+          "extracted_line": 1467,
+          "source_excerpt": "personality n."
+        }
+      ],
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "neutral",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Not supporting either side in a disagreement.",
+        "myanmar_meaning": "ဘက်မလိုက်သော",
+        "example_sentence": "The mediator remained neutral during the talks."
+      },
+      "classification": "CAMBRIDGE_C1_IMPARTIALITY_SENSE_VS_OXFORD_B2_WORD_POS",
+      "discrepancy": "Cambridge indexed NO OPINION sense is labelled C1, while Oxford 5000 lists neutral adjective at B2. An Oxford word/POS label cannot alone settle the exact impartiality sense.",
+      "independent_reviewer_task": "Require independent direct-publisher exact-sense C1 evidence, explain the Oxford B2 word/POS label and check Myanmar 'ဘက်မလိုက်သော' against the mediator example.",
+      "publisher_evidence": [
+        {
+          "source_packet_path": "draft/CEFR-1000-CAMBRIDGE-C1-TEN-SENSE-LEADS-2026-10-28.json",
+          "source_packet_blob_sha": "9b16447bfb2b95d5407579f8703e079609c5289b",
+          "publisher": "Cambridge University Press & Assessment",
+          "source_url": "https://dictionary.cambridge.org/us/dictionary/english/neutral",
+          "source_observed_on": "2026-10-28",
+          "source_cefr_label": "C1",
+          "source_sense_heading": "adjective (NO OPINION)",
+          "evidence_scope": "PUBLISHER_SEARCH_INDEXED_SENSE_LEAD_NOT_INDEPENDENT",
+          "access": "Publisher-owned search-indexed page text; direct publisher page open returned HTTP 403; not a complete independent page review",
+          "pdf_page": null,
+          "extracted_line": null,
+          "source_excerpt": null
+        },
+        {
+          "source_packet_path": "draft/CEFR-1000-OXFORD-C1-TWELVE-DIRECT-PDF-2026-10-28.json",
+          "source_packet_blob_sha": "331a29bb256510bca0c950318d8c62f6f59ad823",
+          "publisher": "Oxford University Press",
+          "source_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+          "source_observed_on": "2026-10-28",
+          "source_cefr_label": "B2",
+          "source_sense_heading": "WORD_POS_ONLY",
+          "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+          "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT",
+          "pdf_page": 2,
+          "extracted_line": 419,
+          "source_excerpt": "neutral adj."
+        }
+      ],
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "tribute",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Something said or done to show respect or admiration.",
+        "myanmar_meaning": "ဂုဏ်ပြုမှု၊ လေးစားအသိအမှတ်ပြုမှု",
+        "example_sentence": "The concert was a tribute to the late musician."
+      },
+      "classification": "CAMBRIDGE_C2_RESPECT_SENSE_VS_OXFORD_C1_WORD_POS",
+      "discrepancy": "Cambridge indexed RESPECTFUL ACTION noun sense is C2 while Oxford 5000 lists tribute noun at C1 word/POS. The concert example appears to use the respectful-action sense, so Oxford word/POS alone cannot clear the C1 conflict.",
+      "independent_reviewer_task": "Require independently accessed direct-publisher C1 exact-sense evidence with an explicit Cambridge C2 reconciliation, or independently select a different reviewed C1 word/sense; verify Burmese honour/tribute nuance.",
+      "publisher_evidence": [
+        {
+          "source_packet_path": "draft/CEFR-1000-CAMBRIDGE-C1-TEN-SENSE-LEADS-2026-10-28.json",
+          "source_packet_blob_sha": "9b16447bfb2b95d5407579f8703e079609c5289b",
+          "publisher": "Cambridge University Press & Assessment",
+          "source_url": "https://dictionary.cambridge.org/us/dictionary/english/tribute",
+          "source_observed_on": "2026-10-28",
+          "source_cefr_label": "C2",
+          "source_sense_heading": "noun (RESPECTFUL ACTION)",
+          "evidence_scope": "PUBLISHER_SEARCH_INDEXED_SENSE_LEAD_NOT_INDEPENDENT",
+          "access": "Publisher-owned search-indexed page text; direct publisher page open returned HTTP 403; not a complete independent page review",
+          "pdf_page": null,
+          "extracted_line": null,
+          "source_excerpt": null
+        },
+        {
+          "source_packet_path": "draft/CEFR-1000-OXFORD-C1-TWELVE-DIRECT-PDF-2026-10-28.json",
+          "source_packet_blob_sha": "331a29bb256510bca0c950318d8c62f6f59ad823",
+          "publisher": "Oxford University Press",
+          "source_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+          "source_observed_on": "2026-10-28",
+          "source_cefr_label": "C1",
+          "source_sense_heading": "WORD_POS_ONLY",
+          "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+          "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT",
+          "pdf_page": 8,
+          "extracted_line": 1938,
+          "source_excerpt": "tribute n."
+        }
+      ],
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    }
+  ]
+}
