@@ -61,7 +61,7 @@ def audit(packet, shortlist, sha, check_upstream=False):
         require(word in selected, word + ": missing from shortlist")
         source = selected[word]
         require(row.get("part_of_speech") == source.get("part_of_speech"), word + ": POS drift")
-        require(row.get("shortlist_snapshot") == {k:source[k] for k in ("english_definition","myanmar_meaning","example_sentence")}, word + ": original bilingual/example drift")
+        require(row.get("shortlist_snapshot") == {"english_definition":source["english_definition"],"myanmar_meaning":source["burmese_meaning"],"example_sentence":source["example_sentence"]}, word + ": original bilingual/example drift")
         provenance = {k:source[k] for k in ("source_path","source_index","source_blob_sha")}
         require(row.get("shortlist_provenance") == provenance, word + ": historical Git provenance drift")
         expected_pub = {"publisher":"Oxford University Press","title":"The Oxford 3000 by CEFR level","url":URL,"observed_on":"2026-10-29","pdf_page":page,"extracted_line":line,"source_excerpt":excerpt,"source_cefr_level":"A1","evidence_scope":"DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE","access":"DIRECT_OFFICIAL_PDF_WEB_TEXT"}
@@ -75,7 +75,7 @@ def audit(packet, shortlist, sha, check_upstream=False):
             upstream = ROOT / provenance["source_path"]
             require(upstream.is_file() and blob_sha(upstream) == provenance["source_blob_sha"], word + ": historical source blob drift")
             origin = json.loads(upstream.read_text(encoding="utf-8"))["entries"][provenance["source_index"]]
-            require(all(origin.get(k) == source.get(k) for k in ("word","level","part_of_speech","english_definition","myanmar_meaning","example_sentence")), word + ": historical original mismatch")
+            require(all(origin.get(k) == source.get(k) for k in ("word","level","part_of_speech","english_definition","burmese_meaning","example_sentence")), word + ": historical original mismatch")
     require(packet.get("unreviewed_editorial_proposals") == EXPECTED_PROPOSALS, "Unreviewed bilingual rewrite drift or false approval")
     return len(records)
 
