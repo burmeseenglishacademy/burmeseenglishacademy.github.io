@@ -241,6 +241,9 @@ def audit(ledger=None, after_deployment=False):
               "oxford_b2_lower_twelve_direct_word_pos_observations": 0,
               "oxford_b2_lower_twelve_retained_requiring_resolution": 0,
               "oxford_b2_lower_twelve_retained_resolved": 0,
+              "oxford_c1_mixed_twelve_direct_word_pos_observations": 0,
+              "oxford_c1_mixed_twelve_retained_requiring_resolution": 0,
+              "oxford_c1_mixed_twelve_retained_resolved": 0,
               "oxford_c1_b2_conflict_twelve_direct_word_pos_observations": 0,
               "oxford_c1_b2_conflict_twelve_retained_requiring_resolution": 0,
               "oxford_c1_b2_conflict_twelve_retained_resolved": 0,
@@ -1028,6 +1031,82 @@ def audit(ledger=None, after_deployment=False):
     if (report["oxford_b1_lower_twelve_retained_requiring_resolution"]
             != report["oxford_b1_lower_twelve_retained_resolved"]):
         issues.append("Additional retained Oxford B1 lower-level word/POS conflicts lack independent exact-sense B1 resolution")
+
+    # C1 Oxford mixed 12: 8 matching C1 word/POS labels, 3 lower B2 labels,
+    # and 'premises' absent from the two inspected core lists. Absence is
+    # NOT a CEFR label; neither Oxford word/POS nor source presence is
+    # independently approved exact-sense, Myanmar, English or example QA.
+    c1_mixed = read_json(
+        ROOT / "draft/CEFR-1000-OXFORD-C1-MIXED-TWELVE-2026-10-28.json")
+    c1_mixed_flags = c1_mixed.get("records", [])
+    c1_mixed_expected = {"verdict", "abandon", "accommodate", "aesthetic",
+                         "algorithm", "complexity", "deliberately", "dignity",
+                         "ideology", "inclusion", "isolation", "premises"}
+    report["oxford_c1_mixed_twelve_direct_word_pos_observations"] = len(c1_mixed_flags)
+    if (c1_mixed.get("status") !=
+            "C1_TWELVE_DIRECT_OXFORD_WORD_POS_AND_UNLISTED_LEADS_EDITORIAL_HOLD"
+            or len(c1_mixed_flags) != 12
+            or {x.get("word") for x in c1_mixed_flags if isinstance(x, dict)}
+               != c1_mixed_expected
+            or c1_mixed.get("word_pos_discrepancies") != 3
+            or c1_mixed.get("unlisted_in_inspected_core_lists") != 1
+            or c1_mixed.get("independently_approved_count") != 0):
+        issues.append("C1 mixed Oxford source packet missing, changed or falsely approved")
+    c1_mixed_receipts = d.get("oxford_c1_mixed_twelve_review_receipts")
+    if not isinstance(c1_mixed_receipts, list):
+        issues.append("C1 mixed Oxford independent receipts missing or malformed")
+        c1_mixed_receipts = []
+    c1_mixed_index = {}
+    for rec in c1_mixed_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Malformed C1 mixed Oxford independent receipt")
+            continue
+        key = (rec.get("word"), rec.get("proposed_level"))
+        if key in c1_mixed_index:
+            issues.append("Duplicate C1 mixed Oxford independent receipt")
+        c1_mixed_index[key] = rec
+    for key in c1_mixed_index:
+        if key not in {(w, "C1") for w in c1_mixed_expected}:
+            issues.append("Unknown C1 mixed Oxford independent receipt")
+    for flag in c1_mixed_flags:
+        if not isinstance(flag, dict):
+            continue
+        word = flag.get("word")
+        entry = entry_lookup.get((word, "C1"))
+        if entry is None:
+            continue  # Retiered/replaced entries still need full manifest signoff.
+        report["oxford_c1_mixed_twelve_retained_requiring_resolution"] += 1
+        rec = c1_mixed_index.get((word, "C1"))
+        if not independent_word_stage(rec, word, "sense_specific_cefr", expected_level="C1"):
+            continue
+        if (rec.get("decision") != "RETAIN_AFTER_INDEPENDENT_C1_EXACT_SENSE_REVIEW"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or rec.get("verified_part_of_speech") != entry.get("part_of_speech")
+                or rec.get("verified_cefr_level") != "C1"
+                or rec.get("source_cefr_level") != "C1"
+                or not isinstance(rec.get("source_scope_rationale"), str)
+                or len(rec["source_scope_rationale"].strip()) < 50):
+            continue
+        oxford_level = flag.get("publisher_source", {}).get("source_cefr_level")
+        if oxford_level == "B2":
+            rationale = rec.get("oxford_word_pos_level_difference_resolution")
+            if not isinstance(rationale, str) or len(rationale.strip()) < 60:
+                continue
+            if (entry.get("english_definition") ==
+                    flag.get("shortlist_snapshot", {}).get("english_definition")
+                    and entry.get("example_sentence") ==
+                    flag.get("shortlist_snapshot", {}).get("example_sentence")):
+                continue
+        if oxford_level is None:
+            rationale = rec.get("oxford_core_list_absence_resolution")
+            if not isinstance(rationale, str) or len(rationale.strip()) < 60:
+                continue
+            if "not listed" not in rationale.lower() and "absence" not in rationale.lower():
+                continue
+        report["oxford_c1_mixed_twelve_retained_resolved"] += 1
+    if (report["oxford_c1_mixed_twelve_retained_requiring_resolution"]
+            != report["oxford_c1_mixed_twelve_retained_resolved"]):
+        issues.append("Retained C1 mixed Oxford B2/unknown word-POS leads lack independent exact-sense resolution")
 
     # Additional direct official Oxford 3000 PDF B2-draft word/POS evidence.
     # Ten source word/POS levels are A1/A2/B1, two B2. This is NOT
@@ -2157,6 +2236,15 @@ def main():
         mixed_issues, _ = audit(forged_mixed)
         assert any("Unknown Oxford B1 mixed-level independent receipt" in item for item in mixed_issues)
         print("PASS: unknown Oxford B1 mixed-level independent receipt rejected")
+        forged_c1_mixed = copy.deepcopy(read_json(LEDGER))
+        forged_c1_mixed["oxford_c1_mixed_twelve_review_receipts"] = [
+            {"word": "FAKE", "proposed_level": "C1",
+             "decision": "RETAIN_AFTER_INDEPENDENT_C1_EXACT_SENSE_REVIEW"}
+        ]
+        c1_mixed_issues, _ = audit(forged_c1_mixed)
+        assert any("Unknown C1 mixed Oxford independent receipt" in item
+                   for item in c1_mixed_issues)
+        print("PASS: forged C1 mixed Oxford independent receipt rejected")
         print("PASS: unknown cross-publisher reconciliation receipt rejected")
         print("PASS: official Pages size/bandwidth caps reject inflated self-reported limits")
         print("PASS: false ready flag cannot override missing independent, listening, iPhone or hosting evidence")
