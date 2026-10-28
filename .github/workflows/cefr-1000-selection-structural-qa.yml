@@ -20,6 +20,8 @@ on:
       - tools/audit_cefr_1000_oxford_a1_twelve.py
       - draft/CEFR-1000-OXFORD-A2-TWELVE-DIRECT-PDF-2026-10-28.json
       - draft/CEFR-1000-OXFORD-B1-TWELVE-DIRECT-PDF-2026-10-28.json
+      - draft/CEFR-1000-OXFORD-B2-TWELVE-DIRECT-PDF-2026-10-28.json
+      - tools/audit_cefr_1000_oxford_b2_twelve.py
       - tools/audit_cefr_1000_oxford_b1_twelve.py
       - tools/audit_cefr_1000_oxford_a2_twelve.py
       - draft/CEFR-1000-OXFORD-SECOND-DIRECT-PDF-BATCH-2026-10-27.json
@@ -86,6 +88,11 @@ jobs:
       - name: Reject forged B1 publisher metadata, Myanmar drift and fake independent review
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_b1_twelve.py --level ALL --self-test
+      - name: Audit twelve B2-draft Oxford word-POS observations (no independent signoff)
+        run: python3 tools/audit_cefr_1000_oxford_b2_twelve.py --level "${{ matrix.level }}"
+      - name: Reject forged B2 PDF provenance, changed Myanmar and fake human approval
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_oxford_b2_twelve.py --level ALL --self-test
       - name: Validate 27 more official Oxford 3000/5000 PDF word-POS observations (not sense approval)
         run: python3 tools/audit_cefr_1000_oxford_second_batch.py --level "${{ matrix.level }}"
       - name: Reject forged second-batch publisher source and fake review receipts
@@ -161,6 +168,7 @@ jobs:
             cefr-1000-oxford-a1-twelve-${{ matrix.level }}.json
             cefr-1000-oxford-a2-twelve-${{ matrix.level }}.json
             cefr-1000-oxford-b1-twelve-${{ matrix.level }}.json
+            cefr-1000-oxford-b2-twelve-${{ matrix.level }}.json
             cefr-1000-oxford-second-batch-${{ matrix.level }}.json
             cefr-1000-cambridge-second-sense-${{ matrix.level }}.json
             cefr-1000-cambridge-sense-${{ matrix.level }}.json
