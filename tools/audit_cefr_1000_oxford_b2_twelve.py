@@ -67,7 +67,7 @@ def audit(packet, shortlist):
         seen.add(word)
         original = originals.get(("B2", word))
         if original is None:
-            issues.append(word + ": missing canonical B1 entry")
+            issues.append(word + ": missing canonical B2 entry")
             continue
         expected_snapshot = {
             "english_definition": original.get("english_definition"),
