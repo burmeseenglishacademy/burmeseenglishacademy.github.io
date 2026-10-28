@@ -122,7 +122,7 @@ jobs:
         run: python3 tools/audit_cefr_1000_oxford_a1_third_twelve.py --level ALL --self-test
       - name: Audit 24 directly observed Oxford A1 word-POS leads and bilingual risks (not approval)
         run: python3 tools/audit_cefr_1000_oxford_a1_fourth_twentyfour.py --level "${{ matrix.level }}"
-      - name: Reject 46 forged fourth-batch A1 source, Myanmar, provenance and review mutations
+      - name: Reject 48 forged fourth-batch A1 source, Myanmar, homograph and review mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_a1_fourth_twentyfour.py --level ALL --self-test
       - name: Audit Oxford A2 follow-up twelve publisher word/POS observations (not independent signoff)
