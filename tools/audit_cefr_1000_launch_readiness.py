@@ -238,6 +238,9 @@ def audit(ledger=None, after_deployment=False):
               "cambridge_a2_eight_observations": 0,
               "cambridge_a2_eight_retained_requiring_resolution": 0,
               "cambridge_a2_eight_retained_resolved": 0,
+              "cambridge_crosslevel_seven_source_observations": 0,
+              "cambridge_crosslevel_seven_retained_requiring_resolution": 0,
+              "cambridge_crosslevel_seven_retained_resolved": 0,
               "cambridge_c1_ten_observations": 0,
               "cambridge_c1_ten_retained_requiring_resolution": 0,
               "cambridge_c1_ten_retained_resolved": 0,
@@ -320,6 +323,58 @@ def audit(ledger=None, after_deployment=False):
         issues.append("Review receipt words do not match approved release entries")
     if report["independent_stage_complete"] != TARGETS:
         issues.append("Not all 200 entries in every level have independent stage signoffs")
+
+    # Seven publisher-indexed cross-level observations are research leads only.
+    # Any retained word requires its OWN separately attested, directly accessed
+    # exact-sense publisher CEFR review plus explicit discrepancy resolution.
+    # Replacements still require the ordinary 1000-entry independent review.
+    crosslevel = read_json(ROOT / "draft/CEFR-1000-CAMBRIDGE-CROSSLEVEL-SEVEN-2026-10-28.json")
+    crosslevel_flags = crosslevel.get("entries", [])
+    report["cambridge_crosslevel_seven_source_observations"] = len(crosslevel_flags)
+    if len(crosslevel_flags) != 7:
+        issues.append("Cross-level Cambridge source packet must contain seven observations")
+    crosslevel_receipts = d.get("cambridge_crosslevel_seven_review_receipts", [])
+    if not isinstance(crosslevel_receipts, list):
+        issues.append("Cross-level independent review receipts must be a list")
+        crosslevel_receipts = []
+    crosslevel_index = {}
+    for rec in crosslevel_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Invalid cross-level review receipt")
+            continue
+        key = (rec.get("level"), rec.get("word"))
+        if key in crosslevel_index:
+            issues.append("Duplicate cross-level independent review receipt")
+        crosslevel_index[key] = rec
+    final_lookup = {(x.get("level"), x.get("word")): x
+                    for x in entries if isinstance(x, dict)}
+    known_crosslevel_keys = {(x.get("level"), x.get("word")) for x in crosslevel_flags
+                             if isinstance(x, dict)}
+    if set(crosslevel_index) - known_crosslevel_keys:
+        issues.append("Unknown cross-level independent review receipt")
+    for flag in crosslevel_flags:
+        if not isinstance(flag, dict):
+            issues.append("Malformed cross-level Cambridge source observation")
+            continue
+        key = (flag.get("level"), flag.get("word"))
+        entry = final_lookup.get(key)
+        if entry is None:
+            continue
+        report["cambridge_crosslevel_seven_retained_requiring_resolution"] += 1
+        rec = crosslevel_index.get(key)
+        if not isinstance(rec, dict):
+            continue
+        if (rec.get("decision") != "RETAIN_WITH_INDEPENDENT_SENSE_LEVEL_EVIDENCE"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or not isinstance(rec.get("conflict_resolution"), str)
+                or len(rec["conflict_resolution"].strip()) < 50
+                or not independent_word_stage(rec, entry["word"], "sense_specific_cefr",
+                                              expected_level=entry["level"])):
+            continue
+        report["cambridge_crosslevel_seven_retained_resolved"] += 1
+    if (report["cambridge_crosslevel_seven_retained_requiring_resolution"]
+            != report["cambridge_crosslevel_seven_retained_resolved"]):
+        issues.append("Seven-word Cambridge cross-level/sense mismatches lack independent direct-publisher resolution")
 
     # Check prior Oxford wordlist CEFR/POS differences are not forgotten when
     # the final approved shortlist is selected. An alternate CEFR score is a
