@@ -15,6 +15,8 @@ on:
       - draft/CEFR-1000-CAMBRIDGE-C1-TEN-SENSE-LEADS-2026-10-28.json
       - tools/audit_cefr_1000_cambridge_c1_ten.py
       - draft/CEFR-1000-CAMBRIDGE-B1-TWELVE-SENSE-LEADS-2026-10-28.json
+      - draft/CEFR-1000-CAMBRIDGE-CROSSLEVEL-SEVEN-2026-10-28.json
+      - tools/audit_cefr_1000_cambridge_crosslevel_seven.py
       - tools/audit_cefr_1000_cambridge_b1_twelve.py
       - draft/CEFR-1000-OXFORD-A2-TWELVE-DIRECT-PDF-2026-10-28.json
       - tools/audit_cefr_1000_oxford_a2_twelve.py
@@ -63,6 +65,7 @@ jobs:
           python3 tools/audit_cefr_1000_six_sense.py --level ALL --self-test
           python3 tools/audit_cefr_1000_cambridge_c1_ten.py --level ALL --self-test
           python3 tools/audit_cefr_1000_cambridge_b1_twelve.py --level ALL --self-test
+          python3 tools/audit_cefr_1000_cambridge_crosslevel_seven.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_a2_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_b1_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_b2_twelve.py --level ALL --self-test
