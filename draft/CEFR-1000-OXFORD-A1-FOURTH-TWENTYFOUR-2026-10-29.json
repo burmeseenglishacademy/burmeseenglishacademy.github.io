@@ -815,5 +815,35 @@
       "release_approved": false,
       "independent_reviewer_receipt": null
     }
+  ],
+  "secondary_word_pos_observations": [
+    {
+      "word": "all",
+      "contrasting_level": "A2",
+      "contrasting_part_of_speech": "adverb",
+      "publisher": "Oxford University Press",
+      "source_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+      "observed_on": "2026-10-29",
+      "pdf_page": 4,
+      "extracted_line": 931,
+      "source_excerpt": "all adv.",
+      "scope": "WORD_POS_NOT_EXACT_SENSE",
+      "reviewer_action": "Confirm A1 determiner all students versus A2 adverb all alone / all over; do not conflate levels or senses.",
+      "independently_approved": false
+    },
+    {
+      "word": "like",
+      "contrasting_level": "A1",
+      "contrasting_part_of_speech": "preposition",
+      "publisher": "Oxford University Press",
+      "source_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+      "observed_on": "2026-10-29",
+      "pdf_page": 2,
+      "extracted_line": 442,
+      "source_excerpt": "like (similar) prep.",
+      "scope": "WORD_POS_NOT_EXACT_SENSE",
+      "reviewer_action": "Distinguish like this song (verb enjoyment) from looks like his brother (preposition similarity).",
+      "independently_approved": false
+    }
   ]
 }
