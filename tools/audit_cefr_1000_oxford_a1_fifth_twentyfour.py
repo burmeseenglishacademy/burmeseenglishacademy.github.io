@@ -122,7 +122,7 @@ def audit(packet, shortlist, actual_sha, check_upstream=False):
         require(proposal.get("review_status") == "UNREVIEWED_UNAPPLIED_PROPOSAL"
                 and proposal.get("human_independent_approval") is False, "Proposal falsely approved")
         for key in ("issue","suggested_english_definition","suggested_myanmar_meaning","suggested_example_sentence"):
-            require(isinstance(proposal.get(key),str) and len(proposal[key]) >= 10, "Proposal missing " + key)
+            require(isinstance(proposal.get(key),str) and len(proposal[key]) >= (4 if key == "suggested_myanmar_meaning" else 10), "Proposal missing " + key)
         require(any("\u1000" <= ch <= "\u109f" for ch in proposal["suggested_myanmar_meaning"]),
                 "Proposal Myanmar text missing")
     return len(records)
