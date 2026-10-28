@@ -25,7 +25,7 @@ def require(condition, reason):
 
 def git_blob_sha(path):
     b = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(b)).encode() + b"\\0" + b).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(b)).encode() + b"\0" + b).hexdigest()
 
 def audit(packet, shortlist, sha):
     require(sha == SHORTLIST_SHA and packet.get("shortlist_blob_sha") == sha,
