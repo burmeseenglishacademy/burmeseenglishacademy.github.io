@@ -1,0 +1,339 @@
+{
+  "schema": 1,
+  "scope": "USER_APPROVED_CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A2_RECOVERY_TWELVE_SOURCE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-28",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 12,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "independently_approved_count": 0,
+  "source_limitations": "Source observations from publisher-owned web search excerpts on 2026-10-28; not a full-page authenticated human review, not exact-sense independent CEFR signoff. Four Cambridge A2 matches (raincoat, toothache, bookshelf, postcard); two Cambridge B1 conflicts (saucepan, dustbin); six unlabelled Cambridge senses (washcloth, shoelace, lunchbox, doormat, bathrobe, sunscreen), with a separate Collins COBUILD B2 lead for sunscreen. These are provisional editorial leads, not proof of CEFR placement or Myanmar accuracy. No release, no audio/device test.",
+  "records": [
+    {
+      "word": "raincoat",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+      "shortlist_snapshot": {
+        "english_definition": "A coat made to keep rain from soaking your clothes.",
+        "myanmar_meaning": "မိုးရေမစိုစေရန် ဝတ်ဆင်သော မိုးကာအင်္ကျီ",
+        "example_sentence": "I packed a raincoat because the forecast warned of heavy rain."
+      },
+      "publisher_evidence": {
+        "publisher": "Cambridge University Press & Assessment",
+        "url": "https://dictionary.cambridge.org/dictionary/essential-british-english/raincoat",
+        "observed_on": "2026-10-28",
+        "cefr_label": "A2",
+        "sense_identifier": "RAIN_PROTECTION",
+        "access": "PUBLISHER_WEB_SEARCH_RESULT_NOT_HUMAN_INDEPENDENT_REVIEW",
+        "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_ONLY"
+      },
+      "editorial_risk": "MATCH_A2",
+      "independent_reviewer_task": "A2 British Essential rain-protection noun sense aligns with the provisional garment definition; independently verify the Myanmar phrase and example.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "toothache",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+      "shortlist_snapshot": {
+        "english_definition": "Pain in a tooth or in the area around a tooth.",
+        "myanmar_meaning": "သွားတစ်ချောင်း သို့မဟုတ် သွားပတ်ဝန်းကျင်တွင် ဖြစ်သော သွားကိုက်ဝေဒနာ",
+        "example_sentence": "He missed football practice because his toothache became worse."
+      },
+      "publisher_evidence": {
+        "publisher": "Cambridge University Press & Assessment",
+        "url": "https://dictionary.cambridge.org/dictionary/english/toothache",
+        "observed_on": "2026-10-28",
+        "cefr_label": "A2",
+        "sense_identifier": "DENTAL_PAIN",
+        "access": "PUBLISHER_WEB_SEARCH_RESULT_NOT_HUMAN_INDEPENDENT_REVIEW",
+        "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_ONLY"
+      },
+      "editorial_risk": "MATCH_A2",
+      "independent_reviewer_task": "Cambridge A2 tooth pain noun supports the general meaning; confirm whether countability and the original football example are natural in British English.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "bookshelf",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH59.json",
+      "shortlist_snapshot": {
+        "english_definition": "A shelf used for storing or displaying books.",
+        "myanmar_meaning": "စာအုပ်များ တင်ထားရန် ပြုလုပ်ထားသော စာအုပ်စင်",
+        "example_sentence": "I put the new dictionary on the highest bookshelf."
+      },
+      "publisher_evidence": {
+        "publisher": "Cambridge University Press & Assessment",
+        "url": "https://dictionary.cambridge.org/dictionary/learner-english/bookshelf",
+        "observed_on": "2026-10-28",
+        "cefr_label": "A2",
+        "sense_identifier": "SHELF_FOR_BOOKS",
+        "access": "PUBLISHER_WEB_SEARCH_RESULT_NOT_HUMAN_INDEPENDENT_REVIEW",
+        "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_ONLY"
+      },
+      "editorial_risk": "MATCH_A2",
+      "independent_reviewer_task": "Cambridge Learner A2 physical shelf sense aligns; independently verify the Myanmar gloss and original sentence.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "postcard",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+      "shortlist_snapshot": {
+        "english_definition": "A small card that can be mailed with a short message, often showing a picture.",
+        "myanmar_meaning": "ပုံပါလေ့ရှိပြီး စာတိုရေးကာ စာတိုက်မှ ပို့နိုင်သော ကတ်ပြား",
+        "example_sentence": "We sent a postcard to our grandparents from the seaside."
+      },
+      "publisher_evidence": {
+        "publisher": "Cambridge University Press & Assessment",
+        "url": "https://dictionary.cambridge.org/dictionary/english/postcard",
+        "observed_on": "2026-10-28",
+        "cefr_label": "A2",
+        "sense_identifier": "CARD_SENT_WITHOUT_ENVELOPE",
+        "access": "PUBLISHER_WEB_SEARCH_RESULT_NOT_HUMAN_INDEPENDENT_REVIEW",
+        "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_ONLY"
+      },
+      "editorial_risk": "MATCH_A2",
+      "independent_reviewer_task": "Cambridge A2 postcard meaning aligns; review whether the draft definition's short-message condition is unnecessarily restrictive.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "saucepan",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+      "shortlist_snapshot": {
+        "english_definition": "A deep cooking pan with a handle, often used for boiling food.",
+        "myanmar_meaning": "အစားအစာပြုတ်ရန် အသုံးပြုသော လက်ကိုင်ပါ အိုးငယ်",
+        "example_sentence": "Heat the milk gently in a saucepan before adding the chocolate."
+      },
+      "publisher_evidence": {
+        "publisher": "Cambridge University Press & Assessment",
+        "url": "https://dictionary.cambridge.org/dictionary/english/saucepan",
+        "observed_on": "2026-10-28",
+        "cefr_label": "B1",
+        "sense_identifier": "DEEP_COOKING_PAN",
+        "access": "PUBLISHER_WEB_SEARCH_RESULT_NOT_HUMAN_INDEPENDENT_REVIEW",
+        "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_ONLY"
+      },
+      "editorial_risk": "LOWER_LEVEL_DRAFT_CONFLICT",
+      "independent_reviewer_task": "Cambridge labels the exact deep cooking pan sense B1, versus draft A2. Require independent A2 exact-sense justification or replacement/retiering; do not silently relabel.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "dustbin",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "shortlist_snapshot": {
+        "english_definition": "A container used for collecting rubbish before it is taken away.",
+        "myanmar_meaning": "အမှိုက်များ စုဆောင်းထည့်ရန် အသုံးပြုသော အမှိုက်ပုံး",
+        "example_sentence": "Put the empty packet in the dustbin near the kitchen door."
+      },
+      "publisher_evidence": {
+        "publisher": "Cambridge University Press & Assessment",
+        "url": "https://dictionary.cambridge.org/dictionary/english/dustbin",
+        "observed_on": "2026-10-28",
+        "cefr_label": "B1",
+        "sense_identifier": "UK_OUTDOOR_HOUSEHOLD_RUBBISH_CONTAINER",
+        "access": "PUBLISHER_WEB_SEARCH_RESULT_NOT_HUMAN_INDEPENDENT_REVIEW",
+        "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_ONLY"
+      },
+      "editorial_risk": "LOWER_LEVEL_DRAFT_CONFLICT_AND_SENSE_SCOPE",
+      "independent_reviewer_task": "Cambridge labels the UK household outdoor large rubbish bin B1, while the draft A2 definition describes any rubbish container and the example is by a kitchen door. Confirm physical referent and level; consider UK bin versus dustbin distinction.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "washcloth",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+      "shortlist_snapshot": {
+        "english_definition": "A small piece of cloth used for washing the face or body.",
+        "myanmar_meaning": "မျက်နှာ သို့မဟုတ် ကိုယ်ခန္ဓာ သန့်စင်ရာတွင် သုံးသော အဝတ်စငယ်",
+        "example_sentence": "He used a clean washcloth to wipe his face after the match."
+      },
+      "publisher_evidence": {
+        "publisher": "Cambridge University Press & Assessment",
+        "url": "https://dictionary.cambridge.org/dictionary/english/washcloth",
+        "observed_on": "2026-10-28",
+        "cefr_label": null,
+        "sense_identifier": "US_TERM_UK_FACECLOTH_FLANNEL",
+        "access": "PUBLISHER_WEB_SEARCH_RESULT_NOT_HUMAN_INDEPENDENT_REVIEW",
+        "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_ONLY"
+      },
+      "editorial_risk": "BRITISH_VARIANT_AND_NO_PUBLISHER_CEFR",
+      "independent_reviewer_task": "Cambridge marks washcloth US and gives UK facecloth/flannel. The British-focused syllabus needs independent lexical choice, exact-sense CEFR and Myanmar gloss review; no CEFR label was observed.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "shoelace",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH59.json",
+      "shortlist_snapshot": {
+        "english_definition": "A thin cord used to fasten a shoe.",
+        "myanmar_meaning": "ဖိနပ်ကို ချည်တင်းစေရန် အသုံးပြုသော ဖိနပ်ကြိုး",
+        "example_sentence": "Tie your shoelace before you run across the playground."
+      },
+      "publisher_evidence": {
+        "publisher": "Cambridge University Press & Assessment",
+        "url": "https://dictionary.cambridge.org/dictionary/english/shoelace",
+        "observed_on": "2026-10-28",
+        "cefr_label": null,
+        "sense_identifier": "SHOE_FASTENING_CORD",
+        "access": "PUBLISHER_WEB_SEARCH_RESULT_NOT_HUMAN_INDEPENDENT_REVIEW",
+        "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_ONLY"
+      },
+      "editorial_risk": "NO_PUBLISHER_CEFR_AND_NUMBER_USAGE",
+      "independent_reviewer_task": "Cambridge lists the shoe-fastening noun usually in plural. The singular draft is grammatical in context but verify natural British usage; no CEFR label observed.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "lunchbox",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+      "shortlist_snapshot": {
+        "english_definition": "A small container used to carry food for a midday meal.",
+        "myanmar_meaning": "နေ့လယ်စာ ထည့်ယူသွားရန် အသုံးပြုသော ထမင်းဘူး",
+        "example_sentence": "She put a sandwich and an apple in her lunchbox before school."
+      },
+      "publisher_evidence": {
+        "publisher": "Cambridge University Press & Assessment",
+        "url": "https://dictionary.cambridge.org/dictionary/english/lunchbox",
+        "observed_on": "2026-10-28",
+        "cefr_label": null,
+        "sense_identifier": "LUNCH_CARRYING_CONTAINER",
+        "access": "PUBLISHER_WEB_SEARCH_RESULT_NOT_HUMAN_INDEPENDENT_REVIEW",
+        "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_ONLY"
+      },
+      "editorial_risk": "NO_PUBLISHER_CEFR",
+      "independent_reviewer_task": "Cambridge describes a box for carrying lunch; no CEFR level observed. Do not infer A2 merely from everyday familiarity; review Myanmar and example.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "doormat",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH59.json",
+      "shortlist_snapshot": {
+        "english_definition": "A small mat placed by a doorway for wiping shoes.",
+        "myanmar_meaning": "တံခါးဝတွင် ဖိနပ်သုတ်ရန် ခင်းထားသော ဖျာ",
+        "example_sentence": "Please wipe your shoes on the doormat before entering."
+      },
+      "publisher_evidence": {
+        "publisher": "Cambridge University Press & Assessment",
+        "url": "https://dictionary.cambridge.org/dictionary/english/doormat",
+        "observed_on": "2026-10-28",
+        "cefr_label": null,
+        "sense_identifier": "MAT_AT_DOOR_NOT_PERSON",
+        "access": "PUBLISHER_WEB_SEARCH_RESULT_NOT_HUMAN_INDEPENDENT_REVIEW",
+        "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_ONLY"
+      },
+      "editorial_risk": "MULTIPLE_SENSES_NO_PUBLISHER_CEFR",
+      "independent_reviewer_task": "Cambridge separates the literal floor mat from figurative person who accepts mistreatment; draft uses literal mat. No CEFR level observed; do not confuse the senses.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "bathrobe",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+      "shortlist_snapshot": {
+        "english_definition": "A loose piece of clothing worn after a bath or shower.",
+        "myanmar_meaning": "ရေချိုးပြီးနောက် ဝတ်ဆင်လေ့ရှိသော အပေါ်ထပ်ဝတ် အင်္ကျီရှည်",
+        "example_sentence": "He put on a warm bathrobe after taking a shower."
+      },
+      "publisher_evidence": {
+        "publisher": "Cambridge University Press & Assessment",
+        "url": "https://dictionary.cambridge.org/dictionary/english/bathrobe",
+        "observed_on": "2026-10-28",
+        "cefr_label": null,
+        "sense_identifier": "POST_BATH_ROBE",
+        "access": "PUBLISHER_WEB_SEARCH_RESULT_NOT_HUMAN_INDEPENDENT_REVIEW",
+        "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_ONLY"
+      },
+      "editorial_risk": "BRITISH_LEXICAL_ALTERNATIVE_NO_PUBLISHER_CEFR",
+      "independent_reviewer_task": "Cambridge gives dressing gown as a related term; distinguish post-bath towelling robe from British dressing gown and independently source A2 exact-sense level.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    },
+    {
+      "word": "sunscreen",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+      "shortlist_snapshot": {
+        "english_definition": "A cream or lotion that protects skin from sunlight.",
+        "myanmar_meaning": "နေရောင်ခြည်ဒဏ်မှ အရေပြားကို ကာကွယ်ပေးသော လိမ်းဆေး",
+        "example_sentence": "Apply sunscreen before spending the afternoon at the beach."
+      },
+      "publisher_evidence": {
+        "publisher": "Cambridge University Press & Assessment",
+        "url": "https://dictionary.cambridge.org/dictionary/learner-english/sunscreen",
+        "observed_on": "2026-10-28",
+        "cefr_label": null,
+        "sense_identifier": "SKIN_PROTECTION_PRODUCT",
+        "access": "PUBLISHER_WEB_SEARCH_RESULT_NOT_HUMAN_INDEPENDENT_REVIEW",
+        "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_ONLY"
+      },
+      "additional_publisher_evidence": {
+        "publisher": "HarperCollins Publishers",
+        "url": "https://www.collinsdictionary.com/de/worterbuch/englisch/sunscreen",
+        "observed_on": "2026-10-28",
+        "cefr_label": "B2",
+        "dictionary": "Collins COBUILD Advanced Learner's Dictionary",
+        "evidence_scope": "PUBLISHER_WEB_INDEXED_WORD_SENSE_LEAD"
+      },
+      "editorial_risk": "SECOND_PUBLISHER_B2_CONFLICT_AND_CAMBRIDGE_UNLABELLED",
+      "independent_reviewer_task": "Cambridge Learner gives the skin-protection product sense without an observed CEFR label. Collins COBUILD marks sunscreen B2; independent editor must reconcile this against draft A2 before retention.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "reviewer_receipt": null
+    }
+  ]
+}
