@@ -56,6 +56,11 @@ def audit(p, shortlist, sha):
         r = records[i]
         require(isinstance(r, dict) and r.get("word") == word and
                 r.get("level") == "B1", f"{word}: identity drift")
+        require(set(r) == {"word","level","part_of_speech","shortlist_snapshot",
+                "shortlist_provenance","publisher_source","editorial_risk_id",
+                "editorial_risk","independent_reviewer_task","editorial_hold",
+                "independently_reviewed","release_approved","independent_reviewer_receipt"},
+                f"{word}: unexpected field or hidden approval flag")
         e = byword[word]
         require(r.get("part_of_speech") == e.get("part_of_speech"),
                 f"{word}: POS drift")
@@ -128,6 +133,15 @@ def negative_tests(p, shortlist, sha):
             count += 1
         else:
             raise AssertionError(f"forged packet field {field} was accepted")
+    for key in ("reviewed_level", "reviewed_english"):
+        changed = copy.deepcopy(p)
+        changed["records"][0][key] = True
+        try:
+            audit(changed, shortlist, sha)
+        except ValueError:
+            count += 1
+        else:
+            raise AssertionError(f"hidden approval field {key} was accepted")
     return count
 
 def main():
@@ -145,7 +159,7 @@ def main():
     print(f"PASS: {audit(p,s,sha)}/24 Oxford B1 draft word/POS source snapshots "
           "bound to provisional shortlist; 13 discrepancies; 0 approvals")
     if args.self_test:
-        print(f"PASS: {negative_tests(p,s,sha)}/103 forged publisher, Myanmar, "
+        print(f"PASS: {negative_tests(p,s,sha)}/105 forged publisher, Myanmar, "
               "risk, review and metadata mutations rejected")
 
 if __name__ == "__main__":
