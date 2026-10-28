@@ -15,7 +15,7 @@
   "word_pos_discrepancies": 3,
   "unlisted_in_inspected_core_lists": 1,
   "independently_approved_count": 0,
-  "source_limitations": "Direct official Oxford 3000 and 5000 CEFR PDFs inspected 2026-10-28. PDF pages one-based and extracted lines zero-based. Oxford word/POS levels are NOT independently verified exact-sense CEFR, English, Myanmar, example or reviewer approval. An absent headword is NOT evidence of a particular CEFR level. All 12 provisional entries remain unchanged on editorial hold.",
+  "source_limitations": "Direct official Oxford 3000 and 5000 CEFR PDFs inspected 2026-10-28. PDF pages one-based and extracted lines zero-based. Oxford word/POS levels are NOT independently verified exact-sense CEFR, English, Myanmar, example or reviewer approval. An absent headword is NOT evidence of a particular CEFR level. All 12 provisional entries remain unchanged on editorial hold. Four Cambridge publisher-owned search-indexed exact-sense research leads are attached; direct full-page access returned HTTP 403, so labels and senses are unverified by direct Cambridge page inspection and never independent signoff.",
   "records": [
     {
       "word": "verdict",
@@ -416,5 +416,64 @@
       "release_approved": false,
       "independent_reviewer_receipt": null
     }
-  ]
+  ],
+  "cambridge_publisher_indexed_sense_leads": [
+    {
+      "word": "abandon",
+      "publisher": "Cambridge University Press",
+      "source_url": "https://dictionary.cambridge.org/us/dictionary/english/abandon",
+      "observed_on": "2026-10-28",
+      "publisher_dictionary": "Cambridge Advanced Learner's Dictionary",
+      "sense_heading": "STOP",
+      "publisher_indexed_cefr": "C1",
+      "paraphrased_sense": "Stop an activity before completion or give up a policy or plan.",
+      "draft_sense_alignment": "STRONG_STOP_PLAN_MATCH",
+      "editorial_note": "Oxford 3000 B2 is word/POS; Cambridge Advanced STOP sense shows C1. Cambridge Learner's STOP DOING entry is separately unlabelled, so do not conflate editions.",
+      "source_access": "PUBLISHER_INDEXED_SEARCH_RESULT_DIRECT_PAGE_HTTP_403",
+      "independently_approved": false
+    },
+    {
+      "word": "deliberately",
+      "publisher": "Cambridge University Press",
+      "source_url": "https://dictionary.cambridge.org/dictionary/english/deliberately",
+      "observed_on": "2026-10-28",
+      "publisher_dictionary": "Cambridge Advanced Learner's Dictionary",
+      "sense_heading": "INTENTIONALLY",
+      "publisher_indexed_cefr": "B2",
+      "paraphrased_sense": "Done on purpose, not accidentally.",
+      "draft_sense_alignment": "STRONG_INTENTIONAL_MATCH",
+      "editorial_note": "Oxford 3000 B2 and Cambridge B2 agree at the intended intentional sense; draft C1 needs independent pedagogical rationale or retiering.",
+      "source_access": "PUBLISHER_INDEXED_SEARCH_RESULT_DIRECT_PAGE_HTTP_403",
+      "independently_approved": false
+    },
+    {
+      "word": "premises",
+      "publisher": "Cambridge University Press",
+      "source_url": "https://dictionary.cambridge.org/dictionary/english/premises",
+      "observed_on": "2026-10-28",
+      "publisher_dictionary": "Cambridge Advanced Learner's Dictionary",
+      "sense_heading": "LAND_AND_BUILDINGS_PLURAL_NOUN",
+      "publisher_indexed_cefr": "C1",
+      "paraphrased_sense": "Land and buildings used or owned by an organisation.",
+      "draft_sense_alignment": "STRONG_COMPANY_BUILDINGS_MATCH",
+      "editorial_note": "Oxford core-list absence is not a CEFR judgement; Cambridge index supports a C1 plural-noun sense, but independent direct-publisher verification and plural-only POS review remain needed.",
+      "source_access": "PUBLISHER_INDEXED_SEARCH_RESULT_DIRECT_PAGE_HTTP_403",
+      "independently_approved": false
+    },
+    {
+      "word": "accommodate",
+      "publisher": "Cambridge University Press",
+      "source_url": "https://dictionary.cambridge.org/us/dictionary/english/accommodate",
+      "observed_on": "2026-10-28",
+      "publisher_dictionary": "Cambridge Advanced Learner's Dictionary",
+      "sense_heading": "FIND_A_PLACE_FOR_AND_SUIT",
+      "publisher_indexed_cefr": null,
+      "paraphrased_sense": "Provide enough space or a place; separately, meet another person's needs.",
+      "draft_sense_alignment": "MIXED_DEFINITION_CAPACITY_EXAMPLE",
+      "editorial_note": "Publisher-indexed Cambridge entry shows separate senses but no visible exact-sense CEFR label. Draft definition combines capacity and adjustment; example only tests capacity.",
+      "source_access": "PUBLISHER_INDEXED_SEARCH_RESULT_DIRECT_PAGE_HTTP_403",
+      "independently_approved": false
+    }
+  ],
+  "cambridge_direct_page_access": "HTTP_403_FOR_ALL_FOUR_FULL_PAGES"
 }
