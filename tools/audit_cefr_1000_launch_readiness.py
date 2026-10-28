@@ -232,6 +232,9 @@ def audit(ledger=None, after_deployment=False):
               "oxford_b2_lower_twelve_direct_word_pos_observations": 0,
               "oxford_b2_lower_twelve_retained_requiring_resolution": 0,
               "oxford_b2_lower_twelve_retained_resolved": 0,
+              "oxford_c1_b2_conflict_twelve_direct_word_pos_observations": 0,
+              "oxford_c1_b2_conflict_twelve_retained_requiring_resolution": 0,
+              "oxford_c1_b2_conflict_twelve_retained_resolved": 0,
               "oxford_b2_twelve_direct_word_pos_observations": 0,
               "oxford_b2_twelve_retained_requiring_resolution": 0,
               "oxford_b2_twelve_retained_resolved": 0,
@@ -820,6 +823,70 @@ def audit(ledger=None, after_deployment=False):
     # Ten source word/POS levels are A1/A2/B1, two B2. This is NOT
     # independent exact-sense evidence. A retained B2 sense needs genuine
     # independent publisher exact-sense CEFR + bilingual/example signoff.
+    # Twelve C1-draft words are Oxford 5000 B2 at word/POS level. Independent
+    # exact-sense C1 justification or independently reviewed replacement is required.
+    c1_b2_conflict = read_json(
+        ROOT / "draft/CEFR-1000-OXFORD-C1-B2-CONFLICT-TWELVE-2026-10-28.json")
+    c1_b2_conflict_flags = c1_b2_conflict.get("records", [])
+    c1_b2_conflict_expected = {"additionally", "disability", "dominant", "evaluation",
+                              "identical", "implement", "inevitable", "interpretation",
+                              "invasion", "precisely", "probability", "sustainable"}
+    report["oxford_c1_b2_conflict_twelve_direct_word_pos_observations"] = len(c1_b2_conflict_flags)
+    if (c1_b2_conflict.get("status") !=
+            "DIRECT_OXFORD_C1_DRAFT_LOWER_WORD_POS_TRIAGE_NOT_INDEPENDENT_APPROVAL"
+            or len(c1_b2_conflict_flags) != 12
+            or {x.get("word") for x in c1_b2_conflict_flags if isinstance(x, dict)}
+               != c1_b2_conflict_expected
+            or c1_b2_conflict.get("word_pos_discrepancies") != 12
+            or c1_b2_conflict.get("independently_approved_count") != 0):
+        issues.append("Additional Oxford C1/B2 word/POS source packet missing or falsely approved")
+    c1_b2_conflict_receipts = d.get("oxford_c1_b2_conflict_twelve_review_receipts")
+    if not isinstance(c1_b2_conflict_receipts, list):
+        issues.append("Additional Oxford C1/B2 independent receipts missing or malformed")
+        c1_b2_conflict_receipts = []
+    c1_b2_conflict_index = {}
+    for rec in c1_b2_conflict_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Malformed additional Oxford C1/B2 independent receipt")
+            continue
+        key = (rec.get("word"), rec.get("proposed_level"))
+        if key in c1_b2_conflict_index:
+            issues.append("Duplicate additional Oxford C1/B2 independent receipt")
+        c1_b2_conflict_index[key] = rec
+    for key in c1_b2_conflict_index:
+        if key not in {(w, "C1") for w in c1_b2_conflict_expected}:
+            issues.append("Unknown additional Oxford C1/B2 independent receipt")
+    for flag in c1_b2_conflict_flags:
+        if not isinstance(flag, dict):
+            continue
+        word = flag.get("word")
+        entry = entry_lookup.get((word, "C1"))
+        if entry is None:
+            continue  # Retiered/replaced entries need their own full signoff.
+        report["oxford_c1_b2_conflict_twelve_retained_requiring_resolution"] += 1
+        rec = c1_b2_conflict_index.get((word, "C1"))
+        if not independent_word_stage(rec, word, "sense_specific_cefr", expected_level="C1"):
+            continue
+        if (rec.get("decision") != "RETAIN_AFTER_INDEPENDENT_C1_EXACT_SENSE_REVIEW"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or rec.get("verified_part_of_speech") != entry.get("part_of_speech")
+                or rec.get("verified_cefr_level") != "C1"
+                or rec.get("source_cefr_level") != "C1"
+                or not isinstance(rec.get("source_scope_rationale"), str)
+                or len(rec["source_scope_rationale"].strip()) < 50):
+            continue
+        if flag.get("source_cefr") == "B2":
+            rationale = rec.get("oxford_word_pos_level_difference_resolution")
+            if not isinstance(rationale, str) or len(rationale.strip()) < 60:
+                continue
+            if (entry.get("english_definition") == flag.get("shortlist_english_definition")
+                    and entry.get("example_sentence") == flag.get("shortlist_example")):
+                continue
+        report["oxford_c1_b2_conflict_twelve_retained_resolved"] += 1
+    if (report["oxford_c1_b2_conflict_twelve_retained_requiring_resolution"]
+            != report["oxford_c1_b2_conflict_twelve_retained_resolved"]):
+        issues.append("Additional retained Oxford C1/B2 word/POS word/POS conflicts lack independent exact-sense B2 resolution")
+
     b2_lower = read_json(
         ROOT / "draft/CEFR-1000-OXFORD-B2-LOWER-LEVEL-TWELVE-2026-10-28.json")
     b2_lower_flags = b2_lower.get("records", [])
