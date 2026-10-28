@@ -23,6 +23,8 @@ on:
       - tools/audit_cefr_1000_oxford_a1_third_twelve.py
       - draft/CEFR-1000-OXFORD-A1-FOURTH-TWENTYFOUR-2026-10-29.json
       - tools/audit_cefr_1000_oxford_a1_fourth_twentyfour.py
+      - draft/CEFR-1000-OXFORD-A1-FIFTH-TWENTYFOUR-2026-10-29.json
+      - tools/audit_cefr_1000_oxford_a1_fifth_twentyfour.py
       - tools/audit_cefr_1000_oxford_a1_twelve.py
       - draft/CEFR-1000-CAMBRIDGE-A2-RECOVERY-TWELVE-2026-10-28.json
       - tools/audit_cefr_1000_a2_recovery_twelve.py
@@ -135,6 +137,11 @@ jobs:
       - name: Reject 48 forged fourth-batch A1 source, Myanmar, homograph and review mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_a1_fourth_twentyfour.py --level ALL --self-test
+      - name: Audit 24 new A1 Oxford publisher word-POS observations and six held rewrites
+        run: python3 tools/audit_cefr_1000_oxford_a1_fifth_twentyfour.py --level "${{ matrix.level }}"
+      - name: Reject 111 forged A1 publisher, bilingual, upstream and approval mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_oxford_a1_fifth_twentyfour.py --level ALL --self-test
       - name: Audit Oxford A2 follow-up twelve publisher word/POS observations (not independent signoff)
         run: python3 tools/audit_cefr_1000_oxford_a2_followup_twelve.py --level "${{ matrix.level }}"
       - name: Reject 24 forged Oxford A2 follow-up source, snapshot and review mutations
