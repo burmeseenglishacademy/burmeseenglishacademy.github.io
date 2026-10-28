@@ -31,6 +31,8 @@ on:
       - tools/audit_cefr_1000_oxford_a2_followup_twelve.py
       - draft/CEFR-1000-OXFORD-A2-THIRD-TWENTYFOUR-2026-10-29.json
       - tools/audit_cefr_1000_oxford_a2_third_twentyfour.py
+      - draft/CEFR-1000-A2-THIRD-BILINGUAL-REWRITE-CANDIDATES-2026-10-29.json
+      - tools/audit_cefr_1000_a2_rewrites.py
       - draft/CEFR-1000-OXFORD-B1-LOWER-LEVEL-TWELVE-2026-10-28.json
       - draft/CEFR-1000-OXFORD-B1-MIXED-TWELVE-2026-10-28.json
       - tools/audit_cefr_1000_oxford_b1_mixed_twelve.py
@@ -137,6 +139,11 @@ jobs:
       - name: Reject 48 forged Oxford A2 source and false-signoff mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_a2_third_twentyfour.py --level ALL --self-test
+      - name: Audit 12 A2 English Myanmar example rewrite proposals (not approved)
+        run: python3 tools/audit_cefr_1000_a2_rewrites.py --level "${{ matrix.level }}"
+      - name: Reject 24 forged A2 bilingual rewrite and approval mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_a2_rewrites.py --level ALL --self-test
       - name: Audit twelve A2 historical source-recovery publisher leads (zero signoff)
         run: python3 tools/audit_cefr_1000_a2_recovery_twelve.py --level "${{ matrix.level }}"
       - name: Reject fourteen A2 recovery forged CEFR, Myanmar, source and approval mutations
