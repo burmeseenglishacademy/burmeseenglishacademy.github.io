@@ -1,0 +1,420 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "C1_TWELVE_DIRECT_OXFORD_WORD_POS_AND_UNLISTED_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-28",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 12
+  },
+  "word_pos_discrepancies": 3,
+  "unlisted_in_inspected_core_lists": 1,
+  "independently_approved_count": 0,
+  "source_limitations": "Direct official Oxford 3000 and 5000 CEFR PDFs inspected 2026-10-28. PDF pages one-based and extracted lines zero-based. Oxford word/POS levels are NOT independently verified exact-sense CEFR, English, Myanmar, example or reviewer approval. An absent headword is NOT evidence of a particular CEFR level. All 12 provisional entries remain unchanged on editorial hold.",
+  "records": [
+    {
+      "word": "verdict",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An official decision made by a jury or court about a case.",
+        "myanmar_meaning": "တရားရုံး သို့မဟုတ် ဂျူရီအဖွဲ့၏ ဆုံးဖြတ်ချက်",
+        "example_sentence": "The jury announced its verdict after two days."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 648,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 8,
+        "extracted_line": 1971,
+        "source_excerpt": "verdict n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "JURY_VERDICT_VS_GENERAL_COURT_DECISION_AND_MYANMAR_LEGAL_PRECISION",
+      "independent_reviewer_task": "Human-independent reviewer: verify verdict C1 exact sense against dated direct publisher dictionary evidence, not just Oxford word/POS lists. Review English definition, fluent Myanmar meaning, original example grammar/collocation and British usage; bind the final decision to the exact reviewed content and source URLs with a genuine independent signed receipt.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "abandon",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To stop supporting or continuing a plan or activity.",
+        "myanmar_meaning": "စွန့်လွှတ်သည်၊ ဆက်မလုပ်တော့ဘဲ ရပ်တန့်သည်",
+        "example_sentence": "The organisers had to abandon the outdoor event because of the storm."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 649,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 10,
+        "extracted_line": 2593,
+        "source_excerpt": "abandon v.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "SAME_SENSE_OXFORD_B2_CONFLICT_WITH_C1_DRAFT",
+      "independent_reviewer_task": "Human-independent reviewer: verify abandon C1 exact sense against dated direct publisher dictionary evidence, not just Oxford word/POS lists. Review English definition, fluent Myanmar meaning, original example grammar/collocation and British usage; explicitly justify the lower Oxford B2 label if retained at C1; bind the final decision to the exact reviewed content and source URLs with a genuine independent signed receipt.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "accommodate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To make space for someone or adjust to meet a need.",
+        "myanmar_meaning": "နေရာပေးသည်၊ လိုအပ်ချက်နှင့် ကိုက်ညီအောင် စီစဉ်ပေးသည်",
+        "example_sentence": "The hall can accommodate two hundred guests."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 650,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 1,
+        "extracted_line": 9,
+        "source_excerpt": "accommodate v.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "B2_SOURCE_AND_MIXED_CAPACITY_VS_ADJUSTMENT_DEFINITION",
+      "independent_reviewer_task": "Human-independent reviewer: verify accommodate C1 exact sense against dated direct publisher dictionary evidence, not just Oxford word/POS lists. Review English definition, fluent Myanmar meaning, original example grammar/collocation and British usage; explicitly justify the lower Oxford B2 label if retained at C1; bind the final decision to the exact reviewed content and source URLs with a genuine independent signed receipt.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "aesthetic",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Concerned with beauty or the appearance of something.",
+        "myanmar_meaning": "အလှအပဆိုင်ရာ",
+        "example_sentence": "The designer considered both function and aesthetic appeal."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 651,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 3,
+        "extracted_line": 744,
+        "source_excerpt": "aesthetic adj.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "AESTHETIC_APPEAL_COLLOCATION_VS_ADJECTIVE_SENSE",
+      "independent_reviewer_task": "Human-independent reviewer: verify aesthetic C1 exact sense against dated direct publisher dictionary evidence, not just Oxford word/POS lists. Review English definition, fluent Myanmar meaning, original example grammar/collocation and British usage; bind the final decision to the exact reviewed content and source URLs with a genuine independent signed receipt.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "algorithm",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A set of defined steps used to solve a problem or process information.",
+        "myanmar_meaning": "ပြဿနာဖြေရှင်းရန် သတ်မှတ်ထားသော အဆင့်လိုက်နည်းလမ်း",
+        "example_sentence": "The search algorithm sorts results by relevance."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 652,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 3,
+        "extracted_line": 752,
+        "source_excerpt": "algorithm n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "ALGORITHM_TECHNICAL_SCOPE_AND_MYANMAR_TEACHING_GLOSS",
+      "independent_reviewer_task": "Human-independent reviewer: verify algorithm C1 exact sense against dated direct publisher dictionary evidence, not just Oxford word/POS lists. Review English definition, fluent Myanmar meaning, original example grammar/collocation and British usage; bind the final decision to the exact reviewed content and source URLs with a genuine independent signed receipt.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "complexity",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The state of having many connected parts that are difficult to understand.",
+        "myanmar_meaning": "ရှုပ်ထွေးမှု",
+        "example_sentence": "The complexity of the contract delayed the agreement."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 653,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 4,
+        "extracted_line": 941,
+        "source_excerpt": "complexity n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "COMPLEXITY_ABSTRACT_NOUN_EXAMPLE_NATURALNESS",
+      "independent_reviewer_task": "Human-independent reviewer: verify complexity C1 exact sense against dated direct publisher dictionary evidence, not just Oxford word/POS lists. Review English definition, fluent Myanmar meaning, original example grammar/collocation and British usage; bind the final decision to the exact reviewed content and source URLs with a genuine independent signed receipt.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "deliberately",
+      "level": "C1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "In a way that is planned or intentional.",
+        "myanmar_meaning": "ရည်ရွယ်ချက်ရှိရှိ၊ တမင်တကာ",
+        "example_sentence": "She deliberately left extra time for questions."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 654,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 11,
+        "extracted_line": 2770,
+        "source_excerpt": "deliberately adv.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "SAME_SENSE_OXFORD_B2_CONFLICT_WITH_C1_DRAFT",
+      "independent_reviewer_task": "Human-independent reviewer: verify deliberately C1 exact sense against dated direct publisher dictionary evidence, not just Oxford word/POS lists. Review English definition, fluent Myanmar meaning, original example grammar/collocation and British usage; explicitly justify the lower Oxford B2 label if retained at C1; bind the final decision to the exact reviewed content and source URLs with a genuine independent signed receipt.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "dignity",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The quality of deserving respect and being treated with honour.",
+        "myanmar_meaning": "ဂုဏ်သိက္ခာ",
+        "example_sentence": "Every patient deserves to be treated with dignity."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 655,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 5,
+        "extracted_line": 1084,
+        "source_excerpt": "dignity n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "DIGNITY_RESPECT_VS_SELF_RESPECT_SENSE",
+      "independent_reviewer_task": "Human-independent reviewer: verify dignity C1 exact sense against dated direct publisher dictionary evidence, not just Oxford word/POS lists. Review English definition, fluent Myanmar meaning, original example grammar/collocation and British usage; bind the final decision to the exact reviewed content and source URLs with a genuine independent signed receipt.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "ideology",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A set of beliefs or ideas that guides a group or movement.",
+        "myanmar_meaning": "အယူဝါဒ၊ အတွေးအခေါ်စနစ်",
+        "example_sentence": "The movement was shaped by a particular ideology."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 656,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 5,
+        "extracted_line": 1305,
+        "source_excerpt": "ideology n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "IDEOLOGY_BELIEF_SYSTEM_VS_POLITICAL_MOVEMENT_CONTEXT",
+      "independent_reviewer_task": "Human-independent reviewer: verify ideology C1 exact sense against dated direct publisher dictionary evidence, not just Oxford word/POS lists. Review English definition, fluent Myanmar meaning, original example grammar/collocation and British usage; bind the final decision to the exact reviewed content and source URLs with a genuine independent signed receipt.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "inclusion",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The practice of making sure people can take part and feel accepted.",
+        "myanmar_meaning": "အားလုံးပါဝင်နိုင်စေရန် ဆောင်ရွက်ခြင်း",
+        "example_sentence": "The organisation promotes inclusion in the workplace."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 657,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 5,
+        "extracted_line": 1318,
+        "source_excerpt": "inclusion n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "SOCIAL_INCLUSION_VS_GENERAL_INCLUDE_SENSE",
+      "independent_reviewer_task": "Human-independent reviewer: verify inclusion C1 exact sense against dated direct publisher dictionary evidence, not just Oxford word/POS lists. Review English definition, fluent Myanmar meaning, original example grammar/collocation and British usage; bind the final decision to the exact reviewed content and source URLs with a genuine independent signed receipt.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "isolation",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The state of being separated from other people or places.",
+        "myanmar_meaning": "သီးခြားခွဲထားခြင်း၊ အထီးကျန်မှု",
+        "example_sentence": "Long periods of isolation can affect wellbeing."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 658,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 6,
+        "extracted_line": 1378,
+        "source_excerpt": "isolation n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "PHYSICAL_SEPARATION_VS_SOCIAL_LONELINESS_AND_WELLBEING",
+      "independent_reviewer_task": "Human-independent reviewer: verify isolation C1 exact sense against dated direct publisher dictionary evidence, not just Oxford word/POS lists. Review English definition, fluent Myanmar meaning, original example grammar/collocation and British usage; bind the final decision to the exact reviewed content and source URLs with a genuine independent signed receipt.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "premises",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The land and buildings used by an organisation or business.",
+        "myanmar_meaning": "လုပ်ငန်းတည်ရှိရာ အဆောက်အအုံနှင့် မြေနေရာ",
+        "example_sentence": "Visitors must sign in before entering the premises."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 659,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level",
+        "urls_inspected": [
+          "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+          "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf"
+        ],
+        "observed_on": "2026-10-28",
+        "source_cefr_level": null,
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_LISTS_NOT_EVIDENCE_OF_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "NOT_IN_INSPECTED_OXFORD_CORE_LISTS_NOT_CEFR_PROOF_PLURAL_ONLY_NOUN",
+      "independent_reviewer_task": "Human-independent reviewer: verify premises C1 exact sense against dated direct publisher dictionary evidence, not just Oxford word/POS lists. Review English definition, fluent Myanmar meaning, original example grammar/collocation and British usage; Oxford core-list absence is not a CEFR level and cannot be treated as approval; bind the final decision to the exact reviewed content and source URLs with a genuine independent signed receipt.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
