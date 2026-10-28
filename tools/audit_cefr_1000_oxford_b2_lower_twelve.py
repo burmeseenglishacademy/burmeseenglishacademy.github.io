@@ -62,7 +62,7 @@ def audit(data, shortlist, raw, level="ALL"):
         errors.append("publisher source/date drift")
     if data.get("shortlist_blob_sha") != git_blob_sha(raw):
         errors.append("canonical shortlist blob mismatch")
-    if data.get("record_count") != 12 or data.get("counts_by_level") != dict(A1=0, A2=0, B2=12, B2=0, C1=0):
+    if data.get("record_count") != 12 or data.get("counts_by_level") != dict(A1=0, A2=0, B1=0, B2=12, C1=0):
         errors.append("record or per-level count drift")
     if data.get("word_pos_discrepancies") != 10 or data.get("independently_approved_count") != 0:
         errors.append("discrepancy count or false approval")
@@ -70,7 +70,7 @@ def audit(data, shortlist, raw, level="ALL"):
     if not all(s in note.casefold() for s in ("direct official oxford", "not", "independent")):
         errors.append("provenance caveat missing")
     entries = shortlist.get("entries", [])
-    if len(entries) != 1000 or shortlist.get("counts_by_level") != {x: 200 for x in ("A1", "A2", "B2", "B2", "C1")}:
+    if len(entries) != 1000 or shortlist.get("counts_by_level") != {x: 200 for x in ("A1", "A2", "B1", "B2", "C1")}:
         errors.append("canonical 1000/level counts drift")
     lookup = {(x.get("word"), x.get("level")): x for x in entries}
     rows = data.get("records")
@@ -124,7 +124,7 @@ def audit(data, shortlist, raw, level="ALL"):
             errors.append(word + ": canonical independent review hold lost")
         if len(str(row.get("editorial_risk", ""))) < 60 or len(str(row.get("independent_review_task", ""))) < 80:
             errors.append(word + ": substantive reviewer instruction missing")
-    if level not in ("A1", "A2", "B2", "B2", "C1", "ALL"):
+    if level not in ("A1", "A2", "B1", "B2", "C1", "ALL"):
         errors.append("unknown level")
     return errors
 
