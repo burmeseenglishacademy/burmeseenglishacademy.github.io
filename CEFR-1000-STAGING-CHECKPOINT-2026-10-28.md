@@ -1,5 +1,7 @@
 # CEFR 1,000 — 2026-10-28 staging source and release-safeguard checkpoint
 
+> **Latest 2026-10-28 C1 unlabelled-source triage:** [Six Cambridge formal C1 draft senses with no observed publisher CEFR labels, 20 written fail-closed negative mutations and new independent C1 signoff gate](CEFR-1000-C1-UNLABELLED-SOURCE-QC-CHECKPOINT-2026-10-28.md). The new Python/Actions run conclusions are **UNVERIFIED**; previous verified six-job structural run 40637802552 and documentary run 40637802594 predate this code. First-pass counts remain 200 per level, independent approvals 0 per level. No production changes; release BLOCKED.
+
 > **Latest verified A2 recovery update (2026-10-28):** [12 publisher-indexed A2 historical recovery observations, 15/15 fake-signoff tests, six-job GitHub Actions run 40637802552 and no-deploy run 40637802594](CEFR-1000-A2-RECOVERY-QC-CHECKPOINT-2026-10-28.md). The new work is staging-only. Counts remain A1/A2/B1/B2/C1 200 written each, **0 independently approved each**; launch remains BLOCKED. Source evidence does not constitute independent CEFR or bilingual signoff.
 
 **Release decision: BLOCKED; staging only.** Scope is the user-approved **1,000 total** CEFR A1–C1 bilingual entries, **not 5,000**. Work remains exclusively on `cefr-5000-bilingual-qa-staging`. No merge, main modification, production deployment or final human signoff is claimed.
