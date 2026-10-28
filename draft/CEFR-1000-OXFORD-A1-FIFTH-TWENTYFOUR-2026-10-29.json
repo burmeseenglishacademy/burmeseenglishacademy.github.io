@@ -13,7 +13,7 @@
     "C1": 0
   },
   "independently_approved_count": 0,
-  "source_limitations": "Official Oxford 3000 by CEFR level PDF directly opened and inspected 2026-10-29. PDF pages one-based, extracted web lines zero-based. Oxford provides word/POS CEFR, NOT exact-sense CEFR or English/Myanmar/example validation. No human-independent approvals, audio listening, physical iPhone testing or release. All proposals remain unreviewed and unapplied.",
+  "source_limitations": "Official Oxford 3000 by CEFR level PDF directly opened and inspected 2026-10-29. PDF pages one-based, extracted web lines zero-based. Oxford provides word/POS CEFR, NOT exact-sense CEFR or English/Myanmar/example validation. No human-independent approvals, audio listening, physical iPhone testing or release. All proposals remain unreviewed and unapplied. Cambridge publisher-owned search-index excerpts inspected on 2026-10-29 for work/little/old; direct Cambridge pages returned HTTP 403. Indexed sense labels are NOT directly inspected publisher-page evidence and cannot independently approve a word.",
   "editorial_priority": [
     "WORK_EMPLOYMENT_VS_GENERAL_EFFORT",
     "YEAR_TWELVE_MONTHS_VS_CALENDAR_YEAR",
@@ -872,6 +872,98 @@
       "suggested_example_sentence": "I love my family.",
       "review_status": "UNREVIEWED_UNAPPLIED_PROPOSAL",
       "human_independent_approval": false
+    }
+  ],
+  "cambridge_publisher_indexed_sense_leads": [
+    {
+      "word": "work",
+      "part_of_speech": "verb",
+      "sense_heading": "JOB",
+      "publisher": "Cambridge University Press",
+      "dictionary": "Cambridge Learner's Dictionary",
+      "source_url": "https://dictionary.cambridge.org/us/dictionary/learner-english/work",
+      "observed_on": "2026-10-29",
+      "indexed_excerpt": "to do a job, especially the job you do to earn money",
+      "indexed_cefr_level": "A1",
+      "access": "PUBLISHER_SEARCH_INDEXED_EXCERPT_DIRECT_PAGE_HTTP_403",
+      "evidence_scope": "SEARCH_INDEXED_SENSE_LEAD_NOT_DIRECT_PAGE_NOT_INDEPENDENT",
+      "editorial_concern": "Draft broad effort definition must align to occupational example; no independent Myanmar review.",
+      "independently_approved": false
+    },
+    {
+      "word": "little",
+      "part_of_speech": "adjective",
+      "sense_heading": "SMALL",
+      "publisher": "Cambridge University Press",
+      "dictionary": "Cambridge Learner's Dictionary",
+      "source_url": "https://dictionary.cambridge.org/dictionary/learner-english/little",
+      "observed_on": "2026-10-29",
+      "indexed_excerpt": "small in size or amount",
+      "indexed_cefr_level": "A1",
+      "access": "PUBLISHER_SEARCH_INDEXED_EXCERPT_DIRECT_PAGE_HTTP_403",
+      "evidence_scope": "SEARCH_INDEXED_SENSE_LEAD_NOT_DIRECT_PAGE_NOT_INDEPENDENT",
+      "editorial_concern": "Dog example illustrates size; distinguish from short duration and quantifier.",
+      "independently_approved": false
+    },
+    {
+      "word": "old",
+      "part_of_speech": "adjective",
+      "sense_heading": "LIVED LONG",
+      "publisher": "Cambridge University Press",
+      "dictionary": "Cambridge Learner's Dictionary",
+      "source_url": "https://dictionary.cambridge.org/dictionary/learner-english/old",
+      "observed_on": "2026-10-29",
+      "indexed_excerpt": "having lived or existed for a long time",
+      "indexed_cefr_level": "A1",
+      "access": "PUBLISHER_SEARCH_INDEXED_EXCERPT_DIRECT_PAGE_HTTP_403",
+      "evidence_scope": "SEARCH_INDEXED_SENSE_LEAD_NOT_DIRECT_PAGE_NOT_INDEPENDENT",
+      "editorial_concern": "Grandfather example is age of a person, not used clothes or past system.",
+      "independently_approved": false
+    },
+    {
+      "word": "little",
+      "part_of_speech": "adjective",
+      "sense_heading": "SHORT",
+      "publisher": "Cambridge University Press",
+      "dictionary": "Cambridge Learner's Dictionary",
+      "source_url": "https://dictionary.cambridge.org/dictionary/learner-english/little",
+      "observed_on": "2026-10-29",
+      "indexed_excerpt": "short in time or distance",
+      "indexed_cefr_level": "B2",
+      "access": "PUBLISHER_SEARCH_INDEXED_EXCERPT_DIRECT_PAGE_HTTP_403",
+      "evidence_scope": "SEARCH_INDEXED_SENSE_LEAD_NOT_DIRECT_PAGE_NOT_INDEPENDENT",
+      "editorial_concern": "Contrasting sense; do not transfer B2 to A1 SMALL sense.",
+      "independently_approved": false
+    },
+    {
+      "word": "old",
+      "part_of_speech": "adjective",
+      "sense_heading": "USED A LOT",
+      "publisher": "Cambridge University Press",
+      "dictionary": "Cambridge Learner's Dictionary",
+      "source_url": "https://dictionary.cambridge.org/dictionary/learner-english/old",
+      "observed_on": "2026-10-29",
+      "indexed_excerpt": "having been used or owned for a long time",
+      "indexed_cefr_level": "A2",
+      "access": "PUBLISHER_SEARCH_INDEXED_EXCERPT_DIRECT_PAGE_HTTP_403",
+      "evidence_scope": "SEARCH_INDEXED_SENSE_LEAD_NOT_DIRECT_PAGE_NOT_INDEPENDENT",
+      "editorial_concern": "Contrasts with LIVED LONG A1 and Essential British classification.",
+      "independently_approved": false
+    },
+    {
+      "word": "old",
+      "part_of_speech": "adjective",
+      "sense_heading": "USED OR OWNED LONG",
+      "publisher": "Cambridge University Press",
+      "dictionary": "Cambridge Essential British English Dictionary",
+      "source_url": "https://dictionary.cambridge.org/dictionary/essential-british-english/old",
+      "observed_on": "2026-10-29",
+      "indexed_excerpt": "having been used or owned for a long time",
+      "indexed_cefr_level": "A1",
+      "access": "PUBLISHER_SEARCH_INDEXED_EXCERPT_DIRECT_PAGE_HTTP_403",
+      "evidence_scope": "SEARCH_INDEXED_SENSE_LEAD_NOT_DIRECT_PAGE_NOT_INDEPENDENT",
+      "editorial_concern": "Same broad sense appears A1 in Cambridge Essential British but A2 in Learner's Dictionary; reviewer must reconcile publisher-list differences.",
+      "independently_approved": false
     }
   ]
 }
