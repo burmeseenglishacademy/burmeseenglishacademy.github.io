@@ -1,0 +1,415 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A1_SECOND_TWELVE_DIRECT_OXFORD_WORD_POS_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-28",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 12,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "independently_approved_count": 0,
+  "source_limitations": "Direct official Oxford University Press Oxford 3000 CEFR PDF text inspected 2026-10-28. Page is one-based, extracted line zero-based. These are A1 headword/POS observations, NOT independently verified exact-sense CEFR, fluent Myanmar, grammar, listening or human signoff. Original shortlist unchanged; all entries remain on hold.",
+  "records": [
+    {
+      "word": "the",
+      "level": "A1",
+      "part_of_speech": "article",
+      "shortlist_snapshot": {
+        "english_definition": "Used to refer to a particular person or thing.",
+        "myanmar_meaning": "အတိအကျသတ်မှတ်ထားသော အရာကို ညွှန်းသည့်စကား",
+        "example_sentence": "The book is on the table."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 6,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 3,
+        "extracted_line": 782,
+        "source_excerpt": "the definite article",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "ARTICLE_DEFINITION_NOT_MYANMAR_EQUIVALENT",
+      "independent_reviewer_task": "The Myanmar field is a metalinguistic explanation rather than a natural context-specific translation. Verify use of definite reference and article absence in Myanmar. Require separate dated human exact-sense CEFR, English, fluent Myanmar and original-example review receipts bound to final content; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "this",
+      "level": "A1",
+      "part_of_speech": "determiner",
+      "shortlist_snapshot": {
+        "english_definition": "Used to point to a person or thing near the speaker.",
+        "myanmar_meaning": "ဒီ၊ ဤ",
+        "example_sentence": "This bag is mine."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 7,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 3,
+        "extracted_line": 795,
+        "source_excerpt": "this det./pron.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "DETERMINER_VS_PRONOUN_SCOPE",
+      "independent_reviewer_task": "Draft example is determiner use only; Oxford includes pronoun. Independently review the intended limited sense and near-speaker reference. Require separate dated human exact-sense CEFR, English, fluent Myanmar and original-example review receipts bound to final content; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "that",
+      "level": "A1",
+      "part_of_speech": "determiner",
+      "shortlist_snapshot": {
+        "english_definition": "Used to point to a person or thing farther away.",
+        "myanmar_meaning": "ဟို၊ အဲဒီ",
+        "example_sentence": "That house is big."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 8,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 3,
+        "extracted_line": 781,
+        "source_excerpt": "that det., pron., conj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "POLYFUNCTIONAL_HEADWORD_SCOPE",
+      "independent_reviewer_task": "Oxford lists determiner, pronoun and conjunction; the draft's distant demonstrative determiner should not be used to justify the other senses. Require separate dated human exact-sense CEFR, English, fluent Myanmar and original-example review receipts bound to final content; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "he",
+      "level": "A1",
+      "part_of_speech": "pronoun",
+      "shortlist_snapshot": {
+        "english_definition": "A male person who has already been mentioned.",
+        "myanmar_meaning": "သူ (အမျိုးသား)",
+        "example_sentence": "He is my brother."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 9,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 2,
+        "extracted_line": 355,
+        "source_excerpt": "he pron.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "GENDER_AND_REFERENCE",
+      "independent_reviewer_task": "Verify masculine third-person pronoun gloss and natural Myanmar sentence register; 'already mentioned' is not required in all uses. Require separate dated human exact-sense CEFR, English, fluent Myanmar and original-example review receipts bound to final content; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "she",
+      "level": "A1",
+      "part_of_speech": "pronoun",
+      "shortlist_snapshot": {
+        "english_definition": "A female person who has already been mentioned.",
+        "myanmar_meaning": "သူ (အမျိုးသမီး)",
+        "example_sentence": "She is my sister."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 10,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 3,
+        "extracted_line": 686,
+        "source_excerpt": "she pron.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "GENDER_AND_REFERENCE",
+      "independent_reviewer_task": "Verify feminine third-person pronoun gloss and Myanmar gender marking in context; avoid implying Myanmar သူ always encodes gender. Require separate dated human exact-sense CEFR, English, fluent Myanmar and original-example review receipts bound to final content; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "it",
+      "level": "A1",
+      "part_of_speech": "pronoun",
+      "shortlist_snapshot": {
+        "english_definition": "A thing or animal already mentioned.",
+        "myanmar_meaning": "အဲဒါ၊ ၎င်း",
+        "example_sentence": "It is a small cat."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 11,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 2,
+        "extracted_line": 405,
+        "source_excerpt": "it pron.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "MISSING_ANTECEDENT_AND_DUMMY_IT",
+      "independent_reviewer_task": "Example 'It is a small cat.' lacks a prior antecedent despite the draft definition; independently revise or supply context. Oxford word/POS does not validate this exact sense. Require separate dated human exact-sense CEFR, English, fluent Myanmar and original-example review receipts bound to final content; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "my",
+      "level": "A1",
+      "part_of_speech": "determiner",
+      "shortlist_snapshot": {
+        "english_definition": "Belonging to the person speaking.",
+        "myanmar_meaning": "ကျွန်တော့်၊ ကျွန်မရဲ့",
+        "example_sentence": "My name is May."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 12,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 2,
+        "extracted_line": 508,
+        "source_excerpt": "my det.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "MYANMAR_REGISTER",
+      "independent_reviewer_task": "Check conversational and formal possessive register, consistent translation and original example grammar. Require separate dated human exact-sense CEFR, English, fluent Myanmar and original-example review receipts bound to final content; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "your",
+      "level": "A1",
+      "part_of_speech": "determiner",
+      "shortlist_snapshot": {
+        "english_definition": "Belonging to the person being spoken to.",
+        "myanmar_meaning": "သင့်၊ မင်းရဲ့",
+        "example_sentence": "What is your name?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 13,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 4,
+        "extracted_line": 906,
+        "source_excerpt": "your det.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "MYANMAR_REGISTER",
+      "independent_reviewer_task": "Check register difference between သင့် and မင်းရဲ့, and the context-appropriate possessive gloss. Require separate dated human exact-sense CEFR, English, fluent Myanmar and original-example review receipts bound to final content; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "yes",
+      "level": "A1",
+      "part_of_speech": "exclamation",
+      "shortlist_snapshot": {
+        "english_definition": "Used to give a positive answer.",
+        "myanmar_meaning": "ဟုတ်ကဲ့၊ ဟုတ်တယ်",
+        "example_sentence": "Yes, I can help."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 14,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 4,
+        "extracted_line": 902,
+        "source_excerpt": "yes exclam.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "AFFIRMATION_REGISTER",
+      "independent_reviewer_task": "Check positive-answer meaning, punctuation and Myanmar formal/informal affirmative responses. Require separate dated human exact-sense CEFR, English, fluent Myanmar and original-example review receipts bound to final content; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "no",
+      "level": "A1",
+      "part_of_speech": "exclamation",
+      "shortlist_snapshot": {
+        "english_definition": "Used to give a negative answer.",
+        "myanmar_meaning": "မဟုတ်ဘူး၊ ဟင့်အင်း",
+        "example_sentence": "No, I do not know."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 15,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 3,
+        "extracted_line": 526,
+        "source_excerpt": "no exclam., det.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "EXCLAMATION_VS_DETERMINER",
+      "independent_reviewer_task": "Draft only teaches exclamation, but Oxford also lists determiner; verify that this is intentional and review Myanmar register. Require separate dated human exact-sense CEFR, English, fluent Myanmar and original-example review receipts bound to final content; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "please",
+      "level": "A1",
+      "part_of_speech": "politeness marker",
+      "shortlist_snapshot": {
+        "english_definition": "Used to make a request polite.",
+        "myanmar_meaning": "ကျေးဇူးပြု၍",
+        "example_sentence": "Please open the door."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 16,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 3,
+        "extracted_line": 604,
+        "source_excerpt": "please exclam.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "POS_LABEL_MISMATCH",
+      "independent_reviewer_task": "Draft POS is 'politeness marker' rather than publisher exclamation. Human reviewer must decide pedagogical POS wording and whether the request example matches the intended pragmatic use. Require separate dated human exact-sense CEFR, English, fluent Myanmar and original-example review receipts bound to final content; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "hello",
+      "level": "A1",
+      "part_of_speech": "exclamation",
+      "shortlist_snapshot": {
+        "english_definition": "Used when greeting someone.",
+        "myanmar_meaning": "မင်္ဂလာပါ",
+        "example_sentence": "Hello, how are you?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 17,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 2,
+        "extracted_line": 360,
+        "source_excerpt": "hello exclam./n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "EXCLAMATION_VS_NOUN",
+      "independent_reviewer_task": "Draft uses greeting exclamation, while Oxford lists noun too; verify register and example. Require separate dated human exact-sense CEFR, English, fluent Myanmar and original-example review receipts bound to final content; do not self-approve.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
