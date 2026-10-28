@@ -36,7 +36,7 @@ Direct Cambridge full-page requests returned **HTTP 403**. The following **publi
 
 The new source-integrity auditor checks all 12 source-bound bilingual/example snapshots, publisher URLs/dates/PDF locators, three B2 conflicts, the unlisted case, unchanged editorial holds, four Cambridge index-only leads, and absent independent receipts. It rejects **33/33 forged publisher, Myanmar, example, provenance, Cambridge-label and false-signoff mutations**.
 
-- [Parallel structural run 40716564378](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40716564378): **all six** A1, A2, B1, B2, C1 and ALL jobs **success**; ALL log confirms 33/33 mutation rejection and protected production diff PASS.
+- [Parallel structural run 40716769413](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40716769413): **all six** A1, A2, B1, B2, C1 and ALL jobs **success**; ALL log confirms 33/33 mutation rejection and protected production diff PASS.
 - [Documentary no-deploy run 40716564379](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40716564379): **success as report-only**, not release approval. Log confirms 33/33 mutations rejected, forged C1 mixed review receipt rejected, protected production diff PASS and release blockers retained.
 - New content-bound launch gate requires human-independent exact-sense C1, English, Myanmar and example review, with explicit Oxford B2 or absent-list reconciliation. Receipt collection remains empty. Source/auditor commit `60d0ea09c8a04ee74c472cbbd5c236d35df7ec44`; release gate commit `a8bbae3ed5e4086262a31d21eac4c571594e8983`.
 
