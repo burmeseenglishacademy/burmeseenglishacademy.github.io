@@ -29,6 +29,65 @@ EXPECTED = {
     "premises": (None, None, None, None, None, "NOT_IN_INSPECTED_OXFORD_CORE_LISTS_NOT_CEFR_PROOF_PLURAL_ONLY_NOUN"),
 }
 
+EXPECTED_CAMBRIDGE = json.loads(r'''[
+  {
+    "word": "abandon",
+    "publisher": "Cambridge University Press",
+    "source_url": "https://dictionary.cambridge.org/us/dictionary/english/abandon",
+    "observed_on": "2026-10-28",
+    "publisher_dictionary": "Cambridge Advanced Learner's Dictionary",
+    "sense_heading": "STOP",
+    "publisher_indexed_cefr": "C1",
+    "paraphrased_sense": "Stop an activity before completion or give up a policy or plan.",
+    "draft_sense_alignment": "STRONG_STOP_PLAN_MATCH",
+    "editorial_note": "Oxford 3000 B2 is word/POS; Cambridge Advanced STOP sense shows C1. Cambridge Learner's STOP DOING entry is separately unlabelled, so do not conflate editions.",
+    "source_access": "PUBLISHER_INDEXED_SEARCH_RESULT_DIRECT_PAGE_HTTP_403",
+    "independently_approved": false
+  },
+  {
+    "word": "deliberately",
+    "publisher": "Cambridge University Press",
+    "source_url": "https://dictionary.cambridge.org/dictionary/english/deliberately",
+    "observed_on": "2026-10-28",
+    "publisher_dictionary": "Cambridge Advanced Learner's Dictionary",
+    "sense_heading": "INTENTIONALLY",
+    "publisher_indexed_cefr": "B2",
+    "paraphrased_sense": "Done on purpose, not accidentally.",
+    "draft_sense_alignment": "STRONG_INTENTIONAL_MATCH",
+    "editorial_note": "Oxford 3000 B2 and Cambridge B2 agree at the intended intentional sense; draft C1 needs independent pedagogical rationale or retiering.",
+    "source_access": "PUBLISHER_INDEXED_SEARCH_RESULT_DIRECT_PAGE_HTTP_403",
+    "independently_approved": false
+  },
+  {
+    "word": "premises",
+    "publisher": "Cambridge University Press",
+    "source_url": "https://dictionary.cambridge.org/dictionary/english/premises",
+    "observed_on": "2026-10-28",
+    "publisher_dictionary": "Cambridge Advanced Learner's Dictionary",
+    "sense_heading": "LAND_AND_BUILDINGS_PLURAL_NOUN",
+    "publisher_indexed_cefr": "C1",
+    "paraphrased_sense": "Land and buildings used or owned by an organisation.",
+    "draft_sense_alignment": "STRONG_COMPANY_BUILDINGS_MATCH",
+    "editorial_note": "Oxford core-list absence is not a CEFR judgement; Cambridge index supports a C1 plural-noun sense, but independent direct-publisher verification and plural-only POS review remain needed.",
+    "source_access": "PUBLISHER_INDEXED_SEARCH_RESULT_DIRECT_PAGE_HTTP_403",
+    "independently_approved": false
+  },
+  {
+    "word": "accommodate",
+    "publisher": "Cambridge University Press",
+    "source_url": "https://dictionary.cambridge.org/us/dictionary/english/accommodate",
+    "observed_on": "2026-10-28",
+    "publisher_dictionary": "Cambridge Advanced Learner's Dictionary",
+    "sense_heading": "FIND_A_PLACE_FOR_AND_SUIT",
+    "publisher_indexed_cefr": null,
+    "paraphrased_sense": "Provide enough space or a place; separately, meet another person's needs.",
+    "draft_sense_alignment": "MIXED_DEFINITION_CAPACITY_EXAMPLE",
+    "editorial_note": "Publisher-indexed Cambridge entry shows separate senses but no visible exact-sense CEFR label. Draft definition combines capacity and adjustment; example only tests capacity.",
+    "source_access": "PUBLISHER_INDEXED_SEARCH_RESULT_DIRECT_PAGE_HTTP_403",
+    "independently_approved": false
+  }
+]''')
+
 def require(ok, message):
     if not ok:
         raise ValueError(message)
@@ -48,6 +107,8 @@ def audit(packet, shortlist, sha):
     require(type(packet.get("independently_approved_count")) is int and packet["independently_approved_count"] == 0, "Fabricated independent approvals")
     limitations = packet.get("source_limitations")
     require(isinstance(limitations, str) and "NOT independently verified exact-sense" in limitations and "NOT evidence" in limitations, "Source-scope disclaimer missing")
+    require(packet.get("cambridge_direct_page_access") == "HTTP_403_FOR_ALL_FOUR_FULL_PAGES", "Cambridge access caveat lost")
+    require(packet.get("cambridge_publisher_indexed_sense_leads") == EXPECTED_CAMBRIDGE, "Cambridge publisher-indexed exact-sense research lead drift or fake signoff")
     require(shortlist.get("scope_target") == {k: 200 for k in LEVELS}, "1000 target drift")
     require(shortlist.get("counts_by_level") == {k: 200 for k in LEVELS}, "First-pass counts drift")
     require(shortlist.get("independently_approved_by_level") == {k: 0 for k in LEVELS}, "Fake shortlist approval")
@@ -144,6 +205,11 @@ def negative_tests(packet, shortlist, sha):
         ("duplicate_record", lambda p: p["records"].__setitem__(0, copy.deepcopy(p["records"][1]))),
         ("invented_unlisted_CEFR", lambda p: next(r for r in p["records"] if r["word"] == "premises")["publisher_source"].__setitem__("source_cefr_level", "C1")),
         ("unlisted_url_loss", lambda p: next(r for r in p["records"] if r["word"] == "premises")["publisher_source"].__setitem__("urls_inspected", [PDF5])),
+        ("cambridge_label", lambda p: p["cambridge_publisher_indexed_sense_leads"][0].__setitem__("publisher_indexed_cefr", "B2")),
+        ("cambridge_url", lambda p: p["cambridge_publisher_indexed_sense_leads"][0].__setitem__("source_url", "https://example.com")),
+        ("cambridge_scope", lambda p: p["cambridge_publisher_indexed_sense_leads"][0].__setitem__("source_access", "DIRECT_VERIFIED")),
+        ("cambridge_date", lambda p: p["cambridge_publisher_indexed_sense_leads"][0].__setitem__("observed_on", "2026-10-27")),
+        ("cambridge_false_approval", lambda p: p["cambridge_publisher_indexed_sense_leads"][0].__setitem__("independently_approved", True)),
     ]
     for label, fn in cases:
         fake = copy.deepcopy(packet)
