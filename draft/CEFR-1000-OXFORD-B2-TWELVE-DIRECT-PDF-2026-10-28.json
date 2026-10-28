@@ -1,0 +1,361 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B2_OXFORD_TWELVE_DIRECT_PDF_WORD_POS_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-28",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 12,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 1,
+    "A2": 6,
+    "B1": 3,
+    "B2": 2
+  },
+  "independently_approved_count": 0,
+  "source_limitations": "Direct Oxford University Press Oxford 3000 by CEFR level PDF checked 2026-10-28; extracted line indices zero-based and PDF page numbers one-based. Publisher observations are word/POS-level only, not exact-sense CEFR, English, Myanmar or example approval. Ten lower-level word/POS discrepancies are editorial prompts, not automatic retiering. All 1,000 remain on hold. No human review, audio listening, physical iPhone QA or production launch.",
+  "records": [
+    {
+      "word": "prepare",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To make someone or something ready for an activity.",
+        "myanmar_meaning": "ပြင်ဆင်သည်",
+        "example_sentence": "We need to prepare the documents before the meeting."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 3,
+        "extracted_line": 618,
+        "source_excerpt": "prepare v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_B2_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "The ordinary make-ready sense in the draft appears in Oxford's A1 verb list; require independently sourced B2 sense or replacement. Myanmar and example are still unverified.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "attractive",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Pleasant to look at or appealing.",
+        "myanmar_meaning": "ဆွဲဆောင်မှုရှိသော",
+        "example_sentence": "The new packaging has an attractive design."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 4,
+        "extracted_line": 967,
+        "source_excerpt": "attractive adj.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_B2_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "The packaging design example expresses general visual appeal; independently determine whether a distinct B2 sense is defensible or replace/retier.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "personality",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The qualities of character that make a person different from others.",
+        "myanmar_meaning": "ကိုယ်ရည်ကိုယ်သွေး",
+        "example_sentence": "Her friendly personality helps her make new friends."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 6,
+        "extracted_line": 1467,
+        "source_excerpt": "personality n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_B2_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "The draft's friendly personality and character gloss match a basic A2 noun; independent B2 exact-sense justification is missing.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "manage",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To succeed in doing something difficult.",
+        "myanmar_meaning": "အခက်အခဲရှိသော်လည်း အောင်မြင်စွာ လုပ်နိုင်သည်",
+        "example_sentence": "We managed to finish the work before the deadline."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 6,
+        "extracted_line": 1379,
+        "source_excerpt": "manage v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_B2_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "The draft 'managed to finish' may involve a specific succeed-despite-difficulty sense; Oxford's word/POS listing alone cannot establish its B2 level.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "height",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The distance from the bottom to the top of something.",
+        "myanmar_meaning": "အမြင့်",
+        "example_sentence": "Please measure the height of the box."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 5,
+        "extracted_line": 1270,
+        "source_excerpt": "height n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_B2_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "The literal measurement in the example matches a common A2 noun; check if any B2 distinct sense exists or replace.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "hide",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To put something where other people cannot see it.",
+        "myanmar_meaning": "ဝှက်ထားသည်၊ ဖုံးကွယ်သည်",
+        "example_sentence": "Please do not hide important documents."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 5,
+        "extracted_line": 1275,
+        "source_excerpt": "hide v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_B2_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "Hiding documents is the basic concealment sense; an A2 word/POS source conflicts with provisional B2 placement.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "respond",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To answer or react to a message, event, or action.",
+        "myanmar_meaning": "တုံ့ပြန်သည်",
+        "example_sentence": "Please respond to the request by Friday."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 6,
+        "extracted_line": 1555,
+        "source_excerpt": "respond v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_B2_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "Responding to a request is the ordinary answer/reaction sense; independent B2 sense-specific support required.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "sample",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A small part taken to represent or test a larger amount.",
+        "myanmar_meaning": "နမူနာ",
+        "example_sentence": "The lab tested a sample of the water."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 9,
+        "extracted_line": 2407,
+        "source_excerpt": "sample n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_B2_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "Laboratory water sample is a representative/test portion; source word/POS B1, not evidence of a B2-specific scientific sense.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "heavily",
+      "level": "B2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "In large amounts or with great force.",
+        "myanmar_meaning": "ပြင်းပြင်းထန်ထန်၊ များစွာ",
+        "example_sentence": "It rained heavily all night."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 8,
+        "extracted_line": 2116,
+        "source_excerpt": "heavily adv.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_B2_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "Raining heavily is a familiar intensity use; verify B2 exact-sense placement and the natural Myanmar intensifier.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "secondary",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Less important than something else, or coming after it.",
+        "myanmar_meaning": "ဒုတိယအဆင့်ဖြစ်သော၊ အဓိကမဟုတ်သော",
+        "example_sentence": "Cost is a secondary concern in this decision."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 9,
+        "extracted_line": 2412,
+        "source_excerpt": "secondary adj.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_OXFORD_WORD_POS_VS_B2_DRAFT_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "Less important than the main concern is a general figurative adjective; check B2-specific evidence, Myanmar nuance and example.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "anniversary",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A date on which an important past event is remembered each year.",
+        "myanmar_meaning": "နှစ်ပတ်လည်နေ့",
+        "example_sentence": "The company celebrated its tenth anniversary."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 10,
+        "extracted_line": 2622,
+        "source_excerpt": "anniversary n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "MATCHING_OXFORD_WORD_POS_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "Oxford's B2 noun label matches draft word/POS, but yearly-commemoration sense, natural Myanmar wording and original example still need independent review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "constant",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Continuing without stopping or changing.",
+        "myanmar_meaning": "အဆက်မပြတ်ဖြစ်သော၊ တည်မြဲသော",
+        "example_sentence": "The constant noise made it hard to study."
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-28",
+        "pdf_page": 10,
+        "extracted_line": 2722,
+        "source_excerpt": "constant adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "MATCHING_OXFORD_WORD_POS_EXACT_SENSE_UNVERIFIED",
+      "independent_reviewer_task": "Oxford B2 adjective supports word/POS only; distinguish unceasing noise from unchanging rate and independently check exact sense and Myanmar gloss.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
