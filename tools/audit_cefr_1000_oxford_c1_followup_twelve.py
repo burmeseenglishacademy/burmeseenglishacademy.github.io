@@ -74,7 +74,7 @@ def audit(packet, shortlist):
         original = by_word[("C1", word)]
         require(set(r) == RECORD_KEYS, word + " record keys/hidden approval")
         require(r["level"] == "C1" and r["part_of_speech"] == original["part_of_speech"], word + " POS")
-        require(r["shortlist_snapshot"] == {k: original[k] for k in ("english_definition", "myanmar_meaning", "example_sentence")}, word + " bilingual/example drift")
+        require(r["shortlist_snapshot"] == {"english_definition": original["english_definition"], "myanmar_meaning": original["burmese_meaning"], "example_sentence": original["example_sentence"]}, word + " bilingual/example drift")
         provenance = {k: original[k] for k in ("source_path", "source_index", "source_blob_sha")}
         require(r["shortlist_provenance"] == provenance, word + " source provenance")
         path = ROOT / provenance["source_path"]
