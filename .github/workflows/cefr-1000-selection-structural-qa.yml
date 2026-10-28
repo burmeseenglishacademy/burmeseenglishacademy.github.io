@@ -139,7 +139,7 @@ jobs:
         run: python3 tools/audit_cefr_1000_oxford_a1_fourth_twentyfour.py --level ALL --self-test
       - name: Audit 24 new A1 Oxford publisher word-POS observations and six held rewrites
         run: python3 tools/audit_cefr_1000_oxford_a1_fifth_twentyfour.py --level "${{ matrix.level }}"
-      - name: Reject 111 forged A1 publisher, bilingual, upstream and approval mutations
+      - name: Reject 112 forged A1 publisher, bilingual, upstream and approval mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_a1_fifth_twentyfour.py --level ALL --self-test
       - name: Audit Oxford A2 follow-up twelve publisher word/POS observations (not independent signoff)
