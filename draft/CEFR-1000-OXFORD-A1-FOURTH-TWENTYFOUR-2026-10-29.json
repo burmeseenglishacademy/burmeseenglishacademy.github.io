@@ -1,0 +1,819 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A1_TWENTY_FOUR_DIRECT_OXFORD_WORD_POS_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-29",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 24,
+  "counts_by_level": {
+    "A1": 24,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "independently_approved_count": 0,
+  "source_limitations": "Oxford University Press official Oxford 3000 by CEFR level PDF opened directly via web text on 2026-10-29. PDF pages one-based; extracted lines zero-based in the web extraction. Oxford list supports word/POS CEFR only, NOT exact-sense CEFR, English or Myanmar translation quality, example correctness, British voice audio, or independent human approval. Homographs and mixed-sense entries require direct dictionary sense review. No shortlist changes, no audio, no deployment.",
+  "editorial_priority": [
+    "have: family-relationship example differs from literal ownership gloss",
+    "like: Oxford distinguishes preposition similarity from verb enjoyment",
+    "all: A1 determiner/pronoun and separate A2 adverb",
+    "read: identical spelling but different past/present pronunciation",
+    "day: 24-hour definition versus busy-day example",
+    "a/an: indefinite articles selected by sound, not letter"
+  ],
+  "records": [
+    {
+      "word": "a",
+      "level": "A1",
+      "part_of_speech": "article",
+      "shortlist_snapshot": {
+        "english_definition": "Used before one person or thing when it is not specified.",
+        "myanmar_meaning": "တစ်ခု၊ တစ်ယောက် (မသတ်မှတ်ရသေးသော)",
+        "example_sentence": "I have a book."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 0,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 4,
+        "source_excerpt": "a, an indefinite article",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "ARTICLE_A_VS_AN_SOUND_AND_UNSPECIFIED_REFERENT",
+      "independent_reviewer_task": "Human-independent reviewer must verify a in the intended A1 part of speech and exact sense using dated direct publisher dictionary evidence, separately review fluent Myanmar, original example and British George/Emma pronunciation, and explicitly resolve ARTICLE_A_VS_AN_SOUND_AND_UNSPECIFIED_REFERENT. Oxford PDF is word/POS evidence only; preserve a genuine content-bound external reviewer receipt before any approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "an",
+      "level": "A1",
+      "part_of_speech": "article",
+      "shortlist_snapshot": {
+        "english_definition": "Used before one person or thing when the next word starts with a vowel sound.",
+        "myanmar_meaning": "တစ်ခု၊ တစ်ယောက် (သရသံဖြင့်စသော စကားလုံးရှေ့တွင်)",
+        "example_sentence": "She has an apple."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 1,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 29,
+        "source_excerpt": "an indefinite article",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "VOWEL_SOUND_NOT_VOWEL_LETTER_DISTINCTION",
+      "independent_reviewer_task": "Human-independent reviewer must verify an in the intended A1 part of speech and exact sense using dated direct publisher dictionary evidence, separately review fluent Myanmar, original example and British George/Emma pronunciation, and explicitly resolve VOWEL_SOUND_NOT_VOWEL_LETTER_DISTINCTION. Oxford PDF is word/POS evidence only; preserve a genuine content-bound external reviewer receipt before any approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "read",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To look at written words and understand them.",
+        "myanmar_meaning": "ဖတ်သည်",
+        "example_sentence": "I read a book every night."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 30,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 637,
+        "source_excerpt": "read v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "PRESENT_READ_VS_PAST_READ_PRONUNCIATION_FOR_AUDIO",
+      "independent_reviewer_task": "Human-independent reviewer must verify read in the intended A1 part of speech and exact sense using dated direct publisher dictionary evidence, separately review fluent Myanmar, original example and British George/Emma pronunciation, and explicitly resolve PRESENT_READ_VS_PAST_READ_PRONUNCIATION_FOR_AUDIO. Oxford PDF is word/POS evidence only; preserve a genuine content-bound external reviewer receipt before any approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "in",
+      "level": "A1",
+      "part_of_speech": "preposition",
+      "shortlist_snapshot": {
+        "english_definition": "Inside a place or an area.",
+        "myanmar_meaning": "အထဲမှာ၊ တွင်",
+        "example_sentence": "The keys are in my bag."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 31,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 394,
+        "source_excerpt": "in prep., adv.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "PREPOSITION_INSIDE_VS_ADVERB_AND_MYANMAR_LOCATION",
+      "independent_reviewer_task": "Human-independent reviewer must verify in in the intended A1 part of speech and exact sense using dated direct publisher dictionary evidence, separately review fluent Myanmar, original example and British George/Emma pronunciation, and explicitly resolve PREPOSITION_INSIDE_VS_ADVERB_AND_MYANMAR_LOCATION. Oxford PDF is word/POS evidence only; preserve a genuine content-bound external reviewer receipt before any approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "on",
+      "level": "A1",
+      "part_of_speech": "preposition",
+      "shortlist_snapshot": {
+        "english_definition": "Touching and supported by a surface.",
+        "myanmar_meaning": "အပေါ်မှာ",
+        "example_sentence": "The cup is on the table."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 32,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 548,
+        "source_excerpt": "on prep., adv.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "SURFACE_CONTACT_PREPOSITION_VS_ADVERB",
+      "independent_reviewer_task": "Human-independent reviewer must verify on in the intended A1 part of speech and exact sense using dated direct publisher dictionary evidence, separately review fluent Myanmar, original example and British George/Emma pronunciation, and explicitly resolve SURFACE_CONTACT_PREPOSITION_VS_ADVERB. Oxford PDF is word/POS evidence only; preserve a genuine content-bound external reviewer receipt before any approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "have",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To own or possess something.",
+        "myanmar_meaning": "ရှိသည်၊ ပိုင်ဆိုင်သည်",
+        "example_sentence": "I have two sisters."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 33,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 353,
+        "source_excerpt": "have v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "RELATIONSHIP_HAVE_TWO_SISTERS_NOT_LITERAL_OWNERSHIP",
+      "independent_reviewer_task": "Human-independent reviewer must verify have in the intended A1 part of speech and exact sense using dated direct publisher dictionary evidence, separately review fluent Myanmar, original example and British George/Emma pronunciation, and explicitly resolve RELATIONSHIP_HAVE_TWO_SISTERS_NOT_LITERAL_OWNERSHIP. Oxford PDF is word/POS evidence only; preserve a genuine content-bound external reviewer receipt before any approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "not",
+      "level": "A1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Used to make a statement negative.",
+        "myanmar_meaning": "မ၊ မဟုတ်",
+        "example_sentence": "I am not tired."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 34,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 531,
+        "source_excerpt": "not adv.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "NEGATION_AND_MYANMAR_PARTICLE_DEPENDS_ON_CLAUSE",
+      "independent_reviewer_task": "Human-independent reviewer must verify not in the intended A1 part of speech and exact sense using dated direct publisher dictionary evidence, separately review fluent Myanmar, original example and British George/Emma pronunciation, and explicitly resolve NEGATION_AND_MYANMAR_PARTICLE_DEPENDS_ON_CLAUSE. Oxford PDF is word/POS evidence only; preserve a genuine content-bound external reviewer receipt before any approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "but",
+      "level": "A1",
+      "part_of_speech": "conjunction",
+      "shortlist_snapshot": {
+        "english_definition": "Used to join ideas that contrast.",
+        "myanmar_meaning": "ဒါပေမယ့်၊ သို့သော်",
+        "example_sentence": "I am tired, but I am happy."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 35,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 117,
+        "source_excerpt": "but conj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "CONTRAST_JOINING_EXAMPLE_REGISTER",
+      "independent_reviewer_task": "Human-independent reviewer must verify but in the intended A1 part of speech and exact sense using dated direct publisher dictionary evidence, separately review fluent Myanmar, original example and British George/Emma pronunciation, and explicitly resolve CONTRAST_JOINING_EXAMPLE_REGISTER. Oxford PDF is word/POS evidence only; preserve a genuine content-bound external reviewer receipt before any approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "or",
+      "level": "A1",
+      "part_of_speech": "conjunction",
+      "shortlist_snapshot": {
+        "english_definition": "Used to show a choice.",
+        "myanmar_meaning": "သို့မဟုတ်",
+        "example_sentence": "Do you want tea or water?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 36,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 557,
+        "source_excerpt": "or conj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "CHOICE_VS_INCLUSIVE_ALTERNATIVE",
+      "independent_reviewer_task": "Human-independent reviewer must verify or in the intended A1 part of speech and exact sense using dated direct publisher dictionary evidence, separately review fluent Myanmar, original example and British George/Emma pronunciation, and explicitly resolve CHOICE_VS_INCLUSIVE_ALTERNATIVE. Oxford PDF is word/POS evidence only; preserve a genuine content-bound external reviewer receipt before any approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "all",
+      "level": "A1",
+      "part_of_speech": "determiner",
+      "shortlist_snapshot": {
+        "english_definition": "The whole number or amount of something.",
+        "myanmar_meaning": "အားလုံး၊ အကုန်လုံး",
+        "example_sentence": "All students are here."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 37,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 25,
+        "source_excerpt": "all det., pron.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_DETERMINER_VS_OXFORD_A2_ADVERB_HOMOGRAPH",
+      "independent_reviewer_task": "Human-independent reviewer must verify all in the intended A1 part of speech and exact sense using dated direct publisher dictionary evidence, separately review fluent Myanmar, original example and British George/Emma pronunciation, and explicitly resolve A1_DETERMINER_VS_OXFORD_A2_ADVERB_HOMOGRAPH. Oxford PDF is word/POS evidence only; preserve a genuine content-bound external reviewer receipt before any approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "me",
+      "level": "A1",
+      "part_of_speech": "pronoun",
+      "shortlist_snapshot": {
+        "english_definition": "The object form of I.",
+        "myanmar_meaning": "ကျွန်တော့်ကို၊ ကျွန်မကို",
+        "example_sentence": "Please help me."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 38,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 470,
+        "source_excerpt": "me pron.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "OBJECT_PRONOUN_AND_MYANMAR_SPEAKER_GENDER",
+      "independent_reviewer_task": "Human-independent reviewer must verify me in the intended A1 part of speech and exact sense using dated direct publisher dictionary evidence, separately review fluent Myanmar, original example and British George/Emma pronunciation, and explicitly resolve OBJECT_PRONOUN_AND_MYANMAR_SPEAKER_GENDER. Oxford PDF is word/POS evidence only; preserve a genuine content-bound external reviewer receipt before any approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "one",
+      "level": "A1",
+      "part_of_speech": "number",
+      "shortlist_snapshot": {
+        "english_definition": "The number 1.",
+        "myanmar_meaning": "တစ်၊ တစ်ခု",
+        "example_sentence": "I have one pen."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 39,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 550,
+        "source_excerpt": "one number/det., pron.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "NUMERAL_VS_PRONOUN_AND_DETERMINER",
+      "independent_reviewer_task": "Human-independent reviewer must verify one in the intended A1 part of speech and exact sense using dated direct publisher dictionary evidence, separately review fluent Myanmar, original example and British George/Emma pronunciation, and explicitly resolve NUMERAL_VS_PRONOUN_AND_DETERMINER. Oxford PDF is word/POS evidence only; preserve a genuine content-bound external reviewer receipt before any approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "like",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To enjoy or feel pleased about something.",
+        "myanmar_meaning": "ကြိုက်နှစ်သက်သည်",
+        "example_sentence": "I like this song."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 41,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 443,
+        "source_excerpt": "like (find sb/sth pleasant) v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "VERB_LIKE_VS_PREPOSITION_LIKE_DISTINCT_SENSE",
+      "independent_reviewer_task": "Human-independent reviewer must verify like in the intended A1 part of speech and exact sense using dated direct publisher dictionary evidence, separately review fluent Myanmar, original example and British George/Emma pronunciation, and explicitly resolve VERB_LIKE_VS_PREPOSITION_LIKE_DISTINCT_SENSE. Oxford PDF is word/POS evidence only; preserve a genuine content-bound external reviewer receipt before any approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "time",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "What clocks measure in hours and minutes.",
+        "myanmar_meaning": "အချိန်",
+        "example_sentence": "What time is it?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 42,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 801,
+        "source_excerpt": "time n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "CLOCK_TIME_VS_DURATION_SENSE",
+      "independent_reviewer_task": "Human-independent reviewer must verify time in the intended A1 part of speech and exact sense using dated direct publisher dictionary evidence, separately review fluent Myanmar, original example and British George/Emma pronunciation, and explicitly resolve CLOCK_TIME_VS_DURATION_SENSE. Oxford PDF is word/POS evidence only; preserve a genuine content-bound external reviewer receipt before any approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "people",
+      "level": "A1",
+      "part_of_speech": "plural noun",
+      "shortlist_snapshot": {
+        "english_definition": "More than one person.",
+        "myanmar_meaning": "လူတွေ၊ လူများ",
+        "example_sentence": "Many people are here."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 43,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 582,
+        "source_excerpt": "people n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "PLURAL_NOUN_LABEL_VS_OXFORD_NOUN_AND_MYANMAR_COLLOQUIALITY",
+      "independent_reviewer_task": "Human-independent reviewer must verify people in the intended A1 part of speech and exact sense using dated direct publisher dictionary evidence, separately review fluent Myanmar, original example and British George/Emma pronunciation, and explicitly resolve PLURAL_NOUN_LABEL_VS_OXFORD_NOUN_AND_MYANMAR_COLLOQUIALITY. Oxford PDF is word/POS evidence only; preserve a genuine content-bound external reviewer receipt before any approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "good",
+      "level": "A1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Of a high quality or pleasant.",
+        "myanmar_meaning": "ကောင်းသော",
+        "example_sentence": "That is a good idea."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 44,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 332,
+        "source_excerpt": "good adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "QUALITY_VS_MORAL_GOOD_SENSE",
+      "independent_reviewer_task": "Human-independent reviewer must verify good in the intended A1 part of speech and exact sense using dated direct publisher dictionary evidence, separately review fluent Myanmar, original example and British George/Emma pronunciation, and explicitly resolve QUALITY_VS_MORAL_GOOD_SENSE. Oxford PDF is word/POS evidence only; preserve a genuine content-bound external reviewer receipt before any approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "know",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To have information or understanding.",
+        "myanmar_meaning": "သိသည်",
+        "example_sentence": "I know the answer."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 45,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 422,
+        "source_excerpt": "know v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "KNOW_FACT_VS_KNOW_PERSON_SENSE",
+      "independent_reviewer_task": "Human-independent reviewer must verify know in the intended A1 part of speech and exact sense using dated direct publisher dictionary evidence, separately review fluent Myanmar, original example and British George/Emma pronunciation, and explicitly resolve KNOW_FACT_VS_KNOW_PERSON_SENSE. Oxford PDF is word/POS evidence only; preserve a genuine content-bound external reviewer receipt before any approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "see",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To notice something with your eyes.",
+        "myanmar_meaning": "မြင်သည်၊ တွေ့သည်",
+        "example_sentence": "I can see the moon."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 46,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 677,
+        "source_excerpt": "see v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "VISUAL_PERCEPTION_VS_MEET_UNDERSTAND_SENSE",
+      "independent_reviewer_task": "Human-independent reviewer must verify see in the intended A1 part of speech and exact sense using dated direct publisher dictionary evidence, separately review fluent Myanmar, original example and British George/Emma pronunciation, and explicitly resolve VISUAL_PERCEPTION_VS_MEET_UNDERSTAND_SENSE. Oxford PDF is word/POS evidence only; preserve a genuine content-bound external reviewer receipt before any approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "two",
+      "level": "A1",
+      "part_of_speech": "number",
+      "shortlist_snapshot": {
+        "english_definition": "The number 2.",
+        "myanmar_meaning": "နှစ်၊ နှစ်ခု",
+        "example_sentence": "We have two cats."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 47,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 831,
+        "source_excerpt": "two number",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "NUMERAL_VS_QUANTIFIER_EXAMPLE",
+      "independent_reviewer_task": "Human-independent reviewer must verify two in the intended A1 part of speech and exact sense using dated direct publisher dictionary evidence, separately review fluent Myanmar, original example and British George/Emma pronunciation, and explicitly resolve NUMERAL_VS_QUANTIFIER_EXAMPLE. Oxford PDF is word/POS evidence only; preserve a genuine content-bound external reviewer receipt before any approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "want",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To wish to have or do something.",
+        "myanmar_meaning": "လိုချင်သည်၊ ဆန္ဒရှိသည်",
+        "example_sentence": "I want some water."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 48,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 857,
+        "source_excerpt": "want v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "WANT_OBJECT_VS_WANT_TO_INFINITIVE_PATTERN",
+      "independent_reviewer_task": "Human-independent reviewer must verify want in the intended A1 part of speech and exact sense using dated direct publisher dictionary evidence, separately review fluent Myanmar, original example and British George/Emma pronunciation, and explicitly resolve WANT_OBJECT_VS_WANT_TO_INFINITIVE_PATTERN. Oxford PDF is word/POS evidence only; preserve a genuine content-bound external reviewer receipt before any approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "go",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To move or travel from one place to another.",
+        "myanmar_meaning": "သွားသည်",
+        "example_sentence": "We go to the park."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 49,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 331,
+        "source_excerpt": "go v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "MOVEMENT_VS_IDIOMATIC_GO_SENSE",
+      "independent_reviewer_task": "Human-independent reviewer must verify go in the intended A1 part of speech and exact sense using dated direct publisher dictionary evidence, separately review fluent Myanmar, original example and British George/Emma pronunciation, and explicitly resolve MOVEMENT_VS_IDIOMATIC_GO_SENSE. Oxford PDF is word/POS evidence only; preserve a genuine content-bound external reviewer receipt before any approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "need",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To require something important or necessary.",
+        "myanmar_meaning": "လိုအပ်သည်",
+        "example_sentence": "I need your help."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 50,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 512,
+        "source_excerpt": "need v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "REQUIRE_VS_NEED_TO_MODAL_PATTERN",
+      "independent_reviewer_task": "Human-independent reviewer must verify need in the intended A1 part of speech and exact sense using dated direct publisher dictionary evidence, separately review fluent Myanmar, original example and British George/Emma pronunciation, and explicitly resolve REQUIRE_VS_NEED_TO_MODAL_PATTERN. Oxford PDF is word/POS evidence only; preserve a genuine content-bound external reviewer receipt before any approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "here",
+      "level": "A1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "In this place.",
+        "myanmar_meaning": "ဒီမှာ၊ ဤနေရာတွင်",
+        "example_sentence": "Please sit here."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 51,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 363,
+        "source_excerpt": "here adv.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "DEICTIC_HERE_LOCATION_DEPENDS_ON_CONTEXT",
+      "independent_reviewer_task": "Human-independent reviewer must verify here in the intended A1 part of speech and exact sense using dated direct publisher dictionary evidence, separately review fluent Myanmar, original example and British George/Emma pronunciation, and explicitly resolve DEICTIC_HERE_LOCATION_DEPENDS_ON_CONTEXT. Oxford PDF is word/POS evidence only; preserve a genuine content-bound external reviewer receipt before any approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "day",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A period of twenty-four hours.",
+        "myanmar_meaning": "နေ့၊ တစ်နေ့တာ",
+        "example_sentence": "Today is a busy day."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 52,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 195,
+        "source_excerpt": "day n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "TWENTY_FOUR_HOURS_DEFINITION_VS_BUSY_DAY_DAYTIME_SENSE",
+      "independent_reviewer_task": "Human-independent reviewer must verify day in the intended A1 part of speech and exact sense using dated direct publisher dictionary evidence, separately review fluent Myanmar, original example and British George/Emma pronunciation, and explicitly resolve TWENTY_FOUR_HOURS_DEFINITION_VS_BUSY_DAY_DAYTIME_SENSE. Oxford PDF is word/POS evidence only; preserve a genuine content-bound external reviewer receipt before any approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
