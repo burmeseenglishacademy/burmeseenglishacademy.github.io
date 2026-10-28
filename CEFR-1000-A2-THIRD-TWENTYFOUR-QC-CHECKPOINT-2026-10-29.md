@@ -43,6 +43,14 @@ Cambridge publisher-indexed [less](https://dictionary.cambridge.org/dictionary/e
 
 Editorial priorities: natural Myanmar phrasing for `nothing`, `whole`, `less` and `half`; `side` as paper face vs edge; `power` authority vs general control; `fact` example naturalness; `course` educational sense vs other senses; `public` noun vs adjective; `support` verb vs noun. No original example, Myanmar meaning, draft tier or approval flag was altered.
 
+## Original English/Myanmar rewrite proposals (not reviewed)
+
+Added [12 bilingual/editorial rewrite candidates](draft/CEFR-1000-A2-THIRD-BILINGUAL-REWRITE-CANDIDATES-2026-10-29.json) for `power`, `side`, `nothing`, `whole`, `less`, `business`, `however`, `public`, `fact`, `half`, `course` and `information`. Each preserves the original definition/Myanmar/example snapshot and source provenance, offers an original alternative English definition, Myanmar meaning and example sentence, and explains the sense/grammar issue. **These are suggestions for human review, not changes to the canonical shortlist or independently validated translations.** A separate structural auditor rejects forged source snapshots, missing headwords in example sentences, absent Myanmar script and false signoffs.
+
+## GitHub Pages policy cross-check
+
+[Official GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits), viewed 2026-10-29, state a **1 GB published-site maximum**, **1 GB recommended source-repository size**, **10-minute deployment timeout**, **100 GB/month soft bandwidth limit**, and **10 builds/hour soft limit** (custom Actions publishing exception). Repository metadata currently reports **122,762 KB** of repository size, which is **not** a measurement of the final published site or the planned George/Emma audio assets. Hosting QA remains **unverified** pending actual artifact, audio, forecast and delivery measurements.
+
 ## Release and CI integrity
 
 A new [fail-closed A2 packet auditor](tools/audit_cefr_1000_oxford_a2_third_twentyfour.py) binds the observations to the exact shortlist Git blob, snapshots, source locators, risk IDs and zero-approval status. It contains **48 authored negative mutation cases** (24 forged source excerpts plus 24 false approval/provenance/translation changes). Both the six-way A1/A2/B1/B2/C1/ALL structural workflow and the documentary no-deploy workflow invoke it. Actual latest run conclusions/logs must be inspected before claiming any pass.
