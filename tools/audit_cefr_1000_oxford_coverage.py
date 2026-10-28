@@ -34,9 +34,9 @@ PACKETS = {
 EXPECTED = {
     "A1": {"observations": 108, "distinct": 100, "A1": 100},
     "A2": {"observations": 48, "distinct": 48, "A1": 36, "A2": 12},
-    "B1": {"observations": 60, "distinct": 60, "A1": 11, "A2": 25, "B1": 20, "B2": 4},
-    "B2": {"observations": 60, "distinct": 58, "A1": 2, "A2": 10, "B1": 14, "B2": 28, "C1": 3, "UNLISTED": 1},
-    "C1": {"observations": 48, "distinct": 39, "B2": 21, "C1": 16, "UNLISTED": 2},
+    "B1": {"observations": 60, "distinct": 60, "A1": 11, "A2": 25, "B1": 20, "B2": 4, "locator_only": 12},
+    "B2": {"observations": 60, "distinct": 58, "A1": 2, "A2": 10, "B1": 14, "B2": 28, "C1": 3, "UNLISTED": 1, "locator_only": 12},
+    "C1": {"observations": 48, "distinct": 39, "B2": 21, "C1": 16, "UNLISTED": 2, "locator_only": 12},
 }
 SOURCE_PREFIX = "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_"
 SOURCE_SUFFIX = "_by_CEFR_level.pdf"
@@ -110,14 +110,22 @@ def normalize(row):
                     SOURCE_PREFIX + "5000" + SOURCE_SUFFIX), "Untrusted Oxford PDF URL")
     require(date in ("2026-10-28", "2026-10-29"), "Source observation date missing/drifted")
     if level is not None:
-        require(type(page) is int and page > 0 and type(line) is int and line >= 0
-                and isinstance(excerpt, str) and excerpt.strip(), "Invalid PDF locator or excerpt")
+        require(type(page) is int and page > 0 and type(line) is int and line >= 0,
+                "Invalid PDF page/line locator")
+        if pub is not None:
+            require(isinstance(excerpt, str) and excerpt.strip(), "Direct PDF excerpt missing")
+        elif not excerpt:
+            require("source_entry" not in row and isinstance(row.get("source_pos"), str)
+                    and row["source_pos"].strip()
+                    and isinstance(row.get("source_document"), str)
+                    and row["source_document"].startswith("The Oxford "),
+                    "Legacy locator-only evidence must not invent a source excerpt")
     require(row.get("editorial_hold") is True and row.get("independently_reviewed") is False
             and row.get("release_approved") is False and receipt is None,
             "Fabricated human review or approval in source packet")
     require(isinstance(row.get("editorial_risk"), str) and row["editorial_risk"].strip(),
             "Missing exact-sense editorial risk")
-    return level or "UNLISTED", snapshot, provenance
+    return level or "UNLISTED", snapshot, provenance, (pub is None and not excerpt)
 
 def audit(shortlist, packets, strict_counts=True):
     require(git_blob_sha(SHORTLIST) == SHORTLIST_SHA, "Frozen shortlist Git blob changed")
@@ -135,6 +143,7 @@ def audit(shortlist, packets, strict_counts=True):
     for level, names in PACKETS.items():
         unique = {}
         observations = 0
+        locator_only = 0
         for name in names:
             path = PREFIX + name + ".json"
             packet = packets[path]
@@ -155,7 +164,8 @@ def audit(shortlist, packets, strict_counts=True):
                 source = by_word[word]
                 require(row.get("part_of_speech") == source.get("part_of_speech"),
                         path + ": shortlist POS drift for " + word)
-                observed, snapshot, provenance = normalize(row)
+                observed, snapshot, provenance, no_excerpt = normalize(row)
+                locator_only += int(no_excerpt)
                 require(snapshot == {"english_definition": source["english_definition"],
                                      "myanmar_meaning": source["burmese_meaning"],
                                      "example_sentence": source["example_sentence"]},
@@ -173,6 +183,8 @@ def audit(shortlist, packets, strict_counts=True):
                     unique[word] = {"observed": observed, "snapshot": snapshot, "sources": [path]}
         counts = collections.Counter(x["observed"] for x in unique.values())
         actual = {"observations": observations, "distinct": len(unique), **dict(counts)}
+        if locator_only:
+            actual["locator_only"] = locator_only
         if strict_counts:
             require(actual == EXPECTED[level], level + ": evidence count drift " + str(actual))
         summaries[level] = actual
@@ -191,6 +203,7 @@ def audit(shortlist, packets, strict_counts=True):
             "distinct_observed_headwords": len(overall),
             "without_these_batch_observations": 1000 - len(overall),
             "by_level": summaries,
+            "legacy_locator_only_records": sum(x.get("locator_only", 0) for x in summaries.values()),
             "flagged_distinct_headwords": len(flagged),
             "unlisted_not_a_cefr_label": sorted(w for w, x in flagged.items()
                                                if x["oxford_word_pos"] == "UNLISTED"),
@@ -219,7 +232,7 @@ def self_test(shortlist, packets):
         (flat, lambda p: p["records"][0].update(shortlist_source_index=-1)),
         (flat, lambda p: p["records"][0].update(shortlist_example="forged")),
         (flat, lambda p: p["records"][0].update(release_approved=True)),
-        (flat, lambda p: p["records"][0].update(source_entry="")),
+        (flat, lambda p: p["records"][0].update(source_pos="")),
         (flat, lambda p: p["records"][0].update(source_url="https://example.com/fake.pdf")),
         (last, lambda p: p["records"][-1]["publisher_source"].update(evidence_scope="DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE")),
         (last, lambda p: p["records"][-1]["publisher_source"].update(source_cefr_level="C1")),
