@@ -37,6 +37,23 @@ Directly inspected Oxford University Press's [Oxford 3000 by CEFR level](https:/
 
 These are **publisher word/POS list observations only**; they do not verify the intended exact dictionary sense, the quality of the Myanmar gloss, example grammar, audio pronunciation, or an independently justified B2 placement. An absent core-list word is not evidence of exclusion from the English language or of any specific CEFR tier. All 24 remain held, with no automatic retiering.
 
+## Eight original bilingual/exact-sense editorial proposals — NOT reviewed or approved
+
+These are proposed *replacement directions* for independent English/Myanmar/example review, **not changes to the 1,000-row shortlist**. The English examples below are original drafting suggestions and have not been independently checked.
+
+| Word | Narrowed English teaching sense | Proposed natural Myanmar meaning | Proposed original example | Why it matters |
+| --- | --- | --- | --- | --- |
+| resistance | Opposition to a proposed plan or change | အစီအစဉ် သို့မဟုတ် အပြောင်းအလဲတစ်ခုကို ကန့်ကွက်မှု | The new policy faced resistance from local residents. | Draft's refusal-to-support sense should not be confused with electrical resistance; Oxford word/POS C1 |
+| calm | Not nervous, angry or upset | စိတ်အေးတည်ငြိမ်သော | She stayed calm while the fire alarm was ringing. | Distinguish adjective from calm as verb/noun; Oxford B1 |
+| client | A person paying for a professional service | ပညာရှင်ဝန်ဆောင်မှုကို ငွေပေး၍ ရယူသူ | The lawyer called her client before the hearing. | Distinguish client from a general shop customer; Oxford B1 |
+| reporting | The work of collecting and presenting news | သတင်းများကို စုဆောင်းပြီး တင်ပြခြင်း | Her reporting helped readers understand the floods. | Draft Myanmar also includes workplace reporting; choose one sense |
+| officially | In a formally authorised or announced way | တရားဝင် | The school officially opened on Monday. | Natural Myanmar adverb; no exact entry in inspected core lists, so require other source |
+| portion | An amount of food served to one person | လူတစ်ဦးစာ ခွဲဝေပေးသော အစားအစာပမာဏ | He ordered a small portion of rice. | Draft gloss mixes food serving and a general part |
+| peak | The highest point reached by an amount or activity | ပမာဏ သို့မဟုတ် လှုပ်ရှားမှုတစ်ခု၏ အမြင့်ဆုံးအဆင့် | Demand reached its peak just before the holiday. | Separate maximum demand from mountain peak; Oxford C1 |
+| reform | A change made to improve a law or system | ဥပဒေ သို့မဟုတ် စနစ်ကို ပိုကောင်းစေရန် ပြုပြင်ပြောင်းလဲမှု | The government introduced a reform to the tax system. | Keep institutional change distinct from an individual's personal reform; Oxford C1 |
+
+**Editorial safeguard:** None of these proposed English definitions, Myanmar glosses or examples is automatically applied. Any later accepted revision must invalidate old content-hash receipts, trigger fresh independent source-backed review, and preserve the fixed 200-per-level quota.
+
 ## Source-integrity, human-signoff and CI safeguards
 
 Created [fail-closed B2 source auditor](tools/audit_cefr_1000_oxford_b2_fourth_twentyfour.py) checking all 24 against frozen shortlist and original source Git blobs, publisher URLs/locators, immutable bilingual/example snapshots, 200-per-level uniqueness, risk tags, independent reviewer tasks and all false review/approval flags. Its self-test deliberately mutates each record's English, Myanmar, example, publisher URL, locator, publisher level, risk, approval, reviewer receipt and hidden reviewer field; plus nine scope/metadata/approval cases: **249 authored negative cases**.
