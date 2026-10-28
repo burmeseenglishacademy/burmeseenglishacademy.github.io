@@ -779,12 +779,9 @@ def audit(ledger=None, after_deployment=False):
         if key in b1_lower_index:
             issues.append("Duplicate additional Oxford B1 independent receipt")
         b1_lower_index[key] = rec
-    if set(b1_lower_index) - {("B1", "unused")}:
-        # Validate keys below; the placeholder is deliberately never a real
-        # word. Unknown receipts must never silently pass as approvals.
-        for key in b1_lower_index:
-            if key not in {(w, "B1") for w in b1_lower_expected}:
-                issues.append("Unknown additional Oxford B1 independent receipt")
+    for key in b1_lower_index:
+        if key not in {(w, "B1") for w in b1_lower_expected}:
+            issues.append("Unknown additional Oxford B1 independent receipt")
     for flag in b1_lower_flags:
         if not isinstance(flag, dict):
             continue
