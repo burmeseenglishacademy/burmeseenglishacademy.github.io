@@ -1996,6 +1996,15 @@ def main():
         ]
         forged_issues, _ = audit(forged_cross)
         assert any("Unknown cross-publisher reconciliation receipt" in item for item in forged_issues)
+        forged_followup = copy.deepcopy(read_json(LEDGER))
+        forged_followup["oxford_a2_followup_twelve_review_receipts"] = [
+            {"word": "FAKE", "proposed_level": "A2",
+             "decision": "RETAIN_AFTER_INDEPENDENT_A2_EXACT_SENSE_REVIEW"}
+        ]
+        followup_issues, _ = audit(forged_followup)
+        assert any("Unknown Oxford A2 follow-up independent receipt" in item
+                   for item in followup_issues)
+        print("PASS: unknown Oxford A2 follow-up independent receipt rejected")
         forged_mixed = copy.deepcopy(read_json(LEDGER))
         forged_mixed["oxford_b1_mixed_twelve_review_receipts"] = [
             {"word": "FAKE", "proposed_level": "B1", "decision": "RETAIN_AFTER_INDEPENDENT_B1_EXACT_SENSE_REVIEW"}
