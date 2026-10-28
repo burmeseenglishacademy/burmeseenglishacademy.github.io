@@ -183,7 +183,7 @@ jobs:
         run: python3 tools/audit_cefr_1000_oxford_b1_mixed_twelve.py --level ALL --self-test
       - name: Audit 24 more Oxford B1-draft source and bilingual snapshots (not human approval)
         run: python3 tools/audit_cefr_1000_oxford_b1_fourth_twentyfour.py --level "${{ matrix.level }}"
-      - name: Reject 103 forged B1 Oxford, Myanmar, editorial and false-signoff mutations
+      - name: Reject 105 forged B1 Oxford, Myanmar, editorial and false-signoff mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_b1_fourth_twentyfour.py --level ALL --self-test
       - name: Audit twelve B2-draft Oxford word-POS observations (no independent signoff)
