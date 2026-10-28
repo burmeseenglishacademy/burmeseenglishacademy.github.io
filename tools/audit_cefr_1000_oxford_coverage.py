@@ -71,14 +71,21 @@ def normalize(row):
         scope = pub.get("evidence_scope")
         require(pub.get("publisher") == "Oxford University Press", "Publisher identity drift")
         require(pub.get("access") == "DIRECT_OFFICIAL_PDF_WEB_TEXT", "Direct-source access drift")
-        require(scope in ("DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
-                          "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL"),
-                "Publisher evidence scope drift")
+        absent_scopes = (
+            "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+            "NOT_FOUND_IN_TWO_INSPECTED_LISTS_NOT_EVIDENCE_OF_LEVEL",
+            "NO_MATCH_IN_TWO_INSPECTED_CORE_LIST_PDFS_NOT_PROOF_OF_CEFR",
+        )
+        require(scope == "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE"
+                or scope in absent_scopes, "Publisher evidence scope drift")
         if level is None:
-            require(scope == "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL"
-                    and pub.get("additional_inspected_url") is not None
+            inspected = [x for x in (url, pub.get("additional_inspected_url"))
+                         if x is not None] + pub.get("urls_inspected", [])
+            require(scope in absent_scopes
+                    and set(inspected) == {SOURCE_PREFIX + "3000" + SOURCE_SUFFIX,
+                                           SOURCE_PREFIX + "5000" + SOURCE_SUFFIX}
                     and page is None and line is None and excerpt is None,
-                    "Null CEFR is not evidence of absent publisher classification")
+                    "Null CEFR is NOT a label: both actual PDF URLs must be recorded")
         else:
             require(scope == "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
                     "Listed word must carry word/POS-only evidence")
@@ -106,8 +113,9 @@ def normalize(row):
         receipt = row.get("reviewer_receipt")
     require(level in LEVELS or (level is None and pub is not None),
             "Missing source_cefr is NOT automatically UNLISTED")
-    require(url in (SOURCE_PREFIX + "3000" + SOURCE_SUFFIX,
-                    SOURCE_PREFIX + "5000" + SOURCE_SUFFIX), "Untrusted Oxford PDF URL")
+    if level is not None or pub is None:
+        require(url in (SOURCE_PREFIX + "3000" + SOURCE_SUFFIX,
+                        SOURCE_PREFIX + "5000" + SOURCE_SUFFIX), "Untrusted Oxford PDF URL")
     require(date in ("2026-10-28", "2026-10-29"), "Source observation date missing/drifted")
     if level is not None:
         require(type(page) is int and page > 0 and type(line) is int and line >= 0,
