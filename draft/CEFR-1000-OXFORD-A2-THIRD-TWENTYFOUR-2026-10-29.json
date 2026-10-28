@@ -1,0 +1,871 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A2_THIRD_TWENTYFOUR_DIRECT_OXFORD_WORD_POS_TRIAGE_EDITORIAL_HOLD",
+  "observed_on": "2026-10-29",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 24,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 24,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 16,
+    "A2": 8,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "word_pos_discrepancies": 16,
+  "independently_approved_count": 0,
+  "source_limitations": "Oxford PDF directly opened via web on 2026-10-29: supports word/POS labels, NOT exact-sense CEFR, translation, example, audio or independent signoff. Cambridge search-index snippets are NOT direct publisher-page verification (HTTP 403). All entries remain on editorial hold, no re-tiering, no production changes.",
+  "records": [
+    {
+      "word": "public",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "People in a community or society in general.",
+        "myanmar_meaning": "ပြည်သူလူထု",
+        "example_sentence": "The library is open to the public."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 185,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 6,
+        "extracted_line": 1512,
+        "source_excerpt": "public adj., n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "PUBLIC_NOUN_VS_ADJECTIVE_AND_COMMUNITY_SCOPE",
+      "editorial_risk": "'the public' collective noun differs from the adjective public; verify the public-access sense and Myanmar register.",
+      "independent_reviewer_task": "Human-independent bilingual and exact-sense CEFR review required for public (PUBLIC_NOUN_VS_ADJECTIVE_AND_COMMUNITY_SCOPE). Verify a directly accessible publisher dictionary's exact sense and labelled CEFR, English definition, fluent Myanmar gloss, original example grammar, British pronunciation and source date/URL/locator. Oxford lists public at A2 word/POS only; provisional A2 must not be approved from this PDF alone. Supply real external human signed content-hash receipt before removing editorial hold.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "system",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A set of connected parts that work together.",
+        "myanmar_meaning": "စနစ်",
+        "example_sentence": "The new system keeps track of our orders."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 188,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 7,
+        "extracted_line": 1687,
+        "source_excerpt": "system n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "SYSTEM_CONNECTED_PARTS_VS_DIGITAL_ORDER_TRACKING",
+      "editorial_risk": "Example describes an order-tracking system; confirm the general connected-parts definition covers the intended technical sense.",
+      "independent_reviewer_task": "Human-independent bilingual and exact-sense CEFR review required for system (SYSTEM_CONNECTED_PARTS_VS_DIGITAL_ORDER_TRACKING). Verify a directly accessible publisher dictionary's exact sense and labelled CEFR, English definition, fluent Myanmar gloss, original example grammar, British pronunciation and source date/URL/locator. Oxford lists system at A2 word/POS only; provisional A2 must not be approved from this PDF alone. Supply real external human signed content-hash receipt before removing editorial hold.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "support",
+      "level": "A2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To help someone succeed or manage a difficulty.",
+        "myanmar_meaning": "ကူညီပံ့ပိုးသည်",
+        "example_sentence": "My colleagues support me when I need help."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 198,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 7,
+        "extracted_line": 1678,
+        "source_excerpt": "support v., n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "SUPPORT_VERB_HELP_VS_NOUN",
+      "editorial_risk": "Verb helping a colleague differs from the noun support; check natural Myanmar verb and collocation.",
+      "independent_reviewer_task": "Human-independent bilingual and exact-sense CEFR review required for support (SUPPORT_VERB_HELP_VS_NOUN). Verify a directly accessible publisher dictionary's exact sense and labelled CEFR, English definition, fluent Myanmar gloss, original example grammar, British pronunciation and source date/URL/locator. Oxford lists support at A2 word/POS only; provisional A2 must not be approved from this PDF alone. Supply real external human signed content-hash receipt before removing editorial hold.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "power",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The ability to control or influence what happens.",
+        "myanmar_meaning": "အာဏာ၊ စွမ်းအား",
+        "example_sentence": "The manager has the power to approve requests."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 199,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 6,
+        "extracted_line": 1491,
+        "source_excerpt": "power n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "POWER_AUTHORITY_VS_GENERAL_CONTROL_AND_ENERGY",
+      "editorial_risk": "Manager approval is an official-right/authority sense; Cambridge indexes CONTROL B2 and OFFICIAL RIGHT without an observed CEFR label. Do not infer A2 exact-sense support from Oxford A2 word/POS.",
+      "independent_reviewer_task": "Human-independent bilingual and exact-sense CEFR review required for power (POWER_AUTHORITY_VS_GENERAL_CONTROL_AND_ENERGY). Verify a directly accessible publisher dictionary's exact sense and labelled CEFR, English definition, fluent Myanmar gloss, original example grammar, British pronunciation and source date/URL/locator. Oxford lists power at A2 word/POS only; provisional A2 must not be approved from this PDF alone. Supply real external human signed content-hash receipt before removing editorial hold.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "side",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "One of the surfaces or edges of an object.",
+        "myanmar_meaning": "ဘေးဘက်၊ တစ်ဖက်",
+        "example_sentence": "Write your name on this side of the paper."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 202,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 6,
+        "extracted_line": 1612,
+        "source_excerpt": "side n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "SIDE_SURFACE_VS_EDGE",
+      "editorial_risk": "A side of paper is a face/surface, not necessarily an edge; check English definition and Myanmar gloss.",
+      "independent_reviewer_task": "Human-independent bilingual and exact-sense CEFR review required for side (SIDE_SURFACE_VS_EDGE). Verify a directly accessible publisher dictionary's exact sense and labelled CEFR, English definition, fluent Myanmar gloss, original example grammar, British pronunciation and source date/URL/locator. Oxford lists side at A2 word/POS only; provisional A2 must not be approved from this PDF alone. Supply real external human signed content-hash receipt before removing editorial hold.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "business",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Work involving buying, selling, or providing goods and services.",
+        "myanmar_meaning": "စီးပွားရေးလုပ်ငန်း၊ ကုန်သွယ်မှု",
+        "example_sentence": "Her family runs a small business near the market."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 284,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 115,
+        "source_excerpt": "business n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "A1_BUSINESS_VS_A2_DRAFT",
+      "editorial_risk": "Oxford lists business noun A1; family-owned shop sense may be basic. Human reviewer must justify retaining at A2.",
+      "independent_reviewer_task": "Human-independent bilingual and exact-sense CEFR review required for business (A1_BUSINESS_VS_A2_DRAFT). Verify a directly accessible publisher dictionary's exact sense and labelled CEFR, English definition, fluent Myanmar gloss, original example grammar, British pronunciation and source date/URL/locator. Oxford lists business at A1 word/POS only; provisional A2 must not be approved from this PDF alone. Supply real external human signed content-hash receipt before removing editorial hold.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "however",
+      "level": "A2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Used to introduce a fact that contrasts with what was just said.",
+        "myanmar_meaning": "သို့သော်၊ ဒါပေမဲ့",
+        "example_sentence": "The room was small; however, it was comfortable."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 285,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 382,
+        "source_excerpt": "however adv.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "A1_HOWEVER_CONTRAST_VS_A2_DRAFT",
+      "editorial_risk": "Oxford lists however adverb A1; formal conjunctive punctuation/register in semicolon example needs level-specific sense review.",
+      "independent_reviewer_task": "Human-independent bilingual and exact-sense CEFR review required for however (A1_HOWEVER_CONTRAST_VS_A2_DRAFT). Verify a directly accessible publisher dictionary's exact sense and labelled CEFR, English definition, fluent Myanmar gloss, original example grammar, British pronunciation and source date/URL/locator. Oxford lists however at A1 word/POS only; provisional A2 must not be approved from this PDF alone. Supply real external human signed content-hash receipt before removing editorial hold.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "nothing",
+      "level": "A2",
+      "part_of_speech": "pronoun",
+      "shortlist_snapshot": {
+        "english_definition": "Not anything; no single thing.",
+        "myanmar_meaning": "ဘာမှမရှိခြင်း၊ ဘာတစ်ခုမှမဟုတ်ခြင်း",
+        "example_sentence": "There was nothing in the empty box."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 286,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 533,
+        "source_excerpt": "nothing pron.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "A1_NOTHING_VS_A2_DRAFT",
+      "editorial_risk": "Oxford lists nothing pronoun A1; Burmese gloss uses nominalised absence rather than natural 'ဘာမှမရှိဘူး' sentence meaning.",
+      "independent_reviewer_task": "Human-independent bilingual and exact-sense CEFR review required for nothing (A1_NOTHING_VS_A2_DRAFT). Verify a directly accessible publisher dictionary's exact sense and labelled CEFR, English definition, fluent Myanmar gloss, original example grammar, British pronunciation and source date/URL/locator. Oxford lists nothing at A1 word/POS only; provisional A2 must not be approved from this PDF alone. Supply real external human signed content-hash receipt before removing editorial hold.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "actually",
+      "level": "A2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Used to say what is true, especially when it differs from what someone expected.",
+        "myanmar_meaning": "တကယ်တော့၊ အမှန်တကယ်",
+        "example_sentence": "I thought it was Tuesday, but it is actually Wednesday."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 287,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 918,
+        "source_excerpt": "actually adv.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "ACTUALLY_CORRECTION_VS_FACTUALITY",
+      "editorial_risk": "Actually corrects a mistaken assumption in the example; verify this pragmatic use and Myanmar 'တကယ်တော့'.",
+      "independent_reviewer_task": "Human-independent bilingual and exact-sense CEFR review required for actually (ACTUALLY_CORRECTION_VS_FACTUALITY). Verify a directly accessible publisher dictionary's exact sense and labelled CEFR, English definition, fluent Myanmar gloss, original example grammar, British pronunciation and source date/URL/locator. Oxford lists actually at A2 word/POS only; provisional A2 must not be approved from this PDF alone. Supply real external human signed content-hash receipt before removing editorial hold.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "less",
+      "level": "A2",
+      "part_of_speech": "determiner",
+      "shortlist_snapshot": {
+        "english_definition": "A smaller amount of something that cannot usually be counted.",
+        "myanmar_meaning": "ပိုနည်းသော၊ လျော့နည်းသော",
+        "example_sentence": "Please add less sugar to my tea."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 288,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 5,
+        "extracted_line": 1356,
+        "source_excerpt": "less det./pron., adv.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "LESS_DETERMINER_UNCOUNTABLE_VS_ADVERB",
+      "editorial_risk": "Less sugar uses a determiner with uncountable sugar; distinguish fewer with plural count nouns. Cambridge search-index A2 agrees but direct page returned HTTP 403.",
+      "independent_reviewer_task": "Human-independent bilingual and exact-sense CEFR review required for less (LESS_DETERMINER_UNCOUNTABLE_VS_ADVERB). Verify a directly accessible publisher dictionary's exact sense and labelled CEFR, English definition, fluent Myanmar gloss, original example grammar, British pronunciation and source date/URL/locator. Oxford lists less at A2 word/POS only; provisional A2 must not be approved from this PDF alone. Supply real external human signed content-hash receipt before removing editorial hold.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "party",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A social event where people meet to enjoy themselves.",
+        "myanmar_meaning": "ပါတီပွဲ၊ ပျော်ပွဲရွှင်ပွဲ",
+        "example_sentence": "We invited our neighbours to a birthday party."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 289,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 576,
+        "source_excerpt": "party n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "A1_SOCIAL_EVENT_VS_A2_DRAFT",
+      "editorial_risk": "Oxford lists party noun A1; birthday-party example is a basic social-event sense, not a political party.",
+      "independent_reviewer_task": "Human-independent bilingual and exact-sense CEFR review required for party (A1_SOCIAL_EVENT_VS_A2_DRAFT). Verify a directly accessible publisher dictionary's exact sense and labelled CEFR, English definition, fluent Myanmar gloss, original example grammar, British pronunciation and source date/URL/locator. Oxford lists party at A1 word/POS only; provisional A2 must not be approved from this PDF alone. Supply real external human signed content-hash receipt before removing editorial hold.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "whole",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Complete, with no part missing.",
+        "myanmar_meaning": "တစ်ခုလုံးသော၊ အပြည့်အစုံဖြစ်သော",
+        "example_sentence": "We spent the whole afternoon cleaning the classroom."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 291,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 7,
+        "extracted_line": 1763,
+        "source_excerpt": "whole adj.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "WHOLE_COMPLETE_VS_TIME_DURATION",
+      "editorial_risk": "The whole afternoon means the entire time span, not missing physical parts; check definition/example and Myanmar fluency.",
+      "independent_reviewer_task": "Human-independent bilingual and exact-sense CEFR review required for whole (WHOLE_COMPLETE_VS_TIME_DURATION). Verify a directly accessible publisher dictionary's exact sense and labelled CEFR, English definition, fluent Myanmar gloss, original example grammar, British pronunciation and source date/URL/locator. Oxford lists whole at A2 word/POS only; provisional A2 must not be approved from this PDF alone. Supply real external human signed content-hash receipt before removing editorial hold.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "maybe",
+      "level": "A2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Possibly; used when something is not certain.",
+        "myanmar_meaning": "ဖြစ်နိုင်သည်၊ ဖြစ်ကောင်းဖြစ်မည်",
+        "example_sentence": "Maybe we can visit the museum on Sunday."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 292,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 469,
+        "source_excerpt": "maybe adv.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "A1_MAYBE_VS_A2_DRAFT",
+      "editorial_risk": "Oxford lists maybe adverb A1; possibility sense and example do not independently justify A2.",
+      "independent_reviewer_task": "Human-independent bilingual and exact-sense CEFR review required for maybe (A1_MAYBE_VS_A2_DRAFT). Verify a directly accessible publisher dictionary's exact sense and labelled CEFR, English definition, fluent Myanmar gloss, original example grammar, British pronunciation and source date/URL/locator. Oxford lists maybe at A1 word/POS only; provisional A2 must not be approved from this PDF alone. Supply real external human signed content-hash receipt before removing editorial hold.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "story",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A description of events, real or imagined, told or written for others.",
+        "myanmar_meaning": "ပုံပြင်၊ ဇာတ်လမ်း",
+        "example_sentence": "My grandmother told us a funny story."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 293,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 742,
+        "source_excerpt": "story n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "A1_NARRATIVE_VS_A2_DRAFT",
+      "editorial_risk": "Oxford lists story noun A1; grandmother's funny story is a basic narrative sense, not a building floor.",
+      "independent_reviewer_task": "Human-independent bilingual and exact-sense CEFR review required for story (A1_NARRATIVE_VS_A2_DRAFT). Verify a directly accessible publisher dictionary's exact sense and labelled CEFR, English definition, fluent Myanmar gloss, original example grammar, British pronunciation and source date/URL/locator. Oxford lists story at A1 word/POS only; provisional A2 must not be approved from this PDF alone. Supply real external human signed content-hash receipt before removing editorial hold.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "health",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The condition of a person's body and mind.",
+        "myanmar_meaning": "ကျန်းမာရေး၊ ကိုယ်စိတ်ကျန်းမာမှုအခြေအနေ",
+        "example_sentence": "Regular sleep is important for good health."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 294,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 357,
+        "source_excerpt": "health n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "A1_HEALTH_VS_A2_DRAFT",
+      "editorial_risk": "Oxford lists health noun A1; draft body-and-mind definition and sleep example need scope and natural Myanmar review.",
+      "independent_reviewer_task": "Human-independent bilingual and exact-sense CEFR review required for health (A1_HEALTH_VS_A2_DRAFT). Verify a directly accessible publisher dictionary's exact sense and labelled CEFR, English definition, fluent Myanmar gloss, original example grammar, British pronunciation and source date/URL/locator. Oxford lists health at A1 word/POS only; provisional A2 must not be approved from this PDF alone. Supply real external human signed content-hash receipt before removing editorial hold.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "hope",
+      "level": "A2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To want something to happen and believe that it might.",
+        "myanmar_meaning": "မျှော်လင့်သည်",
+        "example_sentence": "I hope the rain stops before our trip."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 295,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 374,
+        "source_excerpt": "hope v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "A1_HOPE_VS_A2_DRAFT",
+      "editorial_risk": "Oxford lists hope verb A1; example hope + finite clause, not noun hope. Human reviewer must justify A2 exact sense.",
+      "independent_reviewer_task": "Human-independent bilingual and exact-sense CEFR review required for hope (A1_HOPE_VS_A2_DRAFT). Verify a directly accessible publisher dictionary's exact sense and labelled CEFR, English definition, fluent Myanmar gloss, original example grammar, British pronunciation and source date/URL/locator. Oxford lists hope at A1 word/POS only; provisional A2 must not be approved from this PDF alone. Supply real external human signed content-hash receipt before removing editorial hold.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "important",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Having great value or influence in a situation.",
+        "myanmar_meaning": "အရေးကြီးသော",
+        "example_sentence": "It is important to check the address before sending the parcel."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 296,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 392,
+        "source_excerpt": "important adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "A1_IMPORTANT_VS_A2_DRAFT",
+      "editorial_risk": "Oxford lists important adjective A1; simple check-address instruction may not warrant A2.",
+      "independent_reviewer_task": "Human-independent bilingual and exact-sense CEFR review required for important (A1_IMPORTANT_VS_A2_DRAFT). Verify a directly accessible publisher dictionary's exact sense and labelled CEFR, English definition, fluent Myanmar gloss, original example grammar, British pronunciation and source date/URL/locator. Oxford lists important at A1 word/POS only; provisional A2 must not be approved from this PDF alone. Supply real external human signed content-hash receipt before removing editorial hold.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "information",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Facts or details that help someone understand something.",
+        "myanmar_meaning": "သတင်းအချက်အလက်၊ သိရှိရန်အချက်အလက်",
+        "example_sentence": "The notice gives information about the new bus route."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 297,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 396,
+        "source_excerpt": "information n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "A1_INFORMATION_UNCOUNTABLE_VS_A2_DRAFT",
+      "editorial_risk": "Oxford lists information noun A1; uncountable noun and natural Myanmar translation need review.",
+      "independent_reviewer_task": "Human-independent bilingual and exact-sense CEFR review required for information (A1_INFORMATION_UNCOUNTABLE_VS_A2_DRAFT). Verify a directly accessible publisher dictionary's exact sense and labelled CEFR, English definition, fluent Myanmar gloss, original example grammar, British pronunciation and source date/URL/locator. Oxford lists information at A1 word/POS only; provisional A2 must not be approved from this PDF alone. Supply real external human signed content-hash receipt before removing editorial hold.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "local",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Connected with a particular area or neighbourhood.",
+        "myanmar_meaning": "ဒေသဆိုင်ရာ၊ အနီးအနားဒေသ၏",
+        "example_sentence": "We bought fresh fruit from a local shop."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 298,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 450,
+        "source_excerpt": "local adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "A1_LOCAL_VS_A2_DRAFT",
+      "editorial_risk": "Oxford lists local adjective A1; local shop neighbourhood sense may be A1, not A2.",
+      "independent_reviewer_task": "Human-independent bilingual and exact-sense CEFR review required for local (A1_LOCAL_VS_A2_DRAFT). Verify a directly accessible publisher dictionary's exact sense and labelled CEFR, English definition, fluent Myanmar gloss, original example grammar, British pronunciation and source date/URL/locator. Oxford lists local at A1 word/POS only; provisional A2 must not be approved from this PDF alone. Supply real external human signed content-hash receipt before removing editorial hold.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "course",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A series of lessons about a particular subject.",
+        "myanmar_meaning": "ဘာသာရပ်တစ်ခုကို သင်ကြားပေးသော သင်တန်း",
+        "example_sentence": "She enrolled in a short English course."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 344,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 178,
+        "source_excerpt": "course n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "A1_COURSE_STUDY_VS_OTHER_SENSES",
+      "editorial_risk": "Oxford lists course noun A1; draft specifically uses a study programme, not route or meal course.",
+      "independent_reviewer_task": "Human-independent bilingual and exact-sense CEFR review required for course (A1_COURSE_STUDY_VS_OTHER_SENSES). Verify a directly accessible publisher dictionary's exact sense and labelled CEFR, English definition, fluent Myanmar gloss, original example grammar, British pronunciation and source date/URL/locator. Oxford lists course at A1 word/POS only; provisional A2 must not be approved from this PDF alone. Supply real external human signed content-hash receipt before removing editorial hold.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "video",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A recording of moving pictures, usually with sound.",
+        "myanmar_meaning": "ရုပ်သံမှတ်တမ်း၊ ဗီဒီယို",
+        "example_sentence": "We watched a video about recycling."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 345,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 848,
+        "source_excerpt": "video n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "A1_VIDEO_VS_A2_DRAFT",
+      "editorial_risk": "Oxford lists video noun A1; recycling clip is a straightforward recording sense.",
+      "independent_reviewer_task": "Human-independent bilingual and exact-sense CEFR review required for video (A1_VIDEO_VS_A2_DRAFT). Verify a directly accessible publisher dictionary's exact sense and labelled CEFR, English definition, fluent Myanmar gloss, original example grammar, British pronunciation and source date/URL/locator. Oxford lists video at A1 word/POS only; provisional A2 must not be approved from this PDF alone. Supply real external human signed content-hash receipt before removing editorial hold.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "ago",
+      "level": "A2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "At a time before the present.",
+        "myanmar_meaning": "ယခုအချိန်မတိုင်မီက",
+        "example_sentence": "I met her two years ago."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 346,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 21,
+        "source_excerpt": "ago adv.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "A1_AGO_VS_A2_DRAFT",
+      "editorial_risk": "Oxford lists ago adverb A1; two years ago is basic past-time reference.",
+      "independent_reviewer_task": "Human-independent bilingual and exact-sense CEFR review required for ago (A1_AGO_VS_A2_DRAFT). Verify a directly accessible publisher dictionary's exact sense and labelled CEFR, English definition, fluent Myanmar gloss, original example grammar, British pronunciation and source date/URL/locator. Oxford lists ago at A1 word/POS only; provisional A2 must not be approved from this PDF alone. Supply real external human signed content-hash receipt before removing editorial hold.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "fact",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Something that is known or proved to be true.",
+        "myanmar_meaning": "အမှန်တကယ်ဖြစ်သောအချက်၊ အချက်အလက်အမှန်",
+        "example_sentence": "It is a fact that plants need water."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 348,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 265,
+        "source_excerpt": "fact n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "A1_FACT_VS_A2_DRAFT",
+      "editorial_risk": "Oxford lists fact noun A1; 'It is a fact that plants need water' is grammatical but stylistically redundant; consider an original natural example.",
+      "independent_reviewer_task": "Human-independent bilingual and exact-sense CEFR review required for fact (A1_FACT_VS_A2_DRAFT). Verify a directly accessible publisher dictionary's exact sense and labelled CEFR, English definition, fluent Myanmar gloss, original example grammar, British pronunciation and source date/URL/locator. Oxford lists fact at A1 word/POS only; provisional A2 must not be approved from this PDF alone. Supply real external human signed content-hash receipt before removing editorial hold.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "half",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "One of two equal parts of something.",
+        "myanmar_meaning": "နှစ်ပိုင်းညီညီခွဲထားသည့် တစ်ပိုင်း၊ တစ်ဝက်",
+        "example_sentence": "She ate half of the sandwich."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 349,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 346,
+        "source_excerpt": "half n., det./pron.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "HALF_NOUN_VS_QUANTIFIER_AND_A1_DRAFT_CONFLICT",
+      "editorial_risk": "Oxford lists half as noun/determiner/pronoun A1; 'half of the sandwich' may function as a nominal quantity; check POS and A2 retention.",
+      "independent_reviewer_task": "Human-independent bilingual and exact-sense CEFR review required for half (HALF_NOUN_VS_QUANTIFIER_AND_A1_DRAFT_CONFLICT). Verify a directly accessible publisher dictionary's exact sense and labelled CEFR, English definition, fluent Myanmar gloss, original example grammar, British pronunciation and source date/URL/locator. Oxford lists half at A1 word/POS only; provisional A2 must not be approved from this PDF alone. Supply real external human signed content-hash receipt before removing editorial hold.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ],
+  "secondary_indexed_sense_leads": [
+    {
+      "word": "power",
+      "publisher": "Cambridge University Press",
+      "source_url": "https://dictionary.cambridge.org/dictionary/english/power",
+      "observed_on": "2026-10-29",
+      "access": "PUBLISHER_SEARCH_INDEX_ONLY_DIRECT_PAGE_HTTP_403",
+      "source_sense_heading": "power noun (CONTROL)",
+      "indexed_cefr_level": "B2",
+      "indexed_observation": "Ability to control people and events",
+      "source_scope": "SEARCH_INDEXED_SENSE_LEAD_NOT_INDEPENDENT_EXACT_SENSE_EVIDENCE",
+      "editorial_risk": "Draft manager-authorisation example may belong to Cambridge OFFICIAL RIGHT sense (no observed CEFR), not automatically to B2 CONTROL. Reconcile before A2 signoff.",
+      "independently_verified": false
+    },
+    {
+      "word": "less",
+      "publisher": "Cambridge University Press",
+      "source_url": "https://dictionary.cambridge.org/dictionary/english/less",
+      "observed_on": "2026-10-29",
+      "access": "PUBLISHER_SEARCH_INDEX_ONLY_DIRECT_PAGE_HTTP_403",
+      "source_sense_heading": "less determiner, pronoun, adverb (SMALLER AMOUNT)",
+      "indexed_cefr_level": "A2",
+      "indexed_observation": "Smaller amount or degree, with less money and less chocolate examples",
+      "source_scope": "SEARCH_INDEXED_SENSE_LEAD_NOT_INDEPENDENT_EXACT_SENSE_EVIDENCE",
+      "editorial_risk": "Check determiner with uncountable sugar; do not equate all POS/senses automatically.",
+      "independently_verified": false
+    }
+  ]
+}
