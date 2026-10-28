@@ -244,6 +244,9 @@ def audit(ledger=None, after_deployment=False):
               "oxford_b2_lower_twelve_direct_word_pos_observations": 0,
               "oxford_b2_lower_twelve_retained_requiring_resolution": 0,
               "oxford_b2_lower_twelve_retained_resolved": 0,
+              "oxford_c1_followup_twelve_direct_word_pos_observations": 0,
+              "oxford_c1_followup_twelve_retained_requiring_resolution": 0,
+              "oxford_c1_followup_twelve_retained_resolved": 0,
               "oxford_c1_mixed_twelve_direct_word_pos_observations": 0,
               "oxford_c1_mixed_twelve_retained_requiring_resolution": 0,
               "oxford_c1_mixed_twelve_retained_resolved": 0,
@@ -1112,6 +1115,84 @@ def audit(ledger=None, after_deployment=False):
     if (report["oxford_b1_lower_twelve_retained_requiring_resolution"]
             != report["oxford_b1_lower_twelve_retained_resolved"]):
         issues.append("Additional retained Oxford B1 lower-level word/POS conflicts lack independent exact-sense B1 resolution")
+
+    # C1 Oxford followup: six C1 word/POS matches, five Oxford B2
+    # conflicts and one unlisted divine adjective. All remain editorial holds.
+    # Only independent exact-sense source, fluent Myanmar, original example,
+    # English and human content-hash-bound receipts can resolve retained entries.
+    c1_followup = read_json(
+        ROOT / "draft/CEFR-1000-OXFORD-C1-FOLLOWUP-TWELVE-2026-10-29.json")
+    c1_followup_flags = c1_followup.get("records", [])
+    c1_followup_expected = {"tribute", "trigger", "racism", "signature",
+                            "abortion", "consistently", "conversion", "copyright",
+                            "diverse", "exclusively", "functional", "divine"}
+    report["oxford_c1_followup_twelve_direct_word_pos_observations"] = len(c1_followup_flags)
+    if (c1_followup.get("status") != "C1_FOLLOWUP_TWELVE_OXFORD_WORD_POS_EDITORIAL_HOLD"
+            or len(c1_followup_flags) != 12
+            or {x.get("word") for x in c1_followup_flags if isinstance(x, dict)}
+               != c1_followup_expected
+            or c1_followup.get("word_pos_discrepancies") != 5
+            or c1_followup.get("unlisted_in_inspected_core_lists") != 1
+            or c1_followup.get("independently_approved_count") != 0):
+        issues.append("C1 followup Oxford source packet missing, changed or falsely approved")
+    c1_followup_receipts = d.get("oxford_c1_followup_twelve_review_receipts")
+    if not isinstance(c1_followup_receipts, list):
+        issues.append("C1 followup independent exact-sense receipts missing or malformed")
+        c1_followup_receipts = []
+    c1_followup_index = {}
+    for rec in c1_followup_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Malformed C1 followup independent receipt")
+            continue
+        key = (rec.get("word"), rec.get("proposed_level"))
+        if key in c1_followup_index:
+            issues.append("Duplicate C1 followup independent receipt")
+        c1_followup_index[key] = rec
+    if set(c1_followup_index) - {(word, "C1") for word in c1_followup_expected}:
+        issues.append("Unknown C1 followup independent receipt")
+    for flag in c1_followup_flags:
+        if not isinstance(flag, dict):
+            continue
+        word = flag.get("word")
+        entry = entry_lookup.get((word, "C1"))
+        if entry is None:
+            continue  # Retiered/replaced still needs full 1000-manifest signoff.
+        report["oxford_c1_followup_twelve_retained_requiring_resolution"] += 1
+        rec = c1_followup_index.get((word, "C1"))
+        if not independent_word_stage(rec, word, "sense_specific_cefr", expected_level="C1"):
+            continue
+        if (rec.get("decision") != "RETAIN_AFTER_INDEPENDENT_C1_EXACT_SENSE_REVIEW"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or rec.get("verified_part_of_speech") != entry.get("part_of_speech")
+                or rec.get("verified_cefr_level") != "C1"
+                or rec.get("source_cefr_level") != "C1"
+                or not isinstance(rec.get("source_scope_rationale"), str)
+                or len(rec["source_scope_rationale"].strip()) < 60):
+            continue
+        observed = flag.get("publisher_source", {}).get("source_cefr_level")
+        if observed == "B2":
+            rationale = rec.get("oxford_word_pos_level_difference_resolution")
+            if not isinstance(rationale, str) or len(rationale.strip()) < 80:
+                continue
+            if (entry.get("english_definition") ==
+                    flag.get("shortlist_snapshot", {}).get("english_definition")
+                    and entry.get("example_sentence") ==
+                    flag.get("shortlist_snapshot", {}).get("example_sentence")):
+                continue  # A bare unchanged same-sense B2 observation cannot establish C1.
+        if observed is None:
+            rationale = rec.get("oxford_core_list_absence_resolution")
+            if not isinstance(rationale, str) or len(rationale.strip()) < 80:
+                continue
+            if "not listed" not in rationale.lower() and "absence" not in rationale.lower():
+                continue
+            if rec.get("source_url") in {
+                "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+                "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf"}:
+                continue
+        report["oxford_c1_followup_twelve_retained_resolved"] += 1
+    if (report["oxford_c1_followup_twelve_retained_requiring_resolution"] !=
+            report["oxford_c1_followup_twelve_retained_resolved"]):
+        issues.append("Retained C1 followup Oxford B2/unlisted leads lack independent exact-sense reconciliation")
 
     # C1 Oxford mixed 12: 8 matching C1 word/POS labels, 3 lower B2 labels,
     # and 'premises' absent from the two inspected core lists. Absence is
@@ -2393,6 +2474,17 @@ def main():
         assert any("Unknown C1 mixed Oxford independent receipt" in item
                    for item in c1_mixed_issues)
         print("PASS: forged C1 mixed Oxford independent receipt rejected")
+        forged_c1_followup = copy.deepcopy(read_json(LEDGER))
+        forged_c1_followup["oxford_c1_followup_twelve_review_receipts"] = [
+            {"word": "FAKE", "proposed_level": "C1",
+             "decision": "RETAIN_AFTER_INDEPENDENT_C1_EXACT_SENSE_REVIEW"}
+        ]
+        followup_issues, followup_report = audit(forged_c1_followup)
+        assert any("Unknown C1 followup independent receipt" in item
+                   for item in followup_issues)
+        assert followup_report["oxford_c1_followup_twelve_direct_word_pos_observations"] == 12
+        assert followup_report["oxford_c1_followup_twelve_retained_resolved"] == 0
+        print("PASS: fabricated C1 followup independent receipt rejected")
         forged_b2_fourth = copy.deepcopy(read_json(LEDGER))
         forged_b2_fourth["oxford_b2_fourth_twentyfour_review_receipts"] = [
             {"word": "FAKE", "proposed_level": "B2",
