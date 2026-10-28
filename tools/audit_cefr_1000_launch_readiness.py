@@ -223,6 +223,9 @@ def audit(ledger=None, after_deployment=False):
               "oxford_a2_twelve_direct_word_pos_observations": 0,
               "oxford_a2_twelve_retained_requiring_resolution": 0,
               "oxford_a2_twelve_retained_resolved": 0,
+              "oxford_b1_mixed_twelve_direct_word_pos_observations": 0,
+              "oxford_b1_mixed_twelve_retained_requiring_resolution": 0,
+              "oxford_b1_mixed_twelve_retained_resolved": 0,
               "oxford_b1_lower_twelve_direct_word_pos_observations": 0,
               "oxford_b1_lower_twelve_retained_requiring_resolution": 0,
               "oxford_b1_lower_twelve_retained_resolved": 0,
@@ -757,6 +760,75 @@ def audit(ledger=None, after_deployment=False):
     # Eleven source word/POS levels are A1/A2, one B1. This is NOT
     # independent exact-sense evidence. A retained B1 sense needs genuine
     # independent publisher exact-sense CEFR + bilingual/example signoff.
+    # Oxford 3000 mixed B1-draft observations: four lower A2, five matching
+    # B1, three higher B2. These are word/POS labels, not exact-sense proof.
+    # Each retained word requires an independent, content-bound B1 exact-sense
+    # receipt; mismatches also require a substantive change and explanation.
+    b1_mixed = read_json(
+        ROOT / "draft/CEFR-1000-OXFORD-B1-MIXED-TWELVE-2026-10-28.json")
+    b1_mixed_flags = b1_mixed.get("records", [])
+    b1_mixed_expected = {"independent", "impact", "cancer", "civil",
+                         "organization", "multiple", "operation", "disease",
+                         "notice", "basic", "effective", "highly"}
+    report["oxford_b1_mixed_twelve_direct_word_pos_observations"] = len(b1_mixed_flags)
+    if (b1_mixed.get("status") !=
+            "DIRECT_OXFORD_B1_MIXED_LEVEL_TRIAGE_NOT_INDEPENDENT_APPROVAL"
+            or len(b1_mixed_flags) != 12
+            or {x.get("word") for x in b1_mixed_flags if isinstance(x, dict)}
+               != b1_mixed_expected
+            or b1_mixed.get("word_pos_discrepancies") != 7
+            or b1_mixed.get("lower_than_B1") != 4
+            or b1_mixed.get("higher_than_B1") != 3
+            or b1_mixed.get("matching_B1") != 5
+            or b1_mixed.get("independently_approved_count") != 0):
+        issues.append("Oxford B1 mixed-level source packet missing or falsely approved")
+    b1_mixed_receipts = d.get("oxford_b1_mixed_twelve_review_receipts")
+    if not isinstance(b1_mixed_receipts, list):
+        issues.append("Oxford B1 mixed-level independent receipts missing or malformed")
+        b1_mixed_receipts = []
+    b1_mixed_index = {}
+    for rec in b1_mixed_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Malformed Oxford B1 mixed-level independent receipt")
+            continue
+        key = (rec.get("word"), rec.get("proposed_level"))
+        if key in b1_mixed_index:
+            issues.append("Duplicate Oxford B1 mixed-level independent receipt")
+        b1_mixed_index[key] = rec
+    for key in b1_mixed_index:
+        if key not in {(w, "B1") for w in b1_mixed_expected}:
+            issues.append("Unknown Oxford B1 mixed-level independent receipt")
+    for flag in b1_mixed_flags:
+        if not isinstance(flag, dict):
+            continue
+        word = flag.get("word")
+        entry = entry_lookup.get((word, "B1"))
+        if entry is None:
+            continue  # Replacement/retiering still requires full independent approval.
+        report["oxford_b1_mixed_twelve_retained_requiring_resolution"] += 1
+        rec = b1_mixed_index.get((word, "B1"))
+        if not independent_word_stage(rec, word, "sense_specific_cefr", expected_level="B1"):
+            continue
+        if (rec.get("decision") != "RETAIN_AFTER_INDEPENDENT_B1_EXACT_SENSE_REVIEW"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or rec.get("verified_part_of_speech") != entry.get("part_of_speech")
+                or rec.get("verified_cefr_level") != "B1"
+                or rec.get("source_cefr_level") != "B1"
+                or not isinstance(rec.get("source_scope_rationale"), str)
+                or len(rec["source_scope_rationale"].strip()) < 50):
+            continue
+        if flag.get("source_cefr") != "B1":
+            rationale = rec.get("oxford_word_pos_level_difference_resolution")
+            if not isinstance(rationale, str) or len(rationale.strip()) < 60:
+                continue
+            if (entry.get("english_definition") == flag.get("shortlist_english_definition")
+                    and entry.get("example_sentence") == flag.get("shortlist_example")):
+                continue
+        report["oxford_b1_mixed_twelve_retained_resolved"] += 1
+    if (report["oxford_b1_mixed_twelve_retained_requiring_resolution"]
+            != report["oxford_b1_mixed_twelve_retained_resolved"]):
+        issues.append("Retained Oxford B1 mixed-level words lack independent content-bound exact-sense B1 resolution")
+
     b1_lower = read_json(
         ROOT / "draft/CEFR-1000-OXFORD-B1-LOWER-LEVEL-TWELVE-2026-10-28.json")
     b1_lower_flags = b1_lower.get("records", [])
