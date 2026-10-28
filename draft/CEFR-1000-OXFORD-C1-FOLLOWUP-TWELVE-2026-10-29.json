@@ -1,0 +1,455 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "C1_FOLLOWUP_TWELVE_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-29",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 12
+  },
+  "word_pos_discrepancies": 5,
+  "unlisted_in_inspected_core_lists": 1,
+  "independently_approved_count": 0,
+  "source_limitations": "Official Oxford 5000 and Oxford 3000 CEFR PDFs directly inspected 2026-10-29. Page numbers one-based, web extracted line numbers zero-based. Oxford list is word/POS evidence only, NOT exact-sense CEFR, fluent Myanmar, original example or independent reviewer evidence. The unlisted word is NOT assigned a CEFR level by absence. No independent approvals, audio signoffs, physical iPhone QA, hosting verification or production launch.",
+  "records": [
+    {
+      "word": "tribute",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Something said or done to show respect or admiration.",
+        "myanmar_meaning": "ဂုဏ်ပြုမှု၊ လေးစားအသိအမှတ်ပြုမှု",
+        "example_sentence": "The concert was a tribute to the late musician."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 31,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "additional_inspected_url": null,
+        "observed_on": "2026-10-29",
+        "pdf_page": 8,
+        "extracted_line": 1938,
+        "source_excerpt": "tribute n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "TRIBUTE_HONOUR_VS_PAYMENT_OR_OTHER_SENSE",
+      "independent_reviewer_task": "Human-independent reviewer: Distinguish a public expression of respect from a payment or offering; confirm original example and Myanmar. Verify exact sense, CEFR teaching placement, English definition, fluent Myanmar, original example grammar and British pronunciation against actual source-backed evidence. Bind any decision to reviewed content hash, reviewer identity and dated source URLs. Retain editorial hold until authentic independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "trigger",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To cause a particular event or reaction to happen.",
+        "myanmar_meaning": "ဖြစ်ပေါ်စေသည်၊ အစပျိုးစေသည်",
+        "example_sentence": "A sudden price rise could trigger more complaints."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 32,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "additional_inspected_url": null,
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 659,
+        "source_excerpt": "trigger v.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_B2_CAUSE_REACTION_VS_C1_DRAFT",
+      "independent_reviewer_task": "Human-independent reviewer: C1 draft conflicts with Oxford B2 word/POS; confirm causation sense and whether the example illustrates trigger rather than merely accompany. Verify exact sense, CEFR teaching placement, English definition, fluent Myanmar, original example grammar and British pronunciation against actual source-backed evidence. Bind any decision to reviewed content hash, reviewer identity and dated source URLs. Retain editorial hold until authentic independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "racism",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Unfair treatment of people because of their race.",
+        "myanmar_meaning": "လူမျိုးရေးခွဲခြားဆက်ဆံမှု",
+        "example_sentence": "The organisation runs programmes to challenge racism."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 71,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "additional_inspected_url": null,
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 503,
+        "source_excerpt": "racism n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_B2_RACIAL_PREJUDICE_VS_UNFAIR_TREATMENT",
+      "independent_reviewer_task": "Human-independent reviewer: Oxford B2 word/POS; assess whether the definition wrongly reduces racism to unfair treatment alone and review respectful fluent Myanmar. Verify exact sense, CEFR teaching placement, English definition, fluent Myanmar, original example grammar and British pronunciation against actual source-backed evidence. Bind any decision to reviewed content hash, reviewer identity and dated source URLs. Retain editorial hold until authentic independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "signature",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A person's name written in their own handwriting.",
+        "myanmar_meaning": "လက်မှတ်ရေးထိုးချက်",
+        "example_sentence": "Please add your signature at the bottom of the form."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 75,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "additional_inspected_url": null,
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 569,
+        "source_excerpt": "signature n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_B2_HANDWRITTEN_NAME_VS_DIGITAL_SIGNATURE",
+      "independent_reviewer_task": "Human-independent reviewer: Oxford B2 word/POS; distinguish handwritten signatures from electronic signatures and signature-style metaphor. Verify exact sense, CEFR teaching placement, English definition, fluent Myanmar, original example grammar and British pronunciation against actual source-backed evidence. Bind any decision to reviewed content hash, reviewer identity and dated source URLs. Retain editorial hold until authentic independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "abortion",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The intentional ending of a pregnancy.",
+        "myanmar_meaning": "ကိုယ်ဝန်ကို ရည်ရွယ်ချက်ရှိရှိ ဖျက်ချခြင်း",
+        "example_sentence": "The article discussed access to abortion services."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 78,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "additional_inspected_url": null,
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 706,
+        "source_excerpt": "abortion n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "INDUCED_VS_SPONTANEOUS_AND_NEUTRAL_MEDICAL_TERMINOLOGY",
+      "independent_reviewer_task": "Human-independent reviewer: Oxford C1 word/POS only; verify precise induced-pregnancy-termination sense, respectful neutral Myanmar and example. Verify exact sense, CEFR teaching placement, English definition, fluent Myanmar, original example grammar and British pronunciation against actual source-backed evidence. Bind any decision to reviewed content hash, reviewer identity and dated source URLs. Retain editorial hold until authentic independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "consistently",
+      "level": "C1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "In the same way or to the same standard over time.",
+        "myanmar_meaning": "အမြဲတစေ တစ်သမတ်တည်း",
+        "example_sentence": "The factory consistently meets its quality targets."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 110,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "additional_inspected_url": null,
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 121,
+        "source_excerpt": "consistently adv.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_B2_STABLE_STANDARD_VS_ALWAYS",
+      "independent_reviewer_task": "Human-independent reviewer: Oxford B2 word/POS; ensure Myanmar conveys consistent quality over time rather than unqualified always. Verify exact sense, CEFR teaching placement, English definition, fluent Myanmar, original example grammar and British pronunciation against actual source-backed evidence. Bind any decision to reviewed content hash, reviewer identity and dated source URLs. Retain editorial hold until authentic independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "conversion",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The process of changing something into a different form or use.",
+        "myanmar_meaning": "ပုံစံ သို့မဟုတ် အသုံးပြုမှု ပြောင်းလဲခြင်း",
+        "example_sentence": "The conversion of the old office into flats took a year."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 111,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "additional_inspected_url": null,
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 988,
+        "source_excerpt": "conversion n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "BUILDING_REPURPOSING_VS_RELIGIOUS_OR_UNIT_CONVERSION",
+      "independent_reviewer_task": "Human-independent reviewer: Oxford C1 word/POS; keep office-to-flats change-of-use sense distinct from currency, units and religion. Verify exact sense, CEFR teaching placement, English definition, fluent Myanmar, original example grammar and British pronunciation against actual source-backed evidence. Bind any decision to reviewed content hash, reviewer identity and dated source URLs. Retain editorial hold until authentic independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "copyright",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The legal right to control how an original creative work is copied or used.",
+        "myanmar_meaning": "မူပိုင်ခွင့်",
+        "example_sentence": "The publisher owns the copyright to the illustrations."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 112,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "additional_inspected_url": null,
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 999,
+        "source_excerpt": "copyright n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "COPYRIGHT_LEGAL_RIGHT_VS_OWNERSHIP_AND_JURISDICTION",
+      "independent_reviewer_task": "Human-independent reviewer: Oxford C1 word/POS; distinguish copyright ownership from ownership of a physical copy; review Myanmar legal precision. Verify exact sense, CEFR teaching placement, English definition, fluent Myanmar, original example grammar and British pronunciation against actual source-backed evidence. Bind any decision to reviewed content hash, reviewer identity and dated source URLs. Retain editorial hold until authentic independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "diverse",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Including people or things of many different types.",
+        "myanmar_meaning": "အမျိုးမျိုးကွဲပြားသော",
+        "example_sentence": "The conference brought together a diverse group of researchers."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 115,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "additional_inspected_url": null,
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 185,
+        "source_excerpt": "diverse adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LOWER_B2_GROUP_VARIETY_VS_C1_DRAFT",
+      "independent_reviewer_task": "Human-independent reviewer: Oxford B2 word/POS; verify people-and-types sense and avoid inferring C1 merely from academic example. Verify exact sense, CEFR teaching placement, English definition, fluent Myanmar, original example grammar and British pronunciation against actual source-backed evidence. Bind any decision to reviewed content hash, reviewer identity and dated source URLs. Retain editorial hold until authentic independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "exclusively",
+      "level": "C1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Only for a particular person, group or purpose.",
+        "myanmar_meaning": "သီးသန့်သာ၊ တစ်ခုတည်းအတွက်သာ",
+        "example_sentence": "This entrance is used exclusively by staff."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 116,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "additional_inspected_url": null,
+        "observed_on": "2026-10-29",
+        "pdf_page": 5,
+        "extracted_line": 1188,
+        "source_excerpt": "exclusively adv.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "ONLY_VS_SPECIAL_PURPOSE_MYANMAR_ADVERB",
+      "independent_reviewer_task": "Human-independent reviewer: Oxford C1 word/POS; confirm staff-only meaning and natural Myanmar adverbial use. Verify exact sense, CEFR teaching placement, English definition, fluent Myanmar, original example grammar and British pronunciation against actual source-backed evidence. Bind any decision to reviewed content hash, reviewer identity and dated source URLs. Retain editorial hold until authentic independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "functional",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Designed to work well for a particular practical purpose.",
+        "myanmar_meaning": "အသုံးဝင်စွာ လုပ်ဆောင်နိုင်သော",
+        "example_sentence": "The prototype is functional, but its appearance needs improvement."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 118,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "additional_inspected_url": null,
+        "observed_on": "2026-10-29",
+        "pdf_page": 5,
+        "extracted_line": 1241,
+        "source_excerpt": "functional adj.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "WORKING_STATE_VS_DESIGNED_FOR_PRACTICAL_PURPOSE",
+      "independent_reviewer_task": "Human-independent reviewer: Definition says designed to work well, but example means operational/working; propose sense-aligned revision for independent review. Verify exact sense, CEFR teaching placement, English definition, fluent Myanmar, original example grammar and British pronunciation against actual source-backed evidence. Bind any decision to reviewed content hash, reviewer identity and dated source URLs. Retain editorial hold until authentic independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "divine",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Connected with a god or a religious power.",
+        "myanmar_meaning": "နတ်ဘုရားဆိုင်ရာ၊ ဘုရားသခင်နှင့် သက်ဆိုင်သော",
+        "example_sentence": "The painting shows a divine figure."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 151,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "UNLISTED_OXFORD_CORE_PDFS_NOT_A_CEFR_LABEL",
+      "independent_reviewer_task": "Human-independent reviewer: No exact divine adjective entry found in the two inspected Oxford core PDFs; do not infer any CEFR level; obtain direct sense-specific evidence for religious adjective. Verify exact sense, CEFR teaching placement, English definition, fluent Myanmar, original example grammar and British pronunciation against actual source-backed evidence. Bind any decision to reviewed content hash, reviewer identity and dated source URLs. Retain editorial hold until authentic independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ],
+  "unreviewed_editorial_proposals": [
+    {
+      "word": "functional",
+      "proposed_english_definition": "Working properly or able to be used.",
+      "proposed_myanmar_meaning": "ကောင်းမွန်စွာ အလုပ်လုပ်နိုင်သော၊ အသုံးပြုနိုင်သော",
+      "proposed_original_example": "The printer is functional again after the repair.",
+      "status": "UNREVIEWED_NOT_APPLIED",
+      "reason": "Align operational adjective with example rather than a design-purpose sense."
+    },
+    {
+      "word": "consistently",
+      "proposed_english_definition": "In a steady or similar way over a period of time.",
+      "proposed_myanmar_meaning": "အချိန်ကာလတစ်လျှောက် တစ်သမတ်တည်း",
+      "proposed_original_example": "The team consistently met its monthly quality targets.",
+      "status": "UNREVIEWED_NOT_APPLIED",
+      "reason": "Separate consistency from absolute always."
+    },
+    {
+      "word": "racism",
+      "proposed_english_definition": "Prejudice, discrimination or unfair treatment based on race.",
+      "proposed_myanmar_meaning": "လူမျိုးရေးအပေါ် အခြေခံသော အစွဲအလမ်းနှင့် ခွဲခြားဆက်ဆံမှု",
+      "proposed_original_example": "The school introduced lessons to challenge racism.",
+      "status": "UNREVIEWED_NOT_APPLIED",
+      "reason": "Avoid defining racism only as an individual act of unfair treatment."
+    }
+  ]
+}
