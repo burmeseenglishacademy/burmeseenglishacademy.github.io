@@ -1380,6 +1380,73 @@ def audit(ledger=None, after_deployment=False):
             != report["cambridge_c1_six_retained_resolved"]):
         issues.append("Retained six C1 Cambridge sense conflicts lack independent C1 exact-sense reconciliation")
 
+    # Historical A2 source-recovery words: publisher-indexed leads are NOT
+    # independent CEFR approval. Fail closed on missing/malformed signoffs.
+    recovery = read_json(ROOT / "draft/CEFR-1000-CAMBRIDGE-A2-RECOVERY-TWELVE-2026-10-28.json")
+    recovery_flags = recovery.get("records", [])
+    recovery_words = {"raincoat", "toothache", "bookshelf", "postcard",
+                      "saucepan", "dustbin", "washcloth", "shoelace",
+                      "lunchbox", "doormat", "bathrobe", "sunscreen"}
+    recovery_keys = {("A2", w) for w in recovery_words}
+    report["a2_recovery_twelve_source_observations"] = len(recovery_flags)
+    report["a2_recovery_twelve_retained_requiring_resolution"] = 0
+    report["a2_recovery_twelve_retained_resolved"] = 0
+    if (recovery.get("status") != "A2_RECOVERY_TWELVE_SOURCE_LEADS_EDITORIAL_HOLD"
+            or recovery.get("independently_approved_count") != 0
+            or len(recovery_flags) != 12
+            or {(x.get("level"), x.get("word")) for x in recovery_flags
+                if isinstance(x, dict)} != recovery_keys):
+        issues.append("Twelve A2 recovery source leads missing, malformed or falsely approved")
+    recovery_receipts = d.get("a2_recovery_twelve_review_receipts", [])
+    if not isinstance(recovery_receipts, list):
+        issues.append("A2 recovery independent receipts must be an array")
+        recovery_receipts = []
+    recovery_index = {}
+    for rec in recovery_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Malformed A2 recovery independent receipt")
+            continue
+        key = (rec.get("level"), rec.get("word"))
+        if key in recovery_index:
+            issues.append("Duplicate A2 recovery independent receipt")
+        recovery_index[key] = rec
+    if set(recovery_index) - recovery_keys:
+        issues.append("Unknown A2 recovery independent receipt")
+    for flag in recovery_flags:
+        if not isinstance(flag, dict):
+            continue
+        key = (flag.get("level"), flag.get("word"))
+        entry = final_lookup.get(key)
+        if entry is None:
+            continue
+        report["a2_recovery_twelve_retained_requiring_resolution"] += 1
+        rec = recovery_index.get(key)
+        if not isinstance(rec, dict):
+            continue
+        rationale = rec.get("conflict_resolution")
+        evidence = flag.get("publisher_evidence", {})
+        if (rec.get("decision") != "RETAIN_WITH_INDEPENDENT_A2_EXACT_SENSE_EVIDENCE"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or rec.get("verified_part_of_speech") != entry.get("part_of_speech")
+                or rec.get("verified_cefr_level") != "A2"
+                or not isinstance(rationale, str) or len(rationale.strip()) < 110
+                or "Cambridge" not in rationale
+                or rec.get("cambridge_source_url") != evidence.get("url")
+                or rec.get("source_access_disclaimer") != "CAMBRIDGE_INDEXED_NOT_INDEPENDENT"
+                or not independent_word_stage(rec, entry["word"], "sense_specific_cefr",
+                                              expected_level="A2")):
+            continue
+        # Same-sense B1 Cambridge conflicts and Collins B2 sunscreen cannot
+        # be rubber-stamped unchanged by a generic A2 reviewer receipt.
+        if (entry["word"] in {"saucepan", "dustbin", "sunscreen"}
+                and entry.get("english_definition") == flag.get("shortlist_snapshot", {}).get("english_definition")
+                and entry.get("example_sentence") == flag.get("shortlist_snapshot", {}).get("example_sentence")):
+            continue
+        report["a2_recovery_twelve_retained_resolved"] += 1
+    if (report["a2_recovery_twelve_retained_requiring_resolution"]
+            != report["a2_recovery_twelve_retained_resolved"]):
+        issues.append("Retained A2 recovery entries lack independent exact-sense CEFR, British-usage and bilingual reconciliation")
+
     # Audio real-listening receipts are 1 per unique word/example text and voice.
     # The separate validator must ALSO confirm files exist and decode.
     audio = d.get("audio_listening_receipts", [])
