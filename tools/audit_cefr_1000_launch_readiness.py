@@ -760,6 +760,84 @@ def audit(ledger=None, after_deployment=False):
             report["oxford_a2_followup_twelve_retained_resolved"]):
         issues.append("Retained A2 Oxford follow-up entries lack independent exact-sense A2 reconciliation")
 
+    # Third 24-word Oxford A2-draft packet: 16 Oxford A1 word/POS labels.
+    # Publisher PDF membership and Cambridge indexed snippets do NOT independently
+    # establish an exact-sense A2 CEFR label, fluent Myanmar or example quality.
+    # The approved manifest may replace entries, but any retained draft headword
+    # requires a separate independent human content-bound A2 sense reconciliation.
+    a2_third = read_json(
+        ROOT / "draft/CEFR-1000-OXFORD-A2-THIRD-TWENTYFOUR-2026-10-29.json")
+    a2_third_flags = a2_third.get("records", [])
+    a2_third_expected = {
+        "public", "system", "support", "power", "side", "business",
+        "however", "nothing", "actually", "less", "party", "whole",
+        "maybe", "story", "health", "hope", "important", "information",
+        "local", "course", "video", "ago", "fact", "half"}
+    report["oxford_a2_third_twentyfour_word_pos_observations"] = len(a2_third_flags)
+    report["oxford_a2_third_twentyfour_retained_requiring_resolution"] = 0
+    report["oxford_a2_third_twentyfour_retained_resolved"] = 0
+    if (a2_third.get("status") !=
+            "A2_THIRD_TWENTYFOUR_DIRECT_OXFORD_WORD_POS_TRIAGE_EDITORIAL_HOLD"
+            or len(a2_third_flags) != 24
+            or {x.get("word") for x in a2_third_flags if isinstance(x, dict)}
+               != a2_third_expected
+            or a2_third.get("publisher_reference_level_counts") !=
+               {"A1": 16, "A2": 8, "B1": 0, "B2": 0, "C1": 0}
+            or a2_third.get("word_pos_discrepancies") != 16
+            or a2_third.get("independently_approved_count") != 0):
+        issues.append("Third Oxford A2 packet missing, altered or falsely approved")
+    a2_third_receipts = d.get("oxford_a2_third_twentyfour_review_receipts")
+    if not isinstance(a2_third_receipts, list):
+        issues.append("Third Oxford A2 independent receipt array missing or malformed")
+        a2_third_receipts = []
+    a2_third_index = {}
+    for rec in a2_third_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Malformed third Oxford A2 independent receipt")
+            continue
+        key = (rec.get("word"), rec.get("proposed_level"))
+        if key in a2_third_index:
+            issues.append("Duplicate third Oxford A2 independent receipt")
+        a2_third_index[key] = rec
+    if set(a2_third_index) - {(w, "A2") for w in a2_third_expected}:
+        issues.append("Unknown third Oxford A2 independent receipt")
+    for flag in a2_third_flags:
+        if not isinstance(flag, dict):
+            continue
+        word = flag.get("word")
+        entry = entry_lookup.get((word, "A2"))
+        if entry is None:
+            continue  # Replacement/retier requires full manifest human approval.
+        report["oxford_a2_third_twentyfour_retained_requiring_resolution"] += 1
+        rec = a2_third_index.get((word, "A2"))
+        if not independent_word_stage(rec, word, "sense_specific_cefr",
+                                      expected_level="A2"):
+            continue
+        if (rec.get("decision") != "RETAIN_AFTER_INDEPENDENT_A2_EXACT_SENSE_REVIEW"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or rec.get("verified_part_of_speech") != entry.get("part_of_speech")
+                or rec.get("verified_cefr_level") != "A2"
+                or rec.get("source_cefr_level") != "A2"
+                or not isinstance(rec.get("source_scope_rationale"), str)
+                or len(rec["source_scope_rationale"].strip()) < 50):
+            continue
+        source_level = flag.get("publisher_source", {}).get("source_cefr_level")
+        if source_level == "A1":
+            rationale = rec.get("oxford_word_pos_level_difference_resolution")
+            if not isinstance(rationale, str) or len(rationale.strip()) < 60:
+                continue
+        if word == "power":
+            # Oxford A2 word/POS vs Cambridge CONTROL B2 indexed lead,
+            # while the draft example uses manager's official approval right.
+            # Require a separate human rationale; indexed search != direct proof.
+            rationale = rec.get("cross_publisher_power_sense_resolution")
+            if not isinstance(rationale, str) or len(rationale.strip()) < 80:
+                continue
+        report["oxford_a2_third_twentyfour_retained_resolved"] += 1
+    if (report["oxford_a2_third_twentyfour_retained_requiring_resolution"] !=
+            report["oxford_a2_third_twentyfour_retained_resolved"]):
+        issues.append("Retained third Oxford A2 entries lack independently attested exact-sense A2 reconciliation")
+
     # Third Oxford A1 word/POS batch. These are publisher word/POS observations,
     # NOT independent exact-sense, Burmese or original-example approvals.
     # Explicitly resolve 'home' noun/adverb mismatch and the stilted 'thank'
