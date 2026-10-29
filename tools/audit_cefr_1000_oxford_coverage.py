@@ -34,7 +34,8 @@ PACKETS = {
            "A2-THIRD-TWENTYFOUR-2026-10-29",
            "A2-FOURTH-TWELVE-2026-10-29",
            "A2-FIFTH-TWELVE-2026-10-29",
-           "A2-SIXTH-TWELVE-2026-10-30"),
+           "A2-SIXTH-TWELVE-2026-10-30",
+           "A2-SEVENTH-TWELVE-AND-THREE-DIRECT-SENSE-LEADS-2026-10-30"),
     "B1": ("B1-TWELVE-DIRECT-PDF-2026-10-28", "B1-LOWER-LEVEL-TWELVE-2026-10-28",
            "B1-MIXED-TWELVE-2026-10-28", "B1-FOURTH-TWENTYFOUR-2026-10-29",
            "B1-FIFTH-TWELVE-2026-10-29", "B1-SIXTH-TWELVE-2026-10-29",
@@ -50,7 +51,7 @@ PACKETS = {
 }
 EXPECTED = {
     "A1": {"observations": 203, "distinct": 195, "A1": 195},
-    "A2": {"observations": 84, "distinct": 84, "A1": 55, "A2": 26, "B1": 3},
+    "A2": {"observations": 96, "distinct": 96, "A1": 59, "A2": 33, "B1": 4},
     "B1": {"observations": 96, "distinct": 96, "A1": 15, "A2": 39, "B1": 30, "B2": 12, "locator_only": 12},
     "B2": {"observations": 84, "distinct": 82, "A1": 2, "A2": 12, "B1": 17, "B2": 46, "C1": 4, "UNLISTED": 1, "locator_only": 12},
     "C1": {"observations": 72, "distinct": 63, "B2": 25, "C1": 36, "UNLISTED": 2, "locator_only": 12},
