@@ -21,7 +21,7 @@ def require(condition, why):
 
 def git_blob_sha(path):
     raw = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
 
 def rebuild():
     require(git_blob_sha(SHORT) == SHA, "Frozen shortlist SHA changed")
