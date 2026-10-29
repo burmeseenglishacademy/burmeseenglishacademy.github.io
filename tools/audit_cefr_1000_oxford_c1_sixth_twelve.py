@@ -104,7 +104,7 @@ def self_test(packet,shortlist):
     changes = [
         ("word",lambda r:r.update(word="counterfeit")),
         ("level",lambda r:r.update(level="B2")),
-        ("pos",lambda r:r.update(part_of_speech="verb")),
+        ("pos",lambda r:r.update(part_of_speech="noun" if r["part_of_speech"]=="verb" else "verb")),
         ("English",lambda r:r["shortlist_snapshot"].update(english_definition="Fabricated")),
         ("Myanmar",lambda r:r["shortlist_snapshot"].update(myanmar_meaning="မှားနေသည်")),
         ("example",lambda r:r["shortlist_snapshot"].update(example_sentence="Fabricated.")),
@@ -114,7 +114,7 @@ def self_test(packet,shortlist):
         ("publisher URL",lambda r:r["publisher_source"].update(url="https://example.invalid/fake")),
         ("publisher identity",lambda r:r["publisher_source"].update(publisher="Unknown")),
         ("source date",lambda r:r["publisher_source"].update(observed_on="2026-10-30")),
-        ("source page",lambda r:r["publisher_source"].update(pdf_page=1)),
+        ("source page",lambda r:r["publisher_source"].update(pdf_page=r["publisher_source"]["pdf_page"]+100)),
         ("source line",lambda r:r["publisher_source"].update(extracted_line=-1)),
         ("source quote",lambda r:r["publisher_source"].update(source_excerpt="fake adj.")),
         ("source level",lambda r:r["publisher_source"].update(source_cefr_level="A1")),
