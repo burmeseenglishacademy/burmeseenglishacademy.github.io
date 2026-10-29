@@ -21,7 +21,8 @@ PREFIX = "draft/CEFR-1000-OXFORD-"
 PACKETS = {
     "A1": ("A1-TWELVE-DIRECT-PDF-2026-10-28", "A1-SECOND-TWELVE-2026-10-28",
            "A1-THIRD-TWELVE-2026-10-28", "A1-FOURTH-TWENTYFOUR-2026-10-29",
-           "A1-FIFTH-TWENTYFOUR-2026-10-29", "A1-SIXTH-TWENTYFOUR-2026-10-29"),
+           "A1-FIFTH-TWENTYFOUR-2026-10-29", "A1-SIXTH-TWENTYFOUR-2026-10-29",
+           "A1-SEVENTH-TWELVE-2026-10-29"),
     "A2": ("A2-TWELVE-DIRECT-PDF-2026-10-28", "A2-FOLLOWUP-TWELVE-2026-10-28",
            "A2-THIRD-TWENTYFOUR-2026-10-29",
            "A2-FOURTH-TWELVE-2026-10-29"),
@@ -33,7 +34,7 @@ PACKETS = {
            "C1-MIXED-TWELVE-2026-10-28", "C1-FOLLOWUP-TWELVE-2026-10-29"),
 }
 EXPECTED = {
-    "A1": {"observations": 108, "distinct": 100, "A1": 100},
+    "A1": {"observations": 120, "distinct": 112, "A1": 112},
     "A2": {"observations": 60, "distinct": 60, "A1": 41, "A2": 19},
     "B1": {"observations": 60, "distinct": 60, "A1": 11, "A2": 25, "B1": 20, "B2": 4, "locator_only": 12},
     "B2": {"observations": 60, "distinct": 58, "A1": 2, "A2": 10, "B1": 14, "B2": 28, "C1": 3, "UNLISTED": 1, "locator_only": 12},
