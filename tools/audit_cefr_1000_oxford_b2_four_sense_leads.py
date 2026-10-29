@@ -42,11 +42,12 @@ def audit(packet, shortlist, wordpos):
         need(row.get("word")==word and row.get("level")=="B2"
              and row.get("part_of_speech")==original["part_of_speech"],
              "Word/level/POS drift")
-        snapshot = {k:original[k] for k in ("english_definition","burmese_meaning","example_sentence")}
+        snapshot = {"english_definition": original["english_definition"],
+                    "myanmar_meaning": original["burmese_meaning"],
+                    "example_sentence": original["example_sentence"]}
         provenance = {k:original[k] for k in ("source_path","source_index","source_blob_sha")}
         need(row.get("shortlist_snapshot")==snapshot,
-             "Bilingual/example snapshot drift for " + word
-             + " expected=" + repr(snapshot) + " got=" + repr(row.get("shortlist_snapshot")))
+             "Bilingual/example snapshot drift for " + word)
         need(row.get("shortlist_provenance")==provenance,
              "Historical provenance drift for " + word)
         need(by_wordpos[word]["shortlist_snapshot"]==snapshot
