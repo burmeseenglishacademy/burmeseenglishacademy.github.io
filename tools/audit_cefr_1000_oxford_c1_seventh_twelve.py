@@ -27,7 +27,7 @@ def require(test,reason):
 
 def blob_sha(path):
     b=path.read_bytes()
-    return hashlib.sha1(b"blob "+str(len(b)).encode()+b"\\0"+b).hexdigest()
+    return hashlib.sha1(b"blob "+str(len(b)).encode()+b"\0"+b).hexdigest()
 
 def audit(p,s):
     require(blob_sha(SHORTLIST)==FROZEN,"Frozen shortlist blob drift")
