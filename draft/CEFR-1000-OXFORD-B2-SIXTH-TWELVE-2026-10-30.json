@@ -1,0 +1,419 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B2_SIXTH_TWELVE_DIRECT_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 12,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "B2": 12
+  },
+  "word_pos_discrepancies": 0,
+  "independently_approved_count": 0,
+  "source_limitations": "Oxford University Press official Oxford 5000 by CEFR level PDF directly inspected 2026-10-30; word/POS labels only, not exact-sense CEFR, independent human review, Myanmar/example approval or audio listening. All twelve remain on editorial hold.",
+  "records": [
+    {
+      "word": "extensive",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Covering a large area or involving many parts.",
+        "myanmar_meaning": "ကျယ်ပြန့်သော၊ များပြားသော",
+        "example_sentence": "The building suffered extensive damage during the storm."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 446,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 1,
+        "extracted_line": 238,
+        "source_excerpt": "extensive adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Distinguish broad geographical coverage from severe/large-scale damage; check Myanmar modifier in the storm example.",
+      "independent_reviewer_task": "Independent human reviewer must confirm exact intended sense and CEFR teaching suitability using a dated publisher dictionary sense URL, fluent Myanmar meaning, English definition, original example grammar, British pronunciation, source provenance and content-bound signoff. Oxford PDF word/POS label alone is not exact-sense CEFR or independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "formation",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The process of creating or establishing something.",
+        "myanmar_meaning": "ဖွဲ့စည်းတည်ထောင်ခြင်း",
+        "example_sentence": "The formation of the committee took several weeks."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 447,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 260,
+        "source_excerpt": "formation n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Committee formation is an establishment process; distinguish military formation and rock formation senses.",
+      "independent_reviewer_task": "Independent human reviewer must confirm exact intended sense and CEFR teaching suitability using a dated publisher dictionary sense URL, fluent Myanmar meaning, English definition, original example grammar, British pronunciation, source provenance and content-bound signoff. Oxford PDF word/POS label alone is not exact-sense CEFR or independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "partnership",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An arrangement in which people or organisations work together.",
+        "myanmar_meaning": "မိတ်ဖက်ပူးပေါင်းဆောင်ရွက်မှု",
+        "example_sentence": "The university announced a partnership with a local factory."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 453,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 455,
+        "source_excerpt": "partnership n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Check business/institutional cooperation versus legal business-partner entity and fluent Myanmar collocation.",
+      "independent_reviewer_task": "Independent human reviewer must confirm exact intended sense and CEFR teaching suitability using a dated publisher dictionary sense URL, fluent Myanmar meaning, English definition, original example grammar, British pronunciation, source provenance and content-bound signoff. Oxford PDF word/POS label alone is not exact-sense CEFR or independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "principal",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Most important or main.",
+        "myanmar_meaning": "အဓိကဖြစ်သော၊ အရေးအကြီးဆုံးဖြစ်သော",
+        "example_sentence": "The principal reason for the delay was bad weather."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 484,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 481,
+        "source_excerpt": "principal adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Ensure adjective main/primary is not confused with school principal noun; verify pronunciation and example.",
+      "independent_reviewer_task": "Independent human reviewer must confirm exact intended sense and CEFR teaching suitability using a dated publisher dictionary sense URL, fluent Myanmar meaning, English definition, original example grammar, British pronunciation, source provenance and content-bound signoff. Oxford PDF word/POS label alone is not exact-sense CEFR or independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "steam",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Water in the form of gas, especially when heated.",
+        "myanmar_meaning": "ရေနွေးငွေ့",
+        "example_sentence": "Steam rose from the bowl of soup."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 546,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 597,
+        "source_excerpt": "steam n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Distinguish steam from visible condensed water droplets; review Burmese rendering of vapour rising from soup.",
+      "independent_reviewer_task": "Independent human reviewer must confirm exact intended sense and CEFR teaching suitability using a dated publisher dictionary sense URL, fluent Myanmar meaning, English definition, original example grammar, British pronunciation, source provenance and content-bound signoff. Oxford PDF word/POS label alone is not exact-sense CEFR or independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "commander",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A person in charge of a military group or operation.",
+        "myanmar_meaning": "စစ်ဘက်ဆိုင်ရာ အမိန့်ပေးခေါင်းဆောင်",
+        "example_sentence": "The commander explained the safety plan to the unit."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 548,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 1,
+        "extracted_line": 106,
+        "source_excerpt": "commander n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Military commander versus non-military commanding role; check register and contextual translation.",
+      "independent_reviewer_task": "Independent human reviewer must confirm exact intended sense and CEFR teaching suitability using a dated publisher dictionary sense URL, fluent Myanmar meaning, English definition, original example grammar, British pronunciation, source provenance and content-bound signoff. Oxford PDF word/POS label alone is not exact-sense CEFR or independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "monthly",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Happening or produced once every month.",
+        "myanmar_meaning": "လစဉ်ဖြစ်သော",
+        "example_sentence": "Our monthly meeting takes place on Friday."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 556,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 401,
+        "source_excerpt": "monthly adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Example uses adjective before meeting; distinguish monthly adverb and monthly publication noun.",
+      "independent_reviewer_task": "Independent human reviewer must confirm exact intended sense and CEFR teaching suitability using a dated publisher dictionary sense URL, fluent Myanmar meaning, English definition, original example grammar, British pronunciation, source provenance and content-bound signoff. Oxford PDF word/POS label alone is not exact-sense CEFR or independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "barely",
+      "level": "B2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Only just; by a very small amount.",
+        "myanmar_meaning": "အနိုင်နိုင်၊ မဖြစ်စလောက်သာ",
+        "example_sentence": "She could barely hear the speaker at the back."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 562,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 1,
+        "extracted_line": 52,
+        "source_excerpt": "barely adv.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Barely hear means almost unable to hear, not a low-volume description; review Myanmar adverb naturalness.",
+      "independent_reviewer_task": "Independent human reviewer must confirm exact intended sense and CEFR teaching suitability using a dated publisher dictionary sense URL, fluent Myanmar meaning, English definition, original example grammar, British pronunciation, source provenance and content-bound signoff. Oxford PDF word/POS label alone is not exact-sense CEFR or independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "psychological",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Related to the mind, emotions, or behaviour.",
+        "myanmar_meaning": "စိတ်ပိုင်းဆိုင်ရာ",
+        "example_sentence": "Long periods of stress can have psychological effects."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 635,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 495,
+        "source_excerpt": "psychological adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Mind/emotion sense versus experimental psychology; avoid medical claims from the stress example.",
+      "independent_reviewer_task": "Independent human reviewer must confirm exact intended sense and CEFR teaching suitability using a dated publisher dictionary sense URL, fluent Myanmar meaning, English definition, original example grammar, British pronunciation, source provenance and content-bound signoff. Oxford PDF word/POS label alone is not exact-sense CEFR or independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "overcome",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To succeed in dealing with a problem or difficulty.",
+        "myanmar_meaning": "ကျော်လွှားသည်",
+        "example_sentence": "She worked hard to overcome her fear of speaking."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 636,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 443,
+        "source_excerpt": "overcome v.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Problem/fear overcoming sense; distinguish physical overcoming and passive overcome by emotion.",
+      "independent_reviewer_task": "Independent human reviewer must confirm exact intended sense and CEFR teaching suitability using a dated publisher dictionary sense URL, fluent Myanmar meaning, English definition, original example grammar, British pronunciation, source provenance and content-bound signoff. Oxford PDF word/POS label alone is not exact-sense CEFR or independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "highway",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A major road designed for travelling between places.",
+        "myanmar_meaning": "အဝေးပြေးလမ်းမကြီး",
+        "example_sentence": "The highway was closed after heavy rain."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 706,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 304,
+        "source_excerpt": "highway n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Check international highway versus British motorway distinctions; avoid equating all highways with motorways.",
+      "independent_reviewer_task": "Independent human reviewer must confirm exact intended sense and CEFR teaching suitability using a dated publisher dictionary sense URL, fluent Myanmar meaning, English definition, original example grammar, British pronunciation, source provenance and content-bound signoff. Oxford PDF word/POS label alone is not exact-sense CEFR or independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "jury",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A group of people who decide facts in a court case.",
+        "myanmar_meaning": "ဂျူရီအဖွဲ့၊ တရားခွင်အကဲဖြတ်အဖွဲ့",
+        "example_sentence": "The jury listened carefully to the evidence."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 707,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 358,
+        "source_excerpt": "jury n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Legal fact-finding jury versus competition judging panel; ensure Myanmar gloss does not imply a professional judge.",
+      "independent_reviewer_task": "Independent human reviewer must confirm exact intended sense and CEFR teaching suitability using a dated publisher dictionary sense URL, fluent Myanmar meaning, English definition, original example grammar, British pronunciation, source provenance and content-bound signoff. Oxford PDF word/POS label alone is not exact-sense CEFR or independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
