@@ -1,0 +1,435 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A1_ELEVENTH_TWELVE_DIRECT_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-29",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 12,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 12,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "draft_pos_reconciliation_count": 0,
+  "independently_approved_count": 0,
+  "source_limitations": "Official Oxford 3000 by CEFR level PDF directly inspected 2026-10-29. One-based PDF pages and zero-based web extracted lines. Publisher A1 word/POS observations only, not independently checked exact senses. Bathroom/toilet British-usage nuance, shoe/hand/eye singular-plural morphology, and key/clock/desk polysemy require human editorial review. No English, Myanmar, example, CEFR, George/Emma listening, physical iPhone, hosting or deployment approval.",
+  "records": [
+    {
+      "word": "key",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A small object used to open a lock.",
+        "myanmar_meaning": "သော့",
+        "example_sentence": "Where is the key?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 162,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 418,
+        "source_excerpt": "key n., adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Noun for a physical lock key in example, not the adjective meaning important or a musical key.",
+      "editorial_risk": "A1_ELEVENTH_TWELVE_KEY_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended concrete A1 noun sense against an exact-sense publisher entry, source-backed CEFR applicability, fluent Myanmar meaning, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "shirt",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Clothing worn on the upper body.",
+        "myanmar_meaning": "ရှပ်အင်္ကျီ",
+        "example_sentence": "He wears a blue shirt."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 163,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 688,
+        "source_excerpt": "shirt n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Clothing noun, not T-shirt; check Myanmar garment terminology and British usage.",
+      "editorial_risk": "A1_ELEVENTH_TWELVE_SHIRT_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended concrete A1 noun sense against an exact-sense publisher entry, source-backed CEFR applicability, fluent Myanmar meaning, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "shoe",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Something worn on a foot for protection.",
+        "myanmar_meaning": "ဖိနပ်",
+        "example_sentence": "My shoe is wet."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 164,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 689,
+        "source_excerpt": "shoe n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Singular footwear noun; the example refers to one wet shoe, not a pair.",
+      "editorial_risk": "A1_ELEVENTH_TWELVE_SHOE_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended concrete A1 noun sense against an exact-sense publisher entry, source-backed CEFR applicability, fluent Myanmar meaning, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "bed",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A piece of furniture used for sleeping.",
+        "myanmar_meaning": "အိပ်ရာ၊ ကုတင်",
+        "example_sentence": "The cat sleeps on my bed."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 165,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 72,
+        "source_excerpt": "bed n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Furniture sense; distinguish bed from mattress and bedding in Myanmar.",
+      "editorial_risk": "A1_ELEVENTH_TWELVE_BED_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended concrete A1 noun sense against an exact-sense publisher entry, source-backed CEFR applicability, fluent Myanmar meaning, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "room",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An enclosed space inside a building.",
+        "myanmar_meaning": "အခန်း",
+        "example_sentence": "My room is small."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 166,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 658,
+        "source_excerpt": "room n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Physical enclosed room; exclude uncountable available-space sense.",
+      "editorial_risk": "A1_ELEVENTH_TWELVE_ROOM_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended concrete A1 noun sense against an exact-sense publisher entry, source-backed CEFR applicability, fluent Myanmar meaning, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "kitchen",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The room where food is prepared and cooked.",
+        "myanmar_meaning": "မီးဖိုခန်း",
+        "example_sentence": "My mother is in the kitchen."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 167,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 421,
+        "source_excerpt": "kitchen n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Food preparation room; ensure natural Myanmar term for a domestic kitchen.",
+      "editorial_risk": "A1_ELEVENTH_TWELVE_KITCHEN_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended concrete A1 noun sense against an exact-sense publisher entry, source-backed CEFR applicability, fluent Myanmar meaning, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "bathroom",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A room with a toilet or facilities for washing.",
+        "myanmar_meaning": "ရေချိုးခန်း၊ အိမ်သာပါသောအခန်း",
+        "example_sentence": "The bathroom is clean."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 168,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 65,
+        "source_excerpt": "bathroom n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "British bathroom versus toilet distinction: draft definition conflates facilities; reviewer must resolve intended sense.",
+      "editorial_risk": "A1_ELEVENTH_TWELVE_BATHROOM_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended concrete A1 noun sense against an exact-sense publisher entry, source-backed CEFR applicability, fluent Myanmar meaning, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "clock",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A device that shows the time.",
+        "myanmar_meaning": "နာရီ (အချိန်ပြကိရိယာ)",
+        "example_sentence": "The clock is on the wall."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 169,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 154,
+        "source_excerpt": "clock n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Time-display device distinct from wristwatch; check Myanmar translation.",
+      "editorial_risk": "A1_ELEVENTH_TWELVE_CLOCK_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended concrete A1 noun sense against an exact-sense publisher entry, source-backed CEFR applicability, fluent Myanmar meaning, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "desk",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A table used for studying or office work.",
+        "myanmar_meaning": "စာရေးစားပွဲ၊ အလုပ်စားပွဲ",
+        "example_sentence": "My books are on the desk."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 170,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 203,
+        "source_excerpt": "desk n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Work or study desk, not a general dining table; distinguish Myanmar terminology.",
+      "editorial_risk": "A1_ELEVENTH_TWELVE_DESK_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended concrete A1 noun sense against an exact-sense publisher entry, source-backed CEFR applicability, fluent Myanmar meaning, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "head",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The part of the body above the neck.",
+        "myanmar_meaning": "ခေါင်း၊ ဦးခေါင်း",
+        "example_sentence": "He has a hat on his head."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 171,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 356,
+        "source_excerpt": "head n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Anatomical head sense; exclude leader/top metaphor and confirm Burmese usage.",
+      "editorial_risk": "A1_ELEVENTH_TWELVE_HEAD_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended concrete A1 noun sense against an exact-sense publisher entry, source-backed CEFR applicability, fluent Myanmar meaning, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "hand",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The part of the body at the end of the arm.",
+        "myanmar_meaning": "လက်",
+        "example_sentence": "Please wash your hands."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 172,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 347,
+        "source_excerpt": "hand n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Anatomical hand, not entire arm; plural hands in the example is inflected form.",
+      "editorial_risk": "A1_ELEVENTH_TWELVE_HAND_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended concrete A1 noun sense against an exact-sense publisher entry, source-backed CEFR applicability, fluent Myanmar meaning, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "eye",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The part of the body used for seeing.",
+        "myanmar_meaning": "မျက်လုံး",
+        "example_sentence": "I have two eyes."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 173,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 263,
+        "source_excerpt": "eye n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Anatomical organ sense, plural eyes in example; exclude eye of a needle or figurative use.",
+      "editorial_risk": "A1_ELEVENTH_TWELVE_EYE_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended concrete A1 noun sense against an exact-sense publisher entry, source-backed CEFR applicability, fluent Myanmar meaning, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
