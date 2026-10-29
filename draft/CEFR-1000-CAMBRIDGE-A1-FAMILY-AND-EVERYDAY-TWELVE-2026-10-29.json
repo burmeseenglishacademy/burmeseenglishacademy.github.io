@@ -1,0 +1,468 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A1_TWELVE_CAMBRIDGE_INDEXED_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-29",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "oxford_packet_blob_sha": "36862f52831aa6a1bf8c925da49ecb2085796769",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 12,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "cambridge_sense_label_counts": {
+    "A1": 8,
+    "A2": 4
+  },
+  "independently_approved_count": 0,
+  "limitations": "Cambridge University Press publisher-owned search-indexed page text observed 2026-10-29. Direct Cambridge dictionary page fetch returned HTTP 403. These are publisher sense-label research leads, NOT a complete direct page review or independent human signoff. Oxford A1 labels are word/POS only. Four A1 draft kinship entries have Cambridge A2 sense labels. No shortlist edit, independent approval, audio listening, iPhone QA or production deployment.",
+  "records": [
+    {
+      "word": "sister",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A female sibling.",
+        "myanmar_meaning": "အစ်မ၊ ညီမ",
+        "example_sentence": "My sister is a student."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 150,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "oxford_packet_path": "draft/CEFR-1000-OXFORD-A1-NINTH-TWELVE-2026-10-29.json",
+      "oxford_packet_blob_sha": "36862f52831aa6a1bf8c925da49ecb2085796769",
+      "oxford_word_pos_level": "A1",
+      "oxford_pdf_page": 3,
+      "oxford_extracted_line": 700,
+      "oxford_source_excerpt": "sister n.",
+      "cambridge_source": {
+        "publisher": "Cambridge University Press & Assessment",
+        "url": "https://dictionary.cambridge.org/dictionary/english/sister",
+        "observed_on": "2026-10-29",
+        "cefr_label": "A1",
+        "part_of_speech": "noun",
+        "evidence_scope": "PUBLISHER_OWNED_SEARCH_INDEXED_EXACT_SENSE_LEAD_NOT_HUMAN_VERIFICATION",
+        "access": "SEARCH_INDEXED_PUBLISHER_PAGE_TEXT_DIRECT_PAGE_HTTP_403",
+        "source_excerpt": null
+      },
+      "editorial_discrepancy": "Sibling sense; Myanmar အစ်မ/ညီမ distinguishes older and younger sisters. Exclude nun and ward nurse senses.",
+      "independent_reviewer_task": "Independent human reviewer must access the actual publisher sense, reconcile Oxford word/POS and Cambridge sense labels, check original English definition, fluent Myanmar meaning, example grammar, British usage and source provenance; document identity and signed evidence. No automatic approval or retiering.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "son",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A male child of a parent.",
+        "myanmar_meaning": "သား",
+        "example_sentence": "Their son is five."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 151,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "oxford_packet_path": "draft/CEFR-1000-OXFORD-A1-NINTH-TWELVE-2026-10-29.json",
+      "oxford_packet_blob_sha": "36862f52831aa6a1bf8c925da49ecb2085796769",
+      "oxford_word_pos_level": "A1",
+      "oxford_pdf_page": 3,
+      "oxford_extracted_line": 719,
+      "oxford_source_excerpt": "son n.",
+      "cambridge_source": {
+        "publisher": "Cambridge University Press & Assessment",
+        "url": "https://dictionary.cambridge.org/dictionary/english/son",
+        "observed_on": "2026-10-29",
+        "cefr_label": "A1",
+        "part_of_speech": "noun",
+        "evidence_scope": "PUBLISHER_OWNED_SEARCH_INDEXED_EXACT_SENSE_LEAD_NOT_HUMAN_VERIFICATION",
+        "access": "SEARCH_INDEXED_PUBLISHER_PAGE_TEXT_DIRECT_PAGE_HTTP_403",
+        "source_excerpt": null
+      },
+      "editorial_discrepancy": "Male child relative to a parent; exclude forms of address and figurative 'son of' uses.",
+      "independent_reviewer_task": "Independent human reviewer must access the actual publisher sense, reconcile Oxford word/POS and Cambridge sense labels, check original English definition, fluent Myanmar meaning, example grammar, British usage and source provenance; document identity and signed evidence. No automatic approval or retiering.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "daughter",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A female child of a parent.",
+        "myanmar_meaning": "သမီး",
+        "example_sentence": "Her daughter is at school."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 152,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "oxford_packet_path": "draft/CEFR-1000-OXFORD-A1-NINTH-TWELVE-2026-10-29.json",
+      "oxford_packet_blob_sha": "36862f52831aa6a1bf8c925da49ecb2085796769",
+      "oxford_word_pos_level": "A1",
+      "oxford_pdf_page": 1,
+      "oxford_extracted_line": 194,
+      "oxford_source_excerpt": "daughter n.",
+      "cambridge_source": {
+        "publisher": "Cambridge University Press & Assessment",
+        "url": "https://dictionary.cambridge.org/dictionary/english/daughter",
+        "observed_on": "2026-10-29",
+        "cefr_label": "A1",
+        "part_of_speech": "noun",
+        "evidence_scope": "PUBLISHER_OWNED_SEARCH_INDEXED_EXACT_SENSE_LEAD_NOT_HUMAN_VERIFICATION",
+        "access": "SEARCH_INDEXED_PUBLISHER_PAGE_TEXT_DIRECT_PAGE_HTTP_403",
+        "source_excerpt": null
+      },
+      "editorial_discrepancy": "Female child relative to a parent; do not confuse with stepdaughter or daughter-in-law.",
+      "independent_reviewer_task": "Independent human reviewer must access the actual publisher sense, reconcile Oxford word/POS and Cambridge sense labels, check original English definition, fluent Myanmar meaning, example grammar, British usage and source provenance; document identity and signed evidence. No automatic approval or retiering.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "grandmother",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The mother of someone's parent.",
+        "myanmar_meaning": "အဘွား၊ အဖွား",
+        "example_sentence": "My grandmother is kind."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 153,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "oxford_packet_path": "draft/CEFR-1000-OXFORD-A1-NINTH-TWELVE-2026-10-29.json",
+      "oxford_packet_blob_sha": "36862f52831aa6a1bf8c925da49ecb2085796769",
+      "oxford_word_pos_level": "A1",
+      "oxford_pdf_page": 2,
+      "oxford_extracted_line": 335,
+      "oxford_source_excerpt": "grandmother n.",
+      "cambridge_source": {
+        "publisher": "Cambridge University Press & Assessment",
+        "url": "https://dictionary.cambridge.org/dictionary/english/grandmother",
+        "observed_on": "2026-10-29",
+        "cefr_label": "A2",
+        "part_of_speech": "noun",
+        "evidence_scope": "PUBLISHER_OWNED_SEARCH_INDEXED_EXACT_SENSE_LEAD_NOT_HUMAN_VERIFICATION",
+        "access": "SEARCH_INDEXED_PUBLISHER_PAGE_TEXT_DIRECT_PAGE_HTTP_403",
+        "source_excerpt": null
+      },
+      "editorial_discrepancy": "Cambridge explicitly labels the same parental-mother sense A2, whereas Oxford word/POS list has A1. Preserve conflict, do not automatically retier. Myanmar အဘွား/အဖွား spelling and maternal/paternal nuance need native review.",
+      "independent_reviewer_task": "Independent human reviewer must access the actual publisher sense, reconcile Oxford word/POS and Cambridge sense labels, check original English definition, fluent Myanmar meaning, example grammar, British usage and source provenance; document identity and signed evidence. No automatic approval or retiering.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "grandfather",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The father of someone's parent.",
+        "myanmar_meaning": "အဘိုး",
+        "example_sentence": "My grandfather is seventy."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 154,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "oxford_packet_path": "draft/CEFR-1000-OXFORD-A1-NINTH-TWELVE-2026-10-29.json",
+      "oxford_packet_blob_sha": "36862f52831aa6a1bf8c925da49ecb2085796769",
+      "oxford_word_pos_level": "A1",
+      "oxford_pdf_page": 2,
+      "oxford_extracted_line": 334,
+      "oxford_source_excerpt": "grandfather n.",
+      "cambridge_source": {
+        "publisher": "Cambridge University Press & Assessment",
+        "url": "https://dictionary.cambridge.org/dictionary/english/grandfather",
+        "observed_on": "2026-10-29",
+        "cefr_label": "A2",
+        "part_of_speech": "noun",
+        "evidence_scope": "PUBLISHER_OWNED_SEARCH_INDEXED_EXACT_SENSE_LEAD_NOT_HUMAN_VERIFICATION",
+        "access": "SEARCH_INDEXED_PUBLISHER_PAGE_TEXT_DIRECT_PAGE_HTTP_403",
+        "source_excerpt": null
+      },
+      "editorial_discrepancy": "Cambridge explicitly labels parental-father sense A2 versus Oxford A1 word/POS. Preserve conflict; review Myanmar kinship and family-side phrasing.",
+      "independent_reviewer_task": "Independent human reviewer must access the actual publisher sense, reconcile Oxford word/POS and Cambridge sense labels, check original English definition, fluent Myanmar meaning, example grammar, British usage and source provenance; document identity and signed evidence. No automatic approval or retiering.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "uncle",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The brother of a parent or the husband of an aunt.",
+        "myanmar_meaning": "ဦးလေး",
+        "example_sentence": "My uncle lives nearby."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 155,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "oxford_packet_path": "draft/CEFR-1000-OXFORD-A1-NINTH-TWELVE-2026-10-29.json",
+      "oxford_packet_blob_sha": "36862f52831aa6a1bf8c925da49ecb2085796769",
+      "oxford_word_pos_level": "A1",
+      "oxford_pdf_page": 4,
+      "oxford_extracted_line": 834,
+      "oxford_source_excerpt": "uncle n.",
+      "cambridge_source": {
+        "publisher": "Cambridge University Press & Assessment",
+        "url": "https://dictionary.cambridge.org/dictionary/learner-english/uncle",
+        "observed_on": "2026-10-29",
+        "cefr_label": "A2",
+        "part_of_speech": "noun",
+        "evidence_scope": "PUBLISHER_OWNED_SEARCH_INDEXED_EXACT_SENSE_LEAD_NOT_HUMAN_VERIFICATION",
+        "access": "SEARCH_INDEXED_PUBLISHER_PAGE_TEXT_DIRECT_PAGE_HTTP_403",
+        "source_excerpt": null
+      },
+      "editorial_discrepancy": "Cambridge A2 kinship sense versus Oxford A1 word/POS. Check parent sibling vs marriage and Myanmar relative distinctions; no automatic retiering.",
+      "independent_reviewer_task": "Independent human reviewer must access the actual publisher sense, reconcile Oxford word/POS and Cambridge sense labels, check original English definition, fluent Myanmar meaning, example grammar, British usage and source provenance; document identity and signed evidence. No automatic approval or retiering.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "aunt",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The sister of a parent or the wife of an uncle.",
+        "myanmar_meaning": "အဒေါ်",
+        "example_sentence": "My aunt is a teacher."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 156,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "oxford_packet_path": "draft/CEFR-1000-OXFORD-A1-NINTH-TWELVE-2026-10-29.json",
+      "oxford_packet_blob_sha": "36862f52831aa6a1bf8c925da49ecb2085796769",
+      "oxford_word_pos_level": "A1",
+      "oxford_pdf_page": 1,
+      "oxford_extracted_line": 52,
+      "oxford_source_excerpt": "aunt n.",
+      "cambridge_source": {
+        "publisher": "Cambridge University Press & Assessment",
+        "url": "https://dictionary.cambridge.org/dictionary/english/aunt",
+        "observed_on": "2026-10-29",
+        "cefr_label": "A2",
+        "part_of_speech": "noun",
+        "evidence_scope": "PUBLISHER_OWNED_SEARCH_INDEXED_EXACT_SENSE_LEAD_NOT_HUMAN_VERIFICATION",
+        "access": "SEARCH_INDEXED_PUBLISHER_PAGE_TEXT_DIRECT_PAGE_HTTP_403",
+        "source_excerpt": null
+      },
+      "editorial_discrepancy": "Cambridge A2 kinship sense versus Oxford A1 word/POS. Check parent sibling vs marriage and Myanmar relative distinctions; no automatic retiering.",
+      "independent_reviewer_task": "Independent human reviewer must access the actual publisher sense, reconcile Oxford word/POS and Cambridge sense labels, check original English definition, fluent Myanmar meaning, example grammar, British usage and source provenance; document identity and signed evidence. No automatic approval or retiering.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "phone",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A device used to call or talk to people.",
+        "myanmar_meaning": "ဖုန်း",
+        "example_sentence": "My phone is on the table."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 157,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "oxford_packet_path": "draft/CEFR-1000-OXFORD-A1-NINTH-TWELVE-2026-10-29.json",
+      "oxford_packet_blob_sha": "36862f52831aa6a1bf8c925da49ecb2085796769",
+      "oxford_word_pos_level": "A1",
+      "oxford_pdf_page": 3,
+      "oxford_extracted_line": 588,
+      "oxford_source_excerpt": "phone n., v.",
+      "cambridge_source": {
+        "publisher": "Cambridge University Press & Assessment",
+        "url": "https://dictionary.cambridge.org/dictionary/english/phone",
+        "observed_on": "2026-10-29",
+        "cefr_label": "A1",
+        "part_of_speech": "noun",
+        "evidence_scope": "PUBLISHER_OWNED_SEARCH_INDEXED_EXACT_SENSE_LEAD_NOT_HUMAN_VERIFICATION",
+        "access": "SEARCH_INDEXED_PUBLISHER_PAGE_TEXT_DIRECT_PAGE_HTTP_403",
+        "source_excerpt": null
+      },
+      "editorial_discrepancy": "Cambridge A1 communication device noun; distinct from verb phone and specialized phonetics noun. The original example fits device noun.",
+      "independent_reviewer_task": "Independent human reviewer must access the actual publisher sense, reconcile Oxford word/POS and Cambridge sense labels, check original English definition, fluent Myanmar meaning, example grammar, British usage and source provenance; document identity and signed evidence. No automatic approval or retiering.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "computer",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An electronic machine used to work with information.",
+        "myanmar_meaning": "ကွန်ပျူတာ",
+        "example_sentence": "I use a computer at school."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 158,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "oxford_packet_path": "draft/CEFR-1000-OXFORD-A1-NINTH-TWELVE-2026-10-29.json",
+      "oxford_packet_blob_sha": "36862f52831aa6a1bf8c925da49ecb2085796769",
+      "oxford_word_pos_level": "A1",
+      "oxford_pdf_page": 1,
+      "oxford_extracted_line": 168,
+      "oxford_source_excerpt": "computer n.",
+      "cambridge_source": {
+        "publisher": "Cambridge University Press & Assessment",
+        "url": "https://dictionary.cambridge.org/dictionary/english/computer",
+        "observed_on": "2026-10-29",
+        "cefr_label": "A1",
+        "part_of_speech": "noun",
+        "evidence_scope": "PUBLISHER_OWNED_SEARCH_INDEXED_EXACT_SENSE_LEAD_NOT_HUMAN_VERIFICATION",
+        "access": "SEARCH_INDEXED_PUBLISHER_PAGE_TEXT_DIRECT_PAGE_HTTP_403",
+        "source_excerpt": null
+      },
+      "editorial_discrepancy": "Cambridge A1 information-processing machine noun; ensure definition does not overgeneralize all electronic devices.",
+      "independent_reviewer_task": "Independent human reviewer must access the actual publisher sense, reconcile Oxford word/POS and Cambridge sense labels, check original English definition, fluent Myanmar meaning, example grammar, British usage and source provenance; document identity and signed evidence. No automatic approval or retiering.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "picture",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An image made by drawing, painting or photography.",
+        "myanmar_meaning": "ရုပ်ပုံ၊ ပုံ",
+        "example_sentence": "This picture is beautiful."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 159,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "oxford_packet_path": "draft/CEFR-1000-OXFORD-A1-NINTH-TWELVE-2026-10-29.json",
+      "oxford_packet_blob_sha": "36862f52831aa6a1bf8c925da49ecb2085796769",
+      "oxford_word_pos_level": "A1",
+      "oxford_pdf_page": 3,
+      "oxford_extracted_line": 593,
+      "oxford_source_excerpt": "picture n.",
+      "cambridge_source": {
+        "publisher": "Cambridge University Press & Assessment",
+        "url": "https://dictionary.cambridge.org/dictionary/english/picture",
+        "observed_on": "2026-10-29",
+        "cefr_label": "A1",
+        "part_of_speech": "noun",
+        "evidence_scope": "PUBLISHER_OWNED_SEARCH_INDEXED_EXACT_SENSE_LEAD_NOT_HUMAN_VERIFICATION",
+        "access": "SEARCH_INDEXED_PUBLISHER_PAGE_TEXT_DIRECT_PAGE_HTTP_403",
+        "source_excerpt": null
+      },
+      "editorial_discrepancy": "Cambridge A1 drawing/painting/photo image noun; distinct from B2 screen image and C1 imagine verb. Example is ambiguous without context.",
+      "independent_reviewer_task": "Independent human reviewer must access the actual publisher sense, reconcile Oxford word/POS and Cambridge sense labels, check original English definition, fluent Myanmar meaning, example grammar, British usage and source provenance; document identity and signed evidence. No automatic approval or retiering.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "bag",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A container used to carry things.",
+        "myanmar_meaning": "အိတ်",
+        "example_sentence": "The bag is under the chair."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 160,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "oxford_packet_path": "draft/CEFR-1000-OXFORD-A1-NINTH-TWELVE-2026-10-29.json",
+      "oxford_packet_blob_sha": "36862f52831aa6a1bf8c925da49ecb2085796769",
+      "oxford_word_pos_level": "A1",
+      "oxford_pdf_page": 1,
+      "oxford_extracted_line": 58,
+      "oxford_source_excerpt": "bag n.",
+      "cambridge_source": {
+        "publisher": "Cambridge University Press & Assessment",
+        "url": "https://dictionary.cambridge.org/dictionary/english/bag",
+        "observed_on": "2026-10-29",
+        "cefr_label": "A1",
+        "part_of_speech": "noun",
+        "evidence_scope": "PUBLISHER_OWNED_SEARCH_INDEXED_EXACT_SENSE_LEAD_NOT_HUMAN_VERIFICATION",
+        "access": "SEARCH_INDEXED_PUBLISHER_PAGE_TEXT_DIRECT_PAGE_HTTP_403",
+        "source_excerpt": null
+      },
+      "editorial_discrepancy": "Cambridge A1 carrying-container noun; review bag versus suitcase/handbag and whether Myanmar အိတ် is sufficiently natural.",
+      "independent_reviewer_task": "Independent human reviewer must access the actual publisher sense, reconcile Oxford word/POS and Cambridge sense labels, check original English definition, fluent Myanmar meaning, example grammar, British usage and source provenance; document identity and signed evidence. No automatic approval or retiering.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "money",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Coins and notes used to buy things.",
+        "myanmar_meaning": "ငွေ၊ ပိုက်ဆံ",
+        "example_sentence": "I need money for the bus."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 161,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "oxford_packet_path": "draft/CEFR-1000-OXFORD-A1-NINTH-TWELVE-2026-10-29.json",
+      "oxford_packet_blob_sha": "36862f52831aa6a1bf8c925da49ecb2085796769",
+      "oxford_word_pos_level": "A1",
+      "oxford_pdf_page": 2,
+      "oxford_extracted_line": 492,
+      "oxford_source_excerpt": "money n.",
+      "cambridge_source": {
+        "publisher": "Cambridge University Press & Assessment",
+        "url": "https://dictionary.cambridge.org/dictionary/english/money",
+        "observed_on": "2026-10-29",
+        "cefr_label": "A1",
+        "part_of_speech": "noun",
+        "evidence_scope": "PUBLISHER_OWNED_SEARCH_INDEXED_EXACT_SENSE_LEAD_NOT_HUMAN_VERIFICATION",
+        "access": "SEARCH_INDEXED_PUBLISHER_PAGE_TEXT_DIRECT_PAGE_HTTP_403",
+        "source_excerpt": null
+      },
+      "editorial_discrepancy": "Cambridge A1 uncountable noun including an amount of funds, not exclusively physical cash; original definition coins and notes may be too narrow. Keep rewrite proposal on hold.",
+      "independent_reviewer_task": "Independent human reviewer must access the actual publisher sense, reconcile Oxford word/POS and Cambridge sense labels, check original English definition, fluent Myanmar meaning, example grammar, British usage and source provenance; document identity and signed evidence. No automatic approval or retiering.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
