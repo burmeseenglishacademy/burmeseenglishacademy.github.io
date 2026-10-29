@@ -34,3 +34,9 @@ Each of 12 research records preserves the frozen original English definition, My
 
 ## CI audit scope
 The new source-integrity auditor pins all 12 publisher excerpts and source locations, original bilingual snapshots and historical provenance; its negative tests must reject 306 forged record/metadata variants. Six parallel CEFR-level structural jobs and the documentary no-deployment gate include this audit. Actual run IDs and job/log conclusions must be added only after they have been inspected. CI success is structural, never independent linguistic review or release permission.
+
+## Verified CI and production protection
+Verified at 2026-10-29 08:04 UTC on code commit `be36f975ba6fec218b66395bcf00cab397ecfa55`:
+- [Parallel structural run 40839481745](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40839481745): **SUCCESS**, all six A1/A2/B1/B2/C1/ALL jobs completed successfully. ALL-job logs confirmed **306/306** new forged A2 publisher/bilingual/provenance/review mutations rejected, **145/145** handoff mutations rejected, 377 distinct source observations, 623 without observations, and zero approvals. Protected production paths unchanged.
+- [Documentary no-deployment run 40839481736](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40839481736): **SUCCESS as report-only**. Actual job logs confirm release remains blocked for absent human approvals, final listening, physical iPhone, mobile/browser and hosting/deployment evidence; protected production paths unchanged. CI success does **not** grant launch readiness.
+- Initial run IDs 40839464648 and 40839464607 failed due to an incorrectly escaped Git-blob NUL byte in the new auditor. Fixed at `be36f975ba6fec218b66395bcf00cab397ecfa55`, then both workflows were rerun successfully by branch push. No main modification, merge or publication.
