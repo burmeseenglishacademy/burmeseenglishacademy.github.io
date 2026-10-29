@@ -26,7 +26,8 @@ PACKETS = {
            "A1-EIGHTH-TWELVE-2026-10-29",
            "A1-NINTH-TWELVE-2026-10-29",
            "A1-TENTH-TWELVE-2026-10-29",
-           "A1-ELEVENTH-TWELVE-2026-10-29"),
+           "A1-ELEVENTH-TWELVE-2026-10-29",
+           "A1-TWELFTH-TWELVE-2026-10-30"),
     "A2": ("A2-TWELVE-DIRECT-PDF-2026-10-28", "A2-FOLLOWUP-TWELVE-2026-10-28",
            "A2-THIRD-TWENTYFOUR-2026-10-29",
            "A2-FOURTH-TWELVE-2026-10-29",
@@ -42,7 +43,7 @@ PACKETS = {
            "C1-SIXTH-TWELVE-2026-10-29"),
 }
 EXPECTED = {
-    "A1": {"observations": 168, "distinct": 160, "A1": 160},
+    "A1": {"observations": 180, "distinct": 172, "A1": 172},
     "A2": {"observations": 72, "distinct": 72, "A1": 50, "A2": 21, "B1": 1},
     "B1": {"observations": 84, "distinct": 84, "A1": 14, "A2": 33, "B1": 29, "B2": 8, "locator_only": 12},
     "B2": {"observations": 72, "distinct": 70, "A1": 2, "A2": 12, "B1": 17, "B2": 34, "C1": 4, "UNLISTED": 1, "locator_only": 12},
@@ -126,7 +127,7 @@ def normalize(row):
     if level is not None or pub is None:
         require(url in (SOURCE_PREFIX + "3000" + SOURCE_SUFFIX,
                         SOURCE_PREFIX + "5000" + SOURCE_SUFFIX), "Untrusted Oxford PDF URL")
-    require(date in ("2026-10-28", "2026-10-29"), "Source observation date missing/drifted")
+    require(date in ("2026-10-28", "2026-10-29", "2026-10-30"), "Source observation date missing/drifted")
     if level is not None:
         require(type(page) is int and page > 0 and type(line) is int and line >= 0,
                 "Invalid PDF page/line locator")
