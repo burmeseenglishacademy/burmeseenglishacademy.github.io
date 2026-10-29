@@ -1,0 +1,477 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A1_SEVENTH_TWELVE_DIRECT_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-29",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 12,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 12,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "word_pos_discrepancies": 0,
+  "part_of_speech_taxonomy_flags": [
+    "how"
+  ],
+  "independently_approved_count": 0,
+  "distinct_A1_oxford_word_pos_coverage_after_batch": 112,
+  "source_limitations": "Official Oxford 3000 PDF word/POS labels only, NOT exact-sense CEFR or independent Myanmar/English/example approval. No human-independent approvals, no real audio listening, no physical iPhone QA, no deployment. Twelve observations are not twelve independently reviewed words.",
+  "records": [
+    {
+      "word": "to",
+      "level": "A1",
+      "part_of_speech": "preposition",
+      "shortlist_snapshot": {
+        "english_definition": "Used to show the direction or destination of movement.",
+        "myanmar_meaning": "သို့၊ ကို",
+        "example_sentence": "I go to school."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 101,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 804,
+        "source_excerpt": "to prep., infinitive marker",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "TO_DESTINATION_VS_INFINITIVE",
+      "editorial_risk": "Destination use in the draft example must not be confused with the infinitive marker; verify grammatical function and Myanmar destination particle.",
+      "independent_reviewer_task": "Separate independent human review for to: verify exact-sense CEFR from a directly inspected sense-specific dictionary entry with URL, date and locator; check fluent Myanmar, English definition, original example grammar and British pronunciation. Oxford A1 word/POS alone is NOT exact-sense proof. Bind any real reviewer receipt to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "from",
+      "level": "A1",
+      "part_of_speech": "preposition",
+      "shortlist_snapshot": {
+        "english_definition": "Used to show where something starts or comes from.",
+        "myanmar_meaning": "မှ၊ ကနေ",
+        "example_sentence": "I am from Myanmar."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 102,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 316,
+        "source_excerpt": "from prep.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "FROM_ORIGIN_VS_START_TIME",
+      "editorial_risk": "The example expresses place of origin; independently verify country-origin use rather than a time or material source.",
+      "independent_reviewer_task": "Separate independent human review for from: verify exact-sense CEFR from a directly inspected sense-specific dictionary entry with URL, date and locator; check fluent Myanmar, English definition, original example grammar and British pronunciation. Oxford A1 word/POS alone is NOT exact-sense proof. Bind any real reviewer receipt to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "with",
+      "level": "A1",
+      "part_of_speech": "preposition",
+      "shortlist_snapshot": {
+        "english_definition": "Together with someone or something.",
+        "myanmar_meaning": "နှင့်အတူ",
+        "example_sentence": "I live with my family."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 103,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 886,
+        "source_excerpt": "with prep.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "WITH_ACCOMPANIMENT_VS_INSTRUMENT",
+      "editorial_risk": "The example expresses living together with family, not use of an instrument; distinguish the intended Myanmar accompaniment meaning.",
+      "independent_reviewer_task": "Separate independent human review for with: verify exact-sense CEFR from a directly inspected sense-specific dictionary entry with URL, date and locator; check fluent Myanmar, English definition, original example grammar and British pronunciation. Oxford A1 word/POS alone is NOT exact-sense proof. Bind any real reviewer receipt to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "for",
+      "level": "A1",
+      "part_of_speech": "preposition",
+      "shortlist_snapshot": {
+        "english_definition": "Intended to help or be given to someone.",
+        "myanmar_meaning": "အတွက်",
+        "example_sentence": "This gift is for you."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 104,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 305,
+        "source_excerpt": "for prep.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "FOR_BENEFICIARY_VS_PURPOSE",
+      "editorial_risk": "The gift example marks the intended recipient, not duration or purpose; verify recipient-focused Myanmar.",
+      "independent_reviewer_task": "Separate independent human review for for: verify exact-sense CEFR from a directly inspected sense-specific dictionary entry with URL, date and locator; check fluent Myanmar, English definition, original example grammar and British pronunciation. Oxford A1 word/POS alone is NOT exact-sense proof. Bind any real reviewer receipt to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "of",
+      "level": "A1",
+      "part_of_speech": "preposition",
+      "shortlist_snapshot": {
+        "english_definition": "Used to show that something belongs to or is part of something.",
+        "myanmar_meaning": "၏၊ ရဲ့",
+        "example_sentence": "The door of the room is open."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 105,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 541,
+        "source_excerpt": "of prep.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "OF_POSSESSION_VS_PARTITIVE",
+      "editorial_risk": "The draft combines possession and part-whole meanings; the door-of-the-room example needs an exact-sense check for naturalness and Myanmar phrasing.",
+      "independent_reviewer_task": "Separate independent human review for of: verify exact-sense CEFR from a directly inspected sense-specific dictionary entry with URL, date and locator; check fluent Myanmar, English definition, original example grammar and British pronunciation. Oxford A1 word/POS alone is NOT exact-sense proof. Bind any real reviewer receipt to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "at",
+      "level": "A1",
+      "part_of_speech": "preposition",
+      "shortlist_snapshot": {
+        "english_definition": "Used to show an exact place or time.",
+        "myanmar_meaning": "မှာ၊ တွင်",
+        "example_sentence": "We meet at six."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 106,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 50,
+        "source_excerpt": "at prep.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "AT_TIME_VS_LOCATION",
+      "editorial_risk": "The definition covers time and location but the example uses time only; require one coherent exact sense before release.",
+      "independent_reviewer_task": "Separate independent human review for at: verify exact-sense CEFR from a directly inspected sense-specific dictionary entry with URL, date and locator; check fluent Myanmar, English definition, original example grammar and British pronunciation. Oxford A1 word/POS alone is NOT exact-sense proof. Bind any real reviewer receipt to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "as",
+      "level": "A1",
+      "part_of_speech": "preposition",
+      "shortlist_snapshot": {
+        "english_definition": "In the role or job of someone.",
+        "myanmar_meaning": "အဖြစ်",
+        "example_sentence": "She works as a teacher."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 107,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 48,
+        "source_excerpt": "as prep.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "AS_ROLE_VS_COMPARISON",
+      "editorial_risk": "The job-role preposition in works as a teacher must be distinguished from as-conjunction and similarity uses.",
+      "independent_reviewer_task": "Separate independent human review for as: verify exact-sense CEFR from a directly inspected sense-specific dictionary entry with URL, date and locator; check fluent Myanmar, English definition, original example grammar and British pronunciation. Oxford A1 word/POS alone is NOT exact-sense proof. Bind any real reviewer receipt to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "by",
+      "level": "A1",
+      "part_of_speech": "preposition",
+      "shortlist_snapshot": {
+        "english_definition": "Used to show who does something or how something happens.",
+        "myanmar_meaning": "က၊ ဖြင့်",
+        "example_sentence": "I go to work by bus."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 108,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 120,
+        "source_excerpt": "by prep.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "BY_TRANSPORT_VS_PASSIVE_AGENT",
+      "editorial_risk": "The example uses a means of transport, whereas the gloss also refers to an agent; align English and Myanmar to one exact sense.",
+      "independent_reviewer_task": "Separate independent human review for by: verify exact-sense CEFR from a directly inspected sense-specific dictionary entry with URL, date and locator; check fluent Myanmar, English definition, original example grammar and British pronunciation. Oxford A1 word/POS alone is NOT exact-sense proof. Bind any real reviewer receipt to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "about",
+      "level": "A1",
+      "part_of_speech": "preposition",
+      "shortlist_snapshot": {
+        "english_definition": "On the subject of something.",
+        "myanmar_meaning": "အကြောင်း",
+        "example_sentence": "We talk about our family."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 109,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 5,
+        "source_excerpt": "about prep., adv.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "ABOUT_TOPIC_VS_APPROXIMATION",
+      "editorial_risk": "The example uses topic preposition; Oxford combines preposition and adverb, so do not import approximate-quantity sense.",
+      "independent_reviewer_task": "Separate independent human review for about: verify exact-sense CEFR from a directly inspected sense-specific dictionary entry with URL, date and locator; check fluent Myanmar, English definition, original example grammar and British pronunciation. Oxford A1 word/POS alone is NOT exact-sense proof. Bind any real reviewer receipt to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "after",
+      "level": "A1",
+      "part_of_speech": "preposition",
+      "shortlist_snapshot": {
+        "english_definition": "Later than a particular time or event.",
+        "myanmar_meaning": "ပြီးနောက်",
+        "example_sentence": "I sleep after dinner."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 110,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 17,
+        "source_excerpt": "after prep.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "AFTER_TIME_PREP_VS_A2_CONJ_ADV",
+      "editorial_risk": "Oxford places after preposition at A1 but after conjunction/adverb at A2; verify the example's prepositional object.",
+      "independent_reviewer_task": "Separate independent human review for after: verify exact-sense CEFR from a directly inspected sense-specific dictionary entry with URL, date and locator; check fluent Myanmar, English definition, original example grammar and British pronunciation. Oxford A1 word/POS alone is NOT exact-sense proof. Bind any real reviewer receipt to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "before",
+      "level": "A1",
+      "part_of_speech": "preposition",
+      "shortlist_snapshot": {
+        "english_definition": "Earlier than a particular time or event.",
+        "myanmar_meaning": "မတိုင်မီ",
+        "example_sentence": "Wash your hands before lunch."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 111,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 75,
+        "source_excerpt": "before prep.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "BEFORE_TIME_PREP_VS_A2_CONJ_ADV",
+      "editorial_risk": "Oxford places before preposition at A1 but before conjunction/adverb at A2; the example must remain prepositional.",
+      "independent_reviewer_task": "Separate independent human review for before: verify exact-sense CEFR from a directly inspected sense-specific dictionary entry with URL, date and locator; check fluent Myanmar, English definition, original example grammar and British pronunciation. Oxford A1 word/POS alone is NOT exact-sense proof. Bind any real reviewer receipt to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "how",
+      "level": "A1",
+      "part_of_speech": "question word",
+      "shortlist_snapshot": {
+        "english_definition": "Used to ask about a way or condition.",
+        "myanmar_meaning": "ဘယ်လို၊ မည်သို့",
+        "example_sentence": "How are you today?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 115,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 381,
+        "source_excerpt": "how adv.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "HOW_QUESTION_WORD_VS_ADVERB_TAXONOMY",
+      "editorial_risk": "The shortlist labels a question word, while Oxford labels the item adverb; verify pedagogical POS mapping and greeting formula versus method.",
+      "independent_reviewer_task": "Separate independent human review for how: verify exact-sense CEFR from a directly inspected sense-specific dictionary entry with URL, date and locator; check fluent Myanmar, English definition, original example grammar and British pronunciation. Oxford A1 word/POS alone is NOT exact-sense proof. Bind any real reviewer receipt to final content hash.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ],
+  "editorial_rewrite_proposals": [
+    {
+      "word": "at",
+      "issue": "Draft definition spans both place and time while the example uses time.",
+      "suggested_english_definition": "Used before a particular time.",
+      "suggested_myanmar_meaning": "အချိန်တစ်ခုကို ဖော်ပြရာတွင် သုံးသော 'မှာ၊ တွင်'",
+      "suggested_example_sentence": "We meet at six o'clock.",
+      "review_status": "UNREVIEWED_UNAPPLIED_PROPOSAL",
+      "human_independent_approval": false
+    },
+    {
+      "word": "by",
+      "issue": "Draft combines passive agent and transport method.",
+      "suggested_english_definition": "Used to show the means of transport.",
+      "suggested_myanmar_meaning": "ယာဉ်တစ်မျိုးမျိုးဖြင့် သွားလာကြောင်း ဖော်ပြရာတွင် သုံးသော 'ဖြင့်'",
+      "suggested_example_sentence": "She goes to work by bus.",
+      "review_status": "UNREVIEWED_UNAPPLIED_PROPOSAL",
+      "human_independent_approval": false
+    },
+    {
+      "word": "of",
+      "issue": "Possession and part-whole senses overlap in draft and example.",
+      "suggested_english_definition": "Used to show that something is part of a larger thing.",
+      "suggested_myanmar_meaning": "တစ်ခုခု၏ အစိတ်အပိုင်းဖြစ်ကြောင်း ဖော်ပြရာတွင် သုံးသော '၏၊ ရဲ့'",
+      "suggested_example_sentence": "The roof of the house is red.",
+      "review_status": "UNREVIEWED_UNAPPLIED_PROPOSAL",
+      "human_independent_approval": false
+    },
+    {
+      "word": "how",
+      "issue": "Question-word classroom label differs from Oxford's adverb taxonomy.",
+      "suggested_english_definition": "Used to ask about someone's condition.",
+      "suggested_myanmar_meaning": "အခြေအနေကို မေးရာတွင် သုံးသော 'ဘယ်လို'",
+      "suggested_example_sentence": "How is your mother today?",
+      "review_status": "UNREVIEWED_UNAPPLIED_PROPOSAL",
+      "human_independent_approval": false
+    }
+  ]
+}
