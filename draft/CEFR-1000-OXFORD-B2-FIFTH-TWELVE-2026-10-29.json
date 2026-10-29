@@ -1,0 +1,425 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B2_FIFTH_TWELVE_DIRECT_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-29",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 12,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 0,
+    "A2": 2,
+    "B1": 3,
+    "B2": 6,
+    "C1": 1
+  },
+  "word_pos_discrepancies": 6,
+  "lower_level_observations": 5,
+  "higher_level_observations": 1,
+  "independently_approved_count": 0,
+  "source_limitations": "Direct official Oxford 3000/5000 word/POS PDF lines, not dictionary exact-sense CEFR labels. B2 shortlist unchanged, 12 on editorial hold. No independent human review, real George/Emma listening, physical iPhone Safari, hosting measurements or deployment.",
+  "records": [
+    {
+      "word": "breath",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Air taken into or sent out of the lungs.",
+        "myanmar_meaning": "အသက်ရှူသွင်းထုတ်သောလေ",
+        "example_sentence": "Take a deep breath before you speak."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 247,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 10,
+        "extracted_line": 2666,
+        "source_excerpt": "breath n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Noun breath versus verb breathe; breathing air, not metaphorical relief.",
+      "independent_reviewer_task": "Independent human reviewer must confirm the exact intended sense and CEFR teaching suitability using a dated dictionary sense URL, fluent Myanmar meaning, English definition, original example grammar and source provenance; word/POS-only Oxford list is not independent sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "brief",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Lasting only a short time.",
+        "myanmar_meaning": "တိုတောင်းသော၊ ခဏတာဖြစ်သော",
+        "example_sentence": "We had a brief meeting after lunch."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 248,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 10,
+        "extracted_line": 2667,
+        "source_excerpt": "brief adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Short duration adjective versus noun legal brief; intended temporal sense.",
+      "independent_reviewer_task": "Independent human reviewer must confirm the exact intended sense and CEFR teaching suitability using a dated dictionary sense URL, fluent Myanmar meaning, English definition, original example grammar and source provenance; word/POS-only Oxford list is not independent sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "conduct",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To organise and carry out an activity.",
+        "myanmar_meaning": "ဆောင်ရွက်သည်၊ ပြုလုပ်သည်",
+        "example_sentence": "The team will conduct a safety inspection."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 250,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 10,
+        "extracted_line": 2714,
+        "source_excerpt": "conduct v., n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Verb organising/carrying out versus directing music or conducting electricity.",
+      "independent_reviewer_task": "Independent human reviewer must confirm the exact intended sense and CEFR teaching suitability using a dated dictionary sense URL, fluent Myanmar meaning, English definition, original example grammar and source provenance; word/POS-only Oxford list is not independent sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "decade",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A period of ten years.",
+        "myanmar_meaning": "ဆယ်စုနှစ်",
+        "example_sentence": "The town has changed a lot in the past decade."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 252,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 8,
+        "extracted_line": 1961,
+        "source_excerpt": "decade n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "B1 publisher word/POS label conflicts with provisional B2; ordinary ten-year sense.",
+      "independent_reviewer_task": "Independent human reviewer must confirm the exact intended sense and CEFR teaching suitability using a dated dictionary sense URL, fluent Myanmar meaning, English definition, original example grammar and source provenance; word/POS-only Oxford list is not independent sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "external",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "On or connected with the outside of something.",
+        "myanmar_meaning": "ပြင်ပဆိုင်ရာ",
+        "example_sentence": "The device has an external power supply."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 254,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 11,
+        "extracted_line": 2844,
+        "source_excerpt": "external adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Physical outside versus outside an organisation; definition may conflate senses.",
+      "independent_reviewer_task": "Independent human reviewer must confirm the exact intended sense and CEFR teaching suitability using a dated dictionary sense URL, fluent Myanmar meaning, English definition, original example grammar and source provenance; word/POS-only Oxford list is not independent sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "fantasy",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An imagined situation that is unlikely to happen in real life.",
+        "myanmar_meaning": "စိတ်ကူးယဉ်အတွေး၊ စိတ်ကူးယဉ်ကမ္ဘာ",
+        "example_sentence": "The novel tells a fantasy about a hidden kingdom."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 255,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 244,
+        "source_excerpt": "fantasy n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Imagined situation versus literary genre; example must express intended sense.",
+      "independent_reviewer_task": "Independent human reviewer must confirm the exact intended sense and CEFR teaching suitability using a dated dictionary sense URL, fluent Myanmar meaning, English definition, original example grammar and source provenance; word/POS-only Oxford list is not independent sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "grab",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To take hold of something suddenly or quickly.",
+        "myanmar_meaning": "အလျင်အမြန်ဆုပ်ကိုင်သည်",
+        "example_sentence": "She grabbed her bag and ran outside."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 256,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 11,
+        "extracted_line": 2892,
+        "source_excerpt": "grab v.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Sudden physical taking versus metaphorical grabbing attention.",
+      "independent_reviewer_task": "Independent human reviewer must confirm the exact intended sense and CEFR teaching suitability using a dated dictionary sense URL, fluent Myanmar meaning, English definition, original example grammar and source provenance; word/POS-only Oxford list is not independent sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "immediate",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Happening or needed without delay.",
+        "myanmar_meaning": "ချက်ချင်းဖြစ်သော၊ အရေးပေါ်လိုအပ်သော",
+        "example_sentence": "The problem requires immediate attention."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 257,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 8,
+        "extracted_line": 2134,
+        "source_excerpt": "immediate adj.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "B1 publisher label conflicts with B2; without delay versus closest relationship.",
+      "independent_reviewer_task": "Independent human reviewer must confirm the exact intended sense and CEFR teaching suitability using a dated dictionary sense URL, fluent Myanmar meaning, English definition, original example grammar and source provenance; word/POS-only Oxford list is not independent sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "introduction",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The opening part of a talk, book, or report that presents its subject.",
+        "myanmar_meaning": "နိဒါန်း၊ မိတ်ဆက်ပိုင်း",
+        "example_sentence": "The introduction explains the purpose of the study."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 258,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 5,
+        "extracted_line": 1315,
+        "source_excerpt": "introduction n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A2 publisher label conflicts with B2; opening section versus introducing people.",
+      "independent_reviewer_task": "Independent human reviewer must confirm the exact intended sense and CEFR teaching suitability using a dated dictionary sense URL, fluent Myanmar meaning, English definition, original example grammar and source provenance; word/POS-only Oxford list is not independent sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "presidential",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Related to a president or the office of president.",
+        "myanmar_meaning": "သမ္မတနှင့်ဆိုင်သော",
+        "example_sentence": "The candidates took part in a presidential debate."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 316,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 6,
+        "extracted_line": 1609,
+        "source_excerpt": "presidential adj.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "C1 publisher word/POS label conflicts with B2; political-office sense requires independent CEFR review.",
+      "independent_reviewer_task": "Independent human reviewer must confirm the exact intended sense and CEFR teaching suitability using a dated dictionary sense URL, fluent Myanmar meaning, English definition, original example grammar and source provenance; word/POS-only Oxford list is not independent sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "recognize",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To identify someone or something because you have seen or known them before.",
+        "myanmar_meaning": "မှတ်မိသည်၊ ခွဲခြားသိရှိသည်",
+        "example_sentence": "I did not recognize the street after the renovation."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 317,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 6,
+        "extracted_line": 1535,
+        "source_excerpt": "recognize v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A2 publisher label conflicts with B2; identification from familiarity versus formal recognition; US/UK spelling.",
+      "independent_reviewer_task": "Independent human reviewer must confirm the exact intended sense and CEFR teaching suitability using a dated dictionary sense URL, fluent Myanmar meaning, English definition, original example grammar and source provenance; word/POS-only Oxford list is not independent sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "regularly",
+      "level": "B2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Often and at repeated or usual times.",
+        "myanmar_meaning": "ပုံမှန်၊ အချိန်မှန်မှန်",
+        "example_sentence": "The factory regularly inspects its lifting equipment."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 318,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 9,
+        "extracted_line": 2360,
+        "source_excerpt": "regularly adv.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "B1 publisher label conflicts with B2; repeated frequency versus uniformity.",
+      "independent_reviewer_task": "Independent human reviewer must confirm the exact intended sense and CEFR teaching suitability using a dated dictionary sense URL, fluent Myanmar meaning, English definition, original example grammar and source provenance; word/POS-only Oxford list is not independent sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
