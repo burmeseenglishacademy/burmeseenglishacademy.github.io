@@ -32,7 +32,7 @@ def read(path):
 
 def git_blob_sha(path):
     data = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\\0" + data).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
 
 def audit(packet, shortlist):
     require(set(packet) == set(META) | {"records"}, "Packet schema/key drift")
