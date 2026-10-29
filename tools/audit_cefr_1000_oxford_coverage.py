@@ -231,7 +231,8 @@ def self_test(shortlist, packets):
     baseline = audit(shortlist, packets)
     first = PREFIX + PACKETS["A1"][0] + ".json"
     flat = PREFIX + PACKETS["B1"][1] + ".json"
-    last = PREFIX + PACKETS["C1"][-1] + ".json"
+    last = PREFIX + "C1-FOLLOWUP-TWELVE-2026-10-29.json"
+    newest = PREFIX + PACKETS["C1"][-1] + ".json"
     cases = [
         (first, lambda p: p["records"][0]["publisher_source"].update(source_cefr_level="C1")),
         (first, lambda p: p["records"][0]["shortlist_snapshot"].update(myanmar_meaning="forged")),
@@ -249,6 +250,10 @@ def self_test(shortlist, packets):
         (flat, lambda p: p["records"][0].update(source_url="https://example.com/fake.pdf")),
         (last, lambda p: p["records"][-1]["publisher_source"].update(evidence_scope="DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE")),
         (last, lambda p: p["records"][-1]["publisher_source"].update(source_cefr_level="C1")),
+        (newest, lambda p: p["records"][0]["publisher_source"].update(source_excerpt="forged n.")),
+        (newest, lambda p: p["records"][0]["publisher_source"].update(source_cefr_level="A1")),
+        (newest, lambda p: p["records"][0].update(release_approved=True)),
+        (newest, lambda p: p["records"][0]["shortlist_snapshot"].update(example_sentence="forged")),
     ]
     for path, change in cases:
         mutated = copy.deepcopy(packets)
