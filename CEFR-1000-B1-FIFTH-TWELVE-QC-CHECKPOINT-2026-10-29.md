@@ -1,0 +1,11 @@
+# CEFR 1000 — B1 fifth twelve Oxford research, 29 October 2026
+
+**STAGING ONLY / EDITORIAL HOLD.** Official publisher source directly inspected 29 October 2026: [Oxford 3000 by CEFR level](https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf). Publisher word/POS labels do **not** independently establish exact-sense CEFR, fluent Myanmar, example correctness or approval.
+
+Twelve previously unobserved B1-draft headwords: `block`, `equipment`, `nation`, `otherwise`, `purpose`, `responsible`, `theory`, `agency`, `avoid`, `coast`, `economy`, `environment`. **Five** Oxford B1 word/POS matches; **five** lower A2 labels; **two** higher B2 labels (`otherwise`, `agency`). Packet preserves dated official URL, exact PDF page/line and excerpt, original English/Myanmar/example snapshots, historical Git provenance, and independent-review tasks. No frozen shortlist edit or retiering.
+
+Updated expected distinct Oxford word/POS research coverage: A1 **112/200**, A2 **60/200**, B1 **72/200**, B2 **58/200**, C1 **39/200** = **341/1,000**. Handoff: **659** no direct observation, **129** lower, **9** higher, **3** unlisted, **200** matching word/POS but exact sense unverified. The 36 recovered historical excerpts are supplemental, not extra headwords.
+
+Fail-closed `tools/audit_cefr_1000_oxford_b1_fifth_twelve.py` tests publisher URL/date/page/line/CEFR, English/Myanmar/example snapshots, original source blob, editorial hold and fake reviewer receipts. Its **120** negative mutations are integrated into parallel A1/A2/B1/B2/C1/ALL structural CI and documentary no-deploy QC. **CI conclusions must be checked before claiming success.**
+
+Exact first-pass written/independently approved: **A1 200/0, A2 200/0, B1 200/0, B2 200/0, C1 200/0**. Final George/Emma real listening signoffs **0/1,000**. Independent linguistic and sense-specific publisher review, audio generation/listening, desktop/mobile QA, physical iPhone Safari, measured GitHub Pages hosting and production confirmation remain outstanding. Protect 54 lessons, separate IELTS 1,000 bank, existing George/Emma audio and privacy. **No main change, merge or publication. Release BLOCKED / STAGING ONLY.**

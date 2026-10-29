@@ -20,10 +20,10 @@ STATUS = ("UNLISTED_NOT_A_CEFR_LEVEL", "PUBLISHER_HIGHER_WORD_POS",
           "PUBLISHER_LOWER_WORD_POS", "NO_DIRECT_WORD_POS_OBSERVATION",
           "WORD_POS_MATCH_EXACT_SENSE_UNVERIFIED")
 RANK = {s: i for i, s in enumerate(STATUS)}
-EXPECTED = {"UNLISTED_NOT_A_CEFR_LEVEL": 3, "PUBLISHER_HIGHER_WORD_POS": 7,
-            "PUBLISHER_LOWER_WORD_POS": 124,
-            "NO_DIRECT_WORD_POS_OBSERVATION": 671,
-            "WORD_POS_MATCH_EXACT_SENSE_UNVERIFIED": 195}
+EXPECTED = {"UNLISTED_NOT_A_CEFR_LEVEL": 3, "PUBLISHER_HIGHER_WORD_POS": 9,
+            "PUBLISHER_LOWER_WORD_POS": 129,
+            "NO_DIRECT_WORD_POS_OBSERVATION": 659,
+            "WORD_POS_MATCH_EXACT_SENSE_UNVERIFIED": 200}
 URLS = {
     "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
     "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
@@ -93,7 +93,7 @@ def build(shortlist, packets, recovery, originals):
                     prior["packets"].append(path)
                     prior["recovered_legacy"] |= bool(locator_only)
                     prior["editorial_risks"].append(row["editorial_risk"])
-    require(len(by_word) == checked["distinct_observed_headwords"] == 329,
+    require(len(by_word) == checked["distinct_observed_headwords"] == 341,
             "Coverage and review handoff disagree")
     require(sum(x["recovered_legacy"] for x in by_word.values()) == 36,
             "Exactly 36 unique historical recoveries expected")
@@ -140,8 +140,8 @@ def build(shortlist, packets, recovery, originals):
     return {
         "schema": 1, "scope": "CEFR_1000_STAGING_ONLY_NOT_A_RELEASE_MANIFEST",
         "source_shortlist_git_blob_sha": oxford.SHORTLIST_SHA,
-        "publisher_word_pos_observed_distinct": 329,
-        "publisher_word_pos_not_observed": 671,
+        "publisher_word_pos_observed_distinct": 341,
+        "publisher_word_pos_not_observed": 659,
         "recovered_legacy_word_pos_excerpts": 36,
         "priority_counts": dict(counts), "by_level": by_level,
         "human_independent_approvals": 0,
