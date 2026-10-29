@@ -1,0 +1,423 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A1_TENTH_TWELVE_DIRECT_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-29",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 12,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 12,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "draft_pos_reconciliation_count": 6,
+  "independently_approved_count": 0,
+  "source_limitations": "Official Oxford 3000 by CEFR level PDF inspected 2026-10-29. One-based PDF page numbers, zero-based extracted web lines. Word/POS only, not exact-sense evidence. Six A1 question-word entries have generic draft POS labels requiring formal grammatical reconciliation. No independent English, Myanmar, example, CEFR, George/Emma listening, physical iPhone or deployment approval.",
+  "records": [
+    {
+      "word": "where",
+      "level": "A1",
+      "part_of_speech": "question word",
+      "shortlist_snapshot": {
+        "english_definition": "Used to ask about a place.",
+        "myanmar_meaning": "ဘယ်မှာ၊ ဘယ်နေရာမှာ",
+        "example_sentence": "Where is your bag?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 112,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 875,
+        "source_excerpt": "where adv., conj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Question-location adverb; the draft POS 'question word' is not a formal POS; exclude relative conjunction use.",
+      "independent_reviewer_task": "Independent human reviewer: Verify intended question/colour sense, exact publisher-backed CEFR, formal part of speech, original English definition, fluent Myanmar meaning, example grammar, historical source provenance and British usage. Oxford word/POS alone is not exact-sense signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "when",
+      "level": "A1",
+      "part_of_speech": "question word",
+      "shortlist_snapshot": {
+        "english_definition": "Used to ask about a time.",
+        "myanmar_meaning": "ဘယ်အချိန်မှာ",
+        "example_sentence": "When do you go home?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 113,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 874,
+        "source_excerpt": "when adv., pron., conj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Question-time adverb in the example; Oxford also lists pronoun/conjunction uses; separate exact sense.",
+      "independent_reviewer_task": "Independent human reviewer: Verify intended question/colour sense, exact publisher-backed CEFR, formal part of speech, original English definition, fluent Myanmar meaning, example grammar, historical source provenance and British usage. Oxford word/POS alone is not exact-sense signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "why",
+      "level": "A1",
+      "part_of_speech": "question word",
+      "shortlist_snapshot": {
+        "english_definition": "Used to ask for a reason.",
+        "myanmar_meaning": "ဘာကြောင့်၊ ဘာလို့",
+        "example_sentence": "Why are you sad?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 114,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 879,
+        "source_excerpt": "why adv.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Reason-question adverb; draft POS 'question word' should be editorially reconciled.",
+      "independent_reviewer_task": "Independent human reviewer: Verify intended question/colour sense, exact publisher-backed CEFR, formal part of speech, original English definition, fluent Myanmar meaning, example grammar, historical source provenance and British usage. Oxford word/POS alone is not exact-sense signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "what",
+      "level": "A1",
+      "part_of_speech": "question word",
+      "shortlist_snapshot": {
+        "english_definition": "Used to ask about a thing or information.",
+        "myanmar_meaning": "ဘာ၊ ဘယ်အရာ",
+        "example_sentence": "What is your name?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 116,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 873,
+        "source_excerpt": "what pron./det.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Question pronoun in 'What is your name?'; Oxford also lists determiner use.",
+      "independent_reviewer_task": "Independent human reviewer: Verify intended question/colour sense, exact publisher-backed CEFR, formal part of speech, original English definition, fluent Myanmar meaning, example grammar, historical source provenance and British usage. Oxford word/POS alone is not exact-sense signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "who",
+      "level": "A1",
+      "part_of_speech": "question word",
+      "shortlist_snapshot": {
+        "english_definition": "Used to ask which person.",
+        "myanmar_meaning": "ဘယ်သူ",
+        "example_sentence": "Who is your teacher?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 117,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 878,
+        "source_excerpt": "who pron.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Question pronoun referring to a person; exclude relative pronoun sense.",
+      "independent_reviewer_task": "Independent human reviewer: Verify intended question/colour sense, exact publisher-backed CEFR, formal part of speech, original English definition, fluent Myanmar meaning, example grammar, historical source provenance and British usage. Oxford word/POS alone is not exact-sense signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "which",
+      "level": "A1",
+      "part_of_speech": "question word",
+      "shortlist_snapshot": {
+        "english_definition": "Used to ask someone to choose from a group.",
+        "myanmar_meaning": "ဘယ်ဟာ၊ ဘယ်တစ်ခု",
+        "example_sentence": "Which book do you want?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 118,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 876,
+        "source_excerpt": "which pron./det.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Determiner in 'Which book do you want?', not the pronoun use; draft POS is generic.",
+      "independent_reviewer_task": "Independent human reviewer: Verify intended question/colour sense, exact publisher-backed CEFR, formal part of speech, original English definition, fluent Myanmar meaning, example grammar, historical source provenance and British usage. Oxford word/POS alone is not exact-sense signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "yellow",
+      "level": "A1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Having the colour of a ripe banana.",
+        "myanmar_meaning": "အဝါရောင်ဖြစ်သော",
+        "example_sentence": "The flower is yellow."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 132,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 901,
+        "source_excerpt": "yellow adj., n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Adjective in example, not colour noun; check Myanmar adjective phrasing.",
+      "independent_reviewer_task": "Independent human reviewer: Verify intended question/colour sense, exact publisher-backed CEFR, formal part of speech, original English definition, fluent Myanmar meaning, example grammar, historical source provenance and British usage. Oxford word/POS alone is not exact-sense signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "pink",
+      "level": "A1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Having a pale red colour.",
+        "myanmar_meaning": "ပန်းရောင်ဖြစ်သော",
+        "example_sentence": "Her dress is pink."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 133,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 596,
+        "source_excerpt": "pink adj., n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Adjective in example; distinguish colour from flower and unrelated senses.",
+      "independent_reviewer_task": "Independent human reviewer: Verify intended question/colour sense, exact publisher-backed CEFR, formal part of speech, original English definition, fluent Myanmar meaning, example grammar, historical source provenance and British usage. Oxford word/POS alone is not exact-sense signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "orange",
+      "level": "A1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Having the colour between red and yellow.",
+        "myanmar_meaning": "လိမ္မော်ရောင်ဖြစ်သော",
+        "example_sentence": "The bag is orange."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 134,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 558,
+        "source_excerpt": "orange n., adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Adjective in example, not fruit noun; avoid English/Malay transliteration ambiguity.",
+      "independent_reviewer_task": "Independent human reviewer: Verify intended question/colour sense, exact publisher-backed CEFR, formal part of speech, original English definition, fluent Myanmar meaning, example grammar, historical source provenance and British usage. Oxford word/POS alone is not exact-sense signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "brown",
+      "level": "A1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Having a colour like wood or chocolate.",
+        "myanmar_meaning": "အညိုရောင်ဖြစ်သော",
+        "example_sentence": "My shoes are brown."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 135,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 111,
+        "source_excerpt": "brown adj., n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Adjective in example; exclude surname and colour noun.",
+      "independent_reviewer_task": "Independent human reviewer: Verify intended question/colour sense, exact publisher-backed CEFR, formal part of speech, original English definition, fluent Myanmar meaning, example grammar, historical source provenance and British usage. Oxford word/POS alone is not exact-sense signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "grey",
+      "level": "A1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Having a colour between black and white.",
+        "myanmar_meaning": "မီးခိုးရောင်ဖြစ်သော",
+        "example_sentence": "The sky is grey today."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 136,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 339,
+        "source_excerpt": "grey adj., n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "British spelling grey, not American gray; adjective in example.",
+      "independent_reviewer_task": "Independent human reviewer: Verify intended question/colour sense, exact publisher-backed CEFR, formal part of speech, original English definition, fluent Myanmar meaning, example grammar, historical source provenance and British usage. Oxford word/POS alone is not exact-sense signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "purple",
+      "level": "A1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Having a colour between red and blue.",
+        "myanmar_meaning": "ခရမ်းရောင်ဖြစ်သော",
+        "example_sentence": "The flowers are purple."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 137,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 627,
+        "source_excerpt": "purple adj., n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Adjective in example; check natural Myanmar translation.",
+      "independent_reviewer_task": "Independent human reviewer: Verify intended question/colour sense, exact publisher-backed CEFR, formal part of speech, original English definition, fluent Myanmar meaning, example grammar, historical source provenance and British usage. Oxford word/POS alone is not exact-sense signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
