@@ -152,6 +152,7 @@ def self_test(packet, shortlist):
             rejected+=1
             continue
         raise AssertionError("Forged packet "+label+" passed")
+    require(rejected == 306, "Adversarial suite must exercise exactly 306 mutations")
     return rejected
 
 def main():
