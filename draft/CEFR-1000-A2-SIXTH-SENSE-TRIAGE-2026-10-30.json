@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_STAGING_ONLY",
+  "status": "TWO_SENSE_LEADS_HUMAN_REVIEW_PENDING",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 2,
+  "independent_approvals": 0,
+  "source_limitations": "Oxford set sense 8 directly read on publisher page; its exact-sense CEFR label is not asserted. Cambridge news publisher-owned indexed excerpt was read, but direct publisher page returned HTTP 403; not direct-page verified. Neither entry is human independently approved. Frozen bilingual/example fields and source provenance preserved. No production or audio modifications.",
+  "records": [
+    {
+      "word": "set",
+      "source": {
+        "publisher": "Oxford University Press",
+        "title": "Oxford Advanced Learner's Dictionary — set verb",
+        "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/set_1",
+        "observed_on": "2026-10-30",
+        "access": "DIRECT_PUBLISHER_HTML",
+        "locator": "put/start, numbered sense 8, web lines 182-189",
+        "grammatical_pattern": "set something/somebody + adverb/preposition",
+        "sense_summary_original": "Place a person or object somewhere; a tray placed on a table is an illustrative construction.",
+        "source_scope": "DIRECT_EXACT_SENSE_SEMANTIC_MATCH_NO_EXPLICIT_CEFR_LABEL_FOR_SENSE_8"
+      },
+      "finding": "Draft A2 English definition and 'set the clean cups on the table' example match the placement sense semantically. The Oxford 3000 CEFR PDF places 'set (put) v.' at B1. The dictionary page's 'Education b1' label belongs to a different sense, not sense 8; do not transfer it.",
+      "task": "Independently confirm whether to move this exact placement sense to B1 or replace with an independently evidenced A2 sense. Verify Burmese and example grammar.",
+      "draft_level": "A2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To put something in a particular place or position.",
+        "myanmar_meaning": "တစ်နေရာတွင် ထားသည်၊ ချထားသည်",
+        "example_sentence": "Please set the clean cups on the table."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 505,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "independent_reviewer_receipt": null,
+      "release_approved": false
+    },
+    {
+      "word": "news",
+      "source": {
+        "publisher": "Cambridge University Press",
+        "title": "Cambridge Dictionary — news",
+        "url": "https://dictionary.cambridge.org/dictionary/english/news",
+        "observed_on": "2026-10-30",
+        "access": "PUBLISHER_SEARCH_INDEXED_EXCERPT_DIRECT_PAGE_HTTP_403",
+        "locator": "Cambridge indexed noun [U], information sense A2; the news radio/TV programme sense B1",
+        "sense_summary_original": "Cambridge distinguishes recent-event information from a broadcast programme; it labels the former A2 and the latter B1 in publisher-indexed results.",
+        "source_scope": "PUBLISHER_SEARCH_INDEXED_EXACT_SENSE_LEAD_NOT_DIRECT_PAGE_VERIFIED"
+      },
+      "finding": "Oxford 3000 word/POS lists news noun at A1. Cambridge publisher-indexed sense leads instead mark information A2 and broadcast 'the news' B1. Draft example 'heard the news on the radio' may mix an information report with the radio news programme. Cambridge full-page retrieval returned HTTP 403, so the labels need independent direct-source confirmation.",
+      "task": "Independently resolve A1/A2/B1 cross-publisher conflict at exact sense, rewrite or disambiguate the original example only after review, and verify uncountable noun agreement and Myanmar meaning.",
+      "draft_level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "New information about events happening now or recently.",
+        "myanmar_meaning": "သတင်း၊ နောက်ဆုံးဖြစ်ရပ်အကြောင်းအရာ",
+        "example_sentence": "We heard the news on the radio this morning."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 511,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "independent_reviewer_receipt": null,
+      "release_approved": false
+    }
+  ]
+}
