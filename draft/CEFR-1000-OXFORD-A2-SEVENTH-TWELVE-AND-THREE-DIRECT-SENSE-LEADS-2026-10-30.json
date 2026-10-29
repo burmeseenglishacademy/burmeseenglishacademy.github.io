@@ -1,0 +1,455 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A2_SEVENTH_TWELVE_DIRECT_OXFORD_WORD_POS_THREE_DICTIONARY_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 12,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 4,
+    "A2": 7,
+    "B1": 1
+  },
+  "word_pos_discrepancies": 5,
+  "direct_dictionary_sense_leads": 3,
+  "independently_approved_count": 0,
+  "source_limitations": "Oxford 3000 PDF and three Oxford dictionary pages directly inspected 2026-10-30. PDF records are publisher word/POS observations, not independent exact-sense CEFR labels. Topic tags and examples are editorial leads only. Frozen shortlist, review tasks and production assets unchanged.",
+  "records": [
+    {
+      "word": "post",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A message or item shared on a website or social platform.",
+        "myanmar_meaning": "အွန်လိုင်းတွင် တင်ထားသော စာ သို့မဟုတ် အကြောင်းအရာ",
+        "example_sentence": "Her post explained the new class schedule."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 512,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 612,
+        "source_excerpt": "post n., v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Online message is distinct from physical mail, job post, upright post and posting verb. Oxford dictionary labels internet topic a2; word/POS A1 is not an exact-sense A1 approval.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/post_2",
+        "page_text_line_start": 190,
+        "page_text_line_end": 227,
+        "editorial_interpretation": "Oxford noun sense 4 is an online message or blog post; page tags internet topic a2, distinct from the word/POS A1 list label. The two are not interchangeable CEFR approvals.",
+        "observed_on": "2026-10-30",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human must verify exact sense and source-backed CEFR teaching level, English definition, fluent Myanmar, example grammar, British pronunciation, historical provenance and content-bound signoff. Publisher word/POS or topic labels are not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "social",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Connected with meeting people and spending time together.",
+        "myanmar_meaning": "လူမှုဆက်ဆံရေးနှင့် သက်ဆိုင်သော",
+        "example_sentence": "The club organises a social event every month."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 513,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 6,
+        "extracted_line": 1635,
+        "source_excerpt": "social adj.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A social event is interpersonal/recreational, not social media or society-wide policy; Myanmar လူမှုဆက်ဆံရေး requires natural context.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human must verify exact sense and source-backed CEFR teaching level, English definition, fluent Myanmar, example grammar, British pronunciation, historical provenance and content-bound signoff. Publisher word/POS or topic labels are not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "death",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The end of a person's or animal's life.",
+        "myanmar_meaning": "သေဆုံးခြင်း",
+        "example_sentence": "The family was deeply saddened by his death."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 514,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 5,
+        "extracted_line": 1109,
+        "source_excerpt": "death n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Sensitive end-of-life noun; distinguish death, dying and fatality; ensure respectful original example and Myanmar phrasing.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human must verify exact sense and source-backed CEFR teaching level, English definition, fluent Myanmar, example grammar, British pronunciation, historical provenance and content-bound signoff. Publisher word/POS or topic labels are not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "guy",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An informal word for a man or person.",
+        "myanmar_meaning": "အမျိုးသားတစ်ဦး၊ လူတစ်ယောက် (အရပ်သုံး)",
+        "example_sentence": "The guy at the front desk helped us."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 515,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 5,
+        "extracted_line": 1260,
+        "source_excerpt": "guy n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Informal person/man; gender-neutral use varies; front-desk reference and Myanmar လူတစ်ယောက် should be reviewed.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human must verify exact sense and source-backed CEFR teaching level, English definition, fluent Myanmar, example grammar, British pronunciation, historical provenance and content-bound signoff. Publisher word/POS or topic labels are not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "true",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Based on facts and not false.",
+        "myanmar_meaning": "မှန်ကန်သော၊ အမှန်ဖြစ်သော",
+        "example_sentence": "Is it true that the library closes early today?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 516,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 822,
+        "source_excerpt": "true adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1 word/POS versus provisional A2; factual truth distinct from loyalty or authenticity; retain level conflict pending human review.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human must verify exact sense and source-backed CEFR teaching level, English definition, fluent Myanmar, example grammar, British pronunciation, historical provenance and content-bound signoff. Publisher word/POS or topic labels are not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "along",
+      "level": "A2",
+      "part_of_speech": "preposition",
+      "shortlist_snapshot": {
+        "english_definition": "Following the length or direction of something.",
+        "myanmar_meaning": "တစ်လျှောက်",
+        "example_sentence": "We walked along the river after lunch."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 517,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 936,
+        "source_excerpt": "along prep., adv.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft preposition along the river is movement following its length; distinguish adverb and alongside/static sense.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human must verify exact sense and source-backed CEFR teaching level, English definition, fluent Myanmar, example grammar, British pronunciation, historical provenance and content-bound signoff. Publisher word/POS or topic labels are not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "matter",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A subject or situation that needs attention.",
+        "myanmar_meaning": "ကိစ္စ၊ အကြောင်းအရာ",
+        "example_sentence": "The manager discussed the matter with her team."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 518,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 6,
+        "extracted_line": 1387,
+        "source_excerpt": "matter n., v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft noun denotes an issue needing attention, not physical substance or the verb matter; avoid overgeneralizing Myanmar ကိစ္စ.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human must verify exact sense and source-backed CEFR teaching level, English definition, fluent Myanmar, example grammar, British pronunciation, historical provenance and content-bound signoff. Publisher word/POS or topic labels are not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "pretty",
+      "level": "A2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Fairly, but not extremely.",
+        "myanmar_meaning": "အတော်အတန်၊ တော်တော်လေး",
+        "example_sentence": "The new instructions are pretty clear."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 519,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 620,
+        "source_excerpt": "pretty adj., adv.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft adverb means fairly/quite, not attractive adjective or very/intensifier sense; dictionary direct adverb entry distinguishes these meanings.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/pretty_1",
+        "page_text_line_start": 88,
+        "page_text_line_end": 136,
+        "editorial_interpretation": "Oxford adverb sense 1 denotes fairly/to some extent and sense 2 denotes very. The draft 'pretty clear' may be scalar/ambiguous and needs human exact-sense and Myanmar check.",
+        "observed_on": "2026-10-30",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human must verify exact sense and source-backed CEFR teaching level, English definition, fluent Myanmar, example grammar, British pronunciation, historical provenance and content-bound signoff. Publisher word/POS or topic labels are not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "bit",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A small amount or part of something.",
+        "myanmar_meaning": "အနည်းငယ်၊ အပိုင်းငယ်",
+        "example_sentence": "Could you add a bit of sugar to my tea?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 520,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 999,
+        "source_excerpt": "bit n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A bit of sugar is small amount, not a computing bit or the past tense of bite; natural Myanmar quantity/measure needs review.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human must verify exact sense and source-backed CEFR teaching level, English definition, fluent Myanmar, example grammar, British pronunciation, historical provenance and content-bound signoff. Publisher word/POS or topic labels are not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "hit",
+      "level": "A2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To touch something suddenly and with force.",
+        "myanmar_meaning": "ပြင်းပြင်းထန်ထန် ထိမိသည်၊ ရိုက်မိသည်",
+        "example_sentence": "The ball hit the window during the game."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 521,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 5,
+        "extracted_line": 1281,
+        "source_excerpt": "hit v., n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft ball-hit-window impact is transitive physical contact, not strike a person, success, or noun hit; grammar and Myanmar need review.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human must verify exact sense and source-backed CEFR teaching level, English definition, fluent Myanmar, example grammar, British pronunciation, historical provenance and content-bound signoff. Publisher word/POS or topic labels are not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "past",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The time before the present.",
+        "myanmar_meaning": "အတိတ်ကာလ",
+        "example_sentence": "She rarely talks about her past."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 522,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 578,
+        "source_excerpt": "past adj., n., prep.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft noun past is previous time, not past adjective or preposition; publisher A1 conflicts with provisional A2.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human must verify exact sense and source-backed CEFR teaching level, English definition, fluent Myanmar, example grammar, British pronunciation, historical provenance and content-bound signoff. Publisher word/POS or topic labels are not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "due",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Expected or arranged to happen at a particular time.",
+        "myanmar_meaning": "သတ်မှတ်ချိန်တွင် ဖြစ်ရန်ရှိသော",
+        "example_sentence": "The next bus is due in ten minutes."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 523,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 8,
+        "extracted_line": 1994,
+        "source_excerpt": "due adj.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Expected arrival in ten minutes, not caused-by due to, overdue payment or owing; publisher B1 conflicts with provisional A2.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/due_1",
+        "page_text_line_start": 149,
+        "page_text_line_end": 165,
+        "editorial_interpretation": "Oxford expected/arranged sense includes transport due in five minutes; owed/payable sense is separate. This page does not independently certify draft A2 exact-sense CEFR.",
+        "observed_on": "2026-10-30",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human must verify exact sense and source-backed CEFR teaching level, English definition, fluent Myanmar, example grammar, British pronunciation, historical provenance and content-bound signoff. Publisher word/POS or topic labels are not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
