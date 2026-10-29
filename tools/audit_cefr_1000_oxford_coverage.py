@@ -33,14 +33,15 @@ PACKETS = {
            "B2-ADDITIONAL-TWELVE-2026-10-28", "B2-FOURTH-TWENTYFOUR-2026-10-29",
            "B2-FIFTH-TWELVE-2026-10-29"),
     "C1": ("C1-TWELVE-DIRECT-PDF-2026-10-28", "C1-B2-CONFLICT-TWELVE-2026-10-28",
-           "C1-MIXED-TWELVE-2026-10-28", "C1-FOLLOWUP-TWELVE-2026-10-29"),
+           "C1-MIXED-TWELVE-2026-10-28", "C1-FOLLOWUP-TWELVE-2026-10-29",
+           "C1-SIXTH-TWELVE-2026-10-29"),
 }
 EXPECTED = {
     "A1": {"observations": 120, "distinct": 112, "A1": 112},
     "A2": {"observations": 60, "distinct": 60, "A1": 41, "A2": 19},
     "B1": {"observations": 72, "distinct": 72, "A1": 11, "A2": 30, "B1": 25, "B2": 6, "locator_only": 12},
     "B2": {"observations": 72, "distinct": 70, "A1": 2, "A2": 12, "B1": 17, "B2": 34, "C1": 4, "UNLISTED": 1, "locator_only": 12},
-    "C1": {"observations": 48, "distinct": 39, "B2": 21, "C1": 16, "UNLISTED": 2, "locator_only": 12},
+    "C1": {"observations": 60, "distinct": 51, "B2": 24, "C1": 25, "UNLISTED": 2, "locator_only": 12},
 }
 SOURCE_PREFIX = "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_"
 SOURCE_SUFFIX = "_by_CEFR_level.pdf"
