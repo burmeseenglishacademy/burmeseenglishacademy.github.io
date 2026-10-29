@@ -1,0 +1,420 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "C1_SIXTH_TWELVE_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-29",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 12
+  },
+  "publisher_reference_level_counts": {
+    "B2": 3,
+    "C1": 9
+  },
+  "word_pos_discrepancies": 3,
+  "independently_approved_count": 0,
+  "source_limitations": "Directly inspected official Oxford 3000 and Oxford 5000 CEFR PDFs on 2026-10-29; page numbers are one-based and extracted lines zero-based. These are only word/POS source observations, never exact-sense CEFR evidence or independent human review. All 12 remain on editorial hold. The 'civilian' draft noun has an adjective example and cannot pass unchanged. No audio listening, iPhone, hosting or production launch evidence.",
+  "records": [
+    {
+      "word": "popularity",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The condition of being liked by many people.",
+        "myanmar_meaning": "လူကြိုက်များမှု",
+        "example_sentence": "The programme grew in popularity."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 156,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 12,
+        "extracted_line": 3077,
+        "source_excerpt": "popularity n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "POPULARITY_LOWER_B2_VS_C1_DRAFT",
+      "independent_reviewer_task": "Confirm common noun popularity is Oxford B2 word/POS, not C1; seek exact-sense teaching rationale. Independent human must check exact sense, source-backed CEFR, English/Myanmar, original example and real British audio; attach dated content-bound evidence.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "sacred",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Considered holy or deserving religious respect.",
+        "myanmar_meaning": "အထွတ်အမြတ်ထားသော၊ ဘာသာရေးအရ မြင့်မြတ်သော",
+        "example_sentence": "The temple is a sacred place for many people."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 158,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 7,
+        "extracted_line": 1737,
+        "source_excerpt": "sacred adj.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "SACRED_RELIGIOUS_VS_NONRELIGIOUS_SPECIAL",
+      "independent_reviewer_task": "Distinguish religious holiness from metaphorically sacred personal traditions; check Myanmar register. Independent human must check exact sense, source-backed CEFR, English/Myanmar, original example and real British audio; attach dated content-bound evidence.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "spy",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A person who secretly collects information for another organisation.",
+        "myanmar_meaning": "သူလျှို",
+        "example_sentence": "The spy passed information to another country."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 159,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 7,
+        "extracted_line": 1813,
+        "source_excerpt": "spy n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "SPY_PERSON_VS_SPY_VERB",
+      "independent_reviewer_task": "Check noun person secretly gathering information, not the verb; distinguish country and organisation. Independent human must check exact sense, source-backed CEFR, English/Myanmar, original example and real British audio; attach dated content-bound evidence.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "suspension",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A temporary stopping of an activity or permission.",
+        "myanmar_meaning": "ယာယီရပ်ဆိုင်းခြင်း",
+        "example_sentence": "The school announced a suspension of classes."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 259,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 7,
+        "extracted_line": 1874,
+        "source_excerpt": "suspension n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "SUSPENSION_TEMPORARY_STOP_VS_HANGING_OR_VEHICLE",
+      "independent_reviewer_task": "Distinguish temporary interruption from suspension as hanging or vehicle component. Independent human must check exact sense, source-backed CEFR, English/Myanmar, original example and real British audio; attach dated content-bound evidence.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "terrorism",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The use or threat of violence, often against civilians, to achieve political aims.",
+        "myanmar_meaning": "အကြမ်းဖက်ဝါဒ",
+        "example_sentence": "The report examines the effects of terrorism on tourism."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 260,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 633,
+        "source_excerpt": "terrorism n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "TERRORISM_LOWER_B2_AND_NEUTRAL_DEFINITION",
+      "independent_reviewer_task": "Oxford B2 word/POS vs draft C1; independently verify neutral, accurate definition and example. Independent human must check exact sense, source-backed CEFR, English/Myanmar, original example and real British audio; attach dated content-bound evidence.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "upgrade",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To improve something by replacing it with a newer or better version.",
+        "myanmar_meaning": "အဆင့်မြှင့်တင်သည်",
+        "example_sentence": "We will upgrade the software next month."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 263,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 8,
+        "extracted_line": 1956,
+        "source_excerpt": "upgrade v., n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "UPGRADE_VERB_VS_NOUN_AND_REPLACE_VS_IMPROVE",
+      "independent_reviewer_task": "Distinguish verb from noun; improving need not require replacement; review over-narrow English definition. Independent human must check exact sense, source-backed CEFR, English/Myanmar, original example and real British audio; attach dated content-bound evidence.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "warrant",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An official legal document giving authority to take a particular action.",
+        "myanmar_meaning": "တရားဝင်ဝရမ်း",
+        "example_sentence": "The police obtained a warrant to search the building."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 264,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 8,
+        "extracted_line": 1993,
+        "source_excerpt": "warrant n., v.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "WARRANT_LEGAL_DOCUMENT_VS_JUSTIFY_VERB",
+      "independent_reviewer_task": "Confirm noun legal authorization rather than verb justify; verify natural legal Myanmar wording. Independent human must check exact sense, source-backed CEFR, English/Myanmar, original example and real British audio; attach dated content-bound evidence.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "asset",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Something valuable or useful that a person or organisation owns or has.",
+        "myanmar_meaning": "ပိုင်ဆိုင်မှု၊ တန်ဖိုးရှိသောအရာ",
+        "example_sentence": "Reliable staff are an important asset to the company."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 267,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 37,
+        "source_excerpt": "asset n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "ASSET_LOWER_B2_AND_PERSON_VS_PROPERTY",
+      "independent_reviewer_task": "Oxford B2 word/POS vs draft C1; English definition combines valuable property and useful person; example uses person sense. Independent human must check exact sense, source-backed CEFR, English/Myanmar, original example and real British audio; attach dated content-bound evidence.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "burden",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A responsibility or problem that is difficult to carry or deal with.",
+        "myanmar_meaning": "ဝန်ထုပ်ဝန်ပိုး",
+        "example_sentence": "The extra cost placed a burden on small firms."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 268,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 867,
+        "source_excerpt": "burden n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "BURDEN_FIGURATIVE_RESPONSIBILITY_VS_PHYSICAL_LOAD",
+      "independent_reviewer_task": "Check figurative responsibility/cost versus literal heavy load; fluent Myanmar. Independent human must check exact sense, source-backed CEFR, English/Myanmar, original example and real British audio; attach dated content-bound evidence.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "charter",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A formal written document that sets out an organisation's rights or aims.",
+        "myanmar_meaning": "ပဋိညာဉ်စာတမ်း၊ ဖွဲ့စည်းပုံစာတမ်း",
+        "example_sentence": "The members approved a new charter for the association."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 270,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 895,
+        "source_excerpt": "charter n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "CHARTER_FOUNDING_DOCUMENT_VS_RENTAL",
+      "independent_reviewer_task": "Distinguish organisation constitution from chartered transport/rental. Independent human must check exact sense, source-backed CEFR, English/Myanmar, original example and real British audio; attach dated content-bound evidence.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "civilian",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A person who is not a member of the armed forces or police.",
+        "myanmar_meaning": "အရပ်သား",
+        "example_sentence": "The shelter was opened for civilian families."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 271,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 903,
+        "source_excerpt": "civilian n., adj.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "CIVILIAN_NOUN_VS_ADJECTIVE_EXAMPLE_MISMATCH",
+      "independent_reviewer_task": "CRITICAL: shortlist labels noun, but example 'civilian families' uses adjective. Independent correction required before approval. Independent human must check exact sense, source-backed CEFR, English/Myanmar, original example and real British audio; attach dated content-bound evidence.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "coalition",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An alliance of groups working together toward a shared aim.",
+        "myanmar_meaning": "မဟာမိတ်အဖွဲ့၊ ပူးပေါင်းအဖွဲ့",
+        "example_sentence": "Several parties formed a coalition after the election."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 272,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 911,
+        "source_excerpt": "coalition n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "COALITION_POLITICAL_ALLIANCE_VS_GENERIC_COOPERATION",
+      "independent_reviewer_task": "Distinguish political coalition from general collaboration; review Burmese nuance. Independent human must check exact sense, source-backed CEFR, English/Myanmar, original example and real British audio; attach dated content-bound evidence.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
