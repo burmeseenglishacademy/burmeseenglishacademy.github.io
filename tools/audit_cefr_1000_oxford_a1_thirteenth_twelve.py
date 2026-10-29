@@ -12,7 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SHORT = ROOT / "draft/CEFR-1000-PROVISIONAL-SHORTLIST.json"
-PACKET = ROOT / "draft/CEFR-1000-OXFORD-A1-TWELFTH-TWELVE-2026-10-30.json"
+PACKET = ROOT / "draft/CEFR-1000-OXFORD-A1-THIRTEENTH-TWELVE-2026-10-30.json"
 SHA = "475e68ae17ab97bd937e73e5ce4794e0dcd76551"
 LEVELS = ("A1", "A2", "B1", "B2", "C1")
 URL = "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf"
