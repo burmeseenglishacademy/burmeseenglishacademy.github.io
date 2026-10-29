@@ -1,0 +1,435 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A1_THIRTEENTH_TWELVE_DIRECT_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 12,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 12,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "draft_pos_reconciliation_count": 0,
+  "independently_approved_count": 0,
+  "source_limitations": "Official Oxford 3000 by CEFR level PDF directly inspected 2026-10-30. One-based PDF pages and zero-based web extracted lines. Twelve publisher A1 word/POS observations only, not independent exact-sense labels. Rice cooked/uncooked Myanmar distinction, chicken animal/meat, countability, and verb polysemy require independent editorial decisions. The A1 rabbit entry was not included in this packet because no rabbit noun entry was located in the inspected Oxford 3000 PDF; absence is not a CEFR classification. No English, Myanmar, example, CEFR, George/Emma listening, physical iPhone, hosting or deployment approval.",
+  "records": [
+    {
+      "word": "rice",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Small grains of food that are cooked and eaten.",
+        "myanmar_meaning": "ဆန်၊ ထမင်း",
+        "example_sentence": "We eat rice for lunch."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 187,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 652,
+        "source_excerpt": "rice n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Draft Myanmar ဆန်၊ ထမင်း spans uncooked grain and cooked rice; example refers to cooked rice at lunch. Require exact-sense bilingual decision.",
+      "editorial_risk": "A1_THIRTEENTH_TWELVE_RICE_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended A1 noun or verb sense against a publisher exact-sense entry and CEFR applicability; independently check fluent Myanmar, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "bread",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Food made from flour and baked.",
+        "myanmar_meaning": "ပေါင်မုန့်",
+        "example_sentence": "I eat bread for breakfast."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 188,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 1,
+        "extracted_line": 106,
+        "source_excerpt": "bread n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Bread is usually an uncountable mass noun in general food use; do not automatically use a bread for a loaf.",
+      "editorial_risk": "A1_THIRTEENTH_TWELVE_BREAD_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended A1 noun or verb sense against a publisher exact-sense entry and CEFR applicability; independently check fluent Myanmar, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "egg",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Food with a shell laid by a bird such as a chicken.",
+        "myanmar_meaning": "ဥ၊ ကြက်ဥ",
+        "example_sentence": "I eat an egg every day."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 189,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 1,
+        "extracted_line": 235,
+        "source_excerpt": "egg n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Draft definition treats egg as food, while the noun also denotes an animal's egg; countable an egg example is grammatical.",
+      "editorial_risk": "A1_THIRTEENTH_TWELVE_EGG_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended A1 noun or verb sense against a publisher exact-sense entry and CEFR applicability; independently check fluent Myanmar, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "milk",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A white drink produced by some animals.",
+        "myanmar_meaning": "နို့",
+        "example_sentence": "She drinks milk in the morning."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 190,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 483,
+        "source_excerpt": "milk n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Milk is normally uncountable as a substance; distinguish dairy milk from plant-based milk and servings.",
+      "editorial_risk": "A1_THIRTEENTH_TWELVE_MILK_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended A1 noun or verb sense against a publisher exact-sense entry and CEFR applicability; independently check fluent Myanmar, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "chicken",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A farm bird kept for eggs or meat.",
+        "myanmar_meaning": "ကြက်",
+        "example_sentence": "There is a chicken in the garden."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 191,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 1,
+        "extracted_line": 144,
+        "source_excerpt": "chicken n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Example uses a living farm bird, not chicken meat; Myanmar ကြက် does not distinguish these senses alone.",
+      "editorial_risk": "A1_THIRTEENTH_TWELVE_CHICKEN_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended A1 noun or verb sense against a publisher exact-sense entry and CEFR applicability; independently check fluent Myanmar, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "banana",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A long curved fruit with yellow skin when ripe.",
+        "myanmar_meaning": "ငှက်ပျောသီး",
+        "example_sentence": "I eat a banana after lunch."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 192,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 1,
+        "extracted_line": 60,
+        "source_excerpt": "banana n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Banana is countable in example; distinguish fruit from plant and check description of ripeness.",
+      "editorial_risk": "A1_THIRTEENTH_TWELVE_BANANA_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended A1 noun or verb sense against a publisher exact-sense entry and CEFR applicability; independently check fluent Myanmar, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "potato",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A round vegetable that grows under the ground.",
+        "myanmar_meaning": "အာလူး",
+        "example_sentence": "The potato is hot."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 193,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 613,
+        "source_excerpt": "potato n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "The potato is hot describes a cooked or heated potato; distinguish food from plant and botanical terminology.",
+      "editorial_risk": "A1_THIRTEENTH_TWELVE_POTATO_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended A1 noun or verb sense against a publisher exact-sense entry and CEFR applicability; independently check fluent Myanmar, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "soup",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A liquid food made by cooking vegetables, meat or other ingredients.",
+        "myanmar_meaning": "ဟင်းချို၊ စွပ်ပြုတ်",
+        "example_sentence": "The soup is warm."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 194,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 724,
+        "source_excerpt": "soup n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Soup in example is usually a mass noun; ဟင်းချို versus စွပ်ပြုတ် depends on recipe and Myanmar usage.",
+      "editorial_risk": "A1_THIRTEENTH_TWELVE_SOUP_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended A1 noun or verb sense against a publisher exact-sense entry and CEFR applicability; independently check fluent Myanmar, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "walk",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To move on foot at a normal speed.",
+        "myanmar_meaning": "လမ်းလျှောက်သည်",
+        "example_sentence": "We walk to school."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 195,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 855,
+        "source_excerpt": "walk v., n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Oxford A1 lists both verb and noun; draft targets verb move on foot. Example We walk to school is grammatical; avoid noun or figurative senses.",
+      "editorial_risk": "A1_THIRTEENTH_TWELVE_WALK_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended A1 noun or verb sense against a publisher exact-sense entry and CEFR applicability; independently check fluent Myanmar, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "run",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To move on foot faster than walking.",
+        "myanmar_meaning": "ပြေးသည်",
+        "example_sentence": "I run in the park."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 196,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 661,
+        "source_excerpt": "run v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Draft refers to running on foot, not operating a business/machine, flowing liquid, or racing an event.",
+      "editorial_risk": "A1_THIRTEENTH_TWELVE_RUN_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended A1 noun or verb sense against a publisher exact-sense entry and CEFR applicability; independently check fluent Myanmar, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "sit",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To rest with your body supported by a chair or the ground.",
+        "myanmar_meaning": "ထိုင်သည်",
+        "example_sentence": "Please sit here."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 197,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 701,
+        "source_excerpt": "sit v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Example Please sit here is grammatical; distinguish sitting from taking an examination or being located.",
+      "editorial_risk": "A1_THIRTEENTH_TWELVE_SIT_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended A1 noun or verb sense against a publisher exact-sense entry and CEFR applicability; independently check fluent Myanmar, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "stand",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To be upright on your feet.",
+        "myanmar_meaning": "မတ်တတ်ရပ်သည်",
+        "example_sentence": "I stand near the door."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 198,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 734,
+        "source_excerpt": "stand v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Draft targets upright posture, not tolerate, remain valid, or support a position; Myanmar မတ်တတ်ရပ်သည် is physical sense.",
+      "editorial_risk": "A1_THIRTEENTH_TWELVE_STAND_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended A1 noun or verb sense against a publisher exact-sense entry and CEFR applicability; independently check fluent Myanmar, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
