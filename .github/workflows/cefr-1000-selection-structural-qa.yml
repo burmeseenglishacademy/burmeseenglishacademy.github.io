@@ -32,9 +32,11 @@ on:
       - draft/CEFR-1000-OXFORD-A1-EIGHTH-TWELVE-2026-10-29.json
       - tools/audit_cefr_1000_oxford_a1_eighth_twelve.py
       - draft/CEFR-1000-OXFORD-A1-NINTH-TWELVE-2026-10-29.json
+      - draft/CEFR-1000-OXFORD-A1-TENTH-TWELVE-2026-10-29.json
       - draft/CEFR-1000-CAMBRIDGE-A1-FAMILY-AND-EVERYDAY-TWELVE-2026-10-29.json
       - tools/audit_cefr_1000_cambridge_a1_twelve.py
       - tools/audit_cefr_1000_oxford_a1_ninth_twelve.py
+      - tools/audit_cefr_1000_oxford_a1_tenth_twelve.py
       - tools/audit_cefr_1000_oxford_coverage.py
       - draft/CEFR-1000-OXFORD-LEGACY-THIRTYSIX-EXCERPT-RECOVERY-2026-10-29.json
       - tools/audit_cefr_1000_oxford_legacy_excerpt_recovery.py
@@ -189,6 +191,11 @@ jobs:
       - name: Reject 221 forged ninth A1 source, bilingual and independent-review mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_a1_ninth_twelve.py --level ALL --self-test
+      - name: Audit tenth A1 question and colour Oxford PDF word-POS evidence (not independent review)
+        run: python3 tools/audit_cefr_1000_oxford_a1_tenth_twelve.py --level "${{ matrix.level }}"
+      - name: Reject 238 forged tenth A1 source, grammar, Myanmar and reviewer mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_oxford_a1_tenth_twelve.py --level ALL --self-test
       - name: Audit twelve Cambridge A1 sense leads and four unresolved Oxford conflicts (not human signoff)
         run: python3 tools/audit_cefr_1000_cambridge_a1_twelve.py --level "${{ matrix.level }}"
       - name: Reject 234 forged A1 Cambridge, Oxford, Myanmar, provenance and reviewer mutations
