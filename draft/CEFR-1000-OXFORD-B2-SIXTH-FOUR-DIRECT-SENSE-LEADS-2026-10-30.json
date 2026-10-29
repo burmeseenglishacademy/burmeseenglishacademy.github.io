@@ -1,0 +1,129 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B2_SIXTH_FOUR_DIRECT_DICTIONARY_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "linked_word_pos_packet": "draft/CEFR-1000-OXFORD-B2-SIXTH-TWELVE-2026-10-30.json",
+  "record_count": 4,
+  "independently_approved_count": 0,
+  "source_limitations": "Direct Oxford dictionary pages inspected on 2026-10-30; sense distinctions are editorial research leads, not independently verified English/Myanmar/example or exact-sense CEFR approval. Topic badges and wordlist badges are not standalone sense-specific CEFR evidence.",
+  "records": [
+    {
+      "word": "principal",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Most important or main.",
+        "myanmar_meaning": "အဓိကဖြစ်သော၊ အရေးအကြီးဆုံးဖြစ်သော",
+        "example_sentence": "The principal reason for the delay was bad weather."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 484,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "source": {
+        "publisher": "Oxford University Press",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/principal_1",
+        "observed_on": "2026-10-30",
+        "web_text_lines": "88-112",
+        "access": "DIRECT_OFFICIAL_DICTIONARY_WEB_PAGE",
+        "evidence_scope": "SENSE_DISTINCTION_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "finding": "The intended adjective is used only before a noun; draft principal reason fits this construction. Distinguish principal noun and principle noun; dictionary displays Oxford 3000 B2 while 5000 PDF also lists B2, so list membership metadata differs without a level disagreement.",
+      "independent_reviewer_task": "Adjective main/most important, pre-nominal; not school head noun or principle.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "monthly",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Happening or produced once every month.",
+        "myanmar_meaning": "လစဉ်ဖြစ်သော",
+        "example_sentence": "Our monthly meeting takes place on Friday."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 556,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "source": {
+        "publisher": "Oxford University Press",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/monthly_1",
+        "observed_on": "2026-10-30",
+        "web_text_lines": "88-120",
+        "access": "DIRECT_OFFICIAL_DICTIONARY_WEB_PAGE",
+        "evidence_scope": "SENSE_DISTINCTION_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "finding": "The first adjective sense is recurring every month and aligns with monthly meeting. Second adjective sense concerns monthly payments or calculation; do not conflate. Dictionary displays Oxford 3000 B2 while Oxford 5000 PDF also lists B2.",
+      "independent_reviewer_task": "Recurring frequency adjective, not monthly salary/payment sense, adverb or noun.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "barely",
+      "level": "B2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Only just; by a very small amount.",
+        "myanmar_meaning": "အနိုင်နိုင်၊ မဖြစ်စလောက်သာ",
+        "example_sentence": "She could barely hear the speaker at the back."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 562,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "source": {
+        "publisher": "Oxford University Press",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/barely",
+        "observed_on": "2026-10-30",
+        "web_text_lines": "88-147",
+        "access": "DIRECT_OFFICIAL_DICTIONARY_WEB_PAGE",
+        "evidence_scope": "SENSE_DISTINCTION_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "finding": "Draft could barely hear aligns with first sense: hearing was only just possible with difficulty. Publisher separately lists approximate quantities and temporal barely; avoid double negatives and review Myanmar gloss for naturalness.",
+      "independent_reviewer_task": "Only just able to hear; not barely 50% or barely started when.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "steam",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Water in the form of gas, especially when heated.",
+        "myanmar_meaning": "ရေနွေးငွေ့",
+        "example_sentence": "Steam rose from the bowl of soup."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 546,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "source": {
+        "publisher": "Oxford University Press",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/steam_1",
+        "observed_on": "2026-10-30",
+        "web_text_lines": "88-174",
+        "access": "DIRECT_OFFICIAL_DICTIONARY_WEB_PAGE",
+        "evidence_scope": "SENSE_DISTINCTION_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "finding": "Publisher distinguishes hot gaseous water, power produced from steam and condensed droplets on cold surfaces. Visible steam rising from soup can involve condensed droplets; reviewer should choose a precise learner-friendly definition and Burmese gloss.",
+      "independent_reviewer_task": "Soup vapour/mist context; avoid conflating invisible water vapour, condensed droplets, steam power and idioms.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
