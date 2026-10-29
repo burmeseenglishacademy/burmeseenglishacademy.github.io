@@ -1,0 +1,440 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "C1_SEVENTH_TWELVE_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 12
+  },
+  "publisher_reference_level_counts": {
+    "B2": 1,
+    "C1": 11
+  },
+  "word_pos_discrepancies": 1,
+  "independently_approved_count": 0,
+  "source_limitations": "Official Oxford 5000 CEFR PDF directly inspected 2026-10-30; publisher labels are word/POS, never exact-sense CEFR, Myanmar/example approval or independent human review. Oxford dictionary pages separately inspected for excess and amateur grammar; they do not constitute independent review. All 12 remain on editorial hold.",
+  "direct_dictionary_sense_leads": [
+    {
+      "word": "excess",
+      "noun_url": "https://www.oxfordlearnersdictionaries.com/definition/english/excess_1",
+      "noun_lines": "88-110",
+      "adjective_url": "https://www.oxfordlearnersdictionaries.com/definition/english/excess_2",
+      "adjective_lines": "88-110",
+      "observed_on": "2026-10-30",
+      "finding": "Draft example 'the excess material' uses attributive adjective excess, not the proposed noun."
+    },
+    {
+      "word": "amateur",
+      "noun_url": "https://www.oxfordlearnersdictionaries.com/definition/english/amateur_2",
+      "noun_lines": "88-116",
+      "adjective_url": "https://www.oxfordlearnersdictionaries.com/definition/english/amateur_1",
+      "adjective_lines": "88-116",
+      "observed_on": "2026-10-30",
+      "finding": "Draft example 'The amateur photographer...' uses attributive adjective, not proposed noun."
+    }
+  ],
+  "records": [
+    {
+      "word": "controversial",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Causing strong disagreement among people.",
+        "myanmar_meaning": "အငြင်းပွားဖွယ်ဖြစ်သော",
+        "example_sentence": "The proposal remains controversial."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 273,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 1,
+        "extracted_line": 127,
+        "source_excerpt": "controversial adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "C1_DRAFT_VS_OXFORD_B2_WORD_POS",
+      "independent_reviewer_task": "Oxford lists the ordinary adjective at B2. Independent reviewer must establish a genuinely distinct C1 sense or replace/retier; verify fluent Myanmar and original example. Independent human reviewer must confirm exact-sense CEFR, English definition, natural Myanmar, original example grammar, British pronunciation, source URL/observation date and a content-bound signoff; retain hold until independently verified.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "legendary",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Very famous and admired, often because of achievements.",
+        "myanmar_meaning": "ဒဏ္ဍာရီလာလို ထင်ရှားကျော်ကြားသော",
+        "example_sentence": "The legendary singer performed one final concert."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 280,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 6,
+        "extracted_line": 1401,
+        "source_excerpt": "legendary adj.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LEGENDARY_FAMOUS_VS_MYTHICAL",
+      "independent_reviewer_task": "Distinguish celebrated real-world person from a person in legend; Myanmar ဒဏ္ဍာရီလာ may misleadingly suggest mythical rather than very famous. Independent human reviewer must confirm exact-sense CEFR, English definition, natural Myanmar, original example grammar, British pronunciation, source URL/observation date and a content-bound signoff; retain hold until independently verified.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "regulatory",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Related to official rules that control an activity or industry.",
+        "myanmar_meaning": "စည်းမျဉ်းစည်းကမ်းထိန်းကြပ်ရေးဆိုင်ရာ",
+        "example_sentence": "The company must meet regulatory requirements."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 281,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1684,
+        "source_excerpt": "regulatory adj.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "REGULATORY_RULES_VS_REGULATOR",
+      "independent_reviewer_task": "Check adjective regulatory vs noun regulator; verify formal industry collocation and Myanmar ထိန်းကြပ်ရေး. Independent human reviewer must confirm exact-sense CEFR, English definition, natural Myanmar, original example grammar, British pronunciation, source URL/observation date and a content-bound signoff; retain hold until independently verified.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "integration",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The process of combining separate parts into a connected whole.",
+        "myanmar_meaning": "ပေါင်းစည်းခြင်း၊ စနစ်တစ်ခုအဖြစ် ချိတ်ဆက်ပေါင်းစည်းမှု",
+        "example_sentence": "The integration of the two systems reduced duplicate work."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 329,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 5,
+        "extracted_line": 1354,
+        "source_excerpt": "integration n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "INTEGRATION_TECHNICAL_VS_SOCIAL",
+      "independent_reviewer_task": "Draft technical system integration differs from social integration; verify exact sense and Burmese technical register. Independent human reviewer must confirm exact-sense CEFR, English definition, natural Myanmar, original example grammar, British pronunciation, source URL/observation date and a content-bound signoff; retain hold until independently verified.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "legitimate",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Allowed by law or accepted as reasonable and fair.",
+        "myanmar_meaning": "တရားဝင်သော၊ သင့်လျော်မှန်ကန်သော",
+        "example_sentence": "Customers have a legitimate reason to question unclear charges."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 332,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 6,
+        "extracted_line": 1405,
+        "source_excerpt": "legitimate adj.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LEGITIMATE_LEGAL_VS_REASONABLE",
+      "independent_reviewer_task": "Definition combines lawful and justified/reasonable senses; example legitimate reason selects justified, not necessarily lawful. Independent human reviewer must confirm exact-sense CEFR, English definition, natural Myanmar, original example grammar, British pronunciation, source URL/observation date and a content-bound signoff; retain hold until independently verified.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "advocate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To publicly support or recommend a particular policy or idea.",
+        "myanmar_meaning": "ထောက်ခံအားပေးသည်၊ အဆိုပြုတိုက်တွန်းသည်",
+        "example_sentence": "The researchers advocate stricter controls on industrial waste."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 333,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 743,
+        "source_excerpt": "advocate n., v.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "ADVOCATE_VERB_VS_NOUN",
+      "independent_reviewer_task": "Check verb support/recommend vs noun person; verify transitive advocate stricter controls and Myanmar တိုက်တွန်းသည်. Independent human reviewer must confirm exact-sense CEFR, English definition, natural Myanmar, original example grammar, British pronunciation, source URL/observation date and a content-bound signoff; retain hold until independently verified.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "custody",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The legal responsibility for caring for a child or keeping someone detained.",
+        "myanmar_meaning": "အုပ်ထိန်းခွင့်၊ တရားဝင်ထိန်းသိမ်းထားမှု",
+        "example_sentence": "The court reviewed the arrangements for the child's custody."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 334,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 1032,
+        "source_excerpt": "custody n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "CUSTODY_CHILD_CARE_VS_DETENTION",
+      "independent_reviewer_task": "Definition combines child custody and police detention; example is child custody. Require one precise teachable sense and natural child-custody collocation. Independent human reviewer must confirm exact-sense CEFR, English definition, natural Myanmar, original example grammar, British pronunciation, source URL/observation date and a content-bound signoff; retain hold until independently verified.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "excess",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An amount that is greater than what is needed or allowed.",
+        "myanmar_meaning": "ပိုလျှံသောပမာဏ၊ လိုအပ်သည်ထက်ပိုမှု",
+        "example_sentence": "The factory recycled the excess material after production."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 335,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 5,
+        "extracted_line": 1185,
+        "source_excerpt": "excess n., adj.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "EXCESS_NOUN_VS_ADJECTIVE_EXAMPLE_CRITICAL",
+      "independent_reviewer_task": "CRITICAL: draft labels noun but 'the excess material' uses adjective excess; Oxford directly distinguishes noun and adjective. Rewrite example only after independent review. Independent human reviewer must confirm exact-sense CEFR, English definition, natural Myanmar, original example grammar, British pronunciation, source URL/observation date and a content-bound signoff; retain hold until independently verified.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "operational",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Connected with the practical activities needed to run an organisation or system.",
+        "myanmar_meaning": "လုပ်ငန်းလည်ပတ်မှုဆိုင်ရာ",
+        "example_sentence": "The new schedule reduced operational delays at the warehouse."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 336,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 6,
+        "extracted_line": 1533,
+        "source_excerpt": "operational adj.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "OPERATIONAL_FUNCTIONING_VS_OPERATIONS",
+      "independent_reviewer_task": "Differentiate operational 'relating to operations' from 'ready for use'; review warehouse example and Myanmar. Independent human reviewer must confirm exact-sense CEFR, English definition, natural Myanmar, original example grammar, British pronunciation, source URL/observation date and a content-bound signoff; retain hold until independently verified.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "syndrome",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A group of symptoms or conditions that commonly occur together.",
+        "myanmar_meaning": "ရောဂါလက္ခဏာစု",
+        "example_sentence": "The specialist explained how the syndrome affects sleep."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 339,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1882,
+        "source_excerpt": "syndrome n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "SYNDROME_MEDICAL_VS_NONMEDICAL",
+      "independent_reviewer_task": "Check syndrome clinical symptom cluster versus metaphorical pattern; ensure medically precise Myanmar without diagnosis claims. Independent human reviewer must confirm exact-sense CEFR, English definition, natural Myanmar, original example grammar, British pronunciation, source URL/observation date and a content-bound signoff; retain hold until independently verified.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "fluid",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A substance that can flow, such as a liquid or gas.",
+        "myanmar_meaning": "စီးဆင်းနိုင်သော အရည် သို့မဟုတ် ဓာတ်ငွေ့",
+        "example_sentence": "The mechanic checked the brake fluid."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 410,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 5,
+        "extracted_line": 1225,
+        "source_excerpt": "fluid n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "FLUID_LIQUID_VS_GAS",
+      "independent_reviewer_task": "Definition includes liquid and gas, while brake fluid is a liquid; verify physical meaning, uncountability and fluent Myanmar. Independent human reviewer must confirm exact-sense CEFR, English definition, natural Myanmar, original example grammar, British pronunciation, source URL/observation date and a content-bound signoff; retain hold until independently verified.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "amateur",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A person who does an activity for enjoyment rather than as a profession.",
+        "myanmar_meaning": "အပျော်တမ်းလုပ်ဆောင်သူ၊ ဝါသနာရှင်",
+        "example_sentence": "The amateur photographer won a local prize."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 405,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 768,
+        "source_excerpt": "amateur adj., n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "AMATEUR_NOUN_VS_ADJECTIVE_EXAMPLE_CRITICAL",
+      "independent_reviewer_task": "CRITICAL: draft labels noun but 'amateur photographer' is adjectival; Oxford directly documents this adjective use and a separate noun sense. Independent human reviewer must confirm exact-sense CEFR, English definition, natural Myanmar, original example grammar, British pronunciation, source URL/observation date and a content-bound signoff; retain hold until independently verified.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
