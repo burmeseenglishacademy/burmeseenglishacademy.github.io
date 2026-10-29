@@ -1,0 +1,435 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A2_FOURTH_TWELVE_DIRECT_OXFORD_WORD_POS_TRIAGE_EDITORIAL_HOLD",
+  "observed_on": "2026-10-29",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 12,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 5,
+    "A2": 7,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "word_pos_discrepancies": 5,
+  "independently_approved_count": 0,
+  "source_limitations": "Direct official Oxford PDF word/POS observation, NOT exact-sense CEFR. English/Myanmar/examples are frozen unreviewed shortlist snapshots. No independent review, audio, device QC, release or production deployment is claimed.",
+  "records": [
+    {
+      "word": "level",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A particular stage or degree of something.",
+        "myanmar_meaning": "အဆင့်၊ ပမာဏ",
+        "example_sentence": "This book is suitable for my English level."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 350,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 5,
+        "extracted_line": 1357,
+        "source_excerpt": "level n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "LEVEL_PROFICIENCY_VS_MEASURE",
+      "editorial_risk": "The example uses a learner's English proficiency, not a measurable height or quantity; check whether the English gloss and Myanmar term explicitly match that sense.",
+      "independent_reviewer_task": "Human-independent English, fluent Myanmar, original example, British pronunciation and exact-sense CEFR review required for level (LEVEL_PROFICIENCY_VS_MEASURE). Inspect the publisher's directly accessible sense-specific dictionary entry and record a dated URL/locator and exact intended sense. Oxford PDF word/POS A2 is NOT exact-sense CEFR evidence. Resolve provisional A2 vs publisher classification explicitly; require a real separate human-signed content-bound receipt.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "mind",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The part of a person that thinks and remembers.",
+        "myanmar_meaning": "စဉ်းစားမှတ်မိနိုင်သော စိတ်",
+        "example_sentence": "He changed his mind after hearing the explanation."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 351,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 6,
+        "extracted_line": 1398,
+        "source_excerpt": "mind n., v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "MIND_COGNITION_VS_CHANGE_MIND_IDIOM",
+      "editorial_risk": "The definition describes thinking and memory, but the example uses the fixed phrase 'change one's mind' meaning revise a decision; resolve sense mismatch before approval.",
+      "independent_reviewer_task": "Human-independent English, fluent Myanmar, original example, British pronunciation and exact-sense CEFR review required for mind (MIND_COGNITION_VS_CHANGE_MIND_IDIOM). Inspect the publisher's directly accessible sense-specific dictionary entry and record a dated URL/locator and exact intended sense. Oxford PDF word/POS A2 is NOT exact-sense CEFR evidence. Resolve provisional A2 vs publisher classification explicitly; require a real separate human-signed content-bound receipt.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "become",
+      "level": "A2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To begin to be something different.",
+        "myanmar_meaning": "ဖြစ်လာသည်၊ ပြောင်းလဲဖြစ်လာသည်",
+        "example_sentence": "She hopes to become an engineer."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 352,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 71,
+        "source_excerpt": "become v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "BECOME_A1_VS_A2_PROVISIONAL",
+      "editorial_risk": "Oxford places the verb at A1 word/POS; the draft A2 sentence is grammatical but needs independent justification for A2 teaching placement or a retier proposal.",
+      "independent_reviewer_task": "Human-independent English, fluent Myanmar, original example, British pronunciation and exact-sense CEFR review required for become (BECOME_A1_VS_A2_PROVISIONAL). Inspect the publisher's directly accessible sense-specific dictionary entry and record a dated URL/locator and exact intended sense. Oxford PDF word/POS A1 is NOT exact-sense CEFR evidence. Resolve provisional A2 vs publisher classification explicitly; require a real separate human-signed content-bound receipt.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "body",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The physical structure of a person or animal.",
+        "myanmar_meaning": "ခန္ဓာကိုယ်",
+        "example_sentence": "Regular exercise helps keep your body healthy."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 353,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 95,
+        "source_excerpt": "body n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "BODY_A1_VS_A2_PROVISIONAL",
+      "editorial_risk": "The physical-body sense appears common and Oxford word/POS is A1; do not treat an A2 provisional slot as exact-sense CEFR evidence.",
+      "independent_reviewer_task": "Human-independent English, fluent Myanmar, original example, British pronunciation and exact-sense CEFR review required for body (BODY_A1_VS_A2_PROVISIONAL). Inspect the publisher's directly accessible sense-specific dictionary entry and record a dated URL/locator and exact intended sense. Oxford PDF word/POS A1 is NOT exact-sense CEFR evidence. Resolve provisional A2 vs publisher classification explicitly; require a real separate human-signed content-bound receipt.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "problem",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A difficulty that needs to be solved.",
+        "myanmar_meaning": "ဖြေရှင်းရန်လိုအပ်သော ပြဿနာ",
+        "example_sentence": "We found a simple solution to the problem."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 355,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 623,
+        "source_excerpt": "problem n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "PROBLEM_A1_VS_A2_PROVISIONAL",
+      "editorial_risk": "Oxford's noun is A1 at word/POS; the draft's problem-solving sentence does not by itself support an A2 exact-sense classification.",
+      "independent_reviewer_task": "Human-independent English, fluent Myanmar, original example, British pronunciation and exact-sense CEFR review required for problem (PROBLEM_A1_VS_A2_PROVISIONAL). Inspect the publisher's directly accessible sense-specific dictionary entry and record a dated URL/locator and exact intended sense. Oxford PDF word/POS A1 is NOT exact-sense CEFR evidence. Resolve provisional A2 vs publisher classification explicitly; require a real separate human-signed content-bound receipt.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "almost",
+      "level": "A2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Very nearly, but not completely.",
+        "myanmar_meaning": "နီးပါး၊ လုနီးပါး",
+        "example_sentence": "The classroom was almost empty."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 356,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 934,
+        "source_excerpt": "almost adv.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "ALMOST_NEARLY_VS_COMPLETELY",
+      "editorial_risk": "Confirm the nearly-but-not-entirely adverb sense and fluent Myanmar wording, including why the classroom example illustrates a nonzero remainder.",
+      "independent_reviewer_task": "Human-independent English, fluent Myanmar, original example, British pronunciation and exact-sense CEFR review required for almost (ALMOST_NEARLY_VS_COMPLETELY). Inspect the publisher's directly accessible sense-specific dictionary entry and record a dated URL/locator and exact intended sense. Oxford PDF word/POS A2 is NOT exact-sense CEFR evidence. Resolve provisional A2 vs publisher classification explicitly; require a real separate human-signed content-bound receipt.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "win",
+      "level": "A2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To succeed in a game, competition, or contest.",
+        "myanmar_meaning": "အနိုင်ရသည်",
+        "example_sentence": "Our team hopes to win the final match."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 359,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 882,
+        "source_excerpt": "win v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "WIN_A1_VS_A2_PROVISIONAL",
+      "editorial_risk": "The competition sense is common and Oxford's verb is A1 word/POS; independent reviewers must resolve the A2 draft placement.",
+      "independent_reviewer_task": "Human-independent English, fluent Myanmar, original example, British pronunciation and exact-sense CEFR review required for win (WIN_A1_VS_A2_PROVISIONAL). Inspect the publisher's directly accessible sense-specific dictionary entry and record a dated URL/locator and exact intended sense. Oxford PDF word/POS A1 is NOT exact-sense CEFR evidence. Resolve provisional A2 vs publisher classification explicitly; require a real separate human-signed content-bound receipt.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "idea",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A thought or plan about what to do.",
+        "myanmar_meaning": "အကြံဉာဏ်၊ စိတ်ကူး",
+        "example_sentence": "She had an idea for a new project."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 360,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 389,
+        "source_excerpt": "idea n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "IDEA_A1_VS_A2_PROVISIONAL",
+      "editorial_risk": "Oxford's noun is A1 at word/POS; verify whether the new-project example reflects a distinct higher-level sense or simply common A1 usage.",
+      "independent_reviewer_task": "Human-independent English, fluent Myanmar, original example, British pronunciation and exact-sense CEFR review required for idea (IDEA_A1_VS_A2_PROVISIONAL). Inspect the publisher's directly accessible sense-specific dictionary entry and record a dated URL/locator and exact intended sense. Oxford PDF word/POS A1 is NOT exact-sense CEFR evidence. Resolve provisional A2 vs publisher classification explicitly; require a real separate human-signed content-bound receipt.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "community",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "People living in the same area or sharing an interest.",
+        "myanmar_meaning": "ရပ်ရွာအသိုင်းအဝိုင်း၊ လူမှုအသိုင်းအဝိုင်း",
+        "example_sentence": "The community organised a clean-up day."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 361,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 1067,
+        "source_excerpt": "community n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "COMMUNITY_LOCAL_VS_SHARED_INTEREST",
+      "editorial_risk": "The definition includes geographical and shared-interest communities; the clean-up example suggests a local neighbourhood. Confirm which sense the Myanmar gloss teaches.",
+      "independent_reviewer_task": "Human-independent English, fluent Myanmar, original example, British pronunciation and exact-sense CEFR review required for community (COMMUNITY_LOCAL_VS_SHARED_INTEREST). Inspect the publisher's directly accessible sense-specific dictionary entry and record a dated URL/locator and exact intended sense. Oxford PDF word/POS A2 is NOT exact-sense CEFR evidence. Resolve provisional A2 vs publisher classification explicitly; require a real separate human-signed content-bound receipt.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "cause",
+      "level": "A2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To make something happen.",
+        "myanmar_meaning": "ဖြစ်ပေါ်စေသည်၊ အကြောင်းရင်းဖြစ်စေသည်",
+        "example_sentence": "Heavy rain can cause flooding."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 362,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 1031,
+        "source_excerpt": "cause n., v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "CAUSE_VERB_VS_NOUN",
+      "editorial_risk": "The draft uses a verb meaning bring about flooding; Oxford lists noun and verb together at A2, so reviewers must bind the verb sense rather than infer from the noun.",
+      "independent_reviewer_task": "Human-independent English, fluent Myanmar, original example, British pronunciation and exact-sense CEFR review required for cause (CAUSE_VERB_VS_NOUN). Inspect the publisher's directly accessible sense-specific dictionary entry and record a dated URL/locator and exact intended sense. Oxford PDF word/POS A2 is NOT exact-sense CEFR evidence. Resolve provisional A2 vs publisher classification explicitly; require a real separate human-signed content-bound receipt.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "data",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Information collected for study or use.",
+        "myanmar_meaning": "စုဆောင်းထားသော အချက်အလက်များ",
+        "example_sentence": "The team checked the data before writing the report."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 363,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 5,
+        "extracted_line": 1105,
+        "source_excerpt": "data n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "DATA_INFORMATION_PLURAL_USAGE",
+      "editorial_risk": "Check whether the uncountable/plural usage and Myanmar plural marker are natural in context, and that the report-writing example fits the intended information sense.",
+      "independent_reviewer_task": "Human-independent English, fluent Myanmar, original example, British pronunciation and exact-sense CEFR review required for data (DATA_INFORMATION_PLURAL_USAGE). Inspect the publisher's directly accessible sense-specific dictionary entry and record a dated URL/locator and exact intended sense. Oxford PDF word/POS A2 is NOT exact-sense CEFR evidence. Resolve provisional A2 vs publisher classification explicitly; require a real separate human-signed content-bound receipt.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "general",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Relating to the main features of something rather than specific details.",
+        "myanmar_meaning": "ယေဘုယျဖြစ်သော၊ အထွေထွေ",
+        "example_sentence": "This is a general guide to the city."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 425,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 5,
+        "extracted_line": 1246,
+        "source_excerpt": "general adj.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk_id": "GENERAL_BROAD_VS_UNSPECIFIC",
+      "editorial_risk": "Verify that the 'general guide' example teaches broad introductory coverage, rather than 'typical' or 'common'; ensure the Myanmar adjectives are natural.",
+      "independent_reviewer_task": "Human-independent English, fluent Myanmar, original example, British pronunciation and exact-sense CEFR review required for general (GENERAL_BROAD_VS_UNSPECIFIC). Inspect the publisher's directly accessible sense-specific dictionary entry and record a dated URL/locator and exact intended sense. Oxford PDF word/POS A2 is NOT exact-sense CEFR evidence. Resolve provisional A2 vs publisher classification explicitly; require a real separate human-signed content-bound receipt.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
