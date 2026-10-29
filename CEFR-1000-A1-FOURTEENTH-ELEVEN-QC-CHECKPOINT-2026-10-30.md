@@ -33,3 +33,14 @@ Added fail-closed source-bound packet auditor with **219 negative mutations** (1
 Written/independently approved: **A1 200/0, A2 200/0, B1 200/0, B2 200/0, C1 200/0**. Real George/Emma listening signoffs **0/1,000**. Final audio generation/listening, independent exact-sense/English/Myanmar/example review, browser/mobile regression, physical iPhone Safari, measured GitHub Pages limits, protected production asset verification and production deployment remain unverified. **No merge or deployment permitted.**
 
 CI runs and job conclusions are not asserted until retrieved from GitHub Actions.
+
+## Executed GitHub Actions and corrections
+
+- Initial code commit `a08eadd6f350923c59c5e014d8aedd948e1584b7`: [structural run 40934870641](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40934870641) **FAILED in ALL** and [documentary run 40934870607](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40934870607) **FAILED**. Actual logs showed two ineffective adversarial mutations (changing already-11 record count and A1 count to 11); the normal 11-entry source packet check itself passed. These failures are retained in the audit history, not concealed.
+- Fixed both ineffective mutations to changed values and required each mutation to differ from the baseline in staging-only commit `2ce6fe9622e2072b339538d5b7074c0feb80776a`.
+- Verified [structural run 40934990527](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40934990527) **SUCCESS across all six A1/A2/B1/B2/C1/ALL jobs**. ALL-job logs confirm **219/219** fourteenth-batch negative mutations rejected, **145/145** reviewer-handoff mutations rejected, 484 distinct Oxford-observed headwords, 503 total observations, and protected production assets unchanged.
+- Verified [documentary run 40934990560](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40934990560) **SUCCESS as report-only**, explicitly retaining human, voice listening, device and hosting blockers. Actual documentary logs confirm **0 independent approvals**, **0 final George/Emma listening receipts**, and no protected production asset changes.
+- Verified [read-only scope-guard run 40934870836](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/40934870836) **SUCCESS** on the initial seven-file staging commit. The subsequent auditor-only fix did not change the frozen shortlist or scope guard.
+- Source evidence remains **word/POS only**; CI success is not human independent review, physical iPhone testing, audio listening or production launch.
+
+**Release remains BLOCKED / STAGING ONLY.** No main merge, Pages deployment, audio overwrite or privacy change was performed.
