@@ -54,8 +54,9 @@ def audit(packet, shortlist):
         original = by_word[word]
         need(row["level"] == original["level"] == "B1"
              and row["part_of_speech"] == original["part_of_speech"], "POS/level drift")
-        need(row["shortlist_snapshot"] == {k:original[k] for k in
-             ("english_definition","burmese_meaning","example_sentence")}, "English/Myanmar/example changed")
+        need(row["shortlist_snapshot"] == {"english_definition":original["english_definition"],
+             "myanmar_meaning":original["burmese_meaning"],
+             "example_sentence":original["example_sentence"]}, "English/Myanmar/example changed")
         need(row["shortlist_provenance"] == {k:original[k] for k in
              ("source_path","source_index","source_blob_sha")}, "Historical Git provenance changed")
         need(row["publisher_source"] == {
