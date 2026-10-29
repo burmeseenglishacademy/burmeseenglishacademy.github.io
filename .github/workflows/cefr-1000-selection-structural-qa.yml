@@ -30,6 +30,7 @@ on:
       - tools/audit_cefr_1000_oxford_coverage.py
       - draft/CEFR-1000-OXFORD-LEGACY-THIRTYSIX-EXCERPT-RECOVERY-2026-10-29.json
       - tools/audit_cefr_1000_oxford_legacy_excerpt_recovery.py
+      - tools/audit_cefr_1000_review_priority.py
       - tools/audit_cefr_1000_oxford_a1_twelve.py
       - draft/CEFR-1000-CAMBRIDGE-A2-RECOVERY-TWELVE-2026-10-28.json
       - tools/audit_cefr_1000_a2_recovery_twelve.py
@@ -162,6 +163,11 @@ jobs:
       - name: Reject 20 forged recovered Oxford excerpts, provenance and fake reviewer receipts
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_legacy_excerpt_recovery.py --level ALL --self-test
+      - name: Produce provenance-bound independent-review priority counts (no approvals)
+        run: python3 tools/audit_cefr_1000_review_priority.py --level "${{ matrix.level }}"
+      - name: Generate full 1000-item reviewer handoff and reject forged signoffs
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_review_priority.py --level ALL --self-test --output cefr-1000-review-handoff-ALL.json
       - name: Audit Oxford A2 follow-up twelve publisher word/POS observations (not independent signoff)
         run: python3 tools/audit_cefr_1000_oxford_a2_followup_twelve.py --level "${{ matrix.level }}"
       - name: Reject 24 forged Oxford A2 follow-up source, snapshot and review mutations
@@ -338,6 +344,7 @@ jobs:
           name: cefr-1000-provisional-${{ matrix.level }}
           path: |
             cefr-1000-shortlist-qa-${{ matrix.level }}.json
+            cefr-1000-review-handoff-ALL.json
             cefr-1000-oxford-direct-spotcheck-${{ matrix.level }}.json
             cefr-1000-oxford-a1-twelve-${{ matrix.level }}.json
             cefr-1000-oxford-a1-second-twelve-${{ matrix.level }}.json
