@@ -41,9 +41,11 @@ on:
       - draft/CEFR-1000-OXFORD-A1-EIGHTH-TWELVE-2026-10-29.json
       - tools/audit_cefr_1000_oxford_a1_eighth_twelve.py
       - draft/CEFR-1000-OXFORD-A1-NINTH-TWELVE-2026-10-29.json
+      - draft/CEFR-1000-OXFORD-A1-TENTH-TWELVE-2026-10-29.json
       - draft/CEFR-1000-CAMBRIDGE-A1-FAMILY-AND-EVERYDAY-TWELVE-2026-10-29.json
       - tools/audit_cefr_1000_cambridge_a1_twelve.py
       - tools/audit_cefr_1000_oxford_a1_ninth_twelve.py
+      - tools/audit_cefr_1000_oxford_a1_tenth_twelve.py
       - tools/audit_cefr_1000_oxford_coverage.py
       - draft/CEFR-1000-OXFORD-LEGACY-THIRTYSIX-EXCERPT-RECOVERY-2026-10-29.json
       - tools/audit_cefr_1000_oxford_legacy_excerpt_recovery.py
@@ -145,6 +147,7 @@ jobs:
           python3 tools/audit_cefr_1000_oxford_a1_seventh_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_a1_eighth_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_a1_ninth_twelve.py --level ALL --self-test
+          python3 tools/audit_cefr_1000_oxford_a1_tenth_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_cambridge_a1_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_coverage.py --level ALL --self-test
           python3 tools/audit_cefr_1000_review_priority.py --level ALL --self-test
