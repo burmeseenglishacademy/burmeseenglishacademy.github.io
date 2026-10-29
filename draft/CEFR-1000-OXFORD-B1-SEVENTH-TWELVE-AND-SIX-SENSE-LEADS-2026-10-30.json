@@ -1,0 +1,477 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B1_SEVENTH_TWELVE_DIRECT_OXFORD_WORD_POS_AND_SIX_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 12,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 1,
+    "A2": 6,
+    "B1": 1,
+    "B2": 4
+  },
+  "word_pos_discrepancies": 11,
+  "direct_dictionary_sense_leads": 6,
+  "independently_approved_count": 0,
+  "source_limitations": "Oxford official PDF directly inspected 2026-10-30; word/POS labels only, not exact-sense CEFR, independent human English/Myanmar/example verification or real George/Emma audio listening. Six directly opened Oxford dictionary pages provide editorial sense leads only. All twelve remain editorial holds.",
+  "records": [
+    {
+      "word": "queen",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A female ruler of a kingdom.",
+        "myanmar_meaning": "ဘုရင်မ",
+        "example_sentence": "The queen addressed the nation on television."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 534,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 6,
+        "extracted_line": 1519,
+        "source_excerpt": "queen n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Female sovereign in draft, not wife of a king, chess piece, playing card or queen bee; Myanmar 'ဘုရင်မ' may be context-ambiguous.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/queen",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 106,
+        "page_text_line_end": 151,
+        "editorial_interpretation": "Female ruler sense is distinct from queen consort; draft example 'addressed the nation' suggests reigning sovereign.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify intended exact sense and CEFR suitability with dated publisher dictionary evidence, fluent Myanmar translation, original example grammar, British pronunciation and content-bound receipt; no publisher word/POS observation constitutes independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "heat",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The feeling or level of high temperature.",
+        "myanmar_meaning": "အပူ၊ အပူရှိန်",
+        "example_sentence": "The heat made the afternoon walk difficult."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 533,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 5,
+        "extracted_line": 1268,
+        "source_excerpt": "heat n., v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft noun refers to hot weather sensation, not physical heat energy, a heating appliance or verb; Myanmar 'အပူရှိန်' should be checked.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human reviewer must verify intended exact sense and CEFR suitability with dated publisher dictionary evidence, fluent Myanmar translation, original example grammar, British pronunciation and content-bound receipt; no publisher word/POS observation constitutes independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "truly",
+      "level": "B1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "In a sincere or genuine way.",
+        "myanmar_meaning": "စိတ်ရင်းမှန်ဖြင့်၊ အမှန်တကယ်",
+        "example_sentence": "I truly appreciate your help."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 532,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 12,
+        "extracted_line": 3267,
+        "source_excerpt": "truly adv.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft example 'I truly appreciate your help' expresses sincere feeling; distinguish emphasis on quality or objective truth. Publisher B2 word/POS differs from draft B1.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/truly",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 116,
+        "page_text_line_end": 140,
+        "editorial_interpretation": "Dictionary separates sincere feeling from intensity and accurate-description senses; first sense aligns with draft.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify intended exact sense and CEFR suitability with dated publisher dictionary evidence, fluent Myanmar translation, original example grammar, British pronunciation and content-bound receipt; no publisher word/POS observation constitutes independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "mission",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An important task that a person or group is given.",
+        "myanmar_meaning": "တာဝန်ကြီး၊ ရည်မှန်းချက်ရှိသော လုပ်ငန်း",
+        "example_sentence": "The rescue team's mission was to find the hikers."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 531,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 11,
+        "extracted_line": 3007,
+        "source_excerpt": "mission n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft rescue team's mission is a formally assigned important task; avoid translating as religious mission or general goal. Publisher B2 versus draft B1.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mission",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 106,
+        "page_text_line_end": 127,
+        "editorial_interpretation": "Oxford's official important-task/assigned-job sense includes rescue missions; distinguish institutional mission or religious purpose.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify intended exact sense and CEFR suitability with dated publisher dictionary evidence, fluent Myanmar translation, original example grammar, British pronunciation and content-bound receipt; no publisher word/POS observation constitutes independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "mass",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A large quantity or collection of something.",
+        "myanmar_meaning": "အမြောက်အမြား၊ ပမာဏများစွာ",
+        "example_sentence": "A mass of clouds covered the mountain."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 530,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 11,
+        "extracted_line": 2991,
+        "source_excerpt": "mass n., adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft 'A mass of clouds' uses large grouped quantity, not physical mass/weight or mass adjective; check countability and natural Myanmar gloss.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mass_1",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 107,
+        "page_text_line_end": 160,
+        "editorial_interpretation": "Oxford distinguishes shapeless mass, a large quantity, and a grouped number; draft collocation needs sense-specific Myanmar.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify intended exact sense and CEFR suitability with dated publisher dictionary evidence, fluent Myanmar translation, original example grammar, British pronunciation and content-bound receipt; no publisher word/POS observation constitutes independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "hall",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A large room used for meetings or public events.",
+        "myanmar_meaning": "ခန်းမ",
+        "example_sentence": "The ceremony took place in the school hall."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 529,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 5,
+        "extracted_line": 1263,
+        "source_excerpt": "hall n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft large event room; distinguish entrance hall, corridor, town hall or institutional building; check 'ခန်းမ' context.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human reviewer must verify intended exact sense and CEFR suitability with dated publisher dictionary evidence, fluent Myanmar translation, original example grammar, British pronunciation and content-bound receipt; no publisher word/POS observation constitutes independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "cell",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The smallest living unit of an animal or plant.",
+        "myanmar_meaning": "သက်ရှိဆဲလ်",
+        "example_sentence": "Every cell in the body needs energy."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 528,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 10,
+        "extracted_line": 2685,
+        "source_excerpt": "cell n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft biological cell, not prison cell, spreadsheet cell, electrical cell or American cell phone; Myanmar 'သက်ရှိဆဲလ်' may be appropriate.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/cell",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 105,
+        "page_text_line_end": 188,
+        "editorial_interpretation": "Oxford explicitly distinguishes biological cell from prison, electrical and spreadsheet senses; draft matches biology.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify intended exact sense and CEFR suitability with dated publisher dictionary evidence, fluent Myanmar translation, original example grammar, British pronunciation and content-bound receipt; no publisher word/POS observation constitutes independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "catch",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To stop and hold something moving through the air.",
+        "myanmar_meaning": "ဖမ်းယူသည်",
+        "example_sentence": "Try to catch the ball with both hands."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 527,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 1030,
+        "source_excerpt": "catch v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft physically intercepting a thrown ball, not catching illness, transport, attention or discovering wrongdoing; Myanmar 'ဖမ်းယူသည်' needs sports context.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human reviewer must verify intended exact sense and CEFR suitability with dated publisher dictionary evidence, fluent Myanmar translation, original example grammar, British pronunciation and content-bound receipt; no publisher word/POS observation constitutes independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "sick",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Feeling unwell because of an illness.",
+        "myanmar_meaning": "နေမကောင်းသော၊ ဖျားနာသော",
+        "example_sentence": "He stayed home because he felt sick."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 526,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 696,
+        "source_excerpt": "sick adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft feeling ill is consistent with common illness sense; distinguish British 'be sick' meaning vomit and American 'sick' as ill.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human reviewer must verify intended exact sense and CEFR suitability with dated publisher dictionary evidence, fluent Myanmar translation, original example grammar, British pronunciation and content-bound receipt; no publisher word/POS observation constitutes independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "touch",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To put your hand or finger on something.",
+        "myanmar_meaning": "လက်ဖြင့် ထိသည်၊ တို့သည်",
+        "example_sentence": "Do not touch the wet paint."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 525,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1711,
+        "source_excerpt": "touch v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft physical hand contact with wet paint, not emotional impact or 'get in touch'; clarify polite imperative.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human reviewer must verify intended exact sense and CEFR suitability with dated publisher dictionary evidence, fluent Myanmar translation, original example grammar, British pronunciation and content-bound receipt; no publisher word/POS observation constitutes independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "separate",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Not joined or kept together with something else.",
+        "myanmar_meaning": "သီးခြားဖြစ်သော၊ ခွဲထားသော",
+        "example_sentence": "Keep the two orders in separate boxes."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 483,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 6,
+        "extracted_line": 1598,
+        "source_excerpt": "separate adj.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft distinct boxes, not verb 'to separate' or 'separate from'; Myanmar 'သီးခြားဖြစ်သော' contextual accuracy needed.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human reviewer must verify intended exact sense and CEFR suitability with dated publisher dictionary evidence, fluent Myanmar translation, original example grammar, British pronunciation and content-bound receipt; no publisher word/POS observation constitutes independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "remain",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To continue to be in the same state or place.",
+        "myanmar_meaning": "ဆက်လက်ရှိနေသည်၊ မပြောင်းလဲဘဲနေသည်",
+        "example_sentence": "Please remain seated until the bus stops."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 482,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 9,
+        "extracted_line": 2372,
+        "source_excerpt": "remain v.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft 'Please remain seated' is linking-verb continued-state sense; distinguish remaining quantity/existence. Oxford labels B1 word/POS, not independent sense approval.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/remain",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 103,
+        "page_text_line_end": 163,
+        "editorial_interpretation": "Oxford marks remain as relatively formal and normally non-progressive; 'remain seated' matches linking-verb state sense.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify intended exact sense and CEFR suitability with dated publisher dictionary evidence, fluent Myanmar translation, original example grammar, British pronunciation and content-bound receipt; no publisher word/POS observation constitutes independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
