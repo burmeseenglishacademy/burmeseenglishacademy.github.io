@@ -39,6 +39,7 @@ on:
       - tools/audit_cefr_1000_oxford_coverage.py
       - draft/CEFR-1000-OXFORD-LEGACY-THIRTYSIX-EXCERPT-RECOVERY-2026-10-29.json
       - tools/audit_cefr_1000_oxford_legacy_excerpt_recovery.py
+      - tools/audit_cefr_1000_review_priority.py
       - draft/CEFR-1000-OXFORD-A2-TWELVE-DIRECT-PDF-2026-10-28.json
       - draft/CEFR-1000-OXFORD-A2-FOLLOWUP-TWELVE-2026-10-28.json
       - tools/audit_cefr_1000_oxford_a2_followup_twelve.py
@@ -121,6 +122,7 @@ jobs:
           python3 tools/audit_cefr_1000_oxford_a1_fifth_twentyfour.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_a1_sixth_twentyfour.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_coverage.py --level ALL --self-test
+          python3 tools/audit_cefr_1000_review_priority.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_legacy_excerpt_recovery.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_a2_followup_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_a2_third_twentyfour.py --level ALL --self-test
