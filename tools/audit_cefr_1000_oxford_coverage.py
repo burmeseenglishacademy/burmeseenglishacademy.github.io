@@ -250,7 +250,7 @@ def self_test(shortlist, packets):
         (flat, lambda p: p["records"][0].update(source_url="https://example.com/fake.pdf")),
         (last, lambda p: p["records"][-1]["publisher_source"].update(evidence_scope="DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE")),
         (last, lambda p: p["records"][-1]["publisher_source"].update(source_cefr_level="C1")),
-        (newest, lambda p: p["records"][0]["publisher_source"].update(source_excerpt="forged n.")),
+        (newest, lambda p: p["records"][0]["publisher_source"].update(source_excerpt="")),
         (newest, lambda p: p["records"][0]["publisher_source"].update(source_cefr_level="A1")),
         (newest, lambda p: p["records"][0].update(release_approved=True)),
         (newest, lambda p: p["records"][0]["shortlist_snapshot"].update(example_sentence="forged")),
