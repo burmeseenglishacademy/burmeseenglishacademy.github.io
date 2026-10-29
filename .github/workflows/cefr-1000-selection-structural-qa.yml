@@ -95,6 +95,8 @@ on:
       - tools/audit_cefr_1000_oxford_c1_followup_twelve.py
       - draft/CEFR-1000-OXFORD-C1-SIXTH-TWELVE-2026-10-29.json
       - tools/audit_cefr_1000_oxford_c1_sixth_twelve.py
+      - draft/CEFR-1000-OXFORD-C1-SEVENTH-TWELVE-2026-10-30.json
+      - tools/audit_cefr_1000_oxford_c1_seventh_twelve.py
       - draft/CEFR-1000-OXFORD-C1-MIXED-TWELVE-2026-10-28.json
       - tools/audit_cefr_1000_oxford_b2_twelve.py
       - draft/CEFR-1000-OXFORD-C1-TWELVE-DIRECT-PDF-2026-10-28.json
@@ -428,6 +430,11 @@ jobs:
       - name: Reject 293 forged C1 source, Myanmar, example and independent-review mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_c1_sixth_twelve.py --level ALL --self-test
+      - name: Audit seventh C1 Oxford PDF word-POS and direct noun-adjective mismatch leads (no approval)
+        run: python3 tools/audit_cefr_1000_oxford_c1_seventh_twelve.py --level "${{ matrix.level }}"
+      - name: Reject 306 forged seventh C1 source, Myanmar, grammar and approval mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_oxford_c1_seventh_twelve.py --level ALL --self-test
       - name: Audit six formal C1 Cambridge senses with no observed CEFR label (editorial hold)
         run: python3 tools/audit_cefr_1000_unlabelled_c1_six.py --level "${{ matrix.level }}"
       - name: Reject 20 invented C1 labels, forged signoffs and source snapshot mutations
