@@ -85,6 +85,8 @@ on:
       - draft/CEFR-1000-OXFORD-B2-FOURTH-TWENTYFOUR-2026-10-29.json
       - draft/CEFR-1000-OXFORD-B2-FIFTH-TWELVE-2026-10-29.json
       - tools/audit_cefr_1000_oxford_b2_fifth_twelve.py
+      - draft/CEFR-1000-OXFORD-B2-SIXTH-TWELVE-2026-10-30.json
+      - tools/audit_cefr_1000_oxford_b2_sixth_twelve.py
       - tools/audit_cefr_1000_oxford_b2_fourth_twentyfour.py
       - draft/CEFR-1000-OXFORD-B2-ADDITIONAL-TWELVE-2026-10-28.json
       - tools/audit_cefr_1000_oxford_b2_additional_twelve.py
@@ -356,6 +358,11 @@ jobs:
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_b2_fifth_twelve.py --level ALL --self-test
       - name: Audit 12 further B2 draft Oxford word/POS leads (no human approval)
+      - name: Audit sixth twelve direct B2 Oxford 5000 word/POS observations (no human approval)
+        run: python3 tools/audit_cefr_1000_oxford_b2_sixth_twelve.py --level "${{ matrix.level }}"
+      - name: Reject 151 forged sixth B2 publisher, bilingual, provenance and approval mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_oxford_b2_sixth_twelve.py --level ALL --self-test
         run: python3 tools/audit_cefr_1000_oxford_b2_additional_twelve.py --level "${{ matrix.level }}"
       - name: Reject 24 forged B2 source and false-approval mutations
         if: ${{ matrix.level == 'ALL' }}
