@@ -1,0 +1,423 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A1_EIGHTH_TWELVE_DIRECT_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-29",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 12,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 12,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "word_pos_discrepancies": 0,
+  "independently_approved_count": 0,
+  "source_limitations": "Direct Oxford University Press official Oxford 3000 PDF word/POS observations on 2026-10-29, one-based PDF pages and zero-based extracted lines. All 12 publisher A1 word/POS observations remain exact-sense and example/POS unverified. In particular today/yesterday nominal-subject examples conflict with provisional adverb labels. No independent linguistic approval, real listening, physical device QA or production publication.",
+  "records": [
+    {
+      "word": "today",
+      "level": "A1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "On this present day.",
+        "myanmar_meaning": "ဒီနေ့၊ ယနေ့",
+        "example_sentence": "Today is Monday."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 138,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 805,
+        "source_excerpt": "today adv., n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_EIGHTH_TWELVE_TODAY_WORD_POS_AND_EXAMPLE_SENSE_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Today is Monday uses today as a nominal subject, although the provisional part of speech says adverb; require a sense/POS-aligned original example or independently reviewed POS amendment. Verify exact publisher-backed sense/CEFR, fluent Myanmar, example grammar and original wording; Oxford word/POS level alone is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "tomorrow",
+      "level": "A1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "On the day after today.",
+        "myanmar_meaning": "မနက်ဖြန်",
+        "example_sentence": "We have class tomorrow."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 139,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 809,
+        "source_excerpt": "tomorrow adv., n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_EIGHTH_TWELVE_TOMORROW_WORD_POS_AND_EXAMPLE_SENSE_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Distinguish adverbial tomorrow in the example from nominal tomorrow; verify Myanmar time reference and example naturalness. Verify exact publisher-backed sense/CEFR, fluent Myanmar, example grammar and original wording; Oxford word/POS level alone is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "yesterday",
+      "level": "A1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "On the day before today.",
+        "myanmar_meaning": "မနေ့က",
+        "example_sentence": "Yesterday was Sunday."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 140,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 903,
+        "source_excerpt": "yesterday adv., n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_EIGHTH_TWELVE_YESTERDAY_WORD_POS_AND_EXAMPLE_SENSE_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Yesterday was Sunday uses yesterday nominally as a subject while draft POS says adverb; require independent grammar and example correction. Verify exact publisher-backed sense/CEFR, fluent Myanmar, example grammar and original wording; Oxford word/POS level alone is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "morning",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The first part of the day before noon.",
+        "myanmar_meaning": "မနက်၊ နံနက်ပိုင်း",
+        "example_sentence": "I study in the morning."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 141,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 495,
+        "source_excerpt": "morning n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_EIGHTH_TWELVE_MORNING_WORD_POS_AND_EXAMPLE_SENSE_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Distinguish morning as a noun from the temporal adverbial phrase in the morning; check fluent Myanmar and natural example. Verify exact publisher-backed sense/CEFR, fluent Myanmar, example grammar and original wording; Oxford word/POS level alone is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "afternoon",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The time after noon and before evening.",
+        "myanmar_meaning": "နေ့လယ်ပိုင်း၊ မွန်းလွဲပိုင်း",
+        "example_sentence": "We play in the afternoon."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 142,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 18,
+        "source_excerpt": "afternoon n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_EIGHTH_TWELVE_AFTERNOON_WORD_POS_AND_EXAMPLE_SENSE_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Check afternoon time span and preposition in the afternoon; keep it distinct from evening. Verify exact publisher-backed sense/CEFR, fluent Myanmar, example grammar and original wording; Oxford word/POS level alone is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "evening",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The later part of the day before night.",
+        "myanmar_meaning": "ညနေပိုင်း",
+        "example_sentence": "I cook in the evening."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 143,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 248,
+        "source_excerpt": "evening n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_EIGHTH_TWELVE_EVENING_WORD_POS_AND_EXAMPLE_SENSE_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Check evening versus night and the time expression in the evening in both languages. Verify exact publisher-backed sense/CEFR, fluent Myanmar, example grammar and original wording; Oxford word/POS level alone is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "night",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The dark part of the day when most people sleep.",
+        "myanmar_meaning": "ည၊ ညအချိန်",
+        "example_sentence": "I sleep at night."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 144,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 522,
+        "source_excerpt": "night n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_EIGHTH_TWELVE_NIGHT_WORD_POS_AND_EXAMPLE_SENSE_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Check night as a time period, not an adjective; verify sleep at night collocation. Verify exact publisher-backed sense/CEFR, fluent Myanmar, example grammar and original wording; Oxford word/POS level alone is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "week",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A period of seven days.",
+        "myanmar_meaning": "သီတင်းပတ်၊ တစ်ပတ်",
+        "example_sentence": "I work five days a week."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 145,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 868,
+        "source_excerpt": "week n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_EIGHTH_TWELVE_WEEK_WORD_POS_AND_EXAMPLE_SENSE_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Review a week as rate/frequency construction and distinguish seven-day period from calendar week. Verify exact publisher-backed sense/CEFR, fluent Myanmar, example grammar and original wording; Oxford word/POS level alone is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "month",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "One of the twelve parts of a year.",
+        "myanmar_meaning": "လ၊ တစ်လ",
+        "example_sentence": "Next month is December."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 146,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 493,
+        "source_excerpt": "month n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_EIGHTH_TWELVE_MONTH_WORD_POS_AND_EXAMPLE_SENSE_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Review next month without a preposition and the relative-time Myanmar translation. Verify exact publisher-backed sense/CEFR, fluent Myanmar, example grammar and original wording; Oxford word/POS level alone is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "minute",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A period of sixty seconds.",
+        "myanmar_meaning": "မိနစ်",
+        "example_sentence": "Wait one minute, please."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 147,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 485,
+        "source_excerpt": "minute1 n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_EIGHTH_TWELVE_MINUTE_WORD_POS_AND_EXAMPLE_SENSE_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Oxford minute1 is the time-unit noun, not the unrelated adjective meaning tiny; verify sixty-second sense. Verify exact publisher-backed sense/CEFR, fluent Myanmar, example grammar and original wording; Oxford word/POS level alone is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "hour",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A period of sixty minutes.",
+        "myanmar_meaning": "နာရီ၊ တစ်နာရီ",
+        "example_sentence": "The lesson lasts one hour."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 148,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 379,
+        "source_excerpt": "hour n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_EIGHTH_TWELVE_HOUR_WORD_POS_AND_EXAMPLE_SENSE_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Check hour noun, one hour duration, and an hour article in alternative examples. Verify exact publisher-backed sense/CEFR, fluent Myanmar, example grammar and original wording; Oxford word/POS level alone is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "brother",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A male sibling.",
+        "myanmar_meaning": "အစ်ကို၊ မောင်၊ ညီ",
+        "example_sentence": "My brother lives here."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 149,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 110,
+        "source_excerpt": "brother n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_EIGHTH_TWELVE_BROTHER_WORD_POS_AND_EXAMPLE_SENSE_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Check brother as male sibling, Myanmar kinship nuance and natural singular example. Verify exact publisher-backed sense/CEFR, fluent Myanmar, example grammar and original wording; Oxford word/POS level alone is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
