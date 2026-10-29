@@ -177,8 +177,8 @@ def validate(report):
     rows = report["review_tasks"]
     require(len(rows) == 1000 and len({r["word"] for r in rows}) == 1000,
             "Review queue must contain 1,000 distinct headwords")
-    require(report["publisher_word_pos_observed_distinct"] == 329
-            and report["publisher_word_pos_not_observed"] == 671
+    require(report["publisher_word_pos_observed_distinct"] == 341
+            and report["publisher_word_pos_not_observed"] == 659
             and report["recovered_legacy_word_pos_excerpts"] == 36
             and report["human_independent_approvals"] == 0
             and report["real_george_emma_listening_signoffs"] == 0
