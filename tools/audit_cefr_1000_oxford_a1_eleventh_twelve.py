@@ -147,6 +147,7 @@ def self_test(expected):
             n += 1
             continue
         raise AssertionError("Eleventh A1 forged evidence accepted")
+    require(n == 238, "Eleventh A1 adversarial suite count drift")
     return n
 
 
