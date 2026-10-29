@@ -40,7 +40,8 @@ PACKETS = {
            "B1-FIFTH-TWELVE-2026-10-29", "B1-SIXTH-TWELVE-2026-10-29"),
     "B2": ("B2-TWELVE-DIRECT-PDF-2026-10-28", "B2-LOWER-LEVEL-TWELVE-2026-10-28",
            "B2-ADDITIONAL-TWELVE-2026-10-28", "B2-FOURTH-TWENTYFOUR-2026-10-29",
-           "B2-FIFTH-TWELVE-2026-10-29"),
+           "B2-FIFTH-TWELVE-2026-10-29",
+            "B2-SIXTH-TWELVE-2026-10-30"),
     "C1": ("C1-TWELVE-DIRECT-PDF-2026-10-28", "C1-B2-CONFLICT-TWELVE-2026-10-28",
            "C1-MIXED-TWELVE-2026-10-28", "C1-FOLLOWUP-TWELVE-2026-10-29",
            "C1-SIXTH-TWELVE-2026-10-29",
@@ -50,7 +51,7 @@ EXPECTED = {
     "A1": {"observations": 203, "distinct": 195, "A1": 195},
     "A2": {"observations": 84, "distinct": 84, "A1": 55, "A2": 26, "B1": 3},
     "B1": {"observations": 84, "distinct": 84, "A1": 14, "A2": 33, "B1": 29, "B2": 8, "locator_only": 12},
-    "B2": {"observations": 72, "distinct": 70, "A1": 2, "A2": 12, "B1": 17, "B2": 34, "C1": 4, "UNLISTED": 1, "locator_only": 12},
+    "B2": {"observations": 84, "distinct": 82, "A1": 2, "A2": 12, "B1": 17, "B2": 46, "C1": 4, "UNLISTED": 1, "locator_only": 12},
     "C1": {"observations": 72, "distinct": 63, "B2": 25, "C1": 36, "UNLISTED": 2, "locator_only": 12},
 }
 SOURCE_PREFIX = "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_"
