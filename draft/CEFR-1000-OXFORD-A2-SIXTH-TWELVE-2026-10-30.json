@@ -1,0 +1,421 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A2_SIXTH_TWELVE_DIRECT_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 12,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 5,
+    "A2": 5,
+    "B1": 2
+  },
+  "word_pos_discrepancies": 7,
+  "independently_approved_count": 0,
+  "source_limitations": "Official Oxford 3000 CEFR PDF directly inspected 2026-10-30; one-based PDF page and zero-based extracted line. Publisher word/POS is never exact-sense CEFR or human independent approval. Seven level discrepancies unresolved. Frozen bilingual and example snapshots, no corrections. George/Emma listening, physical iPhone, measured Pages hosting and production deployment not verified.",
+  "records": [
+    {
+      "word": "human",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Relating to people rather than animals or machines.",
+        "myanmar_meaning": "လူသားနှင့်ဆိုင်သော",
+        "example_sentence": "Human decisions can sometimes be difficult."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 469,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 5,
+        "extracted_line": 1288,
+        "source_excerpt": "human adj., n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A2_SIXTH_HUMAN_SENSE_POS_CEFR_REVIEW",
+      "independent_reviewer_task": "Check human adjective vs noun and contrast with animals/machines. Independent human source-backed exact-sense CEFR, fluent Myanmar, English and example review required.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "special",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Different from what is usual and often important.",
+        "myanmar_meaning": "ထူးခြားသော၊ အထူးဖြစ်သော",
+        "example_sentence": "The school arranged a special event for parents."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 470,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 728,
+        "source_excerpt": "special adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A2_SIXTH_SPECIAL_SENSE_POS_CEFR_REVIEW",
+      "independent_reviewer_task": "Oxford A1 vs draft A2; distinguish unusual, important and particular-purpose senses. Independent human source-backed exact-sense CEFR, fluent Myanmar, English and example review required.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "either",
+      "level": "A2",
+      "part_of_speech": "determiner",
+      "shortlist_snapshot": {
+        "english_definition": "One or the other of two things or people.",
+        "myanmar_meaning": "နှစ်ခုထဲမှ တစ်ခုခု",
+        "example_sentence": "You can choose either colour for the cover."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 471,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 5,
+        "extracted_line": 1156,
+        "source_excerpt": "either det./pron., adv.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A2_SIXTH_EITHER_SENSE_POS_CEFR_REVIEW",
+      "independent_reviewer_task": "Check either colour determiner, not conjunction or adverb. Independent human source-backed exact-sense CEFR, fluent Myanmar, English and example review required.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "rather",
+      "level": "A2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "To a noticeable degree, often more than expected.",
+        "myanmar_meaning": "အတော်လေး၊ ထင်ထားသည်ထက်ပို၍",
+        "example_sentence": "The instructions were rather difficult to follow."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 473,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 6,
+        "extracted_line": 1526,
+        "source_excerpt": "rather adv.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A2_SIXTH_RATHER_SENSE_POS_CEFR_REVIEW",
+      "independent_reviewer_task": "Check rather difficult degree vs would rather preference. Independent human source-backed exact-sense CEFR, fluent Myanmar, English and example review required.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "real",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Existing in fact rather than being imagined.",
+        "myanmar_meaning": "တကယ်ရှိသော၊ အစစ်အမှန်ဖြစ်သော",
+        "example_sentence": "The museum displays a real dinosaur bone."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 504,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 641,
+        "source_excerpt": "real adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A2_SIXTH_REAL_SENSE_POS_CEFR_REVIEW",
+      "independent_reviewer_task": "Oxford A1 vs A2; authentic dinosaur bone vs existing in fact. Independent human source-backed exact-sense CEFR, fluent Myanmar, English and example review required.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "set",
+      "level": "A2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To put something in a particular place or position.",
+        "myanmar_meaning": "တစ်နေရာတွင် ထားသည်၊ ချထားသည်",
+        "example_sentence": "Please set the clean cups on the table."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 505,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 9,
+        "extracted_line": 2419,
+        "source_excerpt": "set (put) v.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A2_SIXTH_SET_SENSE_POS_CEFR_REVIEW",
+      "independent_reviewer_task": "Oxford B1 put sense vs draft A2; cups placement and polysemy. Independent human source-backed exact-sense CEFR, fluent Myanmar, English and example review required.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "thought",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An idea or opinion that comes into your mind.",
+        "myanmar_meaning": "အတွေး၊ စိတ်ကူး",
+        "example_sentence": "One thought kept me awake last night."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 506,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1704,
+        "source_excerpt": "thought n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A2_SIXTH_THOUGHT_SENSE_POS_CEFR_REVIEW",
+      "independent_reviewer_task": "Distinguish noun idea from past tense think; check example. Independent human source-backed exact-sense CEFR, fluent Myanmar, English and example review required.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "bad",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Not good in quality or unpleasant.",
+        "myanmar_meaning": "မကောင်းသော၊ ညံ့သော",
+        "example_sentence": "The bad weather delayed our trip."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 507,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 1,
+        "extracted_line": 57,
+        "source_excerpt": "bad adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A2_SIXTH_BAD_SENSE_POS_CEFR_REVIEW",
+      "independent_reviewer_task": "Oxford A1 vs A2; bad weather vs morality or quality. Independent human source-backed exact-sense CEFR, fluent Myanmar, English and example review required.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "mean",
+      "level": "A2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To have a particular meaning or intention.",
+        "myanmar_meaning": "အဓိပ္ပာယ်ရသည်၊ ဆိုလိုသည်",
+        "example_sentence": "What does this warning sign mean?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 508,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 472,
+        "source_excerpt": "mean v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A2_SIXTH_MEAN_SENSE_POS_CEFR_REVIEW",
+      "independent_reviewer_task": "Oxford A1 vs A2; signify a sign vs intend or unkind adjective. Independent human source-backed exact-sense CEFR, fluent Myanmar, English and example review required.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "though",
+      "level": "A2",
+      "part_of_speech": "conjunction",
+      "shortlist_snapshot": {
+        "english_definition": "Used to introduce a fact that contrasts with another fact.",
+        "myanmar_meaning": "သော်လည်း၊ ပေမယ့်",
+        "example_sentence": "Though the shop was busy, the staff were helpful."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 509,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 10,
+        "extracted_line": 2507,
+        "source_excerpt": "though conj., adv.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A2_SIXTH_THOUGH_SENSE_POS_CEFR_REVIEW",
+      "independent_reviewer_task": "Oxford B1 vs A2; concessive clause, punctuation, staff were. Independent human source-backed exact-sense CEFR, fluent Myanmar, English and example review required.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "least",
+      "level": "A2",
+      "part_of_speech": "determiner",
+      "shortlist_snapshot": {
+        "english_definition": "The smallest amount or number compared with others.",
+        "myanmar_meaning": "အနည်းဆုံးသော",
+        "example_sentence": "This option requires the least effort."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 510,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 5,
+        "extracted_line": 1352,
+        "source_excerpt": "least det./pron., adv.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A2_SIXTH_LEAST_SENSE_POS_CEFR_REVIEW",
+      "independent_reviewer_task": "The least effort determiner vs at least idiom. Independent human source-backed exact-sense CEFR, fluent Myanmar, English and example review required.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "news",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "New information about events happening now or recently.",
+        "myanmar_meaning": "သတင်း၊ နောက်ဆုံးဖြစ်ရပ်အကြောင်းအရာ",
+        "example_sentence": "We heard the news on the radio this morning."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 511,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 517,
+        "source_excerpt": "news n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A2_SIXTH_NEWS_SENSE_POS_CEFR_REVIEW",
+      "independent_reviewer_task": "Oxford A1 vs A2; uncountable singular news and Myanmar. Independent human source-backed exact-sense CEFR, fluent Myanmar, English and example review required.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
