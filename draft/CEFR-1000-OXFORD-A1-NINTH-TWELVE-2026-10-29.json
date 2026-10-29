@@ -1,0 +1,423 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A1_NINTH_TWELVE_DIRECT_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-29",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 12,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 12,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "word_pos_discrepancies": 0,
+  "independently_approved_count": 0,
+  "source_limitations": "Direct official Oxford University Press Oxford 3000 by CEFR level PDF word/POS observations on 2026-10-29. One-based PDF pages and zero-based web-extracted lines. These 12 A1 nouns remain independent exact-sense, English, fluent Myanmar, original-example and British-use unverified. Word/POS matches are NOT independent CEFR signoffs. No real George/Emma listening, physical iPhone QA or production publication.",
+  "records": [
+    {
+      "word": "sister",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A female sibling.",
+        "myanmar_meaning": "အစ်မ၊ ညီမ",
+        "example_sentence": "My sister is a student."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 150,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 700,
+        "source_excerpt": "sister n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_NINTH_TWELVE_SISTER_EXACT_SENSE_BILINGUAL_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Review older/younger sister distinctions in Myanmar. Verify exact publisher-backed sense/CEFR, English definition, fluent Myanmar, original example grammar, historical source provenance and British usage; Oxford word/POS listing alone is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "son",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A male child of a parent.",
+        "myanmar_meaning": "သား",
+        "example_sentence": "Their son is five."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 151,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 719,
+        "source_excerpt": "son n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_NINTH_TWELVE_SON_EXACT_SENSE_BILINGUAL_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify a parent's male child sense and natural Myanmar wording. Verify exact publisher-backed sense/CEFR, English definition, fluent Myanmar, original example grammar, historical source provenance and British usage; Oxford word/POS listing alone is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "daughter",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A female child of a parent.",
+        "myanmar_meaning": "သမီး",
+        "example_sentence": "Her daughter is at school."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 152,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 194,
+        "source_excerpt": "daughter n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_NINTH_TWELVE_DAUGHTER_EXACT_SENSE_BILINGUAL_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify a parent's female child sense and natural Myanmar wording. Verify exact publisher-backed sense/CEFR, English definition, fluent Myanmar, original example grammar, historical source provenance and British usage; Oxford word/POS listing alone is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "grandmother",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The mother of someone's parent.",
+        "myanmar_meaning": "အဘွား၊ အဖွား",
+        "example_sentence": "My grandmother is kind."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 153,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 335,
+        "source_excerpt": "grandmother n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_NINTH_TWELVE_GRANDMOTHER_EXACT_SENSE_BILINGUAL_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Review Myanmar spelling အဘွား versus အဖွား and family nuance. Verify exact publisher-backed sense/CEFR, English definition, fluent Myanmar, original example grammar, historical source provenance and British usage; Oxford word/POS listing alone is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "grandfather",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The father of someone's parent.",
+        "myanmar_meaning": "အဘိုး",
+        "example_sentence": "My grandfather is seventy."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 154,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 334,
+        "source_excerpt": "grandfather n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_NINTH_TWELVE_GRANDFATHER_EXACT_SENSE_BILINGUAL_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Check maternal/paternal family nuance and Myanmar usage. Verify exact publisher-backed sense/CEFR, English definition, fluent Myanmar, original example grammar, historical source provenance and British usage; Oxford word/POS listing alone is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "uncle",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The brother of a parent or the husband of an aunt.",
+        "myanmar_meaning": "ဦးလေး",
+        "example_sentence": "My uncle lives nearby."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 155,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 834,
+        "source_excerpt": "uncle n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_NINTH_TWELVE_UNCLE_EXACT_SENSE_BILINGUAL_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Distinguish uncle by blood or marriage and Myanmar kinship nuance. Verify exact publisher-backed sense/CEFR, English definition, fluent Myanmar, original example grammar, historical source provenance and British usage; Oxford word/POS listing alone is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "aunt",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The sister of a parent or the wife of an uncle.",
+        "myanmar_meaning": "အဒေါ်",
+        "example_sentence": "My aunt is a teacher."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 156,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 52,
+        "source_excerpt": "aunt n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_NINTH_TWELVE_AUNT_EXACT_SENSE_BILINGUAL_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Distinguish aunt by blood or marriage and Myanmar kinship nuance. Verify exact publisher-backed sense/CEFR, English definition, fluent Myanmar, original example grammar, historical source provenance and British usage; Oxford word/POS listing alone is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "phone",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A device used to call or talk to people.",
+        "myanmar_meaning": "ဖုန်း",
+        "example_sentence": "My phone is on the table."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 157,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 588,
+        "source_excerpt": "phone n., v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_NINTH_TWELVE_PHONE_EXACT_SENSE_BILINGUAL_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Oxford lists noun and verb; draft is device noun, not verb. Verify exact publisher-backed sense/CEFR, English definition, fluent Myanmar, original example grammar, historical source provenance and British usage; Oxford word/POS listing alone is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "computer",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An electronic machine used to work with information.",
+        "myanmar_meaning": "ကွန်ပျူတာ",
+        "example_sentence": "I use a computer at school."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 158,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 168,
+        "source_excerpt": "computer n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_NINTH_TWELVE_COMPUTER_EXACT_SENSE_BILINGUAL_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Ensure definition denotes computing, not any electronic machine. Verify exact publisher-backed sense/CEFR, English definition, fluent Myanmar, original example grammar, historical source provenance and British usage; Oxford word/POS listing alone is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "picture",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An image made by drawing, painting or photography.",
+        "myanmar_meaning": "ရုပ်ပုံ၊ ပုံ",
+        "example_sentence": "This picture is beautiful."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 159,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 593,
+        "source_excerpt": "picture n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_NINTH_TWELVE_PICTURE_EXACT_SENSE_BILINGUAL_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Distinguish image, drawing, painting and photograph senses. Verify exact publisher-backed sense/CEFR, English definition, fluent Myanmar, original example grammar, historical source provenance and British usage; Oxford word/POS listing alone is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "bag",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A container used to carry things.",
+        "myanmar_meaning": "အိတ်",
+        "example_sentence": "The bag is under the chair."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 160,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 58,
+        "source_excerpt": "bag n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_NINTH_TWELVE_BAG_EXACT_SENSE_BILINGUAL_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Distinguish carrying container from quantity or bag-shaped senses. Verify exact publisher-backed sense/CEFR, English definition, fluent Myanmar, original example grammar, historical source provenance and British usage; Oxford word/POS listing alone is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "money",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Coins and notes used to buy things.",
+        "myanmar_meaning": "ငွေ၊ ပိုက်ဆံ",
+        "example_sentence": "I need money for the bus."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 161,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 492,
+        "source_excerpt": "money n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1_NINTH_TWELVE_MONEY_EXACT_SENSE_BILINGUAL_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Frozen cash-only definition may exclude bank or electronic money. Verify exact publisher-backed sense/CEFR, English definition, fluent Myanmar, original example grammar, historical source provenance and British usage; Oxford word/POS listing alone is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
