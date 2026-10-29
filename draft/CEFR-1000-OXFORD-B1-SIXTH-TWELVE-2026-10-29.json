@@ -1,0 +1,423 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B1_SIXTH_TWELVE_DIRECT_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-29",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 12,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 3,
+    "A2": 3,
+    "B1": 4,
+    "B2": 2,
+    "C1": 0
+  },
+  "word_pos_discrepancies": 8,
+  "independently_approved_count": 0,
+  "source_limitations": "Direct Oxford University Press official Oxford 3000 PDF word/POS observations on 2026-10-29, one-based PDF pages and zero-based extracted lines. No publisher exact-sense CEFR classification or independent linguistic approval. The frozen shortlist and production assets are untouched; all twelve remain on editorial hold.",
+  "records": [
+    {
+      "word": "flight",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A journey made by travelling in an aircraft.",
+        "myanmar_meaning": "လေယာဉ်ခရီးစဉ်",
+        "example_sentence": "Our flight was delayed because of heavy rain."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 313,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 297,
+        "source_excerpt": "flight n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "B1_DRAFT_FLIGHT_A1_WORD_POS_EXACT_SENSE_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Flight as aircraft journey is aligned in the example; distinguish the trip from the act of flying and ask for independently sourced exact-sense justification for B1 placement. Verify publisher-backed exact sense, fluent Myanmar, original example grammar and CEFR rationale; do not approve from word/POS alone.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "primary",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Most important or coming first in order.",
+        "myanmar_meaning": "အဓိကဖြစ်သော၊ ပထမဦးစားပေးဖြစ်သော",
+        "example_sentence": "Safety is our primary concern."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 364,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 9,
+        "extracted_line": 2320,
+        "source_excerpt": "primary adj.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "B1_DRAFT_PRIMARY_B1_WORD_POS_EXACT_SENSE_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Check PRIMARY=most important versus primary=first stage of education; the example teaches the most-important sense. Verify publisher-backed exact sense, fluent Myanmar, original example grammar and CEFR rationale; do not approve from word/POS alone.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "activity",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Something that people do for work or enjoyment.",
+        "myanmar_meaning": "လုပ်ဆောင်မှု၊ လှုပ်ရှားမှု",
+        "example_sentence": "Reading together is a useful classroom activity."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 367,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 9,
+        "source_excerpt": "activity n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "B1_DRAFT_ACTIVITY_A1_WORD_POS_EXACT_SENSE_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Publisher A1 word/POS versus draft B1; check everyday classroom activity meaning and whether this is unnecessary upper-level retiering. Verify publisher-backed exact sense, fluent Myanmar, original example grammar and CEFR rationale; do not approve from word/POS alone.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "application",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A formal request for a job, course, or permission.",
+        "myanmar_meaning": "လျှောက်လွှာ၊ တရားဝင်လျှောက်ထားမှု",
+        "example_sentence": "Please submit your application before Friday."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 368,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 7,
+        "extracted_line": 1821,
+        "source_excerpt": "application n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "B1_DRAFT_APPLICATION_B1_WORD_POS_EXACT_SENSE_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Check job/course application (formal request) against software application; ensure Myanmar translation conveys application form versus application process. Verify publisher-backed exact sense, fluent Myanmar, original example grammar and CEFR rationale; do not approve from word/POS alone.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "complex",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Made of many connected parts and difficult to understand.",
+        "myanmar_meaning": "ရှုပ်ထွေးသော၊ အစိတ်အပိုင်းများစွာပါဝင်သော",
+        "example_sentence": "The engineer explained the complex process clearly."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 369,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 7,
+        "extracted_line": 1919,
+        "source_excerpt": "complex adj.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "B1_DRAFT_COMPLEX_B1_WORD_POS_EXACT_SENSE_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Confirm adjective complex=complicated, not noun complex of buildings; ensure Myanmar example grammar and B1 teaching rationale. Verify publisher-backed exact sense, fluent Myanmar, original example grammar and CEFR rationale; do not approve from word/POS alone.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "condition",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The state that something is in.",
+        "myanmar_meaning": "အခြေအနေ",
+        "example_sentence": "The equipment is still in good condition."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 370,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 1072,
+        "source_excerpt": "condition n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "B1_DRAFT_CONDITION_A2_WORD_POS_EXACT_SENSE_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: The example uses physical state 'in good condition'; distinguish this from requirement/medical condition and justify B1 versus Oxford A2. Verify publisher-backed exact sense, fluent Myanmar, original example grammar and CEFR rationale; do not approve from word/POS alone.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "freedom",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The ability or right to make choices without unfair restrictions.",
+        "myanmar_meaning": "လွတ်လပ်ခွင့်",
+        "example_sentence": "Students have the freedom to choose their topics."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 371,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 11,
+        "extracted_line": 2877,
+        "source_excerpt": "freedom n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "B1_DRAFT_FREEDOM_B2_WORD_POS_EXACT_SENSE_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Publisher B2 noun versus draft B1: check personal freedom and freedom to choose as the exact sense, plus fluent Myanmar rights-versus-ability wording. Verify publisher-backed exact sense, fluent Myanmar, original example grammar and CEFR rationale; do not approve from word/POS alone.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "interview",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A formal meeting in which someone is asked questions.",
+        "myanmar_meaning": "တွေ့ဆုံမေးမြန်းခြင်း၊ အင်တာဗျူး",
+        "example_sentence": "She prepared carefully for the job interview."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 372,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 401,
+        "source_excerpt": "interview n., v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "B1_DRAFT_INTERVIEW_A1_WORD_POS_EXACT_SENSE_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Publisher A1 noun/verb; draft noun is job interview. Confirm this sense and avoid confusing a journalistic interview with an employment interview. Verify publisher-backed exact sense, fluent Myanmar, original example grammar and CEFR rationale; do not approve from word/POS alone.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "location",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The place where something is situated.",
+        "myanmar_meaning": "တည်နေရာ",
+        "example_sentence": "Please send me the location of the meeting room."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 373,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 8,
+        "extracted_line": 2197,
+        "source_excerpt": "location n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "B1_DRAFT_LOCATION_B1_WORD_POS_EXACT_SENSE_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Review whether 'send me the location of the meeting room' is natural in British English or whether a clearer original example is needed; do not silently rewrite. Verify publisher-backed exact sense, fluent Myanmar, original example grammar and CEFR rationale; do not approve from word/POS alone.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "accept",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To agree to receive or take something offered.",
+        "myanmar_meaning": "လက်ခံသည်",
+        "example_sentence": "He decided to accept the job offer."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 374,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 912,
+        "source_excerpt": "accept v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "B1_DRAFT_ACCEPT_A2_WORD_POS_EXACT_SENSE_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Publisher A2 accept v.; draft B1 job-offer acceptance. Check semantic equivalence, collocation, and whether B1 retiering is justified. Verify publisher-backed exact sense, fluent Myanmar, original example grammar and CEFR rationale; do not approve from word/POS alone.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "attempt",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An effort to do or achieve something.",
+        "myanmar_meaning": "ကြိုးပမ်းမှု",
+        "example_sentence": "Her first attempt at baking bread was successful."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 375,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 10,
+        "extracted_line": 2645,
+        "source_excerpt": "attempt n., v.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "B1_DRAFT_ATTEMPT_B2_WORD_POS_EXACT_SENSE_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Publisher B2 attempt n./v.; draft noun attempt at baking. Check countable noun grammar and whether B1 placement is supportable. Verify publisher-backed exact sense, fluent Myanmar, original example grammar and CEFR rationale; do not approve from word/POS alone.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "distance",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The amount of space between two places or things.",
+        "myanmar_meaning": "အကွာအဝေး",
+        "example_sentence": "The distance between the two villages is ten kilometres."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 376,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 5,
+        "extracted_line": 1137,
+        "source_excerpt": "distance n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "B1_DRAFT_DISTANCE_A2_WORD_POS_EXACT_SENSE_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Publisher A2 distance n.; draft B1 physical separation. Check unit expression 'ten kilometres' and Myanmar exact-sense wording. Verify publisher-backed exact sense, fluent Myanmar, original example grammar and CEFR rationale; do not approve from word/POS alone.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
