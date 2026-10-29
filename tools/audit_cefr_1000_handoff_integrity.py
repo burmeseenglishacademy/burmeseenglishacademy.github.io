@@ -56,7 +56,7 @@ def self_test(expected):
         ("change historical source path", lambda r: r["shortlist_source"].update(path="draft/fake.json")),
         ("change historical source index", lambda r: r["shortlist_source"].update(index=-1)),
         ("change historical source blob", lambda r: r["shortlist_source"].update(git_blob_sha="0" * 40)),
-        ("change reviewer priority", lambda r: r.update(priority_reason="WORD_POS_MATCH_EXACT_SENSE_UNVERIFIED")),
+        ("change reviewer priority", lambda r: r.update(priority_reason="FORGED_PRIORITY")),
         ("remove editorial risk", lambda r: r.update(editorial_risks=[])),
         ("change source packet", lambda r: r.update(evidence_packets=["draft/forged.json"])),
         ("forge exact-sense approval", lambda r: r.update(independent_exact_sense_cefr_signoff={"reviewer": "human"})),
