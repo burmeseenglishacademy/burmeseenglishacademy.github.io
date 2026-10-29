@@ -31,6 +31,8 @@ Likewise, the directly inspected [Oxford amateur noun](https://www.oxfordlearner
 
 For **custody**, the definition combines care of a child with detention of a suspect; a reviewer should select a single exact sense and ensure the Myanmar phrase and example match. For **legendary**, avoid presenting a literal mythological interpretation as the only meaning when the example concerns a celebrated singer.
 
+**Publisher display conflict requiring human reconciliation:** The directly opened Oxford *excess* and *amateur* dictionary pages display an **Oxford 3000 / B2** footer badge, while direct text searches of the official [Oxford 3000 CEFR PDF](https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf) found neither word and the official Oxford 5000 CEFR PDF lists them at **C1**. This is a discrepancy between publisher surfaces, potentially a generic/stale page badge; do not silently override either source or claim a C1 exact-sense decision. The observation and both source URLs are now preserved in the packet for independent reconciliation.
+
 ## Structural evidence and release gates
 
 Added a staging-only C1 auditor with frozen source and shortlist bindings and **306 negative mutation cases** (25 per word × 12 plus six packet-level mutations), wired into the existing **six parallel CEFR lanes** and documentary no-deployment workflow. Updated cross-batch coverage and reviewer-priority expected counts. Connector-side read-back and in-memory structural/provenance parity checks succeeded; **the new Python auditor and new GitHub Actions jobs have not yet been verified by actual run conclusions/logs**. Do not call them passed until retrieved.
