@@ -38,6 +38,8 @@ on:
       - tools/audit_cefr_1000_oxford_a1_twelfth_twelve.py
       - draft/CEFR-1000-OXFORD-A1-THIRTEENTH-TWELVE-2026-10-30.json
       - tools/audit_cefr_1000_oxford_a1_thirteenth_twelve.py
+      - draft/CEFR-1000-OXFORD-A1-FOURTEENTH-ELEVEN-2026-10-30.json
+      - tools/audit_cefr_1000_oxford_a1_fourteenth_eleven.py
       - draft/CEFR-1000-OXFORD-A1-FOUR-DIRECT-SENSE-LEADS-2026-10-30.json
       - tools/audit_cefr_1000_oxford_a1_four_sense_leads.py
       - draft/CEFR-1000-CAMBRIDGE-A1-FAMILY-AND-EVERYDAY-TWELVE-2026-10-29.json
@@ -221,6 +223,11 @@ jobs:
       - name: Reject 238 forged thirteenth A1 source, bilingual and approval mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_a1_thirteenth_twelve.py --level ALL --self-test
+      - name: Audit fourteen-batch A1 Oxford numerals, do, sleep, wake and speak (no approval)
+        run: python3 tools/audit_cefr_1000_oxford_a1_fourteenth_eleven.py --level "${{ matrix.level }}"
+      - name: Reject 219 forged fourteenth A1 publisher, bilingual and reviewer mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_oxford_a1_fourteenth_eleven.py --level ALL --self-test
       - name: Audit four directly observed A1 Oxford dictionary senses (not CEFR signoff)
         run: python3 tools/audit_cefr_1000_oxford_a1_four_sense_leads.py --level "${{ matrix.level }}"
       - name: Reject 68 forged A1 direct dictionary sense and human receipt mutations

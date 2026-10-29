@@ -1,0 +1,401 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A1_FOURTEENTH_ELEVEN_DIRECT_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 11,
+  "counts_by_level": {
+    "A1": 11,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 11,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "draft_pos_reconciliation_count": 0,
+  "independently_approved_count": 0,
+  "source_limitations": "Official Oxford 3000 by CEFR level PDF directly inspected 2026-10-30. Eleven A1 lemma/number/verb word-POS observations, not independent exact-sense CEFR approval. Inflected is/are/does/did are NOT independent Oxford headword observations; rabbit remains unlisted in inspected core lists and unresolved. Number versus clock-time uses, lexical do versus auxiliary do, wake/wake up and sleep example grammar require independent bilingual/editorial review. No final audio listening, physical iPhone, hosting or deployment verification.",
+  "records": [
+    {
+      "word": "do",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To perform an action or task.",
+        "myanmar_meaning": "လုပ်သည်",
+        "example_sentence": "I do my homework."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 122,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 1,
+        "extracted_line": 216,
+        "source_excerpt": "do1 v., auxiliary v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Publisher lists lemma do (verb/auxiliary), not does/did as separate headwords. Draft uses lexical do homework; distinguish auxiliary usage.",
+      "editorial_risk": "A1_FOURTEENTH_ELEVEN_DO_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: verify Oxford word/POS against intended A1 exact sense and CEFR applicability; check fluent Myanmar meaning, number/classifier or verb grammar, original example alignment, British usage, pronunciation and frozen Git provenance. Publisher wordlist observation alone is not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "four",
+      "level": "A1",
+      "part_of_speech": "number",
+      "shortlist_snapshot": {
+        "english_definition": "The number 4.",
+        "myanmar_meaning": "လေး၊ လေးခု",
+        "example_sentence": "There are four chairs."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 125,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 309,
+        "source_excerpt": "four number",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Cardinal four is A1; example counts chairs. Review Burmese classifier usage and numeral headword policy.",
+      "editorial_risk": "A1_FOURTEENTH_ELEVEN_FOUR_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: verify Oxford word/POS against intended A1 exact sense and CEFR applicability; check fluent Myanmar meaning, number/classifier or verb grammar, original example alignment, British usage, pronunciation and frozen Git provenance. Publisher wordlist observation alone is not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "five",
+      "level": "A1",
+      "part_of_speech": "number",
+      "shortlist_snapshot": {
+        "english_definition": "The number 5.",
+        "myanmar_meaning": "ငါး၊ ငါးခု",
+        "example_sentence": "I have five books."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 126,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 295,
+        "source_excerpt": "five number",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Cardinal five is A1; example counts books. Myanmar ငါး also denotes fish, so require context-sensitive bilingual review.",
+      "editorial_risk": "A1_FOURTEENTH_ELEVEN_FIVE_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: verify Oxford word/POS against intended A1 exact sense and CEFR applicability; check fluent Myanmar meaning, number/classifier or verb grammar, original example alignment, British usage, pronunciation and frozen Git provenance. Publisher wordlist observation alone is not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "six",
+      "level": "A1",
+      "part_of_speech": "number",
+      "shortlist_snapshot": {
+        "english_definition": "The number 6.",
+        "myanmar_meaning": "ခြောက်၊ ခြောက်ခု",
+        "example_sentence": "Six students are here."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 127,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 703,
+        "source_excerpt": "six number",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Cardinal six is A1; example counts students. Check numeral pronunciation and Myanmar classifier.",
+      "editorial_risk": "A1_FOURTEENTH_ELEVEN_SIX_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: verify Oxford word/POS against intended A1 exact sense and CEFR applicability; check fluent Myanmar meaning, number/classifier or verb grammar, original example alignment, British usage, pronunciation and frozen Git provenance. Publisher wordlist observation alone is not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "seven",
+      "level": "A1",
+      "part_of_speech": "number",
+      "shortlist_snapshot": {
+        "english_definition": "The number 7.",
+        "myanmar_meaning": "ခုနစ်၊ ခုနစ်ခု",
+        "example_sentence": "There are seven days in a week."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 128,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 682,
+        "source_excerpt": "seven number",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Cardinal seven is A1; seven days in a week is grammatical, but exact example and translation need independent review.",
+      "editorial_risk": "A1_FOURTEENTH_ELEVEN_SEVEN_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: verify Oxford word/POS against intended A1 exact sense and CEFR applicability; check fluent Myanmar meaning, number/classifier or verb grammar, original example alignment, British usage, pronunciation and frozen Git provenance. Publisher wordlist observation alone is not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "eight",
+      "level": "A1",
+      "part_of_speech": "number",
+      "shortlist_snapshot": {
+        "english_definition": "The number 8.",
+        "myanmar_meaning": "ရှစ်၊ ရှစ်ခု",
+        "example_sentence": "My class starts at eight."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 129,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 1,
+        "extracted_line": 236,
+        "source_excerpt": "eight number",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Cardinal eight is A1; example at eight refers to eight o'clock, not a quantity of eight objects. Sense/context mismatch requires review.",
+      "editorial_risk": "A1_FOURTEENTH_ELEVEN_EIGHT_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: verify Oxford word/POS against intended A1 exact sense and CEFR applicability; check fluent Myanmar meaning, number/classifier or verb grammar, original example alignment, British usage, pronunciation and frozen Git provenance. Publisher wordlist observation alone is not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "nine",
+      "level": "A1",
+      "part_of_speech": "number",
+      "shortlist_snapshot": {
+        "english_definition": "The number 9.",
+        "myanmar_meaning": "ကိုး၊ ကိုးခု",
+        "example_sentence": "The shop opens at nine."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 130,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 523,
+        "source_excerpt": "nine number",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Cardinal nine is A1; shop opens at nine refers to clock time, not counting objects. Independent exact-context check required.",
+      "editorial_risk": "A1_FOURTEENTH_ELEVEN_NINE_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: verify Oxford word/POS against intended A1 exact sense and CEFR applicability; check fluent Myanmar meaning, number/classifier or verb grammar, original example alignment, British usage, pronunciation and frozen Git provenance. Publisher wordlist observation alone is not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "ten",
+      "level": "A1",
+      "part_of_speech": "number",
+      "shortlist_snapshot": {
+        "english_definition": "The number 10.",
+        "myanmar_meaning": "ဆယ်၊ ဆယ်ခု",
+        "example_sentence": "I have ten pencils."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 131,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 773,
+        "source_excerpt": "ten number",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Cardinal ten is A1; example counts pencils. Check Myanmar quantity/classifier and British pronunciation.",
+      "editorial_risk": "A1_FOURTEENTH_ELEVEN_TEN_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: verify Oxford word/POS against intended A1 exact sense and CEFR applicability; check fluent Myanmar meaning, number/classifier or verb grammar, original example alignment, British usage, pronunciation and frozen Git provenance. Publisher wordlist observation alone is not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "sleep",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To rest with your eyes closed and be unaware of your surroundings.",
+        "myanmar_meaning": "အိပ်သည်",
+        "example_sentence": "I sleep eight hours."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 199,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 708,
+        "source_excerpt": "sleep v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Oxford A1 lists verb sleep; draft I sleep eight hours may be less idiomatic than I sleep for eight hours/I get eight hours' sleep. Human grammar review required.",
+      "editorial_risk": "A1_FOURTEENTH_ELEVEN_SLEEP_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: verify Oxford word/POS against intended A1 exact sense and CEFR applicability; check fluent Myanmar meaning, number/classifier or verb grammar, original example alignment, British usage, pronunciation and frozen Git provenance. Publisher wordlist observation alone is not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "wake",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To stop sleeping.",
+        "myanmar_meaning": "အိပ်ရာနိုးသည်",
+        "example_sentence": "I wake at seven."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 200,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 854,
+        "source_excerpt": "wake v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Oxford A1 lists wake verb; draft I wake at seven omits up and can mean wake from sleep. Check wake/wake up usage and Myanmar နိုး vs အိပ်ရာထ.",
+      "editorial_risk": "A1_FOURTEENTH_ELEVEN_WAKE_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: verify Oxford word/POS against intended A1 exact sense and CEFR applicability; check fluent Myanmar meaning, number/classifier or verb grammar, original example alignment, British usage, pronunciation and frozen Git provenance. Publisher wordlist observation alone is not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "speak",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To say words aloud.",
+        "myanmar_meaning": "စကားပြောသည်",
+        "example_sentence": "I speak English at school."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 201,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 727,
+        "source_excerpt": "speak v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Oxford A1 lists speak verb; example I speak English at school uses language ability/use, not simply saying words aloud. Definition-example sense alignment needs review.",
+      "editorial_risk": "A1_FOURTEENTH_ELEVEN_SPEAK_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: verify Oxford word/POS against intended A1 exact sense and CEFR applicability; check fluent Myanmar meaning, number/classifier or verb grammar, original example alignment, British usage, pronunciation and frozen Git provenance. Publisher wordlist observation alone is not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}

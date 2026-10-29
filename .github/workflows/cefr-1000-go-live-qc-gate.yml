@@ -47,6 +47,8 @@ on:
       - tools/audit_cefr_1000_oxford_a1_twelfth_twelve.py
       - draft/CEFR-1000-OXFORD-A1-THIRTEENTH-TWELVE-2026-10-30.json
       - tools/audit_cefr_1000_oxford_a1_thirteenth_twelve.py
+      - draft/CEFR-1000-OXFORD-A1-FOURTEENTH-ELEVEN-2026-10-30.json
+      - tools/audit_cefr_1000_oxford_a1_fourteenth_eleven.py
       - draft/CEFR-1000-OXFORD-A1-FOUR-DIRECT-SENSE-LEADS-2026-10-30.json
       - tools/audit_cefr_1000_oxford_a1_four_sense_leads.py
       - draft/CEFR-1000-CAMBRIDGE-A1-FAMILY-AND-EVERYDAY-TWELVE-2026-10-29.json
@@ -161,6 +163,7 @@ jobs:
           python3 tools/audit_cefr_1000_oxford_a1_eleventh_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_a1_twelfth_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_a1_thirteenth_twelve.py --level ALL --self-test
+          python3 tools/audit_cefr_1000_oxford_a1_fourteenth_eleven.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_a1_four_sense_leads.py --level ALL --self-test
           python3 tools/audit_cefr_1000_cambridge_a1_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_coverage.py --level ALL --self-test
