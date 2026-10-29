@@ -87,6 +87,8 @@ on:
       - tools/audit_cefr_1000_oxford_b2_fifth_twelve.py
       - draft/CEFR-1000-OXFORD-B2-SIXTH-TWELVE-2026-10-30.json
       - tools/audit_cefr_1000_oxford_b2_sixth_twelve.py
+      - draft/CEFR-1000-OXFORD-B2-SIXTH-FOUR-DIRECT-SENSE-LEADS-2026-10-30.json
+      - tools/audit_cefr_1000_oxford_b2_four_sense_leads.py
       - tools/audit_cefr_1000_oxford_b2_fourth_twentyfour.py
       - draft/CEFR-1000-OXFORD-B2-ADDITIONAL-TWELVE-2026-10-28.json
       - tools/audit_cefr_1000_oxford_b2_additional_twelve.py
@@ -364,6 +366,11 @@ jobs:
       - name: Reject 151 forged sixth B2 publisher, bilingual, provenance and approval mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_b2_sixth_twelve.py --level ALL --self-test
+      - name: Check four directly opened Oxford B2 dictionary sense distinctions (not CEFR approval)
+        run: python3 tools/audit_cefr_1000_oxford_b2_four_sense_leads.py --level "${{ matrix.level }}"
+      - name: Reject 53 forged direct B2 dictionary, translation and approval mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_oxford_b2_four_sense_leads.py --level ALL --self-test
       - name: Reject 24 forged B2 source and false-approval mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_b2_additional_twelve.py --level ALL --self-test
