@@ -45,7 +45,8 @@ def audit(packet, shortlist, wordpos):
         snapshot = {k:original[k] for k in ("english_definition","burmese_meaning","example_sentence")}
         provenance = {k:original[k] for k in ("source_path","source_index","source_blob_sha")}
         need(row.get("shortlist_snapshot")==snapshot,
-             "Bilingual/example snapshot drift for " + word)
+             "Bilingual/example snapshot drift for " + word
+             + " expected=" + repr(snapshot) + " got=" + repr(row.get("shortlist_snapshot")))
         need(row.get("shortlist_provenance")==provenance,
              "Historical provenance drift for " + word)
         need(by_wordpos[word]["shortlist_snapshot"]==snapshot
