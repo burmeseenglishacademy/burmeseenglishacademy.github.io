@@ -54,3 +54,19 @@ Created `tools/audit_cefr_1000_oxford_b1_seventh_twelve.py`, pinning the frozen 
 | **Total** | **1,000** | **520** | **0** | **0** |
 
 **480** entries lack direct Oxford observations in audited packets. Reviewer queue: **3 unlisted (not a CEFR level), 19 publisher-higher, 165 publisher-lower, 333 matching word/POS but exact-sense unverified, 480 without direct observations**. All 1,000 remain editorial holds. The independent bilingual/grammar/CEFR reviewer, complete final dual-voice headword+example generation and *real listening*, approved-corpus desktop/mobile browser regression, physical iPhone Safari QA, measured GitHub Pages hosting, preservation/privacy release check and confirmed live deployment are all still missing. **No merge, main edit or publication. BLOCKED / STAGING ONLY.**
+
+
+## Six bilingual editorial rewrite candidates — **not applied, not independently reviewed**
+
+These are suggested sense-specific alternatives for a qualified independent English/Myanmar reviewer to accept, revise or reject. They do **not** overwrite the frozen shortlist, change review flags, or establish an independently approved CEFR placement.
+
+| Word | Proposed English sense | Proposed fluent Myanmar gloss | Example review |
+| --- | --- | --- | --- |
+| queen | A woman who rules a country as its monarch. | နိုင်ငံကို အုပ်ချုပ်သော ဘုရင်မ | Retain “The queen addressed the nation on television.”; distinguish a ruling queen from a queen consort |
+| truly | Used to emphasize that a feeling is sincere. | စိတ်ရင်းမှန်ဖြင့်၊ တကယ်တမ်း | Retain “I truly appreciate your help.”; check emphasis and British intonation |
+| mission | An important task given to a person or group. | အရေးကြီးသော အထူးတာဝန် | Retain “The rescue team's mission was to find the hikers.”; avoid a religious-mission interpretation |
+| mass | A large quantity or group gathered together. | အစုအဝေးကြီး၊ အမြောက်အမြား | Consider “A mass of dark clouds covered the mountain.”; check mass-of countability and cloud collocation |
+| cell | The smallest basic unit of a living thing. | ဆဲလ်၊ သက်ရှိ၏ အခြေခံဖွဲ့စည်းယူနစ် | Retain “Every cell in the body needs energy.”; distinguish prison and spreadsheet senses |
+| remain | To continue to be in the same state. | အခြေအနေတစ်ခုအတိုင်း ဆက်လက်ရှိနေသည် | Retain “Please remain seated until the bus stops.”; review formal linking-verb usage |
+
+The reviewer must check these Myanmar proposals for natural classroom language, precise meaning, appropriate learner level, and original example grammar. Oxford's wordlist labels are not sense-level approval, and none of these proposals has been independently signed off.
