@@ -44,6 +44,8 @@ on:
       - tools/audit_cefr_1000_oxford_a2_third_twentyfour.py
       - draft/CEFR-1000-OXFORD-A2-FOURTH-TWELVE-2026-10-29.json
       - tools/audit_cefr_1000_oxford_a2_fourth_twelve.py
+      - draft/CEFR-1000-OXFORD-A2-FIFTH-TWELVE-2026-10-29.json
+      - tools/audit_cefr_1000_oxford_a2_fifth_twelve.py
       - draft/CEFR-1000-A2-THIRD-BILINGUAL-REWRITE-CANDIDATES-2026-10-29.json
       - tools/audit_cefr_1000_a2_rewrites.py
       - draft/CEFR-1000-OXFORD-B1-LOWER-LEVEL-TWELVE-2026-10-28.json
@@ -204,6 +206,11 @@ jobs:
       - name: Reject 80 forged A2 publisher, Myanmar, example and false-review mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_a2_fourth_twelve.py --level ALL --self-test
+      - name: Audit fifth A2 twelve direct Oxford word-POS observations (never approval)
+        run: python3 tools/audit_cefr_1000_oxford_a2_fifth_twelve.py --level "${{ matrix.level }}"
+      - name: Reject 306 forged fifth A2 source, bilingual and reviewer mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_oxford_a2_fifth_twelve.py --level ALL --self-test
       - name: Audit 12 A2 English Myanmar example rewrite proposals (not approved)
         run: python3 tools/audit_cefr_1000_a2_rewrites.py --level "${{ matrix.level }}"
       - name: Reject 24 forged A2 bilingual rewrite and approval mutations

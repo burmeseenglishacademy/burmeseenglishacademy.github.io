@@ -1,0 +1,421 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A2_FIFTH_TWELVE_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-29",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 12,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 9,
+    "A2": 2,
+    "B1": 1
+  },
+  "word_pos_discrepancies": 10,
+  "independently_approved_count": 0,
+  "source_limitations": "Directly inspected Oxford University Press official Oxford 3000 CEFR PDF on 2026-10-29. PDF page numbers are one-based and extracted lines zero-based. Publisher word/POS observations are never exact-sense CEFR approvals. All 12 remain on editorial hold with no independent bilingual, example, audio, physical iPhone, hosting or deployment evidence. Police n. in publisher vs plural noun in draft and single-room sense ambiguity require human attention.",
+  "records": [
+    {
+      "word": "history",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Events that happened in the past, especially those studied or recorded.",
+        "myanmar_meaning": "သမိုင်း၊ အတိတ်ဖြစ်ရပ်များ",
+        "example_sentence": "She enjoys reading about the history of her town."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 426,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 369,
+        "source_excerpt": "history n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "HISTORY_A1_VS_A2_AND_PAST_EVENTS_VS_ACADEMIC_SUBJECT",
+      "independent_reviewer_task": "Oxford lists the noun at A1, while draft A2 describes historical events. Check teaching rationale for the precise sense, Myanmar phrasing and example; independent human source-backed exact-sense review required.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "university",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An institution where people study for degrees and conduct research.",
+        "myanmar_meaning": "တက္ကသိုလ်",
+        "example_sentence": "My sister studies engineering at university."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 427,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 837,
+        "source_excerpt": "university n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "UNIVERSITY_A1_VS_A2_AND_BRITISH_AT_UNIVERSITY",
+      "independent_reviewer_task": "Oxford lists university n. at A1. Review the British idiom 'at university' in the example and distinguish an institution from university education; independent human bilingual and exact-sense CEFR signoff required.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "air",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The mixture of gases around us that people and animals breathe.",
+        "myanmar_meaning": "လေ",
+        "example_sentence": "Open the window to let fresh air in."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 428,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 1,
+        "extracted_line": 23,
+        "source_excerpt": "air n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "AIR_A1_VS_A2_ATMOSPHERE_VS_MANNER",
+      "independent_reviewer_task": "Oxford lists air n. at A1. Draft means breathable atmospheric gases, not an air of confidence or an aircraft journey; verify Myanmar and original example independently.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "probably",
+      "level": "A2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Used to say that something is likely to happen or be true.",
+        "myanmar_meaning": "ဖြစ်နိုင်ချေများစွာဖြင့်၊ ဖြစ်ဖို့များသည်",
+        "example_sentence": "We will probably arrive before lunch."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 429,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 622,
+        "source_excerpt": "probably adv.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "PROBABLY_A1_VS_A2_LIKELIHOOD_NOT_CERTAINTY",
+      "independent_reviewer_task": "Oxford lists probably adv. at A1. Confirm probability rather than certainty and improve natural Myanmar adverb wording if necessary; independent exact-sense review required.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "future",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The time that will come after the present.",
+        "myanmar_meaning": "အနာဂတ်",
+        "example_sentence": "He hopes to start his own business in the future."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 431,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 322,
+        "source_excerpt": "future n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "FUTURE_A1_VS_A2_NOUN_NOT_ADJECTIVE",
+      "independent_reviewer_task": "Oxford lists future n. at A1. Confirm the time-after-present noun sense and distinguish adjective uses; independent reviewer to verify CEFR, Myanmar and example.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "police",
+      "level": "A2",
+      "part_of_speech": "plural noun",
+      "shortlist_snapshot": {
+        "english_definition": "The public service whose officers enforce the law and protect people.",
+        "myanmar_meaning": "ရဲတပ်ဖွဲ့",
+        "example_sentence": "The police asked drivers to use another road."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 432,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 606,
+        "source_excerpt": "police n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "POLICE_A1_VS_A2_COLLECTIVE_PLURAL_NOUN",
+      "independent_reviewer_task": "Oxford gives police n. at A1; draft marks plural noun. British collective grammar 'the police are/asked' is relevant. Verify accurate Myanmar institutional meaning and grammar independently.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "reason",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A fact or explanation that shows why something happened.",
+        "myanmar_meaning": "အကြောင်းရင်း",
+        "example_sentence": "What is the reason for the delay?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 433,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 643,
+        "source_excerpt": "reason n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "REASON_A1_VS_A2_CAUSE_VS_EXPLANATION",
+      "independent_reviewer_task": "Oxford lists reason n. at A1. Distinguish cause from an explanation or justification and independently verify the draft example and Myanmar nuance.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "within",
+      "level": "A2",
+      "part_of_speech": "preposition",
+      "shortlist_snapshot": {
+        "english_definition": "Inside a particular area, period, or limit.",
+        "myanmar_meaning": "အတွင်း၊ သတ်မှတ်ထားသော အကန့်အသတ်အတွင်း",
+        "example_sentence": "Please finish the report within two days."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 464,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 10,
+        "extracted_line": 2579,
+        "source_excerpt": "within prep.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "WITHIN_B1_VS_A2_TIME_LIMIT_AND_SPACE",
+      "independent_reviewer_task": "Oxford lists within prep. at B1, higher than A2 draft. In 'within two days' distinguish deadline before the end of two days from 'in two days'; independently review Myanmar temporal meaning and exact-sense CEFR.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "able",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Having the skill or opportunity to do something.",
+        "myanmar_meaning": "လုပ်နိုင်စွမ်းရှိသော",
+        "example_sentence": "She is able to explain the problem clearly."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 465,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 910,
+        "source_excerpt": "able adj.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "ABLE_A2_MATCH_BE_ABLE_TO_CONSTRUCTION",
+      "independent_reviewer_task": "Oxford lists able adj. at A2. Check the 'be able to + infinitive' construction and difference between skill, opportunity and permission; human exact-sense review required.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "single",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Only one, rather than two or more.",
+        "myanmar_meaning": "တစ်ခုတည်းသော",
+        "example_sentence": "We have a single room available tonight."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 466,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 6,
+        "extracted_line": 1618,
+        "source_excerpt": "single adj., n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "SINGLE_A2_MATCH_ROOM_AMBIGUITY_AND_UNMARRIED_SENSE",
+      "independent_reviewer_task": "Oxford lists single adj., n. at A2. Draft 'single room' could refer to accommodation for one person rather than only one room; disambiguate this from unmarried and noun senses.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "large",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Big in size or amount.",
+        "myanmar_meaning": "အရွယ်အစားကြီးမားသော",
+        "example_sentence": "A large tree stands beside the school."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 467,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 2,
+        "extracted_line": 425,
+        "source_excerpt": "large adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "LARGE_A1_VS_A2_SIZE_AND_QUANTITY",
+      "independent_reviewer_task": "Oxford lists large adj. at A1. Check physical size versus amount, and whether Myanmar wording suits the example; independent source-backed sense review required.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "possible",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Able to happen or be done.",
+        "myanmar_meaning": "ဖြစ်နိုင်သော၊ လုပ်ဆောင်နိုင်သော",
+        "example_sentence": "Is it possible to change the meeting time?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 468,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 3,
+        "extracted_line": 611,
+        "source_excerpt": "possible adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "POSSIBLE_A1_VS_A2_FEASIBILITY_AND_PROBABILITY",
+      "independent_reviewer_task": "Oxford lists possible adj. at A1. Draft focuses on feasibility ('possible to change') rather than probability; verify natural Myanmar and exact-sense evidence independently.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}

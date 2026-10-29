@@ -50,6 +50,8 @@ on:
       - tools/audit_cefr_1000_oxford_a2_third_twentyfour.py
       - draft/CEFR-1000-OXFORD-A2-FOURTH-TWELVE-2026-10-29.json
       - tools/audit_cefr_1000_oxford_a2_fourth_twelve.py
+      - draft/CEFR-1000-OXFORD-A2-FIFTH-TWELVE-2026-10-29.json
+      - tools/audit_cefr_1000_oxford_a2_fifth_twelve.py
       - draft/CEFR-1000-A2-THIRD-BILINGUAL-REWRITE-CANDIDATES-2026-10-29.json
       - tools/audit_cefr_1000_a2_rewrites.py
       - tools/audit_cefr_1000_oxford_a2_twelve.py
@@ -140,6 +142,7 @@ jobs:
           python3 tools/audit_cefr_1000_oxford_a2_followup_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_a2_third_twentyfour.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_a2_fourth_twelve.py --level ALL --self-test
+          python3 tools/audit_cefr_1000_oxford_a2_fifth_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_a2_rewrites.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_a2_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_b1_twelve.py --level ALL --self-test
