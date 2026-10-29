@@ -107,7 +107,7 @@ def self_test(expected):
     mutations = [
         lambda x: x.update(record_count=11),
         lambda x: x.update(independently_approved_count=1),
-        lambda x: x.update(draft_pos_reconciliation_count=0),
+        lambda x: x.update(draft_pos_reconciliation_count=1),
         lambda x: x.update(status="READY"),
         lambda x: x.update(shortlist_blob_sha="0" * 40),
         lambda x: x.update(extra_approval=True),
@@ -162,7 +162,7 @@ def main():
     print(json.dumps({
         "level": args.level,
         "a1_observations": 12,
-        "draft_question_pos_reconciliation": 0,
+        "draft_pos_reconciliation_count": 0,
         "independently_approved": 0,
         "forged_mutations_rejected": n,
         "release": "BLOCKED_STAGING_ONLY",
