@@ -1,0 +1,148 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_STAGING_ONLY",
+  "status": "A1_FOUR_DIRECT_DICTIONARY_SENSE_LEADS_UNAPPROVED",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 4,
+  "independently_approved_count": 0,
+  "source_limitations": "Four Oxford Advanced Learner's Dictionary pages were directly inspected on 2026-10-30, with zero-based web-extracted line ranges. These are directly observed dictionary-sense research leads, NOT independently verified exact-sense CEFR levels. Oxford topical a1 tags and Oxford 3000 word/POS A1 classification are not automatic exact-sense CEFR approval. English, Myanmar, example, audio and device checks remain on hold.",
+  "records": [
+    {
+      "word": "rice",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Small grains of food that are cooked and eaten.",
+        "myanmar_meaning": "ဆန်၊ ထမင်း",
+        "example_sentence": "We eat rice for lunch."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 187,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "dictionary": "Oxford Advanced Learner's Dictionary",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/rice",
+        "observed_on": "2026-10-30",
+        "web_extracted_line_start": 103,
+        "web_extracted_line_end": 118,
+        "access": "DIRECT_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR",
+        "oxford_3000_word_pos_reference": "A1",
+        "exact_sense_cefr_label_observed": null
+      },
+      "direct_observation": "Uncountable noun. Publisher entry describes rice grain, rice plant and prepared rice dishes; example 'served with rice' supports the draft cooked-rice lunch context.",
+      "editorial_risk": "Draft Myanmar ဆန် denotes uncooked rice and ထမင်း cooked rice; the original example is cooked rice. Human reviewer must choose accurate sense-specific Myanmar or clearly explain both.",
+      "independent_reviewer_task": "Independent human reviewer: Compare the directly observed Oxford dictionary sense with the frozen draft, verify CEFR applicability for this exact sense (a topic label is not a sense CEFR label), check natural Myanmar and original example grammar, record reviewer identity/date/content hash and retain editorial hold until independently signed.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "chicken",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A farm bird kept for eggs or meat.",
+        "myanmar_meaning": "ကြက်",
+        "example_sentence": "There is a chicken in the garden."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 191,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "dictionary": "Oxford Advanced Learner's Dictionary",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/chicken_1",
+        "observed_on": "2026-10-30",
+        "web_extracted_line_start": 107,
+        "web_extracted_line_end": 161,
+        "access": "DIRECT_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR",
+        "oxford_3000_word_pos_reference": "A1",
+        "exact_sense_cefr_label_observed": null
+      },
+      "direct_observation": "Publisher noun sense 1 is a countable living bird; sense 2 is uncountable chicken meat. The draft's chicken in the garden is the living animal.",
+      "editorial_risk": "Retain living bird sense only for this example; do not conflate with uncountable meat or figurative coward sense. Myanmar ကြက် needs contextual clarification.",
+      "independent_reviewer_task": "Independent human reviewer: Compare the directly observed Oxford dictionary sense with the frozen draft, verify CEFR applicability for this exact sense (a topic label is not a sense CEFR label), check natural Myanmar and original example grammar, record reviewer identity/date/content hash and retain editorial hold until independently signed.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "bread",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Food made from flour and baked.",
+        "myanmar_meaning": "ပေါင်မုန့်",
+        "example_sentence": "I eat bread for breakfast."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 188,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "dictionary": "Oxford Advanced Learner's Dictionary",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/bread",
+        "observed_on": "2026-10-30",
+        "web_extracted_line_start": 103,
+        "web_extracted_line_end": 114,
+        "access": "DIRECT_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR",
+        "oxford_3000_word_pos_reference": "A1",
+        "exact_sense_cefr_label_observed": null
+      },
+      "direct_observation": "Publisher lists the common food sense as uncountable; uses a loaf, slice or piece for counted portions. The draft's eat bread is grammatically compatible.",
+      "editorial_risk": "Do not incorrectly introduce countable 'a bread' in A1 example. Distinguish ordinary food sense from old-fashioned money slang.",
+      "independent_reviewer_task": "Independent human reviewer: Compare the directly observed Oxford dictionary sense with the frozen draft, verify CEFR applicability for this exact sense (a topic label is not a sense CEFR label), check natural Myanmar and original example grammar, record reviewer identity/date/content hash and retain editorial hold until independently signed.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "walk",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To move on foot at a normal speed.",
+        "myanmar_meaning": "လမ်းလျှောက်သည်",
+        "example_sentence": "We walk to school."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 195,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "dictionary": "Oxford Advanced Learner's Dictionary",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/walk_1",
+        "observed_on": "2026-10-30",
+        "web_extracted_line_start": 103,
+        "web_extracted_line_end": 141,
+        "access": "DIRECT_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR",
+        "oxford_3000_word_pos_reference": "A1",
+        "exact_sense_cefr_label_observed": null
+      },
+      "direct_observation": "Publisher verb sense 1 describes moving on foot without running, and directly illustrates walking to school. The draft's We walk to school is consistent.",
+      "editorial_risk": "Oxford A1 PDF lists walk as verb and noun; this source page supports the physical-movement verb sense only. Human reviewer must separately determine exact-sense CEFR and fluent Myanmar.",
+      "independent_reviewer_task": "Independent human reviewer: Compare the directly observed Oxford dictionary sense with the frozen draft, verify CEFR applicability for this exact sense (a topic label is not a sense CEFR label), check natural Myanmar and original example grammar, record reviewer identity/date/content hash and retain editorial hold until independently signed.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
