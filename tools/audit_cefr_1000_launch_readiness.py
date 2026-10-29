@@ -844,6 +844,77 @@ def audit(ledger=None, after_deployment=False):
             report["oxford_a2_third_twentyfour_retained_resolved"]):
         issues.append("Retained third Oxford A2 entries lack independently attested exact-sense A2 reconciliation")
 
+    # Fourth Oxford A2 packet: word/POS source labels are not sense-level
+    # verification. Five A1 labels conflict with provisional A2; mind's example
+    # also uses a different lexicalised sense from the definition.
+    a2_fourth = read_json(
+        ROOT / "draft/CEFR-1000-OXFORD-A2-FOURTH-TWELVE-2026-10-29.json")
+    a2_fourth_flags = a2_fourth.get("records", [])
+    a2_fourth_expected = {"level", "mind", "become", "body", "problem",
+                          "almost", "win", "idea", "community", "cause",
+                          "data", "general"}
+    report["oxford_a2_fourth_twelve_word_pos_observations"] = len(a2_fourth_flags)
+    report["oxford_a2_fourth_twelve_retained_requiring_resolution"] = 0
+    report["oxford_a2_fourth_twelve_retained_resolved"] = 0
+    if (a2_fourth.get("status") !=
+            "A2_FOURTH_TWELVE_DIRECT_OXFORD_WORD_POS_TRIAGE_EDITORIAL_HOLD"
+            or len(a2_fourth_flags) != 12
+            or {x.get("word") for x in a2_fourth_flags if isinstance(x, dict)}
+               != a2_fourth_expected
+            or a2_fourth.get("publisher_reference_level_counts") !=
+               {"A1": 5, "A2": 7, "B1": 0, "B2": 0, "C1": 0}
+            or a2_fourth.get("word_pos_discrepancies") != 5
+            or a2_fourth.get("independently_approved_count") != 0):
+        issues.append("Fourth Oxford A2 publisher packet missing, altered or falsely approved")
+    a2_fourth_receipts = d.get("oxford_a2_fourth_twelve_review_receipts")
+    if not isinstance(a2_fourth_receipts, list):
+        issues.append("Fourth Oxford A2 independent receipt collection missing or malformed")
+        a2_fourth_receipts = []
+    a2_fourth_index = {}
+    for rec in a2_fourth_receipts:
+        if not isinstance(rec, dict):
+            issues.append("Malformed fourth Oxford A2 independent receipt")
+            continue
+        key = (rec.get("word"), rec.get("proposed_level"))
+        if key in a2_fourth_index:
+            issues.append("Duplicate fourth Oxford A2 independent receipt")
+        a2_fourth_index[key] = rec
+    if set(a2_fourth_index) - {(word, "A2") for word in a2_fourth_expected}:
+        issues.append("Unknown fourth Oxford A2 independent receipt")
+    for flag in a2_fourth_flags:
+        if not isinstance(flag, dict):
+            continue
+        word = flag.get("word")
+        entry = entry_lookup.get((word, "A2"))
+        if entry is None:
+            continue  # Replacement/retier requires complete human-approved manifest.
+        report["oxford_a2_fourth_twelve_retained_requiring_resolution"] += 1
+        rec = a2_fourth_index.get((word, "A2"))
+        if not independent_word_stage(rec, word, "sense_specific_cefr",
+                                      expected_level="A2"):
+            continue
+        if (rec.get("decision") != "RETAIN_AFTER_INDEPENDENT_A2_EXACT_SENSE_REVIEW"
+                or rec.get("reviewed_content_sha256") != content_hash(entry)
+                or rec.get("verified_part_of_speech") != entry.get("part_of_speech")
+                or rec.get("verified_cefr_level") != "A2"
+                or rec.get("source_cefr_level") != "A2"
+                or not isinstance(rec.get("source_scope_rationale"), str)
+                or len(rec["source_scope_rationale"].strip()) < 60):
+            continue
+        source_level = flag.get("publisher_source", {}).get("source_cefr_level")
+        if source_level == "A1":
+            explanation = rec.get("oxford_word_pos_level_difference_resolution")
+            if not isinstance(explanation, str) or len(explanation.strip()) < 60:
+                continue
+        if word == "mind":
+            explanation = rec.get("mind_change_mind_phrase_sense_resolution")
+            if not isinstance(explanation, str) or len(explanation.strip()) < 80:
+                continue
+        report["oxford_a2_fourth_twelve_retained_resolved"] += 1
+    if (report["oxford_a2_fourth_twelve_retained_requiring_resolution"] !=
+            report["oxford_a2_fourth_twelve_retained_resolved"]):
+        issues.append("Retained fourth Oxford A2 entries lack independent exact-sense and bilingual reconciliation")
+
     # Third Oxford A1 word/POS batch. These are publisher word/POS observations,
     # NOT independent exact-sense, Burmese or original-example approvals.
     # Explicitly resolve 'home' noun/adverb mismatch and the stilted 'thank'
@@ -2496,6 +2567,17 @@ def main():
         assert fourth_report["oxford_b2_fourth_twentyfour_direct_word_pos_observations"] == 24
         assert fourth_report["oxford_b2_fourth_twentyfour_retained_requiring_resolution"] == (24 if fourth_report["approved_manifest_present"] else 0)
         print("PASS: fabricated fourth B2 reviewer receipt rejected; 24 source records remain unapproved")
+        forged_a2_fourth = copy.deepcopy(read_json(LEDGER))
+        forged_a2_fourth["oxford_a2_fourth_twelve_review_receipts"] = [
+            {"word": "FAKE", "proposed_level": "A2",
+             "decision": "RETAIN_AFTER_INDEPENDENT_A2_EXACT_SENSE_REVIEW"}
+        ]
+        fourth_a2_issues, fourth_a2_report = audit(forged_a2_fourth)
+        assert any("Unknown fourth Oxford A2 independent receipt" in item
+                   for item in fourth_a2_issues)
+        assert fourth_a2_report["oxford_a2_fourth_twelve_word_pos_observations"] == 12
+        assert fourth_a2_report["oxford_a2_fourth_twelve_retained_resolved"] == 0
+        print("PASS: fabricated fourth A2 human receipt rejected; 12 publisher leads remain held")
         print("PASS: unknown cross-publisher reconciliation receipt rejected")
         print("PASS: official Pages size/bandwidth caps reject inflated self-reported limits")
         print("PASS: false ready flag cannot override missing independent, listening, iPhone or hosting evidence")
