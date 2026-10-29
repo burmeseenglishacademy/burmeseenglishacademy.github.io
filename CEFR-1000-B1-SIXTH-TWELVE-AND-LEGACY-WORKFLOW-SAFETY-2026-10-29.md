@@ -31,7 +31,7 @@ Directly inspected Oxford University Press's [Oxford 3000 by CEFR level](https:/
 | C1 | 200 | 0 | 51 |
 | **Total** | **1,000** | **0** | **389** |
 
-The audited 27 Oxford research packets have **408 observations for 389 distinct provisional headwords**, including 19 repeated observations that do **not** increase coverage. **611** remain without direct observations in the audited packets. Review handoff priorities: **152** publisher-lower, **13** publisher-higher, **3** not found in the inspected core lists (**not a CEFR classification**), **221** word/POS matches still exact-sense unverified, and **611** no-direct-observation entries. All **1,000** remain on editorial hold.
+The audited 28 Oxford research packets have **408 observations for 389 distinct provisional headwords**, including 19 repeated observations that do **not** increase coverage. **611** remain without direct observations in the audited packets. Review handoff priorities: **152** publisher-lower, **13** publisher-higher, **3** not found in the inspected core lists (**not a CEFR classification**), **221** word/POS matches still exact-sense unverified, and **611** no-direct-observation entries. All **1,000** remain on editorial hold.
 
 ## Fail-closed source and release safety
 - Added [B1 sixth-twelve source-integrity auditor](tools/audit_cefr_1000_oxford_b1_sixth_twelve.py), cryptographically bound to the frozen shortlist Git blob `475e68ae17ab97bd937e73e5ce4794e0dcd76551`. **144/144** negative mutations (source, CEFR, English/Myanmar/example, historical provenance, fake review) rejected in actual CI logs.
