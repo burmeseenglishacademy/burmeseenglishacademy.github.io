@@ -105,7 +105,7 @@ def verify(candidate, expected):
 def self_test(expected):
     n = 0
     mutations = [
-        lambda x: x.update(record_count=11),
+        lambda x: x.update(record_count=10),
         lambda x: x.update(independently_approved_count=1),
         lambda x: x.update(draft_pos_reconciliation_count=1),
         lambda x: x.update(status="READY"),
@@ -114,7 +114,7 @@ def self_test(expected):
         lambda x: x["records"].reverse(),
         lambda x: x["records"].pop(),
         lambda x: x["records"].append(copy.deepcopy(x["records"][0])),
-        lambda x: x["counts_by_level"].update(A1=11),
+        lambda x: x["counts_by_level"].update(A1=10),
     ]
     for i in range(11):
         mutations.extend([
@@ -141,6 +141,7 @@ def self_test(expected):
     for mutation in mutations:
         test = copy.deepcopy(expected)
         mutation(test)
+        require(test != expected, "Ineffective adversarial mutation")
         try:
             verify(test, expected)
         except ValueError:
