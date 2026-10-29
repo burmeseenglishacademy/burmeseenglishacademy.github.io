@@ -26,7 +26,7 @@ def require(ok, why):
 
 def git_blob(path):
     raw = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\x00" + raw).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\x00" + raw).hexdigest()
 
 def audit(packet, shortlist):
     require(git_blob(SHORTLIST) == SHORTLIST_SHA, "Frozen shortlist blob drift")
