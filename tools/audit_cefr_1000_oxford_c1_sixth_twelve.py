@@ -62,7 +62,7 @@ def audit(packet, shortlist):
             and packet.get("independently_approved_count")==0,
             "counts or fabricated approval")
     require(isinstance(packet.get("source_limitations"),str)
-            and "not exact-sense" in packet["source_limitations"].lower(),
+            and "never exact-sense" in packet["source_limitations"].lower(),
             "publisher limitations absent")
     records = packet.get("records")
     require(isinstance(records,list) and len(records)==12
