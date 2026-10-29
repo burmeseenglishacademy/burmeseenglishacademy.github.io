@@ -37,7 +37,7 @@ def require(condition, reason):
 
 def blob_sha(path):
     data = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\\0" + data).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(data)).encode() + bytes([0]) + data).hexdigest()
 
 def audit(packet, shortlist, sha):
     require(sha == SHORTLIST_SHA and packet.get("shortlist_blob_sha") == sha,
