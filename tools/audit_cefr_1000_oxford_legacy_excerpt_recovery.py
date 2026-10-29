@@ -37,7 +37,7 @@ def require(test, reason):
 
 def blob_sha(path):
     raw = (ROOT / path).read_bytes()
-    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
 
 def load():
     recovery = json.loads((ROOT / RECOVERY).read_text(encoding="utf-8"))
