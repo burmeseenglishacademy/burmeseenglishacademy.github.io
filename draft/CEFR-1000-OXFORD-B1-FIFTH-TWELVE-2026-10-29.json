@@ -1,0 +1,423 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B1_FIFTH_TWELVE_DIRECT_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-29",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 12,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 0,
+    "A2": 5,
+    "B1": 5,
+    "B2": 2,
+    "C1": 0
+  },
+  "word_pos_discrepancies": 7,
+  "independently_approved_count": 0,
+  "source_limitations": "Direct Oxford publisher PDF word/POS observations only, NOT exact-sense CEFR, independent English/Myanmar/example approval, real listening, physical iPhone QA or deployment.",
+  "records": [
+    {
+      "word": "block",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To stop movement or prevent access.",
+        "myanmar_meaning": "ပိတ်ဆို့သည်",
+        "example_sentence": "Do not block the emergency exit."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 233,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 7,
+        "extracted_line": 1857,
+        "source_excerpt": "block n., v.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Verb 'block' versus noun; draft means obstruct an exit.",
+      "independent_reviewer_task": "Independent human exact-sense CEFR and fluent Myanmar/English/example review required with dated publisher dictionary URL and content-bound human attestation. Word/POS list is not exact-sense proof.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "equipment",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The tools or machines needed for a particular activity.",
+        "myanmar_meaning": "ကိရိယာပစ္စည်းများ၊ အသုံးအဆောင်စက်ပစ္စည်းများ",
+        "example_sentence": "The team checked its safety equipment before entering the site."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 301,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 5,
+        "extracted_line": 1172,
+        "source_excerpt": "equipment n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Uncountable equipment; tools/machinery meaning.",
+      "independent_reviewer_task": "Independent human exact-sense CEFR and fluent Myanmar/English/example review required with dated publisher dictionary URL and content-bound human attestation. Word/POS list is not exact-sense proof.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "nation",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A country and its people, especially as a political community.",
+        "myanmar_meaning": "နိုင်ငံ၊ နိုင်ငံသားများစုစည်းထားသော လူမှုအသိုင်းအဝိုင်း",
+        "example_sentence": "The nation celebrated the opening of its new library."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 303,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 9,
+        "extracted_line": 2228,
+        "source_excerpt": "nation n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Political community versus people or country.",
+      "independent_reviewer_task": "Independent human exact-sense CEFR and fluent Myanmar/English/example review required with dated publisher dictionary URL and content-bound human attestation. Word/POS list is not exact-sense proof.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "otherwise",
+      "level": "B1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "If not; used to explain what will happen without a particular action.",
+        "myanmar_meaning": "မဟုတ်လျှင်၊ သို့မဟုတ်ပါက",
+        "example_sentence": "Leave now; otherwise, you may miss the train."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 304,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 12,
+        "extracted_line": 3048,
+        "source_excerpt": "otherwise adv.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Conditional consequence versus 'in other respects'.",
+      "independent_reviewer_task": "Independent human exact-sense CEFR and fluent Myanmar/English/example review required with dated publisher dictionary URL and content-bound human attestation. Word/POS list is not exact-sense proof.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "purpose",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The reason why something is done or exists.",
+        "myanmar_meaning": "ရည်ရွယ်ချက်၊ အကြောင်းရင်း",
+        "example_sentence": "The purpose of the meeting is to agree on a delivery date."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 305,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 6,
+        "extracted_line": 1515,
+        "source_excerpt": "purpose n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Goal of a meeting versus intended function.",
+      "independent_reviewer_task": "Independent human exact-sense CEFR and fluent Myanmar/English/example review required with dated publisher dictionary URL and content-bound human attestation. Word/POS list is not exact-sense proof.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "responsible",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Having a duty to take care of something or someone.",
+        "myanmar_meaning": "တာဝန်ရှိသော၊ တာဝန်ယူရသော",
+        "example_sentence": "The supervisor is responsible for checking the machines."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 306,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 9,
+        "extracted_line": 2387,
+        "source_excerpt": "responsible adj.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Duty/accountability versus causal responsibility.",
+      "independent_reviewer_task": "Independent human exact-sense CEFR and fluent Myanmar/English/example review required with dated publisher dictionary URL and content-bound human attestation. Word/POS list is not exact-sense proof.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "theory",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An explanation of how or why something happens, based on ideas or evidence.",
+        "myanmar_meaning": "သီအိုရီ၊ အကြောင်းအရာတစ်ခုကို ရှင်းပြသည့်အယူအဆ",
+        "example_sentence": "Her theory explains why the metal expands when heated."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 307,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 10,
+        "extracted_line": 2504,
+        "source_excerpt": "theory n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Scientific explanation versus guess.",
+      "independent_reviewer_task": "Independent human exact-sense CEFR and fluent Myanmar/English/example review required with dated publisher dictionary URL and content-bound human attestation. Word/POS list is not exact-sense proof.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "agency",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An organisation that provides a particular service.",
+        "myanmar_meaning": "ဝန်ဆောင်မှုအဖွဲ့အစည်း၊ အေဂျင်စီ",
+        "example_sentence": "The travel agency arranged our tickets and hotel."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 308,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 10,
+        "extracted_line": 2612,
+        "source_excerpt": "agency n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Travel service company versus government agency.",
+      "independent_reviewer_task": "Independent human exact-sense CEFR and fluent Myanmar/English/example review required with dated publisher dictionary URL and content-bound human attestation. Word/POS list is not exact-sense proof.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "avoid",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To keep away from something or prevent it from happening.",
+        "myanmar_meaning": "ရှောင်ရှားသည်၊ မဖြစ်အောင် ကာကွယ်သည်",
+        "example_sentence": "We leave early to avoid heavy traffic."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 309,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 973,
+        "source_excerpt": "avoid v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Prevent traffic exposure versus avoid a person.",
+      "independent_reviewer_task": "Independent human exact-sense CEFR and fluent Myanmar/English/example review required with dated publisher dictionary URL and content-bound human attestation. Word/POS list is not exact-sense proof.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "coast",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The land next to the sea.",
+        "myanmar_meaning": "ပင်လယ်ကမ်းရိုးတန်း",
+        "example_sentence": "Small fishing villages are scattered along the coast."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 310,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 4,
+        "extracted_line": 1058,
+        "source_excerpt": "coast n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Shore/land bordering sea versus region.",
+      "independent_reviewer_task": "Independent human exact-sense CEFR and fluent Myanmar/English/example review required with dated publisher dictionary URL and content-bound human attestation. Word/POS list is not exact-sense proof.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "economy",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The system of producing, buying, and selling goods and services in a place.",
+        "myanmar_meaning": "စီးပွားရေးစနစ်၊ နိုင်ငံ့စီးပွားရေး",
+        "example_sentence": "Tourism plays an important role in the island's economy."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 311,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 8,
+        "extracted_line": 2000,
+        "source_excerpt": "economy n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "National economy versus savings of resources.",
+      "independent_reviewer_task": "Independent human exact-sense CEFR and fluent Myanmar/English/example review required with dated publisher dictionary URL and content-bound human attestation. Word/POS list is not exact-sense proof.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "environment",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The natural world and the conditions in which living things exist.",
+        "myanmar_meaning": "သဘာဝပတ်ဝန်းကျင်",
+        "example_sentence": "Reusing materials can help protect the environment."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 312,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-29",
+        "pdf_page": 5,
+        "extracted_line": 1171,
+        "source_excerpt": "environment n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Natural world versus workplace surroundings.",
+      "independent_reviewer_task": "Independent human exact-sense CEFR and fluent Myanmar/English/example review required with dated publisher dictionary URL and content-bound human attestation. Word/POS list is not exact-sense proof.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
