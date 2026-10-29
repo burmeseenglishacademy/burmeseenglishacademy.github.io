@@ -1,0 +1,435 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A1_TWELFTH_TWELVE_DIRECT_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 12,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 12,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "draft_pos_reconciliation_count": 0,
+  "independently_approved_count": 0,
+  "source_limitations": "Official Oxford 3000 by CEFR level PDF directly inspected 2026-10-30. One-based PDF pages and zero-based web extracted lines. Publisher A1 word/POS observations only, not independently checked exact senses. Body-part polysemy, foot versus leg Myanmar, fish living animal versus food, cow versus generic cattle, and example grammar require human editorial review. No English, Myanmar, example, CEFR, George/Emma listening, physical iPhone, hosting or deployment approval.",
+  "records": [
+    {
+      "word": "ear",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The part of the body used for hearing.",
+        "myanmar_meaning": "နား",
+        "example_sentence": "She has a small ear."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 174,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 1,
+        "extracted_line": 230,
+        "source_excerpt": "ear n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "The example describes one ear; confirm anatomical ear rather than an ear of corn.",
+      "editorial_risk": "A1_TWELFTH_TWELVE_EAR_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended A1 noun sense against an exact-sense publisher entry, source-backed CEFR applicability, fluent Myanmar meaning, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "nose",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The part of the face used for smelling and breathing.",
+        "myanmar_meaning": "နှာခေါင်း",
+        "example_sentence": "My nose is cold."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 175,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 530,
+        "source_excerpt": "nose n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Anatomical nose; distinguish from the nose of an aircraft or other metaphor.",
+      "editorial_risk": "A1_TWELFTH_TWELVE_NOSE_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended A1 noun sense against an exact-sense publisher entry, source-backed CEFR applicability, fluent Myanmar meaning, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "mouth",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The part of the face used for eating and speaking.",
+        "myanmar_meaning": "ပါးစပ်",
+        "example_sentence": "Open your mouth, please."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 176,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 500,
+        "source_excerpt": "mouth n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Anatomical mouth; imperative example is grammatical, check polite natural Myanmar.",
+      "editorial_risk": "A1_TWELFTH_TWELVE_MOUTH_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended A1 noun sense against an exact-sense publisher entry, source-backed CEFR applicability, fluent Myanmar meaning, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "face",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The front part of the head.",
+        "myanmar_meaning": "မျက်နှာ",
+        "example_sentence": "Wash your face."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 177,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 264,
+        "source_excerpt": "face n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Anatomical face, not the verb face or the face of a clock.",
+      "editorial_risk": "A1_TWELFTH_TWELVE_FACE_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended A1 noun sense against an exact-sense publisher entry, source-backed CEFR applicability, fluent Myanmar meaning, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "hair",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The thin strands growing on a person's head.",
+        "myanmar_meaning": "ဆံပင်",
+        "example_sentence": "Her hair is long."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 178,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 345,
+        "source_excerpt": "hair n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Head hair is typically mass/uncountable in the example; distinguish an individual hair.",
+      "editorial_risk": "A1_TWELFTH_TWELVE_HAIR_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended A1 noun sense against an exact-sense publisher entry, source-backed CEFR applicability, fluent Myanmar meaning, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "foot",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The part of the body at the end of a leg.",
+        "myanmar_meaning": "ခြေဖဝါး၊ ခြေထောက်",
+        "example_sentence": "My left foot hurts."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 179,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 303,
+        "source_excerpt": "foot n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Anatomical foot, not leg or unit of length; Myanmar draft includes ခြေထောက်, which can imply leg.",
+      "editorial_risk": "A1_TWELFTH_TWELVE_FOOT_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended A1 noun sense against an exact-sense publisher entry, source-backed CEFR applicability, fluent Myanmar meaning, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "cat",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A small animal often kept as a pet.",
+        "myanmar_meaning": "ကြောင်",
+        "example_sentence": "My cat is sleeping."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 180,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 1,
+        "extracted_line": 134,
+        "source_excerpt": "cat n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Domestic cat noun; no figurative or slang senses intended.",
+      "editorial_risk": "A1_TWELFTH_TWELVE_CAT_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended A1 noun sense against an exact-sense publisher entry, source-backed CEFR applicability, fluent Myanmar meaning, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "dog",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An animal often kept as a pet and known for barking.",
+        "myanmar_meaning": "ခွေး",
+        "example_sentence": "The dog is friendly."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 181,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 1,
+        "extracted_line": 218,
+        "source_excerpt": "dog n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Domestic dog noun; definition includes typical barking but not a universal defining trait.",
+      "editorial_risk": "A1_TWELFTH_TWELVE_DOG_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended A1 noun sense against an exact-sense publisher entry, source-backed CEFR applicability, fluent Myanmar meaning, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "bird",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An animal with feathers and wings.",
+        "myanmar_meaning": "ငှက်",
+        "example_sentence": "The bird is in the tree."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 182,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 1,
+        "extracted_line": 88,
+        "source_excerpt": "bird n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Feathered animal noun; avoid equating bird with the ability to fly.",
+      "editorial_risk": "A1_TWELFTH_TWELVE_BIRD_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended A1 noun sense against an exact-sense publisher entry, source-backed CEFR applicability, fluent Myanmar meaning, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "fish",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An animal that lives in water and has gills.",
+        "myanmar_meaning": "ငါး",
+        "example_sentence": "The fish swims in the river."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 183,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 294,
+        "source_excerpt": "fish n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Living fish animal in example, not fish as food; plural fish is usually unchanged.",
+      "editorial_risk": "A1_TWELFTH_TWELVE_FISH_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended A1 noun sense against an exact-sense publisher entry, source-backed CEFR applicability, fluent Myanmar meaning, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "horse",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A large animal that people sometimes ride.",
+        "myanmar_meaning": "မြင်း",
+        "example_sentence": "The horse is running."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 184,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 375,
+        "source_excerpt": "horse n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Equine animal noun; distinguish from racing, chess and figurative senses.",
+      "editorial_risk": "A1_TWELFTH_TWELVE_HORSE_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended A1 noun sense against an exact-sense publisher entry, source-backed CEFR applicability, fluent Myanmar meaning, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "cow",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A large farm animal often kept for milk.",
+        "myanmar_meaning": "နွား",
+        "example_sentence": "The cow eats grass."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 185,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 1,
+        "extracted_line": 180,
+        "source_excerpt": "cow n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_discrepancy": "Cow can refer specifically to an adult female bovine; draft Myanmar နွား is broad cattle. Human exact-sense review needed.",
+      "editorial_risk": "A1_TWELFTH_TWELVE_COW_EXACT_SENSE_POS_REVIEW",
+      "independent_reviewer_task": "Independent human reviewer: Verify the intended A1 noun sense against an exact-sense publisher entry, source-backed CEFR applicability, fluent Myanmar meaning, original example grammar, British usage, historical Git provenance and pronunciation. Oxford PDF word/POS evidence alone is insufficient for approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
