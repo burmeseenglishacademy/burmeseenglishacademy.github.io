@@ -182,6 +182,8 @@ on:
       - draft/CEFR-1000-CAMBRIDGE-C1-EIGHT-UNLABELLED-SENSE-TRIAGE-2026-10-31.json
       - tools/audit_cefr_1000_cambridge_c1_eight_unlabelled.py
       - .github/workflows/cefr-1000-selection-structural-qa.yml
+      - draft/CEFR-1000-CAMBRIDGE-A2-SIX-COMPOUND-INDEXED-SENSE-TRIAGE-2026-10-31.json
+      - tools/audit_cefr_1000_cambridge_a2_six_indexed.py
   workflow_dispatch:
 permissions:
   contents: read
@@ -629,6 +631,11 @@ jobs:
       - name: Reject 115 forged C1 publisher, Myanmar, provenance and approval mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_cambridge_c1_eight_unlabelled.py --level ALL --self-test
+      - name: Validate six indexed Cambridge A2 compound exact-sense leads without human signoff
+        run: python3 tools/audit_cefr_1000_cambridge_a2_six_indexed.py --level "${{ matrix.level }}"
+      - name: Reject 90 forged Cambridge CEFR, Myanmar, source and independent approvals
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_cambridge_a2_six_indexed.py --level ALL --self-test
       - name: Cross-check actual shared wordforms with protected IELTS 1000 dataset
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_ielts_overlap.py
