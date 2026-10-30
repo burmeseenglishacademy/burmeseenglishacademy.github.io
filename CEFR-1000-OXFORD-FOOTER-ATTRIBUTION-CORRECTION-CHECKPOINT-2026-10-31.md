@@ -20,6 +20,21 @@ Source: [Oxford 3000 by CEFR level official PDF](https://www.oxfordlearnersdicti
 
 The historical source packets are retained intact for audit provenance. The [five-record corrective source packet](draft/CEFR-1000-OXFORD-FOOTER-WORD-OF-DAY-FIVE-CORRECTION-2026-10-31.json) supersedes **only** the original `publisher_surface_conflict.dictionary_footer_label = "C1"` *interpretation*. The [fail-closed correction auditor](tools/audit_cefr_1000_oxford_footer_attribution.py) binds original packet records and held shortlist snapshots, rejects false Word-of-Day attribution, and runs across the six A1/A2/B1/B2/C1/ALL structural lanes plus documentary no-deployment QC. These automated checks do not independently inspect Oxford's live page at CI time or confer linguistic approval.
 
+
+## Bilingual and example-sense editorial handoff (proposals only)
+
+These are original candidate improvements, **not independent approvals**. The frozen shortlist and review tasks have not been changed. Human reviewers must assess natural Myanmar, exact English sense, original example grammar and publisher-backed CEFR for each retained item.
+
+| Word | Proposed English example / Myanmar wording | Review concern |
+| --- | --- | --- |
+| **historic** | *The signing of the agreement was a historic moment for the town.* — **သမိုင်းတွင် အရေးပါသော၊ သမိုင်းဝင်သော** | Current “The agreement was a historic moment” conflates an agreement with the moment of signing; distinguish *historic* (historically important) from *historical* (related to the past). B1 publisher word/POS versus B2 draft still unresolved. |
+| **graduate** (verb) | *She hopes to graduate from university next year.* — **တက္ကသိုလ်မှ ဘွဲ့ရသည်** | Prefer degree completion over vague “finishing a course”; British *graduate from* versus North American *graduate college*; verb /ˈɡrædʒueɪt/ distinct from noun /ˈɡrædʒuət/. B1 publisher word/POS versus B2 draft still unresolved. |
+| **appointment** (noun) | *I made a dental appointment for Friday morning.* — **သွားဆရာဝန်နှင့် ကြိုတင်ချိန်းဆိုထားသော အချိန်** | Countable scheduled consultation, not appointment to a job; B1 publisher word/POS versus B2 draft still unresolved. |
+| **contemporary** (adjective) | *The museum displays contemporary art by local artists.* — **ယနေ့ခေတ်နှင့် သက်ဆိုင်သော၊ ခေတ်ပြိုင်ဖြစ်သော** | *By* more directly credits artists; distinguish modern-day art from people who lived in the same historical period. Publisher B2 word/POS match does not approve exact sense. |
+| **raw** (adjective) | *Wash your hands after handling raw chicken.* — **မချက်ပြုတ်ရသေးသော၊ အစိမ်းဖြစ်သော** | Food sense (uncooked), not unprocessed data/materials or uncontrolled emotion; publisher B2 word/POS match does not approve exact sense. |
+
+The proposals are editorial first-pass suggestions only. A genuine independent reviewer must explicitly accept or revise each and provide content-bound signoff before any release manifest or audio can be considered ready.
+
 ## Frozen staging counts and blockers
 
 | CEFR level | First-pass written | Independently approved | Direct Oxford word/POS observed (last verified prior run) |
