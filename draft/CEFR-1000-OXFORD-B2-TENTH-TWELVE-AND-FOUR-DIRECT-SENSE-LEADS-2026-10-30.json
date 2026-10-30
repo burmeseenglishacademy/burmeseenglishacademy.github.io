@@ -1,0 +1,495 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B2_TENTH_TWELVE_DIRECT_OXFORD_WORD_POS_FOUR_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 12,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A2": 4,
+    "B1": 3,
+    "B2": 4,
+    "C1": 1
+  },
+  "word_pos_discrepancies": 8,
+  "direct_dictionary_sense_leads": 4,
+  "independently_approved_count": 0,
+  "source_limitations": "Oxford PDF word/POS is not exact-sense CEFR verification. Oxford historic dictionary footer currently displays C1 despite official Oxford 3000 PDF B1; record as conflicting publisher surfaces pending human resolution. No independent English/Myanmar/example review, real audio listening, physical iPhone QA, measured hosting or deployment. Frozen shortlist unchanged.",
+  "records": [
+    {
+      "word": "engineer",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A person who designs or maintains machines, structures, or systems.",
+        "myanmar_meaning": "အင်ဂျင်နီယာ",
+        "example_sentence": "The engineer inspected the damaged bridge."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 397,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 5,
+        "extracted_line": 1168,
+        "source_excerpt": "engineer n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A technical professional designing/maintaining structures, not engineering as an activity; publisher A2 versus provisional B2.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "operate",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To control or use a machine or system.",
+        "myanmar_meaning": "စက် သို့မဟုတ် စနစ်ကို လည်ပတ်အသုံးပြုသည်",
+        "example_sentence": "Only trained staff may operate this machine."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 399,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 11,
+        "extracted_line": 3041,
+        "source_excerpt": "operate v.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Transitive control of a machine, not an intransitive machine working or managing a business.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/operate",
+        "observed_on": "2026-10-30",
+        "sense_number": 2,
+        "page_text_line_start": 131,
+        "page_text_line_end": 145,
+        "editorial_interpretation": "Oxford transitive machine-control sense 2 matches trained staff operating a machine; intransitive function and business-management senses are different.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "စက်ပစ္စည်း သို့မဟုတ် စနစ်တစ်ခုကို ထိန်းချုပ်အသုံးပြုသည်",
+        "original_example_sentence": "Only authorised technicians may operate the lifting equipment.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "permission",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Agreement that allows someone to do something.",
+        "myanmar_meaning": "ခွင့်ပြုချက်",
+        "example_sentence": "You need permission to enter the laboratory."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 400,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 6,
+        "extracted_line": 1466,
+        "source_excerpt": "permission n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Uncountable permission to enter a laboratory; do not substitute permit noun; publisher A2 versus draft B2.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "reply",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An answer to a question or message.",
+        "myanmar_meaning": "အကြောင်းပြန်စာ၊ ပြန်လည်ဖြေကြားချက်",
+        "example_sentence": "We received a helpful reply from the supplier."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 401,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 6,
+        "extracted_line": 1549,
+        "source_excerpt": "reply v., n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The draft requires a noun answer, not verb reply; publisher A2 versus provisional B2.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "tradition",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A belief or practice passed from one generation to another.",
+        "myanmar_meaning": "အစဉ်အလာ၊ ရိုးရာဓလေ့",
+        "example_sentence": "Sharing food is an important family tradition."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 402,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1719,
+        "source_excerpt": "tradition n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "An inherited family practice, not a formal doctrine or named ethnic identity; publisher A2 versus draft B2.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "visual",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Related to seeing or to images.",
+        "myanmar_meaning": "အမြင်နှင့်ဆိုင်သော၊ ရုပ်ပုံအခြေပြုသော",
+        "example_sentence": "The teacher used visual examples to explain the topic."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 403,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 12,
+        "extracted_line": 3294,
+        "source_excerpt": "visual adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Adjective about seeing/images; ensure visual examples is natural, not vision impairment.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "criticism",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Statements expressing disapproval or pointing out faults.",
+        "myanmar_meaning": "ဝေဖန်ချက်၊ အပြစ်ထောက်ပြမှု",
+        "example_sentence": "The proposal received criticism for its high cost."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 444,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 10,
+        "extracted_line": 2747,
+        "source_excerpt": "criticism n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Negative judgement of a costly proposal, not neutral constructive feedback; distinguish countable criticisms and uncountable criticism.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "effectively",
+      "level": "B2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "In a way that achieves the intended result.",
+        "myanmar_meaning": "ထိရောက်စွာ",
+        "example_sentence": "The new system allows the team to work more effectively."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 445,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 8,
+        "extracted_line": 2007,
+        "source_excerpt": "effectively adv.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Result-achieving adverb, not effectively meaning virtually or in practice; publisher B1 versus draft B2.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "historic",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Important enough to be remembered as part of history.",
+        "myanmar_meaning": "သမိုင်းဝင်အရေးပါသော",
+        "example_sentence": "The agreement was a historic moment for the town."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 448,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 8,
+        "extracted_line": 2121,
+        "source_excerpt": "historic adj.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Historically significant rather than merely old/historical; Oxford PDF B1 but dictionary footer currently displays C1, requiring independent reconciliation.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/historic",
+        "observed_on": "2026-10-30",
+        "sense_number": 1,
+        "page_text_line_start": 107,
+        "page_text_line_end": 124,
+        "editorial_interpretation": "Oxford historic sense 1 denotes historical significance, contrasted with historical as merely related to the past; dictionary footer C1 conflicts with PDF B1.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "သမိုင်းတွင် အရေးပါသော၊ သမိုင်းဝင်မှတ်တမ်းတင်လောက်သော",
+        "original_example_sentence": "The town celebrated a historic agreement to protect the old library.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "improvement",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A change that makes something better.",
+        "myanmar_meaning": "တိုးတက်ကောင်းမွန်မှု",
+        "example_sentence": "There has been a clear improvement in customer service."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 449,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 8,
+        "extracted_line": 2141,
+        "source_excerpt": "improvement n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Progress in service quality rather than one specific upgrade; countability and Myanmar nuance require review; publisher B1 versus draft B2.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "philosophy",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A set of ideas about how to live, think, or approach an activity.",
+        "myanmar_meaning": "အတွေးအခေါ်အယူအဆ၊ ခံယူချက်",
+        "example_sentence": "Her teaching philosophy encourages students to ask questions."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 450,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 12,
+        "extracted_line": 3068,
+        "source_excerpt": "philosophy n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft teaching philosophy is a guiding set of beliefs, not the academic discipline; countable/uncountable distinctions.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/philosophy",
+        "observed_on": "2026-10-30",
+        "sense_number": 3,
+        "page_text_line_start": 152,
+        "page_text_line_end": 169,
+        "editorial_interpretation": "Oxford countable guiding set of beliefs/attitudes is closer to teaching philosophy than academic philosophy sense 1.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "သင်ကြားရေး သို့မဟုတ် လုပ်ငန်းဆောင်ရွက်ပုံကို လမ်းညွှန်ပေးသော အခြေခံခံယူချက်",
+        "original_example_sentence": "Her teaching philosophy encourages students to ask thoughtful questions.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "settlement",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An agreement that ends a dispute between people or organisations.",
+        "myanmar_meaning": "အငြင်းပွားမှုဖြေရှင်းရန် သဘောတူညီချက်",
+        "example_sentence": "The two companies reached a settlement without going to court."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 451,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1764,
+        "source_excerpt": "settlement n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A negotiated agreement ending a dispute, not a residential community or repayment of debt; publisher C1 versus draft B2.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/settlement",
+        "observed_on": "2026-10-30",
+        "sense_number": 1,
+        "page_text_line_start": 105,
+        "page_text_line_end": 115,
+        "editorial_interpretation": "Oxford countable negotiated agreement ending an argument matches reached a settlement, not an inhabited settlement or debt repayment.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "အငြင်းပွားမှုကို အဆုံးသတ်ရန် နှစ်ဖက်သဘောတူထားသော သဘောတူညီချက်",
+        "original_example_sentence": "The two companies reached a settlement after several meetings.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
