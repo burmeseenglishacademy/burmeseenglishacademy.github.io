@@ -59,7 +59,7 @@ def audit(packet, shortlist):
         require(original is not None, "shortlist word missing")
         require(original.get("part_of_speech") == row["part_of_speech"], "POS changed")
         for k, v in row["shortlist_snapshot"].items():
-            require(original.get(k) == v, "shortlist bilingual/example snapshot changed: " + row["word"] + " field=" + k + " actual=" + repr(original.get(k)) + " expected=" + repr(v))
+            require(original.get("burmese_meaning" if k == "myanmar_meaning" else k) == v, "shortlist bilingual/example snapshot changed: " + row["word"] + " field=" + k)
         for k, v in row["shortlist_provenance"].items():
             require(original.get(k) == v, "historical Git provenance changed: " + row["word"])
         require(original.get("editorial_hold") is True, "editorial hold removed")
@@ -102,7 +102,7 @@ def negative_tests(packet, shortlist):
                 p = copy.deepcopy(packet)
                 p["records"][i][obj][key] = "FORGED"
                 reject(p, shortlist)
-    for key in ("english_definition", "myanmar_meaning", "example_sentence", "source_blob_sha",
+    for key in ("english_definition", "burmese_meaning", "example_sentence", "source_blob_sha",
                 "editorial_hold", "reviewed_burmese", "release_approved"):
         s = copy.deepcopy(shortlist)
         entry = next(x for x in s["entries"] if x["word"] == "raincoat" and x["level"] == "A2")
