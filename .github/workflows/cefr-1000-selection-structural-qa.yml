@@ -615,6 +615,11 @@ jobs:
       - name: Reject 20 fabricated publisher, Myanmar and independent-review mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_cambridge_c1_six_followup.py --level ALL --self-test
+      - name: Audit eight C1 Cambridge senses without publisher CEFR labels or human approval
+        run: python3 tools/audit_cefr_1000_cambridge_c1_eight_unlabelled.py --level "${{ matrix.level }}"
+      - name: Reject 115 forged C1 publisher, Myanmar, provenance and approval mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_cambridge_c1_eight_unlabelled.py --level ALL --self-test
       - name: Cross-check actual shared wordforms with protected IELTS 1000 dataset
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_ielts_overlap.py
