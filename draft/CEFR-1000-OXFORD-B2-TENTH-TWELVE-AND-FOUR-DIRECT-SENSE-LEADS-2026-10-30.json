@@ -56,7 +56,8 @@
       "editorial_hold": true,
       "independently_reviewed": false,
       "release_approved": false,
-      "independent_reviewer_receipt": null
+      "independent_reviewer_receipt": null,
+      "publisher_surface_conflict": null
     },
     {
       "word": "operate",
@@ -103,7 +104,8 @@
       "editorial_hold": true,
       "independently_reviewed": false,
       "release_approved": false,
-      "independent_reviewer_receipt": null
+      "independent_reviewer_receipt": null,
+      "publisher_surface_conflict": null
     },
     {
       "word": "permission",
@@ -138,7 +140,8 @@
       "editorial_hold": true,
       "independently_reviewed": false,
       "release_approved": false,
-      "independent_reviewer_receipt": null
+      "independent_reviewer_receipt": null,
+      "publisher_surface_conflict": null
     },
     {
       "word": "reply",
@@ -173,7 +176,8 @@
       "editorial_hold": true,
       "independently_reviewed": false,
       "release_approved": false,
-      "independent_reviewer_receipt": null
+      "independent_reviewer_receipt": null,
+      "publisher_surface_conflict": null
     },
     {
       "word": "tradition",
@@ -208,7 +212,8 @@
       "editorial_hold": true,
       "independently_reviewed": false,
       "release_approved": false,
-      "independent_reviewer_receipt": null
+      "independent_reviewer_receipt": null,
+      "publisher_surface_conflict": null
     },
     {
       "word": "visual",
@@ -243,7 +248,8 @@
       "editorial_hold": true,
       "independently_reviewed": false,
       "release_approved": false,
-      "independent_reviewer_receipt": null
+      "independent_reviewer_receipt": null,
+      "publisher_surface_conflict": null
     },
     {
       "word": "criticism",
@@ -278,7 +284,8 @@
       "editorial_hold": true,
       "independently_reviewed": false,
       "release_approved": false,
-      "independent_reviewer_receipt": null
+      "independent_reviewer_receipt": null,
+      "publisher_surface_conflict": null
     },
     {
       "word": "effectively",
@@ -313,7 +320,8 @@
       "editorial_hold": true,
       "independently_reviewed": false,
       "release_approved": false,
-      "independent_reviewer_receipt": null
+      "independent_reviewer_receipt": null,
+      "publisher_surface_conflict": null
     },
     {
       "word": "historic",
@@ -360,7 +368,16 @@
       "editorial_hold": true,
       "independently_reviewed": false,
       "release_approved": false,
-      "independent_reviewer_receipt": null
+      "independent_reviewer_receipt": null,
+      "publisher_surface_conflict": {
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/historic",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 165,
+        "page_text_line_end": 169,
+        "dictionary_footer_label": "C1",
+        "pdf_word_pos_label": "B1",
+        "resolution": "UNRESOLVED_PUBLISHER_SURFACE_CONFLICT_INDEPENDENT_SENSE_REVIEW_REQUIRED"
+      }
     },
     {
       "word": "improvement",
@@ -395,7 +412,8 @@
       "editorial_hold": true,
       "independently_reviewed": false,
       "release_approved": false,
-      "independent_reviewer_receipt": null
+      "independent_reviewer_receipt": null,
+      "publisher_surface_conflict": null
     },
     {
       "word": "philosophy",
@@ -442,7 +460,8 @@
       "editorial_hold": true,
       "independently_reviewed": false,
       "release_approved": false,
-      "independent_reviewer_receipt": null
+      "independent_reviewer_receipt": null,
+      "publisher_surface_conflict": null
     },
     {
       "word": "settlement",
@@ -489,7 +508,8 @@
       "editorial_hold": true,
       "independently_reviewed": false,
       "release_approved": false,
-      "independent_reviewer_receipt": null
+      "independent_reviewer_receipt": null,
+      "publisher_surface_conflict": null
     }
   ]
 }
