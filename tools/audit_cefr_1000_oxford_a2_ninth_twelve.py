@@ -27,7 +27,7 @@ def require(ok, reason):
 
 def git_blob_sha(path):
     raw = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
 
 def audit(packet, shortlist, check_file_sha=True):
     require(isinstance(packet, dict) and packet == EXPECTED,
