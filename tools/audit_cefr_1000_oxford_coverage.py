@@ -57,14 +57,15 @@ PACKETS = {
            "C1-SEVENTH-TWELVE-2026-10-30",
            "C1-EIGHTH-TWELVE-2026-10-30",
            "C1-NINTH-TWELVE-AND-EIGHT-DIRECT-SENSE-LEADS-2026-10-30",
-           "C1-TENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-30"),
+           "C1-TENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-30",
+           "C1-ELEVENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-30"),
 }
 EXPECTED = {
     "A1": {"observations": 203, "distinct": 195, "A1": 195},
     "A2": {"observations": 120, "distinct": 120, "A1": 72, "A2": 41, "B1": 7},
     "B1": {"observations": 120, "distinct": 120, "A1": 19, "A2": 47, "B1": 39, "B2": 15, "locator_only": 12},
     "B2": {"observations": 120, "distinct": 118, "A1": 2, "A2": 18, "B1": 23, "B2": 65, "C1": 9, "UNLISTED": 1, "locator_only": 12},
-    "C1": {"observations": 108, "distinct": 99, "B1": 2, "B2": 42, "C1": 53, "UNLISTED": 2, "locator_only": 12},
+    "C1": {"observations": 120, "distinct": 111, "B1": 3, "B2": 44, "C1": 62, "UNLISTED": 2, "locator_only": 12},
 }
 SOURCE_PREFIX = "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_"
 SOURCE_SUFFIX = "_by_CEFR_level.pdf"

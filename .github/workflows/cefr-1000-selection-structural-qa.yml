@@ -126,6 +126,8 @@ on:
       - tools/audit_cefr_1000_oxford_c1_ninth_twelve.py
       - draft/CEFR-1000-OXFORD-C1-TENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-30.json
       - tools/audit_cefr_1000_oxford_c1_tenth_twelve.py
+      - draft/CEFR-1000-OXFORD-C1-ELEVENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-30.json
+      - tools/audit_cefr_1000_oxford_c1_eleventh_twelve.py
       - draft/CEFR-1000-CAMBRIDGE-A2-COMPOUND-SIX-SENSE-TRIAGE-2026-10-30.json
       - tools/audit_cefr_1000_cambridge_a2_compound_six.py
       - tools/audit_cefr_1000_oxford_c1_eighth_twelve.py
@@ -328,7 +330,7 @@ jobs:
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_a2_seventh_twelve.py --level ALL --self-test
       - name: Python syntax preflight for new A2 and C1 source auditors
-        run: python3 -m py_compile tools/audit_cefr_1000_oxford_a2_eighth_twelve.py tools/audit_cefr_1000_oxford_a2_ninth_twelve.py tools/audit_cefr_1000_oxford_c1_ninth_twelve.py tools/audit_cefr_1000_oxford_c1_tenth_twelve.py
+        run: python3 -m py_compile tools/audit_cefr_1000_oxford_a2_eighth_twelve.py tools/audit_cefr_1000_oxford_a2_ninth_twelve.py tools/audit_cefr_1000_oxford_c1_ninth_twelve.py tools/audit_cefr_1000_oxford_c1_tenth_twelve.py tools/audit_cefr_1000_oxford_c1_eleventh_twelve.py
       - name: Audit eighth A2 Oxford word-POS and four directly opened dictionary sense leads
         run: python3 tools/audit_cefr_1000_oxford_a2_eighth_twelve.py --level "${{ matrix.level }}"
       - name: Reject forged eighth A2 publisher, Myanmar, example, provenance and human signoff
@@ -543,6 +545,11 @@ jobs:
         run: python3 tools/audit_cefr_1000_oxford_c1_tenth_twelve.py --level "${{ matrix.level }}"
       - name: Reject tenth C1 forged evidence and signoffs
         run: python3 tools/audit_cefr_1000_oxford_c1_tenth_twelve.py --level ALL --self-test
+      - name: Audit eleventh C1 Oxford source/POS evidence and four direct dictionary sense leads
+        run: python3 tools/audit_cefr_1000_oxford_c1_eleventh_twelve.py --level "${{ matrix.level }}"
+      - name: Reject 124 forged eleventh C1 publisher, bilingual, provenance and approval mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_oxford_c1_eleventh_twelve.py --level ALL --self-test
       - name: Validate six Cambridge A2 compound sense leads, snapshots and no approval
         run: python3 tools/audit_cefr_1000_cambridge_a2_compound_six.py --level "${{ matrix.level }}"
       - name: Reject forged A2 compound CEFR badges, Myanmar, provenance and human approvals

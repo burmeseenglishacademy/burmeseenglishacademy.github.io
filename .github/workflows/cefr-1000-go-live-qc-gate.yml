@@ -135,6 +135,8 @@ on:
       - tools/audit_cefr_1000_oxford_c1_ninth_twelve.py
       - draft/CEFR-1000-OXFORD-C1-TENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-30.json
       - tools/audit_cefr_1000_oxford_c1_tenth_twelve.py
+      - draft/CEFR-1000-OXFORD-C1-ELEVENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-30.json
+      - tools/audit_cefr_1000_oxford_c1_eleventh_twelve.py
       - draft/CEFR-1000-CAMBRIDGE-A2-COMPOUND-SIX-SENSE-TRIAGE-2026-10-30.json
       - tools/audit_cefr_1000_cambridge_a2_compound_six.py
       - tools/audit_cefr_1000_oxford_c1_eighth_twelve.py
@@ -212,7 +214,7 @@ jobs:
           python3 tools/audit_cefr_1000_oxford_a2_fifth_twelve.py --level ALL --self-test
            python3 tools/audit_cefr_1000_oxford_a2_sixth_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_a2_seventh_twelve.py --level ALL --self-test
-          python3 -m py_compile tools/audit_cefr_1000_oxford_a2_eighth_twelve.py tools/audit_cefr_1000_oxford_a2_ninth_twelve.py tools/audit_cefr_1000_oxford_c1_ninth_twelve.py tools/audit_cefr_1000_oxford_c1_tenth_twelve.py
+          python3 -m py_compile tools/audit_cefr_1000_oxford_a2_eighth_twelve.py tools/audit_cefr_1000_oxford_a2_ninth_twelve.py tools/audit_cefr_1000_oxford_c1_ninth_twelve.py tools/audit_cefr_1000_oxford_c1_tenth_twelve.py tools/audit_cefr_1000_oxford_c1_eleventh_twelve.py
           python3 tools/audit_cefr_1000_oxford_a2_eighth_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_a2_ninth_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_a2_rewrites.py --level ALL --self-test
@@ -244,6 +246,7 @@ jobs:
           python3 tools/audit_cefr_1000_oxford_c1_eighth_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_c1_ninth_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_c1_tenth_twelve.py --level ALL --self-test
+          python3 tools/audit_cefr_1000_oxford_c1_eleventh_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_cambridge_a2_compound_six.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_c1_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_dictionary_c1.py --level ALL --self-test

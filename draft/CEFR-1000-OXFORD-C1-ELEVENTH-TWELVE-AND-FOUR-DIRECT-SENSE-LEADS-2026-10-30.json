@@ -1,0 +1,504 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "C1_ELEVENTH_TWELVE_DIRECT_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 12
+  },
+  "publisher_reference_level_counts": {
+    "B1": 1,
+    "B2": 2,
+    "C1": 9
+  },
+  "word_pos_discrepancies": 3,
+  "direct_dictionary_sense_leads": [
+    {
+      "word": "qualify",
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/qualify",
+      "sense_number": 4,
+      "lines": [
+        150,
+        169
+      ],
+      "interpretation": "Eligibility for a grant or benefit rather than professional certification, competition entry or weakening a statement.",
+      "part_of_speech": "verb",
+      "observed_on": "2026-10-30",
+      "scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+    },
+    {
+      "word": "precedent",
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/precedent",
+      "sense_number": 1,
+      "lines": [
+        105,
+        129
+      ],
+      "interpretation": "An earlier official decision serving as a guide for later cases, rather than a general past event or established custom.",
+      "part_of_speech": "noun",
+      "observed_on": "2026-10-30",
+      "scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+    },
+    {
+      "word": "commentary",
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/commentary",
+      "sense_number": 3,
+      "lines": [
+        157,
+        180
+      ],
+      "interpretation": "Analysis/criticism of a subject rather than a live description of an unfolding sporting event.",
+      "part_of_speech": "noun",
+      "observed_on": "2026-10-30",
+      "scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+    },
+    {
+      "word": "harassment",
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/harassment",
+      "sense_number": 1,
+      "lines": [
+        111,
+        121
+      ],
+      "interpretation": "Workplace harassment rather than repeated attacks on an enemy; uncountable noun.",
+      "part_of_speech": "noun",
+      "observed_on": "2026-10-30",
+      "scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+    }
+  ],
+  "unapproved_editorial_suggestions": [
+    {
+      "word": "qualify",
+      "proposed_myanmar": "ထောက်ပံ့ကြေးရရှိရန် သတ်မှတ်ချက်များနှင့် ကိုက်ညီသည်",
+      "proposed_example": "Applicants who meet the income rules may qualify for the grant.",
+      "status": "EDITORIAL_PROPOSAL_NOT_INDEPENDENTLY_REVIEWED"
+    },
+    {
+      "word": "precedent",
+      "proposed_myanmar": "အလားတူအမှုများအတွက် နောင်တွင် ကိုးကားနိုင်သည့် ယခင်တရားရေးဆုံးဖြတ်ချက်",
+      "proposed_example": "The court's decision set a precedent for similar cases.",
+      "status": "EDITORIAL_PROPOSAL_NOT_INDEPENDENTLY_REVIEWED"
+    },
+    {
+      "word": "commentary",
+      "proposed_myanmar": "အကြောင်းအရာတစ်ခုအပေါ် ဝေဖန်သုံးသပ်ချက်",
+      "proposed_example": "The documentary includes expert commentary on the research findings.",
+      "status": "EDITORIAL_PROPOSAL_NOT_INDEPENDENTLY_REVIEWED"
+    },
+    {
+      "word": "harassment",
+      "proposed_myanmar": "တစ်စုံတစ်ဦးကို စိတ်အနှောင့်အယှက်ဖြစ်စေသည့် မလိုလားအပ်သော နှောင့်ယှက်ပြုမူမှု",
+      "proposed_example": "The organisation introduced clearer procedures for reporting workplace harassment.",
+      "status": "EDITORIAL_PROPOSAL_NOT_INDEPENDENTLY_REVIEWED"
+    }
+  ],
+  "independently_approved_count": 0,
+  "independent_human_review_receipts": [],
+  "audio_real_listening_signoffs": [],
+  "release_approved": false,
+  "source_limitations": "Direct Oxford 3000/5000 PDF word/POS observations are not exact-sense CEFR approval. Four dictionary pages are editorial sense leads, not independent human review. No audio listening, iPhone, hosting or deployment signoff. Frozen shortlist and production assets unchanged.",
+  "records": [
+    {
+      "word": "harassment",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Repeated unwanted behaviour that causes distress or fear.",
+        "myanmar_meaning": "နှောင့်ယှက်စော်ကားမှု",
+        "example_sentence": "The company has a policy against workplace harassment."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 662,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 5,
+        "extracted_line": 1277,
+        "source_excerpt": "harassment n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Workplace harassment is an uncountable process noun, not an individual attack; the draft adds 'repeated' which should be checked against the dictionary wording.",
+      "independent_reviewer_task": "Independent human reviewer must verify publisher exact-sense CEFR evidence, English definition, fluent Myanmar, original example grammar, British pronunciation, and any cross-level justification with dated content-bound receipts. PDF word/POS and editorial suggestions are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "commentary",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Spoken or written remarks that explain or analyse events.",
+        "myanmar_meaning": "ဖြစ်ရပ်များအပေါ် သုံးသပ်ရှင်းလင်းချက်",
+        "example_sentence": "The documentary includes expert commentary on the findings."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 730,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 924,
+        "source_excerpt": "commentary n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The documentary example means analytical remarks, not live sports narration; countable/uncountable and commentary-on collocation need review.",
+      "independent_reviewer_task": "Independent human reviewer must verify publisher exact-sense CEFR evidence, English definition, fluent Myanmar, original example grammar, British pronunciation, and any cross-level justification with dated content-bound receipts. PDF word/POS and editorial suggestions are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "classification",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The process of arranging things into groups according to shared features.",
+        "myanmar_meaning": "တူညီသော လက္ခဏာများအလိုက် အုပ်စုခွဲသတ်မှတ်ခြင်း",
+        "example_sentence": "The classification of the samples depends on their chemical properties."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 925,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 906,
+        "source_excerpt": "classification n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Classification as a process differs from an individual class/category; the Myanmar gloss and chemistry example require precise sense alignment.",
+      "independent_reviewer_task": "Independent human reviewer must verify publisher exact-sense CEFR evidence, English definition, fluent Myanmar, original example grammar, British pronunciation, and any cross-level justification with dated content-bound receipts. PDF word/POS and editorial suggestions are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "congressional",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Relating to a country's congress or its members.",
+        "myanmar_meaning": "လွှတ်တော်နှင့်ဆိုင်သော",
+        "example_sentence": "A congressional committee examined the proposal."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 812,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 961,
+        "source_excerpt": "congressional adj.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Congressional can refer to a specific legislature, especially US Congress; Myanmar 'လွှတ်တော်' is broader and may lose institutional specificity.",
+      "independent_reviewer_task": "Independent human reviewer must verify publisher exact-sense CEFR evidence, English definition, fluent Myanmar, original example grammar, British pronunciation, and any cross-level justification with dated content-bound receipts. PDF word/POS and editorial suggestions are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "partially",
+      "level": "C1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "To some extent but not completely.",
+        "myanmar_meaning": "တစ်စိတ်တစ်ပိုင်းသာ၊ အပြည့်အဝမဟုတ်ဘဲ",
+        "example_sentence": "The road was partially closed during the repairs."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 860,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 6,
+        "extracted_line": 1559,
+        "source_excerpt": "partially adv.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Partially closed road should not be confused with part-time or incomplete road works; register and degree require human review.",
+      "independent_reviewer_task": "Independent human reviewer must verify publisher exact-sense CEFR evidence, English definition, fluent Myanmar, original example grammar, British pronunciation, and any cross-level justification with dated content-bound receipts. PDF word/POS and editorial suggestions are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "precedent",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An earlier event or decision used as a guide for a similar situation.",
+        "myanmar_meaning": "အလားတူအခြေအနေတွင် စံနမူနာအဖြစ် အသုံးပြုသည့် ယခင်ဖြစ်ရပ် သို့မဟုတ် ဆုံးဖြတ်ချက်",
+        "example_sentence": "The ruling set a precedent for later cases."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 44,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 6,
+        "extracted_line": 1593,
+        "source_excerpt": "precedent n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "An earlier ruling guiding later cases, not merely a prior event; compare legal and general senses.",
+      "independent_reviewer_task": "Independent human reviewer must verify publisher exact-sense CEFR evidence, English definition, fluent Myanmar, original example grammar, British pronunciation, and any cross-level justification with dated content-bound receipts. PDF word/POS and editorial suggestions are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "socialist",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Relating to a political or economic system favouring social ownership or public control of major resources.",
+        "myanmar_meaning": "ဆိုရှယ်လစ်စနစ်နှင့်ဆိုင်သော",
+        "example_sentence": "The article compares socialist economic policies in different countries."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 502,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1790,
+        "source_excerpt": "socialist adj.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Political-economic adjective, not the noun 'socialist'; definition may overstate a single universally agreed form of socialism.",
+      "independent_reviewer_task": "Independent human reviewer must verify publisher exact-sense CEFR evidence, English definition, fluent Myanmar, original example grammar, British pronunciation, and any cross-level justification with dated content-bound receipts. PDF word/POS and editorial suggestions are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "solely",
+      "level": "C1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Only and not involving anything or anyone else.",
+        "myanmar_meaning": "တစ်ခုတည်းသာ၊ သီးသန့်သာ",
+        "example_sentence": "The decision was based solely on the test results."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 734,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1792,
+        "source_excerpt": "solely adv.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Only/exclusively, not alone in the sense of without company; distinguish exclusively based on test results.",
+      "independent_reviewer_task": "Independent human reviewer must verify publisher exact-sense CEFR evidence, English definition, fluent Myanmar, original example grammar, British pronunciation, and any cross-level justification with dated content-bound receipts. PDF word/POS and editorial suggestions are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "striking",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Very noticeable or unusual in an impressive way.",
+        "myanmar_meaning": "အလွန်ထင်ရှားသော၊ မျက်စိကျစရာကောင်းသော",
+        "example_sentence": "The report revealed a striking difference between the two groups."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 733,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1833,
+        "source_excerpt": "striking adj.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Noticeably different or remarkable, not the present participle of strike; clarify whether positive impression is required.",
+      "independent_reviewer_task": "Independent human reviewer must verify publisher exact-sense CEFR evidence, English definition, fluent Myanmar, original example grammar, British pronunciation, and any cross-level justification with dated content-bound receipts. PDF word/POS and editorial suggestions are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "acknowledge",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To accept or recognise that a fact or problem exists.",
+        "myanmar_meaning": "အချက်အလက် သို့မဟုတ် ပြဿနာတစ်ခု ရှိကြောင်း အသိအမှတ်ပြုသည်",
+        "example_sentence": "The report must acknowledge the limits of the survey."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 855,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 10,
+        "extracted_line": 2601,
+        "source_excerpt": "acknowledge v.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Recognising a problem's existence versus thanking someone or admitting receipt; Myanmar and example must match the recognition sense.",
+      "independent_reviewer_task": "Independent human reviewer must verify publisher exact-sense CEFR evidence, English definition, fluent Myanmar, original example grammar, British pronunciation, and any cross-level justification with dated content-bound receipts. PDF word/POS and editorial suggestions are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "adopt",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To start using a new method or idea.",
+        "myanmar_meaning": "နည်းလမ်းအသစ်ကို လက်ခံကျင့်သုံးသည်",
+        "example_sentence": "The team will adopt a safer procedure."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 815,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 10,
+        "extracted_line": 2608,
+        "source_excerpt": "adopt v.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Adopt a method/idea versus legally adopt a child; C1 provisional level conflicts with publisher B2 word/POS.",
+      "independent_reviewer_task": "Independent human reviewer must verify publisher exact-sense CEFR evidence, English definition, fluent Myanmar, original example grammar, British pronunciation, and any cross-level justification with dated content-bound receipts. PDF word/POS and editorial suggestions are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "qualify",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To meet the conditions required for a benefit or opportunity.",
+        "myanmar_meaning": "အခွင့်အရေးတစ်ခုအတွက် သတ်မှတ်ချက်ပြည့်မီသည်",
+        "example_sentence": "Applicants must qualify for the grant before applying."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 859,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 9,
+        "extracted_line": 2344,
+        "source_excerpt": "qualify v.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Eligibility for a grant versus job qualification, sports qualification, or qualifying a statement; provisional C1 conflicts with B1 word/POS.",
+      "independent_reviewer_task": "Independent human reviewer must verify publisher exact-sense CEFR evidence, English definition, fluent Myanmar, original example grammar, British pronunciation, and any cross-level justification with dated content-bound receipts. PDF word/POS and editorial suggestions are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
