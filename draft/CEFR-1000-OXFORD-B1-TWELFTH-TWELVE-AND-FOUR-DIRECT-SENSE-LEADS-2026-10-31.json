@@ -1,0 +1,494 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B1_TWELFTH_TWELVE_DIRECT_OXFORD_WORD_POS_FOUR_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-31",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 12,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A2": 7,
+    "B1": 3,
+    "B2": 2
+  },
+  "word_pos_discrepancies": 9,
+  "direct_dictionary_sense_leads": 4,
+  "independently_approved_count": 0,
+  "source_limitations": "Direct Oxford 3000 PDF CEFR labels cover headword/POS, NOT independent exact-sense CEFR classification. Four directly inspected Oxford dictionary sense leads are editorial observations, NOT human signoff. No final George/Emma audio listening, physical iPhone Safari, measured Pages hosting, or deployment. Frozen shortlist and production untouched.",
+  "records": [
+    {
+      "word": "achieve",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To succeed in reaching a goal through effort.",
+        "myanmar_meaning": "အောင်မြင်စွာ ရရှိသည်",
+        "example_sentence": "He worked hard to achieve his goal."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 620,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 4,
+        "extracted_line": 915,
+        "source_excerpt": "achieve v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The verb is A2 in Oxford's word/POS list, one level below provisional B1; the goal-through-effort sense needs human confirmation.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human editor must verify exact sense, word/POS publisher CEFR applicability, English, fluent Myanmar, original example grammar, historical source, British pronunciation; source research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "afford",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To have enough money to pay for something.",
+        "myanmar_meaning": "ဝယ်ယူရန် ငွေကြေးတတ်နိုင်သည်",
+        "example_sentence": "We cannot afford a new computer this month."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 621,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 7,
+        "extracted_line": 1796,
+        "source_excerpt": "afford v.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Money-ability meaning with can/could or negative construction; do not confuse with formal afford somebody something or cannot afford to risk.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/afford",
+        "observed_on": "2026-10-31",
+        "sense_number": 1,
+        "page_text_line_start": 112,
+        "page_text_line_end": 125,
+        "editorial_interpretation": "The first Oxford verb sense is financial ability, often in negative/modal constructions; original 'cannot afford a new computer' is grammatically aligned.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ဝယ်ယူရန် သို့မဟုတ် လုပ်ဆောင်ရန် ငွေကြေးလုံလောက်သည်",
+        "original_example_sentence": "They cannot afford to buy a new car.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human editor must verify exact sense, word/POS publisher CEFR applicability, English, fluent Myanmar, original example grammar, historical source, British pronunciation; source research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "category",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A group of things that share a particular feature.",
+        "myanmar_meaning": "အမျိုးအစား၊ အုပ်စု",
+        "example_sentence": "Put each book in the correct category."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 622,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 7,
+        "extracted_line": 1878,
+        "source_excerpt": "category n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Countable classification group; verify Myanmar differentiates a category from a physical collection.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human editor must verify exact sense, word/POS publisher CEFR applicability, English, fluent Myanmar, original example grammar, historical source, British pronunciation; source research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "relevant",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Closely connected with the subject being discussed.",
+        "myanmar_meaning": "သက်ဆိုင်သော",
+        "example_sentence": "Please include only relevant details in your answer."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 623,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 12,
+        "extracted_line": 3131,
+        "source_excerpt": "relevant adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher B2 adjective versus provisional B1; must be relevant to a topic, not simply interesting or recent.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human editor must verify exact sense, word/POS publisher CEFR applicability, English, fluent Myanmar, original example grammar, historical source, British pronunciation; source research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "fresh",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Recently made or obtained, rather than old.",
+        "myanmar_meaning": "လတ်ဆတ်သော",
+        "example_sentence": "We bought fresh vegetables from the market."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 684,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 5,
+        "extracted_line": 1235,
+        "source_excerpt": "fresh adj.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Recently picked food sense, not fresh air, fresh evidence, or the separate new-start sense.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/fresh_1",
+        "observed_on": "2026-10-31",
+        "sense_number": 1,
+        "page_text_line_start": 108,
+        "page_text_line_end": 125,
+        "editorial_interpretation": "Oxford first adjective sense describes recently picked or produced food, not necessarily something merely new or clean.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "မကြာသေးမီက ခူးဆွတ်ထားသော သို့မဟုတ် ပြုလုပ်ထားသော (အစားအစာ)",
+        "original_example_sentence": "We bought fresh vegetables at the market.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human editor must verify exact sense, word/POS publisher CEFR applicability, English, fluent Myanmar, original example grammar, historical source, British pronunciation; source research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "scale",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The size or extent of an activity or problem.",
+        "myanmar_meaning": "အတိုင်းအတာ၊ ပမာဏ",
+        "example_sentence": "The scale of the project surprised the team."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 685,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 12,
+        "extracted_line": 3162,
+        "source_excerpt": "scale n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The size/extent of a project, usually singular or uncountable, not the numerical rating scale, weighing device, or map ratio.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/scale_1",
+        "observed_on": "2026-10-31",
+        "sense_number": 1,
+        "page_text_line_start": 106,
+        "page_text_line_end": 119,
+        "editorial_interpretation": "Oxford first noun sense is the size or extent of something, often singular/uncountable; distinguish from a countable rating scale.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "လုပ်ငန်း သို့မဟုတ် ပြဿနာတစ်ခု၏ အရွယ်အစား၊ ကျယ်ပြန့်မှုအတိုင်းအတာ",
+        "original_example_sentence": "The scale of the repair work surprised everyone.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human editor must verify exact sense, word/POS publisher CEFR applicability, English, fluent Myanmar, original example grammar, historical source, British pronunciation; source research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "score",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The number of points gained in a game or test.",
+        "myanmar_meaning": "ရမှတ်",
+        "example_sentence": "Her score improved after more practice."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 686,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1587,
+        "source_excerpt": "score v., n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Countable test/game points; distinguish score noun from verb and music score.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human editor must verify exact sense, word/POS publisher CEFR applicability, English, fluent Myanmar, original example grammar, historical source, British pronunciation; source research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "smart",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Able to learn and understand things quickly.",
+        "myanmar_meaning": "ဉာဏ်ကောင်းသော",
+        "example_sentence": "That smart student solved the puzzle in minutes."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 687,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 9,
+        "extracted_line": 2446,
+        "source_excerpt": "smart adj.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Quick to learn/intelligent sense, not fashionable clothing, smart devices, or a painful sting.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human editor must verify exact sense, word/POS publisher CEFR applicability, English, fluent Myanmar, original example grammar, historical source, British pronunciation; source research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "throw",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To send something through the air using your hand.",
+        "myanmar_meaning": "ပစ်သည်",
+        "example_sentence": "Please throw the ball gently to your partner."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 688,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 7,
+        "extracted_line": 1705,
+        "source_excerpt": "throw v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Hand-propelled object, not throw a party or throw away; example adverb placement and transitivity need review.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human editor must verify exact sense, word/POS publisher CEFR applicability, English, fluent Myanmar, original example grammar, historical source, British pronunciation; source research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "wedding",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A ceremony in which two people get married.",
+        "myanmar_meaning": "မင်္ဂလာဆောင်ပွဲ",
+        "example_sentence": "Their wedding took place in a small garden."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 689,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 7,
+        "extracted_line": 1757,
+        "source_excerpt": "wedding n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Marriage ceremony versus party/reception; provisional B1 is higher than Oxford A2.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human editor must verify exact sense, word/POS publisher CEFR applicability, English, fluent Myanmar, original example grammar, historical source, British pronunciation; source research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "feature",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An important or noticeable part of something.",
+        "myanmar_meaning": "ထူးခြားသည့် အင်္ဂါရပ်",
+        "example_sentence": "A useful feature of this phone is its long battery life."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 690,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 5,
+        "extracted_line": 1204,
+        "source_excerpt": "feature n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Product function/characteristic sense; avoid conflating with facial features or verb feature.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human editor must verify exact sense, word/POS publisher CEFR applicability, English, fluent Myanmar, original example grammar, historical source, British pronunciation; source research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "target",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A result or amount that someone aims to achieve.",
+        "myanmar_meaning": "ရည်မှန်းချက်၊ သတ်မှတ်ပန်းတိုင်",
+        "example_sentence": "The team reached its sales target in June."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 691,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 7,
+        "extracted_line": 1690,
+        "source_excerpt": "target n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A measurable planned result, such as a sales target; not a shooting target or the audience a product aims at.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/target_1",
+        "observed_on": "2026-10-31",
+        "sense_number": 1,
+        "page_text_line_start": 105,
+        "page_text_line_end": 115,
+        "editorial_interpretation": "Oxford first noun sense is an intended result, frequently a measurable sales/organisational target; not a physical target.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ရောက်ရှိအောင် ကြိုးပမ်းထားသည့် သတ်မှတ်ရလဒ် သို့မဟုတ် ပမာဏ",
+        "original_example_sentence": "The sales team met its monthly target.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human editor must verify exact sense, word/POS publisher CEFR applicability, English, fluent Myanmar, original example grammar, historical source, British pronunciation; source research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
