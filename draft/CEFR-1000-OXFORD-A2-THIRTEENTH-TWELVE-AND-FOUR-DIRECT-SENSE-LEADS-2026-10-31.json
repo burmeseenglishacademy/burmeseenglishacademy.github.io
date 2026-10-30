@@ -1,0 +1,494 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A2_THIRTEENTH_TWELVE_DIRECT_OXFORD_WORD_POS_FOUR_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-31",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 12,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 9,
+    "A2": 2,
+    "B1": 1
+  },
+  "word_pos_discrepancies": 10,
+  "direct_dictionary_sense_leads": 4,
+  "independently_approved_count": 0,
+  "source_limitations": "Oxford publisher CEFR PDF lists headwords/POS, not independent exact-sense CEFR. 'third' ordinal number versus provisional ordinal adjective requires separate POS adjudication. Dictionary topic badges and site-wide Word of the Day footers are not exact-sense CEFR. All 1,000 remain editorial-held with zero independent human approvals, zero real George/Emma listening signoffs and no physical iPhone or deployment evidence.",
+  "records": [
+    {
+      "word": "club",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A group of people who meet because of a shared interest.",
+        "myanmar_meaning": "အသင်း၊ ဝါသနာတူအဖွဲ့",
+        "example_sentence": "He joined a chess club after school."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 681,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 1,
+        "extracted_line": 157,
+        "source_excerpt": "club n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A1 Oxford noun label does not certify the shared-interest association sense; club can also mean a sports venue or weapon.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human editor must verify exact intended sense, source CEFR applicability, English, fluent Myanmar, original example grammar, historical source provenance and British pronunciation; publisher research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "film",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A story shown through moving pictures.",
+        "myanmar_meaning": "ရုပ်ရှင်ဇာတ်ကား",
+        "example_sentence": "We watched a funny film last night."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 682,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 2,
+        "extracted_line": 287,
+        "source_excerpt": "film n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford A1 noun includes movie meaning; distinguish photographic film and UK film versus American movie.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human editor must verify exact intended sense, source CEFR applicability, English, fluent Myanmar, original example grammar, historical source provenance and British pronunciation; publisher research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "event",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Something organized that happens at a particular time.",
+        "myanmar_meaning": "အခမ်းအနား၊ ပွဲအစီအစဉ်",
+        "example_sentence": "The school event begins at nine."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 683,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 1,
+        "extracted_line": 249,
+        "source_excerpt": "event n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford A1 noun; shortlist narrows to an organized school event, while event can mean any important occurrence.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human editor must verify exact intended sense, source CEFR applicability, English, fluent Myanmar, original example grammar, historical source provenance and British pronunciation; publisher research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "watch",
+      "level": "A2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To look at something carefully for a period of time.",
+        "myanmar_meaning": "စောင့်ကြည့်သည်၊ ကြည့်ရှုသည်",
+        "example_sentence": "We watch the birds from our window."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 744,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 4,
+        "extracted_line": 860,
+        "source_excerpt": "watch v., n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford A1 v./n. label includes timepiece noun; this shortlist teaches attentive looking as a verb.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human editor must verify exact intended sense, source CEFR applicability, English, fluent Myanmar, original example grammar, historical source provenance and British pronunciation; publisher research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "third",
+      "level": "A2",
+      "part_of_speech": "ordinal adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Coming after the second in a series.",
+        "myanmar_meaning": "တတိယမြောက်",
+        "example_sentence": "Her office is on the third floor."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 745,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 3,
+        "extracted_line": 791,
+        "source_excerpt": "third number",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford A1 number classification versus draft 'ordinal adjective'; direct dictionary labels ordinal number, requiring POS reconciliation.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/third_1",
+        "observed_on": "2026-10-31",
+        "sense_number": 1,
+        "page_text_line_start": 88,
+        "page_text_line_end": 115,
+        "editorial_interpretation": "Oxford calls the relevant third ordinal number, not an adjective; attributive third floor is grammatical, but POS must be independently reconciled.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "တတိယမြောက် (အစဉ်လိုက် သုံးခုမြောက်)",
+        "original_example_sentence": "The third bus stops near the library.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human editor must verify exact intended sense, source CEFR applicability, English, fluent Myanmar, original example grammar, historical source provenance and British pronunciation; publisher research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "form",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A document with spaces for information to be written.",
+        "myanmar_meaning": "အချက်အလက်ဖြည့်ရန် ကွက်လပ်များပါသော ပုံစံစာရွက်",
+        "example_sentence": "Please complete the form before Friday."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 747,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 2,
+        "extracted_line": 307,
+        "source_excerpt": "form n., v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford A1 noun and verb; this shortlist teaches a document for entering details, not shape or the verb form.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human editor must verify exact intended sense, source CEFR applicability, English, fluent Myanmar, original example grammar, historical source provenance and British pronunciation; publisher research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "act",
+      "level": "A2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To do something in response to a situation.",
+        "myanmar_meaning": "လုပ်ဆောင်သည်",
+        "example_sentence": "We must act quickly to protect the children."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 749,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 4,
+        "extracted_line": 916,
+        "source_excerpt": "act v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford A2 verb; distinguish intransitive take-action sense from behaving or performing on stage.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/act_1",
+        "observed_on": "2026-10-31",
+        "sense_number": 1,
+        "page_text_line_start": 124,
+        "page_text_line_end": 146,
+        "editorial_interpretation": "The intended response-to-situation sense is intransitive; act quickly is appropriate, not transitive act the situation.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "အခြေအနေတစ်ခုကို ဖြေရှင်းရန် လက်တွေ့လုပ်ဆောင်သည်",
+        "original_example_sentence": "The team acted quickly when the alarm sounded.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human editor must verify exact intended sense, source CEFR applicability, English, fluent Myanmar, original example grammar, historical source provenance and British pronunciation; publisher research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "quite",
+      "level": "A2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "To a fairly large degree, but not completely.",
+        "myanmar_meaning": "အတော်အတန်",
+        "example_sentence": "The journey was quite long."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 751,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 3,
+        "extracted_line": 634,
+        "source_excerpt": "quite adv.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford A1 adverb; British English gradable fairly versus non-gradable completely requires context and audio intonation.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/quite",
+        "observed_on": "2026-10-31",
+        "sense_number": 1,
+        "page_text_line_start": 105,
+        "page_text_line_end": 123,
+        "editorial_interpretation": "British English quite with a gradable adjective can mean fairly; it can instead mean completely with non-gradable adjectives. Example long requires interpretation.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "အတော်အတန်၊ တော်တော်လေး (အတိုင်းအတာတစ်ခုအထိ)",
+        "original_example_sentence": "The hall was quite cold this morning.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human editor must verify exact intended sense, source CEFR applicability, English, fluent Myanmar, original example grammar, historical source provenance and British pronunciation; publisher research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "west",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The direction in which the sun sets.",
+        "myanmar_meaning": "အနောက်ဘက်",
+        "example_sentence": "The sun disappeared in the west."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 752,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 4,
+        "extracted_line": 872,
+        "source_excerpt": "west n., adj., adv.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford A1 noun/adjective/adverb; shortlist noun direction, not western region adjective.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human editor must verify exact intended sense, source CEFR applicability, English, fluent Myanmar, original example grammar, historical source provenance and British pronunciation; publisher research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "final",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Being the last in a series.",
+        "myanmar_meaning": "နောက်ဆုံးဖြစ်သော",
+        "example_sentence": "This is the final question on the test."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 753,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 2,
+        "extracted_line": 288,
+        "source_excerpt": "final adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford A1 adjective; last-in-sequence sense not a sports competition final noun.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human editor must verify exact intended sense, source CEFR applicability, English, fluent Myanmar, original example grammar, historical source provenance and British pronunciation; publisher research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "current",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Happening or existing at the present time.",
+        "myanmar_meaning": "လက်ရှိဖြစ်သော",
+        "example_sentence": "The current price is shown on the label."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 755,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 8,
+        "extracted_line": 1953,
+        "source_excerpt": "current adj.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford B1 adjective, not noun current of water or electricity; provisional A2 needs source-backed teaching rationale.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human editor must verify exact intended sense, source CEFR applicability, English, fluent Myanmar, original example grammar, historical source provenance and British pronunciation; publisher research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "program",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A set of instructions that tells a computer what to do.",
+        "myanmar_meaning": "ကွန်ပျူတာကို အလုပ်လုပ်စေသည့် ညွှန်ကြားချက်အစီအစဉ်",
+        "example_sentence": "The program checks the files for errors."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 756,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1505,
+        "source_excerpt": "program n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford A2 noun; computer software sense and British spelling program versus programme require exact-sense review.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/program_1",
+        "observed_on": "2026-10-31",
+        "sense_number": 1,
+        "page_text_line_start": 88,
+        "page_text_line_end": 123,
+        "editorial_interpretation": "Oxford computer sense 1 is a set of instructions; British spelling program applies to software, whereas programme normally applies to TV/other plans. Computers a2 is a topic badge, not independently signed exact-sense CEFR.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ကွန်ပျူတာကို အလုပ်လုပ်စေသည့် ညွှန်ကြားချက်များပါသော ပရိုဂရမ်",
+        "original_example_sentence": "This program helps students practise spelling.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human editor must verify exact intended sense, source CEFR applicability, English, fluent Myanmar, original example grammar, historical source provenance and British pronunciation; publisher research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
