@@ -1,0 +1,189 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_STAGING_ONLY",
+  "observed_on": "2026-10-31",
+  "status": "FIVE_FALSE_OXFORD_C1_FOOTER_CONFLICTS_CORRECTED_NO_INDEPENDENT_APPROVAL",
+  "count": 5,
+  "source_note": "The C1 Oxford 5000 footer on these dictionary pages belongs to the separate site-wide Word of the Day 'applicable', not to the dictionary headword. Previous packet text misattributed it to the target. Publisher Oxford 3000 word/POS levels remain B1 or B2; these do not independently certify intended senses. The provisional B2 placements for historic, graduate and appointment still conflict with B1 PDF word/POS and require human review. This packet is an evidence correction, not a reviewer signoff.",
+  "source_list_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+  "original_shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "records": [
+    {
+      "word": "historic",
+      "part_of_speech": "adjective",
+      "original_packet": "draft/CEFR-1000-OXFORD-B2-TENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-30.json",
+      "original_pdf_word_pos_level": "B1",
+      "original_misattributed_footer": {
+        "claimed_level": "C1",
+        "claimed_page_text_lines": [
+          165,
+          169
+        ],
+        "original_claim": "UNRESOLVED_PUBLISHER_SURFACE_CONFLICT_INDEPENDENT_SENSE_REVIEW_REQUIRED"
+      },
+      "publisher_page_recheck": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/historic",
+        "observed_on": "2026-10-31",
+        "context_page_text_lines": [
+          157,
+          171
+        ],
+        "sense_page_text_lines": [
+          107,
+          124
+        ],
+        "actual_footer_headword": "applicable",
+        "actual_footer_part_of_speech": "adjective",
+        "actual_footer_level": "C1",
+        "footer_context": "WORD_OF_THE_DAY_SITEWIDE_WIDGET_NOT_TARGET_HEADWORD",
+        "evidence_scope": "DIRECT_PAGE_CONTEXT_CORRECTS_FALSE_FOOTER_ATTRIBUTION_NOT_EXACT_SENSE_CEFR"
+      },
+      "correction": "RETRACT_C1_TARGET_WORD_FOOTER_CLAIM_PDF_WORD_POS_LABEL_RETAINS_ITS_LIMITED_SCOPE",
+      "independent_exact_sense_review": "NOT_DONE",
+      "editorial_hold": true,
+      "independently_approved": false
+    },
+    {
+      "word": "graduate",
+      "part_of_speech": "verb",
+      "original_packet": "draft/CEFR-1000-OXFORD-B2-ELEVENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json",
+      "original_pdf_word_pos_level": "B1",
+      "original_misattributed_footer": {
+        "claimed_level": "C1",
+        "claimed_page_text_lines": [
+          241,
+          245
+        ],
+        "original_claim": "UNRESOLVED_PUBLISHER_SURFACE_CONFLICT_INDEPENDENT_SENSE_REVIEW_REQUIRED"
+      },
+      "publisher_page_recheck": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/graduate_2",
+        "observed_on": "2026-10-31",
+        "context_page_text_lines": [
+          233,
+          247
+        ],
+        "sense_page_text_lines": [
+          112,
+          125
+        ],
+        "actual_footer_headword": "applicable",
+        "actual_footer_part_of_speech": "adjective",
+        "actual_footer_level": "C1",
+        "footer_context": "WORD_OF_THE_DAY_SITEWIDE_WIDGET_NOT_TARGET_HEADWORD",
+        "evidence_scope": "DIRECT_PAGE_CONTEXT_CORRECTS_FALSE_FOOTER_ATTRIBUTION_NOT_EXACT_SENSE_CEFR"
+      },
+      "correction": "RETRACT_C1_TARGET_WORD_FOOTER_CLAIM_PDF_WORD_POS_LABEL_RETAINS_ITS_LIMITED_SCOPE",
+      "independent_exact_sense_review": "NOT_DONE",
+      "editorial_hold": true,
+      "independently_approved": false
+    },
+    {
+      "word": "appointment",
+      "part_of_speech": "noun",
+      "original_packet": "draft/CEFR-1000-OXFORD-B2-ELEVENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json",
+      "original_pdf_word_pos_level": "B1",
+      "original_misattributed_footer": {
+        "claimed_level": "C1",
+        "claimed_page_text_lines": [
+          250,
+          254
+        ],
+        "original_claim": "UNRESOLVED_PUBLISHER_SURFACE_CONFLICT_INDEPENDENT_SENSE_REVIEW_REQUIRED"
+      },
+      "publisher_page_recheck": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/appointment",
+        "observed_on": "2026-10-31",
+        "context_page_text_lines": [
+          242,
+          256
+        ],
+        "sense_page_text_lines": [
+          105,
+          125
+        ],
+        "actual_footer_headword": "applicable",
+        "actual_footer_part_of_speech": "adjective",
+        "actual_footer_level": "C1",
+        "footer_context": "WORD_OF_THE_DAY_SITEWIDE_WIDGET_NOT_TARGET_HEADWORD",
+        "evidence_scope": "DIRECT_PAGE_CONTEXT_CORRECTS_FALSE_FOOTER_ATTRIBUTION_NOT_EXACT_SENSE_CEFR"
+      },
+      "correction": "RETRACT_C1_TARGET_WORD_FOOTER_CLAIM_PDF_WORD_POS_LABEL_RETAINS_ITS_LIMITED_SCOPE",
+      "independent_exact_sense_review": "NOT_DONE",
+      "editorial_hold": true,
+      "independently_approved": false
+    },
+    {
+      "word": "contemporary",
+      "part_of_speech": "adjective",
+      "original_packet": "draft/CEFR-1000-OXFORD-B2-ELEVENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json",
+      "original_pdf_word_pos_level": "B2",
+      "original_misattributed_footer": {
+        "claimed_level": "C1",
+        "claimed_page_text_lines": [
+          181,
+          185
+        ],
+        "original_claim": "UNRESOLVED_PUBLISHER_SURFACE_CONFLICT_INDEPENDENT_SENSE_REVIEW_REQUIRED"
+      },
+      "publisher_page_recheck": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/contemporary_1",
+        "observed_on": "2026-10-31",
+        "context_page_text_lines": [
+          173,
+          187
+        ],
+        "sense_page_text_lines": [
+          129,
+          141
+        ],
+        "actual_footer_headword": "applicable",
+        "actual_footer_part_of_speech": "adjective",
+        "actual_footer_level": "C1",
+        "footer_context": "WORD_OF_THE_DAY_SITEWIDE_WIDGET_NOT_TARGET_HEADWORD",
+        "evidence_scope": "DIRECT_PAGE_CONTEXT_CORRECTS_FALSE_FOOTER_ATTRIBUTION_NOT_EXACT_SENSE_CEFR"
+      },
+      "correction": "RETRACT_C1_TARGET_WORD_FOOTER_CLAIM_PDF_WORD_POS_LABEL_RETAINS_ITS_LIMITED_SCOPE",
+      "independent_exact_sense_review": "NOT_DONE",
+      "editorial_hold": true,
+      "independently_approved": false
+    },
+    {
+      "word": "raw",
+      "part_of_speech": "adjective",
+      "original_packet": "draft/CEFR-1000-OXFORD-B2-ELEVENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json",
+      "original_pdf_word_pos_level": "B2",
+      "original_misattributed_footer": {
+        "claimed_level": "C1",
+        "claimed_page_text_lines": [
+          236,
+          240
+        ],
+        "original_claim": "UNRESOLVED_PUBLISHER_SURFACE_CONFLICT_INDEPENDENT_SENSE_REVIEW_REQUIRED"
+      },
+      "publisher_page_recheck": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/raw_1",
+        "observed_on": "2026-10-31",
+        "context_page_text_lines": [
+          228,
+          242
+        ],
+        "sense_page_text_lines": [
+          107,
+          115
+        ],
+        "actual_footer_headword": "applicable",
+        "actual_footer_part_of_speech": "adjective",
+        "actual_footer_level": "C1",
+        "footer_context": "WORD_OF_THE_DAY_SITEWIDE_WIDGET_NOT_TARGET_HEADWORD",
+        "evidence_scope": "DIRECT_PAGE_CONTEXT_CORRECTS_FALSE_FOOTER_ATTRIBUTION_NOT_EXACT_SENSE_CEFR"
+      },
+      "correction": "RETRACT_C1_TARGET_WORD_FOOTER_CLAIM_PDF_WORD_POS_LABEL_RETAINS_ITS_LIMITED_SCOPE",
+      "independent_exact_sense_review": "NOT_DONE",
+      "editorial_hold": true,
+      "independently_approved": false
+    }
+  ],
+  "independently_approved_count": 0,
+  "production_deployed": false
+}
