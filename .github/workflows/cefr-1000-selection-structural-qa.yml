@@ -186,6 +186,8 @@ on:
       - tools/audit_cefr_1000_cambridge_a2_six_indexed.py
       - draft/CEFR-1000-OXFORD-B1-TWELFTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
       - tools/audit_cefr_1000_oxford_b1_twelfth_twelve.py
+      - draft/CEFR-1000-OXFORD-B2-TWELFTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
+      - tools/audit_cefr_1000_oxford_b2_twelfth_twelve.py
   workflow_dispatch:
 permissions:
   contents: read
@@ -643,6 +645,11 @@ jobs:
       - name: Reject 180 forged B1 source, Myanmar, provenance and reviewer mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_b1_twelfth_twelve.py --level ALL --self-test
+      - name: Audit twelfth B2 Oxford word/POS evidence and four directly inspected dictionary senses
+        run: python3 tools/audit_cefr_1000_oxford_b2_twelfth_twelve.py --level "${{ matrix.level }}"
+      - name: Reject 232 forged B2 source, Myanmar, provenance, sense and independent-review mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_oxford_b2_twelfth_twelve.py --level ALL --self-test
       - name: Cross-check actual shared wordforms with protected IELTS 1000 dataset
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_ielts_overlap.py
