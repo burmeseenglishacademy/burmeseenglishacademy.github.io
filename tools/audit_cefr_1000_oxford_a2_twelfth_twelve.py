@@ -17,7 +17,7 @@ def require(ok, message):
 
 def blob_sha(path):
     raw = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
 
 def expected_packet():
     require(blob_sha(SHORT) == SHA, "Frozen shortlist blob changed")
