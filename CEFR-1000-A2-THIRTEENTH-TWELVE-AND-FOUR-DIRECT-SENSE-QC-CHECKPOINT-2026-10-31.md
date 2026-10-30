@@ -2,6 +2,10 @@
 
 **STAGING ONLY. NO INDEPENDENT APPROVAL. NO PRODUCTION RELEASE.**
 
+> **CI VERIFIED, 2026-10-31:** [six-lane structural run 41142905798](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41142905798) **SUCCESS A1/A2/B1/B2/C1/ALL**, [documentary no-deploy run 41142906997](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41142906997) **SUCCESS report-only**. Both tested code SHA `bafd50257665bcad1523ed2ba9332e76ac038868`. Actual ALL/documentary logs confirm **232/232 new adversarial mutations rejected**, **760 distinct direct Oxford word/POS observations / 779 source observations**, human queue **3 unlisted / 44 higher / 283 lower / 430 matching but exact-sense-unverified / 240 unobserved**, zero independent approvals, zero real final dual-voice listening signoffs and protected production paths unchanged. Structural ALL artifact `13019446598`; documentary blocker artifact `13019637231`. CI does not establish linguistic signoff, actual listening, physical iPhone Safari, hosting measurements or live deployment. **BLOCKED / STAGING ONLY.**
+
+
+
 ## Scope and source observations
 
 Frozen, user-approved target is **1,000 total words, 200 each at A1/A2/B1/B2/C1**, NOT the superseded 5,000-word plan. This checkpoint records **12 new direct Oxford 3000 word/POS observations for provisional A2 entries**, plus **four directly inspected Oxford dictionary sense leads**. Observed on **2026-10-31**. Official publisher source: [The Oxford 3000 by CEFR level](https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf). Source packet: [A2 thirteenth 12-record JSON](draft/CEFR-1000-OXFORD-A2-THIRTEENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json).
