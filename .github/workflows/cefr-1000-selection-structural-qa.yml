@@ -91,6 +91,8 @@ on:
       - draft/CEFR-1000-OXFORD-B1-NINTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-30.json
       - tools/audit_cefr_1000_oxford_b1_eighth_twelve.py
       - tools/audit_cefr_1000_oxford_b1_ninth_twelve.py
+      - draft/CEFR-1000-OXFORD-B1-TENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-30.json
+      - tools/audit_cefr_1000_oxford_b1_tenth_twelve.py
       - tools/audit_cefr_1000_oxford_b1_lower_twelve.py
       - draft/CEFR-1000-OXFORD-B1-TWELVE-DIRECT-PDF-2026-10-28.json
       - draft/CEFR-1000-OXFORD-B2-TWELVE-DIRECT-PDF-2026-10-28.json
@@ -411,6 +413,11 @@ jobs:
       - name: Reject forged B1 ninth PDF, bilingual, provenance and independent-review mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_b1_ninth_twelve.py --level ALL --self-test
+      - name: Audit B1 tenth twelve Oxford PDF word-POS and four dictionary senses (hold)
+        run: python3 tools/audit_cefr_1000_oxford_b1_tenth_twelve.py --level "${{ matrix.level }}"
+      - name: Reject 216 forged B1 tenth publisher, Myanmar, provenance and reviewer mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_oxford_b1_tenth_twelve.py --level ALL --self-test
       - name: Audit twelve B2-draft Oxford word-POS observations (no independent signoff)
         run: python3 tools/audit_cefr_1000_oxford_b2_twelve.py --level "${{ matrix.level }}"
       - name: Reject forged B2 PDF provenance, changed Myanmar and fake human approval

@@ -1,0 +1,494 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B1_TENTH_TWELVE_DIRECT_OXFORD_WORD_POS_FOUR_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 12,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A2": 4,
+    "B1": 4,
+    "B2": 4
+  },
+  "word_pos_discrepancies": 8,
+  "direct_dictionary_sense_leads": 4,
+  "independently_approved_count": 0,
+  "source_limitations": "Direct Oxford 3000 PDF levels refer to word/POS, not independent exact-sense CEFR verification. Four directly opened dictionary senses are research leads only; topic badges are not exact-sense CEFR signoff. Frozen shortlist unchanged; no human independent review, George/Emma listening, physical iPhone QA, measured hosting or production deployment.",
+  "records": [
+    {
+      "word": "traditional",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Following customs or practices passed down over time.",
+        "myanmar_meaning": "ရိုးရာအစဉ်အလာနှင့် သက်ဆိုင်သော",
+        "example_sentence": "They prepared a traditional meal for the festival."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 439,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1720,
+        "source_excerpt": "traditional adj.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Customary festival food, not medical practice or a named ethnic identity; draft B1 versus Oxford A2.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "worry",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To feel anxious about a possible problem.",
+        "myanmar_meaning": "စိုးရိမ်ပူပန်သည်",
+        "example_sentence": "Try not to worry about a small mistake."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 440,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1774,
+        "source_excerpt": "worry v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft worry about a mistake is an intransitive anxiety verb, not transitive worry somebody; Oxford A2.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "benefit",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To help someone or something by producing a useful result.",
+        "myanmar_meaning": "အကျိုးရှိစေသည်၊ အကျိုးပြုသည်",
+        "example_sentence": "Regular practice can benefit your pronunciation."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 441,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1854,
+        "source_excerpt": "benefit v.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft transitive benefit your pronunciation should be distinguished from benefit from something; exact sense and learner-friendly Myanmar need review.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/benefit_2",
+        "observed_on": "2026-10-30",
+        "sense_number": 1,
+        "page_text_line_start": 114,
+        "page_text_line_end": 118,
+        "editorial_interpretation": "Transitive benefit somebody is useful to someone; distinguish from intransitive benefit from.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "တစ်စုံတစ်ဦးအတွက် အကျိုးရှိစေသည်၊ အကျိုးပြုသည်",
+        "original_example_sentence": "Daily reading can benefit learners who want a wider vocabulary.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "budget",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A plan for how much money can be spent over a period or on a task.",
+        "myanmar_meaning": "အသုံးစရိတ်အစီအစဉ်၊ ဘတ်ဂျက်",
+        "example_sentence": "We prepared a budget before starting the project."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 442,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 10,
+        "extracted_line": 2670,
+        "source_excerpt": "budget n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Financial plan/countability and available money must not be confused with low-cost budget adjective or budgeting verb; draft B1 versus Oxford B2.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/budget_1",
+        "observed_on": "2026-10-30",
+        "sense_number": 1,
+        "page_text_line_start": 103,
+        "page_text_line_end": 119,
+        "editorial_interpretation": "Countable/uncountable money available and spending plan; distinguish noun from budget adjective or verb.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "သတ်မှတ်ကာလတစ်ခုအတွင်း အသုံးစရိတ်အတွက် ခွဲဝေထားသော ငွေနှင့် သုံးစွဲမှုအစီအစဉ်",
+        "original_example_sentence": "The team prepared a budget before ordering new equipment.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "generation",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A group of people born and living around the same period.",
+        "myanmar_meaning": "မျိုးဆက်",
+        "example_sentence": "The younger generation uses technology in different ways."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 443,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 8,
+        "extracted_line": 2091,
+        "source_excerpt": "generation n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "People born in the same era, not the act of producing electricity or a family-history time interval.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/generation",
+        "observed_on": "2026-10-30",
+        "sense_number": 1,
+        "page_text_line_start": 103,
+        "page_text_line_end": 120,
+        "editorial_interpretation": "People born around the same time, not electricity generation or a family interval.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "အချိန်ကာလတူတူတွင် မွေးဖွားကြီးပြင်းလာသူများ၏ မျိုးဆက်",
+        "original_example_sentence": "The younger generation often learns new skills online.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "therefore",
+      "level": "B1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "For that reason; as a result.",
+        "myanmar_meaning": "ထို့ကြောင့်၊ အဲဒီအတွက်ကြောင့်",
+        "example_sentence": "The road was closed; therefore, we took another route."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 474,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 10,
+        "extracted_line": 2505,
+        "source_excerpt": "therefore adv.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Formal result connector; check punctuation and register in a semicolon-linked example rather than treating it as conversational so.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "division",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The act of separating something into parts.",
+        "myanmar_meaning": "ခွဲခြားခြင်း၊ အပိုင်းများခွဲခြင်း",
+        "example_sentence": "The division of tasks helped the team work faster."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 475,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 11,
+        "extracted_line": 2797,
+        "source_excerpt": "division n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The act of dividing work, not a company department, a mathematics operation or social division; draft B1 versus Oxford B2.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "actual",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Real, rather than planned, expected, or imagined.",
+        "myanmar_meaning": "အမှန်တကယ်ဖြစ်သော",
+        "example_sentence": "The actual cost was lower than our estimate."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 476,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 10,
+        "extracted_line": 2603,
+        "source_excerpt": "actual adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Actual means real as opposed to expected, not current; risk of false-friend translation and B1/B2 discrepancy.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "northern",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Located in or relating to the north of a place.",
+        "myanmar_meaning": "မြောက်ပိုင်းတွင်ရှိသော၊ မြောက်ပိုင်းနှင့်ဆိုင်သော",
+        "example_sentence": "The northern villages received heavy rain."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 477,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 9,
+        "extracted_line": 2240,
+        "source_excerpt": "northern adj.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Relative geographical direction, not a proper region name or north as a noun; check natural Myanmar geography phrasing.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "screen",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The flat surface on which a phone or computer shows pictures and text.",
+        "myanmar_meaning": "ဖုန်း သို့မဟုတ် ကွန်ပျူတာ၏ မျက်နှာပြင်",
+        "example_sentence": "The message appeared on my computer screen."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 478,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 6,
+        "extracted_line": 1588,
+        "source_excerpt": "screen n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Device display surface, not screening as a verb or cinema showing; draft B1 versus Oxford A2.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "engine",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A machine that provides power to move a vehicle or operate equipment.",
+        "myanmar_meaning": "ယာဉ် သို့မဟုတ် စက်ပစ္စည်းကို လည်ပတ်စေသော အင်ဂျင်",
+        "example_sentence": "The mechanic checked the bus engine before departure."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 479,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 5,
+        "extracted_line": 1167,
+        "source_excerpt": "engine n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Vehicle power-producing mechanism, not search engine or engine of economic growth; draft B1 versus Oxford A2.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "critical",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Extremely important for success or safety.",
+        "myanmar_meaning": "အလွန်အရေးကြီးသော၊ မရှိမဖြစ်လိုအပ်သော",
+        "example_sentence": "Clean drinking water is critical during an emergency."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 480,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 10,
+        "extracted_line": 2746,
+        "source_excerpt": "critical adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Critical as essential to a future outcome, not criticism or a medically critical condition; draft B1 versus Oxford B2.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/critical",
+        "observed_on": "2026-10-30",
+        "sense_number": 2,
+        "page_text_line_start": 141,
+        "page_text_line_end": 151,
+        "editorial_interpretation": "Extremely important to an outcome; not disapproving comments or medical crisis.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ရလဒ်အပေါ် အလွန်အရေးပါသော၊ မဖြစ်မနေလိုအပ်သော",
+        "original_example_sentence": "Reliable drinking water is critical during a flood.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
