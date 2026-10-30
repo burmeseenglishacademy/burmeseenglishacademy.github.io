@@ -1,0 +1,420 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "C1_EIGHTH_TWELVE_DIRECT_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 12
+  },
+  "publisher_reference_level_counts": {
+    "B2": 6,
+    "C1": 6
+  },
+  "word_pos_discrepancies": 6,
+  "independently_approved_count": 0,
+  "source_limitations": "Directly inspected Oxford 5000 PDF word/POS lines on 2026-10-30. Oxford list is not exact-sense CEFR evidence or human approval. All 12 remain on editorial hold; six publisher B2 word/POS levels conflict with provisional C1. The C1 noun trace listing must not be substituted for the B2 verb trace listing. All English/Myanmar/example text remains frozen and unverified.",
+  "records": [
+    {
+      "word": "subsequently",
+      "level": "C1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "After something else has happened.",
+        "myanmar_meaning": "နောက်ပိုင်းတွင်၊ ထို့နောက်",
+        "example_sentence": "The design was tested and subsequently improved."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 283,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 604,
+        "source_excerpt": "subsequently adv.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher B2 word/POS versus provisional C1. The adverb means after an earlier event; independently check natural Burmese temporal sequencing and whether C1 has a defensible sense-specific teaching rationale.",
+      "independent_reviewer_task": "Independent human reviewer must check exact-sense publisher CEFR evidence, English definition, natural Myanmar meaning, original example grammar/collocation, British pronunciation, source provenance and cross-level rationale; provide a content-bound independent receipt. Publisher word/POS listing and automated checks are not independent exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "privilege",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A special right or advantage available to a particular person or group.",
+        "myanmar_meaning": "အထူးအခွင့်အရေး၊ အထူးခံစားခွင့်",
+        "example_sentence": "Access to the private library is a privilege for members."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 415,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 6,
+        "extracted_line": 1619,
+        "source_excerpt": "privilege n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Distinguish special right/advantage from legal privilege and privileged social status; the members-only library example needs a natural noun sense and fluent Myanmar.",
+      "independent_reviewer_task": "Independent human reviewer must check exact-sense publisher CEFR evidence, English definition, natural Myanmar meaning, original example grammar/collocation, British pronunciation, source provenance and cross-level rationale; provide a content-bound independent receipt. Publisher word/POS listing and automated checks are not independent exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "unity",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The state of being joined together or acting with a shared purpose.",
+        "myanmar_meaning": "စည်းလုံးညီညွတ်မှု",
+        "example_sentence": "The community showed unity during the recovery effort."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 455,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 671,
+        "source_excerpt": "unity n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher B2 noun versus provisional C1. Verify social solidarity versus physical wholeness; distinguish Burmese စည်းလုံးညီညွတ်မှု from simple agreement.",
+      "independent_reviewer_task": "Independent human reviewer must check exact-sense publisher CEFR evidence, English definition, natural Myanmar meaning, original example grammar/collocation, British pronunciation, source provenance and cross-level rationale; provide a content-bound independent receipt. Publisher word/POS listing and automated checks are not independent exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "usage",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The way a word or expression is normally used.",
+        "myanmar_meaning": "စကားလုံး သို့မဟုတ် အသုံးအနှုန်းတစ်ခု၏ သုံးစွဲပုံ",
+        "example_sentence": "The dictionary explains the usage of each expression."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 498,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 674,
+        "source_excerpt": "usage n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher B2 noun versus provisional C1. The example is linguistic usage, not electricity consumption or ordinary use; require exact-sense publisher evidence and Myanmar register review.",
+      "independent_reviewer_task": "Independent human reviewer must check exact-sense publisher CEFR evidence, English definition, natural Myanmar meaning, original example grammar/collocation, British pronunciation, source provenance and cross-level rationale; provide a content-bound independent receipt. Publisher word/POS listing and automated checks are not independent exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "threshold",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A level at which a particular effect or change begins.",
+        "myanmar_meaning": "သတ်မှတ်အဆင့်၊ အကန့်အသတ်တန်ဖိုး",
+        "example_sentence": "The alarm sounds when the temperature passes a set threshold."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 647,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1904,
+        "source_excerpt": "threshold n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Verify quantitative trigger point versus doorway threshold and figurative tolerance. The draft says passes a set threshold; reviewer should check exceeds/crosses collocation and technical Myanmar.",
+      "independent_reviewer_task": "Independent human reviewer must check exact-sense publisher CEFR evidence, English definition, natural Myanmar meaning, original example grammar/collocation, British pronunciation, source provenance and cross-level rationale; provide a content-bound independent receipt. Publisher word/POS listing and automated checks are not independent exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "consecutive",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Following one another without an interruption.",
+        "myanmar_meaning": "ဆက်တိုက်ဖြစ်သော",
+        "example_sentence": "Sales increased for three consecutive months."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 724,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 966,
+        "source_excerpt": "consecutive adj.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Verify uninterrupted sequence versus merely frequent occurrence; ensure consecutive months and Burmese ဆက်တိုက် are precise and not misread as continuous duration.",
+      "independent_reviewer_task": "Independent human reviewer must check exact-sense publisher CEFR evidence, English definition, natural Myanmar meaning, original example grammar/collocation, British pronunciation, source provenance and cross-level rationale; provide a content-bound independent receipt. Publisher word/POS listing and automated checks are not independent exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "preliminary",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Done before a more complete examination or decision.",
+        "myanmar_meaning": "ပဏာမဖြစ်သော၊ အကြိုအဆင့်ဖြစ်သော",
+        "example_sentence": "The preliminary findings suggest that further testing is needed."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 725,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 6,
+        "extracted_line": 1600,
+        "source_excerpt": "preliminary adj.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Verify early findings before full investigation versus tentative/unconfirmed results; preserve adjective POS and natural Myanmar research register.",
+      "independent_reviewer_task": "Independent human reviewer must check exact-sense publisher CEFR evidence, English definition, natural Myanmar meaning, original example grammar/collocation, British pronunciation, source provenance and cross-level rationale; provide a content-bound independent receipt. Publisher word/POS listing and automated checks are not independent exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "backing",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Financial or practical support for a plan or person.",
+        "myanmar_meaning": "ငွေကြေး သို့မဟုတ် လက်တွေ့ပံ့ပိုးမှု",
+        "example_sentence": "The research project gained backing from several universities."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 731,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 815,
+        "source_excerpt": "backing n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The intended sense is practical/financial support, not physical backing material or a backing track; verify the gained backing collocation and Burmese.",
+      "independent_reviewer_task": "Independent human reviewer must check exact-sense publisher CEFR evidence, English definition, natural Myanmar meaning, original example grammar/collocation, British pronunciation, source provenance and cross-level rationale; provide a content-bound independent receipt. Publisher word/POS listing and automated checks are not independent exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "respective",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Belonging separately to each person or thing mentioned.",
+        "myanmar_meaning": "ဖော်ပြပြီးသော လူ သို့မဟုတ် အရာတစ်ခုစီနှင့် သက်ဆိုင်သော",
+        "example_sentence": "The managers returned to their respective departments."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 857,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1712,
+        "source_excerpt": "respective adj.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Check distributive one-to-one reference in their respective departments; Myanmar should express each manager's own department, not shared ownership.",
+      "independent_reviewer_task": "Independent human reviewer must check exact-sense publisher CEFR evidence, English definition, natural Myanmar meaning, original example grammar/collocation, British pronunciation, source provenance and cross-level rationale; provide a content-bound independent receipt. Publisher word/POS listing and automated checks are not independent exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "scenario",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A possible future situation considered when making plans.",
+        "myanmar_meaning": "စီမံကိန်းရေးဆွဲရာတွင် စဉ်းစားထားသော ဖြစ်နိုင်ခြေရှိသည့် အခြေအနေ",
+        "example_sentence": "The team prepared a scenario for a supply shortage."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 858,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 551,
+        "source_excerpt": "scenario n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher B2 noun versus provisional C1. Draft 'prepared a scenario for a supply shortage' may be awkward; review a realistic planning scenario and fluent Myanmar before independent signoff.",
+      "independent_reviewer_task": "Independent human reviewer must check exact-sense publisher CEFR evidence, English definition, natural Myanmar meaning, original example grammar/collocation, British pronunciation, source provenance and cross-level rationale; provide a content-bound independent receipt. Publisher word/POS listing and automated checks are not independent exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "trace",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To discover the origin of something by following evidence.",
+        "myanmar_meaning": "အထောက်အထားများကို လိုက်လံစစ်ဆေး၍ မူလရင်းမြစ်ကို ရှာဖွေသည်",
+        "example_sentence": "Investigators tried to trace the source of the faulty material."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 863,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 649,
+        "source_excerpt": "trace v.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Critical POS distinction: Oxford lists trace v. at B2 but trace n. at C1 (page 7 line 1920). Draft C1 uses verb 'trace the source'; do not borrow the noun C1 label.",
+      "independent_reviewer_task": "Independent human reviewer must check exact-sense publisher CEFR evidence, English definition, natural Myanmar meaning, original example grammar/collocation, British pronunciation, source provenance and cross-level rationale; provide a content-bound independent receipt. Publisher word/POS listing and automated checks are not independent exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "bias",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An unfair preference for or against a person or group.",
+        "myanmar_meaning": "လူတစ်ဦး သို့မဟုတ် အုပ်စုတစ်စုအပေါ် ဘက်လိုက်သော သဘောထား",
+        "example_sentence": "The committee reviewed the process to reduce bias in hiring."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 924,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 1,
+        "extracted_line": 61,
+        "source_excerpt": "bias n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher B2 noun versus provisional C1. Check unfair prejudice in hiring versus statistical bias and the scope of Burmese ဘက်လိုက်သော သဘောထား.",
+      "independent_reviewer_task": "Independent human reviewer must check exact-sense publisher CEFR evidence, English definition, natural Myanmar meaning, original example grammar/collocation, British pronunciation, source provenance and cross-level rationale; provide a content-bound independent receipt. Publisher word/POS listing and automated checks are not independent exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
