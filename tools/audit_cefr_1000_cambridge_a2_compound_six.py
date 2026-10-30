@@ -59,7 +59,7 @@ def audit(packet, shortlist):
         require(original is not None, "shortlist word missing")
         require(original.get("part_of_speech") == row["part_of_speech"], "POS changed")
         for k, v in row["shortlist_snapshot"].items():
-            require(original.get(k) == v, "shortlist bilingual/example snapshot changed: " + row["word"])
+            require(original.get(k) == v, "shortlist bilingual/example snapshot changed: " + row["word"] + " field=" + k + " actual=" + repr(original.get(k)) + " expected=" + repr(v))
         for k, v in row["shortlist_provenance"].items():
             require(original.get(k) == v, "historical Git provenance changed: " + row["word"])
         require(original.get("editorial_hold") is True, "editorial hold removed")
