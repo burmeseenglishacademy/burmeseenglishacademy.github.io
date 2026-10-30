@@ -73,6 +73,8 @@ on:
       - draft/CEFR-1000-OXFORD-A2-SIXTH-TWELVE-2026-10-30.json
       - draft/CEFR-1000-OXFORD-A2-SEVENTH-TWELVE-AND-THREE-DIRECT-SENSE-LEADS-2026-10-30.json
       - tools/audit_cefr_1000_oxford_a2_seventh_twelve.py
+      - draft/CEFR-1000-OXFORD-A2-EIGHTH-TWELVE-AND-FOUR-SENSE-LEADS-2026-10-30.json
+      - tools/audit_cefr_1000_oxford_a2_eighth_twelve.py
       - tools/audit_cefr_1000_oxford_a2_sixth_twelve.py
       - draft/CEFR-1000-A2-THIRD-BILINGUAL-REWRITE-CANDIDATES-2026-10-29.json
       - tools/audit_cefr_1000_a2_rewrites.py
@@ -194,6 +196,8 @@ jobs:
           python3 tools/audit_cefr_1000_oxford_a2_fifth_twelve.py --level ALL --self-test
            python3 tools/audit_cefr_1000_oxford_a2_sixth_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_a2_seventh_twelve.py --level ALL --self-test
+          python3 -m py_compile tools/audit_cefr_1000_oxford_a2_eighth_twelve.py tools/audit_cefr_1000_oxford_c1_ninth_twelve.py
+          python3 tools/audit_cefr_1000_oxford_a2_eighth_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_a2_rewrites.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_a2_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_b1_twelve.py --level ALL --self-test
