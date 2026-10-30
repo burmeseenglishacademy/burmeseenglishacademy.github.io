@@ -22,7 +22,7 @@ def need(ok, reason):
 
 def audit(packet, shortlist):
     raw = SHORT.read_bytes()
-    sha = hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    sha = hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
     need(sha == SHORT_SHA, "Frozen shortlist Git blob drift")
     need(shortlist.get("counts_by_level") == {k: 200 for k in LEVELS}
          and shortlist.get("independently_approved_by_level") == {k: 0 for k in LEVELS}
