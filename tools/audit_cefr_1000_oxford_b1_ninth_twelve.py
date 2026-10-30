@@ -25,7 +25,7 @@ def need(ok, why):
         raise ValueError(why)
 
 def git_sha(raw):
-    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(raw)).encode() + bytes([0]) + raw).hexdigest()
 
 def audit(packet, shortlist):
     raw = PACKET.read_bytes()
