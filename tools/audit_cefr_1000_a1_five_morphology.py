@@ -26,7 +26,7 @@ def need(condition, why):
 def audit(packet, shortlist, check_oxford=True):
     # Freeze the original 1000 first-pass entries and all their review holds.
     raw = SHORT.read_bytes()
-    sha = hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    sha = hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
     need(sha == SHORT_SHA, "Frozen shortlist Git blob SHA changed")
     need(shortlist.get("counts_by_level") == {x:200 for x in LEVELS}
          and shortlist.get("independently_approved_by_level") == {x:0 for x in LEVELS},
