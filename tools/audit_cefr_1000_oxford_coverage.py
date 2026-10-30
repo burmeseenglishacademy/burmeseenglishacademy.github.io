@@ -50,14 +50,15 @@ PACKETS = {
            "C1-MIXED-TWELVE-2026-10-28", "C1-FOLLOWUP-TWELVE-2026-10-29",
            "C1-SIXTH-TWELVE-2026-10-29",
            "C1-SEVENTH-TWELVE-2026-10-30",
-           "C1-EIGHTH-TWELVE-2026-10-30"),
+           "C1-EIGHTH-TWELVE-2026-10-30",
+           "C1-NINTH-TWELVE-AND-SEVEN-DIRECT-SENSE-LEADS-2026-10-30"),
 }
 EXPECTED = {
     "A1": {"observations": 203, "distinct": 195, "A1": 195},
     "A2": {"observations": 96, "distinct": 96, "A1": 59, "A2": 33, "B1": 4},
     "B1": {"observations": 108, "distinct": 108, "A1": 17, "A2": 42, "B1": 37, "B2": 12, "locator_only": 12},
     "B2": {"observations": 96, "distinct": 94, "A1": 2, "A2": 16, "B1": 21, "B2": 48, "C1": 6, "UNLISTED": 1, "locator_only": 12},
-    "C1": {"observations": 84, "distinct": 75, "B2": 31, "C1": 42, "UNLISTED": 2, "locator_only": 12},
+    "C1": {"observations": 96, "distinct": 87, "B1": 2, "B2": 37, "C1": 46, "UNLISTED": 2, "locator_only": 12},
 }
 SOURCE_PREFIX = "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_"
 SOURCE_SUFFIX = "_by_CEFR_level.pdf"
