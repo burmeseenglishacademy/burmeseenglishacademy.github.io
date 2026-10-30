@@ -1,0 +1,475 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B2_SEVENTH_TWELVE_DIRECT_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 12,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A2": 4,
+    "B1": 4,
+    "B2": 2,
+    "C1": 2
+  },
+  "word_pos_discrepancies": 10,
+  "independently_approved_count": 0,
+  "source_limitations": "Official Oxford 3000/5000 PDFs directly inspected 2026-10-30; word/POS labels only, not exact-sense CEFR, independent human review, fluent Myanmar/example approval or audio listening. Oxford dictionary badges conflict with PDF for alongside, formula and charity; preserve both without deciding which classification is authoritative. All twelve remain on editorial hold.",
+  "records": [
+    {
+      "word": "speaker",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A person who gives a talk to an audience.",
+        "myanmar_meaning": "ပရိသတ်ရှေ့တွင် ဟောပြောသူ",
+        "example_sentence": "The guest speaker answered questions after the lecture."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 852,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 6,
+        "extracted_line": 1645,
+        "source_excerpt": "speaker n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A person giving a lecture, not an electronic loudspeaker; check guest-speaker context and Burmese distinction.",
+      "independent_reviewer_task": "Independent human reviewer must verify the intended exact sense against dated publisher dictionary evidence, publisher CEFR classification conflicts, English definition, fluent Myanmar meaning, original example grammar, British pronunciation, provenance, and content-bound independent signoff. Word/POS lists and automated checks are not independent exact-sense CEFR approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "percentage",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A number or amount expressed as a part of one hundred.",
+        "myanmar_meaning": "ရာခိုင်နှုန်းဖြင့် ဖော်ပြသော ပမာဏ",
+        "example_sentence": "The percentage of returned products fell this month."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 904,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 9,
+        "extracted_line": 2273,
+        "source_excerpt": "percentage n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Percentage of returns versus percentage-point change; Myanmar rendering must not confuse percentage with per cent.",
+      "independent_reviewer_task": "Independent human reviewer must verify the intended exact sense against dated publisher dictionary evidence, publisher CEFR classification conflicts, English definition, fluent Myanmar meaning, original example grammar, British pronunciation, provenance, and content-bound independent signoff. Word/POS lists and automated checks are not independent exact-sense CEFR approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "household",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "All the people who live together in one home.",
+        "myanmar_meaning": "တစ်အိမ်တည်းတွင် အတူနေထိုင်သူများ",
+        "example_sentence": "Every household in the village received clean water."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 905,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 11,
+        "extracted_line": 2914,
+        "source_excerpt": "household n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "One household may include non-relatives; avoid equating it with only a nuclear family.",
+      "independent_reviewer_task": "Independent human reviewer must verify the intended exact sense against dated publisher dictionary evidence, publisher CEFR classification conflicts, English definition, fluent Myanmar meaning, original example grammar, British pronunciation, provenance, and content-bound independent signoff. Word/POS lists and automated checks are not independent exact-sense CEFR approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "occur",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To happen, especially at a particular time or place.",
+        "myanmar_meaning": "ဖြစ်ပွားသည်၊ ဖြစ်ပေါ်သည်",
+        "example_sentence": "Power cuts sometimes occur during heavy storms."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 906,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 9,
+        "extracted_line": 2247,
+        "source_excerpt": "occur v.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Occurrence of power cuts is a happen sense; distinguish occur to someone (idea) and check Myanmar verb collocation.",
+      "independent_reviewer_task": "Independent human reviewer must verify the intended exact sense against dated publisher dictionary evidence, publisher CEFR classification conflicts, English definition, fluent Myanmar meaning, original example grammar, British pronunciation, provenance, and content-bound independent signoff. Word/POS lists and automated checks are not independent exact-sense CEFR approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "alongside",
+      "level": "B2",
+      "part_of_speech": "preposition",
+      "shortlist_snapshot": {
+        "english_definition": "Next to someone or something.",
+        "myanmar_meaning": "ဘေးချင်းယှဉ်လျက်၊ ဘေးတွင်",
+        "example_sentence": "The new building stands alongside the old library."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 907,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 766,
+        "source_excerpt": "alongside prep.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The building example uses physically next to, not working together with; publisher dictionary badge conflicts with PDF C1.",
+      "independent_reviewer_task": "Independent human reviewer must verify the intended exact sense against dated publisher dictionary evidence, publisher CEFR classification conflicts, English definition, fluent Myanmar meaning, original example grammar, British pronunciation, provenance, and content-bound independent signoff. Word/POS lists and automated checks are not independent exact-sense CEFR approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "anxiety",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A feeling of worry or nervousness about something.",
+        "myanmar_meaning": "စိုးရိမ်ပူပန်မှု၊ စိတ်မအေးမှု",
+        "example_sentence": "The interview caused her some anxiety."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 908,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 1,
+        "extracted_line": 31,
+        "source_excerpt": "anxiety n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Anxiety as ordinary worry versus clinical anxiety disorder; do not imply a diagnosis in Myanmar.",
+      "independent_reviewer_task": "Independent human reviewer must verify the intended exact sense against dated publisher dictionary evidence, publisher CEFR classification conflicts, English definition, fluent Myanmar meaning, original example grammar, British pronunciation, provenance, and content-bound independent signoff. Word/POS lists and automated checks are not independent exact-sense CEFR approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "charity",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An organisation that helps people in need.",
+        "myanmar_meaning": "အကူအညီလိုအပ်သူများကို ကူညီပေးသော ပရဟိတအဖွဲ့",
+        "example_sentence": "The charity provides meals for older residents."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 909,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 1038,
+        "source_excerpt": "charity n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Example refers to an organization, not charitable kindness or donations in general; dictionary badge conflicts with PDF A2.",
+      "independent_reviewer_task": "Independent human reviewer must verify the intended exact sense against dated publisher dictionary evidence, publisher CEFR classification conflicts, English definition, fluent Myanmar meaning, original example grammar, British pronunciation, provenance, and content-bound independent signoff. Word/POS lists and automated checks are not independent exact-sense CEFR approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "discovery",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The act of finding something that was not known before.",
+        "myanmar_meaning": "ယခင်က မသိခဲ့သော အရာကို ရှာဖွေတွေ့ရှိမှု",
+        "example_sentence": "The discovery changed how scientists understood the disease."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 910,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 5,
+        "extracted_line": 1134,
+        "source_excerpt": "discovery n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The act/result of discovering; clarify how the scientific finding changed understanding and natural Myanmar phrasing.",
+      "independent_reviewer_task": "Independent human reviewer must verify the intended exact sense against dated publisher dictionary evidence, publisher CEFR classification conflicts, English definition, fluent Myanmar meaning, original example grammar, British pronunciation, provenance, and content-bound independent signoff. Word/POS lists and automated checks are not independent exact-sense CEFR approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "formal",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Following established rules or official procedures.",
+        "myanmar_meaning": "တရားဝင်စည်းမျဉ်းစည်းကမ်းနှင့် ကိုက်ညီသော",
+        "example_sentence": "The employee submitted a formal complaint."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 911,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 5,
+        "extracted_line": 1231,
+        "source_excerpt": "formal adj.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A formal complaint means made through official procedures, not necessarily a polite or formal tone.",
+      "independent_reviewer_task": "Independent human reviewer must verify the intended exact sense against dated publisher dictionary evidence, publisher CEFR classification conflicts, English definition, fluent Myanmar meaning, original example grammar, British pronunciation, provenance, and content-bound independent signoff. Word/POS lists and automated checks are not independent exact-sense CEFR approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "formula",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A rule written with symbols for calculating something.",
+        "myanmar_meaning": "တွက်ချက်ရာတွင် သုံးသော သင်္ချာပုံသေနည်း",
+        "example_sentence": "The engineer used a formula to calculate the area."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 912,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 5,
+        "extracted_line": 1229,
+        "source_excerpt": "formula n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Mathematical rule in example, not chemical formula, recipe or method for success; dictionary badge conflicts with PDF C1.",
+      "independent_reviewer_task": "Independent human reviewer must verify the intended exact sense against dated publisher dictionary evidence, publisher CEFR classification conflicts, English definition, fluent Myanmar meaning, original example grammar, British pronunciation, provenance, and content-bound independent signoff. Word/POS lists and automated checks are not independent exact-sense CEFR approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "innocent",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Not guilty of a crime or wrongdoing.",
+        "myanmar_meaning": "အပြစ်မရှိသော",
+        "example_sentence": "The court found the accused person innocent."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 913,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 8,
+        "extracted_line": 2152,
+        "source_excerpt": "innocent adj.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Not guilty in legal context, not naive/harmless; avoid equating acquittal with proof of factual innocence.",
+      "independent_reviewer_task": "Independent human reviewer must verify the intended exact sense against dated publisher dictionary evidence, publisher CEFR classification conflicts, English definition, fluent Myanmar meaning, original example grammar, British pronunciation, provenance, and content-bound independent signoff. Word/POS lists and automated checks are not independent exact-sense CEFR approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "mystery",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Something strange that has not been explained.",
+        "myanmar_meaning": "အကြောင်းရင်းမရှင်းလင်းသေးသော လျှို့ဝှက်ဆန်းကြယ်မှု",
+        "example_sentence": "The cause of the strange noise remains a mystery."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 914,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 9,
+        "extracted_line": 2225,
+        "source_excerpt": "mystery n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "An unexplained cause, not necessarily a detective-fiction genre or a deliberate secret.",
+      "independent_reviewer_task": "Independent human reviewer must verify the intended exact sense against dated publisher dictionary evidence, publisher CEFR classification conflicts, English definition, fluent Myanmar meaning, original example grammar, British pronunciation, provenance, and content-bound independent signoff. Word/POS lists and automated checks are not independent exact-sense CEFR approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ],
+  "direct_dictionary_sense_leads": [
+    {
+      "word": "alongside",
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/alongside_2",
+      "observed_on": "2026-10-30",
+      "entry_pos": "preposition",
+      "sense_number": 1,
+      "sense_summary": "physically next to / at the side of",
+      "example_alignment": "The new building stands alongside the old library.",
+      "dictionary_excerpt_locator": "lines 88-114",
+      "dictionary_badge_observation": "Oxford 3000 B2 badge shown at lines 140-144, conflicting with Oxford 5000 PDF C1 preposition entry",
+      "verification_scope": "DIRECT_DICTIONARY_SENSE_DESCRIPTION_NOT_INDEPENDENT_CEFR_APPROVAL"
+    },
+    {
+      "word": "formula",
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/formula",
+      "observed_on": "2026-10-30",
+      "entry_pos": "noun",
+      "sense_number": 1,
+      "sense_summary": "mathematical symbols representing a rule or law",
+      "example_alignment": "The engineer used a formula to calculate the area.",
+      "dictionary_excerpt_locator": "lines 88-123",
+      "dictionary_badge_observation": "Oxford 3000 B2 badge shown at lines 214-218, conflicting with Oxford 5000 PDF C1 noun entry",
+      "verification_scope": "DIRECT_DICTIONARY_SENSE_DESCRIPTION_NOT_INDEPENDENT_CEFR_APPROVAL"
+    },
+    {
+      "word": "charity",
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/charity",
+      "observed_on": "2026-10-30",
+      "entry_pos": "noun",
+      "sense_number": 1,
+      "sense_summary": "an organisation helping people in need",
+      "example_alignment": "The charity provides meals for older residents.",
+      "dictionary_excerpt_locator": "lines 88-117",
+      "dictionary_badge_observation": "Oxford 3000 B2 badge shown at lines 223-227, conflicting with Oxford 3000 PDF A2 noun entry",
+      "verification_scope": "DIRECT_DICTIONARY_SENSE_DESCRIPTION_NOT_INDEPENDENT_CEFR_APPROVAL"
+    },
+    {
+      "word": "percentage",
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/percentage",
+      "observed_on": "2026-10-30",
+      "entry_pos": "noun",
+      "sense_number": 1,
+      "sense_summary": "number, amount or rate expressed out of one hundred",
+      "example_alignment": "The percentage of returned products fell this month.",
+      "dictionary_excerpt_locator": "lines 88-128",
+      "dictionary_badge_observation": "Maths and measurement B1 topic label at line 128 aligns with Oxford 3000 PDF B1 noun entry; topic label is not an exact-sense CEFR signoff",
+      "verification_scope": "DIRECT_DICTIONARY_SENSE_DESCRIPTION_NOT_INDEPENDENT_CEFR_APPROVAL"
+    }
+  ],
+  "independent_human_review_receipts": [],
+  "audio_real_listening_signoffs": [],
+  "release_approved": false
+}
