@@ -1,0 +1,495 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B1_ELEVENTH_TWELVE_DIRECT_OXFORD_WORD_POS_FOUR_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 12,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "B2": 4,
+    "B1": 3,
+    "A1": 2,
+    "A2": 3
+  },
+  "word_pos_discrepancies": 9,
+  "direct_dictionary_sense_leads": 4,
+  "independently_approved_count": 0,
+  "source_limitations": "Direct Oxford 3000/5000 PDF word/POS CEFR levels are NOT independent exact-sense CEFR evidence. Four directly opened Oxford dictionary pages are sense research leads, not human signoff. Foundation's dictionary Buildings c1 topic badge is NOT a C1 wordlist classification. No human independent English/Myanmar/example review, real George/Emma listening, physical iPhone QA, measured hosting or deployment. Frozen shortlist unchanged.",
+  "records": [
+    {
+      "word": "foundation",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The strong base on which a building is built.",
+        "myanmar_meaning": "အဆောက်အအုံ၏ အုတ်မြစ်",
+        "example_sentence": "Workers checked the foundation before building the walls."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 608,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 265,
+        "source_excerpt": "foundation n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Construction base; Oxford building-topic c1 tag on dictionary page is not the wordlist CEFR level; distinguish foundations of a building from a charitable foundation.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/foundation",
+        "observed_on": "2026-10-30",
+        "sense_number": 4,
+        "page_text_line_start": 170,
+        "page_text_line_end": 180,
+        "editorial_interpretation": "Building foundations are usually plural and physically underground; separate from the abstract basis and charity senses.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "အဆောက်အအုံကို ထောက်ပံ့ထားသည့် မြေအောက်အုတ်မြစ်",
+        "original_example_sentence": "The builders checked the concrete foundations before construction continued.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "gain",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To get something useful or valuable.",
+        "myanmar_meaning": "ရရှိသည်၊ တိုးပွားရရှိသည်",
+        "example_sentence": "You can gain confidence by practising every day."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 609,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 11,
+        "extracted_line": 2886,
+        "source_excerpt": "gain v., n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Gain confidence is gradual development, not winning a prize or acquiring entry; Oxford verb has multiple transitive senses.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/gain_1",
+        "observed_on": "2026-10-30",
+        "sense_number": 3,
+        "page_text_line_start": 181,
+        "page_text_line_end": 192,
+        "editorial_interpretation": "Oxford verb sense 3 covers gradual acquisition of confidence; transitive gain confidence fits original example.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "တဖြည်းဖြည်း ရရှိလာသည်၊ တိုးပွားလာသည်",
+        "original_example_sentence": "She gained confidence after speaking to the class several times.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "influence",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To affect how someone thinks or behaves.",
+        "myanmar_meaning": "လွှမ်းမိုးသည်၊ သက်ရောက်မှုရှိစေသည်",
+        "example_sentence": "Friends can influence our choices."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 610,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 8,
+        "extracted_line": 2148,
+        "source_excerpt": "influence n., v.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Affect someone's choices or behaviour, not influence as a noun or physical force.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/influence_2",
+        "observed_on": "2026-10-30",
+        "sense_number": 1,
+        "page_text_line_start": 112,
+        "page_text_line_end": 128,
+        "editorial_interpretation": "Oxford verb sense 1 is the effect on how someone thinks or behaves; original example about friends and choices aligns.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "တစ်ဦးတစ်ယောက်၏ အတွေးအခေါ် သို့မဟုတ် ဆုံးဖြတ်ချက်အပေါ် သက်ရောက်မှုရှိစေသည်",
+        "original_example_sentence": "Friends can influence the decisions we make.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "improve",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To become better or make something better.",
+        "myanmar_meaning": "တိုးတက်ကောင်းမွန်စေသည်",
+        "example_sentence": "Regular practice can improve your speaking skills."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 611,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 393,
+        "source_excerpt": "improve v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Improve speaking skills is transitive, not intransitive become better; provisional B1 is two levels above Oxford A1.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "prevent",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To stop something from happening.",
+        "myanmar_meaning": "တားဆီးသည်",
+        "example_sentence": "Washing your hands can help prevent illness."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 612,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 6,
+        "extracted_line": 1495,
+        "source_excerpt": "prevent v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Prevent illness is a transitive prevention sense; avoid suggesting all illnesses are preventable.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "advantage",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Something that makes a situation better or easier for someone.",
+        "myanmar_meaning": "အားသာချက်",
+        "example_sentence": "Speaking two languages is an advantage in this job."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 613,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 920,
+        "source_excerpt": "advantage n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A practical benefit of bilingual ability, not an unfair sporting advantage.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "aware",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Knowing that something exists or is happening.",
+        "myanmar_meaning": "သိရှိသတိပြုမိသော",
+        "example_sentence": "Are you aware of the new safety rules?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 614,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1837,
+        "source_excerpt": "aware adj.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Predicative aware of the rules, not an attributive adjective; retain of-complement.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "decide",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To choose something after thinking about the options.",
+        "myanmar_meaning": "ဆုံးဖြတ်သည်",
+        "example_sentence": "We must decide where to meet tomorrow."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 615,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 1,
+        "extracted_line": 198,
+        "source_excerpt": "decide v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Choosing after consideration; distinguish decide where to meet from making a judicial decision.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "progress",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Movement towards a better or more complete result.",
+        "myanmar_meaning": "တိုးတက်မှု",
+        "example_sentence": "The students made good progress this term."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 616,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 6,
+        "extracted_line": 1506,
+        "source_excerpt": "progress n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Uncountable educational progress in make progress, not a countable single achievement or verb.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "concept",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A general idea used to understand or explain something.",
+        "myanmar_meaning": "အယူအဆ",
+        "example_sentence": "The teacher explained the concept with a simple drawing."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 617,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 10,
+        "extracted_line": 2711,
+        "source_excerpt": "concept n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Abstract idea or principle rather than an invented product/design proposal; B2 source label versus B1 draft.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/concept",
+        "observed_on": "2026-10-30",
+        "sense_number": 1,
+        "page_text_line_start": 119,
+        "page_text_line_end": 145,
+        "editorial_interpretation": "Oxford noun sense 1 is an abstract idea/principle; teaching a concept with a drawing matches this rather than a new design concept.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "အကြောင်းအရာတစ်ခုကို နားလည်ရန် အသုံးပြုသည့် အခြေခံအယူအဆ",
+        "original_example_sentence": "The teacher explained the concept of fairness with a simple story.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "academic",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Connected with education, study, or research.",
+        "myanmar_meaning": "ပညာရေးနှင့်ဆိုင်သော",
+        "example_sentence": "She needs stronger academic writing skills."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 618,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1784,
+        "source_excerpt": "academic adj.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Connected with education or scholarship, not academic as a noun or theoretical/unimportant colloquial sense.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "accurate",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Correct and without mistakes.",
+        "myanmar_meaning": "တိကျမှန်ကန်သော",
+        "example_sentence": "Please check that the address is accurate."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 619,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 10,
+        "extracted_line": 2599,
+        "source_excerpt": "accurate adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Correctness of a written address, not precise measurement alone; B2 source label versus provisional B1.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Word/POS PDF evidence and assistant suggestions do not constitute independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
