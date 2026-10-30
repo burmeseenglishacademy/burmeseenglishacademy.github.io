@@ -1,3 +1,5 @@
+> **CORRECTION — 2026-10-31:** Any claim below that a C1 Oxford dictionary footer establishes a target-headword C1 label is **retracted**. The C1 footer on the inspected page belongs to the separate Word-of-the-Day widget for **applicable (adjective)**, not to the target. See [direct-source correction and remaining human-review blockers](CEFR-1000-OXFORD-FOOTER-ATTRIBUTION-CORRECTION-CHECKPOINT-2026-10-31.md). The Oxford 3000 PDF word/POS observations remain valid within their limited scope; all draft entries remain unapproved and staging-only.
+
 # CEFR 1,000 — B2 eleventh twelve Oxford observations and four exact-sense leads (31 October 2026)
 
 **STAGING ONLY / HUMAN EDITORIAL HOLD / NO DEPLOYMENT.** This research concerns the user-approved 1,000-total A1–C1 corpus (200 each), **not** the retired 5,000-word plan. The original shortlist and independent-review task file are unchanged. Every record remains unapproved.
