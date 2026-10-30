@@ -177,6 +177,8 @@ on:
       - tools/audit_cefr_1000_oxford_c1_five.py
       - tools/audit_cefr_1000_six_sense.py
       - tools/audit_cefr_1000_editorial_candidates.py
+      - draft/CEFR-1000-CAMBRIDGE-C1-EIGHT-UNLABELLED-SENSE-TRIAGE-2026-10-31.json
+      - tools/audit_cefr_1000_cambridge_c1_eight_unlabelled.py
       - .github/workflows/cefr-1000-selection-structural-qa.yml
   workflow_dispatch:
 permissions:
