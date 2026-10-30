@@ -1,0 +1,540 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B2_ELEVENTH_TWELVE_DIRECT_OXFORD_WORD_POS_FOUR_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-31",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 12,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 1,
+    "A2": 2,
+    "B1": 4,
+    "B2": 5,
+    "C1": 0
+  },
+  "word_pos_discrepancies": 7,
+  "direct_dictionary_sense_leads": 4,
+  "independently_approved_count": 0,
+  "source_limitations": "Oxford 3000 PDF word/POS CEFR labels are not independent exact-sense ratings. Directly opened Oxford dictionary pages for appointment, contemporary, graduate and raw show C1 footer labels that conflict with B1/B2 official PDF word/POS labels; these conflicting publisher surfaces remain unresolved. Dictionary topic badges are not core-list levels. All English, Myanmar and example alternatives are editorial suggestions only. No human independent review, final George/Emma listening, physical iPhone Safari, measured hosting or production deployment.",
+  "records": [
+    {
+      "word": "consistent",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Remaining at a similar standard or following the same pattern over time.",
+        "myanmar_meaning": "တစ်သမတ်တည်းဖြစ်သော",
+        "example_sentence": "His results have been consistent throughout the year."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 452,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 10,
+        "extracted_line": 2721,
+        "source_excerpt": "consistent adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Similar standard over time; avoid confusing consistent results with logical consistency.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Oxford word/POS PDF and dictionary footer observations are not independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "publisher_surface_conflict": null
+    },
+    {
+      "word": "defence",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The act of protecting someone or something from attack or harm.",
+        "myanmar_meaning": "ကာကွယ်ခြင်း၊ ခုခံကာကွယ်မှု",
+        "example_sentence": "The walls were built for the defence of the town."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 485,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 11,
+        "extracted_line": 2766,
+        "source_excerpt": "defence n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Protective structure or action, not a legal argument or sports position; British spelling.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Oxford word/POS PDF and dictionary footer observations are not independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "publisher_surface_conflict": null
+    },
+    {
+      "word": "valuable",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Very useful or important, even when not expensive.",
+        "myanmar_meaning": "တန်ဖိုးရှိသော၊ အကျိုးရှိသော",
+        "example_sentence": "Her advice was valuable during the project."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 486,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 10,
+        "extracted_line": 2551,
+        "source_excerpt": "valuable adj.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Useful advice rather than an item with high monetary value.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Oxford word/POS PDF and dictionary footer observations are not independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "publisher_surface_conflict": null
+    },
+    {
+      "word": "fairly",
+      "level": "B2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "To some degree, but not extremely.",
+        "myanmar_meaning": "အတော်အသင့်၊ အတော်လေး",
+        "example_sentence": "The test was fairly easy after the practice session."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 487,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 8,
+        "extracted_line": 2049,
+        "source_excerpt": "fairly adv.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Degree modifier meaning moderately, not in a just or impartial manner.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Oxford word/POS PDF and dictionary footer observations are not independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "publisher_surface_conflict": null
+    },
+    {
+      "word": "contain",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To have something inside or as a part.",
+        "myanmar_meaning": "အထဲတွင် ပါဝင်သည်၊ ထည့်သွင်းထားသည်",
+        "example_sentence": "These boxes contain fragile glass products."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 488,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 4,
+        "extracted_line": 1077,
+        "source_excerpt": "contain v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Boxes having glass inside, not restricting a fire or emotional reaction.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Oxford word/POS PDF and dictionary footer observations are not independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "publisher_surface_conflict": null
+    },
+    {
+      "word": "graduate",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To complete a course of study and receive a qualification.",
+        "myanmar_meaning": "သင်တန်း သို့မဟုတ် ဘွဲ့သင်တန်းပြီးဆုံး၍ အောင်မြင်သည်",
+        "example_sentence": "She hopes to graduate from university next year."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 489,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 8,
+        "extracted_line": 2102,
+        "source_excerpt": "graduate n., v.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "University-degree verb; British graduate from university versus North American graduate college.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/graduate_2",
+        "observed_on": "2026-10-31",
+        "sense_number": 1,
+        "page_text_line_start": 110,
+        "page_text_line_end": 125,
+        "editorial_interpretation": "Oxford's university-degree verb sense matches the draft, including graduate from university in British English; North American direct-object usage is a different regional pattern.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "တက္ကသိုလ်ပညာရေး ပြီးဆုံး၍ ဘွဲ့ရသည်",
+        "original_example_sentence": "She plans to graduate from university next year.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Oxford word/POS PDF and dictionary footer observations are not independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "publisher_surface_conflict": {
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/graduate_2",
+        "observed_on": "2026-10-31",
+        "page_text_line_start": 241,
+        "page_text_line_end": 245,
+        "dictionary_footer_label": "C1",
+        "pdf_word_pos_label": "B1",
+        "resolution": "UNRESOLVED_PUBLISHER_SURFACE_CONFLICT_INDEPENDENT_SENSE_REVIEW_REQUIRED"
+      }
+    },
+    {
+      "word": "appointment",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An arranged time to meet someone, especially for a service or professional discussion.",
+        "myanmar_meaning": "ကြိုတင်ချိန်းဆိုထားသော တွေ့ဆုံချိန်",
+        "example_sentence": "I made a dental appointment for Friday morning."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 490,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 7,
+        "extracted_line": 1822,
+        "source_excerpt": "appointment n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Countable dental booking, not a job appointment or appointment of an official.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/appointment",
+        "observed_on": "2026-10-31",
+        "sense_number": 1,
+        "page_text_line_start": 105,
+        "page_text_line_end": 115,
+        "editorial_interpretation": "The countable healthcare booking sense fits a dental appointment; the noun also denotes a person's selection for a position, which the draft does not intend.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ဆရာဝန်နှင့် တွေ့ဆုံရန် ကြိုတင်ချိန်းထားသည့် အချိန်",
+        "original_example_sentence": "I booked a dental appointment for Friday morning.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Oxford word/POS PDF and dictionary footer observations are not independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "publisher_surface_conflict": {
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/appointment",
+        "observed_on": "2026-10-31",
+        "page_text_line_start": 250,
+        "page_text_line_end": 254,
+        "dictionary_footer_label": "C1",
+        "pdf_word_pos_label": "B1",
+        "resolution": "UNRESOLVED_PUBLISHER_SURFACE_CONFLICT_INDEPENDENT_SENSE_REVIEW_REQUIRED"
+      }
+    },
+    {
+      "word": "contemporary",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Belonging to or happening in the present period.",
+        "myanmar_meaning": "ခေတ်ပြိုင်ဖြစ်သော၊ ယနေ့ခေတ်နှင့်ဆိုင်သော",
+        "example_sentence": "The museum displays contemporary art from local artists."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 491,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 10,
+        "extracted_line": 2726,
+        "source_excerpt": "contemporary adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Modern art sense, not the historical same-period meaning; dictionary footer conflicts with official PDF.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/contemporary_1",
+        "observed_on": "2026-10-31",
+        "sense_number": 2,
+        "page_text_line_start": 129,
+        "page_text_line_end": 143,
+        "editorial_interpretation": "Present-day art is sense 2, distinct from events or people belonging to the same historical period; the page footer shows C1 despite the official Oxford 3000 PDF B2.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ယနေ့ခေတ်နှင့် သက်ဆိုင်သော",
+        "original_example_sentence": "The gallery features contemporary paintings by local artists.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Oxford word/POS PDF and dictionary footer observations are not independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "publisher_surface_conflict": {
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/contemporary_1",
+        "observed_on": "2026-10-31",
+        "page_text_line_start": 181,
+        "page_text_line_end": 185,
+        "dictionary_footer_label": "C1",
+        "pdf_word_pos_label": "B2",
+        "resolution": "UNRESOLVED_PUBLISHER_SURFACE_CONFLICT_INDEPENDENT_SENSE_REVIEW_REQUIRED"
+      }
+    },
+    {
+      "word": "initially",
+      "level": "B2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "At the beginning, before something changes.",
+        "myanmar_meaning": "အစပိုင်းတွင်၊ ပထမဦးစွာ",
+        "example_sentence": "Initially, we planned to travel by train."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 492,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 11,
+        "extracted_line": 2939,
+        "source_excerpt": "initially adv.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "At first before a change, not initial adjective.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Oxford word/POS PDF and dictionary footer observations are not independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "publisher_surface_conflict": null
+    },
+    {
+      "word": "raw",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Not cooked or processed.",
+        "myanmar_meaning": "အစိမ်းဖြစ်သော၊ မချက်ပြုတ်ရသေးသော",
+        "example_sentence": "Wash your hands after handling raw chicken."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 544,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 12,
+        "extracted_line": 3118,
+        "source_excerpt": "raw adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Uncooked food, not raw materials, data, emotions or sore skin; dictionary footer conflict.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/raw_1",
+        "observed_on": "2026-10-31",
+        "sense_number": 1,
+        "page_text_line_start": 107,
+        "page_text_line_end": 115,
+        "editorial_interpretation": "Uncooked chicken is food sense 1, not raw materials, unprocessed data, emotion or painful skin; the page footer shows C1 while the official Oxford 3000 PDF labels the adjective B2.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "မချက်ပြုတ်ရသေးသော",
+        "original_example_sentence": "Keep raw chicken separate from cooked food.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Oxford word/POS PDF and dictionary footer observations are not independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "publisher_surface_conflict": {
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/raw_1",
+        "observed_on": "2026-10-31",
+        "page_text_line_start": 236,
+        "page_text_line_end": 240,
+        "dictionary_footer_label": "C1",
+        "pdf_word_pos_label": "B2",
+        "resolution": "UNRESOLVED_PUBLISHER_SURFACE_CONFLICT_INDEPENDENT_SENSE_REVIEW_REQUIRED"
+      }
+    },
+    {
+      "word": "singer",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A person who sings, especially professionally.",
+        "myanmar_meaning": "အဆိုတော်",
+        "example_sentence": "The singer performed three new songs."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 545,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 3,
+        "extracted_line": 699,
+        "source_excerpt": "singer n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A person who sings professionally; ordinary A1 noun, not advanced B2.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Oxford word/POS PDF and dictionary footer observations are not independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "publisher_surface_conflict": null
+    },
+    {
+      "word": "exact",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Completely correct or precise, without approximation.",
+        "myanmar_meaning": "အတိအကျဖြစ်သော",
+        "example_sentence": "Please record the exact weight of each package."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 549,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 5,
+        "extracted_line": 1179,
+        "source_excerpt": "exact adj.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Precise measured weight; not exact as a verb or exactly as an adverb.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact intended sense and publisher CEFR support, English definition, fluent Myanmar meaning, original example grammar, historical Git provenance and British pronunciation. Oxford word/POS PDF and dictionary footer observations are not independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "publisher_surface_conflict": null
+    }
+  ]
+}
