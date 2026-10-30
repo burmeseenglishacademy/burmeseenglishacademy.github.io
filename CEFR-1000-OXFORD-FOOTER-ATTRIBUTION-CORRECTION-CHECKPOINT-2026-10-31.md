@@ -49,3 +49,10 @@ The proposals are editorial first-pass suggestions only. A genuine independent r
 No new distinct Oxford word/POS observation was added in this correction; 288 remain without direct Oxford observations. All 1,000 remain on editorial hold. Actual final George/Emma headword/example listening signoffs: **0/1,000**. Independent English/Myanmar/example and exact-sense CEFR receipts, complete dual-voice audio generation and listening, browser/mobile regression, physical iPhone Safari evidence, measured GitHub Pages hosting, privacy/production preservation release signoff and confirmed production deployment remain missing. The 54 lessons, separate IELTS 1,000 bank, established George/Emma production audio and privacy assets must remain untouched.
 
 **Release: BLOCKED / STAGING ONLY.** No merge, main-branch change or publication. GitHub Actions job conclusions must be inspected separately; this document itself is not a CI pass receipt.
+
+## Verified GitHub Actions results (actual job logs)
+
+- [Structural run 41099832672](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41099832672): **SUCCESS** for all six A1/A2/B1/B2/C1/ALL jobs; code SHA `1b06c352aee8b72f20881004b39140288751e9c9`. Actual ALL log: **five false Oxford footer claims corrected; 53/53 adversarial attribution, source and signoff mutations rejected**; 712 distinct Oxford word/POS headwords across 731 observations; protected production assets unchanged. Structural ALL artifact ID `12996989403`.
+- [Documentary no-deployment run 41099839880](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41099839880): **SUCCESS, report-only**, code SHA `e3f8051b42b44de7f0b7c1ac87466d799221a803`. Actual log confirms 53/53 correction mutations rejected and enumerates the missing independent review, real audio listening, browser/mobile, physical iPhone Safari, hosting and production evidence. Blocker artifact ID `12997497371`.
+
+These are **structural/documentary CI conclusions only**; no independent reviewer, physical-device test, real listening, hosting measurement, merge or deployment has been completed.
