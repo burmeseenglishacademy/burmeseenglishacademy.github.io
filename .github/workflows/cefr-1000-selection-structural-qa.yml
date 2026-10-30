@@ -108,6 +108,8 @@ on:
       - draft/CEFR-1000-OXFORD-B2-EIGHTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-30.json
       - draft/CEFR-1000-OXFORD-B2-NINTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-30.json
       - tools/audit_cefr_1000_oxford_b2_ninth_twelve.py
+      - draft/CEFR-1000-OXFORD-B2-TENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-30.json
+      - tools/audit_cefr_1000_oxford_b2_tenth_twelve.py
       - tools/audit_cefr_1000_oxford_b2_eighth_twelve.py
       - draft/CEFR-1000-OXFORD-B2-SIXTH-FOUR-DIRECT-SENSE-LEADS-2026-10-30.json
       - tools/audit_cefr_1000_oxford_b2_four_sense_leads.py
@@ -452,6 +454,11 @@ jobs:
       - name: Reject ninth B2 forged publisher, bilingual, source and human signoff evidence
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_b2_ninth_twelve.py --level ALL --self-test
+      - name: Audit tenth B2 twelve direct Oxford word-POS and four sense leads (no approval)
+        run: python3 tools/audit_cefr_1000_oxford_b2_tenth_twelve.py --level "${{ matrix.level }}"
+      - name: Reject 229 tenth B2 forged publisher, bilingual, provenance, sense and signoff mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_oxford_b2_tenth_twelve.py --level ALL --self-test
       - name: Reject 151 forged sixth B2 publisher, bilingual, provenance and approval mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_b2_sixth_twelve.py --level ALL --self-test
