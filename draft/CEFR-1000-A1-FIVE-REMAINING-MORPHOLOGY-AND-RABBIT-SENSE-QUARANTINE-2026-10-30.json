@@ -1,0 +1,203 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A1_FIVE_REMAINING_UNOBSERVED_HEADWORDS_MORPHOLOGY_AND_CEFR_QUARANTINE",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 5,
+  "first_pass_written_by_level": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "independently_approved_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "oxford_word_pos_distinct_a1": 195,
+  "remaining_without_direct_oxford_word_pos": [
+    "is",
+    "are",
+    "does",
+    "did",
+    "rabbit"
+  ],
+  "morphology_variants_count": 4,
+  "cambridge_a2_rabbit_sense_count": 1,
+  "source_limitations": "Cambridge grammar identifies inflections, not separate Oxford core-list CEFR headwords. Cambridge A2 rabbit is a dictionary exact-sense label and Oxford Animals a2 is a topic label, not independent CEFR approval. No independent review, real listening, physical iPhone QA or production deployment. Frozen shortlist unchanged.",
+  "records": [
+    {
+      "word": "is",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "The present form of be used with he, she, it or a singular subject.",
+        "myanmar_meaning": "ဖြစ်တယ်၊ ရှိတယ် (အနည်းကိန်းနှင့်တွဲသုံး)",
+        "example_sentence": "She is at home."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 120,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "morphology_or_sense": {
+        "canonical_lemma": "be",
+        "source_cefr_level": null,
+        "evidence_kind": "INFLECTED_FORM_NOT_INDEPENDENT_LEMMA"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/grammar/british-grammar/be-",
+        "observed_on": "2026-10-30",
+        "source_excerpt_summary": "Cambridge English Grammar Today: present forms of be include (he/she/it) is and (you/we/they) are.",
+        "evidence_scope": "DIRECT_PUBLISHER_GRAMMAR_OR_DICTIONARY_NOT_INDEPENDENT_APPROVAL"
+      },
+      "editorial_risk": "The A1 shortlist counts is as a separate headword although be is already present; grammatical inflection is not an independently CEFR-classified lexical headword. Example She is at home is grammatical; Myanmar sense must distinguish location from identity. Human reviewer must decide grammar card versus lexical item.",
+      "independent_reviewer_task": "Independent human reviewer must resolve lexical-lemma versus grammar-form counting, exact sense and CEFR suitability, fluent Myanmar and example grammar, British pronunciation, and record content-bound signoff before any release; automated research is not independent review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "are",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "The present form of be used with you, we, they or plural subjects.",
+        "myanmar_meaning": "ဖြစ်တယ်၊ ရှိတယ် (အများကိန်းနှင့်တွဲသုံး)",
+        "example_sentence": "They are friends."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 121,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "morphology_or_sense": {
+        "canonical_lemma": "be",
+        "source_cefr_level": null,
+        "evidence_kind": "INFLECTED_FORM_NOT_INDEPENDENT_LEMMA"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/grammar/british-grammar/be-",
+        "observed_on": "2026-10-30",
+        "source_excerpt_summary": "Cambridge English Grammar Today: present forms of be include (he/she/it) is and (you/we/they) are.",
+        "evidence_scope": "DIRECT_PUBLISHER_GRAMMAR_OR_DICTIONARY_NOT_INDEPENDENT_APPROVAL"
+      },
+      "editorial_risk": "The A1 shortlist counts are separately despite existing be and is cards; plural subject agreement is grammar, not a distinct Oxford headword/POS observation. They are friends is grammatical; Myanmar translation must not imply that are always signals plural.",
+      "independent_reviewer_task": "Independent human reviewer must resolve lexical-lemma versus grammar-form counting, exact sense and CEFR suitability, fluent Myanmar and example grammar, British pronunciation, and record content-bound signoff before any release; automated research is not independent review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "does",
+      "level": "A1",
+      "part_of_speech": "auxiliary verb",
+      "shortlist_snapshot": {
+        "english_definition": "The present form of do used with he, she or it in questions and negatives.",
+        "myanmar_meaning": "မေးခွန်းနှင့် အငြင်းဝါကျတွင် သုံးသော do ၏ အနည်းကိန်းပုံစံ",
+        "example_sentence": "Does he work here?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 123,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "morphology_or_sense": {
+        "canonical_lemma": "do",
+        "source_cefr_level": null,
+        "evidence_kind": "INFLECTED_AUXILIARY_NOT_INDEPENDENT_LEMMA"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/grammar/british-grammar/do",
+        "observed_on": "2026-10-30",
+        "source_excerpt_summary": "Cambridge English Grammar Today: does is the present simple third-person singular form of do; auxiliary does forms questions and negatives.",
+        "evidence_scope": "DIRECT_PUBLISHER_GRAMMAR_OR_DICTIONARY_NOT_INDEPENDENT_APPROVAL"
+      },
+      "editorial_risk": "A1 does is an auxiliary inflection of do already listed in A1, not a distinct Oxford lexical headword. Does he work here? is grammatical; review Burmese description and avoid counting inflection as a new lexical sense.",
+      "independent_reviewer_task": "Independent human reviewer must resolve lexical-lemma versus grammar-form counting, exact sense and CEFR suitability, fluent Myanmar and example grammar, British pronunciation, and record content-bound signoff before any release; automated research is not independent review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "did",
+      "level": "A1",
+      "part_of_speech": "auxiliary verb",
+      "shortlist_snapshot": {
+        "english_definition": "The past form of do used in questions and negatives.",
+        "myanmar_meaning": "အတိတ်ကာလ မေးခွန်းတွင် သုံးသော do ၏ ပုံစံ",
+        "example_sentence": "Did you eat breakfast?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 124,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "morphology_or_sense": {
+        "canonical_lemma": "do",
+        "source_cefr_level": null,
+        "evidence_kind": "INFLECTED_AUXILIARY_NOT_INDEPENDENT_LEMMA"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/grammar/british-grammar/do",
+        "observed_on": "2026-10-30",
+        "source_excerpt_summary": "Cambridge English Grammar Today: did is the past form of do, used as auxiliary in questions and negatives.",
+        "evidence_scope": "DIRECT_PUBLISHER_GRAMMAR_OR_DICTIONARY_NOT_INDEPENDENT_APPROVAL"
+      },
+      "editorial_risk": "A1 did is the past auxiliary form of do, already present; Did you eat breakfast? is grammatical but the Myanmar meaning omits negative usage. This is a morphology/grammar card, not an independent CEFR lexical headword.",
+      "independent_reviewer_task": "Independent human reviewer must resolve lexical-lemma versus grammar-form counting, exact sense and CEFR suitability, fluent Myanmar and example grammar, British pronunciation, and record content-bound signoff before any release; automated research is not independent review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "rabbit",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A small animal with long ears.",
+        "myanmar_meaning": "ယုန်",
+        "example_sentence": "The rabbit is white."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 186,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "morphology_or_sense": {
+        "canonical_lemma": "rabbit",
+        "source_cefr_level": "A2",
+        "evidence_kind": "DIRECT_DICTIONARY_SENSE_LABEL_NOT_OXFORD_CORE_LIST"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/rabbit",
+        "observed_on": "2026-10-30",
+        "source_excerpt_summary": "Cambridge English Dictionary: rabbit noun, A2, animal with long ears; example and intended A1 draft use the animal sense.",
+        "evidence_scope": "DIRECT_PUBLISHER_GRAMMAR_OR_DICTIONARY_NOT_INDEPENDENT_APPROVAL"
+      },
+      "editorial_risk": "Provisional A1 rabbit animal sense conflicts with Cambridge's A2 dictionary sense label; Oxford Learner's Dictionary Animals topic is A2, but a topic label is not Oxford core-list word/POS CEFR. Independent reviewer must decide A1 pedagogical rationale or replacement; do not silently retier.",
+      "independent_reviewer_task": "Independent human reviewer must resolve lexical-lemma versus grammar-form counting, exact sense and CEFR suitability, fluent Myanmar and example grammar, British pronunciation, and record content-bound signoff before any release; automated research is not independent review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ],
+  "independent_human_review_receipts": [],
+  "real_audio_listening_receipts": [],
+  "release_approved": false
+}
