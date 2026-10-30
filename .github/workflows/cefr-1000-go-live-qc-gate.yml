@@ -168,6 +168,8 @@ on:
       - draft/CEFR-1000-CAMBRIDGE-C1-EIGHT-UNLABELLED-SENSE-TRIAGE-2026-10-31.json
       - tools/audit_cefr_1000_cambridge_c1_eight_unlabelled.py
       - .github/workflows/cefr-1000-go-live-qc-gate.yml
+      - draft/CEFR-1000-CAMBRIDGE-A2-SIX-COMPOUND-INDEXED-SENSE-TRIAGE-2026-10-31.json
+      - tools/audit_cefr_1000_cambridge_a2_six_indexed.py
   workflow_dispatch:
     inputs:
       enforce_full_qc:
@@ -274,6 +276,8 @@ jobs:
           python3 tools/audit_cefr_1000_oxford_c1_five.py --level ALL --self-test
           node --check cefr-vocabulary.js
           node tests/cefr-ui.cjs
+      - name: Audit six indexed Cambridge A2 compounds and reject 90 forged evidence mutations
+        run: python3 tools/audit_cefr_1000_cambridge_a2_six_indexed.py --level ALL --self-test
       - name: Report missing real approvals, voice listening, iPhone and hosting QC
         run: python3 tools/audit_cefr_1000_launch_readiness.py --report-only --self-test
       - name: Explicitly enforce ALL evidence if release candidate manually checked
