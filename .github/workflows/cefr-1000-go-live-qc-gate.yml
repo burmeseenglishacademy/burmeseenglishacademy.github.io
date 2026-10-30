@@ -4,6 +4,8 @@ on:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
       - draft/CEFR-1000-RELEASE-EVIDENCE.json
+      - draft/CEFR-1000-A1-FIVE-REMAINING-MORPHOLOGY-AND-RABBIT-SENSE-QUARANTINE-2026-10-30.json
+      - tools/audit_cefr_1000_a1_five_morphology.py
       - draft/CEFR-1000-APPROVED-RELEASE.json
       - tools/audit_cefr_1000_launch_readiness.py
       - tools/audit_cefr_1000_cambridge_sense.py
@@ -187,6 +189,8 @@ jobs:
           python3 tools/audit_cefr_1000_oxford_a1_thirteenth_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_a1_fourteenth_eleven.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_a1_four_sense_leads.py --level ALL --self-test
+          python3 -m py_compile tools/audit_cefr_1000_a1_five_morphology.py
+          python3 tools/audit_cefr_1000_a1_five_morphology.py --level ALL --self-test
           python3 tools/audit_cefr_1000_cambridge_a1_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_coverage.py --level ALL --self-test
           python3 tools/audit_cefr_1000_review_priority.py --level ALL --self-test
