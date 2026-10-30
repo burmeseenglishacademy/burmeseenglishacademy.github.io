@@ -149,7 +149,7 @@ def normalize(row):
     if level is not None or pub is None:
         require(url in (SOURCE_PREFIX + "3000" + SOURCE_SUFFIX,
                         SOURCE_PREFIX + "5000" + SOURCE_SUFFIX), "Untrusted Oxford PDF URL")
-    require(date in ("2026-10-28", "2026-10-29", "2026-10-30"), "Source observation date missing/drifted")
+    require(date in ("2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31"), "Source observation date missing/drifted")
     if level is not None:
         require(type(page) is int and page > 0 and type(line) is int and line >= 0,
                 "Invalid PDF page/line locator")
