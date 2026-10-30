@@ -1,0 +1,462 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B1_EIGHTH_TWELVE_DIRECT_OXFORD_WORD_POS_AND_FOUR_DICTIONARY_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 12,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 2,
+    "A2": 3,
+    "B1": 7
+  },
+  "word_pos_discrepancies": 5,
+  "direct_dictionary_sense_leads": 4,
+  "independently_approved_count": 0,
+  "source_limitations": "Oxford 3000 official CEFR PDF directly inspected on 2026-10-30. Publisher labels are word/POS and homograph specific, not independent exact-sense CEFR verification. Four directly opened dictionary pages are editorial sense leads only; lie2 PDF B1 versus dictionary B2 badge unresolved. No human independent review, real audio listening, device testing or publication.",
+  "records": [
+    {
+      "word": "channel",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A television station or a particular television service.",
+        "myanmar_meaning": "ရုပ်မြင်သံကြားလိုင်း",
+        "example_sentence": "Which channel is showing the documentary?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 535,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1887,
+        "source_excerpt": "channel n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Television channel sense, not river/waterway, communication medium or English Channel; Myanmar 'ရုပ်မြင်သံကြားလိုင်း' is specific.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/channel_1",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 103,
+        "page_text_line_end": 154,
+        "editorial_interpretation": "Dictionary TV/radio section distinguishes TV station from other channel senses; the draft documentary example uses TV channel.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify exact sense and CEFR suitability, English definition, fluent Myanmar meaning, original example grammar, source-backed word/POS and dictionary distinctions, and British pronunciation. Human signoff must be content-bound; source observation and assistant analysis are not independent review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "fat",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Containing a large amount of body fat.",
+        "myanmar_meaning": "အဆီများသော၊ ဝသော",
+        "example_sentence": "The vet advised a healthier diet for the fat cat."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 536,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 275,
+        "source_excerpt": "fat adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft adjective describes a cat's body size, not high-fat food, fat noun or insult directed at a person; avoid potentially stigmatising human examples.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact sense and CEFR suitability, English definition, fluent Myanmar meaning, original example grammar, source-backed word/POS and dictionary distinctions, and British pronunciation. Human signoff must be content-bound; source observation and assistant analysis are not independent review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "royal",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Connected with a king, queen or their family.",
+        "myanmar_meaning": "တော်ဝင်မိသားစုနှင့် သက်ဆိုင်သော",
+        "example_sentence": "Visitors gathered outside the royal palace."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 538,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 9,
+        "extracted_line": 2401,
+        "source_excerpt": "royal adj.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft 'royal palace' describes monarchy, not a proper name; Myanmar translation 'တော်ဝင်မိသားစုနှင့် သက်ဆိုင်သော' is narrower than some royal institutional contexts.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact sense and CEFR suitability, English definition, fluent Myanmar meaning, original example grammar, source-backed word/POS and dictionary distinctions, and British pronunciation. Human signoff must be content-bound; source observation and assistant analysis are not independent review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "serve",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To provide food or drinks to someone.",
+        "myanmar_meaning": "အစားအစာ၊ သောက်စရာ တည်ခင်းပေးသည်",
+        "example_sentence": "They serve breakfast from seven o'clock."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 539,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 6,
+        "extracted_line": 1601,
+        "source_excerpt": "serve v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft means provide breakfast, not serve in the military, legal notice or a sporting turn; review Myanmar naturalness and the 7 o'clock time expression.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact sense and CEFR suitability, English definition, fluent Myanmar meaning, original example grammar, source-backed word/POS and dictionary distinctions, and British pronunciation. Human signoff must be content-bound; source observation and assistant analysis are not independent review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "wonderful",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Extremely good or enjoyable.",
+        "myanmar_meaning": "အလွန်ကောင်းမွန်သော၊ ကြည်နူးဖွယ်ကောင်းသော",
+        "example_sentence": "We had a wonderful evening with our friends."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 540,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 889,
+        "source_excerpt": "wonderful adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft is positive evaluation of an evening; Myanmar 'ကြည်နူးဖွယ်ကောင်းသော' can add an emotional nuance not required by every use.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact sense and CEFR suitability, English definition, fluent Myanmar meaning, original example grammar, source-backed word/POS and dictionary distinctions, and British pronunciation. Human signoff must be content-bound; source observation and assistant analysis are not independent review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "bottom",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The lowest part of something.",
+        "myanmar_meaning": "အောက်ခြေ",
+        "example_sentence": "The keys were at the bottom of the bag."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 541,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 1008,
+        "source_excerpt": "bottom n., adj.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft noun means lowest part inside a bag, not buttocks, bottom adjective, financial low point or underside; Myanmar 'အောက်ခြေ' requires container context.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact sense and CEFR suitability, English definition, fluent Myanmar meaning, original example grammar, source-backed word/POS and dictionary distinctions, and British pronunciation. Human signoff must be content-bound; source observation and assistant analysis are not independent review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "lie",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To say something that you know is not true.",
+        "myanmar_meaning": "လိမ်ပြောသည်",
+        "example_sentence": "It is wrong to lie about the results."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 542,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 8,
+        "extracted_line": 2186,
+        "source_excerpt": "lie2 (tell a lie) v., n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "CRITICAL HOMOGRAPH: draft means knowingly say something false (lie2, lied/lied), NOT A1 lie1 'recline' (lay/lain). The dictionary's Oxford 3000 B2 badge for lie2 conflicts with PDF B1; independent sense-specific CEFR reconciliation required.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lie2_1",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 88,
+        "page_text_line_end": 122,
+        "editorial_interpretation": "Direct lie2 dictionary confirms false-statement verb, past lied/lied, and lie about something; page displays Oxford 3000 B2 while PDF labels lie2 B1. Contrast lie1 /definition/english/lie1_1 (recline, lay/lain).",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify exact sense and CEFR suitability, English definition, fluent Myanmar meaning, original example grammar, source-backed word/POS and dictionary distinctions, and British pronunciation. Human signoff must be content-bound; source observation and assistant analysis are not independent review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "square",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A shape with four equal sides and four right angles.",
+        "myanmar_meaning": "စတုရန်းပုံ",
+        "example_sentence": "Draw a square around the correct answer."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 543,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1651,
+        "source_excerpt": "square adj., n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft noun is four equal sides with right angles, not town square, number squared or adjective; Myanmar 'စတုရန်းပုံ' aligns with shape but needs exact-sense review.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact sense and CEFR suitability, English definition, fluent Myanmar meaning, original example grammar, source-backed word/POS and dictionary distinctions, and British pronunciation. Human signoff must be content-bound; source observation and assistant analysis are not independent review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "surface",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The outside or uppermost part of an object.",
+        "myanmar_meaning": "မျက်နှာပြင်",
+        "example_sentence": "The surface of the table feels smooth."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 604,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 10,
+        "extracted_line": 2488,
+        "source_excerpt": "surface n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft means the top/outside of a table, not earth/water surface, mathematical surface or verb; Myanmar 'မျက်နှာပြင်' is context-sensitive.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact sense and CEFR suitability, English definition, fluent Myanmar meaning, original example grammar, source-backed word/POS and dictionary distinctions, and British pronunciation. Human signoff must be content-bound; source observation and assistant analysis are not independent review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "supply",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An amount of something available for use.",
+        "myanmar_meaning": "ထောက်ပံ့ပစ္စည်း၊ ရရှိနိုင်သည့်ပမာဏ",
+        "example_sentence": "The village has a limited supply of clean water."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 605,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 9,
+        "extracted_line": 2485,
+        "source_excerpt": "supply n., v.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft noun is available quantity of clean water, not plural emergency supplies or act of providing; Myanmar 'ထောက်ပံ့ပစ္စည်း' can incorrectly imply goods rather than an available amount.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/supply_1",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 109,
+        "page_text_line_end": 133,
+        "editorial_interpretation": "Dictionary first countable sense concerns amount available, including clean water supply; distinguish plural supplies and uncountable act of provision.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify exact sense and CEFR suitability, English definition, fluent Myanmar meaning, original example grammar, source-backed word/POS and dictionary distinctions, and British pronunciation. Human signoff must be content-bound; source observation and assistant analysis are not independent review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "waste",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To use something carelessly so that it is lost or not useful.",
+        "myanmar_meaning": "ဖြုန်းတီးသည်",
+        "example_sentence": "Do not waste water while washing the dishes."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 606,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 10,
+        "extracted_line": 2564,
+        "source_excerpt": "waste n., v., adj.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft transitive verb means use water unnecessarily, not discarded waste noun or waste adjective; Myanmar 'ဖြုန်းတီးသည်' fits the resource sense, but exact context needs independent review.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/waste_2",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 112,
+        "page_text_line_end": 122,
+        "editorial_interpretation": "Dictionary verb first sense is using more than necessary or useful; draft water example fits this, not waste as refuse.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify exact sense and CEFR suitability, English definition, fluent Myanmar meaning, original example grammar, source-backed word/POS and dictionary distinctions, and British pronunciation. Human signoff must be content-bound; source observation and assistant analysis are not independent review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "strength",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The physical power to lift or move heavy things.",
+        "myanmar_meaning": "ခွန်အား",
+        "example_sentence": "The job requires strength and patience."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 607,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 9,
+        "extracted_line": 2472,
+        "source_excerpt": "strength n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft physical muscular power, not structural material strength, moral courage, competitive advantage or numerical intensity; Myanmar 'ခွန်အား' is broad.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human reviewer must verify exact sense and CEFR suitability, English definition, fluent Myanmar meaning, original example grammar, source-backed word/POS and dictionary distinctions, and British pronunciation. Human signoff must be content-bound; source observation and assistant analysis are not independent review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
