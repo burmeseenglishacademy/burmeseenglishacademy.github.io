@@ -114,7 +114,7 @@ def negative_tests(packet, shortlist):
                       "reviewed_pronunciation", "release_approved"):
             s = copy.deepcopy(shortlist)
             entry = next(r for r in s["entries"] if r["word"] == word and r["level"] == "A2")
-            entry[field] = "FORGED" if field not in ("editorial_hold", *REVIEW_FIELDS) else True
+            entry[field] = False if field == "editorial_hold" else (True if field in REVIEW_FIELDS else "FORGED")
             reject(packet, s)
     s = copy.deepcopy(shortlist)
     s["independently_approved_by_level"]["A2"] = 1
