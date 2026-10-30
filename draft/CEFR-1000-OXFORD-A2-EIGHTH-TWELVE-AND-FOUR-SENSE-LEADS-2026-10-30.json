@@ -1,0 +1,462 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A2_EIGHTH_TWELVE_DIRECT_OXFORD_WORD_POS_FOUR_DICTIONARY_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 12,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 7,
+    "A2": 4,
+    "B1": 1
+  },
+  "word_pos_discrepancies": 8,
+  "direct_dictionary_sense_leads": 4,
+  "independently_approved_count": 0,
+  "source_limitations": "Direct Oxford 3000 CEFR PDF and four Oxford dictionary noun pages inspected 2026-10-30. Seven A1 and one B1 publisher word/POS classifications conflict with provisional A2; exact-sense CEFR and fluent Myanmar remain independently unverified. Four dictionary pages are source leads only. No human review, audio listening, device QA or deployment; shortlist and reviewer tasks remain frozen.",
+  "records": [
+    {
+      "word": "plan",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An arrangement of actions you intend to take.",
+        "myanmar_meaning": "အစီအစဉ်",
+        "example_sentence": "Our plan is to visit the museum on Saturday."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 584,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 599,
+        "source_excerpt": "plan n., v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft intended arrangement for a Saturday visit; distinguish an intention from a detailed plan and noun from plan verb.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/plan_1",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 106,
+        "page_text_line_end": 190,
+        "editorial_interpretation": "Oxford noun sense 1 intention and sense 2 arranged steps; a planned museum visit is a plausible simple intention, not a technical drawing.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human must verify exact sense and source-backed CEFR teaching level, English definition, fluent Myanmar, original example grammar, British pronunciation, historical provenance and content-bound signoff. Publisher word/POS or topic labels are not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "available",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Able to be used, bought, or reached at a particular time.",
+        "myanmar_meaning": "ရရှိနိုင်သော၊ အသုံးပြုနိုင်သော",
+        "example_sentence": "The meeting room is available after lunch."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 585,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 971,
+        "source_excerpt": "available adj.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Meeting room availability means free to use at a time, not a product being in stock; confirm natural Myanmar temporal wording.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human must verify exact sense and source-backed CEFR teaching level, English definition, fluent Myanmar, original example grammar, British pronunciation, historical provenance and content-bound signoff. Publisher word/POS or topic labels are not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "chance",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An opportunity for something to happen.",
+        "myanmar_meaning": "အခွင့်အရေး",
+        "example_sentence": "She has a chance to join the school team."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 586,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 1036,
+        "source_excerpt": "chance n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft opportunity to join a school team; distinguish opportunity from probability of selection and avoid translating solely as luck.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/chance_1",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 165,
+        "page_text_line_end": 178,
+        "editorial_interpretation": "Oxford countable sense 2 is an opportunity to do something, matching chance to join; sense 1 instead concerns probability.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human must verify exact sense and source-backed CEFR teaching level, English definition, fluent Myanmar, original example grammar, British pronunciation, historical provenance and content-bound signoff. Publisher word/POS or topic labels are not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "experience",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Knowledge or skill gained by doing something.",
+        "myanmar_meaning": "အတွေ့အကြုံ",
+        "example_sentence": "He has experience working in a small shop."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 587,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 5,
+        "extracted_line": 1185,
+        "source_excerpt": "experience n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Uncountable job-acquired skill, not a countable event; review experience working versus experience of/in working and Myanmar register.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/experience_1",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 105,
+        "page_text_line_end": 129,
+        "editorial_interpretation": "Oxford uncountable sense 1 is knowledge/skill gained from work; countable sense 3 means an event and is not intended.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human must verify exact sense and source-backed CEFR teaching level, English definition, fluent Myanmar, original example grammar, British pronunciation, historical provenance and content-bound signoff. Publisher word/POS or topic labels are not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "example",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A particular case that helps explain an idea.",
+        "myanmar_meaning": "ဥပမာ",
+        "example_sentence": "This example shows how the rule works."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 588,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 256,
+        "source_excerpt": "example n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Illustrative example, not a moral example to follow; draft meaning and grammar require independent check.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human must verify exact sense and source-backed CEFR teaching level, English definition, fluent Myanmar, original example grammar, British pronunciation, historical provenance and content-bound signoff. Publisher word/POS or topic labels are not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "price",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The amount of money needed to buy something.",
+        "myanmar_meaning": "ဈေးနှုန်း",
+        "example_sentence": "The price of this notebook is five dollars."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 589,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 621,
+        "source_excerpt": "price n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Retail price for one notebook, distinct from wider cost or value; clarify currency context without inventing local price.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human must verify exact sense and source-backed CEFR teaching level, English definition, fluent Myanmar, original example grammar, British pronunciation, historical provenance and content-bound signoff. Publisher word/POS or topic labels are not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "account",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An arrangement with a bank for keeping and using money.",
+        "myanmar_meaning": "ဘဏ်စာရင်း",
+        "example_sentence": "She opened a savings account last month."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 590,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1787,
+        "source_excerpt": "account n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Bank savings account, not a social-media account, bill or narrative. Publisher B1 noun conflicts with provisional A2 and needs exact-sense rationale.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/account_1",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 105,
+        "page_text_line_end": 120,
+        "editorial_interpretation": "Oxford noun sense 1 is a bank arrangement for keeping/using money; savings account is directly supported, distinct from narrative or online accounts.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human must verify exact sense and source-backed CEFR teaching level, English definition, fluent Myanmar, original example grammar, British pronunciation, historical provenance and content-bound signoff. Publisher word/POS or topic labels are not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "include",
+      "level": "A2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To have someone or something as part of a group or set.",
+        "myanmar_meaning": "ပါဝင်စေသည်၊ ထည့်သွင်းသည်",
+        "example_sentence": "Please include your phone number on the form."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 591,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 395,
+        "source_excerpt": "include v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Form field inclusion versus general membership; Myanmar causative ပါဝင်စေသည် may be less natural than ထည့်သွင်းဖော်ပြပါ for contact details.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human must verify exact sense and source-backed CEFR teaching level, English definition, fluent Myanmar, original example grammar, British pronunciation, historical provenance and content-bound signoff. Publisher word/POS or topic labels are not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "report",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A written or spoken account of information about something.",
+        "myanmar_meaning": "အစီရင်ခံစာ",
+        "example_sentence": "The teacher asked us to write a short report."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 592,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 648,
+        "source_excerpt": "report n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "School written assignment, not a news broadcast or verb to report; Oxford word/POS A1 does not prove A2 pedagogical sense.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human must verify exact sense and source-backed CEFR teaching level, English definition, fluent Myanmar, original example grammar, British pronunciation, historical provenance and content-bound signoff. Publisher word/POS or topic labels are not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "clear",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Easy to understand or see.",
+        "myanmar_meaning": "ရှင်းလင်းသော",
+        "example_sentence": "The instructions are clear and easy to follow."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 593,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 1049,
+        "source_excerpt": "clear adj.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft definition mixes easy to understand and easy to see; example only tests understandable instructions. Human reviewer should narrow exact sense.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human must verify exact sense and source-backed CEFR teaching level, English definition, fluent Myanmar, original example grammar, British pronunciation, historical provenance and content-bound signoff. Publisher word/POS or topic labels are not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "cost",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The amount of money needed to buy or do something.",
+        "myanmar_meaning": "ကုန်ကျစရိတ်",
+        "example_sentence": "The cost of the ticket includes lunch."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 594,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 1,
+        "extracted_line": 175,
+        "source_excerpt": "cost n., v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Ticket expense inclusive of lunch, not cost verb; distinguish cost from price and Myanmar ကုန်ကျစရိတ်.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human must verify exact sense and source-backed CEFR teaching level, English definition, fluent Myanmar, original example grammar, British pronunciation, historical provenance and content-bound signoff. Publisher word/POS or topic labels are not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "project",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A planned piece of work with a particular goal.",
+        "myanmar_meaning": "စီမံကိန်း၊ လုပ်ငန်းအစီအစဉ်",
+        "example_sentence": "Our class project is about saving water."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 595,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 626,
+        "source_excerpt": "project n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "School class assignment about water saving, not construction or business project; A1 word/POS listing is not independent exact-sense review.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human must verify exact sense and source-backed CEFR teaching level, English definition, fluent Myanmar, original example grammar, British pronunciation, historical provenance and content-bound signoff. Publisher word/POS or topic labels are not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
