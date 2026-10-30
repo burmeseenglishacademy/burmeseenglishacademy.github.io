@@ -4,6 +4,8 @@ on:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
       - draft/CEFR-1000-PROVISIONAL-SHORTLIST.json
+      - draft/CEFR-1000-A1-FIVE-REMAINING-MORPHOLOGY-AND-RABBIT-SENSE-QUARANTINE-2026-10-30.json
+      - tools/audit_cefr_1000_a1_five_morphology.py
       - draft/CEFR-1000-INDEPENDENT-REVIEW-TASKS.json
       - draft/CEFR-1000-SELECTION-TRIAGE.json
       - tools/audit_cefr_1000_shortlist.py
@@ -250,6 +252,11 @@ jobs:
       - name: Reject 219 forged fourteenth A1 publisher, bilingual and reviewer mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_a1_fourteenth_eleven.py --level ALL --self-test
+      - name: Quarantine five remaining A1 Oxford-unobserved entries and Cambridge A2 rabbit (not human approval)
+        run: python3 tools/audit_cefr_1000_a1_five_morphology.py --level "${{ matrix.level }}"
+      - name: Reject forged inflection, Cambridge, bilingual and independent-signoff evidence
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_a1_five_morphology.py --level ALL --self-test
       - name: Audit four directly observed A1 Oxford dictionary senses (not CEFR signoff)
         run: python3 tools/audit_cefr_1000_oxford_a1_four_sense_leads.py --level "${{ matrix.level }}"
       - name: Reject 68 forged A1 direct dictionary sense and human receipt mutations
