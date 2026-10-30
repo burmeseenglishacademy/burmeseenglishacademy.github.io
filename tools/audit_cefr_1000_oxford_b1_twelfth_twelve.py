@@ -32,7 +32,7 @@ def audit(doc=None,shortlist=None):
     for row,(word,cefr,page,line,excerpt,docname) in zip(rows,EXPECTED):
         e=by.get(word)
         need(e is not None and e.get("level")=="B1" and row.get("word")==word and row.get("level")=="B1" and row.get("part_of_speech")==e.get("part_of_speech"),"Headword/POS mismatch: "+word)
-        need(row.get("shortlist_snapshot")=={k:e[k] for k in ("english_definition","myanmar_meaning","example_sentence")},"Bilingual/example snapshot mismatch: "+word)
+        need(row.get("shortlist_snapshot")=={"english_definition":e["english_definition"],"myanmar_meaning":e["burmese_meaning"],"example_sentence":e["example_sentence"]},"Bilingual/example snapshot mismatch: "+word)
         need(row.get("shortlist_provenance")=={k:e[k] for k in ("source_path","source_index","source_blob_sha")},"Historical Git provenance mismatch: "+word)
         need(row.get("publisher_source")=={"publisher":"Oxford University Press","title":"The Oxford "+docname+" by CEFR level","url":BASE+"The_Oxford_"+docname+"_by_CEFR_level.pdf","observed_on":"2026-10-31","pdf_page":page,"extracted_line":line,"source_excerpt":excerpt,"source_cefr_level":cefr,"evidence_scope":"DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE","access":"DIRECT_OFFICIAL_PDF_WEB_TEXT"},"Publisher evidence mismatch: "+word)
         need(row.get("editorial_hold") is True and row.get("independently_reviewed") is False and row.get("release_approved") is False and row.get("independent_reviewer_receipt") is None and e.get("editorial_hold") is True and e.get("release_approved") is False,"Forged independent review: "+word)
