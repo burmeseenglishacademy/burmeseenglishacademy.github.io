@@ -53,7 +53,7 @@ def audit(doc=None, shortlist=None):
             and p.get("word_pos_discrepancies") == 10
             and p.get("direct_dictionary_sense_leads") == 4
             and p.get("independently_approved_count") == 0
-            and "not independent exact-sense CEFR" in p.get("source_limitations", "").lower(),
+            and "not independent exact-sense cefr" in p.get("source_limitations", "").lower(),
             "Staging research scope or source limitation drift")
     rows = p.get("records")
     require(isinstance(rows, list) and len(rows) == 12, "Twelve A2 records required")
