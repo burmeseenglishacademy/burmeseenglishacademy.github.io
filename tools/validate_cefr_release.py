@@ -11,6 +11,9 @@ MYANMAR=re.compile('[\\u1000-\\u109f\\uaa60-\\uaa7f]')
 ASCII_WORD=re.compile(r"^[a-z][a-z'-]{0,35}$")
 REVIEW_FIELDS=('reviewed_english','reviewed_burmese','reviewed_example','reviewed_level','reviewed_pronunciation')
 SOURCE_FIELDS=('source_english','source_burmese','source_level')
+# Four known provisional A1 cards are grammatical forms of existing A1 lemmas.
+# They may be taught as grammar, but cannot inflate a 200-lemma vocabulary quota.
+NON_LEXICAL_INFLECTIONS={'is':'be','are':'be','does':'do','did':'do'}
 
 def source_url_is_specific(url):
     """Heuristic provenance check, never proof of linguistic correctness."""
@@ -63,6 +66,8 @@ def validate(data,root=None,verify_audio=False):
         # promote that unreviewed spelling into a release manifest.
         if word == 'i' and row.get('word') != 'I':
             fail(f'{n}: first-person singular pronoun must be displayed as capital I')
+        if word in NON_LEXICAL_INFLECTIONS:
+            fail(f'{n}: {word} is a grammatical form of {NON_LEXICAL_INFLECTIONS[word]}; do not count as a separate lexical headword')
         if word in seen:fail(f'{n}: duplicate headword {word}')
         seen.add(word)
         level=row.get('level')
