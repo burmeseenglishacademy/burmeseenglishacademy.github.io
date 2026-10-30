@@ -71,4 +71,21 @@ with tempfile.TemporaryDirectory() as folder:
     issues = module.validate(data, pathlib.Path(folder), verify_audio=True)
     assert "Audio manifest absent" in issues
 assert "Audio verification requested without a root directory" in module.validate(data, verify_audio=True)
+# Do not count grammar inflections of be/do as independent lexical A1 headwords.
+# The frozen first-pass draft still contains these cards, but an approved
+# vocabulary manifest must replace or independently restructure them.
+for form, lemma in (("is","be"),("are","be"),("does","do"),("did","do")):
+    entry["word"] = form
+    entry["example_sentence"] = {"is":"She is at home.","are":"They are friends.",
+                                 "does":"Does he work here?","did":"Did you eat?"}[form]
+    issues = module.validate(data)
+    assert any("grammatical form of " + lemma in x for x in issues), (form,issues)
+for lemma in ("be","do"):
+    entry["word"] = lemma
+    entry["example_sentence"] = "I want to be a teacher." if lemma=="be" else "I do my homework."
+    issues = module.validate(data)
+    assert not any("grammatical form of " in x for x in issues), (lemma,issues)
+entry["word"] = "apple"
+entry["example_sentence"] = "I eat an apple."
+print("PASS: four A1 grammar-form quota inflations rejected; base lemmas remain allowed.")
 print("PASS: generic/placeholder references rejected; review flags and incomplete audio block publication.")
