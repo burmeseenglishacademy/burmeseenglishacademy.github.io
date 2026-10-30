@@ -140,8 +140,8 @@ def build(shortlist, packets, recovery, originals):
     return {
         "schema": 1, "scope": "CEFR_1000_STAGING_ONLY_NOT_A_RELEASE_MANIFEST",
         "source_shortlist_git_blob_sha": oxford.SHORTLIST_SHA,
-        "publisher_word_pos_observed_distinct": 604,
-        "publisher_word_pos_not_observed": 396,
+        "publisher_word_pos_observed_distinct": 616,
+        "publisher_word_pos_not_observed": 384,
         "recovered_legacy_word_pos_excerpts": 36,
         "priority_counts": dict(counts), "by_level": by_level,
         "human_independent_approvals": 0,
