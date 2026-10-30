@@ -26,7 +26,7 @@ def require(ok, why):
 
 def git_blob_sha(path):
     data = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\\0" + data).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
 
 def audit(packet, shortlist):
     require(git_blob_sha(SHORTLIST) == FROZEN, "Frozen shortlist Git blob changed")
