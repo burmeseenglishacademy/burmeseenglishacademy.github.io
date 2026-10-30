@@ -163,6 +163,8 @@ on:
       - tests/cefr-ui.cjs
       - cefr-vocabulary.js
       - cefr-vocabulary-data.js
+      - draft/CEFR-1000-CAMBRIDGE-C1-EIGHT-UNLABELLED-SENSE-TRIAGE-2026-10-31.json
+      - tools/audit_cefr_1000_cambridge_c1_eight_unlabelled.py
       - .github/workflows/cefr-1000-go-live-qc-gate.yml
   workflow_dispatch:
     inputs:
