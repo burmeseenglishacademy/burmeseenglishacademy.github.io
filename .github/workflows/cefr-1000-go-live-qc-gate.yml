@@ -110,6 +110,8 @@ on:
       - draft/CEFR-1000-OXFORD-B2-SEVENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-30.json
       - tools/audit_cefr_1000_oxford_b2_seventh_twelve.py
       - draft/CEFR-1000-OXFORD-B2-EIGHTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-30.json
+      - draft/CEFR-1000-OXFORD-B2-NINTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-30.json
+      - tools/audit_cefr_1000_oxford_b2_ninth_twelve.py
       - tools/audit_cefr_1000_oxford_b2_eighth_twelve.py
       - draft/CEFR-1000-OXFORD-B2-SIXTH-FOUR-DIRECT-SENSE-LEADS-2026-10-30.json
       - tools/audit_cefr_1000_oxford_b2_four_sense_leads.py
@@ -224,6 +226,7 @@ jobs:
           python3 tools/audit_cefr_1000_oxford_b2_sixth_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_b2_seventh_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_b2_eighth_twelve.py --level ALL --self-test
+          python3 tools/audit_cefr_1000_oxford_b2_ninth_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_b2_four_sense_leads.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_b2_lower_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_c1_b2_conflict_twelve.py --level ALL --self-test

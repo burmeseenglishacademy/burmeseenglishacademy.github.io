@@ -1,0 +1,471 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B2_NINTH_TWELVE_DIRECT_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 12,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A2": 2,
+    "B1": 2,
+    "B2": 6,
+    "C1": 2
+  },
+  "word_pos_discrepancies": 6,
+  "independently_approved_count": 0,
+  "source_limitations": "Direct Oxford 3000/5000 PDF word/POS classifications and four Oxford dictionary sense descriptions were observed on 2026-10-30. These are not exact-sense CEFR approvals, independent English/Myanmar/example reviews, or actual George/Emma listening. Ten provisional B2 versus publisher word/POS discrepancies require independent human decisions. No frozen shortlist edits or human signoffs.",
+  "records": [
+    {
+      "word": "shipping",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The process or business of transporting goods, especially by sea.",
+        "myanmar_meaning": "ကုန်ပစ္စည်းပို့ဆောင်ရေး၊ သင်္ဘောဖြင့်ကုန်ပို့ခြင်း",
+        "example_sentence": "The shipping company confirmed the container's arrival."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 319,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1771,
+        "source_excerpt": "shipping n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The example concerns freight transport and a carrier's arrival confirmation, not romantic pairing or merely ships as a group.",
+      "independent_reviewer_task": "Independent human reviewer must inspect dated exact-sense publisher evidence, resolve any CEFR/POS conflicts, verify English definition, fluent Myanmar meaning, original example grammar, British pronunciation, historical provenance and content-bound independent signoff. Automated word/POS checks do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "therapy",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Treatment intended to improve a physical or mental condition.",
+        "myanmar_meaning": "ကုထုံး၊ ကုသမှုနည်းလမ်း",
+        "example_sentence": "The doctor suggested physical therapy after the injury."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 321,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 12,
+        "extracted_line": 3251,
+        "source_excerpt": "therapy n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Physical rehabilitation treatment, not psychotherapy alone; distinguish treatment method and clinical advice.",
+      "independent_reviewer_task": "Independent human reviewer must inspect dated exact-sense publisher evidence, resolve any CEFR/POS conflicts, verify English definition, fluent Myanmar meaning, original example grammar, British pronunciation, historical provenance and content-bound independent signoff. Automated word/POS checks do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "witness",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A person who sees an event happen and can describe it.",
+        "myanmar_meaning": "မျက်မြင်သက်သေ",
+        "example_sentence": "A witness described what happened at the crossing."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 322,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 12,
+        "extracted_line": 3313,
+        "source_excerpt": "witness n., v.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Noun eyewitness at a crossing, not legal testimony as a verb or a formal signing witness.",
+      "independent_reviewer_task": "Independent human reviewer must inspect dated exact-sense publisher evidence, resolve any CEFR/POS conflicts, verify English definition, fluent Myanmar meaning, original example grammar, British pronunciation, historical provenance and content-bound independent signoff. Automated word/POS checks do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "aim",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To intend to achieve a particular result.",
+        "myanmar_meaning": "ရည်မှန်းသည်၊ ရည်ရွယ်သည်",
+        "example_sentence": "We aim to reduce delivery errors this month."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 323,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1803,
+        "source_excerpt": "aim v., n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Verb intend to reduce errors, not point a weapon; Oxford B1 word/POS conflicts with draft B2.",
+      "independent_reviewer_task": "Independent human reviewer must inspect dated exact-sense publisher evidence, resolve any CEFR/POS conflicts, verify English definition, fluent Myanmar meaning, original example grammar, British pronunciation, historical provenance and content-bound independent signoff. Automated word/POS checks do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "clinical",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Related to examining or treating patients in a medical setting.",
+        "myanmar_meaning": "လူနာစမ်းသပ်ကုသမှုနှင့်ဆိုင်သော",
+        "example_sentence": "The students gained clinical experience at the hospital."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 326,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 908,
+        "source_excerpt": "clinical adj.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Medical training/patient-care sense, not emotionally detached or plain appearance; Oxford C1 conflicts with draft B2.",
+      "independent_reviewer_task": "Independent human reviewer must inspect dated exact-sense publisher evidence, resolve any CEFR/POS conflicts, verify English definition, fluent Myanmar meaning, original example grammar, British pronunciation, historical provenance and content-bound independent signoff. Automated word/POS checks do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "defeat",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To win against someone in a contest, game, or conflict.",
+        "myanmar_meaning": "အနိုင်ယူသည်၊ ရှုံးနိမ့်စေသည်",
+        "example_sentence": "The visiting team managed to defeat the champions."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 328,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 11,
+        "extracted_line": 2765,
+        "source_excerpt": "defeat v., n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Verb win against a team, not a noun loss or overcoming an abstract difficulty.",
+      "independent_reviewer_task": "Independent human reviewer must inspect dated exact-sense publisher evidence, resolve any CEFR/POS conflicts, verify English definition, fluent Myanmar meaning, original example grammar, British pronunciation, historical provenance and content-bound independent signoff. Automated word/POS checks do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "democracy",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A system of government in which people choose their representatives.",
+        "myanmar_meaning": "ပြည်သူများက ကိုယ်စားလှယ်များကို ရွေးချယ်သည့် ဒီမိုကရေစီစနစ်",
+        "example_sentence": "In a democracy, citizens can vote in elections."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 386,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 1,
+        "extracted_line": 158,
+        "source_excerpt": "democracy n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Political system with elected representation; distinguish a particular democratic country from a system of government.",
+      "independent_reviewer_task": "Independent human reviewer must inspect dated exact-sense publisher evidence, resolve any CEFR/POS conflicts, verify English definition, fluent Myanmar meaning, original example grammar, British pronunciation, historical provenance and content-bound independent signoff. Automated word/POS checks do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "suspect",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To think something may be true without being certain.",
+        "myanmar_meaning": "သံသယရှိသည်၊ ဖြစ်နိုင်သည်ဟု ထင်မြင်သည်",
+        "example_sentence": "The technician began to suspect a faulty cable."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 390,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 12,
+        "extracted_line": 3239,
+        "source_excerpt": "suspect v., n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Verb believe without proof, not a person under suspicion (noun); the technician's faulty-cable hypothesis remains uncertain.",
+      "independent_reviewer_task": "Independent human reviewer must inspect dated exact-sense publisher evidence, resolve any CEFR/POS conflicts, verify English definition, fluent Myanmar meaning, original example grammar, British pronunciation, historical provenance and content-bound independent signoff. Automated word/POS checks do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "trend",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A general direction in which something is changing.",
+        "myanmar_meaning": "ပြောင်းလဲတိုးတက်သွားသည့် ဦးတည်ချက်၊ ရေစီးကြောင်း",
+        "example_sentence": "The report shows a trend towards online shopping."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 391,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 10,
+        "extracted_line": 2527,
+        "source_excerpt": "trend n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Noun general direction of change, not a short-lived fashion; Oxford B1 conflicts with provisional B2.",
+      "independent_reviewer_task": "Independent human reviewer must inspect dated exact-sense publisher evidence, resolve any CEFR/POS conflicts, verify English definition, fluent Myanmar meaning, original example grammar, British pronunciation, historical provenance and content-bound independent signoff. Automated word/POS checks do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "wealth",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A large amount of money or valuable possessions.",
+        "myanmar_meaning": "ချမ်းသာကြွယ်ဝမှု၊ ပိုင်ဆိုင်မှုများ",
+        "example_sentence": "The family built its wealth through a small business."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 392,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 12,
+        "extracted_line": 3301,
+        "source_excerpt": "wealth n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Money/property assets, not a figurative abundance of ideas; consider natural Myanmar distinction from income.",
+      "independent_reviewer_task": "Independent human reviewer must inspect dated exact-sense publisher evidence, resolve any CEFR/POS conflicts, verify English definition, fluent Myanmar meaning, original example grammar, British pronunciation, historical provenance and content-bound independent signoff. Automated word/POS checks do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "document",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A written or electronic record containing information.",
+        "myanmar_meaning": "စာရွက်စာတမ်း၊ မှတ်တမ်းဖိုင်",
+        "example_sentence": "Please attach the document to your email."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 395,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 5,
+        "extracted_line": 1139,
+        "source_excerpt": "document n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Noun electronic/written record, not verb document an event; Oxford A2 conflicts with provisional B2.",
+      "independent_reviewer_task": "Independent human reviewer must inspect dated exact-sense publisher evidence, resolve any CEFR/POS conflicts, verify English definition, fluent Myanmar meaning, original example grammar, British pronunciation, historical provenance and content-bound independent signoff. Automated word/POS checks do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "employee",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A person who works for an employer and receives pay.",
+        "myanmar_meaning": "အလုပ်သမား၊ ဝန်ထမ်း",
+        "example_sentence": "Every employee must attend the safety briefing."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 396,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 5,
+        "extracted_line": 1162,
+        "source_excerpt": "employee n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Paid worker under an employer, not self-employed contractor or employer; Oxford A2 conflicts with provisional B2.",
+      "independent_reviewer_task": "Independent human reviewer must inspect dated exact-sense publisher evidence, resolve any CEFR/POS conflicts, verify English definition, fluent Myanmar meaning, original example grammar, British pronunciation, historical provenance and content-bound independent signoff. Automated word/POS checks do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ],
+  "direct_dictionary_sense_leads": [
+    {
+      "word": "shipping",
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/shipping",
+      "observed_on": "2026-10-30",
+      "entry_pos": "noun",
+      "sense_number": 2,
+      "sense_summary": "transporting people or goods by ship or another means; distinct from collective ships and informal romantic-pairing sense",
+      "example_alignment": "The shipping company confirmed the container's arrival.",
+      "dictionary_excerpt_locator": "lines 120-130; contrast senses 1 and 3 at 107-117 and 131-134",
+      "verification_scope": "DIRECT_DICTIONARY_SENSE_DESCRIPTION_NOT_INDEPENDENT_CEFR_APPROVAL"
+    },
+    {
+      "word": "clinical",
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/clinical",
+      "observed_on": "2026-10-30",
+      "entry_pos": "adjective",
+      "sense_number": 1,
+      "sense_summary": "patient examination and treatment, especially clinical training; separate cold-detached and bare-room senses",
+      "example_alignment": "The students gained clinical experience at the hospital.",
+      "dictionary_excerpt_locator": "lines 103-110; contrast senses 2 and 3 at 122-133",
+      "verification_scope": "DIRECT_DICTIONARY_SENSE_DESCRIPTION_NOT_INDEPENDENT_CEFR_APPROVAL"
+    },
+    {
+      "word": "aim",
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/aim_1",
+      "observed_on": "2026-10-30",
+      "entry_pos": "verb",
+      "sense_number": 1,
+      "sense_summary": "try or plan to achieve an outcome; aim to plus infinitive; not point a weapon",
+      "example_alignment": "We aim to reduce delivery errors this month.",
+      "dictionary_excerpt_locator": "lines 112-128; contrast weapon sense 4 at 170-176",
+      "verification_scope": "DIRECT_DICTIONARY_SENSE_DESCRIPTION_NOT_INDEPENDENT_CEFR_APPROVAL"
+    },
+    {
+      "word": "witness",
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/witness_1",
+      "observed_on": "2026-10-30",
+      "entry_pos": "noun",
+      "sense_number": 1,
+      "sense_summary": "person who saw an event and can describe it, distinct from a witness giving evidence in court",
+      "example_alignment": "A witness described what happened at the crossing.",
+      "dictionary_excerpt_locator": "lines 105-127; contrast court sense 2 at 151-161",
+      "verification_scope": "DIRECT_DICTIONARY_SENSE_DESCRIPTION_NOT_INDEPENDENT_CEFR_APPROVAL"
+    }
+  ],
+  "independent_human_review_receipts": [],
+  "audio_real_listening_signoffs": [],
+  "release_approved": false
+}
