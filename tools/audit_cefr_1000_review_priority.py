@@ -140,8 +140,8 @@ def build(shortlist, packets, recovery, originals):
     return {
         "schema": 1, "scope": "CEFR_1000_STAGING_ONLY_NOT_A_RELEASE_MANIFEST",
         "source_shortlist_git_blob_sha": oxford.SHORTLIST_SHA,
-        "publisher_word_pos_observed_distinct": 532,
-        "publisher_word_pos_not_observed": 468,
+        "publisher_word_pos_observed_distinct": 544,
+        "publisher_word_pos_not_observed": 456,
         "recovered_legacy_word_pos_excerpts": 36,
         "priority_counts": dict(counts), "by_level": by_level,
         "human_independent_approvals": 0,
@@ -177,8 +177,8 @@ def validate(report):
     rows = report["review_tasks"]
     require(len(rows) == 1000 and len({r["word"] for r in rows}) == 1000,
             "Review queue must contain 1,000 distinct headwords")
-    require(report["publisher_word_pos_observed_distinct"] == 532
-            and report["publisher_word_pos_not_observed"] == 468
+    require(report["publisher_word_pos_observed_distinct"] == 544
+            and report["publisher_word_pos_not_observed"] == 456
             and report["recovered_legacy_word_pos_excerpts"] == 36
             and report["human_independent_approvals"] == 0
             and report["real_george_emma_listening_signoffs"] == 0
