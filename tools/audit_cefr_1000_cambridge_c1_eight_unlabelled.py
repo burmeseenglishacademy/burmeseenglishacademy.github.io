@@ -34,7 +34,7 @@ def require(ok, message):
         raise ValueError(message)
 
 def blob_sha(data):
-    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\\0" + data).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
 
 def read_json(path, expected_sha):
     raw = (ROOT / path).read_bytes()
