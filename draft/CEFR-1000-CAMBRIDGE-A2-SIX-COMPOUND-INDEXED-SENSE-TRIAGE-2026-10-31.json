@@ -1,0 +1,207 @@
+{
+  "schema": 1,
+  "created_on": "2026-10-31",
+  "status": "STAGING_SOURCE_RESEARCH_ONLY_NO_INDEPENDENT_REVIEW",
+  "frozen_shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "scope": "Six A2 provisional compound-noun sense leads; three publisher-higher badges, two matching badges, one no badge. Source indexing not direct dictionary-page access; never assert independently approved CEFR.",
+  "records": [
+    {
+      "word": "saucepan",
+      "draft_level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A deep cooking pan with a handle, often used for boiling food.",
+        "burmese_meaning": "အစားအစာပြုတ်ရန် အသုံးပြုသော လက်ကိုင်ပါ အိုးငယ်",
+        "example_sentence": "Heat the milk gently in a saucepan before adding the chocolate."
+      },
+      "original_git_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+        "source_index": 1,
+        "source_blob_sha": "96d54ddb6fdc204e8cbea45e8c97a6c98fb17b11"
+      },
+      "publisher_evidence": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/us/dictionary/english/saucepan",
+        "observed_on": "2026-10-31",
+        "access": "WEB_SEARCH_INDEXED_PUBLISHER_ENTRY_DIRECT_FETCH_403",
+        "cefr_badge_observed": "B1",
+        "scope": "HEADWORD_SENSE_NOT_INDEPENDENT_CEFR_REVIEW",
+        "grammar": "countable noun",
+        "sense_paraphrase": "Deep cooking pan with straight sides, normally a handle and lid."
+      },
+      "editorial_risk": "A2 draft is below the observed B1 publisher badge; avoid automatically re-tiering without exact-sense human signoff.",
+      "unapproved_proposal": {
+        "burmese_meaning": "လက်ကိုင်ပါ အနက်ရှိသော ချက်ပြုတ်အိုးငယ်",
+        "original_example": "She warmed the soup in a saucepan."
+      },
+      "editorial_hold": true,
+      "independent_reviewed": false,
+      "release_approved": false
+    },
+    {
+      "word": "postcard",
+      "draft_level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A small card that can be mailed with a short message, often showing a picture.",
+        "burmese_meaning": "ပုံပါလေ့ရှိပြီး စာတိုရေးကာ စာတိုက်မှ ပို့နိုင်သော ကတ်ပြား",
+        "example_sentence": "We sent a postcard to our grandparents from the seaside."
+      },
+      "original_git_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+        "source_index": 3,
+        "source_blob_sha": "96d54ddb6fdc204e8cbea45e8c97a6c98fb17b11"
+      },
+      "publisher_evidence": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/postcard",
+        "observed_on": "2026-10-31",
+        "access": "WEB_SEARCH_INDEXED_PUBLISHER_ENTRY_DIRECT_FETCH_403",
+        "cefr_badge_observed": "A2",
+        "scope": "HEADWORD_SENSE_NOT_INDEPENDENT_CEFR_REVIEW",
+        "grammar": "countable noun",
+        "sense_paraphrase": "Card sent by post without an envelope, often with a picture."
+      },
+      "editorial_risk": "A2 badge aligns with draft word/POS; confirm picture is optional and Myanmar definition does not imply every postcard has one.",
+      "unapproved_proposal": {
+        "burmese_meaning": "စာအိတ်မပါဘဲ စာတိုက်က ပို့နိုင်သော ပုံပါလေ့ရှိသည့် ကတ်ပြား",
+        "original_example": "I sent my aunt a postcard from Bagan."
+      },
+      "editorial_hold": true,
+      "independent_reviewed": false,
+      "release_approved": false
+    },
+    {
+      "word": "toothbrush",
+      "draft_level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A small brush used with toothpaste to clean teeth.",
+        "burmese_meaning": "သွားတိုက်ဆေးနှင့်တွဲ၍ သွားသန့်စင်ရန် သုံးသော သွားတိုက်တံ",
+        "example_sentence": "Replace your toothbrush when its bristles become worn."
+      },
+      "original_git_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+        "source_index": 9,
+        "source_blob_sha": "6a10ae41eb41370a9a5b74d907fa395bb43e18d8"
+      },
+      "publisher_evidence": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/toothbrush",
+        "observed_on": "2026-10-31",
+        "access": "WEB_SEARCH_INDEXED_PUBLISHER_ENTRY_DIRECT_FETCH_403",
+        "cefr_badge_observed": "A2",
+        "scope": "HEADWORD_SENSE_NOT_INDEPENDENT_CEFR_REVIEW",
+        "grammar": "countable noun",
+        "sense_paraphrase": "Small long-handled brush for cleaning teeth."
+      },
+      "editorial_risk": "A2 badge aligns; toothpaste is usual but not a necessary component of the noun definition.",
+      "unapproved_proposal": {
+        "burmese_meaning": "သွားသန့်ရှင်းရေးအတွက် အသုံးပြုသော သွားတိုက်တံ",
+        "original_example": "He put a new toothbrush in his travel bag."
+      },
+      "editorial_hold": true,
+      "independent_reviewed": false,
+      "release_approved": false
+    },
+    {
+      "word": "dustbin",
+      "draft_level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A container used for collecting rubbish before it is taken away.",
+        "burmese_meaning": "အမှိုက်များ စုဆောင်းထည့်ရန် အသုံးပြုသော အမှိုက်ပုံး",
+        "example_sentence": "Put the empty packet in the dustbin near the kitchen door."
+      },
+      "original_git_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+        "source_index": 1,
+        "source_blob_sha": "6a10ae41eb41370a9a5b74d907fa395bb43e18d8"
+      },
+      "publisher_evidence": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/dustbin",
+        "observed_on": "2026-10-31",
+        "access": "WEB_SEARCH_INDEXED_PUBLISHER_ENTRY_DIRECT_FETCH_403",
+        "cefr_badge_observed": "B1",
+        "scope": "HEADWORD_SENSE_NOT_INDEPENDENT_CEFR_REVIEW",
+        "grammar": "countable noun; mainly British English",
+        "sense_paraphrase": "Large container for household rubbish, typically kept outside; American equivalents garbage can or trash can."
+      },
+      "editorial_risk": "A2 draft below B1 publisher badge. Original example near kitchen door could suggest an indoor kitchen bin, whereas the cited sense typically refers to an outdoor container.",
+      "unapproved_proposal": {
+        "burmese_meaning": "အိမ်အပြင်ဘက်တွင် ထားလေ့ရှိသော အမှိုက်ပုံးကြီး",
+        "original_example": "The dustbin outside the house was full."
+      },
+      "editorial_hold": true,
+      "independent_reviewed": false,
+      "release_approved": false
+    },
+    {
+      "word": "crossroads",
+      "draft_level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A place where two roads cross each other.",
+        "burmese_meaning": "လမ်းနှစ်လမ်း ဖြတ်ဆုံနေသော လမ်းဆုံနေရာ",
+        "example_sentence": "Turn left at the crossroads after you pass the school."
+      },
+      "original_git_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+        "source_index": 11,
+        "source_blob_sha": "6a10ae41eb41370a9a5b74d907fa395bb43e18d8"
+      },
+      "publisher_evidence": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/crossroads",
+        "observed_on": "2026-10-31",
+        "access": "WEB_SEARCH_INDEXED_PUBLISHER_ENTRY_DIRECT_FETCH_403",
+        "cefr_badge_observed": "B2",
+        "scope": "HEADWORD_SENSE_NOT_INDEPENDENT_CEFR_REVIEW",
+        "grammar": "countable noun; singular and plural form crossroads",
+        "sense_paraphrase": "Road junction where two roads cross; separate figurative decision-point use."
+      },
+      "editorial_risk": "A2 draft below B2 publisher badge. Do not confuse literal road junction with figurative be at a crossroads; singular and plural both crossroads.",
+      "unapproved_proposal": {
+        "burmese_meaning": "လမ်းနှစ်လမ်း ဖြတ်ဆုံရာ လမ်းဆုံ",
+        "original_example": "Turn right at the crossroads beside the petrol station."
+      },
+      "editorial_hold": true,
+      "independent_reviewed": false,
+      "release_approved": false
+    },
+    {
+      "word": "doormat",
+      "draft_level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A small mat placed by a doorway for wiping shoes.",
+        "burmese_meaning": "တံခါးဝတွင် ဖိနပ်သုတ်ရန် ခင်းထားသော ဖျာ",
+        "example_sentence": "Please wipe your shoes on the doormat before entering."
+      },
+      "original_git_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH59.json",
+        "source_index": 3,
+        "source_blob_sha": "228c772697e4879f6b8a30f85709d188a1df266c"
+      },
+      "publisher_evidence": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/doormat",
+        "observed_on": "2026-10-31",
+        "access": "WEB_SEARCH_INDEXED_PUBLISHER_ENTRY_DIRECT_FETCH_403",
+        "cefr_badge_observed": "NOT_OBSERVED",
+        "scope": "HEADWORD_SENSE_NOT_INDEPENDENT_CEFR_REVIEW",
+        "grammar": "countable noun",
+        "sense_paraphrase": "Mat at a doorway for wiping shoes; separate informal figurative sense means a person accepting poor treatment."
+      },
+      "editorial_risk": "No Cambridge CEFR badge visible in indexed entry; do not infer A2. Literal mat sense must not be confused with figurative person sense.",
+      "unapproved_proposal": {
+        "burmese_meaning": "တံခါးဝတွင် ဖိနပ်သုတ်ရန် ခင်းထားသော ဖျာငယ်",
+        "original_example": "A wet doormat lay outside the front door."
+      },
+      "editorial_hold": true,
+      "independent_reviewed": false,
+      "release_approved": false
+    }
+  ]
+}
