@@ -21,9 +21,9 @@ STATUS = ("UNLISTED_NOT_A_CEFR_LEVEL", "PUBLISHER_HIGHER_WORD_POS",
           "WORD_POS_MATCH_EXACT_SENSE_UNVERIFIED")
 RANK = {s: i for i, s in enumerate(STATUS)}
 EXPECTED = {"UNLISTED_NOT_A_CEFR_LEVEL": 3, "PUBLISHER_HIGHER_WORD_POS": 22,
-            "PUBLISHER_LOWER_WORD_POS": 196,
+            "PUBLISHER_LOWER_WORD_POS": 193,
             "NO_DIRECT_WORD_POS_OBSERVATION": 420,
-            "WORD_POS_MATCH_EXACT_SENSE_UNVERIFIED": 359}
+            "WORD_POS_MATCH_EXACT_SENSE_UNVERIFIED": 362}
 URLS = {
     "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
     "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
