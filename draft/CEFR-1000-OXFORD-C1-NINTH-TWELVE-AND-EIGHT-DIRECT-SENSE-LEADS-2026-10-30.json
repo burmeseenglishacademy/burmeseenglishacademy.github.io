@@ -1,0 +1,490 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "C1_NINTH_TWELVE_DIRECT_OXFORD_WORD_POS_AND_EIGHT_DICTIONARY_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 12
+  },
+  "publisher_reference_level_counts": {
+    "B1": 2,
+    "B2": 3,
+    "C1": 7
+  },
+  "word_pos_discrepancies": 5,
+  "direct_dictionary_sense_leads": 8,
+  "independently_approved_count": 0,
+  "source_limitations": "Oxford 3000 and Oxford 5000 official CEFR PDFs directly inspected 2026-10-30. Publisher levels are word/POS only, not independent exact-sense evidence. Eight directly opened dictionary pages provide editorial leads; chronic, insight, transaction and slavery have conflicting PDF/dictionary badges. No human independent review, real audio listening, physical iPhone test or publication. Frozen shortlist and separate reviewer task flags unchanged.",
+  "records": [
+    {
+      "word": "discipline",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The practice of controlling behaviour to follow rules or achieve goals.",
+        "myanmar_meaning": "စည်းကမ်းလိုက်နာမှု၊ ကိုယ့်ကိုယ်ကိုထိန်းချုပ်မှု",
+        "example_sentence": "Learning a language requires patience and discipline."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 274,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 11,
+        "extracted_line": 2788,
+        "source_excerpt": "discipline n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The draft means self-control in learning, not classroom punishment or an academic discipline. Dictionary sense 3 is uncountable self-control; review Burmese register and whether C1 is justified.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/discipline_1",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 151,
+        "page_text_line_end": 175,
+        "editorial_interpretation": "Sense 3 describes personal self-control; distinct from rule enforcement and academic discipline.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human reviewer must check exact-sense publisher CEFR evidence, English definition, fluent Myanmar meaning, original example grammar/collocation, British pronunciation, source provenance and cross-level rationale; provide a content-bound independent receipt. Publisher word/POS listing and automated checks are not independent exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "furthermore",
+      "level": "C1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Used to add another reason or piece of information.",
+        "myanmar_meaning": "ထို့အပြင်",
+        "example_sentence": "The plan is costly; furthermore, it will take months to finish."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 278,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 11,
+        "extracted_line": 2885,
+        "source_excerpt": "furthermore adv.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher B2 linking adverb versus provisional C1. Semicolon plus furthermore is grammatical, but review discourse-register suitability and Myanmar connector.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human reviewer must check exact-sense publisher CEFR evidence, English definition, fluent Myanmar meaning, original example grammar/collocation, British pronunciation, source provenance and cross-level rationale; provide a content-bound independent receipt. Publisher word/POS listing and automated checks are not independent exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "transaction",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An occasion when money, goods, or services are exchanged.",
+        "myanmar_meaning": "ငွေကြေး သို့မဟုတ် ကုန်ပစ္စည်း အရောင်းအဝယ်ပြုလုပ်မှု",
+        "example_sentence": "The bank sent a receipt for the transaction."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 458,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1926,
+        "source_excerpt": "transaction n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The draft refers to a recorded banking transaction, not the formal uncountable transaction of government business. Oxford 5000 PDF C1 but dictionary Oxford 3000 B2 badge: unresolved publisher-surface conflict.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/transaction",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 105,
+        "page_text_line_end": 173,
+        "editorial_interpretation": "Countable business/payment transaction; dictionary Oxford 3000 B2 badge conflicts with PDF 5000 C1 noun listing.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human reviewer must check exact-sense publisher CEFR evidence, English definition, fluent Myanmar meaning, original example grammar/collocation, British pronunciation, source provenance and cross-level rationale; provide a content-bound independent receipt. Publisher word/POS listing and automated checks are not independent exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "unemployment",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The situation of not having paid work while being available to work.",
+        "myanmar_meaning": "အလုပ်လက်မဲ့ဖြစ်မှု၊ အလုပ်လက်မဲ့နှုန်းနှင့်ဆိုင်သောအခြေအနေ",
+        "example_sentence": "The report examined unemployment among recent graduates."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 337,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 10,
+        "extracted_line": 2539,
+        "source_excerpt": "unemployment n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher B1 word/POS versus C1. Dictionary collective social condition and rate sense differs from an individual's personal spell without work; Myanmar currently conflates situation and rate.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/unemployment",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 117,
+        "page_text_line_end": 173,
+        "editorial_interpretation": "Collective number/rate of people without jobs; draft graduates example belongs to population-level sense.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human reviewer must check exact-sense publisher CEFR evidence, English definition, fluent Myanmar meaning, original example grammar/collocation, British pronunciation, source provenance and cross-level rationale; provide a content-bound independent receipt. Publisher word/POS listing and automated checks are not independent exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "continuous",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Happening or existing without interruption.",
+        "myanmar_meaning": "မပြတ်မတောက်ဖြစ်သော၊ အဆက်မပြတ်သော",
+        "example_sentence": "The machine requires continuous monitoring during the test."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 340,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 8,
+        "extracted_line": 1935,
+        "source_excerpt": "continuous adj.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher B1 word/POS versus C1. Machine monitoring without interruption differs from repeatedly occurring or consecutive; Myanmar needs uninterrupted sense.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human reviewer must check exact-sense publisher CEFR evidence, English definition, fluent Myanmar meaning, original example grammar/collocation, British pronunciation, source provenance and cross-level rationale; provide a content-bound independent receipt. Publisher word/POS listing and automated checks are not independent exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "vulnerable",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Likely to be harmed or affected because of limited protection.",
+        "myanmar_meaning": "ထိခိုက်လွယ်သော၊ အကာအကွယ်အားနည်းသော",
+        "example_sentence": "Older residents may be vulnerable during extreme heat."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 414,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 8,
+        "extracted_line": 1989,
+        "source_excerpt": "vulnerable adj.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher C1 adjective and dictionary vulnerable to harm; draft extreme-heat example needs precise environmental vulnerability, not weak-person stereotype.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/vulnerable",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 103,
+        "page_text_line_end": 116,
+        "editorial_interpretation": "Vulnerable to harm or danger; extreme heat example aligns with environmental harm susceptibility.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human reviewer must check exact-sense publisher CEFR evidence, English definition, fluent Myanmar meaning, original example grammar/collocation, British pronunciation, source provenance and cross-level rationale; provide a content-bound independent receipt. Publisher word/POS listing and automated checks are not independent exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "thereby",
+      "level": "C1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "As a result of the action just mentioned.",
+        "myanmar_meaning": "ထိုသို့ပြုလုပ်ခြင်းဖြင့်",
+        "example_sentence": "The new process reduces waste, thereby lowering costs."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 646,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1901,
+        "source_excerpt": "thereby adv.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Formal result marker: the new process reduces waste and consequently costs. Confirm the thereby + -ing participle construction and Burmese causal connector.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/thereby",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 103,
+        "page_text_line_end": 142,
+        "editorial_interpretation": "Formal adverb introduces a result of the preceding action; thereby lowering costs matches dictionary sense.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human reviewer must check exact-sense publisher CEFR evidence, English definition, fluent Myanmar meaning, original example grammar/collocation, British pronunciation, source provenance and cross-level rationale; provide a content-bound independent receipt. Publisher word/POS listing and automated checks are not independent exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "diagnosis",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The identification of an illness or problem through examination.",
+        "myanmar_meaning": "ရောဂါ သို့မဟုတ် ပြဿနာကို စစ်ဆေးဖော်ထုတ်သတ်မှတ်ခြင်း",
+        "example_sentence": "An early diagnosis can help doctors plan treatment."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 418,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 1081,
+        "source_excerpt": "diagnosis n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher C1 noun. Draft early medical diagnosis, not business fault-finding; verify countability and natural Myanmar medical phrasing.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human reviewer must check exact-sense publisher CEFR evidence, English definition, fluent Myanmar meaning, original example grammar/collocation, British pronunciation, source provenance and cross-level rationale; provide a content-bound independent receipt. Publisher word/POS listing and automated checks are not independent exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "transformation",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A major change in form, appearance, or character.",
+        "myanmar_meaning": "ကြီးမားသော အသွင်ပြောင်းလဲမှု",
+        "example_sentence": "The town underwent a transformation after the railway opened."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 419,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 8,
+        "extracted_line": 1928,
+        "source_excerpt": "transformation n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher C1 noun. Town transformation following a railway is broad social change, not mathematical transformation; confirm causation not overstated.",
+      "dictionary_sense_lead": null,
+      "independent_reviewer_task": "Independent human reviewer must check exact-sense publisher CEFR evidence, English definition, fluent Myanmar meaning, original example grammar/collocation, British pronunciation, source provenance and cross-level rationale; provide a content-bound independent receipt. Publisher word/POS listing and automated checks are not independent exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "chronic",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Continuing for a long time or happening repeatedly, especially of illness or problems.",
+        "myanmar_meaning": "အချိန်ကြာရှည်တည်ရှိသော၊ နာတာရှည်ဖြစ်သော",
+        "example_sentence": "The hospital supports patients with chronic conditions."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 423,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 897,
+        "source_excerpt": "chronic adj.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher 5000 PDF C1 but directly opened Oxford dictionary shows Oxford 3000 B2 badge: unresolved publisher-surface disagreement. Draft chronic conditions refers to long-term medical conditions, not informal British very bad.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/chronic",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 105,
+        "page_text_line_end": 156,
+        "editorial_interpretation": "Long-term medical condition sense 1, but dictionary Oxford 3000 B2 badge conflicts with official Oxford 5000 C1 PDF.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human reviewer must check exact-sense publisher CEFR evidence, English definition, fluent Myanmar meaning, original example grammar/collocation, British pronunciation, source provenance and cross-level rationale; provide a content-bound independent receipt. Publisher word/POS listing and automated checks are not independent exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "insight",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A clear and deep understanding of a situation or problem.",
+        "myanmar_meaning": "အကြောင်းအရာတစ်ခုကို နက်နက်ရှိုင်းရှိုင်း နားလည်သဘောပေါက်မှု",
+        "example_sentence": "The survey provided insight into customer needs."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 422,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 11,
+        "extracted_line": 2943,
+        "source_excerpt": "insight n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher 3000 PDF B2 but directly opened Oxford dictionary shows Oxford 5000 C1 badge: unresolved publisher-surface disagreement. Draft insight into customer needs is understanding gained from survey, not sudden flash of insight.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/insight",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 105,
+        "page_text_line_end": 205,
+        "editorial_interpretation": "Insight into something is understanding; dictionary Oxford 5000 C1 badge conflicts with official Oxford 3000 B2 PDF.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human reviewer must check exact-sense publisher CEFR evidence, English definition, fluent Myanmar meaning, original example grammar/collocation, British pronunciation, source provenance and cross-level rationale; provide a content-bound independent receipt. Publisher word/POS listing and automated checks are not independent exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "slavery",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The system of forcing people to live as property and work without freedom.",
+        "myanmar_meaning": "လူကို ကျွန်အဖြစ်ပိုင်ဆိုင်အသုံးချသော စနစ်",
+        "example_sentence": "The exhibition examines the history of slavery."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 460,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1784,
+        "source_excerpt": "slavery n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft discusses the historical institution of forced human ownership and labour, not a metaphorical demanding job. Oxford 5000 PDF C1 but dictionary Oxford 3000 B2 badge: unresolved publisher-surface conflict.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/slavery",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 103,
+        "page_text_line_end": 205,
+        "editorial_interpretation": "Uncountable institution/practice of forced ownership and labour, dictionary Oxford 3000 B2 badge conflicts with PDF 5000 C1.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "independent_reviewer_task": "Independent human reviewer must check exact-sense publisher CEFR evidence, English definition, fluent Myanmar meaning, original example grammar/collocation, British pronunciation, source provenance and cross-level rationale; provide a content-bound independent receipt. Publisher word/POS listing and automated checks are not independent exact-sense approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
