@@ -1,0 +1,495 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "C1_TENTH_TWELVE_DIRECT_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 12
+  },
+  "publisher_reference_level_counts": {
+    "B2": 8,
+    "C1": 4
+  },
+  "word_pos_discrepancies": 8,
+  "direct_dictionary_sense_leads": [
+    {
+      "word": "preserve",
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/preserve_1",
+      "part_of_speech": "verb",
+      "sense_number": 2,
+      "page_text_line_start": 148,
+      "page_text_line_end": 163,
+      "interpretation": "Keeping historic photographs in good condition rather than preserving a quality or food.",
+      "observed_on": "2026-10-30",
+      "scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+    },
+    {
+      "word": "productive",
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/productive",
+      "part_of_speech": "adjective",
+      "sense_number": 2,
+      "page_text_line_start": 139,
+      "page_text_line_end": 150,
+      "interpretation": "A useful discussion yielding results, not production output.",
+      "observed_on": "2026-10-30",
+      "scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+    },
+    {
+      "word": "permit",
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/permit_2",
+      "part_of_speech": "noun",
+      "sense_number": 1,
+      "page_text_line_start": 88,
+      "page_text_line_end": 110,
+      "interpretation": "Official document, not the verb permit; noun pronunciation requires listening.",
+      "observed_on": "2026-10-30",
+      "scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+    },
+    {
+      "word": "adaptation",
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/adaptation",
+      "part_of_speech": "noun",
+      "sense_number": 1,
+      "page_text_line_start": 115,
+      "page_text_line_end": 139,
+      "interpretation": "Course modification, not film adaptation or biological adjustment.",
+      "observed_on": "2026-10-30",
+      "scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+    }
+  ],
+  "unapproved_editorial_suggestions": [
+    {
+      "word": "preserve",
+      "proposed_myanmar": "မူလအခြေအနေ မပျက်စီးစေရန် ထိန်းသိမ်းထားသည်",
+      "proposed_example": "The archive uses special storage to preserve old photographs.",
+      "status": "EDITORIAL_PROPOSAL_NOT_INDEPENDENTLY_REVIEWED"
+    },
+    {
+      "word": "productive",
+      "proposed_myanmar": "ဆွေးနွေးမှုမှ အသုံးဝင်သည့် ရလဒ်များ ထွက်ပေါ်စေသော",
+      "proposed_example": "The meeting was productive because the team agreed on a clear plan.",
+      "status": "EDITORIAL_PROPOSAL_NOT_INDEPENDENTLY_REVIEWED"
+    },
+    {
+      "word": "permit",
+      "proposed_myanmar": "လုပ်ငန်းတစ်ခု ဆောင်ရွက်ရန် ထုတ်ပေးထားသည့် တရားဝင်ခွင့်ပြုလက်မှတ်",
+      "proposed_example": "The builder applied for a permit before construction began.",
+      "status": "EDITORIAL_PROPOSAL_NOT_INDEPENDENTLY_REVIEWED"
+    },
+    {
+      "word": "adaptation",
+      "proposed_myanmar": "အခြေအနေအသစ်နှင့် ကိုက်ညီစေရန် ပြုပြင်ပြောင်းလဲမှု",
+      "proposed_example": "The adaptation of the lessons made them easier for beginners to follow.",
+      "status": "EDITORIAL_PROPOSAL_NOT_INDEPENDENTLY_REVIEWED"
+    }
+  ],
+  "independently_approved_count": 0,
+  "independent_human_review_receipts": [],
+  "audio_real_listening_signoffs": [],
+  "release_approved": false,
+  "source_limitations": "Direct Oxford 3000/5000 PDF word/POS evidence observed 2026-10-30 is NOT independently verified exact-sense CEFR approval. Four directly opened dictionary pages are editorial sense leads only. No independent English/Myanmar/example signoff, real George/Emma listening, physical iPhone Safari, hosting readiness or production deployment. Frozen shortlist unchanged.",
+  "records": [
+    {
+      "word": "preserve",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To keep something safe or in its original condition.",
+        "myanmar_meaning": "ထိန်းသိမ်းကာကွယ်သည်၊ မပျက်စီးအောင်ထားသည်",
+        "example_sentence": "The museum works to preserve historic photographs."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 420,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 12,
+        "extracted_line": 3088,
+        "source_excerpt": "preserve v.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Museum photograph preservation, not food preservation or preservation of abstract qualities.",
+      "independent_reviewer_task": "Independent human reviewer must check dated exact-sense publisher CEFR evidence, English definition, fluent Myanmar meaning, original example grammar and collocation, British pronunciation, cross-level justification and historical Git provenance; issue a content-bound independent receipt. Word/POS PDF and assistant editorial suggestions do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "productive",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Achieving useful results through work or discussion.",
+        "myanmar_meaning": "အကျိုးဖြစ်ထွန်းသော",
+        "example_sentence": "The discussion was productive because everyone came prepared."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 454,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 6,
+        "extracted_line": 1627,
+        "source_excerpt": "productive adj.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Useful results from discussion, not farming or industrial production.",
+      "independent_reviewer_task": "Independent human reviewer must check dated exact-sense publisher CEFR evidence, English definition, fluent Myanmar meaning, original example grammar and collocation, British pronunciation, cross-level justification and historical Git provenance; issue a content-bound independent receipt. Word/POS PDF and assistant editorial suggestions do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "permit",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An official document giving permission for a particular activity.",
+        "myanmar_meaning": "တရားဝင်ခွင့်ပြုချက်လက်မှတ်",
+        "example_sentence": "The contractor applied for a permit before starting work."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 569,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 12,
+        "extracted_line": 3064,
+        "source_excerpt": "permit v., n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Official document noun, not the verb allow; different British stress requires real listening.",
+      "independent_reviewer_task": "Independent human reviewer must check dated exact-sense publisher CEFR evidence, English definition, fluent Myanmar meaning, original example grammar and collocation, British pronunciation, cross-level justification and historical Git provenance; issue a content-bound independent receipt. Word/POS PDF and assistant editorial suggestions do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "demonstrate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To show clearly that something is true by giving evidence.",
+        "myanmar_meaning": "အထောက်အထားဖြင့် ရှင်းလင်းစွာ ပြသသည်",
+        "example_sentence": "The experiment helped demonstrate the theory."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 572,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 11,
+        "extracted_line": 2775,
+        "source_excerpt": "demonstrate v.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Proving a theory with evidence, not a public protest or a product demonstration.",
+      "independent_reviewer_task": "Independent human reviewer must check dated exact-sense publisher CEFR evidence, English definition, fluent Myanmar meaning, original example grammar and collocation, British pronunciation, cross-level justification and historical Git provenance; issue a content-bound independent receipt. Word/POS PDF and assistant editorial suggestions do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "nonetheless",
+      "level": "C1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Despite what has just been said or happened.",
+        "myanmar_meaning": "သို့သော်လည်း၊ ထိုသို့ဖြစ်သော်ငြားလည်း",
+        "example_sentence": "The task was difficult; nonetheless, the team finished it."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 644,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 6,
+        "extracted_line": 1512,
+        "source_excerpt": "nonetheless adv.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Formal contrast adverb after semicolon, not a causal connector.",
+      "independent_reviewer_task": "Independent human reviewer must check dated exact-sense publisher CEFR evidence, English definition, fluent Myanmar meaning, original example grammar and collocation, British pronunciation, cross-level justification and historical Git provenance; issue a content-bound independent receipt. Word/POS PDF and assistant editorial suggestions do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "cease",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To stop happening or stop doing something.",
+        "myanmar_meaning": "ရပ်ဆိုင်းသည်၊ အဆုံးသတ်သည်",
+        "example_sentence": "The factory will cease operations at the end of the year."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 645,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 888,
+        "source_excerpt": "cease v.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Ceasing factory operations, not a brief pause; review formal register.",
+      "independent_reviewer_task": "Independent human reviewer must check dated exact-sense publisher CEFR evidence, English definition, fluent Myanmar meaning, original example grammar and collocation, British pronunciation, cross-level justification and historical Git provenance; issue a content-bound independent receipt. Word/POS PDF and assistant editorial suggestions do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "adaptation",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A change made to suit new conditions or circumstances.",
+        "myanmar_meaning": "အခြေအနေသစ်နှင့် လိုက်လျောညီထွေဖြစ်အောင် ပြောင်းလဲခြင်း",
+        "example_sentence": "The adaptation of the course helped more students join."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 661,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 732,
+        "source_excerpt": "adaptation n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Course adjustment to suit learners, not film or biological adaptation.",
+      "independent_reviewer_task": "Independent human reviewer must check dated exact-sense publisher CEFR evidence, English definition, fluent Myanmar meaning, original example grammar and collocation, British pronunciation, cross-level justification and historical Git provenance; issue a content-bound independent receipt. Word/POS PDF and assistant editorial suggestions do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "evaluate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To judge the quality or value of something using evidence.",
+        "myanmar_meaning": "အထောက်အထားအပေါ် မူတည်၍ အကဲဖြတ်သည်",
+        "example_sentence": "Researchers will evaluate the results before publishing them."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 663,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 11,
+        "extracted_line": 2831,
+        "source_excerpt": "evaluate v.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Evidence-based assessment of research results, not merely describing results.",
+      "independent_reviewer_task": "Independent human reviewer must check dated exact-sense publisher CEFR evidence, English definition, fluent Myanmar meaning, original example grammar and collocation, British pronunciation, cross-level justification and historical Git provenance; issue a content-bound independent receipt. Word/POS PDF and assistant editorial suggestions do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "emphasis",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Special importance or attention given to something.",
+        "myanmar_meaning": "အထူးအလေးထားမှု",
+        "example_sentence": "The training places strong emphasis on workplace safety."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 727,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 11,
+        "extracted_line": 2814,
+        "source_excerpt": "emphasis n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Giving workplace safety particular importance, not stress in pronunciation.",
+      "independent_reviewer_task": "Independent human reviewer must check dated exact-sense publisher CEFR evidence, English definition, fluent Myanmar meaning, original example grammar and collocation, British pronunciation, cross-level justification and historical Git provenance; issue a content-bound independent receipt. Word/POS PDF and assistant editorial suggestions do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "coastal",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Situated near or relating to the sea coast.",
+        "myanmar_meaning": "ကမ်းရိုးတန်းနှင့်ဆိုင်သော",
+        "example_sentence": "Coastal communities are preparing for stronger storms."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 729,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 912,
+        "source_excerpt": "coastal adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Communities near the sea, not necessarily holiday resorts.",
+      "independent_reviewer_task": "Independent human reviewer must check dated exact-sense publisher CEFR evidence, English definition, fluent Myanmar meaning, original example grammar and collocation, British pronunciation, cross-level justification and historical Git provenance; issue a content-bound independent receipt. Word/POS PDF and assistant editorial suggestions do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "resist",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To refuse to accept or be changed by something.",
+        "myanmar_meaning": "ခုခံသည်၊ တွန်းလှန်သည်",
+        "example_sentence": "The committee tried to resist pressure to change its findings."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 735,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 12,
+        "extracted_line": 3141,
+        "source_excerpt": "resist v.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Refusing pressure, not electrical resistance or armed opposition.",
+      "independent_reviewer_task": "Independent human reviewer must check dated exact-sense publisher CEFR evidence, English definition, fluent Myanmar meaning, original example grammar and collocation, British pronunciation, cross-level justification and historical Git provenance; issue a content-bound independent receipt. Word/POS PDF and assistant editorial suggestions do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "gradually",
+      "level": "C1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Slowly over a period of time rather than suddenly.",
+        "myanmar_meaning": "တဖြည်းဖြည်း",
+        "example_sentence": "The water level gradually returned to normal."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 736,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 11,
+        "extracted_line": 2894,
+        "source_excerpt": "gradually adv.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Slow change over time, not repeated or sudden change.",
+      "independent_reviewer_task": "Independent human reviewer must check dated exact-sense publisher CEFR evidence, English definition, fluent Myanmar meaning, original example grammar and collocation, British pronunciation, cross-level justification and historical Git provenance; issue a content-bound independent receipt. Word/POS PDF and assistant editorial suggestions do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
