@@ -52,3 +52,10 @@ Expected Oxford direct word/POS coverage after this batch (subject to CI reconci
 First-pass written / independently approved: **A1 200/0, A2 200/0, B1 200/0, B2 200/0, C1 200/0**. Real final George/Emma headword+example listening signoffs: **0/1,000**. Full independent linguistic/source-backed CEFR approval, final dual-voice audio and listening, browser/mobile regression, physical iPhone Safari evidence, measured GitHub Pages hosting, privacy/54 lessons/separate IELTS 1,000/production-audio preservation verification and confirmed live deployment remain outstanding.
 
 **No merge, no main modification, no public launch. Release remains BLOCKED / STAGING ONLY.**
+
+
+## Final actual GitHub Actions verification
+
+Verified [structural run 41050543616](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41050543616): **SUCCESS**, with actual A1, A2, B1, B2, C1 and ALL job conclusions all successful. Verified [documentary no-deployment run 41050543776](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41050543776): **SUCCESS, report-only**. Both used SHA `68deb18a1aaf795b2b7c0e2b4e5b45043396ba38`. Actual ALL and documentary logs confirm **529/529** adversarial ninth-A2 mutations rejected, **145/145** forged independent-review handoff mutations rejected, 652 distinct direct Oxford word/POS observations across 671 total source observations, and protected production assets unchanged. Intermediate failed runs [41050411129](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41050411129) and [41050429107](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41050429107) were diagnosed: the negative test mistakenly set the already-true editorial hold to true; it now actually removes the hold and verifies rejection. They are not passes.
+
+**All independent linguistic/audio/device/hosting/deployment gates remain blocked.** This successful CI is not a public launch.
