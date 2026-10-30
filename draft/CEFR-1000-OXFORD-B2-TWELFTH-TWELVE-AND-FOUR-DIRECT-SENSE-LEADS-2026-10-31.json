@@ -1,0 +1,495 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B2_TWELFTH_TWELVE_DIRECT_OXFORD_WORD_POS_FOUR_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-31",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 12,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A2": 3,
+    "B1": 2,
+    "B2": 6,
+    "C1": 1
+  },
+  "word_pos_discrepancies": 6,
+  "direct_dictionary_sense_leads": 4,
+  "independently_approved_count": 0,
+  "source_limitations": "Direct Oxford 3000/5000 PDF labels cover headword/POS, NOT independent exact-sense CEFR classification. Four directly inspected dictionary senses are editorial leads, NOT independent human signoff. Oxford topic tags and site-wide Word of the Day footers are not headword exact-sense CEFR labels. No final George/Emma audio listening, physical iPhone Safari, measured Pages hosting, or deployment. Frozen shortlist and production untouched.",
+  "records": [
+    {
+      "word": "quote",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To repeat or write someone's words exactly.",
+        "myanmar_meaning": "စကားကို မူရင်းအတိုင်း ကိုးကားဖော်ပြသည်",
+        "example_sentence": "The report will quote the expert's statement."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 551,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 9,
+        "extracted_line": 2348,
+        "source_excerpt": "quote v., n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Quotation verb sense is literal reproduction of words, not a financial price quote or the noun quotation.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/quote_1",
+        "observed_on": "2026-10-31",
+        "sense_number": 1,
+        "page_text_line_start": 113,
+        "page_text_line_end": 138,
+        "editorial_interpretation": "Oxford's first verb sense covers repeating exact words of another speaker or writer; quote an expert is transitive and is not a price estimate.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "သူတစ်ပါး ပြောထားသည့် သို့မဟုတ် ရေးထားသည့် စကားလုံးများကို မူရင်းအတိုင်း ကိုးကားဖော်ပြသည်",
+        "original_example_sentence": "The article quotes the scientist's exact words.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human editor must verify exact intended sense, source CEFR applicability, English, fluent Myanmar, original example grammar, historical source provenance and British pronunciation; publisher research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "tie",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To fasten something using string or a similar material.",
+        "myanmar_meaning": "ကြိုးဖြင့် ချည်သည်",
+        "example_sentence": "Use a strong rope to tie the boxes together."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 552,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 7,
+        "extracted_line": 1707,
+        "source_excerpt": "tie v., n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Physical fastening with rope, not finishing level in a match or a social bond.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human editor must verify exact intended sense, source CEFR applicability, English, fluent Myanmar, original example grammar, historical source provenance and British pronunciation; publisher research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "wise",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Showing good judgement based on knowledge or experience.",
+        "myanmar_meaning": "အမြော်အမြင်ရှိသော",
+        "example_sentence": "It was wise to check the contract before signing."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 553,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 12,
+        "extracted_line": 3312,
+        "source_excerpt": "wise adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Sound judgement from experience; avoid conflating with being simply intelligent or clever.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human editor must verify exact intended sense, source CEFR applicability, English, fluent Myanmar, original example grammar, historical source provenance and British pronunciation; publisher research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "inner",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Located inside something or closer to its centre.",
+        "myanmar_meaning": "အတွင်းပိုင်းရှိသော",
+        "example_sentence": "The building has an inner courtyard."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 554,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 11,
+        "extracted_line": 2941,
+        "source_excerpt": "inner adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Physical inner courtyard, not private feelings, inner circle or a metaphorical inner self.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human editor must verify exact intended sense, source CEFR applicability, English, fluent Myanmar, original example grammar, historical source provenance and British pronunciation; publisher research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "lift",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To move something to a higher position.",
+        "myanmar_meaning": "မြှောက်တင်သည်",
+        "example_sentence": "Two workers helped lift the heavy crate."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 555,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 5,
+        "extracted_line": 1359,
+        "source_excerpt": "lift v., n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Transitive raising of a heavy object; distinguish elevator noun and lifting restrictions.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human editor must verify exact intended sense, source CEFR applicability, English, fluent Myanmar, original example grammar, historical source provenance and British pronunciation; publisher research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "tower",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A tall, narrow building or part of a building.",
+        "myanmar_meaning": "မျှော်စင်၊ မြင့်မားသော အဆောက်အအုံ",
+        "example_sentence": "The clock tower stands beside the market."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 560,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 7,
+        "extracted_line": 1716,
+        "source_excerpt": "tower n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Countable tall narrow building, not a verb meaning to stand above others.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human editor must verify exact intended sense, source CEFR applicability, English, fluent Myanmar, original example grammar, historical source provenance and British pronunciation; publisher research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "cabinet",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A piece of furniture with doors or drawers for storage.",
+        "myanmar_meaning": "ပစ္စည်းသိုလှောင်ရန် ဗီရို",
+        "example_sentence": "The medicine cabinet is above the sink."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 563,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 4,
+        "extracted_line": 871,
+        "source_excerpt": "cabinet n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "High-risk polysemy: shortlist means storage furniture, while the Oxford first noun sense means senior government ministers. The C1 Oxford 5000 word/POS label and Houses and homes c1 topic badge do not independently establish CEFR for furniture sense.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/cabinet",
+        "observed_on": "2026-10-31",
+        "sense_number": 2,
+        "page_text_line_start": 147,
+        "page_text_line_end": 154,
+        "editorial_interpretation": "Oxford noun sense 2 explicitly identifies storage furniture with doors, drawers or shelves; sense 1 is the government Cabinet. A publisher C1 headword/POS tag is not independent evidence for the furniture sense.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "တံခါး သို့မဟုတ် အံဆွဲပါသော ပစ္စည်းသိမ်းဗီရို",
+        "original_example_sentence": "She keeps the first-aid supplies in a locked cabinet.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human editor must verify exact intended sense, source CEFR applicability, English, fluent Myanmar, original example grammar, historical source provenance and British pronunciation; publisher research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "contrast",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A noticeable difference between two things.",
+        "myanmar_meaning": "ကွာခြားချက်၊ ဆန့်ကျင်ကွဲပြားမှု",
+        "example_sentence": "There is a sharp contrast between the two designs."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 624,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 8,
+        "extracted_line": 1936,
+        "source_excerpt": "contrast n., v.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A clearly visible difference between two designs; noun countability and contrast between A and B versus contrast with.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/contrast_1",
+        "observed_on": "2026-10-31",
+        "sense_number": 1,
+        "page_text_line_start": 105,
+        "page_text_line_end": 116,
+        "editorial_interpretation": "Oxford noun sense 1 covers an observable difference between things; countable and uncountable use and contrast between A and B are documented.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "နှိုင်းယှဉ်ကြည့်ရာတွင် ထင်ရှားစွာမြင်ရသည့် ကွာခြားချက်",
+        "original_example_sentence": "There is a clear contrast between the two plans.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human editor must verify exact intended sense, source CEFR applicability, English, fluent Myanmar, original example grammar, historical source provenance and British pronunciation; publisher research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "establish",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To start an organisation or system intended to last.",
+        "myanmar_meaning": "တည်ထောင်သည်",
+        "example_sentence": "The charity hopes to establish a new learning centre."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 625,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 11,
+        "extracted_line": 2827,
+        "source_excerpt": "establish v.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Found an enduring organisation/system, not prove a fact or establish a reputation.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/establish",
+        "observed_on": "2026-10-31",
+        "sense_number": 1,
+        "page_text_line_start": 112,
+        "page_text_line_end": 120,
+        "editorial_interpretation": "Oxford verb sense 1 is creating an organisation or system intended to endure, rather than proving information or acquiring a reputation.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ရေရှည်တည်ရှိရန် ရည်ရွယ်၍ အဖွဲ့အစည်း သို့မဟုတ် စနစ်တစ်ခုကို တည်ထောင်သည်",
+        "original_example_sentence": "The volunteers established a community library.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human editor must verify exact intended sense, source CEFR applicability, English, fluent Myanmar, original example grammar, historical source provenance and British pronunciation; publisher research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "proposal",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A formal suggestion or plan for people to consider.",
+        "myanmar_meaning": "အဆိုပြုချက်",
+        "example_sentence": "The committee discussed her proposal at the meeting."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 626,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 12,
+        "extracted_line": 3102,
+        "source_excerpt": "proposal n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Formal plan for consideration, not an accepted decision or romantic marriage proposal.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human editor must verify exact intended sense, source CEFR applicability, English, fluent Myanmar, original example grammar, historical source provenance and British pronunciation; publisher research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "reputation",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The opinion that people generally have about someone or something.",
+        "myanmar_meaning": "ဂုဏ်သတင်း၊ လူအများ၏အမြင်",
+        "example_sentence": "The company has a reputation for reliable service."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 627,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 12,
+        "extracted_line": 3136,
+        "source_excerpt": "reputation n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "General public opinion about reliability; avoid reducing to fame or purely positive prestige.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human editor must verify exact intended sense, source CEFR applicability, English, fluent Myanmar, original example grammar, historical source provenance and British pronunciation; publisher research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "assessment",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The process of judging the quality or value of something.",
+        "myanmar_meaning": "အကဲဖြတ်ခြင်း",
+        "example_sentence": "The final assessment includes a written test."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 628,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 10,
+        "extracted_line": 2640,
+        "source_excerpt": "assessment n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Process of evaluating quality/value, distinct from a school exam itself; shortlist example may imply final test as one component.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human editor must verify exact intended sense, source CEFR applicability, English, fluent Myanmar, original example grammar, historical source provenance and British pronunciation; publisher research is NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
