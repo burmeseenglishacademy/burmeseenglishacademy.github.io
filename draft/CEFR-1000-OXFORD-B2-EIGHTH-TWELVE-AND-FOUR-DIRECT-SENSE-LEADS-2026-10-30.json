@@ -1,0 +1,469 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B2_EIGHTH_TWELVE_DIRECT_OXFORD_WORD_POS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 12,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "B2": 11,
+    "C1": 1
+  },
+  "word_pos_discrepancies": 1,
+  "independently_approved_count": 0,
+  "source_limitations": "Direct Oxford 5000 PDF word/POS classifications and four Oxford dictionary sense descriptions were observed on 2026-10-30. These are not exact-sense CEFR approvals, independent English/Myanmar/example reviews, or actual George/Emma listening. Acquisition is publisher C1 word/POS despite B2 draft. No frozen shortlist edits or human signoffs.",
+  "records": [
+    {
+      "word": "convention",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A large formal meeting for people with shared interests or work.",
+        "myanmar_meaning": "ညီလာခံ၊ အကြီးစားတရားဝင်အစည်းအဝေး",
+        "example_sentence": "The annual convention attracted teachers from many countries."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 394,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 1,
+        "extracted_line": 130,
+        "source_excerpt": "convention n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The example uses a professional gathering; do not conflate this sense with a social custom or an international treaty.",
+      "independent_reviewer_task": "Independent human reviewer must inspect dated exact-sense publisher evidence, resolve any CEFR/POS conflicts, verify English definition, fluent Myanmar meaning, original example grammar, British pronunciation, historical provenance and content-bound independent signoff. Automated word/POS checks do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "equivalent",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Equal in value, meaning, or effect to something else.",
+        "myanmar_meaning": "တန်ဖိုး၊ အဓိပ္ပာယ် သို့မဟုတ် အကျိုးသက်ရောက်မှု တူညီသော",
+        "example_sentence": "The two qualifications are considered equivalent."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 398,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 1,
+        "extracted_line": 216,
+        "source_excerpt": "equivalent n., adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft is adjective: qualifications comparable in value or standard, not the separate noun entry; confirm intended comparison and fluent Myanmar.",
+      "independent_reviewer_task": "Independent human reviewer must inspect dated exact-sense publisher evidence, resolve any CEFR/POS conflicts, verify English definition, fluent Myanmar meaning, original example grammar, British pronunciation, historical provenance and content-bound independent signoff. Automated word/POS checks do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "universal",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Applying to or involving everyone or everything in a group.",
+        "myanmar_meaning": "အားလုံးနှင့်သက်ဆိုင်သော၊ အများနှင့်သက်ဆိုင်သော",
+        "example_sentence": "Access to clean water is a universal concern."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 493,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 672,
+        "source_excerpt": "universal adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A concern shared across people, not a claim that every single person has identical access or circumstances.",
+      "independent_reviewer_task": "Independent human reviewer must inspect dated exact-sense publisher evidence, resolve any CEFR/POS conflicts, verify English definition, fluent Myanmar meaning, original example grammar, British pronunciation, historical provenance and content-bound independent signoff. Automated word/POS checks do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "infrastructure",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The basic systems and facilities needed for a society to function.",
+        "myanmar_meaning": "အခြေခံအဆောက်အအုံနှင့် ဝန်ဆောင်မှုစနစ်များ",
+        "example_sentence": "Better infrastructure could improve transport in the region."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 632,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 332,
+        "source_excerpt": "infrastructure n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Physical and organisational public systems; Myanmar should include utilities/services as well as buildings.",
+      "independent_reviewer_task": "Independent human reviewer must inspect dated exact-sense publisher evidence, resolve any CEFR/POS conflicts, verify English definition, fluent Myanmar meaning, original example grammar, British pronunciation, historical provenance and content-bound independent signoff. Automated word/POS checks do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "recognition",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Public acknowledgement or appreciation of someone's work.",
+        "myanmar_meaning": "အသိအမှတ်ပြုမှု",
+        "example_sentence": "Her research received international recognition."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 633,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 515,
+        "source_excerpt": "recognition n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Public appreciation for research, not visual identification or formal legal recognition; distinguish Myanmar senses.",
+      "independent_reviewer_task": "Independent human reviewer must inspect dated exact-sense publisher evidence, resolve any CEFR/POS conflicts, verify English definition, fluent Myanmar meaning, original example grammar, British pronunciation, historical provenance and content-bound independent signoff. Automated word/POS checks do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "mechanism",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A system or process through which something happens or works.",
+        "myanmar_meaning": "လုပ်ဆောင်မှုယန္တရား၊ လုပ်ငန်းစဉ်",
+        "example_sentence": "The report explains the mechanism behind the new system."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 634,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 390,
+        "source_excerpt": "mechanism n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Abstract process explaining operation, not necessarily a physical machine mechanism; confirm technical Burmese collocation.",
+      "independent_reviewer_task": "Independent human reviewer must inspect dated exact-sense publisher evidence, resolve any CEFR/POS conflicts, verify English definition, fluent Myanmar meaning, original example grammar, British pronunciation, historical provenance and content-bound independent signoff. Automated word/POS checks do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "acquisition",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The act of obtaining or buying something, especially a business or asset.",
+        "myanmar_meaning": "ဝယ်ယူရယူခြင်း၊ ရရှိခြင်း",
+        "example_sentence": "The acquisition of the smaller firm took six months."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 637,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 727,
+        "source_excerpt": "acquisition n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Business takeover in example, not acquiring a language or a single purchased object; B2 draft versus Oxford C1 word/POS needs independent decision.",
+      "independent_reviewer_task": "Independent human reviewer must inspect dated exact-sense publisher evidence, resolve any CEFR/POS conflicts, verify English definition, fluent Myanmar meaning, original example grammar, British pronunciation, historical provenance and content-bound independent signoff. Automated word/POS checks do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "outstanding",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Extremely good or impressive.",
+        "myanmar_meaning": "အထူးကောင်းမွန်သော",
+        "example_sentence": "The team received an award for outstanding service."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 723,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 442,
+        "source_excerpt": "outstanding adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft means excellent service, not an unpaid invoice or unfinished task; preserve sense in Myanmar.",
+      "independent_reviewer_task": "Independent human reviewer must inspect dated exact-sense publisher evidence, resolve any CEFR/POS conflicts, verify English definition, fluent Myanmar meaning, original example grammar, British pronunciation, historical provenance and content-bound independent signoff. Automated word/POS checks do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "primarily",
+      "level": "B2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Mainly; more than for any other reason.",
+        "myanmar_meaning": "အဓိကအားဖြင့်",
+        "example_sentence": "The course is primarily for new employees."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 784,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 480,
+        "source_excerpt": "primarily adv.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Mainly intended for new employees; do not imply exclusive eligibility, and verify adverb placement.",
+      "independent_reviewer_task": "Independent human reviewer must inspect dated exact-sense publisher evidence, resolve any CEFR/POS conflicts, verify English definition, fluent Myanmar meaning, original example grammar, British pronunciation, historical provenance and content-bound independent signoff. Automated word/POS checks do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "circuit",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A complete path through which electric current can flow.",
+        "myanmar_meaning": "လျှပ်စစ်စီးဆင်းနိုင်သော ပတ်လမ်း",
+        "example_sentence": "The engineer checked the circuit before switching on the machine."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 786,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 1,
+        "extracted_line": 92,
+        "source_excerpt": "circuit n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Electrical closed path, not race track, legal circuit or tour; check electrical technical precision in Myanmar.",
+      "independent_reviewer_task": "Independent human reviewer must inspect dated exact-sense publisher evidence, resolve any CEFR/POS conflicts, verify English definition, fluent Myanmar meaning, original example grammar, British pronunciation, historical provenance and content-bound independent signoff. Automated word/POS checks do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "healthcare",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Medical services provided to help people stay healthy.",
+        "myanmar_meaning": "ကျန်းမာရေးစောင့်ရှောက်မှုဝန်ဆောင်မှု",
+        "example_sentence": "Rural communities need reliable healthcare."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 788,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 299,
+        "source_excerpt": "healthcare n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Medical services and systems, not only one hospital or treatment; Myanmar compound fluency needs human review.",
+      "independent_reviewer_task": "Independent human reviewer must inspect dated exact-sense publisher evidence, resolve any CEFR/POS conflicts, verify English definition, fluent Myanmar meaning, original example grammar, British pronunciation, historical provenance and content-bound independent signoff. Automated word/POS checks do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "membership",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The state of belonging to a group or organisation.",
+        "myanmar_meaning": "အသင်းဝင်ဖြစ်ခြင်း၊ အဖွဲ့ဝင်အဖြစ်ပါဝင်မှု",
+        "example_sentence": "Membership includes access to the library."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 790,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 2,
+        "extracted_line": 393,
+        "source_excerpt": "membership n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Status/benefits of belonging to an organisation; distinguish membership fee, membership list and member count.",
+      "independent_reviewer_task": "Independent human reviewer must inspect dated exact-sense publisher evidence, resolve any CEFR/POS conflicts, verify English definition, fluent Myanmar meaning, original example grammar, British pronunciation, historical provenance and content-bound independent signoff. Automated word/POS checks do not approve the entry.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ],
+  "direct_dictionary_sense_leads": [
+    {
+      "word": "convention",
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/convention",
+      "observed_on": "2026-10-30",
+      "entry_pos": "noun",
+      "sense_number": 2,
+      "sense_summary": "large professional or political meeting; distinct from social custom and treaty senses",
+      "example_alignment": "The annual convention attracted teachers from many countries.",
+      "dictionary_excerpt_locator": "lines 148-179",
+      "verification_scope": "DIRECT_DICTIONARY_SENSE_DESCRIPTION_NOT_INDEPENDENT_CEFR_APPROVAL"
+    },
+    {
+      "word": "equivalent",
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/equivalent_2",
+      "observed_on": "2026-10-30",
+      "entry_pos": "adjective",
+      "sense_number": 1,
+      "sense_summary": "equal in value, amount, meaning or importance; adjective distinct from noun entry",
+      "example_alignment": "The two qualifications are considered equivalent.",
+      "dictionary_excerpt_locator": "lines 88-123",
+      "verification_scope": "DIRECT_DICTIONARY_SENSE_DESCRIPTION_NOT_INDEPENDENT_CEFR_APPROVAL"
+    },
+    {
+      "word": "acquisition",
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/acquisition",
+      "observed_on": "2026-10-30",
+      "entry_pos": "noun",
+      "sense_number": 3,
+      "sense_summary": "purchase of a company, business asset or land; distinct from skill acquisition",
+      "example_alignment": "The acquisition of the smaller firm took six months.",
+      "dictionary_excerpt_locator": "lines 136-150",
+      "verification_scope": "DIRECT_DICTIONARY_SENSE_DESCRIPTION_NOT_INDEPENDENT_CEFR_APPROVAL"
+    },
+    {
+      "word": "outstanding",
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/outstanding",
+      "observed_on": "2026-10-30",
+      "entry_pos": "adjective",
+      "sense_number": 1,
+      "sense_summary": "extremely good or excellent; distinct from unpaid/unfinished sense 2",
+      "example_alignment": "The team received an award for outstanding service.",
+      "dictionary_excerpt_locator": "lines 105-129 and 142-151",
+      "verification_scope": "DIRECT_DICTIONARY_SENSE_DESCRIPTION_NOT_INDEPENDENT_CEFR_APPROVAL"
+    }
+  ],
+  "independent_human_review_receipts": [],
+  "audio_real_listening_signoffs": [],
+  "release_approved": false
+}
