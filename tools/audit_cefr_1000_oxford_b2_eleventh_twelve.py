@@ -97,7 +97,7 @@ def self_test(packet,shortlist):
             ("word",lambda r:r.update(word="forged")),
             ("draft-level",lambda r:r.update(level="C1")),
             ("pos",lambda r:r.update(part_of_speech="forged")),
-            ("source-level",lambda r:r["publisher_source"].update(source_cefr_level="A1")),
+            ("source-level",lambda r:r["publisher_source"].update(source_cefr_level="C1")),
             ("source-page",lambda r:r["publisher_source"].update(pdf_page=0)),
             ("source-line",lambda r:r["publisher_source"].update(extracted_line=-1)),
             ("source-excerpt",lambda r:r["publisher_source"].update(source_excerpt="forged")),
