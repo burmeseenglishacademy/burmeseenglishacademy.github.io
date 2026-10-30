@@ -251,6 +251,7 @@ jobs:
           python3 tools/audit_cefr_1000_oxford_b2_tenth_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_b2_eleventh_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_footer_attribution.py --level ALL --self-test
+          python3 tools/audit_cefr_1000_cambridge_c1_eight_unlabelled.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_b2_four_sense_leads.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_b2_lower_twelve.py --level ALL --self-test
           python3 tools/audit_cefr_1000_oxford_c1_b2_conflict_twelve.py --level ALL --self-test
