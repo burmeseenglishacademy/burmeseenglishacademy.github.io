@@ -114,6 +114,8 @@ on:
       - tools/audit_cefr_1000_oxford_b2_tenth_twelve.py
       - draft/CEFR-1000-OXFORD-B2-ELEVENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
       - tools/audit_cefr_1000_oxford_b2_eleventh_twelve.py
+      - draft/CEFR-1000-OXFORD-FOOTER-WORD-OF-DAY-FIVE-CORRECTION-2026-10-31.json
+      - tools/audit_cefr_1000_oxford_footer_attribution.py
       - tools/audit_cefr_1000_oxford_b2_eighth_twelve.py
       - draft/CEFR-1000-OXFORD-B2-SIXTH-FOUR-DIRECT-SENSE-LEADS-2026-10-30.json
       - tools/audit_cefr_1000_oxford_b2_four_sense_leads.py
@@ -468,11 +470,16 @@ jobs:
       - name: Reject 229 tenth B2 forged publisher, bilingual, provenance, sense and signoff mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_b2_tenth_twelve.py --level ALL --self-test
-      - name: Audit eleventh B2 twelve direct Oxford word-POS and four unresolved dictionary footer conflicts
+      - name: Audit eleventh B2 twelve direct Oxford word-POS and four dictionary sense leads
         run: python3 tools/audit_cefr_1000_oxford_b2_eleventh_twelve.py --level "${{ matrix.level }}"
       - name: Reject 232 eleventh B2 forged source, Myanmar, provenance, sense and signoff mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_b2_eleventh_twelve.py --level ALL --self-test
+      - name: Reject false Oxford C1 footer attribution to five target words
+        run: python3 tools/audit_cefr_1000_oxford_footer_attribution.py --level "${{ matrix.level }}"
+      - name: Reject 53 forged Word-of-the-Day attribution and signoff mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_oxford_footer_attribution.py --level ALL --self-test
       - name: Reject 151 forged sixth B2 publisher, bilingual, provenance and approval mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_b2_sixth_twelve.py --level ALL --self-test
