@@ -1,0 +1,19 @@
+# CEFR 1,000 — A2 twelfth Oxford 12 + four direct dictionary sense leads (31 October 2026)
+
+**STAGING ONLY. No independent approval, no audio listening signoff and no publication.** Frozen first-pass shortlist and independent-review task file remain unchanged.
+
+The twelve previously unobserved A2-draft nouns are **fire, fun, art, building, education, front, list, college, town, date, land and space**. Direct inspection of [Oxford University Press's official Oxford 3000 by CEFR PDF](https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf) on **2026-10-31** established **11 A1** publisher word/POS classifications and **one A2** (education). Every record preserves exact PDF page and extracted-line locator, short word/POS excerpt, original English/Myanmar/example snapshot, historical Git source path/index/blob and a human-review task. This is **word/POS evidence only**, not independent exact-sense CEFR approval or permission to retier automatically.
+
+Four direct Oxford dictionary pages were inspected:
+- [college](https://www.oxfordlearnersdictionaries.com/definition/english/college) — UK further/vocational education versus US degree college, dictionary lines 105–164.
+- [front](https://www.oxfordlearnersdictionaries.com/definition/english/front_1) — forward side, not cardinal east; *at the front of* versus *in front of*, lines 106–140.
+- [education](https://www.oxfordlearnersdictionaries.com/definition/english/education) — education can be uncountable or countable; *a good education* is grammatical, lines 105–115.
+- [space](https://www.oxfordlearnersdictionaries.com/definition/english/space_1) — *enough space for another chair* is uncountable available room (sense 3), not a countable empty place or outer space, lines 203–216.
+
+Four original English/Myanmar alternatives are recorded as **unapproved editorial proposals**, not changes to the shortlist. The Oxford dictionary site-wide Word of the Day footer is explicitly excluded as a headword CEFR label.
+
+**Research coverage after inclusion:** A1 195/200, A2 **132/200**, B1 144/200, B2 142/200, C1 111/200 = **724/1,000** distinct Oxford word/POS observations across **743** observations; **276** still lack such direct evidence. Reviewer queue: **3 unlisted, 40 publisher-higher, 262 publisher-lower, 419 matching word/POS but exact-sense unverified, 276 unobserved**. First-pass written/independently approved remains **200/0 at each level**. Final George/Emma actual listening signoffs **0/1,000**.
+
+A fail-closed packet auditor reconstructs all 12 records from frozen shortlist and hardcoded publisher anchors and runs **188 adversarial mutations** (8 global + 14×12 + 3×4), rejecting forged source, bilingual, provenance, dictionary-footer and human-signoff changes. The source packet is wired into cross-batch Oxford coverage, reviewer priority, reviewer handoff and all six A1/A2/B1/B2/C1/ALL GitHub Actions lanes plus documentary no-deployment QC. **CI conclusions are pending verification for this new commit.**
+
+Outstanding release gates: genuine independent English/Myanmar/example and exact-sense CEFR signoff for all 1,000; approved 200-per-level deduplicated manifest; full George/Emma final headword/example audio with real listening; approved-corpus browser/mobile and physical iPhone Safari QA; measured GitHub Pages hosting; protected production preservation; and confirmed live deployment. **Do not merge, modify main or publish until all gates are evidenced.**

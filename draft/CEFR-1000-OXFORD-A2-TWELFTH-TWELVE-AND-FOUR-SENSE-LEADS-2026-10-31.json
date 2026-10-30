@@ -1,0 +1,500 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A2_TWELFTH_TWELVE_OXFORD_DIRECT_WORD_POS_FOUR_DICTIONARY_SENSE_LEADS_HELD",
+  "observed_on": "2026-10-31",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 12,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 11,
+    "A2": 1,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "dictionary_sense_lead_count": 4,
+  "independently_approved_count": 0,
+  "real_george_emma_listening_signoffs": 0,
+  "source_limitations": "Direct Oxford 3000 CEFR PDF word/POS labels are not independently validated exact-sense CEFR ratings. Four dictionary sense leads were opened and paraphrased; dictionary topic badges and site-wide Word of the Day footer are NOT headword CEFR labels. Original Myanmar and example remain unreviewed; no independent reviewer or audio/device/deployment evidence.",
+  "records": [
+    {
+      "word": "fire",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Flames that produce heat and light.",
+        "myanmar_meaning": "မီး",
+        "example_sentence": "The campers kept the fire small and safe."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 669,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 2,
+        "extracted_line": 292,
+        "source_excerpt": "fire n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Fire in the camping example is controlled flames; distinguish a destructive blaze.",
+      "original_example_grammar_note": "First-pass sentence reviewed as an editorial lead only; independent native-English and fluent Myanmar signoff not completed.",
+      "independent_reviewer_task": "Independent human: reconcile Oxford word/POS label with intended exact sense, confirm English definition, fluent Myanmar, original-example grammar, British pronunciation and level placement; retier/replace if necessary.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "fun",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Enjoyment or pleasure from an activity.",
+        "myanmar_meaning": "ပျော်ရွှင်မှု",
+        "example_sentence": "We had fun playing games together."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 670,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 2,
+        "extracted_line": 320,
+        "source_excerpt": "fun n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Have fun is natural, fun noun is uncountable in the example; distinguish adjective fun.",
+      "original_example_grammar_note": "First-pass sentence reviewed as an editorial lead only; independent native-English and fluent Myanmar signoff not completed.",
+      "independent_reviewer_task": "Independent human: reconcile Oxford word/POS label with intended exact sense, confirm English definition, fluent Myanmar, original-example grammar, British pronunciation and level placement; retier/replace if necessary.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "art",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Creative work such as painting or drawing.",
+        "myanmar_meaning": "အနုပညာ",
+        "example_sentence": "She enjoys studying art at school."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 671,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 1,
+        "extracted_line": 45,
+        "source_excerpt": "art n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Art as creative practice, not an individual artwork; Myanmar translation should preserve this sense.",
+      "original_example_grammar_note": "First-pass sentence reviewed as an editorial lead only; independent native-English and fluent Myanmar signoff not completed.",
+      "independent_reviewer_task": "Independent human: reconcile Oxford word/POS label with intended exact sense, confirm English definition, fluent Myanmar, original-example grammar, British pronunciation and level placement; retier/replace if necessary.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "building",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A structure with a roof and walls.",
+        "myanmar_meaning": "အဆောက်အအုံ",
+        "example_sentence": "The new building has six floors."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 672,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 1,
+        "extracted_line": 113,
+        "source_excerpt": "building n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Countable physical structure, not the process of building.",
+      "original_example_grammar_note": "First-pass sentence reviewed as an editorial lead only; independent native-English and fluent Myanmar signoff not completed.",
+      "independent_reviewer_task": "Independent human: reconcile Oxford word/POS label with intended exact sense, confirm English definition, fluent Myanmar, original-example grammar, British pronunciation and level placement; retier/replace if necessary.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "education",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The process of learning, especially at school.",
+        "myanmar_meaning": "ပညာရေး",
+        "example_sentence": "Every child deserves a good education."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 673,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 5,
+        "extracted_line": 1154,
+        "source_excerpt": "education n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Educational process rather than institution; a good education is idiomatic and can be countable.",
+      "original_example_grammar_note": "First-pass sentence reviewed as an editorial lead only; independent native-English and fluent Myanmar signoff not completed.",
+      "independent_reviewer_task": "Independent human: reconcile Oxford word/POS label with intended exact sense, confirm English definition, fluent Myanmar, original-example grammar, British pronunciation and level placement; retier/replace if necessary.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "publisher": "Oxford University Press",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/education",
+        "observed_on": "2026-10-31",
+        "sense_heading_paraphrase": "teaching, training and learning process",
+        "page_text_line_start": 105,
+        "page_text_line_end": 115,
+        "grammar": "uncountable or countable in a specific education",
+        "editorial_note": "The original a good education is grammatical; education is not always an uncountable-only noun.",
+        "source_scope": "DIRECT_DICTIONARY_SENSE_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "site_footer_word_of_day_cefr_not_attributed_to_headword": true,
+        "unapproved_proposal": {
+          "myanmar_meaning": "ပညာသင်ကြားခြင်းနှင့် သင်ယူလေ့လာခြင်း လုပ်ငန်းစဉ်",
+          "original_example": "Every child should have access to education."
+        }
+      }
+    },
+    {
+      "word": "front",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The part of something that faces forward.",
+        "myanmar_meaning": "ရှေ့ဘက်",
+        "example_sentence": "There is a small garden at the front of the house."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 674,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 2,
+        "extracted_line": 317,
+        "source_excerpt": "front n., adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Forward side of a house, not cardinal east; in front of and at the front of differ.",
+      "original_example_grammar_note": "First-pass sentence reviewed as an editorial lead only; independent native-English and fluent Myanmar signoff not completed.",
+      "independent_reviewer_task": "Independent human: reconcile Oxford word/POS label with intended exact sense, confirm English definition, fluent Myanmar, original-example grammar, British pronunciation and level placement; retier/replace if necessary.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "publisher": "Oxford University Press",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/front_1",
+        "observed_on": "2026-10-31",
+        "sense_heading_paraphrase": "forward part or position of an object or building",
+        "page_text_line_start": 106,
+        "page_text_line_end": 140,
+        "grammar": "countable, usually singular; often the front",
+        "editorial_note": "Front is the forward side, not east. Distinguish at the front of from in front of and avoid Myanmar အရှေ့ ambiguity.",
+        "source_scope": "DIRECT_DICTIONARY_SENSE_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "site_footer_word_of_day_cefr_not_attributed_to_headword": true,
+        "unapproved_proposal": {
+          "myanmar_meaning": "အရာဝတ္ထုတစ်ခု၏ ရှေ့ဘက်ပိုင်း",
+          "original_example": "There is a small garden at the front of our house."
+        }
+      }
+    },
+    {
+      "word": "list",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A series of items written one after another.",
+        "myanmar_meaning": "စာရင်း",
+        "example_sentence": "I made a list of things to buy."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 675,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 2,
+        "extracted_line": 446,
+        "source_excerpt": "list n., v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Countable written inventory, not verb to list; made a list is natural.",
+      "original_example_grammar_note": "First-pass sentence reviewed as an editorial lead only; independent native-English and fluent Myanmar signoff not completed.",
+      "independent_reviewer_task": "Independent human: reconcile Oxford word/POS label with intended exact sense, confirm English definition, fluent Myanmar, original-example grammar, British pronunciation and level placement; retier/replace if necessary.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "college",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An institution where people study after school.",
+        "myanmar_meaning": "ကောလိပ်၊ အဆင့်မြင့်ပညာသင်ကျောင်း",
+        "example_sentence": "My sister starts college next month."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 676,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 1,
+        "extracted_line": 161,
+        "source_excerpt": "college n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "British further-education college versus US degree college; Myanmar needs context.",
+      "original_example_grammar_note": "First-pass sentence reviewed as an editorial lead only; independent native-English and fluent Myanmar signoff not completed.",
+      "independent_reviewer_task": "Independent human: reconcile Oxford word/POS label with intended exact sense, confirm English definition, fluent Myanmar, original-example grammar, British pronunciation and level placement; retier/replace if necessary.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "publisher": "Oxford University Press",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/college",
+        "observed_on": "2026-10-31",
+        "sense_heading_paraphrase": "UK post-school study or training, distinct from US college-as-university",
+        "page_text_line_start": 105,
+        "page_text_line_end": 164,
+        "grammar": "countable or uncountable",
+        "editorial_note": "British college may provide further education or vocational training; US college often denotes degree study. Myanmar should not imply every college is a university.",
+        "source_scope": "DIRECT_DICTIONARY_SENSE_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "site_footer_word_of_day_cefr_not_attributed_to_headword": true,
+        "unapproved_proposal": {
+          "myanmar_meaning": "ကျောင်းပြီးနောက် ပညာဆက်လက်သင်ယူရန် သို့မဟုတ် သက်မွေးပညာသင်ယူရန် ကောလိပ်",
+          "original_example": "She plans to study nursing at a local college next year."
+        }
+      }
+    },
+    {
+      "word": "town",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A place where people live that is smaller than a city.",
+        "myanmar_meaning": "မြို့ငယ်",
+        "example_sentence": "Our town has a busy weekend market."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 677,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 4,
+        "extracted_line": 815,
+        "source_excerpt": "town n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Settlement smaller than a city; some city/town distinctions vary by country.",
+      "original_example_grammar_note": "First-pass sentence reviewed as an editorial lead only; independent native-English and fluent Myanmar signoff not completed.",
+      "independent_reviewer_task": "Independent human: reconcile Oxford word/POS label with intended exact sense, confirm English definition, fluent Myanmar, original-example grammar, British pronunciation and level placement; retier/replace if necessary.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "date",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A particular day of a month or year.",
+        "myanmar_meaning": "ရက်စွဲ",
+        "example_sentence": "Write today's date at the top of the page."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 678,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 1,
+        "extracted_line": 193,
+        "source_excerpt": "date n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Calendar date, not a romantic meeting or fruit; apostrophe in today's is correct.",
+      "original_example_grammar_note": "First-pass sentence reviewed as an editorial lead only; independent native-English and fluent Myanmar signoff not completed.",
+      "independent_reviewer_task": "Independent human: reconcile Oxford word/POS label with intended exact sense, confirm English definition, fluent Myanmar, original-example grammar, British pronunciation and level placement; retier/replace if necessary.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "land",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The solid surface of the Earth rather than the sea.",
+        "myanmar_meaning": "ကုန်းမြေ",
+        "example_sentence": "After three days at sea, we finally saw land."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 679,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 2,
+        "extracted_line": 423,
+        "source_excerpt": "land n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Dry land as opposed to sea, not land ownership or verb to land.",
+      "original_example_grammar_note": "First-pass sentence reviewed as an editorial lead only; independent native-English and fluent Myanmar signoff not completed.",
+      "independent_reviewer_task": "Independent human: reconcile Oxford word/POS label with intended exact sense, confirm English definition, fluent Myanmar, original-example grammar, British pronunciation and level placement; retier/replace if necessary.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "space",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An empty area available for something.",
+        "myanmar_meaning": "နေရာလွတ်",
+        "example_sentence": "There is enough space for another chair."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 680,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 3,
+        "extracted_line": 726,
+        "source_excerpt": "space n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Available room in example is uncountable, not outer space or countable parking space.",
+      "original_example_grammar_note": "First-pass sentence reviewed as an editorial lead only; independent native-English and fluent Myanmar signoff not completed.",
+      "independent_reviewer_task": "Independent human: reconcile Oxford word/POS label with intended exact sense, confirm English definition, fluent Myanmar, original-example grammar, British pronunciation and level placement; retier/replace if necessary.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "publisher": "Oxford University Press",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/space_1",
+        "observed_on": "2026-10-31",
+        "sense_heading_paraphrase": "available room or area for use, not outer space",
+        "page_text_line_start": 203,
+        "page_text_line_end": 216,
+        "grammar": "uncountable for available room; countable for an individual empty place",
+        "editorial_note": "Original example enough space for another chair specifically illustrates uncountable available room (dictionary sense 3), not merely countable an empty space (sense 2).",
+        "source_scope": "DIRECT_DICTIONARY_SENSE_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "site_footer_word_of_day_cefr_not_attributed_to_headword": true,
+        "unapproved_proposal": {
+          "myanmar_meaning": "အသုံးပြုရန် ရရှိနိုင်သော နေရာလွတ်",
+          "original_example": "There is enough space for another chair in this room."
+        }
+      }
+    }
+  ]
+}
