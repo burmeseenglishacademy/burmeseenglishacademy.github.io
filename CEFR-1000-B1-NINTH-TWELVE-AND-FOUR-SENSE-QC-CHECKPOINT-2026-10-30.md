@@ -1,0 +1,26 @@
+# CEFR 1000 B1 ninth twelve — source and exact-sense research checkpoint (30 October 2026)
+
+**STAGING ONLY / NOT RELEASE READY.** This packet adds 12 new B1-draft headwords to the direct Oxford 3000 word/POS evidence queue. Official PDF: https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf. Directly inspected on 2026-10-30. The PDF is ordered by publisher CEFR levels, but the labels are word/POS-level observations, **not** independent exact-sense CEFR approval.
+
+| Draft B1 headword | Oxford word/POS | PDF page / extracted line | Reviewer issue |
+|---|---|---|---|
+| protection | B2 | 12 / 3105 | Draft concerns protection from loud noise, not insurance, trade protection, or criminal extortion. Confirm uncountable protective action rather than a protective object. |
+| receive | A2 | 6 / 1530 | Receiving a confirmation email is not hosting guests, a broadcast signal, or a formal award; draft B1 differs from Oxford A2 word/POS. |
+| speech | A2 | 6 / 1647 | Ceremonial public address is different from ability to speak, a language faculty or a parliamentary speech act; draft B1 versus Oxford A2. |
+| traffic | A1 | 4 / 816 | Road-vehicle congestion, not internet data traffic or illegal trade. Oxford A1 word/POS differs from B1 draft. |
+| demand | B2 | 11 / 2774 | Economic demand for packaging is uncountable customer desire to buy, not a forceful demand/request or work demands; Oxford B2 word/POS is higher than draft B1. |
+| investment | B2 | 11 / 2957 | Factory capital investment can mean the action of investing or money invested, not necessarily stock-market assets; Oxford B2 word/POS is higher than draft B1. |
+| structure | A2 | 7 / 1669 | Organisational arrangement of team parts, not a physical building or a chemical structure; Oxford A2 word/POS differs from B1 draft. |
+| appear | A2 | 4 / 950 | Draft screen-result appearance means become visible, not seem or perform on stage; Oxford A2 word/POS differs from B1 draft. |
+| exchange | B1 | 8 / 2034 | Exchange of ideas is reciprocal sharing, not currency conversion, student exchange, or heated argument; Oxford B1 word/POS matches provisional B1 but exact sense remains unapproved. |
+| powerful | B1 | 9 / 2307 | Strong effect of a storm, not political authority, influential person or high-power equipment; Oxford B1 word/POS match is not exact-sense approval. |
+| partner | A1 | 3 / 575 | Cooperating colleague/teammate in a task, not necessarily a romantic or business partner; Oxford A1 word/POS differs from B1 draft. |
+| solution | A2 | 6 / 1640 | A practical answer to a problem, not a chemical solution; Oxford A2 word/POS differs from B1 draft. |
+
+Of 12: publisher A1 **2**, A2 **5**, B1 **2**, B2 **3**. **Ten** disagree with provisional B1. Four Oxford dictionary sense pages directly opened and recorded: [protection](https://www.oxfordlearnersdictionaries.com/definition/english/protection), [demand](https://www.oxfordlearnersdictionaries.com/definition/english/demand_1), [investment](https://www.oxfordlearnersdictionaries.com/definition/english/investment), [exchange](https://www.oxfordlearnersdictionaries.com/definition/english/exchange_1). The B2 'demand' economic-market sense differs from a forceful request; 'investment' can mean investing activity or invested funds; 'protection' differs from an object, insurance and extortion; 'exchange of ideas' differs from currency exchange and verbal argument. Dictionary topic labels must not be treated as publisher exact-sense CEFR approvals.
+
+The [source/provenance-bound packet](draft/CEFR-1000-OXFORD-B1-NINTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-30.json) retains every frozen English definition, Myanmar gloss, original example, historical source path/index/blob, exact publisher PDF page/line and observation date. Four new Myanmar/example editorial alternatives are **unapproved proposals**; the original shortlist is unchanged. A fail-closed [packet auditor](tools/audit_cefr_1000_oxford_b1_ninth_twelve.py) freezes the Git blob and rejects altered sources, translations, examples, provenance, fabricated independent review or fake listening receipts. Six parallel structural CEFR jobs and documentary no-deployment workflow include it; **new GitHub Actions conclusions and logs must be checked before reporting any success**.
+
+Expected direct Oxford research coverage after this packet: **A1 195/200, A2 108/200, B1 120/200, B2 106/200, C1 87/200 = 616/1,000** distinct headwords across **635** observations; **384** remain without direct Oxford observations. Expected reviewer queue: **3 unlisted, 27 publisher-higher, 207 publisher-lower, 379 matching word/POS but exact sense unverified, 384 unobserved**. These totals require successful fresh CI reconciliation.
+
+First-pass written / independently approved: **A1 200/0, A2 200/0, B1 200/0, B2 200/0, C1 200/0**. Final George/Emma real listening signoffs: **0/1,000**. Independent English/Myanmar/example/exact-sense CEFR signoff, final dual-voice audio and real listening, approved-corpus desktop/mobile, physical iPhone Safari, measured Pages hosting, preserved production assets and confirmed deployment remain missing. **NO MERGE, MAIN MODIFICATION OR PUBLICATION.**

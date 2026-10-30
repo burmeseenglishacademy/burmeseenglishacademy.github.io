@@ -1,0 +1,491 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B1_NINTH_TWELVE_DIRECT_OXFORD_WORD_POS_AND_FOUR_DICTIONARY_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-30",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 12,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 2,
+    "A2": 5,
+    "B1": 2,
+    "B2": 3
+  },
+  "word_pos_discrepancies": 10,
+  "direct_dictionary_sense_leads": 4,
+  "independently_approved_count": 0,
+  "source_limitations": "Oxford 3000 CEFR PDF word/POS levels are directly observed but not exact-sense CEFR approvals. Four Oxford dictionary pages are editorial sense leads; topic tags must not be mistaken for CEFR sense labels. No independent human approval, final audio listening, physical iPhone testing, hosting measurement or deployment. Frozen shortlist unchanged.",
+  "records": [
+    {
+      "word": "protection",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Actions taken to keep someone or something safe.",
+        "myanmar_meaning": "ကာကွယ်မှု၊ အကာအကွယ်ပေးခြင်း",
+        "example_sentence": "The workers need protection from loud noise."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 377,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 12,
+        "extracted_line": 3105,
+        "source_excerpt": "protection n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft concerns protection from loud noise, not insurance, trade protection, or criminal extortion. Confirm uncountable protective action rather than a protective object.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/protection",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 105,
+        "page_text_line_end": 143,
+        "editorial_interpretation": "Oxford distinguishes protection as an uncountable act/state from a countable protective thing, insurance, trade and criminal senses.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ဆူညံသံဒဏ်မှ ကာကွယ်ပေးမှု",
+        "original_example_sentence": "Workers need protection from loud noise in the workshop.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify intended exact sense, publisher CEFR label versus draft level, English definition, natural Myanmar meaning, original example grammar, historical provenance, and British pronunciation. A direct word/POS observation or assistant suggestion is not independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "receive",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To get something that someone sends or gives.",
+        "myanmar_meaning": "လက်ခံရရှိသည်",
+        "example_sentence": "You should receive the confirmation email today."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 378,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 6,
+        "extracted_line": 1530,
+        "source_excerpt": "receive v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Receiving a confirmation email is not hosting guests, a broadcast signal, or a formal award; draft B1 differs from Oxford A2 word/POS.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify intended exact sense, publisher CEFR label versus draft level, English definition, natural Myanmar meaning, original example grammar, historical provenance, and British pronunciation. A direct word/POS observation or assistant suggestion is not independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "speech",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A formal talk given to an audience.",
+        "myanmar_meaning": "မိန့်ခွန်း၊ လူအများရှေ့ ပြောကြားချက်",
+        "example_sentence": "The principal gave a speech at the ceremony."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 379,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 6,
+        "extracted_line": 1647,
+        "source_excerpt": "speech n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Ceremonial public address is different from ability to speak, a language faculty or a parliamentary speech act; draft B1 versus Oxford A2.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify intended exact sense, publisher CEFR label versus draft level, English definition, natural Myanmar meaning, original example grammar, historical provenance, and British pronunciation. A direct word/POS observation or assistant suggestion is not independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "traffic",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Vehicles moving along roads.",
+        "myanmar_meaning": "လမ်းပေါ်ရှိ ယာဉ်အသွားအလာ",
+        "example_sentence": "Heavy traffic delayed the delivery."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 380,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 816,
+        "source_excerpt": "traffic n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Road-vehicle congestion, not internet data traffic or illegal trade. Oxford A1 word/POS differs from B1 draft.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify intended exact sense, publisher CEFR label versus draft level, English definition, natural Myanmar meaning, original example grammar, historical provenance, and British pronunciation. A direct word/POS observation or assistant suggestion is not independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "demand",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The amount of a product or service that people want to buy.",
+        "myanmar_meaning": "ဝယ်လိုအား၊ လိုအပ်ချက်",
+        "example_sentence": "Demand for reusable packaging is increasing."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 381,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 11,
+        "extracted_line": 2774,
+        "source_excerpt": "demand n., v.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Economic demand for packaging is uncountable customer desire to buy, not a forceful demand/request or work demands; Oxford B2 word/POS is higher than draft B1.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/demand_1",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 184,
+        "page_text_line_end": 190,
+        "editorial_interpretation": "Oxford noun sense 3 covers customer desire for goods/services; senses 1 and 2 cover strong requests and burdens.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ဝယ်ယူလိုအား",
+        "original_example_sentence": "Demand for reusable packaging has risen this year.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify intended exact sense, publisher CEFR label versus draft level, English definition, natural Myanmar meaning, original example grammar, historical provenance, and British pronunciation. A direct word/POS observation or assistant suggestion is not independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "investment",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Money put into something to earn a future benefit.",
+        "myanmar_meaning": "ရင်းနှီးမြှုပ်နှံမှု",
+        "example_sentence": "The new factory requires a large investment."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 382,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 11,
+        "extracted_line": 2957,
+        "source_excerpt": "investment n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Factory capital investment can mean the action of investing or money invested, not necessarily stock-market assets; Oxford B2 word/POS is higher than draft B1.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/investment",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 105,
+        "page_text_line_end": 205,
+        "editorial_interpretation": "Oxford separates uncountable investing activity from the money or asset invested; the draft factory example may straddle these.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "လုပ်ငန်းအတွက် ငွေကြေးရင်းနှီးမြှုပ်နှံမှု",
+        "original_example_sentence": "The company increased its investment in safer equipment.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify intended exact sense, publisher CEFR label versus draft level, English definition, natural Myanmar meaning, original example grammar, historical provenance, and British pronunciation. A direct word/POS observation or assistant suggestion is not independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "structure",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The way parts of something are arranged or joined.",
+        "myanmar_meaning": "ဖွဲ့စည်းပုံ၊ တည်ဆောက်ပုံ",
+        "example_sentence": "The manager explained the structure of the team."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 383,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 7,
+        "extracted_line": 1669,
+        "source_excerpt": "structure n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Organisational arrangement of team parts, not a physical building or a chemical structure; Oxford A2 word/POS differs from B1 draft.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify intended exact sense, publisher CEFR label versus draft level, English definition, natural Myanmar meaning, original example grammar, historical provenance, and British pronunciation. A direct word/POS observation or assistant suggestion is not independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "appear",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To become visible or to be shown somewhere.",
+        "myanmar_meaning": "ပေါ်လာသည်၊ မြင်တွေ့ရသည်",
+        "example_sentence": "The results will appear on the screen tomorrow."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 434,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 4,
+        "extracted_line": 950,
+        "source_excerpt": "appear v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft screen-result appearance means become visible, not seem or perform on stage; Oxford A2 word/POS differs from B1 draft.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify intended exact sense, publisher CEFR label versus draft level, English definition, natural Myanmar meaning, original example grammar, historical provenance, and British pronunciation. A direct word/POS observation or assistant suggestion is not independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "exchange",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An act of giving something and receiving something in return.",
+        "myanmar_meaning": "အပြန်အလှန်လဲလှယ်ခြင်း",
+        "example_sentence": "We arranged an exchange of ideas between the teams."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 435,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 8,
+        "extracted_line": 2034,
+        "source_excerpt": "exchange n., v.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Exchange of ideas is reciprocal sharing, not currency conversion, student exchange, or heated argument; Oxford B1 word/POS matches provisional B1 but exact sense remains unapproved.",
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/exchange_1",
+        "observed_on": "2026-10-30",
+        "page_text_line_start": 104,
+        "page_text_line_end": 175,
+        "editorial_interpretation": "Oxford noun sense 1 includes exchanging ideas; other senses cover currency, visits and verbal arguments.",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_SIGNOFF"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "အတွေးအမြင်များ အပြန်အလှန်ဖလှယ်ခြင်း",
+        "original_example_sentence": "The two teams held an exchange of ideas after the workshop.",
+        "status": "UNAPPROVED_EDITORIAL_PROPOSAL_NOT_APPLIED"
+      },
+      "independent_reviewer_task": "Independent human reviewer must verify intended exact sense, publisher CEFR label versus draft level, English definition, natural Myanmar meaning, original example grammar, historical provenance, and British pronunciation. A direct word/POS observation or assistant suggestion is not independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "powerful",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Having great strength or a strong effect.",
+        "myanmar_meaning": "အားကောင်းသော၊ အင်အားကြီးမားသော",
+        "example_sentence": "A powerful storm damaged several roofs."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 436,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 9,
+        "extracted_line": 2307,
+        "source_excerpt": "powerful adj.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Strong effect of a storm, not political authority, influential person or high-power equipment; Oxford B1 word/POS match is not exact-sense approval.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify intended exact sense, publisher CEFR label versus draft level, English definition, natural Myanmar meaning, original example grammar, historical provenance, and British pronunciation. A direct word/POS observation or assistant suggestion is not independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "partner",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A person or organisation that works with another on an activity.",
+        "myanmar_meaning": "လက်တွဲဖော်၊ ပူးပေါင်းဆောင်ရွက်သူ",
+        "example_sentence": "She asked her partner to review the plan."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 437,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 3,
+        "extracted_line": 575,
+        "source_excerpt": "partner n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Cooperating colleague/teammate in a task, not necessarily a romantic or business partner; Oxford A1 word/POS differs from B1 draft.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify intended exact sense, publisher CEFR label versus draft level, English definition, natural Myanmar meaning, original example grammar, historical provenance, and British pronunciation. A direct word/POS observation or assistant suggestion is not independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "solution",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A way of dealing with or solving a problem.",
+        "myanmar_meaning": "ပြဿနာဖြေရှင်းနည်း",
+        "example_sentence": "The team proposed a practical solution to reduce waste."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 438,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-30",
+        "pdf_page": 6,
+        "extracted_line": 1640,
+        "source_excerpt": "solution n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A practical answer to a problem, not a chemical solution; Oxford A2 word/POS differs from B1 draft.",
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null,
+      "independent_reviewer_task": "Independent human reviewer must verify intended exact sense, publisher CEFR label versus draft level, English definition, natural Myanmar meaning, original example grammar, historical provenance, and British pronunciation. A direct word/POS observation or assistant suggestion is not independent signoff.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
