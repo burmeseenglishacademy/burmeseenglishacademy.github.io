@@ -19,7 +19,7 @@ RECORD_KEYS = {"word", "draft_level", "part_of_speech", "shortlist_snapshot",
 
 def blob_sha(path):
     raw = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
 
 def validate(packet=None, shortlist=None):
     errors = []
