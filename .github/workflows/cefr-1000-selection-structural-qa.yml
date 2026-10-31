@@ -194,6 +194,8 @@ on:
       - tools/audit_cefr_1000_oxford_b1_thirteenth_twelve.py
       - draft/CEFR-1000-OXFORD-B1-FOURTEENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
       - tools/audit_cefr_1000_oxford_b1_fourteenth_twelve.py
+      - draft/CEFR-1000-OXFORD-B1-FIFTEENTH-TWENTY-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
+      - tools/audit_cefr_1000_oxford_b1_fifteenth_twenty.py
       - draft/CEFR-1000-OXFORD-B2-TWELFTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
       - tools/audit_cefr_1000_oxford_b2_twelfth_twelve.py
       - draft/CEFR-1000-OXFORD-B2-THIRTEENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
@@ -675,6 +677,11 @@ jobs:
       - name: Reject 333 forged B1 publisher, Myanmar, provenance and reviewer mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_b1_fourteenth_twelve.py --level ALL --self-test
+      - name: Audit final twenty B1 Oxford word-POS and four direct sense leads (not approvals)
+        run: python3 tools/audit_cefr_1000_oxford_b1_fifteenth_twenty.py --level "${{ matrix.level }}"
+      - name: Reject forged source, Myanmar, grammar, sense and independent-review receipts
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_oxford_b1_fifteenth_twenty.py --level ALL --self-test
       - name: Audit twelfth B2 Oxford word/POS evidence and four directly inspected dictionary senses
         run: python3 tools/audit_cefr_1000_oxford_b2_twelfth_twelve.py --level "${{ matrix.level }}"
       - name: Reject 232 forged B2 source, Myanmar, provenance, sense and independent-review mutations
