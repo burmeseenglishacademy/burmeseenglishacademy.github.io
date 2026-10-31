@@ -42,7 +42,7 @@ def require(test, message):
 
 def blob_sha(path):
     raw = (ROOT / path).read_bytes()
-    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
 
 def read(path):
     return json.loads((ROOT / path).read_text(encoding="utf8"))
@@ -148,7 +148,7 @@ def audit(packet, shortlist, historical):
         if word in PROPOSALS:
             require(isinstance(proposal, dict)
                     and proposal.get("review_status") == "UNAPPROVED_EDITORIAL_PROPOSAL"
-                    and any("\\u1000" <= ch <= "\\u109f" for ch in proposal.get("myanmar_meaning",""))
+                    and any("\u1000" <= ch <= "\u109f" for ch in proposal.get("myanmar_meaning",""))
                     and len(proposal.get("original_example","")) > 35,
                     "Forged approval or missing Myanmar/example candidate: " + word)
         else:
