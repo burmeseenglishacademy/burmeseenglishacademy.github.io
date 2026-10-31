@@ -751,6 +751,11 @@ jobs:
       - name: Reject forged C1 sense, bilingual, source and reviewer receipts
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_cambridge_c1_eleven_exact_sense.py --level ALL --self-test
+      - name: Audit five A1 non-core-list forms and rabbit A2 sense lead (research only)
+        run: python3 tools/audit_cefr_1000_a1_last_five_lemma_sense.py --level "${{ matrix.level }}"
+      - name: Reject 81 forged A1 lemma, Myanmar, source and reviewer mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_a1_last_five_lemma_sense.py --level ALL --self-test
       - name: Save structural QA record (not linguistic verification)
         uses: actions/upload-artifact@v4
         with:
