@@ -1,0 +1,297 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "FROZEN_SHORTLIST_EXAMPLE_MORPHOLOGY_AND_REUSE_RESEARCH_HOLD",
+  "observed_on": "2026-11-01",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "method": "Case-insensitive ASCII word-boundary exact headword scan of all 1000 example sentences; normalized duplicate-example grouping. Heuristic signals, not grammar failures or CEFR approvals.",
+  "first_pass_written_by_level": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "independently_approved_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "scanned_count": 1000,
+  "nonliteral_headword_examples_count": 5,
+  "nonliteral_by_level": {
+    "A1": 2,
+    "A2": 0,
+    "B1": 0,
+    "B2": 3,
+    "C1": 0
+  },
+  "direct_oxford_dictionary_observations": 5,
+  "duplicate_example_groups": 3,
+  "duplicate_example_entries": 7,
+  "source_limitations": "Publisher dictionary morphology and exact-sense observations do not constitute independent human English, Myanmar, CEFR, example or pronunciation approval. Cambridge grammar indexed search results returned direct HTTP 403 and are not counted as directly opened sources. No listening, physical iPhone QA or production deployment.",
+  "records": [
+    {
+      "word": "hand",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_index": 170,
+      "shortlist_snapshot": {
+        "english_definition": "The part of the body at the end of the arm.",
+        "myanmar_meaning": "လက်",
+        "example_sentence": "Please wash your hands."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 172,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "matched_surface_form": "hands",
+      "matching_rule": "REGULAR_NOUN_PLURAL",
+      "publisher_evidence": {
+        "publisher": "Oxford University Press",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/hand_1",
+        "observed_on": "2026-11-01",
+        "access": "DIRECTLY_OPENED_PUBLISHER_DICTIONARY",
+        "locator": "lines 106-125",
+        "summary": "Oxford lists hand as a countable body-part noun and illustrates plural hands; plural is not a missing headword.",
+        "cefr_scope": "MORPHOLOGY_OR_SENSE_ONLY_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_risk": "The A1 hand example uses hands, which is valid plural grammar. Do not flag as an absent word or replace a natural plural example merely to satisfy literal-string matching.",
+      "independent_reviewer_task": "Human-independent reviewer must verify original English, fluent Myanmar, grammar, exact sense, CEFR source alignment and audio before any signoff.",
+      "editorial_hold": true,
+      "independently_approved": false,
+      "release_approved": false
+    },
+    {
+      "word": "eye",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_index": 171,
+      "shortlist_snapshot": {
+        "english_definition": "The part of the body used for seeing.",
+        "myanmar_meaning": "မျက်လုံး",
+        "example_sentence": "I have two eyes."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 173,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "matched_surface_form": "eyes",
+      "matching_rule": "REGULAR_NOUN_PLURAL",
+      "publisher_evidence": {
+        "publisher": "Oxford University Press",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/eye_1",
+        "observed_on": "2026-11-01",
+        "access": "DIRECTLY_OPENED_PUBLISHER_DICTIONARY",
+        "locator": "lines 106-129",
+        "summary": "Oxford lists eye as a countable organ and gives plural eyes in its examples.",
+        "cefr_scope": "MORPHOLOGY_OR_SENSE_ONLY_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_risk": "The A1 eye example has eyes after two; it is grammatically expected. Check the intended singular lemma and teaching sense rather than mechanically demanding eye.",
+      "independent_reviewer_task": "Human-independent reviewer must verify original English, fluent Myanmar, grammar, exact sense, CEFR source alignment and audio before any signoff.",
+      "editorial_hold": true,
+      "independently_approved": false,
+      "release_approved": false
+    },
+    {
+      "word": "manage",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_index": 616,
+      "shortlist_snapshot": {
+        "english_definition": "To succeed in doing something difficult.",
+        "myanmar_meaning": "အခက်အခဲရှိသော်လည်း အောင်မြင်စွာ လုပ်နိုင်သည်",
+        "example_sentence": "We managed to finish the work before the deadline."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 101,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "matched_surface_form": "managed",
+      "matching_rule": "REGULAR_PAST_E_D",
+      "publisher_evidence": {
+        "publisher": "Oxford University Press",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/manage",
+        "observed_on": "2026-11-01",
+        "access": "DIRECTLY_OPENED_PUBLISHER_DICTIONARY",
+        "locator": "lines 103-108, 146-158, 173-178",
+        "summary": "Oxford explicitly lists managed as the past form and manage to do as the successful-completion construction.",
+        "cefr_scope": "MORPHOLOGY_OR_SENSE_ONLY_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_risk": "B2 manage means succeed in doing something difficult, not manage a team. The draft managed to finish construction matches the intended sense; confirm the Myanmar translation reflects successful completion.",
+      "independent_reviewer_task": "Human-independent reviewer must verify original English, fluent Myanmar, grammar, exact sense, CEFR source alignment and audio before any signoff.",
+      "editorial_hold": true,
+      "independently_approved": false,
+      "release_approved": false
+    },
+    {
+      "word": "destroy",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_index": 654,
+      "shortlist_snapshot": {
+        "english_definition": "To damage something so badly that it no longer exists or works.",
+        "myanmar_meaning": "ဖျက်ဆီးသည်",
+        "example_sentence": "The fire destroyed the old warehouse."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 253,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "matched_surface_form": "destroyed",
+      "matching_rule": "REGULAR_PAST_ED",
+      "publisher_evidence": {
+        "publisher": "Oxford University Press",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/destroy",
+        "observed_on": "2026-11-01",
+        "access": "DIRECTLY_OPENED_PUBLISHER_DICTIONARY",
+        "locator": "lines 112-125",
+        "summary": "Oxford lists destroyed as the past form and describes severe damage or loss of function.",
+        "cefr_scope": "MORPHOLOGY_OR_SENSE_ONLY_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_risk": "The B2 destroyed example is a valid past form, not a headword omission; check whether warehouse destruction is presented as physical destruction rather than a separate figurative sense.",
+      "independent_reviewer_task": "Human-independent reviewer must verify original English, fluent Myanmar, grammar, exact sense, CEFR source alignment and audio before any signoff.",
+      "editorial_hold": true,
+      "independently_approved": false,
+      "release_approved": false
+    },
+    {
+      "word": "grab",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_index": 657,
+      "shortlist_snapshot": {
+        "english_definition": "To take hold of something suddenly or quickly.",
+        "myanmar_meaning": "အလျင်အမြန်ဆုပ်ကိုင်သည်",
+        "example_sentence": "She grabbed her bag and ran outside."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 256,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "matched_surface_form": "grabbed",
+      "matching_rule": "DOUBLED_CONSONANT_PAST",
+      "publisher_evidence": {
+        "publisher": "Oxford University Press",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/grab_1",
+        "observed_on": "2026-11-01",
+        "access": "DIRECTLY_OPENED_PUBLISHER_DICTIONARY",
+        "locator": "lines 103-121",
+        "summary": "Oxford explicitly lists grabbed as the past form and the sudden physical-taking sense.",
+        "cefr_scope": "MORPHOLOGY_OR_SENSE_ONLY_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_risk": "The B2 grabbed her bag example illustrates a sudden physical action; preserve consonant doubling in British spelling and distinguish this from grab an opportunity or a quick meal.",
+      "independent_reviewer_task": "Human-independent reviewer must verify original English, fluent Myanmar, grammar, exact sense, CEFR source alignment and audio before any signoff.",
+      "editorial_hold": true,
+      "independently_approved": false,
+      "release_approved": false
+    }
+  ],
+  "shared_example_groups": [
+    {
+      "sentence": "the book is on the table.",
+      "shortlist_indices": [
+        6,
+        93
+      ],
+      "words": [
+        "the",
+        "table"
+      ],
+      "levels": [
+        "A1",
+        "A1"
+      ],
+      "provenance": [
+        {
+          "source_path": "draft/A1-EDITORIAL-STARTER.json",
+          "source_index": 6,
+          "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+        },
+        {
+          "source_path": "draft/A1-EDITORIAL-STARTER.json",
+          "source_index": 94,
+          "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+        }
+      ],
+      "editorial_risk": "Reused example may be valid for multiple headwords, but independent review must assess whether each card clearly demonstrates its own sense, grammar and level.",
+      "review_status": "UNAPPROVED_EDITORIAL_HANDOFF"
+    },
+    {
+      "sentence": "what is your name?",
+      "shortlist_indices": [
+        13,
+        77,
+        115
+      ],
+      "words": [
+        "your",
+        "name",
+        "what"
+      ],
+      "levels": [
+        "A1",
+        "A1",
+        "A1"
+      ],
+      "provenance": [
+        {
+          "source_path": "draft/A1-EDITORIAL-STARTER.json",
+          "source_index": 13,
+          "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+        },
+        {
+          "source_path": "draft/A1-EDITORIAL-STARTER.json",
+          "source_index": 78,
+          "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+        },
+        {
+          "source_path": "draft/A1-EDITORIAL-STARTER.json",
+          "source_index": 116,
+          "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+        }
+      ],
+      "editorial_risk": "Reused example may be valid for multiple headwords, but independent review must assess whether each card clearly demonstrates its own sense, grammar and level.",
+      "review_status": "UNAPPROVED_EDITORIAL_HANDOFF"
+    },
+    {
+      "sentence": "please sit here.",
+      "shortlist_indices": [
+        50,
+        195
+      ],
+      "words": [
+        "here",
+        "sit"
+      ],
+      "levels": [
+        "A1",
+        "A1"
+      ],
+      "provenance": [
+        {
+          "source_path": "draft/A1-EDITORIAL-STARTER.json",
+          "source_index": 51,
+          "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+        },
+        {
+          "source_path": "draft/A1-EDITORIAL-STARTER.json",
+          "source_index": 197,
+          "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+        }
+      ],
+      "editorial_risk": "Reused example may be valid for multiple headwords, but independent review must assess whether each card clearly demonstrates its own sense, grammar and level.",
+      "review_status": "UNAPPROVED_EDITORIAL_HANDOFF"
+    }
+  ],
+  "independent_human_signoffs": [],
+  "real_listening_signoffs": [],
+  "release_approved": false
+}
