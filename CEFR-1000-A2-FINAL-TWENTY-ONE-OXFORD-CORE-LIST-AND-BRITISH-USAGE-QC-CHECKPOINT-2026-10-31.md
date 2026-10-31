@@ -38,3 +38,15 @@ The source coverage code now expects **A1 195/200, A2 200/200, B1 200/200, B2 20
 | C1 | 200 | 0 | 0 |
 
 **Release blocked:** independent human exact-sense CEFR, English, fluent Myanmar, original-example and pronunciation review; content-bound approved manifest with exactly 200 unique senses/headwords per level; final British George/Emma headword/example audio generated and *actually listened to*; desktop/mobile browser regression; physical iPhone Safari QA; measured GitHub Pages release artifact/hosting; preservation of production assets and verified production deployment. **No merge, main-branch modification or publication.**
+
+## Actual GitHub Actions results (verified 2026-10-31)
+
+**CI VERIFIED for code SHA `cd81b489469b3f75df4195ec3fabcf9fb0b06381`:**
+
+- [Parallel structural run 41213342989](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41213342989) **SUCCESS**: actual job conclusions inspected for A1, A2, B1, B2, C1 and ALL. ALL artifact ID **13047057768**.
+- [Documentary no-deployment run 41213343146](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41213343146) **SUCCESS, report-only**. Blocker artifact ID **13047207361**.
+- Actual ALL and documentary job logs confirmed **265/265** forged Oxford source, English/Myanmar, historical provenance, dictionary sense and false-approval mutations rejected. ALL logs also confirmed **25/25** cross-batch Oxford mutations rejected, **906** distinct observations (including 24 explicitly unlisted), **925** packet observations, **94** without an audited Oxford observation and **0** independent approvals. Documentary logs explicitly retained the blocked release-candidate status and confirmed protected production assets untouched.
+- Earlier runs on incomplete intermediate commits failed (including a Myanmar field-name mapping error and temporarily inconsistent consolidated handoff counts). Those issues were repaired before the above successful final runs. CI success confirms only structural/documentary integrity, **not** human independent exact-sense verification, actual listening, physical iPhone Safari QA, hosting readiness or deployment.
+- Git comparison against prior staging checkpoint `4e4f423ece94509e71e7fdb56deba087bc9c8cec` showed nine commits affecting only seven staging research, audit, workflow and documentation paths; no protected production files changed.
+
+**RELEASE REMAINS BLOCKED / STAGING ONLY.**
