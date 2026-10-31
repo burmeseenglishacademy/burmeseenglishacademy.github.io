@@ -20,9 +20,9 @@ STATUS = ("UNLISTED_NOT_A_CEFR_LEVEL", "PUBLISHER_HIGHER_WORD_POS",
           "PUBLISHER_LOWER_WORD_POS", "NO_DIRECT_WORD_POS_OBSERVATION",
           "WORD_POS_MATCH_EXACT_SENSE_UNVERIFIED")
 RANK = {s: i for i, s in enumerate(STATUS)}
-EXPECTED = {"UNLISTED_NOT_A_CEFR_LEVEL": 46, "PUBLISHER_HIGHER_WORD_POS": 61,
+EXPECTED = {"UNLISTED_NOT_A_CEFR_LEVEL": 58, "PUBLISHER_HIGHER_WORD_POS": 61,
             "PUBLISHER_LOWER_WORD_POS": 352,
-            "NO_DIRECT_WORD_POS_OBSERVATION": 70,
+            "NO_DIRECT_WORD_POS_OBSERVATION": 58,
             "WORD_POS_MATCH_EXACT_SENSE_UNVERIFIED": 471}
 URLS = {
     "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
@@ -93,7 +93,7 @@ def build(shortlist, packets, recovery, originals):
                     prior["packets"].append(path)
                     prior["recovered_legacy"] |= bool(locator_only)
                     prior["editorial_risks"].append(row["editorial_risk"])
-    require(len(by_word) == checked["distinct_observed_headwords"] == 930,
+    require(len(by_word) == checked["distinct_observed_headwords"] == 942,
             "Coverage and review handoff disagree")
     require(sum(x["recovered_legacy"] for x in by_word.values()) == 36,
             "Exactly 36 unique historical recoveries expected")
@@ -140,8 +140,8 @@ def build(shortlist, packets, recovery, originals):
     return {
         "schema": 1, "scope": "CEFR_1000_STAGING_ONLY_NOT_A_RELEASE_MANIFEST",
         "source_shortlist_git_blob_sha": oxford.SHORTLIST_SHA,
-        "publisher_word_pos_observed_distinct": 930,
-        "publisher_word_pos_not_observed": 70,
+        "publisher_word_pos_observed_distinct": 942,
+        "publisher_word_pos_not_observed": 58,
         "recovered_legacy_word_pos_excerpts": 36,
         "priority_counts": dict(counts), "by_level": by_level,
         "human_independent_approvals": 0,
@@ -177,8 +177,8 @@ def validate(report):
     rows = report["review_tasks"]
     require(len(rows) == 1000 and len({r["word"] for r in rows}) == 1000,
             "Review queue must contain 1,000 distinct headwords")
-    require(report["publisher_word_pos_observed_distinct"] == 930
-            and report["publisher_word_pos_not_observed"] == 70
+    require(report["publisher_word_pos_observed_distinct"] == 942
+            and report["publisher_word_pos_not_observed"] == 58
             and report["recovered_legacy_word_pos_excerpts"] == 36
             and report["human_independent_approvals"] == 0
             and report["real_george_emma_listening_signoffs"] == 0
