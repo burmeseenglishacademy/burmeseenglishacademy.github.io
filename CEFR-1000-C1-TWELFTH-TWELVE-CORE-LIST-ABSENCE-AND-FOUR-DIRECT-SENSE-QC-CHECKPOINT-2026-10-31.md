@@ -29,3 +29,15 @@ After successful CI reconciliation, expected direct Oxford word/POS **research o
 First-pass written / independently checked: **A1 200/0, A2 200/0, B1 200/0, B2 200/0, C1 200/0**. Real George/Emma final headword and example listening signoffs: **0/1,000**. No independent English, fluent Myanmar, original example, exact-sense CEFR, pronunciation or human reviewer receipts; no final approved-manifest dedup, dual-voice audio generation/listening, browser/mobile regression, physical iPhone Safari evidence, measured Pages deployment artifact, or confirmed live production release.
 
 Protect existing **54 lessons**, separate **IELTS 1,000-word bank**, established production George/Emma audio, and privacy controls. No release or production changes are authorised until **every** evidence gate passes. **RELEASE BLOCKED — STAGING ONLY.**
+
+
+## Actual CI verification — 2026-10-31 16:02 UTC (2026-11-01 00:02 Singapore)
+
+**Verified from GitHub Actions run conclusions, job steps and decoded logs**, not inferred from code commits:
+
+- [Parallel structural run 41217633979](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41217633979): **completed SUCCESS**, all six jobs A1/A2/B1/B2/C1/ALL **SUCCESS**; code SHA `e2cd864aa1a288ed95a3ad066c55ad9b9625ef0d`. ALL job ID `124585382306`, structural ALL artifact ID `13048975582`.
+- [Documentary no-deployment run 41217633931](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41217633931): **completed SUCCESS**, documentary job `124585382050`, same code SHA; blocker artifact ID `13048003194`. **SUCCESS means the documentary gate correctly reports blockers, not that launch gates passed.**
+- Actual ALL and documentary logs each confirm **173/173** forged Oxford source, Myanmar, historical provenance and fabricated review mutations rejected; new 12-word packet shows 11 unlisted, one Oxford B2 word/POS and four direct dictionary leads, **zero independent approvals**.
+- Actual ALL logs confirm cross-batch Oxford reconciliation **A1 195, A2 200, B1 200, B2 200, C1 123 = 918/1,000 distinct** and 937 observations; 82 not directly observed. Documentary logs confirm protected production assets unchanged and explicitly block independent review, final voice listening, physical iPhone and measured hosting/deployment evidence.
+
+Earlier intermediate workflow runs failed while the reviewer-handoff validator still expected 94 unobserved entries; this was repaired to **82** before the successful final runs. This checkpoint remains **STAGING ONLY / RELEASE BLOCKED**.
