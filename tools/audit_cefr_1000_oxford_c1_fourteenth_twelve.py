@@ -35,7 +35,7 @@ def require(ok, reason):
 
 def sha(path):
     raw = (ROOT / path).read_bytes()
-    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
 
 def load():
     for path, expected in ((PATH,PACKET_BLOB),(SHORTLIST,SHORTLIST_BLOB),
