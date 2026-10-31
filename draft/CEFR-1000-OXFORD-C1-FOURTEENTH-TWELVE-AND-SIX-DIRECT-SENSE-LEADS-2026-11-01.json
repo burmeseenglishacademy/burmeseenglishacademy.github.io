@@ -1,0 +1,536 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "C1_FOURTEENTH_TWELVE_ALL_CORE_LIST_UNLISTED_SIX_DIRECT_DICTIONARY_SENSE_LEADS_ALL_HELD",
+  "observed_on": "2026-11-01",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 12
+  },
+  "publisher_reference_level_counts": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0,
+    "UNLISTED": 12
+  },
+  "direct_dictionary_sense_leads": 6,
+  "independently_approved_count": 0,
+  "independent_human_review_receipts": [],
+  "audio_real_listening_signoffs": [],
+  "release_approved": false,
+  "source_limitations": "Both Oxford 3000 and 5000 core lists inspected for each exact headword; all twelve absent. Absence is NOT a CEFR label. Six direct dictionary pages are grammar/sense leads, not exact-sense CEFR independent approval; proposed Myanmar/examples are not human verified.",
+  "records": [
+    {
+      "word": "ambivalence",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The feeling of having conflicting attitudes about the same thing.",
+        "myanmar_meaning": "အကြောင်းအရာတစ်ခုတည်းအပေါ် ဆန့်ကျင်ဘက်ခံစားချက်နှစ်မျိုး တစ်ပြိုင်နက် ရှိနေခြင်း",
+        "example_sentence": "She felt ambivalence about accepting the promotion abroad."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 8,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford dictionary marks this as uncountable/singular and describes simultaneous positive AND negative feelings; draft 'conflicting attitudes' is broader. Check about/towards complements and Myanmar dual-feeling nuance.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR against attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British audio, and historical provenance; date and sign the external review. Publisher core-list absence and topic labels are NOT CEFR classifications.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/ambivalence",
+        "page_lines": "88-107",
+        "sense_number": 1,
+        "sense_summary": "Uncountable/singular noun; positive and negative feelings together; about/towards complement. Draft wording 'conflicting attitudes' is less precise.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "The state of having both positive and negative feelings about the same person, thing or decision.",
+        "myanmar_meaning": "လူတစ်ဦး၊ အရာတစ်ခု သို့မဟုတ် ဆုံးဖြတ်ချက်တစ်ခုအပေါ် နှစ်သက်မှုနှင့် မနှစ်သက်မှု နှစ်မျိုးလုံး တစ်ပြိုင်နက် ခံစားနေရခြင်း",
+        "example_sentence": "She felt ambivalence about moving abroad because she welcomed the opportunity but would miss her family.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "anachronism",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Something that seems to belong to a different historical period.",
+        "myanmar_meaning": "ခေတ်ကာလနှင့် မကိုက်ညီဘဲ အခြားခေတ်တစ်ခုမှ ဖြစ်သကဲ့သို့ ထင်ရသော အရာ",
+        "example_sentence": "The old payment machine looked like an anachronism in the modern shop."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 9,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Absent from both Oxford core lists; distinguish an outdated object or person from a historical dating error. The payment-machine example is plausible but could be interpreted merely as old-fashioned; exact sense needs review.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR against attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British audio, and historical provenance; date and sign the external review. Publisher core-list absence and topic labels are NOT CEFR classifications.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null
+    },
+    {
+      "word": "antipathy",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A strong feeling of dislike towards someone or something.",
+        "myanmar_meaning": "လူတစ်ဦး သို့မဟုတ် အရာတစ်ခုအပေါ် ပြင်းထန်စွာ မနှစ်သက်ခြင်း",
+        "example_sentence": "His antipathy towards unnecessary rules was well known."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 10,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Absent from both Oxford core lists; strong personal dislike is not automatically the same as disagreement or ideological opposition. Check toward/towards and countability in British English.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR against attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British audio, and historical provenance; date and sign the external review. Publisher core-list absence and topic labels are NOT CEFR classifications.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null
+    },
+    {
+      "word": "arbitrate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To hear both sides of a disagreement and make a decision about it.",
+        "myanmar_meaning": "အငြင်းပွားမှု၏ နှစ်ဖက်စလုံးကို နားထောင်ပြီး ဆုံးဖြတ်ပေးသည်",
+        "example_sentence": "An independent expert was asked to arbitrate the dispute."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 11,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford dictionary defines formal settlement of a dispute; draft 'hear both sides and make a decision' can imply any informal adjudication. Distinguish arbitrate in/on a dispute and arbitrate between parties; topic c2 badge is NOT a word CEFR level.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR against attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British audio, and historical provenance; date and sign the external review. Publisher core-list absence and topic labels are NOT CEFR classifications.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/arbitrate",
+        "page_lines": "88-119",
+        "sense_number": 1,
+        "sense_summary": "Intransitive/transitive formal dispute settlement; patterns arbitrate in/on a dispute and between parties. Discussion and agreement c2 is a topic label.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "To act as an independent person or body that officially settles a dispute between parties.",
+        "myanmar_meaning": "အငြင်းပွားနေသော နှစ်ဖက်အကြား ကြားနေသူ သို့မဟုတ် အဖွဲ့အဖြစ် တရားဝင် ကြားဝင်ဆုံးဖြတ်ပေးသည်",
+        "example_sentence": "An independent panel was appointed to arbitrate between the employer and the union.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "belligerent",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Hostile and ready to argue or fight.",
+        "myanmar_meaning": "ရန်လိုပြီး ငြင်းခုံရန် သို့မဟုတ် တိုက်ခိုက်ရန် အသင့်ရှိသော",
+        "example_sentence": "The passenger became belligerent when staff refused his request."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 12,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford dictionary has hostile/aggressive personal-behaviour sense and a separate formal attributive wartime-country sense. Draft targets hostile passenger only; topic c2 labels do not prove the draft C1 level.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR against attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British audio, and historical provenance; date and sign the external review. Publisher core-list absence and topic labels are NOT CEFR classifications.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/belligerent_1",
+        "page_lines": "88-113",
+        "sense_number": 1,
+        "sense_summary": "Sense 1 aggressive/unfriendly person or attitude; sense 2 formal attributive country engaged in war. Personal qualities c2 is a topic label.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "Aggressive, hostile and ready to quarrel.",
+        "myanmar_meaning": "ရန်လိုကြမ်းတမ်းပြီး ငြင်းခုံရန် သို့မဟုတ် ရန်ဖြစ်ရန် အသင့်ဖြစ်နေသော",
+        "example_sentence": "The passenger became belligerent after the staff explained the safety rule.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "benevolent",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Kind and willing to help other people.",
+        "myanmar_meaning": "စေတနာကောင်းပြီး အခြားသူများကို ကူညီလိုသော",
+        "example_sentence": "A benevolent donor paid for the village library."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 13,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Absent from both Oxford core lists; check distinction between kind intentions, charitable conduct, and patronising paternalism. Donor example is grammatically plausible but may not establish an independently sourced C1 exact sense.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR against attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British audio, and historical provenance; date and sign the external review. Publisher core-list absence and topic labels are NOT CEFR classifications.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null
+    },
+    {
+      "word": "brevity",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The quality of expressing something in few words or lasting briefly.",
+        "myanmar_meaning": "စကားအနည်းငယ်ဖြင့် တိုတောင်းစွာ ဖော်ပြမှု သို့မဟုတ် အချိန်တိုတောင်းမှု",
+        "example_sentence": "The chairperson appreciated the brevity of her report."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 14,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Absent from both Oxford core lists; draft conflates brevity of speech/writing and short duration. Example supports concise report, not duration; separate senses in English and Myanmar are needed.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR against attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British audio, and historical provenance; date and sign the external review. Publisher core-list absence and topic labels are NOT CEFR classifications.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null
+    },
+    {
+      "word": "circumspect",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Careful to consider possible risks before acting or speaking.",
+        "myanmar_meaning": "လုပ်ဆောင်ခြင်း သို့မဟုတ် ပြောဆိုခြင်းမပြုမီ ဖြစ်နိုင်သည့် အန္တရာယ်များကို သတိထားစဉ်းစားသော",
+        "example_sentence": "The director was circumspect when discussing the proposed merger."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 15,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Absent from both Oxford core lists; caution about consequences before speech or action is intended. Confirm complement patterns and distinguish prudent reserve from being simply fearful.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR against attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British audio, and historical provenance; date and sign the external review. Publisher core-list absence and topic labels are NOT CEFR classifications.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null
+    },
+    {
+      "word": "coercion",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The use of threats or pressure to make someone do something.",
+        "myanmar_meaning": "တစ်စုံတစ်ဦးကို တစ်ခုခုလုပ်စေရန် ခြိမ်းခြောက်မှု သို့မဟုတ် ဖိအားပေးမှု",
+        "example_sentence": "The agreement was invalid because it was signed under coercion."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 16,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford dictionary marks uncountable formal noun and defines compelling unwilling action using force or threats of force; draft allows generic pressure. 'Under coercion' is idiomatic; legal meaning and Myanmar force nuance require review.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR against attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British audio, and historical provenance; date and sign the external review. Publisher core-list absence and topic labels are NOT CEFR classifications.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/coercion",
+        "page_lines": "88-112",
+        "sense_number": 1,
+        "sense_summary": "Uncountable formal noun; compulsion against wishes through force or threatened force, with under coercion as a documented pattern.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "The use of force or threats to make someone act against their wishes.",
+        "myanmar_meaning": "တစ်စုံတစ်ဦးကို မိမိဆန္ဒမပါဘဲ လုပ်ဆောင်စေရန် အင်အားသုံးခြင်း သို့မဟုတ် အင်အားသုံးမည်ဟု ခြိမ်းခြောက်ခြင်း",
+        "example_sentence": "The witness said the statement had been signed under coercion.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "conundrum",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A confusing and difficult problem with no obvious solution.",
+        "myanmar_meaning": "ဖြေရှင်းနည်း မထင်ရှားသည့် ရှုပ်ထွေးခက်ခဲသော ပြဿနာ",
+        "example_sentence": "The council faced a conundrum over housing and transport costs."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 18,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford dictionary separates a difficult confusing problem from a playful word-riddle. Draft council example targets the difficult-problem sense; do not mix the riddle meaning or infer C1 from rarity.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR against attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British audio, and historical provenance; date and sign the external review. Publisher core-list absence and topic labels are NOT CEFR classifications.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/conundrum",
+        "page_lines": "88-111",
+        "sense_number": 1,
+        "sense_summary": "Sense 1 confusing hard problem, sense 2 playful riddle/word puzzle; council cost example targets only sense 1.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": null
+    },
+    {
+      "word": "corroborate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To provide additional evidence that supports a statement or account.",
+        "myanmar_meaning": "ပြောဆိုချက်တစ်ခုကို ထောက်ခံသည့် အထောက်အထား ထပ်မံပေးသည်",
+        "example_sentence": "The photographs helped corroborate the witness's account."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 19,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Absent from both Oxford core lists; additional independent evidence supports a claim but need not prove it conclusively. Check transitive object and the Myanmar difference between supporting and verifying.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR against attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British audio, and historical provenance; date and sign the external review. Publisher core-list absence and topic labels are NOT CEFR classifications.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null
+    },
+    {
+      "word": "credence",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Belief that a claim or explanation is true.",
+        "myanmar_meaning": "ပြောဆိုချက် သို့မဟုတ် ရှင်းလင်းချက်တစ်ခု မှန်ကန်သည်ဟု ယုံကြည်လက်ခံမှု",
+        "example_sentence": "The new data gave credence to the scientist's explanation."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 20,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford dictionary marks formal uncountable noun and separates plausibility/credibility lent to a theory from belief/acceptance as true. Draft definition favours belief, example 'gave credence to' favours supporting credibility; sense alignment needed.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR against attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British audio, and historical provenance; date and sign the external review. Publisher core-list absence and topic labels are NOT CEFR classifications.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/credence",
+        "page_lines": "88-110",
+        "sense_number": 1,
+        "sense_summary": "Formal uncountable noun; sense 1 quality making a theory credible, sense 2 belief in truth. Give/lend credence collocation needs exact-sense reconciliation.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "Belief that something is true, or the credibility given to an explanation by supporting evidence.",
+        "myanmar_meaning": "အဆိုတစ်ခုကို မှန်ကန်သည်ဟု ယုံကြည်လက်ခံမှု၊ သက်သေထောက်ခံချက်ကြောင့် ယုံကြည်ဖွယ်ဖြစ်လာမှု",
+        "example_sentence": "The independent test results lent credence to the engineer's explanation.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    }
+  ]
+}
