@@ -38,7 +38,7 @@ def require(condition, message):
 
 def git_blob(path):
     raw = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
 
 
 def validate(packet, shortlist, baseline):
@@ -190,7 +190,7 @@ def main():
     if args.self_test:
         result["forged_mutations_rejected"] = self_test(packet, shortlist)
     output = ROOT / ("cefr-1000-cambridge-c1-nine-" + args.level + ".json")
-    output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\\n", encoding="utf8")
+    output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf8")
     print(json.dumps(result, ensure_ascii=False))
 
 
