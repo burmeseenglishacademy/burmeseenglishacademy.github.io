@@ -47,7 +47,7 @@ def require(ok, message):
 
 def blob_sha(path):
     data = (ROOT / path).read_bytes()
-    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\\0" + data).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
 
 
 def read(path):
