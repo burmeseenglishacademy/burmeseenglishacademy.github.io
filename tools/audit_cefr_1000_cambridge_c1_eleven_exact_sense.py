@@ -13,6 +13,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PACKET = ROOT / "draft/CEFR-1000-CAMBRIDGE-C1-ELEVEN-INDEXED-EXACT-SENSE-RISKS-2026-10-31.json"
 SHORTLIST = ROOT / "draft/CEFR-1000-PROVISIONAL-SHORTLIST.json"
+ORIGINAL_SOURCE = ROOT / "draft/A2-C1-EDITORIAL-STARTER.json"
+ORIGINAL_SOURCE_BLOB = "b04dd85db5cfae131c25aa4c73109778991b6fdc"
 PACKET_BLOB = "9d066c54835cd24ee6c13ea8e67a63da41dbb45b"
 SHORTLIST_BLOB = "475e68ae17ab97bd937e73e5ce4794e0dcd76551"
 LEVELS = ("A1", "A2", "B1", "B2", "C1")
@@ -190,9 +192,24 @@ def main():
     args = parser.parse_args()
     require(git_blob(PACKET) == PACKET_BLOB, "Source packet blob SHA changed")
     require(git_blob(SHORTLIST) == SHORTLIST_BLOB, "Frozen shortlist blob SHA changed")
+    require(git_blob(ORIGINAL_SOURCE) == ORIGINAL_SOURCE_BLOB, "Original editorial source blob SHA changed")
+    source_draft = json.loads(ORIGINAL_SOURCE.read_text(encoding="utf8"))
     packet = json.loads(PACKET.read_text(encoding="utf8"))
     shortlist = json.loads(SHORTLIST.read_text(encoding="utf8"))
     result = validate(packet, shortlist, packet)
+    source_entries = source_draft.get("entries", [])
+    for row in packet["records"]:
+        provenance = row["shortlist_provenance"]
+        require(provenance["source_path"] == "draft/A2-C1-EDITORIAL-STARTER.json"
+                and provenance["source_blob_sha"] == ORIGINAL_SOURCE_BLOB,
+                "Unbound historical source path/blob")
+        source_row = source_entries[provenance["source_index"]]
+        require(source_row["word"] == row["word"]
+                and source_row["level"] == row["level"]
+                and source_row["part_of_speech"] == row["part_of_speech"]
+                and {k: source_row[k] for k in ("english_definition", "burmese_meaning", "example_sentence")}
+                    == row["shortlist_snapshot"],
+                "Historical source row diverges from frozen shortlist snapshot")
     result["level_lane"] = args.level
     if args.self_test:
         result["forged_mutations_rejected"] = self_test(packet, shortlist)
