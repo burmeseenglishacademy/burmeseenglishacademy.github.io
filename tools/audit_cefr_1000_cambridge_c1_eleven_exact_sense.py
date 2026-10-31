@@ -207,7 +207,9 @@ def main():
         require(source_row["word"] == row["word"]
                 and source_row["level"] == row["level"]
                 and source_row["part_of_speech"] == row["part_of_speech"]
-                and {k: source_row[k] for k in ("english_definition", "burmese_meaning", "example_sentence")}
+                and {"english_definition": source_row["english_definition"],
+                     "myanmar_meaning": source_row["burmese_meaning"],
+                     "example_sentence": source_row["example_sentence"]}
                     == row["shortlist_snapshot"],
                 "Historical source row diverges from frozen shortlist snapshot")
     result["level_lane"] = args.level
