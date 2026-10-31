@@ -1,0 +1,205 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A1_LAST_FIVE_NON_OXFORD_WORD_POS_LEMMA_AND_SENSE_TRIAGE_EDITORIAL_HOLD",
+  "observed_on": "2026-10-31",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 5,
+  "counts_by_level": {
+    "A1": 5,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "independently_approved_count": 0,
+  "oxford_direct_word_pos_count_added": 0,
+  "source_limitations": "Cambridge page URLs could not be opened directly (HTTP 403); Cambridge claims here are indexed search-result leads, not directly inspected dictionary pages. Oxford rabbit noun sense was directly opened and observed at page lines 88-115; Oxford Animals a2 is a topic tag, not a direct Oxford 3000/5000 core-list word/POS CEFR classification. Four inflected forms must not be counted as separately Oxford-classified headwords. All five remain unapproved; no independent human signoff.",
+  "records": [
+    {
+      "word": "is",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "lemma": "be",
+      "shortlist_snapshot": {
+        "english_definition": "The present form of be used with he, she, it or a singular subject.",
+        "myanmar_meaning": "ဖြစ်တယ်၊ ရှိတယ် (အနည်းကိန်းနှင့်တွဲသုံး)",
+        "example_sentence": "She is at home."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 120,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_lead": {
+        "publisher": "Cambridge University Press",
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/is",
+        "support_url": "https://dictionary.cambridge.org/dictionary/learner-english/be",
+        "observed_on": "2026-10-31",
+        "access": "CAMBRIDGE_SEARCH_INDEX_ONLY_DIRECT_PAGE_403",
+        "evidence_scope": "CAMBRIDGE_INDEXED_FORM_PLUS_LEMMA",
+        "observed_label_scope": "A1_LEMMA_DESCRIPTION_NOT_IS_HEADWORD",
+        "source_excerpt_summary": "Cambridge is: he/she/it form of be; Cambridge learner be describes identity/state at A1."
+      },
+      "editorial_risk": "Inflected third-person singular present form, not a standalone Oxford 3000 lemma. The A1 Cambridge badge belongs to be in a description sense; it cannot be automatically transferred to the headword is. Distinguish main-verb identity/location from progressive/passive auxiliary uses.",
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "be ကြိယာ၏ ပစ္စုပ္ပန်ကာလ တတိယပုဂ္ဂိုလ် အနည်းကိန်းပုံစံ (သူ၊ သူမ၊ ၎င်းနှင့် သုံးသည်)",
+        "original_example": "My sister is at the library.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_reviewer_task": "Human-independent reviewer must check exact sense, source-backed CEFR of this item (not transferred lemma/topic badge), fluent Myanmar, original example, UK pronunciation, and source provenance. Do not mark reviewed or approved based on this packet.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "are",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "lemma": "be",
+      "shortlist_snapshot": {
+        "english_definition": "The present form of be used with you, we, they or plural subjects.",
+        "myanmar_meaning": "ဖြစ်တယ်၊ ရှိတယ် (အများကိန်းနှင့်တွဲသုံး)",
+        "example_sentence": "They are friends."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 121,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_lead": {
+        "publisher": "Cambridge University Press",
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/are",
+        "support_url": "https://dictionary.cambridge.org/grammar/british-grammar/be",
+        "observed_on": "2026-10-31",
+        "access": "CAMBRIDGE_SEARCH_INDEX_ONLY_DIRECT_PAGE_403",
+        "evidence_scope": "CAMBRIDGE_INDEXED_FORM_PLUS_LEMMA",
+        "observed_label_scope": "GRAMMAR_FORM_ONLY_NO_INDEPENDENT_CEFR",
+        "source_excerpt_summary": "Cambridge are: we/you/they form of be; grammar be lists present forms am/is/are."
+      },
+      "editorial_risk": "Are applies to you (singular or plural), we, they and plural noun subjects, not only plural subjects. This is a form of be, not an independently graded Oxford 3000 lemma. A1 be descriptions do not certify this exact form as an independent CEFR item.",
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "be ကြိယာ၏ ပစ္စုပ္ပန်ကာလပုံစံ (you၊ we၊ they နှင့် အများကိန်းကတ္တားများတွင် သုံးသည်)",
+        "original_example": "The two classrooms are on the second floor.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_reviewer_task": "Human-independent reviewer must check exact sense, source-backed CEFR of this item (not transferred lemma/topic badge), fluent Myanmar, original example, UK pronunciation, and source provenance. Do not mark reviewed or approved based on this packet.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "does",
+      "level": "A1",
+      "part_of_speech": "auxiliary verb",
+      "lemma": "do",
+      "shortlist_snapshot": {
+        "english_definition": "The present form of do used with he, she or it in questions and negatives.",
+        "myanmar_meaning": "မေးခွန်းနှင့် အငြင်းဝါကျတွင် သုံးသော do ၏ အနည်းကိန်းပုံစံ",
+        "example_sentence": "Does he work here?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 123,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_lead": {
+        "publisher": "Cambridge University Press",
+        "source_url": "https://dictionary.cambridge.org/us/dictionary/english/does",
+        "support_url": "https://dictionary.cambridge.org/us/dictionary/essential-british-english/do",
+        "observed_on": "2026-10-31",
+        "access": "CAMBRIDGE_SEARCH_INDEX_ONLY_DIRECT_PAGE_403",
+        "evidence_scope": "CAMBRIDGE_INDEXED_FORM_PLUS_LEMMA",
+        "observed_label_scope": "A1_AUXILIARY_DO_NOT_DOES_HEADWORD",
+        "source_excerpt_summary": "Cambridge does: he/she/it form of do; Essential British English do auxiliary questions/negatives A1."
+      },
+      "editorial_risk": "Does is third-person singular present do; in the draft it is an auxiliary in a question. The A1 badge on Cambridge do auxiliary questions/negatives is a lemma-sense label, not an independently graded does form. In affirmative clauses does may be emphatic, a different use.",
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ပစ္စုပ္ပန်ကာလတွင် he၊ she၊ it နှင့် အနည်းကိန်းကတ္တားများအတွက် မေးခွန်း၊ အငြင်းဝါကျဖွဲ့ရာ၌ သုံးသော do ၏ ပုံစံ",
+        "original_example": "Does your brother speak English?",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_reviewer_task": "Human-independent reviewer must check exact sense, source-backed CEFR of this item (not transferred lemma/topic badge), fluent Myanmar, original example, UK pronunciation, and source provenance. Do not mark reviewed or approved based on this packet.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "did",
+      "level": "A1",
+      "part_of_speech": "auxiliary verb",
+      "lemma": "do",
+      "shortlist_snapshot": {
+        "english_definition": "The past form of do used in questions and negatives.",
+        "myanmar_meaning": "အတိတ်ကာလ မေးခွန်းတွင် သုံးသော do ၏ ပုံစံ",
+        "example_sentence": "Did you eat breakfast?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 124,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_lead": {
+        "publisher": "Cambridge University Press",
+        "source_url": "https://dictionary.cambridge.org/us/dictionary/english/did",
+        "support_url": "https://dictionary.cambridge.org/us/dictionary/essential-british-english/do",
+        "observed_on": "2026-10-31",
+        "access": "CAMBRIDGE_SEARCH_INDEX_ONLY_DIRECT_PAGE_403",
+        "evidence_scope": "CAMBRIDGE_INDEXED_FORM_PLUS_LEMMA",
+        "observed_label_scope": "A1_AUXILIARY_DO_NOT_DID_HEADWORD",
+        "source_excerpt_summary": "Cambridge did: past simple of do; Essential British English do auxiliary questions/negatives A1."
+      },
+      "editorial_risk": "Did is the past form of do and works with the base verb in past-simple questions and negatives. Draft Myanmar meaning mentions questions but omits negatives. The A1 badge on auxiliary do cannot independently establish a CEFR level for did as a standalone headword.",
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "အတိတ်ကာလ မေးခွန်းနှင့် အငြင်းဝါကျများဖွဲ့ရာတွင် သုံးသော do ၏ အတိတ်ပုံစံ",
+        "original_example": "Did the technician check the machine yesterday?",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_reviewer_task": "Human-independent reviewer must check exact sense, source-backed CEFR of this item (not transferred lemma/topic badge), fluent Myanmar, original example, UK pronunciation, and source provenance. Do not mark reviewed or approved based on this packet.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "rabbit",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "lemma": "rabbit",
+      "shortlist_snapshot": {
+        "english_definition": "A small animal with long ears.",
+        "myanmar_meaning": "ယုန်",
+        "example_sentence": "The rabbit is white."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 186,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_lead": {
+        "publisher": "Oxford University Press; Cambridge University Press",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/rabbit_1",
+        "support_url": "https://dictionary.cambridge.org/dictionary/english/rabbit",
+        "observed_on": "2026-10-31",
+        "access": "DIRECT_OXFORD_DICTIONARY_WEB_TEXT_AND_CAMBRIDGE_SEARCH_INDEX_ONLY",
+        "evidence_scope": "OXFORD_DIRECT_SENSE_AND_CAMBRIDGE_INDEXED_A2",
+        "observed_label_scope": "OXFORD_ANIMALS_TOPIC_A2_AND_CAMBRIDGE_INDEXED_NOUN_A2",
+        "source_excerpt_summary": "Oxford noun sense 1: small soft-furred long-eared animal; Animals topic a2 (lines 88-115). Cambridge indexed rabbit noun A2."
+      },
+      "editorial_risk": "Oxford dictionary directly defines rabbit noun animal sense and tags Animals topic a2, while Cambridge indexed noun entry shows A2. The topic tag is not an Oxford core-list word/POS classification. Both leads challenge provisional A1, but exact-sense independent CEFR review is still required; distinguish animal from uncountable rabbit meat.",
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "နားရွက်ရှည်၍ အမွေးပျော့သော တိရစ္ဆာန်ငယ်တစ်မျိုး၊ ယုန်",
+        "original_example": "A rabbit was eating grass beside the garden.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_reviewer_task": "Human-independent reviewer must check exact sense, source-backed CEFR of this item (not transferred lemma/topic badge), fluent Myanmar, original example, UK pronunciation, and source provenance. Do not mark reviewed or approved based on this packet.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
