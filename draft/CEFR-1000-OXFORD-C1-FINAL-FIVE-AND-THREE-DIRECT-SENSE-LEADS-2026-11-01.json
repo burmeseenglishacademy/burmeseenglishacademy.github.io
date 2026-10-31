@@ -1,0 +1,250 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "C1_FINAL_FIVE_ALL_CORE_LIST_UNLISTED_THREE_DIRECT_DICTIONARY_SENSE_LEADS_ALL_HELD",
+  "observed_on": "2026-11-01",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 5,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 5
+  },
+  "publisher_reference_level_counts": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0,
+    "UNLISTED": 5
+  },
+  "direct_dictionary_sense_leads": 3,
+  "independently_approved_count": 0,
+  "independent_human_review_receipts": [],
+  "audio_real_listening_signoffs": [],
+  "release_approved": false,
+  "source_limitations": "Directly inspected both Oxford official core-list CEFR PDFs on 2026-11-01; all five exact headwords absent. Absence is NOT a CEFR classification. Three dictionary pages directly inspected for sense/grammar only. The Oxford affable 'Personal qualities c2' topic label is NOT a headword level, and other footer badges are unrelated. No human review or listening signoff.",
+  "records": [
+    {
+      "word": "abstruse",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Difficult to understand because the ideas are unusually complex.",
+        "myanmar_meaning": "အယူအဆများ အလွန်ရှုပ်ထွေး၍ နားလည်ရခက်သော",
+        "example_sentence": "The lecturer explained the abstruse theory with a simple diagram."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH59.json",
+        "source_index": 25,
+        "source_blob_sha": "228c772697e4879f6b8a30f85709d188a1df266c"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford marks abstruse formal and often disapproving; difficult intellectual argument is appropriate but do not confuse with merely unfamiliar everyday vocabulary. B2 page footer unrelated.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/abstruse",
+        "page_lines": "101-106",
+        "sense_number": 1,
+        "sense_summary": "Formal, often disapproving; difficult to understand, typically complex arguments. B2 page footer unrelated.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "Difficult to understand, especially because the ideas are complex or obscure.",
+        "myanmar_meaning": "အယူအဆများ ရှုပ်ထွေးနက်နဲ၍ နားလည်ရန် ခက်ခဲသော။",
+        "example_sentence": "The lecturer made an abstruse argument easier to follow with a diagram.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "acrimonious",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Marked by bitter anger in speech or disagreement.",
+        "myanmar_meaning": "အငြင်းပွားရာတွင် ခါးသီးသော ဒေါသစကားများ ပါဝင်သော",
+        "example_sentence": "The meeting ended after an acrimonious argument about funding."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH59.json",
+        "source_index": 26,
+        "source_blob_sha": "228c772697e4879f6b8a30f85709d188a1df266c"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Acrimonious usually describes a bitter dispute or exchange, not every disagreement; review natural Myanmar rendering and register in an argument context.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null
+    },
+    {
+      "word": "adulation",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Excessive praise or admiration directed towards someone.",
+        "myanmar_meaning": "တစ်စုံတစ်ဦးကို အလွန်အကျွံ ချီးမွမ်းလေးစားခြင်း",
+        "example_sentence": "The singer found the constant adulation difficult to handle."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH59.json",
+        "source_index": 27,
+        "source_blob_sha": "228c772697e4879f6b8a30f85709d188a1df266c"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Adulation means excessive praise or admiration, not ordinary deserved appreciation; the draft example may not make excess sufficiently clear.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null
+    },
+    {
+      "word": "affable",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Friendly and easy to speak to.",
+        "myanmar_meaning": "ဖော်ရွေပြီး စကားပြောဆက်ဆံရလွယ်ကူသော",
+        "example_sentence": "Despite his senior position, the director remained affable with new staff."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH59.json",
+        "source_index": 28,
+        "source_blob_sha": "228c772697e4879f6b8a30f85709d188a1df266c"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford describes pleasant friendly easy conversation; 'Personal qualities c2' is a TOPIC badge, not a C2 headword CEFR classification. Do not infer level from footer B2.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/affable",
+        "page_lines": "101-105",
+        "sense_number": 1,
+        "sense_summary": "Pleasant, friendly, easy to talk to; topic 'Personal qualities c2' is a topic badge, not a headword CEFR label.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "Pleasant, friendly and easy to talk to.",
+        "myanmar_meaning": "ဖော်ရွေသဘောကောင်းပြီး စကားပြောဆက်ဆံရလွယ်ကူသော။",
+        "example_sentence": "The affable director made the new employees feel welcome.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "alacrity",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Cheerful willingness and speed in doing something.",
+        "myanmar_meaning": "အလုပ်တစ်ခုကို စိတ်အားထက်သန်ပျော်ရွှင်စွာနှင့် လျင်မြန်စွာ ဆောင်ရွက်လိုစိတ်",
+        "example_sentence": "The volunteers responded with alacrity when help was requested."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH59.json",
+        "source_index": 29,
+        "source_blob_sha": "228c772697e4879f6b8a30f85709d188a1df266c"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford headword definition emphasises great happiness or enthusiasm, especially with alacrity; draft adds speed, which may be context-dependent. The noun is uncountable and formal.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/alacrity",
+        "page_lines": "101-106",
+        "sense_number": 1,
+        "sense_summary": "Formal uncountable noun; enthusiastic willingness, often in the phrase 'with alacrity'; speed alone is not sufficient.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "Great enthusiasm and willingness to do something.",
+        "myanmar_meaning": "တစ်ခုခုကို စိတ်အားထက်သန်ဝမ်းမြောက်စွာ လုပ်ဆောင်လိုစိတ်။",
+        "example_sentence": "The team accepted the unexpected assignment with alacrity.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    }
+  ]
+}
