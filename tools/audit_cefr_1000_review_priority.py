@@ -21,9 +21,9 @@ STATUS = ("UNLISTED_NOT_A_CEFR_LEVEL", "PUBLISHER_HIGHER_WORD_POS",
           "WORD_POS_MATCH_EXACT_SENSE_UNVERIFIED")
 RANK = {s: i for i, s in enumerate(STATUS)}
 EXPECTED = {"UNLISTED_NOT_A_CEFR_LEVEL": 3, "PUBLISHER_HIGHER_WORD_POS": 46,
-            "PUBLISHER_LOWER_WORD_POS": 298,
-            "NO_DIRECT_WORD_POS_OBSERVATION": 216,
-            "WORD_POS_MATCH_EXACT_SENSE_UNVERIFIED": 437}
+            "PUBLISHER_LOWER_WORD_POS": 303,
+            "NO_DIRECT_WORD_POS_OBSERVATION": 204,
+            "WORD_POS_MATCH_EXACT_SENSE_UNVERIFIED": 444}
 URLS = {
     "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
     "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
@@ -93,7 +93,7 @@ def build(shortlist, packets, recovery, originals):
                     prior["packets"].append(path)
                     prior["recovered_legacy"] |= bool(locator_only)
                     prior["editorial_risks"].append(row["editorial_risk"])
-    require(len(by_word) == checked["distinct_observed_headwords"] == 784,
+    require(len(by_word) == checked["distinct_observed_headwords"] == 796,
             "Coverage and review handoff disagree")
     require(sum(x["recovered_legacy"] for x in by_word.values()) == 36,
             "Exactly 36 unique historical recoveries expected")

@@ -1,0 +1,480 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A2_FOURTEENTH_TWELVE_DIRECT_OXFORD_WORD_POS_FOUR_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-31",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 12,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 5,
+    "A2": 7,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "word_pos_discrepancies": 5,
+  "direct_dictionary_sense_leads": 4,
+  "independently_approved_count": 0,
+  "source_limitations": "Official Oxford 3000 PDF and four dictionary headword pages directly inspected 2026-10-31. Word/POS observations are not independent exact-sense CEFR approval. Dictionary topic badges and the Word of the Day footer are not exact-sense CEFR evidence. Myanmar/example alternatives are unapproved. No real audio listening, physical iPhone, measured hosting or production verification.",
+  "records": [
+    {
+      "word": "type",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A group of things with similar features.",
+        "myanmar_meaning": "အမျိုးအစား",
+        "example_sentence": "What type of music do you enjoy?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 757,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 4,
+        "extracted_line": 832,
+        "source_excerpt": "type n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Type as a category is a noun, not the act of typing; publisher A1 versus draft A2 requires exact-sense review.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "action",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Something done to deal with a situation.",
+        "myanmar_meaning": "လုပ်ဆောင်ချက်",
+        "example_sentence": "The team took action to fix the problem."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 758,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 1,
+        "extracted_line": 8,
+        "source_excerpt": "action n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Take action to fix a problem differs from action in an exciting film; Oxford lists this noun at A1.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "board",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A long, flat piece of wood used for building.",
+        "myanmar_meaning": "သစ်သားပြား",
+        "example_sentence": "The carpenter cut the board into two pieces."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 759,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 4,
+        "extracted_line": 1002,
+        "source_excerpt": "board n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Physical wooden board is sense 1, not a whiteboard or governing board; draft must keep material sense.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/board_1",
+        "sense_number": 1,
+        "page_text_line_start": 105,
+        "page_text_line_end": 114,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "Oxford's first noun sense is a long, flat, hard piece of material, especially wood; the draft carpenter example concerns a physical plank rather than a governing board."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ဆောက်လုပ်ရေးအတွက် သုံးသော ရှည်လျားပြားချပ်သည့် သစ်သားပြား",
+        "original_example": "The carpenter measured the wooden board before cutting it.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "field",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An area of land used for growing crops or playing sports.",
+        "myanmar_meaning": "လယ်ကွင်း၊ ကစားကွင်း",
+        "example_sentence": "The children ran across the field."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 760,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 5,
+        "extracted_line": 1208,
+        "source_excerpt": "field n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Agricultural field and sports field are different usages; review draft's combined definition and example.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "instead",
+      "level": "A2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "In place of someone or something else.",
+        "myanmar_meaning": "အစားထိုး၍၊ အစား",
+        "example_sentence": "We took the bus instead."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 761,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 5,
+        "extracted_line": 1308,
+        "source_excerpt": "instead adv.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Standalone instead adverb differs from the two-word preposition instead of; ensure correct usage.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "moment",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A very short period of time.",
+        "myanmar_meaning": "ခဏတာ",
+        "example_sentence": "Please wait a moment while I check."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 762,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 2,
+        "extracted_line": 490,
+        "source_excerpt": "moment n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Brief moment as time is different from an important occasion; publisher A1 placement is provisional.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "energy",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Strength needed for physical or mental activity.",
+        "myanmar_meaning": "အလုပ်လုပ်ရန် လိုအပ်သော အင်အား၊ စွမ်းအင်",
+        "example_sentence": "After a short rest, she had enough energy to continue."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 824,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 5,
+        "extracted_line": 1166,
+        "source_excerpt": "energy n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Human energy or stamina differs from electricity or energy resources; exact sense remains unverified.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "hear",
+      "level": "A2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To notice a sound with your ears.",
+        "myanmar_meaning": "နားဖြင့် အသံကြားသည်",
+        "example_sentence": "Can you hear the rain on the roof?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 825,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 2,
+        "extracted_line": 359,
+        "source_excerpt": "hear v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Perceiving sound with the ears is distinct from hearing news or legal testimony; Oxford lists A1.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "rest",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A period when you stop working or moving to relax.",
+        "myanmar_meaning": "အနားယူချိန်၊ အနားယူခြင်း",
+        "example_sentence": "The hikers took a rest beside the river."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 827,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1558,
+        "source_excerpt": "rest (sleep/relax) n., v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Rest for relaxation is dictionary sense 3; do not confuse with the rest as remaining part.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/rest_1",
+        "sense_number": 3,
+        "page_text_line_start": 128,
+        "page_text_line_end": 138,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "The third noun sense is a period of relaxing or sleeping after activity, countable or uncountable; it is not the remaining part in senses one and two."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "အလုပ် သို့မဟုတ် လှုပ်ရှားမှုအပြီး အနားယူချိန်",
+        "original_example": "After carrying the boxes, the workers took a short rest.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "term",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A word or expression used with a particular meaning.",
+        "myanmar_meaning": "သီးသန့်အဓိပ္ပာယ်ရှိသော အသုံးအနှုန်း",
+        "example_sentence": "Our teacher explained the term in simple English."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 828,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 7,
+        "extracted_line": 1697,
+        "source_excerpt": "term n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Specialised term as a word is sense 1; distinguish school term, duration and contractual terms.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/term_1",
+        "sense_number": 1,
+        "page_text_line_start": 105,
+        "page_text_line_end": 118,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "The first countable noun sense is a specialised word or phrase naming something; distinguish it from a school term or contractual conditions."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ပညာရပ်တစ်ခုတွင် သီးသန့်အဓိပ္ပာယ်ဖြင့် သုံးသော ဝေါဟာရ",
+        "original_example": "The teacher explained the scientific term in simple language.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "miss",
+      "level": "A2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To feel sad because someone is not with you.",
+        "myanmar_meaning": "တစ်စုံတစ်ယောက်ကို လွမ်းဆွတ်သည်",
+        "example_sentence": "I miss my family when I travel for work."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 829,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 2,
+        "extracted_line": 486,
+        "source_excerpt": "miss v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Longing for absent family is dictionary sense 8, not missing transport, opportunities or targets.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/miss_1",
+        "sense_number": 8,
+        "page_text_line_start": 205,
+        "page_text_line_end": 215,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "The eighth transitive verb sense means feeling sad because someone is absent; not missing a bus, a target or an opportunity."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ဝေးကွာနေသော လူတစ်ဦးကို လွမ်းဆွတ်သည်",
+        "original_example": "She misses her parents while studying overseas.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "site",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A particular place where something is built or happens.",
+        "myanmar_meaning": "ဆောက်လုပ်ရေး သို့မဟုတ် လုပ်ငန်းဆောင်ရွက်ရာ နေရာ",
+        "example_sentence": "Workers arrived at the building site early."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 830,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1620,
+        "source_excerpt": "site n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Physical construction site differs from a website or historic site; review exact meaning.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
