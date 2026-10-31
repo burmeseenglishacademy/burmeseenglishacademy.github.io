@@ -93,8 +93,8 @@ def self_test(expected):
         # Once a level reaches 200/200 direct word/POS observations, there is
         # no missing-source row to mutate. Never invent one for a negative test.
         if not missing:
-            if level != "B1":
-                raise AssertionError("Unexpected level with zero unobserved entries: " + level)
+            if oxford.EXPECTED[level]["distinct"] != 200:
+                raise AssertionError("Missing-source negative tests skipped before full level coverage: " + level)
             continue
         index = missing[0]
         for label, mutation in [
