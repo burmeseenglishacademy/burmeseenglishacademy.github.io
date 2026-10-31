@@ -1,0 +1,495 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "C1_TWELFTH_TWELVE_CORE_LIST_TRIAGE_ELEVEN_UNLISTED_ONE_B2_FOUR_DIRECT_SENSE_LEADS_ALL_UNAPPROVED",
+  "observed_on": "2026-10-31",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 12
+  },
+  "publisher_reference_level_counts": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 1,
+    "C1": 0,
+    "UNLISTED": 11
+  },
+  "word_pos_discrepancies": 1,
+  "direct_dictionary_sense_leads": 4,
+  "independently_approved_count": 0,
+  "independent_human_review_receipts": [],
+  "audio_real_listening_signoffs": [],
+  "release_approved": false,
+  "source_limitations": "Direct inspection of both Oxford 3000 and Oxford 5000 CEFR core-list PDFs on 2026-10-31. Eleven C1 draft words absent from BOTH lists: this is NOT a CEFR classification. Unexpected adjective appears at B2 in Oxford 3000, not an independent exact-sense classification. Four directly opened Oxford dictionary pages provide lexical sense/grammar leads only; nearby topic badges do not establish a headword level. All frozen shortlist entries held, no human approvals, no real audio listening, no physical iPhone, no hosting gate or deployment.",
+  "records": [
+    {
+      "word": "actively",
+      "level": "C1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "In a way that involves direct action or participation.",
+        "myanmar_meaning": "တက်ကြွစွာ",
+        "example_sentence": "Students actively participated in the discussion."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 266,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The C1 draft adverb is absent from both inspected Oxford core lists; active (adjective) or participate (verb) cannot supply a CEFR label for actively; verify placement and Myanmar adverbial grammar.",
+      "independent_reviewer_task": "Independent human reviewer must verify exact-sense publisher-backed CEFR, English definition, fluent Myanmar, original example grammar, British usage and pronunciation, and historical source with dated content-bound receipts. Core-list absence and dictionary topic badges are NOT CEFR labels.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "imperial",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Related to an empire or an emperor.",
+        "myanmar_meaning": "အင်ပါယာနှင့်ဆိုင်သော၊ ဧကရာဇ်နှင့်ဆိုင်သော",
+        "example_sentence": "The museum displayed documents from the imperial period."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 342,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The C1 draft adjective is absent from both inspected Oxford core lists; distinguish empire-related history from imperial measurements and avoid transferring a related lemma's CEFR label.",
+      "independent_reviewer_task": "Independent human reviewer must verify exact-sense publisher-backed CEFR, English definition, fluent Myanmar, original example grammar, British usage and pronunciation, and historical source with dated content-bound receipts. Core-list absence and dictionary topic badges are NOT CEFR labels.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "bearing",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An influence or connection that affects a decision or situation.",
+        "myanmar_meaning": "သက်ဆိုင်မှု၊ အကျိုးသက်ရောက်မှု",
+        "example_sentence": "The new evidence has a direct bearing on the final decision."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 732,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The C1 draft noun is absent from both core lists. Direct Oxford dictionary sense 1 is uncountable/singular 'bearing on'; machine-bearing sense 5 has Engineering c2 topic badge, which does NOT classify the intended influence sense.",
+      "independent_reviewer_task": "Independent human reviewer must verify exact-sense publisher-backed CEFR, English definition, fluent Myanmar, original example grammar, British usage and pronunciation, and historical source with dated content-bound receipts. Core-list absence and dictionary topic badges are NOT CEFR labels.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/bearing",
+        "page_lines": "88-123",
+        "sense_number": 1,
+        "sense_summary": "Oxford noun sense 1 is uncountable or singular, normally bearing on something, for relevance or influence. A separate Engineering c2 topic badge applies to mechanical bearing sense 5, not this sense.",
+        "observed_on": "2026-10-31",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ဆုံးဖြတ်ချက်အပေါ် သက်ရောက်မှုရှိခြင်း၊ ဆက်စပ်သက်ဆိုင်မှု",
+        "original_example": "The new test results have a direct bearing on the safety decision.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "repeatedly",
+      "level": "C1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Many times, often in the same way.",
+        "myanmar_meaning": "အကြိမ်ကြိမ်",
+        "example_sentence": "The safety instructions were repeatedly explained to the team."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 737,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The C1 draft adverb is absent from both core lists; distinguish repeatedly from frequently or continually, and verify whether the adverb really merits C1.",
+      "independent_reviewer_task": "Independent human reviewer must verify exact-sense publisher-backed CEFR, English definition, fluent Myanmar, original example grammar, British usage and pronunciation, and historical source with dated content-bound receipts. Core-list absence and dictionary topic badges are NOT CEFR labels.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "unexpected",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Not anticipated or predicted.",
+        "myanmar_meaning": "မမျှော်လင့်ထားသော",
+        "example_sentence": "An unexpected power failure interrupted the experiment."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 738,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 12,
+        "extracted_line": 3274,
+        "source_excerpt": "unexpected adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford 3000 directly places the adjective at B2 (page 12 line 3274), below provisional C1; dictionary sense and contextual difficulty must be independently justified before any level decision.",
+      "independent_reviewer_task": "Independent human reviewer must verify exact-sense publisher-backed CEFR, English definition, fluent Myanmar, original example grammar, British usage and pronunciation, and historical source with dated content-bound receipts. Core-list absence and dictionary topic badges are NOT CEFR labels.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "advisory",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Providing guidance without making the final decision.",
+        "myanmar_meaning": "ဆုံးဖြတ်ပိုင်ခွင့်မရှိဘဲ အကြံပြုလမ်းညွှန်ပေးသော",
+        "example_sentence": "The university formed an advisory committee."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 856,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The C1 draft adjective is absent from both core lists; distinguish advisory committee (consultative) from formal travel or health advisory noun; verify adjectival example and level.",
+      "independent_reviewer_task": "Independent human reviewer must verify exact-sense publisher-backed CEFR, English definition, fluent Myanmar, original example grammar, British usage and pronunciation, and historical source with dated content-bound receipts. Core-list absence and dictionary topic badges are NOT CEFR labels.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "deference",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Respect shown by accepting another person's judgment or position.",
+        "myanmar_meaning": "အခြားသူ၏ အမြင် သို့မဟုတ် ရာထူးအဆင့်အတန်းကို လေးစား၍ ဦးစားပေးလိုက်နာမှု",
+        "example_sentence": "Out of deference to the elders, the group waited for their opinion."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 21,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The C1 draft noun is absent from both core lists; distinguish respectful yielding to another's judgement from simple respect; check the collocation 'out of deference to'.",
+      "independent_reviewer_task": "Independent human reviewer must verify exact-sense publisher-backed CEFR, English definition, fluent Myanmar, original example grammar, British usage and pronunciation, and historical source with dated content-bound receipts. Core-list absence and dictionary topic badges are NOT CEFR labels.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "delineate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To describe or mark the exact limits or details of something.",
+        "myanmar_meaning": "အရာတစ်ခု၏ နယ်နိမိတ် သို့မဟုတ် အသေးစိတ်အချက်များကို တိကျစွာ ဖော်ပြသည်",
+        "example_sentence": "The contract must delineate each supplier's responsibilities."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 22,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The C1 draft verb is absent from both core lists; Oxford directly marks formal transitive 'delineate something' describing/drawing/explaining in detail; the draft 'exact limits' overnarrows some uses.",
+      "independent_reviewer_task": "Independent human reviewer must verify exact-sense publisher-backed CEFR, English definition, fluent Myanmar, original example grammar, British usage and pronunciation, and historical source with dated content-bound receipts. Core-list absence and dictionary topic badges are NOT CEFR labels.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/delineate",
+        "page_lines": "88-115",
+        "sense_number": 1,
+        "sense_summary": "Oxford formal transitive verb delineate something covers describing, drawing or explaining in detail; contract responsibilities are a natural object. The page's unrelated environment B2 topic badge is not a headword CEFR label.",
+        "observed_on": "2026-10-31",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "တာဝန်နယ်ပယ်ကို အသေးစိတ် တိကျစွာ ဖော်ပြသတ်မှတ်သည်",
+        "original_example": "The contract clearly delineates each supplier's responsibilities.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "dichotomy",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A division between two contrasting ideas or groups.",
+        "myanmar_meaning": "ဆန့်ကျင်ကွဲပြားသော အယူအဆ သို့မဟုတ် အုပ်စုနှစ်ခုအကြား ခွဲခြားမှု",
+        "example_sentence": "The debate revealed a dichotomy between growth and conservation."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 23,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The C1 draft noun is absent from both core lists; Oxford describes two completely opposed/different things, usually singular and formal; generic two-part division can be too broad.",
+      "independent_reviewer_task": "Independent human reviewer must verify exact-sense publisher-backed CEFR, English definition, fluent Myanmar, original example grammar, British usage and pronunciation, and historical source with dated content-bound receipts. Core-list absence and dictionary topic badges are NOT CEFR labels.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/dichotomy",
+        "page_lines": "88-109",
+        "sense_number": 1,
+        "sense_summary": "Oxford formal noun, usually singular, with the construction dichotomy between A and B, describes a sharp contrast between two opposed groups or things, not merely any classification into two.",
+        "observed_on": "2026-10-31",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "လုံးဝဆန့်ကျင်ကွဲပြားသော အယူအဆနှစ်မျိုးအကြား ခွဲခြားကွာဟမှု",
+        "original_example": "The debate exposed a dichotomy between short-term profit and long-term sustainability.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "disseminate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To spread information or ideas widely among people.",
+        "myanmar_meaning": "သတင်းအချက်အလက် သို့မဟုတ် အယူအဆများကို လူအများထံ ကျယ်ကျယ်ပြန့်ပြန့် ဖြန့်ဝေသည်",
+        "example_sentence": "The health agency worked to disseminate clear advice."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 25,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The C1 draft verb is absent from both core lists; verify the object is information/ideas rather than physical goods and distinguish from distribute or circulate.",
+      "independent_reviewer_task": "Independent human reviewer must verify exact-sense publisher-backed CEFR, English definition, fluent Myanmar, original example grammar, British usage and pronunciation, and historical source with dated content-bound receipts. Core-list absence and dictionary topic badges are NOT CEFR labels.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "eclectic",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Combining ideas or styles from many different sources.",
+        "myanmar_meaning": "ရင်းမြစ်အမျိုးမျိုးမှ အယူအဆ သို့မဟုတ် ပုံစံများကို ပေါင်းစပ်ထားသော",
+        "example_sentence": "The café has an eclectic collection of furniture."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 26,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The C1 draft adjective is absent from both core lists; verify the positive multi-source mixture sense and distinguish from inconsistent or random choice.",
+      "independent_reviewer_task": "Independent human reviewer must verify exact-sense publisher-backed CEFR, English definition, fluent Myanmar, original example grammar, British usage and pronunciation, and historical source with dated content-bound receipts. Core-list absence and dictionary topic badges are NOT CEFR labels.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "efficacy",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The ability of a treatment or method to produce the intended result.",
+        "myanmar_meaning": "ကုသမှု သို့မဟုတ် နည်းလမ်းတစ်ခုက ရည်ရွယ်ထားသည့် ရလဒ်ကို ဖြစ်စေနိုင်စွမ်း",
+        "example_sentence": "Researchers evaluated the efficacy of the new training method."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 27,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The C1 draft noun is absent from both core lists; Oxford marks uncountable/formal and defines effectiveness at producing desired results; distinguish from efficiency and avoid countable usage.",
+      "independent_reviewer_task": "Independent human reviewer must verify exact-sense publisher-backed CEFR, English definition, fluent Myanmar, original example grammar, British usage and pronunciation, and historical source with dated content-bound receipts. Core-list absence and dictionary topic badges are NOT CEFR labels.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/efficacy",
+        "page_lines": "88-110",
+        "sense_number": 1,
+        "sense_summary": "Oxford marks efficacy as uncountable and formal; it refers to producing the intended result and is related to effectiveness, not efficiency. OPAL W is not a CEFR level.",
+        "observed_on": "2026-10-31",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ရည်ရွယ်ထားသည့် ရလဒ်ကို ဖြစ်ပေါ်စေနိုင်စွမ်း၊ ထိရောက်မှု",
+        "original_example": "The trial measured the efficacy of the revised training programme.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    }
+  ]
+}
