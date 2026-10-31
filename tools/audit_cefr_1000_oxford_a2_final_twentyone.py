@@ -90,7 +90,9 @@ def audit(packet, shortlist, historical):
         require(original["level"] == row.get("level") == "A2"
                 and original["part_of_speech"] == row.get("part_of_speech") == "noun",
                 word + ": draft level/POS drift")
-        require(row.get("shortlist_snapshot") == {k: original[k] for k in FIELDS},
+        require(row.get("shortlist_snapshot") == {"english_definition": original["english_definition"],
+                "myanmar_meaning": original["burmese_meaning"],
+                "example_sentence": original["example_sentence"]},
                 word + ": altered original English, Myanmar or example")
         provenance = {k: original[k] for k in ("source_path", "source_index", "source_blob_sha")}
         require(row.get("shortlist_provenance") == provenance, word + ": source provenance drift")
