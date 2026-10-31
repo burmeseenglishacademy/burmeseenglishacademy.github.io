@@ -1,0 +1,510 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "C1_THIRTEENTH_TWELVE_ONE_C1_WORD_POS_ELEVEN_CORE_LIST_UNLISTED_FIVE_DICTIONARY_LEADS_ALL_HELD",
+  "observed_on": "2026-11-01",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 12
+  },
+  "publisher_reference_level_counts": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 1,
+    "UNLISTED": 11
+  },
+  "word_pos_discrepancies": 0,
+  "part_of_speech_mismatch_leads": 1,
+  "direct_dictionary_sense_leads": 5,
+  "independently_approved_count": 0,
+  "independent_human_review_receipts": [],
+  "audio_real_listening_signoffs": [],
+  "release_approved": false,
+  "source_limitations": "Official Oxford 3000 and 5000 PDFs directly inspected on 2026-11-01. Eleven words absent as matching word/POS; veteran appears only as C1 noun, not draft adjective. Mitigate v. is C1 word/POS only. Five directly accessed dictionary sense pages provide lexical/topic leads, never independent CEFR exact-sense labels. No human approval, real audio listening, iPhone testing or deployment.",
+  "records": [
+    {
+      "word": "naval",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Connected with a country's navy.",
+        "myanmar_meaning": "ရေတပ်ဆိုင်ရာ",
+        "example_sentence": "The port hosts an annual naval exercise."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 154,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Both inspected core lists omit naval adjective. Oxford dictionary directly describes navy-related use and shows War and conflict c1 TOPIC badge; a topic label is not word/POS or exact-sense CEFR evidence.",
+      "independent_reviewer_task": "An independent HUMAN must check publisher exact-sense CEFR evidence, English definition, natural Myanmar, original example grammar, British pronunciation and historical provenance; record dated external attestation. Oxford list absence, POS mismatch, and topic/sidebar badges are NOT CEFR approvals.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/naval",
+        "page_lines": "88-110",
+        "sense_number": 1,
+        "sense_summary": "Naval adjective relates to a country's navy; collocations include naval base/officer/battle. War and conflict c1 is a TOPIC badge, not word CEFR.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      }
+    },
+    {
+      "word": "noble",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Showing qualities such as honesty, courage and generosity.",
+        "myanmar_meaning": "မြင့်မြတ်သော၊ ဂုဏ်သိက္ခာရှိသော",
+        "example_sentence": "The volunteers worked for a noble cause."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 181,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Absent from both inspected Oxford core lists. Draft positive-character adjective must be distinguished from aristocratic rank and nobility senses; do not infer C1 from register.",
+      "independent_reviewer_task": "An independent HUMAN must check publisher exact-sense CEFR evidence, English definition, natural Myanmar, original example grammar, British pronunciation and historical provenance; record dated external attestation. Oxford list absence, POS mismatch, and topic/sidebar badges are NOT CEFR approvals.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "treasury",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The department that manages a government's money and finances.",
+        "myanmar_meaning": "အစိုးရဘဏ္ဍာရေးဌာန",
+        "example_sentence": "The treasury released a new budget statement."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 261,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Absent from both inspected Oxford core lists. Lowercase treasury in the draft can denote a finance department; distinguish from treasury as a store of valuable things and capitalized governmental names.",
+      "independent_reviewer_task": "An independent HUMAN must check publisher exact-sense CEFR evidence, English definition, natural Myanmar, original example grammar, British pronunciation and historical provenance; record dated external attestation. Oxford list absence, POS mismatch, and topic/sidebar badges are NOT CEFR approvals.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "ethics",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Principles about what is right or wrong in behaviour.",
+        "myanmar_meaning": "ကိုယ်ကျင့်တရားဆိုင်ရာ စံနှုန်းများ၊ ကျင့်ဝတ်",
+        "example_sentence": "The course explores ethics in scientific research."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 421,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Plural ethics is absent as a separate headword in both core lists; Oxford 5000 has ethic n. at B2 (page 1, extracted line 220), which cannot be transferred to plural ethics or to the branch-of-philosophy sense. Oxford dictionary distinguishes plural moral principles from uncountable academic field.",
+      "independent_reviewer_task": "An independent HUMAN must check publisher exact-sense CEFR evidence, English definition, natural Myanmar, original example grammar, British pronunciation and historical provenance; record dated external attestation. Oxford list absence, POS mismatch, and topic/sidebar badges are NOT CEFR approvals.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/ethic",
+        "page_lines": "88-125",
+        "sense_number": 1,
+        "sense_summary": "Oxford ethic noun entry has ethics [plural] for moral principles and ethics [uncountable] for moral philosophy; Personal qualities b2 is a TOPIC badge.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "လူတစ်ဦး၏ အပြုအမူကို လမ်းညွှန်သည့် ကျင့်ဝတ်ဆိုင်ရာ အခြေခံမူများ",
+        "original_example": "The research team discussed the ethics of using personal data.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "manufacturer",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A company or person that makes goods, usually in large quantities.",
+        "myanmar_meaning": "ကုန်ပစ္စည်းထုတ်လုပ်သူ၊ ထုတ်လုပ်ရေးကုမ္ပဏီ",
+        "example_sentence": "The manufacturer recalled the product after discovering a defect."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 457,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Absent from both inspected Oxford core lists; Oxford lists manufacture v. and manufacturing n. instead. Direct dictionary gives a person OR company producing goods in quantity; Business b2 is a TOPIC label, not a headword C1 level.",
+      "independent_reviewer_task": "An independent HUMAN must check publisher exact-sense CEFR evidence, English definition, natural Myanmar, original example grammar, British pronunciation and historical provenance; record dated external attestation. Oxford list absence, POS mismatch, and topic/sidebar badges are NOT CEFR approvals.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/manufacturer",
+        "page_lines": "88-115",
+        "sense_number": 1,
+        "sense_summary": "Manufacturer is a countable noun for a person or company producing goods in large quantities; Business b2 is a TOPIC badge, not word CEFR.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ကုန်ပစ္စည်းများကို အများအပြား ထုတ်လုပ်သည့် လူပုဂ္ဂိုလ် သို့မဟုတ် ကုမ္ပဏီ",
+        "original_example": "The manufacturer issued new safety instructions for its products.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "veteran",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Having long experience in a particular job or activity.",
+        "myanmar_meaning": "လုပ်ငန်းအတွေ့အကြုံရှည်လျားသော၊ ဝါရင့်သော",
+        "example_sentence": "A veteran journalist led the interview."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 459,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford 5000 C1 page 8 line 1976 lists veteran n., not the draft veteran adjective. POS transfer is prohibited; the draft adjective 'experienced' requires its own publisher sense and CEFR review.",
+      "independent_reviewer_task": "An independent HUMAN must check publisher exact-sense CEFR evidence, English definition, natural Myanmar, original example grammar, British pronunciation and historical provenance; record dated external attestation. Oxford list absence, POS mismatch, and topic/sidebar badges are NOT CEFR approvals.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "လုပ်ငန်း သို့မဟုတ် လှုပ်ရှားမှုတစ်ခုတွင် အတွေ့အကြုံများစွာရှိသော",
+        "original_example": "A veteran reporter interviewed the witnesses.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "legally",
+      "level": "C1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "According to the law or in a way recognised by law.",
+        "myanmar_meaning": "ဥပဒေအရ၊ တရားဝင်အားဖြင့်",
+        "example_sentence": "The agreement is not legally binding until both parties sign."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 463,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Absent from both inspected Oxford core lists. Distinguish 'lawfully' from 'legally binding/valid' (having legal effect); the draft example is about binding effect rather than only legality.",
+      "independent_reviewer_task": "An independent HUMAN must check publisher exact-sense CEFR evidence, English definition, natural Myanmar, original example grammar, British pronunciation and historical provenance; record dated external attestation. Oxford list absence, POS mismatch, and topic/sidebar badges are NOT CEFR approvals.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "census",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An official count of the people living in a country or area.",
+        "myanmar_meaning": "လူဦးရေသန်းခေါင်စာရင်း",
+        "example_sentence": "The national census collects information about households."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 728,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Absent from both inspected Oxford core lists. Direct Oxford dictionary defines the process of official counting/recording (especially population); do not misread unrelated Word of the Day C1 sidebar as a census label.",
+      "independent_reviewer_task": "An independent HUMAN must check publisher exact-sense CEFR evidence, English definition, natural Myanmar, original example grammar, British pronunciation and historical provenance; record dated external attestation. Oxford list absence, POS mismatch, and topic/sidebar badges are NOT CEFR approvals.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/census",
+        "page_lines": "88-132",
+        "sense_number": 1,
+        "sense_summary": "Census noun (plural censuses) denotes official counting and recording facts, especially population; unrelated Word of the Day C1 sidebar cannot classify census.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "လူဦးရေနှင့် အခြားအချက်အလက်များကို တရားဝင်စာရင်းကောက်ယူသည့် လုပ်ငန်းစဉ်",
+        "original_example": "The census recorded the number of people living in each district.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "destiny",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The events that are believed to be certain to happen in someone's future.",
+        "myanmar_meaning": "ကံကြမ္မာ၊ ရှောင်လွှဲမရသော အနာဂတ်ဖြစ်ရပ်များ",
+        "example_sentence": "She believed it was her destiny to become a doctor."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 813,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Absent from both inspected Oxford core lists. Distinguish belief in an inevitable future from a general life goal or planned career; the example expresses personal belief.",
+      "independent_reviewer_task": "An independent HUMAN must check publisher exact-sense CEFR evidence, English definition, natural Myanmar, original example grammar, British pronunciation and historical provenance; record dated external attestation. Oxford list absence, POS mismatch, and topic/sidebar badges are NOT CEFR approvals.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "mitigate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To make the harmful effects of something less serious.",
+        "myanmar_meaning": "အရာတစ်ခု၏ ဆိုးကျိုးသက်ရောက်မှုများကို လျော့နည်းစေသည်",
+        "example_sentence": "Planting trees can help mitigate extreme summer heat."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 41,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": 6,
+        "extracted_line": 1488,
+        "source_excerpt": "mitigate v.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford 5000 C1 page 6 extracted line 1488 lists mitigate v., but that is word/POS evidence only. Direct dictionary marks formal, transitive 'mitigate something', and lists harmful effects; unrelated B2 Word of the Day sidebar is not a mitigate label.",
+      "independent_reviewer_task": "An independent HUMAN must check publisher exact-sense CEFR evidence, English definition, natural Myanmar, original example grammar, British pronunciation and historical provenance; record dated external attestation. Oxford list absence, POS mismatch, and topic/sidebar badges are NOT CEFR approvals.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mitigate",
+        "page_lines": "88-122",
+        "sense_number": 1,
+        "sense_summary": "Mitigate is a formal transitive verb: make something less harmful or serious; collocates with effects, impacts and problems. B2 sidebar is unrelated.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ပြဿနာ သို့မဟုတ် ဆိုးကျိုး၏ ပြင်းထန်မှုကို လျော့ပါးစေသည်",
+        "original_example": "The new drainage channels may mitigate the risk of flooding.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "disproportionate",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Too large or too small in relation to something else.",
+        "myanmar_meaning": "နှိုင်းယှဉ်သည့် အရာနှင့် မမျှတအောင် များလွန်း သို့မဟုတ် နည်းလွန်းသော",
+        "example_sentence": "The new fee places a disproportionate burden on smaller businesses."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 33,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Absent from both inspected Oxford core lists. Requires an explicit comparison/baseline and fluent Myanmar equivalent for a burden that is excessive relative to business size.",
+      "independent_reviewer_task": "An independent HUMAN must check publisher exact-sense CEFR evidence, English definition, natural Myanmar, original example grammar, British pronunciation and historical provenance; record dated external attestation. Oxford list absence, POS mismatch, and topic/sidebar badges are NOT CEFR approvals.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "perpetuate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To cause a situation or belief to continue for a long time.",
+        "myanmar_meaning": "အခြေအနေ သို့မဟုတ် ယုံကြည်ချက်တစ်ခုကို ကြာရှည်ဆက်လက်တည်ရှိစေသည်",
+        "example_sentence": "Repeating the rumour will only perpetuate the misunderstanding."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 46,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Absent from both inspected Oxford core lists. Transitive continuation of a harmful situation or belief differs from merely repeating a sentence; verify object and Myanmar causative nuance.",
+      "independent_reviewer_task": "An independent HUMAN must check publisher exact-sense CEFR evidence, English definition, natural Myanmar, original example grammar, British pronunciation and historical provenance; record dated external attestation. Oxford list absence, POS mismatch, and topic/sidebar badges are NOT CEFR approvals.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
