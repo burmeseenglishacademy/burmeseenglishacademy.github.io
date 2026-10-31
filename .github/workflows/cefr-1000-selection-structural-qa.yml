@@ -9,6 +9,8 @@ on:
       - tools/audit_cefr_1000_oxford_a2_final_twentyone.py
       - draft/CEFR-1000-OXFORD-C1-THIRTEENTH-TWELVE-AND-FIVE-DIRECT-SENSE-LEADS-2026-11-01.json
       - tools/audit_cefr_1000_oxford_c1_thirteenth_twelve.py
+      - draft/CEFR-1000-OXFORD-C1-FOURTEENTH-TWELVE-AND-SIX-DIRECT-SENSE-LEADS-2026-11-01.json
+      - tools/audit_cefr_1000_oxford_c1_fourteenth_twelve.py
       - draft/CEFR-1000-OXFORD-C1-TWELFTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
       - tools/audit_cefr_1000_oxford_c1_twelfth_twelve.py
       - draft/CEFR-1000-PROVISIONAL-SHORTLIST.json
@@ -784,6 +786,11 @@ jobs:
       - name: Reject forged C1 thirteenth publisher, bilingual and human signoffs
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_c1_thirteenth_twelve.py --level ALL --self-test
+      - name: Audit C1 fourteenth twelve source-bound publisher absence and six dictionary leads
+        run: python3 tools/audit_cefr_1000_oxford_c1_fourteenth_twelve.py --level "${{ matrix.level }}"
+      - name: Reject 190 forged C1 publisher, bilingual and human signoff mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_oxford_c1_fourteenth_twelve.py --level ALL --self-test
       - name: Save structural QA record (not linguistic verification)
         uses: actions/upload-artifact@v4
         with:
