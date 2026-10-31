@@ -41,3 +41,14 @@ The cross-batch Oxford source reconciliation now expects **A1 195, A2 179, B1 20
 | C1 | 200 | 0 | 0 |
 
 **Release blockers:** independent human English, fluent Myanmar, example and exact-sense publisher CEFR review; approved deduplicated manifest; complete final British George/Emma headword and example audio with real listening signoffs; desktop/mobile regressions; physical iPhone Safari evidence; measured GitHub Pages deployment-artifact and bandwidth checks; preserved production assets and confirmed production deployment. Existing 54 lessons, separate IELTS 1,000 bank, George/Emma production audio and privacy remain protected. **No publication authorised while any gate is missing.**
+
+## Actual GitHub Actions verification (checked 2026-10-31)
+
+**CI VERIFIED** on staging code SHA `865a5c72a7096fd6beac64871b0da143008b10f7`:
+
+- [Parallel structural run 41207841087](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41207841087): **SUCCESS** for **A1, A2, B1, B2, C1 and ALL** (all six actual job conclusions inspected). ALL artifact ID `13045087330`.
+- [Documentary no-deployment run 41207841111](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41207841111): **SUCCESS, report-only**, blocker artifact ID `13045531455`.
+- Actual ALL/documentary job logs confirmed **142/142** new A2 adversarial mutations rejected; ALL additionally confirmed **25/25** cross-batch and **141/141** source-bound handoff mutations rejected. The ALL log reported exactly **885 distinct / 904 source observations / 115 without direct observations**, with the publisher discrepancy queue matching the counts above. Protected production files unchanged; **no deployment**.
+- [Source-scope guard 41207826195](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41207826195) was **SUCCESS** on earlier consolidation SHA `46af05b7e39537fa6b38d402a570f90cf83cf08e`. Intermediate structural/documentary failures `41207826209` / `41207826192` arose before the review-priority expected counts were updated; the final runs above are successful and supersede those failures.
+
+This confirms **structural/documentary code checks only**, not real-world independent linguistic review, listening, mobile/physical iPhone testing, hosting or production release. **RELEASE BLOCKED / STAGING ONLY.**
