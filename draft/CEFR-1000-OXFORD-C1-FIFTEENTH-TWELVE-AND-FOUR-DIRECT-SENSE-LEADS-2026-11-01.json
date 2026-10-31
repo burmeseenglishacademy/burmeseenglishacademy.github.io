@@ -1,0 +1,499 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "C1_FIFTEENTH_TWELVE_ALL_CORE_LIST_UNLISTED_FOUR_DIRECT_DICTIONARY_SENSE_LEADS_ALL_HELD",
+  "observed_on": "2026-11-01",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 12
+  },
+  "publisher_reference_level_counts": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0,
+    "UNLISTED": 12
+  },
+  "direct_dictionary_sense_leads": 4,
+  "independently_approved_count": 0,
+  "independent_human_review_receipts": [],
+  "audio_real_listening_signoffs": [],
+  "release_approved": false,
+  "source_limitations": "Exact word/POS absent in both Oxford 3000 and 5000 official CEFR core lists inspected 2026-11-01. Absence does NOT assign CEFR level. Four directly read Oxford dictionary entries support grammar/sense triage only, not exact-sense CEFR signoff. No human review or listening.",
+  "records": [
+    {
+      "word": "embellish",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To add details to make a story or object more attractive, sometimes less accurate.",
+        "myanmar_meaning": "ဇာတ်လမ်း သို့မဟုတ် အရာတစ်ခုကို ပိုဆွဲဆောင်မှုရှိစေရန် အသေးစိတ်အချက်များ ထပ်ဖြည့်သည်",
+        "example_sentence": "He tended to embellish his stories with dramatic details."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 28,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Two distinct Oxford verb senses: physical decoration versus adding possibly untrue details to a story. Draft combines them; the example supports story embellishment. Specify the target sense, formal register and potential inaccuracy.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide a dated signed review. Core-list absence and dictionary footer/topic labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/embellish",
+        "page_lines": "88-116",
+        "sense_number": 2,
+        "sense_summary": "Formal verb; Oxford distinguishes sense 1 decorative addition from sense 2 adding possibly untrue details to a story. Draft example is sense 2.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "To make an account or story more interesting by adding details that may not be true.",
+        "myanmar_meaning": "အဖြစ်အပျက် သို့မဟုတ် ဇာတ်လမ်းကို ပိုစိတ်ဝင်စားဖွယ်ဖြစ်စေရန် အမှန်မဟုတ်နိုင်သည့် အသေးစိတ်အချက်များ ထပ်ဖြည့်ပြောဆိုသည်",
+        "example_sentence": "He embellished the story with details that no witness could confirm.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "endemic",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Regularly found in a particular area or population.",
+        "myanmar_meaning": "ဒေသ သို့မဟုတ် လူအုပ်စုတစ်ခုတွင် ပုံမှန်တွေ့ရှိရသော",
+        "example_sentence": "The disease is endemic in several tropical regions."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 29,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford distinguishes endemic in/among a group from endemic to a region (especially native species). Draft example is disease prevalence; do not collapse into species-native sense or imply a CEFR classification.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide a dated signed review. Core-list absence and dictionary footer/topic labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/endemic",
+        "page_lines": "88-108",
+        "sense_number": 1,
+        "sense_summary": "Adjective with endemic in/among for regular presence and endemic to for species native to a place; draft disease example aligns with 'in'.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "Regularly present in a particular area or population, especially when difficult to eliminate.",
+        "myanmar_meaning": "ဒေသတစ်ခု သို့မဟုတ် လူအုပ်စုတစ်ခုအတွင်း ပုံမှန်ဖြစ်ပွားတွေ့ရှိရပြီး ပပျောက်ရန် ခက်ခဲသော",
+        "example_sentence": "The disease remains endemic in some rural districts.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "enigma",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A person or thing that is difficult to understand or explain.",
+        "myanmar_meaning": "နားလည်ရန် သို့မဟုတ် ရှင်းပြရန် ခက်ခဲသော လူ သို့မဟုတ် အရာ",
+        "example_sentence": "The disappearance of the records remains an enigma."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 30,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Distinguish a mysterious person/thing from a difficult situation; noun countability and an appropriate original example require human review.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide a dated signed review. Core-list absence and dictionary footer/topic labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "ephemeral",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Lasting for only a very short time.",
+        "myanmar_meaning": "အချိန်အလွန်တိုတောင်းစွာသာ တည်ရှိသော",
+        "example_sentence": "The artist used ice to create an ephemeral sculpture."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 31,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Temporary or short-lived, often literary/formal; distinguish from merely 'not permanent' and review Myanmar naturalness.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide a dated signed review. Core-list absence and dictionary footer/topic labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "exacerbate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To make an existing problem or unpleasant situation worse.",
+        "myanmar_meaning": "ရှိပြီးသား ပြဿနာ သို့မဟုတ် မကောင်းသောအခြေအနေကို ပိုဆိုးစေသည်",
+        "example_sentence": "Delaying the repairs could exacerbate the water shortage."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 32,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Verb typically makes an already bad situation worse, not any neutral change; transitivity and example context need independent review.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide a dated signed review. Core-list absence and dictionary footer/topic labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "exonerate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To show that someone is not responsible for an alleged wrongdoing.",
+        "myanmar_meaning": "စွပ်စွဲထားသော အမှားအတွက် တာဝန်မရှိကြောင်း သက်သေပြသည်",
+        "example_sentence": "New evidence helped exonerate the wrongly accused driver."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 33,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford states official declaration of non-responsibility; draft says evidence 'shows' innocence. Check legal vs general blame, formal register, and exonerate somebody of/from something.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide a dated signed review. Core-list absence and dictionary footer/topic labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/exonerate",
+        "page_lines": "88-114",
+        "sense_number": 1,
+        "sense_summary": "Formal verb; officially state that someone is not responsible for an allegation. Patterns exonerate somebody from/of something.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "To officially declare that someone is not responsible for something they were accused of.",
+        "myanmar_meaning": "စွပ်စွဲခံထားရသည့် ကိစ္စတစ်ခုအတွက် တာဝန်မရှိကြောင်း တရားဝင် ကြေညာသတ်မှတ်ပေးသည်",
+        "example_sentence": "The investigation exonerated the technician of any wrongdoing.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "fallacy",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An incorrect belief or argument based on faulty reasoning.",
+        "myanmar_meaning": "မှားယွင်းသော ဆင်ခြင်မှုအပေါ် အခြေခံသည့် အယူအဆ သို့မဟုတ် အငြင်းအခုံအမှား",
+        "example_sentence": "It is a fallacy to assume that expensive products always last longer."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 34,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Separate mistaken belief from a formally invalid argument; draft example illustrates an overgeneralisation; confirm Myanmar wording.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide a dated signed review. Core-list absence and dictionary footer/topic labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "fervent",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Showing very strong and sincere feelings or beliefs.",
+        "myanmar_meaning": "ပြင်းထန်ပြီး စိတ်ရင်းမှန်သော ခံစားချက် သို့မဟုတ် ယုံကြည်ချက်ရှိသော",
+        "example_sentence": "She was a fervent supporter of public libraries."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 35,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Strong sincere feeling or belief, not just intensity; inspect typical collocations and appropriate formal register.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide a dated signed review. Core-list absence and dictionary footer/topic labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "galvanize",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To motivate people suddenly to take action.",
+        "myanmar_meaning": "လူများကို ရုတ်တရက် စိတ်အားထက်သန်စေပြီး လှုပ်ရှားဆောင်ရွက်စေသည်",
+        "example_sentence": "The flood warnings helped galvanize local volunteers."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 36,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Motivate or shock people into taking action; British spelling often galvanise, while draft uses American -ize (both acceptable in British Oxford style but spelling policy needs review). Also metal-coating sense is separate.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide a dated signed review. Core-list absence and dictionary footer/topic labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "incongruous",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Strange because it does not fit the surrounding situation.",
+        "myanmar_meaning": "ပတ်ဝန်းကျင်အခြေအနေနှင့် မကိုက်ညီသောကြောင့် ထူးဆန်းနေသော",
+        "example_sentence": "The bright plastic sign looked incongruous on the historic building."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 37,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Out of place or incompatible with surroundings; ensure Myanmar implies mismatch rather than mere unusualness.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide a dated signed review. Core-list absence and dictionary footer/topic labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "introspection",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Careful examination of your own thoughts and feelings.",
+        "myanmar_meaning": "မိမိ၏ အတွေးအမြင်နှင့် ခံစားချက်များကို သေချာစွာ ပြန်လည်ဆန်းစစ်ခြင်း",
+        "example_sentence": "A period of introspection helped her choose a new career."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 38,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Self-examination of thoughts and feelings; often uncountable, not external observation; verify Myanmar and example.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide a dated signed review. Core-list absence and dictionary footer/topic labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "juxtapose",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To place two things together to highlight their differences.",
+        "myanmar_meaning": "ကွာခြားချက်များ ပိုမိုထင်ရှားစေရန် အရာနှစ်ခုကို ယှဉ်တွဲထားသည်",
+        "example_sentence": "Curators juxtapose old photographs with recent ones to show how the town has changed."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 39,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford verb is often passive, juxtapose A with/and B; purpose can reveal contrast OR new relationship. Draft narrows it to differences only; independent reviewer to check sense and grammar.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide a dated signed review. Core-list absence and dictionary footer/topic labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/juxtapose",
+        "page_lines": "88-112",
+        "sense_number": 1,
+        "sense_summary": "Formal verb, often passive, juxtapose A and/with B; juxtaposition can show a contrast or a new relationship, not differences alone.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "To place two things together so their contrast or relationship becomes clearer.",
+        "myanmar_meaning": "အရာနှစ်ခု၏ ကွာခြားချက် သို့မဟုတ် ဆက်နွယ်မှု ပိုမိုထင်ရှားစေရန် ယှဉ်တွဲဖော်ပြသည်",
+        "example_sentence": "The exhibition juxtaposes historical photographs with modern images of the same streets.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    }
+  ]
+}
