@@ -1,0 +1,744 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B1_FIFTEENTH_TWENTY_DIRECT_OXFORD_WORD_POS_FOUR_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-31",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 20,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 20,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 2,
+    "A2": 12,
+    "B1": 1,
+    "B2": 5,
+    "C1": 0
+  },
+  "word_pos_discrepancies": 19,
+  "direct_dictionary_sense_leads": 4,
+  "independently_approved_count": 0,
+  "source_limitations": "Official Oxford 3000 PDF and four Oxford dictionary pages directly inspected 2026-10-31. Word/POS classification is not independent exact-sense CEFR approval. The source PDF includes ring1 noun versus ring2 verb and adult noun versus adult adjective. Oxford dictionary topic badges and unrelated Word of the Day footer are not the exact sense CEFR label. Myanmar and example proposals are unapproved; no human independent review, George/Emma real listening, physical iPhone Safari QA, measured GitHub Pages hosting or production deployment.",
+  "records": [
+    {
+      "word": "fund",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Money saved or collected for a particular purpose.",
+        "myanmar_meaning": "သတ်မှတ်ရည်ရွယ်ချက်အတွက် စုဆောင်းထားသော ရန်ပုံငွေ",
+        "example_sentence": "The school created a fund for new books."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 779,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 11,
+        "extracted_line": 2882,
+        "source_excerpt": "fund n., v.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A countable purpose-specific fund, not plural funds meaning available money.",
+      "independent_reviewer_task": "Human-independent reviewer must verify exact-sense CEFR, English, fluent Myanmar, example grammar, British pronunciation, source provenance and signed receipt. Publisher word/POS and assistant editorial suggestions are NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/fund_1",
+        "sense_number": 1,
+        "page_text_line_start": 105,
+        "page_text_line_end": 112,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "Countable money set aside for a particular purpose; distinct from plural funds and an investment firm."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "သတ်မှတ်ထားသော ရည်ရွယ်ချက်တစ်ခုအတွက် စုဆောင်းထားသည့် သို့မဟုတ် ခွဲဝေထားသည့် ရန်ပုံငွေ",
+        "original_example": "The community set up a fund to repair the school roof.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "hill",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An area of land higher than the land around it but smaller than a mountain.",
+        "myanmar_meaning": "တောင်ကုန်း",
+        "example_sentence": "We walked up the hill before sunset."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 780,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 5,
+        "extracted_line": 1278,
+        "source_excerpt": "hill n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Physical raised land, not a metaphorical uphill struggle.",
+      "independent_reviewer_task": "Human-independent reviewer must verify exact-sense CEFR, English, fluent Myanmar, example grammar, British pronunciation, source provenance and signed receipt. Publisher word/POS and assistant editorial suggestions are NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "metal",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A material such as iron or aluminium that is usually strong and conducts heat.",
+        "myanmar_meaning": "သတ္တု",
+        "example_sentence": "The gate is made of metal."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 781,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1394,
+        "source_excerpt": "metal n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Material noun often uncountable; a metal can denote a particular type.",
+      "independent_reviewer_task": "Human-independent reviewer must verify exact-sense CEFR, English, fluent Myanmar, example grammar, British pronunciation, source provenance and signed receipt. Publisher word/POS and assistant editorial suggestions are NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "profile",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A description of a person's background or interests.",
+        "myanmar_meaning": "ကိုယ်ရေးအချက်အလက်အကျဉ်း",
+        "example_sentence": "She updated her online profile yesterday."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 782,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1504,
+        "source_excerpt": "profile n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Online personal profile, not a side-view outline or geographical cross-section.",
+      "independent_reviewer_task": "Human-independent reviewer must verify exact-sense CEFR, English, fluent Myanmar, example grammar, British pronunciation, source provenance and signed receipt. Publisher word/POS and assistant editorial suggestions are NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "pull",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To move something towards yourself using force.",
+        "myanmar_meaning": "ဆွဲသည်",
+        "example_sentence": "Pull the handle gently to open the door."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 783,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1514,
+        "source_excerpt": "pull v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Physical pull towards oneself; do not substitute a phrasal or figurative use.",
+      "independent_reviewer_task": "Human-independent reviewer must verify exact-sense CEFR, English, fluent Myanmar, example grammar, British pronunciation, source provenance and signed receipt. Publisher word/POS and assistant editorial suggestions are NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "push",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To move something away from you by using force.",
+        "myanmar_meaning": "အဝေးသို့ အားသုံး၍ တွန်းသည်",
+        "example_sentence": "Please push the door gently to open it."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 834,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1516,
+        "source_excerpt": "push v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Physical force away; not push someone to achieve something.",
+      "independent_reviewer_task": "Human-independent reviewer must verify exact-sense CEFR, English, fluent Myanmar, example grammar, British pronunciation, source provenance and signed receipt. Publisher word/POS and assistant editorial suggestions are NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "seat",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A place where one person can sit.",
+        "myanmar_meaning": "ထိုင်ခုံ၊ ထိုင်ရန်နေရာ",
+        "example_sentence": "She offered her seat to an older passenger."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 835,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1591,
+        "source_excerpt": "seat n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Place for one person to sit, not parliamentary or institutional seat.",
+      "independent_reviewer_task": "Human-independent reviewer must verify exact-sense CEFR, English, fluent Myanmar, example grammar, British pronunciation, source provenance and signed receipt. Publisher word/POS and assistant editorial suggestions are NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "memory",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Something that you remember from the past.",
+        "myanmar_meaning": "အတိတ်မှ မှတ်မိနေသော အကြောင်းအရာ",
+        "example_sentence": "My first day at school is a happy memory."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 836,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1392,
+        "source_excerpt": "memory n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Countable remembered experience sense 3, not ability to remember or computer memory.",
+      "independent_reviewer_task": "Human-independent reviewer must verify exact-sense CEFR, English, fluent Myanmar, example grammar, British pronunciation, source provenance and signed receipt. Publisher word/POS and assistant editorial suggestions are NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/memory",
+        "sense_number": 3,
+        "page_text_line_start": 170,
+        "page_text_line_end": 182,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "Countable recollection of a past event; not general memory capacity or computer storage."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "အတိတ်က အဖြစ်အပျက်တစ်ခုကို မှတ်မိနေသည့် အမှတ်တရ",
+        "original_example": "Our first school trip remains a happy memory.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "ring",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A circular piece of jewellery worn on a finger.",
+        "myanmar_meaning": "လက်စွပ်",
+        "example_sentence": "He bought a silver ring for his sister."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 837,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1561,
+        "source_excerpt": "ring1 n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Jewellery noun ring1; explicitly exclude ring2 verb meaning telephone or make a sound.",
+      "independent_reviewer_task": "Human-independent reviewer must verify exact-sense CEFR, English, fluent Myanmar, example grammar, British pronunciation, source provenance and signed receipt. Publisher word/POS and assistant editorial suggestions are NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "rise",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To increase in amount, level or number.",
+        "myanmar_meaning": "ပမာဏ၊ အဆင့် သို့မဟုတ် အရေအတွက် တိုးလာသည်",
+        "example_sentence": "Food prices may rise during the holiday."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 838,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1563,
+        "source_excerpt": "rise v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Intransitive increase in price or level; do not use transitive raise.",
+      "independent_reviewer_task": "Human-independent reviewer must verify exact-sense CEFR, English, fluent Myanmar, example grammar, British pronunciation, source provenance and signed receipt. Publisher word/POS and assistant editorial suggestions are NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "silver",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A shiny grey-white metal used to make jewellery.",
+        "myanmar_meaning": "ငွေသတ္တု",
+        "example_sentence": "The artist made the necklace from silver."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 839,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1614,
+        "source_excerpt": "silver n., adj.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Uncountable silver metal, not silver medal or adjective colour.",
+      "independent_reviewer_task": "Human-independent reviewer must verify exact-sense CEFR, English, fluent Myanmar, example grammar, British pronunciation, source provenance and signed receipt. Publisher word/POS and assistant editorial suggestions are NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "spread",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To move or extend over a wider area.",
+        "myanmar_meaning": "ဧရိယာပိုမိုကျယ်ပြန့်စွာ ပျံ့နှံ့သည်",
+        "example_sentence": "The fire began to spread across the dry grass."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 840,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 9,
+        "extracted_line": 2459,
+        "source_excerpt": "spread v.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Intransitive expansion of fire across an area; not spreading butter or news.",
+      "independent_reviewer_task": "Human-independent reviewer must verify exact-sense CEFR, English, fluent Myanmar, example grammar, British pronunciation, source provenance and signed receipt. Publisher word/POS and assistant editorial suggestions are NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "adult",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A person who is fully grown.",
+        "myanmar_meaning": "အရွယ်ရောက်ပြီးသူ",
+        "example_sentence": "Every adult attending the workshop needs a ticket."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 841,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 1,
+        "extracted_line": 14,
+        "source_excerpt": "adult n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Fully grown person noun, not adult adjective (listed separately A2).",
+      "independent_reviewer_task": "Human-independent reviewer must verify exact-sense CEFR, English, fluent Myanmar, example grammar, British pronunciation, source provenance and signed receipt. Publisher word/POS and assistant editorial suggestions are NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "artist",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A person who creates paintings, drawings or other art.",
+        "myanmar_meaning": "အနုပညာလက်ရာများ ဖန်တီးသူ",
+        "example_sentence": "The artist painted a picture of the market."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 842,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 1,
+        "extracted_line": 47,
+        "source_excerpt": "artist n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Creator of art, not performer in an unrelated sense.",
+      "independent_reviewer_task": "Human-independent reviewer must verify exact-sense CEFR, English, fluent Myanmar, example grammar, British pronunciation, source provenance and signed receipt. Publisher word/POS and assistant editorial suggestions are NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "edition",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A particular version of a book or publication.",
+        "myanmar_meaning": "စာအုပ် သို့မဟုတ် ထုတ်ဝေမှု၏ မူကွဲတစ်ခု",
+        "example_sentence": "This edition includes a new chapter on travel."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 843,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 11,
+        "extracted_line": 2807,
+        "source_excerpt": "edition n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Version of a publication, not a printing run or newspaper issue without sense check.",
+      "independent_reviewer_task": "Human-independent reviewer must verify exact-sense CEFR, English, fluent Myanmar, example grammar, British pronunciation, source provenance and signed receipt. Publisher word/POS and assistant editorial suggestions are NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "apparently",
+      "level": "B1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "According to what seems true or what people have said.",
+        "myanmar_meaning": "ကြားသိရသည့်အရ၊ ထင်ရသလောက်",
+        "example_sentence": "Apparently, the meeting has been moved to Friday."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 884,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 10,
+        "extracted_line": 2626,
+        "source_excerpt": "apparently adv.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Reportedly/seemingly rather than an unqualified statement of certainty.",
+      "independent_reviewer_task": "Human-independent reviewer must verify exact-sense CEFR, English, fluent Myanmar, example grammar, British pronunciation, source provenance and signed receipt. Publisher word/POS and assistant editorial suggestions are NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "prison",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A building where people are kept as punishment for crimes.",
+        "myanmar_meaning": "ပြစ်ဒဏ်ကျခံသူများကို ထိန်းသိမ်းထားသော အကျဉ်းထောင်",
+        "example_sentence": "He worked as a teacher in a prison."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 887,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1498,
+        "source_excerpt": "prison n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Institution/building, not metaphorical confinement.",
+      "independent_reviewer_task": "Human-independent reviewer must verify exact-sense CEFR, English, fluent Myanmar, example grammar, British pronunciation, source provenance and signed receipt. Publisher word/POS and assistant editorial suggestions are NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "handle",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To deal with a difficult situation or task.",
+        "myanmar_meaning": "ခက်ခဲသော အခြေအနေ သို့မဟုတ် တာဝန်ကို ကိုင်တွယ်ဖြေရှင်းသည်",
+        "example_sentence": "She can handle customer complaints calmly."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 888,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 11,
+        "extracted_line": 2898,
+        "source_excerpt": "handle v., n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Verb transitive deal with difficult situations sense 1; not handle noun for a door.",
+      "independent_reviewer_task": "Human-independent reviewer must verify exact-sense CEFR, English, fluent Myanmar, example grammar, British pronunciation, source provenance and signed receipt. Publisher word/POS and assistant editorial suggestions are NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/handle_1",
+        "sense_number": 1,
+        "page_text_line_start": 110,
+        "page_text_line_end": 125,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "Transitive verb meaning deal with a situation or task; separate from physical touching and noun handle."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ခက်ခဲသော အခြေအနေ၊ တာဝန် သို့မဟုတ် ပြဿနာတစ်ခုကို ကိုင်တွယ်ဖြေရှင်းသည်",
+        "original_example": "She handled the customer complaint with patience.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "produce",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To make or create something.",
+        "myanmar_meaning": "ထုတ်လုပ်သည်၊ ဖန်တီးသည်",
+        "example_sentence": "The factory can produce hundreds of boxes a day."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 889,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1501,
+        "source_excerpt": "produce v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Verb make/manufacture, not noun agricultural produce.",
+      "independent_reviewer_task": "Human-independent reviewer must verify exact-sense CEFR, English, fluent Myanmar, example grammar, British pronunciation, source provenance and signed receipt. Publisher word/POS and assistant editorial suggestions are NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "leadership",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The ability or activity of guiding a group.",
+        "myanmar_meaning": "အဖွဲ့တစ်ဖွဲ့ကို ဦးဆောင်လမ်းညွှန်နိုင်မှု",
+        "example_sentence": "Her leadership helped the team finish on time."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 890,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 11,
+        "extracted_line": 2969,
+        "source_excerpt": "leadership n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Uncountable ability/qualities sense 2, not leader position sense 1 or leadership group sense 3.",
+      "independent_reviewer_task": "Human-independent reviewer must verify exact-sense CEFR, English, fluent Myanmar, example grammar, British pronunciation, source provenance and signed receipt. Publisher word/POS and assistant editorial suggestions are NOT independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/leadership",
+        "sense_number": 2,
+        "page_text_line_start": 151,
+        "page_text_line_end": 173,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "Uncountable ability or qualities of a good leader; separate from position and group senses."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "အဖွဲ့တစ်ဖွဲ့ကို ထိရောက်စွာ ဦးဆောင်နိုင်သည့် စွမ်းရည်နှင့် အရည်အချင်းများ",
+        "original_example": "Her calm leadership helped the team solve the problem.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    }
+  ]
+}
