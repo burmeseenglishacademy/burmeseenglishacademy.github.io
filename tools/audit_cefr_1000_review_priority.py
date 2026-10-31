@@ -175,7 +175,7 @@ def self_test(report):
 
 def validate(report):
     rows = report["review_tasks"]
-    require(len(rows) == 500 and len({r["word"] for r in rows}) == 500,
+    require(len(rows) == 1000 and len({r["word"] for r in rows}) == 1000,
             "Review queue must contain 1,000 distinct headwords")
     require(report["publisher_word_pos_observed_distinct"] == 995
             and report["publisher_word_pos_not_observed"] == 5
