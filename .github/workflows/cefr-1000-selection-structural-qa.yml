@@ -206,6 +206,8 @@ on:
       - tools/audit_cefr_1000_cambridge_c1_nine_indexed.py
       - draft/CEFR-1000-CAMBRIDGE-C1-TWELVE-INDEXED-LEXICAL-SENSE-TRIAGE-2026-10-31.json
       - tools/audit_cefr_1000_cambridge_c1_twelve_lexical.py
+      - draft/CEFR-1000-CAMBRIDGE-C1-ELEVEN-INDEXED-EXACT-SENSE-RISKS-2026-10-31.json
+      - tools/audit_cefr_1000_cambridge_c1_eleven_exact_sense.py
   workflow_dispatch:
 permissions:
   contents: read
@@ -723,6 +725,11 @@ jobs:
       - name: Reject 271 forged C1 lexical publisher, Myanmar, provenance and signoff mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_cambridge_c1_twelve_lexical.py --level ALL --self-test
+      - name: Audit eleven C1 indexed exact-sense and publisher C2 mismatch risks (hold)
+        run: python3 tools/audit_cefr_1000_cambridge_c1_eleven_exact_sense.py --level "${{ matrix.level }}"
+      - name: Reject forged C1 sense, bilingual, source and reviewer receipts
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_cambridge_c1_eleven_exact_sense.py --level ALL --self-test
       - name: Save structural QA record (not linguistic verification)
         uses: actions/upload-artifact@v4
         with:
