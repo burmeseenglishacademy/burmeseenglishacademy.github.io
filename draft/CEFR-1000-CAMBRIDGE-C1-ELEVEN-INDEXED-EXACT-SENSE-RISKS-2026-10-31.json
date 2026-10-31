@@ -1,0 +1,418 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "C1_ELEVEN_CAMBRIDGE_INDEXED_EXACT_SENSE_AND_CEFR_RISK_EDITORIAL_HOLD",
+  "observed_on": "2026-10-31",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 11,
+  "first_pass_written_by_level": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "independently_approved_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "observed_indexed_cefr_badges": {
+    "C1": 2,
+    "C2": 4,
+    "unlabelled": 5
+  },
+  "source_access_limitations": "Cambridge publisher lexical material was observed in public search-index extracts on 2026-10-31; direct dictionary page requests sampled returned HTTP 403. Index labels reflect the displayed sense, not an independently approved C1 placement. Absence of a badge in an extract does not establish that the publisher has no badge. Source summaries are independently phrased, not publisher quotes. This packet is NOT an independent human review receipt or release evidence.",
+  "release_approved": false,
+  "independent_human_review_receipts": [],
+  "audio_listening_receipts": [],
+  "records": [
+    {
+      "word": "custody",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The legal responsibility for caring for a child or keeping someone detained.",
+        "myanmar_meaning": "အုပ်ထိန်းခွင့်၊ တရားဝင်ထိန်းသိမ်းထားမှု",
+        "example_sentence": "The court reviewed the arrangements for the child's custody."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 334,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/custody",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_EXTRACT_DIRECT_PAGE_REQUESTS_RETURNED_HTTP_403",
+        "evidence_scope": "PUBLISHER_LEXICAL_SENSE_LEAD_NOT_HUMAN_INDEPENDENT_REVIEW",
+        "cefr_badge_visible_in_extract": "C2",
+        "source_summary": "CARE and PRISON separately labelled C2; uncountable noun; draft merges two legally distinct senses",
+        "sense_tag": "CARE"
+      },
+      "editorial_risk": "TWO_DISTINCT_SENSES_COLLAPSED",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "ကလေးတစ်ဦးကို ဥပဒေအရ အုပ်ထိန်းစောင့်ရှောက်ခွင့်",
+        "original_example": "The judge awarded custody of the child to her father.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "fluid",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A substance that can flow, such as a liquid or gas.",
+        "myanmar_meaning": "စီးဆင်းနိုင်သော အရည် သို့မဟုတ် ဓာတ်ငွေ့",
+        "example_sentence": "The mechanic checked the brake fluid."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 410,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/fluid",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_EXTRACT_DIRECT_PAGE_REQUESTS_RETURNED_HTTP_403",
+        "evidence_scope": "PUBLISHER_LEXICAL_SENSE_LEAD_NOT_HUMAN_INDEPENDENT_REVIEW",
+        "cefr_badge_visible_in_extract": "C2",
+        "source_summary": "Noun C2, countable or uncountable; flows and is not solid; distinguish liquid substance from adjective meaning flexible",
+        "sense_tag": "FLOWING_SUBSTANCE"
+      },
+      "editorial_risk": "PUBLISHER_HIGHER_C2_NOUN",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "စီးဆင်းနိုင်သော အရည် သို့မဟုတ် အခြားဒြပ်ပစ္စည်း",
+        "original_example": "The technician replaced the leaking hydraulic fluid.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "diagnosis",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The identification of an illness or problem through examination.",
+        "myanmar_meaning": "ရောဂါ သို့မဟုတ် ပြဿနာကို စစ်ဆေးဖော်ထုတ်သတ်မှတ်ခြင်း",
+        "example_sentence": "An early diagnosis can help doctors plan treatment."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 418,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/diagnosis",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_EXTRACT_DIRECT_PAGE_REQUESTS_RETURNED_HTTP_403",
+        "evidence_scope": "PUBLISHER_LEXICAL_SENSE_LEAD_NOT_HUMAN_INDEPENDENT_REVIEW",
+        "cefr_badge_visible_in_extract": "C2",
+        "source_summary": "Noun C2, countable or uncountable, plural diagnoses; medical or problem identification following examination",
+        "sense_tag": "IDENTIFICATION"
+      },
+      "editorial_risk": "PUBLISHER_HIGHER_C2_IRREGULAR_PLURAL",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "ရောဂါ သို့မဟုတ် ပြဿနာ၏ အကြောင်းရင်းကို စစ်ဆေးသတ်မှတ်ချက်",
+        "original_example": "The specialist confirmed the diagnosis after further tests.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "interpretation",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A particular explanation of the meaning of something.",
+        "myanmar_meaning": "အဓိပ္ပါယ်ဖွင့်ဆိုချက်၊ အနက်ကောက်ယူမှု",
+        "example_sentence": "Her interpretation of the data differed from the manager's."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 331,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/interpretation",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_EXTRACT_DIRECT_PAGE_REQUESTS_RETURNED_HTTP_403",
+        "evidence_scope": "PUBLISHER_LEXICAL_SENSE_LEAD_NOT_HUMAN_INDEPENDENT_REVIEW",
+        "cefr_badge_visible_in_extract": "C2",
+        "source_summary": "Explanation/opinion sense C2, countable or uncountable; separate from artistic performance sense also C2",
+        "sense_tag": "EXPLANATION"
+      },
+      "editorial_risk": "PUBLISHER_HIGHER_C2_SENSE_DISAMBIGUATION",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "အချက်အလက်တစ်ခု၏ အဓိပ္ပာယ်ကို အနက်ဖွင့်ဆိုချက်",
+        "original_example": "Two analysts offered different interpretations of the survey results.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "excess",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An amount that is greater than what is needed or allowed.",
+        "myanmar_meaning": "ပိုလျှံသောပမာဏ၊ လိုအပ်သည်ထက်ပိုမှု",
+        "example_sentence": "The factory recycled the excess material after production."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 335,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/excess",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_EXTRACT_DIRECT_PAGE_REQUESTS_RETURNED_HTTP_403",
+        "evidence_scope": "PUBLISHER_LEXICAL_SENSE_LEAD_NOT_HUMAN_INDEPENDENT_REVIEW",
+        "cefr_badge_visible_in_extract": "C1",
+        "source_summary": "Noun TOO MUCH sense C1; shortlist example 'excess material' uses adjective excess, a distinct POS also C1",
+        "sense_tag": "TOO_MUCH_NOUN"
+      },
+      "editorial_risk": "NOUN_DEFINITION_ADJECTIVE_EXAMPLE_MISMATCH",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "လိုအပ်သည်ထက် ပိုလျှံနေသော ပမာဏ",
+        "original_example": "The warehouse had an excess of packaging material after the order was cancelled.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "privilege",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A special right or advantage available to a particular person or group.",
+        "myanmar_meaning": "အထူးအခွင့်အရေး၊ အထူးခံစားခွင့်",
+        "example_sentence": "Access to the private library is a privilege for members."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 415,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/privilege",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_EXTRACT_DIRECT_PAGE_REQUESTS_RETURNED_HTTP_403",
+        "evidence_scope": "PUBLISHER_LEXICAL_SENSE_LEAD_NOT_HUMAN_INDEPENDENT_REVIEW",
+        "cefr_badge_visible_in_extract": "C1",
+        "source_summary": "Noun C1 special advantage; also C1 special opportunity; distinguish social advantage from legal privilege",
+        "sense_tag": "SPECIAL_ADVANTAGE"
+      },
+      "editorial_risk": "ADVANTAGE_VS_OPPORTUNITY_VS_LEGAL_PRIVILEGE",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "လူတစ်ဦး သို့မဟုတ် အုပ်စုတစ်စုအတွက်သာ ရရှိနိုင်သော အထူးအခွင့်အရေး",
+        "original_example": "Members have the privilege of using the private reading room.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "charter",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A formal written document that sets out an organisation's rights or aims.",
+        "myanmar_meaning": "ပဋိညာဉ်စာတမ်း၊ ဖွဲ့စည်းပုံစာတမ်း",
+        "example_sentence": "The members approved a new charter for the association."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 270,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/charter",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_EXTRACT_DIRECT_PAGE_REQUESTS_RETURNED_HTTP_403",
+        "evidence_scope": "PUBLISHER_LEXICAL_SENSE_LEAD_NOT_HUMAN_INDEPENDENT_REVIEW",
+        "cefr_badge_visible_in_extract": null,
+        "source_summary": "Noun formal rights document; separately uncountable vehicle hire; no CEFR badge visible in observed index extract",
+        "sense_tag": "OFFICIAL_DOCUMENT"
+      },
+      "editorial_risk": "DOCUMENT_VS_VEHICLE_HIRE_UNLABELLED",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "အဖွဲ့အစည်း၏ အခွင့်အရေးနှင့် ရည်ရွယ်ချက်များကို ဖော်ပြထားသော တရားဝင်စာတမ်း",
+        "original_example": "The association adopted a charter outlining its members' rights.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "operational",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Connected with the practical activities needed to run an organisation or system.",
+        "myanmar_meaning": "လုပ်ငန်းလည်ပတ်မှုဆိုင်ရာ",
+        "example_sentence": "The new schedule reduced operational delays at the warehouse."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 336,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/operational",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_EXTRACT_DIRECT_PAGE_REQUESTS_RETURNED_HTTP_403",
+        "evidence_scope": "PUBLISHER_LEXICAL_SENSE_LEAD_NOT_HUMAN_INDEPENDENT_REVIEW",
+        "cefr_badge_visible_in_extract": null,
+        "source_summary": "Adjective related to activities; distinct predicate sense 'fully operational' means working; no CEFR badge visible in observed extract",
+        "sense_tag": "ACTIVITY_RELATED"
+      },
+      "editorial_risk": "ACTIVITY_VS_WORKING_STATE_UNLABELLED",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "လုပ်ငန်း၏ နေ့စဉ်လည်ပတ်ဆောင်ရွက်မှုနှင့် သက်ဆိုင်သော",
+        "original_example": "The new schedule reduced operational delays at the warehouse.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "copyright",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The legal right to control how an original creative work is copied or used.",
+        "myanmar_meaning": "မူပိုင်ခွင့်",
+        "example_sentence": "The publisher owns the copyright to the illustrations."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 112,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/copyright",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_EXTRACT_DIRECT_PAGE_REQUESTS_RETURNED_HTTP_403",
+        "evidence_scope": "PUBLISHER_LEXICAL_SENSE_LEAD_NOT_HUMAN_INDEPENDENT_REVIEW",
+        "cefr_badge_visible_in_extract": null,
+        "source_summary": "Noun legal control of creative work; countable/uncountable; separate copyright adjective and verb; no CEFR badge observed",
+        "sense_tag": "LEGAL_RIGHT_NOUN"
+      },
+      "editorial_risk": "LEGAL_RIGHT_VS_VERB_UNLABELLED",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "ဖန်တီးထားသော စာပေ၊ အနုပညာလက်ရာ စသည်တို့ကို အသုံးပြုခွင့်အား ဥပဒေအရ ထိန်းချုပ်နိုင်သည့် မူပိုင်ခွင့်",
+        "original_example": "The photographer retained copyright in the photographs.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "asset",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Something valuable or useful that a person or organisation owns or has.",
+        "myanmar_meaning": "ပိုင်ဆိုင်မှု၊ တန်ဖိုးရှိသောအရာ",
+        "example_sentence": "Reliable staff are an important asset to the company."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 267,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/asset",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_EXTRACT_DIRECT_PAGE_REQUESTS_RETURNED_HTTP_403",
+        "evidence_scope": "PUBLISHER_LEXICAL_SENSE_LEAD_NOT_HUMAN_INDEPENDENT_REVIEW",
+        "cefr_badge_visible_in_extract": null,
+        "source_summary": "Cambridge business sense owned property versus useful quality/person; shortlist example uses useful-person sense, not literal owned-property sense; no CEFR badge observed",
+        "sense_tag": "USEFUL_QUALITY"
+      },
+      "editorial_risk": "DEFINITION_EXAMPLE_FINANCIAL_VS_PERSONAL_ASSET",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "အဖွဲ့အစည်းတစ်ခုအတွက် အကျိုးရှိသော လူ၊ ကျွမ်းကျင်မှု သို့မဟုတ် အရင်းအမြစ်",
+        "original_example": "Her knowledge of the local market is an asset to the team.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "regulatory",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Related to official rules that control an activity or industry.",
+        "myanmar_meaning": "စည်းမျဉ်းစည်းကမ်းထိန်းကြပ်ရေးဆိုင်ရာ",
+        "example_sentence": "The company must meet regulatory requirements."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 281,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/regulatory",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_EXTRACT_DIRECT_PAGE_REQUESTS_RETURNED_HTTP_403",
+        "evidence_scope": "PUBLISHER_LEXICAL_SENSE_LEAD_NOT_HUMAN_INDEPENDENT_REVIEW",
+        "cefr_badge_visible_in_extract": null,
+        "source_summary": "Adjective relating to oversight and official rules, distinct from statutory; business-dictionary indexed extract; no CEFR badge observed",
+        "sense_tag": "OVERSIGHT_ADJECTIVE"
+      },
+      "editorial_risk": "REGULATION_VS_STATUTORY_UNLABELLED",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "လုပ်ငန်းတစ်ခု စည်းမျဉ်းဥပဒေများနှင့် ကိုက်ညီမှုရှိစေရန် ထိန်းကြပ်ခြင်းနှင့် သက်ဆိုင်သော",
+        "original_example": "The manufacturer updated its procedures to meet regulatory requirements.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
