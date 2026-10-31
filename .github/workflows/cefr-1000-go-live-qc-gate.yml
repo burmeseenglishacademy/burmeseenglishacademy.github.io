@@ -192,6 +192,8 @@ on:
       - tools/audit_cefr_1000_oxford_b2_fourteenth_twelve.py
       - draft/CEFR-1000-OXFORD-B2-FIFTEENTH-TWELVE-AND-FOUR-DICTIONARY-SENSE-LEADS-2026-10-31.json
       - tools/audit_cefr_1000_oxford_b2_fifteenth_twelve.py
+      - draft/CEFR-1000-OXFORD-B2-SIXTEENTH-FINAL-TEN-AND-FIVE-DIRECT-SENSE-LEADS-2026-10-31.json
+      - tools/audit_cefr_1000_oxford_b2_sixteenth_ten.py
       - draft/CEFR-1000-CAMBRIDGE-C1-NINE-INDEXED-SENSE-AND-POS-TRIAGE-2026-10-31.json
       - tools/audit_cefr_1000_cambridge_c1_nine_indexed.py
       - draft/CEFR-1000-CAMBRIDGE-C1-TWELVE-INDEXED-LEXICAL-SENSE-TRIAGE-2026-10-31.json
@@ -326,6 +328,8 @@ jobs:
         run: python3 tools/audit_cefr_1000_oxford_b2_fourteenth_twelve.py --level ALL --self-test
       - name: Audit B2 fifteenth Oxford evidence and reject 220 forged signoffs (report only)
         run: python3 tools/audit_cefr_1000_oxford_b2_fifteenth_twelve.py --level ALL --self-test
+      - name: Audit final B2 ten Oxford observations and reject 194 forged signoffs (report only)
+        run: python3 tools/audit_cefr_1000_oxford_b2_sixteenth_ten.py --level ALL --self-test
       - name: Audit A2 fourteenth Oxford evidence and reject 184 false signoffs
         run: python3 tools/audit_cefr_1000_oxford_a2_fourteenth_twelve.py --level ALL --self-test
       - name: Audit nine indexed C1 Cambridge leads and reject forged independent approvals (report only)
