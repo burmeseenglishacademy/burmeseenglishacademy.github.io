@@ -1,0 +1,480 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A2_FIFTEENTH_TWELVE_DIRECT_OXFORD_WORD_POS_FOUR_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-31",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 12,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 6,
+    "A2": 6,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "word_pos_discrepancies": 6,
+  "direct_dictionary_sense_leads": 4,
+  "independently_approved_count": 0,
+  "source_limitations": "Direct Oxford 3000 CEFR PDF word/POS and four Oxford dictionary pages inspected 2026-10-31; word/POS evidence is not independent exact-sense CEFR approval. Oxford dictionary Word of the Day footer must never be treated as the entry's CEFR badge. Original fine weather example mismatches acceptable sense; couple of friends can mean a small number. All Myanmar/example proposals unapproved. No human-independent review, George/Emma audio listening, physical iPhone Safari, measured GitHub Pages hosting or production deployment.",
+  "records": [
+    {
+      "word": "similar",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Almost the same as something else, but not identical.",
+        "myanmar_meaning": "ဆင်တူသော၊ တူညီလုနီးပါးဖြစ်သော",
+        "example_sentence": "The two bags look similar, but one is smaller."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 831,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 3,
+        "extracted_line": 697,
+        "source_excerpt": "similar adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Almost the same, not identical; do not equate with exactly the same.",
+      "independent_reviewer_task": "Human-independent reviewer must check publisher exact-sense CEFR, English definition, fluent Myanmar, original example grammar, British pronunciation, provenance and signed receipt. Assistant research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "common",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Happening often or found in many places.",
+        "myanmar_meaning": "အများအားဖြင့် တွေ့ရသော၊ ဖြစ်လေ့ရှိသော",
+        "example_sentence": "Heavy rain is common here in November."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 832,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 1,
+        "extracted_line": 164,
+        "source_excerpt": "common adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Frequently found or occurring; not 'shared by two people' or ordinary in status.",
+      "independent_reviewer_task": "Human-independent reviewer must check publisher exact-sense CEFR, English definition, fluent Myanmar, original example grammar, British pronunciation, provenance and signed receipt. Assistant research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "likely",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Expected to happen or probably true.",
+        "myanmar_meaning": "ဖြစ်နိုင်ခြေများသော",
+        "example_sentence": "It is likely to rain before evening."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 833,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 5,
+        "extracted_line": 1362,
+        "source_excerpt": "likely adj.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Probability predicate; check 'be likely to + infinitive' and 'it is likely that' patterns.",
+      "independent_reviewer_task": "Human-independent reviewer must check publisher exact-sense CEFR, English definition, fluent Myanmar, original example grammar, British pronunciation, provenance and signed receipt. Assistant research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "fine",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Good enough or acceptable in quality.",
+        "myanmar_meaning": "အဆင်ပြေသော၊ လက်ခံနိုင်လောက်သော",
+        "example_sentence": "The weather was fine for our picnic."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 864,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 2,
+        "extracted_line": 290,
+        "source_excerpt": "fine adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft defines acceptable/good enough, but its weather example selects a different weather-quality sense.",
+      "independent_reviewer_task": "Human-independent reviewer must check publisher exact-sense CEFR, English definition, fluent Myanmar, original example grammar, British pronunciation, provenance and signed receipt. Assistant research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/fine_1",
+        "sense_number": 3,
+        "page_text_line_start": 178,
+        "page_text_line_end": 185,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "Oxford sense 3 concerns a decision or action being acceptable; the draft's weather example instead invokes good weather and fails exact-sense alignment."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "လက်ခံနိုင်သော၊ အဆင်ပြေသော",
+        "original_example": "The suggested meeting time is fine with everyone.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "couple",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Two people or things considered together.",
+        "myanmar_meaning": "လူနှစ်ဦး သို့မဟုတ် အရာနှစ်ခုတွဲ",
+        "example_sentence": "A couple of friends helped us move the table."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 865,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 4,
+        "extracted_line": 1088,
+        "source_excerpt": "couple n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A couple of friends may mean two or a small number, unlike a romantic couple; avoid hard two-only assumption.",
+      "independent_reviewer_task": "Human-independent reviewer must check publisher exact-sense CEFR, English definition, fluent Myanmar, original example grammar, British pronunciation, provenance and signed receipt. Assistant research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/couple_1",
+        "sense_number": 2,
+        "page_text_line_start": 103,
+        "page_text_line_end": 126,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "A couple of friends can mean a small number, not strictly two; contrast literal pair and romantic couple meanings. British singular/plural agreement also needs checking."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "လူ သို့မဟုတ် အရာ နှစ်ဦး/နှစ်ခု၊ တစ်ခါတစ်ရံ အနည်းငယ်",
+        "original_example": "A couple of volunteers stayed behind to tidy the hall.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "online",
+      "level": "A2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Using the internet rather than meeting in person.",
+        "myanmar_meaning": "အင်တာနက်မှတစ်ဆင့်",
+        "example_sentence": "She applied for the course online."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 866,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 3,
+        "extracted_line": 552,
+        "source_excerpt": "online adj., adv.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft requires adverbial internet-use meaning, not adjective online services or 'system operational'.",
+      "independent_reviewer_task": "Human-independent reviewer must check publisher exact-sense CEFR, English definition, fluent Myanmar, original example grammar, British pronunciation, provenance and signed receipt. Assistant research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/online_2",
+        "sense_number": 1,
+        "page_text_line_start": 88,
+        "page_text_line_end": 119,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "Adverb of doing an activity via the internet; separate adjective online services and the adverbial operational-state sense."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "အင်တာနက်မှတစ်ဆင့်",
+        "original_example": "You can submit the application online.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "return",
+      "level": "A2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To come or go back to a place.",
+        "myanmar_meaning": "ပြန်လာသည်၊ ပြန်သွားသည်",
+        "example_sentence": "Please return to the office before five."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 867,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 3,
+        "extracted_line": 651,
+        "source_excerpt": "return v., n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Movement back to a place, not returning goods or financial return.",
+      "independent_reviewer_task": "Human-independent reviewer must check publisher exact-sense CEFR, English definition, fluent Myanmar, original example grammar, British pronunciation, provenance and signed receipt. Assistant research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "wish",
+      "level": "A2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To want something to happen, especially something unlikely.",
+        "myanmar_meaning": "ဖြစ်စေချင်သည်၊ ဆန္ဒရှိသည်",
+        "example_sentence": "I wish I could visit my grandparents this weekend."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 868,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 7,
+        "extracted_line": 1769,
+        "source_excerpt": "wish v., n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Unreal/uncertain wish + past modal 'could'; do not confuse with formal 'wish to' or birthday greetings.",
+      "independent_reviewer_task": "Human-independent reviewer must check publisher exact-sense CEFR, English definition, fluent Myanmar, original example grammar, British pronunciation, provenance and signed receipt. Assistant research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/wish_1",
+        "sense_number": 1,
+        "page_text_line_start": 114,
+        "page_text_line_end": 129,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "Unreal or unlikely desired state followed by past form or could; distinguish formal wish to do and wish somebody luck."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ဖြစ်လာစေချင်သော်လည်း လက်တွေ့တွင် မဖြစ်နိုင်သေးသော အရာကို ဆန္ဒရှိသည်",
+        "original_example": "I wish I had more time to practise English.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "finally",
+      "level": "A2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "After a long time or several attempts.",
+        "myanmar_meaning": "နောက်ဆုံးတွင်၊ အချိန်ကြာပြီးနောက်",
+        "example_sentence": "We finally found the right bus stop."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 869,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 5,
+        "extracted_line": 1213,
+        "source_excerpt": "finally adv.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "After waiting/effort, not merely introducing the last point in a list.",
+      "independent_reviewer_task": "Human-independent reviewer must check publisher exact-sense CEFR, English definition, fluent Myanmar, original example grammar, British pronunciation, provenance and signed receipt. Assistant research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "guess",
+      "level": "A2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To give an answer without knowing all the facts.",
+        "myanmar_meaning": "ခန့်မှန်းဖြေသည်",
+        "example_sentence": "Can you guess how many books are on the shelf?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 870,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 2,
+        "extracted_line": 342,
+        "source_excerpt": "guess v., n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Verb making an answer without full facts; noun and speculative certainty must remain distinct.",
+      "independent_reviewer_task": "Human-independent reviewer must check publisher exact-sense CEFR, English definition, fluent Myanmar, original example grammar, British pronunciation, provenance and signed receipt. Assistant research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "gold",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A valuable yellow metal used in jewellery.",
+        "myanmar_meaning": "လက်ဝတ်ရတနာပြုလုပ်ရာတွင် သုံးသော ရွှေ",
+        "example_sentence": "Her ring is made of gold."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 871,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 5,
+        "extracted_line": 1250,
+        "source_excerpt": "gold n., adj.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Material noun gold used for jewellery; not the adjective 'gold' or colour alone.",
+      "independent_reviewer_task": "Human-independent reviewer must check publisher exact-sense CEFR, English definition, fluent Myanmar, original example grammar, British pronunciation, provenance and signed receipt. Assistant research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "middle",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The central part of something.",
+        "myanmar_meaning": "အလယ်ပိုင်း",
+        "example_sentence": "The children sat in the middle of the room."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 872,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1396,
+        "source_excerpt": "middle n., adj.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Central part noun, not the adjective in 'middle school'.",
+      "independent_reviewer_task": "Human-independent reviewer must check publisher exact-sense CEFR, English definition, fluent Myanmar, original example grammar, British pronunciation, provenance and signed receipt. Assistant research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
