@@ -204,6 +204,8 @@ on:
       - tools/audit_cefr_1000_oxford_b2_thirteenth_twelve.py
       - draft/CEFR-1000-CAMBRIDGE-C1-NINE-INDEXED-SENSE-AND-POS-TRIAGE-2026-10-31.json
       - tools/audit_cefr_1000_cambridge_c1_nine_indexed.py
+      - draft/CEFR-1000-CAMBRIDGE-C1-TWELVE-INDEXED-LEXICAL-SENSE-TRIAGE-2026-10-31.json
+      - tools/audit_cefr_1000_cambridge_c1_twelve_lexical.py
   workflow_dispatch:
 permissions:
   contents: read
@@ -716,6 +718,11 @@ jobs:
       - name: Reject 149 forged C1 indexed source, Myanmar, POS and reviewer mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_cambridge_c1_nine_indexed.py --level ALL --self-test
+      - name: Audit twelve C1 Cambridge indexed lexical senses (no CEFR badge observed; hold)
+        run: python3 tools/audit_cefr_1000_cambridge_c1_twelve_lexical.py --level "${{ matrix.level }}"
+      - name: Reject 271 forged C1 lexical publisher, Myanmar, provenance and signoff mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_cambridge_c1_twelve_lexical.py --level ALL --self-test
       - name: Save structural QA record (not linguistic verification)
         uses: actions/upload-artifact@v4
         with:
