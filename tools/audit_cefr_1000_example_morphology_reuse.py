@@ -369,8 +369,10 @@ def audit(packet, shortlist, check_disk=True):
                 and row["part_of_speech"] == source["part_of_speech"]
                 and row["shortlist_index"] == index,
                 "Example source row mismatch")
-        require(row["shortlist_snapshot"] == {k:source[k] for k in
-                    ("english_definition", "myanmar_meaning", "example_sentence")},
+        require(row["shortlist_snapshot"] == {
+                    "english_definition": source["english_definition"],
+                    "myanmar_meaning": source["burmese_meaning"],
+                    "example_sentence": source["example_sentence"]},
                 "Original English/Myanmar/example changed")
         require(row["shortlist_provenance"] == {k:source[k] for k in
                     ("source_path", "source_index", "source_blob_sha")},
