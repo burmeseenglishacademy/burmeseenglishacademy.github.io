@@ -1,0 +1,480 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B1_THIRTEENTH_TWELVE_DIRECT_OXFORD_WORD_POS_FOUR_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-31",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 12,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 2,
+    "A2": 7,
+    "B1": 3,
+    "B2": 0,
+    "C1": 0
+  },
+  "word_pos_discrepancies": 9,
+  "direct_dictionary_sense_leads": 4,
+  "independently_approved_count": 0,
+  "source_limitations": "Official Oxford 3000 by CEFR level PDF directly inspected 2026-10-31. Word/POS observations and four direct Oxford dictionary sense leads are not independent exact-sense CEFR approval. The publisher's topic badges are not word-level CEFR ratings. Myanmar/example proposals are self-authored, unapproved and require independent human review. No audio listening, browser/mobile/physical iPhone, hosting or production deployment verification.",
+  "records": [
+    {
+      "word": "village",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A small community in the countryside.",
+        "myanmar_meaning": "ကျေးရွာ",
+        "example_sentence": "The village is surrounded by green hills."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 692,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 4,
+        "extracted_line": 849,
+        "source_excerpt": "village n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Small rural settlement versus broader local community; current village example is geographical, not administrative.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR applicability, original English definition, fluent Myanmar translation, original-example grammar, British pronunciation, and source/provenance; word/POS evidence is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "apply",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To formally ask for a job, place, or opportunity.",
+        "myanmar_meaning": "လျှောက်ထားသည်",
+        "example_sentence": "You can apply for the course online."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 693,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 4,
+        "extracted_line": 952,
+        "source_excerpt": "apply v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Formal application for course/job; distinguish apply for, apply to and apply a method.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR applicability, original English definition, fluent Myanmar translation, original-example grammar, British pronunciation, and source/provenance; word/POS evidence is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/apply",
+        "sense_number": 1,
+        "page_text_line_start": 110,
+        "page_text_line_end": 129,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "Formal request for a job, course, permission or place; apply for a course is supported."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "အလုပ်၊ သင်တန်း သို့မဟုတ် အခွင့်အလမ်းတစ်ခုအတွက် တရားဝင် လျှောက်ထားသည်",
+        "original_example": "She applied for a training course last week.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "authority",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The official power to make decisions or enforce rules.",
+        "myanmar_meaning": "အာဏာပိုင်ခွင့်",
+        "example_sentence": "The manager has the authority to approve the request."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 694,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 7,
+        "extracted_line": 1834,
+        "source_excerpt": "authority n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Uncountable right or power to approve; distinguish an authority (an organisation/person) and permission.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR applicability, original English definition, fluent Myanmar translation, original-example grammar, British pronunciation, and source/provenance; word/POS evidence is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/authority",
+        "sense_number": 2,
+        "page_text_line_start": 150,
+        "page_text_line_end": 160,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "Uncountable power or right to do something; authority to approve aligns with the draft example."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ဆုံးဖြတ်ချက်ချရန် သို့မဟုတ် အတည်ပြုရန် တရားဝင် အခွင့်အာဏာ",
+        "original_example": "Only the supervisor has the authority to approve the order.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "method",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A particular way of doing something.",
+        "myanmar_meaning": "နည်းလမ်း",
+        "example_sentence": "This method saves both time and energy."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 695,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1395,
+        "source_excerpt": "method n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A particular way of doing something; distinguish a method from an individual step or procedure.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR applicability, original English definition, fluent Myanmar translation, original-example grammar, British pronunciation, and source/provenance; word/POS evidence is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "healthy",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "In good physical or mental condition.",
+        "myanmar_meaning": "ကျန်းမာသော",
+        "example_sentence": "A healthy diet includes different kinds of food."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 696,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 2,
+        "extracted_line": 358,
+        "source_excerpt": "healthy adj.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft definition describes a person in good health but example describes a healthy diet; verify meaning extension and example alignment.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR applicability, original English definition, fluent Myanmar translation, original-example grammar, British pronunciation, and source/provenance; word/POS evidence is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "option",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "One of several possible choices.",
+        "myanmar_meaning": "ရွေးချယ်စရာ",
+        "example_sentence": "Taking the train is another option."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 697,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1437,
+        "source_excerpt": "option n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Choice among alternatives; noun countability and collocation another option.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR applicability, original English definition, fluent Myanmar translation, original-example grammar, British pronunciation, and source/provenance; word/POS evidence is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "trouble",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A problem or difficult situation.",
+        "myanmar_meaning": "ပြဿနာ၊ အခက်အခဲ",
+        "example_sentence": "We had trouble finding the correct address."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 698,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 7,
+        "extracted_line": 1726,
+        "source_excerpt": "trouble n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Uncountable difficulty and have trouble doing; distinguish countable troubles.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR applicability, original English definition, fluent Myanmar translation, original-example grammar, British pronunciation, and source/provenance; word/POS evidence is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "apart",
+      "level": "B1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Separated from each other by a distance.",
+        "myanmar_meaning": "ခွာ၍၊ အကွာအဝေးရှိလျက်",
+        "example_sentence": "The two chairs stood a metre apart."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 699,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 7,
+        "extracted_line": 1819,
+        "source_excerpt": "apart adv.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Distance separation rather than figurative disagreement, break apart or apart from.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR applicability, original English definition, fluent Myanmar translation, original-example grammar, British pronunciation, and source/provenance; word/POS evidence is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/apart",
+        "sense_number": 1,
+        "page_text_line_start": 107,
+        "page_text_line_end": 112,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "Separated by a distance in space or time; metres apart is a supported construction."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "တစ်ခုနှင့်တစ်ခု အကွာအဝေးခြားလျက်",
+        "original_example": "The two tables are two metres apart.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "gift",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Something given to another person without payment.",
+        "myanmar_meaning": "လက်ဆောင်",
+        "example_sentence": "She bought a small gift for her friend."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 700,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 5,
+        "extracted_line": 1247,
+        "source_excerpt": "gift n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Gift meaning present, not natural talent; distinguish give a gift versus present a gift.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR applicability, original English definition, fluent Myanmar translation, original-example grammar, British pronunciation, and source/provenance; word/POS evidence is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "require",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To need something or make it necessary.",
+        "myanmar_meaning": "လိုအပ်သည်",
+        "example_sentence": "This position may require weekend work."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 701,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 9,
+        "extracted_line": 2382,
+        "source_excerpt": "require v.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Requirement for weekend work; distinguish require someone to do something and need something.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR applicability, original English definition, fluent Myanmar translation, original-example grammar, British pronunciation, and source/provenance; word/POS evidence is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "wood",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The hard material that forms the trunk and branches of a tree.",
+        "myanmar_meaning": "သစ်သား",
+        "example_sentence": "The carpenter made the table from wood."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 702,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 7,
+        "extracted_line": 1770,
+        "source_excerpt": "wood n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Uncountable material versus a wood (small forest); material sense and made of/from collocations.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR applicability, original English definition, fluent Myanmar translation, original-example grammar, British pronunciation, and source/provenance; word/POS evidence is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "background",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The experiences and education that have shaped a person.",
+        "myanmar_meaning": "နောက်ခံအတွေ့အကြုံ၊ ပညာရေးနောက်ခံ",
+        "example_sentence": "Her background in engineering helped her understand the design."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 703,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 4,
+        "extracted_line": 977,
+        "source_excerpt": "background n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Professional or educational experience sense, not image background or contextual background.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR applicability, original English definition, fluent Myanmar translation, original-example grammar, British pronunciation, and source/provenance; word/POS evidence is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/background",
+        "sense_number": 1,
+        "page_text_line_start": 106,
+        "page_text_line_end": 134,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "Countable details of a person's family, education or experience; background in engineering fits this sense."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ပညာရေးနှင့် အလုပ်အတွေ့အကြုံဆိုင်ရာ နောက်ခံ",
+        "original_example": "She has a background in engineering.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    }
+  ]
+}
