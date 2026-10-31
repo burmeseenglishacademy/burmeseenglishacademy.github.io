@@ -1,0 +1,343 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "C1_NINE_CAMBRIDGE_INDEXED_SENSE_TRIAGE_EDITORIAL_HOLD",
+  "observed_on": "2026-10-31",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 9,
+  "first_pass_written_by_level": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "independently_approved_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "source_access_limitations": "Publisher entries were retrieved as public search-index/cached text on 2026-10-31. Direct Cambridge dictionary page fetches returned HTTP 403. Indexed text is a research lead, not directly inspected live-page proof, independent human signoff or permission to publish. Oxford direct word/POS coverage remains 840/1000; these 9 are additional Cambridge leads and not Oxford observations.",
+  "publisher_cefr_leads": {
+    "C1": 2,
+    "B2": 2,
+    "C2": 3,
+    "UNLABELLED": 2
+  },
+  "pos_mismatch_records": [
+    "veteran"
+  ],
+  "records": [
+    {
+      "word": "naval",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Connected with a country's navy.",
+        "myanmar_meaning": "ရေတပ်ဆိုင်ရာ",
+        "example_sentence": "The port hosts an annual naval exercise."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 154,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/naval",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_CACHED_DIRECT_PAGE_403",
+        "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_NOT_HUMAN_REVIEW",
+        "source_cefr_level": "C2",
+        "source_summary": "Cambridge indexed Advanced Learner entry labels the naval adjective C2, for a country's navy or military ships."
+      },
+      "editorial_risk": "ADJECTIVE_SAME_SENSE_HIGHER_THAN_C1",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "ရေတပ်နှင့်ဆိုင်သော",
+        "original_example": "The naval exercise took place near the coast.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "noble",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Showing qualities such as honesty, courage and generosity.",
+        "myanmar_meaning": "မြင့်မြတ်သော၊ ဂုဏ်သိက္ခာရှိသော",
+        "example_sentence": "The volunteers worked for a noble cause."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 181,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/noble",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_CACHED_DIRECT_PAGE_403",
+        "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_NOT_HUMAN_REVIEW",
+        "source_cefr_level": "C1",
+        "source_summary": "Cambridge indexed moral-adjective sense has C1 badge; separate high-rank sense also C1; causing-admiration sense unlabelled."
+      },
+      "editorial_risk": "ADJECTIVE_MORAL_SENSE_MATCH_LEAD",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "မွန်မြတ်သော၊ စိတ်ထားကောင်းမြတ်သော",
+        "original_example": "Helping others without expecting a reward is a noble act.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "treasury",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The department that manages a government's money and finances.",
+        "myanmar_meaning": "အစိုးရဘဏ္ဍာရေးဌာန",
+        "example_sentence": "The treasury released a new budget statement."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 261,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/treasury",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_CACHED_DIRECT_PAGE_403",
+        "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_NOT_HUMAN_REVIEW",
+        "source_cefr_level": null,
+        "source_summary": "Cambridge indexed 'the Treasury' government-finance department sense, no CEFR badge observed; UK institutional capitalization and article matter."
+      },
+      "editorial_risk": "UNLABELLED_GOVERNMENT_DEPARTMENT_CAPITALIZATION",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "နိုင်ငံတော်၏ ဘဏ္ဍာရေးဆိုင်ရာဌာန",
+        "original_example": "The Treasury announced changes to public spending.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "ethics",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Principles about what is right or wrong in behaviour.",
+        "myanmar_meaning": "ကိုယ်ကျင့်တရားဆိုင်ရာ စံနှုန်းများ၊ ကျင့်ဝတ်",
+        "example_sentence": "The course explores ethics in scientific research."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 421,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/ethics",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_CACHED_DIRECT_PAGE_403",
+        "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_NOT_HUMAN_REVIEW",
+        "source_cefr_level": "C2",
+        "source_summary": "Cambridge indexed C2 badge belongs to study-of-morality sense; draft refers to moral principles, which may not be the same labelled sense."
+      },
+      "editorial_risk": "C2_STUDY_SENSE_VS_DRAFT_PRINCIPLES",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "ကျင့်ဝတ်ဆိုင်ရာ အခြေခံမူများ",
+        "original_example": "The committee discussed ethical principles in research.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "manufacturer",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A company or person that makes goods, usually in large quantities.",
+        "myanmar_meaning": "ကုန်ပစ္စည်းထုတ်လုပ်သူ၊ ထုတ်လုပ်ရေးကုမ္ပဏီ",
+        "example_sentence": "The manufacturer recalled the product after discovering a defect."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 457,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/us/dictionary/english/manufacturer",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_CACHED_DIRECT_PAGE_403",
+        "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_NOT_HUMAN_REVIEW",
+        "source_cefr_level": "B2",
+        "source_summary": "Cambridge indexed Advanced Learner noun sense for a company producing goods in large numbers is B2, not C1."
+      },
+      "editorial_risk": "NOUN_SAME_SENSE_LOWER_THAN_C1",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "ကုန်ပစ္စည်းများကို အမြောက်အမြား ထုတ်လုပ်သည့် ကုမ္ပဏီ",
+        "original_example": "The manufacturer inspected every batch before delivery.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "veteran",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Having long experience in a particular job or activity.",
+        "myanmar_meaning": "လုပ်ငန်းအတွေ့အကြုံရှည်လျားသော၊ ဝါရင့်သော",
+        "example_sentence": "A veteran journalist led the interview."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 459,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/fr/dictionnaire/anglais/veteran",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_CACHED_DIRECT_PAGE_403",
+        "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_NOT_HUMAN_REVIEW",
+        "source_cefr_level": "C2",
+        "source_summary": "Cambridge indexed C2 badge applies to veteran NOUN for an experienced person or former service member; draft teaches veteran ADJECTIVE. Cannot transfer CEFR across POS."
+      },
+      "editorial_risk": "PUBLISHER_NOUN_NOT_DRAFT_ADJECTIVE",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "လုပ်ငန်းအတွေ့အကြုံ ရင့်ကျက်သော",
+        "original_example": "A veteran journalist interviewed the witnesses.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "legally",
+      "level": "C1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "According to the law or in a way recognised by law.",
+        "myanmar_meaning": "ဥပဒေအရ၊ တရားဝင်အားဖြင့်",
+        "example_sentence": "The agreement is not legally binding until both parties sign."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 463,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/legally",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_CACHED_DIRECT_PAGE_403",
+        "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_NOT_HUMAN_REVIEW",
+        "source_cefr_level": "B2",
+        "source_summary": "Cambridge indexed adverb meaning in accordance with law carries B2; example legally binding is an established legal collocation."
+      },
+      "editorial_risk": "ADVERB_SAME_SENSE_LOWER_THAN_C1",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "ဥပဒေအရ၊ ဥပဒေနှင့်အညီ",
+        "original_example": "The agreement becomes legally binding after signing.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "destiny",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The events that are believed to be certain to happen in someone's future.",
+        "myanmar_meaning": "ကံကြမ္မာ၊ ရှောင်လွှဲမရသော အနာဂတ်ဖြစ်ရပ်များ",
+        "example_sentence": "She believed it was her destiny to become a doctor."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 813,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/destiny",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_CACHED_DIRECT_PAGE_403",
+        "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_NOT_HUMAN_REVIEW",
+        "source_cefr_level": "C1",
+        "source_summary": "Cambridge indexed C1 countable future-events sense and C1 uncountable external-force sense; draft may blend the two; exact sense and countability require review."
+      },
+      "editorial_risk": "COUNTABLE_FUTURE_VS_UNCOUNTABLE_FATE",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "ကြိုတင်သတ်မှတ်ထားသကဲ့သို့ ယုံကြည်ထားသော အနာဂတ်ကံကြမ္မာ",
+        "original_example": "She believed that teaching was her destiny.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "census",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An official count of the people living in a country or area.",
+        "myanmar_meaning": "လူဦးရေသန်းခေါင်စာရင်း",
+        "example_sentence": "The national census collects information about households."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 728,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/census",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_CACHED_DIRECT_PAGE_403",
+        "evidence_scope": "PUBLISHER_INDEXED_SENSE_LEAD_NOT_HUMAN_REVIEW",
+        "source_cefr_level": null,
+        "source_summary": "Cambridge indexed countable official population count sense; no CEFR badge observed, so do not infer C1."
+      },
+      "editorial_risk": "UNLABELLED_COUNTABLE_OFFICIAL_POPULATION_COUNT",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "တရားဝင် လူဦးရေစာရင်းကောက်ယူမှု",
+        "original_example": "The census recorded changes in the city's population.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ],
+  "independent_human_review_receipts": [],
+  "audio_listening_receipts": [],
+  "release_approved": false
+}
