@@ -42,7 +42,7 @@ def require(ok, why):
 
 def blob(path):
     data = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\\0" + data).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
 
 def load():
     return (json.loads(PACKET.read_text(encoding="utf-8")),
