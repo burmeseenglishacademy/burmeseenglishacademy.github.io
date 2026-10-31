@@ -58,7 +58,7 @@ def audit(packet, shortlist):
             ("reviewed_english","reviewed_burmese","reviewed_example","reviewed_level","reviewed_pronunciation"))
         for r in entries), "Frozen shortlist duplication or fabricated independent review")
     records = packet.get("records")
-    require(isinstance(records,list) and len(records) == 20, "Packet row count drift")
+    require(isinstance(records,list) and len(records) == 12, "Packet row count drift")
     seen = set()
     for row, expected in zip(records,EXPECTED):
         word, source_level, page, line, excerpt = expected
@@ -142,7 +142,7 @@ def self_test(packet, shortlist):
             raise AssertionError("Forged evidence/review mutation passed: " + row["word"])
     for edit in [
         lambda p:p.update(independently_approved_count=1),
-        lambda p:p.update(record_count=19),
+        lambda p:p.update(record_count=11),
         lambda p:p["records"].pop(),
         lambda p:p["records"].reverse(),
         lambda p:p.update(source_limitations="Independent CEFR approved"),
