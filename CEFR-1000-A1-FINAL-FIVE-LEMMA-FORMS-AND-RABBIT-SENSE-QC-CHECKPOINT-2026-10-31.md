@@ -21,3 +21,11 @@ The 14 earlier A1 Oxford packet batches cover **195 of the 200 provisional A1 he
 **Release blockers:** written first-pass A1 200, A2 200, B1 200, B2 200, C1 200; independently approved **0 at each level**. Final George/Emma real listening signoffs **0/1,000**. Genuine independent English/Myanmar/example/exact-sense CEFR review, approved-manifest deduplication, final dual-voice audio and listening, browser/mobile regression, real physical iPhone Safari QA, measured Pages hosting readiness, protected production/privacy preservation at release, and confirmed live deployment all remain outstanding. **NO MERGE, NO MAIN EDIT, NO DEPLOYMENT.**
 
 CI conclusions and logs must be verified independently after these commits; a workflow definition is not a passing run.
+
+## Actual GitHub Actions verification (2026-10-31)
+
+- [Parallel structural run **41204641216**](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41204641216) **SUCCESS** across A1/A2/B1/B2/C1/ALL, tested code SHA `6c21a95be2ac9c063e706e3d43f44b110940c159`. ALL job ID `124547134506`; actual log confirmed **81/81 forged A1 source/lemma/bilingual/false-approval mutations rejected** and protected production assets unchanged.
+- [Documentary no-deployment run **41204647539**](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41204647539) **SUCCESS**, report-only, tested code SHA `1c5129ae0f74e4306a17bdbb35b1f5eb0ff6c0c8`. Documentary job ID `124547152913`; actual log independently confirmed **81/81 mutations rejected**, **0/1,000** independent reviews and final listening signoffs, all release blockers intact. Blocker artifact ID `13043607183`.
+- Comparison of initial staging head `ae8eca34c3147cabb3ea9231ce0b445a776bde23` with documentation head `a98dc551e5e02dc7155d9db8c54fe3bcf6cc7bf5` shows **seven staging commits**, touching only two CEFR-specific workflow files, one research JSON, one audit Python and two staging reports. No protected production assets, main branch, merge or publication touched.
+
+Both workflow successes are **structural and documentary only**, not human-independent review, real audio listening, physical iPhone Safari or deployment evidence. **RELEASE STILL BLOCKED / STAGING ONLY.**
