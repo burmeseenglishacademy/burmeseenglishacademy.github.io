@@ -30,6 +30,8 @@ Four publisher dictionary pages were directly inspected on **2026-10-31**, solel
 - [online adverb](https://www.oxfordlearnersdictionaries.com/definition/english/online_2), **sense 1, lines 88–119**: internet-mediated action, not online adjective or system-operation sense. Editorial alternative (not approved): “You can submit the application online.”
 - [wish verb](https://www.oxfordlearnersdictionaries.com/definition/english/wish_1), **sense 1, lines 114–129**: unreal or unlikely desire with past-form clause or `could`; distinguish formal `wish to` and greetings. Editorial alternative (not approved): “I wish I had more time to practise English.”
 
+**Independent publisher sense-label lead (NOT independent human review):** Directly inspected [Collins COBUILD *fine*](https://www.collinsdictionary.com/dictionary/english/fine) on **2026-10-31**. Collins marks **adjective sense 3, satisfactory/acceptable, A2** (web extracted lines **247–256**), but **weather sense 9, clear/dry, B1** (lines **329–335**), while Oxford 3000 lists the headword/POS at A1. This is concrete cross-publisher **exact-sense evidence**, not an automatic final CEFR ruling; the original A2 draft definition and weather example teach different senses and must be reconciled by an independent reviewer. Collins also marks the healthy-person adjective A1 (lines 239–245), underscoring why headword-only CEFR is insufficient.
+
 Fluent Myanmar rewrite proposals remain unapproved in the packet. The dictionary's unrelated **Word of the Day** footer is never a CEFR label for the inspected entry. No assistant self-evaluation may mark independent-review flags true.
 
 ## Structural QC and reviewer handoff
