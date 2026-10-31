@@ -338,6 +338,8 @@ jobs:
         run: python3 tools/audit_cefr_1000_cambridge_c1_twelve_lexical.py --level ALL --self-test
       - name: Audit eleven indexed C1 publisher sense and CEFR conflicts (report only)
         run: python3 tools/audit_cefr_1000_cambridge_c1_eleven_exact_sense.py --level ALL --self-test
+      - name: Audit A1 final five inflected forms and rabbit exact-sense risk (report only)
+        run: python3 tools/audit_cefr_1000_a1_last_five_lemma_sense.py --level ALL --self-test
       - name: Report missing real approvals, voice listening, iPhone and hosting QC
         run: python3 tools/audit_cefr_1000_launch_readiness.py --report-only --self-test
       - name: Explicitly enforce ALL evidence if release candidate manually checked
