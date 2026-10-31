@@ -1,0 +1,425 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B2_SIXTEENTH_FINAL_TEN_NINE_OXFORD_WORD_POS_ONE_CORE_LIST_UNLISTED_FIVE_DIRECT_DICTIONARY_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-31",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 10,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 10,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 1,
+    "A2": 1,
+    "B1": 2,
+    "B2": 3,
+    "C1": 2,
+    "UNLISTED": 1
+  },
+  "word_pos_discrepancies": 7,
+  "direct_dictionary_sense_leads": 5,
+  "independently_approved_count": 0,
+  "source_limitations": "Official Oxford 3000 and 5000 CEFR PDFs directly inspected 2026-10-31. Nine entries have exact PDF word/POS level and line/page evidence; server noun was not found in either inspected core list, which is NOT a CEFR classification. Five official dictionary pages directly inspected; their sense descriptions and topic badges are not independent exact-sense CEFR evidence. All ten entries and rewrites remain unapproved; no final George/Emma audio listening, physical iPhone, hosting or production deployment evidence.",
+  "records": [
+    {
+      "word": "package",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A group of services or benefits offered together.",
+        "myanmar_meaning": "ဝန်ဆောင်မှု သို့မဟုတ် အကျိုးခံစားခွင့်များ စုစည်းထားသော အစီအစဉ်",
+        "example_sentence": "The company offered a complete training package."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 797,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 9,
+        "extracted_line": 2262,
+        "source_excerpt": "package n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The B1 noun word/POS label is below the provisional B2. The example training package is a bundled offering, not a mailed parcel; independent exact-sense classification is required.",
+      "independent_reviewer_task": "Independent human reviewer must confirm exact intended sense, source-backed CEFR, English definition, fluent Myanmar, original example grammar, British pronunciation and historical source; neither this publisher observation nor this editorial proposal is an approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/package_1",
+        "sense_number": 3,
+        "sense_summary": "Direct Oxford noun sense 3 is a bundle of items or ideas bought/accepted together; draft training package resembles this, not sense 1 a posted parcel.",
+        "observed_on": "2026-10-31",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "သင်တန်း၊ ဝန်ဆောင်မှု သို့မဟုတ် အကျိုးခံစားခွင့်များကို တစ်စုတစ်စည်းတည်း ပေးထားသော အစီအစဉ်",
+        "original_example": "The employer introduced a training package for new technicians.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "pride",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A feeling of satisfaction with an achievement.",
+        "myanmar_meaning": "အောင်မြင်မှုအပေါ် ဂုဏ်ယူကျေနပ်မှု",
+        "example_sentence": "Her parents felt pride when she graduated."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 849,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 2,
+        "extracted_line": 479,
+        "source_excerpt": "pride n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "B2 word/POS matches provisional level, but satisfaction in achievement must be distinguished from arrogance, self-respect, and a group of lions.",
+      "independent_reviewer_task": "Independent human reviewer must confirm exact intended sense, source-backed CEFR, English definition, fluent Myanmar, original example grammar, British pronunciation and historical source; neither this publisher observation nor this editorial proposal is an approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/pride_1",
+        "sense_number": 1,
+        "sense_summary": "Direct Oxford noun sense 1 denotes satisfaction in one's or a connected person's achievement; distinguish from arrogant pride and a pride of lions. Oxford Personal qualities b2 is a topic badge, not independent exact-sense signoff.",
+        "observed_on": "2026-10-31",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "မိမိ သို့မဟုတ် မိမိနှင့်နီးစပ်သူ၏ အောင်မြင်မှုကြောင့် ဖြစ်ပေါ်လာသော ဂုဏ်ယူဝမ်းမြောက်မှု",
+        "original_example": "She felt great pride when her daughter completed the course.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "province",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A large administrative area within a country.",
+        "myanmar_meaning": "ပြည်နယ် သို့မဟုတ် အုပ်ချုပ်ရေးဒေသ",
+        "example_sentence": "The factory is located in a northern province."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 791,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1643,
+        "source_excerpt": "province n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford 5000 places the noun at C1, above provisional B2; intended geographic administrative division differs from the figurative domain of responsibility.",
+      "independent_reviewer_task": "Independent human reviewer must confirm exact intended sense, source-backed CEFR, English definition, fluent Myanmar, original example grammar, British pronunciation and historical source; neither this publisher observation nor this editorial proposal is an approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/province",
+        "sense_number": 1,
+        "sense_summary": "Direct Oxford noun sense 1 is an administrative division of certain countries with local government; unlike the figurative responsibility-domain sense 3.",
+        "observed_on": "2026-10-31",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "နိုင်ငံတစ်နိုင်ငံအတွင်း ဒေသန္တရအုပ်ချုပ်ရေးရှိသော ပြည်နယ် သို့မဟုတ် အုပ်ချုပ်ရေးနယ်မြေ",
+        "original_example": "The health programme began in one province before expanding nationwide.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "railway",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A transport system in which trains run on tracks.",
+        "myanmar_meaning": "ရထားလမ်းပို့ဆောင်ရေးစနစ်",
+        "example_sentence": "The railway connects several towns."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 798,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1523,
+        "source_excerpt": "railway n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford 3000 labels the noun A2; ordinary train transport system does not justify automatic B2 without independent sense evidence.",
+      "independent_reviewer_task": "Independent human reviewer must confirm exact intended sense, source-backed CEFR, English definition, fluent Myanmar, original example grammar, British pronunciation and historical source; neither this publisher observation nor this editorial proposal is an approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "relative",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Considered in comparison with something else.",
+        "myanmar_meaning": "နှိုင်းယှဉ်သတ်မှတ်ထားသော",
+        "example_sentence": "The relative cost of transport is lower here."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 785,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 9,
+        "extracted_line": 2365,
+        "source_excerpt": "relative adj., n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford 3000 labels adjective/noun at B1; the intended comparative adjective is not the family-member noun or grammar relative-clause adjective.",
+      "independent_reviewer_task": "Independent human reviewer must confirm exact intended sense, source-backed CEFR, English definition, fluent Myanmar, original example grammar, British pronunciation and historical source; neither this publisher observation nor this editorial proposal is an approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/relative_1",
+        "sense_number": 1,
+        "sense_summary": "Direct Oxford adjective sense 1 describes comparison with something else; grammar sense 2 has Language b1 topic badge but is not the draft meaning.",
+        "observed_on": "2026-10-31",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "အခြားအရာတစ်ခုနှင့် နှိုင်းယှဉ်ပြီး သတ်မှတ်ထားသော",
+        "original_example": "We compared the relative costs of the two delivery methods.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "repeat",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To say or do something again.",
+        "myanmar_meaning": "တစ်ဖန် ပြန်ပြောသည် သို့မဟုတ် ပြန်လုပ်သည်",
+        "example_sentence": "Could you repeat the last instruction more slowly?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 850,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 3,
+        "extracted_line": 647,
+        "source_excerpt": "repeat v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford 3000 labels repeat verb A1, a major B2 placement conflict; the example uses the everyday request-to-say-again sense.",
+      "independent_reviewer_task": "Independent human reviewer must confirm exact intended sense, source-backed CEFR, English definition, fluent Myanmar, original example grammar, British pronunciation and historical source; neither this publisher observation nor this editorial proposal is an approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "server",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A computer that provides data or services to other computers.",
+        "myanmar_meaning": "ကွန်ပျူတာများကို ဒေတာ သို့မဟုတ် ဝန်ဆောင်မှုပေးသည့် ဆာဗာ",
+        "example_sentence": "The server stores customer records securely."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 799,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "Oxford 3000 and Oxford 5000 core-list absence check",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf"
+      },
+      "editorial_risk": "Not found in either directly inspected Oxford 3000 or 5000 core-list PDF. This is NOT evidence that the computing sense lacks a CEFR level: Oxford dictionary server noun sense 1 carries Computers c1 topic badge. Topic badge is not the same as publisher core-list word/POS or independent exact-sense CEFR verification.",
+      "independent_reviewer_task": "Independent human reviewer must confirm exact intended sense, source-backed CEFR, English definition, fluent Myanmar, original example grammar, British pronunciation and historical source; neither this publisher observation nor this editorial proposal is an approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/server",
+        "sense_number": 1,
+        "sense_summary": "Direct Oxford computing sense 1 includes both a network service program and the principal computer running it; Computers c1 is a topic badge, not core-list word/POS evidence.",
+        "observed_on": "2026-10-31",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ကွန်ရက်ပေါ်ရှိ အခြားကွန်ပျူတာများကို ဒေတာနှင့် ဝန်ဆောင်မှုများ ပေးသော ဆာဗာကွန်ပျူတာ သို့မဟုတ် ဆော့ဖ်ဝဲ",
+        "original_example": "The server stores the records and allows authorised staff to access them.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "shock",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A strong feeling of surprise caused by an unexpected event.",
+        "myanmar_meaning": "ရုတ်တရက် အံ့ဩတုန်လှုပ်မှု",
+        "example_sentence": "The news came as a shock to everyone."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 800,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 12,
+        "extracted_line": 3190,
+        "source_excerpt": "shock n., v.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford 3000 B2 word/POS matches; emotional surprise differs from electrical or medical shock and from verb usage.",
+      "independent_reviewer_task": "Independent human reviewer must confirm exact intended sense, source-backed CEFR, English definition, fluent Myanmar, original example grammar, British pronunciation and historical source; neither this publisher observation nor this editorial proposal is an approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "silence",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A complete absence of sound.",
+        "myanmar_meaning": "တိတ်ဆိတ်မှု",
+        "example_sentence": "A sudden silence filled the room."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 801,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 12,
+        "extracted_line": 3196,
+        "source_excerpt": "silence n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford 3000 B2 word/POS matches; distinguish absence of sound from deliberate refusal to speak.",
+      "independent_reviewer_task": "Independent human reviewer must confirm exact intended sense, source-backed CEFR, English definition, fluent Myanmar, original example grammar, British pronunciation and historical source; neither this publisher observation nor this editorial proposal is an approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "superior",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Better in quality than another thing.",
+        "myanmar_meaning": "အရည်အသွေးပိုမိုကောင်းမွန်သော",
+        "example_sentence": "The new material is superior to the old one."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 802,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 7,
+        "extracted_line": 1860,
+        "source_excerpt": "superior adj.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford 5000 labels superior adjective C1, above provisional B2; quality comparison is different from rank/authority or social superiority.",
+      "independent_reviewer_task": "Independent human reviewer must confirm exact intended sense, source-backed CEFR, English definition, fluent Myanmar, original example grammar, British pronunciation and historical source; neither this publisher observation nor this editorial proposal is an approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
