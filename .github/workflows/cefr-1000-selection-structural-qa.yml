@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - draft/CEFR-1000-OXFORD-A2-SIXTEENTH-ELEVEN-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
+      - tools/audit_cefr_1000_oxford_a2_sixteenth_eleven.py
       - draft/CEFR-1000-PROVISIONAL-SHORTLIST.json
       - draft/CEFR-1000-A1-FIVE-REMAINING-MORPHOLOGY-AND-RABBIT-SENSE-QUARANTINE-2026-10-30.json
       - tools/audit_cefr_1000_a1_five_morphology.py
@@ -756,6 +758,11 @@ jobs:
       - name: Reject 81 forged A1 lemma, Myanmar, source and reviewer mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_a1_last_five_lemma_sense.py --level ALL --self-test
+      - name: Audit A2 sixteenth 11 direct Oxford word/POS and four dictionary sense leads
+        run: python3 tools/audit_cefr_1000_oxford_a2_sixteenth_eleven.py --level "${{ matrix.level }}"
+      - name: Reject 142 forged A2 publisher, Myanmar, historical provenance and independent-review mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_oxford_a2_sixteenth_eleven.py --level ALL --self-test
       - name: Save structural QA record (not linguistic verification)
         uses: actions/upload-artifact@v4
         with:
