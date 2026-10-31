@@ -27,7 +27,7 @@ def require(ok, msg):
 
 def git_blob_sha(path):
     raw = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
 
 def audit(packet, shortlist):
     require(set(packet) == ROOT_KEYS, "Unexpected or missing packet root field")
