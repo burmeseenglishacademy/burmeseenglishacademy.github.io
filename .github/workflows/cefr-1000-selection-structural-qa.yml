@@ -202,6 +202,8 @@ on:
       - tools/audit_cefr_1000_oxford_b2_twelfth_twelve.py
       - draft/CEFR-1000-OXFORD-B2-THIRTEENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
       - tools/audit_cefr_1000_oxford_b2_thirteenth_twelve.py
+      - draft/CEFR-1000-CAMBRIDGE-C1-NINE-INDEXED-SENSE-AND-POS-TRIAGE-2026-10-31.json
+      - tools/audit_cefr_1000_cambridge_c1_nine_indexed.py
   workflow_dispatch:
 permissions:
   contents: read
@@ -709,6 +711,11 @@ jobs:
           changed="$(git diff --name-only origin/main HEAD -- content.js ielts-vocabulary-data.js audio-manifest.js audio-player.js audio-integration.js privacy-tools.js site-config.js audio/)"
           if [ -n "$changed" ]; then echo "BLOCK: protected production assets drift: $changed"; exit 1; fi
           echo "PASS: protected production assets unchanged; no deploy"
+      - name: Audit nine C1 Cambridge indexed sense and POS leads (not independent review)
+        run: python3 tools/audit_cefr_1000_cambridge_c1_nine_indexed.py --level "${{ matrix.level }}"
+      - name: Reject 149 forged C1 indexed source, Myanmar, POS and reviewer mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_cambridge_c1_nine_indexed.py --level ALL --self-test
       - name: Save structural QA record (not linguistic verification)
         uses: actions/upload-artifact@v4
         with:
@@ -729,6 +736,7 @@ jobs:
             cefr-1000-cambridge-second-sense-${{ matrix.level }}.json
             cefr-1000-cambridge-sense-${{ matrix.level }}.json
             cefr-1000-editorial-candidates-${{ matrix.level }}.json
+            cefr-1000-cambridge-c1-nine-${{ matrix.level }}.json
             cefr-1000-cambridge-six-sense-${{ matrix.level }}.json
             cefr-1000-oxford-dictionary-${{ matrix.level }}.json
             cefr-1000-oxford-c1-five-${{ matrix.level }}.json
