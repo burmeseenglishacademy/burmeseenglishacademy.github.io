@@ -128,8 +128,9 @@ def check(packet, shortlist, baseline=None, check_disk=True):
         need(row.get("level") == e.get("level")
              and row.get("part_of_speech") == e.get("part_of_speech"),
              w + ": level/POS drift")
-        need(row.get("original") == {k:e.get(k) for k in
-             ("english_definition", "burmese_meaning", "example_sentence")},
+        need(row.get("original") == {"english_definition": e.get("english_definition"),
+             "myanmar_meaning": e.get("burmese_meaning"),
+             "example_sentence": e.get("example_sentence")},
              w + ": frozen English/Myanmar/example mismatch")
         need(row.get("provenance") == {k:e.get(k) for k in
              ("source_path", "source_index", "source_blob_sha")},
