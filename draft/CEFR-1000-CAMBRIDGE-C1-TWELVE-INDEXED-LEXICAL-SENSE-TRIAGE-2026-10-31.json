@@ -1,0 +1,437 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "C1_TWELVE_CAMBRIDGE_INDEXED_LEXICAL_SENSE_TRIAGE_EDITORIAL_HOLD",
+  "observed_on": "2026-10-31",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "first_pass_written_by_level": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "independently_approved_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_cefr_badges_observed_in_extract": 0,
+  "source_access_limitations": "Twelve publisher lexical entries were observed through public search-index extracts on 2026-10-31. Direct Cambridge dictionary page fetches attempted for six sampled words returned HTTP 403. No CEFR badge appeared in the observed indexed excerpts; this is NOT a verified claim that Cambridge has no CEFR level for the words. No exact-sense CEFR classification can be inferred. These are editorial research leads only, not independent review, not direct Oxford word/POS observations, and not release authorization.",
+  "release_approved": false,
+  "independent_human_review_receipts": [],
+  "audio_listening_receipts": [],
+  "records": [
+    {
+      "word": "ambivalence",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The feeling of having conflicting attitudes about the same thing.",
+        "myanmar_meaning": "အကြောင်းအရာတစ်ခုတည်းအပေါ် ဆန့်ကျင်ဘက်ခံစားချက်နှစ်မျိုး တစ်ပြိုင်နက် ရှိနေခြင်း",
+        "example_sentence": "She felt ambivalence about accepting the promotion abroad."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 8,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/ambivalence",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_EXTRACT_DIRECT_PAGE_403_ON_SAMPLED_URLS",
+        "evidence_scope": "LEXICAL_SENSE_AND_GRAMMAR_RESEARCH_LEAD_NOT_INDEPENDENT_REVIEW",
+        "cefr_badge_in_observed_extract": null,
+        "source_summary": "Mixed or opposing feelings simultaneously, not merely indecision."
+      },
+      "editorial_risk": "MIXED_FEELINGS_VS_UNCERTAINTY",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "ဆုံးဖြတ်ချက်အပေါ် ဝမ်းသာမှုနှင့် စိုးရိမ်မှုတို့ ရောထွေးနေခြင်း",
+        "original_example": "She felt ambivalence about moving abroad.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "anachronism",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Something that seems to belong to a different historical period.",
+        "myanmar_meaning": "ခေတ်ကာလနှင့် မကိုက်ညီဘဲ အခြားခေတ်တစ်ခုမှ ဖြစ်သကဲ့သို့ ထင်ရသော အရာ",
+        "example_sentence": "The old payment machine looked like an anachronism in the modern shop."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 9,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/anachronism",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_EXTRACT_DIRECT_PAGE_403_ON_SAMPLED_URLS",
+        "evidence_scope": "LEXICAL_SENSE_AND_GRAMMAR_RESEARCH_LEAD_NOT_INDEPENDENT_REVIEW",
+        "cefr_badge_in_observed_extract": null,
+        "source_summary": "A person or thing out of its historical period; distinguish obsolete item from historically misplaced detail."
+      },
+      "editorial_risk": "HISTORICAL_MISPLACEMENT_VS_OBSOLETE",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "သက်ဆိုင်ရာခေတ်ကာလနှင့် မကိုက်ညီသော လူ၊ အရာ သို့မဟုတ် အယူအဆ",
+        "original_example": "The digital watch was an anachronism in the historical film.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "antipathy",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A strong feeling of dislike towards someone or something.",
+        "myanmar_meaning": "လူတစ်ဦး သို့မဟုတ် အရာတစ်ခုအပေါ် ပြင်းထန်စွာ မနှစ်သက်ခြင်း",
+        "example_sentence": "His antipathy towards unnecessary rules was well known."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 10,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/antipathy",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_EXTRACT_DIRECT_PAGE_403_ON_SAMPLED_URLS",
+        "evidence_scope": "LEXICAL_SENSE_AND_GRAMMAR_RESEARCH_LEAD_NOT_INDEPENDENT_REVIEW",
+        "cefr_badge_in_observed_extract": null,
+        "source_summary": "Strong dislike or opposition; noun may be countable or uncountable; patterns antipathy towards/to/between."
+      },
+      "editorial_risk": "STRONG_DISLIKE_AND_PREPOSITION",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "လူတစ်ဦး သို့မဟုတ် အရာတစ်ခုအပေါ် ပြင်းပြင်းထန်ထန် မနှစ်သက်ခြင်း",
+        "original_example": "Her antipathy towards unfair rules was obvious.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "arbitrate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To hear both sides of a disagreement and make a decision about it.",
+        "myanmar_meaning": "အငြင်းပွားမှု၏ နှစ်ဖက်စလုံးကို နားထောင်ပြီး ဆုံးဖြတ်ပေးသည်",
+        "example_sentence": "An independent expert was asked to arbitrate the dispute."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 11,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/arbitrate",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_EXTRACT_DIRECT_PAGE_403_ON_SAMPLED_URLS",
+        "evidence_scope": "LEXICAL_SENSE_AND_GRAMMAR_RESEARCH_LEAD_NOT_INDEPENDENT_REVIEW",
+        "cefr_badge_in_observed_extract": null,
+        "source_summary": "Make a judgment to resolve a disagreement; verb transitive or intransitive; distinguish deciding from mediating."
+      },
+      "editorial_risk": "ARBITRATION_DECISION_VS_MEDIATION",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "အငြင်းပွားမှုတစ်ခုကို ကြားနာစစ်ဆေးပြီး ဆုံးဖြတ်ပေးသည်",
+        "original_example": "Both parties agreed to let an independent expert arbitrate the dispute.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "belligerent",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Hostile and ready to argue or fight.",
+        "myanmar_meaning": "ရန်လိုပြီး ငြင်းခုံရန် သို့မဟုတ် တိုက်ခိုက်ရန် အသင့်ရှိသော",
+        "example_sentence": "The passenger became belligerent when staff refused his request."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 12,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/belligerent",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_EXTRACT_DIRECT_PAGE_403_ON_SAMPLED_URLS",
+        "evidence_scope": "LEXICAL_SENSE_AND_GRAMMAR_RESEARCH_LEAD_NOT_INDEPENDENT_REVIEW",
+        "cefr_badge_in_observed_extract": null,
+        "source_summary": "Adjective has quarrelsome/hostile and formal war-related senses; draft is quarrelsome."
+      },
+      "editorial_risk": "HOSTILE_PERSON_VS_WARRING_STATE",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "ရန်လိုပြီး ရန်ဖြစ်ရန် သို့မဟုတ် ငြင်းခုံရန် အသင့်ဖြစ်နေသော",
+        "original_example": "The customer became belligerent during the discussion.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "benevolent",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Kind and willing to help other people.",
+        "myanmar_meaning": "စေတနာကောင်းပြီး အခြားသူများကို ကူညီလိုသော",
+        "example_sentence": "A benevolent donor paid for the village library."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 13,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/benevolent",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_EXTRACT_DIRECT_PAGE_403_ON_SAMPLED_URLS",
+        "evidence_scope": "LEXICAL_SENSE_AND_GRAMMAR_RESEARCH_LEAD_NOT_INDEPENDENT_REVIEW",
+        "cefr_badge_in_observed_extract": null,
+        "source_summary": "Kind/helpful adjective; distinguish charitable organisation use from personal disposition."
+      },
+      "editorial_risk": "KIND_PERSON_VS_CHARITABLE_ORGANISATION",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "ကြင်နာစေတနာရှိပြီး အခြားသူများကို ကူညီလိုသော",
+        "original_example": "A benevolent neighbour helped the family after the flood.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "brevity",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The quality of expressing something in few words or lasting briefly.",
+        "myanmar_meaning": "စကားအနည်းငယ်ဖြင့် တိုတောင်းစွာ ဖော်ပြမှု သို့မဟုတ် အချိန်တိုတောင်းမှု",
+        "example_sentence": "The chairperson appreciated the brevity of her report."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 14,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/brevity",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_EXTRACT_DIRECT_PAGE_403_ON_SAMPLED_URLS",
+        "evidence_scope": "LEXICAL_SENSE_AND_GRAMMAR_RESEARCH_LEAD_NOT_INDEPENDENT_REVIEW",
+        "cefr_badge_in_observed_extract": null,
+        "source_summary": "Uncountable noun can mean concise expression or short duration; draft example tests concise expression only."
+      },
+      "editorial_risk": "CONCISENESS_VS_SHORT_DURATION",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "စကားအသုံးအနှုန်းကို တိုတိုတုတ်တုတ် ဖော်ပြနိုင်ခြင်း",
+        "original_example": "The committee appreciated the brevity of her presentation.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "circumspect",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Careful to consider possible risks before acting or speaking.",
+        "myanmar_meaning": "လုပ်ဆောင်ခြင်း သို့မဟုတ် ပြောဆိုခြင်းမပြုမီ ဖြစ်နိုင်သည့် အန္တရာယ်များကို သတိထားစဉ်းစားသော",
+        "example_sentence": "The director was circumspect when discussing the proposed merger."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 15,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/circumspect",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_EXTRACT_DIRECT_PAGE_403_ON_SAMPLED_URLS",
+        "evidence_scope": "LEXICAL_SENSE_AND_GRAMMAR_RESEARCH_LEAD_NOT_INDEPENDENT_REVIEW",
+        "cefr_badge_in_observed_extract": null,
+        "source_summary": "Formal adjective, cautious about risks and what one says; avoid equating with being timid."
+      },
+      "editorial_risk": "CAUTION_VS_TIMIDITY",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "အကျိုးဆက်နှင့် အန္တရာယ်များကို ချင့်ချိန်၍ သတိကြီးစွာ ပြောဆိုလုပ်ကိုင်သော",
+        "original_example": "The manager was circumspect about promising a delivery date.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "coercion",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The use of threats or pressure to make someone do something.",
+        "myanmar_meaning": "တစ်စုံတစ်ဦးကို တစ်ခုခုလုပ်စေရန် ခြိမ်းခြောက်မှု သို့မဟုတ် ဖိအားပေးမှု",
+        "example_sentence": "The agreement was invalid because it was signed under coercion."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 16,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/coercion",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_EXTRACT_DIRECT_PAGE_403_ON_SAMPLED_URLS",
+        "evidence_scope": "LEXICAL_SENSE_AND_GRAMMAR_RESEARCH_LEAD_NOT_INDEPENDENT_REVIEW",
+        "cefr_badge_in_observed_extract": null,
+        "source_summary": "Uncountable formal noun: force or intimidation, not merely ordinary persuasion; distinguish technical linguistic coercion in corpus."
+      },
+      "editorial_risk": "FORCE_VS_ORDINARY_PERSUASION",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "မိမိဆန္ဒမပါဘဲ လုပ်ဆောင်စေရန် အတင်းအကျပ် ဖိအားပေးခြင်း",
+        "original_example": "The witness said the confession had been obtained through coercion.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "conundrum",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A confusing and difficult problem with no obvious solution.",
+        "myanmar_meaning": "ဖြေရှင်းနည်း မထင်ရှားသည့် ရှုပ်ထွေးခက်ခဲသော ပြဿနာ",
+        "example_sentence": "The council faced a conundrum over housing and transport costs."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 18,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/conundrum",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_EXTRACT_DIRECT_PAGE_403_ON_SAMPLED_URLS",
+        "evidence_scope": "LEXICAL_SENSE_AND_GRAMMAR_RESEARCH_LEAD_NOT_INDEPENDENT_REVIEW",
+        "cefr_badge_in_observed_extract": null,
+        "source_summary": "Countable noun: difficult problem or separately a trick question/riddle; draft uses difficult-problem sense."
+      },
+      "editorial_risk": "DIFFICULT_PROBLEM_VS_RIDDLE",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "ဖြေရှင်းရခက်ခဲပြီး အဖြေမလွယ်ကူသော ပြဿနာ",
+        "original_example": "The team faced a conundrum when both options proved costly.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "corroborate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To provide additional evidence that supports a statement or account.",
+        "myanmar_meaning": "ပြောဆိုချက်တစ်ခုကို ထောက်ခံသည့် အထောက်အထား ထပ်မံပေးသည်",
+        "example_sentence": "The photographs helped corroborate the witness's account."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 19,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/corroborate",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_EXTRACT_DIRECT_PAGE_403_ON_SAMPLED_URLS",
+        "evidence_scope": "LEXICAL_SENSE_AND_GRAMMAR_RESEARCH_LEAD_NOT_INDEPENDENT_REVIEW",
+        "cefr_badge_in_observed_extract": null,
+        "source_summary": "Formal transitive verb: add supporting evidence; avoid implying absolute proof."
+      },
+      "editorial_risk": "SUPPORTING_EVIDENCE_VS_ABSOLUTE_PROOF",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "ပြောဆိုချက်တစ်ခု မှန်ကန်နိုင်ကြောင်း ထပ်ဆောင်းအထောက်အထားဖြင့် ထောက်ခံပြသသည်",
+        "original_example": "The records helped corroborate the driver's account.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "credence",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Belief that a claim or explanation is true.",
+        "myanmar_meaning": "ပြောဆိုချက် သို့မဟုတ် ရှင်းလင်းချက်တစ်ခု မှန်ကန်သည်ဟု ယုံကြည်လက်ခံမှု",
+        "example_sentence": "The new data gave credence to the scientist's explanation."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 20,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/dictionary/english/credence",
+        "observed_on": "2026-10-31",
+        "access": "PUBLIC_SEARCH_INDEX_EXTRACT_DIRECT_PAGE_403_ON_SAMPLED_URLS",
+        "evidence_scope": "LEXICAL_SENSE_AND_GRAMMAR_RESEARCH_LEAD_NOT_INDEPENDENT_REVIEW",
+        "cefr_badge_in_observed_extract": null,
+        "source_summary": "Formal uncountable noun; patterns lend/give credence to; not interchangeable with personal credibility."
+      },
+      "editorial_risk": "UNCOUNTABLE_CREDENCE_VS_CREDIBILITY",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "အဆိုပြုချက် သို့မဟုတ် သတင်းတစ်ခုကို မှန်ကန်သည်ဟု ယုံကြည်လက်ခံမှု",
+        "original_example": "The new evidence lent credence to her explanation.",
+        "status": "UNAPPROVED_ASSISTANT_PROPOSAL"
+      },
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
