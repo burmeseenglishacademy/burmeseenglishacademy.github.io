@@ -7,6 +7,8 @@ on:
       - tools/audit_cefr_1000_oxford_a2_sixteenth_eleven.py
       - draft/CEFR-1000-OXFORD-A2-FINAL-TWENTY-ONE-COMPOUNDS-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
       - tools/audit_cefr_1000_oxford_a2_final_twentyone.py
+      - draft/CEFR-1000-OXFORD-C1-TWELFTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
+      - tools/audit_cefr_1000_oxford_c1_twelfth_twelve.py
       - draft/CEFR-1000-PROVISIONAL-SHORTLIST.json
       - draft/CEFR-1000-A1-FIVE-REMAINING-MORPHOLOGY-AND-RABBIT-SENSE-QUARANTINE-2026-10-30.json
       - tools/audit_cefr_1000_a1_five_morphology.py
@@ -770,6 +772,11 @@ jobs:
       - name: Reject 265 forged A2 publisher, Myanmar, source and approval mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_a2_final_twentyone.py --level ALL --self-test
+      - name: Audit C1 twelfth 12 Oxford publisher core-list and four direct dictionary senses
+        run: python3 tools/audit_cefr_1000_oxford_c1_twelfth_twelve.py --level "${{ matrix.level }}"
+      - name: Reject forged C1 twelfth source, Myanmar, provenance and approval mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_oxford_c1_twelfth_twelve.py --level ALL --self-test
       - name: Save structural QA record (not linguistic verification)
         uses: actions/upload-artifact@v4
         with:
