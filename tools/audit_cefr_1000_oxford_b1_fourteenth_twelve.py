@@ -100,7 +100,9 @@ def audit(packet, shortlist):
                     and cand["review_status"]=="UNAPPROVED_EDITORIAL_PROPOSAL"
                     and isinstance(cand["myanmar_meaning"],str) and len(cand["myanmar_meaning"])>12
                     and isinstance(cand["original_example"],str)
-                    and len(cand["original_example"])>25 and word.lower() in cand["original_example"].lower(),
+                    and len(cand["original_example"])>25
+                    and (word.lower() in cand["original_example"].lower()
+                         or (word=="realize" and "realise" in cand["original_example"].lower())),
                     "Unapproved Myanmar/example proposal corrupted for "+word)
     return {"observed_B1":12,"publisher_levels":packet["publisher_reference_level_counts"],
             "word_pos_discrepancies":8,"sense_leads":4,"independently_approved":0,
