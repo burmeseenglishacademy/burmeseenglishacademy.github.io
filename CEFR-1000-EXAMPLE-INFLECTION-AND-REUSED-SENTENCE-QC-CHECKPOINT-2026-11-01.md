@@ -35,3 +35,11 @@ The [source-bound 5-record/3-group packet](draft/CEFR-1000-EXAMPLE-MORPHOLOGY-AN
 **First-pass written / independently approved:** A1 **200/0**, A2 **200/0**, B1 **200/0**, B2 **200/0**, C1 **200/0**. Oxford core-list observation coverage remains A1 **195/200**, A2 **200/200**, B1 **200/200**, B2 **200/200**, C1 **200/200** — **995/1,000**, including unlisted cases and exact-sense uncertainties. Final George/Emma audio real listening signoffs **0/1,000**. Missing: independent English/Myanmar/example/exact-sense CEFR signoffs; deduplicated approved manifest; full final British dual-voice generation and actual listening; browser/mobile and physical iPhone Safari QA; measured GitHub Pages hosting readiness; confirmed live production deployment and preservation check.
 
 **Do not merge, publish, alter main or claim release.** This checkpoint is a research handoff, not a production launch certificate.
+
+## Verified GitHub Actions results (actual logs, 1 November 2026)
+
+- [Structural run 41254408864](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41254408864): **SUCCESS** for all six parallel jobs **A1/A2/B1/B2/C1/ALL**, testing code SHA `2d2a63fe2b83f5b19283b3cbba5aee685ff292b4`. Actual ALL job log confirmed **199/199** new forged evidence, bilingual, provenance and false-approval mutations rejected, and protected production assets unchanged. ALL artifact ID `13061594634`.
+- [Documentary no-deployment run 41254408764](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41254408764): **SUCCESS, report-only**, testing the same code SHA. Actual documentary log independently confirmed **199/199** forged mutations rejected and protected production assets untouched. Blocker-report artifact ID `13062353523`.
+- Intermediate structural run `41254366934` failed on a wrong frozen Myanmar field mapping (`myanmar_meaning` vs source `burmese_meaning`); corrected in code commit `2d2a63fe2b83f5b19283b3cbba5aee685ff292b4` and verified by the successful runs above. This is a test repair, not a linguistic approval.
+
+**Launch remains blocked and staging-only.** Successful structural/documentary QA does not establish independent CEFR, English, Myanmar or example review, genuine George/Emma listening, physical iPhone Safari QA, hosting readiness or production deployment.
