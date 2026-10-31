@@ -5,6 +5,8 @@ on:
     paths:
       - draft/CEFR-1000-OXFORD-A2-SIXTEENTH-ELEVEN-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
       - tools/audit_cefr_1000_oxford_a2_sixteenth_eleven.py
+      - draft/CEFR-1000-OXFORD-A2-FINAL-TWENTY-ONE-COMPOUNDS-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
+      - tools/audit_cefr_1000_oxford_a2_final_twentyone.py
       - draft/CEFR-1000-RELEASE-EVIDENCE.json
       - draft/CEFR-1000-A1-FIVE-REMAINING-MORPHOLOGY-AND-RABBIT-SENSE-QUARANTINE-2026-10-30.json
       - tools/audit_cefr_1000_a1_five_morphology.py
@@ -344,6 +346,8 @@ jobs:
         run: python3 tools/audit_cefr_1000_a1_last_five_lemma_sense.py --level ALL --self-test
       - name: Audit A2 sixteenth Oxford direct-source evidence and reject 142 forged approvals (report only)
         run: python3 tools/audit_cefr_1000_oxford_a2_sixteenth_eleven.py --level ALL --self-test
+      - name: Audit final A2 21 Oxford core-list observations and reject forged signoffs (report only)
+        run: python3 tools/audit_cefr_1000_oxford_a2_final_twentyone.py --level ALL --self-test
       - name: Report missing real approvals, voice listening, iPhone and hosting QC
         run: python3 tools/audit_cefr_1000_launch_readiness.py --report-only --self-test
       - name: Explicitly enforce ALL evidence if release candidate manually checked
