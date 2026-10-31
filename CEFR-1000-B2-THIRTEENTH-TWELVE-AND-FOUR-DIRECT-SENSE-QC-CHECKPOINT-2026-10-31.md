@@ -43,3 +43,9 @@ Four fluent-Myanmar and original-example **self-authored proposals** are preserv
 - **Missing:** human-independent English/Myanmar/example and exact-sense CEFR review; approved-manifest deduplication; complete final headword+example audio and real listening; approved-corpus browser/mobile regression; physical iPhone Safari evidence; measured GitHub Pages hosting readiness; confirmed deployment; post-deploy verification of 54 lessons, separate IELTS 1,000 bank, production audio and privacy.
 
 **Release: BLOCKED / STAGING ONLY. No merge, main change or publication.**
+
+## Verified GitHub Actions results (2026-10-31)
+
+- [Structural run 41154422476](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41154422476), **SUCCESS**, code SHA `a94dec42a964b307f83bb21fde261bff0c5dc390`; actual A1/A2/B1/B2/C1/ALL job conclusions **success**. ALL job log confirmed **184/184** adversarial publisher, bilingual, grammar, provenance and forged-approval mutations rejected, and protected production assets unchanged. ALL artifact ID **13024436682**.
+- [Documentary no-deployment run 41154427253](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41154427253), **SUCCESS / report-only**, code SHA `28302313fe56f1cc58a6c72dd36fcb1a26b3c9cc`; actual job log independently confirmed **184/184** forged mutations rejected, source-bound handoff and release still **BLOCKED_STAGING_ONLY**. Blocker artifact ID **13024661954**.
+- Interim CI failures on the coverage-only commit `816bc3f913a11c29da0a6d7b7a2ae14c8f677de4` were caused by temporarily unreconciled reviewer-priority totals; the successful runs above include the reconciled code. These runs verify *structural/documentary controls*, not independent linguistic review, audio listening, iPhone Safari, hosting or deployment.
