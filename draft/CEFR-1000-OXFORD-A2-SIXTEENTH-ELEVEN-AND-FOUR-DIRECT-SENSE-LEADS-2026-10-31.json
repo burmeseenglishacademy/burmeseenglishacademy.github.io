@@ -1,0 +1,447 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "A2_SIXTEENTH_ELEVEN_DIRECT_OXFORD_WORD_POS_FOUR_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-31",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 11,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 11,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 5,
+    "A2": 1,
+    "B1": 5,
+    "B2": 0,
+    "C1": 0
+  },
+  "word_pos_discrepancies": 10,
+  "direct_dictionary_sense_leads": 4,
+  "independently_approved_count": 0,
+  "source_limitations": "Direct Oxford 3000 CEFR PDF and four Oxford dictionary sense pages inspected 2026-10-31. Word/POS labels and Oxford dictionary topic tags are not independent exact-sense CEFR approval. The original result definition (causal consequence) differs from its test-score example. The Word of the Day footer must not be attributed to total noun. All Myanmar/example proposals unapproved. No independent human English/Myanmar/CEFR/example review, George/Emma audio listening, physical iPhone Safari, hosting or deployment evidence.",
+  "records": [
+    {
+      "word": "member",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A person who belongs to a group or organisation.",
+        "myanmar_meaning": "အဖွဲ့ဝင်",
+        "example_sentence": "Each member of the club received a badge."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 873,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 2,
+        "extracted_line": 477,
+        "source_excerpt": "member n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher A1 noun is below provisional A2; check group-membership meaning, not elected parliament member or membership fees.",
+      "independent_reviewer_task": "Independent human linguist must check direct publisher exact-sense CEFR evidence, English definition, fluent Myanmar, original example grammar, British usage and audio, and provide authenticated independent signoff. This assistant research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "usually",
+      "level": "A2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "On most occasions or in most situations.",
+        "myanmar_meaning": "ပုံမှန်အားဖြင့်၊ များသောအားဖြင့်",
+        "example_sentence": "I usually walk to work when it is cool."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 874,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 4,
+        "extracted_line": 844,
+        "source_excerpt": "usually adv.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher A1 adverb is below provisional A2; check habitual frequency and placement before main verbs or after be.",
+      "independent_reviewer_task": "Independent human linguist must check direct publisher exact-sense CEFR evidence, English definition, fluent Myanmar, original example grammar, British usage and audio, and provide authenticated independent signoff. This assistant research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "follow",
+      "level": "A2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To go behind someone who is moving.",
+        "myanmar_meaning": "နောက်က လိုက်သည်",
+        "example_sentence": "Follow me along this path to the garden."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 875,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 2,
+        "extracted_line": 301,
+        "source_excerpt": "follow v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher A1 verb is below provisional A2; check literal moving behind, not obeying instructions, subscribing online or understanding an argument.",
+      "independent_reviewer_task": "Independent human linguist must check direct publisher exact-sense CEFR evidence, English definition, fluent Myanmar, original example grammar, British usage and audio, and provide authenticated independent signoff. This assistant research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "save",
+      "level": "A2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To keep money for future use rather than spend it now.",
+        "myanmar_meaning": "နောင်အသုံးပြုရန် ငွေစုသည်",
+        "example_sentence": "I save a little money every month."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 876,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1582,
+        "source_excerpt": "save v.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher B1 verb is above provisional A2; money-saving meaning is distinct from rescuing lives and saving a computer document.",
+      "independent_reviewer_task": "Independent human linguist must check direct publisher exact-sense CEFR evidence, English definition, fluent Myanmar, original example grammar, British usage and audio, and provide authenticated independent signoff. This assistant research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/save_1",
+        "sense_number": 2,
+        "page_text_line_start": 158,
+        "page_text_line_end": 171,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "Oxford money sense concerns keeping money rather than spending it, unlike the distinct rescue, energy-conservation, and computer-file senses."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "နောက်ပိုင်းတွင် အသုံးပြုရန် ငွေကို မသုံးဘဲ စုဆောင်းထားသည်",
+        "original_example": "She saves a little from her wages every Friday.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "round",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Shaped like a circle or a ball.",
+        "myanmar_meaning": "ဝိုင်းသော၊ လုံးသော",
+        "example_sentence": "The children sat around a round table."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 877,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1568,
+        "source_excerpt": "round adj., adv., prep.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher B1 adjective is above provisional A2; shape sense round versus adverb around, preposition around, or a round of drinks.",
+      "independent_reviewer_task": "Independent human linguist must check direct publisher exact-sense CEFR evidence, English definition, fluent Myanmar, original example grammar, British usage and audio, and provide authenticated independent signoff. This assistant research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "worth",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Having a particular value in money.",
+        "myanmar_meaning": "ငွေကြေးတန်ဖိုးရှိသော",
+        "example_sentence": "This old coin is worth ten dollars."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 878,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 10,
+        "extracted_line": 2586,
+        "source_excerpt": "worth adj.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher B1 adjective is above provisional A2; monetary value uses predicative worth plus amount; distinguish worth doing something.",
+      "independent_reviewer_task": "Independent human linguist must check direct publisher exact-sense CEFR evidence, English definition, fluent Myanmar, original example grammar, British usage and audio, and provide authenticated independent signoff. This assistant research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/worth_1",
+        "sense_number": 1,
+        "page_text_line_start": 103,
+        "page_text_line_end": 115,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "Oxford money-value sense uses predicative worth followed by an amount; the separate worth doing construction evaluates usefulness, not monetary price."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ငွေကြေးတန်ဖိုး သတ်မှတ်ထားသော၊ တန်ဖိုးရှိသော",
+        "original_example": "The second-hand bicycle is worth about fifty pounds.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "exactly",
+      "level": "A2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "In a completely correct or precise way.",
+        "myanmar_meaning": "တိတိကျကျ၊ အတိအကျ",
+        "example_sentence": "Please tell me exactly where to meet you."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 879,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 5,
+        "extracted_line": 1180,
+        "source_excerpt": "exactly adv.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher A2 adverb matches proposed word/POS, but precise-location meaning must not be confused with exactly as agreement or emphasis.",
+      "independent_reviewer_task": "Independent human linguist must check direct publisher exact-sense CEFR evidence, English definition, fluent Myanmar, original example grammar, British usage and audio, and provide authenticated independent signoff. This assistant research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "source",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The place or thing from which something comes.",
+        "myanmar_meaning": "တစ်စုံတစ်ရာ၏ မူလရင်းမြစ်",
+        "example_sentence": "The river has its source in the mountains."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 880,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1644,
+        "source_excerpt": "source n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher B1 noun is above provisional A2; origin of a river is a concrete source, not a citation source or software source code.",
+      "independent_reviewer_task": "Independent human linguist must check direct publisher exact-sense CEFR evidence, English definition, fluent Myanmar, original example grammar, British usage and audio, and provide authenticated independent signoff. This assistant research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "total",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The complete amount after everything is added.",
+        "myanmar_meaning": "စုစုပေါင်းပမာဏ",
+        "example_sentence": "The total for the three tickets was thirty dollars."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 881,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 10,
+        "extracted_line": 2517,
+        "source_excerpt": "total adj., n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher B1 noun is above provisional A2; noun sum after addition, not adjective total or verb to total; Oxford topic badges are not CEFR exact-sense approvals.",
+      "independent_reviewer_task": "Independent human linguist must check direct publisher exact-sense CEFR evidence, English definition, fluent Myanmar, original example grammar, British usage and audio, and provide authenticated independent signoff. This assistant research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/total_2",
+        "sense_number": 1,
+        "page_text_line_start": 103,
+        "page_text_line_end": 122,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "Oxford noun sense means the sum of amounts; distinguish the adjective in total cost, and do not attribute the unrelated Word of the Day footer B2 badge."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "အရေအတွက် သို့မဟုတ် ပမာဏများ ပေါင်းပြီးရသော စုစုပေါင်း",
+        "original_example": "The total for the two notebooks and a pen was six pounds.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "result",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Something that happens because of an action or event.",
+        "myanmar_meaning": "လုပ်ဆောင်မှုတစ်ခု၏ ရလဒ်",
+        "example_sentence": "The result of the test arrived on Monday."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 882,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 3,
+        "extracted_line": 650,
+        "source_excerpt": "result n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher A1 noun is below provisional A2; draft causal consequence definition conflicts with its example about a test result or score.",
+      "independent_reviewer_task": "Independent human linguist must check direct publisher exact-sense CEFR evidence, English definition, fluent Myanmar, original example grammar, British usage and audio, and provide authenticated independent signoff. This assistant research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "share",
+      "level": "A2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To use or have something together with others.",
+        "myanmar_meaning": "အခြားသူများနှင့် အတူမျှဝေသုံးစွဲသည်",
+        "example_sentence": "The two sisters share one bedroom."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 883,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 3,
+        "extracted_line": 685,
+        "source_excerpt": "share v.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher A1 verb is below provisional A2; sharing a bedroom means joint use, not dividing property or broadcasting information.",
+      "independent_reviewer_task": "Independent human linguist must check direct publisher exact-sense CEFR evidence, English definition, fluent Myanmar, original example grammar, British usage and audio, and provide authenticated independent signoff. This assistant research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/share_1",
+        "sense_number": 1,
+        "page_text_line_start": 113,
+        "page_text_line_end": 122,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "Oxford sense one covers having or using something at the same time as another person; distinguish sharing out portions and disclosing information."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "တစ်ခုတည်းသော ပစ္စည်း သို့မဟုတ် နေရာကို အခြားသူနှင့် အတူသုံးသည်",
+        "original_example": "My brother and I share a desk when we study.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    }
+  ]
+}
