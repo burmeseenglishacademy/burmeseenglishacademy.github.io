@@ -84,14 +84,15 @@ PACKETS = {
            "C1-FIFTEENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-11-01",
            "C1-SIXTEENTH-TWELVE-AND-EIGHT-DIRECT-SENSE-LEADS-2026-11-01",
            "C1-SEVENTEENTH-TWELVE-AND-SEVEN-DIRECT-SENSE-LEADS-2026-11-01",
-           "C1-EIGHTEENTH-TWELVE-AND-SIX-DIRECT-SENSE-LEADS-2026-11-01"),
+           "C1-EIGHTEENTH-TWELVE-AND-SIX-DIRECT-SENSE-LEADS-2026-11-01",
+           "C1-FINAL-FIVE-AND-THREE-DIRECT-SENSE-LEADS-2026-11-01"),
 }
 EXPECTED = {
     "A1": {"observations": 203, "distinct": 195, "A1": 195},
     "A2": {"observations": 200, "distinct": 200, "A1": 108, "A2": 58, "B1": 13, "B2": 1, "UNLISTED": 20},
     "B1": {"observations": 200, "distinct": 200, "A1": 27, "A2": 85, "B1": 57, "B2": 31, "locator_only": 12},
     "B2": {"observations": 202, "distinct": 200, "A1": 6, "A2": 32, "B1": 46, "B2": 98, "C1": 16, "UNLISTED": 2, "locator_only": 12},
-    "C1": {"observations": 204, "distinct": 195, "B1": 3, "B2": 45, "C1": 63, "UNLISTED": 84, "locator_only": 12},
+    "C1": {"observations": 209, "distinct": 200, "B1": 3, "B2": 45, "C1": 63, "UNLISTED": 89, "locator_only": 12},
 }
 # Immutable publisher word/POS locator snapshots from the directly inspected
 # B2 fourteenth Oxford PDF packet (2026-10-31). These are source research
