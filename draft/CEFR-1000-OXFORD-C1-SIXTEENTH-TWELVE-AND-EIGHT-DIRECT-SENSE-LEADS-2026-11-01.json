@@ -1,0 +1,567 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "C1_SIXTEENTH_TWELVE_ALL_CORE_LIST_UNLISTED_EIGHT_DIRECT_DICTIONARY_SENSE_LEADS_ALL_HELD",
+  "observed_on": "2026-11-01",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 12
+  },
+  "publisher_reference_level_counts": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0,
+    "UNLISTED": 12
+  },
+  "direct_dictionary_sense_leads": 8,
+  "independently_approved_count": 0,
+  "independent_human_review_receipts": [],
+  "audio_real_listening_signoffs": [],
+  "release_approved": false,
+  "source_limitations": "Both official Oxford core-list PDFs directly inspected on 2026-11-01. Twelve word/POS pairs were not found; absence is NOT a CEFR classification. Eight directly inspected Oxford dictionary pages are grammar/sense leads only. Topic badges, word-of-day footer and unrelated 'From Word list' fragments are NOT headword CEFR. No independent human review or actual listening.",
+  "records": [
+    {
+      "word": "meticulous",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Extremely careful about small details and accuracy.",
+        "myanmar_meaning": "အသေးစိတ်အချက်များနှင့် တိကျမှုကို အလွန်ဂရုစိုက်သော",
+        "example_sentence": "Her meticulous records helped the auditors trace every payment."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 40,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford describes meticulous as approving and careful about every detail; distinguish thorough precision from excessive fussiness, and do not mistake Personal qualities C2 topic tag for headword CEFR.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide a dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/meticulous",
+        "page_lines": "88-114",
+        "sense_number": 1,
+        "sense_summary": "Adjective, approving: careful attention to every detail; meticulous about something / meticulous in doing something. The Personal qualities C2 TOPIC label is not a headword CEFR classification.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "Extremely careful and precise about every detail of a task.",
+        "myanmar_meaning": "အလုပ်တစ်ခု၏ အသေးစိတ်အချက်တိုင်းကို တိတိကျကျ ဂရုတစိုက် ဆောင်ရွက်သော",
+        "example_sentence": "She kept meticulous records of every expense.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "nuanced",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Showing awareness of small but important differences.",
+        "myanmar_meaning": "သေးငယ်သော်လည်း အရေးပါသော ကွာခြားချက်များကို ထည့်သွင်းစဉ်းစားထားသော",
+        "example_sentence": "The report offers a nuanced view of migration patterns."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 42,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford describes slight differences in expression or meaning; draft adds awareness of differences. Verify the intended nuanced-view sense, British pronunciation and collocation.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide a dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/nuanced",
+        "page_lines": "88-107",
+        "sense_number": 1,
+        "sense_summary": "Adjective for slight yet significant differences in expression or meaning. British pronunciation differs from American; the B2 footer belongs to an unrelated word-of-day or topic block.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "Showing subtle differences in meaning, opinion or expression rather than treating everything as simple.",
+        "myanmar_meaning": "အမြင် သို့မဟုတ် အဓိပ္ပာယ်တွင် သေးငယ်သော်လည်း အရေးပါသော ကွာခြားချက်များကို ဖော်ပြထားသော",
+        "example_sentence": "The researcher offered a nuanced explanation of the results.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "pragmatic",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Focused on practical solutions rather than abstract ideals.",
+        "myanmar_meaning": "သဘောတရားသက်သက်ထက် လက်တွေ့ကျသော ဖြေရှင်းနည်းများကို အလေးထားသော",
+        "example_sentence": "They took a pragmatic approach to the budget shortage."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 43,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford contrasts practical sensible problem-solving with fixed theory, not all abstract ideals. Check Myanmar wording and approach to something grammar.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide a dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/pragmatic",
+        "page_lines": "88-123",
+        "sense_number": 1,
+        "sense_summary": "Adjective: solving problems practically and sensibly instead of following rigid theories. Used with approach to something, and pragmatic about something.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "Solving problems in a practical and sensible way rather than relying only on theory.",
+        "myanmar_meaning": "သီအိုရီကိုသာ အားမကိုးဘဲ ပြဿနာများကို လက်တွေ့ကျကျနှင့် အကျိုးသင့်အကြောင်းသင့် ဖြေရှင်းသော",
+        "example_sentence": "The team chose a pragmatic solution to the shortage.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "scrutinize",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To examine something very carefully to find important details or problems.",
+        "myanmar_meaning": "အရေးပါသော အသေးစိတ်အချက်များ သို့မဟုတ် ပြဿနာများကို ရှာဖွေရန် သေချာစွာ စစ်ဆေးသည်",
+        "example_sentence": "Inspectors scrutinize every safety report before approval."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 45,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford explicitly gives British scrutinise as alternative spelling; draft uses scrutinize. Require British spelling policy, pronunciation and transitive object checks without auto-rewriting headword.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide a dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/scrutinize",
+        "page_lines": "88-123",
+        "sense_number": 1,
+        "sense_summary": "Transitive verb: examine a person or thing closely; Oxford explicitly permits British English spelling scrutinise, important for George/Emma British script consistency.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "To examine something very carefully, especially to check details or possible errors.",
+        "myanmar_meaning": "အသေးစိတ်အချက်များနှင့် ဖြစ်နိုင်သော အမှားများကို သိရှိရန် အရာတစ်ခုကို စေ့စေ့စပ်စပ် စိစစ်သည်",
+        "example_sentence": "The auditors scrutinize the records before approving the report.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "stringent",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Very strict and demanding careful compliance.",
+        "myanmar_meaning": "အလွန်တင်းကျပ်ပြီး စည်းကမ်းကို သေချာလိုက်နာရန် လိုအပ်သော",
+        "example_sentence": "The laboratory follows stringent hygiene rules."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 46,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Strict requirements are normally rules, conditions, controls or regulations; verify whether draft 'demanding careful compliance' is clear Burmese and not tautological.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide a dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null
+    },
+    {
+      "word": "tenacious",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Very determined and unwilling to give up.",
+        "myanmar_meaning": "အလွန်စိတ်ပိုင်းဖြတ်ထားပြီး အလွယ်တကူ လက်မလျှော့သော",
+        "example_sentence": "The tenacious researcher continued despite repeated setbacks."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 47,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Distinguish persistence in pursuit of goals from holding tightly to objects or opinions; draft targets determined researcher, but exact sense and level remain unsupported.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide a dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null
+    },
+    {
+      "word": "ubiquitous",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Present or found almost everywhere.",
+        "myanmar_meaning": "နေရာတိုင်းနီးပါးတွင် တွေ့ရှိနိုင်သော",
+        "example_sentence": "Smartphones have become ubiquitous in large cities."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 48,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Nearly everywhere is relative to the described domain, not literally universal; check example claim about smartphones and Myanmar adverbial scope.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide a dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null
+    },
+    {
+      "word": "vindicate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To show that a person's actions or beliefs were justified.",
+        "myanmar_meaning": "လူတစ်ဦး၏ လုပ်ရပ် သို့မဟုတ် ယုံကြည်ချက် မှန်ကန်သင့်လျော်ကြောင်း သက်သေပြသည်",
+        "example_sentence": "The successful trial helped vindicate the engineer's design."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 49,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford separates justifying a decision or belief from proving a person not guilty. Draft's 'engineer's design' is closer to justification than legal exoneration; resolve sense explicitly.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide a dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/vindicate",
+        "page_lines": "88-118",
+        "sense_number": 1,
+        "sense_summary": "Formal verb with distinct senses: vindicate something (justify decision/belief) versus vindicate somebody (show innocence or that someone was right). Draft engineer's design fits sense one.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "To prove that a decision, action or belief was justified, especially after others questioned it.",
+        "myanmar_meaning": "အခြားသူများက သံသယဝင်ခဲ့သည့် ဆုံးဖြတ်ချက်၊ လုပ်ရပ် သို့မဟုတ် ယုံကြည်ချက်သည် မှန်ကန်သင့်လျော်ကြောင်း သက်သေပြသည်",
+        "example_sentence": "The test results helped vindicate her original design.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "vilify",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To describe someone publicly as very bad or deserving blame.",
+        "myanmar_meaning": "လူတစ်ဦးကို အလွန်ဆိုးရွားသူအဖြစ် လူသိရှင်ကြား ပြစ်တင်ဖော်ပြသည်",
+        "example_sentence": "The campaign tried to vilify its critics rather than answer them."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 50,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publicly describing somebody as evil or blameworthy may involve unfairness or malicious intent; verify whether draft gloss captures strong criticism and verb object.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide a dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null
+    },
+    {
+      "word": "whimsical",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Playfully unusual or imaginative.",
+        "myanmar_meaning": "စိတ်ကူးယဉ်ဆန်ပြီး ပျော်ရွှင်စရာကောင်းသည့် ထူးခြားမှုရှိသော",
+        "example_sentence": "The illustrator filled the book with whimsical animals."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 51,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford includes unusual/non-serious quality that may be funny or annoying, whereas draft is purely positive. Check context and avoid overbroad 'imaginative' synonym.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide a dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/whimsical",
+        "page_lines": "88-107",
+        "sense_number": 1,
+        "sense_summary": "Adjective for something unusually playful or not serious, potentially funny OR annoying; draft describes only charming imaginative aspect and omits possible negative tone.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "Unusual and playful in a way that may be amusing or slightly irritating.",
+        "myanmar_meaning": "ရယ်စရာကောင်းနိုင်သလို စိတ်အနှောင့်အယှက်ဖြစ်စေနိုင်သည့် ပေါ့ပေါ့ပါးပါး ထူးခြားသော",
+        "example_sentence": "The artist added whimsical details to the illustrations.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "acquiescence",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Acceptance of a situation without open protest, often unwillingly.",
+        "myanmar_meaning": "မနှစ်သက်သော်လည်း ပွင့်လင်းစွာ မကန့်ကွက်ဘဲ လက်ခံလိုက်ခြင်း",
+        "example_sentence": "Her silence was mistaken for acquiescence to the new policy."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 20,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford defines formal uncountable acceptance despite doubts; the example says silence was mistaken for acquiescence. Avoid interpreting silence as actual agreement; topic/footer CEFR badges are not labels.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide a dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/acquiescence",
+        "page_lines": "88-115",
+        "sense_number": 1,
+        "sense_summary": "Formal uncountable noun: acceptance or compliance even if unsure another person is right; acquiescence in something, sometimes grudging. Silence alone is not necessarily consent.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "Acceptance of another person's wishes or a decision without open objection, even when uncertain or reluctant.",
+        "myanmar_meaning": "မသေချာသော်လည်းကောင်း မလိုလားသော်လည်းကောင်း အခြားသူ၏ ဆန္ဒ သို့မဟုတ် ဆုံးဖြတ်ချက်ကို ပွင့်ပွင့်လင်းလင်း မကန့်ကွက်ဘဲ လက်ခံခြင်း",
+        "example_sentence": "The committee interpreted her silence as acquiescence, but she had not agreed.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "ameliorate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To make a difficult or unpleasant situation better.",
+        "myanmar_meaning": "ခက်ခဲသော သို့မဟုတ် မကောင်းသော အခြေအနေတစ်ခုကို ပိုမိုကောင်းမွန်စေသည်",
+        "example_sentence": "The new drainage system should ameliorate flooding in the village."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 21,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford formal verb is transitive and requires improving an already bad or insufficient state. Check 'ameliorate flooding' naturalness against 'ameliorate the effects of flooding'.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide a dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/ameliorate",
+        "page_lines": "88-123",
+        "sense_number": 1,
+        "sense_summary": "Formal transitive verb: make an already bad or inadequate condition better. Oxford has examples with situation/problem; Change topic C2 is not exact-sense CEFR label.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "To improve a situation or condition that is bad or not good enough.",
+        "myanmar_meaning": "ဆိုးရွားနေသော သို့မဟုတ် မလုံလောက်သော အခြေအနေတစ်ခုကို ပိုမိုကောင်းမွန်လာစေသည်",
+        "example_sentence": "The repairs should ameliorate the drainage problems.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    }
+  ]
+}
