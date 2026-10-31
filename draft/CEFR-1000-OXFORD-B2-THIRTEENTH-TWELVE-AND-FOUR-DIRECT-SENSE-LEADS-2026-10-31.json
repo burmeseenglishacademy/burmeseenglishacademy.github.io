@@ -1,0 +1,480 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B2_THIRTEENTH_TWELVE_DIRECT_OXFORD_WORD_POS_FOUR_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-31",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 12,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 0,
+    "A2": 2,
+    "B1": 4,
+    "B2": 4,
+    "C1": 2
+  },
+  "word_pos_discrepancies": 8,
+  "direct_dictionary_sense_leads": 4,
+  "independently_approved_count": 0,
+  "source_limitations": "Official Oxford 3000 and additional Oxford 5000 CEFR PDFs directly inspected 2026-10-31. Word/POS observations and four direct Oxford dictionary sense leads are not independent exact-sense CEFR approval. Dictionary topic badges are not exact-sense CEFR certifications; the Oxford Word of the Day footer must not be attributed to the searched headword. Myanmar/example proposals are self-authored and unapproved. No human audio listening, browser/mobile/physical iPhone, measured hosting or production deployment verification.",
+  "records": [
+    {
+      "word": "atmosphere",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The general feeling or mood of a place or event.",
+        "myanmar_meaning": "ပတ်ဝန်းကျင်အငွေ့အသက်၊ အခြေအနေ",
+        "example_sentence": "The café has a relaxed atmosphere."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 629,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 7,
+        "extracted_line": 1829,
+        "source_excerpt": "atmosphere n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Mood/feeling in a café is dictionary sense 4, not the earth's gases (sense 1); countable/uncountable use needs attention.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/atmosphere",
+        "sense_number": 4,
+        "page_text_line_start": 164,
+        "page_text_line_end": 183,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "Oxford's fourth numbered noun sense is a place or situation's feeling or mood; relaxed café atmosphere aligns with this meaning, not atmospheric gases."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "နေရာတစ်ခု၏ ခံစားချက်နှင့် အငွေ့အသက်",
+        "original_example": "Soft music created a welcoming atmosphere in the café.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "poverty",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The condition of being extremely poor.",
+        "myanmar_meaning": "ဆင်းရဲနွမ်းပါးမှု",
+        "example_sentence": "The programme aims to reduce poverty in rural areas."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 630,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 9,
+        "extracted_line": 2305,
+        "source_excerpt": "poverty n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Usually uncountable condition of being poor; avoid equating with a single low income or an individual poor person.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "sensitive",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Needing careful handling because it may cause offence or harm.",
+        "myanmar_meaning": "သတိထားကိုင်တွယ်ရသော၊ ထိလွယ်ရှလွယ်ဖြစ်သော",
+        "example_sentence": "The manager discussed the sensitive issue privately."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 631,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 12,
+        "extracted_line": 3176,
+        "source_excerpt": "sensitive adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft's potentially offensive issue aligns with dictionary sense 5, not sensitive person/skin; exact-sense level remains unverified.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/sensitive",
+        "sense_number": 5,
+        "page_text_line_start": 206,
+        "page_text_line_end": 215,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "The fifth adjective sense concerns information or subjects requiring tact because they may upset or offend people; distinct from skin sensitivity or easily upset people."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "အခြားသူများ စိတ်ထိခိုက်နိုင်သဖြင့် သတိထားပြောဆိုကိုင်တွယ်ရသော",
+        "original_example": "The teacher handled the sensitive topic with care.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "dispute",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A serious disagreement between people or organisations.",
+        "myanmar_meaning": "အငြင်းပွားမှု",
+        "example_sentence": "The neighbours settled their dispute peacefully."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 638,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 5,
+        "extracted_line": 1103,
+        "source_excerpt": "dispute n., v.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford lists noun and verb together; draft uses a countable disagreement noun, not the verb 'dispute a claim'.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/dispute_1",
+        "sense_number": 1,
+        "page_text_line_start": 111,
+        "page_text_line_end": 143,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "Oxford's noun sense covers disagreement between parties; it can be countable or uncountable, and settle a dispute is a supported collocation."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "လူပုဂ္ဂိုလ် သို့မဟုတ် အဖွဲ့အစည်းများအကြား အငြင်းပွားမှု",
+        "original_example": "The two neighbours resolved their dispute after a meeting.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "crucial",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Extremely important to the success of something.",
+        "myanmar_meaning": "အလွန်အရေးကြီးသော",
+        "example_sentence": "Clear communication is crucial during an emergency."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 639,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 10,
+        "extracted_line": 2750,
+        "source_excerpt": "crucial adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Extremely important is broader than simply useful; collocations crucial to/for and vital difference require review.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "collaboration",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The act of working together to achieve a shared goal.",
+        "myanmar_meaning": "ပူးပေါင်းဆောင်ရွက်မှု",
+        "example_sentence": "The project succeeded through collaboration between teams."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 640,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 4,
+        "extracted_line": 917,
+        "source_excerpt": "collaboration n.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Dictionary sense 1 working together differs from sense 2 joint product and sense 3 wartime assistance to an enemy.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/collaboration",
+        "sense_number": 1,
+        "page_text_line_start": 105,
+        "page_text_line_end": 117,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "Oxford sense 1 covers working jointly to create or produce something; it is countable or uncountable, distinct from a joint work or wartime collaboration."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ဘုံရည်မှန်းချက်တစ်ခုအတွက် အတူတကွ ပူးပေါင်းလုပ်ဆောင်မှု",
+        "original_example": "Close collaboration between the two teams improved the final design.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "consideration",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Careful thought about something before making a decision.",
+        "myanmar_meaning": "သေချာစဉ်းစားသုံးသပ်မှု",
+        "example_sentence": "The proposal deserves careful consideration."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 641,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 10,
+        "extracted_line": 2720,
+        "source_excerpt": "consideration n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Careful thought is uncountable in the draft; distinguish 'a consideration' as a factor or reason.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "reliable",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Able to be trusted to work well or give correct information.",
+        "myanmar_meaning": "ယုံကြည်စိတ်ချရသော",
+        "example_sentence": "We need a reliable source for these figures."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 642,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 9,
+        "extracted_line": 2369,
+        "source_excerpt": "reliable adj.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Reliable source of information versus reliable machinery/person; example is evidence-quality context.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "transition",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The process of changing from one state or situation to another.",
+        "myanmar_meaning": "အသွင်ကူးပြောင်းမှု",
+        "example_sentence": "The transition to online learning took several months."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 643,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 12,
+        "extracted_line": 3262,
+        "source_excerpt": "transition n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Process of change from one state to another; distinguish the transition period from the completed outcome.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "celebrate",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To mark a special occasion with enjoyable activities.",
+        "myanmar_meaning": "အထိမ်းအမှတ်ပြု ကျင်းပသည်",
+        "example_sentence": "We will celebrate the company's anniversary next week."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 704,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 4,
+        "extracted_line": 1032,
+        "source_excerpt": "celebrate v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Company anniversary is a special occasion; distinguish holding a celebration from praising an achievement.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "gallery",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A place where works of art are displayed.",
+        "myanmar_meaning": "အနုပညာပြခန်း",
+        "example_sentence": "The gallery displays paintings by local artists."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 705,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 5,
+        "extracted_line": 1242,
+        "source_excerpt": "gallery n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Art exhibition room/building rather than upper seating gallery or online image collection.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "rough",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Not smooth or even to the touch.",
+        "myanmar_meaning": "ကြမ်းတမ်းသော၊ မညီညာသော",
+        "example_sentence": "The rough surface scratched the wooden box."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 708,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 9,
+        "extracted_line": 2399,
+        "source_excerpt": "rough adj.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft physical-texture sense versus rough estimate, difficult experience or rough behaviour; source POS alone cannot resolve.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
