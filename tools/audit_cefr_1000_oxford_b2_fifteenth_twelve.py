@@ -26,7 +26,7 @@ def require(ok, why):
 
 def blob_sha(path):
     data = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\\0" + data).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
 
 def audit(packet=None, shortlist=None):
     require(blob_sha(PACKET) == PACKET_SHA, "Research packet Git blob drift")
