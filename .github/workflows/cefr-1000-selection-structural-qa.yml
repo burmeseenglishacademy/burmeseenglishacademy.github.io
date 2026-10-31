@@ -23,6 +23,8 @@ on:
       - tools/audit_cefr_1000_oxford_c1_final_five.py
       - draft/CEFR-1000-OXFORD-C1-TWELFTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
       - tools/audit_cefr_1000_oxford_c1_twelfth_twelve.py
+      - draft/CEFR-1000-SHARED-MYANMAR-GLOSS-SEVEN-PAIRS-2026-11-01.json
+      - tools/audit_cefr_1000_shared_myanmar_gloss.py
       - draft/CEFR-1000-PROVISIONAL-SHORTLIST.json
       - draft/CEFR-1000-A1-FIVE-REMAINING-MORPHOLOGY-AND-RABBIT-SENSE-QUARANTINE-2026-10-30.json
       - tools/audit_cefr_1000_a1_five_morphology.py
@@ -829,11 +831,17 @@ jobs:
       - name: Reject 91 forged final C1 publisher, bilingual and false-review mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_c1_final_five.py --self-test
+      - name: Audit 7 identical Myanmar gloss pairs and 14 held source-linked entries
+        run: python3 tools/audit_cefr_1000_shared_myanmar_gloss.py --level "${{ matrix.level }}"
+      - name: Reject 365 forged gloss, provenance, publisher-access and approval mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_shared_myanmar_gloss.py --level ALL --self-test
       - name: Save structural QA record (not linguistic verification)
         uses: actions/upload-artifact@v4
         with:
           name: cefr-1000-provisional-${{ matrix.level }}
           path: |
+            cefr-1000-shared-myanmar-gloss-${{ matrix.level }}.json
             cefr-1000-shortlist-qa-${{ matrix.level }}.json
             cefr-1000-review-handoff-ALL.json
             cefr-1000-oxford-direct-spotcheck-${{ matrix.level }}.json
