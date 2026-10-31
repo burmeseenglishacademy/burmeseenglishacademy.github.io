@@ -1,0 +1,554 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "C1_SEVENTEENTH_TWELVE_ALL_CORE_LIST_UNLISTED_SEVEN_DIRECT_DICTIONARY_SENSE_LEADS_ALL_HELD",
+  "observed_on": "2026-11-01",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 12
+  },
+  "publisher_reference_level_counts": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0,
+    "UNLISTED": 12
+  },
+  "direct_dictionary_sense_leads": 7,
+  "independently_approved_count": 0,
+  "independent_human_review_receipts": [],
+  "audio_real_listening_signoffs": [],
+  "release_approved": false,
+  "source_limitations": "Directly inspected official Oxford 3000 and Oxford 5000 CEFR PDFs on 2026-11-01; all twelve exact headword/POS strings absent from both core lists. Absence is NOT a CEFR classification. Seven directly inspected Oxford dictionary pages are only sense and grammar leads. Unrelated topic/word-of-day footer CEFR badges must never be attributed to these headwords. No independent human review or real listening.",
+  "records": [
+    {
+      "word": "antagonistic",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Showing active hostility or opposition towards someone.",
+        "myanmar_meaning": "တစ်စုံတစ်ဦးအပေါ် ရန်လိုဆန့်ကျင်သည့် သဘောထားရှိသော",
+        "example_sentence": "His antagonistic remarks made cooperation between the teams harder."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 22,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Formal adjective for hostile opposition; distinguish antagonistic to/towards somebody from neutral disagreement. Dictionary footer's unrelated B2 topic must not be assigned to this headword.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/antagonistic",
+        "page_lines": "88-107",
+        "sense_number": 1,
+        "sense_summary": "Formal adjective; antagonistic to/towards somebody or something means hostile/opposed, not merely different in opinion. Page footer topic belongs to another word.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "Showing hostility or strong opposition towards someone or something.",
+        "myanmar_meaning": "တစ်ဦးတစ်ယောက် သို့မဟုတ် အရာတစ်ခုအပေါ် ရန်လိုဆန့်ကျင်သော သဘောထားရှိသည့်",
+        "example_sentence": "Her antagonistic attitude towards the proposal made discussion difficult.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "arbitrariness",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The quality of being based on personal choice rather than a fair rule.",
+        "myanmar_meaning": "တရားမျှတသော စည်းမျဉ်းအစား ကိုယ်ပိုင်သဘောအတိုင်း ဆုံးဖြတ်ခြင်း၏ သဘောသဘာဝ",
+        "example_sentence": "Workers criticised the arbitrariness of the promotion decisions."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 23,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Uncountable noun with at least two Oxford senses: lack of reason/system, or unchecked exercise of power; draft 'personal choice' narrows meaning. Unrelated topic/footer C1 is not headword CEFR.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/arbitrariness",
+        "page_lines": "88-116",
+        "sense_number": 1,
+        "sense_summary": "Uncountable noun: decisions lacking reason, system or plan, sometimes unfair; separate formal sense of unchecked power. Topic footer is unrelated.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "The quality of decisions seeming to lack a clear reason or consistent rule.",
+        "myanmar_meaning": "ဆုံးဖြတ်ချက်များတွင် ရှင်းလင်းသော အကြောင်းပြချက် သို့မဟုတ် တစ်သမတ်တည်း စည်းမျဉ်းမရှိသည့် သဘော",
+        "example_sentence": "Staff questioned the arbitrariness of the new promotion policy.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "assiduous",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Showing steady and careful effort over a long period.",
+        "myanmar_meaning": "အချိန်ကြာမြင့်စွာ ဇွဲရှိရှိနှင့် ဂရုတစိုက် ကြိုးစားလုပ်ဆောင်သော",
+        "example_sentence": "Her assiduous preparation helped the research team avoid errors."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 24,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Formal adjective for diligent sustained effort; verify whether careful persistence and attentiveness both match draft example. Core-list absence is not evidence of C1.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null
+    },
+    {
+      "word": "catharsis",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A feeling of emotional relief after expressing strong feelings.",
+        "myanmar_meaning": "ပြင်းထန်သော ခံစားချက်များကို ဖော်ထုတ်ပြီးနောက် စိတ်ပေါ့ပါးသက်သာလာခြင်း",
+        "example_sentence": "Writing about the experience gave him a sense of catharsis."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 25,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Specialist countable/uncountable noun for release of strong feelings through expressive experience, not any ordinary sense of relief. Plural catharses; footer B2 belongs to unrelated word.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/catharsis",
+        "page_lines": "88-120",
+        "sense_number": 1,
+        "sense_summary": "Specialist noun, countable or uncountable, for emotional release through expression or artistic activity; plural catharses, not catharsises. Footer B2 unrelated.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "Relief that comes from expressing strong or painful emotions.",
+        "myanmar_meaning": "ပြင်းထန်သော သို့မဟုတ် နာကျင်စရာ ခံစားချက်များကို ဖော်ထုတ်ပြီးနောက် စိတ်သက်သာလာခြင်း",
+        "example_sentence": "Writing about her grief brought a sense of catharsis.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "circumvent",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To find a way around a rule, restriction or difficulty.",
+        "myanmar_meaning": "စည်းကမ်း၊ ကန့်သတ်ချက် သို့မဟုတ် အခက်အခဲကို လှည့်ပတ်ကျော်လွှားသည်",
+        "example_sentence": "The company must not circumvent safety checks to save time."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 26,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Formal transitive verb with distinct figurative avoiding-a-rule/difficulty and literal going-around-an-obstacle senses. Draft example concerns bypassing safety checks; topic C2 is not headword CEFR.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/circumvent",
+        "page_lines": "88-119",
+        "sense_number": 1,
+        "sense_summary": "Formal transitive verb: evade a rule/difficulty or physically go around an obstacle; two senses must not be conflated. Topic C2 badge is not CEFR for the word.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "To avoid a rule or restriction by finding another way around it.",
+        "myanmar_meaning": "စည်းမျဉ်း သို့မဟုတ် ကန့်သတ်ချက်ကို လိုက်နာမည့်အစား အခြားနည်းလမ်းဖြင့် ရှောင်ကွင်းသည်",
+        "example_sentence": "The supplier must not circumvent the required safety checks.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "coalesce",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To join together to form one group or whole.",
+        "myanmar_meaning": "အစုအဖွဲ့များ ပေါင်းစည်းပြီး တစ်စုတစ်စည်းတည်း ဖြစ်လာသည်",
+        "example_sentence": "Several small community groups began to coalesce around the proposal."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 27,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Formal intransitive verb, often coalesce into something, for groups/substances becoming a single whole; ensure no transitive 'coalesce groups' error. Footer C1 belongs to unrelated word.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/coalesce",
+        "page_lines": "88-113",
+        "sense_number": 1,
+        "sense_summary": "Formal intransitive verb, often coalesce into, meaning separate groups or substances unite to form one whole; no direct object.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "To come together and form one larger group or whole.",
+        "myanmar_meaning": "သီးခြားအစုအဖွဲ့များ ပေါင်းစည်းကာ ပိုမိုကြီးမားသော တစ်စုတစ်စည်း ဖြစ်လာသည်",
+        "example_sentence": "Several local groups coalesced into a single association.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "conjecture",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An opinion or explanation based on incomplete evidence.",
+        "myanmar_meaning": "အထောက်အထား မပြည့်စုံသေးချိန်တွင် ခန့်မှန်းထားသော အယူအဆ",
+        "example_sentence": "Without test results, the cause of the failure remains conjecture."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 28,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Can function as noun and verb; draft noun should distinguish an inference without adequate evidence from a proved cause, and confirm natural article/uncountable use.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null
+    },
+    {
+      "word": "conscientious",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Careful to do work thoroughly and responsibly.",
+        "myanmar_meaning": "အလုပ်ကို တာဝန်သိစွာ အသေးစိတ် ဂရုတစိုက် ဆောင်ရွက်သော",
+        "example_sentence": "A conscientious inspector records even small defects in the report."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 29,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Adjective for careful, responsible, thorough work; distinguish from 'conscious' and from the different 'conscientious objection' construction. Topic C1 does not establish CEFR for this headword.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/conscientious",
+        "page_lines": "88-107",
+        "sense_number": 1,
+        "sense_summary": "Adjective meaning careful and thorough in performing duties; Oxford topic Personal qualities C1 is a topic label, not an exact-sense CEFR signoff.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "Careful and responsible about doing a task correctly.",
+        "myanmar_meaning": "လုပ်ငန်းတာဝန်ကို မှန်ကန်စွာ ပြီးမြောက်အောင် တာဝန်သိသိနှင့် ဂရုတစိုက် ဆောင်ရွက်သော",
+        "example_sentence": "A conscientious inspector records every defect, however small.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "culpability",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Responsibility for a mistake or harmful action.",
+        "myanmar_meaning": "အမှား သို့မဟုတ် ထိခိုက်နစ်နာစေသော လုပ်ရပ်အတွက် အပြစ်တာဝန်ရှိမှု",
+        "example_sentence": "The investigation examined each manager's culpability in the incident."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 31,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Abstract noun for blame or responsibility for wrongdoing; distinguish causal responsibility from legally established guilt, and check 'culpability in/for' collocation.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null
+    },
+    {
+      "word": "disparage",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To speak about someone or something as if they have little value.",
+        "myanmar_meaning": "လူတစ်ဦး သို့မဟုတ် အရာတစ်ခု၏ တန်ဖိုးကို နှိမ့်ချပြောဆိုသည်",
+        "example_sentence": "A professional manager should not disparage colleagues in meetings."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 32,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Formal transitive verb disparage somebody/something, implying belittling their importance/value rather than simply disagreeing. Unrelated word-of-day footer B2 is not headword CEFR.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/disparage",
+        "page_lines": "88-112",
+        "sense_number": 1,
+        "sense_summary": "Formal transitive verb to belittle the value or importance of somebody or something, not simply offer criticism. Footer topic badge unrelated.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "To speak about someone or something as though they have little worth.",
+        "myanmar_meaning": "တစ်စုံတစ်ဦး သို့မဟုတ် အရာတစ်ခု၏ တန်ဖိုးကို နိမ့်ကျသကဲ့သို့ ပြောဆိုသည်",
+        "example_sentence": "She refused to disparage her former colleagues.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "dissonance",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A lack of agreement between ideas, values or feelings.",
+        "myanmar_meaning": "အယူအဆများ၊ တန်ဖိုးထားမှုများ သို့မဟုတ် ခံစားချက်များအကြား မညီညွတ်မှု",
+        "example_sentence": "She felt dissonance between her values and the company's actions."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 34,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Noun has music and psychological/ideological senses; draft example may mean cognitive dissonance rather than general disagreement, so human must confirm exact sense.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null
+    },
+    {
+      "word": "elucidate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To explain something difficult so that it becomes clear.",
+        "myanmar_meaning": "နားလည်ရခက်သော အကြောင်းအရာကို ရှင်းလင်းနားလည်အောင် ဖော်ပြသည်",
+        "example_sentence": "The lecturer used a diagram to elucidate the complex process."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 35,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Formal transitive verb to make an idea or explanation clearer; ensure grammar 'elucidate the process' and distinguish elucidation from simply describing an object.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null
+    }
+  ]
+}
