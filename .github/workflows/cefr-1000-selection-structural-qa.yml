@@ -204,6 +204,8 @@ on:
       - tools/audit_cefr_1000_oxford_b2_thirteenth_twelve.py
       - draft/CEFR-1000-OXFORD-B2-FOURTEENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
       - tools/audit_cefr_1000_oxford_b2_fourteenth_twelve.py
+      - draft/CEFR-1000-OXFORD-B2-FIFTEENTH-TWELVE-AND-FOUR-DICTIONARY-SENSE-LEADS-2026-10-31.json
+      - tools/audit_cefr_1000_oxford_b2_fifteenth_twelve.py
       - draft/CEFR-1000-CAMBRIDGE-C1-NINE-INDEXED-SENSE-AND-POS-TRIAGE-2026-10-31.json
       - tools/audit_cefr_1000_cambridge_c1_nine_indexed.py
       - draft/CEFR-1000-CAMBRIDGE-C1-TWELVE-INDEXED-LEXICAL-SENSE-TRIAGE-2026-10-31.json
@@ -712,6 +714,11 @@ jobs:
       - name: Reject forged B2 fourteenth Oxford evidence and signoff (ALL lane)
         if: matrix.level == 'ALL'
         run: python3 tools/audit_cefr_1000_oxford_b2_fourteenth_twelve.py --level ALL --self-test
+      - name: Audit B2 fifteenth 12 Oxford publisher word/POS and four unapproved sense leads
+        run: python3 tools/audit_cefr_1000_oxford_b2_fifteenth_twelve.py --level "${{ matrix.level }}"
+      - name: Reject 220 forged B2 fifteenth publisher, Myanmar, source and approval mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_oxford_b2_fifteenth_twelve.py --level ALL --self-test
       - name: Cross-check actual shared wordforms with protected IELTS 1000 dataset
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_ielts_overlap.py
