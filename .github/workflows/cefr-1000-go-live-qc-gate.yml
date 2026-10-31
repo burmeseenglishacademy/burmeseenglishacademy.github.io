@@ -13,6 +13,8 @@ on:
       - tools/audit_cefr_1000_oxford_c1_fourteenth_twelve.py
       - draft/CEFR-1000-OXFORD-C1-FIFTEENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-11-01.json
       - tools/audit_cefr_1000_oxford_c1_fifteenth_twelve.py
+      - draft/CEFR-1000-OXFORD-C1-SIXTEENTH-TWELVE-AND-EIGHT-DIRECT-SENSE-LEADS-2026-11-01.json
+      - tools/audit_cefr_1000_oxford_c1_sixteenth_twelve.py
       - draft/CEFR-1000-OXFORD-C1-TWELFTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
       - tools/audit_cefr_1000_oxford_c1_twelfth_twelve.py
       - draft/CEFR-1000-RELEASE-EVIDENCE.json
@@ -364,6 +366,8 @@ jobs:
         run: python3 tools/audit_cefr_1000_oxford_c1_fourteenth_twelve.py --level ALL --self-test
       - name: Audit C1 fifteenth Oxford absence and reject forged approvals (report only)
         run: python3 tools/audit_cefr_1000_oxford_c1_fifteenth_twelve.py --level ALL --self-test
+      - name: Audit C1 sixteenth Oxford absences and reject 210 forged approvals (report only)
+        run: python3 tools/audit_cefr_1000_oxford_c1_sixteenth_twelve.py --self-test
       - name: Report missing real approvals, voice listening, iPhone and hosting QC
         run: python3 tools/audit_cefr_1000_launch_readiness.py --report-only --self-test
       - name: Explicitly enforce ALL evidence if release candidate manually checked
