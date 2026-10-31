@@ -15,6 +15,8 @@ on:
       - tools/audit_cefr_1000_oxford_c1_fifteenth_twelve.py
       - draft/CEFR-1000-OXFORD-C1-SIXTEENTH-TWELVE-AND-EIGHT-DIRECT-SENSE-LEADS-2026-11-01.json
       - tools/audit_cefr_1000_oxford_c1_sixteenth_twelve.py
+      - draft/CEFR-1000-OXFORD-C1-SEVENTEENTH-TWELVE-AND-SEVEN-DIRECT-SENSE-LEADS-2026-11-01.json
+      - tools/audit_cefr_1000_oxford_c1_seventeenth_twelve.py
       - draft/CEFR-1000-OXFORD-C1-TWELFTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
       - tools/audit_cefr_1000_oxford_c1_twelfth_twelve.py
       - draft/CEFR-1000-PROVISIONAL-SHORTLIST.json
@@ -805,6 +807,12 @@ jobs:
       - name: Reject 210 forged C1 publisher, bilingual, provenance and approval mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_oxford_c1_sixteenth_twelve.py --self-test
+      - name: Audit 12 more held C1 Oxford core-list absences and seven direct sense leads
+        if: ${{ matrix.level == 'C1' || matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_oxford_c1_seventeenth_twelve.py
+      - name: Reject 210 forged C1 seventeenth publisher, bilingual, provenance and approval mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_oxford_c1_seventeenth_twelve.py --self-test
       - name: Save structural QA record (not linguistic verification)
         uses: actions/upload-artifact@v4
         with:
