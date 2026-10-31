@@ -1,0 +1,476 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B2_FIFTEENTH_TWELVE_DIRECT_OXFORD_WORD_POS_FOUR_DICTIONARY_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-31",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 12,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 1,
+    "A2": 1,
+    "B1": 3,
+    "B2": 6,
+    "C1": 1
+  },
+  "word_pos_discrepancies": 6,
+  "direct_dictionary_sense_leads": 4,
+  "independently_approved_count": 0,
+  "source_limitations": "Official Oxford 3000/5000 CEFR PDFs directly inspected on 2026-10-31, with 1-based PDF page and zero-based extracted text line locators. Four dictionary pages observed via publisher-indexed search extracts, not independent human verification. Publisher word/POS CEFR is not exact-sense CEFR evidence; topic badges are not independently approved labels. Frozen shortlist and review flags unchanged; final George/Emma listening, physical iPhone, hosting and deployment gates remain absent.",
+  "records": [
+    {
+      "word": "administrative",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Connected with organising and managing office work.",
+        "myanmar_meaning": "ရုံးလုပ်ငန်းစီမံခန့်ခွဲမှုနှင့်ဆိုင်သော",
+        "example_sentence": "She handles administrative tasks for the team."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 803,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 3,
+        "extracted_line": 737,
+        "source_excerpt": "administrative adj.",
+        "source_cefr_level": "C1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford 5000 labels administrative adjective C1, above provisional B2. It concerns organisational/office duties rather than management authority or an administrator as a person; independent exact-sense C1/B2 decision required.",
+      "independent_reviewer_task": "Independent human editor must check the exact intended sense, source-backed CEFR level, English definition, idiomatic Myanmar, original-example grammar, British pronunciation and historical provenance; direct publisher word/POS evidence and self-authored proposals do not establish independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/administrative",
+        "sense_number": 1,
+        "sense_summary": "Oxford adjective entry describes duties connected with organising the work of a business or institution; the draft administrative tasks example matches that domain, not administrative power.",
+        "observed_on": "2026-10-31",
+        "access": "PUBLISHER_DICTIONARY_WEB_SEARCH_INDEXED_EXTRACT_NOT_HUMAN_VERIFIED",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "အဖွဲ့အစည်းတစ်ခု၏ ရုံးလုပ်ငန်းများကို စီစဉ်ဆောင်ရွက်ခြင်းနှင့် သက်ဆိုင်သော",
+        "original_example": "The new assistant is responsible for administrative records and meeting schedules.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "argue",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To give reasons for believing that something is true.",
+        "myanmar_meaning": "အကြောင်းပြချက်များဖြင့် ထောက်ပြဆွေးနွေးသည်",
+        "example_sentence": "Researchers argue that sleep improves memory."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 792,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 4,
+        "extracted_line": 955,
+        "source_excerpt": "argue v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford 3000 labels argue verb A2, below provisional B2; draft illustrates asserting a reasoned proposition rather than quarrelling. Distinguish argue that from argue with/about before any B2 claim.",
+      "independent_reviewer_task": "Independent human editor must check the exact intended sense, source-backed CEFR level, English definition, idiomatic Myanmar, original-example grammar, British pronunciation and historical provenance; direct publisher word/POS evidence and self-authored proposals do not establish independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "colour",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The appearance of something caused by how it reflects light.",
+        "myanmar_meaning": "အလင်းရောင်ပြန်ဟပ်မှုကြောင့် မြင်ရသော အရောင်",
+        "example_sentence": "The colour of the sky changed before sunset."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 845,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 1,
+        "extracted_line": 162,
+        "source_excerpt": "colour n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford 3000 labels colour noun A1; directly inspected Oxford dictionary noun sense 1 also describes visible hue, and its Colours and Shapes a1 topic badge is a topic label, not independent exact-sense CEFR signoff. Provisional B2 is especially difficult to justify.",
+      "independent_reviewer_task": "Independent human editor must check the exact intended sense, source-backed CEFR level, English definition, idiomatic Myanmar, original-example grammar, British pronunciation and historical provenance; direct publisher word/POS evidence and self-authored proposals do not establish independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/colour_1",
+        "sense_number": 1,
+        "sense_summary": "Oxford noun sense 1 describes the visible quality produced by light reflection, countable or uncountable; the draft sky example fits the basic sense, which has a Colours and Shapes a1 topic badge (topic tag is not independent exact-sense CEFR signoff).",
+        "observed_on": "2026-10-31",
+        "access": "PUBLISHER_DICTIONARY_WEB_SEARCH_INDEXED_EXTRACT_NOT_HUMAN_VERIFIED",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "အရာဝတ္ထုတစ်ခု၏ အလင်းပြန်ဟပ်ပုံကြောင့် မျက်စိဖြင့် မြင်ရသော အရောင်",
+        "original_example": "The colour of the leaves changed from green to yellow.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "defend",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To protect someone or something from attack or criticism.",
+        "myanmar_meaning": "ကာကွယ်သည်",
+        "example_sentence": "The lawyer will defend her client in court."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 787,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 11,
+        "extracted_line": 2767,
+        "source_excerpt": "defend v.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford 3000 B2 verb label matches provisional level, but legal representation in court is more specific than generic protection from physical attack or criticism; definition and example need exact-sense alignment.",
+      "independent_reviewer_task": "Independent human editor must check the exact intended sense, source-backed CEFR level, English definition, idiomatic Myanmar, original-example grammar, British pronunciation and historical provenance; direct publisher word/POS evidence and self-authored proposals do not establish independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "element",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An important part of a larger whole.",
+        "myanmar_meaning": "အစိတ်အပိုင်း၊ အရေးပါသောအချက်",
+        "example_sentence": "Trust is a key element of teamwork."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 793,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 8,
+        "extracted_line": 2010,
+        "source_excerpt": "element n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford 3000 B1 noun label is below provisional B2. A constituent of a process is different from a chemical element; review whether the example and Myanmar definition justify a separate higher-level teaching sense.",
+      "independent_reviewer_task": "Independent human editor must check the exact intended sense, source-backed CEFR level, English definition, idiomatic Myanmar, original-example grammar, British pronunciation and historical provenance; direct publisher word/POS evidence and self-authored proposals do not establish independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "extension",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An additional period of time allowed for something.",
+        "myanmar_meaning": "အချိန်တိုးမြှင့်ခွင့်",
+        "example_sentence": "The student requested an extension for the assignment."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 794,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 5000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 1,
+        "extracted_line": 237,
+        "source_excerpt": "extension n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford 5000 B2 noun label matches draft; deadline extension is distinct from physical building extension, telephone extension and software extension. Human reviewer must confirm the intended time-extension sense and countability.",
+      "independent_reviewer_task": "Independent human editor must check the exact intended sense, source-backed CEFR level, English definition, idiomatic Myanmar, original-example grammar, British pronunciation and historical provenance; direct publisher word/POS evidence and self-authored proposals do not establish independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "extent",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The degree or amount to which something happens.",
+        "myanmar_meaning": "အတိုင်းအတာ၊ အဆင့်အတန်း",
+        "example_sentence": "We do not yet know the full extent of the damage."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 721,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 11,
+        "extracted_line": 2843,
+        "source_excerpt": "extent n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford 3000 B2 noun label matches draft; the extent of damage is degree/scale, not geographical area. The Myanmar rendering အဆင့်အတန်း may imply social rank or grade and needs natural-sense review.",
+      "independent_reviewer_task": "Independent human editor must check the exact intended sense, source-backed CEFR level, English definition, idiomatic Myanmar, original-example grammar, British pronunciation and historical provenance; direct publisher word/POS evidence and self-authored proposals do not establish independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "harm",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Physical injury or damage to someone or something.",
+        "myanmar_meaning": "ထိခိုက်နစ်နာမှု",
+        "example_sentence": "The new rules aim to reduce harm to wildlife."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 722,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 11,
+        "extracted_line": 2899,
+        "source_excerpt": "harm n., v.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford 3000 B2 lists both noun and verb; Oxford dictionary noun is uncountable and includes damage or injury. The draft's wildlife example may involve ecological rather than only physical injury; distinguish noun from verb and narrow definition.",
+      "independent_reviewer_task": "Independent human editor must check the exact intended sense, source-backed CEFR level, English definition, idiomatic Myanmar, original-example grammar, British pronunciation and historical provenance; direct publisher word/POS evidence and self-authored proposals do not establish independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/harm_1",
+        "sense_number": 1,
+        "sense_summary": "Oxford noun entry is uncountable damage or injury, including harm to somebody/something; wildlife example fits damage broadly, while draft physical-only definition may be too narrow.",
+        "observed_on": "2026-10-31",
+        "access": "PUBLISHER_DICTIONARY_WEB_SEARCH_INDEXED_EXTRACT_NOT_HUMAN_VERIFIED",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "လူ၊ တိရစ္ဆာန် သို့မဟုတ် ပတ်ဝန်းကျင်ကို ထိခိုက်ပျက်စီးစေမှု",
+        "original_example": "The chemical spill caused serious harm to the river ecosystem.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "hunt",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To chase or search for wild animals in order to catch them.",
+        "myanmar_meaning": "တောရိုင်းတိရစ္ဆာန်ကို ဖမ်းရန် လိုက်လံရှာဖွေသည်",
+        "example_sentence": "Some animals hunt for food after dark."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 846,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 8,
+        "extracted_line": 2127,
+        "source_excerpt": "hunt v.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford 3000 B1 verb label below draft B2; animals hunting prey is not the same as humans hunting for sport or searching for lost things. Human review must decide teaching sense and level.",
+      "independent_reviewer_task": "Independent human editor must check the exact intended sense, source-backed CEFR level, English definition, idiomatic Myanmar, original-example grammar, British pronunciation and historical provenance; direct publisher word/POS evidence and self-authored proposals do not establish independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "impressive",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Causing admiration because of quality or skill.",
+        "myanmar_meaning": "အထင်ကြီးလေးစားဖွယ်ကောင်းသော",
+        "example_sentence": "Her presentation was impressive and clear."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 789,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 8,
+        "extracted_line": 2140,
+        "source_excerpt": "impressive adj.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford 3000 B1 adjective label below provisional B2. The simple praise sense in the example may not support an advanced-level placement; Myanmar idiomatic wording and collocations need independent review.",
+      "independent_reviewer_task": "Independent human editor must check the exact intended sense, source-backed CEFR level, English definition, idiomatic Myanmar, original-example grammar, British pronunciation and historical provenance; direct publisher word/POS evidence and self-authored proposals do not establish independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "moral",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Connected with ideas of right and wrong behaviour.",
+        "myanmar_meaning": "ကျင့်ဝတ်နှင့် ဆိုင်သော",
+        "example_sentence": "The story raises a difficult moral question."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 795,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 11,
+        "extracted_line": 3013,
+        "source_excerpt": "moral adj., n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford 3000 B2 lists moral adjective and noun; directly inspected Oxford adjective sense 1 describes principles of right/wrong and typically occurs before nouns. Do not transfer a topic badge attached to another sense or noun into exact-sense approval.",
+      "independent_reviewer_task": "Independent human editor must check the exact intended sense, source-backed CEFR level, English definition, idiomatic Myanmar, original-example grammar, British pronunciation and historical provenance; direct publisher word/POS evidence and self-authored proposals do not establish independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/moral_1",
+        "sense_number": 1,
+        "sense_summary": "Oxford adjective sense 1 is connected with principles of right and wrong behaviour and appears before a noun; moral question is grammatical. Other moral senses and the separate noun should not be conflated.",
+        "observed_on": "2026-10-31",
+        "access": "PUBLISHER_DICTIONARY_WEB_SEARCH_INDEXED_EXTRACT_NOT_HUMAN_VERIFIED",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "အမှန်နှင့်အမှား၊ ကောင်းမှုနှင့်မကောင်းမှုဆိုင်ရာ ကျင့်ဝတ်သဘောတရားနှင့် ပတ်သက်သော",
+        "original_example": "The committee discussed the moral responsibility of protecting vulnerable people.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "offensive",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Likely to make people feel insulted or upset.",
+        "myanmar_meaning": "စော်ကားရာရောက်သော၊ စိတ်ထိခိုက်စေသော",
+        "example_sentence": "The advertisement contained offensive language."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 796,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 11,
+        "extracted_line": 3038,
+        "source_excerpt": "offensive adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford 3000 B2 adjective label matches draft; offensive language is insulting, not an offensive military operation or aggressive sports play. Check context and Myanmar register independently.",
+      "independent_reviewer_task": "Independent human editor must check the exact intended sense, source-backed CEFR level, English definition, idiomatic Myanmar, original-example grammar, British pronunciation and historical provenance; direct publisher word/POS evidence and self-authored proposals do not establish independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
