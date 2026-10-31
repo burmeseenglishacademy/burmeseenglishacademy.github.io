@@ -1,0 +1,606 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "SEVEN_SHARED_MYANMAR_GLOSS_PAIRS_SOURCE_TRIAGE_UNAPPROVED",
+  "observed_on": "2026-11-01",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "source_limitations": "Oxford dictionary pages directly inspected only where access DIRECT_OXFORD_DICTIONARY_PAGE; Cambridge publisher entries were retrieved via indexed search results but direct page requests returned HTTP 403. Cambridge indexed CEFR labels are leads, NOT independently confirmed source-backed exact-sense CEFR approvals. Oxford topic labels are not dictionary headword CEFR classifications. All alternatives unapproved; frozen shortlist unchanged.",
+  "scan_scope": {
+    "entries_scanned": 1000,
+    "identical_myanmar_gloss_pair_groups": 7,
+    "flagged_entries": 14,
+    "per_level": {
+      "A1": 1,
+      "A2": 2,
+      "B1": 4,
+      "B2": 7,
+      "C1": 0
+    },
+    "independent_approvals": 0
+  },
+  "pair_distinctions": [
+    {
+      "pair_id": 1,
+      "words": [
+        "need",
+        "require"
+      ],
+      "editorial_distinction": "Need expresses a basic necessity; require often states a formal, imposed or contextual necessity."
+    },
+    {
+      "pair_id": 2,
+      "words": [
+        "deal",
+        "agreement"
+      ],
+      "editorial_distinction": "Deal is often a negotiated arrangement, especially in business; agreement may denote a formal written arrangement or shared opinion."
+    },
+    {
+      "pair_id": 3,
+      "words": [
+        "finally",
+        "eventually"
+      ],
+      "editorial_distinction": "Both can describe a delayed outcome; finally also introduces the last item in a list, whereas eventually does not."
+    },
+    {
+      "pair_id": 4,
+      "words": [
+        "protect",
+        "defend"
+      ],
+      "editorial_distinction": "Protect covers preventing harm or damage; defend often involves resisting an attack or answering an accusation. Draft defend example is legal, not necessarily the Cambridge B1 attack sense."
+    },
+    {
+      "pair_id": 5,
+      "words": [
+        "competition",
+        "contest"
+      ],
+      "editorial_distinction": "Both denote prize events here; competition can also be uncountable rivalry, and contest also means a struggle for political power."
+    },
+    {
+      "pair_id": 6,
+      "words": [
+        "mental",
+        "psychological"
+      ],
+      "editorial_distinction": "Mental emphasizes thought or mind; psychological can refer to emotions, behaviour, mental effects or the discipline of psychology."
+    },
+    {
+      "pair_id": 7,
+      "words": [
+        "calm",
+        "stable"
+      ],
+      "editorial_distinction": "Calm is a person's current relaxed or untroubled state; stable describes a situation, supply or structure unlikely to change or fail. Stable-person sense is separate."
+    }
+  ],
+  "records": [
+    {
+      "word": "need",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "pair_id": 1,
+      "pair_word": "require",
+      "original": {
+        "english_definition": "To require something important or necessary.",
+        "myanmar_meaning": "လိုအပ်သည်",
+        "example_sentence": "I need your help."
+      },
+      "provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 50,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_observation": {
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/need",
+        "observed_on": "2026-11-01",
+        "access": "CAMBRIDGE_INDEXED_SEARCH_RESULT_DIRECT_PAGE_403",
+        "line_range": null,
+        "source_scope": "SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "cambridge_indexed_exact_sense_cefr_lead": "A1",
+        "level_note": "Cambridge search-index label is a review lead only; Oxford topic tags are not independent exact-sense CEFR labels. No automatic retiering."
+      },
+      "editorial_risk": "Need expresses a basic necessity; require often states a formal, imposed or contextual necessity.",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "လိုအပ်သည်၊ မရှိမဖြစ်လိုသည်",
+        "original_example": "The children need clean water.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_reviewer_task": "Verify publisher exact sense and CEFR, original grammar, natural Myanmar nuance, UK voice pronunciation and historical provenance; independently sign off or reject. No auto-approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false
+    },
+    {
+      "word": "require",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "pair_id": 1,
+      "pair_word": "need",
+      "original": {
+        "english_definition": "To need something or make it necessary.",
+        "myanmar_meaning": "လိုအပ်သည်",
+        "example_sentence": "This position may require weekend work."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 701,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/require",
+        "observed_on": "2026-11-01",
+        "access": "CAMBRIDGE_INDEXED_SEARCH_RESULT_DIRECT_PAGE_403",
+        "line_range": null,
+        "source_scope": "SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "cambridge_indexed_exact_sense_cefr_lead": "B1",
+        "level_note": "Cambridge search-index label is a review lead only; Oxford topic tags are not independent exact-sense CEFR labels. No automatic retiering."
+      },
+      "editorial_risk": "Need expresses a basic necessity; require often states a formal, imposed or contextual necessity.",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "လိုအပ်စေသည်၊ စည်းကမ်း သို့မဟုတ် အခြေအနေအရ လိုအပ်သည်",
+        "original_example": "The safety procedure requires workers to wear gloves.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_reviewer_task": "Verify publisher exact sense and CEFR, original grammar, natural Myanmar nuance, UK voice pronunciation and historical provenance; independently sign off or reject. No auto-approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false
+    },
+    {
+      "word": "deal",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "pair_id": 2,
+      "pair_word": "agreement",
+      "original": {
+        "english_definition": "An agreement between two people or groups.",
+        "myanmar_meaning": "သဘောတူညီချက်",
+        "example_sentence": "They made a deal to share the costs."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 666,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/deal_2",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OXFORD_DICTIONARY_PAGE",
+        "line_range": [
+          108,
+          120
+        ],
+        "source_scope": "SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "cambridge_indexed_exact_sense_cefr_lead": "B2",
+        "level_note": "Cambridge search-index label is a review lead only; Oxford topic tags are not independent exact-sense CEFR labels. No automatic retiering."
+      },
+      "editorial_risk": "Deal is often a negotiated arrangement, especially in business; agreement may denote a formal written arrangement or shared opinion.",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "အပြန်အလှန် ညှိနှိုင်းသဘောတူထားသော အစီအစဉ် (အထူးသဖြင့် စီးပွားရေးတွင်)",
+        "original_example": "The two suppliers made a deal on delivery costs.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_reviewer_task": "Verify publisher exact sense and CEFR, original grammar, natural Myanmar nuance, UK voice pronunciation and historical provenance; independently sign off or reject. No auto-approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false
+    },
+    {
+      "word": "agreement",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "pair_id": 2,
+      "pair_word": "deal",
+      "original": {
+        "english_definition": "An arrangement accepted by two or more people or groups.",
+        "myanmar_meaning": "သဘောတူညီချက်",
+        "example_sentence": "Both companies signed an agreement."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 231,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/agreement",
+        "observed_on": "2026-11-01",
+        "access": "CAMBRIDGE_INDEXED_SEARCH_RESULT_DIRECT_PAGE_403",
+        "line_range": null,
+        "source_scope": "SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "cambridge_indexed_exact_sense_cefr_lead": "B2",
+        "level_note": "Cambridge search-index label is a review lead only; Oxford topic tags are not independent exact-sense CEFR labels. No automatic retiering."
+      },
+      "editorial_risk": "Deal is often a negotiated arrangement, especially in business; agreement may denote a formal written arrangement or shared opinion.",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "နှစ်ဖက် သို့မဟုတ် အများအပြား လက်ခံသဘောတူထားသော သဘောတူညီချက်၊ စာချုပ်",
+        "original_example": "Both companies signed a written agreement.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_reviewer_task": "Verify publisher exact sense and CEFR, original grammar, natural Myanmar nuance, UK voice pronunciation and historical provenance; independently sign off or reject. No auto-approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false
+    },
+    {
+      "word": "finally",
+      "level": "A2",
+      "part_of_speech": "adverb",
+      "pair_id": 3,
+      "pair_word": "eventually",
+      "original": {
+        "english_definition": "After a long time or several attempts.",
+        "myanmar_meaning": "နောက်ဆုံးတွင်၊ အချိန်ကြာပြီးနောက်",
+        "example_sentence": "We finally found the right bus stop."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 869,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/finally",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OXFORD_DICTIONARY_PAGE",
+        "line_range": [
+          103,
+          122
+        ],
+        "source_scope": "SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "cambridge_indexed_exact_sense_cefr_lead": "A2",
+        "level_note": "Cambridge search-index label is a review lead only; Oxford topic tags are not independent exact-sense CEFR labels. No automatic retiering."
+      },
+      "editorial_risk": "Both can describe a delayed outcome; finally also introduces the last item in a list, whereas eventually does not.",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "အချိန်ကြာပြီးမှ၊ အခက်အခဲကျော်ပြီး နောက်ဆုံးတွင်",
+        "original_example": "After waiting for an hour, the bus finally arrived.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_reviewer_task": "Verify publisher exact sense and CEFR, original grammar, natural Myanmar nuance, UK voice pronunciation and historical provenance; independently sign off or reject. No auto-approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false
+    },
+    {
+      "word": "eventually",
+      "level": "B1",
+      "part_of_speech": "adverb",
+      "pair_id": 3,
+      "pair_word": "finally",
+      "original": {
+        "english_definition": "In the end, after a period of time or several difficulties.",
+        "myanmar_meaning": "နောက်ဆုံးတွင်၊ အချိန်ကြာပြီးနောက်",
+        "example_sentence": "After several attempts, she eventually solved the problem."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 302,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/eventually",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OXFORD_DICTIONARY_PAGE",
+        "line_range": [
+          103,
+          118
+        ],
+        "source_scope": "SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "cambridge_indexed_exact_sense_cefr_lead": "B2",
+        "level_note": "Cambridge search-index label is a review lead only; Oxford topic tags are not independent exact-sense CEFR labels. No automatic retiering."
+      },
+      "editorial_risk": "Both can describe a delayed outcome; finally also introduces the last item in a list, whereas eventually does not.",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "အချိန်ကြာလာပြီးနောက်၊ ဖြစ်ရပ်များ ဆက်တိုက်ဖြစ်ပြီးနောက် အဆုံးတွင်",
+        "original_example": "After several delays, the shipment eventually arrived.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_reviewer_task": "Verify publisher exact sense and CEFR, original grammar, natural Myanmar nuance, UK voice pronunciation and historical provenance; independently sign off or reject. No auto-approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false
+    },
+    {
+      "word": "protect",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "pair_id": 4,
+      "pair_word": "defend",
+      "original": {
+        "english_definition": "To keep someone or something safe from harm or damage.",
+        "myanmar_meaning": "ကာကွယ်သည်",
+        "example_sentence": "Wear gloves to protect your hands from sharp edges."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 95,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/protect",
+        "observed_on": "2026-11-01",
+        "access": "CAMBRIDGE_INDEXED_SEARCH_RESULT_DIRECT_PAGE_403",
+        "line_range": null,
+        "source_scope": "SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "cambridge_indexed_exact_sense_cefr_lead": "B1",
+        "level_note": "Cambridge search-index label is a review lead only; Oxford topic tags are not independent exact-sense CEFR labels. No automatic retiering."
+      },
+      "editorial_risk": "Protect covers preventing harm or damage; defend often involves resisting an attack or answering an accusation. Draft defend example is legal, not necessarily the Cambridge B1 attack sense.",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "ထိခိုက်မှု၊ ပျက်စီးမှုတို့မှ ကာကွယ်ပေးသည်",
+        "original_example": "The cover protects the wood from rain.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_reviewer_task": "Verify publisher exact sense and CEFR, original grammar, natural Myanmar nuance, UK voice pronunciation and historical provenance; independently sign off or reject. No auto-approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false
+    },
+    {
+      "word": "defend",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "pair_id": 4,
+      "pair_word": "protect",
+      "original": {
+        "english_definition": "To protect someone or something from attack or criticism.",
+        "myanmar_meaning": "ကာကွယ်သည်",
+        "example_sentence": "The lawyer will defend her client in court."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 787,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/defend",
+        "observed_on": "2026-11-01",
+        "access": "CAMBRIDGE_INDEXED_SEARCH_RESULT_DIRECT_PAGE_403",
+        "line_range": null,
+        "source_scope": "SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "cambridge_indexed_exact_sense_cefr_lead": null,
+        "level_note": "Cambridge search-index label is a review lead only; Oxford topic tags are not independent exact-sense CEFR labels. No automatic retiering."
+      },
+      "editorial_risk": "Protect covers preventing harm or damage; defend often involves resisting an attack or answering an accusation. Draft defend example is legal, not necessarily the Cambridge B1 attack sense.",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "တိုက်ခိုက်မှု သို့မဟုတ် စွပ်စွဲချက်တို့မှ ကာကွယ်ပြောဆိုသည်",
+        "original_example": "The lawyer defended her client against the accusation.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_reviewer_task": "Verify publisher exact sense and CEFR, original grammar, natural Myanmar nuance, UK voice pronunciation and historical provenance; independently sign off or reject. No auto-approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false
+    },
+    {
+      "word": "competition",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "pair_id": 5,
+      "pair_word": "contest",
+      "original": {
+        "english_definition": "An event in which people try to win a prize.",
+        "myanmar_meaning": "ပြိုင်ပွဲ",
+        "example_sentence": "Our team entered a competition."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 132,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/competition",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OXFORD_DICTIONARY_PAGE",
+        "line_range": [
+          113,
+          130
+        ],
+        "source_scope": "SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "cambridge_indexed_exact_sense_cefr_lead": "A2",
+        "level_note": "Cambridge search-index label is a review lead only; Oxford topic tags are not independent exact-sense CEFR labels. No automatic retiering."
+      },
+      "editorial_risk": "Both denote prize events here; competition can also be uncountable rivalry, and contest also means a struggle for political power.",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "ဆုရရန် ယှဉ်ပြိုင်ကြသည့် ပြိုင်ပွဲ",
+        "original_example": "The school held a drawing competition.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_reviewer_task": "Verify publisher exact sense and CEFR, original grammar, natural Myanmar nuance, UK voice pronunciation and historical provenance; independently sign off or reject. No auto-approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false
+    },
+    {
+      "word": "contest",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "pair_id": 5,
+      "pair_word": "competition",
+      "original": {
+        "english_definition": "A competition in which a winner is chosen.",
+        "myanmar_meaning": "ပြိုင်ပွဲ",
+        "example_sentence": "She entered a photography contest."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 146,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/contest_1",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OXFORD_DICTIONARY_PAGE",
+        "line_range": [
+          105,
+          115
+        ],
+        "source_scope": "SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "cambridge_indexed_exact_sense_cefr_lead": "B1",
+        "level_note": "Cambridge search-index label is a review lead only; Oxford topic tags are not independent exact-sense CEFR labels. No automatic retiering."
+      },
+      "editorial_risk": "Both denote prize events here; competition can also be uncountable rivalry, and contest also means a struggle for political power.",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "ဆုအတွက် အနိုင်ရသူကို ရွေးချယ်သည့် ပြိုင်ပွဲ",
+        "original_example": "She won a local singing contest.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_reviewer_task": "Verify publisher exact sense and CEFR, original grammar, natural Myanmar nuance, UK voice pronunciation and historical provenance; independently sign off or reject. No auto-approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false
+    },
+    {
+      "word": "mental",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "pair_id": 6,
+      "pair_word": "psychological",
+      "original": {
+        "english_definition": "Relating to the mind and thinking.",
+        "myanmar_meaning": "စိတ်ပိုင်းဆိုင်ရာ",
+        "example_sentence": "Reading can improve mental skills."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 769,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/mental_1",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OXFORD_DICTIONARY_PAGE",
+        "line_range": [
+          103,
+          119
+        ],
+        "source_scope": "SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "cambridge_indexed_exact_sense_cefr_lead": "B2",
+        "level_note": "Cambridge search-index label is a review lead only; Oxford topic tags are not independent exact-sense CEFR labels. No automatic retiering."
+      },
+      "editorial_risk": "Mental emphasizes thought or mind; psychological can refer to emotions, behaviour, mental effects or the discipline of psychology.",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "စိတ်နှင့် တွေးခေါ်မှုလုပ်ငန်းစဉ်ဆိုင်ရာ",
+        "original_example": "The puzzle tests mental skills.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_reviewer_task": "Verify publisher exact sense and CEFR, original grammar, natural Myanmar nuance, UK voice pronunciation and historical provenance; independently sign off or reject. No auto-approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false
+    },
+    {
+      "word": "psychological",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "pair_id": 6,
+      "pair_word": "mental",
+      "original": {
+        "english_definition": "Related to the mind, emotions, or behaviour.",
+        "myanmar_meaning": "စိတ်ပိုင်းဆိုင်ရာ",
+        "example_sentence": "Long periods of stress can have psychological effects."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 635,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/psychological",
+        "observed_on": "2026-11-01",
+        "access": "CAMBRIDGE_INDEXED_SEARCH_RESULT_DIRECT_PAGE_403",
+        "line_range": null,
+        "source_scope": "SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "cambridge_indexed_exact_sense_cefr_lead": "B2",
+        "level_note": "Cambridge search-index label is a review lead only; Oxford topic tags are not independent exact-sense CEFR labels. No automatic retiering."
+      },
+      "editorial_risk": "Mental emphasizes thought or mind; psychological can refer to emotions, behaviour, mental effects or the discipline of psychology.",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "စိတ်ခံစားမှု၊ အတွေးအမြင်နှင့် အပြုအမူတို့နှင့် သက်ဆိုင်သော",
+        "original_example": "The incident had psychological effects on the workers.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_reviewer_task": "Verify publisher exact sense and CEFR, original grammar, natural Myanmar nuance, UK voice pronunciation and historical provenance; independently sign off or reject. No auto-approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false
+    },
+    {
+      "word": "calm",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "pair_id": 7,
+      "pair_word": "stable",
+      "original": {
+        "english_definition": "Not worried, excited or upset.",
+        "myanmar_meaning": "တည်ငြိမ်သော",
+        "example_sentence": "She remained calm during the emergency."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 65,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/calm",
+        "observed_on": "2026-11-01",
+        "access": "CAMBRIDGE_INDEXED_SEARCH_RESULT_DIRECT_PAGE_403",
+        "line_range": null,
+        "source_scope": "SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "cambridge_indexed_exact_sense_cefr_lead": null,
+        "level_note": "Cambridge search-index label is a review lead only; Oxford topic tags are not independent exact-sense CEFR labels. No automatic retiering."
+      },
+      "editorial_risk": "Calm is a person's current relaxed or untroubled state; stable describes a situation, supply or structure unlikely to change or fail. Stable-person sense is separate.",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "စိတ်မလှုပ်ရှားဘဲ တည်ငြိမ်အေးဆေးသော",
+        "original_example": "She stayed calm during the inspection.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_reviewer_task": "Verify publisher exact sense and CEFR, original grammar, natural Myanmar nuance, UK voice pronunciation and historical provenance; independently sign off or reject. No auto-approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false
+    },
+    {
+      "word": "stable",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "pair_id": 7,
+      "pair_word": "calm",
+      "original": {
+        "english_definition": "Not likely to change or fail suddenly.",
+        "myanmar_meaning": "တည်ငြိမ်သော",
+        "example_sentence": "The company needs a stable supply of materials."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 718,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/stable_1",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OXFORD_DICTIONARY_PAGE",
+        "line_range": [
+          111,
+          122
+        ],
+        "source_scope": "SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "cambridge_indexed_exact_sense_cefr_lead": "C1",
+        "level_note": "Cambridge search-index label is a review lead only; Oxford topic tags are not independent exact-sense CEFR labels. No automatic retiering."
+      },
+      "editorial_risk": "Calm is a person's current relaxed or untroubled state; stable describes a situation, supply or structure unlikely to change or fail. Stable-person sense is separate.",
+      "unapproved_rewrite_candidate": {
+        "myanmar_meaning": "ရုတ်တရက် မပြောင်းလဲ၊ မပျက်ယွင်းလွယ်သော",
+        "original_example": "We need a stable supply of timber.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_reviewer_task": "Verify publisher exact sense and CEFR, original grammar, natural Myanmar nuance, UK voice pronunciation and historical provenance; independently sign off or reject. No auto-approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false
+    }
+  ]
+}
