@@ -93,7 +93,7 @@ def build(shortlist, packets, recovery, originals):
                     prior["packets"].append(path)
                     prior["recovered_legacy"] |= bool(locator_only)
                     prior["editorial_risks"].append(row["editorial_risk"])
-    require(len(by_word) == checked["distinct_observed_headwords"] == 796,
+    require(len(by_word) == checked["distinct_observed_headwords"] == 808,
             "Coverage and review handoff disagree")
     require(sum(x["recovered_legacy"] for x in by_word.values()) == 36,
             "Exactly 36 unique historical recoveries expected")
