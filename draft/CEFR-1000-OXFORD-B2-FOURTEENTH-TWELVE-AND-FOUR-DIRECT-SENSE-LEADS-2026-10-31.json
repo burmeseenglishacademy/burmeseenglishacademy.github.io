@@ -1,0 +1,480 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B2_FOURTEENTH_TWELVE_DIRECT_OXFORD_WORD_POS_FOUR_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-31",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 12,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 1,
+    "A2": 1,
+    "B1": 5,
+    "B2": 5,
+    "C1": 0
+  },
+  "word_pos_discrepancies": 7,
+  "direct_dictionary_sense_leads": 4,
+  "independently_approved_count": 0,
+  "source_limitations": "Official Oxford 3000 CEFR PDF directly inspected 2026-10-31 with page/line locators and four Oxford dictionary pages inspected. These word/POS observations and dictionary lexical sense leads are not independent exact-sense CEFR approval. Dictionary topic badges and Word of the Day footer are not exact-sense CEFR evidence. Self-authored Myanmar/example alternatives are unapproved; final dual-voice listening, physical iPhone and measured hosting remain unverified.",
+  "records": [
+    {
+      "word": "tone",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The attitude or feeling expressed by someone's voice or words.",
+        "myanmar_meaning": "ပြောဆိုသံနေသံ၊ သဘောထားဖော်ပြပုံ",
+        "example_sentence": "Her calm tone helped settle the argument."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 709,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 12,
+        "extracted_line": 3257,
+        "source_excerpt": "tone n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Voice attitude/quality (sense 1) must not be conflated with the general character of a document (sense 2), musical pitch or a colour shade.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/tone_1",
+        "sense_number": 1,
+        "page_text_line_start": 103,
+        "page_text_line_end": 125,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "The first Oxford noun sense concerns the expressive quality of someone's voice; calm tone in the draft example belongs here, not the writing-atmosphere sense 2."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "စကားပြောသံမှ ပေါ်လွင်လာသော စိတ်ခံစားချက်နှင့် ပြောဆိုပုံ",
+        "original_example": "Her reassuring tone helped the worried passengers feel calmer.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "topic",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The subject being discussed or studied.",
+        "myanmar_meaning": "ဆွေးနွေးသည့် အကြောင်းအရာ",
+        "example_sentence": "Today's topic is how to reduce waste."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 710,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 4,
+        "extracted_line": 813,
+        "source_excerpt": "topic n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Publisher A1 word/POS label conflicts with draft B2; everyday discussion subject should not be retained at B2 without a separate defensible exact-sense rationale.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "vast",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Extremely large in size or amount.",
+        "myanmar_meaning": "အလွန်ကျယ်ပြန့်သော",
+        "example_sentence": "A vast area of forest remains protected."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 711,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 12,
+        "extracted_line": 3286,
+        "source_excerpt": "vast adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Large spatial extent and a vast quantity share broad wording, but the teaching example specifically describes land area; review gradability and Myanmar naturalness.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "earn",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To receive money in return for work.",
+        "myanmar_meaning": "အလုပ်လုပ်၍ ဝင်ငွေရရှိသည်",
+        "example_sentence": "Many students earn extra money during the holidays."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 712,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 5,
+        "extracted_line": 1151,
+        "source_excerpt": "earn v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Earning money for work is an everyday A2 meaning; separate it from earning respect, trust or a reputation before any B2 placement.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "ignore",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To deliberately pay no attention to something.",
+        "myanmar_meaning": "လျစ်လျူရှုသည်",
+        "example_sentence": "Do not ignore the warning signs on the machine."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 713,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 8,
+        "extracted_line": 2131,
+        "source_excerpt": "ignore v.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Deliberately disregard a warning, not merely fail to notice it; the draft B2 placement needs independent sense-specific support.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "meanwhile",
+      "level": "B2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "During the same period that something else is happening.",
+        "myanmar_meaning": "ထိုအချိန်အတွင်းမှာပင်",
+        "example_sentence": "The engineers checked the drawings; meanwhile, the team prepared the materials."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 714,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 9,
+        "extracted_line": 2209,
+        "source_excerpt": "meanwhile adv.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Simultaneity in a two-clause narrative; check punctuation and natural Myanmar contrast with 'in the meantime' and 'on the other hand'.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "necessarily",
+      "level": "B2",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "In a way that must be true or must happen.",
+        "myanmar_meaning": "မဖြစ်မနေ၊ သေချာပေါက်",
+        "example_sentence": "A higher price does not necessarily mean better quality."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 715,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 9,
+        "extracted_line": 2231,
+        "source_excerpt": "necessarily adv.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Draft affirmative definition says something must be true, while its example uses 'not necessarily' meaning not always or not definitely; review as distinct polarity-dependent construction.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/necessarily",
+        "sense_number": 1,
+        "page_text_line_start": 123,
+        "page_text_line_end": 132,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "Oxford's not necessarily idiom indicates that a proposition is not always or definitely true, unlike affirmative necessarily indicating unavoidable truth; draft definition/example diverge."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "မဖြစ်မနေ အဲဒီလို ဖြစ်သည်ဟု မဆိုလို (not necessarily)",
+        "original_example": "A higher price does not necessarily guarantee better quality.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "practical",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Useful and suitable for a real situation.",
+        "myanmar_meaning": "လက်တွေ့အသုံးဝင်သော",
+        "example_sentence": "We need a practical solution that fits our budget."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 716,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 9,
+        "extracted_line": 2308,
+        "source_excerpt": "practical adj.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The example describes a workable solution (dictionary sense 2), while the definition broadly says useful/suitable; distinguish from hands-on practice and a practical person.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/practical_1",
+        "sense_number": 2,
+        "page_text_line_start": 138,
+        "page_text_line_end": 147,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "The second Oxford adjective sense is a sensible, workable idea or action; the shortlist's practical solution example fits this more specifically than the broad 'useful' definition."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "လက်တွေ့အကောင်အထည်ဖော်နိုင်ပြီး အဆင်ပြေသည့်",
+        "original_example": "The engineers proposed a practical way to reduce waste without raising costs.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "rescue",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To save someone from danger or difficulty.",
+        "myanmar_meaning": "ကယ်ဆယ်သည်",
+        "example_sentence": "Volunteers worked through the night to rescue the hikers."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 717,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 12,
+        "extracted_line": 3138,
+        "source_excerpt": "rescue v., n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The shortlist verb is 'save from danger'; Oxford lists both verb and noun, so do not transfer the noun label to a distinct verbal sense without checking.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "stable",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Not likely to change or fail suddenly.",
+        "myanmar_meaning": "တည်ငြိမ်သော",
+        "example_sentence": "The company needs a stable supply of materials."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 718,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 12,
+        "extracted_line": 3214,
+        "source_excerpt": "stable adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "A stable supply describes continuity rather than physical balance, a stable chemical or a horse building; check target sense and Myanmar translation.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "temporary",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Intended to last for only a limited time.",
+        "myanmar_meaning": "ယာယီဖြစ်သော",
+        "example_sentence": "The workers built a temporary shelter beside the site."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 719,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 12,
+        "extracted_line": 3249,
+        "source_excerpt": "temporary adj.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Limited duration is the intended sense; the commonness of temporary shelter is not by itself exact-sense CEFR proof.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "technique",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A particular skill or method used to achieve something.",
+        "myanmar_meaning": "နည်းစနစ်၊ ကျွမ်းကျင်သုံးနည်း",
+        "example_sentence": "The technician demonstrated a safer lifting technique."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 720,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 10,
+        "extracted_line": 2498,
+        "source_excerpt": "technique n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford sense 1 is a countable method needing skill, whereas sense 2 is uncountable skill in execution; the example uses sense 1.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/technique",
+        "sense_number": 1,
+        "page_text_line_start": 103,
+        "page_text_line_end": 125,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "The first Oxford noun sense is a countable learned method, while the second is the uncountable quality of skill; a safer lifting technique denotes the first sense."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ကျွမ်းကျင်မှုလိုအပ်သော အလုပ်တစ်ခုကို ဆောင်ရွက်သည့် နည်းလမ်း",
+        "original_example": "The trainer demonstrated a safer technique for lifting heavy boxes.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    }
+  ]
+}
