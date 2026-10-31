@@ -1,0 +1,541 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "C1_EIGHTEENTH_TWELVE_ALL_CORE_LIST_UNLISTED_SIX_DIRECT_DICTIONARY_SENSE_LEADS_ALL_HELD",
+  "observed_on": "2026-11-01",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 12
+  },
+  "publisher_reference_level_counts": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0,
+    "UNLISTED": 12
+  },
+  "direct_dictionary_sense_leads": 6,
+  "independently_approved_count": 0,
+  "independent_human_review_receipts": [],
+  "audio_real_listening_signoffs": [],
+  "release_approved": false,
+  "source_limitations": "Directly inspected Oxford 3000 and Oxford 5000 CEFR PDFs on 2026-11-01 for all 12 exact headwords; all absent, which is NOT a CEFR classification. Six directly inspected dictionary pages provide grammar/sense leads only. Oxford page footer topic/word-of-day CEFR badges are unrelated and cannot be assigned to these headwords. No independent review, final audio listening, device testing or release.",
+  "records": [
+    {
+      "word": "entrench",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To establish an attitude or practice so firmly that it is hard to change.",
+        "myanmar_meaning": "အမြင် သို့မဟုတ် လုပ်ထုံးလုပ်နည်းတစ်ခုကို ပြောင်းလဲရခက်အောင် အခိုင်အမာ အမြစ်တွယ်စေသည်",
+        "example_sentence": "Repeated exceptions can entrench unfair habits in an organisation."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 36,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford marks entrench usually passive and sometimes disapproving; the active draft example is grammatically possible but should be checked against dominant usage and entrenched in collocation.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/entrench",
+        "page_lines": "101-114",
+        "sense_number": 1,
+        "sense_summary": "Usually passive, sometimes disapproving; entrenched in something and entrenched attitudes are common patterns.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "To establish an attitude, belief or practice so firmly that it is difficult to change.",
+        "myanmar_meaning": "အမြင်၊ ယုံကြည်ချက် သို့မဟုတ် လုပ်ထုံးလုပ်နည်းတစ်ခုကို ပြောင်းလဲရခက်လောက်အောင် အခိုင်အမာ အမြစ်တွယ်စေသည်။",
+        "example_sentence": "The repeated policy exceptions entrenched an unfair practice in the organisation.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "equanimity",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Calmness and self-control during difficult situations.",
+        "myanmar_meaning": "ခက်ခဲသော အခြေအနေများတွင် တည်ငြိမ်စိတ်နှင့် မိမိကိုယ်ကို ထိန်းချုပ်နိုင်မှု",
+        "example_sentence": "She handled the unexpected criticism with remarkable equanimity."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 37,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Uncountable composure under pressure is not mere indifference; distinguish calm self-control from absence of emotion and ensure fluent Myanmar expression.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null
+    },
+    {
+      "word": "equivocate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To speak unclearly in order to avoid giving a direct answer.",
+        "myanmar_meaning": "တိုက်ရိုက်အဖြေမပေးလိုသဖြင့် မရှင်းမလင်း လှည့်ပတ်ပြောဆိုသည်",
+        "example_sentence": "The witness began to equivocate when asked about the missing documents."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 38,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford marks formal and allows intransitive/transitive patterns; evasive deliberate ambiguity is stronger than simply giving an unclear answer; check equivocate on a question.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/equivocate",
+        "page_lines": "101-113",
+        "sense_number": 1,
+        "sense_summary": "Formal verb, deliberate lack of clarity to avoid or conceal truth; intransitive and transitive quoted-speech patterns.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "To speak deliberately unclearly to avoid giving a direct or truthful answer.",
+        "myanmar_meaning": "အမှန်ကို မဖော်ပြလိုသဖြင့် တိုက်ရိုက်မဖြေဘဲ မရှင်းမလင်း လှည့်ပတ်ပြောဆိုသည်။",
+        "example_sentence": "The spokesperson equivocated on whether the company had received the warning.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "extrapolate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To estimate a wider result from a limited set of known facts.",
+        "myanmar_meaning": "သိရှိထားသော အချက်အလက် အနည်းငယ်မှ ပိုမိုကျယ်ပြန့်သော ရလဒ်ကို ခန့်မှန်းတွက်ချက်သည်",
+        "example_sentence": "Researchers cannot safely extrapolate national trends from one village."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 39,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford allows extrapolate from/to; projecting from one village to an entire country is an example of potentially unjustified generalisation, not a prohibition on extrapolation.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/extrapolate",
+        "page_lines": "101-115",
+        "sense_number": 1,
+        "sense_summary": "Formal verb; extrapolate from known facts to a new context, with both intransitive and transitive constructions.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "To estimate a result in a new situation using facts or patterns observed in another situation.",
+        "myanmar_meaning": "အခြေအနေတစ်ခုမှ သိရှိထားသော အချက်အလက်များကို အခြေခံ၍ အခြားအခြေအနေတစ်ခု၏ ရလဒ်ကို ခန့်မှန်းသည်။",
+        "example_sentence": "It would be risky to extrapolate nationwide demand from a survey of one town.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "fortitude",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Courage and patience when facing pain or serious difficulty.",
+        "myanmar_meaning": "နာကျင်မှု သို့မဟုတ် ပြင်းထန်သော အခက်အခဲကို ရင်ဆိုင်ရာတွင် ရှိသော သတ္တိနှင့် ခံနိုင်ရည်",
+        "example_sentence": "The family showed great fortitude during the long recovery."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 40,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Fortitude means courage/endurance under adversity, not only physical strength; check whether Myanmar phrase captures patient perseverance.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null
+    },
+    {
+      "word": "inadvertent",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Not intended or planned; happening by accident.",
+        "myanmar_meaning": "ရည်ရွယ်ချက်မရှိဘဲ မတော်တဆ ဖြစ်ပေါ်သော",
+        "example_sentence": "An inadvertent change to the settings interrupted the presentation."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 41,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford describes accidental, unintentional action; draft Myanmar and example fit, but a dictionary footer B2 topic is NOT a CEFR label for inadvertent.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/inadvertent",
+        "page_lines": "101-104",
+        "sense_number": 1,
+        "sense_summary": "Accidental, unintentional; no headword CEFR label; B2 footer belongs to an unrelated topic.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "Happening or done accidentally, without being intended.",
+        "myanmar_meaning": "ရည်ရွယ်ချက်မရှိဘဲ မတော်တဆ ဖြစ်သွားသော။",
+        "example_sentence": "An inadvertent omission delayed the publication of the report.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "irrevocable",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Impossible to change, cancel or take back.",
+        "myanmar_meaning": "ပြန်လည်ပြောင်းလဲ၊ ပယ်ဖျက် သို့မဟုတ် ရုပ်သိမ်း၍ မရနိုင်သော",
+        "example_sentence": "The agreement becomes irrevocable after the final deadline."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 43,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Irrevocable is a strong legal/formal claim of not being reversible; a contract deadline example may imply an absolute legal effect without stated context.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null
+    },
+    {
+      "word": "misconstrue",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To understand someone's words or actions in the wrong way.",
+        "myanmar_meaning": "တစ်စုံတစ်ဦး၏ စကား သို့မဟုတ် လုပ်ရပ်ကို အဓိပ္ပာယ်လွဲမှားစွာ နားလည်သည်",
+        "example_sentence": "Please do not misconstrue my question as criticism of your work."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 44,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Misconstrue means interpret wrongly, often as something; review misconstrue X as Y construction and distinguish misunderstanding from deliberate misrepresentation.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null
+    },
+    {
+      "word": "obfuscate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To make information deliberately difficult to understand.",
+        "myanmar_meaning": "သတင်းအချက်အလက်ကို ရည်ရွယ်ချက်ရှိရှိ နားလည်ရခက်အောင် ရှုပ်ထွေးစေသည်",
+        "example_sentence": "Technical jargon can obfuscate the real reasons for a delay."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 45,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford says usually deliberately, not invariably deliberately; draft definition makes intention mandatory and may overrestrict the sense. Footer B2 belongs to another word.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/obfuscate",
+        "page_lines": "101-111",
+        "sense_number": 1,
+        "sense_summary": "Formal; making something less clear or harder to understand, usually but not always deliberately; B2 footer unrelated.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "To make information less clear or more difficult to understand, usually deliberately.",
+        "myanmar_meaning": "အချက်အလက်ကို မရှင်းလင်းဘဲ နားလည်ရခက်အောင် ပြုလုပ်သည် (အများအားဖြင့် ရည်ရွယ်ချက်ရှိရှိ)။",
+        "example_sentence": "The report's vague wording obfuscated the cause of the delay.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "relinquish",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To give up control, possession or a right.",
+        "myanmar_meaning": "ထိန်းချုပ်ခွင့်၊ ပိုင်ဆိုင်မှု သို့မဟုတ် အခွင့်အရေးကို စွန့်လွှတ်သည်",
+        "example_sentence": "The founder agreed to relinquish control of daily operations."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 47,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Relinquish often means voluntarily give up control or a right; check the context and the distinction between relinquishing and being forcibly deprived.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null
+    },
+    {
+      "word": "superfluous",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "More than is needed and therefore unnecessary.",
+        "myanmar_meaning": "လိုအပ်သည်ထက် ပိုနေ၍ မလိုအပ်သော",
+        "example_sentence": "The editor removed superfluous details from the final report."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 48,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Superfluous means more than necessary; verify distinction from redundant and ensure Myanmar rendering is natural, not a literal repeated gloss.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": null,
+      "editorial_rewrite_candidate": null
+    },
+    {
+      "word": "salience",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "The quality of being especially noticeable or important in a particular situation.",
+        "myanmar_meaning": "အခြေအနေတစ်ခုတွင် အထူးထင်ရှားပြီး အရေးပါနေမှု",
+        "example_sentence": "The salience of safety concerns increased after the accident."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 49,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 and Oxford 5000 by CEFR level (both inspected)",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "additional_inspected_url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+        "observed_on": "2026-11-01",
+        "pdf_page": null,
+        "extracted_line": null,
+        "source_excerpt": null,
+        "source_cefr_level": null,
+        "evidence_scope": "NOT_FOUND_IN_TWO_INSPECTED_PUBLISHER_CORE_LISTS_NOT_A_LEVEL",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford marks salience uncountable/singular and 'salience for' a group; the C1 Oxford 5000 footer is for unrelated applicable, not salience.",
+      "independent_reviewer_task": "An independent HUMAN must verify exact-sense CEFR with attributable publisher evidence, English meaning, fluent Myanmar, original example grammar, British pronunciation and historical provenance, then provide dated signed review. Core-list absence and dictionary topic/footer labels are NOT CEFR classification.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/salience",
+        "page_lines": "101-108",
+        "sense_number": 1,
+        "sense_summary": "Uncountable/singular noun, importance or noticeability; 'salience for' somebody; C1 footer labels applicable not salience.",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_OFFICIAL_PUBLISHER_DICTIONARY_WEB_TEXT",
+        "evidence_scope": "PUBLISHER_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL"
+      },
+      "editorial_rewrite_candidate": {
+        "english_definition": "The quality of being especially important or easy to notice in a particular context.",
+        "myanmar_meaning": "အခြေအနေတစ်ခုတွင် အထူးအရေးပါခြင်း သို့မဟုတ် သိသာထင်ရှားနေခြင်း။",
+        "example_sentence": "The salience of workplace safety increased after the incident.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    }
+  ]
+}
