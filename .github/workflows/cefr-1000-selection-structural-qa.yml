@@ -328,7 +328,7 @@ jobs:
         run: python3 tools/audit_cefr_1000_review_priority.py --level ALL --self-test --output cefr-1000-review-handoff-ALL.json
       - name: Validate 1000-item reviewer handoff against frozen source fields and provenance
         run: python3 tools/audit_cefr_1000_handoff_integrity.py --level "${{ matrix.level }}"
-      - name: Reject 145 count-preserving forged handoff edits and validate actual exported artifact
+      - name: Reject forged handoff edits and validate actual exported artifact (count adapts to full B1 coverage)
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_handoff_integrity.py --level ALL --report cefr-1000-review-handoff-ALL.json --self-test
       - name: Audit Oxford A2 follow-up twelve publisher word/POS observations (not independent signoff)
