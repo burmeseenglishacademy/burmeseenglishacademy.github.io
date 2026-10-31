@@ -59,7 +59,8 @@ PACKETS = {
            "B2-NINTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-30",
            "B2-TENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-30",
            "B2-ELEVENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31",
-           "B2-TWELFTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31"),
+           "B2-TWELFTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31",
+           "B2-THIRTEENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31"),
     "C1": ("C1-TWELVE-DIRECT-PDF-2026-10-28", "C1-B2-CONFLICT-TWELVE-2026-10-28",
            "C1-MIXED-TWELVE-2026-10-28", "C1-FOLLOWUP-TWELVE-2026-10-29",
            "C1-SIXTH-TWELVE-2026-10-29",
@@ -73,7 +74,7 @@ EXPECTED = {
     "A1": {"observations": 203, "distinct": 195, "A1": 195},
     "A2": {"observations": 144, "distinct": 144, "A1": 92, "A2": 44, "B1": 8},
     "B1": {"observations": 168, "distinct": 168, "A1": 23, "A2": 68, "B1": 52, "B2": 25, "locator_only": 12},
-    "B2": {"observations": 156, "distinct": 154, "A1": 3, "A2": 27, "B1": 32, "B2": 80, "C1": 11, "UNLISTED": 1, "locator_only": 12},
+    "B2": {"observations": 168, "distinct": 166, "A1": 3, "A2": 29, "B1": 36, "B2": 84, "C1": 13, "UNLISTED": 1, "locator_only": 12},
     "C1": {"observations": 120, "distinct": 111, "B1": 3, "B2": 44, "C1": 62, "UNLISTED": 2, "locator_only": 12},
 }
 SOURCE_PREFIX = "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_"
