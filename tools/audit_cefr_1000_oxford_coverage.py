@@ -78,14 +78,15 @@ PACKETS = {
            "C1-NINTH-TWELVE-AND-EIGHT-DIRECT-SENSE-LEADS-2026-10-30",
            "C1-TENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-30",
            "C1-ELEVENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-30",
-           "C1-TWELFTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31"),
+           "C1-TWELFTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31",
+           "C1-THIRTEENTH-TWELVE-AND-FIVE-DIRECT-SENSE-LEADS-2026-11-01"),
 }
 EXPECTED = {
     "A1": {"observations": 203, "distinct": 195, "A1": 195},
     "A2": {"observations": 200, "distinct": 200, "A1": 108, "A2": 58, "B1": 13, "B2": 1, "UNLISTED": 20},
     "B1": {"observations": 200, "distinct": 200, "A1": 27, "A2": 85, "B1": 57, "B2": 31, "locator_only": 12},
     "B2": {"observations": 202, "distinct": 200, "A1": 6, "A2": 32, "B1": 46, "B2": 98, "C1": 16, "UNLISTED": 2, "locator_only": 12},
-    "C1": {"observations": 132, "distinct": 123, "B1": 3, "B2": 45, "C1": 62, "UNLISTED": 13, "locator_only": 12},
+    "C1": {"observations": 144, "distinct": 135, "B1": 3, "B2": 45, "C1": 63, "UNLISTED": 24, "locator_only": 12},
 }
 # Immutable publisher word/POS locator snapshots from the directly inspected
 # B2 fourteenth Oxford PDF packet (2026-10-31). These are source research
@@ -211,7 +212,7 @@ def normalize(row):
     if level is not None or pub is None:
         require(url in (SOURCE_PREFIX + "3000" + SOURCE_SUFFIX,
                         SOURCE_PREFIX + "5000" + SOURCE_SUFFIX), "Untrusted Oxford PDF URL")
-    require(date in ("2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31"), "Source observation date missing/drifted")
+    require(date in ("2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01"), "Source observation date missing/drifted")
     if level is not None:
         require(type(page) is int and page > 0 and type(line) is int and line >= 0,
                 "Invalid PDF page/line locator")
