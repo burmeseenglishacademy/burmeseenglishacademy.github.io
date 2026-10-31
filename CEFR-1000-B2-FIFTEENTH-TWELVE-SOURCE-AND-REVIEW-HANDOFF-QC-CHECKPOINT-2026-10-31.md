@@ -38,7 +38,15 @@ Four additional Oxford dictionary **publisher-indexed sense leads**, observed 20
 | C1 | 200 | 111 | 89 | 0 |
 | **Total** | **1,000** | **864** | **136** | **0** |
 
-Across source packets, **883 observations** now cover 864 distinct provisional entries (19 repeated observations). Source-bound human review priorities: **3 unlisted/not a CEFR level, 53 publisher-higher, 342 publisher-lower, 466 matching word/POS but exact sense unverified, 136 without direct Oxford observation**. These five categories total 1,000. Counts are updated in staging auditors; treat them as **CI-pending until actual runs are checked**.
+Across source packets, **883 observations** now cover 864 distinct provisional entries (19 repeated observations). Source-bound human review priorities: **3 unlisted/not a CEFR level, 53 publisher-higher, 342 publisher-lower, 466 matching word/POS but exact sense unverified, 136 without direct Oxford observation**. These five categories total 1,000. Counts are updated in staging auditors and **confirmed by actual successful GitHub Actions jobs and logs**.
+
+## Actual CI verification (source code SHA `7657dcd2efbdd99b3b01e4dc164c3d2eb4067f9e`)
+
+- [Parallel structural run 41196579571](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41196579571): **SUCCESS for all six A1/A2/B1/B2/C1/ALL jobs**. ALL job `124523844897` log confirmed **864 distinct / 883 Oxford observations**, reviewer queue counts **3 unlisted, 53 publisher-higher, 342 publisher-lower, 466 matching word/POS and 136 unobserved**, **25/25** cross-batch mutations rejected, **143/143** source-bound handoff mutations rejected, and **220/220** B2 fifteenth forged source/Myanmar/provenance/review mutations rejected. ALL artifact ID `13040831962`.
+- [Documentary no-deploy run 41196579625](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41196579625): **SUCCESS, report-only**. Job `124523844970` log confirmed **220/220** new adversarial mutations rejected and protected production assets untouched. Blocker artifact ID `13041177591`. A successful report-only documentary job is **not** a successful release-readiness gate.
+- [Source-scope run 41196573053](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41196573053): **SUCCESS** on prior code SHA `4bc951e5e094bfe80e022702370790630d1e8ec2`; actual log recorded 864 distinct publisher word/POS observations, 136 still unobserved, exactly 200 first-pass draft entries per level and zero independent approvals.
+- Intermediate structural/documentary runs `41196572873` and `41196573900` **FAILED** because Oxford coverage was updated before the reviewer-handoff expected counts; reconciled in commit `7657dcd2efbdd99b3b01e4dc164c3d2eb4067f9e` before final successful CI. Do not treat these intermediate failures as passed.
+- The remaining **ten B2 draft headwords without direct Oxford word/POS observations** are `package, pride, province, railway, relative, repeat, server, shock, silence, superior`. This is a research queue, not an invitation to infer their CEFR levels.
 
 ## Release remains blocked
 
