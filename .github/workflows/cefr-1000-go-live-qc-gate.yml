@@ -182,6 +182,8 @@ on:
       - tools/audit_cefr_1000_oxford_b1_fourteenth_twelve.py
       - draft/CEFR-1000-OXFORD-B1-FIFTEENTH-TWENTY-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
       - tools/audit_cefr_1000_oxford_b1_fifteenth_twenty.py
+      - draft/CEFR-1000-OXFORD-A2-FIFTEENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
+      - tools/audit_cefr_1000_oxford_a2_fifteenth_twelve.py
       - draft/CEFR-1000-OXFORD-B2-TWELFTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
       - tools/audit_cefr_1000_oxford_b2_twelfth_twelve.py
       - draft/CEFR-1000-OXFORD-B2-THIRTEENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
@@ -302,6 +304,8 @@ jobs:
         run: python3 tools/audit_cefr_1000_oxford_b1_fourteenth_twelve.py --level ALL --self-test
       - name: Audit final twenty B1 Oxford word-POS and reject forged independent signoffs
         run: python3 tools/audit_cefr_1000_oxford_b1_fifteenth_twenty.py --level ALL --self-test
+      - name: Audit A2 fifteenth direct Oxford source and reject 141 forged signoffs (report only)
+        run: python3 tools/audit_cefr_1000_oxford_a2_fifteenth_twelve.py --level ALL --self-test
       - name: Audit twelfth B2 publisher evidence and reject 232 forged signoffs
         run: python3 tools/audit_cefr_1000_oxford_b2_twelfth_twelve.py --level ALL --self-test
       - name: Audit A2 thirteenth Oxford evidence and reject 232 forged research or approval mutations
