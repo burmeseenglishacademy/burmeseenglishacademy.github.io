@@ -25,6 +25,8 @@ on:
       - tools/audit_cefr_1000_oxford_c1_twelfth_twelve.py
       - draft/CEFR-1000-SHARED-MYANMAR-GLOSS-SEVEN-PAIRS-2026-11-01.json
       - tools/audit_cefr_1000_shared_myanmar_gloss.py
+      - draft/CEFR-1000-EXAMPLE-MORPHOLOGY-AND-SHARED-SENTENCE-TRIAGE-2026-11-01.json
+      - tools/audit_cefr_1000_example_morphology_reuse.py
       - draft/CEFR-1000-RELEASE-EVIDENCE.json
       - draft/CEFR-1000-A1-FIVE-REMAINING-MORPHOLOGY-AND-RABBIT-SENSE-QUARANTINE-2026-10-30.json
       - tools/audit_cefr_1000_a1_five_morphology.py
@@ -384,6 +386,8 @@ jobs:
         run: python3 tools/audit_cefr_1000_oxford_c1_final_five.py --self-test
       - name: Reject 365 forged bilingual gloss, publisher access and false-approval mutations (NO DEPLOY)
         run: python3 tools/audit_cefr_1000_shared_myanmar_gloss.py --level ALL --self-test
+      - name: Reject forged example morphology, reused sentences and false approval (NO DEPLOY)
+        run: python3 tools/audit_cefr_1000_example_morphology_reuse.py --level ALL --self-test
       - name: Report missing real approvals, voice listening, iPhone and hosting QC
         run: python3 tools/audit_cefr_1000_launch_readiness.py --report-only --self-test
       - name: Explicitly enforce ALL evidence if release candidate manually checked
