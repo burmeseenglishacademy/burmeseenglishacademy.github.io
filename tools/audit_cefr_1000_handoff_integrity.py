@@ -88,8 +88,15 @@ def self_test(expected):
                 continue
             raise AssertionError("Tampered %s handoff accepted: %s" % (level, label))
     for level in LEVELS:
-        index = next(i for i, r in enumerate(expected["review_tasks"])
-                     if r["draft_level"] == level and r["oxford_observation"] is None)
+        missing = [i for i, r in enumerate(expected["review_tasks"])
+                   if r["draft_level"] == level and r["oxford_observation"] is None]
+        # Once a level reaches 200/200 direct word/POS observations, there is
+        # no missing-source row to mutate. Never invent one for a negative test.
+        if not missing:
+            if level != "B1":
+                raise AssertionError("Unexpected level with zero unobserved entries: " + level)
+            continue
+        index = missing[0]
         for label, mutation in [
             ("invent publisher observation", lambda r: r.update(oxford_observation={"source_url": "https://example.invalid"})),
             ("invent missing-source priority", lambda r: r.update(priority_reason="WORD_POS_MATCH_EXACT_SENSE_UNVERIFIED")),
