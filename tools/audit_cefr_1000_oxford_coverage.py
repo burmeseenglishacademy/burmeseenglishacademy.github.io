@@ -65,7 +65,8 @@ PACKETS = {
            "B2-ELEVENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31",
            "B2-TWELFTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31",
            "B2-THIRTEENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31",
-           "B2-FOURTEENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31"),
+           "B2-FOURTEENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31",
+           "B2-FIFTEENTH-TWELVE-AND-FOUR-DICTIONARY-SENSE-LEADS-2026-10-31"),
     "C1": ("C1-TWELVE-DIRECT-PDF-2026-10-28", "C1-B2-CONFLICT-TWELVE-2026-10-28",
            "C1-MIXED-TWELVE-2026-10-28", "C1-FOLLOWUP-TWELVE-2026-10-29",
            "C1-SIXTH-TWELVE-2026-10-29",
@@ -79,12 +80,27 @@ EXPECTED = {
     "A1": {"observations": 203, "distinct": 195, "A1": 195},
     "A2": {"observations": 168, "distinct": 168, "A1": 103, "A2": 57, "B1": 8},
     "B1": {"observations": 200, "distinct": 200, "A1": 27, "A2": 85, "B1": 57, "B2": 31, "locator_only": 12},
-    "B2": {"observations": 180, "distinct": 178, "A1": 4, "A2": 30, "B1": 41, "B2": 89, "C1": 13, "UNLISTED": 1, "locator_only": 12},
+    "B2": {"observations": 192, "distinct": 190, "A1": 5, "A2": 31, "B1": 44, "B2": 95, "C1": 14, "UNLISTED": 1, "locator_only": 12},
     "C1": {"observations": 120, "distinct": 111, "B1": 3, "B2": 44, "C1": 62, "UNLISTED": 2, "locator_only": 12},
 }
 # Immutable publisher word/POS locator snapshots from the directly inspected
 # B2 fourteenth Oxford PDF packet (2026-10-31). These are source research
 # checks, NOT independent exact-sense CEFR or bilingual approvals.
+B2_FIFTEENTH_PUBLISHER_LOCATORS = {
+    "administrative": ("C1", 3, 737, "administrative adj."),
+    "argue": ("A2", 4, 955, "argue v."),
+    "colour": ("A1", 1, 162, "colour n."),
+    "defend": ("B2", 11, 2767, "defend v."),
+    "element": ("B1", 8, 2010, "element n."),
+    "extension": ("B2", 1, 237, "extension n."),
+    "extent": ("B2", 11, 2843, "extent n."),
+    "harm": ("B2", 11, 2899, "harm n., v."),
+    "hunt": ("B1", 8, 2127, "hunt v."),
+    "impressive": ("B1", 8, 2140, "impressive adj."),
+    "moral": ("B2", 11, 3013, "moral adj., n."),
+    "offensive": ("B2", 11, 3038, "offensive adj."),
+}
+
 B2_FOURTEENTH_PUBLISHER_LOCATORS = {
     "tone": ("B2", 12, 3257, "tone n."),
     "topic": ("A1", 4, 813, "topic n."),
@@ -236,6 +252,17 @@ def audit(shortlist, packets, strict_counts=True):
                 }
                 require(len(rows) == 12 and locators == B2_FOURTEENTH_PUBLISHER_LOCATORS,
                         "B2 fourteenth direct Oxford publisher locator or excerpt drift")
+            if level == "B2" and name == "B2-FIFTEENTH-TWELVE-AND-FOUR-DICTIONARY-SENSE-LEADS-2026-10-31":
+                locators = {
+                    r["word"]: (
+                        r["publisher_source"]["source_cefr_level"],
+                        r["publisher_source"]["pdf_page"],
+                        r["publisher_source"]["extracted_line"],
+                        r["publisher_source"]["source_excerpt"],
+                    ) for r in rows
+                }
+                require(len(rows) == 12 and locators == B2_FIFTEENTH_PUBLISHER_LOCATORS,
+                        "B2 fifteenth direct Oxford publisher locator or excerpt drift")
             observations += len(rows)
             for row in rows:
                 word = row.get("word")
