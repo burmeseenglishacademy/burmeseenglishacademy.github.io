@@ -1,0 +1,480 @@
+{
+  "schema": 1,
+  "scope": "CEFR_1000_TOTAL_STAGING_ONLY",
+  "status": "B1_FOURTEENTH_TWELVE_DIRECT_OXFORD_WORD_POS_FOUR_SENSE_LEADS_EDITORIAL_HOLD",
+  "observed_on": "2026-10-31",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 12,
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 12,
+    "B2": 0,
+    "C1": 0
+  },
+  "publisher_reference_level_counts": {
+    "A1": 2,
+    "A2": 5,
+    "B1": 4,
+    "B2": 1,
+    "C1": 0
+  },
+  "word_pos_discrepancies": 8,
+  "direct_dictionary_sense_leads": 4,
+  "independently_approved_count": 0,
+  "source_limitations": "Official Oxford 3000 CEFR PDF and four dictionary headword pages directly inspected on 2026-10-31. Fourth is a publisher ordinal number versus draft ordinal adjective POS conflict, not an exact POS match. All Oxford word/POS labels are not independent exact-sense CEFR approval. Dictionary topic badges and Word of the Day footer are not the intended sense's CEFR evidence. Myanmar/example alternatives are unapproved. No independent human review, actual George/Emma listening, physical iPhone Safari, measured GitHub Pages hosting or production deployment.",
+  "records": [
+    {
+      "word": "brand",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A name used to identify a company's products.",
+        "myanmar_meaning": "ကုန်အမှတ်တံဆိပ်",
+        "example_sentence": "This brand makes durable shoes."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 765,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 7,
+        "extracted_line": 1863,
+        "source_excerpt": "brand n., v.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Company product identity is sense 1; do not confuse the brand noun with branding as a verb or a particular kind of humour.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/brand_1",
+        "sense_number": 1,
+        "page_text_line_start": 105,
+        "page_text_line_end": 124,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "First noun sense concerns products/services offered under a company's name; later senses include a particular style or a burned mark."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "ကုမ္ပဏီတစ်ခု၏ ထုတ်ကုန်များကို ခွဲခြားသိနိုင်စေသော ကုန်အမှတ်တံဆိပ်",
+        "original_example": "Customers recognise the brand by its distinctive logo.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "cent",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "One hundredth of a dollar or euro.",
+        "myanmar_meaning": "ဒေါ်လာ သို့မဟုတ် ယူရို၏ တစ်ရာပုံတစ်ပုံ",
+        "example_sentence": "The price increased by one cent."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 766,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 1,
+        "extracted_line": 135,
+        "source_excerpt": "cent n.",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "The unit is 1/100 of a dollar or euro; the drafted B1 level is higher than the publisher word/POS A1, not proof of the taught sense's level.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "count",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To find the total number of people or things.",
+        "myanmar_meaning": "ရေတွက်သည်",
+        "example_sentence": "Please count the boxes before loading them."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 767,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 4,
+        "extracted_line": 1087,
+        "source_excerpt": "count v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Counting objects is transitive; distinguish count on someone, count as, and the noun count.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "fourth",
+      "level": "B1",
+      "part_of_speech": "ordinal adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Coming after the third in a series.",
+        "myanmar_meaning": "စတုတ္ထမြောက်",
+        "example_sentence": "Our meeting is on the fourth floor."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 768,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 2,
+        "extracted_line": 311,
+        "source_excerpt": "fourth number",
+        "source_cefr_level": "A1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford lists fourth as an ordinal number, whereas the draft calls it an ordinal adjective; exact POS equivalence is NOT established. Review grammar card versus lexical headword and the fourth-floor example.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/fourth_1",
+        "sense_number": 1,
+        "page_text_line_start": 88,
+        "page_text_line_end": 113,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "Oxford labels fourth an ordinal number; fourth floor is attested. The draft's ordinal-adjective POS requires independent reconciliation."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "အစဉ်လိုက် စတုတ္ထမြောက် (ကိန်းစဉ်ပြစကားလုံး)",
+        "original_example": "The training room is on the fourth floor.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "mental",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Relating to the mind and thinking.",
+        "myanmar_meaning": "စိတ်ပိုင်းဆိုင်ရာ",
+        "example_sentence": "Reading can improve mental skills."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 769,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 9,
+        "extracted_line": 2212,
+        "source_excerpt": "mental adj.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Relating to the mind is broad; distinguish mental health, mental skills, and outdated or stigmatising uses.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "mostly",
+      "level": "B1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "Mainly or for the most part.",
+        "myanmar_meaning": "အများအားဖြင့်",
+        "example_sentence": "The audience was mostly students."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 770,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1405,
+        "source_excerpt": "mostly adv.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Mostly means mainly or largely, not always or completely; verify Myanmar quantifier and student-audience example.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "owner",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A person who legally possesses something.",
+        "myanmar_meaning": "ပိုင်ရှင်",
+        "example_sentence": "The owner opened the shop early."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 771,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1446,
+        "source_excerpt": "owner n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Owner means someone who owns something; distinguish owner from manager and legal ownership from temporary control.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "previously",
+      "level": "B1",
+      "part_of_speech": "adverb",
+      "shortlist_snapshot": {
+        "english_definition": "At an earlier time.",
+        "myanmar_meaning": "ယခင်က",
+        "example_sentence": "She previously worked in a hospital."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 772,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 9,
+        "extracted_line": 2318,
+        "source_excerpt": "previously adv.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Previously describes an earlier time; compare with the adjective previous and tense in the hospital example.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "realize",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To become aware of a fact or situation.",
+        "myanmar_meaning": "သဘောပေါက်သည်",
+        "example_sentence": "I didn't realize the door was locked."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 773,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 6,
+        "extracted_line": 1529,
+        "source_excerpt": "realize v.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford sense 1 means becoming aware of a fact, not achieving a dream (sense 2). British realise is an accepted alternate spelling; preserve example's negative past tense.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/realize",
+        "sense_number": 1,
+        "page_text_line_start": 107,
+        "page_text_line_end": 132,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "Sense 1 means become aware of a fact; British English also uses realise. Distinct from realizing a dream or assets."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "အကြောင်းအရာတစ်ခုကို သတိပြုမိလာသည်၊ နားလည်သဘောပေါက်လာသည်",
+        "original_example": "I didn't realise that the office was closed today.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "click",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To press a mouse button or select an on-screen control.",
+        "myanmar_meaning": "ကလစ်နှိပ်သည်",
+        "example_sentence": "Click the blue icon to open the file."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 775,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 7,
+        "extracted_line": 1899,
+        "source_excerpt": "click v., n.",
+        "source_cefr_level": "B1",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Computer clicking is distinct from the sound made by clicking objects; Oxford also lists the noun, but the draft is verb.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "faith",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Strong trust or confidence in someone or something.",
+        "myanmar_meaning": "ယုံကြည်မှု",
+        "example_sentence": "She has faith in her team's ability."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 777,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 11,
+        "extracted_line": 2849,
+        "source_excerpt": "faith n.",
+        "source_cefr_level": "B2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Oxford sense 1 uncountable trust in a person or team's ability matches the example; distinguish religious belief and a particular religion, and avoid treating the Religion topic badge as the taught sense's CEFR.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "dictionary_sense_lead": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/faith_1",
+        "sense_number": 1,
+        "page_text_line_start": 105,
+        "page_text_line_end": 114,
+        "observed_on": "2026-10-31",
+        "evidence_scope": "DIRECT_DICTIONARY_SENSE_LEAD_NOT_INDEPENDENT_CEFR_APPROVAL",
+        "sense_summary": "Sense 1 uncountable trust in ability or promise matches faith in a team; religion is a different sense. The page's topic badges and Word of the Day are not exact-sense CEFR labels."
+      },
+      "editorial_rewrite_candidate": {
+        "myanmar_meaning": "လူတစ်ဦး သို့မဟုတ် အဖွဲ့တစ်ဖွဲ့၏ စွမ်းရည်အပေါ် ယုံကြည်စိတ်ချမှု",
+        "original_example": "The manager has faith in the team's ability to solve the problem.",
+        "review_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      }
+    },
+    {
+      "word": "fashion",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Popular styles of clothing at a particular time.",
+        "myanmar_meaning": "ခေတ်စားသော ဝတ်စားဆင်ယင်မှုပုံစံ",
+        "example_sentence": "Fashion changes quickly in big cities."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 778,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_source": {
+        "publisher": "Oxford University Press",
+        "title": "The Oxford 3000 by CEFR level",
+        "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+        "observed_on": "2026-10-31",
+        "pdf_page": 5,
+        "extracted_line": 1201,
+        "source_excerpt": "fashion n.",
+        "source_cefr_level": "A2",
+        "evidence_scope": "DIRECT_PUBLISHER_PDF_WORD_POS_NOT_EXACT_SENSE",
+        "access": "DIRECT_OFFICIAL_PDF_WEB_TEXT"
+      },
+      "editorial_risk": "Clothing styles are the intended sense, not manner of doing something or the verb to fashion.",
+      "independent_reviewer_task": "Independent human editor must verify exact-sense CEFR, English definition, fluent Myanmar, original-example grammar, British pronunciation, source attribution and historical provenance; word/POS evidence and self-authored proposals are not approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
