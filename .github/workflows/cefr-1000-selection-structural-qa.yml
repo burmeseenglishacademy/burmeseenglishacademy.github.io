@@ -25,6 +25,8 @@ on:
       - tools/audit_cefr_1000_oxford_c1_twelfth_twelve.py
       - draft/CEFR-1000-SHARED-MYANMAR-GLOSS-SEVEN-PAIRS-2026-11-01.json
       - tools/audit_cefr_1000_shared_myanmar_gloss.py
+      - draft/CEFR-1000-EXAMPLE-MORPHOLOGY-AND-SHARED-SENTENCE-TRIAGE-2026-11-01.json
+      - tools/audit_cefr_1000_example_morphology_reuse.py
       - draft/CEFR-1000-PROVISIONAL-SHORTLIST.json
       - draft/CEFR-1000-A1-FIVE-REMAINING-MORPHOLOGY-AND-RABBIT-SENSE-QUARANTINE-2026-10-30.json
       - tools/audit_cefr_1000_a1_five_morphology.py
@@ -836,6 +838,11 @@ jobs:
       - name: Reject 365 forged gloss, provenance, publisher-access and approval mutations
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_shared_myanmar_gloss.py --level ALL --self-test
+      - name: Audit publisher-supported example inflections and repeated sentences
+        run: python3 tools/audit_cefr_1000_example_morphology_reuse.py --level "${{ matrix.level }}"
+      - name: Reject forged example evidence, provenance and false human approvals
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_example_morphology_reuse.py --level ALL --self-test
       - name: Save structural QA record (not linguistic verification)
         uses: actions/upload-artifact@v4
         with:
