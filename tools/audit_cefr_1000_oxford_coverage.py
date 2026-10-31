@@ -82,6 +82,24 @@ EXPECTED = {
     "B2": {"observations": 180, "distinct": 178, "A1": 4, "A2": 30, "B1": 41, "B2": 89, "C1": 13, "UNLISTED": 1, "locator_only": 12},
     "C1": {"observations": 120, "distinct": 111, "B1": 3, "B2": 44, "C1": 62, "UNLISTED": 2, "locator_only": 12},
 }
+# Immutable publisher word/POS locator snapshots from the directly inspected
+# B2 fourteenth Oxford PDF packet (2026-10-31). These are source research
+# checks, NOT independent exact-sense CEFR or bilingual approvals.
+B2_FOURTEENTH_PUBLISHER_LOCATORS = {
+    "tone": ("B2", 12, 3257, "tone n."),
+    "topic": ("A1", 4, 813, "topic n."),
+    "vast": ("B2", 12, 3286, "vast adj."),
+    "earn": ("A2", 5, 1151, "earn v."),
+    "ignore": ("B1", 8, 2131, "ignore v."),
+    "meanwhile": ("B1", 9, 2209, "meanwhile adv."),
+    "necessarily": ("B1", 9, 2231, "necessarily adv."),
+    "practical": ("B1", 9, 2308, "practical adj."),
+    "rescue": ("B2", 12, 3138, "rescue v., n."),
+    "stable": ("B2", 12, 3214, "stable adj."),
+    "temporary": ("B2", 12, 3249, "temporary adj."),
+    "technique": ("B1", 10, 2498, "technique n."),
+}
+
 SOURCE_PREFIX = "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_"
 SOURCE_SUFFIX = "_by_CEFR_level.pdf"
 
@@ -207,6 +225,17 @@ def audit(shortlist, packets, strict_counts=True):
             rows = packet.get("records")
             require(isinstance(rows, list) and packet.get("record_count") == len(rows),
                     path + ": record count drift")
+            if level == "B2" and name == "B2-FOURTEENTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31":
+                locators = {
+                    r["word"]: (
+                        r["publisher_source"]["source_cefr_level"],
+                        r["publisher_source"]["pdf_page"],
+                        r["publisher_source"]["extracted_line"],
+                        r["publisher_source"]["source_excerpt"],
+                    ) for r in rows
+                }
+                require(len(rows) == 12 and locators == B2_FOURTEENTH_PUBLISHER_LOCATORS,
+                        "B2 fourteenth direct Oxford publisher locator or excerpt drift")
             observations += len(rows)
             for row in rows:
                 word = row.get("word")
