@@ -120,6 +120,20 @@ assert module.audio_collision_risks([
 assert module.audio_collision_risks([
     ("two", "bm_george", fake_c), ("too", "bm_george", fake_c)
 ]) == []
+# Regression: the old validator let ANY two unrelated one-word headwords
+# reuse identical bytes. Only an explicitly documented homophone exception
+# may bypass the same-voice collision rule, pending real listening.
+assert module.audio_collision_risks([
+    ("apple", "bm_george", fake_a), ("orange", "bm_george", fake_a)
+]) == [(("apple", "bm_george"), ("orange", "bm_george"))]
+assert module.audio_collision_risks([
+    ("two", "bm_george", fake_c), ("too", "bm_george", fake_c),
+    ("orange", "bm_george", fake_c)
+]) == [(("two", "bm_george"), ("orange", "bm_george")),
+      (("too", "bm_george"), ("orange", "bm_george"))]
+assert module.audio_collision_risks([
+    ("two", "bm_george", fake_c), ("one", "bm_george", fake_c)
+]) == [(("two", "bm_george"), ("one", "bm_george"))]
 # A third clip must be compared with *every* previous identical-byte clip,
 # not just the first (the first two are legitimate same-voice homophones).
 # Cross-voice collisions are forbidden even for DIFFERENT headwords.
@@ -179,4 +193,4 @@ for word, example in (("little","I have a little dog."),
 entry["word"] = "apple"
 entry["example_sentence"] = "I eat an apple."
 print("PASS: ten be/do/comparison/irregular-plural forms rejected; base lemmas and distinct size/quantity and person/people senses remain eligible for human review.")
-print("PASS: mismatched publisher headwords, generic CEFR references, copied George/Emma and multiword audio risks rejected; real listening still mandatory.")
+print("PASS: mismatched publisher headwords, generic CEFR references, copied cross-voice, multiword and unrelated single-word MP3s rejected; only documented homophones exempt; real listening still mandatory.")
