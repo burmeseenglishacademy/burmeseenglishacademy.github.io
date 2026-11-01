@@ -60,6 +60,22 @@ assert any("first-person singular pronoun must be displayed as capital I" in x f
 entry["word"] = "I"
 issues = module.validate(data)
 assert not any("first-person singular pronoun must be displayed as capital I" in x for x in issues), issues
+# The release audio manifest and hashed filenames are case-sensitive. A
+# correctly capitalised pronoun must request the actual "I" recording, never
+# the unrelated lowercase "i" key; these are structural tests, not listening.
+import hashlib
+required = module.required_audio_texts({"word": "I", "example_sentence": "I am ready."})
+assert required == {"I", "I am ready."}, required
+assert "i" not in required
+assert hashlib.sha256("I".encode("utf8")).hexdigest()[:24] != hashlib.sha256("i".encode("utf8")).hexdigest()[:24]
+# All other English headwords must use canonical lowercase display casing.
+entry["word"] = "APPLE"
+entry["example_sentence"] = "I eat an apple."
+issues = module.validate(data)
+assert any("noncanonical display casing" in x for x in issues), issues
+entry["word"] = "Apple"
+issues = module.validate(data)
+assert any("noncanonical display casing" in x for x in issues), issues
 entry["word"] = "apple"
 entry["example_sentence"] = "I eat an apple."
 
@@ -193,4 +209,5 @@ for word, example in (("little","I have a little dog."),
 entry["word"] = "apple"
 entry["example_sentence"] = "I eat an apple."
 print("PASS: ten be/do/comparison/irregular-plural forms rejected; base lemmas and distinct size/quantity and person/people senses remain eligible for human review.")
+print("PASS: capital-I audio manifest key and SHA case preserved; mixed-case ordinary headwords rejected; no listening claimed.")
 print("PASS: mismatched publisher headwords, generic CEFR references, copied cross-voice, multiword and unrelated single-word MP3s rejected; only documented homophones exempt; real listening still mandatory.")
