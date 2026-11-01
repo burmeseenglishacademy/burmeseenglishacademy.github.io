@@ -26,3 +26,11 @@ Commit [`fa302048c82da8d5f2c93cee1941000c4d73c6b2`](https://github.com/burmeseen
 | **Total** | **1,000** | **0** |
 
 **Unmet gates:** independent English/Myanmar/example/exact-sense CEFR review; signed 200-per-level deduplicated release manifest; both George and Emma headword/example audio plus genuine listening signoffs; browser/mobile and real physical iPhone Safari evidence; measured GitHub Pages hosting compliance; verified production deployment and preserved 54 lessons, separate IELTS 1,000-word bank, existing George/Emma audio and privacy. Do not merge or publish while any gate is absent.
+
+
+## Verified post-repair CI — 2 November 2026 SGT
+
+- [Structural run 41347371667](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41347371667), tested **`fa302048c82da8d5f2c93cee1941000c4d73c6b2`**, completed **SUCCESS** for all six independently reported A1/A2/B1/B2/C1/ALL GitHub Actions jobs.
+- Actual ALL job **`124969979895`** log confirms the previously failing eight-card indexed-source auditor now passes and its synthetic negative test rejects **166/166** forged-evidence mutations. The same ALL log confirms the six Oxford replacement-candidate audit passes **150/150** synthetic mutation tests; neither is a human-independent review.
+- Structural ALL artifact **`13100171246`**. This run did **not** deploy. The documentation commit below postdates the tested SHA and only changes this report.
+- Frozen first-pass shortlist: **A1 200/0, A2 200/0, B1 200/0, B2 200/0, C1 200/0** (written/independently approved). Real final George/Emma listening signoffs **0**. All other release blockers above remain.
