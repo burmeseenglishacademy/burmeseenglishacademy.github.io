@@ -19,6 +19,16 @@ The corrected release validator **rejects all same-voice distinct-headword byte 
 
 On **2026-11-01**, Cambridge publisher search-index results for [two](https://dictionary.cambridge.org/pronunciation/english/two) and [too](https://dictionary.cambridge.org/pronunciation/english/too) both displayed British **/tuː/**. Direct publisher-page opens returned **HTTP 403**. These are **indexed pronunciation leads only**, not a direct inspected-page receipt, independent pronunciation approval, generated George/Emma audio, or human listening. The narrowly documented mechanical homophone exception is still subject to actual voice-specific listening and independent reviewer signoff. All other same-voice different-headword byte collisions fail closed until a separately evidenced exception is explicitly added.
 
+## Final verified CI readback (2026-11-01)
+
+Both previously in-progress runs subsequently completed **SUCCESS**, testing the actual regression SHA `c6c48779e5b5868ab007d047c9e763cdd7689d84`:
+
+- [Six-lane structural run 41318645132](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41318645132): **A1, A2, B1, B2, C1, ALL all SUCCESS**. ALL job `124883969497`, artifact `13087724299`; logs explicitly show **123/123** indexed six-card source mutations rejected and 1,000 held/zero independently approved. These are structural research tests, not human signoffs.
+- [Documentary no-deployment run 41318645110](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41318645110): **SUCCESS as report-only**; job `124883969461`, blocker artifact `13088422350`. Logs explicitly report **missing approved manifest**, **missing independent stage signoffs**, and **no final protected-assets preservation signoff**; staging production-protection check passed.
+- [Release regression 41318645107](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41318645107): **SUCCESS**, job `124883969096` explicitly confirms the unrelated single-word MP3 copy test and documented-homophone controls. [Integrated A1 regression 41318645081](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41318645081): **SUCCESS**.
+
+**Important:** Passing CI only confirms the code's automated negative tests and staging research structure. It cannot certify any actual George/Emma audio generation, listening, human linguistic review, iPhone testing, hosting measurements or deployment. Release remains blocked.
+
 ## Counts and non-negotiable blockers
 
 | Level | First-pass written | Independently approved | Final George/Emma listening |
