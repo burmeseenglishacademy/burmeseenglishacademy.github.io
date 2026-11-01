@@ -120,6 +120,13 @@ assert module.audio_collision_risks([
 assert module.audio_collision_risks([
     ("two", "bm_george", fake_c), ("too", "bm_george", fake_c)
 ]) == []
+# A third clip must be compared with *every* previous identical-byte clip,
+# not just the first (the first two are legitimate short homophones).
+assert module.audio_collision_risks([
+    ("two", "bm_george", fake_c),
+    ("too", "bm_george", fake_c),
+    ("too", "bf_emma", fake_c),
+]) == [(("too", "bm_george"), ("too", "bf_emma"))]
 assert module.audio_collision_risks([
     ("apple", "bm_george", fake_a), ("apple", "bf_emma", fake_b)
 ]) == []
