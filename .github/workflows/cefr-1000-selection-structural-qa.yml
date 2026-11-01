@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - draft/CEFR-1000-BRITISH-PRONUNCIATION-HETERONYMS-FOURTEEN-2026-11-01.json
+      - tools/audit_cefr_1000_uk_heteronym_audio_risks.py
       - draft/CEFR-1000-OXFORD-A2-SIXTEENTH-ELEVEN-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
       - tools/audit_cefr_1000_oxford_a2_sixteenth_eleven.py
       - draft/CEFR-1000-OXFORD-A2-FINAL-TWENTY-ONE-COMPOUNDS-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
@@ -843,6 +845,11 @@ jobs:
       - name: Reject forged example evidence, provenance and false human approvals
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_example_morphology_reuse.py --level ALL --self-test
+      - name: Audit 14 UK pronunciation/POS ambiguity leads (research only)
+        run: python3 tools/audit_cefr_1000_uk_heteronym_audio_risks.py --level "${{ matrix.level }}"
+      - name: Reject forged UK IPA, publisher access and audio listening receipts
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_uk_heteronym_audio_risks.py --level ALL --self-test
       - name: Save structural QA record (not linguistic verification)
         uses: actions/upload-artifact@v4
         with:
