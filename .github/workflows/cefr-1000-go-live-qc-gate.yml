@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - draft/CEFR-1000-UK-DISCOURSE-DEGREE-SIX-2026-11-01.json
+      - tools/audit_cefr_1000_uk_discourse_degree_six.py
       - draft/CEFR-1000-A2-EIGHT-DIRECT-UK-SENSE-AND-CEFR-TRIAGE-2026-11-01.json
       - tools/audit_cefr_1000_a2_uk_sense_eight.py
       - draft/CEFR-1000-UK-ORTHOGRAPHY-CAPITAL-I-AND-SPELLING-TEN-2026-11-01.json
@@ -400,6 +402,8 @@ jobs:
         run: python3 tools/audit_cefr_1000_uk_heteronym_audio_risks.py --level ALL --self-test
       - name: Reject forged countability grammar sources and false human approvals (NO DEPLOY)
         run: python3 tools/audit_cefr_1000_noun_countability.py --level ALL --self-test
+      - name: Reject forged six-word discourse and degree source receipts (NO DEPLOY)
+        run: python3 tools/audit_cefr_1000_uk_discourse_degree_six.py --level ALL --self-test
       - name: Reject forged eight A2 British sense, publisher CEFR and false approvals (NO DEPLOY)
         run: python3 tools/audit_cefr_1000_a2_uk_sense_eight.py --level ALL --self-test
       - name: Reject forged UK spelling and capital-I evidence (NO DEPLOY)
