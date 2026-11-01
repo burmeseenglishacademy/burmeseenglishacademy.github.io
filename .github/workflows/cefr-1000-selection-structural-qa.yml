@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - tools/validate_cefr_release.py
+      - tests/cefr-release-evidence-gate.py
       - draft/CEFR-1000-A1-IRREGULAR-PLURALS-AND-COUNT-SENSE-EIGHT-2026-11-01.json
       - tools/audit_cefr_1000_a1_irregular_plurals_eight.py
       - draft/CEFR-1000-CROSSLEVEL-IRREGULAR-COMPARATIVES-AND-QUANTIFIERS-NINE-2026-11-01.json
@@ -268,6 +270,9 @@ jobs:
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
+      - name: Audio collision release regression (synthetic only; no listening claim)
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tests/cefr-release-evidence-gate.py
       - name: Check independent-task parity, provenance, cross-level holds and safe staging
         run: python3 tools/audit_cefr_1000_shortlist.py --level "${{ matrix.level }}"
       - name: Reject fake approval or duplicate word in negative tests
