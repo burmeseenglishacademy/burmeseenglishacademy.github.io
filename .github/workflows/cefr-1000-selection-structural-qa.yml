@@ -12,6 +12,8 @@ on:
       - tools/audit_cefr_1000_b2_five_direct_sense.py
       - draft/CEFR-1000-CROSSLEVEL-CONNECTORS-AND-DEGREE-EIGHT-2026-11-02.json
       - tools/audit_cefr_1000_crosslevel_connectors_degree_eight.py
+      - draft/CEFR-1000-SIX-INFLECTION-SLOT-REPLACEMENT-CANDIDATES-2026-11-02.json
+      - tools/audit_cefr_1000_six_inflection_slot_candidates.py
       - draft/CEFR-1000-C1-EIGHT-DIRECT-OXFORD-RARE-SENSE-TRIAGE-2026-11-01.json
       - tools/audit_cefr_1000_c1_rare_eight_direct_oxford.py
       - draft/CEFR-1000-A1-IRREGULAR-PLURALS-AND-COUNT-SENSE-EIGHT-2026-11-01.json
@@ -279,6 +281,11 @@ jobs:
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
+      - name: Audit six Oxford-backed unapproved replacements for non-independent inflection slots
+        run: python3 tools/audit_cefr_1000_six_inflection_slot_candidates.py --level "${{ matrix.level }}"
+      - name: Reject 150 forged candidate, bilingual, provenance and approval mutations
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_six_inflection_slot_candidates.py --level ALL --self-test
       - name: Audio collision release regression (synthetic only; no listening claim)
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tests/cefr-release-evidence-gate.py
