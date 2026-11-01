@@ -11,9 +11,13 @@ MYANMAR=re.compile('[\\u1000-\\u109f\\uaa60-\\uaa7f]')
 ASCII_WORD=re.compile(r"^[a-z][a-z'-]{0,35}$")
 REVIEW_FIELDS=('reviewed_english','reviewed_burmese','reviewed_example','reviewed_level','reviewed_pronunciation')
 SOURCE_FIELDS=('source_english','source_burmese','source_level')
-# Four known provisional A1 cards are grammatical forms of existing A1 lemmas.
-# They may be taught as grammar, but cannot inflate a 200-lemma vocabulary quota.
-NON_LEXICAL_INFLECTIONS={'is':'be','are':'be','does':'do','did':'do'}
+# Six held cards are inflected forms of lemmas already in the shortlist.
+# Four A1 be/do grammar forms and the A2 good comparative/B1 bad superlative
+# may be taught as grammar, but cannot inflate a 200-distinct-lexeme quota.
+# Do NOT automatically ban little/less/least (size vs quantity POS/sense)
+# or person/people (plural vs collective senses): require human sense review.
+NON_LEXICAL_INFLECTIONS={'is':'be','are':'be','does':'do','did':'do',
+                         'better':'good','worst':'bad'}
 
 def source_url_is_specific(url):
     """Heuristic provenance check, never proof of linguistic correctness."""
