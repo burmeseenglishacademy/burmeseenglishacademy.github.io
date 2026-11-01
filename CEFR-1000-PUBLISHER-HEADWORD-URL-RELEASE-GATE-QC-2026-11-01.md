@@ -12,7 +12,7 @@ Staging repair in `tools/validate_cefr_release.py` introduces `publisher_headwor
 
 `tests/cefr-release-evidence-gate.py` now checks positive Cambridge apple and Oxford apple_1 URLs; negative Cambridge/Oxford banana URLs for an apple card, a fake host, an extra path segment, a generic Oxford wordlist, a generic British Council grammar page as CEFR level evidence, and wrong-headword URLs in all three source fields. The test keeps all mock reviewer flags false. No independent review receipt was created.
 
-**Commits:** validator `0ca75554f782f1c3e87a681475c9cf51ac079351`; negative tests `b177de2ec3d0cbbeafa2a874dec4ef79af3aa639`. GitHub Actions run IDs/conclusions/logs for these commits are **not yet independently verified**; no CI success claim is made. The source-binding function was sanity-checked separately for two positive and two negative URL patterns, but this is not a full repository test.
+**Commits:** validator `0ca75554f782f1c3e87a681475c9cf51ac079351`; negative tests `b177de2ec3d0cbbeafa2a874dec4ef79af3aa639` and generic-wordlist assertion repair `8bad50e41826f66bf373bf18f118568053270628`. GitHub Actions run IDs/conclusions/logs for these commits are **not yet independently verified**; no CI success claim is made. The source-binding function was sanity-checked separately for two positive and two negative URL patterns, but this is not a full repository test.
 
 ## Release ledger — unchanged
 
