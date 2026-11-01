@@ -85,9 +85,11 @@ def audio_collision_risks(recordings):
     """Detect copied audio where the intended speech/voice must differ.
 
     Identical same-voice single-word homophones may be legitimate and are
-    left for actual human listening; byte-identical George and Emma clips
-    for the SAME text, or different multiword utterances, are release risks.
-    This is only a mechanical guard, never proof of correct pronunciation.
+    left for actual human listening. Byte-identical recordings across George
+    and Emma are always suspicious, even when attached to DIFFERENT words.
+    Distinct multiword utterances (including TWO-word phrases) must not
+    share the same recording within one voice. This is only a mechanical
+    guard, never proof of correct pronunciation or real listening.
     """
     seen = {}
     collisions = []
@@ -95,9 +97,9 @@ def audio_collision_risks(recordings):
         current = (text, voice)
         for previous in seen.get(digest, []):
             old_text, old_voice = previous
-            incompatible = ((text == old_text and voice != old_voice)
+            incompatible = (voice != old_voice
                             or (text != old_text
-                                and (len(text.split()) >= 3 or len(old_text.split()) >= 3)))
+                                and (len(text.split()) >= 2 or len(old_text.split()) >= 2)))
             if incompatible:
                 collisions.append((previous, current))
         seen.setdefault(digest, []).append(current)
