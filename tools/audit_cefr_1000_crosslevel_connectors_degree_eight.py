@@ -14,7 +14,7 @@ import subprocess
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 PACKET = ROOT / "draft/CEFR-1000-CROSSLEVEL-CONNECTORS-AND-DEGREE-EIGHT-2026-11-02.json"
 SHORTLIST = ROOT / "draft/CEFR-1000-PROVISIONAL-SHORTLIST.json"
-PACKET_SHA = "03d9864390f05e61df8dfa33d4ff924763c234dd"
+PACKET_SHA = "60c46bed558aa3d9f345817e546c4f9dad0b3e01"
 SHORTLIST_SHA = "475e68ae17ab97bd937e73e5ce4794e0dcd76551"
 LEVELS = ("A1", "A2", "B1", "B2", "C1")
 WORDS = ("apparently", "critical", "rather", "fine", "otherwise",
