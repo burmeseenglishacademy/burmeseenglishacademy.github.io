@@ -1,0 +1,254 @@
+{
+  "schema": 1,
+  "created_on": "2026-11-02",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "scope": "USER_APPROVED_1000_TOTAL_NOT_5000",
+  "release_status": "STAGING_EDITORIAL_HOLD_DO_NOT_PUBLISH",
+  "shortlist_path": "draft/CEFR-1000-PROVISIONAL-SHORTLIST.json",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "source_limitations": "Oxford Advanced Learner's Dictionary pages were directly opened for sense and grammar. Cambridge exact-sense labels were observed in public indexed publisher results; direct Cambridge requests returned HTTP 403. Oxford topic CEFR tags are not word/sense CEFR evidence. Neither research nor suggested Myanmar/examples constitutes independent human approval.",
+  "counts_by_level": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "independently_approved_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "research_record_count": 4,
+  "records": [
+    {
+      "word": "direct",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "frozen_original": {
+        "word": "direct",
+        "level": "B1",
+        "part_of_speech": "verb",
+        "english_definition": "To guide and control an activity.",
+        "burmese_meaning": "ညွှန်ကြားသည်၊ ဦးဆောင်သည်",
+        "example_sentence": "She will direct the school play.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 133,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc",
+        "editorial_hold": true,
+        "reviewed_english": false,
+        "reviewed_burmese": false,
+        "reviewed_example": false,
+        "reviewed_level": false,
+        "reviewed_pronunciation": false,
+        "release_approved": false,
+        "status": "PROVISIONAL_SHORTLIST_INDEPENDENT_REVIEW_PENDING"
+      },
+      "observed_on": "2026-11-02",
+      "oxford_direct": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/direct_2",
+        "lines": "133-159",
+        "scope": "Sense 1 managing activities versus sense 2 directing actors or a play",
+        "access": "DIRECT_PAGE_OPENED",
+        "purpose": "SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR"
+      },
+      "cambridge_indexed": {
+        "url": "https://dictionary.cambridge.org/dictionary/english/direct",
+        "access": "PUBLIC_SEARCH_INDEX_ONLY_DIRECT_HTTP_403",
+        "observed_labels": [
+          {
+            "sense": "CONTROL activity/organisation",
+            "level": "C1"
+          },
+          {
+            "sense": "FILM/PLAY actor direction",
+            "level": "B1"
+          }
+        ]
+      },
+      "risk_category": "DEFINITION_EXAMPLE_EXACT_SENSE_MISMATCH",
+      "evidence_note": "Frozen English definition matches broad management/control, but the example is specifically directing a school play. Cambridge-indexed C1 control versus B1 film/play makes this a high-priority definition/example mismatch, not an approved level change.",
+      "proposed_english_definition": "To guide the actors and the performance of a play or film.",
+      "proposed_myanmar_meaning": "ပြဇာတ် သို့မဟုတ် ရုပ်ရှင်တွင် သရုပ်ဆောင်များ၏ သရုပ်ဆောင်ပုံကို ညွှန်ကြားသည်။",
+      "proposed_original_example": "Maya will direct the school play next term.",
+      "proposed_alternative_unapproved": true,
+      "editorial_hold": true,
+      "independently_approved": false,
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false
+    },
+    {
+      "word": "notice",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "frozen_original": {
+        "word": "notice",
+        "level": "B1",
+        "part_of_speech": "noun",
+        "english_definition": "A written message that gives information or instructions.",
+        "burmese_meaning": "အသိပေးစာ",
+        "example_sentence": "A notice on the door says the office is closed.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 215,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc",
+        "editorial_hold": true,
+        "reviewed_english": false,
+        "reviewed_burmese": false,
+        "reviewed_example": false,
+        "reviewed_level": false,
+        "reviewed_pronunciation": false,
+        "release_approved": false,
+        "status": "PROVISIONAL_SHORTLIST_INDEPENDENT_REVIEW_PENDING"
+      },
+      "observed_on": "2026-11-02",
+      "oxford_direct": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/notice_2",
+        "lines": "105-137",
+        "scope": "Countable public written notice or sign, distinct from uncountable advance warning",
+        "access": "DIRECT_PAGE_OPENED",
+        "purpose": "SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR"
+      },
+      "cambridge_indexed": {
+        "url": "https://dictionary.cambridge.org/dictionary/english/notice",
+        "access": "PUBLIC_SEARCH_INDEX_ONLY_DIRECT_HTTP_403",
+        "observed_labels": [
+          {
+            "sense": "INFORMATION countable written notice",
+            "level": "A2"
+          },
+          {
+            "sense": "WARNING uncountable advance notice",
+            "level": "B1"
+          }
+        ]
+      },
+      "risk_category": "PUBLISHER_INDEXED_A2_VS_FROZEN_B1",
+      "evidence_note": "Frozen B1 noun definition and posted-door example both refer to a countable written sign; Cambridge-indexed A2 is for that exact sense, while B1 is a different uncountable advance-warning sense. Human reviewer must adjudicate quota movement or alternate sense.",
+      "proposed_english_definition": "A written sign or message displayed to give information or instructions.",
+      "proposed_myanmar_meaning": "အများမြင်နိုင်သောနေရာတွင် ကပ်ထားသည့် အသိပေးစာ သို့မဟုတ် ညွှန်ကြားချက်ပါသော ဆိုင်းဘုတ်။",
+      "proposed_original_example": "The notice by the entrance says the library closes at six.",
+      "proposed_alternative_unapproved": true,
+      "editorial_hold": true,
+      "independently_approved": false,
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false
+    },
+    {
+      "word": "operation",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "frozen_original": {
+        "word": "operation",
+        "level": "B1",
+        "part_of_speech": "noun",
+        "english_definition": "An activity or set of activities involved in running something.",
+        "burmese_meaning": "လုပ်ငန်းဆောင်ရွက်မှု",
+        "example_sentence": "The warehouse operation begins at eight o'clock.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 93,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc",
+        "editorial_hold": true,
+        "reviewed_english": false,
+        "reviewed_burmese": false,
+        "reviewed_example": false,
+        "reviewed_level": false,
+        "reviewed_pronunciation": false,
+        "release_approved": false,
+        "status": "PROVISIONAL_SHORTLIST_INDEPENDENT_REVIEW_PENDING"
+      },
+      "observed_on": "2026-11-02",
+      "oxford_direct": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/operation",
+        "lines": "215-275",
+        "scope": "Business organisation (countable) versus business activities (usually plural) versus functioning (uncountable)",
+        "access": "DIRECT_PAGE_OPENED",
+        "purpose": "SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR"
+      },
+      "cambridge_indexed": {
+        "url": "https://dictionary.cambridge.org/dictionary/english/operation",
+        "access": "PUBLIC_SEARCH_INDEX_ONLY_DIRECT_HTTP_403",
+        "observed_labels": [
+          {
+            "sense": "WORK business organisation countable",
+            "level": "C1"
+          },
+          {
+            "sense": "WORK fact of operating uncountable",
+            "level": "C1"
+          }
+        ]
+      },
+      "risk_category": "BUSINESS_SENSE_AND_GRAMMATICAL_NUMBER_AMBIGUITY",
+      "evidence_note": "Frozen B1 general definition and singular 'warehouse operation' example do not uniquely specify company, daily business activities or a discrete organised task. Cambridge-indexed C1 work senses are leads, not proof that this exact warehouse example is C1. Oxford business activity often uses plural operations.",
+      "proposed_english_definition": "The activities involved in running a business or part of a business, often used in the plural.",
+      "proposed_myanmar_meaning": "လုပ်ငန်းတစ်ခု သို့မဟုတ် ဌာနတစ်ခု၏ နေ့စဉ် လုပ်ငန်းဆောင်ရွက်မှုများ။",
+      "proposed_original_example": "The company's warehouse operations begin at eight each morning.",
+      "proposed_alternative_unapproved": true,
+      "editorial_hold": true,
+      "independently_approved": false,
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false
+    },
+    {
+      "word": "civil",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "frozen_original": {
+        "word": "civil",
+        "level": "B1",
+        "part_of_speech": "adjective",
+        "english_definition": "Connected with ordinary citizens rather than the military.",
+        "burmese_meaning": "အရပ်ဘက်ဆိုင်ရာ",
+        "example_sentence": "The group works to protect civil rights.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 51,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc",
+        "editorial_hold": true,
+        "reviewed_english": false,
+        "reviewed_burmese": false,
+        "reviewed_example": false,
+        "reviewed_level": false,
+        "reviewed_pronunciation": false,
+        "release_approved": false,
+        "status": "PROVISIONAL_SHORTLIST_INDEPENDENT_REVIEW_PENDING"
+      },
+      "observed_on": "2026-11-02",
+      "oxford_direct": {
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/civil",
+        "lines": "105-125",
+        "scope": "Citizens of a country versus state/non-military versus law versus polite",
+        "access": "DIRECT_PAGE_OPENED",
+        "purpose": "SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR"
+      },
+      "cambridge_indexed": null,
+      "risk_category": "CIVIL_RIGHTS_COLLOCATION_VS_NONMILITARY_GLOSS",
+      "evidence_note": "Frozen definition contrasts civilians with the military, while the example 'civil rights' concerns citizens' legal rights; the non-military gloss alone is insufficient to teach the collocation. Oxford's 'Religion and festivals b2' is a topic label, not headword or exact-sense CEFR evidence. No publisher word-sense CEFR label was verified for this card.",
+      "proposed_english_definition": "Connected with citizens and their rights in society, rather than with the armed forces.",
+      "proposed_myanmar_meaning": "နိုင်ငံသားများနှင့် ၎င်းတို့၏ လူမှုရေး၊ ဥပဒေရေးရာ အခွင့်အရေးများနှင့် ဆိုင်သော။",
+      "proposed_original_example": "The group campaigns to protect civil rights.",
+      "proposed_alternative_unapproved": true,
+      "editorial_hold": true,
+      "independently_approved": false,
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false
+    }
+  ]
+}
