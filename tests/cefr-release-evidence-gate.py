@@ -76,6 +76,17 @@ assert any("noncanonical display casing" in x for x in issues), issues
 entry["word"] = "Apple"
 issues = module.validate(data)
 assert any("noncanonical display casing" in x for x in issues), issues
+# Exact text lookup must not silently collapse spaces or strip the original
+# headword/example; UI text and SHA256 manifest keys must be identical.
+entry["word"] = " apple "
+entry["example_sentence"] = "I eat an apple."
+issues = module.validate(data)
+assert any("noncanonical headword whitespace/type" in x for x in issues), issues
+entry["word"] = "apple"
+for altered in ("I eat  an apple.", "I eat an apple. ", "I eat\nan apple."):
+    entry["example_sentence"] = altered
+    issues = module.validate(data)
+    assert any("noncanonical example whitespace" in x for x in issues), (altered, issues)
 entry["word"] = "apple"
 entry["example_sentence"] = "I eat an apple."
 
@@ -209,5 +220,5 @@ for word, example in (("little","I have a little dog."),
 entry["word"] = "apple"
 entry["example_sentence"] = "I eat an apple."
 print("PASS: ten be/do/comparison/irregular-plural forms rejected; base lemmas and distinct size/quantity and person/people senses remain eligible for human review.")
-print("PASS: capital-I audio manifest key and SHA case preserved; mixed-case ordinary headwords rejected; no listening claimed.")
+print("PASS: capital-I audio key and SHA case preserved; mixed-case and noncanonical whitespace headword/example keys rejected; no listening claimed.")
 print("PASS: mismatched publisher headwords, generic CEFR references, copied cross-voice, multiword and unrelated single-word MP3s rejected; only documented homophones exempt; real listening still mandatory.")
