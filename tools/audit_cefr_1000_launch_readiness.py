@@ -229,7 +229,8 @@ def temporal_adverb_example_pos_conflicts(entries):
         word = entry.get("word")
         if (entry.get("level") == "A1" and entry.get("part_of_speech") == "adverb"
                 and word in frozen
-                and entry.get("example_sentence", "").strip() == frozen[word]):
+                and isinstance(entry.get("example_sentence"), str)
+                and entry["example_sentence"].strip() == frozen[word]):
             conflicts.append(word)
     return conflicts
 
