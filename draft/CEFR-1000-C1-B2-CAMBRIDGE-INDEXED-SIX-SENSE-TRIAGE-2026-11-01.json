@@ -27,7 +27,7 @@
   },
   "real_george_emma_listening_signoffs": 0,
   "production_status": "BLOCKED_STAGING_ONLY",
-  "publisher_scope_notice": "Cambridge dictionary search-index excerpts were observed on 2026-11-01; attempts to open publisher pages directly returned HTTP 403. These indexed labels are research leads only, NOT directly inspected publisher CEFR evidence or independent human signoff. Original shortlist and protected production assets must remain unchanged.",
+  "publisher_scope_notice": "Six Oxford Advanced Learner's Dictionary publisher entries were directly opened and their exact-sense/POS lines observed on 2026-11-01. Cambridge English dictionary CEFR labels came from search-index excerpts only; direct Cambridge page attempts returned HTTP 403. Oxford topic labels and Cambridge indexed labels are NOT independently verified exact-sense CEFR approval. Original 1,000-word shortlist, human review flags and production assets remain untouched.",
   "records": [
     {
       "word": "signature",
@@ -57,7 +57,16 @@
       "release_approved": false,
       "independent_reviewer_receipt": null,
       "real_george_listening": false,
-      "real_emma_listening": false
+      "real_emma_listening": false,
+      "oxford_direct_observation": {
+        "publisher": "Oxford University Press",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/signature",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+        "line_locator": "105-112,134-155",
+        "source_supported_observation": "Oxford directly distinguishes countable handwritten-name sense 1, uncountable act of signing sense 2, and identifying characteristic sense 3. Frozen signature example targets sense 1.",
+        "evidence_scope": "DIRECT_EXACT_SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR"
+      }
     },
     {
       "word": "upgrade",
@@ -87,7 +96,16 @@
       "release_approved": false,
       "independent_reviewer_receipt": null,
       "real_george_listening": false,
-      "real_emma_listening": false
+      "real_emma_listening": false,
+      "oxford_direct_observation": {
+        "publisher": "Oxford University Press",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/upgrade_1",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+        "line_locator": "116-121,138-146",
+        "source_supported_observation": "Oxford directly defines the software/system improvement verb as sense 1; its Computers c1 topic tag differs from Cambridge's indexed B2 label. Topic tags are not independent exact-sense CEFR proof.",
+        "evidence_scope": "DIRECT_EXACT_SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR"
+      }
     },
     {
       "word": "diverse",
@@ -117,7 +135,16 @@
       "release_approved": false,
       "independent_reviewer_receipt": null,
       "real_george_listening": false,
-      "real_emma_listening": false
+      "real_emma_listening": false,
+      "oxford_direct_observation": {
+        "publisher": "Oxford University Press",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/diverse",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+        "line_locator": "103-112",
+        "source_supported_observation": "Oxford directly defines diverse as various kinds/different from one another. Frozen diverse group of researchers matches the adjective sense.",
+        "evidence_scope": "DIRECT_EXACT_SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR"
+      }
     },
     {
       "word": "closely",
@@ -147,7 +174,16 @@
       "release_approved": false,
       "independent_reviewer_receipt": null,
       "real_george_listening": false,
-      "real_emma_listening": false
+      "real_emma_listening": false,
+      "oxford_direct_observation": {
+        "publisher": "Oxford University Press",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/closely",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+        "line_locator": "105-108,131-136",
+        "source_supported_observation": "Oxford directly distinguishes physical/time proximity (sense 1) from carefully examining (sense 5). Frozen examined drawing closely targets carefully.",
+        "evidence_scope": "DIRECT_EXACT_SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR"
+      }
     },
     {
       "word": "neutral",
@@ -177,7 +213,16 @@
       "release_approved": false,
       "independent_reviewer_receipt": null,
       "real_george_listening": false,
-      "real_emma_listening": false
+      "real_emma_listening": false,
+      "oxford_direct_observation": {
+        "publisher": "Oxford University Press",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/neutral_1",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+        "line_locator": "106-119",
+        "source_supported_observation": "Oxford directly identifies disagreement/contest sense 1: not helping either side. Frozen mediator example is a grammatical adjective use.",
+        "evidence_scope": "DIRECT_EXACT_SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR"
+      }
     },
     {
       "word": "asset",
@@ -207,7 +252,16 @@
       "release_approved": false,
       "independent_reviewer_receipt": null,
       "real_george_listening": false,
-      "real_emma_listening": false
+      "real_emma_listening": false,
+      "oxford_direct_observation": {
+        "publisher": "Oxford University Press",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/asset",
+        "observed_on": "2026-11-01",
+        "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+        "line_locator": "105-115,128-135",
+        "source_supported_observation": "Oxford directly distinguishes useful person or quality (sense 1) from property that can be sold to pay debts (sense 2). Frozen reliable staff example targets sense 1.",
+        "evidence_scope": "DIRECT_EXACT_SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR"
+      }
     }
   ]
 }
