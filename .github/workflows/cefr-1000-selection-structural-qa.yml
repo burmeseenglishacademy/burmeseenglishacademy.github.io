@@ -945,6 +945,11 @@ jobs:
       - name: Reject forged eight-card source, Myanmar, provenance and human review receipts
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_b1_eight_indexed_sense.py --level ALL --self-test
+      - name: Audit four held B1 exact-sense examples and Myanmar alternatives
+        run: python3 tools/audit_cefr_1000_b1_four_sense_example.py --level "${{ matrix.level }}"
+      - name: Reject forged four-card Oxford, indexed CEFR, bilingual and approval claims
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_b1_four_sense_example.py --level ALL --self-test
       - name: Save structural QA record (not linguistic verification)
         uses: actions/upload-artifact@v4
         with:
