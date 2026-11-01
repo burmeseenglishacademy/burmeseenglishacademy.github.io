@@ -1,0 +1,313 @@
+{
+  "schema": 1,
+  "scope": "USER_APPROVED_CEFR_1000_STAGING_ONLY",
+  "status": "UNAPPROVED_A1_IRREGULAR_PLURAL_AND_COUNT_SENSE_TRIAGE",
+  "observed_on": "2026-11-01",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "counts_by_level": {
+    "A1": 8,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "first_pass_written_by_level": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "independently_approved_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "real_george_emma_listening_signoffs": 0,
+  "production_status": "BLOCKED_STAGING_ONLY",
+  "publisher_scope_notice": "Direct Oxford dictionary observations support inflection, countability and word-sense distinctions ONLY. Oxford topic tags are not independent exact-sense CEFR classification. No independent human bilingual/example approval or audio listening is claimed. All eight frozen entries are unchanged and remain on editorial hold.",
+  "records": [
+    {
+      "word": "man",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "original_english_definition": "An adult male person.",
+      "original_burmese_meaning": "အရွယ်ရောက်ပြီးသော အမျိုးသား",
+      "original_example_sentence": "The man is a teacher.",
+      "source_path": "draft/A1-EDITORIAL-STARTER.json",
+      "source_index": 56,
+      "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae",
+      "risk_class": "IRREGULAR_PLURAL_MEN",
+      "source_supported_observation": "The noun man is countable; its plural is men /men/, not mans. The original singular example is grammatical.",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/man_1",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "103-127",
+          "evidence_scope": "GRAMMAR_AND_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "suggested_myanmar_UNAPPROVED": "အရွယ်ရောက်ပြီးသော အမျိုးသား (အများကိန်း men)",
+      "suggested_example_UNAPPROVED": "The man is talking to a teacher.",
+      "independent_reviewer_question": "Confirm the singular adult-male sense and separately teach /mæn/ versus plural /men/ without counting men as a new lemma.",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    },
+    {
+      "word": "woman",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "original_english_definition": "An adult female person.",
+      "original_burmese_meaning": "အရွယ်ရောက်ပြီးသော အမျိုးသမီး",
+      "original_example_sentence": "The woman is a doctor.",
+      "source_path": "draft/A1-EDITORIAL-STARTER.json",
+      "source_index": 86,
+      "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae",
+      "risk_class": "IRREGULAR_PLURAL_WOMEN",
+      "source_supported_observation": "The noun woman is countable; women is the plural and has a different vowel in its British pronunciation. The original singular example is grammatical.",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/woman",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "103-124",
+          "evidence_scope": "GRAMMAR_AND_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "suggested_myanmar_UNAPPROVED": "အရွယ်ရောက်ပြီးသော အမျိုးသမီး (အများကိန်း women)",
+      "suggested_example_UNAPPROVED": "A woman is waiting near the door.",
+      "independent_reviewer_question": "Check British singular /ˈwʊmən/ and plural /ˈwɪmɪn/ with real George/Emma listening if either is used in final audio.",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    },
+    {
+      "word": "child",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "original_english_definition": "A young person who is not yet an adult.",
+      "original_burmese_meaning": "ကလေး",
+      "original_example_sentence": "The child is sleeping.",
+      "source_path": "draft/A1-EDITORIAL-STARTER.json",
+      "source_index": 87,
+      "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae",
+      "risk_class": "IRREGULAR_PLURAL_CHILDREN",
+      "source_supported_observation": "Child has the irregular plural children, not childs. The original singular subject and agreement are correct.",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/child",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "103-127",
+          "evidence_scope": "GRAMMAR_AND_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "suggested_myanmar_UNAPPROVED": "ကလေး (အများကိန်း children)",
+      "suggested_example_UNAPPROVED": "The child is reading a book.",
+      "independent_reviewer_question": "Keep singular child distinct from plural children and require independent A1 exact-sense review.",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    },
+    {
+      "word": "foot",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "original_english_definition": "The part of the body at the end of a leg.",
+      "original_burmese_meaning": "ခြေဖဝါး၊ ခြေထောက်",
+      "original_example_sentence": "My left foot hurts.",
+      "source_path": "draft/A1-EDITORIAL-STARTER.json",
+      "source_index": 179,
+      "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae",
+      "risk_class": "IRREGULAR_PLURAL_FEET_AND_MEASUREMENT_SENSE",
+      "source_supported_observation": "Body-part foot has plural feet; the separate measurement sense has different use and is not what this A1 card teaches.",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/foot_1",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "103-128",
+          "evidence_scope": "GRAMMAR_AND_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "suggested_myanmar_UNAPPROVED": "ခြေဖဝါး၊ ခြေထောက်အောက်ပိုင်း (အများကိန်း feet)",
+      "suggested_example_UNAPPROVED": "My right foot is cold.",
+      "independent_reviewer_question": "Keep body-part sense separate from foot as length unit and do not infer A1 for the measurement sense from the body-part card.",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    },
+    {
+      "word": "fish",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "original_english_definition": "An animal that lives in water and has gills.",
+      "original_burmese_meaning": "ငါး",
+      "original_example_sentence": "The fish swims in the river.",
+      "source_path": "draft/A1-EDITORIAL-STARTER.json",
+      "source_index": 183,
+      "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae",
+      "risk_class": "ZERO_CHANGE_PLURAL_AND_ANIMAL_FOOD_SENSE",
+      "source_supported_observation": "Fish is the usual singular/plural animal noun; fishes is used especially for different kinds. Food fish is an uncountable sense. Original sentence teaches an animal.",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/fish_1",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "103-140",
+          "evidence_scope": "GRAMMAR_AND_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "suggested_myanmar_UNAPPROVED": "ငါး (တိရစ္ဆာန်; အများကိန်းတွင် fish ကို အများအားဖြင့် သုံးသည်)",
+      "suggested_example_UNAPPROVED": "I can see three fish in the pond.",
+      "independent_reviewer_question": "Review whether a plural fish example is understood as plural, and distinguish countable animal from uncountable food.",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    },
+    {
+      "word": "hair",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "original_english_definition": "The thin strands growing on a person's head.",
+      "original_burmese_meaning": "ဆံပင်",
+      "original_example_sentence": "Her hair is long.",
+      "source_path": "draft/A1-EDITORIAL-STARTER.json",
+      "source_index": 178,
+      "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae",
+      "risk_class": "MASS_NOUN_VS_INDIVIDUAL_STRANDS",
+      "source_supported_observation": "Hair as all the hair on a head is uncountable; individual hairs can be counted. Original Her hair is long correctly uses the mass noun.",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/hair",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "107-121",
+          "evidence_scope": "GRAMMAR_AND_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        },
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/hair",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "154-172",
+          "evidence_scope": "GRAMMAR_AND_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "suggested_myanmar_UNAPPROVED": "ဆံပင် (စုစုပေါင်းကို ပြောလျှင် uncountable; တစ်ချောင်းချင်းကို ပြောလျှင် countable)",
+      "suggested_example_UNAPPROVED": "Her hair is very long.",
+      "independent_reviewer_question": "Ensure Myanmar translation and examples do not incorrectly use hairs for collective head hair.",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    },
+    {
+      "word": "chicken",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "original_english_definition": "A farm bird kept for eggs or meat.",
+      "original_burmese_meaning": "ကြက်",
+      "original_example_sentence": "There is a chicken in the garden.",
+      "source_path": "draft/A1-EDITORIAL-STARTER.json",
+      "source_index": 191,
+      "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae",
+      "risk_class": "COUNTABLE_BIRD_VS_UNCOUNTABLE_MEAT",
+      "source_supported_observation": "A chicken is a countable bird; chicken as food is an uncountable meat sense. The original garden example correctly teaches the bird.",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/chicken_1",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "107-124",
+          "evidence_scope": "GRAMMAR_AND_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        },
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/chicken_1",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "149-161",
+          "evidence_scope": "GRAMMAR_AND_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "suggested_myanmar_UNAPPROVED": "ကြက် (တိရစ္ဆာန်ဆိုလျှင် countable; ကြက်သားဆိုလျှင် uncountable)",
+      "suggested_example_UNAPPROVED": "A chicken is walking in the garden.",
+      "independent_reviewer_question": "Confirm the animal sense and do not silently replace its Myanmar gloss with ကြက်သား, the food sense.",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    },
+    {
+      "word": "orange",
+      "level": "A1",
+      "part_of_speech": "adjective",
+      "original_english_definition": "Having the colour between red and yellow.",
+      "original_burmese_meaning": "လိမ္မော်ရောင်ဖြစ်သော",
+      "original_example_sentence": "The bag is orange.",
+      "source_path": "draft/A1-EDITORIAL-STARTER.json",
+      "source_index": 134,
+      "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae",
+      "risk_class": "ADJECTIVE_COLOUR_VS_NOUN_FRUIT",
+      "source_supported_observation": "Orange is a colour adjective in the frozen card; orange as a fruit is a different noun/POS sense. The original The bag is orange is a correct adjective example.",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/orange_2",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "103-112",
+          "evidence_scope": "GRAMMAR_AND_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        },
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/orange_1",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "103-117",
+          "evidence_scope": "GRAMMAR_AND_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "suggested_myanmar_UNAPPROVED": "လိမ္မော်ရောင်ရှိသော (adjective; လိမ္မော်သီး noun နှင့် ကွဲပြား)",
+      "suggested_example_UNAPPROVED": "Her shirt is orange.",
+      "independent_reviewer_question": "Require independent POS-specific review: the noun fruit evidence is not proof that the adjective card teaches fruit.",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    }
+  ]
+}
