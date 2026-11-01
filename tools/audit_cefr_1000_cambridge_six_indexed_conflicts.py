@@ -32,7 +32,7 @@ FLAGS = ("reviewed_english", "reviewed_burmese", "reviewed_example",
 
 
 def git_blob(data):
-    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\\0" + data).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(data)).encode() + bytes([0]) + data).hexdigest()
 
 
 def verify(packet, shortlist, baseline, level="ALL", historical=True):
