@@ -92,16 +92,15 @@ def audio_collision_risks(recordings):
     seen = {}
     collisions = []
     for text, voice, digest in recordings:
-        previous = seen.get(digest)
-        if previous is None:
-            seen[digest] = (text, voice)
-            continue
-        old_text, old_voice = previous
-        incompatible = ((text == old_text and voice != old_voice)
-                        or (text != old_text
-                            and (len(text.split()) >= 3 or len(old_text.split()) >= 3)))
-        if incompatible:
-            collisions.append((previous, (text, voice)))
+        current = (text, voice)
+        for previous in seen.get(digest, []):
+            old_text, old_voice = previous
+            incompatible = ((text == old_text and voice != old_voice)
+                            or (text != old_text
+                                and (len(text.split()) >= 3 or len(old_text.split()) >= 3)))
+            if incompatible:
+                collisions.append((previous, current))
+        seen.setdefault(digest, []).append(current)
     return collisions
 
 def validate(data,root=None,verify_audio=False):
