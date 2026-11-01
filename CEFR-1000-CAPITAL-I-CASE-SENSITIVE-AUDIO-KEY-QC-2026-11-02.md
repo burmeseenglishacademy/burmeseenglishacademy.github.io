@@ -10,6 +10,13 @@ Repaired `tools/validate_cefr_release.py` to collect exact canonical **display**
 
 **Code commit:** `c7f27c7460264fe994d2467e4ade74c243b6c70d`. **Test commit:** `09449834cb63992a31f7d3562669981ba04930d1`.
 
+## Additional exact-whitespace mismatch repaired
+The original release validator also normalised leading/trailing spaces and repeated spaces in headwords/examples before looking up audio. This could silently map the user-visible `I eat  an apple.` to a different `I eat an apple.` recording, or accept ` apple ` while looking up `apple`. A future release must not approve audio for text that differs from what the learner sees.
+
+Added explicit fail-closed checks for canonical raw headword and example whitespace, and synthetic negative tests for padded headwords, double spaces, trailing spaces and newlines. The helper still preserves exact canonical text and does not create audio. **Additional code commit:** `47f99b16866b01cb28ac8650b231a90162653ea5`; **additional test commit:** `88c351735a13918be14082c87016ac7062525a0e`.
+
+[Release regression 41330436114](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41330436114), job `124919195424`: **SUCCESS at `88c351735`**. Actual logs confirm the new case and whitespace adversarial controls and unchanged empty published CEFR bank. [Integrated A1 regression 41330436134](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41330436134) also **SUCCESS**. [Six-lane structural run 41330436098](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41330436098) and [documentary run 41330436142](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41330436142) are **pending final verification** at this addendum.
+
 ## GitHub Actions evidence
 - [Release regression run 41330333104](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41330333104), job `124918882105`: **SUCCESS** at test commit `09449834`; actual logs explicitly confirm the new capital-I audio/hash and canonical casing tests passed and the published CEFR bank remains empty.
 - [Integrated A1 regression run 41330333096](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41330333096), job `124918881853`: **SUCCESS**; actual logs confirm existing 54 lessons, separate IELTS 1,000 entries, 4,652 existing production MP3 paths, and privacy/static safeguards. This is an automated baseline test, not a new human preservation signoff.
