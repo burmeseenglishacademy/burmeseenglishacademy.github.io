@@ -213,6 +213,27 @@ def hosting_limits_valid(hosting, approved_sha):
     return True
 
 
+def temporal_adverb_example_pos_conflicts(entries):
+    """Block two source-confirmed A1 adverb cards using noun-subject examples.
+
+    Oxford noun pages directly give 'Today is Monday' and 'Yesterday was
+    Sunday'. The sentences are grammatical, but they do not demonstrate the
+    adverb part of speech on the provisional cards. Rewritten approved
+    examples or independently reviewed noun-sense entries can pass.
+    """
+    frozen = {"today": "Today is Monday.", "yesterday": "Yesterday was Sunday."}
+    conflicts = []
+    for entry in entries:
+        if not isinstance(entry, dict):
+            continue
+        word = entry.get("word")
+        if (entry.get("level") == "A1" and entry.get("part_of_speech") == "adverb"
+                and word in frozen
+                and entry.get("example_sentence", "").strip() == frozen[word]):
+            conflicts.append(word)
+    return conflicts
+
+
 def audit(ledger=None, after_deployment=False):
     d = ledger if ledger is not None else read_json(LEDGER)
     issues = []
@@ -339,6 +360,13 @@ def audit(ledger=None, after_deployment=False):
                 issues.append("Approved manifest/audio gate: " + issue)
         except (ValueError, TypeError, OSError) as exc:
             issues.append("Cannot parse approved manifest: " + str(exc)[:100])
+
+    # Independently reviewed release examples must match the stated POS.
+    # Direct Oxford noun and adverb pages support these two precise holds.
+    temporal_conflicts = temporal_adverb_example_pos_conflicts(entries)
+    report["a1_temporal_adverb_example_pos_conflicts"] = len(temporal_conflicts)
+    for word in temporal_conflicts:
+        issues.append(f"{word}: A1 adverb release example is a noun-subject use; independent example/POS correction required")
 
     receipts = d.get("independent_word_review_receipts", [])
     if not isinstance(receipts, list):
@@ -2507,6 +2535,21 @@ def main():
     args = parser.parse_args()
     issues, report = audit(after_deployment=args.after_deployment)
     if args.self_test:
+        # Synthetic regression only: no human review or release evidence.
+        bad_temporal = [
+            {"word": "today", "level": "A1", "part_of_speech": "adverb", "example_sentence": "Today is Monday."},
+            {"word": "yesterday", "level": "A1", "part_of_speech": "adverb", "example_sentence": "Yesterday was Sunday."},
+            {"word": "tomorrow", "level": "A1", "part_of_speech": "adverb", "example_sentence": "We have class tomorrow."},
+        ]
+        assert temporal_adverb_example_pos_conflicts(bad_temporal) == ["today", "yesterday"]
+        for row in bad_temporal[:2]:
+            row["example_sentence"] = ("I have a lesson today." if row["word"] == "today"
+                                       else "I was at home yesterday.")
+        assert not temporal_adverb_example_pos_conflicts(bad_temporal)
+        bad_temporal[0]["example_sentence"] = "Today is Monday."
+        bad_temporal[0]["part_of_speech"] = "noun"
+        assert not temporal_adverb_example_pos_conflicts(bad_temporal)
+        print("PASS: A1 noun-subject time-word examples cannot silently pass as adverb examples")
         import copy
         false_ready = copy.deepcopy(read_json(LEDGER))
         false_ready["status"] = "INDEPENDENT_QC_COMPLETE_RELEASE_CANDIDATE"
