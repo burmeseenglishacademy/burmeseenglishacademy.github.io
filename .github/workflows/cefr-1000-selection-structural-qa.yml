@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - draft/CEFR-1000-UK-ORTHOGRAPHY-CAPITAL-I-AND-SPELLING-TEN-2026-11-01.json
+      - tools/audit_cefr_1000_uk_orthography.py
       - draft/CEFR-1000-NOUN-COUNTABILITY-AND-AGREEMENT-TWELVE-2026-11-01.json
       - tools/audit_cefr_1000_noun_countability.py
       - draft/CEFR-1000-BRITISH-PRONUNCIATION-HETERONYMS-FOURTEEN-2026-11-01.json
@@ -857,6 +859,11 @@ jobs:
       - name: Reject forged noun grammar sources, bilingual snapshots and false approvals
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_noun_countability.py --level ALL --self-test
+      - name: Audit 10 UK orthography and capital-I cases (unapproved)
+        run: python3 tools/audit_cefr_1000_uk_orthography.py --level "${{ matrix.level }}"
+      - name: Reject forged UK spelling, Myanmar and approval evidence
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_uk_orthography.py --level ALL --self-test
       - name: Save structural QA record (not linguistic verification)
         uses: actions/upload-artifact@v4
         with:
