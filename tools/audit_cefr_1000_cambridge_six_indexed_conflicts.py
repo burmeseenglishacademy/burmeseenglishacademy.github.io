@@ -16,7 +16,7 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 PACKET = ROOT / "draft/CEFR-1000-C1-B2-CAMBRIDGE-INDEXED-SIX-SENSE-TRIAGE-2026-11-01.json"
 SHORTLIST = ROOT / "draft/CEFR-1000-PROVISIONAL-SHORTLIST.json"
-PACKET_GIT_BLOB = "d05cb4ec1f6985603c90283f8599c97fa2e834fb"
+PACKET_GIT_BLOB = "4d93cdd37a7d75eabbb4c0ad059da44073b1ec17"
 SHORTLIST_GIT_BLOB = "475e68ae17ab97bd937e73e5ce4794e0dcd76551"
 LEVELS = ("A1", "A2", "B1", "B2", "C1")
 EXPECTED = {
@@ -112,6 +112,14 @@ def verify(packet, shortlist, baseline, level="ALL", historical=True):
             fail(f"{word}: wrong publisher headword URL")
         if source.get("observed_on") != "2026-11-01" or source.get("access") != "SEARCH_INDEX_EXCERPT_ONLY_DIRECT_PAGE_HTTP_403":
             fail(f"{word}: indexed evidence misrepresented as direct inspection")
+        oxford = row.get("oxford_direct_observation", {})
+        expected_oxford_suffix = {"upgrade": "upgrade_1", "neutral": "neutral_1"}.get(word, word)
+        if oxford.get("url") != f"https://www.oxfordlearnersdictionaries.com/definition/english/{expected_oxford_suffix}":
+            fail(f"{word}: wrong directly inspected Oxford publisher URL")
+        if oxford.get("access") != "DIRECT_PUBLISHER_PAGE_OPENED" or oxford.get("observed_on") != "2026-11-01":
+            fail(f"{word}: fabricated direct Oxford observation")
+        if not oxford.get("line_locator") or oxford.get("evidence_scope") != "DIRECT_EXACT_SENSE_AND_GRAMMAR_NOT_INDEPENDENT_CEFR":
+            fail(f"{word}: Oxford sense locator or evidence scope missing")
         if row.get("editorial_hold") is not True or row.get("independently_checked") is not False or row.get("release_approved") is not False or row.get("independent_reviewer_receipt") is not None or row.get("real_george_listening") is not False or row.get("real_emma_listening") is not False:
             fail(f"{word}: fabricated review or audio listening receipt")
         if historical:
@@ -160,6 +168,14 @@ def negative_tests(packet, shortlist):
             count += 1
             if not verify(altered, shortlist, packet, historical=False):
                 raise AssertionError(f"Source mutation escaped: {row['word']}/{field}")
+        for field, bad in (("url", "https://www.oxfordlearnersdictionaries.com/definition/english/other"),
+                           ("access", "SEARCH_INDEX_EXCERPT_ONLY_DIRECT_PAGE_HTTP_403"),
+                           ("line_locator", "")):
+            altered = copy.deepcopy(packet)
+            altered["records"][i]["oxford_direct_observation"][field] = bad
+            count += 1
+            if not verify(altered, shortlist, packet, historical=False):
+                raise AssertionError(f"Oxford mutation escaped: {row['word']}/{field}")
         altered = copy.deepcopy(shortlist)
         next(x for x in altered["entries"] if x["word"] == row["word"])["reviewed_level"] = True
         count += 1
