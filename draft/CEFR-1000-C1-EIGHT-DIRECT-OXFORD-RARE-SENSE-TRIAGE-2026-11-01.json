@@ -1,0 +1,289 @@
+{
+  "schema": 1,
+  "scope": "USER_APPROVED_CEFR_1000_STAGING_ONLY",
+  "status": "UNAPPROVED_C1_EIGHT_DIRECT_OXFORD_EXACT_SENSE_TRIAGE",
+  "observed_on": "2026-11-01",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "counts_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 8
+  },
+  "first_pass_written_by_level": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "independently_approved_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "real_george_emma_listening_signoffs": 0,
+  "production_status": "BLOCKED_STAGING_ONLY",
+  "publisher_scope_notice": "Eight Oxford Advanced Learner's Dictionary English entries were directly opened on 2026-11-01. Direct evidence supports POS and senses only. Oxford topic CEFR tags are not independently verified exact-sense word CEFR labels; C1 is provisional. No independent reviewer, audio listening, physical iPhone testing or production launch claimed.",
+  "records": [
+    {
+      "word": "ambivalence",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "original_english_definition": "The feeling of having conflicting attitudes about the same thing.",
+      "original_burmese_meaning": "အကြောင်းအရာတစ်ခုတည်းအပေါ် ဆန့်ကျင်ဘက်ခံစားချက်နှစ်မျိုး တစ်ပြိုင်နက် ရှိနေခြင်း",
+      "original_example_sentence": "She felt ambivalence about accepting the promotion abroad.",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+      "source_index": 8,
+      "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8",
+      "risk_class": "MIXED_POSITIVE_NEGATIVE_FEELINGS_NOT_INDIFFERENCE",
+      "source_supported_observation": "Oxford directly confirms a mixture of positive and negative feelings about a person or situation. The frozen promotion example uses the correct about-complement; the English and Myanmar are plausible but require an independent naturalness check. No entry-specific CEFR label was observed.",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/ambivalence",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "101-107",
+          "evidence_scope": "EXACT_SENSE_POS_GRAMMAR_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "suggested_myanmar_UNAPPROVED": "ကိစ္စတစ်ခုအပေါ် နှစ်သက်သည့်စိတ်နှင့် မနှစ်သက်သည့်စိတ် နှစ်မျိုးလုံး ရောယှက်နေခြင်း",
+      "suggested_example_UNAPPROVED": "He felt ambivalence about leaving his familiar workplace.",
+      "independent_reviewer_question": "Does the bilingual card communicate simultaneous positive and negative feelings rather than uncertainty or indifference? Find independently reviewable exact-sense C1 evidence.",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    },
+    {
+      "word": "anachronism",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "original_english_definition": "Something that seems to belong to a different historical period.",
+      "original_burmese_meaning": "ခေတ်ကာလနှင့် မကိုက်ညီဘဲ အခြားခေတ်တစ်ခုမှ ဖြစ်သကဲ့သို့ ထင်ရသော အရာ",
+      "original_example_sentence": "The old payment machine looked like an anachronism in the modern shop.",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+      "source_index": 9,
+      "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8",
+      "risk_class": "OUTDATED_OBJECT_VERSUS_WRONG_HISTORICAL_PERIOD",
+      "source_supported_observation": "Oxford sense 1 is a person, custom or idea that appears old-fashioned in the present; sense 2 is a historically misplaced detail in a work. The frozen old payment machine sentence uses sense 1 by extension; do not mistakenly translate as a historical dating error. The History c2 topic tag follows sense 2, not independent CEFR verification for sense 1.",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/anachronism",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "101-109",
+          "evidence_scope": "EXACT_SENSE_POS_GRAMMAR_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "suggested_myanmar_UNAPPROVED": "ယနေ့ခေတ်နှင့် မကိုက်ညီတော့ဘဲ ခေတ်ဟောင်းက အရာတစ်ခုလို ဖြစ်နေသောအရာ",
+      "suggested_example_UNAPPROVED": "The outdated ticket machine seemed an anachronism in the new station.",
+      "independent_reviewer_question": "Does the machine example naturally express the old-fashioned sense rather than a historical-placement mistake? Check exact-sense level separately.",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    },
+    {
+      "word": "antipathy",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "original_english_definition": "A strong feeling of dislike towards someone or something.",
+      "original_burmese_meaning": "လူတစ်ဦး သို့မဟုတ် အရာတစ်ခုအပေါ် ပြင်းထန်စွာ မနှစ်သက်ခြင်း",
+      "original_example_sentence": "His antipathy towards unnecessary rules was well known.",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+      "source_index": 10,
+      "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8",
+      "risk_class": "STRONG_DISLIKE_VERSUS_DISAGREEMENT",
+      "source_supported_observation": "Oxford directly records a formal noun for strong dislike, including antipathy to/towards a person or thing. The frozen example about unnecessary rules is grammatical; distinguish personal aversion from neutral disagreement. No headword CEFR level was observed.",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/antipathy",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "101-110",
+          "evidence_scope": "EXACT_SENSE_POS_GRAMMAR_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "suggested_myanmar_UNAPPROVED": "လူတစ်ဦး သို့မဟုတ် အရာတစ်ခုကို ပြင်းပြင်းထန်ထန် မနှစ်မြို့ခြင်း",
+      "suggested_example_UNAPPROVED": "Her antipathy towards unfair rules was clear to everyone.",
+      "independent_reviewer_question": "Does the Myanmar expression indicate strong dislike, not just disagreement, and is C1 justified for this exact sense?",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    },
+    {
+      "word": "arbitrate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "original_english_definition": "To hear both sides of a disagreement and make a decision about it.",
+      "original_burmese_meaning": "အငြင်းပွားမှု၏ နှစ်ဖက်စလုံးကို နားထောင်ပြီး ဆုံးဖြတ်ပေးသည်",
+      "original_example_sentence": "An independent expert was asked to arbitrate the dispute.",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+      "source_index": 11,
+      "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8",
+      "risk_class": "FORMAL_DISPUTE_SETTLEMENT_NOT_MERE_OPINION",
+      "source_supported_observation": "Oxford describes formally settling a disagreement between parties, including arbitrate in a dispute and arbitrate between A and B. The frozen independent-expert example is grammatical but its definition should emphasize official dispute resolution rather than merely hearing both sides. Discussion and agreement c2 is a topic tag, not independent exact-sense CEFR approval.",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/arbitrate",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "101-118",
+          "evidence_scope": "EXACT_SENSE_POS_GRAMMAR_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "suggested_myanmar_UNAPPROVED": "အငြင်းပွားနေသည့် နှစ်ဖက်ကြား ဝင်ရောက်ညှိနှိုင်းဆုံးဖြတ်ပေးသည်",
+      "suggested_example_UNAPPROVED": "The independent panel will arbitrate between the two companies.",
+      "independent_reviewer_question": "Should the English and Myanmar emphasize an authorized neutral decision rather than an informal opinion? Confirm exact-sense C1 with independent source.",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    },
+    {
+      "word": "belligerent",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "original_english_definition": "Hostile and ready to argue or fight.",
+      "original_burmese_meaning": "ရန်လိုပြီး ငြင်းခုံရန် သို့မဟုတ် တိုက်ခိုက်ရန် အသင့်ရှိသော",
+      "original_example_sentence": "The passenger became belligerent when staff refused his request.",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+      "source_index": 12,
+      "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8",
+      "risk_class": "HOSTILE_PERSON_VERSUS_WARRING_STATE",
+      "source_supported_observation": "Oxford adjective sense 1 means aggressive and unfriendly; sense 2 describes a state fighting a war and is restricted to prenominal position. The frozen passenger sentence clearly uses sense 1, not the wartime meaning. Both c2 tags are topic labels and not independent exact-sense CEFR evidence.",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/belligerent_1",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "101-110",
+          "evidence_scope": "EXACT_SENSE_POS_GRAMMAR_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "suggested_myanmar_UNAPPROVED": "ရန်လိုပြီး စကားများရန် သို့မဟုတ် ရန်ဖြစ်ရန် အသင့်ဖြစ်နေသော",
+      "suggested_example_UNAPPROVED": "The customer became belligerent after the manager refused the demand.",
+      "independent_reviewer_question": "Check whether the Myanmar gloss and passenger example teach interpersonal hostility, not a state at war; establish independent exact-sense C1 evidence.",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    },
+    {
+      "word": "benevolent",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "original_english_definition": "Kind and willing to help other people.",
+      "original_burmese_meaning": "စေတနာကောင်းပြီး အခြားသူများကို ကူညီလိုသော",
+      "original_example_sentence": "A benevolent donor paid for the village library.",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+      "source_index": 13,
+      "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8",
+      "risk_class": "KIND_GENEROUS_PERSON_VERSUS_ORGANIZATION_NAME",
+      "source_supported_observation": "Oxford adjective sense 1 denotes kindness and generosity, especially by someone in authority; sense 2 occurs in names of charitable organizations. The frozen donor example fits sense 1; formal/register and c2 Personal qualities topic tag must not be treated as independent CEFR classification.",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/benevolent",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "101-119",
+          "evidence_scope": "EXACT_SENSE_POS_GRAMMAR_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "suggested_myanmar_UNAPPROVED": "သူတစ်ပါးအကျိုးကို လိုလားပြီး ကြင်နာရက်ရောသော",
+      "suggested_example_UNAPPROVED": "A benevolent neighbour quietly paid the family's school fees.",
+      "independent_reviewer_question": "Does the Myanmar convey benevolence rather than ordinary friendliness? Obtain independent exact-sense C1 CEFR evidence.",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    },
+    {
+      "word": "brevity",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "original_english_definition": "The quality of expressing something in few words or lasting briefly.",
+      "original_burmese_meaning": "စကားအနည်းငယ်ဖြင့် တိုတောင်းစွာ ဖော်ပြမှု သို့မဟုတ် အချိန်တိုတောင်းမှု",
+      "original_example_sentence": "The chairperson appreciated the brevity of her report.",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+      "source_index": 14,
+      "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8",
+      "risk_class": "TWO_NOUN_SENSES_MERGED_IN_FROZEN_DEFINITION",
+      "source_supported_observation": "Oxford directly distinguishes concise expression (sense 1) from short duration (sense 2). The frozen example about a report demonstrates sense 1 only, but the frozen definition and Myanmar gloss merge both senses. Recommend a single concise-expression gloss and keep short duration for a separate reviewed sense, not a second quota item without policy.",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/brevity",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "101-115",
+          "evidence_scope": "EXACT_SENSE_POS_GRAMMAR_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "suggested_myanmar_UNAPPROVED": "စကားပြောခြင်း သို့မဟုတ် ရေးသားခြင်းကို လိုရင်းတိုရှင်း ဖော်ပြမှု",
+      "suggested_example_UNAPPROVED": "The editor praised the brevity of the final report.",
+      "independent_reviewer_question": "Split the two dictionary senses before signoff; check Myanmar naturalness and source-backed exact-sense C1.",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    },
+    {
+      "word": "circumspect",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "original_english_definition": "Careful to consider possible risks before acting or speaking.",
+      "original_burmese_meaning": "လုပ်ဆောင်ခြင်း သို့မဟုတ် ပြောဆိုခြင်းမပြုမီ ဖြစ်နိုင်သည့် အန္တရာယ်များကို သတိထားစဉ်းစားသော",
+      "original_example_sentence": "The director was circumspect when discussing the proposed merger.",
+      "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+      "source_index": 15,
+      "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8",
+      "risk_class": "CAREFUL_RISK_ASSESSMENT_NOT_SECRETIVENESS",
+      "source_supported_observation": "Oxford directly describes considering risks before acting, marked formal. The frozen merger discussion example is grammatical; Myanmar should emphasize careful risk evaluation rather than hiding information. No exact-sense CEFR level was observed.",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/circumspect",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "101-106",
+          "evidence_scope": "EXACT_SENSE_POS_GRAMMAR_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "suggested_myanmar_UNAPPROVED": "ဖြစ်နိုင်သည့် အန္တရာယ်များကို ကြိုတင်စဉ်းစား၍ သတိကြီးစွာ ဆောင်ရွက်သော",
+      "suggested_example_UNAPPROVED": "The negotiator was circumspect when discussing the proposed deal.",
+      "independent_reviewer_question": "Is the Myanmar gloss natural and does it communicate caution before action rather than secrecy? Find independently reviewed exact-sense C1 level.",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    }
+  ]
+}
