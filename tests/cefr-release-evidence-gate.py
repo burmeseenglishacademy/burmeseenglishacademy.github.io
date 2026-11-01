@@ -91,13 +91,12 @@ for field in ("source_english", "source_burmese", "source_level"):
     assert any(field in x and ("does not match headword" in x or "same-headword" in x)
                for x in problems), (field,problems)
     entry[field] = old_url
-for wrong in (
-    "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2-grammar/articles-a-an-the",
-    "https://www.oxfordlearnersdictionaries.com/about/wordlists/oxford3000-5000",
-):
-    entry["source_level"] = wrong
-    problems = module.validate(data)
-    assert any("source_level must bind to same-headword" in x for x in problems), problems
+entry["source_level"] = "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2-grammar/articles-a-an-the"
+problems = module.validate(data)
+assert any("source_level must bind to same-headword" in x for x in problems), problems
+entry["source_level"] = "https://www.oxfordlearnersdictionaries.com/about/wordlists/oxford3000-5000"
+problems = module.validate(data)
+assert any("generic non-word-specific reference URL in source_level" in x for x in problems), problems
 entry["source_level"] = "https://dictionary.cambridge.org/dictionary/english/apple"
 with tempfile.TemporaryDirectory() as folder:
     issues = module.validate(data, pathlib.Path(folder), verify_audio=True)
