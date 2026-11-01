@@ -81,15 +81,21 @@ def example_has_headword_or_regular_form(word, sentence):
         forms.add(word[:-1]+'ies')
     return any(form in tokens for form in forms)
 
-def audio_collision_risks(recordings):
-    """Detect copied audio where the intended speech/voice must differ.
+# A copied recording for unrelated one-word headwords is NOT a homophone.
+# Keep exceptions narrowly documented and reviewable. This only exempts a
+# mechanical collision; it does not count as human listening approval.
+# Further homophones must be separately source-checked and added explicitly.
+DOCUMENTED_SAME_VOICE_HOMOPHONES = frozenset((
+    frozenset(('two', 'too')),
+))
 
-    Identical same-voice single-word homophones may be legitimate and are
-    left for actual human listening. Byte-identical recordings across George
-    and Emma are always suspicious, even when attached to DIFFERENT words.
-    Distinct multiword utterances (including TWO-word phrases) must not
-    share the same recording within one voice. This is only a mechanical
-    guard, never proof of correct pronunciation or real listening.
+def audio_collision_risks(recordings):
+    """Reject copied audio across voices or different intended utterances.
+
+    Same-voice single-word collisions are permitted ONLY for explicitly
+    documented homophones; arbitrary pairs such as apple/orange are rejected.
+    Cross-voice identical bytes are always blocked. This mechanical guard
+    never proves pronunciation accuracy or actual human listening.
     """
     seen = {}
     collisions = []
@@ -97,9 +103,13 @@ def audio_collision_risks(recordings):
         current = (text, voice)
         for previous in seen.get(digest, []):
             old_text, old_voice = previous
+            homophone_exception = (
+                len(text.split()) == len(old_text.split()) == 1
+                and frozenset((text.casefold(), old_text.casefold()))
+                    in DOCUMENTED_SAME_VOICE_HOMOPHONES
+            )
             incompatible = (voice != old_voice
-                            or (text != old_text
-                                and (len(text.split()) >= 2 or len(old_text.split()) >= 2)))
+                            or (text != old_text and not homophone_exception))
             if incompatible:
                 collisions.append((previous, current))
         seen.setdefault(digest, []).append(current)
