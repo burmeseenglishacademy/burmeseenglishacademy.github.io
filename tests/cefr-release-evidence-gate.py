@@ -63,10 +63,42 @@ assert not any("first-person singular pronoun must be displayed as capital I" in
 entry["word"] = "apple"
 entry["example_sentence"] = "I eat an apple."
 
+# A syntactically specific publisher URL for the wrong lemma must fail.
+# No one may self-approve CEFR by attaching a generic PDF or unrelated entry.
+assert module.publisher_headword_url_matches(
+    "https://dictionary.cambridge.org/dictionary/english/apple", "apple")
+assert module.publisher_headword_url_matches(
+    "https://www.oxfordlearnersdictionaries.com/definition/english/apple_1", "apple")
+for wrong in (
+    "https://dictionary.cambridge.org/dictionary/english/banana",
+    "https://www.oxfordlearnersdictionaries.com/definition/english/banana_1",
+    "https://www.oxfordlearnersdictionaries.com/about/wordlists/oxford3000-5000",
+    "https://example.net/dictionary/english/apple",
+    "https://dictionary.cambridge.org/dictionary/english/apple/extra",
+):
+    assert not module.publisher_headword_url_matches(wrong, "apple"), wrong
+
 entry["source_burmese"] = "https://dictionary.cambridge.org/dictionary/english/apple"
 entry["source_level"] = "https://dictionary.cambridge.org/dictionary/english/apple"
 issues = module.validate(data)
 assert not any("generic non-word-specific reference" in x for x in issues)
+# The validator must reject mismatched publisher URLs even when all
+# human-review flags are still false (a distinct, fail-closed provenance error).
+for field in ("source_english", "source_burmese", "source_level"):
+    old_url = entry[field]
+    entry[field] = "https://dictionary.cambridge.org/dictionary/english/banana"
+    problems = module.validate(data)
+    assert any(field in x and ("does not match headword" in x or "same-headword" in x)
+               for x in problems), (field,problems)
+    entry[field] = old_url
+for wrong in (
+    "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2-grammar/articles-a-an-the",
+    "https://www.oxfordlearnersdictionaries.com/about/wordlists/oxford3000-5000",
+):
+    entry["source_level"] = wrong
+    problems = module.validate(data)
+    assert any("source_level must bind to same-headword" in x for x in problems), problems
+entry["source_level"] = "https://dictionary.cambridge.org/dictionary/english/apple"
 with tempfile.TemporaryDirectory() as folder:
     issues = module.validate(data, pathlib.Path(folder), verify_audio=True)
     assert "Audio manifest absent" in issues
@@ -105,4 +137,4 @@ for word, example in (("little","I have a little dog."),
 entry["word"] = "apple"
 entry["example_sentence"] = "I eat an apple."
 print("PASS: ten be/do/comparison/irregular-plural forms rejected; base lemmas and distinct size/quantity and person/people senses remain eligible for human review.")
-print("PASS: generic/placeholder references rejected; review flags and incomplete audio block publication.")
+print("PASS: mismatched publisher headwords and generic CEFR references rejected; human review and audio still mandatory.")
