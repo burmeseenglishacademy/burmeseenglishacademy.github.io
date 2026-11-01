@@ -81,6 +81,29 @@ def example_has_headword_or_regular_form(word, sentence):
         forms.add(word[:-1]+'ies')
     return any(form in tokens for form in forms)
 
+def audio_collision_risks(recordings):
+    """Detect copied audio where the intended speech/voice must differ.
+
+    Identical same-voice single-word homophones may be legitimate and are
+    left for actual human listening; byte-identical George and Emma clips
+    for the SAME text, or different multiword utterances, are release risks.
+    This is only a mechanical guard, never proof of correct pronunciation.
+    """
+    seen = {}
+    collisions = []
+    for text, voice, digest in recordings:
+        previous = seen.get(digest)
+        if previous is None:
+            seen[digest] = (text, voice)
+            continue
+        old_text, old_voice = previous
+        incompatible = ((text == old_text and voice != old_voice)
+                        or (text != old_text
+                            and (len(text.split()) >= 3 or len(old_text.split()) >= 3)))
+        if incompatible:
+            collisions.append((previous, (text, voice)))
+    return collisions
+
 def validate(data,root=None,verify_audio=False):
     errors=[]
     def fail(s):errors.append(s)
@@ -136,6 +159,7 @@ def validate(data,root=None,verify_audio=False):
     if not manifest_path.is_file():return errors+['Audio manifest absent']
     s=manifest_path.read_text('utf8');start=s.index('{');end=s.rfind('}')
     m=json.loads(s[start:end+1]);clips=m.get('clips',{})
+    audio_recordings=[]
     for text in texts:
         md5=hashlib.sha256(text.encode('utf8')).hexdigest()[:24]
         voices=clips.get(text,{})
@@ -148,8 +172,13 @@ def validate(data,root=None,verify_audio=False):
                 else:
                     q=subprocess.run(['ffprobe','-v','error','-show_entries','format=duration','-of','default=noprint_wrappers=1:nokey=1',str(p)],capture_output=True,text=True)
                     try:
-                        if q.returncode!=0 or float(q.stdout.strip())<0.12:fail(f'Invalid MP3: {target}')
+                        if q.returncode!=0 or float(q.stdout.strip())<0.12:
+                            fail(f'Invalid MP3: {target}')
+                        else:
+                            audio_recordings.append((text,voice,hashlib.sha256(p.read_bytes()).hexdigest()))
                     except ValueError:fail(f'Invalid MP3 duration: {target}')
+    for earlier, later in audio_collision_risks(audio_recordings):
+        fail(f'Identical MP3 bytes reused across incompatible voice/text pairs: {earlier!r} vs {later!r}')
     return errors
 def main():
     ap=argparse.ArgumentParser()
