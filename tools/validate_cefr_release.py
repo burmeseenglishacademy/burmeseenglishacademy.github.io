@@ -139,6 +139,8 @@ def validate(data,root=None,verify_audio=False):
     for n,row in enumerate(entries):
         if not isinstance(row,dict):fail(f'{n}: entry not an object');continue
         display_word=normalize(row.get('word',''))
+        if not isinstance(row.get('word'), str) or row['word'] != display_word:
+            fail(f'{n}: noncanonical headword whitespace/type would mismatch audio manifest key')
         word=display_word.casefold()
         if not ASCII_WORD.fullmatch(word):fail(f'{n}: noncanonical English word')
         if display_word != ('I' if word == 'i' else word):
@@ -161,6 +163,10 @@ def validate(data,root=None,verify_audio=False):
         if len(str(row.get('english_definition','')))>300 or len(str(row.get('example_sentence','')))>350:
             fail(f'{n}: overly long definition/example')
         if len(str(row.get('burmese_meaning','')))>250:fail(f'{n}: overly long Burmese gloss')
+        # The app looks up the raw sentence in a case- and whitespace-sensitive
+        # manifest. Never silently normalise a different text into a passing MP3.
+        if isinstance(row.get('example_sentence'), str) and row['example_sentence'] != normalize(row['example_sentence']):
+            fail(f'{n}: noncanonical example whitespace would mismatch audio manifest key')
         if 'english_definition' in row and 'burmese_meaning' in row and normalize(row.get('english_definition',''))==normalize(row.get('burmese_meaning','')):
             fail(f'{n}: unchanged translation')
         if not example_has_headword_or_regular_form(word,str(row.get('example_sentence',''))) and row.get('example_word_form_reviewed') is not True:
