@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - draft/CEFR-1000-B1-FOUR-DIRECT-OXFORD-SENSE-EXAMPLE-TRIAGE-2026-11-02.json
+      - tools/audit_cefr_1000_b1_four_sense_example.py
       - draft/CEFR-1000-C1-B2-CAMBRIDGE-INDEXED-SIX-SENSE-TRIAGE-2026-11-01.json
       - tools/audit_cefr_1000_cambridge_six_indexed_conflicts.py
       - draft/CEFR-1000-B2-FIVE-DIRECT-OXFORD-SENSE-AND-MYANMAR-TRIAGE-2026-11-01.json
