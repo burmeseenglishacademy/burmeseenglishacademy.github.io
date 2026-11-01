@@ -21,6 +21,12 @@ The Oxford pages were opened directly on 2026-11-02. Cambridge dictionary pages 
 - Auditor has **146 programmed synthetic negative mutations**: 28 per record plus 6 packet-wide. These are not human reviews. All six CEFR structural lanes invoke the source audit, with the ALL lane invoking the synthetic tests. Documentary no-deploy QC also invokes the self-test.
 - Structural run [41361487328](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41361487328) at SHA `09f8c33d9d76198877bf2c45bd9ad882c627aeb2` and documentary run [41361494717](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41361494717) at SHA `427345caffdea5f5fb8852b4bc40d82c8c9d38b7` were started; **actual final conclusions/logs require verification before claiming a pass**.
 
+## Verified GitHub Actions conclusions and logs
+
+On 2026-11-02, [six-lane structural run 41361487328](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41361487328) **completed SUCCESS** at SHA `09f8c33d9d76198877bf2c45bd9ad882c627aeb2`. Actual job conclusions were SUCCESS for A1 (`125012605628`), A2 (`125012605660`), B1 (`125012605682`), B2 (`125012605706`), C1 (`125012605778`) and ALL (`125012605603`). ALL job logs confirmed **146/146 synthetic five-card mutations rejected**, five held B1 research cards, two indexed B2 conflicts, one B1 alignment control, zero independent approvals; ALL artifact `13104899848`.
+
+[Documentary no-deployment run 41361494717](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41361494717) **completed SUCCESS** at SHA `427345caffdea5f5fb8852b4bc40d82c8c9d38b7`, job `125012627466`. Actual logs independently confirmed **146/146** negative cases rejected, explicitly listed missing independent 1,000-entry manifest, human reviews, George/Emma listening, desktop/mobile and physical iPhone Safari, measured Pages hosting and final protected asset signoff. Production protection step passed with no drift against main. Documentary blocker artifact `13105607073`. Workflow success means **staging research/test integrity only**, not linguistic approval or release readiness.
+
 ## Truthful counts and release gates
 
 | Level | First-pass written | Independently checked/approved |
