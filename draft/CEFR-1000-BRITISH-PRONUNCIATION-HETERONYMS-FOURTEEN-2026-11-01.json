@@ -1,0 +1,539 @@
+{
+  "schema": 1,
+  "scope": "USER_APPROVED_1000_TOTAL_A1_A2_B1_B2_C1_STAGING_ONLY",
+  "observed_on": "2026-11-01",
+  "status": "PRONUNCIATION_POS_HETERONYM_RESEARCH_LEADS_UNAPPROVED",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "record_count": 14,
+  "counts_by_level": {
+    "A1": 3,
+    "A2": 1,
+    "B1": 4,
+    "B2": 4,
+    "C1": 2
+  },
+  "source_limitations": "Cambridge search-index excerpts were visible on 2026-11-01; attempts to open pronunciation pages directly returned HTTP 403. IPA strings are publisher-indexed research leads, not directly opened page observations, independent source-backed CEFR certification, or actual listening. The 14 cases include a deliberate UK same-pronunciation negative control (address). Never claim voice files generated or heard.",
+  "independently_approved_count": 0,
+  "headword_audio_listening_signoffs": 0,
+  "example_audio_listening_signoffs": 0,
+  "records": [
+    {
+      "word": "read",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To look at written words and understand them.",
+        "myanmar_meaning": "ဖတ်သည်",
+        "example_sentence": "I read a book every night."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 30,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/pronunciation/english/read",
+        "observed_on": "2026-11-01",
+        "access": "SEARCH_INDEX_VISIBLE_DIRECT_PAGE_403",
+        "evidence_scope": "UK_IPA_BY_PART_OF_SPEECH_ONLY_NOT_LISTENING_SIGNOFF",
+        "draft_uk_ipa": "/riːd/",
+        "contrast_part_of_speech": "past-tense verb",
+        "contrast_uk_ipa": "/red/",
+        "risk_kind": "PRESENT_VS_PAST",
+        "cefr_conflict_lead": null
+      },
+      "editorial_note": "The example 'I read a book every night' is habitual present; spelling alone also permits past tense. No audio has been heard.",
+      "independent_reviewer_task": "Independently verify the target UK pronunciation and example tense/sense against an accessible publisher source; review fluent Myanmar and CEFR exact sense where flagged. Have a real person listen to final George and Emma HEADWORD and EXAMPLE recordings separately, with signed source-linked receipts.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "use",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To do something with a tool or object for a purpose.",
+        "myanmar_meaning": "အသုံးပြုသည်",
+        "example_sentence": "I use a pen to write."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 57,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/pronunciation/english/use",
+        "observed_on": "2026-11-01",
+        "access": "SEARCH_INDEX_VISIBLE_DIRECT_PAGE_403",
+        "evidence_scope": "UK_IPA_BY_PART_OF_SPEECH_ONLY_NOT_LISTENING_SIGNOFF",
+        "draft_uk_ipa": "/juːz/",
+        "contrast_part_of_speech": "noun",
+        "contrast_uk_ipa": "/juːs/",
+        "risk_kind": "POS_CONTRAST",
+        "cefr_conflict_lead": null
+      },
+      "editorial_note": "The draft verb means employ something, not the noun meaning utilisation.",
+      "independent_reviewer_task": "Independently verify the target UK pronunciation and example tense/sense against an accessible publisher source; review fluent Myanmar and CEFR exact sense where flagged. Have a real person listen to final George and Emma HEADWORD and EXAMPLE recordings separately, with signed source-linked receipts.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "minute",
+      "level": "A1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A period of sixty seconds.",
+        "myanmar_meaning": "မိနစ်",
+        "example_sentence": "Wait one minute, please."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 147,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/pronunciation/english/minute",
+        "observed_on": "2026-11-01",
+        "access": "SEARCH_INDEX_VISIBLE_DIRECT_PAGE_403",
+        "evidence_scope": "UK_IPA_BY_PART_OF_SPEECH_ONLY_NOT_LISTENING_SIGNOFF",
+        "draft_uk_ipa": "/ˈmɪn.ɪt/",
+        "contrast_part_of_speech": "adjective",
+        "contrast_uk_ipa": "/maɪˈnjuːt/",
+        "risk_kind": "POS_AND_SENSE_CONTRAST",
+        "cefr_conflict_lead": "A1_TIME_NOUN_VS_A2_SHORT_WAIT"
+      },
+      "editorial_note": "The draft defines sixty seconds, but 'Wait one minute' can mean a short wait; Cambridge distinguishes A1 clock unit from A2 short-time usage.",
+      "independent_reviewer_task": "Independently verify the target UK pronunciation and example tense/sense against an accessible publisher source; review fluent Myanmar and CEFR exact sense where flagged. Have a real person listen to final George and Emma HEADWORD and EXAMPLE recordings separately, with signed source-linked receipts.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "project",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A planned piece of work with a particular goal.",
+        "myanmar_meaning": "စီမံကိန်း၊ လုပ်ငန်းအစီအစဉ်",
+        "example_sentence": "Our class project is about saving water."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 595,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/pronunciation/english/project",
+        "observed_on": "2026-11-01",
+        "access": "SEARCH_INDEX_VISIBLE_DIRECT_PAGE_403",
+        "evidence_scope": "UK_IPA_BY_PART_OF_SPEECH_ONLY_NOT_LISTENING_SIGNOFF",
+        "draft_uk_ipa": "/ˈprɒdʒ.ekt/",
+        "contrast_part_of_speech": "verb",
+        "contrast_uk_ipa": "/prəˈdʒekt/",
+        "risk_kind": "STRESS_SHIFT",
+        "cefr_conflict_lead": null
+      },
+      "editorial_note": "Draft planned-work noun must not be rendered as the verb to project.",
+      "independent_reviewer_task": "Independently verify the target UK pronunciation and example tense/sense against an accessible publisher source; review fluent Myanmar and CEFR exact sense where flagged. Have a real person listen to final George and Emma HEADWORD and EXAMPLE recordings separately, with signed source-linked receipts.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "progress",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Movement towards a better or more complete result.",
+        "myanmar_meaning": "တိုးတက်မှု",
+        "example_sentence": "The students made good progress this term."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 616,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/pronunciation/english/progress",
+        "observed_on": "2026-11-01",
+        "access": "SEARCH_INDEX_VISIBLE_DIRECT_PAGE_403",
+        "evidence_scope": "UK_IPA_BY_PART_OF_SPEECH_ONLY_NOT_LISTENING_SIGNOFF",
+        "draft_uk_ipa": "/ˈprəʊ.ɡres/",
+        "contrast_part_of_speech": "verb",
+        "contrast_uk_ipa": "/prəˈɡres/",
+        "risk_kind": "STRESS_SHIFT",
+        "cefr_conflict_lead": null
+      },
+      "editorial_note": "Draft improvement noun; do not use the verb stress pattern.",
+      "independent_reviewer_task": "Independently verify the target UK pronunciation and example tense/sense against an accessible publisher source; review fluent Myanmar and CEFR exact sense where flagged. Have a real person listen to final George and Emma HEADWORD and EXAMPLE recordings separately, with signed source-linked receipts.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "produce",
+      "level": "B1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To make or create something.",
+        "myanmar_meaning": "ထုတ်လုပ်သည်၊ ဖန်တီးသည်",
+        "example_sentence": "The factory can produce hundreds of boxes a day."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 889,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/pronunciation/english/produce",
+        "observed_on": "2026-11-01",
+        "access": "SEARCH_INDEX_VISIBLE_DIRECT_PAGE_403",
+        "evidence_scope": "UK_IPA_BY_PART_OF_SPEECH_ONLY_NOT_LISTENING_SIGNOFF",
+        "draft_uk_ipa": "/prəˈdʒuːs/",
+        "contrast_part_of_speech": "noun",
+        "contrast_uk_ipa": "/ˈprɒdʒ.uːs/",
+        "risk_kind": "STRESS_AND_VOWEL_SHIFT",
+        "cefr_conflict_lead": "B1_MAKE_VERB_VS_C2_FARM_NOUN"
+      },
+      "editorial_note": "Draft manufacturing verb. Cambridge index shows B1 MAKE verb versus C2 agricultural-produce noun; no automatic cross-sense CEFR transfer.",
+      "independent_reviewer_task": "Independently verify the target UK pronunciation and example tense/sense against an accessible publisher source; review fluent Myanmar and CEFR exact sense where flagged. Have a real person listen to final George and Emma HEADWORD and EXAMPLE recordings separately, with signed source-linked receipts.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "conduct",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To organise and carry out an activity.",
+        "myanmar_meaning": "ဆောင်ရွက်သည်၊ ပြုလုပ်သည်",
+        "example_sentence": "The team will conduct a safety inspection."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 250,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/pronunciation/english/conduct",
+        "observed_on": "2026-11-01",
+        "access": "SEARCH_INDEX_VISIBLE_DIRECT_PAGE_403",
+        "evidence_scope": "UK_IPA_BY_PART_OF_SPEECH_ONLY_NOT_LISTENING_SIGNOFF",
+        "draft_uk_ipa": "/kənˈdʌkt/",
+        "contrast_part_of_speech": "noun",
+        "contrast_uk_ipa": "/ˈkɒn.dʌkt/",
+        "risk_kind": "STRESS_SHIFT",
+        "cefr_conflict_lead": null
+      },
+      "editorial_note": "Draft carry-out verb; noun refers to behaviour or manner of organising.",
+      "independent_reviewer_task": "Independently verify the target UK pronunciation and example tense/sense against an accessible publisher source; review fluent Myanmar and CEFR exact sense where flagged. Have a real person listen to final George and Emma HEADWORD and EXAMPLE recordings separately, with signed source-linked receipts.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "suspect",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To think something may be true without being certain.",
+        "myanmar_meaning": "သံသယရှိသည်၊ ဖြစ်နိုင်သည်ဟု ထင်မြင်သည်",
+        "example_sentence": "The technician began to suspect a faulty cable."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 390,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/pronunciation/english/suspect",
+        "observed_on": "2026-11-01",
+        "access": "SEARCH_INDEX_VISIBLE_DIRECT_PAGE_403",
+        "evidence_scope": "UK_IPA_BY_PART_OF_SPEECH_ONLY_NOT_LISTENING_SIGNOFF",
+        "draft_uk_ipa": "/səˈspekt/",
+        "contrast_part_of_speech": "noun/adjective",
+        "contrast_uk_ipa": "/ˈsʌs.pekt/",
+        "risk_kind": "STRESS_SHIFT",
+        "cefr_conflict_lead": null
+      },
+      "editorial_note": "Draft 'think may be true' verb; noun can denote an alleged offender.",
+      "independent_reviewer_task": "Independently verify the target UK pronunciation and example tense/sense against an accessible publisher source; review fluent Myanmar and CEFR exact sense where flagged. Have a real person listen to final George and Emma HEADWORD and EXAMPLE recordings separately, with signed source-linked receipts.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "separate",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Not joined or kept together with something else.",
+        "myanmar_meaning": "သီးခြားဖြစ်သော၊ ခွဲထားသော",
+        "example_sentence": "Keep the two orders in separate boxes."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 483,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/pronunciation/english/separate",
+        "observed_on": "2026-11-01",
+        "access": "SEARCH_INDEX_VISIBLE_DIRECT_PAGE_403",
+        "evidence_scope": "UK_IPA_BY_PART_OF_SPEECH_ONLY_NOT_LISTENING_SIGNOFF",
+        "draft_uk_ipa": "/ˈsep.ə.rət/",
+        "contrast_part_of_speech": "verb",
+        "contrast_uk_ipa": "/ˈsep.ə.reɪt/",
+        "risk_kind": "ENDING_VOWEL_SHIFT",
+        "cefr_conflict_lead": null
+      },
+      "editorial_note": "Draft adjective describes items not joined; verb ending differs.",
+      "independent_reviewer_task": "Independently verify the target UK pronunciation and example tense/sense against an accessible publisher source; review fluent Myanmar and CEFR exact sense where flagged. Have a real person listen to final George and Emma HEADWORD and EXAMPLE recordings separately, with signed source-linked receipts.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "graduate",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To complete a course of study and receive a qualification.",
+        "myanmar_meaning": "သင်တန်း သို့မဟုတ် ဘွဲ့သင်တန်းပြီးဆုံး၍ အောင်မြင်သည်",
+        "example_sentence": "She hopes to graduate from university next year."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 489,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/pronunciation/english/graduate",
+        "observed_on": "2026-11-01",
+        "access": "SEARCH_INDEX_VISIBLE_DIRECT_PAGE_403",
+        "evidence_scope": "UK_IPA_BY_PART_OF_SPEECH_ONLY_NOT_LISTENING_SIGNOFF",
+        "draft_uk_ipa": "/ˈɡrædʒ.u.eɪt/",
+        "contrast_part_of_speech": "noun",
+        "contrast_uk_ipa": "/ˈɡrædʒ.u.ət/",
+        "risk_kind": "ENDING_VOWEL_SHIFT",
+        "cefr_conflict_lead": null
+      },
+      "editorial_note": "Draft verb to complete studies, not a graduate person.",
+      "independent_reviewer_task": "Independently verify the target UK pronunciation and example tense/sense against an accessible publisher source; review fluent Myanmar and CEFR exact sense where flagged. Have a real person listen to final George and Emma HEADWORD and EXAMPLE recordings separately, with signed source-linked receipts.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "contrast",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A noticeable difference between two things.",
+        "myanmar_meaning": "ကွာခြားချက်၊ ဆန့်ကျင်ကွဲပြားမှု",
+        "example_sentence": "There is a sharp contrast between the two designs."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 624,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/pronunciation/english/contrast",
+        "observed_on": "2026-11-01",
+        "access": "SEARCH_INDEX_VISIBLE_DIRECT_PAGE_403",
+        "evidence_scope": "UK_IPA_BY_PART_OF_SPEECH_ONLY_NOT_LISTENING_SIGNOFF",
+        "draft_uk_ipa": "/ˈkɒn.trɑːst/",
+        "contrast_part_of_speech": "verb",
+        "contrast_uk_ipa": "/kənˈtrɑːst/",
+        "risk_kind": "STRESS_SHIFT",
+        "cefr_conflict_lead": null
+      },
+      "editorial_note": "Draft noun describes a noticeable difference; verb uses a different stress pattern.",
+      "independent_reviewer_task": "Independently verify the target UK pronunciation and example tense/sense against an accessible publisher source; review fluent Myanmar and CEFR exact sense where flagged. Have a real person listen to final George and Emma HEADWORD and EXAMPLE recordings separately, with signed source-linked receipts.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "advocate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To publicly support or recommend a particular policy or idea.",
+        "myanmar_meaning": "ထောက်ခံအားပေးသည်၊ အဆိုပြုတိုက်တွန်းသည်",
+        "example_sentence": "The researchers advocate stricter controls on industrial waste."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 333,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/pronunciation/english/advocate",
+        "observed_on": "2026-11-01",
+        "access": "SEARCH_INDEX_VISIBLE_DIRECT_PAGE_403",
+        "evidence_scope": "UK_IPA_BY_PART_OF_SPEECH_ONLY_NOT_LISTENING_SIGNOFF",
+        "draft_uk_ipa": "/ˈæd.və.keɪt/",
+        "contrast_part_of_speech": "noun",
+        "contrast_uk_ipa": "/ˈæd.və.kət/",
+        "risk_kind": "ENDING_VOWEL_SHIFT",
+        "cefr_conflict_lead": "CAMBRIDGE_INDEX_C2_VS_DRAFT_C1"
+      },
+      "editorial_note": "Draft verb to support a policy. Cambridge indexed exact-sense verb labelled C2, conflicting with provisional C1; human review required.",
+      "independent_reviewer_task": "Independently verify the target UK pronunciation and example tense/sense against an accessible publisher source; review fluent Myanmar and CEFR exact sense where flagged. Have a real person listen to final George and Emma HEADWORD and EXAMPLE recordings separately, with signed source-linked receipts.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "permit",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An official document giving permission for a particular activity.",
+        "myanmar_meaning": "တရားဝင်ခွင့်ပြုချက်လက်မှတ်",
+        "example_sentence": "The contractor applied for a permit before starting work."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 569,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/pronunciation/english/permit",
+        "observed_on": "2026-11-01",
+        "access": "SEARCH_INDEX_VISIBLE_DIRECT_PAGE_403",
+        "evidence_scope": "UK_IPA_BY_PART_OF_SPEECH_ONLY_NOT_LISTENING_SIGNOFF",
+        "draft_uk_ipa": "/ˈpɜː.mɪt/",
+        "contrast_part_of_speech": "verb",
+        "contrast_uk_ipa": "/pəˈmɪt/",
+        "risk_kind": "STRESS_SHIFT",
+        "cefr_conflict_lead": null
+      },
+      "editorial_note": "Draft official-document noun; verb means allow and has a different stress pattern.",
+      "independent_reviewer_task": "Independently verify the target UK pronunciation and example tense/sense against an accessible publisher source; review fluent Myanmar and CEFR exact sense where flagged. Have a real person listen to final George and Emma HEADWORD and EXAMPLE recordings separately, with signed source-linked receipts.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "address",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Details that identify where someone lives or a place is located.",
+        "myanmar_meaning": "လိပ်စာ",
+        "example_sentence": "Please check the delivery address before confirming."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 98,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge University Press",
+        "url": "https://dictionary.cambridge.org/pronunciation/english/address",
+        "observed_on": "2026-11-01",
+        "access": "SEARCH_INDEX_VISIBLE_DIRECT_PAGE_403",
+        "evidence_scope": "UK_IPA_BY_PART_OF_SPEECH_ONLY_NOT_LISTENING_SIGNOFF",
+        "draft_uk_ipa": "/əˈdres/",
+        "contrast_part_of_speech": "verb",
+        "contrast_uk_ipa": "/əˈdres/",
+        "risk_kind": "NEGATIVE_CONTROL_UK_SAME",
+        "cefr_conflict_lead": null
+      },
+      "editorial_note": "UK Cambridge noun and verb pronunciations are the same here; do not invent a UK noun/verb stress conflict from US English.",
+      "independent_reviewer_task": "Independently verify the target UK pronunciation and example tense/sense against an accessible publisher source; review fluent Myanmar and CEFR exact sense where flagged. Have a real person listen to final George and Emma HEADWORD and EXAMPLE recordings separately, with signed source-linked receipts.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
