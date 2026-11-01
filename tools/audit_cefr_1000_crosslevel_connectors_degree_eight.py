@@ -40,6 +40,7 @@ FALSE_FLAGS = ("independently_approved", "reviewed_english",
                "reviewed_burmese", "reviewed_example", "reviewed_level",
                "release_approved")
 EXPECTED_SOURCE_TYPE = "PUBLIC_SEARCH_INDEXED_PUBLISHER_PAGE_NOT_INDEPENDENTLY_REVIEWED"
+EXPECTED_SOURCE_LIMITATIONS = "Publisher pages accessed via public search indexing; some direct requests returned HTTP 403. Treat publisher labels as indexed evidence leads, never as independent exact-sense human signoff. Cambridge grammar page for quite supplies no CEFR rating."
 
 def git_blob(path):
     return subprocess.run(["git", "hash-object", str(path)], cwd=ROOT,
@@ -59,7 +60,7 @@ def validate(packet, shortlist, baseline=None):
         ("independently_approved_by_level", dict.fromkeys(LEVELS, 0)),
     ):
         if packet.get(key) != value: errors.append("packet " + key)
-    if "not independently" not in str(packet.get("source_limitations", "")).lower():
+    if packet.get("source_limitations") != EXPECTED_SOURCE_LIMITATIONS:
         errors.append("missing source-access limitation")
     frozen = shortlist.get("entries")
     rows = packet.get("records")
@@ -145,6 +146,8 @@ def self_test(packet, shortlist):
     for key, value in (
         ("scope", "CEFR_5000"), ("shortlist_blob_sha", "0" * 40),
         ("release_status", "APPROVED"),
+        ("source_limitations", "Direct publisher page opened and independently approved."),
+        ("source_limitations", ""),
         ("independently_approved_by_level", dict.fromkeys(LEVELS, 200)),
     ):
         bad = copy.deepcopy(packet); bad[key] = value
