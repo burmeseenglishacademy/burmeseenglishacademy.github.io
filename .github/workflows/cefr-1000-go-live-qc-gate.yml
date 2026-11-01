@@ -7,6 +7,8 @@ on:
       - tools/audit_cefr_1000_cambridge_six_indexed_conflicts.py
       - draft/CEFR-1000-B2-FIVE-DIRECT-OXFORD-SENSE-AND-MYANMAR-TRIAGE-2026-11-01.json
       - tools/audit_cefr_1000_b2_five_direct_sense.py
+      - draft/CEFR-1000-C1-EIGHT-DIRECT-OXFORD-RARE-SENSE-TRIAGE-2026-11-01.json
+      - tools/audit_cefr_1000_c1_rare_eight_direct_oxford.py
       - draft/CEFR-1000-A1-IRREGULAR-PLURALS-AND-COUNT-SENSE-EIGHT-2026-11-01.json
       - tools/audit_cefr_1000_a1_irregular_plurals_eight.py
       - draft/CEFR-1000-CROSSLEVEL-IRREGULAR-COMPARATIVES-AND-QUANTIFIERS-NINE-2026-11-01.json
@@ -424,6 +426,8 @@ jobs:
         run: python3 tools/audit_cefr_1000_crosslevel_irregular_nine.py --level ALL --self-test
       - name: Reject forged A1 irregular plural, count-sense and false listening receipts (NO DEPLOY)
         run: python3 tools/audit_cefr_1000_a1_irregular_plurals_eight.py --level ALL --self-test
+      - name: Audit eight C1 direct Oxford rare-word source records and reject forged approvals (NO DEPLOY)
+        run: python3 tools/audit_cefr_1000_c1_rare_eight_direct_oxford.py --level ALL --self-test
       - name: Reject forged B2 direct-Oxford source, Myanmar and false approval receipts (NO DEPLOY)
         run: python3 tools/audit_cefr_1000_b2_five_direct_sense.py --level ALL --self-test
       - name: Reject forged six-word Cambridge indexed CEFR and false review receipts (NO DEPLOY)
