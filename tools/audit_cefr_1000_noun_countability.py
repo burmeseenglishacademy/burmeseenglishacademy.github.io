@@ -42,6 +42,11 @@ def validate(packet, shortlist, level="ALL"):
     def need(condition, reason):
         if not condition:
             issues.append(reason)
+    need(set(packet) == {"schema", "scope", "status", "observed_on",
+                         "shortlist_blob_sha", "source_method", "counts_by_level",
+                         "independent_approvals", "real_audio_listening_signoffs",
+                         "production_status", "records"},
+         "exact top-level fields; reject injected CEFR/approval evidence")
     need(packet.get("schema") == 1, "schema")
     need(packet.get("scope") == "USER_APPROVED_1000_TOTAL_A1_A2_B1_B2_C1_STAGING_ONLY", "scope")
     need(packet.get("status") == "SOURCE_BOUND_NOUN_COUNTABILITY_AND_AGREEMENT_TRIAGE_UNAPPROVED", "status")
