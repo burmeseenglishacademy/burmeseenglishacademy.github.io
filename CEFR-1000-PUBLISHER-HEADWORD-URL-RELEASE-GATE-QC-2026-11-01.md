@@ -25,3 +25,7 @@ Staging repair in `tools/validate_cefr_release.py` introduces `publisher_headwor
 | C1 | 200 | 0 |
 
 All 1,000 provisional entries remain on editorial hold. Approved manifest: absent. Genuine independent review receipts: 0. Final George/Emma actual listening signoffs: 0/1,000. Browser/mobile automated evidence: 0. Physical iPhone Safari, hosting measurements and confirmed production deployment: absent. Protect 54 lessons, separate IELTS 1,000-word bank, established production voice audio and privacy. **RELEASE BLOCKED / STAGING ONLY.**
+
+## Previous baseline verified separately (not a test of this patch)
+
+GitHub Actions job readback for the **pre-change** release regression [run 41293055644](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41293055644), job `124808118806`, showed completed SUCCESS and log lines confirming the prior ten-form/generic-URL checks. Pre-change documentary [run 41293055677](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41293055677), job `124808118787`, showed completed SUCCESS, the previous 183/183 mutation tests, protected-production-assets PASS, and blocker artifact `13078760344`. **Neither run tests the new wrong-headword URL protection.** The available commit-run lookup returned no push-triggered runs for the new head; no new run ID, conclusion, job log or mutation pass is asserted.
