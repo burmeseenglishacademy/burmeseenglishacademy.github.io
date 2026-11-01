@@ -1,0 +1,395 @@
+{
+  "schema": 1,
+  "scope": "USER_APPROVED_CEFR_1000_STAGING_ONLY",
+  "status": "UNAPPROVED_CROSS_LEVEL_IRREGULAR_FORMS_AND_QUANTIFIER_SENSE_TRIAGE",
+  "observed_on": "2026-11-01",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "counts_by_level": {
+    "A1": 3,
+    "A2": 5,
+    "B1": 1,
+    "B2": 0,
+    "C1": 0
+  },
+  "first_pass_written_by_level": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "independently_approved_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "real_george_emma_listening_signoffs": 0,
+  "production_status": "BLOCKED_STAGING_ONLY",
+  "publisher_scope_notice": "Nine directly inspected Oxford entries document inflection and exact-sense/POS distinctions. Dictionary form tables and topic badges are NOT independent exact-sense CEFR classification, and this packet is NOT independent English/Myanmar/example approval. The earlier four A1 be/do inflection risks are already separately quarantined; this packet targets additional comparative/superlative and cross-level noun/quantifier families.",
+  "records": [
+    {
+      "word": "people",
+      "level": "A1",
+      "part_of_speech": "plural noun",
+      "original_english_definition": "More than one person.",
+      "original_burmese_meaning": "လူတွေ၊ လူများ",
+      "original_example_sentence": "Many people are here.",
+      "source_path": "draft/A1-EDITORIAL-STARTER.json",
+      "source_index": 43,
+      "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae",
+      "family": "person/people",
+      "morphology_class": "IRREGULAR_PLURAL_CROSS_LEVEL",
+      "related_lemma": "person",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/people_1",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "107-115",
+          "evidence_scope": "GRAMMATICAL_FORM_OR_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        },
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/person",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "103-115",
+          "evidence_scope": "GRAMMATICAL_FORM_OR_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "source_supported_observation": "Oxford explicitly says people is the usual plural of person in ordinary contexts. The A1 people card has only this plural meaning, while singular person is separately counted at A2; human must resolve whether two pedagogical forms count as separate vocabulary senses.",
+      "risk_class": "INDEPENDENT_CROSS_LEVEL_LEXEME_COUNT_AND_PLURAL_AGREEMENT_REVIEW",
+      "suggested_myanmar_UNAPPROVED": "လူများ (person ၏ ပုံမှန်အများကိန်း); အများကိန်းကြိယာနှင့် တွဲသုံးသည်",
+      "suggested_example_UNAPPROVED": "Many people are waiting outside.",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    },
+    {
+      "word": "good",
+      "level": "A1",
+      "part_of_speech": "adjective",
+      "original_english_definition": "Of a high quality or pleasant.",
+      "original_burmese_meaning": "ကောင်းသော",
+      "original_example_sentence": "That is a good idea.",
+      "source_path": "draft/A1-EDITORIAL-STARTER.json",
+      "source_index": 44,
+      "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae",
+      "family": "good/better",
+      "morphology_class": "BASE_ADJECTIVE",
+      "related_lemma": "good",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/good_1",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "88-135",
+          "evidence_scope": "GRAMMATICAL_FORM_OR_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "source_supported_observation": "Oxford lists better as the comparative form of good. The A1 good example is grammatical and illustrates quality; do not mark it defective.",
+      "risk_class": "BASE_FORM_CONTROL",
+      "suggested_myanmar_UNAPPROVED": "ကောင်းသော (အရည်အသွေးကောင်းမွန်မှုကို ဖော်ပြသည်)",
+      "suggested_example_UNAPPROVED": "That is a good idea.",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    },
+    {
+      "word": "little",
+      "level": "A1",
+      "part_of_speech": "adjective",
+      "original_english_definition": "Small in size or amount.",
+      "original_burmese_meaning": "သေးငယ်သော၊ နည်းသော",
+      "original_example_sentence": "I have a little dog.",
+      "source_path": "draft/A1-EDITORIAL-STARTER.json",
+      "source_index": 61,
+      "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae",
+      "family": "little/less/least",
+      "morphology_class": "SIZE_ADJECTIVE_NOT_QUANTITY_DETERMINER",
+      "related_lemma": "little",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/little_1",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "88-134",
+          "evidence_scope": "GRAMMATICAL_FORM_OR_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        },
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/less_1",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "88-110",
+          "evidence_scope": "GRAMMATICAL_FORM_OR_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "source_supported_observation": "The held little card illustrates physical size in 'a little dog'. Oxford notes that the adjective's size comparison usually uses smaller/smallest, whereas less is a determiner for smaller quantities of uncountable nouns. Do not incorrectly treat less as the ordinary size-comparative of this card.",
+      "risk_class": "DISTINCT_SIZE_VS_UNCOUNTABLE_QUANTITY_SENSE",
+      "suggested_myanmar_UNAPPROVED": "သေးငယ်သော (အရွယ်အစား); ပမာဏကို ဖော်ပြသော a little နှင့် မရောထွေးရန်",
+      "suggested_example_UNAPPROVED": "She lives in a little house.",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    },
+    {
+      "word": "better",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "original_english_definition": "Of a higher quality or more suitable than something else.",
+      "original_burmese_meaning": "ပိုကောင်းသော",
+      "original_example_sentence": "The second plan is better for our budget.",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "source_index": 86,
+      "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc",
+      "family": "good/better",
+      "morphology_class": "COMPARATIVE_FORM_OF_GOOD",
+      "related_lemma": "good",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/better_1",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "88-113",
+          "evidence_scope": "GRAMMATICAL_FORM_OR_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        },
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/good_1",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "103-123",
+          "evidence_scope": "GRAMMATICAL_FORM_OR_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "source_supported_observation": "Oxford labels better adjective explicitly as comparative of good; the held A2 better card teaches precisely that comparative quality sense, not a new lexical lemma. It must not inflate a 200-distinct-lexeme quota.",
+      "risk_class": "NON_INDEPENDENT_COMPARATIVE_LEXEME_QUOTA",
+      "suggested_myanmar_UNAPPROVED": "ပိုကောင်းသော (good ၏ comparative ပုံစံ; နှိုင်းယှဉ်ရာတွင် သုံးသည်)",
+      "suggested_example_UNAPPROVED": "The second plan is better than the first one.",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    },
+    {
+      "word": "person",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "original_english_definition": "One human being considered as an individual.",
+      "original_burmese_meaning": "လူတစ်ဦး",
+      "original_example_sentence": "Only one person can enter at a time.",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "source_index": 191,
+      "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc",
+      "family": "person/people",
+      "morphology_class": "SINGULAR_BASE_NOUN_CROSS_LEVEL",
+      "related_lemma": "person",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/person",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "88-115",
+          "evidence_scope": "GRAMMATICAL_FORM_OR_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        },
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/people_1",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "107-115",
+          "evidence_scope": "GRAMMATICAL_FORM_OR_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "source_supported_observation": "Oxford explicitly gives people as the ordinary plural of person and persons as a formal plural. The singular person card is A2 while the plural people card is A1; this is not automatically a CEFR error but needs a cross-level pedagogical rationale.",
+      "risk_class": "CROSS_LEVEL_PLURAL_SINGULAR_PEDAGOGICAL_RATIONALE",
+      "suggested_myanmar_UNAPPROVED": "လူတစ်ဦး၊ လူတစ်ယောက် (အနည်းကိန်း); အများကိန်းမှာ ပုံမှန်အားဖြင့် people",
+      "suggested_example_UNAPPROVED": "One person is waiting outside.",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    },
+    {
+      "word": "less",
+      "level": "A2",
+      "part_of_speech": "determiner",
+      "original_english_definition": "A smaller amount of something that cannot usually be counted.",
+      "original_burmese_meaning": "ပိုနည်းသော၊ လျော့နည်းသော",
+      "original_example_sentence": "Please add less sugar to my tea.",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "source_index": 288,
+      "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc",
+      "family": "little/less/least",
+      "morphology_class": "UNCOUNTABLE_QUANTITY_DETERMINER",
+      "related_lemma": "little_quantity",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/less_1",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "88-110",
+          "evidence_scope": "GRAMMATICAL_FORM_OR_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        },
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/little_1",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "103-128",
+          "evidence_scope": "GRAMMATICAL_FORM_OR_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "source_supported_observation": "Oxford identifies less as a determiner/pronoun used with uncountable nouns for a smaller amount. The held less sugar example is grammatical and illustrates this meaning; it is not the comparative of little meaning physically small.",
+      "risk_class": "DISTINCT_QUANTITY_FUNCTION_REVIEW_NOT_AUTOMATIC_BAN",
+      "suggested_myanmar_UNAPPROVED": "ပိုနည်းသော (ရေတွက်မရသောနာမ်များနှင့် ပမာဏနှိုင်းယှဉ်ရာတွင်)",
+      "suggested_example_UNAPPROVED": "Please use less sugar in the tea.",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    },
+    {
+      "word": "bad",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "original_english_definition": "Not good in quality or unpleasant.",
+      "original_burmese_meaning": "မကောင်းသော၊ ညံ့သော",
+      "original_example_sentence": "The bad weather delayed our trip.",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "source_index": 507,
+      "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc",
+      "family": "bad/worst",
+      "morphology_class": "BASE_ADJECTIVE",
+      "related_lemma": "bad",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/bad_1",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "88-137",
+          "evidence_scope": "GRAMMATICAL_FORM_OR_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "source_supported_observation": "Oxford lists worse and worst as comparative and superlative forms of bad. The held bad weather example illustrates an ordinary quality sense.",
+      "risk_class": "BASE_FORM_CONTROL",
+      "suggested_myanmar_UNAPPROVED": "မကောင်းသော၊ ညံ့သော (အရည်အသွေး၊ အခြေအနေ)",
+      "suggested_example_UNAPPROVED": "The weather was bad yesterday.",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    },
+    {
+      "word": "least",
+      "level": "A2",
+      "part_of_speech": "determiner",
+      "original_english_definition": "The smallest amount or number compared with others.",
+      "original_burmese_meaning": "အနည်းဆုံးသော",
+      "original_example_sentence": "This option requires the least effort.",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "source_index": 510,
+      "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc",
+      "family": "little/less/least",
+      "morphology_class": "MINIMUM_QUANTITY_DETERMINER",
+      "related_lemma": "little_quantity",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/least_1",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "88-113",
+          "evidence_scope": "GRAMMATICAL_FORM_OR_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        },
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/less_1",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "88-110",
+          "evidence_scope": "GRAMMATICAL_FORM_OR_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "source_supported_observation": "Oxford labels least a determiner/pronoun indicating the smallest amount, size or degree; the held 'least effort' is a valid quantity construction. It should not be automatically merged with the A1 little physical-size adjective.",
+      "risk_class": "DISTINCT_QUANTITY_FUNCTION_REVIEW_NOT_AUTOMATIC_BAN",
+      "suggested_myanmar_UNAPPROVED": "အနည်းဆုံးသော (ပမာဏ၊ အတိုင်းအတာ၊ ကြိုးစားအားထုတ်မှု)",
+      "suggested_example_UNAPPROVED": "This option needs the least effort.",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    },
+    {
+      "word": "worst",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "original_english_definition": "The least good or most unpleasant of a group.",
+      "original_burmese_meaning": "အဆိုးဆုံး",
+      "original_example_sentence": "That was the worst storm of the year.",
+      "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+      "source_index": 57,
+      "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc",
+      "family": "bad/worst",
+      "morphology_class": "SUPERLATIVE_FORM_OF_BAD",
+      "related_lemma": "bad",
+      "oxford_direct_sources": [
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/worst_1",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "88-111",
+          "evidence_scope": "GRAMMATICAL_FORM_OR_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        },
+        {
+          "publisher": "Oxford University Press",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/bad_1",
+          "observed_on": "2026-11-01",
+          "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+          "line_locator": "103-123",
+          "evidence_scope": "GRAMMATICAL_FORM_OR_EXACT_SENSE_NOT_INDEPENDENT_CEFR"
+        }
+      ],
+      "source_supported_observation": "Oxford labels worst adjective explicitly as superlative of bad. The held B1 worst card teaches that exact superlative meaning; it is not a new lexical lemma for a distinct-lexeme quota.",
+      "risk_class": "NON_INDEPENDENT_SUPERLATIVE_LEXEME_QUOTA",
+      "suggested_myanmar_UNAPPROVED": "အဆိုးဆုံး (bad ၏ superlative ပုံစံ)",
+      "suggested_example_UNAPPROVED": "That was the worst storm of the year.",
+      "editorial_hold": true,
+      "independently_checked": false,
+      "release_approved": false,
+      "independent_reviewer_receipt": null,
+      "real_george_listening": false,
+      "real_emma_listening": false
+    }
+  ]
+}
