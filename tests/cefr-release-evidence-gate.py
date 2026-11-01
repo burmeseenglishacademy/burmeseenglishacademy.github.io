@@ -102,6 +102,27 @@ with tempfile.TemporaryDirectory() as folder:
     issues = module.validate(data, pathlib.Path(folder), verify_audio=True)
     assert "Audio manifest absent" in issues
 assert "Audio verification requested without a root directory" in module.validate(data, verify_audio=True)
+# Synthetic fingerprints only: no actual George/Emma recording was generated,
+# listened to, approved or released by these tests.
+fake_a = "a"*64
+fake_b = "b"*64
+fake_c = "c"*64
+assert module.audio_collision_risks([
+    ("apple", "bm_george", fake_a), ("apple", "bf_emma", fake_a)
+]) == [(("apple", "bm_george"), ("apple", "bf_emma"))]
+assert module.audio_collision_risks([
+    ("The apple is red.", "bm_george", fake_b),
+    ("The apple is green.", "bm_george", fake_b)
+]) == [(("The apple is red.", "bm_george"),
+        ("The apple is green.", "bm_george"))]
+# Homophones can legitimately have the same waveform for one voice;
+# never mechanically claim that all byte-identical short words are bad.
+assert module.audio_collision_risks([
+    ("two", "bm_george", fake_c), ("too", "bm_george", fake_c)
+]) == []
+assert module.audio_collision_risks([
+    ("apple", "bm_george", fake_a), ("apple", "bf_emma", fake_b)
+]) == []
 # Do not count be/do inflections, good/bad comparison forms, or irregular
 # plurals of existing man/woman/child/foot lemmas as separate lexemes.
 # Plural forms may be taught as grammar without inflating a 200-lemma quota.
@@ -136,4 +157,4 @@ for word, example in (("little","I have a little dog."),
 entry["word"] = "apple"
 entry["example_sentence"] = "I eat an apple."
 print("PASS: ten be/do/comparison/irregular-plural forms rejected; base lemmas and distinct size/quantity and person/people senses remain eligible for human review.")
-print("PASS: mismatched publisher headwords and generic CEFR references rejected; human review and audio still mandatory.")
+print("PASS: mismatched publisher headwords, generic CEFR references, copied George/Emma and multiword audio risks rejected; real listening still mandatory.")
