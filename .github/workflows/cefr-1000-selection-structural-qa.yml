@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - draft/CEFR-1000-B1-FIVE-DEMAND-SUPPLY-FEATURE-APPLY-AUTHORITY-SENSE-TRIAGE-2026-11-02.json
+      - tools/audit_cefr_1000_b1_five_commercial_senses.py
       - draft/CEFR-1000-B1-FOUR-DIRECT-OXFORD-SENSE-EXAMPLE-TRIAGE-2026-11-02.json
       - tools/audit_cefr_1000_b1_four_sense_example.py
       - .github/workflows/cefr-1000-selection-structural-qa.yml
@@ -952,6 +954,11 @@ jobs:
       - name: Reject forged four-card Oxford, indexed CEFR, bilingual and approval claims
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_b1_four_sense_example.py --level ALL --self-test
+      - name: Audit five held B1 commercial exact-sense and Myanmar source records
+        run: python3 tools/audit_cefr_1000_b1_five_commercial_senses.py --level "${{ matrix.level }}"
+      - name: Reject forged five-card publisher, provenance, Myanmar and approval claims
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_b1_five_commercial_senses.py --level ALL --self-test
       - name: Save structural QA record (not linguistic verification)
         uses: actions/upload-artifact@v4
         with:
