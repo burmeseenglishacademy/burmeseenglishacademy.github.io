@@ -26,6 +26,8 @@ COMMIT = re.compile(r"^[0-9a-f]{40}$")
 PAGES_LIMITS_URL = "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits"
 PAGES_SITE_BYTES_CAP = 1_000_000_000  # conservative decimal interpretation of 1 GB
 PAGES_BANDWIDTH_SOFT_BYTES = 100_000_000_000  # 100 GB/month soft limit
+PAGES_DEPLOY_TIMEOUT_SECONDS = 600  # official 10-minute Pages deployment timeout
+PAGES_NATIVE_BUILD_SOFT_LIMIT_PER_HOUR = 10  # exempt for custom Actions builds
 
 
 
@@ -183,10 +185,31 @@ def hosting_limits_valid(hosting, approved_sha):
         return False
     for key, maximum in (("measured_bytes", PAGES_SITE_BYTES_CAP),
                          ("source_repository_bytes", PAGES_SITE_BYTES_CAP),
-                         ("forecast_monthly_bandwidth_bytes", PAGES_BANDWIDTH_SOFT_BYTES)):
+                         ("forecast_monthly_bandwidth_bytes", PAGES_BANDWIDTH_SOFT_BYTES),
+                         ("measured_deployment_seconds", PAGES_DEPLOY_TIMEOUT_SECONDS)):
         value = hosting.get(key)
         if type(value) is not int or value <= 0 or value > maximum:
             return False
+    # Official Pages policy: 10 native builds/hour soft limit; custom Actions
+    # workflow publishing is exempt, but its observed build method and real
+    # deployment duration still need separately authenticated evidence.
+    method = hosting.get("pages_build_method")
+    builds = hosting.get("observed_builds_last_hour")
+    if method not in ("NATIVE_PAGES_BUILD", "CUSTOM_ACTIONS_WORKFLOW"):
+        return False
+    if type(builds) is not int or builds < 0:
+        return False
+    if method == "NATIVE_PAGES_BUILD" and builds > PAGES_NATIVE_BUILD_SOFT_LIMIT_PER_HOUR:
+        return False
+    run_url = hosting.get("pages_build_run_url")
+    if not specific_url(run_url):
+        return False
+    parsed = urlparse(run_url)
+    if parsed.hostname != "github.com" or not re.fullmatch(
+            r"/[^/]+/[^/]+/actions/runs/[0-9]+", parsed.path):
+        return False
+    # A JSON URL is not proof that the job succeeded. A human must inspect
+    # the actual referenced run/job conclusions and logs before signoff.
     return True
 
 
@@ -2579,7 +2602,49 @@ def main():
         assert fourth_a2_report["oxford_a2_fourth_twelve_retained_resolved"] == 0
         print("PASS: fabricated fourth A2 human receipt rejected; 12 publisher leads remain held")
         print("PASS: unknown cross-publisher reconciliation receipt rejected")
-        print("PASS: official Pages size/bandwidth caps reject inflated self-reported limits")
+        # Hosting receipts cannot omit the 10-minute deployment timing or
+        # the native-vs-custom build method and native hourly-build count.
+        hosting_base = {
+            "result": "PASS", "reviewer_id": "TEST_ONLY",
+            "notes": "Synthetic regression only; no real hosting signoff",
+            "reviewed_on": "2026-11-01",
+            "evidence_url": "https://github.com/test/evidence",
+            "measurement_method": "SYNTHETIC_TEST_ONLY",
+            "policy_url": PAGES_LIMITS_URL,
+            "approved_dataset_sha256": "0" * 64,
+            "site_artifact_sha256": "1" * 64,
+            "measured_bytes": 100000,
+            "source_repository_bytes": 100000,
+            "forecast_monthly_bandwidth_bytes": 100000,
+            "measured_deployment_seconds": 599,
+            "pages_build_method": "NATIVE_PAGES_BUILD",
+            "observed_builds_last_hour": 10,
+            "pages_build_run_url": "https://github.com/test/repo/actions/runs/12345",
+        }
+        assert hosting_limits_valid(hosting_base, "0" * 64)
+        for bad_key, bad_value in (
+                ("measured_deployment_seconds", 601),
+                ("measured_deployment_seconds", 0),
+                ("pages_build_method", "UNKNOWN"),
+                ("observed_builds_last_hour", 11),
+                ("observed_builds_last_hour", -1),
+                ("pages_build_run_url", "https://example.com/false-run"),
+                ("pages_build_run_url", "https://github.com/test/repo/actions/runs/not-a-number")):
+            forged_hosting = dict(hosting_base, **{bad_key: bad_value})
+            assert not hosting_limits_valid(forged_hosting, "0" * 64), bad_key
+        for missing_key in ("measured_deployment_seconds", "pages_build_method",
+                            "observed_builds_last_hour", "pages_build_run_url"):
+            forged_hosting = dict(hosting_base)
+            del forged_hosting[missing_key]
+            assert not hosting_limits_valid(forged_hosting, "0" * 64), missing_key
+        # GitHub explicitly exempts custom Actions publishing from the native
+        # 10-builds/hour soft limit, not from the deployment timeout.
+        custom = dict(hosting_base, pages_build_method="CUSTOM_ACTIONS_WORKFLOW",
+                      observed_builds_last_hour=11)
+        assert hosting_limits_valid(custom, "0" * 64)
+        custom["measured_deployment_seconds"] = 601
+        assert not hosting_limits_valid(custom, "0" * 64)
+        print("PASS: Pages 1GB size, 100GB bandwidth, 600s deployment and native 10 builds/hour limits checked; custom Actions exception scoped")
         print("PASS: false ready flag cannot override missing independent, listening, iPhone or hosting evidence")
     pathlib.Path(args.report).write_text(json.dumps({"report": report, "blockers": issues[:100]},
                                            ensure_ascii=False, indent=2) + "\n", encoding="utf8")
