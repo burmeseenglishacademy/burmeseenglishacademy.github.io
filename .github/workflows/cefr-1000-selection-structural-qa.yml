@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - draft/CEFR-1000-A1-TEMPORAL-ADVERB-NOUN-EXAMPLE-POS-2026-11-01.json
+      - tools/audit_cefr_1000_a1_temporal_example_pos.py
       - draft/CEFR-1000-UK-DISCOURSE-DEGREE-SIX-2026-11-01.json
       - tools/audit_cefr_1000_uk_discourse_degree_six.py
       - draft/CEFR-1000-A2-EIGHT-DIRECT-UK-SENSE-AND-CEFR-TRIAGE-2026-11-01.json
@@ -878,6 +880,11 @@ jobs:
       - name: Reject forged UK spelling, Myanmar and approval evidence
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_uk_orthography.py --level ALL --self-test
+      - name: Audit held A1 today/yesterday noun-vs-adverb examples and tomorrow control
+        run: python3 tools/audit_cefr_1000_a1_temporal_example_pos.py --level "${{ matrix.level }}"
+      - name: Reject forged A1 time-word source, grammar, Myanmar and approval claims
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_a1_temporal_example_pos.py --level ALL --self-test
       - name: Save structural QA record (not linguistic verification)
         uses: actions/upload-artifact@v4
         with:
