@@ -71,21 +71,33 @@ with tempfile.TemporaryDirectory() as folder:
     issues = module.validate(data, pathlib.Path(folder), verify_audio=True)
     assert "Audio manifest absent" in issues
 assert "Audio verification requested without a root directory" in module.validate(data, verify_audio=True)
-# Do not count grammar inflections of be/do as independent lexical A1 headwords.
-# The frozen first-pass draft still contains these cards, but an approved
-# vocabulary manifest must replace or independently restructure them.
-for form, lemma in (("is","be"),("are","be"),("does","do"),("did","do")):
+# Do not count be/do inflections or good/bad comparative/superlative forms
+# as independent lexemes. These are unapproved teaching cards, not 200
+# distinct lexical entries per level.
+for form, lemma in (("is","be"),("are","be"),("does","do"),("did","do"),
+                    ("better","good"),("worst","bad")):
     entry["word"] = form
     entry["example_sentence"] = {"is":"She is at home.","are":"They are friends.",
-                                 "does":"Does he work here?","did":"Did you eat?"}[form]
+                                 "does":"Does he work here?","did":"Did you eat?",
+                                 "better":"This is better.","worst":"That was the worst."}[form]
     issues = module.validate(data)
     assert any("grammatical form of " + lemma in x for x in issues), (form,issues)
-for lemma in ("be","do"):
+for lemma in ("be","do","good","bad"):
     entry["word"] = lemma
-    entry["example_sentence"] = "I want to be a teacher." if lemma=="be" else "I do my homework."
+    entry["example_sentence"] = {"be":"I want to be a teacher.","do":"I do my homework.",
+                                 "good":"That is a good idea.","bad":"The weather is bad."}[lemma]
     issues = module.validate(data)
     assert not any("grammatical form of " in x for x in issues), (lemma,issues)
+for word, example in (("little","I have a little dog."),
+                      ("less","Please add less sugar."),
+                      ("least","This needs the least effort."),
+                      ("person","One person is waiting."),
+                      ("people","Many people are waiting.")):
+    entry["word"] = word
+    entry["example_sentence"] = example
+    issues = module.validate(data)
+    assert not any("grammatical form of " in x for x in issues), (word,issues)
 entry["word"] = "apple"
 entry["example_sentence"] = "I eat an apple."
-print("PASS: four A1 grammar-form quota inflations rejected; base lemmas remain allowed.")
+print("PASS: six be/do/good/bad non-lexical forms rejected; distinct size/quantity and person/people senses remain eligible for human review.")
 print("PASS: generic/placeholder references rejected; review flags and incomplete audio block publication.")
