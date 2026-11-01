@@ -5,6 +5,7 @@ This is documentary integrity only; NEVER human review, CEFR approval or listeni
 import argparse
 import collections
 import copy
+import hashlib
 import json
 import pathlib
 import sys
@@ -20,15 +21,31 @@ def canonical(value):
     return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
 
 
+def git_blob_sha(raw_bytes):
+    """Exact Git blob SHA-1; binds the entire 1,000-row provisional file."""
+    return hashlib.sha1(b"blob " + str(len(raw_bytes)).encode("ascii") +
+                        b"\x00" + raw_bytes).hexdigest()
+
+
 def validate(packet, shortlist):
     errors = []
     if canonical(packet) != canonical(EXPECTED):
         errors.append("Research packet differs from immutable six-record source/provenance baseline")
+    # A selected-row comparison alone misses changes elsewhere in the 1,000-row
+    # shortlist. Freeze the full on-disk source blob as a separate safeguard.
+    if git_blob_sha(SHORTLIST.read_bytes()) != EXPECTED["shortlist_blob_sha"]:
+        errors.append("Full provisional shortlist Git blob changed; re-review required")
     if not isinstance(shortlist, dict):
         return errors + ["Shortlist is not an object"]
     entries = shortlist.get("entries")
     if not isinstance(entries, list) or len(entries) != 1000:
         return errors + ["Frozen shortlist does not have exactly 1000 entries"]
+    if shortlist.get("release_status") != "PROVISIONAL_1000_INDEPENDENT_EVIDENCE_MISSING_DO_NOT_PUBLISH":
+        errors.append("Shortlist release status changed without independent signoff")
+    if shortlist.get("scope_target") != {level: 200 for level in LEVELS}:
+        errors.append("Scope targets changed from approved 200 per level")
+    if shortlist.get("counts_by_level") != {level: 200 for level in LEVELS}:
+        errors.append("Shortlist declared level counts changed")
     counts = collections.Counter(e.get("level") for e in entries if isinstance(e, dict))
     if any(counts.get(level) != 200 for level in LEVELS):
         errors.append("Frozen shortlist is not 200 entries per CEFR level")
@@ -45,6 +62,8 @@ def validate(packet, shortlist):
                 ("reviewed_english", "reviewed_burmese", "reviewed_example",
                  "reviewed_level", "reviewed_pronunciation", "release_approved"))):
             errors.append("Shortlist editorial hold or approval flags altered")
+    if len(by_word) != 1000:
+        errors.append("Duplicate or missing shortlist headwords")
     mapping = {
         "level": "level", "part_of_speech": "part_of_speech",
         "original_english_definition": "english_definition",
@@ -98,9 +117,24 @@ def self_test(packet, shortlist):
     s = copy.deepcopy(shortlist)
     s["independently_approved_by_level"]["A1"] = 1
     reject(packet, s, "false_approval_count")
-    s = copy.deepcopy(shortlist)
-    s["entries"][0]["burmese_meaning"] = "FORGED"
-    reject(packet, s, "changed_held_myanmar")
+    # Mutation tests must target the six actually source-bound shortlist rows.
+    # Previously, mutating entries[0] (the unrelated A1 article "a") was
+    # undetectable by this six-word packet audit and made both CI gates fail.
+    for row in packet["records"]:
+        for field in ("english_definition", "burmese_meaning",
+                      "example_sentence", "part_of_speech", "level",
+                      "source_path", "source_index", "source_blob_sha"):
+            s = copy.deepcopy(shortlist)
+            target = next(e for e in s["entries"] if e.get("word") == row["word"])
+            old = target[field]
+            target[field] = old + 1 if type(old) is int else str(old) + " FORGED"
+            reject(packet, s, "changed_held_" + row["word"] + "." + field)
+    # A whole-file freeze catches changes to unrelated rows in real GitHub
+    # Actions runs; test the raw Git blob algorithm independently as well.
+    original = SHORTLIST.read_bytes()
+    assert git_blob_sha(original) == EXPECTED["shortlist_blob_sha"], "Baseline Git blob mismatch"
+    assert git_blob_sha(original + b" ") != EXPECTED["shortlist_blob_sha"], "FAIL OPEN: full-blob tamper"
+    rejected += 1
     return rejected
 
 
