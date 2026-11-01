@@ -71,21 +71,26 @@ with tempfile.TemporaryDirectory() as folder:
     issues = module.validate(data, pathlib.Path(folder), verify_audio=True)
     assert "Audio manifest absent" in issues
 assert "Audio verification requested without a root directory" in module.validate(data, verify_audio=True)
-# Do not count be/do inflections or good/bad comparative/superlative forms
-# as independent lexemes. These are unapproved teaching cards, not 200
-# distinct lexical entries per level.
+# Do not count be/do inflections, good/bad comparison forms, or irregular
+# plurals of existing man/woman/child/foot lemmas as separate lexemes.
+# Plural forms may be taught as grammar without inflating a 200-lemma quota.
 for form, lemma in (("is","be"),("are","be"),("does","do"),("did","do"),
-                    ("better","good"),("worst","bad")):
+                    ("better","good"),("worst","bad"),("men","man"),
+                    ("women","woman"),("children","child"),("feet","foot")):
     entry["word"] = form
     entry["example_sentence"] = {"is":"She is at home.","are":"They are friends.",
                                  "does":"Does he work here?","did":"Did you eat?",
-                                 "better":"This is better.","worst":"That was the worst."}[form]
+                                 "better":"This is better.","worst":"That was the worst.",
+                                 "men":"The men are here.","women":"The women are here.",
+                                 "children":"The children are playing.","feet":"My feet hurt."}[form]
     issues = module.validate(data)
     assert any("grammatical form of " + lemma in x for x in issues), (form,issues)
-for lemma in ("be","do","good","bad"):
+for lemma in ("be","do","good","bad","man","woman","child","foot"):
     entry["word"] = lemma
     entry["example_sentence"] = {"be":"I want to be a teacher.","do":"I do my homework.",
-                                 "good":"That is a good idea.","bad":"The weather is bad."}[lemma]
+                                 "good":"That is a good idea.","bad":"The weather is bad.",
+                                 "man":"The man is a teacher.","woman":"The woman is a doctor.",
+                                 "child":"The child is sleeping.","foot":"My left foot hurts."}[lemma]
     issues = module.validate(data)
     assert not any("grammatical form of " in x for x in issues), (lemma,issues)
 for word, example in (("little","I have a little dog."),
@@ -99,5 +104,5 @@ for word, example in (("little","I have a little dog."),
     assert not any("grammatical form of " in x for x in issues), (word,issues)
 entry["word"] = "apple"
 entry["example_sentence"] = "I eat an apple."
-print("PASS: six be/do/good/bad non-lexical forms rejected; distinct size/quantity and person/people senses remain eligible for human review.")
+print("PASS: ten be/do/comparison/irregular-plural forms rejected; base lemmas and distinct size/quantity and person/people senses remain eligible for human review.")
 print("PASS: generic/placeholder references rejected; review flags and incomplete audio block publication.")

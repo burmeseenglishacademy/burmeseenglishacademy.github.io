@@ -16,7 +16,7 @@ All eight are held research leads, not eight proven errors. Original first-pass 
 
 ## Structural QC
 
-A new fail-closed auditor `tools/audit_cefr_1000_a1_irregular_plurals_eight.py` binds all eight records to the frozen shortlist Git blob `475e68ae17ab97bd937e73e5ce4794e0dcd76551`, validates 1,000 total / 200 per level / unique words / all editorial holds, rejects altered original bilingual/example/source provenance, and tests adversarial tampering and fake independent approval/listening. Wired to all six CEFR matrix lanes (A1/A2/B1/B2/C1/ALL) and the documentary NO DEPLOY workflow. CI run IDs/conclusions must be recorded only after real GitHub Actions inspection; no success claimed at authoring time.
+A new fail-closed auditor `tools/audit_cefr_1000_a1_irregular_plurals_eight.py` binds all eight records to the frozen shortlist Git blob `475e68ae17ab97bd937e73e5ce4794e0dcd76551`, validates 1,000 total / 200 per level / unique words / all editorial holds, rejects altered original bilingual/example/source provenance, and tests adversarial tampering and fake independent approval/listening. The final-manifest validator additionally rejects **men, women, children and feet** as independent headword quotas when their base lemmas are already in the curriculum; regression tests preserve the base forms and unrelated senses. Wired to all six CEFR matrix lanes (A1/A2/B1/B2/C1/ALL) and the documentary NO DEPLOY workflow. CI run IDs/conclusions must be recorded only after real GitHub Actions inspection; no success claimed at authoring time.
 
 ## Release blockers
 
