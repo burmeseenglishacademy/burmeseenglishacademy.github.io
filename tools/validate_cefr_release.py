@@ -67,6 +67,16 @@ def publisher_headword_url_matches(url, word):
     return bool(re.fullmatch(re.escape(word.casefold())+r'(?:_[1-9][0-9]*)?',segments[-1]))
 
 def normalize(s):return ' '.join(str(s).strip().split())
+
+def required_audio_texts(row):
+    """Keep approved display casing: audio-manifest keys and SHA paths are case-sensitive.
+
+    In particular, the pronoun I is NOT the same recording key as lowercase i.
+    No audio is created or approved by this helper.
+    """
+    return {normalize(row.get('word', '')),
+            normalize(row.get('example_sentence', ''))}
+
 def example_has_headword_or_regular_form(word, sentence):
     """Punctuation-aware *structural* token check, NOT grammatical approval.
     Irregular or genuinely unusual forms require a separately reviewed override.
@@ -128,8 +138,11 @@ def validate(data,root=None,verify_audio=False):
     texts=set()
     for n,row in enumerate(entries):
         if not isinstance(row,dict):fail(f'{n}: entry not an object');continue
-        word=normalize(row.get('word','')).lower()
+        display_word=normalize(row.get('word',''))
+        word=display_word.casefold()
         if not ASCII_WORD.fullmatch(word):fail(f'{n}: noncanonical English word')
+        if display_word != ('I' if word == 'i' else word):
+            fail(f'{n}: noncanonical display casing for {display_word!r}')
         # The English first-person singular pronoun is obligatorily capitalised.
         # The provisional shortlist currently has lowercase 'i'; never silently
         # promote that unreviewed spelling into a release manifest.
@@ -162,7 +175,7 @@ def validate(data,root=None,verify_audio=False):
                 fail(f'{n}: source_level must bind to same-headword publisher dictionary entry (not independent CEFR proof)')
             elif (urlparse(ref).hostname or '').lower() in PUBLISHER_DICTIONARY_HOSTS and not publisher_headword_url_matches(ref,word):
                 fail(f'{n}: {field} publisher dictionary URL does not match headword {word}')
-        texts.add(word);texts.add(normalize(row.get('example_sentence','')))
+        texts.update(required_audio_texts(row))
     if counts!=collections.Counter(TARGETS):fail(f'Level quota mismatch: {counts}')
     if verify_audio and root is None:return errors+['Audio verification requested without a root directory']
     if not verify_audio:return errors
