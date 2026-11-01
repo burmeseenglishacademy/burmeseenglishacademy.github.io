@@ -9,6 +9,8 @@ on:
       - tools/audit_cefr_1000_cambridge_six_indexed_conflicts.py
       - draft/CEFR-1000-B2-FIVE-DIRECT-OXFORD-SENSE-AND-MYANMAR-TRIAGE-2026-11-01.json
       - tools/audit_cefr_1000_b2_five_direct_sense.py
+      - draft/CEFR-1000-C1-EIGHT-DIRECT-OXFORD-RARE-SENSE-TRIAGE-2026-11-01.json
+      - tools/audit_cefr_1000_c1_rare_eight_direct_oxford.py
       - draft/CEFR-1000-A1-IRREGULAR-PLURALS-AND-COUNT-SENSE-EIGHT-2026-11-01.json
       - tools/audit_cefr_1000_a1_irregular_plurals_eight.py
       - draft/CEFR-1000-CROSSLEVEL-IRREGULAR-COMPARATIVES-AND-QUANTIFIERS-NINE-2026-11-01.json
@@ -908,6 +910,11 @@ jobs:
       - name: Reject forged A1 irregular plural, bilingual and listening claims
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_a1_irregular_plurals_eight.py --level ALL --self-test
+      - name: Audit eight direct Oxford C1 rare-word sense records (NO APPROVAL)
+        run: python3 tools/audit_cefr_1000_c1_rare_eight_direct_oxford.py --level "${{ matrix.level }}"
+      - name: Reject forged eight-card C1 source, Myanmar, review and provenance evidence
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_c1_rare_eight_direct_oxford.py --level ALL --self-test
       - name: Audit five direct Oxford B2 sense and Myanmar research records (NO APPROVAL)
         run: python3 tools/audit_cefr_1000_b2_five_direct_sense.py --level "${{ matrix.level }}"
       - name: Reject forged B2 publisher, bilingual, provenance and approval evidence
