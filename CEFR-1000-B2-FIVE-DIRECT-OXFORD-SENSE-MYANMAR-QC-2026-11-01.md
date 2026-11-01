@@ -27,3 +27,11 @@ Cambridge direct dictionary opens for the five words returned **HTTP 403** on th
 First-pass written / independently approved: **A1 200/0, A2 200/0, B1 200/0, B2 200/0, C1 200/0**. All 1,000 remain on editorial hold. Independent human English, Myanmar, original-example and exact-sense CEFR review; deduplicated approved manifest; both George/Emma headword and example audio with **real listening**; browser/mobile regression; physical iPhone Safari; measured GitHub Pages limits; independent protected-asset/privacy checks and confirmed production deployment are missing. **DO NOT PUBLISH.**
 
 **CI note:** Actual new workflow run conclusions, job logs and commit SHA must be appended only after retrieval. Historical successful runs do not verify this packet.
+
+## Actual GitHub Actions verification (not linguistic signoff)
+
+At tested SHA `5b193d2e3a2f187be3c74fc16e55d8f54b2e0534`, [six-lane structural run 41311661417](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41311661417) completed **SUCCESS** for A1, A2, B1, B2, C1 and ALL. Actual ALL job `124863138760` logs confirmed **90/90** adversarial mutations rejected by the new auditor and 5/5 B2 research records source-bound, with 0 independent approvals. ALL artifact ID `13086080134`.
+
+[Documentary no-deployment run 41311661271](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41311661271) completed **SUCCESS (report-only)** at the same SHA; actual job `124863137939` logs confirmed **90/90** mutations rejected, the independently reviewed word packets remain **0/1,000**, and protected production assets check passed. Blocker artifact ID `13085920316`. These tests check source/provenance and reporting integrity; they do **not** authenticate external humans, listen to George/Emma audio, test a physical iPhone, measure production hosting or confirm deployment.
+
+The five files changed since previous staging checkpoint are solely two QC workflows, one new research JSON, one new source auditor and this documentation; production files were not edited. **STAGING ONLY / RELEASE BLOCKED.**
