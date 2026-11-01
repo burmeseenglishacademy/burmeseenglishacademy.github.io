@@ -3,6 +3,7 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - .github/workflows/cefr-1000-selection-structural-qa.yml
       - tools/validate_cefr_release.py
       - tests/cefr-release-evidence-gate.py
       - draft/CEFR-1000-C1-B2-CAMBRIDGE-INDEXED-SIX-SENSE-TRIAGE-2026-11-01.json
