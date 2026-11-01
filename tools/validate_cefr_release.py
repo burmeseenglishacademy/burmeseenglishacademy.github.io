@@ -37,6 +37,35 @@ def source_url_is_specific(url):
     if len([segment for segment in path.split('/') if segment])<2:
         return False
     return True
+# A plausible URL is not a source-to-headword match. For the release CEFR
+# reference require a publisher dictionary *entry* for this exact headword.
+# This remains a structural URL check: the separate independent-human ledger
+# must still establish a directly observed, exact-sense CEFR label.
+PUBLISHER_DICTIONARY_HOSTS=frozenset((
+    'dictionary.cambridge.org','oxfordlearnersdictionaries.com',
+    'www.oxfordlearnersdictionaries.com'))
+
+def publisher_headword_url_matches(url, word):
+    if not source_url_is_specific(url) or not isinstance(word,str) or not word:
+        return False
+    from urllib.parse import unquote
+    p=urlparse(url)
+    host=(p.hostname or '').lower()
+    segments=[unquote(s).casefold() for s in p.path.strip('/').split('/')]
+    if len(segments)!=3:
+        return False
+    if host=='dictionary.cambridge.org':
+        if segments[:2]!=['dictionary','english']:
+            return False
+    elif host in ('oxfordlearnersdictionaries.com','www.oxfordlearnersdictionaries.com'):
+        if segments[:2]!=['definition','english']:
+            return False
+    else:
+        return False
+    # Oxford distinguishes homograph entries with _1, _2 etc. The suffix
+    # cannot be used to swap the actual lemma or hide a generic list page.
+    return bool(re.fullmatch(re.escape(word.casefold())+r'(?:_[1-9][0-9]*)?',segments[-1]))
+
 def normalize(s):return ' '.join(str(s).strip().split())
 def example_has_headword_or_regular_form(word, sentence):
     """Punctuation-aware *structural* token check, NOT grammatical approval.
@@ -95,6 +124,10 @@ def validate(data,root=None,verify_audio=False):
             ref=row.get(field)
             if not source_url_is_specific(ref):
                 fail(f'{n}: missing or generic non-word-specific reference URL in {field}')
+            elif field == 'source_level' and not publisher_headword_url_matches(ref,word):
+                fail(f'{n}: source_level must bind to same-headword publisher dictionary entry (not independent CEFR proof)')
+            elif (urlparse(ref).hostname or '').lower() in PUBLISHER_DICTIONARY_HOSTS and not publisher_headword_url_matches(ref,word):
+                fail(f'{n}: {field} publisher dictionary URL does not match headword {word}')
         texts.add(word);texts.add(normalize(row.get('example_sentence','')))
     if counts!=collections.Counter(TARGETS):fail(f'Level quota mismatch: {counts}')
     if verify_audio and root is None:return errors+['Audio verification requested without a root directory']
