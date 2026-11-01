@@ -22,11 +22,11 @@ All six frozen examples are grammatically plausible for the intended POS/sense; 
 ## Reproducible staging-only evidence and guardrails
 
 - [Six-record source/provenance packet](draft/CEFR-1000-C1-B2-CAMBRIDGE-INDEXED-SIX-SENSE-TRIAGE-2026-11-01.json): frozen first-pass English/Myanmar/example, dated direct Oxford observations and **index-only** Cambridge labels, original Git source paths/index/blob SHAs, no false approval or listening receipts.
-- [Fail-closed auditor](tools/audit_cefr_1000_cambridge_six_indexed_conflicts.py): pins exact research-packet and shortlist Git blobs, checks 1,000 held entries and 200 per level, case-insensitive deduplication, frozen bilingual/example provenance, historical source Git blobs, exact publisher headword URLs, access-mode truthfulness and false independent/audio claims. ALL-lane self-test attempts **105** adversarial mutations (six records × 17 each plus three packet-level mutations).
+- [Fail-closed auditor](tools/audit_cefr_1000_cambridge_six_indexed_conflicts.py): pins exact research-packet and shortlist Git blobs, checks 1,000 held entries and 200 per level, case-insensitive deduplication, frozen bilingual/example provenance, historical source Git blobs, exact publisher headword URLs, access-mode truthfulness and false independent/audio claims. ALL-lane self-test attempts **123** adversarial mutations (six records × 20 each plus three packet-level mutations).
 - [Parallel six-lane structural workflow](.github/workflows/cefr-1000-selection-structural-qa.yml): A1, A2, B1, B2, C1 and ALL each run the audit; ALL runs adversarial self-tests.
 - [Documentary no-deployment workflow](.github/workflows/cefr-1000-go-live-qc-gate.yml): also runs the adversarial audit and retains the existing release blocker report and production-protection check.
 
-**CI evidence boundary:** The staging changes have been committed, but new GitHub Actions run IDs, actual job conclusions and logs have **not yet been retrieved**. No new CI PASS or 105/105 mutation result is asserted until actual job logs confirm it. Earlier successful workflow runs do not verify this new code.
+**CI evidence boundary:** The staging changes have been committed, but new GitHub Actions run IDs, actual job conclusions and logs have **not yet been retrieved**. No new CI PASS or 123/123 mutation result is asserted until actual job logs confirm it. Earlier successful workflow runs do not verify this new code.
 
 ## Exact release state
 
