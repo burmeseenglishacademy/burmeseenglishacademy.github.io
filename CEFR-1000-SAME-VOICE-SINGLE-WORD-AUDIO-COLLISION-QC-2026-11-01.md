@@ -15,6 +15,10 @@ The corrected release validator **rejects all same-voice distinct-headword byte 
 - [A1 integrated regression run 41318645081](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41318645081) **SUCCESS** on the same test commit.
 - Six-lane structural run [41318645132](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41318645132) and documentary no-deployment run [41318645110](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41318645110) were **in progress at initial report creation**; their actual conclusions/logs must be checked before claiming full CI success. Earlier six-lane [41313788683](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41313788683) succeeded on previous SHA `ac492855`, including 123/123 six-card adversarial source mutations; it does not verify this new audio fix.
 
+## Publisher pronunciation corroboration and evidence limit
+
+On **2026-11-01**, Cambridge publisher search-index results for [two](https://dictionary.cambridge.org/pronunciation/english/two) and [too](https://dictionary.cambridge.org/pronunciation/english/too) both displayed British **/tuː/**. Direct publisher-page opens returned **HTTP 403**. These are **indexed pronunciation leads only**, not a direct inspected-page receipt, independent pronunciation approval, generated George/Emma audio, or human listening. The narrowly documented mechanical homophone exception is still subject to actual voice-specific listening and independent reviewer signoff. All other same-voice different-headword byte collisions fail closed until a separately evidenced exception is explicitly added.
+
 ## Counts and non-negotiable blockers
 
 | Level | First-pass written | Independently approved | Final George/Emma listening |
