@@ -121,12 +121,27 @@ assert module.audio_collision_risks([
     ("two", "bm_george", fake_c), ("too", "bm_george", fake_c)
 ]) == []
 # A third clip must be compared with *every* previous identical-byte clip,
-# not just the first (the first two are legitimate short homophones).
+# not just the first (the first two are legitimate same-voice homophones).
+# Cross-voice collisions are forbidden even for DIFFERENT headwords.
 assert module.audio_collision_risks([
     ("two", "bm_george", fake_c),
     ("too", "bm_george", fake_c),
     ("too", "bf_emma", fake_c),
-]) == [(("too", "bm_george"), ("too", "bf_emma"))]
+]) == [(("two", "bm_george"), ("too", "bf_emma")),
+      (("too", "bm_george"), ("too", "bf_emma"))]
+assert module.audio_collision_risks([
+    ("apple", "bm_george", fake_a), ("orange", "bf_emma", fake_a)
+]) == [(("apple", "bm_george"), ("orange", "bf_emma"))]
+# A two-word example is still a distinct utterance: the previous >=3-word
+# threshold let copied "Good morning" / "Good evening" clips pass.
+assert module.audio_collision_risks([
+    ("Good morning", "bm_george", fake_b),
+    ("Good evening", "bm_george", fake_b),
+]) == [(("Good morning", "bm_george"), ("Good evening", "bm_george"))]
+# Legitimate same-voice one-word homophones remain eligible for listening.
+assert module.audio_collision_risks([
+    ("two", "bm_george", fake_c), ("too", "bm_george", fake_c)
+]) == []
 assert module.audio_collision_risks([
     ("apple", "bm_george", fake_a), ("apple", "bf_emma", fake_b)
 ]) == []
