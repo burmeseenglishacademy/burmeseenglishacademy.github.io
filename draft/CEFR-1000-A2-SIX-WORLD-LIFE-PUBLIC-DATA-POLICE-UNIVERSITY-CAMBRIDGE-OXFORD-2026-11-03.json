@@ -1,0 +1,252 @@
+{
+  "schema": 1,
+  "scope": "USER_APPROVED_1000_TOTAL_NOT_5000",
+  "release_status": "STAGING_EDITORIAL_HOLD_DO_NOT_PUBLISH",
+  "observed_on": "2026-11-03",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "source_access_limitations": "Oxford headword pages directly opened; Cambridge publisher-owned search-index results observed but direct page fetch returned HTTP 403. Search-index classifications are research leads, not independent exact-sense or human approvals.",
+  "independently_approved_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "counts_by_level": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "entries": [
+    {
+      "word": "world",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "frozen": {
+        "english_definition": "The Earth and all the people and places on it.",
+        "burmese_meaning": "ကမ္ဘာကြီး",
+        "example_sentence": "People around the world speak different languages.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 7,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "source": {
+        "oxford_url": "https://www.oxfordlearnersdictionaries.com/definition/english/world",
+        "oxford_access": "DIRECT_PUBLISHER_PAGE",
+        "oxford_lines": "88-115",
+        "cambridge_url": "https://dictionary.cambridge.org/dictionary/english/world",
+        "cambridge_access": "PUBLISHER_SEARCH_INDEX_ONLY_DIRECT_403",
+        "cambridge_level": "A1",
+        "cambridge_sense": "world noun (THE EARTH)",
+        "cefr_scope": "LOWER_LEVEL_SAME_SENSE_A1_LEAD",
+        "observed_on": "2026-11-03"
+      },
+      "editorial_risk": "Cambridge labels the Earth-and-people sense A1, below provisional A2. Oxford sense 1 is singular 'the world'; do not confuse with specialised worlds or idioms.",
+      "proposed_alternative": {
+        "english_definition": "The Earth, including its countries, places and people.",
+        "burmese_meaning": "ကမ္ဘာမြေကြီးနှင့် ကမ္ဘာတစ်ဝန်းရှိ နိုင်ငံများ၊ နေရာများ၊ လူများ",
+        "example_sentence": "Our friends live in different parts of the world."
+      },
+      "proposed_alternative_unapproved": true,
+      "editorial_hold": true,
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false
+    },
+    {
+      "word": "life",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "frozen": {
+        "english_definition": "A person's experience of being alive.",
+        "burmese_meaning": "ဘဝ",
+        "example_sentence": "Living in a new city changed her life.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 8,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "source": {
+        "oxford_url": "https://www.oxfordlearnersdictionaries.com/definition/english/life",
+        "oxford_access": "DIRECT_PUBLISHER_PAGE",
+        "oxford_lines": "535-549",
+        "cambridge_url": "https://dictionary.cambridge.org/dictionary/english/life",
+        "cambridge_access": "PUBLISHER_SEARCH_INDEX_ONLY_DIRECT_403",
+        "cambridge_level": "A1",
+        "cambridge_sense": "life noun (TIME ALIVE)",
+        "cefr_scope": "DIFFERENT_SENSE_A1_NO_EXACT_MATCH",
+        "observed_on": "2026-11-03"
+      },
+      "editorial_risk": "Cambridge A1 TIME ALIVE is not automatically the frozen personal-experience sense; Oxford sense 9 supports life as a person's experiences. Do not infer a conflicting exact-sense CEFR badge.",
+      "proposed_alternative": {
+        "english_definition": "The experiences and activities that make up a person's life.",
+        "burmese_meaning": "လူတစ်ဦး၏ ဘဝတွင် ကြုံတွေ့ဖြတ်သန်းရသော အတွေ့အကြုံများနှင့် လှုပ်ရှားမှုများ",
+        "example_sentence": "Moving to another country changed her life."
+      },
+      "proposed_alternative_unapproved": true,
+      "editorial_hold": true,
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false
+    },
+    {
+      "word": "public",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "frozen": {
+        "english_definition": "People in a community or society in general.",
+        "burmese_meaning": "ပြည်သူလူထု",
+        "example_sentence": "The library is open to the public.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 185,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "source": {
+        "oxford_url": "https://www.oxfordlearnersdictionaries.com/definition/english/public_2",
+        "oxford_access": "DIRECT_PUBLISHER_PAGE",
+        "oxford_lines": "88-123",
+        "cambridge_url": "https://dictionary.cambridge.org/dictionary/english/public",
+        "cambridge_access": "PUBLISHER_SEARCH_INDEX_ONLY_DIRECT_403",
+        "cambridge_level": "B1",
+        "cambridge_sense": "public noun (THE PUBLIC)",
+        "cefr_scope": "HIGHER_LEVEL_SAME_SENSE_B1_LEAD",
+        "observed_on": "2026-11-03"
+      },
+      "editorial_risk": "Cambridge indexes the noun 'the public' at B1, above provisional A2. Oxford People in society a2 is a topic label, not a headword exact-sense CEFR badge. Frozen example correctly uses 'the public'.",
+      "proposed_alternative": {
+        "english_definition": "Ordinary people in society, considered together.",
+        "burmese_meaning": "အများပြည်သူ၊ လူထုတစ်ရပ်လုံး",
+        "example_sentence": "The new park is open to the public."
+      },
+      "proposed_alternative_unapproved": true,
+      "editorial_hold": true,
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false
+    },
+    {
+      "word": "data",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "frozen": {
+        "english_definition": "Information collected for study or use.",
+        "burmese_meaning": "စုဆောင်းထားသော အချက်အလက်များ",
+        "example_sentence": "The team checked the data before writing the report.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 363,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "source": {
+        "oxford_url": "https://www.oxfordlearnersdictionaries.com/definition/english/data",
+        "oxford_access": "DIRECT_PUBLISHER_PAGE",
+        "oxford_lines": "88-128",
+        "cambridge_url": "https://dictionary.cambridge.org/dictionary/english/data",
+        "cambridge_access": "PUBLISHER_SEARCH_INDEX_ONLY_DIRECT_403",
+        "cambridge_level": "B2",
+        "cambridge_sense": "data noun (FACTS / INFORMATION)",
+        "cefr_scope": "HIGHER_LEVEL_SAME_SENSE_B2_LEAD",
+        "observed_on": "2026-11-03"
+      },
+      "editorial_risk": "Cambridge labels collected facts/information B2, above provisional A2. Oxford documents mass/plural treatment and British pronunciations /ˈdeɪtə/ and /ˈdɑːtə/; require one chosen George/Emma target and actual listening.",
+      "proposed_alternative": {
+        "english_definition": "Facts or information collected so that they can be studied or used to make decisions.",
+        "burmese_meaning": "လေ့လာဆန်းစစ်ရန် သို့မဟုတ် ဆုံးဖြတ်ချက်ချရန် စုဆောင်းထားသော အချက်အလက်များ",
+        "example_sentence": "The researchers checked the data before writing their report."
+      },
+      "proposed_alternative_unapproved": true,
+      "editorial_hold": true,
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false
+    },
+    {
+      "word": "police",
+      "level": "A2",
+      "part_of_speech": "plural noun",
+      "frozen": {
+        "english_definition": "The public service whose officers enforce the law and protect people.",
+        "burmese_meaning": "ရဲတပ်ဖွဲ့",
+        "example_sentence": "The police asked drivers to use another road.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 432,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "source": {
+        "oxford_url": "https://www.oxfordlearnersdictionaries.com/definition/english/police_1",
+        "oxford_access": "DIRECT_PUBLISHER_PAGE",
+        "oxford_lines": "88-116",
+        "cambridge_url": "https://dictionary.cambridge.org/dictionary/english/police",
+        "cambridge_access": "PUBLISHER_SEARCH_INDEX_ONLY_DIRECT_403",
+        "cambridge_level": "A2",
+        "cambridge_sense": "police noun [plural] (LAW ENFORCEMENT)",
+        "cefr_scope": "ALIGNED_A2_LEAD",
+        "observed_on": "2026-11-03"
+      },
+      "editorial_risk": "Cambridge A2 alignment lead. British plural agreement: 'The police are', not 'The police is'. Oxford Law and justice a1 is a topic label, not proof of a headword A1 badge.",
+      "proposed_alternative": {
+        "english_definition": "The organisation and officers responsible for enforcing the law and protecting people.",
+        "burmese_meaning": "ဥပဒေစိုးမိုးရေးနှင့် ပြည်သူများ၏ လုံခြုံရေးအတွက် တာဝန်ယူသော ရဲတပ်ဖွဲ့",
+        "example_sentence": "The police are investigating the accident."
+      },
+      "proposed_alternative_unapproved": true,
+      "editorial_hold": true,
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false
+    },
+    {
+      "word": "university",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "frozen": {
+        "english_definition": "An institution where people study for degrees and conduct research.",
+        "burmese_meaning": "တက္ကသိုလ်",
+        "example_sentence": "My sister studies engineering at university.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 427,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "source": {
+        "oxford_url": "https://www.oxfordlearnersdictionaries.com/definition/english/university",
+        "oxford_access": "DIRECT_PUBLISHER_PAGE",
+        "oxford_lines": "88-132",
+        "cambridge_url": "https://dictionary.cambridge.org/dictionary/english/university",
+        "cambridge_access": "PUBLISHER_SEARCH_INDEX_ONLY_DIRECT_403",
+        "cambridge_level": "A1",
+        "cambridge_sense": "university noun (DEGREE INSTITUTION)",
+        "cefr_scope": "LOWER_LEVEL_SAME_SENSE_A1_LEAD",
+        "observed_on": "2026-11-03"
+      },
+      "editorial_risk": "Cambridge A1 degree institution conflicts with provisional A2. Oxford directly supports British 'at university' without an article, contrasting with US 'in college'.",
+      "proposed_alternative": {
+        "english_definition": "A place of higher education where students study for degrees and may carry out research.",
+        "burmese_meaning": "ဘွဲ့ရရှိရန် အဆင့်မြင့်ပညာသင်ကြားပြီး သုတေသနလုပ်နိုင်သည့် တက္ကသိုလ်",
+        "example_sentence": "My brother is studying at university."
+      },
+      "proposed_alternative_unapproved": true,
+      "editorial_hold": true,
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false
+    }
+  ]
+}
