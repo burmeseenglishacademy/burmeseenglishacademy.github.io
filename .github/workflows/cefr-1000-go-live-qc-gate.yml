@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - draft/CEFR-1000-C1-SIX-DIRECT-OXFORD-RARE-SENSE-AND-CEFR-UNSUBSTANTIATED-2026-11-02.json
+      - tools/audit_cefr_1000_c1_six_direct_oxford_unsubstantiated.py
       - draft/CEFR-1000-C1-SIX-CAMBRIDGE-MANUFACTURER-COASTAL-DISABILITY-2026-11-02.json
       - tools/audit_cefr_1000_c1_six_cambridge_manufacturing_coast.py
       - draft/CEFR-1000-B1-FIVE-DEMAND-SUPPLY-FEATURE-APPLY-AUTHORITY-SENSE-TRIAGE-2026-11-02.json
@@ -446,6 +448,8 @@ jobs:
         run: python3 tools/audit_cefr_1000_b1_five_commercial_senses.py --level ALL --self-test
       - name: Reject synthetic six-card C1 indexed-source approval forgeries (NO DEPLOY)
         run: python3 tools/audit_cefr_1000_c1_six_cambridge_manufacturing_coast.py --level ALL --self-test
+      - name: Reject invented Oxford C1 exact-sense CEFR labels and false human receipts (NO DEPLOY)
+        run: python3 tools/audit_cefr_1000_c1_six_direct_oxford_unsubstantiated.py --level ALL --self-test
       - name: Report missing real approvals, voice listening, iPhone and hosting QC
         run: python3 tools/audit_cefr_1000_launch_readiness.py --report-only --self-test
       - name: Explicitly enforce ALL evidence if release candidate manually checked
