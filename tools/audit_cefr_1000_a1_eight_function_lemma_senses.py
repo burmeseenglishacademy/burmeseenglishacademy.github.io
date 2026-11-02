@@ -46,7 +46,7 @@ PUB_KEYS = {"publisher", "source_url", "related_source_url", "observed_on",
 ALTERNATIVE_KEYS = {"english_definition", "burmese_meaning", "example_sentence"}
 
 def blob_sha(raw):
-    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
 
 def load():
     raw = SHORTLIST.read_bytes()
@@ -163,7 +163,7 @@ def validate(packet, shortlist, original, level="ALL"):
                 require(isinstance(value, str) and len(value.strip()) >= 10,
                         word + " alternative " + k)
             require(alt != snapshot, word + " copied frozen alternative")
-            require(any("\\u1000" <= ch <= "\\u109f" for ch in alt.get("burmese_meaning", "")),
+            require(any("\u1000" <= ch <= "\u109f" for ch in alt.get("burmese_meaning", "")),
                     word + " Myanmar script missing")
         task = row.get("independent_reviewer_task")
         require(isinstance(task, str) and "Independently" in task
