@@ -1,0 +1,360 @@
+{
+  "schema": 1,
+  "scope": "USER_APPROVED_1000_TOTAL_A1_A2_B1_B2_C1_STAGING_ONLY",
+  "created_on": "2026-11-02",
+  "status": "INDEXED_CAMBRIDGE_EXACT_SENSE_TRIAGE_HUMAN_REVIEW_REQUIRED",
+  "frozen_shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "source_access_limitations": "Cambridge search-index publisher-page text visible in web search on 2026-11-02; direct page open attempts returned HTTP 403. Indexed headings and CEFR labels are provisional research leads, not direct publisher page verification or independent review.",
+  "count": 8,
+  "level": "B1",
+  "conflict_count": 7,
+  "alignment_count": 1,
+  "first_pass_written_by_level": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "independently_approved_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "headword_audio_listening_signoffs": 0,
+  "example_audio_listening_signoffs": 0,
+  "physical_iphone_safari_signoffs": 0,
+  "production_deployed": false,
+  "records": [
+    {
+      "word": "independent",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Not controlled by another person or organisation.",
+        "burmese_meaning": "အမှီအခိုကင်းသော၊ လွတ်လပ်သော",
+        "example_sentence": "The team made an independent decision."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 11,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/independent",
+        "observed_on": "2026-11-02",
+        "access": "SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "PUBLISHER_INDEXED_EXACT_SENSE_CEFR_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "sense_heading": "adjective NOT INFLUENCED",
+        "indexed_cefr": "B2"
+      },
+      "triage_status": "LEVEL_CONFLICT",
+      "editorial_note": "Frozen definition is freedom from control, matching Cambridge B2 NOT INFLUENCED; the Cambridge B1 adjective is a different NOT HELPED/financial-self-reliance sense. Do not transfer the B1 badge to this sense.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Not influenced or controlled by other people or organisations.",
+        "burmese_meaning": "အခြားသူများ၏ ထိန်းချုပ်မှု သို့မဟုတ် လွှမ်းမိုးမှုအောက်တွင် မရှိသော",
+        "example_sentence": "The committee reached an independent decision."
+      },
+      "independent_reviewer_task": "Independently open the publisher entry, confirm the exact part of speech and sense-specific CEFR badge, review fluent Myanmar and original example grammar; record a separate authenticated human receipt before any level move. George and Emma HEADWORD and EXAMPLE audio require genuine listening signoff after final text freeze.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "weekend",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Saturday and Sunday, when many people do not work.",
+        "burmese_meaning": "သီတင်းပတ်ကုန်",
+        "example_sentence": "We visited our grandparents at the weekend."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 12,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/weekend",
+        "observed_on": "2026-11-02",
+        "access": "SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "PUBLISHER_INDEXED_EXACT_SENSE_CEFR_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "sense_heading": "noun Saturday and Sunday",
+        "indexed_cefr": "A1"
+      },
+      "triage_status": "LEVEL_CONFLICT",
+      "editorial_note": "Cambridge's everyday Saturday-and-Sunday noun is A1, not provisional B1. The existing British at the weekend example is grammatical; do not manufacture an advanced sense to justify B1.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Saturday and Sunday, when many people have time away from work or school.",
+        "burmese_meaning": "သီတင်းပတ်ကုန် စနေနှင့် တနင်္ဂနွေနေ့များ",
+        "example_sentence": "We visit our grandparents at the weekend."
+      },
+      "independent_reviewer_task": "Independently open the publisher entry, confirm the exact part of speech and sense-specific CEFR badge, review fluent Myanmar and original example grammar; record a separate authenticated human receipt before any level move. George and Emma HEADWORD and EXAMPLE audio require genuine listening signoff after final text freeze.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "cash",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Money in the form of notes and coins.",
+        "burmese_meaning": "ငွေသား",
+        "example_sentence": "The small shop accepts cash only."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 14,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/learner-english/cash",
+        "observed_on": "2026-11-02",
+        "access": "SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "PUBLISHER_INDEXED_EXACT_SENSE_CEFR_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "sense_heading": "learner-English noun COINS",
+        "indexed_cefr": "A2"
+      },
+      "triage_status": "LEVEL_CONFLICT",
+      "editorial_note": "The frozen notes-and-coins definition matches Cambridge Learner's A2 COINS sense, not the broader B1 MONEY IN ANY FORM sense. Countability is uncountable.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Money in the form of coins and banknotes.",
+        "burmese_meaning": "ငွေစက္ကူနှင့် အကြွေစေ့များဖြင့်ရှိသော ငွေသား",
+        "example_sentence": "The shop accepts cash but not cards."
+      },
+      "independent_reviewer_task": "Independently open the publisher entry, confirm the exact part of speech and sense-specific CEFR badge, review fluent Myanmar and original example grammar; record a separate authenticated human receipt before any level move. George and Emma HEADWORD and EXAMPLE audio require genuine listening signoff after final text freeze.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "effort",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Physical or mental energy used to achieve something.",
+        "burmese_meaning": "ကြိုးစားအားထုတ်မှု",
+        "example_sentence": "Learning a language requires regular effort."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 17,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/effort",
+        "observed_on": "2026-11-02",
+        "access": "SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "PUBLISHER_INDEXED_EXACT_SENSE_CEFR_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "sense_heading": "noun physical or mental energy",
+        "indexed_cefr": "B1"
+      },
+      "triage_status": "INDEX_ALIGNMENT_LEAD",
+      "editorial_note": "Cambridge B1 energy/attempt sense aligns with frozen B1. Separate C2 be an effort idiom is not the frozen sense. Existing English and Burmese are plausible but remain unapproved.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Physical or mental energy used to achieve something.",
+        "burmese_meaning": "တစ်စုံတစ်ရာ အောင်မြင်စေရန် စိုက်ထုတ်ရသော ကိုယ်စိတ်အား",
+        "example_sentence": "Improving pronunciation takes time and effort."
+      },
+      "independent_reviewer_task": "Independently open the publisher entry, confirm the exact part of speech and sense-specific CEFR badge, review fluent Myanmar and original example grammar; record a separate authenticated human receipt before any level move. George and Emma HEADWORD and EXAMPLE audio require genuine listening signoff after final text freeze.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "civil",
+      "level": "B1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Connected with ordinary citizens rather than the military.",
+        "burmese_meaning": "အရပ်ဘက်ဆိုင်ရာ",
+        "example_sentence": "The group works to protect civil rights."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 51,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/civil",
+        "observed_on": "2026-11-02",
+        "access": "SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "PUBLISHER_INDEXED_EXACT_SENSE_CEFR_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "sense_heading": "adjective ORDINARY",
+        "indexed_cefr": "C1"
+      },
+      "triage_status": "LEVEL_AND_EXAMPLE_SENSE_CONFLICT",
+      "editorial_note": "Cambridge C1 ORDINARY contrasts ordinary citizens with military or religious bodies. Frozen example civil rights refers to citizens' rights, not necessarily the military-vs-civilian contrast; the example needs exact-sense alignment. Civil law is another distinct specialised sense.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Relating to ordinary citizens rather than the armed forces or religious organisations.",
+        "burmese_meaning": "စစ်ဘက် သို့မဟုတ် ဘာသာရေးအဖွဲ့အစည်းများထက် အရပ်သားပြည်သူများနှင့် သက်ဆိုင်သော",
+        "example_sentence": "The relief workers met the civil authorities."
+      },
+      "independent_reviewer_task": "Independently open the publisher entry, confirm the exact part of speech and sense-specific CEFR badge, review fluent Myanmar and original example grammar; record a separate authenticated human receipt before any level move. George and Emma HEADWORD and EXAMPLE audio require genuine listening signoff after final text freeze.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "ship",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A large boat used to carry people or goods across water.",
+        "burmese_meaning": "သင်္ဘော",
+        "example_sentence": "The ship arrived at the port this morning."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 55,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/ship",
+        "observed_on": "2026-11-02",
+        "access": "SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "PUBLISHER_INDEXED_EXACT_SENSE_CEFR_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "sense_heading": "noun BOAT",
+        "indexed_cefr": "A2"
+      },
+      "triage_status": "LEVEL_CONFLICT",
+      "editorial_note": "Cambridge labels the large sea-going boat noun A2; the shipping-goods verb and informal fan-relationship noun are distinct and must not be conflated.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "A large boat that carries people or goods across the sea.",
+        "burmese_meaning": "ပင်လယ်ပြင်တွင် လူများ သို့မဟုတ် ကုန်ပစ္စည်းများ သယ်ဆောင်သည့် သင်္ဘောကြီး",
+        "example_sentence": "The ship arrived at the port before sunrise."
+      },
+      "independent_reviewer_task": "Independently open the publisher entry, confirm the exact part of speech and sense-specific CEFR badge, review fluent Myanmar and original example grammar; record a separate authenticated human receipt before any level move. George and Emma HEADWORD and EXAMPLE audio require genuine listening signoff after final text freeze.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "operation",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An activity or set of activities involved in running something.",
+        "burmese_meaning": "လုပ်ငန်းဆောင်ရွက်မှု",
+        "example_sentence": "The warehouse operation begins at eight o'clock."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 93,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/operation",
+        "observed_on": "2026-11-02",
+        "access": "SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "PUBLISHER_INDEXED_EXACT_SENSE_CEFR_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "sense_heading": "noun WORK",
+        "indexed_cefr": "C1"
+      },
+      "triage_status": "LEVEL_AND_COUNTABILITY_CONFLICT",
+      "editorial_note": "Frozen warehouse-activity meaning corresponds to Cambridge WORK/business-operation C1, not the B1 medical-operation noun. Distinguish uncountable functioning from countable business organisation or planned activity.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "The work or activities involved in running an organisation or system.",
+        "burmese_meaning": "လုပ်ငန်း သို့မဟုတ် စနစ်တစ်ခု၏ လည်ပတ်ဆောင်ရွက်မှု",
+        "example_sentence": "The manager oversees the daily operation of the warehouse."
+      },
+      "independent_reviewer_task": "Independently open the publisher entry, confirm the exact part of speech and sense-specific CEFR badge, review fluent Myanmar and original example grammar; record a separate authenticated human receipt before any level move. George and Emma HEADWORD and EXAMPLE audio require genuine listening signoff after final text freeze.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "analysis",
+      "level": "B1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A careful examination of information to understand it.",
+        "burmese_meaning": "အသေးစိတ် ခွဲခြမ်းစိတ်ဖြာလေ့လာမှု",
+        "example_sentence": "The team completed an analysis of the survey results."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 99,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/analysis",
+        "observed_on": "2026-11-02",
+        "access": "SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "PUBLISHER_INDEXED_EXACT_SENSE_CEFR_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "sense_heading": "noun detailed examination",
+        "indexed_cefr": "B2"
+      },
+      "triage_status": "LEVEL_CONFLICT",
+      "editorial_note": "Cambridge labels the matching detailed-examination noun B2. Note countable/uncountable uses and irregular plural analyses; frozen example is grammatical.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "A detailed examination of information to understand it better.",
+        "burmese_meaning": "အချက်အလက်များကို အသေးစိတ် စိစစ်ခွဲခြမ်းလေ့လာခြင်း",
+        "example_sentence": "The team carried out an analysis of the survey results."
+      },
+      "independent_reviewer_task": "Independently open the publisher entry, confirm the exact part of speech and sense-specific CEFR badge, review fluent Myanmar and original example grammar; record a separate authenticated human receipt before any level move. George and Emma HEADWORD and EXAMPLE audio require genuine listening signoff after final text freeze.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
