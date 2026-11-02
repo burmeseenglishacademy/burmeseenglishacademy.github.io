@@ -33,7 +33,7 @@ REVIEW_FLAGS = ("english", "myanmar", "example", "cefr", "pronunciation",
 
 
 def blob_sha(raw):
-    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
 
 
 def read_pinned(path, expected_sha):
