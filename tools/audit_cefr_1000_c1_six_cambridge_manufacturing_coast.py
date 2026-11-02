@@ -44,7 +44,7 @@ def held(card, label):
     require(card.get("editorial_hold") is True, label + ": hold missing")
     require(card.get("independently_approved", False) is False, label + ": forged approval")
     for f in FLAGS:
-        require(card.get(f) is False, label + ": forged review flag " + f)
+        require(card.get(f, False) is False, label + ": forged review flag " + f)
 
 def validate(packet, shortlist, source):
     targets = {level: 200 for level in LEVELS}
