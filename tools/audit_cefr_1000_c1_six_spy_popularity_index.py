@@ -12,7 +12,7 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parents[1]
 PACKET = ROOT / "draft/CEFR-1000-C1-SIX-SPY-POPULARITY-NEUTRAL-SACRED-SIGNATURE-COPYRIGHT-INDEX-2026-11-02.json"
 SHORTLIST = ROOT / "draft/CEFR-1000-PROVISIONAL-SHORTLIST.json"
-PACKET_SHA = "b7068e4862e09d7ad5fdbef4dcce84934f505b93"
+PACKET_SHA = "26c52a26f541c65ede562c89e5d9ee9754722e87"
 SHORTLIST_SHA = "475e68ae17ab97bd937e73e5ce4794e0dcd76551"
 LEVELS = ("A1", "A2", "B1", "B2", "C1")
 EXPECTED = {
@@ -137,6 +137,11 @@ def selftest(packet, shortlist):
    if field == "indexed_cefr" and item["word"] in ("neutral","sacred"):
     p["entries"][index]["publisher_evidence"][field] = "B2"
    reject(p, shortlist, item["word"] + "/" + field)
+  for context_key in ("indexed_exact_sense", "other_sense_warning"):
+   for bad_value in ("", "B2 noun"):
+    p = copy.deepcopy(packet)
+    p["entries"][index]["publisher_evidence"][context_key] = bad_value
+    reject(p, shortlist, item["word"] + "/" + context_key + "/missing_or_truncated")
   p = copy.deepcopy(packet); p["entries"][index]["original"]["burmese_meaning"] = "မမှန်ကန်"
   reject(p, shortlist, item["word"] + "/original")
   p = copy.deepcopy(packet); p["entries"][index]["editorial_hold"] = False
