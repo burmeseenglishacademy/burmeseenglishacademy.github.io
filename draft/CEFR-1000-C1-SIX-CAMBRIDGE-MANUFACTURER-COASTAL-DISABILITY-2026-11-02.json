@@ -1,0 +1,353 @@
+{
+  "schema": 1,
+  "created_on": "2026-11-02",
+  "scope": "USER_APPROVED_1000_TOTAL_NOT_5000",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "release_status": "STAGING_EDITORIAL_HOLD_DO_NOT_PUBLISH",
+  "shortlist_path": "draft/CEFR-1000-PROVISIONAL-SHORTLIST.json",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "counts_by_level": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "independently_approved_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "source_limitations": "Cambridge publisher search-index snippets were observed 2026-11-02. Direct Cambridge page requests returned HTTP 403. Indexed CEFR labels are research leads, not independently checked exact-sense classification or independent English/Myanmar/example verification. All six alternatives are unapproved; no audio was listened to.",
+  "research_record_count": 6,
+  "conflict_count": 3,
+  "alignment_control_count": 3,
+  "records": [
+    {
+      "word": "manufacturer",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "source_index": 457,
+      "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc",
+      "frozen_original": {
+        "word": "manufacturer",
+        "level": "C1",
+        "part_of_speech": "noun",
+        "english_definition": "A company or person that makes goods, usually in large quantities.",
+        "burmese_meaning": "ကုန်ပစ္စည်းထုတ်လုပ်သူ၊ ထုတ်လုပ်ရေးကုမ္ပဏီ",
+        "example_sentence": "The manufacturer recalled the product after discovering a defect.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 457,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc",
+        "editorial_hold": true,
+        "reviewed_english": false,
+        "reviewed_burmese": false,
+        "reviewed_example": false,
+        "reviewed_level": false,
+        "reviewed_pronunciation": false,
+        "release_approved": false,
+        "source_english": "",
+        "source_burmese": "",
+        "source_level": "",
+        "status": "PROVISIONAL_SHORTLIST_INDEPENDENT_REVIEW_PENDING"
+      },
+      "cambridge": {
+        "publisher": "Cambridge Dictionary, Advanced Learner's Dictionary",
+        "url": "https://dictionary.cambridge.org/dictionary/english/manufacturer",
+        "observed_on": "2026-11-02",
+        "access": "SEARCH_INDEX_SNIPPET_ONLY_DIRECT_PAGE_HTTP_403",
+        "indexed_cefr": "B2",
+        "indexed_pos": "noun",
+        "exact_sense_risk": "C1_VS_INDEXED_B2_MANUFACTURING_COMPANY",
+        "editorial_observation": "Cambridge indexed B2 countable noun is a goods-producing company; frozen 'company or person' is broader than the labelled sense. Review whether person sense is intended."
+      },
+      "unapproved_teaching_alternative": {
+        "english_definition": "A business that makes products, especially in large quantities.",
+        "burmese_meaning": "ကုန်ပစ္စည်းများကို အများအပြား ထုတ်လုပ်သည့် ကုမ္ပဏီ",
+        "example_sentence": "The manufacturer replaced the defective parts without charging customers."
+      },
+      "editorial_hold": true,
+      "independently_approved": false,
+      "review_needed": [
+        "English exact-sense and grammar",
+        "fluent Myanmar meaning",
+        "original example naturalness",
+        "independent source-backed CEFR level",
+        "British George/Emma headword and example audio listening"
+      ],
+      "status": "RESEARCH_LEAD_NOT_HUMAN_REVIEWED"
+    },
+    {
+      "word": "coastal",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "source_index": 729,
+      "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc",
+      "frozen_original": {
+        "word": "coastal",
+        "level": "C1",
+        "part_of_speech": "adjective",
+        "english_definition": "Situated near or relating to the sea coast.",
+        "burmese_meaning": "ကမ်းရိုးတန်းနှင့်ဆိုင်သော",
+        "example_sentence": "Coastal communities are preparing for stronger storms.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 729,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc",
+        "editorial_hold": true,
+        "reviewed_english": false,
+        "reviewed_burmese": false,
+        "reviewed_example": false,
+        "reviewed_level": false,
+        "reviewed_pronunciation": false,
+        "release_approved": false,
+        "source_english": "",
+        "source_burmese": "",
+        "source_level": "",
+        "status": "PROVISIONAL_SHORTLIST_INDEPENDENT_REVIEW_PENDING"
+      },
+      "cambridge": {
+        "publisher": "Cambridge Dictionary, Advanced Learner's Dictionary",
+        "url": "https://dictionary.cambridge.org/dictionary/english/coastal",
+        "observed_on": "2026-11-02",
+        "access": "SEARCH_INDEX_SNIPPET_ONLY_DIRECT_PAGE_HTTP_403",
+        "indexed_cefr": "B2",
+        "indexed_pos": "adjective",
+        "exact_sense_risk": "C1_VS_INDEXED_B2_NEAR_SEA",
+        "editorial_observation": "Cambridge indexed B2 adjective covers location on/near or relation to a coast. Frozen C1 sense/example appears aligned with this B2 meaning."
+      },
+      "unapproved_teaching_alternative": {
+        "english_definition": "Located near the sea or connected with the coast.",
+        "burmese_meaning": "ပင်လယ်ကမ်းရိုးတန်းအနီးရှိသော၊ ကမ်းရိုးတန်းနှင့် သက်ဆိုင်သော",
+        "example_sentence": "Coastal villages received warnings before the storm arrived."
+      },
+      "editorial_hold": true,
+      "independently_approved": false,
+      "review_needed": [
+        "English exact-sense and grammar",
+        "fluent Myanmar meaning",
+        "original example naturalness",
+        "independent source-backed CEFR level",
+        "British George/Emma headword and example audio listening"
+      ],
+      "status": "RESEARCH_LEAD_NOT_HUMAN_REVIEWED"
+    },
+    {
+      "word": "disability",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "source_index": 456,
+      "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc",
+      "frozen_original": {
+        "word": "disability",
+        "level": "C1",
+        "part_of_speech": "noun",
+        "english_definition": "A physical or mental condition that can affect a person's ability to do certain activities.",
+        "burmese_meaning": "မသန်စွမ်းမှု၊ လုပ်ဆောင်နိုင်စွမ်းကို ထိခိုက်စေနိုင်သော အခြေအနေ",
+        "example_sentence": "The company improved access for people with a disability.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 456,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc",
+        "editorial_hold": true,
+        "reviewed_english": false,
+        "reviewed_burmese": false,
+        "reviewed_example": false,
+        "reviewed_level": false,
+        "reviewed_pronunciation": false,
+        "release_approved": false,
+        "source_english": "",
+        "source_burmese": "",
+        "source_level": "",
+        "status": "PROVISIONAL_SHORTLIST_INDEPENDENT_REVIEW_PENDING"
+      },
+      "cambridge": {
+        "publisher": "Cambridge Dictionary, Advanced Learner's Dictionary",
+        "url": "https://dictionary.cambridge.org/dictionary/english/disability",
+        "observed_on": "2026-11-02",
+        "access": "SEARCH_INDEX_SNIPPET_ONLY_DIRECT_PAGE_HTTP_403",
+        "indexed_cefr": "B2",
+        "indexed_pos": "noun",
+        "exact_sense_risk": "C1_VS_INDEXED_B2_CONDITION",
+        "editorial_observation": "Cambridge indexed B2 condition sense; frozen C1 meaning is similar but 'can affect' may understate an actual functional limitation. Independently review person-first wording and avoid implying all disabilities are visible."
+      },
+      "unapproved_teaching_alternative": {
+        "english_definition": "A long-term condition that can make certain activities harder for a person.",
+        "burmese_meaning": "အချို့သော လှုပ်ရှားလုပ်ဆောင်မှုများကို ခက်ခဲစေနိုင်သည့် ရေရှည် မသန်စွမ်းမှုအခြေအနေ",
+        "example_sentence": "The museum added ramps to improve access for visitors with disabilities."
+      },
+      "editorial_hold": true,
+      "independently_approved": false,
+      "review_needed": [
+        "English exact-sense and grammar",
+        "fluent Myanmar meaning",
+        "original example naturalness",
+        "independent source-backed CEFR level",
+        "British George/Emma headword and example audio listening"
+      ],
+      "status": "RESEARCH_LEAD_NOT_HUMAN_REVIEWED"
+    },
+    {
+      "word": "permit",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "source_index": 569,
+      "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc",
+      "frozen_original": {
+        "word": "permit",
+        "level": "C1",
+        "part_of_speech": "noun",
+        "english_definition": "An official document giving permission for a particular activity.",
+        "burmese_meaning": "တရားဝင်ခွင့်ပြုချက်လက်မှတ်",
+        "example_sentence": "The contractor applied for a permit before starting work.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 569,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc",
+        "editorial_hold": true,
+        "reviewed_english": false,
+        "reviewed_burmese": false,
+        "reviewed_example": false,
+        "reviewed_level": false,
+        "reviewed_pronunciation": false,
+        "release_approved": false,
+        "source_english": "",
+        "source_burmese": "",
+        "source_level": "",
+        "status": "PROVISIONAL_SHORTLIST_INDEPENDENT_REVIEW_PENDING"
+      },
+      "cambridge": {
+        "publisher": "Cambridge Dictionary, Advanced Learner's Dictionary",
+        "url": "https://dictionary.cambridge.org/dictionary/english/permit",
+        "observed_on": "2026-11-02",
+        "access": "SEARCH_INDEX_SNIPPET_ONLY_DIRECT_PAGE_HTTP_403",
+        "indexed_cefr": "C1",
+        "indexed_pos": "noun",
+        "exact_sense_risk": "C1_INDEXED_NOUN_ALIGNMENT_HETERONYM",
+        "editorial_observation": "Cambridge noun document sense C1; verb 'allow' B1 and verb 'make possible' C1 are separate. British noun /ˈpɜː.mɪt/ versus verb /pəˈmɪt/ requires separate real audio listening; a shared headword clip is unsafe without POS."
+      },
+      "unapproved_teaching_alternative": {
+        "english_definition": "An official document that allows someone to do a particular activity or enter a place.",
+        "burmese_meaning": "တစ်စုံတစ်ရာ ပြုလုပ်ရန် သို့မဟုတ် နေရာတစ်ခုသို့ ဝင်ရောက်ရန် တရားဝင် ခွင့်ပြုထားသည့် စာရွက်စာတမ်း",
+        "example_sentence": "The builder must obtain a permit before beginning construction."
+      },
+      "editorial_hold": true,
+      "independently_approved": false,
+      "review_needed": [
+        "English exact-sense and grammar",
+        "fluent Myanmar meaning",
+        "original example naturalness",
+        "independent source-backed CEFR level",
+        "British George/Emma headword and example audio listening"
+      ],
+      "status": "RESEARCH_LEAD_NOT_HUMAN_REVIEWED"
+    },
+    {
+      "word": "transaction",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "source_index": 458,
+      "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc",
+      "frozen_original": {
+        "word": "transaction",
+        "level": "C1",
+        "part_of_speech": "noun",
+        "english_definition": "An occasion when money, goods, or services are exchanged.",
+        "burmese_meaning": "ငွေကြေး သို့မဟုတ် ကုန်ပစ္စည်း အရောင်းအဝယ်ပြုလုပ်မှု",
+        "example_sentence": "The bank sent a receipt for the transaction.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 458,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc",
+        "editorial_hold": true,
+        "reviewed_english": false,
+        "reviewed_burmese": false,
+        "reviewed_example": false,
+        "reviewed_level": false,
+        "reviewed_pronunciation": false,
+        "release_approved": false,
+        "source_english": "",
+        "source_burmese": "",
+        "source_level": "",
+        "status": "PROVISIONAL_SHORTLIST_INDEPENDENT_REVIEW_PENDING"
+      },
+      "cambridge": {
+        "publisher": "Cambridge Dictionary, Advanced Learner's Dictionary",
+        "url": "https://dictionary.cambridge.org/dictionary/english/transaction",
+        "observed_on": "2026-11-02",
+        "access": "SEARCH_INDEX_SNIPPET_ONLY_DIRECT_PAGE_HTTP_403",
+        "indexed_cefr": "C1",
+        "indexed_pos": "noun",
+        "exact_sense_risk": "C1_INDEXED_COMMERCE_ALIGNMENT",
+        "editorial_observation": "Cambridge indexed C1 buying/selling or money-exchange sense matches the bank example. Frozen 'goods or services exchanged' could be broader than publisher CEFR-labelled buying/selling/money scope."
+      },
+      "unapproved_teaching_alternative": {
+        "english_definition": "An occasion when someone buys or sells something or money is transferred.",
+        "burmese_meaning": "ကုန်ပစ္စည်း အရောင်းအဝယ်ပြုလုပ်ခြင်း သို့မဟုတ် ငွေကြေး လွှဲပြောင်းခြင်းတစ်ကြိမ်",
+        "example_sentence": "The bank recorded the transaction immediately after the transfer."
+      },
+      "editorial_hold": true,
+      "independently_approved": false,
+      "review_needed": [
+        "English exact-sense and grammar",
+        "fluent Myanmar meaning",
+        "original example naturalness",
+        "independent source-backed CEFR level",
+        "British George/Emma headword and example audio listening"
+      ],
+      "status": "RESEARCH_LEAD_NOT_HUMAN_REVIEWED"
+    },
+    {
+      "word": "probability",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "source_index": 660,
+      "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc",
+      "frozen_original": {
+        "word": "probability",
+        "level": "C1",
+        "part_of_speech": "noun",
+        "english_definition": "The likelihood that an event will happen.",
+        "burmese_meaning": "ဖြစ်ပေါ်နိုင်ခြေ",
+        "example_sentence": "The probability of rain is higher in the afternoon.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 660,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc",
+        "editorial_hold": true,
+        "reviewed_english": false,
+        "reviewed_burmese": false,
+        "reviewed_example": false,
+        "reviewed_level": false,
+        "reviewed_pronunciation": false,
+        "release_approved": false,
+        "source_english": "",
+        "source_burmese": "",
+        "source_level": "",
+        "status": "PROVISIONAL_SHORTLIST_INDEPENDENT_REVIEW_PENDING"
+      },
+      "cambridge": {
+        "publisher": "Cambridge Dictionary, Advanced Learner's Dictionary",
+        "url": "https://dictionary.cambridge.org/dictionary/english/probability",
+        "observed_on": "2026-11-02",
+        "access": "SEARCH_INDEX_SNIPPET_ONLY_DIRECT_PAGE_HTTP_403",
+        "indexed_cefr": "C1",
+        "indexed_pos": "noun",
+        "exact_sense_risk": "C1_INDEXED_LIKELIHOOD_ALIGNMENT",
+        "editorial_observation": "Cambridge indexed C1 likelihood sense aligns with frozen example. Distinguish a chance/likelihood from a mathematically computed probability and from the C2 phrase 'in all probability'."
+      },
+      "unapproved_teaching_alternative": {
+        "english_definition": "How likely it is that something will happen or be true.",
+        "burmese_meaning": "အဖြစ်အပျက်တစ်ခု ဖြစ်ပေါ်လာနိုင်သည့် အလားအလာအတိုင်းအတာ",
+        "example_sentence": "The team estimated the probability of delays during the rainy season."
+      },
+      "editorial_hold": true,
+      "independently_approved": false,
+      "review_needed": [
+        "English exact-sense and grammar",
+        "fluent Myanmar meaning",
+        "original example naturalness",
+        "independent source-backed CEFR level",
+        "British George/Emma headword and example audio listening"
+      ],
+      "status": "RESEARCH_LEAD_NOT_HUMAN_REVIEWED"
+    }
+  ]
+}
