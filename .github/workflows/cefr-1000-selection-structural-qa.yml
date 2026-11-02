@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - draft/CEFR-1000-A1-EIGHT-THANK-BE-DO-I-WAKE-LEMMA-SENSE-2026-11-02.json
+      - tools/audit_cefr_1000_a1_eight_function_lemma_senses.py
       - draft/CEFR-1000-B2-SIX-SINGER-STEAM-COMMANDER-EXACT-WISE-MONTHLY-INDEXED-2026-11-02.json
       - tools/audit_cefr_1000_b2_six_singer_commander_indexed.py
       - draft/CEFR-1000-C1-SIX-METICULOUS-SCRUTINIZE-DIRECT-OXFORD-CAMBRIDGE-C2-2026-11-02.json
@@ -1035,6 +1037,11 @@ jobs:
       - name: Reject forged B1 index, bilingual, human, audio and device approvals
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_b1_eight_foundational_indexed.py --level ALL --self-test
+      - name: Audit eight held A1 function-word and inflected-lemma research leads (NO APPROVAL)
+        run: python3 tools/audit_cefr_1000_a1_eight_function_lemma_senses.py --level "${{ matrix.level }}"
+      - name: Reject synthetic A1 grammar/CEFR, bilingual, audio and device signoff forgeries
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_a1_eight_function_lemma_senses.py --level ALL --self-test
       - name: Audit six held B2 Cambridge-indexed exact-sense and provenance leads (NO APPROVAL)
         run: python3 tools/audit_cefr_1000_b2_six_singer_commander_indexed.py --level "${{ matrix.level }}"
       - name: Reject synthetic six-card B2 publisher and human/audio/device approval forgeries
