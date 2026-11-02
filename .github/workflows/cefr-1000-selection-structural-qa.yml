@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - draft/CEFR-1000-C1-SIX-SPY-POPULARITY-NEUTRAL-SACRED-SIGNATURE-COPYRIGHT-INDEX-2026-11-02.json
+      - tools/audit_cefr_1000_c1_six_spy_popularity_index.py
       - draft/CEFR-1000-C1-EIGHT-DIRECT-OXFORD-DICHOTOMY-EPHEMERAL-SENSE-TRIAGE-2026-11-02.json
       - tools/audit_cefr_1000_c1_eight_dichotomy_ephemeral.py
       - draft/CEFR-1000-B2-SEVEN-QUOTE-TIE-RAW-LIFT-SHOCK-SILENCE-CABINET-EXACT-SENSE-2026-11-02.json
@@ -998,6 +1000,11 @@ jobs:
       - name: Reject forged eight-card Oxford source, CEFR, translation and human signoff evidence
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_c1_eight_dichotomy_ephemeral.py --level ALL --self-test
+      - name: Audit six C1 Cambridge-indexed held exact senses without approval
+        run: python3 tools/audit_cefr_1000_c1_six_spy_popularity_index.py --level "${{ matrix.level }}"
+      - name: Reject forged C1 publisher access, source labels, Myanmar and human signoffs
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_c1_six_spy_popularity_index.py --level ALL --self-test
       - name: Reject spoofed publisher dictionary paths in independent CEFR review receipts
         run: python3 tests/cefr-1000-independent-stage-source-binding.py
       - name: Save structural QA record (not linguistic verification)
