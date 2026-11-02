@@ -1,0 +1,332 @@
+{
+  "schema": 1,
+  "scope": "USER_APPROVED_1000_TOTAL_A1_A2_B1_B2_C1_STAGING_ONLY",
+  "created_on": "2026-11-02",
+  "status": "DIRECT_OXFORD_AND_INDEXED_CAMBRIDGE_C1_SENSE_TRIAGE_HUMAN_REVIEW_REQUIRED",
+  "frozen_shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "source_access_limitations": "Oxford Advanced Learner's Dictionary headword pages were directly opened 2026-11-02; Cambridge Dictionary CEFR snippets were visible in publisher search-index results, but direct Cambridge opens returned HTTP 403. Cambridge indexed C2 labels are research leads, not direct publisher-page verification and not independent human review. Oxford topic c2 and unrelated page footer labels are not exact-sense CEFR badges.",
+  "count": 6,
+  "level": "C1",
+  "indexed_c2_conflicts": 3,
+  "unsubstantiated_c1": 3,
+  "first_pass_written_by_level": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "independently_approved_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "headword_audio_listening_signoffs": 0,
+  "example_audio_listening_signoffs": 0,
+  "physical_iphone_safari_signoffs": 0,
+  "production_deployed": false,
+  "records": [
+    {
+      "word": "meticulous",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Extremely careful about small details and accuracy.",
+        "burmese_meaning": "အသေးစိတ်အချက်များနှင့် တိကျမှုကို အလွန်ဂရုစိုက်သော",
+        "example_sentence": "Her meticulous records helped the auditors trace every payment."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 40,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "oxford_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/meticulous",
+        "observed_on": "2026-11-02",
+        "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-114",
+        "uk_ipa": "/məˈtɪkjələs/",
+        "observed_sense_paraphrase": "Adjective, approving: extremely careful with details; the nearby Personal qualities c2 is a TOPIC label, not a separately observed exact-sense C1 badge.",
+        "exact_sense_c1_badge_observed": false
+      },
+      "cambridge_observation": {
+        "publisher": "Cambridge Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/meticulous",
+        "observed_on": "2026-11-02",
+        "access": "PUBLISHER_SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "INDEXED_CEFR_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "indexed_cefr": "C2"
+      },
+      "triage_status": "C2_CONFLICT",
+      "editorial_note": "Cambridge search-index text labels the matching detail-careful adjective C2. Oxford's Personal qualities c2 is a topic label and must not be represented as a C1 exact-sense badge. This candidate cannot be approved for the C1-only scope without independent level adjudication.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Giving very careful attention to each detail of a task.",
+        "burmese_meaning": "အလုပ်တစ်ခု၏ အသေးစိတ်အချက်တိုင်းကို အလွန်ဂရုတစိုက် ဆောင်ရွက်သော",
+        "example_sentence": "The meticulous engineer checked every measurement twice."
+      },
+      "independent_reviewer_task": "Independently inspect exact headword/POS/sense and CEFR source, check fluent Myanmar and original example grammar, and supply authenticated human receipt. After text freeze, listen to both George and Emma HEADWORD and EXAMPLE recordings; physical iPhone Safari review is separate.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "mitigate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To make the harmful effects of something less serious.",
+        "burmese_meaning": "အရာတစ်ခု၏ ဆိုးကျိုးသက်ရောက်မှုများကို လျော့နည်းစေသည်",
+        "example_sentence": "Planting trees can help mitigate extreme summer heat."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 41,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "oxford_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/mitigate",
+        "observed_on": "2026-11-02",
+        "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-124",
+        "uk_ipa": "/ˈmɪtɪɡeɪt/",
+        "observed_sense_paraphrase": "Formal transitive verb: reduce the severity or harmful effects of something, not eliminate it entirely.",
+        "exact_sense_c1_badge_observed": false
+      },
+      "cambridge_observation": {
+        "publisher": "Cambridge Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/mitigate",
+        "observed_on": "2026-11-02",
+        "access": "PUBLISHER_SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "INDEXED_CEFR_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "indexed_cefr": null
+      },
+      "triage_status": "UNSUBSTANTIATED_C1",
+      "editorial_note": "Oxford directly supports a transitive reduce-harm sense, while Cambridge search-index text supplies the meaning but no observed CEFR badge. Do not mistake Oxford's unrelated Word of the Day B2 footer for a level assigned to mitigate; no exact-sense C1 proof exists.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "To make a harmful effect or serious problem less severe.",
+        "burmese_meaning": "ထိခိုက်မှု သို့မဟုတ် ပြဿနာ၏ ပြင်းထန်မှုကို လျော့ပါးစေသည်",
+        "example_sentence": "Shade trees can mitigate the effects of extreme heat."
+      },
+      "independent_reviewer_task": "Independently inspect exact headword/POS/sense and CEFR source, check fluent Myanmar and original example grammar, and supply authenticated human receipt. After text freeze, listen to both George and Emma HEADWORD and EXAMPLE recordings; physical iPhone Safari review is separate.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "nuanced",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Showing awareness of small but important differences.",
+        "burmese_meaning": "သေးငယ်သော်လည်း အရေးပါသော ကွာခြားချက်များကို ထည့်သွင်းစဉ်းစားထားသော",
+        "example_sentence": "The report offers a nuanced view of migration patterns."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 42,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "oxford_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/nuanced",
+        "observed_on": "2026-11-02",
+        "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-107",
+        "uk_ipa": "/ˈnjuːɑːnst/",
+        "observed_sense_paraphrase": "Adjective: showing subtle distinctions in meaning, expression or judgement; not merely complicated.",
+        "exact_sense_c1_badge_observed": false
+      },
+      "cambridge_observation": {
+        "publisher": "Cambridge Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/nuanced",
+        "observed_on": "2026-11-02",
+        "access": "PUBLISHER_SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "INDEXED_CEFR_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "indexed_cefr": null
+      },
+      "triage_status": "UNSUBSTANTIATED_C1",
+      "editorial_note": "Oxford directly supports subtle differences; the frozen definition emphasises awareness of important distinctions, which is plausible but must be checked against the example. Cambridge indexed entry lacks an observed CEFR badge, so a C1 claim remains unsupported.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Recognising and expressing small but meaningful differences.",
+        "burmese_meaning": "သေးငယ်သော်လည်း အဓိပ္ပာယ်ရှိသော ကွာခြားချက်များကို သေချာဖော်ပြထားသော",
+        "example_sentence": "The researchers gave a nuanced account of the findings."
+      },
+      "independent_reviewer_task": "Independently inspect exact headword/POS/sense and CEFR source, check fluent Myanmar and original example grammar, and supply authenticated human receipt. After text freeze, listen to both George and Emma HEADWORD and EXAMPLE recordings; physical iPhone Safari review is separate.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "pragmatic",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Focused on practical solutions rather than abstract ideals.",
+        "burmese_meaning": "သဘောတရားသက်သက်ထက် လက်တွေ့ကျသော ဖြေရှင်းနည်းများကို အလေးထားသော",
+        "example_sentence": "They took a pragmatic approach to the budget shortage."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 43,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "oxford_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/pragmatic",
+        "observed_on": "2026-11-02",
+        "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-123",
+        "uk_ipa": "/præɡˈmætɪk/",
+        "observed_sense_paraphrase": "Adjective: practical, sensible problem-solving adapted to real conditions rather than fixed theory.",
+        "exact_sense_c1_badge_observed": false
+      },
+      "cambridge_observation": {
+        "publisher": "Cambridge Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/pragmatic",
+        "observed_on": "2026-11-02",
+        "access": "PUBLISHER_SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "INDEXED_CEFR_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "indexed_cefr": "C2"
+      },
+      "triage_status": "C2_CONFLICT",
+      "editorial_note": "Cambridge search-index text explicitly labels the matching practical-solution adjective C2, conflicting with the frozen C1 placement. Oxford directly supports the sense but provides no observed C1 exact-sense badge; do not confuse pragmatic with pragmatics or transfer unrelated footer labels.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Choosing practical solutions that suit real circumstances.",
+        "burmese_meaning": "လက်တွေ့အခြေအနေနှင့် ကိုက်ညီသော ဖြေရှင်းနည်းများကို ဦးစားပေးသော",
+        "example_sentence": "The team chose a pragmatic way to reduce costs."
+      },
+      "independent_reviewer_task": "Independently inspect exact headword/POS/sense and CEFR source, check fluent Myanmar and original example grammar, and supply authenticated human receipt. After text freeze, listen to both George and Emma HEADWORD and EXAMPLE recordings; physical iPhone Safari review is separate.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "precedent",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "An earlier event or decision used as a guide for a similar situation.",
+        "burmese_meaning": "အလားတူအခြေအနေတွင် စံနမူနာအဖြစ် အသုံးပြုသည့် ယခင်ဖြစ်ရပ် သို့မဟုတ် ဆုံးဖြတ်ချက်",
+        "example_sentence": "The ruling set a precedent for later cases."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 44,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "oxford_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/precedent",
+        "observed_on": "2026-11-02",
+        "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-155",
+        "uk_ipa": "/ˈpresɪdənt/",
+        "observed_sense_paraphrase": "Countable noun: a previous decision or action used as an example or rule; distinguish historical example from binding legal precedent and uncountable custom.",
+        "exact_sense_c1_badge_observed": false
+      },
+      "cambridge_observation": {
+        "publisher": "Cambridge Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/precedent",
+        "observed_on": "2026-11-02",
+        "access": "PUBLISHER_SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "INDEXED_CEFR_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "indexed_cefr": "C2"
+      },
+      "triage_status": "C2_CONFLICT",
+      "editorial_note": "Cambridge search-index text marks the matching countable prior-decision noun C2. Oxford also lists a general historical-event sense and uncountable established custom, so the frozen broad definition/example require exact-sense reconciliation and an independent C1-vs-C2 decision.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "An earlier decision or action used as a model in a later similar case.",
+        "burmese_meaning": "နောက်ပိုင်း အလားတူကိစ္စများအတွက် စံနမူနာအဖြစ် ယူသုံးသော ယခင်ဆုံးဖြတ်ချက် သို့မဟုတ် လုပ်ရပ်",
+        "example_sentence": "The court decision established a precedent for future disputes."
+      },
+      "independent_reviewer_task": "Independently inspect exact headword/POS/sense and CEFR source, check fluent Myanmar and original example grammar, and supply authenticated human receipt. After text freeze, listen to both George and Emma HEADWORD and EXAMPLE recordings; physical iPhone Safari review is separate.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false,
+      "independent_reviewer_receipt": null
+    },
+    {
+      "word": "scrutinize",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To examine something very carefully to find important details or problems.",
+        "burmese_meaning": "အရေးပါသော အသေးစိတ်အချက်များ သို့မဟုတ် ပြဿနာများကို ရှာဖွေရန် သေချာစွာ စစ်ဆေးသည်",
+        "example_sentence": "Inspectors scrutinize every safety report before approval."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 45,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "oxford_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/scrutinize",
+        "observed_on": "2026-11-02",
+        "access": "DIRECT_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-125",
+        "uk_ipa": "/ˈskruːtənaɪz/",
+        "observed_sense_paraphrase": "Transitive verb: examine somebody or something very closely; Oxford notes scrutinise as another British spelling.",
+        "exact_sense_c1_badge_observed": false
+      },
+      "cambridge_observation": {
+        "publisher": "Cambridge Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/scrutinize",
+        "observed_on": "2026-11-02",
+        "access": "PUBLISHER_SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "INDEXED_CEFR_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "indexed_cefr": null
+      },
+      "triage_status": "UNSUBSTANTIATED_C1",
+      "editorial_note": "Oxford directly confirms the transitive examination sense and British spelling scrutinise; Cambridge indexed text contains no observed exact-sense CEFR badge. A pronunciation/orthography reviewer must decide whether the displayed British teaching headword should use scrutinise without silently changing the frozen list.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "To examine a person, document or situation very carefully.",
+        "burmese_meaning": "လူတစ်ဦး၊ စာရွက်စာတမ်း သို့မဟုတ် အခြေအနေတစ်ခုကို အလွန်စေ့စပ်စွာ စစ်ဆေးသည်",
+        "example_sentence": "Auditors scrutinize the figures before signing the report."
+      },
+      "independent_reviewer_task": "Independently inspect exact headword/POS/sense and CEFR source, check fluent Myanmar and original example grammar, and supply authenticated human receipt. After text freeze, listen to both George and Emma HEADWORD and EXAMPLE recordings; physical iPhone Safari review is separate.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false,
+      "independent_reviewer_receipt": null
+    }
+  ]
+}
