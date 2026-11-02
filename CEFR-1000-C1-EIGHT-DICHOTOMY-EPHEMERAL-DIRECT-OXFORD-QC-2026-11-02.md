@@ -39,3 +39,9 @@ Wired the auditor into six parallel A1/A2/B1/B2/C1/ALL structural lanes, with sy
 | **Total** | **1,000** | **0** |
 
 **Still blocked:** independently approved English/Myanmar/examples/exact-sense CEFR, approved release manifest, final British George/Emma headword+example audio and real listening receipts, browser/mobile regression, physical iPhone Safari review, measured GitHub Pages hosting readiness, confirmed production deployment and protected production asset readback. **STAGING ONLY; no merge, main edit or publication.**
+
+## Verified GitHub Actions — 2 November 2026
+
+- [Parallel structural run **41394722700**](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41394722700) completed **SUCCESS in all six A1/A2/B1/B2/C1/ALL jobs** at SHA `9861118539ad574a6695b3a3c6c78e493ce1ac69`. Actual ALL job **125113472705** logs show **236/236 synthetic source, Myanmar, grammar, CEFR, reviewer and release mutations rejected**; ALL artifact **13118462663**. Actual C1 job **125113472822** also confirms eight frozen C1 source-bound cards checked with zero approvals.
+- [Documentary no-deployment run **41394736038**](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41394736038) completed **SUCCESS** at SHA `64766a2accd88d26cfdf45d19e40a44e4d6802f8`. Actual job **125113512438** logs confirm **236/236** synthetic rejections, **0/1,000 independent review packets**, missing real audio listening/mobile/physical iPhone/hosting/release evidence, and **PASS: protected production assets untouched by staging migration**. Blocker artifact **13118573755**.
+- A green *documentary/report-only* workflow means that blocking evidence was correctly reported; it **does not mean release readiness passed**. No merge, main modification, publication, iPhone test, independent review or listening claim occurred.
