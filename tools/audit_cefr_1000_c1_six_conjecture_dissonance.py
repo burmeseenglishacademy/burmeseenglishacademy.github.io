@@ -34,7 +34,7 @@ REQUIRED_OBS = ("source_url", "source_line_range", "source_sense_summary",
 
 def blob_hash(path):
     raw = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
 
 def load():
     for path, expected in HASHES.items():
