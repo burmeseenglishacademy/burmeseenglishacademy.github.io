@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - draft/CEFR-1000-C1-SIX-UPGRADE-LEGALLY-SLAVERY-PERMIT-WARRANT-CENSUS-2026-11-02.json
+      - tools/audit_cefr_1000_c1_six_upgrade_legal_permit.py
       - draft/CEFR-1000-A1-EIGHT-THANK-BE-DO-I-WAKE-LEMMA-SENSE-2026-11-02.json
       - tools/audit_cefr_1000_a1_eight_function_lemma_senses.py
       - draft/CEFR-1000-B2-SIX-SINGER-STEAM-COMMANDER-EXACT-WISE-MONTHLY-INDEXED-2026-11-02.json
@@ -490,6 +492,8 @@ jobs:
         run: python3 tools/audit_cefr_1000_a1_eight_function_lemma_senses.py --level ALL --self-test
       - name: Reject fabricated B2 six-card Cambridge CEFR, bilingual and release signoffs (NO DEPLOY)
         run: python3 tools/audit_cefr_1000_b2_six_singer_commander_indexed.py --level ALL --self-test
+      - name: Reject fabricated six-card C1 publisher, human, George Emma and device signoffs (NO DEPLOY)
+        run: python3 tools/audit_cefr_1000_c1_six_upgrade_legal_permit.py --level ALL --self-test
       - name: Report missing real approvals, voice listening, iPhone and hosting QC
         run: python3 tools/audit_cefr_1000_launch_readiness.py --report-only --self-test
       - name: Explicitly enforce ALL evidence if release candidate manually checked
