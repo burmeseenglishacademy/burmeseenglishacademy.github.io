@@ -24,3 +24,12 @@ The [fail-closed six-card auditor](tools/audit_cefr_1000_c1_six_direct_oxford_un
 **Current first-pass written / independently checked and approved:** A1 **200/0**, A2 **200/0**, B1 **200/0**, B2 **200/0**, C1 **200/0**; total **1,000/0**. Final George/Emma audio generation and actual listening signoffs, independent English/Myanmar/example/exact-sense CEFR approval, deduplicated approved manifest, browser/mobile regression, physical iPhone Safari evidence, measured GitHub Pages limits, protected production asset signoff and confirmed production deployment remain missing.
 
 **RELEASE BLOCKED — STAGING ONLY.** No merge, main edit, publication, or change to the protected 54 lessons, separate IELTS 1,000-word bank, established production audio or privacy code.
+
+
+## Verified GitHub Actions conclusions and logs (2026-11-02)
+
+**Actually verified** [six-lane structural run 41371171713](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41371171713), testing commit `f0f51f8a34485efee690c9b4dd3389faf0422ca5`: **SUCCESS** across **A1, A2, B1, B2, C1 and ALL**. ALL job `125041755619` logs explicitly confirmed **219/219 synthetic negative mutations rejected** for this six-card Oxford source packet and **zero independent approvals implied**; ALL artifact ID `13109158685`.
+
+**Actually verified** [documentary no-deployment run 41371171657](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41371171657) at the **same SHA**: **SUCCESS as report-only**, documentary job `125041755437` logs independently confirmed **219/219** mutations rejected. The readiness report explicitly **BLOCKED** missing 1,000 independent reviewer receipts, final approved manifest, real George/Emma listening, matched desktop/mobile Chromium and WebKit evidence, physical iPhone Safari, measured Pages hosting and final protected-asset signoff. Its production-file diff check passed for protected lessons, IELTS, established audio and privacy paths; blocker artifact ID `13109059136`.
+
+**These successful CI jobs do not establish human-independent CEFR or Myanmar approval, actual listening, physical device testing, measured hosting or deployment. RELEASE BLOCKED — STAGING ONLY.**
