@@ -26,3 +26,10 @@ All six Oxford headword pages were **directly opened** on 2026-11-02. Cambridge 
 ## Release blockers
 
 **Written/independently approved:** A1 **200/0**, A2 **200/0**, B1 **200/0**, B2 **200/0**, C1 **200/0**. All **1,000 remain on editorial hold**. No independent exact-sense/CEFR, English, Myanmar or example signoffs; no approved manifest; no complete George/Emma headword/example recordings with actual listening receipts; no final-corpus browser/mobile or physical iPhone Safari QA; no measured GitHub Pages hosting clearance; no confirmed production deployment. **RELEASE BLOCKED — STAGING ONLY.** Keep main, 54 lessons, separate IELTS 1,000-word bank, existing production audio and privacy unchanged.
+
+
+## Actual post-change GitHub Actions verification — 2026-11-02
+
+- [Structural run **41437145678**](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41437145678), SHA `61ab566327f69a623aa1621e1aaf0e83e68283f8`: **completed SUCCESS** across A1, A2, B1, B2, C1 and ALL. ALL job `125249684542` decoded logs confirmed the new six-card auditor and **203/203 synthetic adversarial mutations rejected**; ALL artifact `13137915022`.
+- [Documentary run **41437150894**](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41437150894), SHA `2781aa83c06873cad857696f4a332a19d470c914`: **completed SUCCESS** as a report-only, explicitly blocked release gate. Job `125249699453` decoded logs independently confirmed **203/203** synthetic rejections, **0/1,000** independent approvals, absent George/Emma real listening, final mobile/physical iPhone Safari, hosting and deployment evidence; it also confirmed protected production assets unchanged. Blocker artifact `13136937515`.
+- Mechanical QA successes do **not** prove any publisher CEFR label independently, human bilingual review, physical listening, device QA or production release. The staging-only branch remains unpublished.
