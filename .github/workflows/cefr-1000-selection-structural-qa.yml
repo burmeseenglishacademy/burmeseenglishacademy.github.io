@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - draft/CEFR-1000-B2-SIX-PERSONALITY-SOMEWHAT-DIRECT-OXFORD-2026-11-03.md
+      - tools/audit_cefr_1000_b2_six_personality_somewhat.py
       - draft/CEFR-1000-C1-EIGHT-STRINGENT-AMELIORATE-DIRECT-OXFORD-2026-11-02.json
       - tools/audit_cefr_1000_c1_eight_stringent_ameliorate.py
       - draft/CEFR-1000-C1-SIX-UPGRADE-LEGALLY-SLAVERY-PERMIT-WARRANT-CENSUS-2026-11-02.json
@@ -1061,6 +1063,11 @@ jobs:
       - name: Reject synthetic Oxford source, Myanmar, reviewer, audio and device forgeries
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_c1_eight_stringent_ameliorate.py --level ALL --self-test
+      - name: Audit six B2 Oxford source-bound sense and Myanmar proposals (NO APPROVAL)
+        run: python3 tools/audit_cefr_1000_b2_six_personality_somewhat.py --level "${{ matrix.level }}"
+      - name: Reject six-card B2 synthetic publisher, reviewer and release forgeries
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_b2_six_personality_somewhat.py --level ALL --self-test
       - name: Reject spoofed publisher dictionary paths in independent CEFR review receipts
         run: python3 tests/cefr-1000-independent-stage-source-binding.py
       - name: Save structural QA record (not linguistic verification)
