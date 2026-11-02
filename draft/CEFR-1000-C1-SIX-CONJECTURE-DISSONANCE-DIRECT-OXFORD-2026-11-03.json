@@ -1,0 +1,285 @@
+{
+  "schema": 1,
+  "scope": "USER_APPROVED_1000_TOTAL_A1_A2_B1_B2_C1_STAGING_ONLY",
+  "observed_on": "2026-11-03",
+  "status": "C1_SIX_DIRECT_OXFORD_SENSE_AND_CAMBRIDGE_INDEXED_C1_TRIAGE_HUMAN_REVIEW_REQUIRED",
+  "frozen_shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "source_limitations": "Six Oxford Advanced Learner's Dictionary publisher pages directly opened on 2026-11-03; Cambridge publisher-owned search index observed, but direct Cambridge pages returned HTTP 403. Only conscientious adjective matching work-effort sense has an indexed C1 lead; no independently established CEFR badge for the other five. Oxford c1/c2 TOPIC labels do not prove exact-sense CEFR. All teaching alternatives are AI drafts on hold, not independent signoff.",
+  "written_by_level": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "independently_approved_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "audio_listening_signoffs": 0,
+  "physical_iphone_safari_signoffs": 0,
+  "production_deployed": false,
+  "records": [
+    {
+      "word": "conjecture",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "frozen_snapshot": {
+        "english_definition": "An opinion or explanation based on incomplete evidence.",
+        "burmese_meaning": "အထောက်အထား မပြည့်စုံသေးချိန်တွင် ခန့်မှန်းထားသော အယူအဆ",
+        "example_sentence": "Without test results, the cause of the failure remains conjecture."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 28,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/conjecture_1",
+        "observed_on": "2026-11-03",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-123",
+        "uk_ipa_lead": "/kənˈdʒektʃə(r)/",
+        "source_sense_summary": "Oxford separates countable speculative opinion from uncountable activity of guessing; 'remains conjecture' is awkward for the frozen countable opinion. Topic Opinion and argument c2 is NOT an exact-sense C2 label.",
+        "cambridge_publisher_url": "https://dictionary.cambridge.org/dictionary/english/conjecture",
+        "cambridge_access": "PUBLISHER_OWNED_SEARCH_INDEX_ONLY_DIRECT_PAGE_403",
+        "exact_sense_cefr_label": "NOT_ESTABLISHED",
+        "independently_verified": false
+      },
+      "risk": "COUNTABLE_OPINION_VS_UNCOUNTABLE_SPECULATION_AND_EXAMPLE_COLLOCATION",
+      "unapproved_teaching_alternative": {
+        "english_definition": "An idea about what may be true without enough evidence to be certain.",
+        "burmese_meaning": "ခိုင်လုံသော အထောက်အထား မရှိသေးဘဲ မှန်းဆထားသည့် အယူအဆ",
+        "example_sentence": "Without the test results, the cause of the failure remains a matter for conjecture."
+      },
+      "independent_review_task": "Independent human English/Myanmar/grammar reviewer must verify exact sense and CEFR source, British pronunciation, example and fluent Myanmar; independently signed evidence is required. Later verify both George/Emma voices and headword/example recordings by REAL listening, physical iPhone Safari and release gates. AI research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "conscientious",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "frozen_snapshot": {
+        "english_definition": "Careful to do work thoroughly and responsibly.",
+        "burmese_meaning": "အလုပ်ကို တာဝန်သိစွာ အသေးစိတ် ဂရုတစိုက် ဆောင်ရွက်သော",
+        "example_sentence": "A conscientious inspector records even small defects in the report."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 29,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/conscientious",
+        "observed_on": "2026-11-03",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-107",
+        "uk_ipa_lead": "/ˌkɒnʃiˈenʃəs/",
+        "source_sense_summary": "Oxford careful and correct work sense; Cambridge publisher-owned search index explicitly labels matching adjective work-effort sense C1. Oxford Personal qualities c1 is a TOPIC label and not itself the headword's CEFR badge.",
+        "cambridge_publisher_url": "https://dictionary.cambridge.org/dictionary/english/conscientious",
+        "cambridge_access": "PUBLISHER_OWNED_SEARCH_INDEX_ONLY_DIRECT_PAGE_403",
+        "exact_sense_cefr_label": "CAMBRIDGE_INDEXED_C1_NOT_INDEPENDENT",
+        "independently_verified": false
+      },
+      "risk": "CAMBRIDGE_INDEXED_C1_MATCH_WITHOUT_HUMAN_SIGNOFF_AND_TOPIC_BADGE_CAUTION",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Taking great care to complete duties accurately and responsibly.",
+        "burmese_meaning": "မိမိတာဝန်ကို သေချာမှန်ကန်စွာ ပြီးမြောက်စေရန် ဂရုတစိုက် ကြိုးစားဆောင်ရွက်သော",
+        "example_sentence": "The conscientious inspector checked each measurement before signing the report."
+      },
+      "independent_review_task": "Independent human English/Myanmar/grammar reviewer must verify exact sense and CEFR source, British pronunciation, example and fluent Myanmar; independently signed evidence is required. Later verify both George/Emma voices and headword/example recordings by REAL listening, physical iPhone Safari and release gates. AI research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "culpability",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "frozen_snapshot": {
+        "english_definition": "Responsibility for a mistake or harmful action.",
+        "burmese_meaning": "အမှား သို့မဟုတ် ထိခိုက်နစ်နာစေသော လုပ်ရပ်အတွက် အပြစ်တာဝန်ရှိမှု",
+        "example_sentence": "The investigation examined each manager's culpability in the incident."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 31,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/culpability",
+        "observed_on": "2026-11-03",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-106",
+        "uk_ipa_lead": "/ˌkʌlpəˈbɪləti/",
+        "source_sense_summary": "Oxford uncountable formal noun requires being responsible AND deserving blame for wrongdoing; frozen 'responsibility for a mistake or harmful action' can falsely include innocent responsibility.",
+        "cambridge_publisher_url": "https://dictionary.cambridge.org/dictionary/english/culpability",
+        "cambridge_access": "PUBLISHER_OWNED_SEARCH_INDEX_ONLY_DIRECT_PAGE_403",
+        "exact_sense_cefr_label": "NOT_ESTABLISHED",
+        "independently_verified": false
+      },
+      "risk": "BLAMEWORTHY_WRONGDOING_VS_NEUTRAL_RESPONSIBILITY_UNCOUNTABLE",
+      "unapproved_teaching_alternative": {
+        "english_definition": "The state of being responsible for wrongdoing and deserving blame for it.",
+        "burmese_meaning": "မှားယွင်းသော လုပ်ရပ်တစ်ခုအတွက် တာဝန်ရှိပြီး အပြစ်တင်ခံထိုက်မှု",
+        "example_sentence": "The inquiry examined whether the managers bore any culpability for the safety breach."
+      },
+      "independent_review_task": "Independent human English/Myanmar/grammar reviewer must verify exact sense and CEFR source, British pronunciation, example and fluent Myanmar; independently signed evidence is required. Later verify both George/Emma voices and headword/example recordings by REAL listening, physical iPhone Safari and release gates. AI research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "disparage",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "frozen_snapshot": {
+        "english_definition": "To speak about someone or something as if they have little value.",
+        "burmese_meaning": "လူတစ်ဦး သို့မဟုတ် အရာတစ်ခု၏ တန်ဖိုးကို နှိမ့်ချပြောဆိုသည်",
+        "example_sentence": "A professional manager should not disparage colleagues in meetings."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 32,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/disparage",
+        "observed_on": "2026-11-03",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-112",
+        "uk_ipa_lead": "/dɪˈspærɪdʒ/",
+        "source_sense_summary": "Oxford formal transitive verb disparage somebody/something; showing lack of value/respect, not merely neutral criticism. Frozen example's direct object is grammatical.",
+        "cambridge_publisher_url": "https://dictionary.cambridge.org/dictionary/english/disparage",
+        "cambridge_access": "PUBLISHER_OWNED_SEARCH_INDEX_ONLY_DIRECT_PAGE_403",
+        "exact_sense_cefr_label": "NOT_ESTABLISHED",
+        "independently_verified": false
+      },
+      "risk": "TRANSITIVE_DIRECT_OBJECT_AND_BELITTLING_VS_NEUTRAL_CRITICISM",
+      "unapproved_teaching_alternative": {
+        "english_definition": "To speak about someone or something in a way that makes them seem unimportant or unworthy of respect.",
+        "burmese_meaning": "လူတစ်ဦး သို့မဟုတ် အရာတစ်ခုကို တန်ဖိုးမရှိသကဲ့သို့ နှိမ့်ချပြောဆိုသည်",
+        "example_sentence": "The supervisor refused to disparage a colleague during the review."
+      },
+      "independent_review_task": "Independent human English/Myanmar/grammar reviewer must verify exact sense and CEFR source, British pronunciation, example and fluent Myanmar; independently signed evidence is required. Later verify both George/Emma voices and headword/example recordings by REAL listening, physical iPhone Safari and release gates. AI research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "disproportionate",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "frozen_snapshot": {
+        "english_definition": "Too large or too small in relation to something else.",
+        "burmese_meaning": "နှိုင်းယှဉ်သည့် အရာနှင့် မမျှတအောင် များလွန်း သို့မဟုတ် နည်းလွန်းသော",
+        "example_sentence": "The new fee places a disproportionate burden on smaller businesses."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 33,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/disproportionate",
+        "observed_on": "2026-11-03",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-116",
+        "uk_ipa_lead": "/ˌdɪsprəˈpɔːʃənət/",
+        "source_sense_summary": "Oxford adjective disproportionate (to something), excessively large or small by comparison. Frozen fee/burden example is natural, but gloss should not imply moral unfairness in every context.",
+        "cambridge_publisher_url": "https://dictionary.cambridge.org/dictionary/english/disproportionate",
+        "cambridge_access": "PUBLISHER_OWNED_SEARCH_INDEX_ONLY_DIRECT_PAGE_403",
+        "exact_sense_cefr_label": "NOT_ESTABLISHED",
+        "independently_verified": false
+      },
+      "risk": "COMPARATIVE_PROPORTION_VS_MORAL_UNFAIRNESS_TO_COLLOCATION",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Too large or too small compared with something else.",
+        "burmese_meaning": "အခြားအရာတစ်ခုနှင့် နှိုင်းယှဉ်လျှင် အချိုးမညီအောင် များလွန်း သို့မဟုတ် နည်းလွန်းသော",
+        "example_sentence": "The higher fee placed a disproportionate burden on small businesses."
+      },
+      "independent_review_task": "Independent human English/Myanmar/grammar reviewer must verify exact sense and CEFR source, British pronunciation, example and fluent Myanmar; independently signed evidence is required. Later verify both George/Emma voices and headword/example recordings by REAL listening, physical iPhone Safari and release gates. AI research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "dissonance",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "frozen_snapshot": {
+        "english_definition": "A lack of agreement between ideas, values or feelings.",
+        "burmese_meaning": "အယူအဆများ၊ တန်ဖိုးထားမှုများ သို့မဟုတ် ခံစားချက်များအကြား မညီညွတ်မှု",
+        "example_sentence": "She felt dissonance between her values and the company's actions."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 34,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/dissonance",
+        "observed_on": "2026-11-03",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-110",
+        "uk_ipa_lead": "/ˈdɪsənəns/",
+        "source_sense_summary": "Oxford distinguishes musical discord (countable/uncountable) from formal disagreement (uncountable); frozen example uses formal disagreement and 'felt dissonance' is less idiomatic than 'the dissonance between'. Oxford topic c2 labels are NOT exact-sense C2.",
+        "cambridge_publisher_url": "https://dictionary.cambridge.org/dictionary/english/dissonance",
+        "cambridge_access": "PUBLISHER_OWNED_SEARCH_INDEX_ONLY_DIRECT_PAGE_403",
+        "exact_sense_cefr_label": "NOT_ESTABLISHED",
+        "independently_verified": false
+      },
+      "risk": "FORMAL_UNCOUNTABLE_DISAGREEMENT_VS_MUSIC_AND_COGNITIVE_DISSONANCE",
+      "unapproved_teaching_alternative": {
+        "english_definition": "A lack of agreement or harmony between ideas or positions.",
+        "burmese_meaning": "အယူအဆများ သို့မဟုတ် ရပ်တည်ချက်များအကြား မကိုက်ညီမှု၊ မညီညွတ်မှု",
+        "example_sentence": "The dissonance between the company's promises and its actions concerned employees."
+      },
+      "independent_review_task": "Independent human English/Myanmar/grammar reviewer must verify exact sense and CEFR source, British pronunciation, example and fluent Myanmar; independently signed evidence is required. Later verify both George/Emma voices and headword/example recordings by REAL listening, physical iPhone Safari and release gates. AI research is not independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    }
+  ]
+}
