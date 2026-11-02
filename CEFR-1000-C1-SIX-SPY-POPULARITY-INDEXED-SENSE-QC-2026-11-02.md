@@ -19,7 +19,7 @@ On **2026-11-02**, public search-index extracts of Cambridge Dictionary headword
 
 The six-card [research packet](draft/CEFR-1000-C1-SIX-SPY-POPULARITY-NEUTRAL-SACRED-SIGNATURE-COPYRIGHT-INDEX-2026-11-02.json) preserves **original frozen English definition, Myanmar meaning, original example, source path/index/blob SHA**, dated publisher URLs, exact-sense/POS warnings and six **self-drafted, unapproved** English/Myanmar/example alternatives. Human-independent reviewers must separately check the English sense, natural Myanmar wording, grammar/originality, level-specific publisher evidence and British pronunciation. The original shortlist remains unchanged.
 
-**Source integrity:** `draft/CEFR-1000-PROVISIONAL-SHORTLIST.json` Git blob SHA `475e68ae17ab97bd937e73e5ce4794e0dcd76551`; six-card research packet blob SHA `b7068e4862e09d7ad5fdbef4dcce84934f505b93`.
+**Source integrity:** `draft/CEFR-1000-PROVISIONAL-SHORTLIST.json` Git blob SHA `475e68ae17ab97bd937e73e5ce4794e0dcd76551`; six-card research packet blob SHA `26c52a26f541c65ede562c89e5d9ee9754722e87`.
 
 ## Mechanical safeguard and verification limits
 
@@ -39,3 +39,12 @@ Previous baseline [structural run 41394722700](https://github.com/burmeseenglish
 | **Total** | **1,000** | **0** |
 
 All 1,000 remain on **editorial hold**. No approved manifest. Final George/Emma headword + example audio generation and **actual human listening signoffs** are missing; browser/mobile regression, **physical iPhone Safari** evidence, measured GitHub Pages hosting limits and confirmed production deployment are also missing. Preserve 54 lessons, the separate IELTS 1,000-word bank, existing production George/Emma audio and privacy protections. **RELEASE BLOCKED — STAGING ONLY.**
+
+
+## 2026-11-02 staging CI baseline repair
+
+The previous six-card auditor failed closed in both the 06:07 UTC and 07:05 UTC push-triggered CI cycles. Actual [structural run 41403993216](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41403993216) failed all six A1/A2/B1/B2/C1/ALL jobs; [documentary run 41404006448](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41404006448) also failed. Logs identified the same root cause: `BLOCK: publisher exact-sense context missing: popularity`. The research packet's `other_sense_warning` had been only `B2 noun`, shorter than the auditor's required 12 characters. This was a **genuine fail-closed baseline failure**, not evidence of independent linguistic review or a reason to weaken the gate.
+
+Replaced the ambiguous warning with an explicit statement that the indexed B2 label applies to the uncountable noun and that the indexed result did not establish a C1 label for the matching sense. The Cambridge direct-page HTTP 403 caveat and 2026-11-02 observation date remain unchanged. Re-pinned the auditor to research blob `26c52a26f541c65ede562c89e5d9ee9754722e87` and added 24 negative mutations (empty or truncated exact-sense context across all six records). Repair commits: [`0eb5b7f`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/0eb5b7fc40c4cb14207ac393557faea0df3b20e6) and [`4f8b38d`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/4f8b38d02246c5f909a46bc6a2ed1d614528740f). The frozen 1,000-word shortlist remains unchanged. These repairs are mechanical research integrity work, not independent approval.
+
+Fresh push-triggered [structural run 41418285519](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41418285519) and [documentary run 41418285338](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41418285338) were initiated for commit `4f8b38d02246c5f909a46bc6a2ed1d614528740f`. Their final conclusions and actual logs must be checked before declaring them passed. All 1,000 remain on editorial hold with 0 independent approvals. **NO DEPLOYMENT.**
