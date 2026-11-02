@@ -34,7 +34,7 @@ ORIGINAL = ("word", "level", "part_of_speech", "english_definition",
 
 def blob_sha(path):
     raw = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
 
 def load(path):
     return json.loads(path.read_text(encoding="utf-8"))
