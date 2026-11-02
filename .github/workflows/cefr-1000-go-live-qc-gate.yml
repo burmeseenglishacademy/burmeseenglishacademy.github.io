@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - draft/CEFR-1000-A2-FIVE-DUE-PRETTY-THOUGHT-HIT-POST-INDEXED-SENSE-2026-11-02.json
+      - tools/audit_cefr_1000_a2_five_due_pretty_thought.py
       - draft/CEFR-1000-C1-EIGHT-DIRECT-OXFORD-EXACERBATE-JUXTAPOSE-SENSE-2026-11-02.json
       - tools/audit_cefr_1000_c1_eight_exacerbate_juxtapose.py
       - draft/CEFR-1000-C1-SIX-SPY-POPULARITY-NEUTRAL-SACRED-SIGNATURE-COPYRIGHT-INDEX-2026-11-02.json
