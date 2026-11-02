@@ -1,0 +1,254 @@
+{
+  "schema": 1,
+  "scope": "USER_APPROVED_CEFR_1000_STAGING_ONLY",
+  "status": "RESEARCH_ONLY_NO_INDEPENDENT_APPROVAL",
+  "observed_on": "2026-11-02",
+  "shortlist_path": "draft/CEFR-1000-PROVISIONAL-SHORTLIST.json",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "counts_by_level": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "independently_approved_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "source_access_note": "Cambridge Dictionary publisher-owned search-index snippets inspected 2026-11-02; direct Cambridge headword page opens returned HTTP 403. Indexed labels are leads only, not independently verified direct publisher-page CEFR observations. No human-independent linguistic review, real listening, iPhone test or deployment was performed.",
+  "reviewer_signoffs": 0,
+  "real_audio_listening_signoffs": 0,
+  "physical_iphone_safari_signoffs": 0,
+  "production_deployed": false,
+  "entries": [
+    {
+      "word": "due",
+      "level": "A2",
+      "part_of_speech": "adjective",
+      "original": {
+        "english_definition": "Expected or arranged to happen at a particular time.",
+        "burmese_meaning": "သတ်မှတ်ချိန်တွင် ဖြစ်ရန်ရှိသော",
+        "example_sentence": "The next bus is due in ten minutes.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 523,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_evidence": {
+        "publisher": "Cambridge Dictionary",
+        "access": "PUBLIC_SEARCH_INDEX_ONLY_DIRECT_PAGE_HTTP_403",
+        "url": "https://dictionary.cambridge.org/dictionary/english/due",
+        "observed_on": "2026-11-02",
+        "indexed_exact_sense": "due adjective (EXPECTED): expected to happen or arrive at a particular time; Cambridge-indexed B1",
+        "indexed_cefr": "B1",
+        "other_sense_warning": "Do not confuse expected arrival with due to (because), money owed (C2), or in due course (B2).",
+        "publisher_page_directly_verified": false,
+        "independent_exact_sense_cefr_review": false
+      },
+      "editorial_risk": "A2_VS_B1_EXPECTED_TIME",
+      "editorial_finding": "Frozen A2 adjective and bus-arrival example match the indexed B1 EXPECTED sense, not the other due senses.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Expected to happen or arrive at a particular time.",
+        "burmese_meaning": "သတ်မှတ်ထားသောအချိန်တွင် ဖြစ်ပေါ်ရန် သို့မဟုတ် ရောက်ရှိရန် မျှော်လင့်ထားသော။",
+        "example_sentence": "The train is due at half past six."
+      },
+      "reviewer_actions": [
+        "Independently open publisher entry and verify exact sense, POS and any CEFR label",
+        "Resolve CEFR level and cross-dictionary sense conflicts with independently signed source-backed rationale",
+        "Have a fluent independent Myanmar reviewer assess meaning, register and naturalness",
+        "Independently check English grammar, original example, UK pronunciation and audio text"
+      ],
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_exact_sense_cefr_review": false,
+      "independent_pronunciation_review": false,
+      "independent_approval": false,
+      "george_emma_listened": false,
+      "editorial_hold": true
+    },
+    {
+      "word": "pretty",
+      "level": "A2",
+      "part_of_speech": "adverb",
+      "original": {
+        "english_definition": "Fairly, but not extremely.",
+        "burmese_meaning": "အတော်အတန်၊ တော်တော်လေး",
+        "example_sentence": "The new instructions are pretty clear.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 519,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_evidence": {
+        "publisher": "Cambridge Dictionary",
+        "access": "PUBLIC_SEARCH_INDEX_ONLY_DIRECT_PAGE_HTTP_403",
+        "url": "https://dictionary.cambridge.org/us/dictionary/english/pretty",
+        "observed_on": "2026-11-02",
+        "indexed_exact_sense": "pretty adverb (DEGREE): quite, but not extremely; Cambridge-indexed B1",
+        "indexed_cefr": "B1",
+        "other_sense_warning": "The A2 Cambridge label belongs to the adjective meaning attractive, not the frozen informal adverb.",
+        "publisher_page_directly_verified": false,
+        "independent_exact_sense_cefr_review": false
+      },
+      "editorial_risk": "A2_VS_B1_INFORMAL_DEGREE_ADVERB",
+      "editorial_finding": "Frozen A2 adverb fairly/not extremely and example pretty clear align with indexed B1 adverb; adjective pretty has a separate A2 badge.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Quite or fairly, but not extremely; informal.",
+        "burmese_meaning": "အလွန်အမင်း မဟုတ်သော်လည်း အတော်အတန်၊ တော်တော်လေး (အရပ်သုံးစကား)။",
+        "example_sentence": "The instructions were pretty easy to follow."
+      },
+      "reviewer_actions": [
+        "Independently open publisher entry and verify exact sense, POS and any CEFR label",
+        "Resolve CEFR level and cross-dictionary sense conflicts with independently signed source-backed rationale",
+        "Have a fluent independent Myanmar reviewer assess meaning, register and naturalness",
+        "Independently check English grammar, original example, UK pronunciation and audio text"
+      ],
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_exact_sense_cefr_review": false,
+      "independent_pronunciation_review": false,
+      "independent_approval": false,
+      "george_emma_listened": false,
+      "editorial_hold": true
+    },
+    {
+      "word": "thought",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "original": {
+        "english_definition": "An idea or opinion that comes into your mind.",
+        "burmese_meaning": "အတွေး၊ စိတ်ကူး",
+        "example_sentence": "One thought kept me awake last night.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 506,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_evidence": {
+        "publisher": "Cambridge Dictionary",
+        "access": "PUBLIC_SEARCH_INDEX_ONLY_DIRECT_PAGE_HTTP_403",
+        "url": "https://dictionary.cambridge.org/dictionary/english/thought",
+        "observed_on": "2026-11-02",
+        "indexed_exact_sense": "thought noun (IDEA): an idea or opinion; Cambridge-indexed B1",
+        "indexed_cefr": "B1",
+        "other_sense_warning": "Do not use the past-tense verb thought as evidence for the noun; careful thinking is a separate B2 learner-dictionary sense.",
+        "publisher_page_directly_verified": false,
+        "independent_exact_sense_cefr_review": false
+      },
+      "editorial_risk": "A2_VS_B1_IDEA_NOUN",
+      "editorial_finding": "Frozen A2 countable idea/opinion noun and One thought example match the Cambridge-indexed B1 noun, not the verb form.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "An idea or opinion that comes into your mind.",
+        "burmese_meaning": "စိတ်ထဲတွင် ပေါ်လာသော အတွေးတစ်ခု သို့မဟုတ် ထင်မြင်ချက်တစ်ခု။",
+        "example_sentence": "A strange thought came into her mind."
+      },
+      "reviewer_actions": [
+        "Independently open publisher entry and verify exact sense, POS and any CEFR label",
+        "Resolve CEFR level and cross-dictionary sense conflicts with independently signed source-backed rationale",
+        "Have a fluent independent Myanmar reviewer assess meaning, register and naturalness",
+        "Independently check English grammar, original example, UK pronunciation and audio text"
+      ],
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_exact_sense_cefr_review": false,
+      "independent_pronunciation_review": false,
+      "independent_approval": false,
+      "george_emma_listened": false,
+      "editorial_hold": true
+    },
+    {
+      "word": "hit",
+      "level": "A2",
+      "part_of_speech": "verb",
+      "original": {
+        "english_definition": "To touch something suddenly and with force.",
+        "burmese_meaning": "ပြင်းပြင်းထန်ထန် ထိမိသည်၊ ရိုက်မိသည်",
+        "example_sentence": "The ball hit the window during the game.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 521,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_evidence": {
+        "publisher": "Cambridge Dictionary",
+        "access": "PUBLIC_SEARCH_INDEX_ONLY_DIRECT_PAGE_HTTP_403",
+        "url": "https://dictionary.cambridge.org/dictionary/english/hit",
+        "observed_on": "2026-11-02",
+        "indexed_exact_sense": "hit verb (TOUCH): A2 striking with hand or hand-held object; B1 sudden-force collision of a moving object",
+        "indexed_cefr": "MIXED_A2_B1",
+        "other_sense_warning": "Cambridge Essential British English gives a broader A2 gloss including a ball hitting someone; the Advanced Learner's Dictionary separates A2 hand/object strike from B1 collision. Publisher/dictionary edition distinction requires independent adjudication.",
+        "publisher_page_directly_verified": false,
+        "independent_exact_sense_cefr_review": false
+      },
+      "editorial_risk": "A2_HAND_ACTION_VS_B1_OBJECT_COLLISION",
+      "editorial_finding": "Frozen definition is broad and ball-hit-window example is a moving-object collision, aligned more closely with Cambridge Advanced Learner's B1 collision than its A2 hand-striking example; Essential British A2 is a competing publisher lead.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "To strike someone or something with your hand or an object you are holding.",
+        "burmese_meaning": "လက်ဖြင့် သို့မဟုတ် လက်ထဲတွင် ကိုင်ထားသော ပစ္စည်းတစ်ခုဖြင့် တစ်စုံတစ်ဦး သို့မဟုတ် တစ်စုံတစ်ခုကို ရိုက်သည်။",
+        "example_sentence": "She hit the ball with a tennis racket."
+      },
+      "reviewer_actions": [
+        "Independently open publisher entry and verify exact sense, POS and any CEFR label",
+        "Resolve CEFR level and cross-dictionary sense conflicts with independently signed source-backed rationale",
+        "Have a fluent independent Myanmar reviewer assess meaning, register and naturalness",
+        "Independently check English grammar, original example, UK pronunciation and audio text"
+      ],
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_exact_sense_cefr_review": false,
+      "independent_pronunciation_review": false,
+      "independent_approval": false,
+      "george_emma_listened": false,
+      "editorial_hold": true
+    },
+    {
+      "word": "post",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "original": {
+        "english_definition": "A message or item shared on a website or social platform.",
+        "burmese_meaning": "အွန်လိုင်းတွင် တင်ထားသော စာ သို့မဟုတ် အကြောင်းအရာ",
+        "example_sentence": "Her post explained the new class schedule.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 512,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_evidence": {
+        "publisher": "Cambridge Dictionary",
+        "access": "PUBLIC_SEARCH_INDEX_ONLY_DIRECT_PAGE_HTTP_403",
+        "url": "https://dictionary.cambridge.org/dictionary/english/post",
+        "observed_on": "2026-11-02",
+        "indexed_exact_sense": "post noun (MESSAGE): a message or picture published on a website or social media; no CEFR badge observed in Cambridge-indexed noun section",
+        "indexed_cefr": "NOT_OBSERVED_NOUN",
+        "other_sense_warning": "Cambridge B1 label applies to the separate internet/social-media verb post, not automatically to the frozen noun; also distinguish British postal noun.",
+        "publisher_page_directly_verified": false,
+        "independent_exact_sense_cefr_review": false
+      },
+      "editorial_risk": "A2_UNLABELLED_INTERNET_NOUN_VS_B1_VERB",
+      "editorial_finding": "Frozen A2 noun and class-schedule example match the unlabelled Cambridge internet-message noun; B1 internet verb is not valid exact-POS evidence for A2 noun.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "A message, picture or other item published on a website or social media.",
+        "burmese_meaning": "ဝက်ဘ်ဆိုက် သို့မဟုတ် လူမှုကွန်ရက်ပေါ်တွင် တင်ထားသော စာသား၊ ဓာတ်ပုံ သို့မဟုတ် အခြားအကြောင်းအရာတစ်ခု။",
+        "example_sentence": "Her post included the timetable for the new class."
+      },
+      "reviewer_actions": [
+        "Independently open publisher entry and verify exact sense, POS and any CEFR label",
+        "Resolve CEFR level and cross-dictionary sense conflicts with independently signed source-backed rationale",
+        "Have a fluent independent Myanmar reviewer assess meaning, register and naturalness",
+        "Independently check English grammar, original example, UK pronunciation and audio text"
+      ],
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_exact_sense_cefr_review": false,
+      "independent_pronunciation_review": false,
+      "independent_approval": false,
+      "george_emma_listened": false,
+      "editorial_hold": true
+    }
+  ]
+}
