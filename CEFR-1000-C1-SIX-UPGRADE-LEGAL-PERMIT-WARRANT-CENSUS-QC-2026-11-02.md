@@ -1,0 +1,26 @@
+# CEFR 1,000 — six C1 legal, historical and technology sense checks (2026-11-02)
+
+**STAGING ONLY — RELEASE BLOCKED.** Research and mechanical controls prepared by AI, **not** independent bilingual, CEFR, pronunciation or listening approval. Branch: `cefr-5000-bilingual-qa-staging`. Frozen 1,000 shortlist, 54 live lessons, separate IELTS bank, existing George/Emma production audio, privacy controls and `main` remain outside this change.
+
+## Source and provenance
+
+Frozen shortlist: [provisional 1,000](draft/CEFR-1000-PROVISIONAL-SHORTLIST.json), blob `475e68ae17ab97bd937e73e5ce4794e0dcd76551`. Six frozen C1 records originate in `draft/A2-C1-EDITORIAL-STARTER.json`, historical blob `b04dd85db5cfae131c25aa4c73109778991b6fdc`, at indexes **263, 264, 460, 463, 569, 728**. The [research packet](draft/CEFR-1000-C1-SIX-UPGRADE-LEGALLY-SLAVERY-PERMIT-WARRANT-CENSUS-2026-11-02.json) preserves each exact English definition, Myanmar meaning, original example, historical index and six explicitly unapproved teaching alternatives. Packet blob `485ba9bd42d5f2cee6e5e7353fee0f96ddb9f070`.
+
+Cambridge dictionary results were observed **2026-11-02** as publisher-indexed search excerpts; direct page opening returned **HTTP 403**. The two Oxford headword pages were **directly opened on 2026-11-02**. A search result is not a directly inspected Cambridge page, and a dictionary topic label is not an exact-sense CEFR badge.
+
+| Frozen C1 item | Source observation | Editorial issue and action |
+| --- | --- | --- |
+| **upgrade** (verb) | [Cambridge](https://dictionary.cambridge.org/dictionary/english/upgrade) indexed **B2** for the same improve/replace sense | **C1/B2 conflict**. Verb UK /ʌpˈɡreɪd/ differs in stress from noun /ˈʌp.ɡreɪd/; human reviewer must verify sense, level and George/Emma headword audio |
+| **legally** (adverb) | [Cambridge](https://dictionary.cambridge.org/dictionary/english/legally) indexed **B2** for according to law | **C1/B2 conflict**. The original *legally binding* collocation is grammatical, but the collocation does not establish C1 for the adverb |
+| **slavery** (uncountable noun) | [Cambridge](https://dictionary.cambridge.org/dictionary/english/slavery) indexed **C1** for the institution/condition | **C1 alignment lead only**. Verify the historical-system sense, fluent Myanmar and countability; do not imply independent review |
+| **permit** (countable noun) | [Cambridge](https://dictionary.cambridge.org/dictionary/english/permit) indexed **C1** for an official document; verb *permit* indexed B1 | **C1 noun alignment lead only**. British noun /ˈpɜː.mɪt/ and verb /pəˈmɪt/ have different stress; listen to both George and Emma actual noun audio |
+| **warrant** (countable noun) | [Oxford direct page](https://www.oxfordlearnersdictionaries.com/definition/english/warrant_1), lines 88–119 and 140–144, gives judge-authorised police document and distinct financial/reason senses | **Exact-sense C1 unsubstantiated**. Oxford *Law and justice c1* is a **topic** label, not a headword CEFR badge. Avoid the financial warrant sense |
+| **census** (noun) | [Oxford direct page](https://www.oxfordlearnersdictionaries.com/definition/english/census), lines 88–108, gives official population counting and data collection | **Exact-sense C1 unsubstantiated**. Cambridge indexed entry also shows no visible CEFR badge; distinguish a census process from the published results |
+
+## Safeguards and release blockers
+
+Added [six-card fail-closed auditor](tools/audit_cefr_1000_c1_six_upgrade_legal_permit.py), pinned to the research packet and frozen shortlist Git blob hashes. It checks **1,000 held / 200 distinct written forms per level**, unchanged bilingual originals, historical source indexes and hashes, exact source URL/access/CEFR attribution, pronunciation leads, independent reviewer tasks, and zero fabricated approvals, listening, iPhone or production claims. It includes synthetic adversarial mutations. Integrated into **six parallel A1/A2/B1/B2/C1/ALL structural lanes** and the **documentary no-deployment workflow**.
+
+**CI evidence boundary:** Prior [structural run 41447491218](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41447491218) and [documentary run 41447498617](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41447498617) have completed-success job conclusions, but **predate this six-card auditor**. No new run IDs/job conclusions/logs were retrievable at this checkpoint, so the new auditor is **not claimed CI-passed**. Next run must inspect actual new job conclusions and logs and repair failures before counting mechanical QA as verified.
+
+**First-pass written / independently approved:** A1 **200 / 0**, A2 **200 / 0**, B1 **200 / 0**, B2 **200 / 0**, C1 **200 / 0**. These six are **researched 6 / independently checked 0**. The provisional written-form quota does not yet prove 200 independently deduplicated lexical lemmas/senses per level. All 1,000 remain held. Approved manifest, genuine independent English/Myanmar/example/exact-sense CEFR signoffs, complete George/Emma headword/example files with **actual listening signoffs**, browser/mobile regression, **physical iPhone Safari** review, GitHub Pages hosting limits and confirmed production deployment remain outstanding. **NO MERGE / NO PUBLICATION.**
