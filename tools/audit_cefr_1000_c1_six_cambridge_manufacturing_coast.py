@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PACKET = ROOT / "draft/CEFR-1000-C1-SIX-CAMBRIDGE-MANUFACTURER-COASTAL-DISABILITY-2026-11-02.json"
 SHORTLIST = ROOT / "draft/CEFR-1000-PROVISIONAL-SHORTLIST.json"
 SOURCE = ROOT / "draft/A2-C1-EDITORIAL-STARTER.json"
-PACKET_SHA = "b6d6abcf79fdd9273f27fba49b6f1eb817e74b70"
+PACKET_SHA = "2a9a7e88025d2c6d50e103ed5383474995730bf7"
 SHORTLIST_SHA = "475e68ae17ab97bd937e73e5ce4794e0dcd76551"
 SOURCE_SHA = "b04dd85db5cfae131c25aa4c73109778991b6fdc"
 LEVELS = ("A1", "A2", "B1", "B2", "C1")
@@ -31,7 +31,7 @@ EXPECTED = {
 
 def sha(path):
     b = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(b)).encode() + b"\\0" + b).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(b)).encode() + bytes([0]) + b).hexdigest()
 
 def load(path):
     return json.loads(path.read_text(encoding="utf-8"))
