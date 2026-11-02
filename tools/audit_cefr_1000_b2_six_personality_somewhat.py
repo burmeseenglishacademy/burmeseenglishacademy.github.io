@@ -30,7 +30,7 @@ OXFORD = {
 }
 
 def git_sha(data):
-    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\\0" + data).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
 
 def require(ok, reason):
     if not ok:
@@ -59,7 +59,7 @@ def validate(short, note, source, *, enforce_blob=True):
             "no-release caveat missing")
     require("topic" in note_text.lower() and "not" in note_text.lower(),
             "Oxford topic/headword CEFR warning missing")
-    require(note_text.count("\\n| **") == 6, "research table count")
+    require(note_text.count("\n| **") == 6, "research table count")
     for i, word in enumerate(WORDS):
         e = next((x for x in entries if x["word"] == word and x["level"] == "B2"), None)
         require(e is not None and e["part_of_speech"] == ("adverb" if word == "somewhat" else "noun"),
