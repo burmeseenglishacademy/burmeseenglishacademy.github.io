@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - draft/CEFR-1000-B1-SIX-FIGHTING-GROW-CAMBRIDGE-INDEXED-SENSE-2026-11-03.json
+      - tools/audit_cefr_1000_b1_six_fighting_grow_indexed.py
       - draft/CEFR-1000-C1-SIX-ANTAGONISTIC-COALESCE-DIRECT-OXFORD-2026-11-03.json
       - tools/audit_cefr_1000_c1_six_antagonistic_coalesce.py
       - draft/CEFR-1000-B2-SIX-PERSONALITY-SOMEWHAT-DIRECT-OXFORD-2026-11-03.md
@@ -1070,6 +1072,11 @@ jobs:
       - name: Reject six-card B2 synthetic publisher, reviewer and release forgeries
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_b2_six_personality_somewhat.py --level ALL --self-test
+      - name: Audit six B1 publisher-indexed sense leads (NO APPROVAL)
+        run: python3 tools/audit_cefr_1000_b1_six_fighting_grow_indexed.py --level "${{ matrix.level }}"
+      - name: Reject six-card B1 indexed-sense evidence and approval forgeries
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_b1_six_fighting_grow_indexed.py --level ALL --self-test
       - name: Audit six held C1 Oxford sense and bilingual leads (NO APPROVAL)
         run: python3 tools/audit_cefr_1000_c1_six_antagonistic_coalesce.py --level "${{ matrix.level }}"
       - name: Reject six-card C1 synthetic source, CEFR, human, audio and iPhone forgeries
