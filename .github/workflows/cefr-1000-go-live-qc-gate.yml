@@ -470,6 +470,8 @@ jobs:
         run: python3 tools/audit_cefr_1000_c1_six_spy_popularity_index.py --level ALL --self-test
       - name: Reject forged eight-card C1 direct Oxford and human review evidence (NO DEPLOY)
         run: python3 tools/audit_cefr_1000_c1_eight_exacerbate_juxtapose.py --level ALL --self-test
+      - name: Reject forged five-card A2 publisher CEFR, bilingual, source and reviewer evidence (NO DEPLOY)
+        run: python3 tools/audit_cefr_1000_a2_five_due_pretty_thought.py --level ALL --self-test
       - name: Report missing real approvals, voice listening, iPhone and hosting QC
         run: python3 tools/audit_cefr_1000_launch_readiness.py --report-only --self-test
       - name: Explicitly enforce ALL evidence if release candidate manually checked
