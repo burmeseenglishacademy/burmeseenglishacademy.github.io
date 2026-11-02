@@ -1,0 +1,355 @@
+{
+  "schema": 1,
+  "scope": "USER_APPROVED_1000_TOTAL_A1_A2_B1_B2_C1_STAGING_ONLY",
+  "observed_on": "2026-11-02",
+  "status": "C1_EIGHT_DIRECT_OXFORD_SENSE_TRIAGE_HUMAN_REVIEW_REQUIRED",
+  "frozen_shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "source_limitations": "Eight Oxford headword pages directly opened 2026-11-02. No exact-sense C1 CEFR badges observed. Oxford topic C1/C2 and OPAL labels are not headword-specific CEFR evidence. AI-prepared bilingual alternatives are NOT independently reviewed or approved.",
+  "written_by_level": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "independently_approved_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "audio_listening_signoffs": 0,
+  "physical_iphone_safari_signoffs": 0,
+  "production_deployed": false,
+  "records": [
+    {
+      "word": "stringent",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "frozen_snapshot": {
+        "english_definition": "Very strict and demanding careful compliance.",
+        "burmese_meaning": "အလွန်တင်းကျပ်ပြီး စည်းကမ်းကို သေချာလိုက်နာရန် လိုအပ်သော",
+        "example_sentence": "The laboratory follows stringent hygiene rules."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 46,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/stringent",
+        "observed_on": "2026-11-02",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-117",
+        "uk_ipa_lead": "/ˈstrɪndʒənt/",
+        "source_sense_summary": "Oxford sense 1 concerns enforceable strict rules and regulations; separate sense 2 concerns financial restrictions. Oxford 'Permission and obligation c2' is a topic label, not a CEFR label for this exact adjective sense.",
+        "exact_sense_cefr_label": "NOT_OBSERVED",
+        "independently_verified": false
+      },
+      "risk": "TWO_SENSES_AND_TOPIC_C2_NOT_HEADWORD_CEFR",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Extremely strict, especially about rules or conditions that must be followed.",
+        "burmese_meaning": "စည်းမျဉ်း သို့မဟုတ် သတ်မှတ်ချက်များ အလွန်တင်းကျပ်ပြီး မဖြစ်မနေ လိုက်နာရသော",
+        "example_sentence": "The factory must meet stringent safety standards."
+      },
+      "independent_review_task": "Independent human editor must directly check exact Oxford sense/POS and an actual source-backed CEFR classification; independently review fluent Myanmar and grammar; verify George/Emma British headword and example recordings by real listening; retain dated signed evidence before approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "tenacious",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "frozen_snapshot": {
+        "english_definition": "Very determined and unwilling to give up.",
+        "burmese_meaning": "အလွန်စိတ်ပိုင်းဖြတ်ထားပြီး အလွယ်တကူ လက်မလျှော့သော",
+        "example_sentence": "The tenacious researcher continued despite repeated setbacks."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 47,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/tenacious",
+        "observed_on": "2026-11-02",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-112",
+        "uk_ipa_lead": "/təˈneɪʃəs/",
+        "source_sense_summary": "Oxford sense 1 is determined or persistent about holding on or not giving up; sense 2 is something continuing to exist longer than expected, such as an illness. The frozen researcher example uses determination, not disease persistence.",
+        "exact_sense_cefr_label": "NOT_OBSERVED",
+        "independently_verified": false
+      },
+      "risk": "DETERMINED_PERSON_VS_PERSISTENT_CONDITION",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Very determined and not easily discouraged from continuing an effort.",
+        "burmese_meaning": "အခက်အခဲများရှိသော်လည်း ဇွဲမလျှော့ဘဲ ဆက်လက်ကြိုးစားသော",
+        "example_sentence": "The tenacious researcher kept working despite repeated failures."
+      },
+      "independent_review_task": "Independent human editor must directly check exact Oxford sense/POS and an actual source-backed CEFR classification; independently review fluent Myanmar and grammar; verify George/Emma British headword and example recordings by real listening; retain dated signed evidence before approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "ubiquitous",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "frozen_snapshot": {
+        "english_definition": "Present or found almost everywhere.",
+        "burmese_meaning": "နေရာတိုင်းနီးပါးတွင် တွေ့ရှိနိုင်သော",
+        "example_sentence": "Smartphones have become ubiquitous in large cities."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 48,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/ubiquitous",
+        "observed_on": "2026-11-02",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-115",
+        "uk_ipa_lead": "/juːˈbɪkwɪtəs/",
+        "source_sense_summary": "Oxford describes something that seems to be everywhere or is very common; notes usually-before-noun and formal or humorous usage. The frozen predicative construction 'have become ubiquitous' is grammatical but the usual-before-noun note warrants reviewer attention.",
+        "exact_sense_cefr_label": "NOT_OBSERVED",
+        "independently_verified": false
+      },
+      "risk": "VERY_COMMON_NOT_LITERAL_EVERYWHERE_AND_ATTRIBUTIVE_USAGE",
+      "unapproved_teaching_alternative": {
+        "english_definition": "So common that it seems to be present almost everywhere.",
+        "burmese_meaning": "နေရာအနှံ့နီးပါးတွင် တွေ့ရလေ့ရှိပြီး အလွန်ပျံ့နှံ့နေသော",
+        "example_sentence": "Ubiquitous mobile phones have changed how people communicate."
+      },
+      "independent_review_task": "Independent human editor must directly check exact Oxford sense/POS and an actual source-backed CEFR classification; independently review fluent Myanmar and grammar; verify George/Emma British headword and example recordings by real listening; retain dated signed evidence before approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "vindicate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "frozen_snapshot": {
+        "english_definition": "To show that a person's actions or beliefs were justified.",
+        "burmese_meaning": "လူတစ်ဦး၏ လုပ်ရပ် သို့မဟုတ် ယုံကြည်ချက် မှန်ကန်သင့်လျော်ကြောင်း သက်သေပြသည်",
+        "example_sentence": "The successful trial helped vindicate the engineer's design."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 49,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/vindicate",
+        "observed_on": "2026-11-02",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-116",
+        "uk_ipa_lead": "/ˈvɪndɪkeɪt/",
+        "source_sense_summary": "Oxford distinguishes vindicating a decision or claim as justified from vindicating a person against an accusation. The frozen design example fits the justified-decision sense; do not conflate with legal acquittal. A footer 'History C1' is a topic classification, not exact-sense CEFR evidence.",
+        "exact_sense_cefr_label": "NOT_OBSERVED",
+        "independently_verified": false
+      },
+      "risk": "JUSTIFY_DECISION_VS_CLEAR_ACCUSATION_AND_TOPIC_LABEL",
+      "unapproved_teaching_alternative": {
+        "english_definition": "To show that a decision, belief or action was justified, especially after it was questioned.",
+        "burmese_meaning": "မေးခွန်းထုတ်ခံခဲ့ရသော ဆုံးဖြတ်ချက် သို့မဟုတ် လုပ်ရပ်တစ်ခု မှန်ကန်သင့်လျော်ခဲ့ကြောင်း သက်သေပြသည်",
+        "example_sentence": "The test results vindicated the engineer's decision."
+      },
+      "independent_review_task": "Independent human editor must directly check exact Oxford sense/POS and an actual source-backed CEFR classification; independently review fluent Myanmar and grammar; verify George/Emma British headword and example recordings by real listening; retain dated signed evidence before approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "vilify",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "frozen_snapshot": {
+        "english_definition": "To describe someone publicly as very bad or deserving blame.",
+        "burmese_meaning": "လူတစ်ဦးကို အလွန်ဆိုးရွားသူအဖြစ် လူသိရှင်ကြား ပြစ်တင်ဖော်ပြသည်",
+        "example_sentence": "The campaign tried to vilify its critics rather than answer them."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 50,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/vilify",
+        "observed_on": "2026-11-02",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-116",
+        "uk_ipa_lead": "/ˈvɪlɪfaɪ/",
+        "source_sense_summary": "Oxford describes speaking or writing about a person or thing to damage others' opinion of them. This does not automatically entail a legally false accusation; source gives vilify somebody as something / for doing something.",
+        "exact_sense_cefr_label": "NOT_OBSERVED",
+        "independently_verified": false
+      },
+      "risk": "REPUTATION_DAMAGE_NOT_PROOF_OF_FALSE_ALLEGATION",
+      "unapproved_teaching_alternative": {
+        "english_definition": "To speak or write about someone in a way intended to make others think badly of them.",
+        "burmese_meaning": "တစ်စုံတစ်ဦးကို အများအမြင်တွင် အဆိုးမြင်စေရန် ပြင်းပြင်းထန်ထန် ပုတ်ခတ်ပြောဆို သို့မဟုတ် ရေးသားသည်",
+        "example_sentence": "The article tried to vilify the volunteers rather than address their concerns."
+      },
+      "independent_review_task": "Independent human editor must directly check exact Oxford sense/POS and an actual source-backed CEFR classification; independently review fluent Myanmar and grammar; verify George/Emma British headword and example recordings by real listening; retain dated signed evidence before approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "whimsical",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "frozen_snapshot": {
+        "english_definition": "Playfully unusual or imaginative.",
+        "burmese_meaning": "စိတ်ကူးယဉ်ဆန်ပြီး ပျော်ရွှင်စရာကောင်းသည့် ထူးခြားမှုရှိသော",
+        "example_sentence": "The illustrator filled the book with whimsical animals."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 51,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/whimsical",
+        "observed_on": "2026-11-02",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-105",
+        "uk_ipa_lead": "/ˈwɪmzɪkl/",
+        "source_sense_summary": "Oxford says whimsical is unusually unserious in a way that can be funny OR annoying; frozen Myanmar gloss is exclusively cheerful and imaginative, potentially hiding the irritating interpretation. Do not transfer an unrelated OPAL written word label to CEFR.",
+        "exact_sense_cefr_label": "NOT_OBSERVED",
+        "independently_verified": false
+      },
+      "risk": "POSITIVE_ONLY_MYANMAR_GLOSS_OMITS_ANNOYING_SENSE",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Unusual and playful in a way that may be amusing or slightly irritating.",
+        "burmese_meaning": "ပုံမှန်မဟုတ်ဘဲ ကစားသလို ထူးဆန်းနေ၍ ရယ်စရာကောင်းနိုင်သလို စိတ်အနှောင့်အယှက်လည်း ဖြစ်စေနိုင်သော",
+        "example_sentence": "The artist added whimsical details to the children's story."
+      },
+      "independent_review_task": "Independent human editor must directly check exact Oxford sense/POS and an actual source-backed CEFR classification; independently review fluent Myanmar and grammar; verify George/Emma British headword and example recordings by real listening; retain dated signed evidence before approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "acquiescence",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "frozen_snapshot": {
+        "english_definition": "Acceptance of a situation without open protest, often unwillingly.",
+        "burmese_meaning": "မနှစ်သက်သော်လည်း ပွင့်လင်းစွာ မကန့်ကွက်ဘဲ လက်ခံလိုက်ခြင်း",
+        "example_sentence": "Her silence was mistaken for acquiescence to the new policy."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 20,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/acquiescence",
+        "observed_on": "2026-11-02",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-114",
+        "uk_ipa_lead": "/ˌækwiˈesns/",
+        "source_sense_summary": "Oxford marks the noun uncountable and describes going along with another person's wishes or opinions despite uncertainty. Silence may be interpreted as acquiescence but is not necessarily consent. 'Discussion and agreement c2' is a topic label, not headword CEFR.",
+        "exact_sense_cefr_label": "NOT_OBSERVED",
+        "independently_verified": false
+      },
+      "risk": "UNCOUNTABLE_AND_SILENCE_NOT_AUTOMATIC_CONSENT_TOPIC_C2",
+      "unapproved_teaching_alternative": {
+        "english_definition": "The act of accepting something without resisting, even when you may not fully agree.",
+        "burmese_meaning": "သဘောမတူချင်သော်လည်း ထင်ရှားစွာ မကန့်ကွက်ဘဲ လက်ခံလိုက်ခြင်း",
+        "example_sentence": "The committee mistook her silence for acquiescence to the plan."
+      },
+      "independent_review_task": "Independent human editor must directly check exact Oxford sense/POS and an actual source-backed CEFR classification; independently review fluent Myanmar and grammar; verify George/Emma British headword and example recordings by real listening; retain dated signed evidence before approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "ameliorate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "frozen_snapshot": {
+        "english_definition": "To make a difficult or unpleasant situation better.",
+        "burmese_meaning": "ခက်ခဲသော သို့မဟုတ် မကောင်းသော အခြေအနေတစ်ခုကို ပိုမိုကောင်းမွန်စေသည်",
+        "example_sentence": "The new drainage system should ameliorate flooding in the village."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 21,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/ameliorate",
+        "observed_on": "2026-11-02",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-115",
+        "uk_ipa_lead": "/əˈmiːliəreɪt/",
+        "source_sense_summary": "Oxford specifies a transitive verb ameliorate something: improve a bad or inadequate condition, effect or situation. The frozen example is plausible; 'Change, cause and effect c2' is a topic label and cannot justify a C1 exact-sense rating.",
+        "exact_sense_cefr_label": "NOT_OBSERVED",
+        "independently_verified": false
+      },
+      "risk": "TRANSITIVE_COLLOCATION_AND_TOPIC_C2_NOT_CEFR",
+      "unapproved_teaching_alternative": {
+        "english_definition": "To make a bad or difficult situation less severe or more satisfactory.",
+        "burmese_meaning": "မကောင်းသော သို့မဟုတ် ခက်ခဲသော အခြေအနေတစ်ခုကို သက်သာကောင်းမွန်လာစေသည်",
+        "example_sentence": "The new drainage channels should ameliorate the flooding problem."
+      },
+      "independent_review_task": "Independent human editor must directly check exact Oxford sense/POS and an actual source-backed CEFR classification; independently review fluent Myanmar and grammar; verify George/Emma British headword and example recordings by real listening; retain dated signed evidence before approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    }
+  ]
+}
