@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - draft/CEFR-1000-SIX-DERIVED-NOUNS-CROSSLEVEL-LEXICAL-SLOTS-2026-11-03.json
+      - tools/audit_cefr_1000_six_derived_noun_slots.py
       - draft/CEFR-1000-A2-SIX-WORLD-LIFE-PUBLIC-DATA-POLICE-UNIVERSITY-CAMBRIDGE-OXFORD-2026-11-03.json
       - tools/audit_cefr_1000_a2_six_world_data_public.py
       - draft/CEFR-1000-A2-SIX-HOUSEHOLD-OBJECTS-OXFORD-CAMBRIDGE-SENSE-2026-11-03.json
@@ -1105,6 +1107,11 @@ jobs:
         run: python3 tools/audit_cefr_1000_a2_six_world_data_public.py --level ALL --self-test
       - name: Reject spoofed publisher dictionary paths in independent CEFR review receipts
         run: python3 tests/cefr-1000-independent-stage-source-binding.py
+      - name: Audit six source-bound lexicalised nouns and CEFR conflicts (NO APPROVAL)
+        run: python3 tools/audit_cefr_1000_six_derived_noun_slots.py --level "${{ matrix.level }}"
+      - name: Reject synthetic derived-noun, source, reviewer and release forgeries
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_six_derived_noun_slots.py --level ALL --self-test
       - name: Save structural QA record (not linguistic verification)
         uses: actions/upload-artifact@v4
         with:

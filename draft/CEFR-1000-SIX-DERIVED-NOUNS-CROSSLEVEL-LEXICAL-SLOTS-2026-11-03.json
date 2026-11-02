@@ -1,0 +1,294 @@
+{
+  "schema": 1,
+  "scope": "USER_APPROVED_1000_TOTAL_NOT_5000",
+  "observed_on": "2026-11-03",
+  "release_status": "STAGING_EDITORIAL_HOLD_DO_NOT_PUBLISH",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "counts_by_level": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "independently_approved_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "method": "Directly opened Oxford Advanced Learner's Dictionary entry pages with line locators; Cambridge publisher-owned indexed search results observed but direct entry opens returned HTTP 403. Topic labels are not headword-specific CEFR ratings. This is independent-source research BY THE ASSISTANT, not independent human editorial review.",
+  "entries": [
+    {
+      "word": "training",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "frozen": {
+        "english_definition": "The process of learning skills needed for a job or activity.",
+        "burmese_meaning": "လေ့ကျင့်သင်ကြားမှု",
+        "example_sentence": "New workers receive safety training.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 603,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "morphology": {
+        "related_word": "train",
+        "related_level": "A1",
+        "related_pos": "noun",
+        "classification": "DERIVED_NOUN_DISTINCT_FROM_TRAIN_TRANSPORT_NOUN",
+        "not_automatically_duplicate": true
+      },
+      "source": {
+        "oxford_url": "https://www.oxfordlearnersdictionaries.com/definition/english/training",
+        "oxford_access": "DIRECT_PUBLISHER_PAGE",
+        "oxford_lines": "88-114",
+        "cambridge_url": "https://dictionary.cambridge.org/dictionary/english/training",
+        "cambridge_access": "PUBLISHER_SEARCH_INDEX_ONLY_DIRECT_403",
+        "cambridge_level": "B1",
+        "cefr_scope": "HIGHER_SAME_SENSE_CONFLICT",
+        "oxford_topic_labels_are_not_headword_cefr": true,
+        "observed_on": "2026-11-03"
+      },
+      "editorial_risk": "Cambridge publisher-index labels the uncountable work-skills noun B1, versus provisional A2. Oxford directly confirms the job-skills noun and uncountability; its Jobs a2 topic label is not a headword CEFR badge.",
+      "proposed_alternative": {
+        "english_definition": "The process of learning skills needed for a job or activity.",
+        "burmese_meaning": "အလုပ် သို့မဟုတ် လုပ်ငန်းတစ်ခုအတွက် လိုအပ်သော ကျွမ်းကျင်မှုများကို လေ့ကျင့်သင်ယူခြင်း",
+        "example_sentence": "New employees receive safety training before starting work."
+      },
+      "proposed_alternative_unapproved": true,
+      "editorial_hold": true,
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false
+    },
+    {
+      "word": "building",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "frozen": {
+        "english_definition": "A structure with a roof and walls.",
+        "burmese_meaning": "အဆောက်အအုံ",
+        "example_sentence": "The new building has six floors.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 672,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "morphology": {
+        "related_word": "build",
+        "related_level": "A2",
+        "related_pos": "verb",
+        "classification": "LEXICALISED_COUNT_NOUN_VS_VERB_ING_FORM",
+        "not_automatically_duplicate": true
+      },
+      "source": {
+        "oxford_url": "https://www.oxfordlearnersdictionaries.com/definition/english/building",
+        "oxford_access": "DIRECT_PUBLISHER_PAGE",
+        "oxford_lines": "88-125",
+        "cambridge_url": "https://dictionary.cambridge.org/dictionary/english/building",
+        "cambridge_access": "PUBLISHER_SEARCH_INDEX_ONLY_DIRECT_403",
+        "cambridge_level": "A2",
+        "cefr_scope": "ALIGNED_SAME_SENSE_LEAD",
+        "oxford_topic_labels_are_not_headword_cefr": true,
+        "observed_on": "2026-11-03"
+      },
+      "editorial_risk": "Cambridge publisher-index labels the countable physical-structure noun A2. Do not confuse the building (structure) noun with the uncountable process of building or the -ing verb form of build.",
+      "proposed_alternative": {
+        "english_definition": "A structure with a roof and walls.",
+        "burmese_meaning": "နံရံများနှင့် ခေါင်မိုးပါသော အဆောက်အအုံ",
+        "example_sentence": "The new school building has six classrooms."
+      },
+      "proposed_alternative_unapproved": true,
+      "editorial_hold": true,
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false
+    },
+    {
+      "word": "reporting",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "frozen": {
+        "english_definition": "The activity of giving information about events.",
+        "burmese_meaning": "သတင်းတင်ပြခြင်း၊ အစီရင်ခံခြင်း",
+        "example_sentence": "Accurate reporting helps the public understand events.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 143,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "morphology": {
+        "related_word": "report",
+        "related_level": "A2",
+        "related_pos": "noun",
+        "classification": "LEXICALISED_UNCOUNTABLE_NEWS_NOUN_VS_REPORT_NOUN",
+        "not_automatically_duplicate": true
+      },
+      "source": {
+        "oxford_url": "https://www.oxfordlearnersdictionaries.com/definition/english/reporting",
+        "oxford_access": "DIRECT_PUBLISHER_PAGE",
+        "oxford_lines": "88-110",
+        "cambridge_url": "https://dictionary.cambridge.org/dictionary/english/reporting",
+        "cambridge_access": "PUBLISHER_SEARCH_INDEX_ONLY_DIRECT_403",
+        "cambridge_level": null,
+        "cefr_scope": "UNLABELLED_NOT_CEFR_PROOF",
+        "oxford_topic_labels_are_not_headword_cefr": true,
+        "observed_on": "2026-11-03"
+      },
+      "editorial_risk": "Oxford directly describes an uncountable noun about preparing and presenting news, with a TV/radio/news b2 TOPIC label only. Cambridge publisher-index business/accounting reporting has no exact-sense B2 badge. The frozen definition is too broad for the Oxford news-specific sense.",
+      "proposed_alternative": {
+        "english_definition": "The activity of giving information about events.",
+        "burmese_meaning": "သတင်းဖြစ်ရပ်များကို သတင်းစာ၊ ရေဒီယို သို့မဟုတ် ရုပ်မြင်သံကြားတွင် ရေးသားတင်ပြခြင်း",
+        "example_sentence": "Accurate reporting helps readers understand what happened."
+      },
+      "proposed_alternative_unapproved": true,
+      "editorial_hold": true,
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false
+    },
+    {
+      "word": "engineer",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "frozen": {
+        "english_definition": "A person who designs or maintains machines, structures, or systems.",
+        "burmese_meaning": "အင်ဂျင်နီယာ",
+        "example_sentence": "The engineer inspected the damaged bridge.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 397,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "morphology": {
+        "related_word": "engine",
+        "related_level": "B1",
+        "related_pos": "noun",
+        "classification": "DERIVED_PROFESSION_NOUN_NOT_INFLECTION_OF_ENGINE",
+        "not_automatically_duplicate": true
+      },
+      "source": {
+        "oxford_url": "https://www.oxfordlearnersdictionaries.com/definition/english/engineer_1",
+        "oxford_access": "DIRECT_PUBLISHER_PAGE",
+        "oxford_lines": "88-147",
+        "cambridge_url": "https://dictionary.cambridge.org/dictionary/english/engineer",
+        "cambridge_access": "PUBLISHER_SEARCH_INDEX_ONLY_DIRECT_403",
+        "cambridge_level": null,
+        "cefr_scope": "UNLABELLED_NOT_CEFR_PROOF",
+        "oxford_topic_labels_are_not_headword_cefr": true,
+        "observed_on": "2026-11-03"
+      },
+      "editorial_risk": "Oxford directly confirms the design/build profession noun, while its Jobs a2 and Engineering a2 TOPIC tags do not establish exact-sense A2. Cambridge indexed definition has no visible exact-sense B2 badge. Do not equate engineer (person) with engine (machine), or the distinct engine-driver sense.",
+      "proposed_alternative": {
+        "english_definition": "A person who designs or maintains machines, structures, or systems.",
+        "burmese_meaning": "စက်ပစ္စည်းများ၊ အဆောက်အအုံများနှင့် စနစ်များကို ဒီဇိုင်းရေးဆွဲ တည်ဆောက်သည့် အင်ဂျင်နီယာပညာရှင်",
+        "example_sentence": "An engineer designed the new bridge."
+      },
+      "proposed_alternative_unapproved": true,
+      "editorial_hold": true,
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false
+    },
+    {
+      "word": "speaker",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "frozen": {
+        "english_definition": "A person who gives a talk to an audience.",
+        "burmese_meaning": "ပရိသတ်ရှေ့တွင် ဟောပြောသူ",
+        "example_sentence": "The guest speaker answered questions after the lecture.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 852,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "morphology": {
+        "related_word": "speak",
+        "related_level": "A1",
+        "related_pos": "verb",
+        "classification": "DERIVED_AGENT_NOUN_NOT_INFLECTION_OF_SPEAK",
+        "not_automatically_duplicate": true
+      },
+      "source": {
+        "oxford_url": "https://www.oxfordlearnersdictionaries.com/definition/english/speaker",
+        "oxford_access": "DIRECT_PUBLISHER_PAGE",
+        "oxford_lines": "88-201",
+        "cambridge_url": "https://dictionary.cambridge.org/dictionary/english/speaker",
+        "cambridge_access": "PUBLISHER_SEARCH_INDEX_ONLY_DIRECT_403",
+        "cambridge_level": "B1",
+        "cefr_scope": "LOWER_SAME_SENSE_CONFLICT",
+        "oxford_topic_labels_are_not_headword_cefr": true,
+        "observed_on": "2026-11-03"
+      },
+      "editorial_risk": "Cambridge publisher-index labels the public-talk person noun B1, versus provisional B2. Oxford directly distinguishes speech-giver, language-speaker, electronic loudspeaker and parliamentary Speaker; its b2 topic tag belongs to electronics, not this frozen public-talk sense.",
+      "proposed_alternative": {
+        "english_definition": "A person who gives a talk to an audience.",
+        "burmese_meaning": "ပရိသတ်ရှေ့တွင် မိန့်ခွန်း သို့မဟုတ် ဟောပြောချက် ပြောကြားသူ",
+        "example_sentence": "The guest speaker answered questions after the talk."
+      },
+      "proposed_alternative_unapproved": true,
+      "editorial_hold": true,
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false
+    },
+    {
+      "word": "news",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "frozen": {
+        "english_definition": "New information about events happening now or recently.",
+        "burmese_meaning": "သတင်း၊ နောက်ဆုံးဖြစ်ရပ်အကြောင်းအရာ",
+        "example_sentence": "We heard the news on the radio this morning.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 511,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "morphology": {
+        "related_word": "new",
+        "related_level": "A1",
+        "related_pos": "adjective",
+        "classification": "LEXICALISED_UNCOUNTABLE_NOUN_NOT_PRODUCTIVE_PLURAL",
+        "not_automatically_duplicate": true
+      },
+      "source": {
+        "oxford_url": "https://www.oxfordlearnersdictionaries.com/definition/english/news",
+        "oxford_access": "DIRECT_PUBLISHER_PAGE",
+        "oxford_lines": "88-160",
+        "cambridge_url": "https://dictionary.cambridge.org/dictionary/english/news",
+        "cambridge_access": "PUBLISHER_SEARCH_INDEX_ONLY_DIRECT_403",
+        "cambridge_level": "A2",
+        "cefr_scope": "ALIGNED_SAME_SENSE_LEAD",
+        "oxford_topic_labels_are_not_headword_cefr": true,
+        "observed_on": "2026-11-03"
+      },
+      "editorial_risk": "Cambridge publisher-index labels recent-events information noun A2 and notes it is uncountable with singular agreement. News is NOT a productive plural of adjective new; do not auto-ban it as a duplicate lexical slot. Oxford news topic labels are not headword-specific CEFR badges.",
+      "proposed_alternative": {
+        "english_definition": "New information about events happening now or recently.",
+        "burmese_meaning": "မကြာသေးမီက ဖြစ်ပျက်ခဲ့သော အကြောင်းအရာများနှင့်ပတ်သက်သည့် သတင်းအချက်အလက်",
+        "example_sentence": "We heard some good news this morning."
+      },
+      "proposed_alternative_unapproved": true,
+      "editorial_hold": true,
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false
+    }
+  ]
+}
