@@ -36,3 +36,11 @@ Staging research packet commit `dea6dbbdc10f6e695a24762d4afc53d87f830966`; audit
 | **Total** | **1,000** | **0** |
 
 **Missing essential gates:** independent English, Myanmar, example and source-backed exact-sense CEFR approval for all 1,000; signed final manifest; complete George/Emma British headword and example recordings with **real listening** signoffs; desktop/mobile browser regression; real physical iPhone Safari review; measured GitHub Pages hosting limits; release authorization; confirmed live production deployment; final preserved-asset verification. The 54 lessons, separate IELTS 1,000-word bank, existing George/Emma production audio, privacy and main branch are protected and were not edited. **Do not merge, deploy or notify.**
+
+## Verified post-integration GitHub Actions evidence — 2 November 2026
+
+**Structural [run 41387302604](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41387302604): SUCCESS**, testing staging workflow SHA `ba12e69cf83d97da900e45e242914b79f5df5eed`. Actual six job conclusions **A1, A2, B1, B2, C1, ALL = SUCCESS**. ALL job **125090876450** log explicitly reports seven held records, four B2-vs-indexed-B1 sense conflicts, one B2 indexed alignment, two unsubstantiated CEFR leads, zero approvals and **236/236 synthetic mutations rejected**; ALL artifact **13116340810**. The B2 job **125090876464** separately passed the seven-card structural check.
+
+**Documentary [run 41387306474](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41387306474): SUCCESS** at staging SHA `0d301f0bb6e102d660b07c3eb77bac063588270e`. Actual job **125090887167** log confirmed **236/236** synthetic rejections and explicitly reported **0/1000 independent source reviews, 0/1000 both-voice listening**, missing approved manifest, real mobile/physical iPhone QA, measured hosting evidence, final protected-assets verification and release signoff. It also reported **PASS: protected production assets untouched by staging migration**; blocker artifact **13115414571**. This workflow is documentary and does **not deploy**.
+
+These CI results are **mechanical source/flag integrity tests only**, not independent linguistic verification, human review, actual audio listening, physical iPhone Safari testing or permission to publish. **RELEASE BLOCKED — STAGING ONLY.**
