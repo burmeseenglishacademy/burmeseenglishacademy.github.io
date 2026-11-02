@@ -33,3 +33,11 @@ Human-independent reviewers must adjudicate all three B2-vs-C1 conflicts and all
 | **Total** | **1,000** | **0** |
 
 **Release remains blocked.** Final independently approved manifest, complete George/Emma headword and example recordings with listening receipts, browser/mobile regressions, real physical iPhone Safari review, measured GitHub Pages hosting limits, protected 54 lessons and separate IELTS 1,000-word bank and production audio/privacy verification, and confirmed production deployment are all missing. No merge, main edit or publication.
+
+## Verified post-repair GitHub Actions (actual jobs and logs)
+
+The first structural run [41368253576](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41368253576) exposed a real auditor bug: research wrappers intentionally omit independent-review flags, but the initial validator treated absence as a forged approval. Fixed at commit `dc4186759287d9fd41e87559d4684f42eeffe82e`, preserving rejection of forged `true` values. This was an implementation repair, not an editorial signoff.
+
+**Post-repair structural run [41368330854](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41368330854) completed SUCCESS** at SHA `dc4186759287d9fd41e87559d4684f42eeffe82e`. All six actual job conclusions: A1 `125033192287` SUCCESS, A2 `125033192476` SUCCESS, B1 `125033192512` SUCCESS, B2 `125033192486` SUCCESS, C1 `125033192399` SUCCESS, ALL `125033192442` SUCCESS. ALL job logs confirmed **94/94 synthetic negative mutations rejected** and all six research cards held; artifact ID `13108460282`.
+
+**Post-repair documentary no-deployment run [41368330837](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41368330837) completed SUCCESS** at the same SHA; job `125033192044`. Actual logs independently confirmed **94/94 rejections**, missing independent 1,000-entry review packets, final George/Emma listening receipts, desktop/mobile WebKit/Chromium evidence, physical iPhone Safari, measured GitHub Pages hosting and formal release approval. Production protection step reported **protected production assets untouched**. Blocker artifact ID `13107973164`. Both workflows are staging-only mechanical checks; they **do not** mean the curriculum, audio or production release is approved.
