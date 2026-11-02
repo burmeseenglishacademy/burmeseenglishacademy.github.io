@@ -138,7 +138,8 @@ def validate(packet, shortlist):
                 errors.append("missing proposed " + word + ":" + key)
         if not re.search(r"[\u1000-\u109f]", proposed.get("burmese_meaning", "")):
             errors.append("Myanmar script missing " + word)
-        if not re.search(r"\b" + re.escape(word) + r"\b", proposed.get("example_sentence", ""), re.I):
+        stem = word[:-1] if word.endswith("e") else word
+        if not re.search(r"\b" + re.escape(stem) + r"(?:e|ed|ing|s|es)?\b", proposed.get("example_sentence", ""), re.I):
             errors.append("example does not contain headword " + word)
     return errors
 
