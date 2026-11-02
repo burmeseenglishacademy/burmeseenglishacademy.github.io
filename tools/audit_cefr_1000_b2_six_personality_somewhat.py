@@ -90,7 +90,7 @@ def self_test(short, note, source):
     for token in ("personality", "relief", "resistance", "retail", "shame", "somewhat",
                   "zero independent approvals", "topic", "3 November 2026",
                   "no physical iPhone Safari test", "not 5,000"):
-        altered = note.replace(token, "FORGED", 1)
+        altered = note.replace(token.encode("utf-8"), b"FORGED", 1)
         require(altered != note, "self-test token absent: " + token)
         try:
             validate(short, altered, source)
