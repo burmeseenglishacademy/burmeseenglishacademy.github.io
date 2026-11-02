@@ -39,7 +39,7 @@ FALSE = ("reviewed_english", "reviewed_burmese", "reviewed_example",
 
 def blob_sha(path):
     data = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\\0" + data).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
 
 
 def read(path):
@@ -96,7 +96,7 @@ def validate(packet, shortlist, source):
         require(isinstance(card.get("editorial_risk"), str) and len(card["editorial_risk"]) > 70, word + " editorial risk")
         alternative = card.get("proposed_alternative", {})
         require(all(isinstance(alternative.get(k), str) and len(alternative[k]) > 10 for k in ("english_definition", "burmese_meaning", "example_sentence")), word + " teaching alternative")
-        require(any("\\u1000" <= c <= "\\u109f" for c in alternative.get("burmese_meaning", "")), word + " Myanmar script")
+        require(any("\u1000" <= c <= "\u109f" for c in alternative.get("burmese_meaning", "")), word + " Myanmar script")
         require(word in alternative.get("example_sentence", "").casefold(), word + " example sense anchor")
         require(card.get("proposed_alternative_unapproved") is True and card.get("editorial_hold") is True, word + " editorial hold")
         require(all(card.get(k) is False for k in FALSE), word + " fabricated approval")
