@@ -32,7 +32,7 @@ FROZEN_FIELDS = ("word", "level", "part_of_speech", "english_definition",
 
 def blob_sha(path):
     data = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\\0" + data).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
 
 
 def validate(packet, shortlist):
@@ -119,7 +119,7 @@ def validate(packet, shortlist):
                 for k in ("english_definition", "burmese_meaning",
                           "original_example")):
             issues.append(word + " missing teaching draft")
-        elif not any("\\u1000" <= ch <= "\\u109f" for ch in alt["burmese_meaning"]):
+        elif not any("\u1000" <= ch <= "\u109f" for ch in alt["burmese_meaning"]):
             issues.append(word + " Myanmar script missing")
     return issues
 
