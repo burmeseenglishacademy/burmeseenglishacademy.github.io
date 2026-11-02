@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - draft/CEFR-1000-B2-SEVEN-QUOTE-TIE-RAW-LIFT-SHOCK-SILENCE-CABINET-EXACT-SENSE-2026-11-02.json
+      - tools/audit_cefr_1000_b2_seven_uk_sense_conflicts.py
       - draft/CEFR-1000-B2-SIX-FOUNDATIONAL-SENSE-CAMBRIDGE-INDEXED-TRIAGE-2026-11-02.json
       - tools/audit_cefr_1000_b2_six_foundational_senses.py
       - draft/CEFR-1000-C1-SIX-DIRECT-OXFORD-RARE-SENSE-AND-CEFR-UNSUBSTANTIATED-2026-11-02.json
@@ -974,6 +976,11 @@ jobs:
       - name: Reject forged B2 publisher, Myanmar and independent-review claims
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_b2_six_foundational_senses.py --level ALL --self-test
+      - name: Audit seven held B2 British exact-sense and Myanmar leads
+        run: python3 tools/audit_cefr_1000_b2_seven_uk_sense_conflicts.py --level "${{ matrix.level }}"
+      - name: Reject forged seven-card publisher CEFR, translation and review claims
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_b2_seven_uk_sense_conflicts.py --level ALL --self-test
       - name: Audit six held C1 Cambridge indexed sense leads
         run: python3 tools/audit_cefr_1000_c1_six_cambridge_manufacturing_coast.py --level "${{ matrix.level }}"
       - name: Reject synthetic publisher and approval forgeries for six C1 leads
