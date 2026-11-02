@@ -12,6 +12,8 @@ on:
       - draft/CEFR-1000-B1-FOUR-DIRECT-OXFORD-SENSE-EXAMPLE-TRIAGE-2026-11-02.json
       - tools/audit_cefr_1000_b1_four_sense_example.py
       - .github/workflows/cefr-1000-selection-structural-qa.yml
+      - tools/audit_cefr_1000_launch_readiness.py
+      - tests/cefr-1000-independent-stage-source-binding.py
       - tools/validate_cefr_release.py
       - tests/cefr-release-evidence-gate.py
       - draft/CEFR-1000-C1-B2-CAMBRIDGE-INDEXED-SIX-SENSE-TRIAGE-2026-11-01.json
@@ -247,6 +249,8 @@ on:
       - draft/CEFR-1000-CAMBRIDGE-C1-EIGHT-UNLABELLED-SENSE-TRIAGE-2026-10-31.json
       - tools/audit_cefr_1000_cambridge_c1_eight_unlabelled.py
       - .github/workflows/cefr-1000-selection-structural-qa.yml
+      - tools/audit_cefr_1000_launch_readiness.py
+      - tests/cefr-1000-independent-stage-source-binding.py
       - draft/CEFR-1000-CAMBRIDGE-A2-SIX-COMPOUND-INDEXED-SENSE-TRIAGE-2026-10-31.json
       - tools/audit_cefr_1000_cambridge_a2_six_indexed.py
       - draft/CEFR-1000-OXFORD-B1-TWELFTH-TWELVE-AND-FOUR-DIRECT-SENSE-LEADS-2026-10-31.json
@@ -973,6 +977,8 @@ jobs:
       - name: Reject forged Oxford footer levels, bilingual provenance and false signoffs
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_c1_six_direct_oxford_unsubstantiated.py --level ALL --self-test
+      - name: Reject spoofed publisher dictionary paths in independent CEFR review receipts
+        run: python3 tests/cefr-1000-independent-stage-source-binding.py
       - name: Save structural QA record (not linguistic verification)
         uses: actions/upload-artifact@v4
         with:

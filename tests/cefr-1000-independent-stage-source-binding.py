@@ -61,4 +61,34 @@ for field, bad in (
 ):
     assert not gate.independent_word_stage(dict(mock, **{field: bad}), "apple", "sense_specific_cefr", expected_level="A1"), field
 assert not gate.independent_word_stage(mock, "apple", "sense_specific_cefr", expected_level="B1")
+
+# Mock-only adversarial URL-binding tests: NOT human review or real CEFR evidence.
+for forged_url in [
+    "https://dictionary.cambridge.org/blog/apple",
+    "https://dictionary.cambridge.org/dictionary/english/banana/apple",
+    "https://dictionary.cambridge.org/dictionary/english/apple/banana",
+    "https://dictionary.cambridge.org/dictionary/english/banana_apple",
+    "https://dictionary.cambridge.org/dictionary/english/apple_1",
+    "https://www.oxfordlearnersdictionaries.com/blog/apple",
+    "https://www.oxfordlearnersdictionaries.com/definition/english/banana/apple",
+    "https://www.oxfordlearnersdictionaries.com/definition/english/banana_apple",
+    "https://www.oxfordlearnersdictionaries.com/definition/english/apple_1/extra",
+    "https://www.oxfordlearnersdictionaries.com/definition/english/apple_0",
+    "https://other.example.net/dictionary/english/apple",
+    "https://attacker@dictionary.cambridge.org/dictionary/english/apple"
+]:
+    forged = dict(mock, source_url=forged_url)
+    assert not gate.independent_source_for_word(forged, "apple"), forged_url
+    for stage in ("english_sense", "sense_specific_cefr"):
+        assert not gate.independent_word_stage(forged, "apple", stage, expected_level="A1"), (stage, forged_url)
+for real_shaped_url in [
+    "https://dictionary.cambridge.org/dictionary/english/apple",
+    "https://www.oxfordlearnersdictionaries.com/definition/english/apple",
+    "https://www.oxfordlearnersdictionaries.com/definition/english/apple_1",
+    "https://oxfordlearnersdictionaries.com/definition/english/apple_2"
+]:
+    shaped = dict(mock, source_url=real_shaped_url)
+    assert gate.independent_source_for_word(shaped, "apple"), real_shaped_url
+    assert gate.independent_word_stage(shaped, "apple", "english_sense")
+
 print("PASS: mock-only publisher exact-sense/date/CEFR negative tests; ZERO real approvals")

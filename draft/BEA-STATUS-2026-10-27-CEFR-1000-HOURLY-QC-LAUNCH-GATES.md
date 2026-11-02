@@ -50,3 +50,7 @@ User explicitly approved a new **1,000 TOTAL CEFR A1–C1** target (A1/A2/B1/B2/
 5. User notification is due **only once** after all final release conditions, including confirmed production deployment, are evidenced.
 
 **Present result: automation continues hourly, structural checks pass, release proof deliberately blocks go-live. No production changes.**
+
+## 2 November 2026 — publisher exact-headword receipt path-binding repair (staging only)
+
+A fail-closed gap was repaired: the documentary launch auditor previously accepted a publisher URL if any path segment contained the headword, allowing fake blog/nested/unrelated-entry URLs as purported exact-sense sources. It now requires the full canonical Cambridge `/dictionary/english/<headword>` or Oxford `/definition/english/<headword>[_n]` path, with a narrowly scoped Oxford homograph suffix. Twelve adversarial URLs and four valid shapes are covered by mock-only regression checks, invoked in all six parallel CEFR structural lanes. **URL structure is not source truth or human signoff.** First-pass A1/A2/B1/B2/C1 remains 200/0 each; all 1,000 held. Independent review, George/Emma real listening, physical iPhone Safari, hosting and confirmed deployment are still missing. No production edits or publication.

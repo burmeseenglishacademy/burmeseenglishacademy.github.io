@@ -97,8 +97,16 @@ def independent_source_for_word(record, word):
         if not isinstance(quote, str) or len(quote.strip()) < 3 or len(quote) > 350:
             return False
         return word in re.findall(r"[a-z]+(?:[-'][a-z]+)*", quote.casefold())
-    segments = [segment.split("_")[0] for segment in path.strip("/").split("/")]
-    return word in segments
+    # Exact-sense receipts must bind to a whole publisher entry path, not
+    # merely a path containing the word (e.g. /blog/apple or /banana/apple).
+    if p.username or p.password:
+        return False
+    if p.hostname == "dictionary.cambridge.org":
+        return re.fullmatch(r"/dictionary/english/" + re.escape(word), path) is not None
+    if p.hostname in ("oxfordlearnersdictionaries.com", "www.oxfordlearnersdictionaries.com"):
+        return re.fullmatch(r"/definition/english/" + re.escape(word)
+                            + r"(?:_[1-9][0-9]*)?", path) is not None
+    return False
 
 
 # A link that merely contains the headword (or a general Oxford PDF entry)
