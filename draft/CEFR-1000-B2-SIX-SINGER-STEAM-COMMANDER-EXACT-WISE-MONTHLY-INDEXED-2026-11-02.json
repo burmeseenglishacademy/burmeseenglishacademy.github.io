@@ -1,0 +1,290 @@
+{
+  "schema": 1,
+  "scope": "USER_APPROVED_1000_TOTAL_A1_A2_B1_B2_C1_STAGING_ONLY",
+  "created_on": "2026-11-02",
+  "status": "INDEXED_CAMBRIDGE_B2_SIX_EXACT_SENSE_TRIAGE_HUMAN_REVIEW_REQUIRED",
+  "frozen_shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "source_access_limitations": "Cambridge Dictionary publisher search-index snippets were visible on 2026-11-02, but direct publisher headword-page opens returned HTTP 403. These are search-index research leads, not direct page observations and not independent human review. CEFR labels apply to a specified part of speech and sense, not automatically to every sense or a different source.",
+  "count": 6,
+  "level": "B2",
+  "conflict_count": 4,
+  "alignment_count": 2,
+  "first_pass_written_by_level": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "independently_approved_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "headword_audio_listening_signoffs": 0,
+  "example_audio_listening_signoffs": 0,
+  "physical_iphone_safari_signoffs": 0,
+  "production_deployed": false,
+  "records": [
+    {
+      "word": "singer",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A person who sings, especially professionally.",
+        "burmese_meaning": "အဆိုတော်",
+        "example_sentence": "The singer performed three new songs."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 545,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/singer",
+        "observed_on": "2026-11-02",
+        "access": "PUBLISHER_SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "INDEXED_CEFR_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "indexed_cefr": "A2",
+        "indexed_part_of_speech_and_sense": "noun [C], person who sings",
+        "uk_ipa": "/ˈsɪŋ.ə(r)/",
+        "observation_paraphrase": "Cambridge indexes the general countable noun as A2. Frozen B2 teaching sense includes 'especially professionally', which does not establish a distinct B2 sense.",
+        "exact_sense_independently_verified": false
+      },
+      "triage_status": "LEVEL_CONFLICT",
+      "editorial_note": "The word can describe amateur or professional singers; the original definition's professional qualifier must not be used to manufacture a B2 sense.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "A person who sings songs, sometimes as a job.",
+        "burmese_meaning": "သီချင်းဆိုသူ၊ အဆိုတော်",
+        "example_sentence": "The singer rehearsed before the concert."
+      },
+      "independent_reviewer_task": "Independently check Cambridge/Oxford exact sense, CEFR and POS; verify fluent Myanmar meaning and original example grammar; reconcile placement without changing frozen shortlist before approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "steam",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "Water in the form of gas, especially when heated.",
+        "burmese_meaning": "ရေနွေးငွေ့",
+        "example_sentence": "Steam rose from the bowl of soup."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 546,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/steam",
+        "observed_on": "2026-11-02",
+        "access": "PUBLISHER_SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "INDEXED_CEFR_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "indexed_cefr": "B2",
+        "indexed_part_of_speech_and_sense": "noun [U], hot gas produced when water boils",
+        "uk_ipa": "/stiːm/",
+        "observation_paraphrase": "Cambridge indexes the uncountable boiling-water noun at B2. Frozen wording 'water in the form of gas' is broader; everyday visible steam can include condensed droplets.",
+        "exact_sense_independently_verified": false
+      },
+      "triage_status": "INDEX_ALIGNMENT_LEAD",
+      "editorial_note": "Keep steam noun separate from steam verb, cooking uses, STEAM educational acronym and figurative idioms.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "The hot vapour produced when water boils.",
+        "burmese_meaning": "ရေကို ဆူပွက်အောင် အပူပေးသောအခါ ဖြစ်ပေါ်လာသည့် ရေနွေးငွေ့",
+        "example_sentence": "Steam rose from the kettle as the water boiled."
+      },
+      "independent_reviewer_task": "Independently check Cambridge/Oxford exact sense, CEFR and POS; verify fluent Myanmar meaning and original example grammar; reconcile placement without changing frozen shortlist before approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "commander",
+      "level": "B2",
+      "part_of_speech": "noun",
+      "shortlist_snapshot": {
+        "english_definition": "A person in charge of a military group or operation.",
+        "burmese_meaning": "စစ်ဘက်ဆိုင်ရာ အမိန့်ပေးခေါင်းဆောင်",
+        "example_sentence": "The commander explained the safety plan to the unit."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 548,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/commander",
+        "observed_on": "2026-11-02",
+        "access": "PUBLISHER_SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "INDEXED_CEFR_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "indexed_cefr": "C2",
+        "indexed_part_of_speech_and_sense": "noun [C], officer in charge of a military operation or naval rank",
+        "uk_ipa": "/kəˈmɑːn.də(r)/",
+        "observation_paraphrase": "Cambridge indexes an officer leading a military operation or holding a naval rank at C2. Frozen B2 says a person leading a military group or operation; the overlap is substantial but the naval rank must not be silently equated to every group leader.",
+        "exact_sense_independently_verified": false
+      },
+      "triage_status": "LEVEL_AND_SENSE_SCOPE_CONFLICT",
+      "editorial_note": "Cambridge entry also covers a particular naval rank. Do not conflate a military leader, a naval rank and a non-military team leader.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "A military officer who directs a group of soldiers or an operation.",
+        "burmese_meaning": "စစ်ဆင်ရေး သို့မဟုတ် တပ်ဖွဲ့တစ်ခုကို ဦးဆောင်ကွပ်ကဲသော စစ်ဘက်အရာရှိ",
+        "example_sentence": "The commander briefed the soldiers before the operation."
+      },
+      "independent_reviewer_task": "Independently check Cambridge/Oxford exact sense, CEFR and POS; verify fluent Myanmar meaning and original example grammar; reconcile placement without changing frozen shortlist before approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "exact",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Completely correct or precise, without approximation.",
+        "burmese_meaning": "အတိအကျဖြစ်သော",
+        "example_sentence": "Please record the exact weight of each package."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 549,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/exact",
+        "observed_on": "2026-11-02",
+        "access": "PUBLISHER_SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "INDEXED_CEFR_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "indexed_cefr": "B1",
+        "indexed_part_of_speech_and_sense": "adjective ACCURATE, completely correct in every detail",
+        "uk_ipa": "/ɪɡˈzækt/",
+        "observation_paraphrase": "Cambridge indexes the accurate adjective at B1. Frozen B2 definition and weight example use that same sense; exact as a formal verb is separate.",
+        "exact_sense_independently_verified": false
+      },
+      "triage_status": "LEVEL_CONFLICT",
+      "editorial_note": "The verb exact (demand or obtain) is a separate part of speech and cannot justify the B2 adjective.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Completely correct, with no difference from the true amount or detail.",
+        "burmese_meaning": "အတိအကျဖြစ်သော၊ အသေးစိတ်တိကျမှန်ကန်သော",
+        "example_sentence": "Please give me the exact weight of the parcel."
+      },
+      "independent_reviewer_task": "Independently check Cambridge/Oxford exact sense, CEFR and POS; verify fluent Myanmar meaning and original example grammar; reconcile placement without changing frozen shortlist before approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "wise",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Showing good judgement based on knowledge or experience.",
+        "burmese_meaning": "အမြော်အမြင်ရှိသော",
+        "example_sentence": "It was wise to check the contract before signing."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 553,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/wise",
+        "observed_on": "2026-11-02",
+        "access": "PUBLISHER_SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "INDEXED_CEFR_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "indexed_cefr": "B2",
+        "indexed_part_of_speech_and_sense": "adjective, good judgment based on experience",
+        "uk_ipa": "/waɪz/",
+        "observation_paraphrase": "Cambridge indexes the experienced-good-judgment adjective at B2; matches the frozen teaching sense, subject to independent human source and Myanmar/example review.",
+        "exact_sense_independently_verified": false
+      },
+      "triage_status": "INDEX_ALIGNMENT_LEAD",
+      "editorial_note": "Wise as part of a suffix (-wise) or a surname is unrelated; no alternative CEFR claim is made.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Able to make sensible decisions because of knowledge and experience.",
+        "burmese_meaning": "အတွေ့အကြုံနှင့် အသိပညာအပေါ် အခြေခံ၍ ဆင်ခြင်ဆုံးဖြတ်နိုင်သော၊ အမြော်အမြင်ရှိသော",
+        "example_sentence": "It was wise to check the contract before signing."
+      },
+      "independent_reviewer_task": "Independently check Cambridge/Oxford exact sense, CEFR and POS; verify fluent Myanmar meaning and original example grammar; reconcile placement without changing frozen shortlist before approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "monthly",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "shortlist_snapshot": {
+        "english_definition": "Happening or produced once every month.",
+        "burmese_meaning": "လစဉ်ဖြစ်သော",
+        "example_sentence": "Our monthly meeting takes place on Friday."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 556,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge Dictionary",
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/monthly",
+        "observed_on": "2026-11-02",
+        "access": "PUBLISHER_SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "INDEXED_CEFR_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "indexed_cefr": "B1",
+        "indexed_part_of_speech_and_sense": "adjective/adverb, happening or produced once a month",
+        "uk_ipa": "/ˈmʌn.θli/",
+        "observation_paraphrase": "Cambridge indexes monthly adjective/adverb at B1. Frozen B2 adjective and meeting example express that same frequency sense.",
+        "exact_sense_independently_verified": false
+      },
+      "triage_status": "LEVEL_CONFLICT",
+      "editorial_note": "Monthly can also function as an adverb; the frozen target is specifically the adjective, not a separate advanced sense.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Happening or being made once every month.",
+        "burmese_meaning": "လစဉ်ဖြစ်သော၊ တစ်လလျှင် တစ်ကြိမ်ပြုလုပ်သော",
+        "example_sentence": "We prepare a monthly report for the manager."
+      },
+      "independent_reviewer_task": "Independently check Cambridge/Oxford exact sense, CEFR and POS; verify fluent Myanmar meaning and original example grammar; reconcile placement without changing frozen shortlist before approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false
+    }
+  ]
+}
