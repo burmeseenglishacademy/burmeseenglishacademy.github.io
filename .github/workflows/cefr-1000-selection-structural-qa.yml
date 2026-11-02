@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - draft/CEFR-1000-C1-SIX-CAMBRIDGE-MANUFACTURER-COASTAL-DISABILITY-2026-11-02.json
+      - tools/audit_cefr_1000_c1_six_cambridge_manufacturing_coast.py
       - draft/CEFR-1000-B1-FIVE-DEMAND-SUPPLY-FEATURE-APPLY-AUTHORITY-SENSE-TRIAGE-2026-11-02.json
       - tools/audit_cefr_1000_b1_five_commercial_senses.py
       - draft/CEFR-1000-B1-FOUR-DIRECT-OXFORD-SENSE-EXAMPLE-TRIAGE-2026-11-02.json
@@ -959,6 +961,11 @@ jobs:
       - name: Reject forged five-card publisher, provenance, Myanmar and approval claims
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_b1_five_commercial_senses.py --level ALL --self-test
+      - name: Audit six held C1 Cambridge indexed sense leads
+        run: python3 tools/audit_cefr_1000_c1_six_cambridge_manufacturing_coast.py --level "${{ matrix.level }}"
+      - name: Reject synthetic publisher and approval forgeries for six C1 leads
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_c1_six_cambridge_manufacturing_coast.py --level ALL --self-test
       - name: Save structural QA record (not linguistic verification)
         uses: actions/upload-artifact@v4
         with:
