@@ -1,0 +1,366 @@
+{
+  "schema": 1,
+  "scope": "USER_APPROVED_1000_TOTAL_A1_A2_B1_B2_C1_STAGING_ONLY",
+  "created_on": "2026-11-02",
+  "status": "A1_EIGHT_FUNCTION_WORD_LEMMA_AND_SENSE_TRIAGE_HUMAN_REVIEW_REQUIRED",
+  "frozen_shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "source_access_limitations": "Cambridge Dictionary and Grammar Today publisher search-index excerpts were visible on 2026-11-02, but direct publisher page opens returned HTTP 403. Indexed CEFR labels and grammatical form information are research leads, not direct headword-page observation or independent human signoff. An A1 lemma label must not be treated as independent A1 CEFR evidence for each inflected surface form.",
+  "count": 8,
+  "level": "A1",
+  "first_pass_written_by_level": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "independently_approved_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "headword_audio_listening_signoffs": 0,
+  "example_audio_listening_signoffs": 0,
+  "physical_iphone_safari_signoffs": 0,
+  "production_deployed": false,
+  "records": [
+    {
+      "word": "thank",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To tell someone that you are grateful.",
+        "burmese_meaning": "ကျေးဇူးတင်သည်",
+        "example_sentence": "I thank my teacher."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 19,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge Dictionary / Cambridge English Grammar Today",
+        "source_url": "https://dictionary.cambridge.org/dictionary/english/thank",
+        "related_source_url": "https://dictionary.cambridge.org/dictionary/learner-english/thank-you",
+        "observed_on": "2026-11-02",
+        "access": "PUBLISHER_SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "INDEXED_OR_GRAMMAR_RESEARCH_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "indexed_cefr_or_qualification": "A2",
+        "indexed_part_of_speech_and_sense": "verb [T], expressing gratitude",
+        "observation_paraphrase": "Cambridge-indexed A2 thank as a transitive verb contrasts with frozen A1. A1 thank you is a separate formulaic expression, not proof that the verb thank is A1. Do not silently transfer CEFR across word classes.",
+        "exact_sense_independently_verified": false
+      },
+      "triage_status": "LEVEL_CONFLICT",
+      "unapproved_teaching_alternative": {
+        "english_definition": "To express gratitude to someone for something they have done.",
+        "burmese_meaning": "တစ်ဦးတစ်ယောက်က မိမိအတွက် လုပ်ပေးခဲ့သည့်အရာအတွက် ကျေးဇူးတင်ကြောင်း ပြောသည်။",
+        "example_sentence": "I thanked my teacher for helping me."
+      },
+      "independent_reviewer_task": "Independently verify dictionary exact-sense and CEFR with direct access, assess grammatical lemma vs inflected-form counting policy, fluent Myanmar, natural example, and British voice pronunciation. Do not alter frozen shortlist or approve automatically.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "is",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "The present form of be used with he, she, it or a singular subject.",
+        "burmese_meaning": "ဖြစ်တယ်၊ ရှိတယ် (အနည်းကိန်းနှင့်တွဲသုံး)",
+        "example_sentence": "She is at home."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 120,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge Dictionary / Cambridge English Grammar Today",
+        "source_url": "https://dictionary.cambridge.org/grammar/british-grammar/be-",
+        "related_source_url": "https://dictionary.cambridge.org/dictionary/essential-british-english/be",
+        "observed_on": "2026-11-02",
+        "access": "PUBLISHER_SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "INDEXED_OR_GRAMMAR_RESEARCH_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "indexed_cefr_or_qualification": "A1_FOR_BE_SENSE_NOT_INDEPENDENT_IS_LEMMA",
+        "indexed_part_of_speech_and_sense": "present third-person singular form of be",
+        "observation_paraphrase": "Grammar source identifies is as an inflected form of be. Frozen shortlist separately counts be and is; a distinct surface form does not automatically establish a distinct lexical headword or independently labelled CEFR sense.",
+        "exact_sense_independently_verified": false
+      },
+      "triage_status": "INFLECTED_FORM_LEMMA_COLLISION",
+      "unapproved_teaching_alternative": {
+        "english_definition": "The present form of be used with he, she, it and singular subjects.",
+        "burmese_meaning": "he, she, it သို့မဟုတ် အနည်းကိန်းကတ္တားနှင့် တွဲသုံးသော be ကြိယာ၏ ပစ္စုပ္ပန်ပုံစံ။",
+        "example_sentence": "The library is open today."
+      },
+      "independent_reviewer_task": "Independently verify dictionary exact-sense and CEFR with direct access, assess grammatical lemma vs inflected-form counting policy, fluent Myanmar, natural example, and British voice pronunciation. Do not alter frozen shortlist or approve automatically.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "are",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "The present form of be used with you, we, they or plural subjects.",
+        "burmese_meaning": "ဖြစ်တယ်၊ ရှိတယ် (အများကိန်းနှင့်တွဲသုံး)",
+        "example_sentence": "They are friends."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 121,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge Dictionary / Cambridge English Grammar Today",
+        "source_url": "https://dictionary.cambridge.org/grammar/british-grammar/be-",
+        "related_source_url": "https://dictionary.cambridge.org/dictionary/essential-british-english/be",
+        "observed_on": "2026-11-02",
+        "access": "PUBLISHER_SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "INDEXED_OR_GRAMMAR_RESEARCH_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "indexed_cefr_or_qualification": "A1_FOR_BE_SENSE_NOT_INDEPENDENT_ARE_LEMMA",
+        "indexed_part_of_speech_and_sense": "present form of be with you/we/they/plural subjects",
+        "observation_paraphrase": "Are is a form of be, already present as a separate A1 shortlist entry. Review policy must decide whether the 200 quota counts independent lemmas or explicitly permits grammatical forms.",
+        "exact_sense_independently_verified": false
+      },
+      "triage_status": "INFLECTED_FORM_LEMMA_COLLISION",
+      "unapproved_teaching_alternative": {
+        "english_definition": "The present form of be used with you, we, they and plural subjects.",
+        "burmese_meaning": "you, we, they နှင့် အများကိန်းကတ္တားများအတွက် သုံးသော be ကြိယာ၏ ပစ္စုပ္ပန်ပုံစံ။",
+        "example_sentence": "The students are in the classroom."
+      },
+      "independent_reviewer_task": "Independently verify dictionary exact-sense and CEFR with direct access, assess grammatical lemma vs inflected-form counting policy, fluent Myanmar, natural example, and British voice pronunciation. Do not alter frozen shortlist or approve automatically.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "do",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To perform an action or task.",
+        "burmese_meaning": "လုပ်သည်",
+        "example_sentence": "I do my homework."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 122,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge Dictionary / Cambridge English Grammar Today",
+        "source_url": "https://dictionary.cambridge.org/dictionary/learner-english/do",
+        "related_source_url": "https://dictionary.cambridge.org/dictionary/essential-british-english/do",
+        "observed_on": "2026-11-02",
+        "access": "PUBLISHER_SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "INDEXED_OR_GRAMMAR_RESEARCH_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "indexed_cefr_or_qualification": "A1",
+        "indexed_part_of_speech_and_sense": "main verb, perform an action or job",
+        "observation_paraphrase": "Cambridge indexes both an A1 main verb and A1 question/negative auxiliary, but these are separate senses and functions; frozen definition and example match the main verb.",
+        "exact_sense_independently_verified": false
+      },
+      "triage_status": "A1_SENSE_ALIGNMENT_LEAD",
+      "unapproved_teaching_alternative": {
+        "english_definition": "To perform an action or complete a task.",
+        "burmese_meaning": "လုပ်ဆောင်ချက်တစ်ခု သို့မဟုတ် တာဝန်တစ်ခုကို လုပ်သည်။",
+        "example_sentence": "I do my homework after dinner."
+      },
+      "independent_reviewer_task": "Independently verify dictionary exact-sense and CEFR with direct access, assess grammatical lemma vs inflected-form counting policy, fluent Myanmar, natural example, and British voice pronunciation. Do not alter frozen shortlist or approve automatically.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "does",
+      "level": "A1",
+      "part_of_speech": "auxiliary verb",
+      "shortlist_snapshot": {
+        "english_definition": "The present form of do used with he, she or it in questions and negatives.",
+        "burmese_meaning": "မေးခွန်းနှင့် အငြင်းဝါကျတွင် သုံးသော do ၏ အနည်းကိန်းပုံစံ",
+        "example_sentence": "Does he work here?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 123,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge Dictionary / Cambridge English Grammar Today",
+        "source_url": "https://dictionary.cambridge.org/grammar/british-grammar/do",
+        "related_source_url": "https://dictionary.cambridge.org/dictionary/learner-english/do",
+        "observed_on": "2026-11-02",
+        "access": "PUBLISHER_SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "INDEXED_OR_GRAMMAR_RESEARCH_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "indexed_cefr_or_qualification": "A1_FOR_DO_AUXILIARY_NOT_INDEPENDENT_DOES_LEMMA",
+        "indexed_part_of_speech_and_sense": "third-person singular present auxiliary form of do",
+        "observation_paraphrase": "Cambridge grammar identifies does as an auxiliary form of do; frozen A1 separately counts do and does. Its A1 support is via the auxiliary do sense, not a new dictionary lemma.",
+        "exact_sense_independently_verified": false
+      },
+      "triage_status": "INFLECTED_FORM_LEMMA_COLLISION",
+      "unapproved_teaching_alternative": {
+        "english_definition": "The form of auxiliary do used with he, she or it to make present-simple questions and negatives.",
+        "burmese_meaning": "ပစ္စုပ္ပန်ကာလ မေးခွန်းနှင့် အငြင်းဝါကျများတွင် he, she, it နှင့် သုံးသော do အကူကြိယာ၏ ပုံစံ။",
+        "example_sentence": "Does your sister live nearby?"
+      },
+      "independent_reviewer_task": "Independently verify dictionary exact-sense and CEFR with direct access, assess grammatical lemma vs inflected-form counting policy, fluent Myanmar, natural example, and British voice pronunciation. Do not alter frozen shortlist or approve automatically.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "did",
+      "level": "A1",
+      "part_of_speech": "auxiliary verb",
+      "shortlist_snapshot": {
+        "english_definition": "The past form of do used in questions and negatives.",
+        "burmese_meaning": "အတိတ်ကာလ မေးခွန်းတွင် သုံးသော do ၏ ပုံစံ",
+        "example_sentence": "Did you eat breakfast?"
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 124,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge Dictionary / Cambridge English Grammar Today",
+        "source_url": "https://dictionary.cambridge.org/grammar/british-grammar/do",
+        "related_source_url": "https://dictionary.cambridge.org/dictionary/learner-english/do",
+        "observed_on": "2026-11-02",
+        "access": "PUBLISHER_SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "INDEXED_OR_GRAMMAR_RESEARCH_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "indexed_cefr_or_qualification": "A1_FOR_DO_AUXILIARY_NOT_INDEPENDENT_DID_LEMMA",
+        "indexed_part_of_speech_and_sense": "past tense auxiliary form of do",
+        "observation_paraphrase": "Cambridge grammar identifies did as the past form of auxiliary do. The draft Myanmar meaning mentions only past questions, omitting negatives; proposed alternative explicitly covers both.",
+        "exact_sense_independently_verified": false
+      },
+      "triage_status": "INFLECTED_FORM_LEMMA_COLLISION",
+      "unapproved_teaching_alternative": {
+        "english_definition": "The past form of auxiliary do used to make questions and negatives.",
+        "burmese_meaning": "အတိတ်ကာလ မေးခွန်းနှင့် အငြင်းဝါကျများတွင် သုံးသော do အကူကြိယာ၏ ပုံစံ။",
+        "example_sentence": "Did you finish your homework yesterday?"
+      },
+      "independent_reviewer_task": "Independently verify dictionary exact-sense and CEFR with direct access, assess grammatical lemma vs inflected-form counting policy, fluent Myanmar, natural example, and British voice pronunciation. Do not alter frozen shortlist or approve automatically.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "i",
+      "level": "A1",
+      "part_of_speech": "pronoun",
+      "shortlist_snapshot": {
+        "english_definition": "The person who is speaking or writing.",
+        "burmese_meaning": "ကျွန်တော်၊ ကျွန်မ (မိမိကိုယ်ကို ရည်ညွှန်းသောစကား)",
+        "example_sentence": "I am a student."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 3,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge Dictionary / Cambridge English Grammar Today",
+        "source_url": "https://dictionary.cambridge.org/dictionary/essential-british-english/i",
+        "related_source_url": "https://dictionary.cambridge.org/dictionary/learner-english/i",
+        "observed_on": "2026-11-02",
+        "access": "PUBLISHER_SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "INDEXED_OR_GRAMMAR_RESEARCH_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "indexed_cefr_or_qualification": "A1",
+        "indexed_part_of_speech_and_sense": "first-person singular subject pronoun",
+        "observation_paraphrase": "Cambridge's dictionary headword is uppercase I; frozen lowercase i is not normal written-English display for this pronoun. Preserve frozen key for provenance, but proposed display must be I after editorial approval.",
+        "exact_sense_independently_verified": false
+      },
+      "triage_status": "A1_ALIGNMENT_WITH_CASE_RISK",
+      "unapproved_teaching_alternative": {
+        "english_definition": "The pronoun a speaker uses as the subject when talking about themselves.",
+        "burmese_meaning": "မိမိကိုယ်ကို ရည်ညွှန်း၍ ဝါကျ၏ ကတ္တားနေရာတွင် သုံးသော နာမ်စား။",
+        "example_sentence": "I study English every evening."
+      },
+      "independent_reviewer_task": "Independently verify dictionary exact-sense and CEFR with direct access, assess grammatical lemma vs inflected-form counting policy, fluent Myanmar, natural example, and British voice pronunciation. Do not alter frozen shortlist or approve automatically.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "wake",
+      "level": "A1",
+      "part_of_speech": "verb",
+      "shortlist_snapshot": {
+        "english_definition": "To stop sleeping.",
+        "burmese_meaning": "အိပ်ရာနိုးသည်",
+        "example_sentence": "I wake at seven."
+      },
+      "shortlist_provenance": {
+        "source_path": "draft/A1-EDITORIAL-STARTER.json",
+        "source_index": 200,
+        "source_blob_sha": "ff1e93f60828ef2f94c9146522ce94075183b0ae"
+      },
+      "publisher_observation": {
+        "publisher": "Cambridge Dictionary / Cambridge English Grammar Today",
+        "source_url": "https://dictionary.cambridge.org/dictionary/essential-british-english/wake",
+        "related_source_url": "https://dictionary.cambridge.org/dictionary/learner-english/wake",
+        "observed_on": "2026-11-02",
+        "access": "PUBLISHER_SEARCH_INDEX_VISIBLE_DIRECT_OPEN_403",
+        "evidence_scope": "INDEXED_OR_GRAMMAR_RESEARCH_LEAD_NOT_DIRECT_OR_INDEPENDENT",
+        "indexed_cefr_or_qualification": "A1",
+        "indexed_part_of_speech_and_sense": "verb, stop sleeping or cause someone to stop sleeping",
+        "observation_paraphrase": "Cambridge indexes waking from sleep as A1. Separate noun wake (ship trail/funeral) and figurative in the wake of must not inherit A1. The frozen definition selects the intransitive half.",
+        "exact_sense_independently_verified": false
+      },
+      "triage_status": "A1_SENSE_ALIGNMENT_LEAD",
+      "unapproved_teaching_alternative": {
+        "english_definition": "To stop sleeping and become awake.",
+        "burmese_meaning": "အိပ်ပျော်နေရာမှ နိုးလာသည်။",
+        "example_sentence": "I usually wake up at six o'clock."
+      },
+      "independent_reviewer_task": "Independently verify dictionary exact-sense and CEFR with direct access, assess grammatical lemma vs inflected-form counting policy, fluent Myanmar, natural example, and British voice pronunciation. Do not alter frozen shortlist or approve automatically.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "headword_george_listened": false,
+      "headword_emma_listened": false,
+      "example_george_listened": false,
+      "example_emma_listened": false,
+      "physical_iphone_safari_tested": false
+    }
+  ]
+}
