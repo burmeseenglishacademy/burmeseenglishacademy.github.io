@@ -120,7 +120,7 @@ def self_test(packet, shortlist):
   cases += 1
   if not audit(p, s): raise AssertionError("FAIL OPEN: " + name)
  for i, card in enumerate(packet["entries"]):
-  for field, value in (("level", "B1"), ("part_of_speech", "verb"),
+  for field, value in (("level", "B1"), ("part_of_speech", "noun" if card["part_of_speech"] == "verb" else "verb"),
                        ("editorial_risk", "SAFE"), ("editorial_hold", False),
                        ("independent_approval", True), ("george_emma_listened", True),
                        ("independent_english_review", True),
