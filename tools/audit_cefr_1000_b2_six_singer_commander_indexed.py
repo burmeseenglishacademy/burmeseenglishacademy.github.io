@@ -41,7 +41,7 @@ PUB_KEYS = {"publisher", "source_url", "observed_on", "access",
             "uk_ipa", "observation_paraphrase", "exact_sense_independently_verified"}
 
 def blob_sha(raw):
-    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
 
 def load():
     raw, original = SHORTLIST.read_bytes(), SOURCE.read_bytes()
@@ -156,10 +156,10 @@ def validate(packet, shortlist, original, level="ALL"):
                     len(alt["english_definition"]) > 25, word + " draft English")
             require(isinstance(alt.get("burmese_meaning"), str) and
                     len(alt["burmese_meaning"]) > 8 and
-                    bool(re.search("[\\u1000-\\u109f]", alt["burmese_meaning"])), word + " draft Myanmar")
+                    bool(re.search("[\u1000-\u109f]", alt["burmese_meaning"])), word + " draft Myanmar")
             example = alt.get("example_sentence", "")
             require(isinstance(example, str) and example.endswith(".") and
-                    bool(re.search(r"\\b" + re.escape(word) + r"\\b", example, re.I)),
+                    bool(re.search(r"\b" + re.escape(word) + r"\b", example, re.I)),
                     word + " original grammatical example candidate")
         task = row.get("independent_reviewer_task", "")
         require(isinstance(task, str) and "Independently" in task and
