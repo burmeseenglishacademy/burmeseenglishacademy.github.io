@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - draft/CEFR-1000-B2-FIVE-RESPOND-CONDUCT-CONSISTENT-ESTABLISH-OCCUR-CAMBRIDGE-2026-11-03.json
+      - tools/audit_cefr_1000_b2_five_respond_consistent.py
       - draft/CEFR-1000-SIX-DERIVED-NOUNS-CROSSLEVEL-LEXICAL-SLOTS-2026-11-03.json
       - tools/audit_cefr_1000_six_derived_noun_slots.py
       - draft/CEFR-1000-A2-SIX-WORLD-LIFE-PUBLIC-DATA-POLICE-UNIVERSITY-CAMBRIDGE-OXFORD-2026-11-03.json
@@ -524,6 +526,8 @@ jobs:
         run: python3 tools/audit_cefr_1000_a2_six_household_oxford.py --level ALL --self-test
       - name: Reject six held A2 foundational publisher-index and false review signoffs (NO DEPLOY)
         run: python3 tools/audit_cefr_1000_a2_six_world_data_public.py --level ALL --self-test
+      - name: Reject forged B2 publisher-sense and reviewer claims (NO DEPLOY)
+        run: python3 tools/audit_cefr_1000_b2_five_respond_consistent.py
       - name: Reject forged six derived-noun source, CEFR and human approval claims (NO DEPLOY)
         run: python3 tools/audit_cefr_1000_six_derived_noun_slots.py --level ALL --self-test
       - name: Report missing real approvals, voice listening, iPhone and hosting QC
