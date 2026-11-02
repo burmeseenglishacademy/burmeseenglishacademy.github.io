@@ -35,4 +35,16 @@ The new [fail-closed packet auditor](tools/audit_cefr_1000_b1_eight_foundational
 
 **BLOCKED:** independent English, fluent Myanmar, grammar and source-backed exact-sense CEFR review for every entry; approved 1,000-word release manifest; all British George/Emma headword and example recordings and **actual individual listening** receipts; browser/mobile regression; **physical iPhone Safari** evidence; measured GitHub Pages site size/bandwidth/deploy limits; protected 54 lessons, separate IELTS 1,000 bank, existing audio and privacy; confirmed production release. No main merge, publication, production modification, iPhone test or human signoff has occurred.
 
-**CI verification:** New staging workflow runs must be inspected for their actual job conclusions and logs; no run is declared passed merely because code was committed. This checkpoint is a pre-verification record and may be amended with confirmed run IDs.
+**CI verification:** The actual post-repair runs and job logs are recorded below. No structural test is an independent linguistic or listening review.
+
+
+## Actual CI recovery and verified evidence — 2026-11-02
+
+The first new structural run [41428288787](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41428288787) and documentary run [41428294566](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41428294566) failed because the auditor demanded an explicit `not independent` source caveat while the initial packet said `not direct ... or independent review`. The source evidence itself did not change; the repair made both HTTP 403 and **not independent human review** explicit. The staging-only repair commit was `6b2fdc52ab0b721a6ec2b0a9283c1adad148526d`.
+
+**Post-repair confirmed GitHub Actions at that SHA:**
+
+- [Structural run 41428395120](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41428395120): all six actual jobs **A1/A2/B1/B2/C1/ALL SUCCESS**. ALL job `125220519687` logs confirmed **234/234 synthetic adversarial mutations rejected**, 1,000 held, 0 independently approved and no production drift. ALL artifact `13133695417`.
+- [Documentary no-deployment run 41428395138](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41428395138): job `125220519927` **SUCCESS**, confirming **234/234 mock mutations rejected**, unchanged protected production assets and explicit missing real independent word reviews (0/1,000), approved manifest, George/Emma listening, desktop/mobile regressions, physical iPhone Safari, hosting and final release evidence. Blocker artifact `13132279580`.
+
+A workflow's successful **documentary/report-only** check is not permission to release; it confirms the release remains **BLOCKED**. Comparison against the prior staging checkpoint `cd61cca29e3e3dbf32059e84469fd8d6f584d67f` showed eight commits affecting only six staging research, auditor, workflow and documentation paths, with no protected production changes.
