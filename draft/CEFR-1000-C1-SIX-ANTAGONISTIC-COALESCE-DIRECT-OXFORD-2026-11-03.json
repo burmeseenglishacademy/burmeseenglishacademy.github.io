@@ -1,0 +1,273 @@
+{
+  "schema": 1,
+  "scope": "USER_APPROVED_1000_TOTAL_A1_A2_B1_B2_C1_STAGING_ONLY",
+  "observed_on": "2026-11-03",
+  "status": "C1_SIX_DIRECT_OXFORD_SENSE_TRIAGE_HUMAN_REVIEW_REQUIRED",
+  "frozen_shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "source_limitations": "Six Oxford Advanced Learner's Dictionary headword pages directly opened 2026-11-03; source-line ranges and UK IPA leads retained. No exact-sense C1 CEFR badge observed for these six. Oxford topic c2 and OPAL tags are not exact-headword CEFR ratings. AI-prepared English, Myanmar and example alternatives are NOT independently reviewed or approved.",
+  "written_by_level": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "independently_approved_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "audio_listening_signoffs": 0,
+  "physical_iphone_safari_signoffs": 0,
+  "production_deployed": false,
+  "records": [
+    {
+      "word": "antagonistic",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "frozen_snapshot": {
+        "english_definition": "Showing active hostility or opposition towards someone.",
+        "burmese_meaning": "တစ်စုံတစ်ဦးအပေါ် ရန်လိုဆန့်ကျင်သည့် သဘောထားရှိသော",
+        "example_sentence": "His antagonistic remarks made cooperation between the teams harder."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 22,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/antagonistic",
+        "observed_on": "2026-11-03",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-107",
+        "uk_ipa_lead": "/ænˌtæɡəˈnɪstɪk/",
+        "source_sense_summary": "Formal adjective antagonistic to/towards somebody/something describes showing or feeling opposition. The original 'active hostility' is narrower and more negative than Oxford's full opposition sense; distinguish an unfriendly attitude from an ordinary disagreement.",
+        "exact_sense_cefr_label": "NOT_OBSERVED",
+        "independently_verified": false
+      },
+      "risk": "HOSTILITY_VS_OPPOSITION_AND_TO_TOWARDS_COMPLEMENT",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Showing or feeling strong opposition to a person or idea, often in an unfriendly way.",
+        "burmese_meaning": "တစ်ဦးဦး သို့မဟုတ် အယူအဆတစ်ခုကို ပြင်းပြင်းထန်ထန် ဆန့်ကျင်ပြီး ရန်လိုသဘောထားပြသော",
+        "example_sentence": "The committee became antagonistic towards the proposed changes."
+      },
+      "independent_review_task": "A separate human reviewer must verify publisher exact sense and POS, independently source-backed C1 placement, fluent Myanmar, example grammar/collocation, and British George/Emma headword/example audio by actual listening; retain dated signed evidence. This AI research is NOT an independent review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "arbitrariness",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "frozen_snapshot": {
+        "english_definition": "The quality of being based on personal choice rather than a fair rule.",
+        "burmese_meaning": "တရားမျှတသော စည်းမျဉ်းအစား ကိုယ်ပိုင်သဘောအတိုင်း ဆုံးဖြတ်ခြင်း၏ သဘောသဘာဝ",
+        "example_sentence": "Workers criticised the arbitrariness of the promotion decisions."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 23,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/arbitrariness",
+        "observed_on": "2026-11-03",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-114",
+        "uk_ipa_lead": "/ˈɑːbɪtrərinəs/",
+        "source_sense_summary": "Oxford marks the noun uncountable and separates lack of reason/system/plan (sometimes unfair) from unlimited exercise of power. Original 'personal choice rather than a fair rule' is too narrow and risks collapsing the two senses. Example about promotion decisions fits sense 1.",
+        "exact_sense_cefr_label": "NOT_OBSERVED",
+        "independently_verified": false
+      },
+      "risk": "UNCOUNTABLE_TWO_SENSES_NO_REASON_VS_UNLIMITED_POWER",
+      "unapproved_teaching_alternative": {
+        "english_definition": "The quality of being decided without a clear reason, system or plan, sometimes unfairly.",
+        "burmese_meaning": "ရှင်းလင်းသော အကြောင်းပြချက်၊ စနစ် သို့မဟုတ် အစီအစဉ်မရှိဘဲ စိတ်ထင်ရာ ဆုံးဖြတ်လုပ်ဆောင်သည့် သဘော",
+        "example_sentence": "Staff questioned the arbitrariness of the new selection process."
+      },
+      "independent_review_task": "A separate human reviewer must verify publisher exact sense and POS, independently source-backed C1 placement, fluent Myanmar, example grammar/collocation, and British George/Emma headword/example audio by actual listening; retain dated signed evidence. This AI research is NOT an independent review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "assiduous",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "frozen_snapshot": {
+        "english_definition": "Showing steady and careful effort over a long period.",
+        "burmese_meaning": "အချိန်ကြာမြင့်စွာ ဇွဲရှိရှိနှင့် ဂရုတစိုက် ကြိုးစားလုပ်ဆောင်သော",
+        "example_sentence": "Her assiduous preparation helped the research team avoid errors."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 24,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/assiduous",
+        "observed_on": "2026-11-03",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-109",
+        "uk_ipa_lead": "/əˈsɪdʒuəs/",
+        "source_sense_summary": "Formal adjective means working very hard and carefully. Long duration is not required by the Oxford definition; original 'over a long period' may add an unsupported restriction. Oxford Personal qualities c2 is a topic tag, not proof that this exact word is C2 or C1.",
+        "exact_sense_cefr_label": "NOT_OBSERVED",
+        "independently_verified": false
+      },
+      "risk": "LONG_DURATION_NOT_REQUIRED_AND_TOPIC_C2_NOT_CEFR",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Working very hard and carefully to do something well.",
+        "burmese_meaning": "အလုပ်တစ်ခုကို ကောင်းမွန်စွာပြီးမြောက်ရန် အလွန်ကြိုးစားပြီး ဂရုတစိုက် လုပ်ဆောင်သော",
+        "example_sentence": "She was assiduous in checking each calculation."
+      },
+      "independent_review_task": "A separate human reviewer must verify publisher exact sense and POS, independently source-backed C1 placement, fluent Myanmar, example grammar/collocation, and British George/Emma headword/example audio by actual listening; retain dated signed evidence. This AI research is NOT an independent review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "catharsis",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "frozen_snapshot": {
+        "english_definition": "A feeling of emotional relief after expressing strong feelings.",
+        "burmese_meaning": "ပြင်းထန်သော ခံစားချက်များကို ဖော်ထုတ်ပြီးနောက် စိတ်ပေါ့ပါးသက်သာလာခြင်း",
+        "example_sentence": "Writing about the experience gave him a sense of catharsis."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 25,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/catharsis",
+        "observed_on": "2026-11-03",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-120",
+        "uk_ipa_lead": "/kəˈθɑːsɪs/",
+        "source_sense_summary": "Oxford defines a process of releasing strong emotions to obtain relief, rather than merely the feeling of relief afterward. Noun is countable or uncountable, specialist; irregular plural catharses /kəˈθɑːsiːz/. Do not confuse with general relaxation or claim a CEFR badge.",
+        "exact_sense_cefr_label": "NOT_OBSERVED",
+        "independently_verified": false
+      },
+      "risk": "EMOTIONAL_RELEASE_PROCESS_VS_RESULT_AND_IRREGULAR_PLURAL",
+      "unapproved_teaching_alternative": {
+        "english_definition": "The release of strong feelings through an activity or experience, bringing emotional relief.",
+        "burmese_meaning": "ပြင်းထန်သော ခံစားချက်များကို လုပ်ဆောင်မှု သို့မဟုတ် အတွေ့အကြုံတစ်ခုမှတစ်ဆင့် ဖော်ထုတ်၍ စိတ်သက်သာမှုရလာစေသည့် ဖြစ်စဉ်",
+        "example_sentence": "Writing the letter brought her a sense of catharsis."
+      },
+      "independent_review_task": "A separate human reviewer must verify publisher exact sense and POS, independently source-backed C1 placement, fluent Myanmar, example grammar/collocation, and British George/Emma headword/example audio by actual listening; retain dated signed evidence. This AI research is NOT an independent review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "circumvent",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "frozen_snapshot": {
+        "english_definition": "To find a way around a rule, restriction or difficulty.",
+        "burmese_meaning": "စည်းကမ်း၊ ကန့်သတ်ချက် သို့မဟုတ် အခက်အခဲကို လှည့်ပတ်ကျော်လွှားသည်",
+        "example_sentence": "The company must not circumvent safety checks to save time."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 26,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/circumvent",
+        "observed_on": "2026-11-03",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-115",
+        "uk_ipa_lead": "/ˌsɜːkəmˈvent/",
+        "source_sense_summary": "Oxford gives a transitive avoid-a-rule/difficulty sense and a distinct physically go-around-an-obstacle sense. Frozen example about safety checks fits first sense; avoid treating every circumvention as automatically illegal. Oxford Success c2 and Permission and obligation c2 are topic labels, not exact-sense CEFR ratings.",
+        "exact_sense_cefr_label": "NOT_OBSERVED",
+        "independently_verified": false
+      },
+      "risk": "TRANSITIVE_AVOID_RULE_VS_PHYSICAL_ROUTE_AND_TOPIC_C2",
+      "unapproved_teaching_alternative": {
+        "english_definition": "To find a way to avoid a rule, restriction or difficulty instead of dealing with it directly.",
+        "burmese_meaning": "စည်းကမ်း၊ ကန့်သတ်ချက် သို့မဟုတ် အခက်အခဲတစ်ခုကို တိုက်ရိုက်မရင်ဆိုင်ဘဲ ရှောင်ကွင်းနိုင်မည့် နည်းလမ်းရှာသည်",
+        "example_sentence": "They tried to circumvent the approval process."
+      },
+      "independent_review_task": "A separate human reviewer must verify publisher exact sense and POS, independently source-backed C1 placement, fluent Myanmar, example grammar/collocation, and British George/Emma headword/example audio by actual listening; retain dated signed evidence. This AI research is NOT an independent review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "coalesce",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "frozen_snapshot": {
+        "english_definition": "To join together to form one group or whole.",
+        "burmese_meaning": "အစုအဖွဲ့များ ပေါင်းစည်းပြီး တစ်စုတစ်စည်းတည်း ဖြစ်လာသည်",
+        "example_sentence": "Several small community groups began to coalesce around the proposal."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH58.json",
+        "source_index": 27,
+        "source_blob_sha": "da7df62123acfac89a0acedad4652ec499c7ed3d"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/coalesce",
+        "observed_on": "2026-11-03",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "source_line_range": "88-113",
+        "uk_ipa_lead": "/ˌkəʊəˈles/",
+        "source_sense_summary": "Oxford marks coalesce intransitive; coalesce into something denotes several elements joining into a single group or whole. Frozen 'coalesce around the proposal' is plausible figurative use but preposition and meaning require independent usage checking; do not teach a transitive pattern 'coalesce something'.",
+        "exact_sense_cefr_label": "NOT_OBSERVED",
+        "independently_verified": false
+      },
+      "risk": "INTRANSITIVE_INTO_COLLOCATION_VS_AROUND_PROPOSAL",
+      "unapproved_teaching_alternative": {
+        "english_definition": "To come together and form one larger group or whole.",
+        "burmese_meaning": "သီးခြားရှိနေသော အစုအဖွဲ့များ ပေါင်းစည်းပြီး တစ်စုတစ်စည်းတည်း ဖြစ်လာသည်",
+        "example_sentence": "Several local groups coalesced into a single organisation."
+      },
+      "independent_review_task": "A separate human reviewer must verify publisher exact sense and POS, independently source-backed C1 placement, fluent Myanmar, example grammar/collocation, and British George/Emma headword/example audio by actual listening; retain dated signed evidence. This AI research is NOT an independent review.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    }
+  ]
+}
