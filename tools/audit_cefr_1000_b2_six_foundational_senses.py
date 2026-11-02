@@ -33,7 +33,7 @@ def fail(msg):
 
 def blob_sha(path):
     data = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\\0" + data).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
 
 def load(path):
     return json.loads(path.read_text(encoding="utf-8"))
@@ -104,7 +104,7 @@ def validate(packet, shortlist, source):
                       "proposed_original_example", "evidence_note"):
             if not isinstance(record.get(field), str) or len(record[field].strip()) < 20:
                 fail(word + ": substantive field " + field)
-        if not any("\\u1000" <= c <= "\\u109f" for c in record["proposed_myanmar_meaning"]):
+        if not any("\u1000" <= c <= "\u109f" for c in record["proposed_myanmar_meaning"]):
             fail(word + ": Myanmar script missing")
         if word not in record["proposed_original_example"].casefold():
             fail(word + ": example does not use target headword")
