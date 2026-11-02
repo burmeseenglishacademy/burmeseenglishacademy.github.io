@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - draft/CEFR-1000-B2-SIX-SINGER-STEAM-COMMANDER-EXACT-WISE-MONTHLY-INDEXED-2026-11-02.json
+      - tools/audit_cefr_1000_b2_six_singer_commander_indexed.py
       - draft/CEFR-1000-C1-SIX-METICULOUS-SCRUTINIZE-DIRECT-OXFORD-CAMBRIDGE-C2-2026-11-02.json
       - tools/audit_cefr_1000_c1_six_meticulous_scrutinize.py
       - draft/CEFR-1000-B1-EIGHT-FOUNDATIONAL-CAMBRIDGE-INDEXED-SENSE-TRIAGE-2026-11-02.json
@@ -1033,6 +1035,11 @@ jobs:
       - name: Reject forged B1 index, bilingual, human, audio and device approvals
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_b1_eight_foundational_indexed.py --level ALL --self-test
+      - name: Audit six held B2 Cambridge-indexed exact-sense and provenance leads (NO APPROVAL)
+        run: python3 tools/audit_cefr_1000_b2_six_singer_commander_indexed.py --level "${{ matrix.level }}"
+      - name: Reject synthetic six-card B2 publisher and human/audio/device approval forgeries
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_b2_six_singer_commander_indexed.py --level ALL --self-test
       - name: Reject spoofed publisher dictionary paths in independent CEFR review receipts
         run: python3 tests/cefr-1000-independent-stage-source-binding.py
       - name: Save structural QA record (not linguistic verification)
