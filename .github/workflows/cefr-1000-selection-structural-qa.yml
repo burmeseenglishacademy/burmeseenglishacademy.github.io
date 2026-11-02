@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - draft/CEFR-1000-A2-SIX-HOUSEHOLD-OBJECTS-OXFORD-CAMBRIDGE-SENSE-2026-11-03.json
+      - tools/audit_cefr_1000_a2_six_household_oxford.py
       - draft/CEFR-1000-C1-SIX-CONJECTURE-DISSONANCE-DIRECT-OXFORD-2026-11-03.json
       - tools/audit_cefr_1000_c1_six_conjecture_dissonance.py
       - draft/CEFR-1000-B1-SIX-FIGHTING-GROW-CAMBRIDGE-INDEXED-SENSE-2026-11-03.json
@@ -1089,6 +1091,11 @@ jobs:
       - name: Reject six-card C1 synthetic source, CEFR, human, audio and iPhone forgeries
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_c1_six_antagonistic_coalesce.py --level ALL --self-test
+      - name: Audit six held A2 household-object Oxford senses and British usage (NO APPROVAL)
+        run: python3 tools/audit_cefr_1000_a2_six_household_oxford.py --level "${{ matrix.level }}"
+      - name: Reject six A2 household source, CEFR, reviewer, audio and device forgeries
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_a2_six_household_oxford.py --level ALL --self-test
       - name: Reject spoofed publisher dictionary paths in independent CEFR review receipts
         run: python3 tests/cefr-1000-independent-stage-source-binding.py
       - name: Save structural QA record (not linguistic verification)
