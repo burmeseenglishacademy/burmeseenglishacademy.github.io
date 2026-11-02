@@ -1,0 +1,214 @@
+{
+  "schema": 1,
+  "scope": "USER_APPROVED_1000_TOTAL_NOT_5000",
+  "observed_on": "2026-11-03",
+  "release_status": "STAGING_EDITORIAL_HOLD_DO_NOT_PUBLISH",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "counts_by_level": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "independently_approved_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "method": "Cambridge publisher-owned search-index excerpts observed 2026-11-03. Direct Cambridge entry requests failed HTTP 403. Research leads are not human-independent signoff. Source URLs are preserved. Frozen shortlist unchanged. Original alternative examples authored for editorial consideration, not approval.",
+  "entries": [
+    {
+      "word": "respond",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "frozen": {
+        "english_definition": "To answer or react to a message, event, or action.",
+        "burmese_meaning": "တုံ့ပြန်သည်",
+        "example_sentence": "Please respond to the request by Friday.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 236,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "source": {
+        "publisher": "Cambridge University Press",
+        "publisher_url": "https://dictionary.cambridge.org/dictionary/learner-english/respond",
+        "access": "PUBLISHER_SEARCH_INDEX_ONLY_DIRECT_PAGE_HTTP_403",
+        "observed_on": "2026-11-03",
+        "indexed_level": "B2",
+        "indexed_sense": "ANSWER / REACTION",
+        "cefr_scope": "ALIGNED_SAME_SENSE_LEAD",
+        "british_ipa_lead": "/rɪˈspɒnd/",
+        "independent_exact_sense_verification": false
+      },
+      "editorial_risk": "Cambridge Learner's Dictionary indexes the intransitive answer/react sense at B2. The frozen example requires respond TO a request, not *respond a request*. Medical treatment response is a separate sense.",
+      "proposed_alternative": {
+        "english_definition": "To reply to something or react to what has happened.",
+        "burmese_meaning": "တစ်စုံတစ်ရာကို ပြန်လည်ဖြေကြားသည်၊ တုံ့ပြန်သည်",
+        "example_sentence": "Please respond to the request by Friday."
+      },
+      "proposed_alternative_unapproved": true,
+      "editorial_hold": true,
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false
+    },
+    {
+      "word": "conduct",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "frozen": {
+        "english_definition": "To organise and carry out an activity.",
+        "burmese_meaning": "ဆောင်ရွက်သည်၊ ပြုလုပ်သည်",
+        "example_sentence": "The team will conduct a safety inspection.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 250,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "source": {
+        "publisher": "Cambridge University Press",
+        "publisher_url": "https://dictionary.cambridge.org/dictionary/english/conduct",
+        "access": "PUBLISHER_SEARCH_INDEX_ONLY_DIRECT_PAGE_HTTP_403",
+        "observed_on": "2026-11-03",
+        "indexed_level": "B2",
+        "indexed_sense": "ORGANIZE / PERFORM ACTIVITY",
+        "cefr_scope": "ALIGNED_SAME_SENSE_LEAD",
+        "british_ipa_lead": "/kənˈdʌkt/",
+        "independent_exact_sense_verification": false
+      },
+      "editorial_risk": "Cambridge labels the transitive organize-and-perform activity verb B2. Do not confuse with noun conduct /ˈkɒndʌkt/ (behaviour) or the electrical-conduction verb. George/Emma audio needs verb stress on second syllable.",
+      "proposed_alternative": {
+        "english_definition": "To organise and carry out a particular activity.",
+        "burmese_meaning": "စစ်ဆေးမှု၊ သုတေသန စသည့် လုပ်ငန်းတစ်ခုကို စီစဉ်ဆောင်ရွက်သည်",
+        "example_sentence": "The team will conduct a safety inspection."
+      },
+      "proposed_alternative_unapproved": true,
+      "editorial_hold": true,
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false
+    },
+    {
+      "word": "consistent",
+      "level": "B2",
+      "part_of_speech": "adjective",
+      "frozen": {
+        "english_definition": "Remaining at a similar standard or following the same pattern over time.",
+        "burmese_meaning": "တစ်သမတ်တည်းဖြစ်သော",
+        "example_sentence": "His results have been consistent throughout the year.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 452,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "source": {
+        "publisher": "Cambridge University Press",
+        "publisher_url": "https://dictionary.cambridge.org/us/dictionary/english/consistent",
+        "access": "PUBLISHER_SEARCH_INDEX_ONLY_DIRECT_PAGE_HTTP_403",
+        "observed_on": "2026-11-03",
+        "indexed_level": "C2",
+        "indexed_sense": "NOT CHANGING",
+        "cefr_scope": "HIGHER_SAME_SENSE_CONFLICT",
+        "british_ipa_lead": "/kənˈsɪs.tənt/",
+        "independent_exact_sense_verification": false
+      },
+      "editorial_risk": "Cambridge indexes NOT CHANGING as C2, versus provisional B2. Frozen results-over-time definition and example appear aligned with this sense. Do not substitute unlabelled third-party B2 claims for Cambridge's C2 label. Separate 'consistent with' (AGREEING) sense also C2 on Cambridge.",
+      "proposed_alternative": {
+        "english_definition": "Staying at a similar level or following the same pattern over time.",
+        "burmese_meaning": "အချိန်ကြာလာသော်လည်း အရည်အသွေး သို့မဟုတ် ရလဒ် တစ်သမတ်တည်းရှိသော",
+        "example_sentence": "Her performance has remained consistent throughout the year."
+      },
+      "proposed_alternative_unapproved": true,
+      "editorial_hold": true,
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false
+    },
+    {
+      "word": "establish",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "frozen": {
+        "english_definition": "To start an organisation or system intended to last.",
+        "burmese_meaning": "တည်ထောင်သည်",
+        "example_sentence": "The charity hopes to establish a new learning centre.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 625,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "source": {
+        "publisher": "Cambridge University Press",
+        "publisher_url": "https://dictionary.cambridge.org/us/dictionary/english/establish",
+        "access": "PUBLISHER_SEARCH_INDEX_ONLY_DIRECT_PAGE_HTTP_403",
+        "observed_on": "2026-11-03",
+        "indexed_level": "B2",
+        "indexed_sense": "START COMPANY / ORGANIZATION",
+        "cefr_scope": "ALIGNED_WITH_SCOPE_CAVEAT",
+        "british_ipa_lead": "/ɪˈstæb.lɪʃ/",
+        "independent_exact_sense_verification": false
+      },
+      "editorial_risk": "Cambridge START a company or organization intended to last is B2. The frozen definition also says 'system', which may broaden beyond that labelled sub-sense; human reviewer must confirm exact scope. 'Establish a relationship' is separately C1.",
+      "proposed_alternative": {
+        "english_definition": "To start an organisation that is intended to continue for a long time.",
+        "burmese_meaning": "ရေရှည်တည်တံ့ရန် ရည်ရွယ်သည့် အဖွဲ့အစည်းတစ်ခုကို တည်ထောင်သည်",
+        "example_sentence": "The charity plans to establish a new learning centre."
+      },
+      "proposed_alternative_unapproved": true,
+      "editorial_hold": true,
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false
+    },
+    {
+      "word": "occur",
+      "level": "B2",
+      "part_of_speech": "verb",
+      "frozen": {
+        "english_definition": "To happen, especially at a particular time or place.",
+        "burmese_meaning": "ဖြစ်ပွားသည်၊ ဖြစ်ပေါ်သည်",
+        "example_sentence": "Power cuts sometimes occur during heavy storms.",
+        "source_path": "draft/A2-C1-EDITORIAL-STARTER.json",
+        "source_index": 906,
+        "source_blob_sha": "b04dd85db5cfae131c25aa4c73109778991b6fdc"
+      },
+      "source": {
+        "publisher": "Cambridge University Press",
+        "publisher_url": "https://dictionary.cambridge.org/dictionary/english/occur",
+        "access": "PUBLISHER_SEARCH_INDEX_ONLY_DIRECT_PAGE_HTTP_403",
+        "observed_on": "2026-11-03",
+        "indexed_level": "B2",
+        "indexed_sense": "HAPPEN",
+        "cefr_scope": "ALIGNED_SAME_SENSE_LEAD",
+        "british_ipa_lead": "/əˈkɜːr/",
+        "independent_exact_sense_verification": false
+      },
+      "editorial_risk": "Cambridge labels intransitive HAPPEN B2, often accidents or unexpected events. Frozen power-cut example is natural. Spelling doubles r in occurring/occurred. 'Occur to someone' (thought) and EXIST senses are separate.",
+      "proposed_alternative": {
+        "english_definition": "To happen, especially unexpectedly or at a particular time.",
+        "burmese_meaning": "အဖြစ်အပျက်တစ်ခု ဖြစ်ပေါ်သည်၊ ဖြစ်ပွားသည်",
+        "example_sentence": "Power cuts sometimes occur during heavy storms."
+      },
+      "proposed_alternative_unapproved": true,
+      "editorial_hold": true,
+      "reviewed_english": false,
+      "reviewed_burmese": false,
+      "reviewed_example": false,
+      "reviewed_level": false,
+      "reviewed_pronunciation": false,
+      "release_approved": false
+    }
+  ]
+}
