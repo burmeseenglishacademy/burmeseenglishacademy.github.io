@@ -1,0 +1,396 @@
+{
+  "schema": 1,
+  "scope": "USER_APPROVED_CEFR_1000_STAGING_ONLY",
+  "release_status": "RESEARCH_ONLY_ALL_EIGHT_HELD",
+  "observed_on": "2026-11-02",
+  "branch": "cefr-5000-bilingual-qa-staging",
+  "shortlist_path": "draft/CEFR-1000-PROVISIONAL-SHORTLIST.json",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "upstream_source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8",
+  "target_counts": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "independently_approved_counts": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "review_policy": "Publisher observations and self-written alternatives are not independent linguistic reviews. Oxford dictionary footer/topic/word-of-day CEFR tags must not be attributed to the entry. A qualified independent reviewer must verify the exact sense and CEFR level, Myanmar and example.",
+  "source_observation_method": "Eight direct publisher dictionary pages opened via web on 2026-11-02; line ranges refer to text-rendered publisher pages; do not treat these locators as persistent source hashes.",
+  "records": [
+    {
+      "word": "exacerbate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "frozen_first_pass": {
+        "english_definition": "To make an existing problem or unpleasant situation worse.",
+        "burmese_meaning": "ရှိပြီးသား ပြဿနာ သို့မဟုတ် မကောင်းသောအခြေအနေကို ပိုဆိုးစေသည်",
+        "example_sentence": "Delaying the repairs could exacerbate the water shortage."
+      },
+      "historical_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 32,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8",
+        "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551"
+      },
+      "source_observation": {
+        "publisher": "Oxford University Press",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/exacerbate",
+        "observed_on": "2026-11-02",
+        "access": "DIRECT_PUBLISHER_ENTRY_OPENED",
+        "observed_line_range": "111-114",
+        "uk_ipa": "/ɪɡˈzæsəbeɪt/",
+        "part_of_speech": "verb",
+        "exact_sense_summary_paraphrase": "Make a problem, disease or other bad situation worse; transitive verb.",
+        "exact_sense_cefr_badge_observed": null,
+        "source_limitations": "Dictionary entry supports meaning/POS/usage only; no C1 exact-sense CEFR classification established.",
+        "caution": "Oxford Health problems c2 is a TOPIC label, not a CEFR rating of this word."
+      },
+      "editorial_risk": "Original definition unnecessarily restricts to an existing problem; example is grammatical and fits the transitive use.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "To make a problem or an unpleasant situation worse.",
+        "burmese_meaning": "ပြဿနာတစ်ခု သို့မဟုတ် မကောင်းသောအခြေအနေတစ်ခုကို ပိုမိုဆိုးရွားစေသည်။",
+        "original_example_sentence": "A lack of clean water could exacerbate the health crisis.",
+        "approval_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_review": {
+        "english": false,
+        "myanmar": false,
+        "example": false,
+        "cefr": false,
+        "pronunciation": false,
+        "audio_listened": false,
+        "iphone_tested": false,
+        "release_approved": false
+      }
+    },
+    {
+      "word": "exonerate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "frozen_first_pass": {
+        "english_definition": "To show that someone is not responsible for an alleged wrongdoing.",
+        "burmese_meaning": "စွပ်စွဲထားသော အမှားအတွက် တာဝန်မရှိကြောင်း သက်သေပြသည်",
+        "example_sentence": "New evidence helped exonerate the wrongly accused driver."
+      },
+      "historical_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 33,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8",
+        "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551"
+      },
+      "source_observation": {
+        "publisher": "Oxford University Press",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/exonerate",
+        "observed_on": "2026-11-02",
+        "access": "DIRECT_PUBLISHER_ENTRY_OPENED",
+        "observed_line_range": "111-114",
+        "uk_ipa": "/ɪɡˈzɒnəreɪt/",
+        "part_of_speech": "verb",
+        "exact_sense_summary_paraphrase": "Officially state that an accused or blamed person is not responsible; verb takes a person as object.",
+        "exact_sense_cefr_badge_observed": null,
+        "source_limitations": "Dictionary entry supports meaning/POS/usage only; no C1 exact-sense CEFR classification established.",
+        "caution": "Official declaration is integral; finding evidence or personally believing innocence alone is not the same act."
+      },
+      "editorial_risk": "Original definition says 'show' and example only 'helped', obscuring the official statement and exonerate somebody from/of something.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "To officially declare that a person is not responsible for something they were blamed for.",
+        "burmese_meaning": "စွပ်စွဲခံထားရသူတစ်ဦးတွင် သက်ဆိုင်ရာကိစ္စအတွက် တာဝန်မရှိကြောင်း တရားဝင် ကြေညာသည်။",
+        "original_example_sentence": "The independent inquiry exonerated the driver after reviewing the CCTV footage.",
+        "approval_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_review": {
+        "english": false,
+        "myanmar": false,
+        "example": false,
+        "cefr": false,
+        "pronunciation": false,
+        "audio_listened": false,
+        "iphone_tested": false,
+        "release_approved": false
+      }
+    },
+    {
+      "word": "fallacy",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "frozen_first_pass": {
+        "english_definition": "An incorrect belief or argument based on faulty reasoning.",
+        "burmese_meaning": "မှားယွင်းသော ဆင်ခြင်မှုအပေါ် အခြေခံသည့် အယူအဆ သို့မဟုတ် အငြင်းအခုံအမှား",
+        "example_sentence": "It is a fallacy to assume that expensive products always last longer."
+      },
+      "historical_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 34,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8",
+        "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551"
+      },
+      "source_observation": {
+        "publisher": "Oxford University Press",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/fallacy",
+        "observed_on": "2026-11-02",
+        "access": "DIRECT_PUBLISHER_ENTRY_OPENED",
+        "observed_line_range": "105-116",
+        "uk_ipa": "/ˈfæləsi/",
+        "part_of_speech": "noun",
+        "exact_sense_summary_paraphrase": "Countable: a widely believed false idea; also uncountable/countable: faulty reasoning.",
+        "exact_sense_cefr_badge_observed": null,
+        "source_limitations": "Dictionary entry supports meaning/POS/usage only; no C1 exact-sense CEFR classification established.",
+        "caution": "Two distinct Oxford senses and countability patterns; do not collapse a popular false belief and a reasoning error."
+      },
+      "editorial_risk": "Frozen definition merges senses, while example illustrates a countable mistaken belief; prefer teaching one sense explicitly.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "A false idea that people believe to be true.",
+        "burmese_meaning": "လူများက မှန်သည်ဟု ယုံကြည်ထားကြသော်လည်း အမှန်တကယ် မှားယွင်းနေသည့် အယူအဆ။",
+        "original_example_sentence": "It is a fallacy to believe that every expensive product lasts longer.",
+        "approval_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_review": {
+        "english": false,
+        "myanmar": false,
+        "example": false,
+        "cefr": false,
+        "pronunciation": false,
+        "audio_listened": false,
+        "iphone_tested": false,
+        "release_approved": false
+      }
+    },
+    {
+      "word": "fervent",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "frozen_first_pass": {
+        "english_definition": "Showing very strong and sincere feelings or beliefs.",
+        "burmese_meaning": "ပြင်းထန်ပြီး စိတ်ရင်းမှန်သော ခံစားချက် သို့မဟုတ် ယုံကြည်ချက်ရှိသော",
+        "example_sentence": "She was a fervent supporter of public libraries."
+      },
+      "historical_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 35,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8",
+        "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551"
+      },
+      "source_observation": {
+        "publisher": "Oxford University Press",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/fervent",
+        "observed_on": "2026-11-02",
+        "access": "DIRECT_PUBLISHER_ENTRY_OPENED",
+        "observed_line_range": "101-107",
+        "uk_ipa": "/ˈfɜːvənt/",
+        "part_of_speech": "adjective",
+        "exact_sense_summary_paraphrase": "Adjective, normally before a noun, describing strong and sincere feeling or belief.",
+        "exact_sense_cefr_badge_observed": null,
+        "source_limitations": "Dictionary entry supports meaning/POS/usage only; no C1 exact-sense CEFR classification established.",
+        "caution": "Collocations include fervent supporter, belief and hope; not necessarily anger or fanaticism."
+      },
+      "editorial_risk": "Frozen English, Myanmar and example align broadly; ensure modifier position and sincerity are retained.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Showing very strong and sincere feelings or beliefs.",
+        "burmese_meaning": "ခံစားချက် သို့မဟုတ် ယုံကြည်ချက်ကို အလွန်ပြင်းပြစွာနှင့် စိတ်ရင်းမှန်ဖြင့် ဖော်ပြသော။",
+        "original_example_sentence": "She remained a fervent supporter of public libraries.",
+        "approval_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_review": {
+        "english": false,
+        "myanmar": false,
+        "example": false,
+        "cefr": false,
+        "pronunciation": false,
+        "audio_listened": false,
+        "iphone_tested": false,
+        "release_approved": false
+      }
+    },
+    {
+      "word": "galvanize",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "frozen_first_pass": {
+        "english_definition": "To motivate people suddenly to take action.",
+        "burmese_meaning": "လူများကို ရုတ်တရက် စိတ်အားထက်သန်စေပြီး လှုပ်ရှားဆောင်ရွက်စေသည်",
+        "example_sentence": "The flood warnings helped galvanize local volunteers."
+      },
+      "historical_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 36,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8",
+        "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551"
+      },
+      "source_observation": {
+        "publisher": "Oxford University Press",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/galvanize_1",
+        "observed_on": "2026-11-02",
+        "access": "DIRECT_PUBLISHER_ENTRY_OPENED",
+        "observed_line_range": "101-122",
+        "uk_ipa": "/ˈɡælvənaɪz/",
+        "part_of_speech": "verb",
+        "exact_sense_summary_paraphrase": "Sense 1: prompt someone into action through excitement or shock; sense 2: coat metal with zinc to resist rust.",
+        "exact_sense_cefr_badge_observed": null,
+        "source_limitations": "Dictionary entry supports meaning/POS/usage only; no C1 exact-sense CEFR classification established.",
+        "caution": "British alternative spelling 'galvanise' is explicitly shown; 'galvanize steel' has a separate specialist meaning. Oxford Feelings c2 is a TOPIC label."
+      },
+      "editorial_risk": "Frozen example is plausible but 'warnings helped galvanize' can be sharpened; audio/spelling must align with selected UK headword.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "To prompt people to take action, often by making them feel excited or alarmed.",
+        "burmese_meaning": "လူများကို စိတ်လှုပ်ရှားစေခြင်း သို့မဟုတ် သတိပေးလှုံ့ဆော်ခြင်းဖြင့် လက်တွေ့ဆောင်ရွက်လာစေသည်။",
+        "original_example_sentence": "The flood warning galvanised local volunteers into action.",
+        "approval_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_review": {
+        "english": false,
+        "myanmar": false,
+        "example": false,
+        "cefr": false,
+        "pronunciation": false,
+        "audio_listened": false,
+        "iphone_tested": false,
+        "release_approved": false
+      }
+    },
+    {
+      "word": "incongruous",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "frozen_first_pass": {
+        "english_definition": "Strange because it does not fit the surrounding situation.",
+        "burmese_meaning": "ပတ်ဝန်းကျင်အခြေအနေနှင့် မကိုက်ညီသောကြောင့် ထူးဆန်းနေသော",
+        "example_sentence": "The bright plastic sign looked incongruous on the historic building."
+      },
+      "historical_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 37,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8",
+        "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551"
+      },
+      "source_observation": {
+        "publisher": "Oxford University Press",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/incongruous",
+        "observed_on": "2026-11-02",
+        "access": "DIRECT_PUBLISHER_ENTRY_OPENED",
+        "observed_line_range": "95-106",
+        "uk_ipa": "/ɪnˈkɒŋɡruəs/",
+        "part_of_speech": "adjective",
+        "exact_sense_summary_paraphrase": "Adjective: seeming strange or unsuitable in the particular setting.",
+        "exact_sense_cefr_badge_observed": null,
+        "source_limitations": "Dictionary entry supports meaning/POS/usage only; no C1 exact-sense CEFR classification established.",
+        "caution": "Do not translate simply as 'different'; incongruity implies a mismatch with context."
+      },
+      "editorial_risk": "Frozen example is natural; suggest slightly smoother Myanmar.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Strange or unsuitable because it does not fit the situation.",
+        "burmese_meaning": "အခြေအနေနှင့် မလိုက်ဖက်သဖြင့် ထူးဆန်းသလို ဖြစ်နေသော။",
+        "original_example_sentence": "The bright plastic sign looked incongruous on the historic building.",
+        "approval_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_review": {
+        "english": false,
+        "myanmar": false,
+        "example": false,
+        "cefr": false,
+        "pronunciation": false,
+        "audio_listened": false,
+        "iphone_tested": false,
+        "release_approved": false
+      }
+    },
+    {
+      "word": "introspection",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "frozen_first_pass": {
+        "english_definition": "Careful examination of your own thoughts and feelings.",
+        "burmese_meaning": "မိမိ၏ အတွေးအမြင်နှင့် ခံစားချက်များကို သေချာစွာ ပြန်လည်ဆန်းစစ်ခြင်း",
+        "example_sentence": "A period of introspection helped her choose a new career."
+      },
+      "historical_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 38,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8",
+        "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551"
+      },
+      "source_observation": {
+        "publisher": "Oxford University Press",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/introspection",
+        "observed_on": "2026-11-02",
+        "access": "DIRECT_PUBLISHER_ENTRY_OPENED",
+        "observed_line_range": "95-107",
+        "uk_ipa": "/ˌɪntrəˈspekʃn/",
+        "part_of_speech": "noun",
+        "exact_sense_summary_paraphrase": "Uncountable noun: careful examination of one's own thoughts, feelings and motives.",
+        "exact_sense_cefr_badge_observed": null,
+        "source_limitations": "Dictionary entry supports meaning/POS/usage only; no C1 exact-sense CEFR classification established.",
+        "caution": "Keep uncountable; distinguish self-reflection from formal psychological assessment."
+      },
+      "editorial_risk": "Frozen meaning omits examining reasons for one's behaviour; example is natural.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Careful reflection on your own thoughts, feelings and reasons for your actions.",
+        "burmese_meaning": "မိမိ၏ အတွေးများ၊ ခံစားချက်များနှင့် အပြုအမူနောက်ကွယ်ရှိ အကြောင်းရင်းများကို သေချာစွာ ပြန်လည်ဆန်းစစ်ခြင်း။",
+        "original_example_sentence": "After a period of introspection, she decided to change careers.",
+        "approval_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_review": {
+        "english": false,
+        "myanmar": false,
+        "example": false,
+        "cefr": false,
+        "pronunciation": false,
+        "audio_listened": false,
+        "iphone_tested": false,
+        "release_approved": false
+      }
+    },
+    {
+      "word": "juxtapose",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "frozen_first_pass": {
+        "english_definition": "To place two things together to highlight their differences.",
+        "burmese_meaning": "ကွာခြားချက်များ ပိုမိုထင်ရှားစေရန် အရာနှစ်ခုကို ယှဉ်တွဲထားသည်",
+        "example_sentence": "Curators juxtapose old photographs with recent ones to show how the town has changed."
+      },
+      "historical_provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 39,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8",
+        "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551"
+      },
+      "source_observation": {
+        "publisher": "Oxford University Press",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/juxtapose",
+        "observed_on": "2026-11-02",
+        "access": "DIRECT_PUBLISHER_ENTRY_OPENED",
+        "observed_line_range": "101-112",
+        "uk_ipa": "/ˌdʒʌkstəˈpəʊz/",
+        "part_of_speech": "verb",
+        "exact_sense_summary_paraphrase": "Formal verb: put A beside or with B to show contrast or reveal a relationship; often passive.",
+        "exact_sense_cefr_badge_observed": null,
+        "source_limitations": "Dictionary entry supports meaning/POS/usage only; no C1 exact-sense CEFR classification established.",
+        "caution": "Not always about differences: the juxtaposition can reveal an unexpected connection; note 'juxtapose A with B' grammar."
+      },
+      "editorial_risk": "Frozen English restricts meaning to highlighting differences, and example is grammatical but lacks explicit comparative aim.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "To place two things together to show a contrast or reveal a relationship.",
+        "burmese_meaning": "အရာနှစ်ခုကို ကွာခြားချက် သို့မဟုတ် ဆက်စပ်မှုတစ်ခု ပိုမိုထင်ရှားစေရန် ယှဉ်တွဲဖော်ပြသည်။",
+        "original_example_sentence": "The exhibition juxtaposes old photographs with new ones to reveal changes in the town.",
+        "approval_status": "UNAPPROVED_EDITORIAL_PROPOSAL"
+      },
+      "independent_review": {
+        "english": false,
+        "myanmar": false,
+        "example": false,
+        "cefr": false,
+        "pronunciation": false,
+        "audio_listened": false,
+        "iphone_tested": false,
+        "release_approved": false
+      }
+    }
+  ]
+}
