@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - draft/CEFR-1000-C1-SIX-METICULOUS-SCRUTINIZE-DIRECT-OXFORD-CAMBRIDGE-C2-2026-11-02.json
+      - tools/audit_cefr_1000_c1_six_meticulous_scrutinize.py
       - draft/CEFR-1000-B1-EIGHT-FOUNDATIONAL-CAMBRIDGE-INDEXED-SENSE-TRIAGE-2026-11-02.json
       - tools/audit_cefr_1000_b1_eight_foundational_indexed.py
       - draft/CEFR-1000-A2-FIVE-DUE-PRETTY-THOUGHT-HIT-POST-INDEXED-SENSE-2026-11-02.json
@@ -307,6 +309,11 @@ jobs:
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
+      - name: Audit six held C1 Oxford-direct and Cambridge-indexed C2 sense conflicts
+        run: python3 tools/audit_cefr_1000_c1_six_meticulous_scrutinize.py --level "${{ matrix.level }}"
+      - name: Reject forged six-card C1 publisher, Myanmar, provenance and reviewer claims
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_c1_six_meticulous_scrutinize.py --level ALL --self-test
       - name: Audit six Oxford-backed unapproved replacements for non-independent inflection slots
         run: python3 tools/audit_cefr_1000_six_inflection_slot_candidates.py --level "${{ matrix.level }}"
       - name: Reject 150 forged candidate, bilingual, provenance and approval mutations
