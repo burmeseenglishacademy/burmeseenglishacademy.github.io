@@ -1012,6 +1012,11 @@ jobs:
       - name: Reject forged eight-card C1 publisher, bilingual and human approvals
         if: ${{ matrix.level == 'ALL' }}
         run: python3 tools/audit_cefr_1000_c1_eight_exacerbate_juxtapose.py --level ALL --self-test
+      - name: Audit five held A2 due/pretty/thought/hit/post publisher-indexed senses (NO APPROVAL)
+        run: python3 tools/audit_cefr_1000_a2_five_due_pretty_thought.py --level "${{ matrix.level }}"
+      - name: Reject forged A2 sense/POS, Myanmar, provenance and human/listening approvals
+        if: ${{ matrix.level == 'ALL' }}
+        run: python3 tools/audit_cefr_1000_a2_five_due_pretty_thought.py --level ALL --self-test
       - name: Reject spoofed publisher dictionary paths in independent CEFR review receipts
         run: python3 tests/cefr-1000-independent-stage-source-binding.py
       - name: Save structural QA record (not linguistic verification)
