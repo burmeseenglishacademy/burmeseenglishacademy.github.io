@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - draft/CEFR-1000-B1-SIX-FIGHTING-GROW-CAMBRIDGE-INDEXED-SENSE-2026-11-03.json
+      - tools/audit_cefr_1000_b1_six_fighting_grow_indexed.py
       - draft/CEFR-1000-C1-SIX-ANTAGONISTIC-COALESCE-DIRECT-OXFORD-2026-11-03.json
       - tools/audit_cefr_1000_c1_six_antagonistic_coalesce.py
       - draft/CEFR-1000-B2-SIX-PERSONALITY-SOMEWHAT-DIRECT-OXFORD-2026-11-03.md
@@ -506,6 +508,8 @@ jobs:
         run: python3 tools/audit_cefr_1000_b2_six_personality_somewhat.py --level ALL --self-test
       - name: Reject fabricated six-card C1 Oxford, reviewer, audio and device approvals (NO DEPLOY)
         run: python3 tools/audit_cefr_1000_c1_six_antagonistic_coalesce.py --level ALL --self-test
+      - name: Reject six-card B1 indexed-sense evidence and approval forgeries (NO DEPLOY)
+        run: python3 tools/audit_cefr_1000_b1_six_fighting_grow_indexed.py --level ALL --self-test
       - name: Report missing real approvals, voice listening, iPhone and hosting QC
         run: python3 tools/audit_cefr_1000_launch_readiness.py --report-only --self-test
       - name: Explicitly enforce ALL evidence if release candidate manually checked
