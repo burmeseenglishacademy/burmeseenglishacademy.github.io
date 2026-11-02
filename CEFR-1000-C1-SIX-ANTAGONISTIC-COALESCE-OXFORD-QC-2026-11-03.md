@@ -34,3 +34,11 @@ Added [fail-closed source/provenance/CEFR/reviewer/audio/iPhone auditor](tools/a
 | C1 | 200 | 0 |
 
 **All 1,000 on editorial hold.** Exact-sense source-backed independent English/Myanmar/example/CEFR approvals, final approved 200-per-level deduplicated manifest, full George/Emma British headword/example audio with **actual listening** signoffs, browser/mobile regression, real physical iPhone Safari evidence, measured GitHub Pages limits, preservation checks and confirmed production deployment are missing. No approval flags, source corpus, production assets, IELTS 1,000-word bank, 54 lessons, production George/Emma audio, privacy files, main branch, or publication were changed.
+
+## CI follow-up — actual job steps/logs inspected (3 November 2026)
+
+At this checkpoint, [structural run **41486672330**](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41486672330) is **IN PROGRESS** at SHA `b509847b294aa12b266f3428ca504ee0a57ca347`. Actual GitHub job conclusions already show **SUCCESS** for A1 job `125418746518`, C1 job `125418746848`, B2 job `125418746915` and ALL job `125418747425`; B1 and A2 jobs have **not** reached a final conclusion. The completed **ALL** job's decoded log explicitly reports **178/178 synthetic Oxford source, CEFR, Myanmar, historical provenance, human, George/Emma, physical iPhone and release forgeries rejected**, and the six-card research audit PASS. This is mechanical source/structure verification only, **not independent human linguistic review**.
+
+[Documentary no-deploy run **41486697252**](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/41486697252) is also **IN PROGRESS** at SHA `7939154c488ea1901ef521dfec9a2b376f9137dc`; actual documentary job `125418835495` shows the new six-card forged-signoff step and the **Protect production lessons, IELTS vocabulary, George Emma and privacy** step completed **SUCCESS**, but artifact upload/final job conclusion and decoded complete log were not yet available. Do **not** claim whole-workflow success until every job conclusion and log is checked. Recheck and repair any actual failures on the next feasible run.
+
+**A1 200/0; A2 200/0; B1 200/0; B2 200/0; C1 200/0. RELEASE BLOCKED — STAGING ONLY.**
