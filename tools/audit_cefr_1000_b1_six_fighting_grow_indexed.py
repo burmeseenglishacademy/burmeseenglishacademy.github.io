@@ -110,9 +110,11 @@ def validate(packet, shortlist):
         if any(row.get(flag) is not False for flag in FALSE_FLAGS):
             issues.append(word + " forged independent approval")
         if not all(isinstance(row.get(field), str) and len(row[field].strip()) > 8
-                   for field in ("publisher_sense_paraphrase", "finding",
-                                 "publisher_indexed_pos")):
+                   for field in ("publisher_sense_paraphrase", "finding")):
             issues.append(word + " missing sense provenance")
+        if not isinstance(row.get("publisher_indexed_pos"), str) or len(
+                row["publisher_indexed_pos"].strip()) < 4:
+            issues.append(word + " missing publisher POS")
         alt = row.get("unapproved_teaching_alternative")
         if not isinstance(alt, dict) or not all(
                 isinstance(alt.get(k), str) and len(alt[k].strip()) > 8
