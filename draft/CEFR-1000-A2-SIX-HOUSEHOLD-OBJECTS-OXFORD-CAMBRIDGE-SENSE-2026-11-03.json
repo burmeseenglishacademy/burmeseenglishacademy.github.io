@@ -1,0 +1,285 @@
+{
+  "schema": 1,
+  "scope": "USER_APPROVED_1000_TOTAL_A1_A2_B1_B2_C1_STAGING_ONLY",
+  "observed_on": "2026-11-03",
+  "status": "A2_SIX_DIRECT_OXFORD_CAMBRIDGE_INDEXED_HUMAN_REVIEW_REQUIRED",
+  "frozen_shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "source_limitations": "Six Oxford publisher pages directly opened 2026-11-03. Cambridge publisher-owned search index snippets observed; direct Cambridge page opens returned HTTP 403 or 520. Saucepan B1 is indexed evidence, NOT independent exact-sense signoff. Oxford TOPIC b1/b2/c2 labels are not headword CEFR badges. All six are editorial hold; teaching alternatives are AI drafts not independently approved.",
+  "written_by_level": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "independently_approved_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "audio_listening_signoffs": 0,
+  "physical_iphone_safari_signoffs": 0,
+  "production_deployed": false,
+  "records": [
+    {
+      "word": "doormat",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "frozen_snapshot": {
+        "english_definition": "A small mat placed by a doorway for wiping shoes.",
+        "burmese_meaning": "တံခါးဝတွင် ဖိနပ်သုတ်ရန် ခင်းထားသော ဖျာ",
+        "example_sentence": "Please wipe your shoes on the doormat before entering."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH59.json",
+        "source_index": 3,
+        "source_blob_sha": "228c772697e4879f6b8a30f85709d188a1df266c"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/doormat",
+        "source_line_range": "88-110",
+        "observed_on": "2026-11-03",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "uk_ipa_lead": "/ˈdɔːmæt/",
+        "source_sense_summary": "Oxford separates physical doorway mat from informal person who tolerates poor treatment. Frozen meaning/example use physical sense.",
+        "cambridge_publisher_url": "https://dictionary.cambridge.org/us/dictionary/english/doormat",
+        "cambridge_access": "PUBLISHER_OWNED_SEARCH_INDEX_ONLY_DIRECT_PAGE_403_OR_520",
+        "exact_sense_cefr_label": "NOT_ESTABLISHED",
+        "independently_verified": false
+      },
+      "risk": "TWO_UNRELATED_NOUN_SENSES_NO_A2_LABEL",
+      "unapproved_teaching_alternative": {
+        "english_definition": "A mat beside a door that people use to clean their shoes.",
+        "burmese_meaning": "တံခါးဝတွင် ဖိနပ်သုတ်ရန် ခင်းထားသည့် ဖျာ",
+        "example_sentence": "Wipe your shoes on the doormat before you come inside."
+      },
+      "independent_review_task": "Independent human reviewer must verify English, fluent Myanmar, example grammar, exact-sense CEFR publisher evidence, British usage and pronunciation. Do not count AI source research as independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "shoebox",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "frozen_snapshot": {
+        "english_definition": "A box designed to store or carry a pair of shoes.",
+        "burmese_meaning": "ဖိနပ်တစ်စုံကို ထည့်သိမ်းရန် သို့မဟုတ် သယ်ဆောင်ရန် သုံးသော ဖိနပ်ဘူး",
+        "example_sentence": "She kept the spare shoebox under her bed."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+        "source_index": 0,
+        "source_blob_sha": "96d54ddb6fdc204e8cbea45e8c97a6c98fb17b11"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/shoebox",
+        "source_line_range": "88-108",
+        "observed_on": "2026-11-03",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "uk_ipa_lead": "/ˈʃuːbɒks/",
+        "source_sense_summary": "Oxford's literal noun is the box for a pair of new shoes sold or delivered; separate figurative sense is a very small home. Cambridge permits spelling 'shoe box' or 'shoebox'. Frozen 'spare shoebox' is ambiguous and unnatural without context.",
+        "cambridge_publisher_url": "https://dictionary.cambridge.org/dictionary/english/shoe-box",
+        "cambridge_access": "PUBLISHER_OWNED_SEARCH_INDEX_ONLY_DIRECT_PAGE_403_OR_520",
+        "exact_sense_cefr_label": "NOT_ESTABLISHED",
+        "independently_verified": false
+      },
+      "risk": "SPELLING_VARIANT_LITERAL_VS_FIGURATIVE_AND_EXAMPLE_COLLOCATION",
+      "unapproved_teaching_alternative": {
+        "english_definition": "A box that holds a pair of shoes, especially when they are bought.",
+        "burmese_meaning": "ဖိနပ်တစ်စုံ ထည့်ထားသည့် ဖိနပ်ဘူး",
+        "example_sentence": "She put the new shoes back in their shoebox."
+      },
+      "independent_review_task": "Independent human reviewer must verify English, fluent Myanmar, example grammar, exact-sense CEFR publisher evidence, British usage and pronunciation. Do not count AI source research as independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "saucepan",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "frozen_snapshot": {
+        "english_definition": "A deep cooking pan with a handle, often used for boiling food.",
+        "burmese_meaning": "အစားအစာပြုတ်ရန် အသုံးပြုသော လက်ကိုင်ပါ အိုးငယ်",
+        "example_sentence": "Heat the milk gently in a saucepan before adding the chocolate."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+        "source_index": 1,
+        "source_blob_sha": "96d54ddb6fdc204e8cbea45e8c97a6c98fb17b11"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/saucepan",
+        "source_line_range": "88-116",
+        "observed_on": "2026-11-03",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "uk_ipa_lead": "/ˈsɔːspən/",
+        "source_sense_summary": "Oxford describes a deep round metal cooking pot with handle(s) and lid; Cambridge Advanced and Learner's Dictionary indexed pages label this countable noun B1. Frozen A2 placement conflicts with publisher-indexed B1; Oxford 'Cooking and eating b1' is a TOPIC label, not an independent word-level CEFR badge.",
+        "cambridge_publisher_url": "https://dictionary.cambridge.org/pl/dictionary/english/saucepan",
+        "cambridge_access": "PUBLISHER_OWNED_SEARCH_INDEX_ONLY_DIRECT_PAGE_403_OR_520",
+        "exact_sense_cefr_label": "CAMBRIDGE_INDEXED_B1_CONFLICT_NOT_INDEPENDENT",
+        "independently_verified": false
+      },
+      "risk": "A2_VS_CAMBRIDGE_INDEXED_B1_SAME_COOKING_NOUN_SENSE",
+      "unapproved_teaching_alternative": {
+        "english_definition": "A deep metal pan with a handle, used to cook food on a stove.",
+        "burmese_meaning": "မီးဖိုပေါ်တွင် အစားအစာချက်ပြုတ်ရန် သုံးသည့် လက်ကိုင်ပါ အိုးငယ်",
+        "example_sentence": "Warm the milk in a saucepan over a low heat."
+      },
+      "independent_review_task": "Independent human reviewer must verify English, fluent Myanmar, example grammar, exact-sense CEFR publisher evidence, British usage and pronunciation. Do not count AI source research as independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "washcloth",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "frozen_snapshot": {
+        "english_definition": "A small piece of cloth used for washing the face or body.",
+        "burmese_meaning": "မျက်နှာ သို့မဟုတ် ကိုယ်ခန္ဓာ သန့်စင်ရာတွင် သုံးသော အဝတ်စငယ်",
+        "example_sentence": "He used a clean washcloth to wipe his face after the match."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH60.json",
+        "source_index": 2,
+        "source_blob_sha": "96d54ddb6fdc204e8cbea45e8c97a6c98fb17b11"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/washcloth",
+        "source_line_range": "88-111",
+        "observed_on": "2026-11-03",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "uk_ipa_lead": "/ˈwɒʃklɒθ/",
+        "source_sense_summary": "Oxford explicitly marks 'washcloth' North American English and gives British 'flannel' and 'facecloth'. Cambridge also labels US. British George/Emma production requires editorial decision on teaching a US headword versus UK alternatives; not a pronunciation signoff.",
+        "cambridge_publisher_url": "https://dictionary.cambridge.org/pt/dicionario/ingles/washcloth",
+        "cambridge_access": "PUBLISHER_OWNED_SEARCH_INDEX_ONLY_DIRECT_PAGE_403_OR_520",
+        "exact_sense_cefr_label": "NOT_ESTABLISHED",
+        "independently_verified": false
+      },
+      "risk": "NORTH_AMERICAN_HEADWORD_IN_BRITISH_AUDIO_CURRICULUM",
+      "unapproved_teaching_alternative": {
+        "english_definition": "A small cloth used to wash your face or body (mainly North American English; British: flannel or facecloth).",
+        "burmese_meaning": "မျက်နှာနှင့် ကိုယ်ခန္ဓာ သန့်စင်ရန် သုံးသည့် အဝတ်စငယ် (ဗြိတိသျှအင်္ဂလိပ်တွင် flannel သို့မဟုတ် facecloth ဟုလည်း ခေါ်သည်)",
+        "example_sentence": "She used a clean washcloth to wash her face."
+      },
+      "independent_review_task": "Independent human reviewer must verify English, fluent Myanmar, example grammar, exact-sense CEFR publisher evidence, British usage and pronunciation. Do not count AI source research as independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "greenhouse",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "frozen_snapshot": {
+        "english_definition": "A building with glass walls where plants grow in warm conditions.",
+        "burmese_meaning": "အပင်များကို နွေးထွေးစွာ စိုက်ပျိုးရန် မှန်ဖြင့်ကာရံထားသော အဆောက်အအုံ",
+        "example_sentence": "They grow tomatoes in a greenhouse during the colder months."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+        "source_index": 13,
+        "source_blob_sha": "6a10ae41eb41370a9a5b74d907fa395bb43e18d8"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/greenhouse",
+        "source_line_range": "88-107",
+        "observed_on": "2026-11-03",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "uk_ipa_lead": "/ˈɡriːnhaʊs/",
+        "source_sense_summary": "Oxford greenhouse is a glass-sided and glass-roofed plant-growing structure. Cambridge indexes the same literal structure, without a displayed CEFR badge. Oxford Buildings/Gardens/Farming b2 labels are TOPIC levels, not proof that the word itself is B2 or A2. Distinguish greenhouse gas/effect phrases.",
+        "cambridge_publisher_url": "https://dictionary.cambridge.org/dictionary/english/greenhouse",
+        "cambridge_access": "PUBLISHER_OWNED_SEARCH_INDEX_ONLY_DIRECT_PAGE_403_OR_520",
+        "exact_sense_cefr_label": "NOT_ESTABLISHED",
+        "independently_verified": false
+      },
+      "risk": "UNSUBSTANTIATED_A2_AND_TOPIC_B2_MISREADING",
+      "unapproved_teaching_alternative": {
+        "english_definition": "A glass building where plants are grown in warm, protected conditions.",
+        "burmese_meaning": "အပင်များကို နွေးထွေးပြီး ကာကွယ်ထားသော နေရာတွင် စိုက်ပျိုးရန် မှန်ဖြင့် ဆောက်ထားသည့် အဆောက်အအုံ",
+        "example_sentence": "The farmer grows young plants in a greenhouse."
+      },
+      "independent_review_task": "Independent human reviewer must verify English, fluent Myanmar, example grammar, exact-sense CEFR publisher evidence, British usage and pronunciation. Do not count AI source research as independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    },
+    {
+      "word": "wheelbarrow",
+      "level": "A2",
+      "part_of_speech": "noun",
+      "frozen_snapshot": {
+        "english_definition": "A small cart with one wheel used to move heavy things by hand.",
+        "burmese_meaning": "ပစ္စည်းလေးများကို လက်ဖြင့်တွန်းသယ်ရန် သုံးသော ဘီးတစ်လုံးပါ လှည်းငယ်",
+        "example_sentence": "The gardener used a wheelbarrow to carry soil across the yard."
+      },
+      "provenance": {
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH61.json",
+        "source_index": 12,
+        "source_blob_sha": "6a10ae41eb41370a9a5b74d907fa395bb43e18d8"
+      },
+      "publisher_observation": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/wheelbarrow",
+        "source_line_range": "88-110",
+        "observed_on": "2026-11-03",
+        "access": "DIRECT_OXFORD_PUBLISHER_PAGE_OPENED",
+        "uk_ipa_lead": "/ˈwiːlbærəʊ/",
+        "source_sense_summary": "Oxford describes a large open container with a wheel and two handles for carrying things outdoors. Frozen 'small cart' may mislead size and form; Myanmar 'ပစ္စည်းလေးများ' can mean small/light objects rather than heavy loads. Oxford 'Gardens c2' is a TOPIC label, not a word-level CEFR C2.",
+        "cambridge_publisher_url": "https://dictionary.cambridge.org/us/dictionary/english/wheelbarrow",
+        "cambridge_access": "PUBLISHER_OWNED_SEARCH_INDEX_ONLY_DIRECT_PAGE_403_OR_520",
+        "exact_sense_cefr_label": "NOT_ESTABLISHED",
+        "independently_verified": false
+      },
+      "risk": "OBJECT_SIZE_AND_BURMESE_HEAVY_LOAD_MEANING_PLUS_TOPIC_LABEL",
+      "unapproved_teaching_alternative": {
+        "english_definition": "A one-wheeled open cart with two handles for moving soil or other materials by hand.",
+        "burmese_meaning": "မြေကြီးနှင့် အခြားပစ္စည်းများကို လက်ဖြင့်တွန်းသယ်ရန် သုံးသည့် ဘီးတစ်လုံးနှင့် လက်ကိုင်နှစ်ချောင်းပါ လှည်း",
+        "example_sentence": "The gardener pushed a wheelbarrow full of soil."
+      },
+      "independent_review_task": "Independent human reviewer must verify English, fluent Myanmar, example grammar, exact-sense CEFR publisher evidence, British usage and pronunciation. Do not count AI source research as independent approval.",
+      "editorial_hold": true,
+      "independently_reviewed": false,
+      "release_approved": false,
+      "george_headword_listened": false,
+      "emma_headword_listened": false,
+      "george_example_listened": false,
+      "emma_example_listened": false,
+      "physical_iphone_safari_tested": false
+    }
+  ]
+}
