@@ -1,0 +1,341 @@
+{
+  "schema": 1,
+  "scope": "USER_APPROVED_CEFR_1000_STAGING_ONLY",
+  "status": "RESEARCH_ONLY_NO_INDEPENDENT_APPROVAL",
+  "observed_on": "2026-11-02",
+  "shortlist_path": "draft/CEFR-1000-PROVISIONAL-SHORTLIST.json",
+  "shortlist_blob_sha": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "counts_by_level": {
+    "A1": 200,
+    "A2": 200,
+    "B1": 200,
+    "B2": 200,
+    "C1": 200
+  },
+  "independently_approved_by_level": {
+    "A1": 0,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "source_access_note": "Eight Oxford English dictionary entries directly opened; no exact-sense C1 CEFR badge observed. Cambridge direct access HTTP 403; no Cambridge CEFR assertion. Research alternatives are self-drafted, not human-independent signoffs.",
+  "reviewer_signoffs": 0,
+  "real_audio_listening_signoffs": 0,
+  "physical_iphone_safari_signoffs": 0,
+  "production_deployed": false,
+  "entries": [
+    {
+      "word": "dichotomy",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "original": {
+        "english_definition": "A division between two contrasting ideas or groups.",
+        "burmese_meaning": "ဆန့်ကျင်ကွဲပြားသော အယူအဆ သို့မဟုတ် အုပ်စုနှစ်ခုအကြား ခွဲခြားမှု",
+        "example_sentence": "The debate revealed a dichotomy between growth and conservation.",
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 23,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_evidence": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "access": "DIRECT_PAGE_OPENED",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/dichotomy",
+        "observed_on": "2026-11-02",
+        "line_locator": "101-107",
+        "uk_ipa": "/daɪˈkɒtəmi/",
+        "exact_sense_cefr_badge_observed": false,
+        "cefr_level_supported_by_this_page": "NOT_ESTABLISHED",
+        "note": "Oxford headword definition, POS and pronunciation inspected; footer topic/Word-of-the-Day labels are not exact-sense CEFR evidence."
+      },
+      "editorial_risk": "FALSE_DICHOTOMY",
+      "editorial_finding": "Oxford: formal usually-singular contrast between sharply opposed groups. Frozen growth/conservation example risks suggesting an exhaustive binary despite possible compromise.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "A marked division or contrast between two opposing groups or ideas.",
+        "burmese_meaning": "ဆန့်ကျင်ဘက်ဖြစ်သော အုပ်စု သို့မဟုတ် အယူအဆ နှစ်ခုအကြား ထင်ရှားသည့် ကွဲပြားမှု",
+        "example_sentence": "The policy draws a dichotomy between eligible and ineligible applicants."
+      },
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_exact_sense_cefr_review": false,
+      "independent_pronunciation_review": false,
+      "independent_approval": false,
+      "george_emma_listened": false,
+      "editorial_hold": true
+    },
+    {
+      "word": "disseminate",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "original": {
+        "english_definition": "To spread information or ideas widely among people.",
+        "burmese_meaning": "သတင်းအချက်အလက် သို့မဟုတ် အယူအဆများကို လူအများထံ ကျယ်ကျယ်ပြန့်ပြန့် ဖြန့်ဝေသည်",
+        "example_sentence": "The health agency worked to disseminate clear advice.",
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 25,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_evidence": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "access": "DIRECT_PAGE_OPENED",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/disseminate",
+        "observed_on": "2026-11-02",
+        "line_locator": "101-116",
+        "uk_ipa": "/dɪˈsemɪneɪt/",
+        "exact_sense_cefr_badge_observed": false,
+        "cefr_level_supported_by_this_page": "NOT_ESTABLISHED",
+        "note": "Oxford headword definition, POS and pronunciation inspected; footer topic/Word-of-the-Day labels are not exact-sense CEFR evidence."
+      },
+      "editorial_risk": "TRANSITIVE_INFORMATION_COLLOCATION",
+      "editorial_finding": "Oxford: formal transitive verb with information/knowledge as object; not generic physical distribution.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "To spread information or knowledge so that it reaches many people.",
+        "burmese_meaning": "သတင်းအချက်အလက် သို့မဟုတ် အသိပညာကို လူအများထံ ကျယ်ကျယ်ပြန့်ပြန့် ဖြန့်ဝေသည်",
+        "example_sentence": "The university disseminated its findings to local schools."
+      },
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_exact_sense_cefr_review": false,
+      "independent_pronunciation_review": false,
+      "independent_approval": false,
+      "george_emma_listened": false,
+      "editorial_hold": true
+    },
+    {
+      "word": "eclectic",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "original": {
+        "english_definition": "Combining ideas or styles from many different sources.",
+        "burmese_meaning": "ရင်းမြစ်အမျိုးမျိုးမှ အယူအဆ သို့မဟုတ် ပုံစံများကို ပေါင်းစပ်ထားသော",
+        "example_sentence": "The café has an eclectic collection of furniture.",
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 26,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_evidence": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "access": "DIRECT_PAGE_OPENED",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/eclectic",
+        "observed_on": "2026-11-02",
+        "line_locator": "101-113",
+        "uk_ipa": "/ɪˈklektɪk/",
+        "exact_sense_cefr_badge_observed": false,
+        "cefr_level_supported_by_this_page": "NOT_ESTABLISHED",
+        "note": "Oxford headword definition, POS and pronunciation inspected; footer topic/Word-of-the-Day labels are not exact-sense CEFR evidence."
+      },
+      "editorial_risk": "SELECTION_VERSUS_VARIETY",
+      "editorial_finding": "Oxford: selecting from varied styles or ideas, not simply possessing many items.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Selecting or combining styles or ideas from a wide variety of sources.",
+        "burmese_meaning": "ပုံစံ သို့မဟုတ် အယူအဆ အမျိုးမျိုးမှ ရွေးချယ်ပေါင်းစပ်ထားသော",
+        "example_sentence": "The exhibition displayed an eclectic mix of modern and traditional art."
+      },
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_exact_sense_cefr_review": false,
+      "independent_pronunciation_review": false,
+      "independent_approval": false,
+      "george_emma_listened": false,
+      "editorial_hold": true
+    },
+    {
+      "word": "efficacy",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "original": {
+        "english_definition": "The ability of a treatment or method to produce the intended result.",
+        "burmese_meaning": "ကုသမှု သို့မဟုတ် နည်းလမ်းတစ်ခုက ရည်ရွယ်ထားသည့် ရလဒ်ကို ဖြစ်စေနိုင်စွမ်း",
+        "example_sentence": "Researchers evaluated the efficacy of the new training method.",
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 27,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_evidence": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "access": "DIRECT_PAGE_OPENED",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/efficacy",
+        "observed_on": "2026-11-02",
+        "line_locator": "93-109",
+        "uk_ipa": "/ˈefɪkəsi/",
+        "exact_sense_cefr_badge_observed": false,
+        "cefr_level_supported_by_this_page": "NOT_ESTABLISHED",
+        "note": "Oxford headword definition, POS and pronunciation inspected; footer topic/Word-of-the-Day labels are not exact-sense CEFR evidence."
+      },
+      "editorial_risk": "UNCOUNTABLE_NOT_EFFICIENCY",
+      "editorial_finding": "Oxford: uncountable formal noun, capacity to achieve desired result; distinguish effectiveness from efficiency. OPAL W is not a CEFR badge.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "The ability of a treatment or method to achieve the intended result.",
+        "burmese_meaning": "ကုသမှု သို့မဟုတ် နည်းလမ်းတစ်ခုက ရည်ရွယ်ထားသည့် ရလဒ်ကို ရရှိစေနိုင်သည့် ထိရောက်မှု",
+        "example_sentence": "Researchers tested the efficacy of the new teaching method."
+      },
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_exact_sense_cefr_review": false,
+      "independent_pronunciation_review": false,
+      "independent_approval": false,
+      "george_emma_listened": false,
+      "editorial_hold": true
+    },
+    {
+      "word": "embellish",
+      "level": "C1",
+      "part_of_speech": "verb",
+      "original": {
+        "english_definition": "To add details to make a story or object more attractive, sometimes less accurate.",
+        "burmese_meaning": "ဇာတ်လမ်း သို့မဟုတ် အရာတစ်ခုကို ပိုဆွဲဆောင်မှုရှိစေရန် အသေးစိတ်အချက်များ ထပ်ဖြည့်သည်",
+        "example_sentence": "He tended to embellish his stories with dramatic details.",
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 28,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_evidence": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "access": "DIRECT_PAGE_OPENED",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/embellish",
+        "observed_on": "2026-11-02",
+        "line_locator": "101-117",
+        "uk_ipa": "/ɪmˈbelɪʃ/",
+        "exact_sense_cefr_badge_observed": false,
+        "cefr_level_supported_by_this_page": "NOT_ESTABLISHED",
+        "note": "Oxford headword definition, POS and pronunciation inspected; footer topic/Word-of-the-Day labels are not exact-sense CEFR evidence."
+      },
+      "editorial_risk": "TWO_SENSES_MERGED",
+      "editorial_finding": "Oxford separates object decoration from adding potentially untrue story details. Frozen definition merges senses; frozen example is story sense.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "To make an account more interesting by adding details that may not be true.",
+        "burmese_meaning": "ပြောပြချက်တစ်ခုကို ပိုစိတ်ဝင်စားဖွယ်ဖြစ်စေရန် အမှန်မဟုတ်နိုင်သော အသေးစိတ်အချက်များ ထပ်ဖြည့်ပြောသည်",
+        "example_sentence": "The witness embellished his account with details he could not verify."
+      },
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_exact_sense_cefr_review": false,
+      "independent_pronunciation_review": false,
+      "independent_approval": false,
+      "george_emma_listened": false,
+      "editorial_hold": true
+    },
+    {
+      "word": "endemic",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "original": {
+        "english_definition": "Regularly found in a particular area or population.",
+        "burmese_meaning": "ဒေသ သို့မဟုတ် လူအုပ်စုတစ်ခုတွင် ပုံမှန်တွေ့ရှိရသော",
+        "example_sentence": "The disease is endemic in several tropical regions.",
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 29,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_evidence": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "access": "DIRECT_PAGE_OPENED",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/endemic",
+        "observed_on": "2026-11-02",
+        "line_locator": "101-112",
+        "uk_ipa": "/enˈdemɪk/",
+        "exact_sense_cefr_badge_observed": false,
+        "cefr_level_supported_by_this_page": "NOT_ESTABLISHED",
+        "note": "Oxford headword definition, POS and pronunciation inspected; footer topic/Word-of-the-Day labels are not exact-sense CEFR evidence."
+      },
+      "editorial_risk": "DISEASE_VERSUS_SPECIES",
+      "editorial_finding": "Oxford: persistent occurrence in a location/group; species-specific 'endemic to' means only found there. Frozen disease example uses former.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Regularly present in a particular region or population.",
+        "burmese_meaning": "ဒေသတစ်ခု သို့မဟုတ် လူအုပ်စုတစ်ခုတွင် ပုံမှန် ဆက်လက်တွေ့ရှိရသော",
+        "example_sentence": "The infection is endemic in several rural districts."
+      },
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_exact_sense_cefr_review": false,
+      "independent_pronunciation_review": false,
+      "independent_approval": false,
+      "george_emma_listened": false,
+      "editorial_hold": true
+    },
+    {
+      "word": "enigma",
+      "level": "C1",
+      "part_of_speech": "noun",
+      "original": {
+        "english_definition": "A person or thing that is difficult to understand or explain.",
+        "burmese_meaning": "နားလည်ရန် သို့မဟုတ် ရှင်းပြရန် ခက်ခဲသော လူ သို့မဟုတ် အရာ",
+        "example_sentence": "The disappearance of the records remains an enigma.",
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 30,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_evidence": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "access": "DIRECT_PAGE_OPENED",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/enigma",
+        "observed_on": "2026-11-02",
+        "line_locator": "101-109",
+        "uk_ipa": "/ɪˈnɪɡmə/",
+        "exact_sense_cefr_badge_observed": false,
+        "cefr_level_supported_by_this_page": "NOT_ESTABLISHED",
+        "note": "Oxford headword definition, POS and pronunciation inspected; footer topic/Word-of-the-Day labels are not exact-sense CEFR evidence."
+      },
+      "editorial_risk": "MYSTERY_NOT_DIFFICULTY",
+      "editorial_finding": "Oxford: mysterious person, thing or situation, not any ordinary difficulty. Missing records example plausible but needs mystery sense.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "A mysterious person, thing or situation that is difficult to understand.",
+        "burmese_meaning": "နားလည်ရန် သို့မဟုတ် ရှင်းပြရန် ခက်ခဲသော ပဟေဠိဆန်သည့် လူ၊ အရာ သို့မဟုတ် အခြေအနေ",
+        "example_sentence": "The reason for the sudden shutdown remains an enigma."
+      },
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_exact_sense_cefr_review": false,
+      "independent_pronunciation_review": false,
+      "independent_approval": false,
+      "george_emma_listened": false,
+      "editorial_hold": true
+    },
+    {
+      "word": "ephemeral",
+      "level": "C1",
+      "part_of_speech": "adjective",
+      "original": {
+        "english_definition": "Lasting for only a very short time.",
+        "burmese_meaning": "အချိန်အလွန်တိုတောင်းစွာသာ တည်ရှိသော",
+        "example_sentence": "The artist used ice to create an ephemeral sculpture.",
+        "source_path": "draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json",
+        "source_index": 31,
+        "source_blob_sha": "7eaf88b9ed7687b26ccde713262f10fb209743a8"
+      },
+      "publisher_evidence": {
+        "publisher": "Oxford Advanced Learner's Dictionary",
+        "access": "DIRECT_PAGE_OPENED",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/english/ephemeral",
+        "observed_on": "2026-11-02",
+        "line_locator": "101-108",
+        "uk_ipa": "/ɪˈfemərəl/",
+        "exact_sense_cefr_badge_observed": false,
+        "cefr_level_supported_by_this_page": "NOT_ESTABLISHED",
+        "note": "Oxford headword definition, POS and pronunciation inspected; footer topic/Word-of-the-Day labels are not exact-sense CEFR evidence."
+      },
+      "editorial_risk": "SHORT_LIVED_NOT_FRAGILE",
+      "editorial_finding": "Oxford: lasting or used for a short period. Ice sculpture example fits; not synonymous with fragile or disposable.",
+      "unapproved_teaching_alternative": {
+        "english_definition": "Lasting or being used for only a short time.",
+        "burmese_meaning": "အချိန်တိုတောင်းစွာသာ တည်တံ့သော သို့မဟုတ် အသုံးပြုသော",
+        "example_sentence": "The beauty of the ice sculpture was ephemeral."
+      },
+      "independent_english_review": false,
+      "independent_myanmar_review": false,
+      "independent_example_review": false,
+      "independent_exact_sense_cefr_review": false,
+      "independent_pronunciation_review": false,
+      "independent_approval": false,
+      "george_emma_listened": false,
+      "editorial_hold": true
+    }
+  ]
+}
