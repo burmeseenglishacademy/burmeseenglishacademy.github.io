@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - draft/CEFR-1000-C1-SIX-TRIBUTE-CONSISTENTLY-CAMBRIDGE-SENSE-2026-11-03.json
+      - tools/audit_cefr_1000_c1_six_tribute_consistently.py
       - draft/CEFR-1000-B2-FIVE-RESPOND-CONDUCT-CONSISTENT-ESTABLISH-OCCUR-CAMBRIDGE-2026-11-03.json
       - tools/audit_cefr_1000_b2_five_respond_consistent.py
       - draft/CEFR-1000-SIX-DERIVED-NOUNS-CROSSLEVEL-LEXICAL-SLOTS-2026-11-03.json
@@ -1109,6 +1111,8 @@ jobs:
         run: python3 tools/audit_cefr_1000_a2_six_world_data_public.py --level ALL --self-test
       - name: Reject spoofed publisher dictionary paths in independent CEFR review receipts
         run: python3 tests/cefr-1000-independent-stage-source-binding.py
+      - name: Audit six Cambridge C1 exact-sense holds and reject forged reviewer, audio and iPhone claims (NO DEPLOY)
+        run: python3 tools/audit_cefr_1000_c1_six_tribute_consistently.py
       - name: Audit five Cambridge-indexed B2 exact senses and reject forged approvals (NO DEPLOY)
         run: python3 tools/audit_cefr_1000_b2_five_respond_consistent.py
       - name: Audit six source-bound lexicalised nouns and CEFR conflicts (NO APPROVAL)
