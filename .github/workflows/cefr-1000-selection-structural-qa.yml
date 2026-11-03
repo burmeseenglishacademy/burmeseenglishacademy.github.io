@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - tools/check_cefr_1000_provisional_inventory.py
+      - draft/CEFR-1000-PROVISIONAL-SHORTLIST.json
       - draft/CEFR-1000-C1-SIX-TRIBUTE-CONSISTENTLY-CAMBRIDGE-SENSE-2026-11-03.json
       - tools/audit_cefr_1000_c1_six_tribute_consistently.py
       - draft/CEFR-1000-B2-FIVE-RESPOND-CONDUCT-CONSISTENT-ESTABLISH-OCCUR-CAMBRIDGE-2026-11-03.json
@@ -335,6 +337,8 @@ jobs:
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
+      - name: Fail-closed provisional 1000-word inventory integrity (never release approval)
+        run: python3 tools/check_cefr_1000_provisional_inventory.py
       - name: Audit six held C1 Oxford-direct and Cambridge-indexed C2 sense conflicts
         run: python3 tools/audit_cefr_1000_c1_six_meticulous_scrutinize.py --level "${{ matrix.level }}"
       - name: Reject forged six-card C1 publisher, Myanmar, provenance and reviewer claims
