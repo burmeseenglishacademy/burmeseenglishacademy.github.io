@@ -30,6 +30,8 @@ def check(data):
         errors.append(f"Expected 1000 entries, got {len(entries)}")
     counts = Counter()
     seen = {}
+    provenance_slots = {}
+    provenance_blobs = {}
     for index, entry in enumerate(entries):
         label = f"entries[{index}]"
         if not isinstance(entry, dict):
@@ -60,6 +62,23 @@ def check(data):
         for flag in REVIEW_FLAGS:
             if entry.get(flag) is not False:
                 errors.append(f"{label}: {flag} must be explicitly false in provisional inventory")
+        source_path = entry.get("source_path")
+        source_index = entry.get("source_index")
+        if isinstance(source_path, str):
+            if (not source_path.startswith("draft/") or not source_path.endswith(".json")
+                    or ".." in source_path.split("/") or chr(92) in source_path
+                    or source_path.startswith("draft//")):
+                errors.append(f"{label}: unsafe/non-draft source_path")
+            sha_value = entry.get("source_blob_sha")
+            if isinstance(sha_value, str):
+                old_sha = provenance_blobs.setdefault(source_path, sha_value)
+                if old_sha != sha_value:
+                    errors.append(f"{label}: inconsistent source blob for {source_path}")
+            if type(source_index) is int and source_index >= 0:
+                slot = (source_path, source_index)
+                if slot in provenance_slots:
+                    errors.append(f"{label}: reused historical source slot at {provenance_slots[slot]}")
+                provenance_slots[slot] = index
         sha = entry.get("source_blob_sha")
         if not isinstance(sha, str) or len(sha) != 40 or any(c not in "0123456789abcdef" for c in sha):
             errors.append(f"{label}: invalid historical blob SHA")
@@ -86,6 +105,9 @@ def adversarial_self_test(data):
         ("empty-myanmar", lambda d: d["entries"][0].__setitem__("burmese_meaning", "  ")),
         ("empty-example", lambda d: d["entries"][0].__setitem__("example_sentence", "")),
         ("missing-provenance", lambda d: d["entries"][0].pop("source_path", None)),
+        ("unsafe-provenance-path", lambda d: d["entries"][0].__setitem__("source_path", "../outside.json")),
+        ("duplicate-provenance-slot", lambda d: (d["entries"][1].__setitem__("source_path", d["entries"][0]["source_path"]), d["entries"][1].__setitem__("source_index", d["entries"][0]["source_index"]))),
+        ("inconsistent-provenance-blob", lambda d: d["entries"][0].__setitem__("source_blob_sha", "a" * 40 if d["entries"][0]["source_blob_sha"] != "a" * 40 else "b" * 40)),
         ("forged-blob-sha", lambda d: d["entries"][0].__setitem__("source_blob_sha", "not-a-sha")),
         ("removed-editorial-hold", lambda d: d["entries"][0].__setitem__("editorial_hold", False)),
         ("forged-english-signoff", lambda d: d["entries"][0].__setitem__("reviewed_english", True)),
