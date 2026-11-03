@@ -4,6 +4,7 @@
 Usage: python3 tools/check_cefr_1000_provisional_inventory.py
 This guard deliberately checks draft integrity only, NOT independent signoff.
 """
+import copy
 import json
 import pathlib
 import sys
@@ -75,10 +76,47 @@ def check(data):
         errors.append("Provisional production status altered")
     return errors
 
+def adversarial_self_test(data):
+    """Mutation tests must reject forged inventory and approvals; no human review implied."""
+    cases = [
+        ("missing-entry", lambda d: d["entries"].pop()),
+        ("duplicate-headword", lambda d: d["entries"][1].__setitem__("word", d["entries"][0]["word"])),
+        ("casefold-duplicate", lambda d: d["entries"][1].__setitem__("word", d["entries"][0]["word"].upper())),
+        ("wrong-level", lambda d: d["entries"][0].__setitem__("level", "C9")),
+        ("empty-myanmar", lambda d: d["entries"][0].__setitem__("burmese_meaning", "  ")),
+        ("empty-example", lambda d: d["entries"][0].__setitem__("example_sentence", "")),
+        ("missing-provenance", lambda d: d["entries"][0].pop("source_path", None)),
+        ("forged-blob-sha", lambda d: d["entries"][0].__setitem__("source_blob_sha", "not-a-sha")),
+        ("removed-editorial-hold", lambda d: d["entries"][0].__setitem__("editorial_hold", False)),
+        ("forged-english-signoff", lambda d: d["entries"][0].__setitem__("reviewed_english", True)),
+        ("forged-burmese-signoff", lambda d: d["entries"][0].__setitem__("reviewed_burmese", True)),
+        ("forged-example-signoff", lambda d: d["entries"][0].__setitem__("reviewed_example", True)),
+        ("forged-level-signoff", lambda d: d["entries"][0].__setitem__("reviewed_level", True)),
+        ("forged-audio-signoff", lambda d: d["entries"][0].__setitem__("reviewed_pronunciation", True)),
+        ("forged-release-approval", lambda d: d["entries"][0].__setitem__("release_approved", True)),
+        ("forged-level-count", lambda d: d["counts_by_level"].__setitem__("A1", 201)),
+        ("forged-independent-count", lambda d: d["independently_approved_by_level"].__setitem__("B2", 1)),
+        ("forged-release-status", lambda d: d.__setitem__("release_status", "APPROVED")),
+        ("forged-production-status", lambda d: d["stages"].__setitem__("production", "DEPLOYED")),
+    ]
+    if check(data):
+        return ["Baseline inventory fails before adversarial tests"]
+    failures = []
+    for name, mutate in cases:
+        altered = copy.deepcopy(data)
+        mutate(altered)
+        if not check(altered):
+            failures.append("Mutation escaped detection: " + name)
+    if not failures:
+        print(f"PASS: {len(cases)}/{len(cases)} synthetic inventory and approval forgeries rejected; no independent signoff")
+    return failures
+
 def main():
     try:
         data = json.loads(PATH.read_text(encoding="utf-8"))
         errors = check(data)
+        if not errors:
+            errors.extend(adversarial_self_test(data))
     except (OSError, UnicodeError, json.JSONDecodeError) as exc:
         errors = [f"Unable to read inventory: {exc}"]
     for error in errors:
