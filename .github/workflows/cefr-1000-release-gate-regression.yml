@@ -31,6 +31,29 @@ jobs:
         env:
           CEFR_QA_LEVEL: ${{ matrix.level }}
         run: python3 -m unittest discover -s tests -p 'test_cefr1000_level_lane.py' -v
+      - name: Audit actual frozen shortlist inventory and fail-closed holds for this level
+        env:
+          CEFR_QA_LEVEL: ${{ matrix.level }}
+        run: |
+          python3 - <<'PY'
+          import collections, json, os
+          from pathlib import Path
+          level = os.environ['CEFR_QA_LEVEL']
+          p = Path('draft/CEFR-1000-PROVISIONAL-SHORTLIST.json')
+          data = json.loads(p.read_text(encoding='utf-8'))
+          entries = data['entries']
+          assert len(entries) == 1000, 'Actual shortlist not exactly 1000'
+          counts = collections.Counter(e['level'] for e in entries)
+          assert counts == {x: 200 for x in ('A1','A2','B1','B2','C1')}, counts
+          keys = [(e['word'].strip().casefold(), e['part_of_speech'].strip().casefold()) for e in entries]
+          assert len(set(keys)) == len(keys), 'Duplicate headword/POS in actual shortlist'
+          lane = [e for e in entries if e['level'] == level]
+          assert len(lane) == 200
+          assert all(e.get('editorial_hold') is True and e.get('release_approved') is False for e in lane), 'Provisional entry unexpectedly cleared'
+          assert all(not e.get(k) for e in lane for k in ('reviewed_english','reviewed_burmese','reviewed_example','reviewed_level','reviewed_pronunciation')), 'Provisional review flags unexpectedly set'
+          assert data.get('independently_approved_by_level',{}).get(level) == 0
+          print(f'PASS actual provisional {level}: 200 written, 0 independently approved, all held; NOT release-ready')
+          PY
       - name: Verify provisional shortlist cannot be certified without human evidence
         run: |
           python3 - <<'PY'
