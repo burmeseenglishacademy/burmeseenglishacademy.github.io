@@ -32,7 +32,7 @@ def synthetic():
                         source_sense="synthetic", evidence_reference="synthetic",
                         approved=True, independent_of_author=True) for field in gate.FIELDS}
             audio[uid] = {f"{voice}_{kind}": dict(asset_path="synthetic.wav",
-                         asset_sha256="synthetic-not-a-hash", listener_id="synthetic",
+                         asset_sha256="a" * 64, listener_id="synthetic",
                          listened_at="2026-11-04", listening_evidence="synthetic",
                          listening_passed=True) for voice in gate.VOICES for kind in gate.KINDS}
     gates = {name: dict(passed=True, evidence_url="https://example.org/synthetic",
@@ -100,6 +100,26 @@ class ReleaseGateAdversarialTests(unittest.TestCase):
     def test_missing_source_observation(self):
         m, e = self.case()
         e["independent_reviews"]["C1-199"]["cefr"]["source_observed_at"] = ""
+        self.blocked(m, e)
+
+    def test_invalid_audio_hash_placeholder(self):
+        m, e = self.case()
+        e["audio"]["A1-000"]["george_headword"]["asset_sha256"] = "synthetic-not-a-hash"
+        self.blocked(m, e)
+
+    def test_http_dictionary_source_rejected(self):
+        m, e = self.case()
+        e["independent_reviews"]["B1-000"]["cefr"]["source_url"] = "http://example.org/source"
+        self.blocked(m, e)
+
+    def test_http_release_evidence_rejected(self):
+        m, e = self.case()
+        e["release_gates"]["physical_iphone_safari"]["evidence_url"] = "http://example.org/evidence"
+        self.blocked(m, e)
+
+    def test_malformed_source_url_rejected(self):
+        m, e = self.case()
+        e["independent_reviews"]["C1-199"]["english"]["source_url"] = "https://"
         self.blocked(m, e)
 
     def test_missing_production_preservation(self):
