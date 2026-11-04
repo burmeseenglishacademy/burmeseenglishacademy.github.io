@@ -5,6 +5,7 @@ on:
     paths:
       - 'scripts/cefr1000_release_gate.py'
       - 'tests/test_cefr1000_release_gate.py'
+      - 'tests/test_cefr1000_level_lane.py'
       - '.github/workflows/cefr-1000-release-gate-regression.yml'
   workflow_dispatch:
 permissions:
@@ -24,12 +25,16 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Execute release-gate mutation suite (synthetic evidence only)
+      - name: Execute shared cross-level mutation suite (synthetic evidence only)
         run: python3 -m unittest discover -s tests -p 'test_cefr1000_release_gate.py' -v
+      - name: Execute actual CEFR-level mutation suite for this lane
+        env:
+          CEFR_QA_LEVEL: ${{ matrix.level }}
+        run: python3 -m unittest discover -s tests -p 'test_cefr1000_level_lane.py' -v
       - name: Verify provisional shortlist cannot be certified without human evidence
         run: |
           python3 - <<'PY'
-          import importlib.util, json, pathlib
+          import importlib.util, pathlib
           p=pathlib.Path('scripts/cefr1000_release_gate.py')
           spec=importlib.util.spec_from_file_location('release_gate',p)
           m=importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
@@ -42,5 +47,6 @@ jobs:
           PY
       - name: Declare scope
         run: |
-          echo 'Lane ${{ matrix.level }} is a parallel structural regression lane, NOT a linguistic or audio review.'
-          echo 'No release, deploy, production write, or reviewer approval occurs in this workflow.'
+          echo 'Executed shared checks plus actual mutation tests for CEFR lane ${{ matrix.level }}.'
+          echo 'These checks are structural synthetic regressions, NOT linguistic/audio review.'
+          echo 'No release, deploy, production write, or reviewer approval occurs.'
