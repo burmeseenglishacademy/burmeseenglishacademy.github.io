@@ -33,9 +33,11 @@ class SelectedLevelAdversarialTests(unittest.TestCase):
         entry = next(x for x in manifest["entries"] if x["id"] == self.selected)
         return manifest, evidence, entry
 
-    def assert_blocked(self, manifest, evidence):
+    def assert_blocked(self, manifest, evidence, expected):
         errors = gate.check(manifest, evidence)
         self.assertTrue(errors, f"{self.level} corruption incorrectly permitted release")
+        self.assertTrue(any(expected in error for error in errors),
+                        f"{self.level}: expected diagnostic {expected!r}, got {errors[:8]!r}")
 
     def test_selected_lane_is_real_and_distinct(self):
         self.assertIn(self.selected, {x["id"] for x in self.baseline[0]["entries"]})
@@ -47,37 +49,37 @@ class SelectedLevelAdversarialTests(unittest.TestCase):
     def test_selected_level_independent_cefr_review_missing(self):
         m, e, _ = self.fixture()
         del e["independent_reviews"][self.selected]["cefr"]
-        self.assert_blocked(m, e)
+        self.assert_blocked(m, e, "missing cefr review")
 
     def test_selected_level_myanmar_review_unapproved(self):
         m, e, _ = self.fixture()
         e["independent_reviews"][self.selected]["myanmar"]["approved"] = False
-        self.assert_blocked(m, e)
+        self.assert_blocked(m, e, "myanmar: not approved")
 
     def test_selected_level_source_observation_missing(self):
         m, e, _ = self.fixture()
         e["independent_reviews"][self.selected]["english"]["source_observed_at"] = ""
-        self.assert_blocked(m, e)
+        self.assert_blocked(m, e, "english: missing source_observed_at")
 
     def test_selected_level_george_headword_listening_missing(self):
         m, e, _ = self.fixture()
         e["audio"][self.selected]["george_headword"]["listening_passed"] = False
-        self.assert_blocked(m, e)
+        self.assert_blocked(m, e, "george_headword: no listening pass")
 
     def test_selected_level_emma_example_clip_missing(self):
         m, e, _ = self.fixture()
         del e["audio"][self.selected]["emma_example"]
-        self.assert_blocked(m, e)
+        self.assert_blocked(m, e, "missing emma_example clip")
 
     def test_selected_level_editorial_hold(self):
         m, e, entry = self.fixture()
         entry["editorial_hold"] = True
-        self.assert_blocked(m, e)
+        self.assert_blocked(m, e, "editorial hold not cleared")
 
     def test_selected_level_count_corruption(self):
         m, e, entry = self.fixture()
         entry["level"] = self.other_level
-        self.assert_blocked(m, e)
+        self.assert_blocked(m, e, "expected 200, found")
 
     def test_selected_level_cross_level_duplicate_sense(self):
         m, e, entry = self.fixture()
@@ -85,12 +87,12 @@ class SelectedLevelAdversarialTests(unittest.TestCase):
         other["word"] = entry["word"]
         other["part_of_speech"] = entry["part_of_speech"]
         other["sense_id"] = entry["sense_id"]
-        self.assert_blocked(m, e)
+        self.assert_blocked(m, e, "duplicate word/POS/sense across levels")
 
     def test_selected_level_missing_part_of_speech(self):
         m, e, entry = self.fixture()
         entry["part_of_speech"] = ""
-        self.assert_blocked(m, e)
+        self.assert_blocked(m, e, "missing word/POS/sense_id")
 
 
 if __name__ == "__main__":
