@@ -1,0 +1,109 @@
+name: CEFR 1000 complete British George Emma audio candidate (staging only)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - tools/build_cefr1000_full_audio_staging.py
+      - .github/workflows/cefr-1000-full-audio-candidate.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: cefr1000-full-audio-unreviewed
+  cancel-in-progress: false
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Confirm frozen 1000-total unreviewed candidate and safe sharding
+        run: |
+          python3 - <<'PY'
+          import importlib.util,pathlib
+          f=pathlib.Path('tools/build_cefr1000_full_audio_staging.py')
+          spec=importlib.util.spec_from_file_location('candidate_audio',f)
+          mod=importlib.util.module_from_spec(spec);spec.loader.exec_module(mod)
+          d,items=mod.entries_and_texts()
+          assert len(d['entries'])==1000 and len(items)==1996
+          assert mod.SHARDS==16
+          assert all(x['editorial_hold'] for x in d['entries'])
+          print('PASS 1000 first-pass entries; 1996 unique texts; 3992 recording slots')
+          print('These entries and future recordings remain UNREVIEWED')
+          PY
+  make-candidate-audio:
+    needs: preflight
+    name: Generate candidate audio / shard ${{ matrix.shard }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        shard: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install local Kokoro British voice model and audio probe
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak-ng
+          python -m pip install 'kokoro==0.9.4' 'transformers<5' soundfile numpy
+      - name: Build and technically decode exactly one deterministic audio shard
+        env:
+          AUDIO_SHARD: ${{ matrix.shard }}
+        run: |
+          python3 tools/build_cefr1000_full_audio_staging.py --shard "$AUDIO_SHARD" --shards 16
+      - name: Confirm no existing tracked source or website audio changed
+        run: git diff --exit-code --
+      - name: Upload temporary unreviewed candidate audio shard
+        uses: actions/upload-artifact@v4
+        with:
+          name: cefr1000-audio-shard-${{ matrix.shard }}-UNREVIEWED
+          path: scratch/cefr1000-full-audio-unreviewed/shard-${{ format('{0}', matrix.shard) }}/
+          retention-days: 30
+          if-no-files-found: error
+  verify-and-package:
+    name: Assemble and validate all 3992 samples (NOT listening signoff)
+    needs: make-candidate-audio
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install media probe
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Assemble all shards as a single candidate bundle, without publication
+        uses: actions/download-artifact@v4
+        with:
+          pattern: cefr1000-audio-shard-*-UNREVIEWED
+          merge-multiple: true
+          path: scratch/cefr1000-full-audio-unreviewed/
+      - name: Assert exact SHA-bound mapping, complete voice coverage and valid MP3s
+        run: python3 tools/build_cefr1000_full_audio_staging.py --validate-complete
+      - name: Confirm no existing tracked lesson/IELTS/website data was modified
+        run: git diff --exit-code --
+      - name: Archive complete but UNREVIEWED candidate as downloadable QC artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cefr1000-COMPLETE-GEORGE-EMMA-CANDIDATE-UNREVIEWED
+          path: scratch/cefr1000-full-audio-unreviewed/
+          retention-days: 30
+          if-no-files-found: error
+      - name: Explicitly prevent mistaken go-live claim
+        run: |
+          echo '3992 candidate recordings are technical generation ONLY.'
+          echo 'Do not mark human listening, independent editorial approval, iPhone review or production deployment passed.'
