@@ -28,7 +28,11 @@ SHARDS=16
 
 
 def entries_and_texts():
-    d=json.loads(SOURCE.read_text("utf-8"))
+    raw=SOURCE.read_bytes()
+    actual_blob=hashlib.sha1(b"blob "+str(len(raw)).encode("ascii")+b"\x00"+raw).hexdigest()
+    if actual_blob != "475e68ae17ab97bd937e73e5ce4794e0dcd76551":
+        raise RuntimeError("Frozen CEFR shortlist changed; regenerate candidate mapping and review evidence first")
+    d=json.loads(raw.decode("utf-8"))
     assert d["release_status"]=="PROVISIONAL_1000_INDEPENDENT_EVIDENCE_MISSING_DO_NOT_PUBLISH"
     rows=d["entries"]
     assert len(rows)==1000 and Counter(e["level"] for e in rows)==dict.fromkeys(LEVELS,200)
