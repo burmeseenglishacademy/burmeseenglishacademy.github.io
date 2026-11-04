@@ -1,0 +1,52 @@
+name: CEFR 1000 heteronym British audio listening pilot (staging only)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - tools/build_cefr1000_heteronym_listening_pilot.py
+      - .github/workflows/cefr-1000-heteronym-audio-pilot.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  george-emma-risk-samples:
+    name: Generate and decode George/Emma clips (unreviewed)
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install British Kokoro speech engine and ffmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq espeak-ng ffmpeg
+          python -m pip install 'kokoro==0.9.4' 'transformers<5' soundfile numpy
+      - name: Generate 56 temporary, unreviewed CEFR risk samples
+        run: python3 tools/build_cefr1000_heteronym_listening_pilot.py
+      - name: Validate manifest count and no fictitious human signoffs
+        run: |
+          python3 - <<'PY'
+          import json, pathlib
+          p = pathlib.Path('scratch/cefr1000-heteronym-listening-pilot/review-manifest.json')
+          d = json.loads(p.read_text())
+          assert d['classification'] == 'STAGING_ONLY_UNREVIEWED_DO_NOT_PUBLISH'
+          assert d['words'] == 14 and d['sample_assignments'] == 56
+          assert d['human_listening_signoffs'] == 0
+          assert all(s['human_listening'] == 'NOT_PERFORMED' for s in d['samples'])
+          assert d['unique_recordings'] == len(list(p.parent.rglob('*.mp3')))
+          print('TECHNICAL PASS, NOT HUMAN LISTENING APPROVED')
+          PY
+      - name: Store samples for real reviewer, never upload to public site
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cefr1000-heteronym-george-emma-UNREVIEWED
+          path: scratch/cefr1000-heteronym-listening-pilot/
+          retention-days: 30
+          if-no-files-found: warn
+      - name: Verify no tracked production asset changed
+        run: git diff --exit-code --
