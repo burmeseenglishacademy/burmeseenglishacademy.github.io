@@ -1,0 +1,46 @@
+name: CEFR 1000 release gate adversarial regression (staging only)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - 'scripts/cefr1000_release_gate.py'
+      - 'tests/test_cefr1000_release_gate.py'
+      - '.github/workflows/cefr-1000-release-gate-regression.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  adversarial:
+    name: "Fail-closed regression / ${{ matrix.level }}"
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A1, A2, B1, B2, C1]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Execute release-gate mutation suite (synthetic evidence only)
+        run: python3 -m unittest discover -s tests -p 'test_cefr1000_release_gate.py' -v
+      - name: Verify provisional shortlist cannot be certified without human evidence
+        run: |
+          python3 - <<'PY'
+          import importlib.util, json, pathlib
+          p=pathlib.Path('scripts/cefr1000_release_gate.py')
+          spec=importlib.util.spec_from_file_location('release_gate',p)
+          m=importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
+          candidate={'entries':[]}
+          missing={'independent_reviews':{},'audio':{},'release_gates':{}}
+          errors=m.check(candidate,missing)
+          assert errors, 'Fail-open: empty manifest/evidence accepted'
+          assert any('exactly 1000' in e for e in errors)
+          print('PASS: missing approvals/audio/device/hosting evidence cannot certify release')
+          PY
+      - name: Declare scope
+        run: |
+          echo 'Lane ${{ matrix.level }} is a parallel structural regression lane, NOT a linguistic or audio review.'
+          echo 'No release, deploy, production write, or reviewer approval occurs in this workflow.'
