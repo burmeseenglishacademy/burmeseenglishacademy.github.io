@@ -1,0 +1,39 @@
+name: CEFR 1000 audio readiness and listening queue (staging only)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - tools/audit_cefr1000_audio_readiness.py
+      - .github/workflows/cefr-1000-audio-readiness.yml
+      - draft/CEFR-1000-PROVISIONAL-SHORTLIST.json
+      - draft/CEFR-1000-BRITISH-PRONUNCIATION-HETERONYMS-FOURTEEN-2026-11-01.json
+      - audio-manifest.js
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inventory:
+    name: Audio catalogue / actual MP3 technical validation
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install MP3 metadata probe
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Audit all CEFR 1000 draft audio reuse and create unreviewed listening queue
+        run: python3 tools/audit_cefr1000_audio_readiness.py
+      - name: Store machine-generated evidence, never mark human listening passed
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cefr1000-audio-readiness-UNREVIEWED
+          path: scratch/cefr1000-audio-readiness/
+          retention-days: 30
+          if-no-files-found: error
+      - name: Confirm project and production assets unchanged
+        run: git diff --exit-code --
