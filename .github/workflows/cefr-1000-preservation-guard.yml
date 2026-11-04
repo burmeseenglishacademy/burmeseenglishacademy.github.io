@@ -1,0 +1,36 @@
+name: BEA CEFR protected production assets SHA guard (staging only)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - tools/verify_cefr_protected_baseline.py
+      - .github/workflows/cefr-1000-preservation-guard.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  protect-legacy-assets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch public production main for read-only object comparison
+        run: git fetch --no-tags --depth=1 origin main:refs/remotes/origin/main
+      - name: Verify lesson and IELTS content plus original audio and privacy files are intact
+        run: python3 tools/verify_cefr_protected_baseline.py
+      - name: Archive staging-only preservation comparison
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cefr1000-staging-legacy-preservation-verification
+          path: scratch/cefr1000-preservation/report.json
+          retention-days: 30
+          if-no-files-found: warn
+      - name: No changes to tracked files
+        run: git diff --exit-code --
