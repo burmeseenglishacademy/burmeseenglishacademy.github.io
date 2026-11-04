@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - 'draft/CEFR-1000-PROVISIONAL-SHORTLIST.json'
+      - 'draft/CEFR-1000-INDEPENDENT-REVIEW-TASKS.json'
       - 'scripts/cefr1000_release_gate.py'
       - 'tests/test_cefr1000_release_gate.py'
       - 'tests/test_cefr1000_level_lane.py'
@@ -49,8 +51,11 @@ jobs:
           assert len(set(keys)) == len(keys), 'Duplicate headword/POS in actual shortlist'
           lane = [e for e in entries if e['level'] == level]
           assert len(lane) == 200
-          assert all(e.get('editorial_hold') is True and e.get('release_approved') is False for e in lane), 'Provisional entry unexpectedly cleared'
-          assert all(not e.get(k) for e in lane for k in ('reviewed_english','reviewed_burmese','reviewed_example','reviewed_level','reviewed_pronunciation')), 'Provisional review flags unexpectedly set'
+          assert all(e.get('editorial_hold') is True and e.get('release_approved') is False for e in entries), 'Any provisional entry unexpectedly cleared'
+          assert all(not e.get(k) for e in entries for k in ('reviewed_english','reviewed_burmese','reviewed_example','reviewed_level','reviewed_pronunciation')), 'Any provisional review flag unexpectedly set'
+          assert all(data.get('independently_approved_by_level',{}).get(x) == 0 for x in ('A1','A2','B1','B2','C1')), 'Independent approval count unexpectedly changed'
+          assert all(e.get('source_path') and e.get('source_blob_sha') and isinstance(e.get('source_index'),int) and e['source_index'] >= 0 for e in entries), 'Provenance missing in frozen shortlist'
+          assert data.get('release_status') == 'PROVISIONAL_1000_INDEPENDENT_EVIDENCE_MISSING_DO_NOT_PUBLISH', 'Unexpected provisional release status'
           assert data.get('independently_approved_by_level',{}).get(level) == 0
           print(f'PASS actual provisional {level}: 200 written, 0 independently approved, all held; NOT release-ready')
           PY
