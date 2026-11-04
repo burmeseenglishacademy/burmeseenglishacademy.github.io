@@ -8,13 +8,32 @@ checks *presence and consistency*, not the truth of signatures or listening clai
 import argparse
 import json
 import pathlib
+import re
 import sys
+from urllib.parse import urlsplit
 from collections import Counter
 
 LEVELS = ("A1", "A2", "B1", "B2", "C1")
 FIELDS = ("english", "myanmar", "example", "cefr")
 VOICES = ("george", "emma")
 KINDS = ("headword", "example")
+
+
+def https_evidence_url(value):
+    """Check URL syntax, not the authenticity or content of evidence."""
+    if not isinstance(value, str) or any(ch.isspace() for ch in value):
+        return False
+    try:
+        parsed = urlsplit(value)
+        return parsed.scheme == "https" and bool(parsed.hostname) and not parsed.username and not parsed.password
+    except ValueError:
+        return False
+
+
+def sha256_hex(value):
+    """Require a digest-shaped string; only file-byte comparison verifies integrity."""
+    return isinstance(value, str) and re.fullmatch(r"[a-fA-F0-9]{64}", value) is not None
+
 
 def require(ok, message, errors):
     if not ok:
@@ -80,6 +99,7 @@ def check(manifest, evidence):
                 continue
             for attr in ("reviewer_id", "reviewed_at", "source_url", "source_observed_at", "source_sense", "evidence_reference"):
                 require(isinstance(review.get(attr), str) and bool(review[attr].strip()), f"{uid}/{field}: missing {attr}", errors)
+            require(https_evidence_url(review.get("source_url")), f"{uid}/{field}: source_url must be valid HTTPS", errors)
             require(review.get("approved") is True, f"{uid}/{field}: not approved", errors)
             require(review.get("independent_of_author") is True, f"{uid}/{field}: independence not attested", errors)
         item_audio = audio.get(uid)
@@ -94,6 +114,7 @@ def check(manifest, evidence):
                     continue
                 for attr in ("asset_path", "asset_sha256", "listener_id", "listened_at", "listening_evidence"):
                     require(isinstance(clip.get(attr), str) and bool(clip[attr].strip()), f"{uid}/{voice}_{kind}: missing {attr}", errors)
+                require(sha256_hex(clip.get("asset_sha256")), f"{uid}/{voice}_{kind}: asset_sha256 must contain 64 hex digits", errors)
                 require(clip.get("listening_passed") is True, f"{uid}/{voice}_{kind}: no listening pass", errors)
     require(set(reviews) == ids, "review ids do not match manifest exactly", errors)
     require(set(audio) == ids, "audio ids do not match manifest exactly", errors)
@@ -102,7 +123,7 @@ def check(manifest, evidence):
         gates = {}
     for gate in ("browser_regression", "mobile_regression", "physical_iphone_safari", "github_pages_limits", "production_deployment", "production_asset_preservation", "privacy_review"):
         g = gates.get(gate)
-        require(isinstance(g, dict) and g.get("passed") is True and isinstance(g.get("evidence_url"), str) and bool(g["evidence_url"].strip()) and isinstance(g.get("verified_at"), str) and bool(g["verified_at"].strip()), f"release gate {gate} missing independently documented pass", errors)
+        require(isinstance(g, dict) and g.get("passed") is True and https_evidence_url(g.get("evidence_url")) and isinstance(g.get("verified_at"), str) and bool(g["verified_at"].strip()), f"release gate {gate} missing independently documented pass with HTTPS evidence URL", errors)
     return errors
 
 def main():
