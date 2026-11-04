@@ -10,7 +10,7 @@ permissions:
   contents: read
 concurrency:
   group: cefr1000-full-audio-unreviewed
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   preflight:
     runs-on: ubuntu-latest
