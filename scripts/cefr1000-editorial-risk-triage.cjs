@@ -6,6 +6,8 @@ const levels=['A1','A2','B1','B2','C1'];
 const counts=Object.fromEntries(levels.map(l=>[l,{written:0,independently_checked:0,risks:0}]));
 const findings=[];
 const headwordOwners=new Map();
+const senseOwners=new Map();
+const todayUtc=new Date().toISOString().slice(0,10);
 const evidenceUrl=/^https:\/\/[^\s/?#]+(?:\/[^\s]*)?$/i;
 const observationDate=/^\d{4}-\d{2}-\d{2}$/;
 const normalizeHeadword=w=>String(w||'').normalize('NFKC').trim().toLowerCase().replace(/\s+/g,' ');
@@ -26,6 +28,14 @@ for(const [i,e] of data.entries.entries()){
       'Same normalized headword at index '+previous.index+' ('+previous.level+'); check exact sense and POS');
     else headwordOwners.set(canonical,{index:i,level:e.level});
   }
+  // Detect duplicate normalized headword + POS + definition even when spelling varies.
+  // A collision is a review queue item, not proof that two legitimately distinct senses match.
+  const senseKey=[canonical,String(e.part_of_speech||'').trim().toLowerCase(),
+    String(e.english_definition||'').normalize('NFKC').trim().toLowerCase().replace(/\\s+/g,' ')].join('|');
+  if(senseOwners.has(senseKey)) {
+    const p=senseOwners.get(senseKey);
+    flag(e,i,'DUPLICATE_EXACT_SENSE_CANDIDATE','Same normalized headword/POS/definition as index '+p.index+' ('+p.level+'); requires independent sense comparison');
+  } else senseOwners.set(senseKey,{index:i,level:e.level});
   if(!e.part_of_speech || !String(e.english_definition||'').trim() ||
      !String(e.burmese_meaning||'').trim() || !String(e.example_sentence||'').trim())
     flag(e,i,'INCOMPLETE_LEXICAL_ENTRY','Check POS, English definition, Myanmar meaning and example');
@@ -53,8 +63,12 @@ for(const [i,e] of data.entries.entries()){
   if(e.source_level_observed_on && (!observationDate.test(e.source_level_observed_on) ||
       Number.isNaN(Date.parse(e.source_level_observed_on))))
     flag(e,i,'INVALID_CEFR_OBSERVATION_DATE','Expected valid YYYY-MM-DD observation date');
+  if(e.source_level_observed_on && observationDate.test(e.source_level_observed_on) && e.source_level_observed_on>todayUtc)
+    flag(e,i,'FUTURE_CEFR_OBSERVATION_DATE','A source observation date cannot be in the future (UTC)');
   if(e.source_level && !e.source_sense_id && !e.source_exact_sense)
     flag(e,i,'CEFR_EXACT_SENSE_MISSING','A URL alone does not substantiate the selected POS and lexical sense');
+  if(String(e.part_of_speech||'').toLowerCase()==='article' && !['a','an','the'].includes(canonical))
+    flag(e,i,'ARTICLE_POS_DISAMBIGUATION','Check article versus determiner classification and lexical sense');
   if(/wordnet|wn[0-9]|synset/i.test([e.source_path,e.english_definition,e.status].join(' ')))
     flag(e,i,'WORDNET_PROVENANCE_REVIEW','Historical WordNet-derived content is not publisher CEFR evidence');
   if(/^[A-Z][a-z]+(?: [A-Z][a-z]+)*$/.test(e.word) || /(?:inc\.|ltd\.|university|city|country)/i.test(e.word))
