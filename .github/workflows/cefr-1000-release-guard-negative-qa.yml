@@ -5,6 +5,7 @@ on:
     paths:
       - 'scripts/cefr1000-release-manifest-guard.cjs'
       - 'scripts/cefr1000-release-manifest-guard-negative-tests.cjs'
+      - 'scripts/cefr1000-guard-adversarial-smoke.cjs'
       - '.github/workflows/cefr-1000-release-guard-negative-qa.yml'
   workflow_dispatch:
 permissions:
@@ -26,6 +27,8 @@ jobs:
           node-version: '22'
       - name: Verify rejected release fixtures
         run: node scripts/cefr1000-release-manifest-guard-negative-tests.cjs
+      - name: Verify eight additional adversarial fixtures
+        run: node scripts/cefr1000-guard-adversarial-smoke.cjs
       - name: Confirm provisional shortlist cannot be treated as approved manifest
         run: |
           if node scripts/cefr1000-release-manifest-guard.cjs draft/CEFR-1000-PROVISIONAL-SHORTLIST.json; then
