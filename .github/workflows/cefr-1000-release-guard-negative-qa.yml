@@ -6,6 +6,8 @@ on:
       - 'scripts/cefr1000-release-manifest-guard.cjs'
       - 'scripts/cefr1000-release-manifest-guard-negative-tests.cjs'
       - 'scripts/cefr1000-guard-adversarial-smoke.cjs'
+      - 'scripts/cefr1000-level-structural-check.cjs'
+      - 'draft/CEFR-1000-PROVISIONAL-SHORTLIST.json'
       - '.github/workflows/cefr-1000-release-guard-negative-qa.yml'
   workflow_dispatch:
 permissions:
@@ -25,6 +27,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Validate this level's provisional inventory (not independent approval)
+        run: node scripts/cefr1000-level-structural-check.cjs ${{ matrix.level }}
       - name: Verify rejected release fixtures
         run: node scripts/cefr1000-release-manifest-guard-negative-tests.cjs
       - name: Verify eight additional adversarial fixtures
