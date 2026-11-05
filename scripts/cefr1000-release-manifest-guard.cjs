@@ -14,7 +14,8 @@ const failures=[];
 function fail(s){failures.push(s);}
 function text(v){return typeof v==='string'&&v.trim().length>0;}
 function sha(v){return typeof v==='string'&&/^[a-f0-9]{64}$/i.test(v);}
-function datePart(v){return typeof v==='string'?v.slice(0,10):null;}\nfunction date(v){if(typeof v!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(v))return false;const d=new Date(v+'T00:00:00Z');return !Number.isNaN(d.getTime())&&d.toISOString().slice(0,10)===v&&v<=new Date().toISOString().slice(0,10);}
+function datePart(v){return typeof v==='string'?v.slice(0,10):null;}
+function date(v){if(typeof v!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(v))return false;const d=new Date(v+'T00:00:00Z');return !Number.isNaN(d.getTime())&&d.toISOString().slice(0,10)===v&&v<=new Date().toISOString().slice(0,10);}
 function url(v){if(!text(v))return false;try{const u=new URL(v);return u.protocol==='https:'&&u.hostname.includes('.')&&!/^(github\.com|raw\.githubusercontent\.com)$/i.test(u.hostname);}catch{return false;}}
 function distinctReview(r,kind,entryId){
  if(!r||typeof r!=='object')return fail(entryId+': missing '+kind+' independent review');
