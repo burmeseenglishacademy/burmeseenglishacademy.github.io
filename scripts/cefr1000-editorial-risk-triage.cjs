@@ -6,6 +6,8 @@ const levels=['A1','A2','B1','B2','C1'];
 const counts=Object.fromEntries(levels.map(l=>[l,{written:0,independently_checked:0,risks:0}]));
 const findings=[];
 const headwordOwners=new Map();
+const evidenceUrl=/^https:\/\/[^\s/?#]+(?:\/[^\s]*)?$/i;
+const observationDate=/^\d{4}-\d{2}-\d{2}$/;
 const normalizeHeadword=w=>String(w||'').normalize('NFKC').trim().toLowerCase().replace(/\s+/g,' ');
 const tokens=s=>String(s||'').toLowerCase().match(/[a-z]+(?:'[a-z]+)?/g)||[];
 
@@ -40,6 +42,19 @@ for(const [i,e] of data.entries.entries()){
     flag(e,i,'UNSUPPORTED_REVIEW_CLAIM','Review flags require separate independently authenticated evidence');
   if(!e.source_level || !e.source_english || !e.source_burmese)
     flag(e,i,'NO_EXACT_SENSE_SOURCE_ATTESTATION','Collect publisher URL, sense/POS, CEFR observation date and independent bilingual evidence');
+  // Source strings alone do not establish evidence. URLs and observation dates must
+  // accompany exact-sense/POS/level attestations before an independent reviewer can sign off.
+  for(const [field,value] of [['source_english',e.source_english],['source_burmese',e.source_burmese],['source_level',e.source_level]]){
+    if(value && !evidenceUrl.test(String(value).trim()))
+      flag(e,i,'UNVERIFIABLE_SOURCE_REFERENCE',field+' is populated but is not an absolute HTTPS source URL; verify provenance');
+  }
+  if(e.source_level && !e.source_level_observed_on)
+    flag(e,i,'CEFR_SOURCE_DATE_MISSING','A level source reference without an observation date cannot establish dated CEFR evidence');
+  if(e.source_level_observed_on && (!observationDate.test(e.source_level_observed_on) ||
+      Number.isNaN(Date.parse(e.source_level_observed_on))))
+    flag(e,i,'INVALID_CEFR_OBSERVATION_DATE','Expected valid YYYY-MM-DD observation date');
+  if(e.source_level && !e.source_sense_id && !e.source_exact_sense)
+    flag(e,i,'CEFR_EXACT_SENSE_MISSING','A URL alone does not substantiate the selected POS and lexical sense');
   if(/wordnet|wn[0-9]|synset/i.test([e.source_path,e.english_definition,e.status].join(' ')))
     flag(e,i,'WORDNET_PROVENANCE_REVIEW','Historical WordNet-derived content is not publisher CEFR evidence');
   if(/^[A-Z][a-z]+(?: [A-Z][a-z]+)*$/.test(e.word) || /(?:inc\.|ltd\.|university|city|country)/i.test(e.word))
