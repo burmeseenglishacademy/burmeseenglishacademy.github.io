@@ -7,6 +7,7 @@ on:
       - 'scripts/cefr1000-release-manifest-guard-negative-tests.cjs'
       - 'scripts/cefr1000-guard-adversarial-smoke.cjs'
       - 'scripts/cefr1000-level-structural-check.cjs'
+      - 'scripts/cefr1000-editorial-risk-triage.cjs'
       - 'draft/CEFR-1000-PROVISIONAL-SHORTLIST.json'
       - '.github/workflows/cefr-1000-release-guard-negative-qa.yml'
   workflow_dispatch:
@@ -29,6 +30,29 @@ jobs:
           node-version: '22'
       - name: Validate this level's provisional inventory (not independent approval)
         run: node scripts/cefr1000-level-structural-check.cjs ${{ matrix.level }}
+      - name: Generate and assert staging editorial triage for this level
+        env:
+          CEFR_LEVEL: ${{ matrix.level }}
+        run: |
+          node scripts/cefr1000-editorial-risk-triage.cjs > "$RUNNER_TEMP/cefr1000-triage.json"
+          node - <<'NODE'
+          const fs = require('node:fs');
+          const level = process.env.CEFR_LEVEL;
+          const report = JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP + '/cefr1000-triage.json', 'utf8'));
+          const expected = ['A1','A2','B1','B2','C1'];
+          if (report.kind !== 'PROVISIONAL_EDITORIAL_TRIAGE_NOT_INDEPENDENT_REVIEW' ||
+              expected.some(l => report.per_level[l]?.written !== 200 ||
+                                 report.per_level[l]?.independently_checked !== 0) ||
+              report.findings.some(f => !expected.includes(f.level))) {
+            throw new Error('Provisional triage counts or evidence classification invalid');
+          }
+          const entry = report.per_level[level];
+          const summary = '| CEFR | First-pass written | Independently checked | Editorial risk findings |\\n' +
+            '|---|---:|---:|---:|\\n' +
+            '| ' + level + ' | ' + entry.written + ' | ' + entry.independently_checked + ' | ' + entry.risks + ' |\\n';
+          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, '### Provisional editorial triage (not approval)\\n' + summary);
+          console.log(level + ': 200 first-pass, 0 independently checked, ' + entry.risks + ' heuristic findings');
+          NODE
       - name: Verify rejected release fixtures
         run: node scripts/cefr1000-release-manifest-guard-negative-tests.cjs
       - name: Verify eight additional adversarial fixtures
