@@ -14,11 +14,11 @@ const failures=[];
 function fail(s){failures.push(s);}
 function text(v){return typeof v==='string'&&v.trim().length>0;}
 function sha(v){return typeof v==='string'&&/^[a-f0-9]{64}$/i.test(v);}
-function date(v){if(typeof v!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(v))return false;const d=new Date(v+'T00:00:00Z');return !Number.isNaN(d.getTime())&&d.toISOString().slice(0,10)===v&&v<=new Date().toISOString().slice(0,10);}
+function datePart(v){return typeof v==='string'?v.slice(0,10):null;}\nfunction date(v){if(typeof v!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(v))return false;const d=new Date(v+'T00:00:00Z');return !Number.isNaN(d.getTime())&&d.toISOString().slice(0,10)===v&&v<=new Date().toISOString().slice(0,10);}
 function url(v){if(!text(v))return false;try{const u=new URL(v);return u.protocol==='https:'&&u.hostname.includes('.')&&!/^(github\.com|raw\.githubusercontent\.com)$/i.test(u.hostname);}catch{return false;}}
 function distinctReview(r,kind,entryId){
  if(!r||typeof r!=='object')return fail(entryId+': missing '+kind+' independent review');
- if(!text(r.reviewer_id)||!date(r.reviewed_at?.slice(0,10))||!text(r.author_id)||r.decision!=='approved'||r.independent!==true||r.reviewer_id===r.author_id||!url(r.evidence_url))
+ if(!text(r.reviewer_id)||!date(datePart(r.reviewed_at))||!text(r.author_id)||r.decision!=='approved'||r.independent!==true||r.reviewer_id===r.author_id||!url(r.evidence_url))
    fail(entryId+': invalid '+kind+' independent review attestation');
 }
 function audioCheck(a,kind,entryId,expectedText,manifestHash){
@@ -34,7 +34,7 @@ function audioCheck(a,kind,entryId,expectedText,manifestHash){
    else if(crypto.createHash('sha256').update(fs.readFileSync(resolved)).digest('hex').toLowerCase()!==a.sha256.toLowerCase())fail(entryId+': actual audio bytes SHA256 mismatch for '+kind);
  }
  const l=a.listening;
- if(!l||l.passed!==true||!text(l.listener_id)||!date(l.listened_at?.slice(0,10))||!text(l.device)||!url(l.evidence_url)||l.audio_sha256!==a.sha256)
+ if(!l||l.passed!==true||!text(l.listener_id)||!date(datePart(l.listened_at))||!text(l.device)||!url(l.evidence_url)||l.audio_sha256!==a.sha256)
    fail(entryId+': no bound real-listening attestation for '+kind);
 }
 const path=process.argv[2];
@@ -87,7 +87,7 @@ if(audioPaths.size!==4000)fail('expected 4000 distinct audio paths; observed '+a
 const gates=m?.release_gates;
 for(const k of ['browser_regression','mobile_regression','physical_iphone_safari','github_pages_hosting','production_asset_preservation','confirmed_production_deployment']){
  const g=gates?.[k];
- if(!g||g.passed!==true||!url(g.evidence_url)||!date(g.checked_at?.slice(0,10))||!text(g.reviewer_id))fail('missing release gate '+k);
+ if(!g||g.passed!==true||!url(g.evidence_url)||!date(datePart(g.checked_at))||!text(g.reviewer_id))fail('missing release gate '+k);
 }
 if(failures.length){
  console.error('RELEASE BLOCKED ('+failures.length+' findings):\n'+failures.slice(0,30).join('\n')+(failures.length>30?'\n...remaining omitted':''));
