@@ -31,7 +31,7 @@ for(const [i,e] of data.entries.entries()){
   // Detect duplicate normalized headword + POS + definition even when spelling varies.
   // A collision is a review queue item, not proof that two legitimately distinct senses match.
   const senseKey=[canonical,String(e.part_of_speech||'').trim().toLowerCase(),
-    String(e.english_definition||'').normalize('NFKC').trim().toLowerCase().replace(/\\s+/g,' ')].join('|');
+    String(e.english_definition||'').normalize('NFKC').trim().toLowerCase().replace(/\s+/g,' ')].join('|');
   if(senseOwners.has(senseKey)) {
     const p=senseOwners.get(senseKey);
     flag(e,i,'DUPLICATE_EXACT_SENSE_CANDIDATE','Same normalized headword/POS/definition as index '+p.index+' ('+p.level+'); requires independent sense comparison');
