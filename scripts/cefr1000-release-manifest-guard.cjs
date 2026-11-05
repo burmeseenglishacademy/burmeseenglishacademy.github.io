@@ -14,7 +14,7 @@ const failures=[];
 function fail(s){failures.push(s);}
 function text(v){return typeof v==='string'&&v.trim().length>0;}
 function sha(v){return typeof v==='string'&&/^[a-f0-9]{64}$/i.test(v);}
-function date(v){return typeof v==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(v)&&!Number.isNaN(Date.parse(v));}
+function date(v){if(typeof v!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(v))return false;const d=new Date(v+'T00:00:00Z');return !Number.isNaN(d.getTime())&&d.toISOString().slice(0,10)===v&&v<=new Date().toISOString().slice(0,10);}
 function url(v){if(!text(v))return false;try{const u=new URL(v);return u.protocol==='https:'&&u.hostname.includes('.')&&!/^(github\.com|raw\.githubusercontent\.com)$/i.test(u.hostname);}catch{return false;}}
 function distinctReview(r,kind,entryId){
  if(!r||typeof r!=='object')return fail(entryId+': missing '+kind+' independent review');
@@ -28,7 +28,9 @@ function audioCheck(a,kind,entryId,expectedText,manifestHash){
  if(text(a.path)){
    const root=nodePath.resolve(process.cwd());
    const resolved=nodePath.resolve(root,a.path);
-   if(!resolved.startsWith(root+nodePath.sep)||!fs.existsSync(resolved)||!fs.statSync(resolved).isFile())fail(entryId+': audio file missing or unsafe path for '+kind);
+   let safe=false;
+   try{safe=resolved.startsWith(root+nodePath.sep)&&fs.statSync(resolved).isFile()&&fs.realpathSync(resolved).startsWith(fs.realpathSync(root)+nodePath.sep);}catch{}
+   if(!safe)fail(entryId+': audio file missing or unsafe path for '+kind);
    else if(crypto.createHash('sha256').update(fs.readFileSync(resolved)).digest('hex').toLowerCase()!==a.sha256.toLowerCase())fail(entryId+': actual audio bytes SHA256 mismatch for '+kind);
  }
  const l=a.listening;
@@ -62,6 +64,15 @@ for(const [i,e] of entries.entries()){
  if(seen.has(key))fail(id+': duplicate headword/POS/sense across levels');seen.add(key);
  if(e?.editorial_hold!==false||e?.release_approved!==true)fail(id+': editorial hold or missing approval');
  for(const kind of ['english','myanmar','example','cefr','pronunciation'])distinctReview(e?.independent_reviews?.[kind],kind,id);
+ // These are five separate review tasks, not five aliases of a single attestation.
+ const reviewEvidence=new Set();
+ for(const kind of ['english','myanmar','example','cefr','pronunciation']){
+   const review=e?.independent_reviews?.[kind];
+   if(text(review?.evidence_url)){
+     if(reviewEvidence.has(review.evidence_url))fail(id+': reused independent review evidence URL');
+     reviewEvidence.add(review.evidence_url);
+   }
+ }
  const ev=e?.cefr_evidence;
  if(!ev||!url(ev.publisher_url)||!date(ev.observed_on)||!text(ev.publisher_sense_id)||ev.level!==e.level||ev.sense_id!==e.sense_id||!text(ev.level_evidence_excerpt)||!text(ev.publisher_name))
    fail(id+': publisher exact-sense CEFR evidence missing or unbound');
