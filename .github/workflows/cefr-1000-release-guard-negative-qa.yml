@@ -47,10 +47,10 @@ jobs:
             throw new Error('Provisional triage counts or evidence classification invalid');
           }
           const entry = report.per_level[level];
-          const summary = '| CEFR | First-pass written | Independently checked | Editorial risk findings |\\n' +
-            '|---|---:|---:|---:|\\n' +
-            '| ' + level + ' | ' + entry.written + ' | ' + entry.independently_checked + ' | ' + entry.risks + ' |\\n';
-          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, '### Provisional editorial triage (not approval)\\n' + summary);
+          const summary = '| CEFR | First-pass written | Independently checked | Editorial risk findings |\n' +
+            '|---|---:|---:|---:|\n' +
+            '| ' + level + ' | ' + entry.written + ' | ' + entry.independently_checked + ' | ' + entry.risks + ' |\n';
+          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, '### Provisional editorial triage (not approval)\n' + summary);
           console.log(level + ': 200 first-pass, 0 independently checked, ' + entry.risks + ' heuristic findings');
           NODE
       - name: Verify rejected release fixtures
