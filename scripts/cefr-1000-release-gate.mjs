@@ -39,6 +39,7 @@ const signoff = (r, label) => {
 };
 const manifestRoot = path.dirname(path.resolve(process.argv[2] || '.'));
 const artifactPaths = new Set();
+const artifactTargets = new Set();
 // Resolve the real filesystem target: lexical path checks alone do not stop symlink escapes.
 const realManifestRoot = fs.realpathSync(manifestRoot);
 const artifact = (a, label) => {
@@ -62,8 +63,8 @@ const artifact = (a, label) => {
           fail(label + ': symlink escapes manifest directory');
           return;
         }
-        if (artifactPaths.has(realTarget)) fail(label + ': reused audio target via symlink');
-        artifactPaths.add(realTarget);
+        if (artifactTargets.has(realTarget)) fail(label + ': reused audio target via symlink');
+        artifactTargets.add(realTarget);
         const stat = fs.statSync(realTarget);
         if (!stat.isFile() || stat.size === 0) fail(label + ': audio artifact empty or not a file');
         else {
