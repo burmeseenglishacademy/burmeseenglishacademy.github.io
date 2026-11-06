@@ -6,6 +6,7 @@
  */
 import fs from 'node:fs';
 import crypto from 'node:crypto';
+import path from 'node:path';
 
 const levels = ['A1','A2','B1','B2','C1'];
 const errors = [];
@@ -36,10 +37,33 @@ const signoff = (r, label) => {
   if (!validDate(r.signed_on)) fail(label + ': invalid signoff date');
   if (r.independent !== true) fail(label + ': independent reviewer confirmation absent');
 };
+const manifestRoot = path.dirname(path.resolve(process.argv[2] || '.'));
+const artifactPaths = new Set();
 const artifact = (a, label) => {
   if (!a || typeof a !== 'object') { fail(label + ': artifact missing'); return; }
   if (!nonempty(a.path) || !nonempty(a.sha256) || !/^[a-f0-9]{64}$/i.test(a.sha256 ?? ''))
     fail(label + ': file path or sha256 missing/invalid');
+  // Evidence metadata alone cannot prove that an audio file exists or matches its digest.
+  // Reject path traversal, missing files, empty files and mismatched hashes.
+  if (nonempty(a.path)) {
+    const absolute = path.resolve(manifestRoot, a.path);
+    const relative = path.relative(manifestRoot, absolute);
+    if (path.isAbsolute(a.path) || relative.startsWith('..' + path.sep) || relative === '..') {
+      fail(label + ': unsafe artifact path');
+    } else {
+      if (artifactPaths.has(absolute)) fail(label + ': reused audio artifact path');
+      artifactPaths.add(absolute);
+      try {
+        const stat = fs.statSync(absolute);
+        if (!stat.isFile() || stat.size === 0) fail(label + ': audio artifact empty or not a file');
+        else {
+          const actual = crypto.createHash('sha256').update(fs.readFileSync(absolute)).digest('hex');
+          if (actual.toLowerCase() !== String(a.sha256 ?? '').toLowerCase())
+            fail(label + ': audio artifact SHA256 mismatch');
+        }
+      } catch { fail(label + ': audio artifact inaccessible'); }
+    }
+  }
   if (!nonempty(a.listened_by) || !validDate(a.listened_on) ||
       a.listening_result !== 'pass' || !nonempty(a.listening_evidence_id))
     fail(label + ': real listening signoff missing');
@@ -73,6 +97,7 @@ entries.forEach((e,i) => {
     signoff(e.independent_reviews?.[aspect],tag+' '+aspect);
   }
   verified(e.cefr_source,['publisher','exact_sense','cefr_level','observed_on','url','source_reference'],tag+' CEFR source');
+  if (e.cefr_source?.url && !/^https:\/\//.test(e.cefr_source.url)) fail(tag+': invalid CEFR source scheme');
   if (e.cefr_source?.cefr_level !== e.level) fail(tag+': source CEFR mismatch');
   if (e.cefr_source?.exact_sense && e.sense_id && e.cefr_source.exact_sense !== e.sense_id)
     fail(tag+': source exact-sense mismatch');
