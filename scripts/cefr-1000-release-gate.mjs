@@ -39,6 +39,8 @@ const signoff = (r, label) => {
 };
 const manifestRoot = path.dirname(path.resolve(process.argv[2] || '.'));
 const artifactPaths = new Set();
+// Resolve the real filesystem target: lexical path checks alone do not stop symlink escapes.
+const realManifestRoot = fs.realpathSync(manifestRoot);
 const artifact = (a, label) => {
   if (!a || typeof a !== 'object') { fail(label + ': artifact missing'); return; }
   if (!nonempty(a.path) || !nonempty(a.sha256) || !/^[a-f0-9]{64}$/i.test(a.sha256 ?? ''))
@@ -54,10 +56,18 @@ const artifact = (a, label) => {
       if (artifactPaths.has(absolute)) fail(label + ': reused audio artifact path');
       artifactPaths.add(absolute);
       try {
-        const stat = fs.statSync(absolute);
+        const realTarget = fs.realpathSync(absolute);
+        const realRelative = path.relative(realManifestRoot, realTarget);
+        if (realRelative === '..' || realRelative.startsWith('..' + path.sep) || path.isAbsolute(realRelative)) {
+          fail(label + ': symlink escapes manifest directory');
+          return;
+        }
+        if (artifactPaths.has(realTarget)) fail(label + ': reused audio target via symlink');
+        artifactPaths.add(realTarget);
+        const stat = fs.statSync(realTarget);
         if (!stat.isFile() || stat.size === 0) fail(label + ': audio artifact empty or not a file');
         else {
-          const actual = crypto.createHash('sha256').update(fs.readFileSync(absolute)).digest('hex');
+          const actual = crypto.createHash('sha256').update(fs.readFileSync(realTarget)).digest('hex');
           if (actual.toLowerCase() !== String(a.sha256 ?? '').toLowerCase())
             fail(label + ': audio artifact SHA256 mismatch');
         }
