@@ -1,0 +1,55 @@
+name: CEFR-1000 provisional inventory integrity (staging only)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - 'draft/CEFR-1000-PROVISIONAL-SHORTLIST.json'
+      - '.github/workflows/cefr-1000-provisional-integrity.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inventory-by-level:
+    name: ${{ matrix.level }} provisional structural audit
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A1, A2, B1, B2, C1]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Audit exact count, duplicates and editorial hold
+        env:
+          CEFR_LEVEL: ${{ matrix.level }}
+        run: |
+          node - <<'NODE'
+          const fs = require('node:fs');
+          const level = process.env.CEFR_LEVEL;
+          const doc = JSON.parse(fs.readFileSync('draft/CEFR-1000-PROVISIONAL-SHORTLIST.json','utf8'));
+          const entries = doc.entries;
+          if (!Array.isArray(entries) || entries.length !== 1000) throw Error('Expected exactly 1000 entries');
+          const expected = ['A1','A2','B1','B2','C1'];
+          const counts = Object.fromEntries(expected.map(l=>[l,entries.filter(e=>e.level===l).length]));
+          if (expected.some(l=>counts[l]!==200) || entries.some(e=>!expected.includes(e.level))) throw Error('Global level count mismatch '+JSON.stringify(counts));
+          const words = entries.map(e=>String(e.word??'').normalize('NFKC').trim().toLocaleLowerCase('en'));
+          if (words.some(w=>!w) || new Set(words).size!==1000) throw Error('Duplicate or empty global headword');
+          const subset = entries.filter(e=>e.level===level);
+          for (const [i,e] of subset.entries()) {
+            if (!e.editorial_hold || e.release_approved !== false || ['reviewed_english','reviewed_burmese','reviewed_example','reviewed_level','reviewed_pronunciation'].some(k=>e[k]!==false)) throw Error(level+' entry '+i+' approval/hold unexpectedly changed');
+            if (['english_definition','burmese_meaning','example_sentence','part_of_speech','source_path','source_blob_sha'].some(k=>!String(e[k]??'').trim())) throw Error(level+' entry '+i+' missing first-pass/provenance field');
+          }
+          const gaps = subset.reduce((n,e)=>n+['source_english','source_burmese','source_level'].filter(k=>!String(e[k]??'').trim()).length,0);
+          console.log(level+': 200 provisional, 0 independently approved; empty evidence fields '+gaps+'/600. Structural PASS is NOT editorial approval.');
+          NODE
+      - name: Ensure release validator rejects provisional inventory
+        run: |
+          if node scripts/cefr-1000-release-gate.mjs draft/CEFR-1000-PROVISIONAL-SHORTLIST.json; then
+            echo 'ERROR: provisional inventory escaped fail-closed gate'
+            exit 1
+          fi
+          echo 'PASS: release remains blocked'
