@@ -1,0 +1,57 @@
+name: CEFR-1000 new release gate smoke (staging only)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - 'scripts/cefr-1000-release-gate.mjs'
+      - '.github/workflows/cefr-1000-new-gate-smoke.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  gate-negative-by-level:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A1, A2, B1, B2, C1]
+    name: ${{ matrix.level }} release guard negative tests
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check validator syntax
+        run: node --check scripts/cefr-1000-release-gate.mjs
+      - name: Reject missing evidence and provisional inventory
+        env:
+          CEFR_LEVEL: ${{ matrix.level }}
+        run: |
+          node - <<'NODE'
+          const fs = require('node:fs');
+          const {spawnSync} = require('node:child_process');
+          const dir = process.env.RUNNER_TEMP;
+          const level = process.env.CEFR_LEVEL;
+          const cases = [
+            ['empty', {}],
+            ['fake-release', {release_status:'APPROVED_FOR_RELEASE', entries:[], release_gates:{}}],
+            ['wrong-count', {release_status:'APPROVED_FOR_RELEASE',entries:Array.from({length:200},(_,i)=>({level,word:'candidate'+i})),release_gates:{}}],
+          ];
+          for(const [name,data] of cases){
+            const file = dir + '/' + level + '-' + name + '.json';
+            fs.writeFileSync(file,JSON.stringify(data));
+            const r=spawnSync(process.execPath,['scripts/cefr-1000-release-gate.mjs',file],{encoding:'utf8'});
+            if(r.status===0 || !r.stderr.includes('RELEASE BLOCKED'))
+              throw new Error(level+'/'+name+' failed to reject safely: '+r.stderr.slice(0,400));
+            console.log('PASS rejected '+level+'/'+name);
+          }
+          NODE
+      - name: Reject the provisional shortlist without approval
+        run: |
+          if node scripts/cefr-1000-release-gate.mjs draft/CEFR-1000-PROVISIONAL-SHORTLIST.json; then
+            echo 'ERROR: provisional inventory passed'
+            exit 1
+          fi
+          echo 'PASS: provisional inventory cannot release'
