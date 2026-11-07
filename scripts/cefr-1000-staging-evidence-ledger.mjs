@@ -5,6 +5,7 @@ const path = 'draft/CEFR-1000-PROVISIONAL-SHORTLIST.json';
 const inventory = JSON.parse(readFileSync(path, 'utf8'));
 const levels = ['A1','A2','B1','B2','C1'];
 const entries = inventory.entries ?? [];
+if (!Array.isArray(entries)) throw new Error('Fail closed: inventory.entries must be an array');
 const reviewFields = ['reviewed_english','reviewed_burmese','reviewed_example','reviewed_level','reviewed_pronunciation'];
 const evidenceFields = ['source_english','source_burmese','source_level'];
 const problems = [];
@@ -27,11 +28,13 @@ for (const level of levels) {
   if (subset.length !== 200) problems.push(`${level}: expected exactly 200 entries, got ${subset.length}`);
 }
 for (const [i,e] of entries.entries()) {
+  if (!e || typeof e !== 'object' || Array.isArray(e)) { problems.push(`entry ${i}: invalid entry object`); continue; }
+  if (!levels.includes(e.level)) problems.push(`entry ${i}: unknown CEFR level ${String(e.level)}`);
   const key = String(e.word ?? '').normalize('NFKC').trim().toLocaleLowerCase('en');
   if (!key) problems.push(`entry ${i}: empty headword`);
   if (seen.has(key)) problems.push(`duplicate headword ${key}: entries ${seen.get(key)} and ${i}`);
   else seen.set(key,i);
-  const example = String(e.example_sentence ?? '').normalize('NFKC').trim().replace(/\\s+/g,' ').toLocaleLowerCase('en');
+  const example = String(e.example_sentence ?? '').normalize('NFKC').trim().replace(/\s+/g,' ').toLocaleLowerCase('en');
   if (!example) problems.push(`entry ${i}: missing example sentence`);
   else exampleGroups.set(example, [...(exampleGroups.get(example) ?? []), {index:i,level:e.level,word:e.word}]);
   for (const field of ['part_of_speech','english_definition','burmese_meaning','source_path','source_blob_sha']) {
@@ -40,11 +43,17 @@ for (const [i,e] of entries.entries()) {
   if (!Number.isInteger(e.source_index) || e.source_index < 0) problems.push(`entry ${i}: invalid source_index`);
   if (e.source_blob_sha && !/^[0-9a-f]{40}$/i.test(e.source_blob_sha)) problems.push(`entry ${i}: invalid source_blob_sha`);
   if (e.source_path) sourcePaths.set(e.source_path,(sourcePaths.get(e.source_path)??0)+1);
-  if (/\\b(?:wordnet|named.entity|proper.noun)\\b/i.test(JSON.stringify(e))) riskFlags.push({index:i,level:e.level,word:e.word,reason:'historical lexical/named-entity marker; requires manual inspection'});
+  if (/\b(?:wordnet|named[._ -]entity|proper[._ -]noun)\b/i.test(JSON.stringify(e))) riskFlags.push({index:i,level:e.level,word:e.word,reason:'historical lexical/named-entity marker; requires manual inspection'});
   if (!e.editorial_hold) problems.push(`entry ${i}: editorial hold absent`);
   if (e.release_approved || reviewFields.some(k => e[k] === true)) problems.push(`entry ${i}: approval/review assertion requires external evidence`);
 }
 if (entries.length !== 1000) problems.push(`expected 1000 entries, got ${entries.length}`);
+for (const level of levels) {
+  if (inventory.scope_target?.[level] !== 200) problems.push(`${level}: scope_target must be 200`);
+  if (inventory.counts_by_level?.[level] !== counts[level].written_first_pass) problems.push(`${level}: declared count differs from observed count`);
+  if (inventory.independently_approved_by_level?.[level] !== counts[level].independently_approved_claims) problems.push(`${level}: declared approvals differ from observed claims`);
+}
+if (!String(inventory.release_status ?? '').includes('DO_NOT_PUBLISH')) problems.push('inventory release status does not explicitly block publication');
 const repeatedExampleGroups = [...exampleGroups.entries()].filter(([,items])=>items.length>1).map(([example,items])=>({example,items}));
 const blockers = [
   'Independent English, Myanmar, example, CEFR and pronunciation review records not verified',
