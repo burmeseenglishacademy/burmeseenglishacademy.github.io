@@ -40,6 +40,26 @@ async function check(engine,label,options,allRoutes){
   assert.equal(state.version,'1.2.5');
   assert.equal(state.lessons,54);assert.equal(state.vocab,1000);
   assert.equal(state.clips,2326);assert.ok(state.loaded);
+  // Fail closed on the unpublished CEFR bank in a REAL browser, not only Node mocks.
+  // The separate IELTS 1000 and 54 lessons must remain usable.
+  const cefrState=await page.evaluate(()=>{
+   const draft=window.CEFR_VOCAB_BANK;
+   history.replaceState(null,'','#cefr-vocabulary');route();
+   return {
+    status:draft?.release_status,
+    active:window.BEACefr?.ready?.(),
+    body:document.querySelector('#app')?.textContent||'',
+    cards:document.querySelectorAll('[data-cefr-card]').length,
+    pagePresent:!!document.querySelector('#cefrVocabularyPage')
+   };
+  });
+  assert.equal(cefrState.status,'UNVERIFIED_DRAFT_DO_NOT_PUBLISH',
+   label+': unexpected CEFR editorial release status');
+  assert.equal(cefrState.active,false,label+': unpublished CEFR data displayed as approved');
+  assert.ok(cefrState.body.includes('undergoing accuracy and audio checks'),
+   label+': safe editorial hold message missing');
+  assert.equal(cefrState.cards,0,label+': provisional CEFR cards exposed');
+  assert.equal(cefrState.pagePresent,false,label+': provisional CEFR route activated');
   const routes=allRoutes?Array.from({length:54},(_,i)=>i+1):[1,2,10,18,19,31,44,54];
   for(const id of routes)for(const tab of tabs){
    const output=await page.evaluate(({id,tab})=>{
