@@ -30,7 +30,7 @@
 
 Recorded duration range: **headwords 0.475–2.05 sec** (median 1.15 sec); **examples 1.60–6.95 sec** (median 3.35 sec). Maximum observed normalized amplitude 0.90; minimum individual clip peak 0.21995.
 
-GitHub Pages [official limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits) include 1 GB published-site cap and 100 GB/month soft bandwidth. Using the **previously reported production build size** of 124,894,352 bytes (October 23) and the 71,458,096 bytes of *new* candidate MP3 payload yields a **provisional ~196,352,448 byte subtotal**, before new vocabulary JS, manifest growth, site packaging and current build verification. **This is not a live usage/bandwidth measurement or final hosting clearance.** The unreviewed candidate audio should remain in private GitHub Actions artifacts and must not be uploaded to the public Pages site yet.
+GitHub Pages [official limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits) include 1 GB published-site cap and 100 GB/month soft bandwidth. Using the **previously reported production build size** of 124,894,352 bytes (October 23) and the 71,458,096 bytes of *new* candidate MP3 payload yields a **provisional ~196,352,448 byte subtotal**, before new vocabulary JS, manifest growth, site packaging and current build verification. **This is not a live usage/bandwidth measurement or final hosting clearance.** The unreviewed candidate audio should remain in staging GitHub Actions artifacts and must not be uploaded to the public Pages site yet.
 
 ## Boundaries and next tasks
 
