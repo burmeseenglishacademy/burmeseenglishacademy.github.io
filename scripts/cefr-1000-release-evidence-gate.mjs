@@ -27,6 +27,15 @@ for(const level of levels){
  if(new Set(subset.map(key)).size!==subset.length) failures.push(level+': duplicate exact senses');
 }
 if(entries.length!==1000) failures.push('Expected exactly 1000 entries');
+// A release cannot be authorized by review flags while the underlying entry remains held.
+for(const e of entries){
+ if(e?.editorial_hold!==false) failures.push('Editorial hold remains: '+key(e));
+ if(e?.status!=='APPROVED_FOR_RELEASE') failures.push('Entry release status not approved: '+key(e));
+ if(!nonempty(e?.word)||!nonempty(e?.part_of_speech)||!nonempty(e?.english_definition)||!nonempty(e?.burmese_meaning)||!nonempty(e?.example_sentence)) failures.push('Incomplete bilingual entry: '+key(e));
+}
+for(const level of levels){
+ if(inventory.scope_target?.[level]!==200||inventory.counts_by_level?.[level]!==200||inventory.independently_approved_by_level?.[level]!==200) failures.push('Declared release counts inconsistent: '+level);
+}
 if(entries.some(e=>!levels.includes(e?.level))) failures.push('Unknown level');
 if(new Set(entries.map(key)).size!==1000) failures.push('Duplicate exact sense across levels');
 if(inventory.release_status!=='APPROVED_FOR_RELEASE') failures.push('Inventory release status not approved');
@@ -48,6 +57,8 @@ else {
    if(!checks.every(c=>nonempty(review[c]?.reviewer_id)&&dated(review[c]?.signed_at)&&https(review[c]?.evidence_url)&&review[c]?.decision==='approved')) failures.push('Incomplete independent review: '+review.entry_key);
    else perLevel[entry.level].independently_checked++;
    if(!approved(entry)) failures.push('Inventory approval flags missing: '+review.entry_key);
+   if(review.entry_key!==key(entry)) failures.push('Review key mismatch: '+review.entry_key);
+   if(checks.some(c=>review[c]?.reviewer_id===review[c]?.author_id||review[c]?.reviewer_id===review[c]?.generator_id)) failures.push('Review check self-attestation: '+review.entry_key);
   }
   if(seen.size!==1000) failures.push('Expected 1000 independently reviewed entry keys');
  }
