@@ -15,7 +15,7 @@ const sha=s=>createHash('sha256').update(s).digest('hex');
 const inventoryHash=sha(readFileSync(inventoryPath));
 const nonempty=s=>typeof s==='string'&&s.trim().length>0;
 const https=s=>{try{const u=new URL(s);return u.protocol==='https:'&&!!u.hostname&&!['example.com','example.org','example.net'].includes(u.hostname)}catch{return false}};
-const dated=s=>typeof s==='string'&&/^\\d{4}-\\d{2}-\\d{2}T/.test(s)&&Number.isFinite(Date.parse(s))&&Date.parse(s)<=Date.now();
+const dated=s=>typeof s==='string'&&/^\d{4}-\d{2}-\d{2}T/.test(s)&&Number.isFinite(Date.parse(s))&&Date.parse(s)<=Date.now()&&Date.parse(s)>=Date.UTC(2020,0,1);
 const fileHash=p=>{try{if(!nonempty(p)||p.startsWith('/')||p.includes('..')||!existsSync(p))return null;return sha(readFileSync(p))}catch{return null}};
 const approved=e=>e.release_approved===true && ['reviewed_english','reviewed_burmese','reviewed_example','reviewed_level','reviewed_pronunciation'].every(k=>e[k]===true);
 const key=e=>[e.level,String(e.word??'').normalize('NFKC').trim().toLowerCase(),String(e.part_of_speech??'').trim().toLowerCase(),String(e.english_definition??'').normalize('NFKC').trim().toLowerCase()].join('|');
@@ -44,7 +44,7 @@ else {
    if(!entry){failures.push('Review refers to unknown entry');continue;}
    const checks=['english','myanmar','example','cefr','pronunciation'];
    if(!nonempty(review.source_cefr_url)||!https(review.source_cefr_url)||!dated(review.source_observed_at)) failures.push('Missing dated publisher CEFR evidence: '+review.entry_key);
-   if(!checks.every(c=>review[c]?.reviewer_id!==review.author_id && review[c]?.reviewer_id!==review.generator_id)) failures.push('Reviewer not distinct from content author/generator: '+review.entry_key);
+   if(!nonempty(review.author_id)||!nonempty(review.generator_id)||!checks.every(c=>nonempty(review[c]?.reviewer_id)&&review[c]?.reviewer_id!==review.author_id && review[c]?.reviewer_id!==review.generator_id)) failures.push('Reviewer not distinct from content author/generator: '+review.entry_key);
    if(!checks.every(c=>nonempty(review[c]?.reviewer_id)&&dated(review[c]?.signed_at)&&https(review[c]?.evidence_url)&&review[c]?.decision==='approved')) failures.push('Incomplete independent review: '+review.entry_key);
    else perLevel[entry.level].independently_checked++;
    if(!approved(entry)) failures.push('Inventory approval flags missing: '+review.entry_key);
