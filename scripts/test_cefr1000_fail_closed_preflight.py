@@ -102,5 +102,21 @@ class PreflightTests(unittest.TestCase):
         code,result=check(data)
         self.assertNotEqual(code,0)
         self.assertTrue(any("a/an" in item for item in result["details"]))
+    def test_missing_editorial_hold_is_rejected(self):
+        data=manifest()
+        del data["entries"][0]["editorial_hold"]
+        self.assertNotEqual(check(data)[0],0)
+    def test_provisional_cannot_clear_hold(self):
+        data=manifest()
+        data["entries"][0]["editorial_hold"]=False
+        self.assertNotEqual(check(data)[0],0)
+    def test_provisional_cannot_claim_review(self):
+        data=manifest()
+        data["entries"][0]["reviewed_english"]=True
+        self.assertNotEqual(check(data)[0],0)
+    def test_provisional_cannot_claim_release_approval(self):
+        data=manifest()
+        data["entries"][0]["release_approved"]=True
+        self.assertNotEqual(check(data)[0],0)
 if __name__=="__main__":
     unittest.main()
