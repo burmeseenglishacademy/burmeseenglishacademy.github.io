@@ -88,6 +88,8 @@ jobs:
               code = run('draft/CEFR-1000-PROVISIONAL-SHORTLIST.json')
           result = json.loads(out.getvalue())
           assert code != 0, 'Unexpected clean preflight: inspect changed manifest and review requirements'
-          assert any('a/an' in detail for detail in result['details']), 'Expected a/an blocker missing or changed'
+          assert result['errors'] == 1, f'Unexpected additional structural failures: {result}'
+          assert len(result['details']) == 1 and 'lexical-unit conflict: a/an' in result['details'][0], f'Expected only unresolved a/an conflict: {result}'
+          assert result['counts'] == {level: 200 for level in ('A1','A2','B1','B2','C1')}, f'Allocation drift: {result}'
           print('KNOWN EDITORIAL BLOCKER (not a pass or release approval):', result['details'])
           PY
