@@ -85,5 +85,22 @@ class PreflightTests(unittest.TestCase):
         data=manifest()
         data["entries"][0]["word"]=123
         self.assertNotEqual(check(data)[0],0)
+    def test_nontext_definition_is_rejected(self):
+        data=manifest()
+        data["entries"][0]["english_definition"]={"bad":"type"}
+        self.assertNotEqual(check(data)[0],0)
+    def test_cross_level_repeated_headword_is_rejected(self):
+        data=manifest()
+        data["entries"][200]["word"]=data["entries"][0]["word"]
+        code,result=check(data)
+        self.assertNotEqual(code,0)
+        self.assertTrue(any("cross-level" in item for item in result["details"]))
+    def test_a_an_lexical_unit_collision_is_rejected(self):
+        data=manifest()
+        data["entries"][0]["word"]="a"
+        data["entries"][1]["word"]="an"
+        code,result=check(data)
+        self.assertNotEqual(code,0)
+        self.assertTrue(any("a/an" in item for item in result["details"]))
 if __name__=="__main__":
     unittest.main()
