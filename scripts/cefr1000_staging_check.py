@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
 """Staging-only CEFR-1000 structural checks; no editorial approval is inferred."""
-import argparse, collections, json, pathlib, re, sys
+import argparse, collections, json, pathlib, re, sys, unicodedata
 
 LEVELS = ("A1", "A2", "B1", "B2", "C1")
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "draft/CEFR-1000-PROVISIONAL-SHORTLIST.json"
 REVIEW_FIELDS = ("reviewed_english", "reviewed_burmese", "reviewed_example", "reviewed_level", "reviewed_pronunciation", "release_approved")
 SOURCE_FIELDS = ("source_english", "source_burmese", "source_level")
+
+def lexical_key(value):
+    """Normalize Unicode, spacing and case to catch disguised lexical collisions."""
+    return " ".join(unicodedata.normalize("NFKC", value).casefold().split())
 
 def check(level, release):
     data = json.loads(SOURCE.read_text(encoding="utf-8"))
@@ -38,7 +42,7 @@ def check(level, release):
         if not isinstance(pos, str) or not pos.strip():
             errors.append(f"entry {i}: missing part_of_speech")
             continue
-        key = (word.strip().casefold(), pos.strip().casefold())
+        key = (lexical_key(word), lexical_key(pos))
         if key in global_seen:
             errors.append(f"entry {i}: cross-level duplicate headword/POS {key}; first at {global_seen[key]}")
         else:
@@ -84,7 +88,7 @@ def check(level, release):
         if not isinstance(word, str) or not word.strip():
             errors.append(f"entry {i}: missing headword")
             continue
-        identity = (word.casefold().strip(), str(e.get("part_of_speech", "")).casefold().strip())
+        identity = (lexical_key(word), lexical_key(str(e.get("part_of_speech", ""))))
         if identity in seen:
             errors.append(f"entry {i}: repeated headword/POS {identity}")
         seen.add(identity)
@@ -102,7 +106,7 @@ def check(level, release):
     if release:
         # a/an are conditioned spellings of one indefinite article, not two
         # independently counted lexical senses. Requires human adjudication.
-        article_forms = {e.get("word", "").strip().casefold() for e in entries
+        article_forms = {lexical_key(e.get("word", "")) for e in entries
                          if e.get("level") == "A1" and e.get("part_of_speech") == "article"
                          and isinstance(e.get("word"), str)}
         if {"a", "an"}.issubset(article_forms):
