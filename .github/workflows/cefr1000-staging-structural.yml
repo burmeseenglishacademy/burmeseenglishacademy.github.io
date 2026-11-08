@@ -6,11 +6,21 @@ on:
     paths:
       - 'draft/CEFR-1000-PROVISIONAL-SHORTLIST.json'
       - 'scripts/cefr1000_staging_check.py'
+      - 'scripts/test_cefr1000_staging_check.py'
       - '.github/workflows/cefr1000-staging-structural.yml'
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
+  adversarial-gates:
+    name: Adversarial fail-closed tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s scripts -p 'test_cefr1000_staging_check.py' -v
   structural:
     name: Structural ${{ matrix.level }}
     runs-on: ubuntu-latest
