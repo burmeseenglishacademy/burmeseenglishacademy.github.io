@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Staging-only CEFR-1000 structural checks; no editorial approval is inferred."""
-import argparse, collections, json, pathlib, sys
+import argparse, collections, json, pathlib, re, sys
 
 LEVELS = ("A1", "A2", "B1", "B2", "C1")
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -27,6 +27,8 @@ def check(level, release):
     # Cross-level collisions cannot be detected by a level-local matrix job alone.
     # Check the complete manifest in EVERY parallel job.
     global_seen = {}
+    provenance_seen = {}
+    sha_pattern = re.compile(r"^[0-9a-f]{40}$")
     for i, e in enumerate(entries):
         word = e.get("word")
         pos = e.get("part_of_speech")
@@ -49,6 +51,32 @@ def check(level, release):
             observed = sum(e.get("release_approved") is True for e in entries if e.get("level") == k)
             if declared_approvals.get(k) != observed:
                 errors.append(f"{k}: declared independent approvals {declared_approvals.get(k)} != flagged entries {observed}")
+    # Independently audit provenance and review-state consistency across the
+    # complete inventory in every matrix job, not only the selected level.
+    for i, e in enumerate(entries):
+        source_path = e.get("source_path")
+        source_sha = e.get("source_blob_sha")
+        source_index = e.get("source_index")
+        if not isinstance(source_path, str) or not source_path.startswith("draft/") or ".." in pathlib.PurePosixPath(source_path).parts:
+            errors.append(f"entry {i}: invalid source_path")
+        if not isinstance(source_sha, str) or not sha_pattern.fullmatch(source_sha):
+            errors.append(f"entry {i}: invalid source_blob_sha")
+        if type(source_index) is not int or source_index < 0:
+            errors.append(f"entry {i}: invalid source_index")
+        if isinstance(source_path, str) and isinstance(source_sha, str) and type(source_index) is int:
+            provenance = (source_path, source_sha, source_index)
+            if provenance in provenance_seen:
+                errors.append(f"entry {i}: reused provenance record; first at {provenance_seen[provenance]}")
+            else:
+                provenance_seen[provenance] = i
+        for field in ("editorial_hold",) + REVIEW_FIELDS:
+            if type(e.get(field)) is not bool:
+                errors.append(f"entry {i}: {field} must be a JSON boolean")
+        if e.get("release_approved") is True:
+            if e.get("editorial_hold") is not False or any(e.get(k) is not True for k in REVIEW_FIELDS):
+                errors.append(f"entry {i}: approval contradicts hold/review flags")
+            if any(not isinstance(e.get(k), str) or not e[k].strip() for k in SOURCE_FIELDS):
+                errors.append(f"entry {i}: approved entry missing source fields")
     selected = [(i, e) for i, e in enumerate(entries) if e.get("level") == level]
     seen = set()
     for i, e in selected:
