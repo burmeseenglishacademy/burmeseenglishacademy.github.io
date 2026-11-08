@@ -44,6 +44,24 @@ class StagingGateTests(unittest.TestCase):
         for level in checker.LEVELS:
             self.assertTrue(any("cross-level duplicate" in e for e in evaluate(data, level)))
 
+    def test_unicode_compatibility_duplicate_detected(self):
+        data = copy.deepcopy(ORIGINAL)
+        first = next(e for e in data["entries"] if e["level"] == "A1")
+        last = next(e for e in data["entries"] if e["level"] == "C1")
+        # Fullwidth Latin letters normalize to ordinary Latin under NFKC.
+        last["word"] = "".join(chr(ord(ch) + 0xFEE0) if "!" <= ch <= "~" else ch for ch in first["word"])
+        last["part_of_speech"] = first["part_of_speech"]
+        for level in checker.LEVELS:
+            self.assertTrue(any("cross-level duplicate" in error for error in evaluate(data, level)))
+
+    def test_spacing_alias_duplicate_detected(self):
+        data = copy.deepcopy(ORIGINAL)
+        first = next(e for e in data["entries"] if e["level"] == "A1")
+        last = next(e for e in data["entries"] if e["level"] == "C1")
+        last["word"] = "  " + first["word"].upper() + "  "
+        last["part_of_speech"] = first["part_of_speech"]
+        self.assertTrue(any("cross-level duplicate" in error for error in evaluate(data)))
+
     def test_forged_approval_rejected(self):
         data = copy.deepcopy(ORIGINAL)
         data["entries"][0]["release_approved"] = True
