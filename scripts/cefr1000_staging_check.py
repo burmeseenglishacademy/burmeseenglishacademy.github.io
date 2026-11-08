@@ -24,6 +24,31 @@ def check(level, release):
         errors.append("unknown CEFR levels present")
     if data.get("counts_by_level") != {k: counts[k] for k in LEVELS}:
         errors.append("declared counts_by_level does not match inventory")
+    # Cross-level collisions cannot be detected by a level-local matrix job alone.
+    # Check the complete manifest in EVERY parallel job.
+    global_seen = {}
+    for i, e in enumerate(entries):
+        word = e.get("word")
+        pos = e.get("part_of_speech")
+        if not isinstance(word, str) or not word.strip():
+            errors.append(f"entry {i}: missing global headword")
+            continue
+        if not isinstance(pos, str) or not pos.strip():
+            errors.append(f"entry {i}: missing part_of_speech")
+            continue
+        key = (word.strip().casefold(), pos.strip().casefold())
+        if key in global_seen:
+            errors.append(f"entry {i}: cross-level duplicate headword/POS {key}; first at {global_seen[key]}")
+        else:
+            global_seen[key] = i
+    declared_approvals = data.get("independently_approved_by_level")
+    if not isinstance(declared_approvals, dict):
+        errors.append("missing independently_approved_by_level")
+    else:
+        for k in LEVELS:
+            observed = sum(e.get("release_approved") is True for e in entries if e.get("level") == k)
+            if declared_approvals.get(k) != observed:
+                errors.append(f"{k}: declared independent approvals {declared_approvals.get(k)} != flagged entries {observed}")
     selected = [(i, e) for i, e in enumerate(entries) if e.get("level") == level]
     seen = set()
     for i, e in selected:
@@ -47,6 +72,13 @@ def check(level, release):
                 if not isinstance(e.get(field), str) or not e[field].strip():
                     errors.append(f"entry {i}: missing source-backed {field}")
     if release:
+        # a/an are conditioned spellings of one indefinite article, not two
+        # independently counted lexical senses. Requires human adjudication.
+        article_forms = {e.get("word", "").strip().casefold() for e in entries
+                         if e.get("level") == "A1" and e.get("part_of_speech") == "article"
+                         and isinstance(e.get("word"), str)}
+        if {"a", "an"}.issubset(article_forms):
+            errors.append("A1: unresolved a/an lexical-unit double-counting")
         # External evidence must be checked separately: this script cannot verify
         # independent reviewer identity, real listening, physical iPhone or deployment.
         errors.append("release blocked: external independent review, audio listening, device, hosting and deployment attestations not machine-verified")
