@@ -55,6 +55,12 @@ def run(path, release=False):
                 problems.append(f"entry {index}: headword {word!r} already allocated at entry {previous}; cross-level or same-level lexical duplication requires sense adjudication")
             else:
                 global_headwords[canonical] = index
+        if type(entry.get("editorial_hold")) is not bool:
+            problems.append(f"entry {index}: editorial_hold must be an explicit boolean")
+        if not release and entry.get("editorial_hold") is not True:
+            problems.append(f"entry {index}: provisional entry must remain on editorial hold")
+        if not release and (entry.get("release_approved") is True or any(entry.get(f) is True for f in REVIEW_FIELDS)):
+            problems.append(f"entry {index}: provisional inventory cannot claim independent approval or completed review")
         for field in REVIEW_FIELDS + ("release_approved",):
             if type(entry.get(field)) is not bool:
                 problems.append(f"entry {index}: {field} must be an explicit boolean")
