@@ -67,5 +67,23 @@ class PreflightTests(unittest.TestCase):
         data=manifest()
         data["entries"].pop()
         self.assertNotEqual(check(data)[0],0)
+    def test_unhashable_level_fails_closed_without_crash(self):
+        data=manifest()
+        data["entries"][0]["level"]=["A1"]
+        code,result=check(data)
+        self.assertNotEqual(code,0)
+        self.assertTrue(any("invalid level" in item for item in result["details"]))
+    def test_boolean_source_index_is_rejected(self):
+        data=manifest()
+        data["entries"][0]["source_index"]=True
+        self.assertNotEqual(check(data)[0],0)
+    def test_invalid_source_blob_sha_is_rejected(self):
+        data=manifest()
+        data["entries"][0]["source_blob_sha"]="not-a-sha"
+        self.assertNotEqual(check(data)[0],0)
+    def test_non_string_word_is_rejected(self):
+        data=manifest()
+        data["entries"][0]["word"]=123
+        self.assertNotEqual(check(data)[0],0)
 if __name__=="__main__":
     unittest.main()
