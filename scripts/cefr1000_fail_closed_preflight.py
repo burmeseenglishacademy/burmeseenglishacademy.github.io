@@ -25,11 +25,23 @@ def run(path, release=False):
             problems.append(f"entry {index}: not an object")
             continue
         level = entry.get("level")
-        counts[level] += 1
+        if not isinstance(level, str) or level not in LEVELS:
+            problems.append(f"entry {index}: invalid level {level!r}")
+        else:
+            counts[level] += 1
         for field in REQUIRED:
             value = entry.get(field)
             if value is None or isinstance(value, str) and not value.strip():
                 problems.append(f"entry {index}: missing {field}")
+        if not isinstance(entry.get("word"), str) or not entry["word"].strip():
+            problems.append(f"entry {index}: word must be nonempty text")
+        if not isinstance(entry.get("part_of_speech"), str) or not entry["part_of_speech"].strip():
+            problems.append(f"entry {index}: part_of_speech must be nonempty text")
+        if type(entry.get("source_index")) is not int or entry["source_index"] < 0:
+            problems.append(f"entry {index}: source_index must be a nonnegative integer")
+        sha = entry.get("source_blob_sha")
+        if not isinstance(sha, str) or len(sha) != 40 or any(c not in "0123456789abcdefABCDEF" for c in sha):
+            problems.append(f"entry {index}: source_blob_sha must be a 40-character Git blob SHA")
         word = entry.get("word")
         if isinstance(word, str) and isinstance(level, str):
             key = (level, word.strip().casefold(), str(entry.get("part_of_speech", "")).strip().casefold())
@@ -50,9 +62,6 @@ def run(path, release=False):
     for level in LEVELS:
         if counts[level] != 200:
             problems.append(f"{level}: expected 200 entries, found {counts[level]}")
-    unknown = set(counts) - set(LEVELS)
-    if unknown:
-        problems.append(f"unknown levels: {sorted(map(str, unknown))}")
     if len(entries) != 1000:
         problems.append(f"expected 1000 entries, found {len(entries)}")
     if data.get("counts_by_level") != {level: 200 for level in LEVELS}:
