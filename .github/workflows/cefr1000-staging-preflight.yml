@@ -1,0 +1,93 @@
+name: CEFR-1000 staging fail-closed preflight
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - 'draft/CEFR-1000-PROVISIONAL-SHORTLIST.json'
+      - 'scripts/cefr1000_fail_closed_preflight.py'
+      - 'scripts/test_cefr1000_fail_closed_preflight.py'
+      - '.github/workflows/cefr1000-staging-preflight.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  regression:
+    name: Fail-closed validator regression tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Execute all regression tests
+        run: python -m unittest -v scripts.test_cefr1000_fail_closed_preflight
+
+  per-level:
+    name: Structural allocation ${{ matrix.level }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A1, A2, B1, B2, C1]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check provisional level allocation and holds
+        env:
+          CEFR_LEVEL: ${{ matrix.level }}
+        run: |
+          python - <<'PY'
+          import json, os, sys
+          from collections import Counter
+          from pathlib import Path
+          level = os.environ['CEFR_LEVEL']
+          data = json.loads(Path('draft/CEFR-1000-PROVISIONAL-SHORTLIST.json').read_text(encoding='utf-8'))
+          entries = data['entries']
+          subset = [e for e in entries if isinstance(e,dict) and e.get('level') == level]
+          problems = []
+          if len(subset) != 200: problems.append(f'{level}: expected 200, got {len(subset)}')
+          keys = [(str(e.get('word','')).strip().casefold(),str(e.get('part_of_speech','')).strip().casefold()) for e in subset]
+          if len(set(keys)) != len(keys): problems.append('duplicate headword/POS')
+          for i,e in enumerate(subset):
+              if e.get('editorial_hold') is not True: problems.append(f'{i}: hold not true')
+              if e.get('release_approved') is not False: problems.append(f'{i}: release approval not false')
+              for field in ('reviewed_english','reviewed_burmese','reviewed_example','reviewed_level','reviewed_pronunciation'):
+                  if e.get(field) is not False: problems.append(f'{i}: {field} not false')
+          print(json.dumps({'level':level,'provisional':len(subset),'independently_approved':0,'errors':problems[:20]}))
+          if problems: sys.exit(1)
+          PY
+
+  global-preflight:
+    name: Global provisional preflight (known blockers remain)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Expect known provisional lexical-unit conflict; never approve release
+        run: |
+          python - <<'PY'
+          import contextlib, io, json
+          from scripts.cefr1000_fail_closed_preflight import run
+          out = io.StringIO()
+          with contextlib.redirect_stdout(out):
+              code = run('draft/CEFR-1000-PROVISIONAL-SHORTLIST.json')
+          result = json.loads(out.getvalue())
+          assert code != 0, 'Unexpected clean preflight: inspect changed manifest and review requirements'
+          assert any('a/an' in detail for detail in result['details']), 'Expected a/an blocker missing or changed'
+          print('KNOWN EDITORIAL BLOCKER (not a pass or release approval):', result['details'])
+          PY
