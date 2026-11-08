@@ -20,6 +20,7 @@ def run(path, release=False):
         raise ValueError("entries must be a list")
     counts = Counter()
     seen = set()
+    global_headwords = {}
     for index, entry in enumerate(entries):
         if not isinstance(entry, dict):
             problems.append(f"entry {index}: not an object")
@@ -31,8 +32,8 @@ def run(path, release=False):
             counts[level] += 1
         for field in REQUIRED:
             value = entry.get(field)
-            if value is None or isinstance(value, str) and not value.strip():
-                problems.append(f"entry {index}: missing {field}")
+            if field not in ("source_index",) and (not isinstance(value, str) or not value.strip()):
+                problems.append(f"entry {index}: {field} must be nonempty text")
         if not isinstance(entry.get("word"), str) or not entry["word"].strip():
             problems.append(f"entry {index}: word must be nonempty text")
         if not isinstance(entry.get("part_of_speech"), str) or not entry["part_of_speech"].strip():
@@ -48,6 +49,12 @@ def run(path, release=False):
             if key in seen:
                 problems.append(f"entry {index}: duplicate level/headword/POS {key}")
             seen.add(key)
+            canonical = word.strip().casefold()
+            previous = global_headwords.get(canonical)
+            if previous is not None:
+                problems.append(f"entry {index}: headword {word!r} already allocated at entry {previous}; cross-level or same-level lexical duplication requires sense adjudication")
+            else:
+                global_headwords[canonical] = index
         for field in REVIEW_FIELDS + ("release_approved",):
             if type(entry.get(field)) is not bool:
                 problems.append(f"entry {index}: {field} must be an explicit boolean")
@@ -59,6 +66,10 @@ def run(path, release=False):
             for field in ("source_english", "source_burmese", "source_level"):
                 if not isinstance(entry.get(field), str) or not entry[field].strip():
                     problems.append(f"entry {index}: missing review source {field}")
+    # a/an are pronunciation-conditioned variants of one indefinite article.
+    # A human editor must resolve the lexical-unit count before release.
+    if "a" in global_headwords and "an" in global_headwords:
+        problems.append("lexical-unit conflict: a/an count as separate headwords; independent editorial adjudication required")
     for level in LEVELS:
         if counts[level] != 200:
             problems.append(f"{level}: expected 200 entries, found {counts[level]}")
