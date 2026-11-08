@@ -1,0 +1,27 @@
+name: CEFR-1000 staging structural checks
+on:
+  push:
+    branches:
+      - cefr-5000-bilingual-qa-staging
+    paths:
+      - 'draft/CEFR-1000-PROVISIONAL-SHORTLIST.json'
+      - 'scripts/cefr1000_staging_check.py'
+      - '.github/workflows/cefr1000-staging-structural.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  structural:
+    name: Structural ${{ matrix.level }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A1, A2, B1, B2, C1]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify provisional structure (not editorial approval)
+        run: python scripts/cefr1000_staging_check.py --level ${{ matrix.level }}
