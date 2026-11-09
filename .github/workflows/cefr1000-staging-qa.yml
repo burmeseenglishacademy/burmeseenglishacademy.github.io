@@ -26,8 +26,14 @@ jobs:
       - run: python3 scripts/audit_cefr1000_provisional.py
       - run: python3 scripts/audit_cefr1000_level.py --level "${{ matrix.level }}"
   adversarial:
-    name: Adversarial structural regressions
+    name: Adversarial structural regressions ${{ matrix.level }}
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A1, A2, B1, B2, C1]
+    env:
+      CEFR_QA_LEVEL: ${{ matrix.level }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
