@@ -1,0 +1,37 @@
+name: CEFR-1000 staging structural QA
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - 'draft/CEFR-1000-*.json'
+      - 'scripts/audit_cefr1000*.py'
+      - 'tests/test_cefr1000*.py'
+      - '.github/workflows/cefr1000-staging-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  provisional-level:
+    name: Provisional structural QA ${{ matrix.level }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A1, A2, B1, B2, C1]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 scripts/audit_cefr1000_provisional.py
+      - run: python3 scripts/audit_cefr1000_level.py --level "${{ matrix.level }}"
+  adversarial:
+    name: Adversarial structural regressions
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m unittest discover -s tests -p 'test_cefr1000_*.py' -v
+# IMPORTANT: green jobs certify provisional structure ONLY, never independent review or release.
