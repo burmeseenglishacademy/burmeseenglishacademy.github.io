@@ -1,0 +1,20 @@
+# CEFR-1000 A2 exact-sense publisher evidence: better / must (2026-11-09)
+
+**Status:** Research and editorial proposals ONLY. Not independent English, Myanmar, example, pronunciation or CEFR review. Both entries remain on hold. No release manifest or approval flags changed.
+
+## Inventory provenance (unchanged)
+Inventory: `draft/CEFR-1000-PROVISIONAL-SHORTLIST.json`, blob `475e68ae17ab97bd937e73e5ce4794e0dcd76551`.
+- `better` / A2 / adjective: original definition “Of a higher quality or more suitable than something else.”; Myanmar “ပိုကောင်းသော”; example “The second plan is better for our budget.” Source `draft/A2-C1-EDITORIAL-STARTER.json`, index 86, blob `b04dd85db5cfae131c25aa4c73109778991b6fdc`.
+- `must` / A2 / modal verb: original definition “Used to say that something is necessary or required.”; Myanmar “မဖြစ်မနေ လုပ်ရမည်”; example “You must wear a helmet at work.” Same starter source, index 123, same blob.
+
+## Evidence observed 2026-11-09
+
+1. **better (adjective; comparative of good):** Cambridge Learner's Dictionary labels the *higher quality* adjective sense **A1**, and also labels the *less ill / healthy again* adjective sense **A1**. This conflicts with the provisional A2 placement for the exact adjective sense currently written. The `had better` advice construction is labelled **A2**, but is NOT the adjective comparative sense in this inventory. Cambridge general English dictionary likewise labels the adjective comparison **A1**, while some adverbial uses are **A2**. Sources: https://dictionary.cambridge.org/dictionary/learner-english/better and https://dictionary.cambridge.org/dictionary/english/better . Oxford separately identifies adjective `better` as comparative of `good`: https://www.oxfordlearnersdictionaries.com/definition/english/better_1 . **Disposition proposed:** flag for independent cross-level adjudication; do not quietly relabel, substitute an unrelated A2 sense, or count `had better` as the same lexical unit. Candidate English A1 sense: “Comparative of good: of higher quality or more suitable.” Candidate Myanmar: “ပိုကောင်းသော၊ ပိုသင့်တော်သော (good ၏ နှိုင်းယှဉ်အဆင့်)”. Original example: “This chair is better than that one.” / “ဒီကုလားထိုင်က ဟိုကုလားထိုင်ထက် ပိုကောင်းတယ်။” Independent Myanmar naturalness and register check required.
+
+2. **must (modal verb; necessity / obligation):** Cambridge English Dictionary explicitly labels **NECESSARY A2** and **PROBABLY B2**. The provisional A2 definition and helmet example match necessity/obligation, not logical deduction. Source: https://dictionary.cambridge.org/us/dictionary/english/must . Collins independently labels modal necessity and rules **A2**: https://www.collinsdictionary.com/dictionary/english/must . Candidate English sense: “Used before a base-form verb to say that doing something is necessary or required.” Candidate Myanmar: “တစ်ခုခုကို မဖြစ်မနေ လုပ်ရန် လိုအပ်ကြောင်း၊ စည်းကမ်းအရ လုပ်ရကြောင်း ဖော်ပြသော အကူကြိယာ။” Original example: “Visitors must show their tickets at the entrance.” / “လာရောက်သူများသည် ဝင်ပေါက်တွင် လက်မှတ်များကို မဖြစ်မနေ ပြရမည်။” Avoid conflating `must not` (prohibition) with `do not have to` (lack of obligation); `must be` as epistemic deduction can be B2. Independent reviewers must check grammar, Myanmar and pronunciation (strong /mʌst/ and weak /məst/).
+
+## Review queue and release blockers
+- **better:** independently verify exact-sense A1 vs provisional A2, check for duplicate across levels, and propose a publisher-supported replacement A2 lexical unit only if required to preserve exactly 200 A2 approved units. Any change needs documented independent adjudication.
+- **must:** independently verify Cambridge/Collins sense mapping, fluent Myanmar, example, and British pronunciation; capture reviewer identity/date and evidence links.
+- The two source observations above are **research**, not independently verified approvals; do not set any `reviewed_*` or `release_approved` flags.
+- All five levels retain 200 provisional first-pass entries and 0 independently approved. No shortlist audio, listening evidence, physical iPhone QA, hosting clearance or deployment evidence is provided here.
