@@ -19,7 +19,7 @@ const evidence = load(process.argv[3]);
 const entries = Array.isArray(manifest?.entries) ? manifest.entries : [];
 if (entries.length !== 1000) fail('Expected exactly 1000 manifest entries; got '+entries.length);
 const counts = Object.fromEntries(levels.map(l=>[l,0]));
-const seen = new Set(), repeated = new Map();
+const seen = new Set(), repeated = new Map(), senseKeys = new Set();
 const evidenceRows = Array.isArray(evidence?.entries) ? evidence.entries : [];
 const byId = new Map();
 for (const e of evidenceRows) {
@@ -45,10 +45,20 @@ for (const [i,e] of entries.entries()) {
   const digest = hash(canonical);
   const k = String(e.headword||'').normalize('NFKC').trim().toLowerCase();
   if (k) repeated.set(k,(repeated.get(k)||0)+1);
+  // A repeated headword is only permissible for a distinct, documented sense.
+  const senseKey = [k,String(e.part_of_speech||'').normalize('NFKC').trim().toLowerCase(),String(e.sense_id||'').normalize('NFKC').trim().toLowerCase()].join('|');
+  if (senseKeys.has(senseKey)) fail(id+': duplicate normalized headword/POS/sense identity');
+  senseKeys.add(senseKey);
   const r = byId.get(id);
   if (!r) { fail(id+': missing evidence row'); continue; }
   if (r.content_sha256 !== digest) fail(id+': stale or mismatched content digest');
   for (const field of ['english','myanmar','example','cefr']) signed(r.reviews?.[field],digest,field,id);
+  // Evidence must identify an actual reviewer, not merely assert independence.
+  for (const field of ['english','myanmar','example','cefr']) {
+    const review = r.reviews?.[field];
+    if (review && (!nonempty(review.reviewer_id) || review.reviewer_id === r.author_id))
+      fail(id+': reviewer identity absent or identical to content author for '+field);
+  }
   const p = r.publisher_evidence;
   if (!p || !nonempty(p.publisher) || !/^https:\/\//.test(p.url||'') ||
       !nonempty(p.observed_at) || !nonempty(p.exact_sense_locator) ||
@@ -57,7 +67,9 @@ for (const [i,e] of entries.entries()) {
   for (const voice of ['George','Emma']) for (const kind of ['headword','example']) {
     const a = r.audio?.[voice]?.[kind];
     if (!a || !nonempty(a.path) || !/^[a-f0-9]{64}$/.test(a.sha256||'') ||
-        !nonempty(a.spoken_text_sha256) || !nonempty(a.voice_provenance) ||
+        !/^[a-f0-9]{64}$/.test(a.spoken_text_sha256||'') ||
+        a.spoken_text_sha256 !== hash(kind === 'headword' ? e.headword : e.original_example) ||
+        !nonempty(a.voice_provenance) ||
         !(a.duration_seconds > 0) || a.listening?.audio_sha256 !== a.sha256 ||
         a.listening?.verdict !== 'pass' || a.listening?.actually_listened !== true ||
         !nonempty(a.listening?.listener_id) || !nonempty(a.listening?.listened_at))
@@ -66,6 +78,7 @@ for (const [i,e] of entries.entries()) {
 }
 for (const l of levels) if (counts[l] !== 200) fail(l+': expected 200, got '+counts[l]);
 if (byId.size !== entries.length) fail('Evidence row count mismatch');
+for (const id of byId.keys()) if (!seen.has(id)) fail('Orphan evidence row: '+id);
 const gate = evidence?.release_gates;
 if (!gate || gate.release_candidate_sha !== manifest?.release_candidate_sha ||
     !/^[a-f0-9]{40}$/.test(gate.release_candidate_sha||'')) fail('Missing matching release candidate SHA');
