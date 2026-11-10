@@ -1,0 +1,13 @@
+# CEFR-1000 five-level sense QA — 2026-11-10
+
+Editorial suggestions only; **not independent approval**. Observed 2026-11-10 in `draft/CEFR-1000-PROVISIONAL-SHORTLIST.json` at commit `fd21122bdf6fbb17463538aed381a9286833e2c9`. Source indices below refer to original starter files. A1 source `draft/A1-EDITORIAL-STARTER.json` blob `ff1e93f60828ef2f94c9146522ce94075183b0ae`; other entries source `draft/A2-C1-EDITORIAL-STARTER.json` blob `b04dd85db5cfae131c25aa4c73109778991b6fdc`.
+
+- **A1 time** (index 42, noun): “What clocks measure in hours and minutes” is narrower/awkward compared with the example “What time is it?” Proposed clock-time sense: “The time of day shown by a clock”; Myanmar “နာရီဖြင့် ဖော်ပြသော နေ့၏အချိန်”. Independent review required.
+- **A2 maybe** (index 292, adverb): Myanmar “ဖြစ်နိုင်သည်၊ ဖြစ်ကောင်းဖြစ်မည်” resembles a predicate, though the English headword functions as a sentence adverb. Proposed “ဖြစ်ချင်ဖြစ်မည်” subject to fluent native-speaker review. “Maybe we can visit the museum on Sunday” is grammatical.
+- **B1 doubt** (index 212, noun): “I have some doubt about the figures” is grammatical but possibly less idiomatic than “I have doubts about the figures in this report.” Confirm singular/mass vs plural noun sense before replacing.
+- **B2 portion** (index 177, noun): English definition combines general-part and food-serving senses; Myanmar likewise combines “အစိတ်အပိုင်း” and “အစားအစာတစ်ပွဲစာပမာဏ”, while the example illustrates a food serving. Proposed narrow definition: “An amount of food served to one person”; Myanmar “လူတစ်ယောက်စာ အစားအစာပမာဏ”. Keep the rice example pending review.
+- **C1 legitimate** (index 332, adjective): Current definition combines lawful and justified senses. Example “Customers have a legitimate reason to question unclear charges” illustrates **justified**, not necessarily lawful. Proposed “Reasonable and acceptable in the circumstances; justified”; Myanmar “ကျိုးကြောင်းဆီလျော်ပြီး လက်ခံနိုင်သော၊ ခိုင်လုံသော”.
+
+**Evidence limitations:** No external publisher page was retrieved for these five in this pass; therefore exact-sense CEFR levels remain **unsubstantiated**. Independent reviewer must record direct source URL, observation date, POS, exact sense, CEFR evidence, English/Myanmar/example/pronunciation judgments and verifiable identity/content-hash-bound signoff. Do not set any reviewed or approved flags from these proposals.
+
+**Release gate:** Provisional 200 each at A1/A2/B1/B2/C1; independently approved 0 each. Final George/Emma audio/listening, browser/mobile/physical iPhone Safari QA, hosting and production verification remain blocked. Protect main, 54 lessons, separate IELTS 1,000 bank, existing production audio and privacy. Staging only.
