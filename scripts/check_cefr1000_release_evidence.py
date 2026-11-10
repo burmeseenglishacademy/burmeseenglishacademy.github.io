@@ -37,6 +37,8 @@ def valid_attestation(record, *, require_url=True):
 
 def audit(manifest, evidence, root=ROOT):
     errors = []
+    if not isinstance(manifest, dict):
+        return ["approved manifest must be a JSON object"]
     entries = manifest.get("entries")
     if not isinstance(entries, list) or len(entries) != 1000:
         return ["approved manifest must contain exactly 1000 entries"]
@@ -71,9 +73,13 @@ def audit(manifest, evidence, root=ROOT):
         audio = e.get("audio", {})
         for voice in VOICES:
             for kind in KINDS:
-                item = audio.get(voice, {}).get(kind, {}) if isinstance(audio, dict) else {}
+                voice_audio = audio.get(voice) if isinstance(audio, dict) else None
+                item = voice_audio.get(kind) if isinstance(voice_audio, dict) else None
                 if not isinstance(item, dict) or not isinstance(item.get("path"), str):
                     errors.append(f"entry {i}: {voice}/{kind} audio path missing")
+                    continue
+                if not item["path"].strip():
+                    errors.append(f"entry {i}: {voice}/{kind} empty audio path")
                     continue
                 path = (root / item["path"]).resolve()
                 if not path.is_relative_to(root.resolve()) or not path.is_file():
