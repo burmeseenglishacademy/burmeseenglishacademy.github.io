@@ -35,6 +35,28 @@ def valid_attestation(record, *, require_url=True):
     sha = record["content_sha256"].lower()
     return len(sha) == 64 and all(c in "0123456789abcdef" for c in sha)
 
+def reviewed_content_sha256(entry, domain):
+    """Bind an attestation to the exact reviewed field, not a free-floating digest.
+
+    Domain payload is versioned and canonical: JSON with sorted keys, UTF-8,
+    compact separators, and no ASCII escaping. Any editorial change invalidates
+    the old attestation. This is structural binding, NOT proof of reviewer identity.
+    """
+    fields = {
+        "english": "english_definition",
+        "myanmar": "burmese_meaning",
+        "example": "example_sentence",
+        "cefr": "level",
+        "pronunciation": "word",
+    }
+    field = fields[domain]
+    payload = {"schema": 1, "domain": domain, "word": entry["word"],
+               "part_of_speech": entry["part_of_speech"],
+               "sense_id": entry["sense_id"], "value": entry[field]}
+    encoded = json.dumps(payload, ensure_ascii=False, sort_keys=True,
+                         separators=(",", ":")).encode("utf-8")
+    return hashlib.sha256(encoded).hexdigest()
+
 def audit(manifest, evidence, root=ROOT):
     errors = []
     if not isinstance(manifest, dict):
@@ -68,8 +90,19 @@ def audit(manifest, evidence, root=ROOT):
             r = reviews.get(domain) if isinstance(reviews, dict) else None
             if not valid_attestation(r):
                 errors.append(f"entry {i}: independent {domain} review evidence absent/invalid")
-            elif r["reviewer_id"] == e.get("author_id"):
-                errors.append(f"entry {i}: {domain} reviewer equals author")
+            else:
+                if r["reviewer_id"] == e.get("author_id"):
+                    errors.append(f"entry {i}: {domain} reviewer equals author")
+                if not all(isinstance(e.get(k), str) and e[k].strip()
+                           for k in ("word", "part_of_speech", "sense_id",
+                                     {"english": "english_definition",
+                                      "myanmar": "burmese_meaning",
+                                      "example": "example_sentence",
+                                      "cefr": "level",
+                                      "pronunciation": "word"}[domain])):
+                    errors.append(f"entry {i}: {domain} review cannot bind incomplete content")
+                elif r["content_sha256"].lower() != reviewed_content_sha256(e, domain):
+                    errors.append(f"entry {i}: {domain} review content hash mismatch")
         audio = e.get("audio", {})
         for voice in VOICES:
             for kind in KINDS:
