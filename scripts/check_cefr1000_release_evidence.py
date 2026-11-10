@@ -124,8 +124,15 @@ def audit(manifest, evidence, root=ROOT):
                 digest = hashlib.sha256(path.read_bytes()).hexdigest()
                 if digest != item.get("sha256"):
                     errors.append(f"entry {i}: {voice}/{kind} audio hash mismatch")
-                if not valid_attestation(item.get("listening_signoff")):
+                signoff = item.get("listening_signoff")
+                if not valid_attestation(signoff):
                     errors.append(f"entry {i}: {voice}/{kind} real listening signoff missing")
+                else:
+                    # Bind signoff to exact audio bytes; not proof of actual listening.
+                    if signoff["content_sha256"].lower() != digest:
+                        errors.append(f"entry {i}: {voice}/{kind} listening audio hash mismatch")
+                    if signoff["reviewer_id"] == e.get("author_id"):
+                        errors.append(f"entry {i}: {voice}/{kind} listening reviewer equals author")
     for level in LEVELS:
         if counts[level] != 200:
             errors.append(f"{level}: expected 200, found {counts[level]}")
