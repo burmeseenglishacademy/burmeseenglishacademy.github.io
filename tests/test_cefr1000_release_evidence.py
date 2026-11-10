@@ -28,6 +28,16 @@ class ReleaseEvidenceGateTests(unittest.TestCase):
         errors = gate.audit({"entries": entries, "counts_by_level": {x: 200 for x in gate.LEVELS}}, {})
         self.assertTrue(any("duplicate normalized" in e for e in errors))
 
+    def test_malformed_level_types_fail_closed_without_exception(self):
+        for malformed in (None, [], {}, 1, ["A1"]):
+            entries = [{"level": gate.LEVELS[i // 200], "word": f"synthetic{i}",
+                        "sense_id": "1"} for i in range(1000)]
+            entries[0]["level"] = malformed
+            errors = gate.audit({"entries": entries,
+                                 "counts_by_level": {x: 200 for x in gate.LEVELS}}, {})
+            self.assertTrue(any("invalid CEFR level type/value" in e for e in errors),
+                            msg=f"malformed level {malformed!r} must be blocked")
+
     def test_self_evaluation_is_not_independent(self):
         record = {"reviewer_id": "person", "reviewed_at": "2026-11-10",
                   "evidence_url": "https://example.org/review",
