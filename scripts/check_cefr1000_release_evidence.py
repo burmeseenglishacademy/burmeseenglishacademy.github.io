@@ -73,8 +73,11 @@ def audit(manifest, evidence, root=ROOT):
             errors.append(f"entry {i} invalid")
             continue
         level, word, sense = e.get("level"), e.get("word"), e.get("sense_id")
+        if not isinstance(level, str) or level not in LEVELS:
+            errors.append(f"entry {i}: invalid CEFR level type/value")
+            continue
         counts[level] += 1
-        if level not in LEVELS or not all(isinstance(v, str) and v.strip() for v in (word, sense)):
+        if not all(isinstance(v, str) and v.strip() for v in (word, sense)):
             errors.append(f"entry {i}: invalid level/headword/sense")
             continue
         key = (unicodedata.normalize("NFKC", word).casefold().strip(),
