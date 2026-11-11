@@ -30,6 +30,7 @@ def gate(manifest, evidence):
     # Inventory checks are mandatory even when a ledger is absent. Reject
     # unexpected levels and repeated exact-sense identities before evidence QA.
     identities = set()
+    cross_level_identities = {}
     for i, entry in enumerate(entries):
         if not isinstance(entry, dict):
             blockers.append(f"{i}: malformed entry")
@@ -47,6 +48,13 @@ def gate(manifest, evidence):
         if identity in identities:
             blockers.append(f"{i}: duplicate level/headword/POS/sense identity")
         identities.add(identity)
+        # The same headword/POS/sense cannot be assigned to two CEFR
+        # levels without explicit sense disambiguation. A level label
+        # alone is not evidence of a different lexical sense.
+        cross_key = identity[1:]
+        if cross_key in cross_level_identities and cross_level_identities[cross_key] != level:
+            blockers.append(f"{i}: cross-level duplicate headword/POS/sense identity")
+        cross_level_identities[cross_key] = level
     if not isinstance(evidence, dict):
         return blockers + ["independent evidence ledger absent or invalid"]
     reviews = evidence.get("independent_reviews")
