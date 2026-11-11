@@ -1,0 +1,64 @@
+name: CEFR-1000 staging release preflight (never deploy)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - 'draft/CEFR-1000-PROVISIONAL-SHORTLIST.json'
+      - 'draft/cefr-1000-release-gate.cjs'
+      - 'draft/cefr-1000-release-gate-negative-tests.cjs'
+      - '.github/workflows/cefr-1000-staging-release-preflight.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  release-gate-negative-regressions:
+    name: Fail-closed gate adversarial regression
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Execute all adversarial regression tests
+        run: node draft/cefr-1000-release-gate-negative-tests.cjs
+  provisional-level-integrity:
+    name: Provisional integrity / ${{ matrix.level }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A1, A2, B1, B2, C1]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate exactly 200 on editorial hold, never approved
+        env:
+          CEFR_LEVEL: ${{ matrix.level }}
+        run: |
+          node - <<'NODE'
+          const fs = require('node:fs');
+          const assert = require('node:assert/strict');
+          const data = JSON.parse(fs.readFileSync('draft/CEFR-1000-PROVISIONAL-SHORTLIST.json','utf8'));
+          const level = process.env.CEFR_LEVEL;
+          const rows = data.entries.filter(e => e.level === level);
+          assert.equal(rows.length,200,level+' provisional count');
+          assert.equal(data.counts_by_level[level],200,level+' metadata count');
+          assert.equal(data.independently_approved_by_level[level],0,level+' approval metadata must remain zero');
+          assert.ok(rows.every(e => e.editorial_hold === true && e.release_approved === false &&
+            e.reviewed_english === false && e.reviewed_burmese === false &&
+            e.reviewed_example === false && e.reviewed_level === false &&
+            e.reviewed_pronunciation === false),level+' provisional review flags');
+          const keys = rows.map(e => [e.word,e.part_of_speech].map(s => String(s||'').normalize('NFKC').trim().toLowerCase()).join('|'));
+          assert.equal(new Set(keys).size,200,level+' duplicate word/POS');
+          console.log(JSON.stringify({level,provisional:rows.length,independently_approved:0,editorial_hold:true,release_authorized:false}));
+          NODE
+  never-deploy:
+    name: Staging-only proof of gate wiring
+    needs: [release-gate-negative-regressions, provisional-level-integrity]
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'CI checks staging safeguards only. No release authorization or deployment.'
