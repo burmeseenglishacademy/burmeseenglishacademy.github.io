@@ -1,0 +1,47 @@
+name: CEFR-1000 evidence gate regression (staging only)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - 'scripts/cefr1000_release_evidence_gate.py'
+      - 'scripts/test_cefr1000_release_evidence_gate.py'
+      - '.github/workflows/cefr-1000-evidence-gate-regression.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  evidence-negative-by-level:
+    name: ${{ matrix.level }} evidence gate negative regression
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A1, A2, B1, B2, C1]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Run adversarial evidence gate tests
+        run: python3 -m unittest discover -s scripts -p 'test_cefr1000_release_evidence_gate.py' -v
+      - name: Confirm absent independent evidence is release-blocking
+        env:
+          CEFR_LEVEL: ${{ matrix.level }}
+        run: |
+          python3 - <<'PY'
+          import json, os, pathlib
+          from scripts.cefr1000_release_evidence_gate import gate
+          data=json.loads(pathlib.Path('draft/CEFR-1000-PROVISIONAL-SHORTLIST.json').read_text(encoding='utf-8'))
+          level=os.environ['CEFR_LEVEL']
+          assert len(data['entries'])==1000
+          assert sum(e['level']==level for e in data['entries'])==200
+          blockers=gate(data,None)
+          assert 'independent evidence ledger absent or invalid' in blockers
+          print(level+': structural inventory checked; independent evidence absent; RELEASE BLOCKED')
+          PY
+      - name: CLI must fail closed
+        run: |
+          if python3 scripts/cefr1000_release_evidence_gate.py; then
+            echo 'ERROR: evidence gate allowed release'
+            exit 1
+          fi
+          echo 'PASS: staging release blocked'
