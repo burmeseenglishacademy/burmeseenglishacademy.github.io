@@ -27,6 +27,26 @@ def gate(manifest, evidence):
     for level in LEVELS:
         if counts[level] != 200:
             blockers.append(f"{level}: expected 200 entries, found {counts[level]}")
+    # Inventory checks are mandatory even when a ledger is absent. Reject
+    # unexpected levels and repeated exact-sense identities before evidence QA.
+    identities = set()
+    for i, entry in enumerate(entries):
+        if not isinstance(entry, dict):
+            blockers.append(f"{i}: malformed entry")
+            continue
+        level = entry.get("level")
+        if level not in LEVELS:
+            blockers.append(f"{i}: unexpected CEFR level")
+        word = entry.get("word")
+        if not nonblank(word):
+            blockers.append(f"{i}: missing headword")
+            continue
+        pos = entry.get("pos", entry.get("part_of_speech", ""))
+        sense = entry.get("sense_id", entry.get("sense", ""))
+        identity = (level, word.strip().casefold(), str(pos).strip().casefold(), str(sense).strip().casefold())
+        if identity in identities:
+            blockers.append(f"{i}: duplicate level/headword/POS/sense identity")
+        identities.add(identity)
     if not isinstance(evidence, dict):
         return blockers + ["independent evidence ledger absent or invalid"]
     reviews = evidence.get("independent_reviews")
