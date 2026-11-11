@@ -4,6 +4,8 @@ on:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
       - 'draft/CEFR-1000-PROVISIONAL-SHORTLIST.json'
+      - 'scripts/cefr1000_provisional_integrity_audit.py'
+      - 'scripts/test_cefr1000_provisional_integrity_audit.py'
       - '.github/workflows/cefr-1000-provisional-integrity.yml'
   workflow_dispatch:
 permissions:
@@ -46,6 +48,10 @@ jobs:
           const gaps = subset.reduce((n,e)=>n+['source_english','source_burmese','source_level'].filter(k=>!String(e[k]??'').trim()).length,0);
           console.log(level+': 200 provisional, 0 independently approved; empty evidence fields '+gaps+'/600. Structural PASS is NOT editorial approval.');
           NODE
+      - name: Python provisional audit and adversarial regression
+        run: |
+          python3 scripts/cefr1000_provisional_integrity_audit.py
+          python3 scripts/test_cefr1000_provisional_integrity_audit.py
       - name: Ensure release validator rejects provisional inventory
         run: |
           if node scripts/cefr-1000-release-gate.mjs draft/CEFR-1000-PROVISIONAL-SHORTLIST.json; then
