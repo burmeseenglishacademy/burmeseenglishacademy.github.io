@@ -26,5 +26,28 @@ try {
   run('missing independent review', {entries:[{entry_id:'A1-1',level:'A1',headword:'school',part_of_speech:'noun',sense_id:'n1',english_definition:'a place to learn',myanmar_meaning:'ကျောင်း',original_example:'She goes to school.'}]}, {entries:[{entry_id:'A1-1',content_sha256:'invalid'}]}, 'invalid independent english signoff');
   run('fake CI', {entries:[],release_candidate_sha:'a'.repeat(40)}, {release_gates:{release_candidate_sha:'a'.repeat(40),ci_jobs:{}}}, 'Missing validated current-SHA CI job A1/structural');
   run('no physical iPhone', {entries:[],release_candidate_sha:'a'.repeat(40)}, {release_gates:{release_candidate_sha:'a'.repeat(40),ci_jobs:{}}}, 'Missing release gate physical_iphone_safari');
+  // Targeted adversarial checks exercise newly added invariants. Each case
+  // remains deliberately incomplete: the assertion checks the *specific* blocker.
+  const row=(id,word='school')=>({entry_id:id,level:'A1',headword:word,
+    part_of_speech:'noun',sense_id:'n1',english_definition:'A place for learning.',
+    myanmar_meaning:'ကျောင်း',original_example:'Children attend school.'});
+  run('duplicate normalized sense', {entries:[row('A1-1','School'),row('A1-2',' school ')]},
+      {}, 'duplicate normalized headword/POS/sense identity');
+  run('duplicate immutable identity', {entries:[row('A1-1'),row('A1-1','college')]},
+      {}, 'Duplicate sense identity');
+  run('orphan evidence', {entries:[]},
+      {entries:[{entry_id:'orphan'}]}, 'Orphan evidence row');
+  run('invalid publisher evidence', {entries:[row('A1-1')]},
+      {entries:[{entry_id:'A1-1',publisher_evidence:{
+        publisher:'Dictionary',url:'http://example.com',observed_at:'2026-11-11',
+        exact_sense_locator:'sense 1',cefr_level:'A1',part_of_speech:'noun'}}]},
+      'missing exact-sense publisher CEFR evidence');
+  run('missing audio listening', {entries:[row('A1-1')]},
+      {entries:[{entry_id:'A1-1',audio:{George:{headword:{path:'a.mp3',
+        sha256:'a'.repeat(64),spoken_text_sha256:'b'.repeat(64)}}}}]},
+      'missing actual George headword audio/listening evidence');
+  run('duplicate evidence identity', {entries:[row('A1-1')]},
+      {entries:[{entry_id:'A1-1'},{entry_id:'A1-1'}]},
+      'Missing/duplicate evidence entry_id');
   console.log(JSON.stringify({result:'NEGATIVE_PATH_PASS',checks,scope:'blocking tests only; NOT positive release qualification'},null,2));
 } finally { fs.rmSync(dir,{recursive:true,force:true}); }
