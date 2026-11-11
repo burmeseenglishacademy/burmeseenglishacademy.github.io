@@ -54,6 +54,19 @@ class EvidenceGateAdversarialTests(unittest.TestCase):
         result = gate_module.gate(m, None)
         self.assertFalse(any("cross-level duplicate headword/POS/sense" in x for x in result))
 
+    def test_missing_sense_and_pos_block_even_without_ledger(self):
+        m = manifest()
+        result = gate_module.gate(m, None)
+        self.assertTrue(any("explicit lexical sense identifier missing" in x for x in result))
+        self.assertTrue(any("part of speech missing" in x for x in result))
+
+    def test_placeholder_sense_blocks_even_without_ledger(self):
+        m = manifest()
+        m["entries"][0]["pos"] = "noun"
+        m["entries"][0]["sense_id"] = "TBD"
+        result = gate_module.gate(m, None)
+        self.assertTrue(any("explicit lexical sense identifier missing" in x for x in result))
+
     def test_absent_evidence_blocks(self):
         self.assertIn("independent evidence ledger absent or invalid", gate_module.gate(self.manifest, None))
 
