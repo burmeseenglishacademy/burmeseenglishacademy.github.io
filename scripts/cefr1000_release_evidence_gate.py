@@ -45,7 +45,7 @@ def gate(manifest, evidence, actual_manifest_blob_sha=None):
             continue
         pos = entry.get("pos", entry.get("part_of_speech", ""))
         sense = entry.get("sense_id", entry.get("sense", ""))
-        identity = (level, word.strip().casefold(), str(pos).strip().casefold(), str(sense).strip().casefold())
+        # An absent/placeholder sense cannot establish distinct CEFR meanings.\n        # Require an explicit stable sense identifier before release evidence can pass.\n        if not nonblank(sense) or str(sense).strip().casefold() in {"unknown", "tbd", "todo", "none", "n/a"}:\n            blockers.append(f"{i}: explicit lexical sense identifier missing or placeholder")\n        if not nonblank(pos):\n            blockers.append(f"{i}: part of speech missing")\n        identity = (level, word.strip().casefold(), str(pos).strip().casefold(), str(sense).strip().casefold())
         if identity in identities:
             blockers.append(f"{i}: duplicate level/headword/POS/sense identity")
         identities.add(identity)
