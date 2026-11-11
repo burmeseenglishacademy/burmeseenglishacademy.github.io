@@ -80,7 +80,26 @@ class EvidenceGateAdversarialTests(unittest.TestCase):
             "manifest_blob_sha": "a"*40,
             "verified_manifest_blob_sha": "b"*40
         })
-        self.assertIn("manifest blob SHA not independently reconciled", result)
+        self.assertIn("manifest blob SHA not reconciled against actual manifest bytes", result)
+
+    def test_matching_ledger_hash_without_actual_bytes_blocks(self):
+        ledger = {"independent_reviews": [], "audio": [], "qa": {},
+                  "manifest_blob_sha": "a" * 40}
+        result = gate_module.gate(self.manifest, ledger)
+        self.assertIn("manifest blob SHA not reconciled against actual manifest bytes", result)
+
+    def test_mismatched_actual_manifest_bytes_blocks(self):
+        ledger = {"independent_reviews": [], "audio": [], "qa": {},
+                  "manifest_blob_sha": "a" * 40}
+        result = gate_module.gate(self.manifest, ledger, "b" * 40)
+        self.assertIn("manifest blob SHA not reconciled against actual manifest bytes", result)
+
+    def test_matching_actual_blob_sha_removes_only_hash_blocker(self):
+        ledger = {"independent_reviews": [], "audio": [], "qa": {},
+                  "manifest_blob_sha": "a" * 40}
+        result = gate_module.gate(self.manifest, ledger, "a" * 40)
+        self.assertFalse(any("manifest blob SHA" in x for x in result))
+        self.assertTrue(any("independent english evidence" in x for x in result))
 
     def test_unexpected_review_index_blocks(self):
         result = gate_module.gate(self.manifest, {
