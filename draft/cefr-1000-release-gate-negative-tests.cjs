@@ -46,6 +46,9 @@ try {
       {entries:[{entry_id:'A1-1',audio:{George:{headword:{path:'a.mp3',
         sha256:'a'.repeat(64),spoken_text_sha256:'b'.repeat(64)}}}}]},
       'missing actual George headword audio/listening evidence');
+  run('unidentified content author', {entries:[row('A1-1')]},
+      {entries:[{entry_id:'A1-1',content_sha256:'invalid',reviews:{english:{reviewer_id:'reviewer-1',independent:true,verdict:'approved'}}}]},
+      'missing identified content author');
   run('duplicate evidence identity', {entries:[row('A1-1')]},
       {entries:[{entry_id:'A1-1'},{entry_id:'A1-1'}]},
       'Missing/duplicate evidence entry_id');
