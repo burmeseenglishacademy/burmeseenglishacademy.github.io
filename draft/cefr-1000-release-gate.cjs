@@ -19,7 +19,8 @@ const evidence = load(process.argv[3]);
 const entries = Array.isArray(manifest?.entries) ? manifest.entries : [];
 if (entries.length !== 1000) fail('Expected exactly 1000 manifest entries; got '+entries.length);
 const counts = Object.fromEntries(levels.map(l=>[l,0]));
-const seen = new Set(), repeated = new Map(), senseKeys = new Set();
+const seen = new Set(), repeated = new Map(), senseKeys = new Set(), audioPaths = new Set();
+const validDate = (v) => nonempty(v) && /^\d{4}-\d{2}-\d{2}(?:T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z)?$/.test(v) && !Number.isNaN(Date.parse(v));
 const evidenceRows = Array.isArray(evidence?.entries) ? evidence.entries : [];
 const byId = new Map();
 for (const e of evidenceRows) {
@@ -29,7 +30,7 @@ for (const e of evidenceRows) {
 function nonempty(s) { return typeof s === 'string' && s.trim().length > 0; }
 function signed(r, digest, field, id) {
   if (!r || r.verdict !== 'approved' || !nonempty(r.reviewer_id) ||
-      !nonempty(r.signed_at) || r.content_sha256 !== digest ||
+      !validDate(r.signed_at) || r.content_sha256 !== digest ||
       r.independent !== true || r.revoked === true) fail(id+': invalid independent '+field+' signoff');
 }
 for (const [i,e] of entries.entries()) {
@@ -61,7 +62,7 @@ for (const [i,e] of entries.entries()) {
   }
   const p = r.publisher_evidence;
   if (!p || !nonempty(p.publisher) || !/^https:\/\//.test(p.url||'') ||
-      !nonempty(p.observed_at) || !nonempty(p.exact_sense_locator) ||
+      !validDate(p.observed_at) || !nonempty(p.exact_sense_locator) ||
       p.cefr_level !== e.level || p.part_of_speech !== e.part_of_speech)
     fail(id+': missing exact-sense publisher CEFR evidence');
   for (const voice of ['George','Emma']) for (const kind of ['headword','example']) {
@@ -72,8 +73,14 @@ for (const [i,e] of entries.entries()) {
         !nonempty(a.voice_provenance) ||
         !(a.duration_seconds > 0) || a.listening?.audio_sha256 !== a.sha256 ||
         a.listening?.verdict !== 'pass' || a.listening?.actually_listened !== true ||
-        !nonempty(a.listening?.listener_id) || !nonempty(a.listening?.listened_at))
+        !nonempty(a.listening?.listener_id) || !validDate(a.listening?.listened_at) ||
+        a.listening?.listener_id === r.author_id)
       fail(id+': missing actual '+voice+' '+kind+' audio/listening evidence');
+    if (nonempty(a?.path)) {
+      const pathKey = a.path.normalize('NFKC').trim().toLowerCase();
+      if (audioPaths.has(pathKey)) fail(id+': reused audio artifact path '+a.path);
+      audioPaths.add(pathKey);
+    }
   }
 }
 for (const l of levels) if (counts[l] !== 200) fail(l+': expected 200, got '+counts[l]);
@@ -91,7 +98,7 @@ for (const l of levels) for (const type of ['structural','adversarial']) {
 for (const field of ['browser_mobile_regression','physical_iphone_safari','github_pages_hosting','production_asset_protection']) {
   const q = gate?.[field];
   if (!q || q.verdict !== 'pass' || q.release_candidate_sha !== gate.release_candidate_sha ||
-      !nonempty(q.evidence_url) || !nonempty(q.observed_at))
+      !/^https:\/\//.test(q.evidence_url||'') || !validDate(q.observed_at))
     fail('Missing release gate '+field);
 }
 // Predeployment readiness and postdeployment proof are intentionally separate.
