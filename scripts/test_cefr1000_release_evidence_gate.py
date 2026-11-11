@@ -39,6 +39,21 @@ class EvidenceGateAdversarialTests(unittest.TestCase):
         result = gate_module.gate(m, None)
         self.assertTrue(any("duplicate level/headword/POS/sense" in x for x in result))
 
+    def test_cross_level_same_sense_blocks_without_ledger(self):
+        m = manifest()
+        m["entries"][200]["word"] = m["entries"][0]["word"]
+        result = gate_module.gate(m, None)
+        self.assertTrue(any("cross-level duplicate headword/POS/sense" in x for x in result))
+
+    def test_cross_level_distinct_explicit_senses_not_conflated(self):
+        m = manifest()
+        m["entries"][0]["word"] = "bank"
+        m["entries"][0]["sense_id"] = "financial-institution"
+        m["entries"][200]["word"] = "bank"
+        m["entries"][200]["sense_id"] = "river-edge"
+        result = gate_module.gate(m, None)
+        self.assertFalse(any("cross-level duplicate headword/POS/sense" in x for x in result))
+
     def test_absent_evidence_blocks(self):
         self.assertIn("independent evidence ledger absent or invalid", gate_module.gate(self.manifest, None))
 
