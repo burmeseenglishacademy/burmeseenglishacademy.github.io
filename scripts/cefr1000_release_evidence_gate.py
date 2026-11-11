@@ -8,6 +8,7 @@ import collections
 import json
 import pathlib
 import sys
+import re
 
 LEVELS = ("A1", "A2", "B1", "B2", "C1")
 DOMAINS = ("english", "myanmar", "example", "cefr")
@@ -42,8 +43,14 @@ def gate(manifest, evidence):
         qa = {}
     # Exact entry index is tied to a specific shortlist blob; a new shortlist
     # revision invalidates the ledger rather than silently reusing signoffs.
-    if not nonblank(evidence.get("manifest_blob_sha")) or len(evidence["manifest_blob_sha"]) != 40:
-        blockers.append("manifest blob SHA binding missing")
+    sha = evidence.get("manifest_blob_sha")
+    if not isinstance(sha, str) or not re.fullmatch(r"[0-9a-f]{40}", sha):
+        blockers.append("manifest blob SHA binding missing or malformed")
+    # A 40-character assertion is not proof that the ledger matches the actual
+    # Git blob. The caller must supply an independently fetched expected SHA.
+    expected_sha = evidence.get("verified_manifest_blob_sha")
+    if not isinstance(expected_sha, str) or not re.fullmatch(r"[0-9a-f]{40}", expected_sha) or sha != expected_sha:
+        blockers.append("manifest blob SHA not independently reconciled")
     # Self-asserted booleans are not sufficient: demand reviewer identity,
     # independently traceable evidence and dated observations for each domain.
     review_index = collections.defaultdict(list)
@@ -53,6 +60,9 @@ def gate(manifest, evidence):
             continue
         key = (r.get("entry_index"), r.get("domain"))
         review_index[key].append(r)
+    for key, candidates in review_index.items():
+        if not isinstance(key[0], int) or isinstance(key[0], bool) or key[0] not in range(1000) or key[1] not in DOMAINS:
+            blockers.append("unexpected review index/domain")
     for i, entry in enumerate(entries):
         if not isinstance(entry, dict):
             blockers.append(f"{i}: malformed entry")
@@ -76,12 +86,16 @@ def gate(manifest, evidence):
             audio_index[(a.get("entry_index"), a.get("voice"), a.get("kind"))].append(a)
         else:
             blockers.append("malformed audio record")
+    for key, candidates in audio_index.items():
+        if not isinstance(key[0], int) or isinstance(key[0], bool) or key[0] not in range(1000) or key[1] not in VOICES or key[2] not in KINDS:
+            blockers.append("unexpected audio index/voice/kind")
     for i in range(1000):
         for voice in VOICES:
             for kind in KINDS:
                 candidates = audio_index.get((i, voice, kind), [])
                 accepted = [a for a in candidates if
-                    nonblank(a.get("file_sha256")) and
+                    isinstance(a.get("file_sha256"), str) and
+                    re.fullmatch(r"[0-9a-f]{64}", a["file_sha256"]) and
                     nonblank(a.get("artifact_path")) and
                     nonblank(a.get("listener_id")) and
                     nonblank(a.get("listened_on")) and
@@ -97,6 +111,10 @@ def gate(manifest, evidence):
             nonblank(q.get(k)) for k in ("evidence_url", "observed_on", "reviewer_id")
         ):
             blockers.append(f"{key}: verified evidence missing")
+    if len(reviews) != 4000:
+        blockers.append(f"expected exactly 4000 domain reviews, found {len(reviews)}")
+    if len(audio) != 4000:
+        blockers.append(f"expected exactly 4000 audio records, found {len(audio)}")
     return blockers
 
 def main():
