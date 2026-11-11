@@ -1,0 +1,22 @@
+# CEFR-1000 targeted bilingual editorial triage — 2026-11-11
+
+**Scope:** USER-APPROVED 1,000-total shortlist only; A1/A2/B1/B2/C1 = 200 each. **Status:** working editorial notes, not independent review, publisher verification, CEFR approval or production content. All 1,000 entries remain on editorial hold; independently approved = 0.
+
+**Provenance:** Direct read on 2026-11-11 of `draft/CEFR-1000-PROVISIONAL-SHORTLIST.json`, Git blob `475e68ae17ab97bd937e73e5ce4794e0dcd76551`. Original source paths and indices below are taken from the corresponding provisional records. This document does not replace those records or alter flags.
+
+| Level | Headword | Source index | Specific editorial issue | Proposed human-review action |
+| --- | --- | ---: | --- | --- |
+| A1 | **i** (pronoun) | `draft/A1-EDITORIAL-STARTER.json:3` | Lowercase stored headword `i` is orthographically inappropriate for the first-person English pronoun, although the example correctly uses `I`. | Verify intended lemma and canonical display as **I**, and check case-folded deduplication before any manifest edit. Confirm Myanmar pronouns suit the speaker/context. |
+| A2 | **maybe** (adverb) | `draft/A2-C1-EDITORIAL-STARTER.json:292` | Myanmar meaning `ဖြစ်နိုင်သည်၊ ဖြစ်ကောင်းဖြစ်မည်` uses verb-like expressions for an English sentence adverb; plausible interpretation but not a fully aligned adverbial gloss. | Independently check a fluent natural Myanmar rendering (e.g. `ဖြစ်ကောင်းဖြစ်နိုင်တယ်` in context) and distinguish **maybe** from adjectival **may be**. Obtain publisher exact-sense CEFR evidence. |
+| B1 | **doubt** (noun) | `draft/A2-C1-EDITORIAL-STARTER.json:212` | Example `I have some doubt about the figures.` is grammatical, but the singular mass-noun construction differs from the more idiomatic plural `I have doubts about the figures.`; both can be valid. | Have an independent English editor choose the pedagogically clearer usage, align Myanmar `သံသယ`, and document noun-sense publisher evidence separately from verb **doubt**. |
+| B2 | **portion** (noun) | `draft/A2-C1-EDITORIAL-STARTER.json:177` | Definition `A part or amount of something larger` is broad, while example `The waiter brought a small portion of rice.` illustrates a **food serving**. This may mix different CEFR-labelled senses. | Narrow the definition to the food-serving sense if retaining the example; request independent publisher-backed CEFR verification for that exact sense. Translate as a food serving rather than generic `အစိတ်အပိုင်း`. |
+| C1 | **integrity** (noun) | `draft/A2-C1-EDITORIAL-STARTER.json:330` | Moral honesty sense is potentially above C1; prior staging dossier records a Cambridge C2 conflict. No publisher observation was independently repeated in this run. | Escalate as **level conflict**, not a silent C1 approval; re-open the original publisher entry and capture URL, sense, label, observation date and reviewer decision. |
+| C1 | **anachronism** (noun) | `draft/A2-C1-SOURCE-RECOVERY-EDITORIAL-BATCH57.json:9` | Specialized historical noun from a source-recovery batch. A natural example is present, but C1 placement cannot be inferred from sophistication or WordNet-like lexical inclusion. | Require independent exact-sense CEFR source evidence; if absent, hold or replace under controlled manifest review, preserving source provenance. |
+
+## Required independent review evidence
+
+For each entry: independently identify the intended part of speech and precise sense; check fluent Myanmar equivalence and example grammar/naturalness; record publisher source URL, observed date and exact sense/CEFR label; log author/reviewer identities and content-bound signoff. A suggested correction is **not** a reviewed entry. If publisher evidence is absent or conflicts with the target level, leave on hold. Do not backfill unsupported source labels.
+
+## Release readiness
+
+First-pass written: A1 **200**, A2 **200**, B1 **200**, B2 **200**, C1 **200**. Independently checked/approved: **0/200 at each level**. No new audio was generated or listened to in this triage; 4,000 final George/Emma headword/example artifacts and genuine listening attestations remain unevidenced. Current-commit GitHub Actions logs, physical iPhone Safari QA, browser/mobile regression, GitHub Pages hosting clearance and production deployment are **not verified by this document**. Preserve 54 lessons, separate IELTS bank, established production voices and privacy; staging only.
