@@ -20,6 +20,25 @@ class EvidenceGateAdversarialTests(unittest.TestCase):
     def setUp(self):
         self.manifest = manifest()
 
+    def test_duplicate_exact_sense_blocks_even_without_ledger(self):
+        m = manifest()
+        m["entries"][1]["word"] = m["entries"][0]["word"]
+        result = gate_module.gate(m, None)
+        self.assertTrue(any("duplicate level/headword/POS/sense" in x for x in result))
+
+    def test_unknown_level_blocks_even_without_ledger(self):
+        m = manifest()
+        m["entries"][0]["level"] = "C2"
+        result = gate_module.gate(m, None)
+        self.assertTrue(any("unexpected CEFR level" in x for x in result))
+
+    def test_casefolded_duplicate_blocks(self):
+        m = manifest()
+        m["entries"][0]["word"] = "Example"
+        m["entries"][1]["word"] = " example "
+        result = gate_module.gate(m, None)
+        self.assertTrue(any("duplicate level/headword/POS/sense" in x for x in result))
+
     def test_absent_evidence_blocks(self):
         self.assertIn("independent evidence ledger absent or invalid", gate_module.gate(self.manifest, None))
 
