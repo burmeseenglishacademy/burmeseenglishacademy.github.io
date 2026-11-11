@@ -149,7 +149,7 @@ def gate(manifest, evidence, actual_manifest_blob_sha=None):
 def main():
     manifest_path = pathlib.Path("draft/CEFR-1000-PROVISIONAL-SHORTLIST.json")
     manifest_bytes = manifest_path.read_bytes()
-    actual_sha = hashlib.sha1(b"blob " + str(len(manifest_bytes)).encode("ascii") + b"\\0" + manifest_bytes).hexdigest()
+    actual_sha = hashlib.sha1(b"blob " + str(len(manifest_bytes)).encode("ascii") + b"\0" + manifest_bytes).hexdigest()
     manifest = json.loads(manifest_bytes.decode("utf-8"))
     path = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else None
     evidence = json.loads(path.read_text(encoding="utf-8")) if path and path.is_file() else None
