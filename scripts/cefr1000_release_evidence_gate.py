@@ -5,6 +5,7 @@ Usage: python scripts/cefr1000_release_evidence_gate.py [evidence.json]
 Absent evidence is a BLOCK, never a pass. Does not modify any files.
 """
 import collections
+import hashlib
 import json
 import pathlib
 import sys
@@ -18,7 +19,7 @@ KINDS = ("headword", "example")
 def nonblank(value):
     return isinstance(value, str) and bool(value.strip())
 
-def gate(manifest, evidence):
+def gate(manifest, evidence, actual_manifest_blob_sha=None):
     blockers = []
     entries = manifest.get("entries") if isinstance(manifest, dict) else None
     if not isinstance(entries, list) or len(entries) != 1000:
@@ -74,11 +75,11 @@ def gate(manifest, evidence):
     sha = evidence.get("manifest_blob_sha")
     if not isinstance(sha, str) or not re.fullmatch(r"[0-9a-f]{40}", sha):
         blockers.append("manifest blob SHA binding missing or malformed")
-    # A 40-character assertion is not proof that the ledger matches the actual
-    # Git blob. The caller must supply an independently fetched expected SHA.
-    expected_sha = evidence.get("verified_manifest_blob_sha")
-    if not isinstance(expected_sha, str) or not re.fullmatch(r"[0-9a-f]{40}", expected_sha) or sha != expected_sha:
-        blockers.append("manifest blob SHA not independently reconciled")
+    # Never trust a second SHA supplied by the same evidence ledger as independent
+    # reconciliation. Compare to the Git blob SHA computed from the actual bytes.
+    # A direct gate() caller without the bytes must remain blocked.
+    if not isinstance(actual_manifest_blob_sha, str) or not re.fullmatch(r"[0-9a-f]{40}", actual_manifest_blob_sha) or sha != actual_manifest_blob_sha:
+        blockers.append("manifest blob SHA not reconciled against actual manifest bytes")
     # Self-asserted booleans are not sufficient: demand reviewer identity,
     # independently traceable evidence and dated observations for each domain.
     review_index = collections.defaultdict(list)
@@ -147,10 +148,12 @@ def gate(manifest, evidence):
 
 def main():
     manifest_path = pathlib.Path("draft/CEFR-1000-PROVISIONAL-SHORTLIST.json")
-    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    manifest_bytes = manifest_path.read_bytes()
+    actual_sha = hashlib.sha1(b"blob " + str(len(manifest_bytes)).encode("ascii") + b"\\0" + manifest_bytes).hexdigest()
+    manifest = json.loads(manifest_bytes.decode("utf-8"))
     path = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else None
     evidence = json.loads(path.read_text(encoding="utf-8")) if path and path.is_file() else None
-    blockers = gate(manifest, evidence)
+    blockers = gate(manifest, evidence, actual_sha)
     print(json.dumps({"status": "BLOCKED" if blockers else "EVIDENCE_SCHEMA_COMPLETE_REQUIRES_EXTERNAL_VERIFICATION",
                       "blocker_count": len(blockers), "blocker_examples": blockers[:25],
                       "release_authorized": False,
