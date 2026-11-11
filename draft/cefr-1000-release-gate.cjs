@@ -53,6 +53,8 @@ for (const [i,e] of entries.entries()) {
   const r = byId.get(id);
   if (!r) { fail(id+': missing evidence row'); continue; }
   if (r.content_sha256 !== digest) fail(id+': stale or mismatched content digest');
+  // A claimed independent review is meaningless without an identified author.
+  if (!nonempty(r.author_id)) fail(id+': missing identified content author');
   for (const field of ['english','myanmar','example','cefr']) signed(r.reviews?.[field],digest,field,id);
   // Evidence must identify an actual reviewer, not merely assert independence.
   for (const field of ['english','myanmar','example','cefr']) {
