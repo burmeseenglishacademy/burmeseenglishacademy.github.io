@@ -112,7 +112,8 @@ def gate(manifest, evidence, actual_manifest_blob_sha=None):
                 nonblank(r.get("source_url")) and
                 nonblank(r.get("sense_id")) and
                 r.get("headword") == entry.get("word") and
-                r.get("level") == entry.get("level")]
+                r.get("level") == entry.get("level") and
+                r.get("sense_id") == entry.get("sense_id", entry.get("sense"))]
             if len(accepted) != 1 or len(candidates) != 1:
                 blockers.append(f"{i}: independent {domain} evidence missing/ambiguous")
     audio_index = collections.defaultdict(list)
