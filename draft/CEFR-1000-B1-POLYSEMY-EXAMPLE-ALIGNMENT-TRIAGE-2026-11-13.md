@@ -1,0 +1,33 @@
+# CEFR-1000 B1 polysemy and example-alignment triage — 2026-11-13
+
+**Scope:** editorial analysis of six existing B1 provisional entries, not an independent review, CEFR attestation, or permission to publish. Observed 2026-11-13 from `draft/CEFR-1000-PROVISIONAL-SHORTLIST.json` on `cefr-5000-bilingual-qa-staging`. The source manifest remains the authority for provenance (`source_path`, `source_index`, `source_blob_sha` per entry). All proposals below are unapproved and require external exact-sense CEFR references and independent English/Myanmar/example review.
+
+## Findings and reviewer-ready proposed refinements
+
+| Existing headword / POS | Current sense/example issue | Editorial proposal (English / Myanmar / original example) | Required external verification |
+|---|---|---|---|
+| **independent**, adjective | “Not controlled by another person or organisation” describes autonomy; “The team made an independent decision” could instead mean an unbiased decision, a distinct sense. Myanmar `အမှီအခိုကင်းသော၊ လွတ်လပ်သော` supports autonomy. | Keep autonomy sense; example: “The newspaper is independent of the government.” Myanmar: `အစိုးရ၏ ထိန်းချုပ်မှုအောက်တွင် မရှိသော` (context-specific explanatory gloss). | Dictionary POS/sense and CEFR for **independent of** (not simply “independent opinion”); independent fluent Myanmar reviewer. |
+| **wonder**, verb | “To think about something because you want to know more” is broad; “I wonder why the shop is closed today” expresses curiosity about an unanswered question, not amazement. | “To ask yourself a question or feel curious about something.” Myanmar: `သိချင်စိတ်ဖြင့် တွေးမိသည်`. Example: “I wonder whether the train will arrive on time.” | Explicit CEFR for curiosity/inquiry verb rather than **wonder at** or the noun “a wonder”; check whether B1 is justified. |
+| **clearly**, adverb | Current “easy to see, hear or understand” aggregates perceptual and explanatory senses; example “Please speak clearly” is the intelligible-speech sense. | Narrow to “In a way that other people can hear and understand easily.” Myanmar: `ကြားရ၊ နားလည်ရ လွယ်ကူအောင် ရှင်းရှင်းလင်းလင်း`. Example: “Please explain the instructions clearly.” (If this example is adopted, use explanatory clarity sense instead.) | Select **one** sense and align definition, example and level; avoid confusing “clearly = obviously” stance adverb. |
+| **direction**, noun | “The way in which someone or something moves or points”; “which direction to take” matches spatial direction but might be confused with plural **directions** = instructions. | “The way towards which a person or thing moves or faces.” Myanmar: `ဦးတည်ရာဘက်`. Example: “The boat changed direction near the bridge.” | Exact spatial noun CEFR; separately adjudicate “directions” instructions sense. |
+| **effort**, noun | “Physical or mental energy used to achieve something” and “Learning a language requires regular effort” align; `ကြိုးစားအားထုတ်မှု` is broadly appropriate. Potential confusion with **an effort to** = an attempt. | Retain current wording pending independent review. Alternative example: “She put a lot of effort into preparing the presentation.” | Confirm CEFR for exertion sense, not solely “make an effort” construction; review natural collocations. |
+| **weekend**, noun | “Saturday and Sunday, when many people do not work” and “at the weekend” are coherent in British English, but not all people have those days off. | “Saturday and Sunday, considered the end of the working week in many places.” Myanmar: `စနေ၊ တနင်္ဂနွေ ရက်များ (သီတင်းပတ်ကုန်)`. Example: “We usually visit our grandparents at the weekend.” | Verify level and whether **at the weekend** is accepted in British learner material; do not infer a level from grammar usage alone. |
+
+## Provenance and evidence boundaries
+
+- Source inspected: https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/blob/cefr-5000-bilingual-qa-staging/draft/CEFR-1000-PROVISIONAL-SHORTLIST.json (observed 2026-11-13). Existing examples and Myanmar text above are quoted for editorial comparison, not externally verified.
+- No dictionary pages were accessed in this audit; **zero new external CEFR labels are asserted**. External lookup queue: Cambridge English Dictionary https://dictionary.cambridge.org/dictionary/english/ ; Cambridge Learner's Dictionary https://dictionary.cambridge.org/dictionary/learner-english/ ; British Council LearnEnglish https://learnenglish.britishcouncil.org/ . These are *candidate sources*, not consulted evidence for these six senses.
+- A future reviewer must record the **exact page URL**, observed date, headword, part of speech, definition/sense, visible CEFR label if present, and why that label attaches to the selected sense. A grammar-only or general-dictionary page without a CEFR label is **not** proof of B1.
+- An independent English reviewer, fluent Myanmar reviewer, example reviewer and CEFR evidence reviewer must each sign their own work; this authoring audit must never populate `reviewed_*`, `release_approved`, or source evidence fields.
+
+## Release safeguard recommendations
+
+1. Add a sense-level identity (lemma + POS + definition/sense ID) to review evidence, with conflict detection against other CEFR levels; simple lowercase headword deduplication cannot establish sense-level correctness.
+2. Require example-to-sense alignment signoff separately from grammar correctness; the `independent` case is a regression fixture for an example that is grammatical but potentially illustrates a different sense.
+3. Fail closed if any review record lacks verifiable external CEFR URL and observation date, distinct independent reviewer identity, explicit sense match, or provenance reference.
+4. Preserve the approved target **200 per level / 1,000 total** without replacing disputed entries until an independently reviewed candidate is available.
+5. Keep release blocked pending all 1,000 independent approvals, 4,000 final George/Emma headword/example audio assets with genuine listening signoff, browser/mobile and physical iPhone Safari QA, hosting clearance and confirmed production verification. Protect 54 lessons, separate IELTS 1,000-word bank, existing production audio and privacy.
+
+## Snapshot and CI honesty
+
+A1 200/0 independently approved; A2 200/0; B1 200/0; B2 200/0; C1 200/0. All 1,000 are first-pass editorial holds. Previously observed GitHub Actions run [43136221886](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/43136221886) has five completed successful **negative-regression** level jobs; it does not verify this new documentation commit or certify release readiness. No production deployment is claimed.
