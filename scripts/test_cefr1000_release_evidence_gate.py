@@ -119,6 +119,22 @@ class EvidenceGateAdversarialTests(unittest.TestCase):
         self.assertFalse(any("manifest blob SHA" in x for x in result))
         self.assertTrue(any("independent english evidence" in x for x in result))
 
+    def test_review_for_wrong_lexical_sense_does_not_approve_entry(self):
+        entry = self.manifest["entries"][0]
+        review = {
+            "entry_index": 0, "domain": "english", "decision": "approved",
+            "reviewer_id": "synthetic-reviewer",
+            "reviewer_independence_evidence": "synthetic-test-only",
+            "observed_on": "2026-11-12",
+            "source_url": "https://example.org/synthetic-test-only",
+            "sense_id": "different-lexical-sense",
+            "headword": entry["word"], "level": entry["level"]
+        }
+        result = gate_module.gate(self.manifest, {
+            "independent_reviews": [review], "audio": [], "qa": {}
+        })
+        self.assertIn("0: independent english evidence missing/ambiguous", result)
+
     def test_unexpected_review_index_blocks(self):
         result = gate_module.gate(self.manifest, {
             "independent_reviews":[{"entry_index":True,"domain":"english"}],
