@@ -1,0 +1,20 @@
+# CEFR-1000 A1 exact-sense and orthography triage — 2026-11-12
+
+**Scope:** Research-only staging observation; not independent approval. Manifest blob `475e68ae17ab97bd937e73e5ce4794e0dcd76551`. Existing entries remain on hold; no release flags changed.
+
+## Entry: `i` (A1, pronoun; shortlist source index 3)
+- Existing definition: “The person who is speaking or writing.” Myanmar: “ကျွန်တော်၊ ကျွန်မ (မိမိကိုယ်ကို ရည်ညွှန်းသောစကား)”. Example: “I am a student.”
+- **Source observation (2026-11-12):** Cambridge Learner's Dictionary https://dictionary.cambridge.org/dictionary/learner-english/i explicitly assigns **A1** to capital **I**, subject pronoun of the speaker/writer. Cambridge Advanced https://dictionary.cambridge.org/dictionary/english/i distinguishes **I** as pronoun (A1) from **I/i** as letter and Roman numeral. Collins https://www.collinsdictionary.com/dictionary/english/i separately documents the pronoun and letter senses.
+- **Concrete issue:** shortlist headword is lowercase `i`, while the actual example correctly uses `I`. The lower-case form can be confused with the alphabet-letter headword, a *different part of speech and sense*. Proposed canonical headword **I** (subject pronoun), not the letter or numeral. Definition should specify **subject of a verb** to distinguish `me`. Myanmar meaning is plausible first pass but requires independent fluent review.
+- **Action:** independent editor to approve canonical capitalization and sense; ensure any case-folded deduplication still treats orthographic display correctly. Do not silently rewrite all lowercase words or use `i` as the approved pronoun display form.
+
+## Entries: `a` (A1, article; source index 0) and `an` (A1, article; source index 1)
+- Existing `a`: “Used before one person or thing when it is not specified.” Example “I have a book.” Myanmar: “တစ်ခု၊ တစ်ယောက် (မသတ်မှတ်ရသေးသော)”.
+- Existing `an`: “Used before one person or thing when the next word starts with a vowel sound.” Example “She has an apple.” Myanmar: “တစ်ခု၊ တစ်ယောက် (သရသံဖြင့်စသော စကားလုံးရှေ့တွင်)”.
+- **Source observation (2026-11-12):** Cambridge British Grammar https://dictionary.cambridge.org/grammar/british-grammar/a-an-and-the states that **a/an** are indefinite articles used with **singular countable nouns**, and that **a** precedes a consonant **sound**, **an** a vowel **sound**, regardless of spelling. British Council https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/indefinite-article independently corroborates both conditions and gives examples including `a university` and `an hour`.
+- **Concrete issue:** both existing definitions omit the singular-countable-noun restriction. `a` also omits the consonant-sound condition, leaving the complementary `a`/`an` rule underspecified. The existing `an` definition correctly refers to *sound*, not letter; preserve that distinction. First-pass Myanmar meanings are semantic approximations rather than an explanation of English article grammar; reviewers should decide whether to add short Myanmar usage guidance.
+- **Proposed original instructional examples** (not quoted from source): “She works at a university.” and “We waited for an hour.” These expose the sound-versus-spelling rule; verify examples independently before substitution. Existing examples are grammatical and should not be replaced without review.
+- **CEFR caveat:** cited Cambridge grammar and British Council reference establish grammatical usage, **not explicit A1 labels for each separate article entry**. Independent sense-specific CEFR evidence is still required for `a` and `an`.
+
+## Release implications
+All three entries remain **unreviewed and unapproved**. This is first-pass editorial research only, with no independent English/Myanmar/example/CEFR signoff. Record each reviewer identity, date, exact sense, source URL, adjudication and accepted example. Avoid confusing the lowercase letter `i` with pronoun `I`. Preserve exactly 200 independently approved entries per CEFR level before release. No audio generation, actual listening, physical iPhone test or deployment evidence was created here.
