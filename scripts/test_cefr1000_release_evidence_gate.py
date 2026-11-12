@@ -14,7 +14,7 @@ gate_module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(gate_module)
 
 def manifest():
-    return {"entries": [{"word": f"word-{i}", "level": ("A1","A2","B1","B2","C1")[i // 200]} for i in range(1000)]}
+    return {"entries": [{"word": f"word-{i}", "level": ("A1","A2","B1","B2","C1")[i // 200], "pos": "noun", "sense_id": f"synthetic-sense-{i}"} for i in range(1000)]}
 
 class EvidenceGateAdversarialTests(unittest.TestCase):
     def setUp(self):
@@ -23,6 +23,7 @@ class EvidenceGateAdversarialTests(unittest.TestCase):
     def test_duplicate_exact_sense_blocks_even_without_ledger(self):
         m = manifest()
         m["entries"][1]["word"] = m["entries"][0]["word"]
+        m["entries"][1]["sense_id"] = m["entries"][0]["sense_id"]
         result = gate_module.gate(m, None)
         self.assertTrue(any("duplicate level/headword/POS/sense" in x for x in result))
 
@@ -36,12 +37,14 @@ class EvidenceGateAdversarialTests(unittest.TestCase):
         m = manifest()
         m["entries"][0]["word"] = "Example"
         m["entries"][1]["word"] = " example "
+        m["entries"][1]["sense_id"] = m["entries"][0]["sense_id"]
         result = gate_module.gate(m, None)
         self.assertTrue(any("duplicate level/headword/POS/sense" in x for x in result))
 
     def test_cross_level_same_sense_blocks_without_ledger(self):
         m = manifest()
         m["entries"][200]["word"] = m["entries"][0]["word"]
+        m["entries"][200]["sense_id"] = m["entries"][0]["sense_id"]
         result = gate_module.gate(m, None)
         self.assertTrue(any("cross-level duplicate headword/POS/sense" in x for x in result))
 
@@ -56,6 +59,8 @@ class EvidenceGateAdversarialTests(unittest.TestCase):
 
     def test_missing_sense_and_pos_block_even_without_ledger(self):
         m = manifest()
+        m["entries"][0].pop("sense_id")
+        m["entries"][0].pop("pos")
         result = gate_module.gate(m, None)
         self.assertTrue(any("explicit lexical sense identifier missing" in x for x in result))
         self.assertTrue(any("part of speech missing" in x for x in result))
