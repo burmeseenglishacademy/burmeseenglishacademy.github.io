@@ -9,11 +9,18 @@ const levels=['A1','A2','B1','B2','C1'];
 const errors=[],queue=[],seenExamples=new Map(),seenHeadwords=new Map();
 const counts=Object.fromEntries(levels.map(x=>[x,{written:0,independently_approved:0,source_backed_cefr:0,review_candidates:0}]));
 if(!Array.isArray(doc.entries)||doc.entries.length!==1000)errors.push('Expected exactly 1000 entries');
+for(const l of levels){
+ if(doc.scope_target?.[l]!==200||doc.counts_by_level?.[l]!==200)errors.push('Declared inventory mismatch '+l);
+ if(doc.independently_approved_by_level?.[l]!==0)errors.push('Unverified independent approval metadata '+l);
+}
+if(!doc.stages||doc.stages.independent_source_evidence!=='NOT_OBSERVED'||doc.stages.production!=='UNMODIFIED')errors.push('Unverified evidence or production stage metadata');
+if(doc.stages?.audio!=='NOT_GENERATED_FOR_FINAL_SHORTLIST_NOT_LISTENED')errors.push('Unverified audio/listening stage metadata');
 for(const [index,e] of (doc.entries||[]).entries()){
  if(!e||!levels.includes(e.level)){errors.push('Invalid entry/level '+index);continue;}
  const c=counts[e.level];
  if(['word','part_of_speech','english_definition','burmese_meaning','example_sentence'].every(k=>typeof e[k]==='string'&&e[k].trim()))c.written++;
- if(e.editorial_hold!==true||e.release_approved!==false||Object.keys(e).some(k=>k.startsWith('reviewed_')&&e[k]!==false))errors.push('Unexpected release/review state '+index);
+ if(e.editorial_hold!==true||e.release_approved!==false||['reviewed_english','reviewed_burmese','reviewed_example','reviewed_level','reviewed_pronunciation'].some(k=>e[k]!==false)||Object.keys(e).some(k=>k.startsWith('reviewed_')&&!['reviewed_english','reviewed_burmese','reviewed_example','reviewed_level','reviewed_pronunciation'].includes(k)))errors.push('Unexpected release/review state '+index);
+ if(!['word','part_of_speech','english_definition','burmese_meaning','example_sentence'].every(k=>typeof e[k]==='string'&&e[k].trim()))errors.push('Missing required first-pass field '+index);
  const flag=(code,detail)=>{queue.push({index,level:e.level,word:e.word,code,detail,source_path:e.source_path,source_index:e.source_index,source_blob_sha:e.source_blob_sha});c.review_candidates++;};
  const head=String(e.word||'').normalize('NFKC').toLowerCase().trim();
  const example=String(e.example_sentence||'').normalize('NFKC').toLowerCase().replace(/\s+/g,' ').trim();
