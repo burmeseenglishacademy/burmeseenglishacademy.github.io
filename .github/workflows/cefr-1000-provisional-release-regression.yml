@@ -3,6 +3,8 @@ on:
   push:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
+      - 'draft/CEFR-1000-PROVISIONAL-SHORTLIST.json'
+      - 'draft/CEFR-1000-INDEPENDENT-REVIEW-TASKS.json'
       - 'scripts/cefr1000-release-gate.cjs'
       - 'scripts/cefr1000-release-gate-negative-tests.cjs'
       - 'scripts/cefr1000-provisional-audit.cjs'
@@ -30,7 +32,7 @@ jobs:
           node --check scripts/cefr1000-release-gate.cjs
           node --check scripts/cefr1000-release-gate-negative-tests.cjs
           node --check scripts/cefr1000-provisional-audit.cjs
-      - name: Execute seven negative release-gate scenarios
+      - name: Execute eight negative release-gate scenarios
         run: node scripts/cefr1000-release-gate-negative-tests.cjs
       - name: Audit provisional inventory without granting approval
         env:
