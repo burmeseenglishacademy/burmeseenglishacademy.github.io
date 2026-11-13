@@ -9,6 +9,7 @@ on:
       - 'scripts/cefr1000-release-gate-negative-tests.cjs'
       - 'scripts/cefr1000-provisional-audit.cjs'
       - 'scripts/cefr1000-entry-review-queue.cjs'
+      - 'scripts/cefr1000-entry-review-queue-negative-tests.cjs'
       - 'scripts/cefr1000-lexical-risk-triage.cjs'
       - '.github/workflows/cefr-1000-provisional-release-regression.yml'
   workflow_dispatch:
@@ -37,9 +38,12 @@ jobs:
       - name: Syntax-check read-only editorial triage scripts
         run: |
           node --check scripts/cefr1000-entry-review-queue.cjs
+          node --check scripts/cefr1000-entry-review-queue-negative-tests.cjs
           node --check scripts/cefr1000-lexical-risk-triage.cjs
       - name: Execute eight negative release-gate scenarios
         run: node scripts/cefr1000-release-gate-negative-tests.cjs
+      - name: Exercise editorial queue fail-closed mutation tests
+        run: node scripts/cefr1000-entry-review-queue-negative-tests.cjs
       - name: Audit provisional inventory without granting approval
         env:
           CEFR_LEVEL: ${{ matrix.level }}
