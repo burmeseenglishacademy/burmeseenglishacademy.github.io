@@ -53,6 +53,9 @@ try{
   ['declared count falsified',d=>{d.counts_by_level.A1=199;}],
   ['required review flag removed',d=>{delete d.entries[999].reviewed_burmese;}],
   ['unknown review flag inserted',d=>{d.entries[999].reviewed_cefr=true;}],
+  ['source path removed',d=>{delete d.entries[999].source_path;}],
+  ['source index invalid',d=>{d.entries[999].source_index=-1;}],
+  ['source blob SHA invalid',d=>{d.entries[999].source_blob_sha='not-a-sha';}],
   ['first-pass example removed',d=>{d.entries[999].example_sentence='';}]
  ];
  for(const [name,change] of cases){
