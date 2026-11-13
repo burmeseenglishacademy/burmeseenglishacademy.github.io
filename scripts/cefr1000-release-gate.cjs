@@ -8,6 +8,17 @@ const errors = [];
 const fail = (msg) => errors.push(msg);
 const nonempty = (x) => typeof x === 'string' && x.trim().length > 0;
 const validURL = (x) => { try { return /^https:$/.test(new URL(x).protocol); } catch { return false; } };
+// Dates must be real, non-future calendar dates; arbitrary strings are not evidence.
+const validDate = (x) => {
+  if (typeof x !== 'string') return false;
+  const d = /^\d{4}-\d{2}-\d{2}$/.test(x) ? x+'T00:00:00Z' : x;
+  if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})$/.test(d)) return false;
+  const t = Date.parse(d);
+  if (!Number.isFinite(t) || t > Date.now()) return false;
+  // Date.parse may normalize invalid calendar days; require a round trip for date-only values.
+  if (/^\d{4}-\d{2}-\d{2}$/.test(x) && new Date(t).toISOString().slice(0,10)!==x) return false;
+  return true;
+};
 const path = process.argv[2];
 if (!path) { console.error('BLOCKED: explicit approved manifest path required'); process.exit(1); }
 let m;
@@ -36,15 +47,15 @@ else {
       const reviews=e.independent_reviews;
       for(const domain of ['english','burmese','example','cefr','pronunciation']) {
         const r=reviews?.[domain];
-        if(!r || !nonempty(r.reviewer_id) || !nonempty(r.signed_at) || !nonempty(r.evidence_url) || !validURL(r.evidence_url) || r.decision!=='approved')
+        if(!r || !nonempty(r.reviewer_id) || !validDate(r.signed_at) || !nonempty(r.evidence_url) || !validURL(r.evidence_url) || r.decision!=='approved')
           fail(tag+': independently signed '+domain+' evidence absent');
       }
       const sources=e.cefr_sources;
-      if(!Array.isArray(sources)||!sources.some(s=>validURL(s.url)&&nonempty(s.observed_on)&&nonempty(s.exact_sense)&&s.level===level))
+      if(!Array.isArray(sources)||!sources.some(s=>validURL(s.url)&&validDate(s.observed_on)&&nonempty(s.exact_sense)&&s.level===level))
         fail(tag+': source-backed exact-sense CEFR evidence absent');
       for(const voice of ['George','Emma']) for(const kind of ['headword','example']) {
         const a=e.audio?.[voice]?.[kind];
-        if(!a || !nonempty(a.path)||!nonempty(a.sha256)||!(/^[0-9a-f]{64}$/i.test(a.sha256))||!nonempty(a.listening_reviewer)||!nonempty(a.listened_at)||a.listening_result!=='pass')
+        if(!a || !nonempty(a.path)||!nonempty(a.sha256)||!(/^[0-9a-f]{64}$/i.test(a.sha256))||!nonempty(a.listening_reviewer)||!validDate(a.listened_at)||a.listening_result!=='pass')
           fail(tag+': real audio asset and listening signoff absent: '+voice+'/'+kind);
         else if(!fs.existsSync(a.path)) fail(tag+': audio file not present '+a.path);
         else if(crypto.createHash('sha256').update(fs.readFileSync(a.path)).digest('hex')!==a.sha256.toLowerCase())
@@ -56,7 +67,7 @@ else {
 }
 for(const field of ['browser_regression','mobile_regression','physical_iphone_safari','github_pages_hosting','production_deployment','production_asset_preservation']) {
   const gate=m.release_evidence?.[field];
-  if(!gate || gate.result!=='pass'||!nonempty(gate.evidence_url)||!validURL(gate.evidence_url)||!nonempty(gate.checked_at))
+  if(!gate || gate.result!=='pass'||!nonempty(gate.evidence_url)||!validURL(gate.evidence_url)||!validDate(gate.checked_at))
     fail('release evidence missing: '+field);
 }
 if(m.release_evidence?.production_deployment?.result==='pass' && !nonempty(m.release_evidence?.production_deployment?.deployed_commit_sha))
