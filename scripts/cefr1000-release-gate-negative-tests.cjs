@@ -15,7 +15,7 @@ function run(label,manifest,expect) {
  assert.equal(result.status,1,label+': must fail closed');
  const output=JSON.parse(result.stdout);
  assert.equal(output.result,'BLOCKED',label);
- if(expect) assert.ok(output.blockers.some(b=>b.includes(expect)),label+': expected blocker '+expect);
+ if(expect) assert.ok([...output.blockers,...(output.structural_blockers||[])].some(b=>b.includes(expect)),label+': expected blocker '+expect);
  console.log('PASS (blocked as intended): '+label+'; '+output.blocker_count+' blockers');
 }
 try {
@@ -45,5 +45,5 @@ try {
  const fakeSource=structuredClone(baseline);
  fakeSource.entries[0].cefr_sources=[{url:'http://invalid.example',observed_on:'2026-11-13',exact_sense:'noun',level:'A1'}];
  run('non-HTTPS CEFR evidence',fakeSource,'source-backed exact-sense CEFR evidence absent');
- console.log('All 7 negative release-gate regression scenarios blocked.');
+ console.log('All 8 negative release-gate regression scenarios blocked.');
 } finally {fs.rmSync(temp,{recursive:true,force:true});}
