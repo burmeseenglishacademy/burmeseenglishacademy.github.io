@@ -14,7 +14,7 @@ function run(mutator){
  mutator(doc);
  const file=path.join(dir,'fixture.json');
  fs.writeFileSync(file,JSON.stringify(doc));
- const p=cp.spawnSync(process.execPath,[script,file],{encoding:'utf8'});
+ const p=cp.spawnSync(process.execPath,[script,file],{encoding:'utf8',maxBuffer:16*1024*1024});
  assert.ok(p.stdout,'Queue must return machine-readable JSON');
  return {code:p.status,report:JSON.parse(p.stdout)};
 }
