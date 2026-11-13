@@ -33,7 +33,15 @@ try{
   ['release approval inserted',d=>{d.entries[999].release_approved=true;}],
   ['shortlist truncated',d=>{d.entries.pop();}],
   ['level moved',d=>{d.entries[999].level='A1';}],
-  ['release status falsified',d=>{d.release_status='READY';}]
+  ['release status falsified',d=>{d.release_status='READY';}],
+  ['fabricated approved count',d=>{d.independently_approved_by_level.C1=1;}],
+  ['fabricated CEFR evidence stage',d=>{d.stages.independent_source_evidence='VERIFIED';}],
+  ['fabricated audio listening stage',d=>{d.stages.audio='LISTENED';}],
+  ['fabricated production stage',d=>{d.stages.production='DEPLOYED';}],
+  ['declared count falsified',d=>{d.counts_by_level.A1=199;}],
+  ['required review flag removed',d=>{delete d.entries[999].reviewed_burmese;}],
+  ['unknown review flag inserted',d=>{d.entries[999].reviewed_cefr=true;}],
+  ['first-pass example removed',d=>{d.entries[999].example_sentence='';}]
  ];
  for(const [name,change] of cases){
   const r=run(change);
