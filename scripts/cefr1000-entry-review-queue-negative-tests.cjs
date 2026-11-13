@@ -15,8 +15,20 @@ function run(mutator){
  const file=path.join(dir,'fixture.json');
  fs.writeFileSync(file,JSON.stringify(doc));
  const p=cp.spawnSync(process.execPath,[script,file],{encoding:'utf8',maxBuffer:16*1024*1024});
- assert.ok(p.stdout,'Queue must return machine-readable JSON');
- return {code:p.status,report:JSON.parse(p.stdout)};
+ // Fail with actionable diagnostics rather than silently parsing truncated stdout.
+ assert.ifError(p.error);
+ assert.ok(p.stdout && p.stdout.trim(),
+   'Queue produced no JSON; exit='+p.status+' stderr='+String(p.stderr).slice(-2000));
+ let report;
+ try { report=JSON.parse(p.stdout); }
+ catch(error){
+   throw new Error('Queue returned invalid/truncated JSON ('+Buffer.byteLength(p.stdout)+' bytes; exit='+p.status+
+     '; stderr='+String(p.stderr).slice(-1000)+'): '+error.message);
+ }
+ assert.equal(typeof report,'object');
+ assert.ok(report && typeof report.status==='string' && typeof report.release_allowed==='boolean',
+   'Queue JSON missing required fail-closed status fields');
+ return {code:p.status,report};
 }
 try{
  const ok=run(()=>{});
