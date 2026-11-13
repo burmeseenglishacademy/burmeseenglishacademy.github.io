@@ -8,6 +8,8 @@ on:
       - 'scripts/cefr1000-release-gate.cjs'
       - 'scripts/cefr1000-release-gate-negative-tests.cjs'
       - 'scripts/cefr1000-provisional-audit.cjs'
+      - 'scripts/cefr1000-entry-review-queue.cjs'
+      - 'scripts/cefr1000-lexical-risk-triage.cjs'
       - '.github/workflows/cefr-1000-provisional-release-regression.yml'
   workflow_dispatch:
 permissions:
@@ -32,6 +34,10 @@ jobs:
           node --check scripts/cefr1000-release-gate.cjs
           node --check scripts/cefr1000-release-gate-negative-tests.cjs
           node --check scripts/cefr1000-provisional-audit.cjs
+      - name: Syntax-check read-only editorial triage scripts
+        run: |
+          node --check scripts/cefr1000-entry-review-queue.cjs
+          node --check scripts/cefr1000-lexical-risk-triage.cjs
       - name: Execute eight negative release-gate scenarios
         run: node scripts/cefr1000-release-gate-negative-tests.cjs
       - name: Audit provisional inventory without granting approval
@@ -50,6 +56,23 @@ jobs:
           assert.equal(r.independent_approved_by_level[level],0);
           assert.equal(r.editorial_hold_by_level[level],200);
           console.log(level+': 200 first-pass entries, 200 holds, zero independent approvals');
+          NODE
+      - name: Verify read-only editorial queue remains fail-closed
+        env:
+          CEFR_LEVEL: ${{ matrix.level }}
+        run: |
+          node scripts/cefr1000-entry-review-queue.cjs > "$RUNNER_TEMP/editorial-queue.json"
+          node - <<'NODE'
+          const fs=require('node:fs');
+          const assert=require('node:assert/strict');
+          const r=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+'/editorial-queue.json','utf8'));
+          assert.equal(r.status,'EDITORIAL_HOLD_NOT_RELEASE_READY');
+          assert.equal(r.release_allowed,false);
+          assert.deepEqual(r.errors,[]);
+          assert.equal(r.counts[process.env.CEFR_LEVEL].written,200);
+          assert.equal(r.counts[process.env.CEFR_LEVEL].independently_approved,0);
+          assert.ok(r.counts[process.env.CEFR_LEVEL].review_candidates>0);
+          console.log(process.env.CEFR_LEVEL+': editorial candidates identified; release denied');
           NODE
       - name: Provisional shortlist must not pass release gate
         run: |
