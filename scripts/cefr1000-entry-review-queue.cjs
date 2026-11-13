@@ -36,4 +36,7 @@ for(const [index,e] of (doc.entries||[]).entries()){
 for(const l of levels)if((doc.entries||[]).filter(e=>e&&e.level===l).length!==200)errors.push('Count mismatch '+l);
 if(doc.release_status!=='PROVISIONAL_1000_INDEPENDENT_EVIDENCE_MISSING_DO_NOT_PUBLISH')errors.push('Provisional do-not-publish marker missing');
 const result={status:errors.length?'STRUCTURAL_FAILURE':'EDITORIAL_HOLD_NOT_RELEASE_READY',input,counts,errors,queue,release_allowed:false,limitations:'Automated surface triage only; no independent review, no source-backed CEFR approval, no audio listening or device testing.'};
-console.log(JSON.stringify(result,null,2));process.exit(errors.length?1:0);
+// Do not call process.exit immediately after writing large JSON to a pipe:
+// Node may terminate before stdout flushes, producing truncated yet exit-0 JSON.
+process.stdout.write(JSON.stringify(result,null,2)+'\n');
+process.exitCode=errors.length?1:0;
