@@ -21,6 +21,7 @@ for(const [index,e] of (doc.entries||[]).entries()){
  if(['word','part_of_speech','english_definition','burmese_meaning','example_sentence'].every(k=>typeof e[k]==='string'&&e[k].trim()))c.written++;
  if(e.editorial_hold!==true||e.release_approved!==false||['reviewed_english','reviewed_burmese','reviewed_example','reviewed_level','reviewed_pronunciation'].some(k=>e[k]!==false)||Object.keys(e).some(k=>k.startsWith('reviewed_')&&!['reviewed_english','reviewed_burmese','reviewed_example','reviewed_level','reviewed_pronunciation'].includes(k)))errors.push('Unexpected release/review state '+index);
  if(!['word','part_of_speech','english_definition','burmese_meaning','example_sentence'].every(k=>typeof e[k]==='string'&&e[k].trim()))errors.push('Missing required first-pass field '+index);
+ if(typeof e.source_path!=='string'||!e.source_path.startsWith('draft/')||!Number.isInteger(e.source_index)||e.source_index<0||typeof e.source_blob_sha!=='string'||!/^[0-9a-f]{40}$/.test(e.source_blob_sha))errors.push('Missing or malformed original source provenance '+index);
  const flag=(code,detail)=>{queue.push({index,level:e.level,word:e.word,code,detail,source_path:e.source_path,source_index:e.source_index,source_blob_sha:e.source_blob_sha});c.review_candidates++;};
  const head=String(e.word||'').normalize('NFKC').toLowerCase().trim();
  const example=String(e.example_sentence||'').normalize('NFKC').toLowerCase().replace(/\s+/g,' ').trim();
