@@ -1,0 +1,65 @@
+name: CEFR-1000 provisional and release-gate regressions (staging only)
+on:
+  push:
+    branches: [cefr-5000-bilingual-qa-staging]
+    paths:
+      - 'scripts/cefr1000-release-gate.cjs'
+      - 'scripts/cefr1000-release-gate-negative-tests.cjs'
+      - 'scripts/cefr1000-provisional-audit.cjs'
+      - '.github/workflows/cefr-1000-provisional-release-regression.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  structural-negative-by-level:
+    name: ${{ matrix.level }} provisional / release negative regression
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [A1, A2, B1, B2, C1]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax-check all three validators
+        run: |
+          node --check scripts/cefr1000-release-gate.cjs
+          node --check scripts/cefr1000-release-gate-negative-tests.cjs
+          node --check scripts/cefr1000-provisional-audit.cjs
+      - name: Execute seven negative release-gate scenarios
+        run: node scripts/cefr1000-release-gate-negative-tests.cjs
+      - name: Audit provisional inventory without granting approval
+        env:
+          CEFR_LEVEL: ${{ matrix.level }}
+        run: |
+          node scripts/cefr1000-provisional-audit.cjs > "$RUNNER_TEMP/provisional-audit.json"
+          node - <<'NODE'
+          const fs=require('node:fs');
+          const assert=require('node:assert/strict');
+          const r=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+'/provisional-audit.json','utf8'));
+          const level=process.env.CEFR_LEVEL;
+          assert.equal(r.status,'PROVISIONAL_ONLY_NOT_RELEASE_READY');
+          assert.equal(r.counts_by_level[level],200);
+          assert.equal(r.first_pass_written_by_level[level],200);
+          assert.equal(r.independent_approved_by_level[level],0);
+          assert.equal(r.editorial_hold_by_level[level],200);
+          console.log(level+': 200 first-pass entries, 200 holds, zero independent approvals');
+          NODE
+      - name: Provisional shortlist must not pass release gate
+        run: |
+          if node scripts/cefr1000-release-gate.cjs draft/CEFR-1000-PROVISIONAL-SHORTLIST.json > "$RUNNER_TEMP/release-gate.json"; then
+            echo 'FAIL: provisional shortlist passed the release gate'
+            exit 1
+          fi
+          node - <<'NODE'
+          const fs=require('node:fs');
+          const assert=require('node:assert/strict');
+          const r=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+'/release-gate.json','utf8'));
+          assert.equal(r.result,'BLOCKED');
+          assert.ok(r.blocker_count>0);
+          console.log('PASS: provisional release blocked with '+r.blocker_count+' blockers');
+          NODE
