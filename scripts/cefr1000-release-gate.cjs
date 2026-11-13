@@ -61,6 +61,6 @@ for(const field of ['browser_regression','mobile_regression','physical_iphone_sa
 }
 if(m.release_evidence?.production_deployment?.result==='pass' && !nonempty(m.release_evidence?.production_deployment?.deployed_commit_sha))
   fail('production deployed SHA missing');
-const summary={result:errors.length?'BLOCKED':'PASS',entries:Array.isArray(entries)?entries.length:null,counts:Object.fromEntries(levels.map(l=>[l,Array.isArray(entries)?entries.filter(e=>e?.level===l).length:0])),blocker_count:errors.length,blockers:errors.slice(0,30)};
+const summary={result:errors.length?'BLOCKED':'PASS',entries:Array.isArray(entries)?entries.length:null,counts:Object.fromEntries(levels.map(l=>[l,Array.isArray(entries)?entries.filter(e=>e?.level===l).length:0])),blocker_count:errors.length,blockers:errors.slice(0,30),structural_blockers:errors.filter(x=>/expected exactly 1000|expected 200|unknown CEFR level|duplicate lexical sense/.test(x)).slice(0,30)};
 console.log(JSON.stringify(summary,null,2));
 process.exit(errors.length?1:0);
