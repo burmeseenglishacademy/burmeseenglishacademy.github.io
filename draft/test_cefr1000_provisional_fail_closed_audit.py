@@ -25,7 +25,7 @@ def fixture():
                 "burmese_meaning": "နမူနာ", "example_sentence": "This is an example.",
                 "source_path": "draft/source.json", "source_blob_sha": "a" * 40,
                 "source_index": n, "editorial_hold": True,
-                "release_approved": False, **{field: False for field in FIELDS}
+                "release_approved": False, "status": "PROVISIONAL_SHORTLIST_INDEPENDENT_REVIEW_PENDING", **{field: False for field in FIELDS}
             })
     return {
         "schema": 1,
@@ -33,7 +33,12 @@ def fixture():
         "scope_target": {level: 200 for level in LEVELS},
         "counts_by_level": {level: 200 for level in LEVELS},
         "independently_approved_by_level": {level: 0 for level in LEVELS},
-        "stages": {"production": "UNMODIFIED"},
+        "stages": {"production": "UNMODIFIED",
+                   "english_definitions": "FIRST_PASS_UNVERIFIED",
+                   "myanmar_meanings": "FIRST_PASS_UNVERIFIED",
+                   "original_examples": "FIRST_PASS_UNVERIFIED",
+                   "independent_source_evidence": "NOT_OBSERVED",
+                   "audio": "NOT_GENERATED_FOR_FINAL_SHORTLIST_NOT_LISTENED"},
         "entries": entries
     }
 
@@ -80,6 +85,30 @@ class ProvisionalAuditNegativeTests(unittest.TestCase):
         data["entries"][0]["source_index"] = -1
         _, output = inspect(data)
         self.assertIn("invalid source_index", output)
+
+    def test_status_tampering_detected(self):
+        data = fixture()
+        data["entries"][0]["status"] = "APPROVED"
+        _, output = inspect(data)
+        self.assertIn("provisional status missing or altered", output)
+
+    def test_audio_stage_tampering_detected(self):
+        data = fixture()
+        data["stages"]["audio"] = "COMPLETE"
+        _, output = inspect(data)
+        self.assertIn("stage audio", output)
+
+    def test_string_review_flag_rejected(self):
+        data = fixture()
+        data["entries"][0]["reviewed_english"] = "false"
+        _, output = inspect(data)
+        self.assertIn("must be an explicit JSON boolean", output)
+
+    def test_null_release_approval_rejected(self):
+        data = fixture()
+        data["entries"][0]["release_approved"] = None
+        _, output = inspect(data)
+        self.assertIn("release_approved must be an explicit JSON boolean", output)
 
     def test_missing_entry_detected(self):
         data = fixture()
