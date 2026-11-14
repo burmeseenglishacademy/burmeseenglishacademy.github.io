@@ -169,5 +169,50 @@ class ProvisionalAuditNegativeTests(unittest.TestCase):
         self.assertIn("invalid level", output)
 
 
+    def test_missing_required_text_fields_detected(self):
+        for field in ("part_of_speech", "english_definition", "example_sentence", "source_path", "source_blob_sha"):
+            with self.subTest(field=field):
+                data = fixture()
+                data["entries"][0][field] = "  "
+                _, output = inspect(data)
+                self.assertIn(f"missing {field}", output)
+
+    def test_wrong_type_required_text_fields_detected(self):
+        for field in ("word", "part_of_speech", "english_definition", "burmese_meaning",
+                      "example_sentence", "source_path", "source_blob_sha"):
+            with self.subTest(field=field):
+                data = fixture()
+                data["entries"][0][field] = 123
+                _, output = inspect(data)
+                self.assertIn(f"missing {field}", output)
+
+    def test_missing_and_wrong_schema_detected(self):
+        for value in (None, True, 2, "1"):
+            with self.subTest(value=value):
+                data = fixture()
+                data["schema"] = value
+                _, output = inspect(data)
+                self.assertIn("unsupported shortlist schema", output)
+
+    def test_release_status_tampering_detected(self):
+        data = fixture()
+        data["release_status"] = "READY_TO_PUBLISH"
+        _, output = inspect(data)
+        self.assertIn("provisional release_status missing or altered", output)
+
+    def test_missing_review_flags_detected(self):
+        for field in (*FIELDS, "release_approved", "editorial_hold"):
+            with self.subTest(field=field):
+                data = fixture()
+                del data["entries"][0][field]
+                _, output = inspect(data)
+                self.assertIn(f"{field} must be an explicit JSON boolean", output)
+
+    def test_cross_level_headword_collision_detected(self):
+        data = fixture()
+        data["entries"][200]["word"] = data["entries"][0]["word"]
+        _, output = inspect(data)
+        self.assertIn("duplicate normalized headword", output)
+
 if __name__ == "__main__":
     unittest.main()
