@@ -75,9 +75,7 @@ def audit(path):
                 errors.append(f"entry {idx}: unsafe source_path")
         for field in ("word", "english_definition", "burmese_meaning", "example_sentence"):
             value = entry.get(field)
-            if isinstance(value, str) and any(
-                    (ord(char) < 32 and char not in "\n\t") or ord(char) == 127
-                    for char in value):
+            if isinstance(value, str) and any(ord(char) < 32 or ord(char) == 127 for char in value):
                 errors.append(f"entry {idx}: control characters in {field}")
         sha = entry.get("source_blob_sha")
         if isinstance(sha, str) and (len(sha) != 40 or any(c not in "0123456789abcdefABCDEF" for c in sha)):
