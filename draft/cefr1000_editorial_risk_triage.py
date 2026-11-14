@@ -59,7 +59,7 @@ def triage(data):
             if norm(word) in {"a", "an"}:
                 add(idx, row, "ARTICLE_ALLOMORPH",
                     "Adjudicate whether a/an are one article sense occupying one slot; check following sound rather than letter.")
-            if re.search(r"[^\\w\\s'-]", word, re.UNICODE):
+            if re.search(r"[^\w\s'-]", word, re.UNICODE):
                 add(idx, row, "PUNCTUATION_OR_SYMBOL",
                     "Check whether punctuation is lexical, a noncanonical form, or a named-entity artefact.")
             if any(ch.isdigit() for ch in word):
