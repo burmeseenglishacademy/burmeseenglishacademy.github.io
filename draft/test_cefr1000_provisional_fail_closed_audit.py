@@ -214,5 +214,19 @@ class ProvisionalAuditNegativeTests(unittest.TestCase):
         _, output = inspect(data)
         self.assertIn("duplicate normalized headword", output)
 
+    def test_source_path_traversal_rejected(self):
+        for value in ("../secrets.json", "draft/../secrets.json", "/tmp/source.json", "draft\\\\..\\\\source.json"):
+            with self.subTest(value=value):
+                data = fixture()
+                data["entries"][0]["source_path"] = value
+                _, output = inspect(data)
+                self.assertIn("unsafe source_path", output)
+
+    def test_control_character_in_example_rejected(self):
+        data = fixture()
+        data["entries"][0]["example_sentence"] = "Hello" + chr(0) + " world."
+        _, output = inspect(data)
+        self.assertIn("control characters in example_sentence", output)
+
 if __name__ == "__main__":
     unittest.main()
