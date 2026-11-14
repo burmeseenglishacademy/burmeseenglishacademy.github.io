@@ -15,6 +15,21 @@ def normalized(word):
 def audit(path):
     errors = []
     obj = json.loads(Path(path).read_text(encoding="utf-8"))
+    if not isinstance(obj, dict):
+        raise ValueError("shortlist root must be an object")
+    if type(obj.get("schema")) is not int or obj["schema"] != 1:
+        errors.append("unsupported shortlist schema")
+    if obj.get("release_status") != "PROVISIONAL_1000_INDEPENDENT_EVIDENCE_MISSING_DO_NOT_PUBLISH":
+        errors.append("provisional release_status missing or altered")
+    for field, expected in (("scope_target", 200), ("counts_by_level", 200), ("independently_approved_by_level", 0)):
+        metadata = obj.get(field)
+        if not isinstance(metadata, dict) or set(metadata) != set(LEVELS):
+            errors.append(f"{field}: must contain exactly A1, A2, B1, B2, C1")
+        elif any(type(metadata[level]) is not int or metadata[level] != expected for level in LEVELS):
+            errors.append(f"{field}: expected {expected} for every level")
+    stages = obj.get("stages")
+    if not isinstance(stages, dict) or stages.get("production") != "UNMODIFIED":
+        errors.append("production preservation stage missing or altered")
     entries = obj.get("entries")
     if not isinstance(entries, list):
         raise ValueError("entries must be a list")
@@ -26,7 +41,7 @@ def audit(path):
             errors.append(f"entry {idx}: not an object")
             continue
         level, word = entry.get("level"), entry.get("word")
-        if level not in LEVELS:
+        if not isinstance(level, str) or level not in LEVELS:
             errors.append(f"entry {idx}: invalid level {level!r}")
             continue
         counts[level] += 1
@@ -41,7 +56,10 @@ def audit(path):
         for field in ("part_of_speech", "english_definition", "burmese_meaning", "example_sentence", "source_path", "source_blob_sha"):
             if not isinstance(entry.get(field), str) or not entry[field].strip():
                 errors.append(f"entry {idx}: missing {field}")
-        if not isinstance(entry.get("source_index"), int) or isinstance(entry.get("source_index"), bool):
+        sha = entry.get("source_blob_sha")
+        if isinstance(sha, str) and (len(sha) != 40 or any(c not in "0123456789abcdefABCDEF" for c in sha)):
+            errors.append(f"entry {idx}: invalid source_blob_sha")
+        if type(entry.get("source_index")) is not int or entry["source_index"] < 0:
             errors.append(f"entry {idx}: invalid source_index")
         flags = [entry.get(k) is True for k in REVIEW_FIELDS]
         if entry.get("release_approved") is True:
