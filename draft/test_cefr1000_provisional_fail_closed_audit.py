@@ -27,7 +27,15 @@ def fixture():
                 "source_index": n, "editorial_hold": True,
                 "release_approved": False, **{field: False for field in FIELDS}
             })
-    return {"entries": entries}
+    return {
+        "schema": 1,
+        "release_status": "PROVISIONAL_1000_INDEPENDENT_EVIDENCE_MISSING_DO_NOT_PUBLISH",
+        "scope_target": {level: 200 for level in LEVELS},
+        "counts_by_level": {level: 200 for level in LEVELS},
+        "independently_approved_by_level": {level: 0 for level in LEVELS},
+        "stages": {"production": "UNMODIFIED"},
+        "entries": entries
+    }
 
 
 def inspect(data):
@@ -46,6 +54,32 @@ class ProvisionalAuditNegativeTests(unittest.TestCase):
         self.assertEqual(code, 1)
         self.assertIn("RELEASE BLOCKED", output)
         self.assertIn("Structural findings: 0", output)
+
+    def test_tampered_metadata_detected(self):
+        for field in ("scope_target", "counts_by_level", "independently_approved_by_level"):
+            with self.subTest(field=field):
+                data = fixture()
+                data[field]["A1"] = True
+                _, output = inspect(data)
+                self.assertIn(field, output)
+
+    def test_missing_production_preservation_detected(self):
+        data = fixture()
+        data["stages"]["production"] = "DEPLOYED"
+        _, output = inspect(data)
+        self.assertIn("production preservation stage", output)
+
+    def test_invalid_source_sha_detected(self):
+        data = fixture()
+        data["entries"][0]["source_blob_sha"] = "not-a-sha"
+        _, output = inspect(data)
+        self.assertIn("invalid source_blob_sha", output)
+
+    def test_negative_source_index_detected(self):
+        data = fixture()
+        data["entries"][0]["source_index"] = -1
+        _, output = inspect(data)
+        self.assertIn("invalid source_index", output)
 
     def test_missing_entry_detected(self):
         data = fixture()
