@@ -4,6 +4,8 @@ on:
     branches: [cefr-5000-bilingual-qa-staging]
     paths:
       - 'draft/CEFR-1000-PROVISIONAL-SHORTLIST.json'
+      - 'draft/cefr1000_provisional_fail_closed_audit.py'
+      - 'draft/test_cefr1000_provisional_fail_closed_audit.py'
       - 'draft/CEFR-1000-INDEPENDENT-REVIEW-TASKS.json'
       - 'scripts/cefr1000-release-gate.cjs'
       - 'scripts/cefr1000-release-gate-negative-tests.cjs'
@@ -40,6 +42,22 @@ jobs:
           node --check scripts/cefr1000-entry-review-queue.cjs
           node --check scripts/cefr1000-entry-review-queue-negative-tests.cjs
           node --check scripts/cefr1000-lexical-risk-triage.cjs
+      - name: Run Python provisional fail-closed regression suite
+        run: |
+          python3 -m unittest discover -s draft -p 'test_cefr1000_provisional_fail_closed_audit.py' -v
+      - name: Confirm real shortlist is structurally audited but cannot release
+        env:
+          CEFR_LEVEL: ${{ matrix.level }}
+        run: |
+          set +e
+          python3 draft/cefr1000_provisional_fail_closed_audit.py draft/CEFR-1000-PROVISIONAL-SHORTLIST.json > "$RUNNER_TEMP/python-provisional-audit.txt"
+          status=$?
+          set -e
+          test "$status" -eq 1
+          grep -F 'Structural findings: 0' "$RUNNER_TEMP/python-provisional-audit.txt"
+          grep -F 'RELEASE BLOCKED' "$RUNNER_TEMP/python-provisional-audit.txt"
+          grep -F "${CEFR_LEVEL}=200" "$RUNNER_TEMP/python-provisional-audit.txt"
+          echo "Python gate confirms ${CEFR_LEVEL} provisional inventory, never independent approval"
       - name: Execute eight negative release-gate scenarios
         run: node scripts/cefr1000-release-gate-negative-tests.cjs
       - name: Exercise editorial queue fail-closed mutation tests
