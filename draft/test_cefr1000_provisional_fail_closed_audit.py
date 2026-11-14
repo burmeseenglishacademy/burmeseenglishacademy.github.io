@@ -1,0 +1,110 @@
+#!/usr/bin/env python3
+"""Negative tests for the provisional CEFR-1000 audit. Staging-only, read-only."""
+import contextlib
+import io
+import json
+import tempfile
+import unittest
+from pathlib import Path
+from unittest.mock import patch
+
+from cefr1000_provisional_fail_closed_audit import audit
+
+LEVELS = ("A1", "A2", "B1", "B2", "C1")
+FIELDS = ("reviewed_english", "reviewed_burmese", "reviewed_example",
+          "reviewed_level", "reviewed_pronunciation")
+
+
+def fixture():
+    entries = []
+    for level in LEVELS:
+        for n in range(200):
+            entries.append({
+                "level": level, "word": f"{level}_word_{n}",
+                "part_of_speech": "noun", "english_definition": "An illustrative item.",
+                "burmese_meaning": "နမူနာ", "example_sentence": "This is an example.",
+                "source_path": "draft/source.json", "source_blob_sha": "a" * 40,
+                "source_index": n, "editorial_hold": True,
+                "release_approved": False, **{field: False for field in FIELDS}
+            })
+    return {"entries": entries}
+
+
+def inspect(data):
+    with tempfile.TemporaryDirectory() as directory:
+        path = Path(directory) / "shortlist.json"
+        path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            status = audit(path)
+        return status, output.getvalue()
+
+
+class ProvisionalAuditNegativeTests(unittest.TestCase):
+    def test_complete_provisional_inventory_still_blocks_release(self):
+        code, output = inspect(fixture())
+        self.assertEqual(code, 1)
+        self.assertIn("RELEASE BLOCKED", output)
+        self.assertIn("Structural findings: 0", output)
+
+    def test_missing_entry_detected(self):
+        data = fixture()
+        data["entries"].pop()
+        _, output = inspect(data)
+        self.assertIn("C1: expected 200 entries, found 199", output)
+        self.assertIn("expected 1000 entries, found 999", output)
+
+    def test_case_only_collision_detected(self):
+        data = fixture()
+        data["entries"][1]["word"] = data["entries"][0]["word"].upper()
+        _, output = inspect(data)
+        self.assertIn("duplicate normalized headword", output)
+
+    def test_unicode_nfkc_collision_detected(self):
+        data = fixture()
+        data["entries"][0]["word"] = "ＡＢＣ"
+        data["entries"][1]["word"] = "abc"
+        _, output = inspect(data)
+        self.assertIn("duplicate normalized headword", output)
+
+    def test_bare_approval_rejected(self):
+        data = fixture()
+        data["entries"][0]["release_approved"] = True
+        _, output = inspect(data)
+        self.assertIn("release_approved flag is insufficient", output)
+
+    def test_bare_independent_review_flags_rejected(self):
+        for field in FIELDS:
+            with self.subTest(field=field):
+                data = fixture()
+                data["entries"][0][field] = True
+                _, output = inspect(data)
+                self.assertIn("bare review flag(s)", output)
+
+    def test_editorial_hold_removal_rejected(self):
+        data = fixture()
+        data["entries"][0]["editorial_hold"] = False
+        _, output = inspect(data)
+        self.assertIn("editorial hold removed", output)
+
+    def test_missing_myanmar_detected(self):
+        data = fixture()
+        data["entries"][0]["burmese_meaning"] = ""
+        _, output = inspect(data)
+        self.assertIn("missing burmese_meaning", output)
+
+    def test_bool_source_index_rejected(self):
+        data = fixture()
+        data["entries"][0]["source_index"] = True
+        _, output = inspect(data)
+        self.assertIn("invalid source_index", output)
+
+    def test_invalid_level_detected(self):
+        data = fixture()
+        data["entries"][0]["level"] = "C2"
+        _, output = inspect(data)
+        self.assertIn("invalid level", output)
+
+
+if __name__ == "__main__":
+    unittest.main()
