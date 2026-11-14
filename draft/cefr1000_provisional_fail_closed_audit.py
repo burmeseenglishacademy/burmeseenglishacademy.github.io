@@ -30,6 +30,16 @@ def audit(path):
     stages = obj.get("stages")
     if not isinstance(stages, dict) or stages.get("production") != "UNMODIFIED":
         errors.append("production preservation stage missing or altered")
+    expected_stages = {
+        "english_definitions": "FIRST_PASS_UNVERIFIED",
+        "myanmar_meanings": "FIRST_PASS_UNVERIFIED",
+        "original_examples": "FIRST_PASS_UNVERIFIED",
+        "independent_source_evidence": "NOT_OBSERVED",
+        "audio": "NOT_GENERATED_FOR_FINAL_SHORTLIST_NOT_LISTENED",
+    }
+    for field, expected in expected_stages.items():
+        if not isinstance(stages, dict) or stages.get(field) != expected:
+            errors.append(f"stage {field}: provisional gate missing or altered")
     entries = obj.get("entries")
     if not isinstance(entries, list):
         raise ValueError("entries must be a list")
@@ -61,6 +71,11 @@ def audit(path):
             errors.append(f"entry {idx}: invalid source_blob_sha")
         if type(entry.get("source_index")) is not int or entry["source_index"] < 0:
             errors.append(f"entry {idx}: invalid source_index")
+        for field in (*REVIEW_FIELDS, "release_approved", "editorial_hold"):
+            if type(entry.get(field)) is not bool:
+                errors.append(f"entry {idx}: {field} must be an explicit JSON boolean")
+        if entry.get("status") != "PROVISIONAL_SHORTLIST_INDEPENDENT_REVIEW_PENDING":
+            errors.append(f"entry {idx}: provisional status missing or altered")
         flags = [entry.get(k) is True for k in REVIEW_FIELDS]
         if entry.get("release_approved") is True:
             approved[level] += 1
