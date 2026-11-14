@@ -66,6 +66,19 @@ def audit(path):
         for field in ("part_of_speech", "english_definition", "burmese_meaning", "example_sentence", "source_path", "source_blob_sha"):
             if not isinstance(entry.get(field), str) or not entry[field].strip():
                 errors.append(f"entry {idx}: missing {field}")
+        source_path = entry.get("source_path")
+        if isinstance(source_path, str) and source_path.strip():
+            parts = source_path.replace(chr(92), "/").split("/")
+            if (not source_path.startswith("draft/") or
+                    any(part in ("", ".", "..") for part in parts) or
+                    any(ord(char) < 32 or ord(char) == 127 for char in source_path)):
+                errors.append(f"entry {idx}: unsafe source_path")
+        for field in ("word", "english_definition", "burmese_meaning", "example_sentence"):
+            value = entry.get(field)
+            if isinstance(value, str) and any(
+                    (ord(char) < 32 and char not in "\n\t") or ord(char) == 127
+                    for char in value):
+                errors.append(f"entry {idx}: control characters in {field}")
         sha = entry.get("source_blob_sha")
         if isinstance(sha, str) and (len(sha) != 40 or any(c not in "0123456789abcdefABCDEF" for c in sha)):
             errors.append(f"entry {idx}: invalid source_blob_sha")
