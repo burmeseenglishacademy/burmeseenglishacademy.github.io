@@ -50,6 +50,23 @@ class ProvenanceAndDraftTextTests(unittest.TestCase):
         self.assertEqual(result["provenance_gaps"]["invalid_source_index"], 1)
         self.assertEqual(result["provenance_gaps"]["invalid_source_blob_sha"], 1)
 
+    def test_repeated_examples_and_definitions_are_triaged_without_approval(self):
+        result = module.audit({"entries": [
+            item("book", "A1", 0, english_definition="An object.", example_sentence="It is here."),
+            item("table", "B1", 1, english_definition=" an object. ", example_sentence=" IT IS HERE. "),
+            item("window", "C1", 2, english_definition="An opening.", example_sentence="Look outside."),
+        ]})
+        self.assertEqual(len(result["repeated_example_sentence_groups"]), 1)
+        self.assertEqual(len(result["repeated_english_definition_groups"]), 1)
+        self.assertEqual({x["level"] for x in result["repeated_example_sentence_groups"][0]}, {"A1", "B1"})
+        self.assertEqual(result["classification"], "TRIAGE_NOT_INDEPENDENT_REVIEW")
+
+    def test_unique_draft_text_does_not_trigger_repetition(self):
+        result = module.audit({"entries": [item("book", "A1", 0),
+            item("table", "B2", 1, english_definition="A piece of furniture.", example_sentence="The table is large.")]})
+        self.assertEqual(result["repeated_example_sentence_groups"], [])
+        self.assertEqual(result["repeated_english_definition_groups"], [])
+
     def test_complete_first_pass_is_not_independent_evidence(self):
         result = module.audit({"entries": [item("book")]})
         self.assertEqual(sum(sum(v.values()) for v in
