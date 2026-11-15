@@ -35,6 +35,20 @@ class LexicalAuditTests(unittest.TestCase):
     def audit(self, entries):
         return MODULE.audit({"entries": entries})
 
+    def test_missing_source_evidence_counts_per_level(self):
+        report = self.audit([entry("book"), entry("walk", "B2", source_level="B2",
+                                   source_english="attested", source_burmese="attested")])
+        self.assertEqual(report["missing_evidence_by_level"]["source_level"]["A1"], 1)
+        self.assertEqual(report["missing_evidence_by_level"]["source_level"]["B2"], 0)
+        self.assertEqual(report["missing_evidence_by_level"]["source_burmese"]["A1"], 1)
+        self.assertEqual(report["missing_evidence_by_level"]["sense_id"]["B2"], 0)
+
+    def test_lowercase_first_person_pronoun_is_editorial_risk(self):
+        report = self.audit([entry("i", part_of_speech="pronoun")])
+        self.assertIn("first_person_pronoun_capitalization",
+                      {risk["risk"] for risk in report["risk_queue"]})
+        self.assertEqual(self.audit([entry("I", part_of_speech="pronoun")])["risk_queue"], [])
+
     def test_missing_entries_fail_closed(self):
         with self.assertRaises(ValueError):
             MODULE.audit({})
