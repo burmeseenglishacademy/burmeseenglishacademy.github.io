@@ -32,6 +32,10 @@ def audit(document):
     holds = collections.Counter()
     evidence_gaps = {field: collections.Counter() for field in ("sense_id", "source_level", "source_english", "source_burmese")}
     risks = []
+    provenance_gaps = collections.Counter()
+    draft_text_gaps = {field: collections.Counter() for field in
+                       ("english_definition", "burmese_meaning", "example_sentence")}
+    source_records = collections.defaultdict(list)
     for index, item in enumerate(entries):
         if not isinstance(item, dict):
             risks.append({"index": index, "risk": "malformed_entry"})
@@ -41,6 +45,30 @@ def audit(document):
             risks.append({"index": index, "risk": "missing_level_word_or_pos"})
             continue
         counts[level] += 1
+        for field in draft_text_gaps:
+            if not isinstance(item.get(field), str) or not item[field].strip():
+                draft_text_gaps[field][level] += 1
+                risks.append({"index": index, "level": level, "word": word,
+                              "risk": "missing_first_pass_text", "field": field})
+        source_path, source_index, source_sha = (item.get("source_path"),
+                                                 item.get("source_index"),
+                                                 item.get("source_blob_sha"))
+        if not isinstance(source_path, str) or not source_path.startswith("draft/") or (
+                ".." in source_path.split("/") or "\\\\" in source_path):
+            provenance_gaps["invalid_source_path"] += 1
+            risks.append({"index": index, "level": level, "word": word,
+                          "risk": "invalid_draft_source_path"})
+        if type(source_index) is not int or source_index < 0:
+            provenance_gaps["invalid_source_index"] += 1
+            risks.append({"index": index, "level": level, "word": word,
+                          "risk": "invalid_draft_source_index"})
+        if not isinstance(source_sha, str) or not re.fullmatch(r"[0-9a-f]{40}", source_sha):
+            provenance_gaps["invalid_source_blob_sha"] += 1
+            risks.append({"index": index, "level": level, "word": word,
+                          "risk": "invalid_draft_source_blob_sha"})
+        if isinstance(source_path, str) and type(source_index) is int:
+            source_records[(source_path, source_index)].append(
+                {"index": index, "level": level, "word": word})
         for field in evidence_gaps:
             if not isinstance(item.get(field), str) or not item[field].strip():
                 evidence_gaps[field][level] += 1
@@ -77,12 +105,18 @@ def audit(document):
             risks.append({"index": index, "level": level, "word": word,
                           "risk": "possible_multiword_proper_name", "provenance": record})
     duplicates = [v for v in by_word.values() if len(v) > 1]
+    duplicate_source_records = [v for v in source_records.values() if len(v) > 1]
     duplicate_senses = [v for v in by_sense.values() if len(v) > 1]
     return {
         "scope": "provisional_1000_only", "classification": "TRIAGE_NOT_INDEPENDENT_REVIEW",
         "entries_observed": len(entries),
         "counts_by_level": {level: counts[level] for level in LEVELS},
         "editorial_holds_by_level": {level: holds[level] for level in LEVELS},
+        "provenance_gaps": dict(sorted(provenance_gaps.items())),
+        "missing_first_pass_text_by_level": {
+            field: {level: values[level] for level in LEVELS}
+            for field, values in draft_text_gaps.items()},
+        "duplicate_draft_source_records": duplicate_source_records,
         "unknown_levels": {k: v for k, v in sorted(counts.items()) if k not in LEVELS},
         "missing_evidence_by_level": {field: {level: values[level] for level in LEVELS}
                                       for field, values in evidence_gaps.items()},
