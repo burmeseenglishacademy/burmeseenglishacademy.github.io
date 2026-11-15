@@ -70,6 +70,11 @@ def check(manifest, evidence):
         require(isinstance(uid, str) and bool(uid.strip()), f"entry {i}: missing stable id", errors)
         require(uid not in ids, f"entry {i}: duplicate id", errors)
         ids.add(uid)
+        for provenance in ("source_path", "source_blob_sha", "source_index"):
+            require(provenance in entry, f"entry {i}: missing provenance {provenance}", errors)
+        require(isinstance(entry.get("source_path"), str) and bool(entry["source_path"].strip()), f"entry {i}: source_path invalid", errors)
+        require(isinstance(entry.get("source_blob_sha"), str) and re.fullmatch(r"[a-fA-F0-9]{40}", entry["source_blob_sha"]) is not None, f"entry {i}: source_blob_sha invalid", errors)
+        require(type(entry.get("source_index")) is int and entry["source_index"] >= 0, f"entry {i}: source_index invalid", errors)
         for field in ("english_definition", "burmese_meaning", "example_sentence"):
             require(isinstance(entry.get(field), str) and bool(entry.get(field).strip()), f"entry {i}: missing {field}", errors)
         require(entry.get("release_approved") is True, f"entry {i}: not release-approved", errors)
@@ -118,6 +123,22 @@ def check(manifest, evidence):
                 require(clip.get("listening_passed") is True, f"{uid}/{voice}_{kind}: no listening pass", errors)
     require(set(reviews) == ids, "review ids do not match manifest exactly", errors)
     require(set(audio) == ids, "audio ids do not match manifest exactly", errors)
+    ci = evidence.get("parallel_cefr_ci")
+    if not isinstance(ci, dict):
+        errors.append("missing parallel_cefr_ci evidence")
+    else:
+        sha = ci.get("commit_sha")
+        require(isinstance(sha, str) and re.fullmatch(r"[a-fA-F0-9]{40}", sha) is not None, "parallel CEFR CI commit SHA invalid", errors)
+        require(sha == evidence.get("release_commit_sha"), "CI commit SHA does not match release commit SHA", errors)
+        require(type(ci.get("run_id")) is int and ci["run_id"] > 0, "parallel CEFR CI run_id missing", errors)
+        jobs = ci.get("jobs")
+        if not isinstance(jobs, dict):
+            errors.append("parallel CEFR CI jobs missing")
+        else:
+            require(set(jobs) == set(LEVELS), "parallel CEFR CI must include exactly five level jobs", errors)
+            for level in LEVELS:
+                job = jobs.get(level)
+                require(isinstance(job, dict) and job.get("conclusion") == "success" and https_evidence_url(job.get("logs_url")), f"{level}: successful job conclusion and HTTPS logs URL required", errors)
     gates = evidence.get("release_gates", {})
     if not isinstance(gates, dict):
         gates = {}
