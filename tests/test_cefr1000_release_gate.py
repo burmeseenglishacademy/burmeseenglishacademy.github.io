@@ -29,16 +29,16 @@ def synthetic():
                                 release_approved=True, editorial_hold=False,
                                 source_path="draft/synthetic.json", source_blob_sha="a" * 40,
                                 source_index=n))
-            reviews[uid] = {field: dict(reviewer_id="synthetic-other", reviewed_at="2026-11-04",
-                        source_url="https://example.org/synthetic", source_observed_at="2026-11-04",
+            reviews[uid] = {field: dict(reviewer_id="synthetic-other", reviewed_at="2026-11-04T12:00:00+00:00",
+                        source_url="https://example.org/synthetic", source_observed_at="2026-11-04T12:00:00+00:00",
                         source_sense="synthetic", evidence_reference="synthetic",
                         approved=True, independent_of_author=True) for field in gate.FIELDS}
             audio[uid] = {f"{voice}_{kind}": dict(asset_path="synthetic.wav",
                          asset_sha256="a" * 64, listener_id="synthetic",
-                         listened_at="2026-11-04", listening_evidence="synthetic",
+                         listened_at="2026-11-04T12:00:00+00:00", listening_evidence="synthetic",
                          listening_passed=True) for voice in gate.VOICES for kind in gate.KINDS}
     gates = {name: dict(passed=True, evidence_url="https://example.org/synthetic",
-                       verified_at="2026-11-04") for name in (
+                       verified_at="2026-11-04T12:00:00+00:00") for name in (
         "browser_regression", "mobile_regression", "physical_iphone_safari",
         "github_pages_limits", "production_deployment", "production_asset_preservation",
         "privacy_review")}
