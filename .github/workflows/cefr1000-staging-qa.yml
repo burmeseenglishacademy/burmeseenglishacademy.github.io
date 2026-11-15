@@ -5,6 +5,7 @@ on:
     paths:
       - 'draft/CEFR-1000-*.json'
       - 'scripts/audit_cefr1000*.py'
+      - 'scripts/cefr1000_provisional_lexical_audit.py'
       - 'tests/test_cefr1000*.py'
       - '.github/workflows/cefr1000-staging-qa.yml'
   workflow_dispatch:
@@ -24,6 +25,19 @@ jobs:
         with:
           python-version: '3.11'
       - run: python3 scripts/audit_cefr1000_provisional.py
+      - name: Run read-only lexical and provenance triage
+        run: python3 scripts/cefr1000_provisional_lexical_audit.py draft/CEFR-1000-PROVISIONAL-SHORTLIST.json > /tmp/cefr1000-lexical-triage.json
+      - name: Check lexical triage inventory (not editorial approval)
+        run: |
+          python3 - <<'PY'
+          import json
+          with open('/tmp/cefr1000-lexical-triage.json', encoding='utf-8') as handle:
+              report = json.load(handle)
+          assert report['classification'] == 'TRIAGE_NOT_INDEPENDENT_REVIEW'
+          assert report['target_200_each_met']
+          assert all(report['editorial_holds_by_level'][level] == 200 for level in ('A1','A2','B1','B2','C1'))
+          print('Provisional inventory and holds intact; independent approval NOT established.')
+          PY
       - run: python3 scripts/audit_cefr1000_level.py --level "${{ matrix.level }}"
   adversarial:
     name: Adversarial structural regressions ${{ matrix.level }}
