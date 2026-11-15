@@ -44,7 +44,7 @@ def iso_timestamp(value):
 
 def safe_relative_asset_path(value):
     """Reject traversal, absolute paths, URL strings and Windows separators."""
-    if not isinstance(value, str) or not value or "\\\\" in value:
+    if not isinstance(value, str) or not value or "\\" in value:
         return False
     parts = pathlib.PurePosixPath(value)
     return not parts.is_absolute() and all(p not in (".", "..") for p in value.split("/")) and not value.startswith("/") and "://" not in value
