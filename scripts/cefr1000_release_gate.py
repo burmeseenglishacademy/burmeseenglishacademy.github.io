@@ -10,6 +10,7 @@ import json
 import pathlib
 import re
 import sys
+from datetime import datetime, timezone
 from urllib.parse import urlsplit
 from collections import Counter
 
@@ -28,6 +29,25 @@ def https_evidence_url(value):
         return parsed.scheme == "https" and bool(parsed.hostname) and not parsed.username and not parsed.password
     except ValueError:
         return False
+
+
+def iso_timestamp(value):
+    """Require an actual timezone-aware ISO-8601 instant, not arbitrary text."""
+    if not isinstance(value, str) or not value.strip():
+        return False
+    try:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        return parsed.tzinfo is not None and parsed.utcoffset() is not None
+    except ValueError:
+        return False
+
+
+def safe_relative_asset_path(value):
+    """Reject traversal, absolute paths, URL strings and Windows separators."""
+    if not isinstance(value, str) or not value or "\\\\" in value:
+        return False
+    parts = pathlib.PurePosixPath(value)
+    return not parts.is_absolute() and all(p not in (".", "..") for p in value.split("/")) and not value.startswith("/") and "://" not in value
 
 
 def sha256_hex(value):
@@ -78,7 +98,7 @@ def check(manifest, evidence):
             ids.add(uid)
         for provenance in ("source_path", "source_blob_sha", "source_index"):
             require(provenance in entry, f"entry {i}: missing provenance {provenance}", errors)
-        require(isinstance(entry.get("source_path"), str) and bool(entry["source_path"].strip()), f"entry {i}: source_path invalid", errors)
+        require(safe_relative_asset_path(entry.get("source_path")), f"entry {i}: source_path invalid", errors)
         require(isinstance(entry.get("source_blob_sha"), str) and re.fullmatch(r"[a-fA-F0-9]{40}", entry["source_blob_sha"]) is not None, f"entry {i}: source_blob_sha invalid", errors)
         require(type(entry.get("source_index")) is int and entry["source_index"] >= 0, f"entry {i}: source_index invalid", errors)
         for field in ("english_definition", "burmese_meaning", "example_sentence"):
@@ -113,6 +133,7 @@ def check(manifest, evidence):
             for attr in ("reviewer_id", "reviewed_at", "source_url", "source_observed_at", "source_sense", "evidence_reference"):
                 require(isinstance(review.get(attr), str) and bool(review[attr].strip()), f"{uid}/{field}: missing {attr}", errors)
             require(https_evidence_url(review.get("source_url")), f"{uid}/{field}: source_url must be valid HTTPS", errors)
+            require(iso_timestamp(review.get("reviewed_at")) and iso_timestamp(review.get("source_observed_at")), f"{uid}/{field}: invalid review/source observation timestamp", errors)
             require(review.get("approved") is True, f"{uid}/{field}: not approved", errors)
             require(review.get("independent_of_author") is True, f"{uid}/{field}: independence not attested", errors)
         item_audio = audio.get(uid)
@@ -127,6 +148,8 @@ def check(manifest, evidence):
                     continue
                 for attr in ("asset_path", "asset_sha256", "listener_id", "listened_at", "listening_evidence"):
                     require(isinstance(clip.get(attr), str) and bool(clip[attr].strip()), f"{uid}/{voice}_{kind}: missing {attr}", errors)
+                require(safe_relative_asset_path(clip.get("asset_path")), f"{uid}/{voice}_{kind}: unsafe asset_path", errors)
+                require(iso_timestamp(clip.get("listened_at")), f"{uid}/{voice}_{kind}: invalid listened_at timestamp", errors)
                 require(sha256_hex(clip.get("asset_sha256")), f"{uid}/{voice}_{kind}: asset_sha256 must contain 64 hex digits", errors)
                 require(clip.get("listening_passed") is True, f"{uid}/{voice}_{kind}: no listening pass", errors)
     require(set(reviews) == ids, "review ids do not match manifest exactly", errors)
@@ -152,7 +175,7 @@ def check(manifest, evidence):
         gates = {}
     for gate in ("browser_regression", "mobile_regression", "physical_iphone_safari", "github_pages_limits", "production_deployment", "production_asset_preservation", "privacy_review"):
         g = gates.get(gate)
-        require(isinstance(g, dict) and g.get("passed") is True and https_evidence_url(g.get("evidence_url")) and isinstance(g.get("verified_at"), str) and bool(g["verified_at"].strip()), f"release gate {gate} missing independently documented pass with HTTPS evidence URL", errors)
+        require(isinstance(g, dict) and g.get("passed") is True and https_evidence_url(g.get("evidence_url")) and iso_timestamp(g.get("verified_at")), f"release gate {gate} missing independently documented pass with HTTPS evidence URL", errors)
     return errors
 
 def main():
