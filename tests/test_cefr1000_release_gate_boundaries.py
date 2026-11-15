@@ -79,6 +79,30 @@ class ReleaseGateBoundaryTests(unittest.TestCase):
         del self.evidence["audio"]["A1-000"]["george_example"]["asset_sha256"]
         self.blocked()
 
+    def test_path_traversal_source(self):
+        self.manifest["entries"][0]["source_path"] = "../private/source.json"
+        self.blocked()
+
+    def test_absolute_audio_path(self):
+        self.evidence["audio"]["A1-000"]["george_headword"]["asset_path"] = "/tmp/fake.wav"
+        self.blocked()
+
+    def test_audio_path_traversal(self):
+        self.evidence["audio"]["A1-000"]["emma_example"]["asset_path"] = "audio/../../fake.wav"
+        self.blocked()
+
+    def test_date_without_timezone(self):
+        self.evidence["independent_reviews"]["A1-000"]["cefr"]["reviewed_at"] = "2026-11-04"
+        self.blocked()
+
+    def test_impossible_listening_date(self):
+        self.evidence["audio"]["A1-000"]["emma_example"]["listened_at"] = "2026-02-30T12:00:00Z"
+        self.blocked()
+
+    def test_unverified_device_date(self):
+        self.evidence["release_gates"]["physical_iphone_safari"]["verified_at"] = "yesterday"
+        self.blocked()
+
     def test_unapproved_cefr_review(self):
         self.evidence["independent_reviews"]["C1-199"]["cefr"]["approved"] = False
         self.blocked()
