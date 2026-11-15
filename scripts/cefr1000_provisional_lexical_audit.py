@@ -36,6 +36,8 @@ def audit(document):
     draft_text_gaps = {field: collections.Counter() for field in
                        ("english_definition", "burmese_meaning", "example_sentence")}
     source_records = collections.defaultdict(list)
+    example_records = collections.defaultdict(list)
+    definition_records = collections.defaultdict(list)
     for index, item in enumerate(entries):
         if not isinstance(item, dict):
             risks.append({"index": index, "risk": "malformed_entry"})
@@ -50,6 +52,11 @@ def audit(document):
                 draft_text_gaps[field][level] += 1
                 risks.append({"index": index, "level": level, "word": word,
                               "risk": "missing_first_pass_text", "field": field})
+        for field, bucket in (("example_sentence", example_records),
+                              ("english_definition", definition_records)):
+            value = item.get(field)
+            if isinstance(value, str) and value.strip():
+                bucket[canonical(value)].append({"index": index, "level": level, "word": word})
         source_path, source_index, source_sha = (item.get("source_path"),
                                                  item.get("source_index"),
                                                  item.get("source_blob_sha"))
@@ -117,6 +124,8 @@ def audit(document):
             field: {level: values[level] for level in LEVELS}
             for field, values in draft_text_gaps.items()},
         "duplicate_draft_source_records": duplicate_source_records,
+        "repeated_example_sentence_groups": [group for group in example_records.values() if len(group) > 1],
+        "repeated_english_definition_groups": [group for group in definition_records.values() if len(group) > 1],
         "unknown_levels": {k: v for k, v in sorted(counts.items()) if k not in LEVELS},
         "missing_evidence_by_level": {field: {level: values[level] for level in LEVELS}
                                       for field, values in evidence_gaps.items()},
@@ -125,7 +134,7 @@ def audit(document):
         "same_explicit_word_pos_sense_groups": duplicate_senses,
         "indefinite_article_a_an_review_queue": article if len(article) > 1 else [],
         "risk_queue": risks,
-        "warning": "NFKC headword collisions and a/an are review leads only. Distinct senses may be valid; no automatic deletion, CEFR assignment, or approval."
+        "warning": "NFKC headword collisions and a/an are review leads only. Repeated draft examples/definitions are triage leads, not proof of error. Distinct senses may be valid; no automatic deletion, CEFR assignment, or approval."
     }
 
 
