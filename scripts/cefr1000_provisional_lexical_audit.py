@@ -54,7 +54,7 @@ def audit(document):
                                                  item.get("source_index"),
                                                  item.get("source_blob_sha"))
         if not isinstance(source_path, str) or not source_path.startswith("draft/") or (
-                ".." in source_path.split("/") or "\\\\" in source_path):
+                ".." in source_path.split("/") or chr(92) in source_path):
             provenance_gaps["invalid_source_path"] += 1
             risks.append({"index": index, "level": level, "word": word,
                           "risk": "invalid_draft_source_path"})
