@@ -27,27 +27,35 @@ def synthetic_valid():
             entries.append(dict(id=uid, level=level, word=uid, part_of_speech="noun",
                                 sense_id="synthetic-sense", english_definition="Synthetic meaning.",
                                 burmese_meaning="စမ်းသပ်ရန်", example_sentence="This is a synthetic test.",
-                                release_approved=True, editorial_hold=False))
+                                release_approved=True, editorial_hold=False,
+                                source_path="draft/synthetic.json", source_blob_sha="a" * 40,
+                                source_index=i))
             reviews[uid] = {
                 field: dict(reviewer_id="SYNTHETIC-INDEPENDENT-REVIEWER",
-                            reviewed_at="2026-11-09", source_url="https://example.org/placeholder",
-                            source_observed_at="2026-11-09", source_sense="synthetic",
+                            reviewed_at="2026-11-09T12:00:00+00:00", source_url="https://example.org/placeholder",
+                            source_observed_at="2026-11-09T12:00:00+00:00", source_sense="synthetic",
                             evidence_reference="SYNTHETIC", approved=True,
                             independent_of_author=True)
                 for field in FIELDS
             }
             audio[uid] = {
                 f"{voice}_{kind}": dict(asset_path="synthetic.wav", asset_sha256="a" * 64,
-                                        listener_id="SYNTHETIC-LISTENER", listened_at="2026-11-09",
+                                        listener_id="SYNTHETIC-LISTENER", listened_at="2026-11-09T12:00:00+00:00",
                                         listening_evidence="SYNTHETIC", listening_passed=True)
                 for voice in VOICES for kind in KINDS
             }
     gates = {gate: dict(passed=True, evidence_url="https://example.org/placeholder",
-                        verified_at="2026-11-09") for gate in
+                        verified_at="2026-11-09T12:00:00+00:00") for gate in
              ("browser_regression", "mobile_regression", "physical_iphone_safari",
               "github_pages_limits", "production_deployment",
               "production_asset_preservation", "privacy_review")}
-    return {"entries": entries}, {"independent_reviews": reviews, "audio": audio, "release_gates": gates}
+    ci_sha = "b" * 40
+    ci = {"commit_sha": ci_sha, "run_id": 123456,
+          "jobs": {level: {"conclusion": "success", "logs_url": f"https://example.org/logs/{level}"}
+                   for level in LEVELS}}
+    return {"entries": entries}, {"independent_reviews": reviews, "audio": audio,
+                                  "release_gates": gates, "release_commit_sha": ci_sha,
+                                  "parallel_cefr_ci": ci}
 
 
 class FailClosedAdversarialTests(unittest.TestCase):
