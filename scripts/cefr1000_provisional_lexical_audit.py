@@ -30,6 +30,7 @@ def audit(document):
     by_sense = collections.defaultdict(list)
     article = []
     holds = collections.Counter()
+    evidence_gaps = {field: collections.Counter() for field in ("sense_id", "source_level", "source_english", "source_burmese")}
     risks = []
     for index, item in enumerate(entries):
         if not isinstance(item, dict):
@@ -40,10 +41,16 @@ def audit(document):
             risks.append({"index": index, "risk": "missing_level_word_or_pos"})
             continue
         counts[level] += 1
+        for field in evidence_gaps:
+            if not isinstance(item.get(field), str) or not item[field].strip():
+                evidence_gaps[field][level] += 1
         record = {"index": index, "level": level, "word": word, "pos": pos,
                   "source_path": item.get("source_path"), "source_index": item.get("source_index"),
                   "source_blob_sha": item.get("source_blob_sha")}
         normalized = canonical(word)
+        if normalized == "i" and canonical(pos) in ("pronoun", "personal pronoun") and word != "I":
+            risks.append({"index": index, "level": level, "word": word,
+                          "risk": "first_person_pronoun_capitalization", "provenance": record})
         by_word[normalized].append(record)
         sense = item.get("sense_id")
         if isinstance(sense, str) and sense.strip():
@@ -77,6 +84,8 @@ def audit(document):
         "counts_by_level": {level: counts[level] for level in LEVELS},
         "editorial_holds_by_level": {level: holds[level] for level in LEVELS},
         "unknown_levels": {k: v for k, v in sorted(counts.items()) if k not in LEVELS},
+        "missing_evidence_by_level": {field: {level: values[level] for level in LEVELS}
+                                      for field, values in evidence_gaps.items()},
         "target_200_each_met": len(entries) == 1000 and all(counts[x] == 200 for x in LEVELS),
         "same_normalized_headword_groups": duplicates,
         "same_explicit_word_pos_sense_groups": duplicate_senses,
