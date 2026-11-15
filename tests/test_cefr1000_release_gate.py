@@ -26,7 +26,9 @@ def synthetic():
                                 part_of_speech="noun", sense_id="1",
                                 english_definition="Synthetic test only",
                                 burmese_meaning="စမ်းသပ်မှု", example_sentence="This is a test.",
-                                release_approved=True, editorial_hold=False))
+                                release_approved=True, editorial_hold=False,
+                                source_path="draft/synthetic.json", source_blob_sha="a" * 40,
+                                source_index=n))
             reviews[uid] = {field: dict(reviewer_id="synthetic-other", reviewed_at="2026-11-04",
                         source_url="https://example.org/synthetic", source_observed_at="2026-11-04",
                         source_sense="synthetic", evidence_reference="synthetic",
@@ -40,7 +42,14 @@ def synthetic():
         "browser_regression", "mobile_regression", "physical_iphone_safari",
         "github_pages_limits", "production_deployment", "production_asset_preservation",
         "privacy_review")}
-    return {"entries": entries}, {"independent_reviews": reviews, "audio": audio, "release_gates": gates}
+    ci_sha = "b" * 40
+    ci = {"commit_sha": ci_sha, "run_id": 123456,
+          "jobs": {level: {"conclusion": "success",
+                           "logs_url": f"https://example.org/logs/{level}"}
+                   for level in gate.LEVELS}}
+    return {"entries": entries}, {"independent_reviews": reviews, "audio": audio,
+                                  "release_gates": gates, "release_commit_sha": ci_sha,
+                                  "parallel_cefr_ci": ci}
 
 
 class ReleaseGateAdversarialTests(unittest.TestCase):
