@@ -45,6 +45,8 @@ def load(path):
 
 def check(manifest, evidence):
     errors = []
+    if not isinstance(manifest, dict):
+        return ["manifest must be an object"]
     entries = manifest.get("entries")
     if not isinstance(entries, list):
         return ["manifest.entries must be an array"]
@@ -57,7 +59,10 @@ def check(manifest, evidence):
             errors.append(f"entry {i} not an object")
             continue
         level = entry.get("level")
-        counts[level] += 1
+        if isinstance(level, str):
+            counts[level] += 1
+        else:
+            errors.append(f"entry {i}: level must be a string")
         word = entry.get("word")
         pos = entry.get("part_of_speech")
         sense = entry.get("sense_id")
@@ -68,8 +73,9 @@ def check(manifest, evidence):
         seen.add(key)
         uid = entry.get("id")
         require(isinstance(uid, str) and bool(uid.strip()), f"entry {i}: missing stable id", errors)
-        require(uid not in ids, f"entry {i}: duplicate id", errors)
-        ids.add(uid)
+        require(isinstance(uid, str) and uid not in ids, f"entry {i}: duplicate id", errors)
+        if isinstance(uid, str):
+            ids.add(uid)
         for provenance in ("source_path", "source_blob_sha", "source_index"):
             require(provenance in entry, f"entry {i}: missing provenance {provenance}", errors)
         require(isinstance(entry.get("source_path"), str) and bool(entry["source_path"].strip()), f"entry {i}: source_path invalid", errors)
@@ -84,6 +90,8 @@ def check(manifest, evidence):
     require(isinstance(evidence, dict), "evidence must be object", errors)
     if not isinstance(evidence, dict):
         return errors
+    release_sha = evidence.get("release_commit_sha")
+    require(isinstance(release_sha, str) and re.fullmatch(r"[a-fA-F0-9]{40}", release_sha) is not None, "release_commit_sha must be a full 40-character Git SHA", errors)
     reviews = evidence.get("independent_reviews")
     audio = evidence.get("audio")
     if not isinstance(reviews, dict):
