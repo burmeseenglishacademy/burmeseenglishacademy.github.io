@@ -18,7 +18,7 @@ class IndependentReviewIntakeRegression(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         raw = (ROOT / "draft/CEFR-1000-PROVISIONAL-SHORTLIST.json").read_bytes()
-        cls.sha = hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+        cls.sha = hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\x00" + raw).hexdigest()
         cls.shortlist = json.loads(raw)
         cls.intake = json.loads(
             (ROOT / "draft/CEFR-1000-INDEPENDENT-REVIEW-TASKS.json").read_text(encoding="utf-8")
