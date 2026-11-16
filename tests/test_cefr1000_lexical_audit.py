@@ -26,6 +26,9 @@ def entry(word="book", level="A1", **overrides):
         "reviewed_english": False, "reviewed_burmese": False,
         "reviewed_example": False, "reviewed_level": False,
         "sense_id": "physical_volume",
+        "english_definition": "A synthetic object for a regression test.",
+        "burmese_meaning": "စမ်းသပ်ရန် ပစ္စည်း",
+        "example_sentence": "This is a synthetic test object.",
     }
     item.update(overrides)
     return item
