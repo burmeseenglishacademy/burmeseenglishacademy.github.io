@@ -35,11 +35,18 @@ def audit(shortlist, intake, shortlist_sha):
             errors.append(f"record {i}: non-object entry/task")
             continue
         level = entry.get("level")
-        counts[task.get("level")] += 1
+        if level not in LEVELS:
+            errors.append(f"record {i}: invalid shortlist CEFR level {level!r}")
+        task_level = task.get("level")
+        if task_level not in LEVELS:
+            errors.append(f"record {i}: invalid task CEFR level {task_level!r}")
+        counts[task_level] += 1
         expected_id = f"CEFR1000-{level}-{counts[level]:04d}" if level in LEVELS else None
         if task.get("task_id") != expected_id or task.get("task_id") in ids:
             errors.append(f"record {i}: task ID/order/uniqueness mismatch")
         ids.add(task.get("task_id"))
+        if not isinstance(task.get("task_id"), str):
+            errors.append(f"record {i}: missing or malformed task ID")
         for source_field, task_field in (("word", "headword"), ("level", "level"),
                                           ("part_of_speech", "part_of_speech")):
             if entry.get(source_field) != task.get(task_field):
