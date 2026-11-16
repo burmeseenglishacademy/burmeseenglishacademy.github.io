@@ -40,7 +40,10 @@ def audit(shortlist, intake, shortlist_sha):
         task_level = task.get("level")
         if task_level not in LEVELS:
             errors.append(f"record {i}: invalid task CEFR level {task_level!r}")
-        counts[task_level] += 1
+        # Count shortlist levels, not task levels: task IDs restart at 0001 per level.
+        # Invalid levels are reported above and must not pollute the counter.
+        if level in LEVELS:
+            counts[level] += 1
         expected_id = f"CEFR1000-{level}-{counts[level]:04d}" if level in LEVELS else None
         if task.get("task_id") != expected_id or task.get("task_id") in ids:
             errors.append(f"record {i}: task ID/order/uniqueness mismatch")
