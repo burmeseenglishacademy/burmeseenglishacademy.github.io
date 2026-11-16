@@ -26,6 +26,8 @@ jobs:
         with:
           python-version: '3.11'
       - run: python3 scripts/audit_cefr1000_provisional.py
+      - name: Validate pending independent-review intake and immutable provenance
+        run: python3 scripts/audit_cefr1000_review_intake.py
       - name: Run read-only lexical and provenance triage
         run: python3 scripts/cefr1000_provisional_lexical_audit.py draft/CEFR-1000-PROVISIONAL-SHORTLIST.json > /tmp/cefr1000-lexical-triage.json
       - name: Check lexical triage inventory (not editorial approval)
