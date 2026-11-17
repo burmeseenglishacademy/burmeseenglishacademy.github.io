@@ -100,6 +100,25 @@ class PreflightAdversarialTests(unittest.TestCase):
         self.evidence["reviews"][1]["entry_id"] = self.evidence["reviews"][0]["entry_id"]
         self.assert_blocked("duplicate review")
 
+    def test_duplicate_manifest_id_blocks(self):
+        self.manifest["entries"][1]["entry_id"] = self.manifest["entries"][0]["entry_id"]
+        self.assert_blocked("duplicate manifest entry_id")
+
+    def test_orphan_review_id_blocks(self):
+        self.evidence["reviews"][1]["entry_id"] = "unrelated-review"
+        self.assert_blocked("review ID set does not match manifest entries")
+
+    def test_invalid_source_url_blocks(self):
+        self.evidence["reviews"][0]["english"]["source_url"] = "not-a-source"
+        self.assert_blocked("malformed source URL or review dates")
+
+    def test_invalid_audio_hash_blocks(self):
+        self.assert_blocked("malformed hash/listening date")
+
+    def test_invalid_qa_evidence_url_blocks(self):
+        self.qa["physical_iphone_safari"]["evidence_url"] = "fabricated"
+        self.assert_blocked("malformed evidence URL/date")
+
     @unittest.expectedFailure
     def test_known_limitation_fabricated_evidence_strings_must_not_pass(self):
         # Intentionally documents an unresolved authenticity gap: structurally
