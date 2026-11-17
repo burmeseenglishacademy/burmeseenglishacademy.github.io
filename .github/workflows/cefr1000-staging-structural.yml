@@ -10,6 +10,8 @@ on:
       - 'tests/test_cefr1000_review_intake_provenance.py'
       - 'draft/CEFR-1000-INDEPENDENT-REVIEW-TASKS.json'
       - 'scripts/test_cefr1000_staging_check.py'
+      - 'scripts/cefr1000_release_preflight.py'
+      - 'tests/test_cefr1000_release_preflight_adversarial.py'
       - '.github/workflows/cefr1000-staging-structural.yml'
   workflow_dispatch:
 permissions:
@@ -53,3 +55,24 @@ jobs:
         run: python scripts/cefr1000_fail_closed_intake.py
       - name: Exercise adversarial provenance regressions
         run: python -m unittest discover -s tests -p 'test_cefr1000_review_intake_provenance.py' -v
+
+  release-preflight-adversarial:
+    name: Release preflight adversarial and default-deny checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Exercise release preflight adversarial tests (synthetic fixtures only)
+        run: python -m unittest discover -s tests -p 'test_cefr1000_release_preflight_adversarial.py' -v
+      - name: Assert production release remains blocked without genuine evidence
+        shell: bash
+        run: |
+          if python scripts/cefr1000_release_preflight.py; then
+            echo 'ERROR: preflight unexpectedly accepted staging as release-ready' >&2
+            exit 1
+          fi
+          echo 'Expected: staging remains blocked; no deployment performed.'
