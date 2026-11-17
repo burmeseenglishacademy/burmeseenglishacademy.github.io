@@ -5,6 +5,7 @@ Separate from provisional intake checks. A structurally valid shortlist is NOT
 an approved release manifest. Evidence must be external to the intake files.
 """
 import argparse
+import hashlib
 import collections
 import json
 import re
@@ -32,6 +33,29 @@ def _valid_url(value):
         return False
     p = urlparse(value)
     return p.scheme == "https" and bool(p.hostname) and not p.username and not p.password
+
+
+def _verified_audio_file(root, record):
+    """A claimed digest alone is not evidence: check real bytes inside the repo."""
+    rel = record.get("asset_path")
+    digest = record.get("sha256")
+    if not isinstance(rel, str) or not isinstance(digest, str):
+        return False
+    p = Path(rel)
+    if p.is_absolute() or not p.parts or any(part in ("..", ".") for part in p.parts):
+        return False
+    try:
+        base = root.resolve(strict=True)
+        asset = (base / p).resolve(strict=True)
+        if not asset.is_relative_to(base) or not asset.is_file():
+            return False
+        h = hashlib.sha256()
+        with asset.open("rb") as stream:
+            for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+                h.update(chunk)
+        return h.hexdigest() == digest.lower()
+    except (OSError, ValueError, RuntimeError):
+        return False
 
 
 def audit(root):
@@ -108,6 +132,8 @@ def audit(root):
                     errors.append(f"{entry_id}: {voice} {kind} audio/listening evidence missing")
                 elif not re.fullmatch(r"[0-9a-fA-F]{64}", record["sha256"]) or not _valid_date(record["listened_at"]):
                     errors.append(f"{entry_id}: {voice} {kind} malformed hash/listening date")
+                elif not _verified_audio_file(root, record):
+                    errors.append(f"{entry_id}: {voice} {kind} audio bytes missing, unsafe path, or SHA-256 mismatch")
     if counts != collections.Counter({level: 200 for level in LEVELS}):
         errors.append(f"incorrect level counts: {dict(counts)}")
     if set(review_by_id) != entry_ids:
