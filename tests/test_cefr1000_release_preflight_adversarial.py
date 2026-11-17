@@ -119,6 +119,28 @@ class PreflightAdversarialTests(unittest.TestCase):
         self.qa["physical_iphone_safari"]["evidence_url"] = "fabricated"
         self.assert_blocked("malformed evidence URL/date")
 
+    def test_plausible_hash_without_audio_bytes_blocks(self):
+        record = self.manifest["entries"][0]["audio"]["george"]["headword"]
+        record["sha256"] = "a" * 64
+        record["listened_at"] = "2026-11-17"
+        self.assert_blocked("audio bytes missing, unsafe path, or SHA-256 mismatch")
+
+    def test_audio_path_traversal_blocks(self):
+        record = self.manifest["entries"][0]["audio"]["emma"]["example"]
+        record["asset_path"] = "../outside.wav"
+        record["sha256"] = "a" * 64
+        record["listened_at"] = "2026-11-17"
+        self.assert_blocked("audio bytes missing, unsafe path, or SHA-256 mismatch")
+
+    def test_audio_digest_mismatch_blocks(self):
+        record = self.manifest["entries"][0]["audio"]["george"]["headword"]
+        asset = self.root / record["asset_path"]
+        asset.parent.mkdir(parents=True, exist_ok=True)
+        asset.write_bytes(b"not the claimed audio bytes")
+        record["sha256"] = "a" * 64
+        record["listened_at"] = "2026-11-17"
+        self.assert_blocked("audio bytes missing, unsafe path, or SHA-256 mismatch")
+
     @unittest.expectedFailure
     def test_known_limitation_fabricated_evidence_strings_must_not_pass(self):
         # Intentionally documents an unresolved authenticity gap: structurally
