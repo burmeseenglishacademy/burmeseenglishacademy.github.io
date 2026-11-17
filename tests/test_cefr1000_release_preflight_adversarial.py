@@ -141,13 +141,17 @@ class PreflightAdversarialTests(unittest.TestCase):
         record["listened_at"] = "2026-11-17"
         self.assert_blocked("audio bytes missing, unsafe path, or SHA-256 mismatch")
 
-    @unittest.expectedFailure
-    def test_known_limitation_fabricated_evidence_strings_must_not_pass(self):
-        # Intentionally documents an unresolved authenticity gap: structurally
-        # complete invented strings currently pass. Do not use this as release proof.
+    def test_synthetic_placeholder_evidence_blocks(self):
+        # Synthetic placeholders must fail schema validation. This does NOT prove
+        # authenticity: plausible forged reviewer identities or evidence remain
+        # outside the validator's trust boundary and require human verification.
         self.write()
-        self.assertTrue(audit(self.root),
-                        "Synthetic evidence must never authorize production")
+        errors = audit(self.root)
+        self.assertTrue(errors, "Synthetic placeholders must not authorize release")
+        self.assertTrue(
+            any("malformed" in error or "audio bytes missing" in error for error in errors),
+            errors[:5],
+        )
 
 if __name__ == "__main__":
     unittest.main()
