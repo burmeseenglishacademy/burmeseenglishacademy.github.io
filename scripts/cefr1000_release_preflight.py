@@ -7,6 +7,9 @@ an approved release manifest. Evidence must be external to the intake files.
 import argparse
 import collections
 import json
+import re
+from datetime import date
+from urllib.parse import urlparse
 from pathlib import Path
 import sys
 
@@ -14,6 +17,22 @@ LEVELS = ("A1", "A2", "B1", "B2", "C1")
 FIELDS = ("english", "myanmar", "example", "exact_sense_cefr", "pronunciation")
 VOICES = ("george", "emma")
 KINDS = ("headword", "example")
+
+def _valid_date(value):
+    if not isinstance(value, str):
+        return False
+    try:
+        return date.fromisoformat(value[:10]).isoformat() == value and date.fromisoformat(value) <= date.today()
+    except ValueError:
+        return False
+
+
+def _valid_url(value):
+    if not isinstance(value, str):
+        return False
+    p = urlparse(value)
+    return p.scheme == "https" and bool(p.hostname) and not p.username and not p.password
+
 
 def audit(root):
     errors = []
@@ -39,6 +58,7 @@ def audit(root):
         errors.append("exactly 1000 manifest entries and 1000 independent reviews required")
     counts = collections.Counter()
     keys = set()
+    entry_ids = set()
     review_by_id = {}
     for r in reviews:
         if not isinstance(r, dict) or not isinstance(r.get("entry_id"), str):
@@ -61,6 +81,9 @@ def audit(root):
         if not isinstance(entry_id, str) or not entry_id.strip():
             errors.append(f"entry {i}: missing stable entry_id")
             continue
+        if entry_id in entry_ids:
+            errors.append(f"entry {i}: duplicate manifest entry_id: {entry_id}")
+        entry_ids.add(entry_id)
         r = review_by_id.get(entry_id)
         if not r:
             errors.append(f"entry {i}: independent review missing")
@@ -72,6 +95,8 @@ def audit(root):
                 for k in ("reviewer_id", "signed_at", "source_url", "observed_on")
             ):
                 errors.append(f"{entry_id}: {field} independent evidence/signoff missing")
+            elif not _valid_url(check["source_url"]) or not _valid_date(check["signed_at"]) or not _valid_date(check["observed_on"]):
+                errors.append(f"{entry_id}: {field} malformed source URL or review dates")
         audio = e.get("audio")
         for voice in VOICES:
             for kind in KINDS:
@@ -81,9 +106,11 @@ def audit(root):
                     for k in ("asset_path", "sha256", "listened_by", "listened_at")
                 ):
                     errors.append(f"{entry_id}: {voice} {kind} audio/listening evidence missing")
+                elif not re.fullmatch(r"[0-9a-fA-F]{64}", record["sha256"]) or not _valid_date(record["listened_at"]):
+                    errors.append(f"{entry_id}: {voice} {kind} malformed hash/listening date")
     if counts != collections.Counter({level: 200 for level in LEVELS}):
         errors.append(f"incorrect level counts: {dict(counts)}")
-    if len(review_by_id) != len(entries):
+    if set(review_by_id) != entry_ids:
         errors.append("review ID set does not match manifest entries")
     for gate in ("desktop_browser", "mobile_browser", "physical_iphone_safari",
                  "github_pages_limits", "production_deployment", "production_assets_preserved",
@@ -94,6 +121,8 @@ def audit(root):
             for k in ("evidence_url", "verified_by", "verified_at")
         ):
             errors.append(f"release QA gate not evidenced: {gate}")
+        elif not _valid_url(record["evidence_url"]) or not _valid_date(record["verified_at"]):
+            errors.append(f"release QA gate malformed evidence URL/date: {gate}")
     return errors
 
 def main():
