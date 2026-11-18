@@ -95,6 +95,30 @@ class StagingGateAdversarialTests(unittest.TestCase):
         self.assertNotEqual(p.returncode, 0)
         self.assertIn("provenance changed", output)
 
+    def test_forged_review_flags_fail_in_unrelated_level_job(self):
+        data = json.loads(json.dumps(self.shortlist))
+        a1 = next(e for e in data["entries"] if e["level"] == "A1")
+        a1["reviewed_english"] = True
+        a1["release_approved"] = True
+        p, output = self.run_gate(data, None, "--level", "C1")
+        self.assertNotEqual(p.returncode, 0, output)
+        self.assertIn("provisional reviewed_english must be explicitly false", output)
+        self.assertIn("provisional release_approved must be explicitly false", output)
+
+    def test_forged_approval_summary_fails(self):
+        data = json.loads(json.dumps(self.shortlist))
+        data["independently_approved_by_level"]["B2"] = 1
+        p, output = self.run_gate(data, None, "--level", "A1")
+        self.assertNotEqual(p.returncode, 0, output)
+        self.assertIn("independent approval metadata must remain zero", output)
+
+    def test_missing_review_flag_fails(self):
+        data = json.loads(json.dumps(self.shortlist))
+        data["entries"][0].pop("reviewed_burmese")
+        p, output = self.run_gate(data)
+        self.assertNotEqual(p.returncode, 0, output)
+        self.assertIn("provisional reviewed_burmese must be explicitly false", output)
+
     def test_missing_myanmar_field_fails(self):
         data = json.loads(json.dumps(self.shortlist))
         data["entries"][0]["burmese_meaning"] = ""
