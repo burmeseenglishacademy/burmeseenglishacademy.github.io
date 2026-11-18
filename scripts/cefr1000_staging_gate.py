@@ -72,6 +72,39 @@ def main():
         if key in task_keys:
             fail(f"task {i}: duplicate review task {key}", errors)
         task_keys.add(key)
+    # A pending task must not contain fabricated review evidence or partial approvals.
+    # Check all levels even when CI selects a single matrix level.
+    pending_fields = ("english_definition_review", "myanmar_meaning_review",
+                      "original_example_review", "exact_sense_cefr_review",
+                      "pronunciation_review")
+    for i, task in enumerate(reviews):
+        if task.get("review_status") != "PENDING_INDEPENDENT_REVIEW":
+            fail(f"task {i}: review_status must remain pending", errors)
+        if task.get("approval") is not False:
+            fail(f"task {i}: approval must be explicitly false", errors)
+        for field in pending_fields:
+            if task.get(field) != "PENDING":
+                fail(f"task {i}: {field} must remain PENDING", errors)
+        for field in ("reviewer_assigned", "reviewer_identity", "reviewer_signed_at", "source_observed_on"):
+            if task.get(field) is not None:
+                fail(f"task {i}: unverified {field} must remain null", errors)
+        if task.get("source_evidence_urls") != []:
+            fail(f"task {i}: unverified source_evidence_urls must remain empty", errors)
+        if task.get("shortlist_blob_sha") != tasks.get("source_shortlist_blob_sha"):
+            fail(f"task {i}: shortlist blob provenance mismatch", errors)
+    # A matching word/POS alone is insufficient: task provenance must match its entry.
+    entry_provenance = {
+        (e.get("level"), str(e.get("word", "")).casefold(), str(e.get("part_of_speech", "")).casefold()):
+        (e.get("source_path"), e.get("source_index"), e.get("source_blob_sha"))
+        for e in entries
+    }
+    for i, task in enumerate(reviews):
+        key = (task.get("level"), str(task.get("headword", "")).casefold(),
+               str(task.get("part_of_speech", "")).casefold())
+        if key in entry_provenance and (
+            task.get("source_path"), task.get("source_index"), task.get("source_blob_sha")
+        ) != entry_provenance[key]:
+            fail(f"task {i}: source provenance differs from shortlist entry", errors)
     for level in LEVELS:
         entry_keys = Counter((x["level"], x["word"].casefold(), x["part_of_speech"].casefold()) for x in entries if x["level"] == level)
         review_keys = Counter((x["level"], x["headword"].casefold(), x["part_of_speech"].casefold()) for x in reviews if x["level"] == level)
