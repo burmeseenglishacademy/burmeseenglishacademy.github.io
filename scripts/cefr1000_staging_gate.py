@@ -1,0 +1,74 @@
+#!/usr/bin/env python3
+"""CEFR-1000 staging-only structural and release gate. No approval inferred from self-checks."""
+import argparse
+import json
+import pathlib
+import sys
+from collections import Counter
+
+ROOT = pathlib.Path(__file__).resolve().parents[1]
+LEVELS = ("A1", "A2", "B1", "B2", "C1")
+EXPECTED = {level: 200 for level in LEVELS}
+
+def fail(message, errors):
+    errors.append(message)
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--level", choices=LEVELS, help="Test one level; global checks still run")
+    parser.add_argument("--release", action="store_true", help="Fail closed unless all independent gates are evidenced")
+    args = parser.parse_args()
+    errors = []
+    shortlist = json.loads((ROOT / "draft/CEFR-1000-PROVISIONAL-SHORTLIST.json").read_text(encoding="utf-8"))
+    tasks = json.loads((ROOT / "draft/CEFR-1000-INDEPENDENT-REVIEW-TASKS.json").read_text(encoding="utf-8"))
+    entries = shortlist["entries"]
+    reviews = tasks["tasks"]
+    for name, records in (("entries", entries), ("tasks", reviews)):
+        counts = Counter(x.get("level") for x in records)
+        if counts != EXPECTED:
+            fail(f"{name}: expected exactly 200 per level; got {dict(counts)}", errors)
+    if len(entries) != 1000 or len(reviews) != 1000:
+        fail("Exactly 1000 entries and 1000 tasks required", errors)
+    for field, data in (("shortlist", shortlist), ("tasks", tasks)):
+        if data.get("counts_by_level") != EXPECTED:
+            fail(f"{field} count metadata differs from target", errors)
+    if tasks.get("source_shortlist_blob_sha") != "475e68ae17ab97bd937e73e5ce4794e0dcd76551":
+        fail("Review task source shortlist provenance changed: regenerate tasks under independent control", errors)
+    seen = set()
+    task_keys = set()
+    for i, entry in enumerate(entries):
+        if args.level and entry.get("level") != args.level:
+            continue
+        key = (str(entry.get("word", "")).strip().casefold(), str(entry.get("part_of_speech", "")).strip().casefold())
+        if not all(key):
+            fail(f"entry {i}: missing headword or part of speech", errors)
+        if key in seen:
+            fail(f"entry {i}: duplicate headword/part-of-speech {key}", errors)
+        seen.add(key)
+        for field in ("english_definition", "burmese_meaning", "example_sentence", "source_path", "source_blob_sha"):
+            if not str(entry.get(field, "")).strip():
+                fail(f"entry {i}: missing {field}", errors)
+        if entry.get("editorial_hold") is not True:
+            fail(f"entry {i}: provisional entry must remain held", errors)
+    for i, task in enumerate(reviews):
+        if args.level and task.get("level") != args.level:
+            continue
+        key = (task.get("level"), str(task.get("headword", "")).casefold(), str(task.get("part_of_speech", "")).casefold())
+        if key in task_keys:
+            fail(f"task {i}: duplicate review task {key}", errors)
+        task_keys.add(key)
+    for level in ([args.level] if args.level else LEVELS):
+        entry_keys = Counter((x["level"], x["word"].casefold(), x["part_of_speech"].casefold()) for x in entries if x["level"] == level)
+        review_keys = Counter((x["level"], x["headword"].casefold(), x["part_of_speech"].casefold()) for x in reviews if x["level"] == level)
+        if entry_keys != review_keys:
+            fail(f"{level}: shortlist/review task mapping differs", errors)
+    if args.release:
+        # Structural QA cannot establish independence, listening, physical iPhone QA or deployment.
+        # A separate signed evidence manifest and external attestation verifier must be integrated
+        # before this gate can ever succeed. Never infer evidence from flags in provisional JSON.
+        fail("RELEASE BLOCKED: independently signed linguistic/CEFR reviews, 4000 listened-to audio assets, physical iPhone Safari and browser/mobile QA, hosting clearance, production deployment and preservation attestations are not verified by this tool", errors)
+    print(json.dumps({"mode": "release" if args.release else "structural", "level": args.level or "all", "errors": errors, "independent_approval_inferred": False}, ensure_ascii=False, indent=2))
+    return 1 if errors else 0
+
+if __name__ == "__main__":
+    sys.exit(main())
