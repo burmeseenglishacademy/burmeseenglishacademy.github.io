@@ -151,5 +151,39 @@ class StagingGateAdversarialTests(unittest.TestCase):
         self.assertNotEqual(p.returncode, 0, output)
         self.assertIn("shortlist/review task mapping differs", output)
 
+    def test_forged_independent_task_signoff_rejected_by_other_level(self):
+        data = json.loads(json.dumps(self.tasks))
+        task = next(t for t in data["tasks"] if t["level"] == "A1")
+        task["reviewer_identity"] = "invented-reviewer"
+        task["reviewer_signed_at"] = "2026-11-18T12:00:00Z"
+        task["approval"] = True
+        task["english_definition_review"] = "APPROVED"
+        p, output = self.run_gate(None, data, "--level", "C1")
+        self.assertNotEqual(p.returncode, 0, output)
+        self.assertIn("approval must be explicitly false", output)
+        self.assertIn("unverified reviewer_identity", output)
+
+    def test_forged_source_evidence_rejected(self):
+        data = json.loads(json.dumps(self.tasks))
+        data["tasks"][0]["source_evidence_urls"] = ["https://example.org/unsupported"]
+        data["tasks"][0]["source_observed_on"] = "2026-11-18"
+        p, output = self.run_gate(None, data, "--level", "B2")
+        self.assertNotEqual(p.returncode, 0, output)
+        self.assertIn("unverified source_evidence_urls", output)
+
+    def test_per_task_source_index_mismatch_rejected(self):
+        data = json.loads(json.dumps(self.tasks))
+        data["tasks"][0]["source_index"] = 999999
+        p, output = self.run_gate(None, data, "--level", "C1")
+        self.assertNotEqual(p.returncode, 0, output)
+        self.assertIn("source provenance differs", output)
+
+    def test_per_task_shortlist_sha_mismatch_rejected(self):
+        data = json.loads(json.dumps(self.tasks))
+        data["tasks"][0]["shortlist_blob_sha"] = "0" * 40
+        p, output = self.run_gate(None, data, "--level", "B1")
+        self.assertNotEqual(p.returncode, 0, output)
+        self.assertIn("shortlist blob provenance mismatch", output)
+
 if __name__ == "__main__":
     unittest.main()
