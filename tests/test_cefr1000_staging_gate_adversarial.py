@@ -194,6 +194,23 @@ class StagingGateAdversarialTests(unittest.TestCase):
         self.assertIn("duplicate task_id", output)
         self.assertIn("expected immutable sequential task_id", output)
 
+    def test_global_review_ids_remain_stable_across_level_boundaries(self):
+        # Original task IDs are globally numbered: A2 starts at 0201,
+        # not 0001. The unmodified inventory must pass every matrix level.
+        self.assertEqual(self.tasks["tasks"][200]["task_id"], "CEFR1000-A2-0201")
+        self.assertEqual(self.tasks["tasks"][400]["task_id"], "CEFR1000-B1-0401")
+        for level in ("A1", "A2", "B1", "B2", "C1"):
+            with self.subTest(level=level):
+                p, output = self.run_gate(None, None, "--level", level)
+                self.assertEqual(p.returncode, 0, output)
+
+    def test_per_level_restarted_review_id_rejected(self):
+        data = json.loads(json.dumps(self.tasks))
+        data["tasks"][200]["task_id"] = "CEFR1000-A2-0001"
+        p, output = self.run_gate(None, data, "--level", "C1")
+        self.assertNotEqual(p.returncode, 0, output)
+        self.assertIn("expected immutable sequential task_id CEFR1000-A2-0201", output)
+
     def test_boolean_source_index_fails(self):
         data = json.loads(json.dumps(self.tasks))
         data["tasks"][0]["source_index"] = True
