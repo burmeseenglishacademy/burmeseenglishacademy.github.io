@@ -127,5 +127,29 @@ class StagingGateAdversarialTests(unittest.TestCase):
         self.assertIn("missing burmese_meaning", output)
 
 
+    def test_unrelated_level_missing_myanmar_fails(self):
+        data = json.loads(json.dumps(self.shortlist))
+        a1 = next(e for e in data["entries"] if e["level"] == "A1")
+        a1["burmese_meaning"] = ""
+        p, output = self.run_gate(data, None, "--level", "C1")
+        self.assertNotEqual(p.returncode, 0, output)
+        self.assertIn("missing burmese_meaning", output)
+
+    def test_unrelated_level_editorial_hold_fails(self):
+        data = json.loads(json.dumps(self.shortlist))
+        a1 = next(e for e in data["entries"] if e["level"] == "A1")
+        a1["editorial_hold"] = False
+        p, output = self.run_gate(data, None, "--level", "C1")
+        self.assertNotEqual(p.returncode, 0, output)
+        self.assertIn("must remain held", output)
+
+    def test_unrelated_level_review_mapping_fails(self):
+        data = json.loads(json.dumps(self.tasks))
+        a1 = next(e for e in data["tasks"] if e["level"] == "A1")
+        a1["headword"] = "invented-nonexistent-headword"
+        p, output = self.run_gate(None, data, "--level", "C1")
+        self.assertNotEqual(p.returncode, 0, output)
+        self.assertIn("shortlist/review task mapping differs", output)
+
 if __name__ == "__main__":
     unittest.main()
