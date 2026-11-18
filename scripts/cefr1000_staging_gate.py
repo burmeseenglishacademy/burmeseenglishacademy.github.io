@@ -72,6 +72,30 @@ def main():
         if key in task_keys:
             fail(f"task {i}: duplicate review task {key}", errors)
         task_keys.add(key)
+    # Review-task IDs are audit keys. A duplicate or relabelled ID must not
+    # silently map a different entry to a previously prepared review packet.
+    # Check globally, so every level-specific CI job detects corruption.
+    seen_task_ids = set()
+    level_ordinals = Counter()
+    for i, task in enumerate(reviews):
+        level = task.get("level")
+        level_ordinals[level] += 1
+        expected_id = f"CEFR1000-{level}-{level_ordinals[level]:04d}"
+        task_id = task.get("task_id")
+        if not isinstance(task_id, str) or task_id != expected_id:
+            fail(f"task {i}: expected immutable sequential task_id {expected_id}; got {task_id!r}", errors)
+        if task_id in seen_task_ids:
+            fail(f"task {i}: duplicate task_id {task_id!r}", errors)
+        seen_task_ids.add(task_id)
+        index = task.get("source_index")
+        if type(index) is not int or index < 0:
+            fail(f"task {i}: source_index must be a nonnegative integer", errors)
+    for i, entry in enumerate(entries):
+        index = entry.get("source_index")
+        if type(index) is not int or index < 0:
+            fail(f"entry {i}: source_index must be a nonnegative integer", errors)
+    if tasks.get("release_status") != "ALL_PENDING_NOT_INDEPENDENTLY_REVIEWED_DO_NOT_PUBLISH":
+        fail("Review-task document must retain explicit do-not-publish release status", errors)
     # A pending task must not contain fabricated review evidence or partial approvals.
     # Check all levels even when CI selects a single matrix level.
     pending_fields = ("english_definition_review", "myanmar_meaning_review",
