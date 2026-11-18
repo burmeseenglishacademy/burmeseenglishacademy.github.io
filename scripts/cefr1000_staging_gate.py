@@ -52,11 +52,10 @@ def main():
     for key, count in global_keys.items():
         if count > 1:
             fail(f"duplicate headword/part-of-speech across inventory: {key} ({count})", errors)
+    # Global checks prevent unrelated matrix jobs from overlooking corruption.
     seen = set()
     task_keys = set()
     for i, entry in enumerate(entries):
-        if args.level and entry.get("level") != args.level:
-            continue
         key = (str(entry.get("word", "")).strip().casefold(), str(entry.get("part_of_speech", "")).strip().casefold())
         if not all(key):
             fail(f"entry {i}: missing headword or part of speech", errors)
@@ -69,13 +68,11 @@ def main():
         if entry.get("editorial_hold") is not True:
             fail(f"entry {i}: provisional entry must remain held", errors)
     for i, task in enumerate(reviews):
-        if args.level and task.get("level") != args.level:
-            continue
         key = (task.get("level"), str(task.get("headword", "")).casefold(), str(task.get("part_of_speech", "")).casefold())
         if key in task_keys:
             fail(f"task {i}: duplicate review task {key}", errors)
         task_keys.add(key)
-    for level in ([args.level] if args.level else LEVELS):
+    for level in LEVELS:
         entry_keys = Counter((x["level"], x["word"].casefold(), x["part_of_speech"].casefold()) for x in entries if x["level"] == level)
         review_keys = Counter((x["level"], x["headword"].casefold(), x["part_of_speech"].casefold()) for x in reviews if x["level"] == level)
         if entry_keys != review_keys:
