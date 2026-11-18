@@ -185,5 +185,29 @@ class StagingGateAdversarialTests(unittest.TestCase):
         self.assertNotEqual(p.returncode, 0, output)
         self.assertIn("shortlist blob provenance mismatch", output)
 
+
+    def test_forged_duplicate_review_task_id_fails_in_unrelated_level(self):
+        data = json.loads(json.dumps(self.tasks))
+        data["tasks"][1]["task_id"] = data["tasks"][0]["task_id"]
+        p, output = self.run_gate(None, data, "--level", "C1")
+        self.assertNotEqual(p.returncode, 0, output)
+        self.assertIn("duplicate task_id", output)
+        self.assertIn("expected immutable sequential task_id", output)
+
+    def test_boolean_source_index_fails(self):
+        data = json.loads(json.dumps(self.tasks))
+        data["tasks"][0]["source_index"] = True
+        p, output = self.run_gate(None, data, "--level", "B2")
+        self.assertNotEqual(p.returncode, 0, output)
+        self.assertIn("source_index must be a nonnegative integer", output)
+
+    def test_forged_release_status_fails(self):
+        data = json.loads(json.dumps(self.tasks))
+        data["release_status"] = "APPROVED_FOR_PUBLICATION"
+        p, output = self.run_gate(None, data, "--level", "A2")
+        self.assertNotEqual(p.returncode, 0, output)
+        self.assertIn("do-not-publish release status", output)
+
+
 if __name__ == "__main__":
     unittest.main()
