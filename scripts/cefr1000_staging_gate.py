@@ -34,6 +34,12 @@ def main():
             fail(f"{field} count metadata differs from target", errors)
     if tasks.get("source_shortlist_blob_sha") != "475e68ae17ab97bd937e73e5ce4794e0dcd76551":
         fail("Review task source shortlist provenance changed: regenerate tasks under independent control", errors)
+    # Cross-level duplicate checks MUST be global even in --level matrix jobs.
+    # Otherwise a collision between A1 and B1 evades both filtered jobs.
+    global_keys = Counter((str(x.get("word", "")).strip().casefold(), str(x.get("part_of_speech", "")).strip().casefold()) for x in entries)
+    for key, count in global_keys.items():
+        if count > 1:
+            fail(f"duplicate headword/part-of-speech across inventory: {key} ({count})", errors)
     seen = set()
     task_keys = set()
     for i, entry in enumerate(entries):
