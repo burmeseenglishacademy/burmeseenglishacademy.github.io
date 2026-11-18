@@ -70,6 +70,17 @@ class StagingGateAdversarialTests(unittest.TestCase):
         self.assertNotEqual(p.returncode, 0)
         self.assertIn("duplicate headword/part-of-speech", output)
 
+    def test_cross_level_duplicate_detected_in_filtered_matrix_job(self):
+        data = json.loads(json.dumps(self.shortlist))
+        a1 = next(e for e in data["entries"] if e["level"] == "A1")
+        b1 = next(e for e in data["entries"] if e["level"] == "B1")
+        b1["word"], b1["part_of_speech"] = a1["word"], a1["part_of_speech"]
+        for level in ("A1", "B1", "C1"):
+            with self.subTest(level=level):
+                p, output = self.run_gate(data, None, "--level", level)
+                self.assertNotEqual(p.returncode, 0, output)
+                self.assertIn("duplicate headword/part-of-speech", output)
+
     def test_unheld_entry_fails(self):
         data = json.loads(json.dumps(self.shortlist))
         data["entries"][0]["editorial_hold"] = False
