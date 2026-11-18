@@ -76,11 +76,11 @@ def main():
     # silently map a different entry to a previously prepared review packet.
     # Check globally, so every level-specific CI job detects corruption.
     seen_task_ids = set()
-    level_ordinals = Counter()
+    # Existing review IDs use GLOBAL shortlist ordinals (0001..1000), not
+    # per-level ordinals. Preserve these immutable audit identifiers.
     for i, task in enumerate(reviews):
         level = task.get("level")
-        level_ordinals[level] += 1
-        expected_id = f"CEFR1000-{level}-{level_ordinals[level]:04d}"
+        expected_id = f"CEFR1000-{level}-{i + 1:04d}"
         task_id = task.get("task_id")
         if not isinstance(task_id, str) or task_id != expected_id:
             fail(f"task {i}: expected immutable sequential task_id {expected_id}; got {task_id!r}", errors)
