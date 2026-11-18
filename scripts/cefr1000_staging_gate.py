@@ -34,6 +34,18 @@ def main():
             fail(f"{field} count metadata differs from target", errors)
     if tasks.get("source_shortlist_blob_sha") != "475e68ae17ab97bd937e73e5ce4794e0dcd76551":
         fail("Review task source shortlist provenance changed: regenerate tasks under independent control", errors)
+    # Provisional input must never be mistaken for independently reviewed material.
+    # Run globally, including in filtered CI matrix jobs.
+    for name, document in (("shortlist", shortlist), ("tasks", tasks)):
+        approvals = document.get("independently_approved_by_level")
+        if approvals is not None and approvals != {level: 0 for level in LEVELS}:
+            fail(f"{name}: provisional independent approval metadata must remain zero", errors)
+    approval_fields = ("reviewed_english", "reviewed_burmese", "reviewed_example",
+                       "reviewed_level", "reviewed_pronunciation", "release_approved")
+    for i, entry in enumerate(entries):
+        for field in approval_fields:
+            if entry.get(field) is not False:
+                fail(f"entry {i}: provisional {field} must be explicitly false", errors)
     # Cross-level duplicate checks MUST be global even in --level matrix jobs.
     # Otherwise a collision between A1 and B1 evades both filtered jobs.
     global_keys = Counter((str(x.get("word", "")).strip().casefold(), str(x.get("part_of_speech", "")).strip().casefold()) for x in entries)
