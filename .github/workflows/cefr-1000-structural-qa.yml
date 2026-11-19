@@ -53,8 +53,26 @@ jobs:
       - name: Verify release gate fails closed
         shell: bash
         run: |
-          if python scripts/cefr1000_staging_gate.py --release; then
-            echo "::error::Release gate unexpectedly passed"
+          # A nonzero exit alone is insufficient: malformed JSON, missing files,
+          # or a Python crash must NOT be mistaken for a successful release denial.
+          python scripts/cefr1000_staging_gate.py > structural-check.json
+          set +e
+          python scripts/cefr1000_staging_gate.py --release > release-check.json 2> release-check.stderr
+          result=$?
+          set -e
+          if [ "$result" -ne 1 ]; then
+            echo "::error::Expected controlled release denial (exit 1), got $result"
+            cat release-check.stderr
             exit 1
           fi
-          echo "Release gate correctly blocked unverified publication."
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          report = json.loads(Path("release-check.json").read_text())
+          errors = report.get("errors")
+          assert report.get("mode") == "release", "Incorrect gate mode"
+          assert report.get("independent_approval_inferred") is False, "Approval inferred"
+          assert isinstance(errors, list) and len(errors) == 1, "Unexpected validation errors"
+          assert errors[0].startswith("RELEASE BLOCKED:"), "Not an explicit release denial"
+          print("Verified controlled, explicit release denial; no independent approval inferred.")
+          PY
