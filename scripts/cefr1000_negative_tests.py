@@ -67,7 +67,17 @@ def main():
         check("relabelled task", lambda s,t: t["tasks"][0].update(task_id="CEFR1000-A1-9999"), "expected immutable sequential task_id")
         check("altered source shortlist SHA", lambda s,t: t.update(source_shortlist_blob_sha="invalid"), "Review task source shortlist provenance changed")
         check("false release status", lambda s,t: t.update(release_status="APPROVED"), "do-not-publish release status")
-        print("All eight negative cases rejected; no independent review inferred.")
+        # Additional independent corruption classes: every one must be a controlled
+        # JSON rejection, never an exception masquerading as a passed test.
+        check("missing Myanmar meaning", lambda s,t: s["entries"][0].update(burmese_meaning=""), "missing burmese_meaning")
+        check("missing English definition", lambda s,t: s["entries"][0].update(english_definition=""), "missing english_definition")
+        check("missing example sentence", lambda s,t: s["entries"][0].update(example_sentence=""), "missing example_sentence")
+        check("missing source blob", lambda s,t: s["entries"][0].update(source_blob_sha=""), "missing source_blob_sha")
+        check("unverified CEFR evidence URL", lambda s,t: t["tasks"][0].update(source_evidence_urls=["https://example.org/unreviewed"]), "unverified source_evidence_urls must remain empty")
+        check("fabricated CEFR review", lambda s,t: t["tasks"][0].update(exact_sense_cefr_review="APPROVED"), "exact_sense_cefr_review must remain PENDING")
+        check("fake signed review", lambda s,t: t["tasks"][0].update(reviewer_signed_at="2026-11-20T00:00:00Z"), "unverified reviewer_signed_at must remain null")
+        check("invalid source index", lambda s,t: s["entries"][0].update(source_index=-1), "source_index must be a nonnegative integer")
+        print("All sixteen negative cases rejected; no independent review inferred.")
 
 if __name__ == "__main__":
     main()
