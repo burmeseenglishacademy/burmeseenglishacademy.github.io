@@ -44,7 +44,7 @@ for (const t of tasks) {
  if(!nonempty(t.reviewer_identity) || !nonempty(t.reviewer_signed_at) || !nonempty(t.reviewer_assigned)) fail(id,'missing independently attributable reviewer and timestamp');
  for(const field of ['english_definition_review','myanmar_meaning_review','original_example_review','exact_sense_cefr_review','pronunciation_review']) if(!reviewed(t[field])) fail(id,'missing independent '+field);
  if(!Array.isArray(t.source_evidence_urls)||!t.source_evidence_urls.length||!t.source_evidence_urls.every(x=>typeof x==='string' && /^https:\/\//.test(x))) fail(id,'missing valid source URL evidence');
- if(!/^\\d{4}-\\d{2}-\\d{2}$/.test(t.source_observed_on||'')) fail(id,'missing source observation date');
+ if(!/^\d{4}-\d{2}-\d{2}$/.test(t.source_observed_on||'')) fail(id,'missing source observation date');
 }
 // Reviewer identity fields alone cannot prove reviewer independence or source/sense validity.
 // These MUST be verified against signed external evidence, never inferred by this script.
