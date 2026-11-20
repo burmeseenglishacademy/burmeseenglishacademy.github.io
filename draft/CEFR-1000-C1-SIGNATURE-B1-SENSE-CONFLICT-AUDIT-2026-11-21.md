@@ -9,7 +9,7 @@
 - Original example: “Please add your signature at the bottom of the form.”
 - Shortlist: `draft/CEFR-1000-PROVISIONAL-SHORTLIST.json`, blob `475e68ae17ab97bd937e73e5ce4794e0dcd76551`.
 - Origin: `draft/A2-C1-EDITORIAL-STARTER.json`, zero-based source index **75**, blob `b04dd85db5cfae131c25aa4c73109778991b6fdc`.
-- Independent review task: `CEFR1000-C1-0004` (confirm task position against current tasks before using identifier; record linkage must be checked by script). All review decisions remain pending.
+- Independent review task: `CEFR1000-C1-0804` (confirmed from current independent-review tasks JSON). All review decisions remain pending.
 
 ## External exact-sense evidence observed 2026-11-21
 1. Cambridge **Learner's Dictionary** explicitly labels the noun sense “your name written in your own way” **B1**: https://dictionary.cambridge.org/dictionary/learner-english/signature
