@@ -39,7 +39,7 @@ for(const e of entries){
   assert.ok(typeof e[f]==='string'&&e[f].trim(),level+' missing '+f);
  assert.ok(Number.isSafeInteger(e.source_index)&&e.source_index>=0,'Invalid source index');
  assert.match(e.source_blob_sha,/^[a-f0-9]{40}$/,'Invalid source blob SHA');
- assert.ok(!/[\\u0000-\\u001f]/u.test(e.word),'Control character in headword');
+ assert.ok(!/[\u0000-\u001f\u007f]/u.test(e.word),'Control character in headword');
  const k=key(e.level,e.word,e.part_of_speech);
  assert.ok(!seen.has(k),'Duplicate provisional level/headword/POS: '+k);
  seen.add(k);
@@ -58,7 +58,14 @@ for(const t of tasks){
  assert.ok(!targets.has(k),'Duplicate task target '+k);
  targets.add(k);
  assert.equal(t.shortlist_blob_sha,review.source_shortlist_blob_sha,'Mismatched task shortlist provenance');
+ assert.equal(t.source_path,entries.find(e=>key(e.level,e.word,e.part_of_speech)===k).source_path,'Task source path mismatch');
+ assert.equal(t.source_index,entries.find(e=>key(e.level,e.word,e.part_of_speech)===k).source_index,'Task source index mismatch');
+ assert.equal(t.source_blob_sha,entries.find(e=>key(e.level,e.word,e.part_of_speech)===k).source_blob_sha,'Task source blob mismatch');
  assert.equal(t.approval,false,'Task cannot self-approve');
+ for(const f of ['reviewer_identity','reviewer_signed_at','source_observed_on','reviewer_assigned'])
+  assert.equal(t[f],null,'Unverified independent reviewer metadata: '+k+' '+f);
+ for(const f of ['english_definition_review','myanmar_meaning_review','original_example_review','exact_sense_cefr_review','pronunciation_review'])
+  assert.equal(t[f],'PENDING','Review decision cannot be self-declared: '+k+' '+f);
  assert.equal(t.review_status,'PENDING_INDEPENDENT_REVIEW','Task must remain pending until genuine independent evidence');
  assert.deepEqual(t.source_evidence_urls,[],'Source evidence must not be invented');
 }
