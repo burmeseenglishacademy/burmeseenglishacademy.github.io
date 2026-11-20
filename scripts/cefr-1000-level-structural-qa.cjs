@@ -35,6 +35,17 @@ for(const l of levels){
 assert.ok(shortlist.entries.every(e=>levels.includes(e.level)),'Unknown shortlist CEFR level');
 assert.ok(review.tasks.every(t=>levels.includes(t.level)),'Unknown review-task CEFR level');
 assert.equal(new Set(review.tasks.map(t=>t.task_id)).size,1000,'Globally duplicated task IDs');
+// The approved 1,000-word scope requires globally deduplicated headwords.
+// Check across all five levels, not merely within a matrix job's level.
+const globalHeadwords=new Map();
+for(const e of shortlist.entries){
+ assert.ok(typeof e.word==='string'&&e.word.trim(),'Missing global headword');
+ const normalized=normalize(e.word);
+ assert.ok(!globalHeadwords.has(normalized),
+  'Cross-level duplicate headword '+normalized+' ('+globalHeadwords.get(normalized)+' / '+e.level+')');
+ globalHeadwords.set(normalized,e.level);
+}
+assert.equal(globalHeadwords.size,1000,'Global unique headword count');
 const entries=shortlist.entries.filter(e=>e.level===level);
 const tasks=review.tasks.filter(t=>t.level===level);
 assert.equal(entries.length,200,level+' must have 200 entries');
@@ -77,8 +88,8 @@ for(const t of tasks){
  targets.add(k);
  assert.equal(t.shortlist_blob_sha,review.source_shortlist_blob_sha,'Mismatched task shortlist provenance');
  assert.equal(t.source_path,entryByKey.get(k).source_path,'Task source path mismatch');
- assert.equal(t.source_index,entries.find(e=>key(e.level,e.word,e.part_of_speech)===k).source_index,'Task source index mismatch');
- assert.equal(t.source_blob_sha,entries.find(e=>key(e.level,e.word,e.part_of_speech)===k).source_blob_sha,'Task source blob mismatch');
+ assert.equal(t.source_index,entryByKey.get(k).source_index,'Task source index mismatch');
+ assert.equal(t.source_blob_sha,entryByKey.get(k).source_blob_sha,'Task source blob mismatch');
  assert.equal(t.approval,false,'Task cannot self-approve');
  for(const f of ['reviewer_identity','reviewer_signed_at','source_observed_on','reviewer_assigned'])
   assert.equal(t[f],null,'Unverified independent reviewer metadata: '+k+' '+f);
