@@ -1,0 +1,59 @@
+name: CEFR-1000 independent evidence gate (staging only)
+on:
+  push:
+    branches:
+      - cefr-5000-bilingual-qa-staging
+    paths:
+      - 'scripts/cefr-1000-independent-release-evidence-gate.cjs'
+      - 'draft/CEFR-1000-PROVISIONAL-SHORTLIST.json'
+      - 'draft/CEFR-1000-INDEPENDENT-REVIEW-TASKS.json'
+      - '.github/workflows/cefr-1000-independent-evidence-gate.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  evidence-release-denial:
+    name: Assert authenticated evidence is missing
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Execute actual Node.js release gate and verify controlled denial
+        shell: bash
+        run: |
+          set +e
+          node scripts/cefr-1000-independent-release-evidence-gate.cjs > evidence-gate.json 2> evidence-gate.stderr
+          code=$?
+          set -e
+          if [ "$code" -ne 1 ]; then
+            echo "::error::Expected controlled release denial (exit 1), got $code"
+            cat evidence-gate.stderr
+            exit 1
+          fi
+          node - <<'JS'
+          const fs=require('node:fs');
+          const assert=require('node:assert/strict');
+          const report=JSON.parse(fs.readFileSync('evidence-gate.json','utf8'));
+          assert.equal(report.status,'BLOCKED');
+          assert.equal(report.scope,'CEFR-1000 ONLY');
+          assert.deepEqual(report.written,{A1:200,A2:200,B1:200,B2:200,C1:200});
+          assert.deepEqual(report.independently_verified,{A1:0,A2:0,B1:0,B2:0,C1:0});
+          assert.deepEqual(report.claimed_independent_approvals_unverified,{A1:0,A2:0,B1:0,B2:0,C1:0});
+          assert.ok(report.blocker_count>=1009,'Missing per-task and external blockers');
+          assert.ok(report.blocker_samples.some(s=>s.includes('not independently approved')),'No actual independent-review denial');
+          console.log('Controlled Node.js release denial verified; 1000 provisional, zero independently approved.');
+          JS
+      - name: Record controlled-denial evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cefr1000-independent-evidence-denial
+          path: |
+            evidence-gate.json
+            evidence-gate.stderr
+          if-no-files-found: warn
+          retention-days: 14
