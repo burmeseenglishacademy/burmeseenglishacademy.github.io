@@ -16,6 +16,15 @@ assert.equal(review.tasks.length,1000,'Total review task inventory');
 assert.equal(review.source_shortlist_blob_sha,'475e68ae17ab97bd937e73e5ce4794e0dcd76551','Pinned shortlist provenance');
 const normalize=x=>String(x).normalize('NFKC').trim().toLocaleLowerCase('en');
 const key=(l,w,p)=>[l,normalize(w),normalize(p)].join('|');
+// Global inventory is validated by every matrix job: one level cannot hide an
+// overfilled or unknown level elsewhere in the manifest.
+for(const l of levels){
+ assert.equal(shortlist.entries.filter(e=>e.level===l).length,200,'Actual shortlist count '+l);
+ assert.equal(review.tasks.filter(t=>t.level===l).length,200,'Actual task count '+l);
+}
+assert.ok(shortlist.entries.every(e=>levels.includes(e.level)),'Unknown shortlist CEFR level');
+assert.ok(review.tasks.every(t=>levels.includes(t.level)),'Unknown review-task CEFR level');
+assert.equal(new Set(review.tasks.map(t=>t.task_id)).size,1000,'Globally duplicated task IDs');
 const entries=shortlist.entries.filter(e=>e.level===level);
 const tasks=review.tasks.filter(t=>t.level===level);
 assert.equal(entries.length,200,level+' must have 200 entries');
@@ -28,6 +37,9 @@ const seen=new Set();
 for(const e of entries){
  for(const f of ['word','part_of_speech','english_definition','burmese_meaning','example_sentence','source_path','source_blob_sha'])
   assert.ok(typeof e[f]==='string'&&e[f].trim(),level+' missing '+f);
+ assert.ok(Number.isSafeInteger(e.source_index)&&e.source_index>=0,'Invalid source index');
+ assert.match(e.source_blob_sha,/^[a-f0-9]{40}$/,'Invalid source blob SHA');
+ assert.ok(!/[\\u0000-\\u001f]/u.test(e.word),'Control character in headword');
  const k=key(e.level,e.word,e.part_of_speech);
  assert.ok(!seen.has(k),'Duplicate provisional level/headword/POS: '+k);
  seen.add(k);
@@ -51,4 +63,6 @@ for(const t of tasks){
  assert.deepEqual(t.source_evidence_urls,[],'Source evidence must not be invented');
 }
 assert.equal(targets.size,seen.size,'Unmatched provisional entries');
+// This deliberately does not claim independent source-backed sense validation.
+// Editorial holds and zero approval are mandatory until external review exists.
 console.log(JSON.stringify({level,provisional_written:entries.length,review_tasks:tasks.length,independently_verified:0,release:'BLOCKED',scope:'STRUCTURAL_ONLY_NOT_APPROVAL'}));
