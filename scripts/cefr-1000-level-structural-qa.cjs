@@ -14,6 +14,11 @@ assert.ok(levels.includes(level),'CEFR_LEVEL must be one of A1 A2 B1 B2 C1');
 assert.equal(shortlist.entries.length,1000,'Total shortlist inventory');
 assert.equal(review.tasks.length,1000,'Total review task inventory');
 assert.equal(review.source_shortlist_blob_sha,'475e68ae17ab97bd937e73e5ce4794e0dcd76551','Pinned shortlist provenance');
+assert.equal(shortlist.release_status,'PROVISIONAL_1000_INDEPENDENT_EVIDENCE_MISSING_DO_NOT_PUBLISH','Shortlist release hold');
+assert.equal(review.release_status,'ALL_PENDING_NOT_INDEPENDENTLY_REVIEWED_DO_NOT_PUBLISH','Review release hold');
+assert.equal(review.scope,'CEFR-1000 ONLY','Reject superseded 5000-word scope');
+assert.equal(shortlist.stages.audio,'NOT_GENERATED_FOR_FINAL_SHORTLIST_NOT_LISTENED','Audio evidence cannot be presumed');
+assert.equal(shortlist.stages.production,'UNMODIFIED','Production must remain untouched');
 const normalize=x=>String(x).normalize('NFKC').trim().toLocaleLowerCase('en');
 const key=(l,w,p)=>[l,normalize(w),normalize(p)].join('|');
 // Global inventory is validated by every matrix job: one level cannot hide an
@@ -21,6 +26,11 @@ const key=(l,w,p)=>[l,normalize(w),normalize(p)].join('|');
 for(const l of levels){
  assert.equal(shortlist.entries.filter(e=>e.level===l).length,200,'Actual shortlist count '+l);
  assert.equal(review.tasks.filter(t=>t.level===l).length,200,'Actual task count '+l);
+ assert.equal(shortlist.scope_target[l],200,'Declared scope '+l);
+ assert.equal(shortlist.counts_by_level[l],200,'Declared shortlist count '+l);
+ assert.equal(review.counts_by_level[l],200,'Declared review count '+l);
+ assert.equal(shortlist.independently_approved_by_level[l],0,'No independently approved shortlist '+l);
+ assert.equal(review.independently_approved_by_level[l],0,'No independently approved review tasks '+l);
 }
 assert.ok(shortlist.entries.every(e=>levels.includes(e.level)),'Unknown shortlist CEFR level');
 assert.ok(review.tasks.every(t=>levels.includes(t.level)),'Unknown review-task CEFR level');
@@ -33,32 +43,40 @@ assert.equal(shortlist.counts_by_level[level],200);
 assert.equal(review.counts_by_level[level],200);
 assert.equal(shortlist.independently_approved_by_level[level],0,'Do not infer independent approval');
 assert.equal(review.independently_approved_by_level[level],0,'Do not infer independent approval');
+// A task's source must point to an internal, version-pinned editorial source,
+// never a URL, traversal path or production file.
+const safeSource=p=>typeof p==='string'&&/^draft\/[A-Za-z0-9][A-Za-z0-9._/-]*\.json$/.test(p)&&!p.split('/').includes('..')&&!p.split('/').includes('.');
 const seen=new Set();
+const entryByKey=new Map();
 for(const e of entries){
  for(const f of ['word','part_of_speech','english_definition','burmese_meaning','example_sentence','source_path','source_blob_sha'])
   assert.ok(typeof e[f]==='string'&&e[f].trim(),level+' missing '+f);
  assert.ok(Number.isSafeInteger(e.source_index)&&e.source_index>=0,'Invalid source index');
  assert.match(e.source_blob_sha,/^[a-f0-9]{40}$/,'Invalid source blob SHA');
+ assert.ok(safeSource(e.source_path),'Unsafe editorial source path');
  assert.ok(!/[\u0000-\u001f\u007f]/u.test(e.word),'Control character in headword');
  const k=key(e.level,e.word,e.part_of_speech);
  assert.ok(!seen.has(k),'Duplicate provisional level/headword/POS: '+k);
  seen.add(k);
+ entryByKey.set(k,e);
  assert.equal(e.editorial_hold,true,'Entry must remain on editorial hold: '+k);
  assert.equal(e.release_approved,false,'Unverified release flag: '+k);
  for(const f of ['reviewed_english','reviewed_burmese','reviewed_example','reviewed_level','reviewed_pronunciation'])
   assert.equal(e[f],false,'Unverified reviewer flag: '+k+' '+f);
 }
 const ids=new Set(), targets=new Set();
+const expectedTaskIds=new Set(Array.from({length:200},(_,i)=>'CEFR1000-'+level+'-'+String(i+1).padStart(4,'0')));
 for(const t of tasks){
  assert.ok(typeof t.task_id==='string'&&t.task_id.startsWith('CEFR1000-'+level+'-'),'Malformed task ID');
  assert.ok(!ids.has(t.task_id),'Duplicate task ID '+t.task_id);
  ids.add(t.task_id);
+ assert.ok(expectedTaskIds.has(t.task_id),'Unexpected or out-of-range task ID '+t.task_id);
  const k=key(t.level,t.headword,t.part_of_speech);
  assert.ok(seen.has(k),'Orphan task '+k);
  assert.ok(!targets.has(k),'Duplicate task target '+k);
  targets.add(k);
  assert.equal(t.shortlist_blob_sha,review.source_shortlist_blob_sha,'Mismatched task shortlist provenance');
- assert.equal(t.source_path,entries.find(e=>key(e.level,e.word,e.part_of_speech)===k).source_path,'Task source path mismatch');
+ assert.equal(t.source_path,entryByKey.get(k).source_path,'Task source path mismatch');
  assert.equal(t.source_index,entries.find(e=>key(e.level,e.word,e.part_of_speech)===k).source_index,'Task source index mismatch');
  assert.equal(t.source_blob_sha,entries.find(e=>key(e.level,e.word,e.part_of_speech)===k).source_blob_sha,'Task source blob mismatch');
  assert.equal(t.approval,false,'Task cannot self-approve');
@@ -70,6 +88,7 @@ for(const t of tasks){
  assert.deepEqual(t.source_evidence_urls,[],'Source evidence must not be invented');
 }
 assert.equal(targets.size,seen.size,'Unmatched provisional entries');
+assert.equal(ids.size,expectedTaskIds.size,'Missing sequential review task IDs');
 // This deliberately does not claim independent source-backed sense validation.
 // Editorial holds and zero approval are mandatory until external review exists.
 console.log(JSON.stringify({level,provisional_written:entries.length,review_tasks:tasks.length,independently_verified:0,release:'BLOCKED',scope:'STRUCTURAL_ONLY_NOT_APPROVAL'}));
