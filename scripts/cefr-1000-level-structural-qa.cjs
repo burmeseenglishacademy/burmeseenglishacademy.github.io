@@ -76,7 +76,9 @@ for(const e of entries){
   assert.equal(e[f],false,'Unverified reviewer flag: '+k+' '+f);
 }
 const ids=new Set(), targets=new Set();
-const expectedTaskIds=new Set(Array.from({length:200},(_,i)=>'CEFR1000-'+level+'-'+String(i+1).padStart(4,'0')));
+// Task IDs use GLOBAL 1–1000 sequence, not 1–200 restarted per level.
+const levelOffset=levels.indexOf(level)*200;
+const expectedTaskIds=new Set(Array.from({length:200},(_,i)=>'CEFR1000-'+level+'-'+String(levelOffset+i+1).padStart(4,'0')));
 for(const t of tasks){
  assert.ok(typeof t.task_id==='string'&&t.task_id.startsWith('CEFR1000-'+level+'-'),'Malformed task ID');
  assert.ok(!ids.has(t.task_id),'Duplicate task ID '+t.task_id);
