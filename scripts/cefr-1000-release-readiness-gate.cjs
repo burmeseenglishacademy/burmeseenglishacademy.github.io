@@ -28,7 +28,8 @@ if(exists(manifestPath)&&exists(evidencePath)){
   check(m.scope==='CEFR-1000 ONLY','approved manifest scope mismatch');
   check(entries.length===1000,'approved manifest must contain exactly 1000 entries');
   const unique=new Set(),tasksById=new Map(tasks.tasks.map(t=>[t.task_id,t]));
-  const manifestIds=new Set();
+  const manifestIds=new Set(),sourceByHeadword=new Map(shortlist.entries.map(e=>[String(e.word).normalize('NFKC').trim().toLocaleLowerCase('en'),e]));
+  check(sourceByHeadword.size===1000,'source shortlist contains duplicate or empty headwords');
   check(tasksById.size===1000,'duplicate review task IDs in source inventory');
   for(const e of entries){
    const key=String(e.headword||'').normalize('NFKC').trim().toLocaleLowerCase('en');
@@ -39,6 +40,10 @@ if(exists(manifestPath)&&exists(evidencePath)){
    manifestIds.add(e.task_id);
    const t=tasksById.get(e.task_id);
    check(!!t&&t.level===e.level&&t.headword===e.headword,'missing/mismatched original review task '+e.task_id);
+   const original=sourceByHeadword.get(key);
+   check(!!original&&original.level===e.level&&original.part_of_speech===e.part_of_speech,'approved entry does not match original shortlist identity '+e.task_id);
+   check(!!t&&!!original&&t.source_path===original.source_path&&t.source_index===original.source_index&&t.source_blob_sha===original.source_blob_sha,'original task provenance mismatch '+e.task_id);
+   check(!!original&&original.editorial_hold===true&&original.release_approved===false,'source shortlist editorial hold unexpectedly changed '+e.task_id);
    for(const field of ['part_of_speech','english_definition','myanmar_meaning','example_sentence','exact_sense','reviewer_id','reviewer_signed_at','source_observed_on','source_url','source_excerpt_reference']){
     check(typeof e[field]==='string'&&e[field].trim().length>0,'missing '+field+' for '+e.task_id);
    }
@@ -61,8 +66,10 @@ if(exists(manifestPath)&&exists(evidencePath)){
     if(safePath&&exists(r.path)&&typeof r.sha256==='string'&&/^[a-f0-9]{64}$/.test(r.sha256)){
      const stat=fs.lstatSync(path.join(root,r.path));
      check(stat.isFile()&&!stat.isSymbolicLink()&&stat.size>0,'empty, non-regular or symlinked audio '+kind+' '+r.task_id);
-     const digest=crypto.createHash('sha256').update(fs.readFileSync(path.join(root,r.path))).digest('hex');
-     check(digest===r.sha256,'audio checksum mismatch '+kind+' '+r.task_id);
+     if(stat.isFile()&&!stat.isSymbolicLink()){
+      const digest=crypto.createHash('sha256').update(fs.readFileSync(path.join(root,r.path))).digest('hex');
+      check(digest===r.sha256,'audio checksum mismatch '+kind+' '+r.task_id);
+     }
     }else check(false,'missing audio checksum '+kind+' '+r.task_id);
     check(r.listened===true&&typeof r.listener_id==='string'&&!!r.listener_id&&typeof r.listened_at==='string'&&!!r.listened_at,'real listening signoff missing '+kind+' '+r.task_id);
    }
