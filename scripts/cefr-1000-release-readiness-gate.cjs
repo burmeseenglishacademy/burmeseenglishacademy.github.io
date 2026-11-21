@@ -28,11 +28,15 @@ if(exists(manifestPath)&&exists(evidencePath)){
   check(m.scope==='CEFR-1000 ONLY','approved manifest scope mismatch');
   check(entries.length===1000,'approved manifest must contain exactly 1000 entries');
   const unique=new Set(),tasksById=new Map(tasks.tasks.map(t=>[t.task_id,t]));
+  const manifestIds=new Set();
+  check(tasksById.size===1000,'duplicate review task IDs in source inventory');
   for(const e of entries){
    const key=String(e.headword||'').normalize('NFKC').trim().toLocaleLowerCase('en');
    check(key.length>0,'empty approved headword');
    check(!unique.has(key),'duplicate approved headword '+key);unique.add(key);
    check(levels.includes(e.level),'invalid approved level '+e.level);
+   check(typeof e.task_id==='string'&&!manifestIds.has(e.task_id),'duplicate or missing manifest task ID '+e.task_id);
+   manifestIds.add(e.task_id);
    const t=tasksById.get(e.task_id);
    check(!!t&&t.level===e.level&&t.headword===e.headword,'missing/mismatched original review task '+e.task_id);
    for(const field of ['part_of_speech','english_definition','myanmar_meaning','example_sentence','exact_sense','reviewer_id','reviewer_signed_at','source_observed_on','source_url','source_excerpt_reference']){
@@ -43,6 +47,7 @@ if(exists(manifestPath)&&exists(evidencePath)){
    check(e.reviewer_id!==e.author_id&&!!e.author_id,'reviewer must differ from author '+e.task_id);
   }
   for(const level of levels)check(entries.filter(e=>e.level===level).length===200,'approved '+level+' != 200');
+  check(manifestIds.size===tasksById.size&&[...tasksById.keys()].every(id=>manifestIds.has(id)),'approved manifest must cover each original task exactly once');
   const required=['george_headword','emma_headword','george_example','emma_example'];
   const audio=ev.audio||{};
   for(const kind of required){
@@ -50,14 +55,18 @@ if(exists(manifestPath)&&exists(evidencePath)){
    check(records.length===1000,kind+' must contain 1000 audio records');
    const ids=new Set();
    for(const r of records){
-    check(!!r.task_id&&!ids.has(r.task_id),'duplicate/missing audio task id '+kind);ids.add(r.task_id);
-    check(typeof r.path==='string'&&r.path.startsWith('draft/')&&!r.path.includes('..')&&exists(r.path),'missing staging audio file '+kind+' '+r.task_id);
-    if(typeof r.path==='string'&&exists(r.path)&&typeof r.sha256==='string'){
+    check(!!r.task_id&&!ids.has(r.task_id)&&manifestIds.has(r.task_id),'duplicate/unknown/missing audio task id '+kind+' '+r.task_id);ids.add(r.task_id);
+    const safePath=typeof r.path==='string'&&/^draft\/[a-zA-Z0-9_./-]+$/.test(r.path)&&!r.path.split('/').includes('..')&&path.resolve(root,r.path).startsWith(path.resolve(root,'draft')+path.sep);
+    check(safePath&&exists(r.path),'missing or unsafe staging audio file '+kind+' '+r.task_id);
+    if(safePath&&exists(r.path)&&typeof r.sha256==='string'&&/^[a-f0-9]{64}$/.test(r.sha256)){
+     const stat=fs.lstatSync(path.join(root,r.path));
+     check(stat.isFile()&&!stat.isSymbolicLink()&&stat.size>0,'empty, non-regular or symlinked audio '+kind+' '+r.task_id);
      const digest=crypto.createHash('sha256').update(fs.readFileSync(path.join(root,r.path))).digest('hex');
      check(digest===r.sha256,'audio checksum mismatch '+kind+' '+r.task_id);
     }else check(false,'missing audio checksum '+kind+' '+r.task_id);
     check(r.listened===true&&typeof r.listener_id==='string'&&!!r.listener_id&&typeof r.listened_at==='string'&&!!r.listened_at,'real listening signoff missing '+kind+' '+r.task_id);
    }
+   check(ids.size===manifestIds.size&&[...manifestIds].every(id=>ids.has(id)),kind+' audio must cover each approved task exactly once');
   }
   for(const gate of ['desktop_browser_regression','mobile_browser_regression','physical_iphone_safari','github_pages_limits','protected_54_lessons','protected_ielts_bank','protected_production_audio','privacy','production_deployment']){
    const g=ev[gate];
