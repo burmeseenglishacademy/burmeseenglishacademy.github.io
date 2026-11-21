@@ -102,6 +102,19 @@ for(const t of tasks){
 }
 assert.equal(targets.size,seen.size,'Unmatched provisional entries');
 assert.equal(ids.size,expectedTaskIds.size,'Missing sequential review task IDs');
+// Enforce canonical task-to-shortlist positional identity, not just a valid set
+// of global IDs. Two tasks with exchanged IDs must fail even when all counts,
+// headwords, sources and ID ranges remain individually valid.
+const levelEntries=shortlist.entries.filter(e=>e.level===level);
+const levelTasks=review.tasks.filter(t=>t.level===level);
+for(let i=0;i<200;i++){
+ const entry=levelEntries[i], task=levelTasks[i];
+ const canonicalId='CEFR1000-'+level+'-'+String(levelOffset+i+1).padStart(4,'0');
+ assert.equal(task.task_id,canonicalId,'Task ID out of canonical shortlist order at '+level+' index '+i);
+ assert.equal(key(task.level,task.headword,task.part_of_speech),
+              key(entry.level,entry.word,entry.part_of_speech),
+              'Task-to-shortlist positional mismatch at '+level+' index '+i);
+}
 // This deliberately does not claim independent source-backed sense validation.
 // Editorial holds and zero approval are mandatory until external review exists.
 console.log(JSON.stringify({level,provisional_written:entries.length,review_tasks:tasks.length,independently_verified:0,release:'BLOCKED',scope:'STRUCTURAL_ONLY_NOT_APPROVAL'}));
