@@ -55,6 +55,8 @@ if(exists(manifestPath)&&exists(evidencePath)){
   check(manifestIds.size===tasksById.size&&[...tasksById.keys()].every(id=>manifestIds.has(id)),'approved manifest must cover each original task exactly once');
   const required=['george_headword','emma_headword','george_example','emma_example'];
   const audio=ev.audio||{};
+  const audioPaths=new Set(); // A reused file cannot satisfy multiple voice/utterance slots.
+  const audioDigestsByTask=new Map();
   for(const kind of required){
    const records=Array.isArray(audio[kind])?audio[kind]:[];
    check(records.length===1000,kind+' must contain 1000 audio records');
@@ -63,6 +65,10 @@ if(exists(manifestPath)&&exists(evidencePath)){
     check(!!r.task_id&&!ids.has(r.task_id)&&manifestIds.has(r.task_id),'duplicate/unknown/missing audio task id '+kind+' '+r.task_id);ids.add(r.task_id);
     const safePath=typeof r.path==='string'&&/^draft\/[a-zA-Z0-9_./-]+$/.test(r.path)&&!r.path.split('/').includes('..')&&path.resolve(root,r.path).startsWith(path.resolve(root,'draft')+path.sep);
     check(safePath&&exists(r.path),'missing or unsafe staging audio file '+kind+' '+r.task_id);
+    if(safePath){
+     check(!audioPaths.has(r.path),'audio file reused across voice/utterance slots '+r.path);
+     audioPaths.add(r.path);
+    }
     if(safePath&&exists(r.path)&&typeof r.sha256==='string'&&/^[a-f0-9]{64}$/.test(r.sha256)){
      const stat=fs.lstatSync(path.join(root,r.path));
      check(stat.isFile()&&!stat.isSymbolicLink()&&stat.size>0,'empty, non-regular or symlinked audio '+kind+' '+r.task_id);
@@ -71,7 +77,13 @@ if(exists(manifestPath)&&exists(evidencePath)){
       check(digest===r.sha256,'audio checksum mismatch '+kind+' '+r.task_id);
      }
     }else check(false,'missing audio checksum '+kind+' '+r.task_id);
-    check(r.listened===true&&typeof r.listener_id==='string'&&!!r.listener_id&&typeof r.listened_at==='string'&&!!r.listened_at,'real listening signoff missing '+kind+' '+r.task_id);
+    check(r.listened===true&&typeof r.listener_id==='string'&&!!r.listener_id.trim()&&typeof r.listened_at==='string'&&!Number.isNaN(Date.parse(r.listened_at))&&typeof r.listening_evidence_url==='string'&&/^https:\/\//.test(r.listening_evidence_url),'traceable listening signoff missing '+kind+' '+r.task_id);
+    check(typeof r.generator_provenance_url==='string'&&/^https:\/\//.test(r.generator_provenance_url)&&r.voice_id===(kind.startsWith('george')?'George':'Emma')&&r.locale==='en-GB','British voice and generation provenance missing '+kind+' '+r.task_id);
+    if(typeof r.sha256==='string'&&/^[a-f0-9]{64}$/.test(r.sha256)&&r.task_id){
+     const digests=audioDigestsByTask.get(r.task_id)||new Set();
+     check(!digests.has(r.sha256),'identical audio reused for multiple voice/utterance slots '+r.task_id);
+     digests.add(r.sha256);audioDigestsByTask.set(r.task_id,digests);
+    }
    }
    check(ids.size===manifestIds.size&&[...manifestIds].every(id=>ids.has(id)),kind+' audio must cover each approved task exactly once');
   }
