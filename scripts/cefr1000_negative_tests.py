@@ -77,7 +77,15 @@ def main():
         check("fabricated CEFR review", lambda s,t: t["tasks"][0].update(exact_sense_cefr_review="APPROVED"), "exact_sense_cefr_review must remain PENDING")
         check("fake signed review", lambda s,t: t["tasks"][0].update(reviewer_signed_at="2026-11-20T00:00:00Z"), "unverified reviewer_signed_at must remain null")
         check("invalid source index", lambda s,t: s["entries"][0].update(source_index=-1), "source_index must be a nonnegative integer")
-        print("All sixteen negative cases rejected; no independent review inferred.")
+        # Swap two task payloads but retain canonical ordinal IDs: the old
+        # unordered set comparison accepted this provenance/identity corruption.
+        def swap_payloads(s, t):
+            first, second = t["tasks"][0], t["tasks"][1]
+            for key in ("headword", "part_of_speech", "source_path", "source_index", "source_blob_sha"):
+                first[key], second[key] = second[key], first[key]
+        check("swapped review payloads with intact task IDs", swap_payloads,
+              "positional review-task payload differs from immutable shortlist ordinal")
+        print("All seventeen negative cases rejected; no independent review inferred.")
 
 if __name__ == "__main__":
     main()
