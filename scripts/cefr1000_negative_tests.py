@@ -58,6 +58,22 @@ def main():
             (root / "draft" / name).write_text(json.dumps(doc, ensure_ascii=False), encoding="utf-8")
         baseline = run_gate(root)
         assert_report(baseline, "baseline")
+        # A clean provisional inventory must NEVER become a releasable inventory.
+        # Exercise the actual --release path, not only the default structural mode.
+        release = subprocess.run(
+            [sys.executable, str(root / "scripts/cefr1000_staging_gate.py"), "--release"],
+            cwd=root, capture_output=True, text=True)
+        if release.returncode != 1 or release.stderr.strip():
+            raise AssertionError(f"release gate did not fail cleanly: {release.returncode}, {release.stderr[:300]!r}")
+        try:
+            release_report = json.loads(release.stdout)
+        except json.JSONDecodeError as exc:
+            raise AssertionError("release gate did not return JSON") from exc
+        if (release_report.get("mode") != "release"
+                or release_report.get("independent_approval_inferred") is not False
+                or not any("RELEASE BLOCKED" in str(err) for err in release_report.get("errors", []))):
+            raise AssertionError("release gate did not explicitly block unaudited release")
+        print("PASS rejected: provisional inventory cannot pass --release")
         check("missing entry", lambda s,t: s["entries"].pop(), "expected exactly 200 per level")
         check("cross-level duplicate", lambda s,t: s["entries"][-1].update(
             word=s["entries"][0]["word"], part_of_speech=s["entries"][0]["part_of_speech"]), "duplicate headword/part-of-speech")
