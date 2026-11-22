@@ -101,7 +101,18 @@ def main():
                 first[key], second[key] = second[key], first[key]
         check("swapped review payloads with intact task IDs", swap_payloads,
               "positional review-task payload differs from immutable shortlist ordinal")
-        print("All seventeen negative cases rejected; no independent review inferred.")
+        # A1 matrix jobs must still reject corruption outside A1. Otherwise
+        # a level-filtered job can report success despite global release risk.
+        check("C1 fabricated approval caught by A1 matrix",
+              lambda s,t: s["entries"][-1].update(reviewed_level=True),
+              "reviewed_level must be explicitly false")
+        check("B2 missing Myanmar meaning caught by A1 matrix",
+              lambda s,t: next(e for e in s["entries"] if e["level"] == "B2").update(burmese_meaning=""),
+              "missing burmese_meaning")
+        check("A2 forged reviewer caught by A1 matrix",
+              lambda s,t: next(x for x in t["tasks"] if x["level"] == "A2").update(reviewer_signed_at="2026-11-23T00:00:00Z"),
+              "unverified reviewer_signed_at must remain null")
+        print("All twenty negative cases rejected; provisional release also rejected; no independent review inferred.")
 
 if __name__ == "__main__":
     main()
