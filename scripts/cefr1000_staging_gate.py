@@ -129,6 +129,17 @@ def main():
             task.get("source_path"), task.get("source_index"), task.get("source_blob_sha")
         ) != entry_provenance[key]:
             fail(f"task {i}: source provenance differs from shortlist entry", errors)
+    # Task IDs are global POSITIONAL audit keys, not just a set of words.
+    # Swapping task payloads while leaving IDs untouched must not pass the
+    # unordered per-level Counter comparison below.
+    for i, (entry, task) in enumerate(zip(entries, reviews)):
+        if (task.get("level"), str(task.get("headword", "")).casefold(),
+            str(task.get("part_of_speech", "")).casefold(), task.get("source_path"),
+            task.get("source_index"), task.get("source_blob_sha")) != (
+            entry.get("level"), str(entry.get("word", "")).casefold(),
+            str(entry.get("part_of_speech", "")).casefold(), entry.get("source_path"),
+            entry.get("source_index"), entry.get("source_blob_sha")):
+            fail(f"task {i}: positional review-task payload differs from immutable shortlist ordinal", errors)
     for level in LEVELS:
         entry_keys = Counter((x["level"], x["word"].casefold(), x["part_of_speech"].casefold()) for x in entries if x["level"] == level)
         review_keys = Counter((x["level"], x["headword"].casefold(), x["part_of_speech"].casefold()) for x in reviews if x["level"] == level)
