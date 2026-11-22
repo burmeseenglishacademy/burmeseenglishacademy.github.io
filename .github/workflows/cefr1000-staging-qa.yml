@@ -8,6 +8,7 @@ on:
       - 'scripts/cefr1000_provisional_lexical_audit.py'
       - 'scripts/cefr1000_release_gate.py'
       - 'scripts/cefr1000_staging_gate.py'
+      - 'scripts/cefr1000_negative_tests.py'
       - 'tests/test_cefr1000*.py'
       - '.github/workflows/cefr1000-staging-qa.yml'
   workflow_dispatch:
@@ -45,6 +46,16 @@ jobs:
       - run: python3 scripts/audit_cefr1000_level.py --level "${{ matrix.level }}"
       - name: Check synchronized shortlist/review mapping (not approval)
         run: python3 scripts/cefr1000_staging_gate.py --level "${{ matrix.level }}"
+  fail-closed-negative-tests:
+    name: Provisional corruption and release-refusal regressions
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Reject 20 corrupt inventories and reject provisional release
+        run: python3 scripts/cefr1000_negative_tests.py
   adversarial:
     name: Adversarial structural regressions ${{ matrix.level }}
     runs-on: ubuntu-latest
