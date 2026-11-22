@@ -97,6 +97,42 @@ jobs:
         env:
           CEFR_LEVEL: ${{ matrix.level }}
         run: node scripts/cefr-1000-level-structural-qa.cjs
+      - name: Reject exchanged canonical review task IDs (negative regression)
+        env:
+          CEFR_LEVEL: ${{ matrix.level }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          tmp="$(mktemp -d)"
+          trap 'rm -rf "$tmp"' EXIT
+          mkdir -p "$tmp/draft" "$tmp/scripts"
+          cp draft/CEFR-1000-PROVISIONAL-SHORTLIST.json "$tmp/draft/"
+          cp draft/CEFR-1000-INDEPENDENT-REVIEW-TASKS.json "$tmp/draft/"
+          cp scripts/cefr-1000-level-structural-qa.cjs "$tmp/scripts/"
+          TASKS="$tmp/draft/CEFR-1000-INDEPENDENT-REVIEW-TASKS.json" python - <<'PY'
+          import json, os
+          from pathlib import Path
+          p=Path(os.environ['TASKS'])
+          data=json.loads(p.read_text(encoding='utf-8'))
+          matches=[t for t in data['tasks'] if t['level']==os.environ['CEFR_LEVEL']]
+          assert len(matches)==200
+          matches[0]['task_id'],matches[1]['task_id']=matches[1]['task_id'],matches[0]['task_id']
+          p.write_text(json.dumps(data,ensure_ascii=False),encoding='utf-8')
+          PY
+          set +e
+          node "$tmp/scripts/cefr-1000-level-structural-qa.cjs" > "$tmp/out" 2> "$tmp/err"
+          result=$?
+          set -e
+          if [ "$result" -eq 0 ]; then
+            echo "::error::Exchanged task IDs unexpectedly passed for $CEFR_LEVEL"
+            exit 1
+          fi
+          if ! grep -q 'Task ID out of canonical shortlist order' "$tmp/err"; then
+            echo "::error::Negative test failed for an unexpected reason (not canonical task ID rejection)"
+            cat "$tmp/err"
+            exit 1
+          fi
+          echo "Verified canonical task ID swap rejected for $CEFR_LEVEL"
 
   node-release-blocker:
     name: Node approved-manifest release denial
