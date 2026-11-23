@@ -143,10 +143,17 @@ class IntakeRefusalTests(unittest.TestCase):
             "invalid nonnegative source index",
         )
 
+    def test_global_ids_cross_level_boundaries(self):
+        tasks = self.original[TASKS]["tasks"]
+        for index, level in ((199, "A1"), (200, "A2"), (399, "A2"),
+                             (400, "B1"), (599, "B1"), (600, "B2"),
+                             (799, "B2"), (800, "C1"), (999, "C1")):
+            self.assertEqual(tasks[index]["task_id"], f"CEFR1000-{level}-{index + 1:04d}")
+
     def test_noncanonical_task_id(self):
         self.check_mutation(
             lambda s, t: t["tasks"][0].update(task_id="CEFR1000-A1-9999"),
-            "task ID does not match per-level sequence",
+            "task ID does not match global intake sequence",
         )
 
     def test_changed_release_hold(self):
