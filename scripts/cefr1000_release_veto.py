@@ -22,6 +22,8 @@ def inspect(shortlist=SHORTLIST, tasks=TASKS):
         t = json.loads(Path(tasks).read_text(encoding="utf-8"))
     except (OSError, ValueError) as exc:
         return ["Unable to parse required intake: " + str(exc)]
+    if not isinstance(s, dict) or not isinstance(t, dict):
+        return ["Required intake top-level JSON must be objects"]
     for label, doc in (("shortlist", s), ("review tasks", t)):
         if doc.get("counts_by_level") != TARGET:
             problems.append(label + ": per-level declared counts differ from 200 each")
