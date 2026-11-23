@@ -16,7 +16,7 @@ TARGET = {level: 200 for level in LEVELS}
 ZERO = {level: 0 for level in LEVELS}
 
 def fixtures(root):
-    entries = [{"level": level, "headword": f"{level}-{i}"} for level in LEVELS for i in range(200)]
+    entries = [{"level": level, "word": f"{level}-{i}"} for level in LEVELS for i in range(200)]
     tasks = [{"level": level, "review_status": "PENDING_INDEPENDENT_REVIEW"} for level in LEVELS for _ in range(200)]
     shortlist = {"counts_by_level": TARGET, "independently_approved_by_level": ZERO,
                  "release_status": "PROVISIONAL_1000_INDEPENDENT_EVIDENCE_MISSING_DO_NOT_PUBLISH",
@@ -68,9 +68,14 @@ class ReleaseVetoTests(unittest.TestCase):
         self.assertTrue(any("provenance differs" in i for i in veto.inspect(self.a, self.b)))
 
     def test_duplicate_level_headword_is_detected(self):
-        self.s["entries"][1]["headword"] = self.s["entries"][0]["headword"].upper()
+        self.s["entries"][1]["word"] = self.s["entries"][0]["word"].upper()
         self.save()
-        self.assertTrue(any("Duplicate level/headword" in i for i in veto.inspect(self.a, self.b)))
+        self.assertTrue(any("Duplicate level/word" in i for i in veto.inspect(self.a, self.b)))
+
+    def test_missing_word_is_detected(self):
+        del self.s["entries"][0]["word"]
+        self.save()
+        self.assertTrue(any("missing word" in i for i in veto.inspect(self.a, self.b)))
 
     def test_non_object_entry_is_detected(self):
         self.s["entries"][0] = None
