@@ -8,6 +8,7 @@ on:
       - 'scripts/cefr-1000-level-structural-qa.cjs'
       - 'scripts/cefr1000_provisional_intake_guard.py'
       - 'scripts/test_cefr1000_provisional_intake_guard.py'
+      - 'scripts/test_cefr1000_provisional_intake_additional.py'
       - '.github/workflows/cefr-1000-five-level-structural-qa.yml'
   workflow_dispatch:
 permissions:
@@ -44,5 +45,7 @@ jobs:
           python-version: '3.12'
       - name: Verify provisional intake remains on editorial hold
         run: python scripts/cefr1000_provisional_intake_guard.py
-      - name: Test adversarial refusal scenarios
-        run: python -m unittest discover -s scripts -p 'test_cefr1000_provisional_intake_guard.py' -v
+      - name: Test adversarial refusal scenarios (all provisional-intake suites)
+        run: |
+          python -m unittest discover -s scripts -p 'test_cefr1000_provisional_intake_guard.py' -v
+          python -m unittest discover -s scripts -p 'test_cefr1000_provisional_intake_additional.py' -v
