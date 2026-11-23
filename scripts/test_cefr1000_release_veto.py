@@ -67,6 +67,16 @@ class ReleaseVetoTests(unittest.TestCase):
         self.save()
         self.assertTrue(any("provenance differs" in i for i in veto.inspect(self.a, self.b)))
 
+    def test_duplicate_level_headword_is_detected(self):
+        self.s["entries"][1]["headword"] = self.s["entries"][0]["headword"].upper()
+        self.save()
+        self.assertTrue(any("Duplicate level/headword" in i for i in veto.inspect(self.a, self.b)))
+
+    def test_non_object_entry_is_detected(self):
+        self.s["entries"][0] = None
+        self.save()
+        self.assertTrue(any("non-object record" in i for i in veto.inspect(self.a, self.b)))
+
     def test_missing_json_is_denied(self):
         self.a.unlink()
         self.assertTrue(any("Unable to parse" in i for i in veto.inspect(self.a, self.b)))
