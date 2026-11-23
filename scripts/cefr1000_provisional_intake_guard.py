@@ -47,7 +47,6 @@ def check():
         errors.append("review-task scope changed")
     seen = set()
     seen_tasks = set()
-    task_sequence = collections.Counter()
     for index, entry in enumerate(entries):
         level = entry.get("level")
         word = entry.get("word")
@@ -80,10 +79,11 @@ def check():
             errors.append(f"duplicate task ID {ident}")
         seen_tasks.add(ident)
         if task.get("level") in TARGET:
-            task_sequence[task["level"]] += 1
-            expected_id = f"CEFR1000-{task['level']}-{task_sequence[task['level']]:04d}"
+            # Original intake IDs use one global 0001..1000 sequence, not
+            # a per-level reset; preserve these immutable task identifiers.
+            expected_id = f"CEFR1000-{task['level']}-{index + 1:04d}"
             if ident != expected_id:
-                errors.append(f"task {index}: task ID does not match per-level sequence")
+                errors.append(f"task {index}: task ID does not match global intake sequence")
         if task.get("shortlist_blob_sha") != tasks.get("source_shortlist_blob_sha"):
             errors.append(f"task {index}: shortlist provenance mismatch")
         if task.get("reviewer_assigned") is not None:
