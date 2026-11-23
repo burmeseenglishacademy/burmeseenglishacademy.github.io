@@ -43,14 +43,14 @@ def inspect(shortlist=SHORTLIST, tasks=TASKS):
         if not isinstance(record, dict):
             problems.append(f"Entry {index}: non-object record")
             continue
-        headword = record.get("headword")
+        headword = record.get("word")
         if not isinstance(headword, str) or not headword.strip():
-            problems.append(f"Entry {index}: missing headword")
+            problems.append(f"Entry {index}: missing word")
             continue
         identities.append((record.get("level"), headword.strip().casefold()))
     repeated = [key for key, count in Counter(identities).items() if count > 1]
     if repeated:
-        problems.append(f"Duplicate level/headword identities require exact-sense adjudication: {len(repeated)}")
+        problems.append(f"Duplicate level/word identities require exact-sense adjudication: {len(repeated)}")
     if any(not isinstance(record, dict) for record in tasks_data):
         problems.append("Review tasks contain non-object records")
     if t.get("source_shortlist_blob_sha") != "475e68ae17ab97bd937e73e5ce4794e0dcd76551":
