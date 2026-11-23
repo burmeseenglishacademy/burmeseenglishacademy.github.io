@@ -77,6 +77,14 @@ class ReleaseVetoTests(unittest.TestCase):
         self.save()
         self.assertTrue(any("non-object record" in i for i in veto.inspect(self.a, self.b)))
 
+    def test_non_object_shortlist_root_is_denied(self):
+        self.a.write_text("[]", encoding="utf-8")
+        self.assertTrue(any("top-level JSON must be objects" in i for i in veto.inspect(self.a, self.b)))
+
+    def test_non_object_review_root_is_denied(self):
+        self.b.write_text("null", encoding="utf-8")
+        self.assertTrue(any("top-level JSON must be objects" in i for i in veto.inspect(self.a, self.b)))
+
     def test_missing_json_is_denied(self):
         self.a.unlink()
         self.assertTrue(any("Unable to parse" in i for i in veto.inspect(self.a, self.b)))
