@@ -113,5 +113,48 @@ class IntakeRefusalTests(unittest.TestCase):
         )
 
 
+    def test_scope_tampering(self):
+        self.check_mutation(
+            lambda s, t: s["scope_target"].update(C1=1000),
+            "scope/schema mismatch",
+        )
+
+    def test_hidden_reviewer_assignment(self):
+        self.check_mutation(
+            lambda s, t: t["tasks"][0].update(reviewer_assigned="Unverified Person"),
+            "reviewer assignment unexpectedly populated",
+        )
+
+    def test_forged_field_level_review(self):
+        self.check_mutation(
+            lambda s, t: t["tasks"][0].update(exact_sense_cefr_review="APPROVED"),
+            "exact_sense_cefr_review not pending",
+        )
+
+    def test_mismatched_shortlist_blob(self):
+        self.check_mutation(
+            lambda s, t: t["tasks"][0].update(shortlist_blob_sha="0" * 40),
+            "shortlist provenance mismatch",
+        )
+
+    def test_invalid_source_index(self):
+        self.check_mutation(
+            lambda s, t: s["entries"][0].update(source_index=-1),
+            "invalid nonnegative source index",
+        )
+
+    def test_noncanonical_task_id(self):
+        self.check_mutation(
+            lambda s, t: t["tasks"][0].update(task_id="CEFR1000-A1-9999"),
+            "task ID does not match per-level sequence",
+        )
+
+    def test_changed_release_hold(self):
+        self.check_mutation(
+            lambda s, t: s.update(release_status="READY"),
+            "shortlist release hold status changed",
+        )
+
+
 if __name__ == "__main__":
     unittest.main()
