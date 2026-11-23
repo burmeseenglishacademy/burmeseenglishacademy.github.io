@@ -72,6 +72,17 @@ class ReleaseVetoTests(unittest.TestCase):
         self.save()
         self.assertTrue(any("Duplicate level/word" in i for i in veto.inspect(self.a, self.b)))
 
+    def test_cross_level_same_word_requires_exact_sense_adjudication(self):
+        self.s["entries"][200]["word"] = self.s["entries"][0]["word"]
+        self.save()
+        self.assertTrue(any("Cross-level headword collisions" in i for i in veto.inspect(self.a, self.b)))
+
+    def test_unicode_compatibility_duplicate_is_detected(self):
+        self.s["entries"][0]["word"] = "office"
+        self.s["entries"][1]["word"] = "oﬃce"
+        self.save()
+        self.assertTrue(any("Duplicate level/word" in i for i in veto.inspect(self.a, self.b)))
+
     def test_missing_word_is_detected(self):
         del self.s["entries"][0]["word"]
         self.save()
