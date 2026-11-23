@@ -6,6 +6,7 @@ independent linguistic, audio listening, physical device or deployment proof.
 """
 import json
 import sys
+import unicodedata
 from collections import Counter
 from pathlib import Path
 
@@ -47,10 +48,16 @@ def inspect(shortlist=SHORTLIST, tasks=TASKS):
         if not isinstance(headword, str) or not headword.strip():
             problems.append(f"Entry {index}: missing word")
             continue
-        identities.append((record.get("level"), headword.strip().casefold()))
+        identities.append((record.get("level"), unicodedata.normalize("NFKC", headword.strip()).casefold()))
     repeated = [key for key, count in Counter(identities).items() if count > 1]
     if repeated:
         problems.append(f"Duplicate level/word identities require exact-sense adjudication: {len(repeated)}")
+    across_levels = {}
+    for level, word in identities:
+        across_levels.setdefault(word, set()).add(level)
+    collisions = {word: levels for word, levels in across_levels.items() if len(levels) > 1}
+    if collisions:
+        problems.append(f"Cross-level headword collisions need independent exact-sense adjudication: {len(collisions)}")
     if any(not isinstance(record, dict) for record in tasks_data):
         problems.append("Review tasks contain non-object records")
     if t.get("source_shortlist_blob_sha") != "475e68ae17ab97bd937e73e5ce4794e0dcd76551":
