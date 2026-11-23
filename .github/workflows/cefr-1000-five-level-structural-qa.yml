@@ -65,8 +65,11 @@ jobs:
         shell: bash
         run: |
           set -uo pipefail
+          # GitHub invokes bash with -e; temporarily disable it to capture the expected veto exit.
+          set +e
           python scripts/cefr1000_release_veto.py > release-veto-output.txt 2>&1
           status=$?
+          set -e
           cat release-veto-output.txt
           if [ "$status" -eq 0 ]; then
             echo "::error::Release veto unexpectedly exited successfully"
