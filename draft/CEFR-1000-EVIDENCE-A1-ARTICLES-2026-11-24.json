@@ -1,0 +1,48 @@
+{
+  "observed_on": "2026-11-24",
+  "shortlist_blob": "475e68ae17ab97bd937e73e5ce4794e0dcd76551",
+  "status": "AUTHOR_RESEARCH_ONLY_NOT_INDEPENDENT_APPROVAL",
+  "source": {
+    "url": "https://dictionary.cambridge.org/grammar/british-grammar/articles",
+    "publisher": "Cambridge English Grammar Today",
+    "provenance": "Retrieved web search excerpt; grammar evidence, not an explicit CEFR label"
+  },
+  "entries": [
+    {
+      "word": "a",
+      "level": "A1",
+      "part_of_speech": "article",
+      "source_index": 0,
+      "observation": "Indefinite article before singular countable noun; choice depends on following consonant sound, not spelling. Existing example I have a book is grammatical.",
+      "proposed_myanmar": "အတိအကျ မသတ်မှတ်ထားသော လူ၊ အရာဝတ္ထု တစ်ခုကို ဖော်ပြရာတွင် သုံးသည်။ နောက်စကားလုံး၏ အစသံမှာ ဗျည်းသံ ဖြစ်ရသည်။",
+      "cefr_evidence": "UNRESOLVED",
+      "audio_note": "Review weak form in connected speech separately from isolated citation form."
+    },
+    {
+      "word": "an",
+      "level": "A1",
+      "part_of_speech": "article",
+      "source_index": 1,
+      "observation": "Same indefinite function as a; used before a vowel sound, including silent-h words. Existing example She has an apple is grammatical.",
+      "proposed_myanmar": "a နှင့် အဓိပ္ပာယ်တူပြီး နောက်စကားလုံး၏ အစသံမှာ သရသံဖြစ်လျှင် သုံးသည်။",
+      "cefr_evidence": "UNRESOLVED",
+      "audio_note": "Review weak form and connected speech separately."
+    }
+  ],
+  "failed_retrievals": [
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/a",
+      "result": "HTTP 403; no dictionary sense or level observed"
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/an",
+      "result": "HTTP 403; no dictionary sense or level observed"
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/be",
+      "result": "HTTP 403; no dictionary sense or level observed"
+    }
+  ],
+  "independent_approvals_added": 0,
+  "release_allowed": false
+}
