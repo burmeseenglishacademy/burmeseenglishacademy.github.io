@@ -1,0 +1,9 @@
+# Third-person pronouns — author-side evidence only
+Observed 2026-11-25 (Singapore), indexed Cambridge English Grammar Today: https://dictionary.cambridge.org/pl/grammar/british-grammar/pronouns-personal-i-me-you-him-it-they-etc . Grammar evidence only; explicit sense-level CEFR labels were not observed.
+Frozen shortlist blob 475e68ae17ab97bd937e73e5ce4794e0dcd76551; original A1 starter blob ff1e93f60828ef2f94c9146522ce94075183b0ae.
+
+- he (index 9): singular third-person subject, male referent. Proposed Myanmar: သူ (အမျိုးသားတစ်ဦးကို ရည်ညွှန်းသည်)။ Existing example “He is my brother.” grammatical; သူက ကျွန်တော့်အစ်ကိုပါ။ Brother does not specify age; alternatively မောင်နှမတော်စပ်သူ အမျိုးသား is explanatory rather than natural dialogue. Avoid teaching generic masculine as default.
+- she (index 10): singular third-person subject, female referent. Myanmar: သူ (အမျိုးသမီးတစ်ဦးကို ရည်ညွှန်းသည်)။ “She is my sister.” grammatical; သူက ကျွန်တော့်အစ်မပါ။ Translation chooses older sibling; English does not specify age. Reviewer should consider an age-neutral example such as She is my friend.
+- it (index 11): singular referential pronoun for a thing or animal; not the dummy weather/time subject. Myanmar: အဲဒါ၊ အဲဒီအရာ (အခြေအနေအလိုက် နာမ်ကို ပြန်သုံးနိုင်သည်)။ “It is a small cat.” grammatical; အဲဒါ ကြောင်လေးတစ်ကောင်ပါ။ Avoid presenting ၎င်း as the normal spoken equivalent. Distinguish animal referents from human referents.
+
+All proposals require independent review. No audio or originality verification. Recount of actual shortlist records: {"A1":{"written":200,"approved":0},"A2":{"written":200,"approved":0},"B1":{"written":200,"approved":0},"B2":{"written":200,"approved":0},"C1":{"written":200,"approved":0}}. Historical run 45235724342 rechecked: five structural jobs and intake job successful; release veto failed (job 137906790608). Current CI, listening, physical iPhone, hosting, production preservation and deployment not established. Staging only.
