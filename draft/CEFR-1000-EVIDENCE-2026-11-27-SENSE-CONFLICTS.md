@@ -1,0 +1,14 @@
+# Exact-sense conflicts — 2026-11-27
+Author-side evidence only; no independent signoff. Sources observed via indexed dictionary excerpts on 2026-11-27. Shortlist blob 475e68ae17ab97bd937e73e5ce4794e0dcd76551.
+
+## thank — A1, source index 19, A1-EDITORIAL-STARTER.json
+Cambridge explicitly labels the transitive gratitude verb A2: https://dictionary.cambridge.org/dictionary/english/thank and https://dictionary.cambridge.org/dictionary/learner-english/thank . The A1 expression thank you is a distinct lexical unit: https://dictionary.cambridge.org/dictionary/english/thank-you?topic=relieved-and-thankful . Do not transfer its label to the verb. Existing example “I thank my teacher.” is grammatical but pragmatically formal. Proposed A2 example: “I thanked my teacher for her help.” Myanmar: ဆရာမက ကူညီပေးတဲ့အတွက် ကျေးဇူးတင်စကား ပြောခဲ့တယ်။ Meaning: ကျေးဇူးတင်စကား ပြောသည်။ UK /θæŋk/. Hold for replacement or balanced reallocation; no automatic level change.
+
+## home — A1, source index 22, A1-EDITORIAL-STARTER.json
+https://dictionary.cambridge.org/dictionary/english/home labels the dwelling noun A1. https://dictionary.cambridge.org/dictionary/learner-english/home labels the directional adverb A2. Existing example “I go home after school.” illustrates the adverb, not the selected noun; https://dictionary.cambridge.org/grammar/british-grammar/home confirms the movement construction. Proposed noun example: “Our home is near the park.” Myanmar: ကျွန်တော်တို့အိမ်က ပန်းခြံနားမှာ ရှိတယ်။ Meaning: အိမ်၊ နေအိမ်။ UK /həʊm/. Retain provisional A1 noun only with aligned example after review.
+
+## signature — C1, source index 75, A2-C1-EDITORIAL-STARTER.json
+https://dictionary.cambridge.org/dictionary/learner-english/signature and https://dictionary.cambridge.org/us/dictionary/english/signature both label the handwritten-name sense B1. Existing example “Please add your signature at the bottom of the form.” matches B1, not C1. Proposed meaning: လက်မှတ် (မိမိကိုယ်တိုင် ရေးထိုးသော အမှတ်အသား)။ Example translation: ဖောင်ရဲ့ အောက်ခြေမှာ လက်မှတ်ရေးထိုးပေးပါ။ UK /ˈsɪɡnətʃə/. Hold for replacement or balanced reallocation. Do not substitute a different sense merely to preserve C1.
+
+## Inventory and veto
+Actual parsed shortlist counts (written / release_approved flag): {"A1":{"written":200,"approved":0},"A2":{"written":200,"approved":0},"B1":{"written":200,"approved":0},"B2":{"written":200,"approved":0},"C1":{"written":200,"approved":0}}. Unique case-folded NFC headwords: 1000. Editorial holds: 1000. These are structural observations, not independent verification. No changes to shortlist or flags. All human review, George/Emma audio generation/listening, browser/mobile and physical iPhone Safari evidence, hosting and production confirmation remain required. Current CI not verified in this run. No production change.
