@@ -79,6 +79,12 @@ Two further push-triggered runs were also inspected after the A1 evidence and re
 
 Both job collections included all five Python level-specific checks, all five Node cross-level/task-ID checks, the twenty-case mutation suite, and both release-denial jobs. The run/job conclusions and step conclusions were fetched from the GitHub Actions API; no result was inferred from a commit alone.
 
+After the C1 level-risk evidence was added, two more runs completed successfully:
+- [Run `46122306545`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46122306545), evidence commit `7c83d5f6d10e6b541423ff6db0a253cfed6f9ab4`: `success`, 13/13 jobs successful.
+- [Run `46122326512`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46122326512), report commit `3b6fce19a9bfd8ee1c164ffec34d5823c9762630`: `success`, 13/13 jobs successful.
+
+Both included successful A1–C1 Python structural jobs, Node cross-level/task-ID tests, the mutation suite, and Python/Node release-denial checks. The release-denial checks succeeding means the project correctly remains blocked; it does not mean release approval.
+
 ## Production protection
 
 No changes in this run were made to the 54 published lessons, the separate IELTS 1,000-word bank, established George/Emma production audio, or learner privacy controls. No merge to `main`, public deployment, or production modification is authorised before every required gate has genuine evidence.
