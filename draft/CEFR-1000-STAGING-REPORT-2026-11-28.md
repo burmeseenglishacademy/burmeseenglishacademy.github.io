@@ -36,12 +36,12 @@ The author-side evidence notes cover selected A1–C1 candidates and are researc
 | Fluent Myanmar meaning review | 0/1,000 signed off |
 | Original example grammar and translation review | 0/1,000 signed off |
 | Exact-sense, source-backed CEFR review | 0/1,000 independently signed off |
-| British George headword audio | 0/1,000 generated for final shortlist; 0 listened/signoff |
-| British Emma headword audio | 0/1,000 generated for final shortlist; 0 listened/signoff |
-| British George example audio | 0/1,000 generated for final shortlist; 0 listened/signoff |
-| British Emma example audio | 0/1,000 generated for final shortlist; 0 listened/signoff |
-| Desktop browser regression for this vocabulary release | Not evidenced |
-| Mobile browser regression for this vocabulary release | Not evidenced |
+| British George headword audio | No approved final manifest; unreviewed provisional candidate generated; 0 listened/signoff |
+| British Emma headword audio | No approved final manifest; unreviewed provisional candidate generated; 0 listened/signoff |
+| British George example audio | No approved final manifest; unreviewed provisional candidate generated; 0 listened/signoff |
+| British Emma example audio | No approved final manifest; unreviewed provisional candidate generated; 0 listened/signoff |
+| Desktop browser regression for this vocabulary release | Automated Chromium/WebKit staging pass; run 46157999098 |
+| Mobile browser regression for this vocabulary release | Pixel 7 / iPhone 13 emulation pass; run 46157999098; no physical-device claim |
 | Physical iPhone Safari review for this vocabulary release | Not evidenced |
 | GitHub Pages hosting/capacity limits for proposed release | Not assessed for this release |
 | Confirmed production deployment | Not deployed / not confirmed |
@@ -745,3 +745,94 @@ This change affects only the release validator and its synthetic tests. It does 
 ### Follow-up syntax correction for the audio gate regression test
 
 During source review, a duplicate block-scoped test variable was found in the expanded audio negative-test file and corrected in commit [`ef275414a33212d6f1bcdd8c287a359d83714bb2`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/ef275414a33212d6f1bcdd8c287a359d83714bb2). Both the updated gate script and the complete negative-test script were then parsed successfully as JavaScript; a focused logic check also confirmed the intended accept/reject cases for exact same-voice text reuse, different-text path/digest reuse and cross-voice reuse. These checks are not a substitute for executing the GitHub Actions suite. The structural workflow is path-triggered by the changed files, but its latest actual run/job conclusions and logs have not yet been retrieved; **CI verification remains unclaimed**.
+
+
+---
+
+## Latest source, audio and automated-QA update — 2026-11-29
+
+This update was prepared from the current staging branch after the 2026-11-28 report snapshot. It does not change the provisional shortlist or any independent-review task.
+
+### Current frozen inventory (reparsed from complete JSON)
+
+| Level | Written | Unique NFC/case-folded headwords | Editorial holds | All six provisional review/release flags false | Review tasks pending | Independent approvals |
+|---|---:|---:|---:|---:|---:|---:|
+| A1 | 200 | 200 | 200 | 200 | 200 | 0 |
+| A2 | 200 | 200 | 200 | 200 | 200 | 0 |
+| B1 | 200 | 200 | 200 | 200 | 200 | 0 |
+| B2 | 200 | 200 | 200 | 200 | 200 | 0 |
+| C1 | 200 | 200 | 200 | 200 | 200 | 0 |
+| **Total** | **1000** | **1000** | **1000** | **1000** | **1000** | **0** |
+
+The complete task file still has 1000 tasks; reviewer assignments: 0; reviewer identities/signatures: 0. No author-side evidence note is counted as an independent check.
+
+### New author-side evidence note
+
+Added `draft/CEFR-1000-EVIDENCE-2026-11-29-CROSSLEVEL-EXACT-SENSE-CHALLENGES.md`, commit `6fc11c992000dd76b23fc953ed0a44ff17007f77`.
+
+It records 11 exact-sense observations with original task IDs and source indices: `support`, `available`, `avoid`, `improve`, `achieve`, `require`, `establish`, `occur`, `consideration`, `accommodate`, and `consecutive`. Priority findings:
+- `improve` is provisionally B1, but Cambridge labels the exact everyday verb sense A2.
+- `accommodate` is provisionally C1, while Oxford labels the verb B2; the Cambridge page inspected supplies no CEFR label, and the current definition combines capacity and suitability senses.
+- `consecutive` is Oxford C1 but Cambridge English Dictionary C2 for the same uninterrupted-sequence sense.
+- `achieve` has Cambridge B1 exact-sense evidence but Oxford A2 word/POS evidence; `occur` has Cambridge B2 exact-sense evidence but Oxford B1 word/POS evidence.
+- `avoid` combines a Cambridge B1 stay-away sense with B2 prevent/do-not-do senses; its example should be made less ambiguous.
+- `available`, `require` and `establish` provide useful positive exact-sense alignment leads; `support` still needs better exact verb-sense evidence.
+All 11 tasks remain pending. No shortlist wording, level, Myanmar gloss, example or approval flag was changed.
+
+### Verified audio candidate — generated, not listened to
+
+GitHub Actions run [`46155834034`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46155834034), head `5c58797bc3148f3011e16dae5456cf03ae2a4b16`, completed successfully with **18/18 jobs**: preflight, 16 deterministic audio shards and final assembly/validation. The actual final job log reported:
+- 1,996 distinct source texts;
+- 1,996 George (`bm_george`) recordings;
+- 1,996 Emma (`bf_emma`) recordings;
+- 3,992 technically decoded MP3 files total;
+- explicit output: technical generation only, no human approval or deployment.
+
+The complete unreviewed artifact is [`cefr1000-COMPLETE-GEORGE-EMMA-CANDIDATE-UNREVIEWED`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46155834034), artifact ID `15268540341`, 73,904,115 bytes, not expired at the time checked. This is a candidate generated against the provisional shortlist, not a final approved manifest. **Real listening signoff remains 0/3,992.** No clip is described as heard or approved.
+
+### Verified automated browser regression — emulation only
+
+GitHub Actions run [`46157999098`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46157999098), head `91ee8bbd523275f94417bf1c7297ea82b5771271`, completed successfully, 1/1 job. Its log confirms:
+- CEFR UI gate: 1,000 entries, five levels, view/search, audio routing, HTML escaping and rejection of empty, unreviewed, duplicate and missing-audio values;
+- Chromium desktop and WebKit desktop regression;
+- Chromium Pixel 7 emulation and WebKit iPhone 13 emulation;
+- 18 sample MP3 HTTP GET checks.
+
+This is automated desktop/mobile-browser coverage only. Pixel/iPhone emulation is **not** physical iPhone Safari review. Physical-device review evidence remains absent.
+
+### Verified structural and adversarial release-gate regression
+
+GitHub Actions run [`46160202779`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46160202779), current report predecessor head `67d53cb9fc1d7f1d7e16c42fb6d1a669129377d5`, completed with **14/14 jobs successful**. The actual jobs endpoint and per-job step summaries showed:
+- Python structural integrity for A1, A2, B1, B2 and C1: 5/5 passed;
+- Node cross-level structural and canonical task-ID negative tests for A1–C1: 5/5 passed;
+- twenty provisional-data mutation checks passed;
+- Python controlled release denial passed;
+- Node approved-manifest release denial passed;
+- adversarial audio evidence checks passed.
+
+The fetched Python release-blocker log states: “Verified controlled, explicit release denial; no independent approval inferred.” The Node log verifies that the release remains blocked for a missing independently approved manifest and missing independent evidence register. The mutation log reports all twenty negative cases rejected. The adversarial audio log confirms that identical text may reuse a same-voice recording, while wrong headword content, cross-content reuse, incorrect George/Emma voice and invalid audio format remain rejected.
+
+### Repaired test failures, with subsequent verified success
+
+Four intermediate runs failed only in the new adversarial audio-evidence test:
+- [`46159718202`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46159718202): an old negative assertion still expected all duplicate audio digests to be rejected, even when identical text and same voice legitimately share one recording.
+- [`46159840606`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46159840606), [`46159863083`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46159863083), and [`46159954096`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46159954096): the revised test contained a duplicate JavaScript `const first` declaration.
+
+The test was corrected to allow only same-text/same-voice reuse while retaining rejection of different spoken content and wrong voices; the duplicate declaration was fixed. Follow-up run [`46160123282`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46160123282) succeeded, and the latest run `46160202779` then passed all 14 jobs, including the repaired adversarial checks. Earlier failure conclusions are retained here rather than overwritten.
+
+### Remaining release blockers
+
+| Gate | Current evidence |
+|---|---|
+| Independent English review | 0/1,000 |
+| Independent fluent Myanmar review | 0/1,000 |
+| Independent original-example review | 0/1,000 |
+| Independent source-backed exact-sense CEFR review | 0/1,000 |
+| Human listening approval, George + Emma | 0/3,992 |
+| Desktop browser regression | Automated Chromium/WebKit pass; staging only |
+| Mobile browser regression | Pixel 7 / iPhone 13 emulation pass; no physical device evidence |
+| Physical iPhone Safari review | Not evidenced |
+| GitHub Pages hosting/capacity and final build limits | Not assessed for approved release manifest |
+| Confirmed production deployment | Not deployed / not confirmed |
+
+**Decision: remain staging-only.** Do not merge, publish, or change `main`. The 54 published lessons, separate IELTS 1,000-word bank, established George/Emma production audio and privacy controls remain protected. Successful technical CI, generated candidate MP3s and emulator tests do not replace independent linguistic review, real listening, physical-device QA, hosting clearance or a production deployment receipt.
