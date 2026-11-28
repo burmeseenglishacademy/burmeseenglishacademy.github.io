@@ -221,3 +221,36 @@ Both notes preserve the current shortlist/task blob SHAs, original source-file p
 The inventory remains exactly 200 written entries per level (1,000 total), with 200 editorial holds and 0 independent signoffs at each level. The new documentation commits are staging-only. Current-commit CI conclusions/logs have not yet been verified for these commits; the latest historical verified run remains `46125747929` (14/14 jobs successful) and must not be represented as validation of these new commits.
 
 Release blockers remain unchanged: independent English, Myanmar, original-example and source-backed CEFR signoff 0/1,000; final George/Emma headword/example audio 0/4,000 assets generated and actually listened to; desktop/mobile browser regression not evidenced; physical iPhone Safari review not evidenced; GitHub Pages hosting clearance outstanding; and confirmed production deployment absent. All production-protection requirements remain in force.
+
+## Source-provenance and historical-risk audit — 2026-11-28
+
+Added [source-provenance gap and historical-risk audit](CEFR-1000-EVIDENCE-2026-11-28-SOURCE-PROVENANCE-GAP-AUDIT.md), commit `4f580ae814a5db6fdb5ede5429204a0d4b47be94`. It follows all 1,000 shortlist records back to their seven original source JSON files using `source_path` and `source_index`.
+
+Key findings:
+- The 200 A1 records all point to the same general Oxford 3000/5000 information URL in `source_level_reference`; it is not a per-entry CEFR label or exact-sense evidence record.
+- The other 800 A2–C1 source records have empty `source_level`, `source_english` and `source_burmese` fields. Their proposed/source level values are not evidence.
+- All 1,000 independent review tasks still have empty `source_evidence_urls`, null `source_observed_on`, no reviewer/signature and pending review states. Thus source-backed exact-sense CEFR signoff is 0/1,000.
+- The original source-status distribution is 200 draft-pending, 704 AI-assisted-draft-pending, 74 source-recovery-first-pass-pending, 7 requiring independent evidence, 14 awaiting cross-corpus triage, and 1 reversible level quarantine.
+- The quarantined entry is `alacrity`, task `CEFR1000-C1-1000`. Its original batch59 reason is `C1_VS_C2_UNSUPPORTED_REQUIRES_GRADED_SENSE_SOURCE`. Oxford Advanced Learner's Dictionary displays A2 for the noun: https://www.oxfordlearnersdictionaries.com/us/definition/english/alacrity . Cambridge confirms the “speed and eagerness” sense but shows no CEFR label on the inspected page: https://dictionary.cambridge.org/dictionary/english/alacrity . The original quarantine reason is retained in batch59 but not copied into the shortlist/task record; the new note identifies this traceability gap. No level or hold was changed.
+- No WordNet marker or WordNet source path was found in the seven inspected source files. A surface-form scan found no spaces, digits, uppercase, non-ASCII/punctuation or proper-noun POS among the 1,000 selected headwords. These checks do not prove historical WordNet provenance is clear or rule out common-word/proper-name homographs; independent semantic review remains required.
+
+## Explicit CEFR-source release-gate strengthening — 2026-11-28
+
+Updated `scripts/cefr-1000-release-readiness-gate.cjs` in commit `1f0cd84cb1cde3962310cf4e22dec24f91112617` and its synthetic adversarial tests in commit `b62eb65b92d38dbc10302155d45dd1e44d764120`.
+
+Each future approved-manifest entry must now carry a separate CEFR evidence level, CEFR source URL, excerpt reference, excerpt text that identifies both the exact headword and claimed level, and CEFR-source observation date. The gate checks that the cited CEFR level exactly matches the manifest level, the source URL is HTTPS, the excerpt names the headword and level, and the observation date parses. A generic word-list landing page alone cannot satisfy this schema. The synthetic test suite now includes negative cases for a mismatched CEFR label and a generic list reference without an exact headword/level excerpt, in addition to the existing audio transcript, duplicate-content and file-signature checks. These are test fixtures only; they create no real review or audio evidence.
+
+Current-commit CI remains unverified: the combined commit-status endpoint returned no status records for the new gate/test commits, and the available commit-workflow lookup returned no push-run records. No new run ID or successful job conclusion is claimed. The latest historical verified run remains `46125747929` (14/14 jobs successful), which predates these changes.
+
+## Reconciled status after this run
+
+| Level | Written | Unique headwords | Editorial hold | Independent signoffs | Pending tasks |
+|---|---:|---:|---:|---:|---:|
+| A1 | 200 | 200 | 200 | 0 | 200 |
+| A2 | 200 | 200 | 200 | 0 | 200 |
+| B1 | 200 | 200 | 200 | 0 | 200 |
+| B2 | 200 | 200 | 200 | 0 | 200 |
+| C1 | 200 | 200 | 200 | 0 | 200 |
+| **Total** | **1,000** | **1,000** | **1,000** | **0** | **1,000** |
+
+Release blockers remain unchanged: independent English, Myanmar, original-example and exact-sense CEFR signoff 0/1,000; final George/Emma headword/example audio 0/4,000 generated and actually listened to; desktop/mobile regression not evidenced; physical iPhone Safari review not evidenced; GitHub Pages hosting clearance outstanding; production deployment absent. All production protection and privacy requirements remain in force.
