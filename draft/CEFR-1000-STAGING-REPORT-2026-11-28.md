@@ -294,3 +294,18 @@ The gate itself was not shown to accept a persisted mismatched level; the test f
 ## C1 five-entry source challenge — 2026-11-28
 
 Added `draft/CEFR-1000-EVIDENCE-2026-11-28-C1-C2-CONFLICTS-AND-ALACRITY.md` in the same staging commit. It documents `affable` (Oxford topic C2), `ameliorate` (Oxford topic C2), `acquiescence` (Oxford topic C2), `acrimonious` (Oxford topic C2), and `alacrity` (Oxford OALD Oxford 3000 A2 label), with Cambridge exact-sense definitions, British IPA references, source URLs, observation date, original shortlist/task/source-batch provenance, Myanmar refinements and new example proposals. All five are author-side findings only; no shortlist or review-task decision fields were changed.
+
+
+## Adversarial fixture repair — verified CI — 2026-11-28
+
+The test-fixture repair and new C1 evidence note were committed on staging as `c85d6080889107d55b4f1e6040d47745b177b5fc`. The branch-only push triggered [GitHub Actions run 46138047343](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46138047343), which was fetched after completion: overall conclusion `success`, **14/14 jobs successful**, head SHA exactly matching the repair commit.
+
+Actual job conclusions were fetched. The five Python level-specific structural jobs succeeded (A1 `140957644658`, A2 `140957644535`, B1 `140957644553`, B2 `140957644568`, C1 `140957644562`). The five Node cross-level/task-ID jobs succeeded (A1 `140957644628`, A2 `140957644585`, B1 `140957644678`, B2 `140957644671`, C1 `140957644641`). The twenty-case Python mutation job `140957644642`, Python release-denial job `140957644608`, Node release-denial job `140957644561`, and adversarial release/audio evidence job `140957644351` also succeeded.
+
+The adversarial log explicitly passed all six cases: a complete synthetic schema fixture; mismatched CEFR level rejection; generic CEFR-list excerpt rejection; wrong audio transcript rejection; duplicate audio-content rejection; and invalid audio signature rejection. The Python release-denial log confirmed “controlled, explicit release denial; no independent approval inferred”; the Node release-denial log confirmed the release state remains `BLOCKED`. These are synthetic schema/negative tests, not real independent review, generated/listened audio, device testing or deployment evidence.
+
+The preceding failed run `46135033907` is retained as a transparent regression record. Its actual failed log identified the test fixture not persisting its in-memory manifest mutation; the corrected fixture now writes the changed manifest to disk before invoking the gate. No production release gate was weakened.
+
+## C1 C2/A2 lexical-level challenge — 2026-11-28
+
+The new author-side note `draft/CEFR-1000-EVIDENCE-2026-11-28-C1-C2-CONFLICTS-AND-ALACRITY.md` records four Oxford topic-list C2 conflicts among C1 candidates (`affable`, `ameliorate`, `acquiescence`, `acrimonious`) and the Oxford OALD Oxford 3000 A2 label for `alacrity`, which is already historically quarantined. Cambridge exact-sense definitions and British pronunciation references, Oxford CEFR evidence URLs, task IDs, source-batch provenance, observation date, Myanmar refinements and original example proposals are retained. These findings are author-side only and do not count as independent checks.
