@@ -149,7 +149,6 @@ try{
  cefrSignoff.decision=originalCefrDecision;
  writeManifest();writeEvidence();
 
- const firstManifestEntry=manifest.entries[0];
  const originalCefrLevel=firstManifestEntry.source_cefr_level;
  firstManifestEntry.source_cefr_level='C2';
  writeManifest();
