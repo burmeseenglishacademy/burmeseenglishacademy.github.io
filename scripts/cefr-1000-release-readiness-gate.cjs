@@ -45,10 +45,15 @@ if(exists(manifestPath)&&exists(evidencePath)){
    check(!!original&&original.level===e.level&&original.part_of_speech===e.part_of_speech,'approved entry does not match original shortlist identity '+e.task_id);
    check(!!t&&!!original&&t.source_path===original.source_path&&t.source_index===original.source_index&&t.source_blob_sha===original.source_blob_sha,'original task provenance mismatch '+e.task_id);
    check(!!original&&original.editorial_hold===true&&original.release_approved===false,'source shortlist editorial hold unexpectedly changed '+e.task_id);
-   for(const field of ['part_of_speech','english_definition','myanmar_meaning','example_sentence','exact_sense','reviewer_id','reviewer_signed_at','source_observed_on','source_url','source_excerpt_reference']){
+   for(const field of ['part_of_speech','english_definition','myanmar_meaning','example_sentence','exact_sense','reviewer_id','reviewer_signed_at','source_observed_on','source_url','source_excerpt_reference','source_cefr_level','source_cefr_evidence_excerpt','source_cefr_url','source_cefr_excerpt_reference','source_cefr_observed_on']){
     check(typeof e[field]==='string'&&e[field].trim().length>0,'missing '+field+' for '+e.task_id);
    }
    check(typeof e.source_url==='string'&&/^https:\/\//.test(e.source_url),'non-HTTPS CEFR source '+e.task_id);
+   check(e.source_cefr_level===e.level,'source-backed CEFR label does not match approved level '+e.task_id);
+   check(typeof e.source_cefr_url==='string'&&/^https:\/\//.test(e.source_cefr_url),'non-HTTPS CEFR label source '+e.task_id);
+   const cefrExcerpt=typeof e.source_cefr_evidence_excerpt==='string'?e.source_cefr_evidence_excerpt:'';
+   check(cefrExcerpt.toLocaleLowerCase().includes(String(e.headword).toLocaleLowerCase())&&new RegExp('(^|[^A-Z0-9])'+e.level+'([^A-Z0-9]|$)','i').test(cefrExcerpt),'CEFR evidence excerpt must identify the headword and exact approved level '+e.task_id);
+   check(typeof e.source_cefr_observed_on==='string'&&!Number.isNaN(Date.parse(e.source_cefr_observed_on)),'invalid CEFR source observation date '+e.task_id);
    check(e.independent_english_review===true&&e.independent_myanmar_review===true&&e.independent_example_review===true&&e.independent_cefr_review===true,'incomplete independent review '+e.task_id);
    check(e.reviewer_id!==e.author_id&&!!e.author_id,'reviewer must differ from author '+e.task_id);
   }
