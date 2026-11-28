@@ -108,3 +108,46 @@ Source:
 - It does not claim that the proposed Myanmar refinements have been checked by an independent fluent Myanmar-language editor.
 
 The four source URLs and the observation date are being attached to their existing review tasks as **author-collected research leads only**. All four tasks remain pending and unapproved.
+
+
+## Existing Oxford word/POS crosscheck and protected IELTS overlap — 2026-11-28
+
+A further read-only crosscheck of existing repository records adds two important provenance layers. Neither record is an independent sense review.
+
+### Oxford 3000/5000 crosscheck
+
+Existing file: `draft/CEFR-1000-OXFORD-LEVEL-POS-CROSSCHECK.json`, created 2026-10-27, blob SHA `f97b5ea7d2191e77b193098de862c59e7642d6e0`.
+
+Its source-provenance block says the comparison used community transcriptions of Oxford 3000/5000 files and an imperfect mirror, with official Oxford PDF spotchecks. The official spotcheck list explicitly records **personality noun A2**. The official Oxford 3000 and Oxford 5000 source URLs retained in that file are:
+- https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000.pdf
+- https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000.pdf
+- https://www.oxfordlearnersdictionaries.com/wordlists/oxford3000-5000
+
+The existing same-POS crosscheck records:
+- `personality`: proposed B2 vs Oxford noun A2 — two-band gap, high-priority conflict. Cambridge's selected character sense is B2, but the official Oxford wordlist spotcheck says A2. A wordlist headword/POS label is not an exact-sense adjudication; retain the hold.
+- `relief`: proposed B2 vs Oxford noun B2 — no wordlist-level discrepancy, but exact emotional-sense review remains pending.
+- `resistance`: proposed B2 vs Oxford noun C1 — one-band gap and CEFR-conflict priority. This aligns with Oxford's C1 topic signal; exact-sense human adjudication remains necessary.
+- `retail`: proposed B2 vs Oxford noun B2 — no wordlist-level discrepancy, but exact-sense review remains pending. This aligns with Oxford's B2 topic labels and conflicts with Cambridge's C1 label.
+
+The crosscheck itself marks all four `independently_approved: false` and `source_evidence_independently_verified: false`. The repository's own policy states that a word/POS mismatch is a review priority, not proof of an error or an instruction to change a level automatically.
+
+### Protected IELTS-bank overlap
+
+Existing file: `draft/CEFR-1000-IELTS-OVERLAP-REVIEW.json`, created 2026-10-27, blob SHA `e075c42ff3cc2e636236eede6f6f84de97733b9d`.
+
+Two of these four B2 headwords have mechanical case-insensitive overlaps with the separate IELTS 1,000-word bank:
+- `personality`: the IELTS entry has the same broad character/behaviour area and the same Myanmar gloss, but `same_sense_confirmed: false` and `semantic_distinctness_reviewed: false`.
+- `retail`: the IELTS entry also concerns selling goods to consumers and uses the same Myanmar gloss, but `same_sense_confirmed: false` and `semantic_distinctness_reviewed: false`.
+
+Both overlap records remain `release_approved: false`. This is an unresolved educational/sense-overlap review, not proof of duplication and not permission to alter the IELTS bank. The separate IELTS bank was only read for this crosscheck and was not modified.
+
+## Revised disposition
+
+| Headword | CEFR evidence and cross-project risk | Current disposition |
+|---|---|---|
+| personality | Cambridge character sense B2; official Oxford 3000 noun spotcheck A2; two-band word/POS conflict; unconfirmed IELTS overlap | High-priority hold; independent exact-sense and IELTS distinctness review |
+| relief | Cambridge emotional sense B2; Oxford Feelings B2 topic and Oxford noun list B2 | Retain B2 provisionally; independent sense and Myanmar review still required |
+| resistance | Cambridge broad C2 signal; Oxford noun wordlist C1 and matching C1 topic signal | B2 challenged; hold for independent reallocation decision |
+| retail | Cambridge noun C1; Oxford noun wordlist B2 and Business/Shopping B2 topic labels; unconfirmed IELTS overlap | Cross-publisher conflict; hold for independent exact-sense and IELTS distinctness review |
+
+No shortlist, IELTS-bank, review-task, approval or release field was changed by these crosschecks.
