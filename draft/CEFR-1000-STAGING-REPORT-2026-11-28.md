@@ -518,3 +518,64 @@ No provisional level, shortlist record, IELTS-bank content, review task, approva
 - Node approved-manifest denial and Python explicit release-denial assertion: both successful and both preserve the blocked state.
 
 This is structural/release-denial CI evidence only. It does not verify linguistic correctness, independently approve any entry, generate or listen to real audio, establish mobile/iPhone testing, clear hosting limits or deploy production. The report commit created by this addition will trigger its own workflow run and must be checked separately.
+
+
+## 2026-11-28 late-run update — lexical-profile evidence and complete technical audio candidate
+
+This update supersedes the earlier audio-generation rows above. The scope remains the user-approved CEFR-1000 project only.
+
+### Inventory and source evidence
+
+The latest direct parse reconfirmed:
+- A1/A2/B1/B2/C1: **200 written entries each**.
+- 1,000 unique normalized headwords; no cross-level duplicate headwords.
+- 1,000 editorial holds; 0 independently approved.
+- 1,000 pending independent-review tasks (200 per level); 0 assigned reviewers, 0 task source URLs, 0 approvals.
+- The provisional shortlist's author/source provenance fields `source_english`, `source_burmese` and `source_level` are empty for all 1,000 entries.
+
+New author-side evidence note: `draft/CEFR-1000-EVIDENCE-2026-11-28-CEFRJ-OCTANOVE-CROSSCHECK.md`, commit [`619ea17625e1111a0ccdd175e8f3b3f4240d5d50`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/619ea17625e1111a0ccdd175e8f3b3f4240d5d50). It compares all 1,000 headword/POS pairs with CEFR-J Vocabulary Profile 1.5 and Octanove C1/C2 1.0. Same-level profile hits: A1 171, A2 74, B1 63, B2 53, C1 18; other-level-only: 6, 112, 134, 139, 88; no match: 23, 14, 3, 8, 94. These are lexical-profile triage results, not exact-sense adjudications or automatic level changes. The note records direct dictionary sense checks, source URLs, observed dates, source versions/hashes and specific C1/C2 conflicts (including `benevolent`, `legitimate`, `meticulous`, `stringent`, `vindicate` and Cambridge's explicit C2 label for `pragmatic`). All remain editorial hold.
+
+### British George/Emma technical audio candidate — complete
+
+GitHub Actions run [`46155834034`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46155834034) completed with **18/18 jobs successful**: preflight, all 16 parallel shards, and final assembly/validation. Actual job conclusions and logs were fetched.
+
+- **3,992** candidate recordings technically generated and validated.
+- **1,996** distinct texts; 1,996 George (`bm_george`) and 1,996 Emma (`bf_emma`) recordings.
+- 3,716 newly generated; 276 reused from technically reusable candidate material.
+- Final unreviewed artifact: `cefr1000-COMPLETE-GEORGE-EMMA-CANDIDATE-UNREVIEWED`, artifact ID `15268540341`, size 73,904,115 bytes. Artifact ZIP SHA-256: `eb02755b0d97ef0f41b943f06f9ebbe3aa721f5b3caca5544f0d23ae82c31426`.
+- All shard outputs and the assembled candidate were uploaded as **UNREVIEWED** artifacts. The assembly log explicitly states: “PASS 3992 audio files technically complete; NO human approvals or deployment.”
+
+This completes technical generation, not real listening. The listening receipt count remains **0/3,992**; no audio is approved or copied into production.
+
+### Automated browser matrix expansion
+
+The earlier browser run [`46155842008`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46155842008) passed desktop Chromium and WebKit iPhone emulation, plus 18 sample MP3 HTTP GETs. It did not cover all four required engine/device combinations.
+
+To close that automated coverage gap, `tests/production-browser.cjs` was expanded in commit [`adc50829a1eaba6781b7e0332e88dd6507c0d3b1`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/adc50829a1eaba6781b7e0332e88dd6507c0d3b1) to test:
+1. desktop Chromium;
+2. desktop WebKit;
+3. mobile Chromium (Pixel 7 emulation);
+4. mobile WebKit (iPhone 13 emulation).
+
+The new workflow run [`46157790874`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46157790874) was **in progress when this report section was written**; no pass is claimed until its actual job conclusion and logs are checked. Browser audio playback remains mocked for routing tests; sample MP3 HTTP GETs do not constitute audible listening. Mobile emulation is not a physical iPhone.
+
+### Other verified CI and production preservation
+
+- Structural QA run [`46157443103`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46157443103): **14/14 jobs successful**, including five Python level-specific structural jobs, five Node cross-level/task-ID checks, mutation checks and controlled release denial.
+- Release guard adversarial run [`46156081461`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46156081461): all five CEFR-level jobs successful.
+- Evidence-gate regression run [`46156077740`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46156077740): all five level jobs successful; absent human evidence correctly blocks release.
+- Preservation guard run [`46155894372`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46155894372): successful. Its actual log compared the staging tree with public `main` and passed checks for `content.js`, the separate IELTS bank, audio manifest/player/integration, privacy tools/page, site configuration and audio directory. No protected production-file drift was detected.
+- Go-live documentary QC run [`46155904127`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46155904127): successful as a **report-only QC job**, not a release. The log confirmed the published GitHub Pages policy thresholds (1 GB site size, 100 GB/month soft bandwidth, 600-second deployment timeout and the native-build soft limit/custom Actions exception), while still reporting no actual measured final-site artifact/usage receipt.
+
+### Remaining release blockers — unchanged
+
+1. Independent English, fluent Myanmar, original example and exact-sense CEFR reviews: **0/1,000**.
+2. Approved release manifest: absent; all 1,000 entries remain provisional and on editorial hold.
+3. Actual listening signoffs for George/Emma headword and example recordings: **0/3,992**.
+4. Full four-way automated browser matrix: pending the new run's successful completion and log verification at this observation.
+5. Physical iPhone Safari testing and British voice listening on a real device: not evidenced.
+6. Actual measured GitHub Pages final-site size, bandwidth forecast and deployment-duration receipt bound to an approved manifest: not evidenced; policy thresholds alone are not a measurement.
+7. Final content-bound protected-asset release receipt: separate preservation automation passed, but the formal release ledger still lacks its required receipt.
+8. Production deployment confirmation: absent. No merge to `main`, public deployment or production change was made.
+
+**Decision: remain staging-only.** No independent approval, human listening, physical iPhone test, final hosting clearance or production deployment is claimed.
