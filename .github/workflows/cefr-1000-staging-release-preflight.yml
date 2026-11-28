@@ -1,3 +1,4 @@
+# Automated staging preflight requested: negative release-gate tests and five-level integrity only; never deploy.
 name: CEFR-1000 staging release preflight (never deploy)
 on:
   push:
