@@ -20,13 +20,13 @@ Structural observations:
 - 1,000 unique case-folded NFC headwords in the shortlist.
 - All 1,000 shortlist entries remain `editorial_hold: true`.
 - All provisional `reviewed_english`, `reviewed_burmese`, `reviewed_example`, `reviewed_level`, `reviewed_pronunciation`, and `release_approved` flags remain explicitly false.
-- All 1,000 review tasks remain pending, with approval false, no assigned reviewer, no reviewer identity/signature, no observed date, and no claimed source evidence URLs.
+- All 1,000 review tasks remain pending and approval false; no task has an assigned reviewer, reviewer identity or signature. Four B2 tasks (personality, relief, resistance, retail) now carry author-collected Cambridge source URLs and observation date 2026-11-28 as research leads only; the other 996 still have no source URLs/date. These links are not independent signoff.
 
 Source file blob SHAs observed:
 - Provisional shortlist: `475e68ae17ab97bd937e73e5ce4794e0dcd76551`.
-- Independent review tasks: `77abf35146825f05e3e58cfdd7a73b3c7302c967`.
+- Independent review tasks after attaching four author-collected B2 source leads: `50e2041459e6c10a1912bd9678d8b0a207d81228`.
 
-The author-side evidence notes cover selected A1–C1 candidates and are research aids, not independent review records. They preserve source URLs, observation dates, exact-sense distinctions, original shortlist/task provenance, British pronunciation references, proposed Myanmar refinements and newly drafted examples. Coverage is partial; the presence of a note never changes a task's pending status or approval count. The notes include A1 articles, family/education, core nouns, lexical sense boundaries, daily-life/actions and core verbs/adjectives; A2 sense/level audits; B1 exact-sense/level audits; C1 level challenges, political/legal senses, lexical-level risks and C2/A2 conflicts; and a source-provenance gap audit.
+The author-side evidence notes cover selected A1–C1 candidates and are research aids, not independent review records. They preserve source URLs, observation dates, exact-sense distinctions, original shortlist/task provenance, British pronunciation references, proposed Myanmar refinements and newly drafted examples. Coverage is partial; the presence of a note never changes a task's pending status or approval count. The notes include A1 articles, family/education, core nouns, lexical sense boundaries, daily-life/actions and core verbs/adjectives; A2 sense/level audits; B1 exact-sense/level audits; B2 exact-sense audit for personality, relief, resistance and retail; C1 level challenges, political/legal senses, lexical-level risks and C2/A2 conflicts; and a source-provenance gap audit.
 
 ## Release gates
 
@@ -392,3 +392,20 @@ Repaired the URL validation using an explicit `startsWith('https://')` check, av
 - Adversarial evidence job `140999885296`: passed the synthetic full-schema fixture and all eight negative cases, including the three new independent-review signoff cases. The log states that no real review or audio evidence was created.
 
 The failed runs above are retained as transparent regression history; the corrected run is the validation of the new gate/test code. The latest successful run validates `9cecf4aa7c8c662bee1d87a9be60da6f2f699a2b`, not this subsequent report update; the report commit's own push-triggered run must be checked separately.
+
+
+## B2 exact-sense audit and source-lead attachment — 2026-11-28
+
+Added `draft/CEFR-1000-EVIDENCE-2026-11-28-B2-EXACT-SENSE-AUDIT.md` (commit `e6d5886d4dcb01af757c4d9f946dbc6aa5ce7f66`). It records Cambridge source URLs, UK IPA, source-index observation date, starter/shortlist blob provenance, Myanmar refinements for independent consideration, and grammar/original-example assessments for four existing B2 tasks.
+
+Key findings:
+- `personality`: Cambridge Learner's and English Dictionary extracts both label the selected character sense B2.
+- `relief`: the selected emotional sense is B2; the current definition should be narrowed so it does not conflate emotional relief with pain relief.
+- `resistance`: the learner entry has a matching opposition sense but no visible CEFR label in the indexed extract; the main English entry labels a broad overlapping sense C2. B2 remains unsubstantiated by the inspected evidence and needs another explicit source or independent reallocation decision.
+- `retail`: the selected noun/activity sense is explicitly labelled C1 by Cambridge, directly challenging its provisional B2 placement. Any C1 reallocation requires review of the full level allocation and a replacement candidate; no automatic move was made.
+
+Direct Cambridge page opens returned HTTP 403. The note therefore identifies the search-indexed extracts as evidence leads and requires human source-page verification. It does not claim independent source verification or approval.
+
+Attached author-collected source URLs and `source_observed_on: 2026-11-28` to the four existing tasks only; task-file commit `33aca9ffb5418fdd519ce4857d5225f0d0d15af3`, blob SHA `50e2041459e6c10a1912bd9678d8b0a207d81228`. All four remain `PENDING_INDEPENDENT_REVIEW`, with approval false, no assigned reviewer, and no reviewer identity/signature. No shortlist field, editorial hold, level, review flag or approval flag was changed.
+
+The new evidence and task metadata are author-side research aids only. They do not establish historical WordNet provenance clearance, complete CEFR coverage, fluent Myanmar approval or release readiness. The report's inventory and release-gate counts remain unchanged.
