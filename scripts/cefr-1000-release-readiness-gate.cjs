@@ -3,7 +3,8 @@
 // Fail-closed release gate. This is a staging-only readiness checker; it never deploys.
 // All evidence files must be independently produced and traceable, not self-attested.
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
-const root=path.resolve(__dirname,'..');
+// The root override is used only by the synthetic adversarial test fixture.
+const root=process.env.CEFR1000_GATE_ROOT?path.resolve(process.env.CEFR1000_GATE_ROOT):path.resolve(__dirname,'..');
 const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
 const levels=['A1','A2','B1','B2','C1'];
 const errors=[];
@@ -55,14 +56,26 @@ if(exists(manifestPath)&&exists(evidencePath)){
   check(manifestIds.size===tasksById.size&&[...tasksById.keys()].every(id=>manifestIds.has(id)),'approved manifest must cover each original task exactly once');
   const required=['george_headword','emma_headword','george_example','emma_example'];
   const audio=ev.audio||{};
-  const audioPaths=new Set(); // A reused file cannot satisfy multiple voice/utterance slots.
-  const audioDigestsByTask=new Map();
+  const manifestByTask=new Map(entries.map(e=>[e.task_id,e]));
+  const audioPaths=new Set(); // Each voice/utterance slot needs its own file.
+  const audioDigests=new Set(); // Distinct files must also contain distinct audio bytes globally.
+  const supportedFormats=new Set(['mp3','wav','ogg','flac']);
+  const hasAudioSignature=(buffer,format)=>{
+   if(format==='mp3')return buffer.length>=3&&(buffer.subarray(0,3).toString()==='ID3'||(buffer[0]===0xff&&(buffer[1]&0xe0)===0xe0));
+   if(format==='wav')return buffer.length>=12&&buffer.subarray(0,4).toString()==='RIFF'&&buffer.subarray(8,12).toString()==='WAVE';
+   if(format==='ogg')return buffer.length>=4&&buffer.subarray(0,4).toString()==='OggS';
+   if(format==='flac')return buffer.length>=4&&buffer.subarray(0,4).toString()==='fLaC';
+   return false;
+  };
   for(const kind of required){
    const records=Array.isArray(audio[kind])?audio[kind]:[];
    check(records.length===1000,kind+' must contain 1000 audio records');
    const ids=new Set();
    for(const r of records){
     check(!!r.task_id&&!ids.has(r.task_id)&&manifestIds.has(r.task_id),'duplicate/unknown/missing audio task id '+kind+' '+r.task_id);ids.add(r.task_id);
+    const approved=manifestByTask.get(r.task_id);
+    const expectedText=approved?(kind.endsWith('_headword')?approved.headword:approved.example_sentence):null;
+    check(typeof r.spoken_text==='string'&&r.spoken_text===expectedText,'audio spoken text mismatch '+kind+' '+r.task_id);
     const safePath=typeof r.path==='string'&&/^draft\/[a-zA-Z0-9_./-]+$/.test(r.path)&&!r.path.split('/').includes('..')&&path.resolve(root,r.path).startsWith(path.resolve(root,'draft')+path.sep);
     check(safePath&&exists(r.path),'missing or unsafe staging audio file '+kind+' '+r.task_id);
     if(safePath){
@@ -73,17 +86,18 @@ if(exists(manifestPath)&&exists(evidencePath)){
      const stat=fs.lstatSync(path.join(root,r.path));
      check(stat.isFile()&&!stat.isSymbolicLink()&&stat.size>0,'empty, non-regular or symlinked audio '+kind+' '+r.task_id);
      if(stat.isFile()&&!stat.isSymbolicLink()){
-      const digest=crypto.createHash('sha256').update(fs.readFileSync(path.join(root,r.path))).digest('hex');
+      const bytes=fs.readFileSync(path.join(root,r.path));
+      const digest=crypto.createHash('sha256').update(bytes).digest('hex');
       check(digest===r.sha256,'audio checksum mismatch '+kind+' '+r.task_id);
+      check(!audioDigests.has(digest),'audio content digest reused across all voice/utterance slots '+kind+' '+r.task_id);
+      audioDigests.add(digest);
+      const format=typeof r.format==='string'?r.format.toLowerCase():'';
+      const extension=path.extname(r.path).slice(1).toLowerCase();
+      check(supportedFormats.has(format)&&format===extension&&hasAudioSignature(bytes,format),'unrecognised audio format/signature '+kind+' '+r.task_id);
      }
     }else check(false,'missing audio checksum '+kind+' '+r.task_id);
     check(r.listened===true&&typeof r.listener_id==='string'&&!!r.listener_id.trim()&&typeof r.listened_at==='string'&&!Number.isNaN(Date.parse(r.listened_at))&&typeof r.listening_evidence_url==='string'&&/^https:\/\//.test(r.listening_evidence_url),'traceable listening signoff missing '+kind+' '+r.task_id);
     check(typeof r.generator_provenance_url==='string'&&/^https:\/\//.test(r.generator_provenance_url)&&r.voice_id===(kind.startsWith('george')?'George':'Emma')&&r.locale==='en-GB','British voice and generation provenance missing '+kind+' '+r.task_id);
-    if(typeof r.sha256==='string'&&/^[a-f0-9]{64}$/.test(r.sha256)&&r.task_id){
-     const digests=audioDigestsByTask.get(r.task_id)||new Set();
-     check(!digests.has(r.sha256),'identical audio reused for multiple voice/utterance slots '+r.task_id);
-     digests.add(r.sha256);audioDigestsByTask.set(r.task_id,digests);
-    }
    }
    check(ids.size===manifestIds.size&&[...manifestIds].every(id=>ids.has(id)),kind+' audio must cover each approved task exactly once');
   }
