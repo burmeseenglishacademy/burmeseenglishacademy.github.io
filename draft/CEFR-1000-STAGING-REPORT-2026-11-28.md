@@ -26,11 +26,12 @@ Source file blob SHAs observed:
 - Provisional shortlist: `475e68ae17ab97bd937e73e5ce4794e0dcd76551`.
 - Independent review tasks: `77abf35146825f05e3e58cfdd7a73b3c7302c967`.
 
-The author-side evidence notes currently cover nine A1 candidates:
-- [Core nouns: water, food, family, friend](CEFR-1000-EVIDENCE-2026-11-28-A1-CORE-NOUNS.md).
-- [Family and education: mother, father, school, teacher, student](CEFR-1000-EVIDENCE-2026-11-28-A1-FAMILY-AND-EDUCATION.md).
+The author-side evidence notes currently cover nine A1 candidates and five C1 candidates:
+- [A1 core nouns: water, food, family, friend](CEFR-1000-EVIDENCE-2026-11-28-A1-CORE-NOUNS.md).
+- [A1 family and education: mother, father, school, teacher, student](CEFR-1000-EVIDENCE-2026-11-28-A1-FAMILY-AND-EDUCATION.md).
+- [C1 exact-sense level challenges: naval, tribute, divine, municipal, neutral](CEFR-1000-EVIDENCE-2026-11-28-C1-LEVEL-CHALLENGES.md).
 
-The new five-candidate note records Cambridge Learner’s Dictionary A1 exact-sense evidence, British pronunciation references, proposed English-definition refinements, Myanmar meaning/register notes, original example grammar and Burmese renderings. It separates the A1 school-place sense from the A2 school-period sense, and the A1 parent senses from distinct religious-title/formal-verb uses. These are author-side findings only; none count as independent checks or approvals.
+The A1 notes record Cambridge exact-sense A1 evidence, British pronunciation references, proposed English-definition refinements, Myanmar meaning/register notes, original example grammar and Burmese renderings. They distinguish A1 school-place from A2 school-period and common parent senses from separate title/formal-verb senses. The C1 note identifies two direct C2 conflicts (`naval`, `tribute`), one C1 assignment not established by the inspected CEFR-labelled source (`divine`), and two exact C1 matches (`municipal`, `neutral`). It also flags the `tribute` example for being too close to the Cambridge source example. These are author-side findings only; none count as independent checks or approvals.
 
 ## Release gates
 
@@ -88,3 +89,8 @@ No changes in this run were made to the 54 published lessons, the separate IELTS
 ## Latest editorial evidence addition
 
 On 2026-11-28, five A1 entries were documented in `draft/CEFR-1000-EVIDENCE-2026-11-28-A1-FAMILY-AND-EDUCATION.md`: `mother`, `father`, `school`, `teacher`, and `student`. Their review task IDs are CEFR1000-A1-0025 through CEFR1000-A1-0029. All five remain pending; no shortlist fields or review flags were changed. Evidence-file commit: `3f0f7ade1b73e12f5f558c70657da21071f9f3e6`.
+
+
+## C1 level-risk evidence addition
+
+On 2026-11-28, the C1 risk note documented five existing entries: `naval` (Cambridge C2, conflicting with shortlist C1), `tribute` (Cambridge C2, conflicting with shortlist C1, plus example originality concern), `divine` (exact sense supported but no CEFR level shown by the inspected Cambridge learner entry), `municipal` (C1 supported), and `neutral` (C1 supported for the no-opinion adjective sense). Tasks CEFR1000-C1-0801, -0812, -0813, -0814 and -0815 remain pending. Evidence-file commit: `7c83d5f6d10e6b541423ff6db0a253cfed6f9ab4`.
