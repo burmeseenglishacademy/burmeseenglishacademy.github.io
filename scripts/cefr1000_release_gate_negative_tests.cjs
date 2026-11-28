@@ -97,6 +97,10 @@ for(const gate of gates)evidence[gate]={
  checked_at:'2026-11-28T08:00:00Z',reviewer_id:'fixture-independent-reviewer'
 };
 evidence.github_pages_limits={
+ passed:true,
+ evidence_url:'https://fixture.invalid/evidence/github_pages_limits',
+ checked_at:'2026-11-28T08:00:00Z',
+ reviewer_id:'fixture-independent-reviewer',
  source_repository_size_bytes:129078272,
  published_site_size_bytes:650000000,
  pages_artifact_size_bytes:500000000,
