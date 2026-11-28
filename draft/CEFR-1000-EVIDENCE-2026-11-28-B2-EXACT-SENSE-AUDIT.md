@@ -7,7 +7,7 @@
 
 ## Source-access and provenance note
 
-Cambridge Dictionary search-indexed page extracts were available for the exact entries below on the observation date. Attempts to open the four Cambridge pages directly returned HTTP 403, so this note records the indexed extracts and canonical source URLs rather than claiming a successful direct-page audit. A human reviewer should open and verify each page, exact sense, level label, pronunciation and Myanmar rendering before signoff.
+Cambridge and Oxford Learner's Dictionaries search-indexed page extracts were available for the exact entries below on the observation date. Attempts to open the publisher pages directly returned HTTP 403, so this note records the indexed extracts and canonical source URLs rather than claiming a successful direct-page audit. Oxford topic labels are treated as CEFR topic-level signals, not as a direct headword-level list label. A human reviewer should open and verify each page, exact sense, level label, pronunciation and Myanmar rendering before signoff.
 
 All four candidates come from `draft/A2-C1-EDITORIAL-STARTER.json`, blob SHA `b04dd85db5cfae131c25aa4c73109778991b6fdc`. Their shortlist records are in `draft/CEFR-1000-PROVISIONAL-SHORTLIST.json`, blob SHA `475e68ae17ab97bd937e73e5ce4794e0dcd76551`. The task IDs below were matched against `draft/CEFR-1000-INDEPENDENT-REVIEW-TASKS.json` before this note was written.
 
@@ -39,7 +39,7 @@ Sources:
 
 **Selected sense:** the positive feeling experienced when something unpleasant has ended or has not happened.
 
-Cambridge's Learner's Dictionary labels the emotion sense **B2**. The main Cambridge English Dictionary labels the happiness sense **B2 [S or U]**. The shortlist's example clearly illustrates this emotional sense. However, the current English definition also mentions pain, which can blur the entry with the separate physical-relief sense. The main dictionary separately labels the help/aid sense **C2**; that is not the intended meaning here.
+Cambridge's Learner's Dictionary labels the emotion sense **B2**. The main Cambridge English Dictionary labels the happiness sense **B2 [S or U]**. Oxford Advanced Learner's Dictionary places this same emotional sense under **Feelings B2**, providing cross-publisher corroboration. The shortlist's example clearly illustrates this emotional sense. However, the current English definition also mentions pain, which can blur the entry with the separate physical-relief sense. The main dictionary separately labels the help/aid sense **C2**; that is not the intended meaning here.
 
 - **UK pronunciation:** /rɪˈliːf/
 - **Suggested narrower English definition:** “A feeling of happiness or comfort because something unpleasant has ended or did not happen.”
@@ -52,6 +52,7 @@ Cambridge's Learner's Dictionary labels the emotion sense **B2**. The main Cambr
 Sources:
 - https://dictionary.cambridge.org/dictionary/learner-english/relief
 - https://dictionary.cambridge.org/dictionary/english/relief
+- https://www.oxfordlearnersdictionaries.com/us/definition/english/relief
 
 ## 3. resistance — B2 placement is not substantiated by the inspected CEFR evidence
 
@@ -65,17 +66,18 @@ The Cambridge Learner's Dictionary has a “DISAGREE” sense matching this mean
 - **Current example:** “The proposal met resistance from local residents.”
 - **Grammar assessment:** Correct. “Meet resistance from” is a natural collocation; “from local residents” identifies the source of the opposition.
 - **Possible fresh alternative:** “Several employees expressed resistance to the proposed schedule change.”
-- **Editorial recommendation:** Keep the entry on hold. Do not claim B2 evidence from the inspected Cambridge pages. Obtain another explicit CEFR source or have an independent reviewer recommend reallocation/removal.
+- **Editorial recommendation:** Keep the entry on hold; the selected opposition sense has a Cambridge C2 broad-sense label and an Oxford C1 topic signal, while the Cambridge Learner's entry itself is unlabelled. Do not retain B2 without an additional level-specific source or independent reallocation decision.
 
 Sources:
 - https://dictionary.cambridge.org/dictionary/learner-english/resistance
 - https://dictionary.cambridge.org/dictionary/english/resistance
+- https://www.oxfordlearnersdictionaries.com/definition/english/resistance
 
 ## 4. retail — direct C1 conflict with the provisional B2 placement
 
 **Selected sense:** the activity/business of selling goods directly to the public, usually through shops.
 
-The Cambridge English Dictionary labels the noun sense **C1**. This is the same retail activity sense represented by the shortlist definition and example. The provisional B2 placement is therefore directly challenged by a source that explicitly labels the selected noun sense C1.
+The Cambridge English Dictionary labels the noun sense **C1**. Oxford Advanced Learner's Dictionary gives the same noun/activity sense and attaches the topic labels **Business B2** and **Shopping B2**. These are conflicting publisher classifications for the same retail activity sense: Cambridge's C1 headword-level label versus Oxford's B2 topic labels. The B2 placement has Oxford support but remains in cross-publisher conflict; neither label should be silently preferred.
 
 - **UK pronunciation:** /ˈriː.teɪl/
 - **Suggested English definition:** “The activity or business of selling goods directly to members of the public, usually in shops.”
@@ -94,8 +96,8 @@ Source:
 |---|---|---|---|
 | personality | B2 | B2 character sense | Retain provisionally |
 | relief | B2 | B2 emotional sense; other senses differ | Retain provisionally; narrow definition |
-| resistance | B2 | Learner sense unlabelled; broad advanced-dictionary sense C2 | Hold; obtain another explicit level source |
-| retail | B2 | C1 noun sense | Hold as a direct B2/C1 conflict; review C1 reallocation |
+| resistance | B2 | Cambridge broad C2 signal; Oxford topic label C1 | Hold; B2 is challenged by two advanced-level signals |
+| retail | B2 | Oxford topic labels B2; Cambridge headword label C1 | Hold as a cross-publisher B2/C1 conflict |
 
 ## What this audit does not do
 
