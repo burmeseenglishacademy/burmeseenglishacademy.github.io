@@ -126,3 +126,51 @@ The shortlist groups these entries under POS `question word`. This is a useful f
 ## Integrity boundary
 
 All eleven entries remain on editorial hold. Their English, Myanmar, example and CEFR independent-review fields remain pending. No reviewer was assigned, no task was signed, no approval flag was changed, and no level was moved. This is source-supported author research only.
+
+
+## 4. Publisher-source readback and tighter exact-sense boundaries — 2026-11-29
+
+A second source pass was made against the live Cambridge Learner's Dictionary and Cambridge Grammar pages on 2026-11-29 (Asia/Singapore). The URLs below are retained for independent reviewers. These observations strengthen the source trail; they are still author-side research, not independent signoff.
+
+| Headword | Cambridge exact-sense CEFR evidence observed | Editorial consequence |
+|---|---|---|
+| `person` | A1 countable noun, “a human being”; the same entry explicitly lists plural `people`. | The shortlist's A2 placement is a real same-sense level conflict, not a different-POS explanation. |
+| `people` | A1 plural noun for more than one person; Cambridge separately identifies `the people` and plural `peoples` for nation/race meanings. | Keep the ordinary A1 plural sense distinct from collective/national senses; retain its morphological link to `person`. |
+| `police` | A2 plural noun for the law-enforcement organisation or its members. | Preserve plural-only noun behaviour; prefer an example with a finite verb that visibly shows plural agreement. |
+| `please` | A1 exclamation for polite requests and acceptance; B1 verb for making someone happy. | The A1 item should be POS `exclamation` (or `interjection` in the app taxonomy), with politeness retained as a function tag. |
+| `where` | A1 interrogative adverb for place/position; A2 conjunction for an embedded place clause. | The current direct question example selects the A1 adverb, not the A2 conjunction. |
+| `when` | A1 interrogative adverb for asking at what time; A2 time conjunction; B2 concessive `when` = although. | Do not assign the conjunction or concessive sense to the A1 question entry. |
+| `why` | A1 reason-question adverb; A2 `Why don't you…?` / `Why not…?` suggestions; B1 agreement response `Why not?`. | Keep the current reason-question example at A1; do not merge suggestion or agreement patterns into its definition. |
+| `how` | A1 quantity/size/age questions and the fixed greeting `How are you?`; A2 manner questions, health questions such as `How are you feeling today?`, and `How about…?`; B1 emphatic use. | The current `How are you today?` example is the A1 greeting. The definition “way or condition” is too broad and blurs A1 greeting with A2 manner/health senses. |
+| `what` | A1 information-seeking pronoun/determiner; A2 `what about…?` suggestion; B1 fused-relative “the thing that” and exclamatory `what a/an…`; B2 `what…for?` reason question. | The example `What is your name?` selects the A1 information sense. Keep the other constructions separate. |
+| `who` | A1 interrogative pronoun asking which person/name; A2 relative-clause use; B1 non-defining additional-information use. | The example `Who is your teacher?` selects the A1 interrogative sense only. |
+| `which` | A1 interrogative determiner/pronoun used when choosing from a fixed or limited set. | The example `Which book do you want?` selects the determiner use; record pronoun as an alternate construction, not as a different CEFR label. |
+
+### Source URLs observed on 2026-11-29
+
+- `person`: https://dictionary.cambridge.org/us/dictionary/learner-english/person
+- `people`: https://dictionary.cambridge.org/us/dictionary/learner-english/people
+- `police`: https://dictionary.cambridge.org/dictionary/learner-english/police
+- `please`: https://dictionary.cambridge.org/dictionary/learner-english/please
+- `where`: https://dictionary.cambridge.org/us/dictionary/learner-english/where
+- `when`: https://dictionary.cambridge.org/dictionary/learner-english/when
+- `why`: https://dictionary.cambridge.org/us/dictionary/learner-english/why
+- `how`: https://dictionary.cambridge.org/us/dictionary/learner-english/how
+- `what`: https://dictionary.cambridge.org/dictionary/learner-english/what
+- `who`: https://dictionary.cambridge.org/us/dictionary/learner-english/who
+- `which`: https://dictionary.cambridge.org/dictionary/english/which?topic=question-words-and-expressions
+- Wh-question formation and auxiliary/subject order: https://dictionary.cambridge.org/grammar/british-grammar/wh
+- `how` question and exclamation grammar: https://dictionary.cambridge.org/grammar/british-grammar/how
+- `person/persons/people` usage: https://dictionary.cambridge.org/uk/grammar/british-grammar/person-persons-or-people
+
+### Focused correction proposal for `how` (not applied to shortlist)
+
+Current shortlist definition: “Used to ask about a way or condition.” Current example: “How are you today?”
+
+The example is a conventional A1 greeting, but the definition also points toward the A2 manner and health senses. If retaining the current example, the narrow A1 definition should be along the lines of: “Used in the greeting ‘How are you?’ to ask whether someone is well.” Myanmar: `နေကောင်းလား၊ ဒီနေ့ နေကောင်းလား။`
+
+If the intended entry is the A2 health-check sense, use an example such as “How are you feeling today?” and translate it as `ဒီနေ့ ဘယ်လိုခံစားနေရလဲ။` If the intended entry is the A2 manner sense, use “How do you get to school?” and translate it as `ကျောင်းကို ဘယ်လိုသွားလဲ။` These are different teachable senses; the shortlist should not combine them in one A1 definition.
+
+### Review boundary
+
+No wording, POS, level, Myanmar gloss, example, review-task field or approval flag was changed in the frozen shortlist/task files. The eleven entries remain on editorial hold. All source URLs are research leads for independent reviewers; they do not count as reviewer evidence or approvals.
