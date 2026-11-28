@@ -506,3 +506,15 @@ Current editorial priority:
 - `retail`: B2 has Oxford wordlist/topic support, but Cambridge C1 conflicts; IELTS distinctness also remains unresolved.
 
 No provisional level, shortlist record, IELTS-bank content, review task, approval flag or release state was changed.
+
+
+## Latest current-tip CI verification — 2026-11-28
+
+[Run `46156129091`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46156129091) checked the exact report commit `e140bde7add1b44c31f4b5911a10c98f14417fae` and completed **14/14 jobs successfully**. All job conclusions and logs were fetched:
+- Python structural integrity A1, A2, B1, B2 and C1: 5/5 successful, each with `errors: []` and `independent_approval_inferred: false`.
+- Node cross-level structural/task-ID A1, A2, B1, B2 and C1: 5/5 successful; each log reports 200 provisional entries, 200 review tasks, 0 independently verified and `release: BLOCKED`.
+- Twenty corrupted-provisional negative cases: all 20 rejected; the release remains rejected and no independent review is inferred.
+- Adversarial release evidence/audio checks: all eight synthetic checks passed, including author self-review, stale example hash, pending CEFR review, conflicting source CEFR label, generic source reference, wrong spoken headword, duplicate audio bytes and invalid audio signature.
+- Node approved-manifest denial and Python explicit release-denial assertion: both successful and both preserve the blocked state.
+
+This is structural/release-denial CI evidence only. It does not verify linguistic correctness, independently approve any entry, generate or listen to real audio, establish mobile/iPhone testing, clear hosting limits or deploy production. The report commit created by this addition will trigger its own workflow run and must be checked separately.
