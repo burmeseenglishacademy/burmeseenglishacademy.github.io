@@ -31,6 +31,11 @@ const manifest={
    reviewer_signed_at:'2026-11-28T08:00:00Z',source_observed_on:'2026-11-28',
    source_url:'https://fixture.invalid/source/'+encodeURIComponent(source.word),
    source_excerpt_reference:'synthetic fixture excerpt '+index,
+   source_cefr_level:source.level,
+   source_cefr_evidence_excerpt:source.word+': CEFR '+source.level+' synthetic exact-sense label',
+   source_cefr_url:'https://fixture.invalid/cefr/'+encodeURIComponent(source.word),
+   source_cefr_excerpt_reference:'synthetic CEFR excerpt '+index,
+   source_cefr_observed_on:'2026-11-28',
    independent_english_review:true,independent_myanmar_review:true,
    independent_example_review:true,independent_cefr_review:true
   };
@@ -84,6 +89,27 @@ try{
  assert.equal(baseline.status,0,'Synthetic complete schema fixture should pass schema validation');
  assert.equal(baseline.report.release,'EVIDENCE_SCHEMA_CHECK_PASSED_NOT_DEPLOYMENT_AUTHORIZATION');
  console.log('PASS: complete synthetic fixture satisfies evidence schema only (not deployment authorization)');
+
+ const firstManifestEntry=manifest.entries[0];
+ const originalCefrLevel=firstManifestEntry.source_cefr_level;
+ firstManifestEntry.source_cefr_level='C2';
+ writeEvidence();
+ const wrongCefrLevel=runGate();
+ assert.equal(wrongCefrLevel.status,1,'A CEFR label that differs from the approved level must be rejected');
+ assert.ok(wrongCefrLevel.report.blockers.some(x=>x.includes('source-backed CEFR label does not match approved level')));
+ console.log('PASS: a source CEFR label that conflicts with the manifest level is rejected');
+
+ firstManifestEntry.source_cefr_level=originalCefrLevel;
+ const originalCefrExcerpt=firstManifestEntry.source_cefr_evidence_excerpt;
+ firstManifestEntry.source_cefr_evidence_excerpt='Generic Oxford word-list landing page; no individual headword level is shown';
+ writeEvidence();
+ const genericCefrSource=runGate();
+ assert.equal(genericCefrSource.status,1,'A generic word-list URL without a headword-level excerpt must be rejected');
+ assert.ok(genericCefrSource.report.blockers.some(x=>x.includes('CEFR evidence excerpt must identify the headword and exact approved level')));
+ console.log('PASS: a generic list reference without an exact headword/level excerpt is rejected');
+
+ firstManifestEntry.source_cefr_evidence_excerpt=originalCefrExcerpt;
+ writeEvidence();
 
  const first=evidence.audio.george_headword[0];
  first.spoken_text='wrong spoken item';
