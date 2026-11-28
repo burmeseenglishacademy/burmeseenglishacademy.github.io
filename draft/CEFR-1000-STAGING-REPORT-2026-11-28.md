@@ -898,3 +898,72 @@ Follow-up GitHub Actions run [`46168057816`](https://github.com/burmeseenglishac
 The same job also passed the existing independent-review, exact-sense CEFR, audio content/voice, duplicate-slot and format negative tests. It explicitly says no real review or audio evidence was created.
 
 **Hosting decision remains BLOCKED / NOT ASSESSED for the approved release.** The actual Pages settings, final approved site's size, artifact digest, deployment timing and bandwidth forecast have not been measured. No deployment was run.
+
+
+---
+
+## Automation run 2 — 2026-11-29 source, CI, preservation and release-gate verification
+
+**Scope remains the user-approved 1,000-entry A1–C1 project only.** The superseded 5,000-word plan is not active. Branch: `cefr-5000-bilingual-qa-staging`.
+
+### Frozen inventory re-read
+
+The complete shortlist and independent-review task file were fetched again from the staging branch and parsed. Their blob SHAs remain:
+- Shortlist: `475e68ae17ab97bd937e73e5ce4794e0dcd76551`.
+- Review tasks: `77abf35146825f05e3e58cfdd7a73b3c7302c967`.
+
+| Level | Written | Unique NFC/case-folded headwords | Editorial hold | Independent approvals | Pending review tasks | Reviewer assigned |
+|---|---:|---:|---:|---:|---:|---:|
+| A1 | 200 | 200 | 200 | 0 | 200 | 0 |
+| A2 | 200 | 200 | 200 | 0 | 200 | 0 |
+| B1 | 200 | 200 | 200 | 0 | 200 | 0 |
+| B2 | 200 | 200 | 200 | 0 | 200 | 0 |
+| C1 | 200 | 200 | 200 | 0 | 200 | 0 |
+| **Total** | **1,000** | **1,000** | **1,000** | **0** | **1,000** | **0** |
+
+All six shortlist review/release flags remain false for all 1,000 entries. All 1,000 task records remain pending; reviewer identity/signature fields are empty and task approval is false. No author-side research note has been counted as an independent check.
+
+### New source-supported A1 exact-sense evidence
+
+The author-side note `draft/CEFR-1000-EVIDENCE-2026-11-29-A1-WH-WORDS-POLITENESS-AND-NOUN-MORPHOLOGY.md` was expanded in commit `92ef73cce4ed3a9886c7b040a6a1e9d2a0c23349`.
+
+The added Cambridge source readback records exact sense/POS boundaries for `person/people/police`, `please`, and the A1 question-word entries `where`, `when`, `why`, `how`, `what`, `who`, and `which`, with source URLs and observation date 2026-11-29. It clarifies:
+- `person` is Cambridge A1 for the same ordinary human-being sense provisionally placed at A2; this is a genuine cross-level conflict requiring adjudication and 200-per-level rebalancing if changed.
+- `people` is A1 as the ordinary plural of `person`; `police` is an A2 plural-only collective noun, not the same morphological pattern.
+- `please` is an A1 exclamation for politeness but a separate B1 verb meaning to make someone happy.
+- The A1 interrogative senses of the wh-words must be kept separate from their higher-level conjunction, relative-clause, suggestion, emphatic or fused-relative constructions.
+- `how` needs particular correction: Cambridge labels the fixed greeting `How are you?` A1, but manner and health questions such as `How are you feeling today?` A2. The current example `How are you today?` is the A1 greeting, while the existing definition “way or condition” blurs A1 and A2 senses. A narrower A1 definition or a different A2 example is proposed for later adjudication.
+
+The shortlist, review tasks, level assignments and approval flags were not changed. These are source-backed author research leads only.
+
+### Current structural and adversarial CI
+
+GitHub Actions run [`46169585732`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46169585732), on head `92ef73cce4ed3a9886c7b040a6a1e9d2a0c23349`, completed with **14/14 jobs successful**. The actual jobs endpoint and all 14 job logs were inspected:
+- Python structural integrity A1, A2, B1, B2 and C1: 5/5 success; each log reported `errors: []` and `independent_approval_inferred: false`.
+- Node cross-level structural and canonical task-ID swap negative tests A1–C1: 5/5 success; each level's swapped task IDs were rejected.
+- Corrupted provisional-data negative suite: success; all twenty mutation cases were rejected.
+- Controlled release denial and approved-manifest release denial: both success; logs explicitly say no independent approval inferred.
+- Adversarial evidence suite: success. Its actual log passed the seven synthetic Pages-limit checks (published site >1 GB, source repository >1 GB recommended threshold, Pages artifact >10 GB, deployment time >=10 minutes, >100 GB/month bandwidth mitigation, non-custom 10-build/hour rate, mandatory artifact SHA-256), plus reviewer-self-approval, edited-example invalidation, pending CEFR review, conflicting CEFR source label, generic/non-exact source reference, wrong headword audio, same-text/same-voice reuse, different-text path/digest reuse, cross-voice reuse and invalid audio signature tests.
+
+This run validates the current structural and fail-closed test harness. Synthetic Pages fixtures do not constitute real hosting clearance, and the successful denial tests intentionally prove that the provisional release is still blocked.
+
+### Audio and browser evidence re-read
+
+Audio candidate run [`46155834034`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46155834034) has 18/18 successful jobs: preflight, all 16 shards and final assembly. The final job log says **3,992 technically complete MP3 files**, explicitly with no human approvals or deployment. The unreviewed artifact `15268540341` remains available, 73,904,115 bytes, with expiry 2026-12-28. The previous artifact-level slot audit records 4,000 mappings (1,000 headwords + 1,000 examples for each of George and Emma) across 1,996 distinct source texts. **Human listening signoff remains 0/3,992.** These recordings were generated from the provisional shortlist, not an independently approved final manifest.
+
+Browser regression run [`46157999098`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46157999098) has 1/1 successful job. Its actual log passed the CEFR 1,000-entry/five-level UI gate, Chromium desktop, WebKit desktop, Pixel 7 mobile emulation, iPhone 13 WebKit emulation and 18 sample MP3 HTTP checks. The emulated iPhone result is **not** physical iPhone Safari review. Physical-device review evidence remains absent.
+
+### Production preservation rechecked at this branch head
+
+The read-only preservation workflow [`46155894372`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46155894372) has 1/1 successful job; its log reports PASS for all nine protected paths. A fresh recursive Git-tree comparison was also made between staging head `92ef73cce4ed3a9886c7b040a6a1e9d2a0c23349` and `main` head `dca0db7aa30118ecc18350db8dc406e6cac91554`: all eight protected production files have identical Git blob SHAs, and the complete `audio/` tree is identical (4,655 tree entries on each branch). The protected files are `content.js`, `ielts-vocabulary-data.js`, `audio-manifest.js`, `audio-player.js`, `audio-integration.js`, `privacy-tools.js`, `privacy.html`, and `site-config.js`, plus the full `audio/` directory. This is a pre-deployment preservation check, not deployment evidence.
+
+### Release decision
+
+Remain **STAGING ONLY — DO NOT PUBLISH**. Outstanding gates are unchanged:
+- independent English, fluent Myanmar, original-example and exact-sense CEFR approvals: **0/1,000**;
+- real George/Emma listening approval: **0/3,992**;
+- physical iPhone Safari QA: not evidenced;
+- actual final approved Pages site/build/artifact measurements, deployment duration and bandwidth forecast: not measured;
+- confirmed production deployment: not performed or confirmed.
+
+No merge, publication, production write, or change to `main` was made. The 54 published lessons, IELTS vocabulary bank, existing production audio and privacy assets remain identical to `main`.
