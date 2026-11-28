@@ -88,10 +88,10 @@
 | dominant | C1 | Cambridge C1 general adjective sense | Exact-sense match; specialised senses must stay separate |
 | furthermore | C1 | Cambridge B2 connective | Direct level conflict |
 | treasury | C1 | Collins/Cambridge exact government-department sense; secondary B2 and inconsistent frequency-based B2/C1 signals | C1 unsubstantiated; sense, capitalisation and named-institution risk |
-| warrant | C1 | Oxford A1? No — Oxford topic tag “Law and justice C1” for the legal noun; Cambridge confirms sense | Plausible C1 domain evidence; verify tag and keep noun sense separate from verb/other noun senses |
+| warrant | C1 | Oxford topic tag “Law and justice C1” for the legal noun; Cambridge confirms the legal-document sense | Plausible C1 domain evidence; verify the tag and keep the noun sense separate from the verb and other noun senses |
 
 ## Review boundary
 
 These observations are research inputs for the assigned independent reviewers. They do **not** set `source_evidence_urls`, `source_observed_on`, reviewer identity, review timestamps, review fields or approval in the independent review-task file. No shortlist entry, level, Myanmar field, example field, editorial hold, or approval flag was changed. All seven remain pending independent human review.
 
-All source URLs above were observed on 2026-11-28. Cambridge and Collins are used for sense definitions and explicit CEFR labels where present; secondary automated lexical-profile/frequency pages are explicitly downgraded and must not be used alone to approve a CEFR level.
+All source URLs above were observed on 2026-11-28. Cambridge and Collins are used for sense definitions and explicit CEFR labels where present; secondary automated lexical-profile/frequency pages are explicitly downgraded and must not be used alone to approve a CEFR level. No WordNet synset, historical WordNet frequency, named-entity record, or generic topic label is treated as a substitute for current sense-specific CEFR evidence.
