@@ -1,3 +1,4 @@
+# Automated read-only staging check requested: compare protected lessons, IELTS, existing audio and privacy assets against main; do not write to main.
 name: BEA CEFR protected production assets SHA guard (staging only)
 on:
   push:
