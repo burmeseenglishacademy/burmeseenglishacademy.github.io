@@ -96,6 +96,20 @@ for(const gate of gates)evidence[gate]={
  passed:true,evidence_url:'https://fixture.invalid/evidence/'+gate,
  checked_at:'2026-11-28T08:00:00Z',reviewer_id:'fixture-independent-reviewer'
 };
+evidence.github_pages_limits={
+ source_repository_size_bytes:129078272,
+ published_site_size_bytes:650000000,
+ pages_artifact_size_bytes:500000000,
+ deployment_duration_seconds:240,
+ monthly_bandwidth_estimate_bytes:20000000000,
+ bandwidth_estimate_method:'Synthetic fixture only: documented traffic estimate',
+ custom_actions_workflow:true,
+ builds_per_hour:12,
+ artifact_sha256:'b'.repeat(64),
+ measurement_commit_sha:evidence.production_commit_sha,
+ limits_reference_url:'https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits',
+ measured_at:'2026-11-28T08:00:00Z'
+};
 const evidencePath=path.join(draft,'CEFR-1000-INDEPENDENT-RELEASE-EVIDENCE.json');
 const writeEvidence=()=>fs.writeFileSync(evidencePath,JSON.stringify(evidence));
 writeEvidence();
@@ -114,6 +128,72 @@ try{
  assert.equal(baseline.status,0,'Synthetic complete schema fixture should pass schema validation');
  assert.equal(baseline.report.release,'EVIDENCE_SCHEMA_CHECK_PASSED_NOT_DEPLOYMENT_AUTHORIZATION');
  console.log('PASS: complete synthetic fixture satisfies evidence schema only (not deployment authorization)');
+
+ const pages=evidence.github_pages_limits;
+ pages.published_site_size_bytes=1_000_000_001;
+ writeEvidence();
+ const oversizedSite=runGate();
+ assert.equal(oversizedSite.status,1,'A published Pages site above 1 GB must be rejected');
+ assert.ok(oversizedSite.report.blockers.some(x=>x.includes('published GitHub Pages site must be measured')));
+ console.log('PASS: published site above 1 GB is rejected');
+ pages.published_site_size_bytes=650000000;
+ writeEvidence();
+
+ pages.source_repository_size_bytes=1_000_000_001;
+ writeEvidence();
+ const oversizedRepo=runGate();
+ assert.equal(oversizedRepo.status,1,'A Pages source repository above the recommended 1 GB must be rejected');
+ assert.ok(oversizedRepo.report.blockers.some(x=>x.includes('source repository must be measured')));
+ console.log('PASS: source repository above the recommended 1 GB is rejected');
+ pages.source_repository_size_bytes=129078272;
+ writeEvidence();
+
+ pages.pages_artifact_size_bytes=10_000_000_001;
+ writeEvidence();
+ const oversizedArtifact=runGate();
+ assert.equal(oversizedArtifact.status,1,'A Pages artifact above 10 GB must be rejected');
+ assert.ok(oversizedArtifact.report.blockers.some(x=>x.includes('deployment artifact must be measured')));
+ console.log('PASS: Pages artifact above 10 GB is rejected');
+ pages.pages_artifact_size_bytes=500000000;
+ writeEvidence();
+
+ pages.deployment_duration_seconds=600;
+ writeEvidence();
+ const slowDeployment=runGate();
+ assert.equal(slowDeployment.status,1,'A Pages deployment taking 10 minutes or longer must be rejected');
+ assert.ok(slowDeployment.report.blockers.some(x=>x.includes('complete in under 10 minutes')));
+ console.log('PASS: Pages deployment timeout threshold is enforced');
+ pages.deployment_duration_seconds=240;
+ writeEvidence();
+
+ pages.monthly_bandwidth_estimate_bytes=100_000_000_001;
+ writeEvidence();
+ const bandwidth=runGate();
+ assert.equal(bandwidth.status,1,'Bandwidth above the soft limit requires a mitigation plan');
+ assert.ok(bandwidth.report.blockers.some(x=>x.includes('100 GB soft limit without a mitigation plan')));
+ console.log('PASS: bandwidth above the 100 GB soft limit requires mitigation evidence');
+ pages.monthly_bandwidth_estimate_bytes=20000000000;
+ writeEvidence();
+
+ pages.custom_actions_workflow=false;
+ pages.builds_per_hour=11;
+ writeEvidence();
+ const buildRate=runGate();
+ assert.equal(buildRate.status,1,'More than ten branch-source builds per hour must be rejected');
+ assert.ok(buildRate.report.blockers.some(x=>x.includes('build frequency exceeds 10/hour')));
+ console.log('PASS: non-custom Pages build-rate limit is enforced');
+ pages.custom_actions_workflow=true;
+ pages.builds_per_hour=12;
+ writeEvidence();
+
+ pages.artifact_sha256='';
+ writeEvidence();
+ const missingHash=runGate();
+ assert.equal(missingHash.status,1,'A missing Pages artifact hash must be rejected');
+ assert.ok(missingHash.report.blockers.some(x=>x.includes('missing SHA-256 for measured GitHub Pages artifact')));
+ console.log('PASS: Pages artifact checksum is mandatory');
+ pages.artifact_sha256='b'.repeat(64);
+ writeEvidence();
 
  const firstManifestEntry=manifest.entries[0];
  const myanmarSignoff=firstManifestEntry.independent_review_signoffs.myanmar;
