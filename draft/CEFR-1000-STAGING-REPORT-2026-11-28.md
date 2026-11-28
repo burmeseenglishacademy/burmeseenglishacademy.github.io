@@ -140,3 +140,26 @@ After updating the workflow actions to Node 24-compatible major versions (`actio
 This CI run validates structural and synthetic adversarial safeguards only. It does not generate or listen to actual George/Emma assets and does not supply independent review, browser/mobile QA, physical iPhone Safari evidence, hosting clearance or deployment.
 
 The seven C1 candidates documented in the new evidence note remain author-side research only. The provisional shortlist and independent review task files were re-read after these changes: each level still has exactly 200 written entries, 200 unique headwords, 200 editorial holds, 200 pending tasks and zero independently approved entries. No linguistic review fields, evidence URLs, reviewer identities or approval flags were changed.
+
+
+## A2 sense-boundary evidence addition
+
+On 2026-11-28, ten A2 candidates were documented in `draft/CEFR-1000-EVIDENCE-2026-11-28-A2-SENSE-AND-LEVEL-BOUNDARIES.md`:
+- `order` (CEFR1000-A2-0226): Cambridge A2 request-for-goods noun; exact-sense match.
+- `service` (CEFR1000-A2-0227): Cambridge B1 customer-help/system senses; the current shuttle-service example is B1, conflicting with A2.
+- `season` (CEFR1000-A2-0228): Cambridge B1 annual/weather-period noun; conflicts with A2.
+- `area` (CEFR1000-A2-0229): A2 region sense is supported, but the current reserved-for-visitors example is the B1 designated-purpose sense.
+- `business` (CEFR1000-A2-0230): current definition describes the A1 buying/selling activity, while the example describes the A2 company/organisation sense; refine definition to match the example.
+- `however` (CEFR1000-A2-0231): Cambridge A2 contrast use is supported; keep separate from B2 degree use and other senses.
+- `actually` (CEFR1000-A2-0233): Cambridge A2 truth use is supported; current definition risks blending the B1 surprise sense and B2 disagreement/refusal sense.
+- `less` (CEFR1000-A2-0234): Cambridge A2 quantifier use is supported; the example correctly uses uncountable `sugar`.
+- `party` (CEFR1000-A2-0235): Cambridge labels the selected social-event noun A1, conflicting with shortlist A2.
+- `whole` (CEFR1000-A2-0236): Cambridge A2 adjective sense is supported.
+
+The note includes source URLs, observation date, shortlist/task/source-blob provenance, Myanmar refinements and original example proposals. These are author-side findings only. All ten tasks remain pending; no shortlist or review fields were changed.
+
+## Latest CI after A2 evidence addition
+
+GitHub Actions run [`46125609306`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46125609306), head commit `908a4be7275dc5e1bcb25418a0141140b783177a`, completed with conclusion `success`: **14/14 jobs successful**. Actual job conclusions and logs were fetched. The five Python level-specific structural jobs, five Node cross-level/task-ID jobs, twenty-case provisional mutation tests, both release-denial checks, and the new adversarial audio evidence job all succeeded. The audio test log confirmed the four expected PASS cases. No Node 20 deprecation or punycode warnings appeared in the logs.
+
+This confirms staging structure and synthetic gate tests only. It does not change the independent approval count or provide actual audio/listening, browser/mobile, physical iPhone, hosting or production-deployment evidence.
