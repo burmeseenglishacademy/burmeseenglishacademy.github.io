@@ -979,3 +979,39 @@ The report commit at head `65d349863bc9c9962955986e1378190178bea61a` triggered a
 - the adversarial evidence job passed the synthetic Pages-limit, independent-review, exact-sense, and George/Emma audio-content/voice checks.
 
 This is a follow-up automated staging check only. It does not change any linguistic review, listening, physical-device, hosting-measurement or deployment blocker.
+
+
+## 2026-11-29 A1–A2 exact-sense evidence addition
+
+On 2026-11-29, seven existing candidates were checked against Cambridge and Oxford dictionary entries and documented in `draft/CEFR-1000-EVIDENCE-2026-11-29-A1-A2-READ-TIME-RUN-CASE-CHANGE-SET-QUITE.md`. All remain author-side research only; the independent task file and provisional shortlist were not changed.
+
+- `read` (CEFR1000-A1-0031): Cambridge labels the selected reading/understanding sense A1. The headword/base verb is UK /riːd/; the past-tense homograph is /red/. The current habitual example uses /riːd/.
+- `time` (CEFR1000-A1-0042): Cambridge labels the particular point in the day/night A1 and the broader measurable-duration sense A2. “What time is it?” selects A1, but the current English definition describes the broader A2 sense.
+- `run` (CEFR1000-A1-0195): Cambridge Essential British English labels movement faster than walking A1; organising/controlling and the sporting noun are separately labelled B1.
+- `case` (CEFR1000-A2-0215): the shortlist’s “particular situation/example” definition and “In this case” example are B1 in Cambridge; A2 container and suitcase senses exist, but require a different definition, Myanmar meaning and example.
+- `change` (CEFR1000-A2-0217): Cambridge separates A1 exchange-one-for-another from A2 become/make-different. The current A2 definition is plausible, but “change the meeting time” may select the A1 exchange sense; an unambiguous A2 example is proposed.
+- `set` (CEFR1000-A2-0278): Oxford confirms the exact placement/position sense and example pattern, but the inspected exact-sense entry does not provide an A2 label. Cambridge’s A2 label applies to the noun, while its B1 verb labels apply to other senses. The A2 level remains unsubstantiated.
+- `quite` (CEFR1000-A2-0340): Cambridge labels the moderate/not-completely degree sense A2 (UK) and the completely sense B1; “quite long” selects the A2 gradable-adjective use.
+
+The seven task IDs remain pending. No independent evidence URLs or observation dates were written into the task file because those fields are reserved for independent reviewers. No review flags, approvals, levels or shortlist content were changed. Evidence note commit: `222a7e1118b8e3dc2e8f6ad09c48eb2c117e0c14`.
+
+## Verified automation re-check — 2026-11-29
+
+Actual GitHub Actions job conclusions were fetched again, rather than inferred from workflow names or commits:
+
+- Structural/adversarial run [`46156223854`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46156223854): **14/14 jobs successful**, including five Python structural level jobs (A1–C1), five Node cross-level/task-ID jobs (A1–C1), twenty mutation checks, and Python/Node controlled release-denial checks. The release remains denied.
+- Independent release-guard run [`46156081461`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46156081461): **5/5 level-specific jobs successful**. Each verified its provisional inventory and rejected the release fixtures.
+- Evidence-gate regression run [`46156077740`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46156077740): **5/5 jobs successful**. The logs confirm absent independent evidence remains release-blocking.
+- Full audio candidate run [`46155834034`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46155834034): **18/18 jobs successful** (preflight, all 16 deterministic shards and final assembly). The final log reports 3,992 technically complete audio files, exact SHA-bound mappings and no human approval/deployment. The complete unreviewed artifact is ID `15268540341`, size 73,904,115 bytes, uploaded ZIP SHA-256 `eb02755b0d97ef0f41b943f06f9ebbe3aa721f5b3caca5544f0d23ae82c31426`. This remains a temporary candidate artifact; no one has signed real listening approval.
+- Browser regression run [`46157999098`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46157999098): **1/1 job successful**. Its log confirms CEFR UI gate checks and Chromium desktop, WebKit desktop, Pixel 7 mobile emulation, iPhone 13 WebKit emulation and 18 sample MP3 HTTP GETs. Emulation is not physical iPhone Safari testing.
+- Preservation run [`46155894372`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46155894372): **1/1 job successful**, including the protected lesson/IELTS/original-audio/privacy comparison and no tracked-file changes.
+
+These automated passes verify structure, negative cases, technical audio generation and browser emulation only. They do not establish independent linguistic approval, real audio listening, physical-device review, GitHub Pages capacity clearance or production deployment. No merge or deployment occurred.
+
+## Reconciled release status — 2026-11-29
+
+The current shortlist and task files were read from `cefr-5000-bilingual-qa-staging`; the structural workflow independently reconfirmed the 200-per-level layout. Every level remains at 200 written, 0 independent signoffs, 200 pending tasks and 200 editorial holds (A1, A2, B1, B2 and C1). Total: 1,000 written, 0 independently approved, 1,000 pending and 1,000 on hold.
+
+The audio candidate provides 4,000 voice/utterance slot mappings (1,000 headwords plus 1,000 examples for each of George and Emma), backed by 3,992 distinct recordings because exact repeated text can share the same voice-specific recording. Real listening signoff remains 0/3,992. Physical iPhone Safari evidence remains absent. GitHub Pages hosting/capacity limits for the proposed release remain unassessed. Production deployment remains not performed/not confirmed.
+
+**Decision: remain staging-only; do not merge or publish.**
