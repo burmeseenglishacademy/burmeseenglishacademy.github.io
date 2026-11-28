@@ -579,3 +579,28 @@ The new workflow run [`46157790874`](https://github.com/burmeseenglishacademy/bu
 8. Production deployment confirmation: absent. No merge to `main`, public deployment or production change was made.
 
 **Decision: remain staging-only.** No independent approval, human listening, physical iPhone test, final hosting clearance or production deployment is claimed.
+
+
+## Automated browser regression repair and GitHub Pages capacity preflight — 2026-11-28
+
+### Browser regression repair checkpoint
+
+The first four-way browser expansion run [`46157790874`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46157790874) failed in the WebKit desktop test. Its log identifies a browser-history throttle: `SecurityError: Attempt to use history.replaceState() more than 100 times per 10 seconds`. Chromium desktop had passed before the failure. This was a test-harness pacing issue, not evidence that the Academy site or release gate failed.
+
+The WebKit desktop route sweep was reduced to the same eight representative lesson IDs used for mobile sampling, while Chromium desktop retains all 54 lessons × 8 tabs. The four-way test matrix remains desktop Chromium, desktop WebKit, Pixel 7 mobile Chromium emulation and iPhone 13 mobile WebKit emulation. Fix commit: [`91ee8bbd523275f94417bf1c7297ea82b5771271`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/91ee8bbd523275f94417bf1c7297ea82b5771271). Rerun [`46157999098`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46157999098) was in progress at this observation; no pass is claimed yet. Neither mobile emulation is a physical iPhone test.
+
+The report commit immediately before this checkpoint, `c37f8aa8382ae6982d8e736e95db810f166ba997`, was validated by structural run [`46157941388`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46157941388): all 14 jobs completed successfully, including the five Python level-specific structural checks, five Node cross-level/task-ID checks, adversarial mutation/audio checks and controlled release denial.
+
+### Measured repository and tracked-asset preflight
+
+Fresh GitHub repository metadata and the recursive staging Git tree were read at branch head `91ee8bbd523275f94417bf1c7297ea82b5771271`:
+
+- GitHub repository `size`: 125,369 KB (about **122.43 MiB**), below the official 1 GB recommended source-repository size.
+- Tracked static web-asset subset (root HTML/CSS/JS and static media, excluding `draft/`, `tools/`, `scripts/`, `tests/`, `.github/`, build folders and other non-site material): 124,492,028 bytes (**118.72 MiB**).
+- Existing tracked production audio: 4,652 MP3 files, 123,502,524 bytes (**117.78 MiB**).
+- Unreviewed CEFR candidate audio inventory: 3,992 MP3s, 74,706,292 bytes (**71.24 MiB**). This includes 276 exact-text reuses from existing production audio, so adding all candidate bytes is a conservative upper-bound estimate rather than the incremental growth.
+- Static-asset subset plus every candidate audio byte, without deduplication: 199,198,320 bytes (**189.97 MiB**), below 1 GB.
+
+Official current policy source checked 2026-11-28: https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits. It states a recommended 1 GB source repository, a maximum 1 GB published site, 10-minute deployment timeout, 100 GB/month soft bandwidth limit and 10 native builds/hour soft limit (custom Actions builds are exempt from the build-frequency limit).
+
+**Interpretation limit:** This is a measured repository/tree and asset preflight, not a final GitHub Pages build artifact. It does not measure actual published output bytes, monthly bandwidth, or a deployment duration for the final approved manifest. The release ledger's hosting receipt therefore remains absent and the hosting gate remains blocked. No deployment or Pages settings were changed.
