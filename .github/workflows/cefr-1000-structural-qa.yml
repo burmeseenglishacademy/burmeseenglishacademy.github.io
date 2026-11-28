@@ -187,5 +187,5 @@ jobs:
         with:
           node-version: '22'
           package-manager-cache: false
-      - name: Reject mismatched, reused or invalid audio assets
+      - name: Reject mismatched, cross-content reused or invalid audio assets
         run: node scripts/cefr1000_release_gate_negative_tests.cjs
