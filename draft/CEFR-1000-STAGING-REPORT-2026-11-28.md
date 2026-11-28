@@ -836,3 +836,65 @@ The test was corrected to allow only same-text/same-voice reuse while retaining 
 | Confirmed production deployment | Not deployed / not confirmed |
 
 **Decision: remain staging-only.** Do not merge, publish, or change `main`. The 54 published lessons, separate IELTS 1,000-word bank, established George/Emma production audio and privacy controls remain protected. Successful technical CI, generated candidate MP3s and emulator tests do not replace independent linguistic review, real listening, physical-device QA, hosting clearance or a production deployment receipt.
+
+
+---
+
+## Quantitative GitHub Pages release gate — 2026-11-29
+
+The fail-closed release checker now requires measured Pages capacity evidence rather than accepting only a generic `passed: true` flag. The gate and adversarial tests were changed on the staging branch:
+
+- Gate change: commit `20bd951f9cb64633d2a556df1336898838619036`.
+- Adversarial test expansion: commit `24e46abbe31bc1b89a6a27ce3333fb944d6e875e`.
+- Synthetic-fixture metadata correction after CI exposed the missing generic reviewer/evidence fields: commit `2d0df8622c6b3afa2b3686c4461fb0c89e0b3a04`.
+
+### Official limits recorded
+
+GitHub's current documentation (observed 2026-11-29) states:
+- Source repositories have a **recommended** 1 GB limit.
+- Published Pages sites must be no larger than **1 GB**.
+- Pages deployments time out after **10 minutes**.
+- Monthly bandwidth has a **soft 100 GB** limit.
+- Pages has a **soft 10-builds/hour** limit; this does not apply when using a custom GitHub Actions workflow.
+- For custom workflows, the Pages artifact is a gzip archive containing one tar file, and the tar must be under **10 GB**.
+
+Sources:
+- https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits
+- https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
+
+### Current repository measurement (not a published-site measurement)
+
+At staging head `1ffb09d85d6912dfb2d3b1e8866dd9b311339aa0`, the GitHub repository metadata reported **126,053 KB (about 123.1 MiB)**. The complete, non-truncated recursive staging Git tree contained 6,089 blobs with a summed uncompressed blob size of **154,629,579 bytes**. These measurements are below 1 GB, but they do not establish the size of the final Pages site or deployment artifact: the staging tree includes research and draft material, and no approved release build exists. The final built site's size, artifact hash, deployment duration and bandwidth forecast remain unmeasured.
+
+### New fail-closed evidence contract
+
+The `github_pages_limits` evidence record must now include:
+- source repository size in bytes (at or below the 1 GB recommended threshold);
+- published site size in bytes (at or below the 1 GB hard cap);
+- Pages artifact size in bytes (under 10 GB);
+- measured deployment duration (strictly under 600 seconds);
+- monthly bandwidth estimate and its method; if above 100 GB, an HTTPS mitigation plan is mandatory;
+- custom-workflow status and builds/hour; non-custom publishing must remain at or below 10/hour;
+- SHA-256 of the measured Pages artifact;
+- the exact production commit SHA to which the measurement belongs;
+- the official GitHub limits reference and measurement date;
+- the existing external evidence URL, timestamp and identified reviewer.
+
+This remains an evidence schema only. A synthetic fixture cannot satisfy a real release gate. The final release still needs a measured artifact and genuine review evidence.
+
+### CI results and fixture repair
+
+Runs [`46167939391`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46167939391) and [`46167942057`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46167942057) initially failed in the synthetic adversarial test because the new Pages fixture replaced, rather than extended, the generic gate's required `passed`, evidence URL, checked-at and reviewer fields. This was a test-fixture defect, not a release approval or production issue. The fixture was corrected in commit `2d0df8622c6b3afa2b3686c4461fb0c89e0b3a04`.
+
+Follow-up GitHub Actions run [`46168057816`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46168057816), head `2d0df8622c6b3afa2b3686c4461fb0c89e0b3a04`, completed with **14/14 jobs successful**. The actual job endpoint showed all five Python level jobs, all five Node level jobs, the mutation suite, both release-denial checks and the adversarial evidence job successful. The adversarial log explicitly passed all seven new Pages cases:
+1. reject published site above 1 GB;
+2. reject source repository above the 1 GB recommended threshold;
+3. reject Pages artifact above 10 GB;
+4. reject deployment taking 10 minutes or longer;
+5. require mitigation evidence above the 100 GB/month soft bandwidth limit;
+6. enforce the 10-build/hour limit for non-custom publishing;
+7. require a SHA-256 for the measured Pages artifact.
+
+The same job also passed the existing independent-review, exact-sense CEFR, audio content/voice, duplicate-slot and format negative tests. It explicitly says no real review or audio evidence was created.
+
+**Hosting decision remains BLOCKED / NOT ASSESSED for the approved release.** The actual Pages settings, final approved site's size, artifact digest, deployment timing and bandwidth forecast have not been measured. No deployment was run.
