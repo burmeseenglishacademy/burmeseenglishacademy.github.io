@@ -1,3 +1,4 @@
+# Automated staging run requested: Chromium/WebKit browser regression only; no deployment.
 name: CEFR staging browser regression — no deployment
 on:
   push:
