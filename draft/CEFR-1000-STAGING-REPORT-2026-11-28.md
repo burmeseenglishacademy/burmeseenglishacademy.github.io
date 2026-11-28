@@ -70,7 +70,13 @@ The current staging workflow file `.github/workflows/cefr-1000-structural-qa.yml
 - Python release denial: `140891645808`.
 - Node approved-manifest release denial: `140891645861`.
 
-This is a successful structural/adversarial CI run and successful demonstration that the current provisional release remains blocked. It is **not** independent linguistic approval, audio/listening evidence, browser/mobile or physical iPhone QA, hosting clearance, or production deployment. Historical run `45235724342` had the earlier Bash errexit harness failure described above; the controlled-exit repair is now exercised successfully by run `46116573654`.
+This is a successful structural/adversarial CI run and successful demonstration that the current provisional release remains blocked. It is **not** independent linguistic approval, audio/listening evidence, browser/mobile or physical iPhone QA, hosting clearance, or production deployment. Historical run `45235724342` had the earlier Bash errexit harness failure described above; the controlled-exit repair is exercised successfully by these later runs.
+
+Two further push-triggered runs were also inspected after the A1 evidence and report updates:
+- [Run `46122032860`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46122032860), evidence-file commit `3f0f7ade1b73e12f5f558c70657da21071f9f3e6`: overall `success`, **13/13 jobs successful**.
+- [Run `46122072502`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46122072502), report commit `f9b8fbafa567b2a17cf75404d30437b0d7f276ea`: overall `success`, **13/13 jobs successful**.
+
+Both job collections included all five Python level-specific checks, all five Node cross-level/task-ID checks, the twenty-case mutation suite, and both release-denial jobs. The run/job conclusions and step conclusions were fetched from the GitHub Actions API; no result was inferred from a commit alone.
 
 ## Production protection
 
