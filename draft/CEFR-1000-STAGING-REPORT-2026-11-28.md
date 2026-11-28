@@ -115,3 +115,28 @@ On 2026-11-28, an author-side evidence note was added at `draft/CEFR-1000-EVIDEN
 - `warrant` (CEFR1000-C1-0824): Cambridge confirms the legal-document noun sense; Oxford Advanced Learner's search metadata exposed a “Law and justice C1” topic tag, but direct opening returned HTTP 403. The tag needs human verification and must not be generalised to the verb or other noun senses.
 
 The evidence note includes source URLs, observation date, source shortlist/task provenance, Myanmar refinements and original example proposals. It is author-side research only. No review-task source fields, reviewer identity, timestamps, reviewed flags, approval flags, shortlist entries or levels were changed. Evidence-note correction commit: `741057791c14b63d121ccd7c2cc2106e2c55c71c`.
+
+
+## Release-gate audio integrity hardening
+
+On 2026-11-28, `scripts/cefr-1000-release-readiness-gate.cjs` was strengthened before any final audio is generated:
+- Every George/Emma headword audio record must carry `spoken_text` exactly matching the approved manifest headword; every example recording must match the approved example sentence.
+- Audio files must use a declared `mp3`, `wav`, `ogg` or `flac` format whose extension matches and whose file header has the corresponding basic container/signature marker.
+- SHA-256 content digests must be unique across all 4,000 voice/utterance slots, not merely within each task. File paths remain unique, confined to staging `draft/`, regular (not symlinked), nonempty and checksum-verified.
+- Existing checks for exactly 1,000 records in each of four audio categories, one record per manifest task, British George/Emma identity, `en-GB`, generator provenance, listener identity/time and listening-evidence URL remain in force.
+
+Added `scripts/cefr1000_release_gate_negative_tests.cjs` and a dedicated workflow job. The test uses a temporary synthetic fixture only (not repository release evidence or actual audio) and verifies: complete evidence-schema fixture passes schema validation only; wrong spoken text is rejected; duplicate audio bytes across different tasks are rejected; and invalid audio signature is rejected.
+
+## Current verified staging CI
+
+After updating the workflow actions to Node 24-compatible major versions (`actions/checkout@v7`, `actions/setup-python@v7`, `actions/setup-node@v7`; Node 22 remains the test runtime), the latest workflow run is [`46125363914`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46125363914), head commit `e900532a24f6e64ab85fbd745f3d69bf1496bafc`, completed `success` with **14/14 jobs successful**. Actual job conclusions and logs were fetched:
+- Python structural integrity A1/A2/B1/B2/C1: successful.
+- Node cross-level structural/task-ID A1/A2/B1/B2/C1: successful.
+- Twenty-case provisional-data mutation tests: successful.
+- Python release-denial check and Node approved-manifest release-denial check: successful.
+- New adversarial audio-evidence tests, job `140918654114`: successful; logs show all four expected PASS assertions.
+- No Node 20 deprecation or punycode warnings appeared in the current run logs.
+
+This CI run validates structural and synthetic adversarial safeguards only. It does not generate or listen to actual George/Emma assets and does not supply independent review, browser/mobile QA, physical iPhone Safari evidence, hosting clearance or deployment.
+
+The seven C1 candidates documented in the new evidence note remain author-side research only. The provisional shortlist and independent review task files were re-read after these changes: each level still has exactly 200 written entries, 200 unique headwords, 200 editorial holds, 200 pending tasks and zero independently approved entries. No linguistic review fields, evidence URLs, reviewer identities or approval flags were changed.
