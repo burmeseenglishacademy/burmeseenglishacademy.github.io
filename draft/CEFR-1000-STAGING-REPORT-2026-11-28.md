@@ -638,3 +638,77 @@ At staging head `aa06a4b1501be3316f2bb485e61adc8dc0fe4bc9`, the current GitHub `
 | `site-config.js` | `7ff067d980a5c7b265eddc7eb1df0e4efb8c7c02` |
 
 The full preservation workflow run `46155894372` also passed its read-only production baseline check, including the audio directory. No changes were made to `main`. This is preservation evidence only; it does not replace the final content-bound production-asset receipt required by the release ledger.
+
+
+## Latest verified evidence, audio, browser and inventory checkpoint — 2026-11-28 23:11 SGT
+
+This checkpoint was re-read from the live staging branch on 2026-11-28. It supersedes earlier provisional audio and browser rows above where they stated that technical generation or the four-way automated browser matrix was still pending.
+
+### Exact current inventory and independent-review state
+
+The provisional shortlist and task JSON were fetched again after the latest evidence addition. Their blob SHAs remain:
+- Shortlist: `475e68ae17ab97bd937e73e5ce4794e0dcd76551`.
+- Review tasks: `77abf35146825f05e3e58cfdd7a73b3c7302c967`.
+
+| CEFR level | Written entries | Unique headwords | Independent signoffs | Pending tasks | Editorial holds |
+|---|---:|---:|---:|---:|---:|
+| A1 | 200 | 200 | 0 | 200 | 200 |
+| A2 | 200 | 200 | 0 | 200 | 200 |
+| B1 | 200 | 200 | 0 | 200 | 200 |
+| B2 | 200 | 200 | 0 | 200 | 200 |
+| C1 | 200 | 200 | 0 | 200 | 200 |
+| **Total** | **1,000** | **1,000** | **0** | **1,000** | **1,000** |
+
+All 1,000 shortlist entries still have `editorial_hold: true`; all independent-review tasks remain pending, unassigned and unapproved. No independent English, Myanmar, original-example or exact-sense CEFR signoff is claimed. The 1,000 entries remain provisional, not an approved release manifest.
+
+### New A1 source-backed evidence note
+
+Added `draft/CEFR-1000-EVIDENCE-2026-11-28-A1-SEE-WANT-GO-WORK-HELP-LITTLE-HOUSE-PLACE.md` in commit [`49173a504b3677e497fd5f2b823d658364592fa1`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/49173a504b3677e497fd5f2b823d658364592fa1). It records Cambridge source URLs, 2026-11-28 observation date, exact-sense/CEFR labels, UK pronunciation references, original examples, Myanmar gloss refinements and shortlist/task/source-blob provenance for eight additional A1 tasks:
+- `see` (CEFR1000-A1-0046): A1 visual-perception sense; separate B1 understanding, A2 watching and A1 meeting senses.
+- `want` (CEFR1000-A1-0048): A1 wish/desire sense; separate informal British “need” and advice constructions.
+- `go` (CEFR1000-A1-0049): A1 intransitive movement/travel sense; grammar notes on destination complements and `go + -ing`.
+- `work` (CEFR1000-A1-0053): A1 job verb; the shortlist definition's “activity that needs effort” is too broad and risks blending the B1 effort noun.
+- `help` (CEFR1000-A1-0059): A1 person-assistance sense; the proposed Myanmar wording and clearer example retain the person-helped pattern.
+- `little` (CEFR1000-A1-0061): A1 adjective small-size sense; Myanmar `နည်းသော` risks conflating the B1 quantifier and should not be interchangeable with `သေးငယ်သော`.
+- `house` (CEFR1000-A1-0062): A1 residential-building count noun; original example is grammatical and sense-aligned.
+- `place` (CEFR1000-A1-0063): A1 SOMEWHERE noun sense; separate A2 home, B1 opportunity/`take place` and B2 verb senses.
+
+The note is author-side research only. All eight tasks remain pending, and no shortlist fields, task evidence fields, reviewer identities, signatures or approval flags were changed.
+
+### Actual GitHub Actions results rechecked
+
+**Technical audio candidate — complete, unreviewed.** Run [`46155834034`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46155834034), head commit `5c58797bc3148f3011e16dae5456cf03ae2a4b16`, was re-queried through the Actions jobs endpoint: **18/18 jobs completed successfully** (preflight, 16 shards, final assembly). The assembly job log was fetched and explicitly reported:
+- 3,992 technically complete recordings: 1,996 `bm_george` and 1,996 `bf_emma`.
+- 1,996 distinct source texts; 3,716 new files and 276 reused files.
+- Candidate state `COMPLETE_TECHNICAL_UNREVIEWED_AUDIO_CANDIDATE_NO_DEPLOYMENT`.
+- Human listening signoffs: **0**.
+- Final artifact `cefr1000-COMPLETE-GEORGE-EMMA-CANDIDATE-UNREVIEWED`, ID `15268540341`, 73,904,115 bytes; ZIP SHA-256 `eb02755b0d97ef0f41b943f06f9ebbe3aa721f5b3caca5544f0d23ae82c31426`.
+
+All 16 shard jobs and the assembly/technical decode validation passed. This completes file generation and technical integrity only. It is not listening approval; the actual listening receipt count remains **0/3,992**. The candidate remains an unreviewed Actions artifact and was not copied to production.
+
+**Four-way automated browser regression — pass.** Run [`46157999098`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46157999098), head commit `91ee8bbd523275f94417bf1c7297ea82b5771271`, was re-queried: its regression job completed successfully. The actual log confirms:
+- Chromium desktop: 432 lesson/tab combinations.
+- WebKit desktop: 64 combinations.
+- Chromium Pixel 7 mobile emulation: 64 combinations.
+- WebKit iPhone 13 mobile emulation: 64 combinations.
+- UI gating, route/script load order and 18 sample MP3 HTTP GETs passed.
+
+This closes the four-way automated browser matrix. Browser audio playback is mocked for routing checks, and the sample MP3 GETs are not audible listening. Pixel/iPhone emulation is not a physical device. **Physical iPhone Safari review remains not evidenced.**
+
+**Structural and fail-closed checks — pass.**
+- Structural QA run [`46156223854`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46156223854), head commit `a1df2b2090c24705eb95f438a3c4d8cd669ab0b1`: **14/14 jobs successful**. Actual jobs and representative logs were fetched. All five Python level-specific structural jobs and five Node cross-level/task-ID jobs passed; 20 corrupted-provisional mutation cases were rejected; approved-manifest and provisional release-denial checks correctly remained blocked. Each level log reported 200 provisional entries, 200 review tasks and 0 independently verified.
+- Release-guard adversarial run [`46156081461`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46156081461), head commit `d77ddfff7d3fc77876c05fbe0295634339153413`: **5/5 CEFR-level jobs successful**; logs show the release remains blocked.
+- Independent-evidence negative-regression run [`46156077740`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46156077740), head commit `4f56e4c6186e91f0f36ea9a5c23f5d76a0eecf0e`: **5/5 level jobs successful**; logs show absent independent evidence blocks release.
+- Preservation run [`46155894372`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46155894372), head commit `a9056ed081c43716510a606dad4445f11a0a55af`: **1/1 job successful**. The actual log reports PASS for `content.js`, `ielts-vocabulary-data.js`, audio manifest/player/integration, privacy files, site configuration and the production audio directory.
+
+These are successful automated structural, synthetic negative, browser-emulation and preservation checks. They do not independently validate the linguistic content or authorise release.
+
+### Remaining release blockers
+
+1. Independent English definitions, fluent Myanmar meanings, original example grammar/translation and source-backed exact-sense CEFR decisions: **0/1,000**.
+2. Genuine human listening signoffs for the generated George/Emma headword and example audio: **0/3,992**.
+3. Physical iPhone Safari review: **not evidenced**; automated emulation is not a substitute.
+4. Final GitHub Pages published-output size, monthly bandwidth forecast and deployment-duration evidence bound to an approved manifest: **not evidenced**. The earlier repository/static-asset estimate is a preflight, not a final published-build measurement.
+5. Content-bound release ledger/approved manifest and final production deployment receipt: **absent**.
+
+**Decision remains STAGING ONLY.** The branch remains `cefr-5000-bilingual-qa-staging`; no merge to `main`, public deployment, or production asset change was made. The 54 published lessons, separate IELTS 1,000-word bank, established George/Emma production audio and privacy controls remain protected. No independent approval, actual listening or physical iPhone test is claimed.
