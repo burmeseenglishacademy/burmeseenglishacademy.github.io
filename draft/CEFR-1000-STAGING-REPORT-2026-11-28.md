@@ -163,3 +163,19 @@ The note includes source URLs, observation date, shortlist/task/source-blob prov
 GitHub Actions run [`46125609306`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46125609306), head commit `908a4be7275dc5e1bcb25418a0141140b783177a`, completed with conclusion `success`: **14/14 jobs successful**. Actual job conclusions and logs were fetched. The five Python level-specific structural jobs, five Node cross-level/task-ID jobs, twenty-case provisional mutation tests, both release-denial checks, and the new adversarial audio evidence job all succeeded. The audio test log confirmed the four expected PASS cases. No Node 20 deprecation or punycode warnings appeared in the logs.
 
 This confirms staging structure and synthetic gate tests only. It does not change the independent approval count or provide actual audio/listening, browser/mobile, physical iPhone, hosting or production-deployment evidence.
+
+
+## Reconciled inventory snapshot and report-commit CI
+
+A fresh parse of the staging JSON files on 2026-11-28 reconfirmed 1,000 total entries, 1,000 unique normalized headwords, 1,000 unique task IDs, and exact source/task positional provenance. The release statuses remain `PROVISIONAL_1000_INDEPENDENT_EVIDENCE_MISSING_DO_NOT_PUBLISH` and `ALL_PENDING_NOT_INDEPENDENTLY_REVIEWED_DO_NOT_PUBLISH`.
+
+| CEFR | Written | Unique headwords | Independent signoffs | Pending independent tasks | Editorial holds |
+|---|---:|---:|---:|---:|---:|
+| A1 | 200 | 200 | 0 | 200 | 200 |
+| A2 | 200 | 200 | 0 | 200 | 200 |
+| B1 | 200 | 200 | 0 | 200 | 200 |
+| B2 | 200 | 200 | 0 | 200 | 200 |
+| C1 | 200 | 200 | 0 | 200 | 200 |
+| **Total** | **1,000** | **1,000** | **0** | **1,000** | **1,000** |
+
+The report commit `8e5aab2cae8fd8eb152bc6f8a57a51c4f74372ec` itself was checked by GitHub Actions run [`46125671974`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46125671974): completed `success`, **14/14 jobs successful**. Actual conclusions and logs were fetched. The adversarial audio test passed all four synthetic cases; all five CEFR Python jobs, all five Node jobs, the twenty-case mutation suite and both release-denial checks passed. No Node 20 deprecation or punycode warnings appeared. These remain structural/synthetic checks only, not independent review or launch authorization.
