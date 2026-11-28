@@ -179,3 +179,10 @@ A fresh parse of the staging JSON files on 2026-11-28 reconfirmed 1,000 total en
 | **Total** | **1,000** | **1,000** | **0** | **1,000** | **1,000** |
 
 The report commit `8e5aab2cae8fd8eb152bc6f8a57a51c4f74372ec` itself was checked by GitHub Actions run [`46125671974`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46125671974): completed `success`, **14/14 jobs successful**. Actual conclusions and logs were fetched. The adversarial audio test passed all four synthetic cases; all five CEFR Python jobs, all five Node jobs, the twenty-case mutation suite and both release-denial checks passed. No Node 20 deprecation or punycode warnings appeared. These remain structural/synthetic checks only, not independent review or launch authorization.
+
+
+## Final report-commit CI confirmation
+
+The report/count reconciliation commit `3d5dfec4cd6f6f7ab55a39496862845e493ee91b` was validated by GitHub Actions run [`46125747929`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46125747929). The run completed with conclusion `success`: **14/14 jobs successful**. All 14 job conclusions and logs were fetched. The five Python level-specific structural jobs, five Node level-specific cross-level/task-ID jobs, twenty-case provisional-data mutation suite, Python release-denial check, Node release-denial check and adversarial audio-evidence test all succeeded. Logs explicitly reported `independently_verified: 0` for each Node level job and `release: BLOCKED`. The audio test passed the synthetic wrong-text, duplicate-content and invalid-signature rejection cases. No Node 20 deprecation or punycode warnings appeared.
+
+This is the latest verified CI run at the time of this report update; passing it confirms the staging safeguards, not independent vocabulary approval, real audio, listening, device QA, hosting clearance or production deployment.
