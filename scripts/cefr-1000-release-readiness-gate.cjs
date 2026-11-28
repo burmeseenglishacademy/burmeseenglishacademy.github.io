@@ -76,7 +76,7 @@ if(exists(manifestPath)&&exists(evidencePath)){
     check(!!signoff&&signoff.decision==='APPROVED','missing independent '+dimension+' approval '+e.task_id);
     check(!!signoff&&typeof signoff.reviewer_id==='string'&&!!signoff.reviewer_id.trim()&&signoff.reviewer_id!==e.author_id,'independent '+dimension+' reviewer must be identified and differ from author '+e.task_id);
     for(const urlField of ['reviewer_profile_url','qualification_evidence_url','evidence_url']){
-     check(!!signoff&&typeof signoff[urlField]==='string'&&/^https:\\/\\//.test(signoff[urlField]),'missing traceable '+dimension+' '+urlField+' '+e.task_id);
+     check(!!signoff&&typeof signoff[urlField]==='string'&&signoff[urlField].startsWith('https://'),'missing traceable '+dimension+' '+urlField+' '+e.task_id);
     }
     check(!!signoff&&typeof signoff.signed_at==='string'&&!Number.isNaN(Date.parse(signoff.signed_at)),'invalid independent '+dimension+' signoff date '+e.task_id);
     const expectedReviewHash=crypto.createHash('sha256').update(payload).digest('hex');
