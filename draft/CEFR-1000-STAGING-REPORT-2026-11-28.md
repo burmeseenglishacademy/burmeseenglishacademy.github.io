@@ -419,4 +419,41 @@ The first attempt to place author-collected URLs/dates directly into independent
 - Run `46154910839`: review-selection structural jobs rejected the task inventory.
 - Run `46154971564` on report commit `20541013a17dbd684c9705560d17d4fdfc92d4c7`: the current structural workflow again rejected the four populated records; Node approved-manifest denial and synthetic audio-evidence checks passed, but the full workflow failed.
 
-This was a metadata-placement mistake, not a reason to weaken the guards. The four source URLs remain in the research note, while the task JSON is restored to its strict pending-only shape. A fresh CI run for the restoration commit and this report update must be checked before claiming the workflow is green.
+This was a metadata-placement mistake, not a reason to weaken the guards. The four source URLs remain in the research note, while the task JSON is restored to its strict pending-only shape. The restored task baseline has since passed the staging structural, provisional regression, release-denial and source-scope checks recorded below. The current source-audit script update has its source-scope guard passing; its separate review-selection workflow is still running, so the full legacy workflow set is not yet claimed green.
+
+
+## Corrected task-schema audit and current CI evidence — 2026-11-28
+
+### Task metadata isolation and schema repair
+
+The review-task file is restored to its original blob SHA `77abf35146825f05e3e58cfdd7a73b3c7302c967`. A fresh direct parse confirms that all 1,000 tasks use the current `tasks[]` schema and remain pending. Author-collected dictionary URLs remain in the separate B2 evidence note only; the independent-task fields `source_evidence_urls` and `source_observed_on` remain empty/null for every task.
+
+The previous `tools/audit_cefr_1000_shortlist.py` was stale: it expected `entries[]`, `word`, `proposed_level` and an older task-status vocabulary, while the live review file uses `tasks[]`, `headword`, `level`, `PENDING_INDEPENDENT_REVIEW` and dimension-specific pending fields. This mismatch caused the source-scope and review-selection workflows to fail even after the task JSON had been restored.
+
+Updated the auditor in commit `094aec7ee3857f71b775805f94110f70a1824c69` to validate the actual schema without relaxing the fail-closed rules. It now checks the exact 1,000 task count, 200-per-level parity, canonical global task IDs, source-path/index/blob parity, shortlist blob binding, all five pending review dimensions, null reviewer assignment/identity/signature, false approval, and empty/null independent-evidence fields. Added ten adversarial shortlist/task mutations, including fake approval, populated author-source metadata, reviewer identity, dimension signoff, missing task and mismatched headword. The script's baseline and all ten mutations passed in the actual source-scope workflow log.
+
+### Verified runs and outstanding workflow
+
+- [Run `46155184105`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46155184105), exact report commit `79cff735b0b28b837437db6c826faa1e1a81ac6d`: **14/14 jobs successful**. Actual jobs/logs confirm Python A1–C1 structural checks, Node A1–C1 cross-level/task-ID checks, twenty mutation tests, Python and Node release-denial checks, and eight synthetic independent-review/audio-evidence rejection tests. The logs explicitly retain zero independent approvals and `release: BLOCKED`.
+- [Run `46155464883`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46155464883), auditor commit `094aec7ee3857f71b775805f94110f70a1824c69`: source-scope guard **success**. Its actual log confirms the current-schema audit baseline and all ten adversarial task mutations passed, then the Oxford coverage audit's 25/25 forged-evidence mutations were rejected.
+- [Run `46155464818`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46155464818), same auditor commit: review-selection structural workflow was still in progress at the time of this report update. The A1, A2, B1, B2 and C1 jobs had each concluded success; the ALL-level reconciliation job was still running. Do not treat it as a completed workflow until its final conclusion and log are checked.
+- Earlier runs `46155145927` and `46155145938` on the restored task commit failed because of the stale auditor schema described above. Those failures remain visible; the code was repaired rather than weakening the task evidence guard.
+
+### Oxford coverage snapshot from the successful source-scope log
+
+The Oxford coverage audit is source-level word/POS research, not independent exact-sense approval. Its actual output reported 1,014 source observations across 995 distinct headwords, 524 flagged distinct headwords, 36 legacy locator-only records, five entries without those batch observations, zero independent exact-sense signoffs and zero final George/Emma listening signoffs.
+
+The observed label distribution is a substantial cross-level risk signal, not approval:
+- A1 lane: 195 distinct observed headwords.
+- A2 lane: 58 labelled A2, 108 A1, 13 B1, 1 B2 and 20 unlisted.
+- B1 lane: 57 B1, 27 A1, 85 A2, 31 B2 and 12 locator-only.
+- B2 lane: 98 B2, 6 A1, 32 A2, 46 B1, 16 C1, 2 unlisted and 12 locator-only.
+- C1 lane: 63 C1, 3 B1, 45 B2, 89 unlisted and 12 locator-only.
+
+“Unlisted” and locator-only records are not CEFR labels or exact-sense evidence. These counts reinforce the need for individual headword/sense verification and must not be converted into approval or automatic re-tiering.
+
+### Reconciled counts after task restoration
+
+The latest direct parse of the shortlist and task JSON confirms A1 200 written / 0 independently approved; A2 200 / 0; B1 200 / 0; B2 200 / 0; C1 200 / 0. Total: 1,000 written, 1,000 unique, 1,000 on editorial hold, 1,000 pending tasks, 0 approvals. All task source-evidence URL arrays remain empty and all task observation dates remain null.
+
+Release blockers are unchanged: 0/1,000 independent English, Myanmar, example and exact-sense CEFR signoffs; 0/4,000 final George/Emma assets generated and actually listened to; desktop/mobile regression not evidenced for this vocabulary release; physical iPhone Safari QA not evidenced; GitHub Pages hosting clearance outstanding; production deployment absent. No protected production asset or main-branch file was modified.
