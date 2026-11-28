@@ -1,3 +1,4 @@
+# Automated staging QC requested: source, exact-sense, bilingual, cross-level and fail-closed evidence checks; no human approval inferred and no deployment.
 name: CEFR 1000 go-live evidence QC (staging only; NO deployment)
 on:
   push:
