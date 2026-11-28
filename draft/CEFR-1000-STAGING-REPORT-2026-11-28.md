@@ -483,3 +483,26 @@ Oxford source URLs:
 - https://www.oxfordlearnersdictionaries.com/us/definition/english/relief
 
 No provisional entry, level, Myanmar meaning, example, task status or approval flag was changed.
+
+
+### Existing Oxford wordlist and protected IELTS overlap findings — 2026-11-28
+
+The B2 audit was further refined in evidence-note commit `dbe369ac17473cd680ed3cec196f612a9bd2ef1e` after read-only inspection of existing crosscheck records.
+
+The Oxford word/POS crosscheck (`draft/CEFR-1000-OXFORD-LEVEL-POS-CROSSCHECK.json`, created 2026-10-27, blob `f97b5ea7d2191e77b193098de862c59e7642d6e0`) records:
+- `personality`: Oxford noun A2 versus provisional B2, a two-band discrepancy. The provenance block specifically lists an official Oxford 3000 PDF spotcheck for “personality n. A2”. Cambridge's selected character sense is B2. This is a high-priority word/POS versus exact-sense conflict, not an automatic re-tier instruction.
+- `relief`: Oxford noun B2, matching the provisional B2 word/POS; exact emotional sense still needs review.
+- `resistance`: Oxford noun C1 versus provisional B2, consistent with the Oxford C1 topic signal and a challenge to B2.
+- `retail`: Oxford noun B2, matching the provisional B2 word/POS and Oxford Business/Shopping B2 topic labels, while Cambridge labels the noun C1.
+
+The Oxford crosscheck's provenance warns that its wider comparisons include community transcriptions of Oxford lists and an imperfect mirror; its official PDF spotchecks are identified separately. The official Oxford 3000/5000 PDF and wordlist URLs are retained in the evidence note. Word/POS labels are not exact-sense adjudications.
+
+The existing protected IELTS overlap review (`draft/CEFR-1000-IELTS-OVERLAP-REVIEW.json`, created 2026-10-27, blob `e075c42ff3cc2e636236eede6f6f84de97733b9d`) flags mechanical headword overlaps for `personality` and `retail`. For both, `same_sense_confirmed` and `semantic_distinctness_reviewed` remain false and `release_approved` remains false. These are unresolved review tasks, not confirmed duplicates. The IELTS bank was only read for comparison and was not modified.
+
+Current editorial priority:
+- `personality`: high-priority exact-sense/level conflict plus IELTS distinctness review.
+- `relief`: B2 is corroborated at wordlist/topic level; exact sense and Myanmar still need independent review.
+- `resistance`: B2 is challenged by Oxford C1 wordlist/topic evidence and Cambridge's broad C2 signal.
+- `retail`: B2 has Oxford wordlist/topic support, but Cambridge C1 conflicts; IELTS distinctness also remains unresolved.
+
+No provisional level, shortlist record, IELTS-bank content, review task, approval flag or release state was changed.
