@@ -321,3 +321,12 @@ Actual job conclusions and selected logs were fetched:
 - Mutation suite `140958044617`, Python release denial `140958044618`, Node release denial `140958044646`, and adversarial release/audio suite `140958044595` — all success.
 
 The adversarial log again passed the persisted wrong-level, generic CEFR excerpt, wrong transcript, duplicate audio bytes and invalid audio-signature rejection cases. Both release-denial logs explicitly confirm no independent approval is inferred and the provisional release remains blocked. This validates the report and staging safeguards only; it does not constitute linguistic signoff or real audio/device/hosting/deployment evidence.
+
+
+## A1 everyday vocabulary exact-sense audit — 2026-11-28
+
+Added [A1 daily-life and actions evidence note](CEFR-1000-EVIDENCE-2026-11-28-A1-DAILY-LIFE-AND-ACTIONS.md) in staging commit `3d9266051c4a443ab10ffc22cf4301c3a722eace`. It covers seven existing A1 tasks: `book` (CEFR1000-A1-0030), `chair` (-0095), `house` (-0062), `eat` (-0074), `drink` (-0075), `happy` (-0076) and `small` (-0072).
+
+Cambridge dictionary search-indexed extracts observed on 2026-11-28 show A1 labels for the selected exact noun/verb/adjective senses. The note retains each dictionary URL, UK pronunciation, shortlist definition and Myanmar gloss, original source path/index/blob, task ID, a proposed refined English definition, Burmese meaning, newly written example and Burmese rendering. Important sense boundaries are retained: `drink` liquid A1 vs alcohol A2; `happy` pleased A1 vs willingness/satisfaction A2; `small` physical size A1 vs unimportance A2; and separate meeting/verb senses of `chair` and collective/verb senses of `house`.
+
+Direct dictionary page-opening attempts returned HTTP 403 in this session; the indexed extracts are evidence leads only. Human reviewers must independently open the live pages and sign off. The examples and Myanmar renderings are author-side drafts, not independent originality or native-fluency review. No shortlist or task fields, review flags, editorial holds or approvals were changed; all seven tasks remain pending.
