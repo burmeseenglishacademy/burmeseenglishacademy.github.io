@@ -364,3 +364,31 @@ The new A1 audit commit `c17f24a974a7b9d1762f2fc7bea8ca8e6ba5e709` was validated
 The report update commit `c16a5016cb38300fdf5d51d0c1492a672b633f80` was itself validated by [run `46151287643`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46151287643): overall success, **14/14 jobs successful**, exact head SHA match. All actual job conclusions were success. The five Python structural logs each contained `errors: []` and `independent_approval_inferred: false`; the five Node structural logs each recorded the correct 200/200/0 counts and successful canonical task-ID swap rejection. The mutation log ended “All twenty negative cases rejected; provisional release also rejected; no independent review inferred.” The Python release log confirmed controlled explicit release denial. The Node release log confirmed `release: BLOCKED`, zero independent approvals for all five levels, and no approval/deployment claim. The adversarial audio log passed all six synthetic checks and explicitly said no real review or audio evidence was created.
 
 The second run validates the report commit recorded here. This report update will itself create a later documentation commit; its own push-triggered CI must be checked separately and must not be inferred from the preceding successful run.
+
+
+## Independent review signoff hardening — 2026-11-28
+
+Strengthened `scripts/cefr-1000-release-readiness-gate.cjs` so a future approved manifest must carry **four separate dimension-specific signoff records per entry**: English definition, Myanmar meaning, original example, and exact-sense/source-backed CEFR. Each record must include an APPROVED decision, a named reviewer different from the original author, reviewer-profile URL, qualification-evidence URL, review-evidence URL, parseable signed timestamp, and SHA-256 of the exact content reviewed. The CEFR review hash binds the headword, level, source URL, exact CEFR excerpt, excerpt reference and observation date. Editing a definition, Myanmar meaning, example or CEFR evidence after signoff invalidates that dimension's hash and blocks release. Legacy review booleans and a single generic reviewer field are no longer sufficient by themselves.
+
+Extended `scripts/cefr1000_release_gate_negative_tests.cjs` with synthetic cases that reject author self-review, stale example signoff after text mutation, and a pending CEFR signoff. The complete synthetic fixture remains explicitly schema-only and cannot authorize deployment. This hardening does not create or infer any real reviewer identity, qualification, signature or approval.
+
+### CI regression record and repair
+
+The first two runs after this gate change exposed defects in the new validation/test code and were inspected rather than hidden:
+- Run [`46151667316`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46151667316), gate commit `3e6517dd9479a13f81adae477aad59c530459a58`: adversarial and Node release-denial jobs failed because the inserted HTTPS regular-expression literal was over-escaped, causing Node `SyntaxError: Invalid regular expression flags`.
+- Run [`46151669928`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46151669928), test commit `275e7b33a599020cd5db1bd18fa4203e0bb0bc87`: the adversarial fixture also failed with duplicate `const firstManifestEntry`; the Node release-denial job still hit the malformed regex and emitted no JSON.
+- Run [`46151732634`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46151732634), fixture-fix commit `c5f9beb5c9b4e330a92a1d7ca2b3c32f3d758147`: the duplicate declaration was repaired, but the HTTPS regex defect still caused the two release-related jobs to fail.
+
+Repaired the URL validation using an explicit `startsWith('https://')` check, avoiding the fragile regex escaping. Latest corrected gate commit: `9cecf4aa7c8c662bee1d87a9be60da6f2f699a2b`.
+
+### Successful CI for the corrected gate
+
+[Run `46151817246`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46151817246) on exact head `9cecf4aa7c8c662bee1d87a9be60da6f2f699a2b` completed with overall conclusion **success**, **14/14 jobs successful**. Actual jobs and logs were inspected:
+- Python structural A1–C1 jobs: `140999885348`, `140999885361`, `140999885502`, `140999885481`, `140999885604` — all reported `errors: []` and `independent_approval_inferred: false`.
+- Node structural/task-ID A1–C1 jobs: `140999885235`, `140999885443`, `140999885507`, `140999885213`, `140999885405` — all reported 200 provisional entries, 200 review tasks, 0 independently verified, release BLOCKED, and successful canonical task-ID swap rejection.
+- Mutation job `140999885149`: all twenty negative cases rejected.
+- Python release-denial job `140999885294`: controlled explicit denial; no independent approval inferred.
+- Node release-denial job `140999885569`: verified the provisional release remains BLOCKED and is not approval/deployment.
+- Adversarial evidence job `140999885296`: passed the synthetic full-schema fixture and all eight negative cases, including the three new independent-review signoff cases. The log states that no real review or audio evidence was created.
+
+The failed runs above are retained as transparent regression history; the corrected run is the validation of the new gate/test code. The latest successful run validates `9cecf4aa7c8c662bee1d87a9be60da6f2f699a2b`, not this subsequent report update; the report commit's own push-triggered run must be checked separately.
