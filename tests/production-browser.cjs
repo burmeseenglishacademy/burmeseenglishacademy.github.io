@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-/* Browser QA: desktop Chromium and simulated mobile Safari engine (WebKit).
-   WebKit here is NOT a physical iPhone. Native Audio play() is mocked only for
-   route/voice selection checks. HTTP MP3 requests are checked separately.
+/* Browser QA: desktop Chromium/WebKit plus mobile Chromium/WebKit emulation.
+   WebKit iPhone emulation is NOT a physical iPhone. Native Audio play() is
+   mocked only for route/voice selection checks. HTTP MP3 requests are separate.
 */
 'use strict';
 const assert=require('node:assert/strict');
@@ -122,7 +122,9 @@ async function check(engine,label,options,allRoutes){
 }
 async function main(){
  await check(chromium,'Chromium desktop',{viewport:{width:1300,height:900}},true);
- await check(webkit,'WebKit iPhone emulation',devices['iPhone 13'],false);
+ await check(webkit,'WebKit desktop',{viewport:{width:1300,height:900}},true);
+ await check(chromium,'Chromium Pixel 7 emulation',devices['Pixel 7'],false);
+ await check(webkit,'WebKit iPhone 13 emulation',devices['iPhone 13'],false);
  const browser=await chromium.launch({headless:true});
  try{
   const ctx=await browser.newContext();
