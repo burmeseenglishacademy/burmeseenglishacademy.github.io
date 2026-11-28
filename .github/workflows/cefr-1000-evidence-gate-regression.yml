@@ -19,7 +19,7 @@ jobs:
       matrix:
         level: [A1, A2, B1, B2, C1]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
       - name: Run adversarial evidence gate tests
