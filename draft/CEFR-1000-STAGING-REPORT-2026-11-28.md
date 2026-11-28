@@ -186,3 +186,25 @@ The report commit `8e5aab2cae8fd8eb152bc6f8a57a51c4f74372ec` itself was checked 
 The report/count reconciliation commit `3d5dfec4cd6f6f7ab55a39496862845e493ee91b` was validated by GitHub Actions run [`46125747929`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46125747929). The run completed with conclusion `success`: **14/14 jobs successful**. All 14 job conclusions and logs were fetched. The five Python level-specific structural jobs, five Node level-specific cross-level/task-ID jobs, twenty-case provisional-data mutation suite, Python release-denial check, Node release-denial check and adversarial audio-evidence test all succeeded. Logs explicitly reported `independently_verified: 0` for each Node level job and `release: BLOCKED`. The audio test passed the synthetic wrong-text, duplicate-content and invalid-signature rejection cases. No Node 20 deprecation or punycode warnings appeared.
 
 This is the latest verified CI run at the time of this report update; passing it confirms the staging safeguards, not independent vocabulary approval, real audio, listening, device QA, hosting clearance or production deployment.
+
+
+## A1 lexical sense-boundary evidence addition — 2026-11-28
+
+Added `draft/CEFR-1000-EVIDENCE-2026-11-28-A1-LEXICAL-SENSE-BOUNDARIES.md` in commit `275ae8fe13eb7ff8825a5347fd0195d87699b552`. It records source URLs, observation date, shortlist/task provenance, exact-sense CEFR distinctions, British pronunciation where relevant, Myanmar refinements and original example options for fourteen additional A1 tasks: `book` (0030), `place` (0063), `time` (0042), `people` (0043), `house` (0062), `help` (0059), `see` (0046), `want` (0048), `know` (0045), `go` (0049), `day` (0052), `work` (0053), `old` (0060) and `little` (0061). These are author-side source findings only; none is counted as an independent check.
+
+The most material finding is `time`: the shortlist's current “What clocks measure in hours and minutes” definition corresponds to Cambridge's A2 duration sense, while “What time is it?” illustrates the A1 clock-time/particular-point sense. The note recommends that the independent reviewer choose one sense and align the level, definition, Myanmar gloss and example. It also flags the broad A1 `work` definition, the A1/B2 distinction for `help`, the mixed visual/meet Myanmar gloss for `see`, the broad `know` definition, the adjective/quantifier Myanmar ambiguity for `little`, and examples that could invite A2 readings for `day`.
+
+A fresh parse of the two JSON files after this evidence commit produced:
+
+| Level | Written | Unique normalized headwords | Editorial holds | Independently approved | Pending review tasks |
+|---|---:|---:|---:|---:|---:|
+| A1 | 200 | 200 | 200 | 0 | 200 |
+| A2 | 200 | 200 | 200 | 0 | 200 |
+| B1 | 200 | 200 | 200 | 0 | 200 |
+| B2 | 200 | 200 | 200 | 0 | 200 |
+| C1 | 200 | 200 | 200 | 0 | 200 |
+| **Total** | **1000** | **1000** | **1000** | **0** | **1000** |
+
+Structural reconciliation: all shortlist review flags and release approvals remain false: `true`; task IDs are globally unique: `true`; each review task remains positionally matched to its shortlist entry: `true`. No provisional content or review-task decision fields were changed by this evidence addition.
+
+The new evidence commit's combined commit-status endpoint returned no status records, so no new CI result is claimed for `275ae8fe13eb7ff8825a5347fd0195d87699b552`. The previous verified structural run remains historical evidence only; current-commit workflow execution must be checked separately. This addition does not change the release blockers: independent English/Myanmar/example/CEFR signoff remains 0/1,000; final George/Emma audio remains 0/4,000 assets generated and actually listened to; vocabulary-specific desktop/mobile and physical iPhone Safari QA are not evidenced; GitHub Pages hosting clearance is outstanding; and production deployment is neither authorised by evidence nor performed.
