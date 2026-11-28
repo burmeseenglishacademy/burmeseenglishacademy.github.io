@@ -254,3 +254,32 @@ Current-commit CI remains unverified: the combined commit-status endpoint return
 | **Total** | **1,000** | **1,000** | **1,000** | **0** | **1,000** |
 
 Release blockers remain unchanged: independent English, Myanmar, original-example and exact-sense CEFR signoff 0/1,000; final George/Emma headword/example audio 0/4,000 generated and actually listened to; desktop/mobile regression not evidenced; physical iPhone Safari review not evidenced; GitHub Pages hosting clearance outstanding; production deployment absent. All production protection and privacy requirements remain in force.
+
+
+## B1 exact-sense and bilingual audit — 2026-11-28
+
+Added [B1 lexical-sense and level-boundary audit](CEFR-1000-EVIDENCE-2026-11-28-B1-LEVEL-AND-SENSE-AUDIT.md), commit `6ca9576b96612dd792580e935830f88c98b59a56`. It covers fifteen existing B1 tasks, with original shortlist/task provenance, Cambridge source URLs, observation date, exact-sense findings, Myanmar refinements and original example proposals. These are author-side findings only; no shortlist/task content or review/approval fields were changed.
+
+Material findings:
+- Exact B1 sense support was found for `direction` (WAY noun), `wonder` (QUESTION verb), `effort` (ENERGY noun), `imagine` (CREATE verb), `organization` (GROUP noun), `protect` (verb) and `secret` (noun).
+- `independent` currently uses B2 not-controlled/not-influenced senses; Cambridge's self-reliance sense is B1. A B1 rewrite is proposed, not applied.
+- `weekend` is A1, not B1.
+- `cash` is A2 for notes/coins; B1 is the broader money-in-any-form sense. Current definition/example point to A2.
+- `clearly` is A2 for manner of speaking/understanding; B1 is the certainty/stance adverb. Current definition/example point to A2.
+- `impact` is B2 for the selected effect noun sense.
+- `civil` has no CEFR label in the inspected Cambridge Learner extract and a C1 signal for the matching ordinary/not-military sense in Cambridge's general English Dictionary.
+- `multiple` has no explicit CEFR label in the inspected Learner extract for the selected adjective sense.
+- `operation` has a B1 label for the medical noun sense, but not for the selected warehouse activity/operation sense; the level must not be transferred between senses.
+- The note flags British `organisation` spelling as an editorial policy question without changing the canonical headword.
+
+Cambridge search-indexed extracts were captured on 2026-11-28. Direct page-opening attempts returned HTTP 403 in this research session, so human reviewers must independently open and verify the live pages before signoff. All fifteen tasks remain pending; none count as independent checks.
+
+## Latest inspected structural CI evidence
+
+Inspected GitHub Actions run [`46125808173`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46125808173) through its actual job list and job logs. All **14/14 jobs** and their reported steps completed successfully. The checkout log for B1 structural job `140920026191` records head commit `0334d2fa046261bd25d445647c72f39c50db0706`; the B1 gate output was `errors: []` and `independent_approval_inferred: false`. Release-blocker job `140920026222` logged “Verified controlled, explicit release denial; no independent approval inferred.” This run is historical relative to the later source-provenance report commit `d9e42704a2ebb5a45f6bbc82e2cb7a7f3e983f75` and this B1 evidence commit; it does not validate those later commits. No current-tip CI success is claimed.
+
+## Reconciled staging inventory
+
+The shortlist and task JSON were reparsed from `cefr-5000-bilingual-qa-staging` during this run. Each level still has exactly 200 written entries, 200 editorial holds, 200 pending review tasks and 0 independently approved entries; the total remains 1,000 written / 0 independently approved. All shortlist review/approval flags remain false and task reviewer/signature/source-evidence fields remain empty or null.
+
+Release blockers remain unchanged: independent English, Myanmar, original-example and source-backed CEFR signoff 0/1,000; final George/Emma headword/example audio 0/4,000 generated and actually listened to; vocabulary-specific desktop/mobile regression not evidenced; physical iPhone Safari review not evidenced; GitHub Pages hosting clearance outstanding; and confirmed production deployment absent. The 54 lessons, separate IELTS bank, established production audio, privacy controls and `main` remain untouched. Remain staging-only.
