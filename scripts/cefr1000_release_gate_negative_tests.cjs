@@ -182,24 +182,92 @@ try{
  console.log('PASS: audio that does not speak the approved headword is rejected');
 
  evidence.audio.george_headword[0].spoken_text=manifest.entries[0].headword;
+
+ // The shortlist contains repeated example strings. The same exact text may
+ // share one file within one voice, but every task still has its own audio record.
+ const duplicateExamples=new Map();
+ let duplicateExamplePair=null;
+ for(let i=0;i<manifest.entries.length;i++){
+  const text=manifest.entries[i].example_sentence;
+  if(duplicateExamples.has(text)){duplicateExamplePair=[duplicateExamples.get(text),i];break;}
+  duplicateExamples.set(text,i);
+ }
+ assert.ok(duplicateExamplePair,'The source shortlist should contain repeated example text for reuse testing');
+ const [reuseIndexA,reuseIndexB]=duplicateExamplePair;
+ const reuseA=evidence.audio.george_example[reuseIndexA];
+ const reuseB=evidence.audio.george_example[reuseIndexB];
+ const reuseBOriginal={path:reuseB.path,sha256:reuseB.sha256};
+ reuseB.path=reuseA.path;
+ reuseB.sha256=reuseA.sha256;
+ writeEvidence();
+ const exactReuse=runGate();
+ assert.equal(exactReuse.status,0,'Exact same text and same voice may share one audio asset');
+ console.log('PASS: exact same text + same voice may reuse one recording across duplicate slots');
+ reuseB.path=reuseBOriginal.path;
+ reuseB.sha256=reuseBOriginal.sha256;
+ writeEvidence();
+
+ // A path must never be reused for a different spoken text or voice.
+ const pathA=evidence.audio.george_headword[0];
+ const pathB=evidence.audio.george_headword[1];
+ const pathBOriginal={path:pathB.path,sha256:pathB.sha256};
+ pathB.path=pathA.path;
+ pathB.sha256=pathA.sha256;
+ writeEvidence();
+ const pathReuse=runGate();
+ assert.equal(pathReuse.status,1,'One audio path reused for different text must be rejected');
+ assert.ok(pathReuse.report.blockers.some(x=>x.includes('audio file reused across different voice/utterance content')));
+ console.log('PASS: one audio path cannot be reused for different spoken content');
+ pathB.path=pathBOriginal.path;
+ pathB.sha256=pathBOriginal.sha256;
+ writeEvidence();
+
+ // Distinct paths with the same bytes are also rejected when their text differs.
  const duplicateA=evidence.audio.george_headword[0];
  const duplicateB=evidence.audio.george_headword[1];
+ const duplicateBBytes=fs.readFileSync(path.join(tempRoot,duplicateB.path));
+ const duplicateBHash=duplicateB.sha256;
  const bytesA=fs.readFileSync(path.join(tempRoot,duplicateA.path));
  fs.writeFileSync(path.join(tempRoot,duplicateB.path),bytesA);
  duplicateB.sha256=duplicateA.sha256;
  writeEvidence();
  const duplicate=runGate();
- assert.equal(duplicate.status,1,'Identical audio bytes in different slots must be rejected');
- assert.ok(duplicate.report.blockers.some(x=>x.includes('audio content digest reused across all voice/utterance slots')));
- console.log('PASS: duplicate audio content across different tasks is rejected');
+ assert.equal(duplicate.status,1,'Identical audio bytes for different spoken text must be rejected');
+ assert.ok(duplicate.report.blockers.some(x=>x.includes('audio content digest reused across different spoken text or voice')));
+ console.log('PASS: duplicate audio bytes across different spoken text are rejected');
+ fs.writeFileSync(path.join(tempRoot,duplicateB.path),duplicateBBytes);
+ duplicateB.sha256=duplicateBHash;
+ writeEvidence();
 
- fs.writeFileSync(path.join(tempRoot,duplicateA.path),Buffer.from('not an audio file'));
- duplicateA.sha256=crypto.createHash('sha256').update(fs.readFileSync(path.join(tempRoot,duplicateA.path))).digest('hex');
+ // Even identical text cannot reuse the same recording across George and Emma.
+ const george=evidence.audio.george_headword[0];
+ const emma=evidence.audio.emma_headword[0];
+ const emmaBytes=fs.readFileSync(path.join(tempRoot,emma.path));
+ const emmaHash=emma.sha256;
+ fs.writeFileSync(path.join(tempRoot,emma.path),fs.readFileSync(path.join(tempRoot,george.path)));
+ emma.sha256=george.sha256;
+ writeEvidence();
+ const crossVoice=runGate();
+ assert.equal(crossVoice.status,1,'A George recording reused for Emma must be rejected');
+ assert.ok(crossVoice.report.blockers.some(x=>x.includes('audio content digest reused across different spoken text or voice')));
+ console.log('PASS: same text still requires the correct George/Emma voice');
+ fs.writeFileSync(path.join(tempRoot,emma.path),emmaBytes);
+ emma.sha256=emmaHash;
+ writeEvidence();
+
+ const first=evidence.audio.george_headword[0];
+ const firstBytes=fs.readFileSync(path.join(tempRoot,first.path));
+ const firstHash=first.sha256;
+ fs.writeFileSync(path.join(tempRoot,first.path),Buffer.from('not an audio file'));
+ first.sha256=crypto.createHash('sha256').update(fs.readFileSync(path.join(tempRoot,first.path))).digest('hex');
  writeEvidence();
  const badFormat=runGate();
  assert.equal(badFormat.status,1,'Invalid audio file signature must be rejected');
  assert.ok(badFormat.report.blockers.some(x=>x.includes('unrecognised audio format/signature')));
  console.log('PASS: invalid audio format/signature is rejected');
+ fs.writeFileSync(path.join(tempRoot,first.path),firstBytes);
+ first.sha256=firstHash;
+ writeEvidence();
  console.log('All release-gate audio evidence tests passed; no real review or audio evidence was created.');
 }finally{
  fs.rmSync(tempRoot,{recursive:true,force:true});
