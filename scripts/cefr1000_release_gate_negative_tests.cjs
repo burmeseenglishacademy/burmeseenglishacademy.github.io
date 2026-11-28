@@ -255,18 +255,18 @@ try{
  emma.sha256=emmaHash;
  writeEvidence();
 
- const first=evidence.audio.george_headword[0];
- const firstBytes=fs.readFileSync(path.join(tempRoot,first.path));
- const firstHash=first.sha256;
- fs.writeFileSync(path.join(tempRoot,first.path),Buffer.from('not an audio file'));
- first.sha256=crypto.createHash('sha256').update(fs.readFileSync(path.join(tempRoot,first.path))).digest('hex');
+ const badAudio=evidence.audio.george_headword[0];
+ const badAudioBytes=fs.readFileSync(path.join(tempRoot,badAudio.path));
+ const badAudioHash=badAudio.sha256;
+ fs.writeFileSync(path.join(tempRoot,badAudio.path),Buffer.from('not an audio file'));
+ badAudio.sha256=crypto.createHash('sha256').update(fs.readFileSync(path.join(tempRoot,badAudio.path))).digest('hex');
  writeEvidence();
  const badFormat=runGate();
  assert.equal(badFormat.status,1,'Invalid audio file signature must be rejected');
  assert.ok(badFormat.report.blockers.some(x=>x.includes('unrecognised audio format/signature')));
  console.log('PASS: invalid audio format/signature is rejected');
- fs.writeFileSync(path.join(tempRoot,first.path),firstBytes);
- first.sha256=firstHash;
+ fs.writeFileSync(path.join(tempRoot,badAudio.path),badAudioBytes);
+ badAudio.sha256=badAudioHash;
  writeEvidence();
  console.log('All release-gate audio evidence tests passed; no real review or audio evidence was created.');
 }finally{
