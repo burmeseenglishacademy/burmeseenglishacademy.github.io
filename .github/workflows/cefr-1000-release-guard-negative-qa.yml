@@ -1,3 +1,4 @@
+# Automated staging regression requested: five-level lexical-risk triage and adversarial release-guard checks; never approve or deploy.
 name: CEFR-1000 staging release guard adversarial QA
 on:
   push:
