@@ -26,7 +26,11 @@ Source file blob SHAs observed:
 - Provisional shortlist: `475e68ae17ab97bd937e73e5ce4794e0dcd76551`.
 - Independent review tasks: `77abf35146825f05e3e58cfdd7a73b3c7302c967`.
 
-The four additional A1 author-side evidence notes in [the 28 November core-noun evidence file](CEFR-1000-EVIDENCE-2026-11-28-A1-CORE-NOUNS.md) concern the exact A1 noun senses of `water`, `food`, `family`, and `friend`. Cambridge Learner’s Dictionary pages explicitly label those senses A1 and distinguish nearby A2/B1/B2 senses where shown. These notes do not count as independent checks or approvals.
+The author-side evidence notes currently cover nine A1 candidates:
+- [Core nouns: water, food, family, friend](CEFR-1000-EVIDENCE-2026-11-28-A1-CORE-NOUNS.md).
+- [Family and education: mother, father, school, teacher, student](CEFR-1000-EVIDENCE-2026-11-28-A1-FAMILY-AND-EDUCATION.md).
+
+The new five-candidate note records Cambridge Learner’s Dictionary A1 exact-sense evidence, British pronunciation references, proposed English-definition refinements, Myanmar meaning/register notes, original example grammar and Burmese renderings. It separates the A1 school-place sense from the A2 school-period sense, and the A1 parent senses from distinct religious-title/formal-verb uses. These are author-side findings only; none count as independent checks or approvals.
 
 ## Release gates
 
@@ -57,10 +61,24 @@ Historical GitHub Actions run `45235724342` was inspected through its actual job
 
 The failed log shows the older job ran `set -uo pipefail` under GitHub's default `bash -e`, then invoked the release-veto script expected to exit nonzero. Bash exited immediately on that command before the following `status=$?` could capture the expected result. This was a test-harness failure, not evidence that release was permitted.
 
-The current staging workflow file `.github/workflows/cefr-1000-structural-qa.yml` uses an explicit `set +e` / capture / `set -e` sequence and validates the JSON release-denial report. It also runs parallel A1–C1 structural jobs, mutation tests, and Node cross-level structural/release-blocker checks. On 2026-11-28, commit `9ff5680262ba015bf92a544ad37fd752ab32a5cd` added `draft/CEFR-1000-*.md` to the push path filter and corrected the mutation-test step label from “sixteen” to “twenty,” matching the twenty corruption cases in the checked-in script. The workflow file was re-fetched after the update and both changes were confirmed. **A successful run of this current workflow has not yet been verified:** the combined commit-status endpoint returned no status records at the time of inspection, and the available GitHub Actions connector actions do not expose a list-runs operation for this push-triggered run. No success is inferred.
+The current staging workflow file `.github/workflows/cefr-1000-structural-qa.yml` uses an explicit `set +e` / capture / `set -e` sequence and validates both the Python and Node JSON release-denial reports. It runs parallel Python and Node A1–C1 structural jobs, twenty mutation checks, canonical task-ID swap negative tests, and two release-denial checks.
+
+**Verified current-workflow run:** GitHub Actions run [`46116573654`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46116573654), head commit `c6320dffe1c314160d9fc7c85b88190f68a204f5`, completed with overall conclusion `success`. The actual jobs endpoint returned **13/13 jobs successful**, and each reported step completed successfully:
+- Python structural integrity: A1 `140891645971`, A2 `140891645914`, B1 `140891645944`, B2 `140891645919`, C1 `140891645881`.
+- Node cross-level structural and task-ID negative tests: A1 `140891645877`, A2 `140891645879`, B1 `140891645789`, B2 `140891645991`, C1 `140891645842`.
+- Twenty mutation checks: `140891645662`.
+- Python release denial: `140891645808`.
+- Node approved-manifest release denial: `140891645861`.
+
+This is a successful structural/adversarial CI run and successful demonstration that the current provisional release remains blocked. It is **not** independent linguistic approval, audio/listening evidence, browser/mobile or physical iPhone QA, hosting clearance, or production deployment. Historical run `45235724342` had the earlier Bash errexit harness failure described above; the controlled-exit repair is now exercised successfully by run `46116573654`.
 
 ## Production protection
 
 No changes in this run were made to the 54 published lessons, the separate IELTS 1,000-word bank, established George/Emma production audio, or learner privacy controls. No merge to `main`, public deployment, or production modification is authorised before every required gate has genuine evidence.
 
 **Release decision: remain on `cefr-5000-bilingual-qa-staging`. No independent approval is claimed.**
+
+
+## Latest editorial evidence addition
+
+On 2026-11-28, five A1 entries were documented in `draft/CEFR-1000-EVIDENCE-2026-11-28-A1-FAMILY-AND-EDUCATION.md`: `mother`, `father`, `school`, `teacher`, and `student`. Their review task IDs are CEFR1000-A1-0025 through CEFR1000-A1-0029. All five remain pending; no shortlist fields or review flags were changed. Evidence-file commit: `3f0f7ade1b73e12f5f558c70657da21071f9f3e6`.
