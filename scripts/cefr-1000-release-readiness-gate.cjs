@@ -55,7 +55,33 @@ if(exists(manifestPath)&&exists(evidencePath)){
    check(cefrExcerpt.toLocaleLowerCase().includes(String(e.headword).toLocaleLowerCase())&&new RegExp('(^|[^A-Z0-9])'+e.level+'([^A-Z0-9]|$)','i').test(cefrExcerpt),'CEFR evidence excerpt must identify the headword and exact approved level '+e.task_id);
    check(typeof e.source_cefr_observed_on==='string'&&!Number.isNaN(Date.parse(e.source_cefr_observed_on)),'invalid CEFR source observation date '+e.task_id);
    check(e.independent_english_review===true&&e.independent_myanmar_review===true&&e.independent_example_review===true&&e.independent_cefr_review===true,'incomplete independent review '+e.task_id);
+   check(typeof e.author_id==='string'&&!!e.author_id.trim(),'missing original author identity '+e.task_id);
    check(e.reviewer_id!==e.author_id&&!!e.author_id,'reviewer must differ from author '+e.task_id);
+   // Each review dimension must have its own traceable human signoff bound to
+   // the exact content reviewed. A generic boolean or one legacy reviewer field
+   // cannot stand in for four independent decisions.
+   const cefrReviewPayload=JSON.stringify({
+    headword:e.headword,level:e.source_cefr_level,url:e.source_cefr_url,
+    excerpt:e.source_cefr_evidence_excerpt,reference:e.source_cefr_excerpt_reference,
+    observed_on:e.source_cefr_observed_on
+   });
+   const reviewPayloads={
+    english:String(e.english_definition||''),
+    myanmar:String(e.myanmar_meaning||''),
+    example:String(e.example_sentence||''),
+    cefr:cefrReviewPayload
+   };
+   for(const [dimension,payload] of Object.entries(reviewPayloads)){
+    const signoff=e.independent_review_signoffs&&e.independent_review_signoffs[dimension];
+    check(!!signoff&&signoff.decision==='APPROVED','missing independent '+dimension+' approval '+e.task_id);
+    check(!!signoff&&typeof signoff.reviewer_id==='string'&&!!signoff.reviewer_id.trim()&&signoff.reviewer_id!==e.author_id,'independent '+dimension+' reviewer must be identified and differ from author '+e.task_id);
+    for(const urlField of ['reviewer_profile_url','qualification_evidence_url','evidence_url']){
+     check(!!signoff&&typeof signoff[urlField]==='string'&&/^https:\\/\\//.test(signoff[urlField]),'missing traceable '+dimension+' '+urlField+' '+e.task_id);
+    }
+    check(!!signoff&&typeof signoff.signed_at==='string'&&!Number.isNaN(Date.parse(signoff.signed_at)),'invalid independent '+dimension+' signoff date '+e.task_id);
+    const expectedReviewHash=crypto.createHash('sha256').update(payload).digest('hex');
+    check(!!signoff&&signoff.reviewed_content_sha256===expectedReviewHash,'stale or mismatched independent '+dimension+' content hash '+e.task_id);
+   }
   }
   for(const level of levels)check(entries.filter(e=>e.level===level).length===200,'approved '+level+' != 200');
   check(manifestIds.size===tasksById.size&&[...tasksById.keys()].every(id=>manifestIds.has(id)),'approved manifest must cover each original task exactly once');
