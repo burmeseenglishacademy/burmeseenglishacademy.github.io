@@ -1,3 +1,4 @@
+# Automated staging regression requested: independently exercise five-level fail-closed evidence gate; no approval or deployment.
 name: CEFR-1000 evidence gate regression (staging only)
 on:
   push:
