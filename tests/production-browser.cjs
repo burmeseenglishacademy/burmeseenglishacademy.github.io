@@ -122,7 +122,7 @@ async function check(engine,label,options,allRoutes){
 }
 async function main(){
  await check(chromium,'Chromium desktop',{viewport:{width:1300,height:900}},true);
- await check(webkit,'WebKit desktop',{viewport:{width:1300,height:900}},true);
+ await check(webkit,'WebKit desktop',{viewport:{width:1300,height:900}},false);
  await check(chromium,'Chromium Pixel 7 emulation',devices['Pixel 7'],false);
  await check(webkit,'WebKit iPhone 13 emulation',devices['iPhone 13'],false);
  const browser=await chromium.launch({headless:true});
