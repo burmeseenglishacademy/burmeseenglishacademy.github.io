@@ -20,11 +20,11 @@ Structural observations:
 - 1,000 unique case-folded NFC headwords in the shortlist.
 - All 1,000 shortlist entries remain `editorial_hold: true`.
 - All provisional `reviewed_english`, `reviewed_burmese`, `reviewed_example`, `reviewed_level`, `reviewed_pronunciation`, and `release_approved` flags remain explicitly false.
-- All 1,000 review tasks remain pending and approval false; no task has an assigned reviewer, reviewer identity or signature. Four B2 tasks (personality, relief, resistance, retail) now carry author-collected Cambridge source URLs and observation date 2026-11-28 as research leads only; the other 996 still have no source URLs/date. These links are not independent signoff.
+- All 1,000 review tasks remain pending and approval false; no task has an assigned reviewer, reviewer identity or signature. The task file's `source_evidence_urls` remain empty and `source_observed_on` remains null for every task because these fields are reserved for evidence entered through the independent-review process. Four B2 author-collected Cambridge research leads are preserved in the separate evidence note only; they are not independent signoff.
 
 Source file blob SHAs observed:
 - Provisional shortlist: `475e68ae17ab97bd937e73e5ce4794e0dcd76551`.
-- Independent review tasks after attaching four author-collected B2 source leads: `50e2041459e6c10a1912bd9678d8b0a207d81228`.
+- Independent review tasks (restored to the original pending-only metadata baseline): `77abf35146825f05e3e58cfdd7a73b3c7302c967`.
 
 The author-side evidence notes cover selected A1–C1 candidates and are research aids, not independent review records. They preserve source URLs, observation dates, exact-sense distinctions, original shortlist/task provenance, British pronunciation references, proposed Myanmar refinements and newly drafted examples. Coverage is partial; the presence of a note never changes a task's pending status or approval count. The notes include A1 articles, family/education, core nouns, lexical sense boundaries, daily-life/actions and core verbs/adjectives; A2 sense/level audits; B1 exact-sense/level audits; B2 exact-sense audit for personality, relief, resistance and retail; C1 level challenges, political/legal senses, lexical-level risks and C2/A2 conflicts; and a source-provenance gap audit.
 
@@ -406,6 +406,17 @@ Key findings:
 
 Direct Cambridge page opens returned HTTP 403. The note therefore identifies the search-indexed extracts as evidence leads and requires human source-page verification. It does not claim independent source verification or approval.
 
-Attached author-collected source URLs and `source_observed_on: 2026-11-28` to the four existing tasks only; task-file commit `33aca9ffb5418fdd519ce4857d5225f0d0d15af3`, blob SHA `50e2041459e6c10a1912bd9678d8b0a207d81228`. All four remain `PENDING_INDEPENDENT_REVIEW`, with approval false, no assigned reviewer, and no reviewer identity/signature. No shortlist field, editorial hold, level, review flag or approval flag was changed.
+The source URLs and observation date remain in the separate evidence note, not in the independent-review task JSON. An attempted attachment to the task fields was rejected by existing fail-closed safeguards: the Python intake, structural and mutation tests explicitly require unverified task evidence fields to remain empty/null, and the Node structural test requires `source_observed_on === null`. The task file was restored byte-for-byte to its original pending-only baseline in commit `52d9a80038e32f4ddeff1952f7bcedb7cda58657`, returning its blob SHA to `77abf35146825f05e3e58cfdd7a73b3c7302c967`. No release safeguard was weakened. The four research leads remain available in the separate note for independent reviewers to inspect and record through the correct process.
 
-The new evidence and task metadata are author-side research aids only. They do not establish historical WordNet provenance clearance, complete CEFR coverage, fluent Myanmar approval or release readiness. The report's inventory and release-gate counts remain unchanged.
+The new evidence note is author-side research only. It does not establish historical WordNet provenance clearance, complete CEFR coverage, fluent Myanmar approval or release readiness. The report's inventory and release-gate counts remain unchanged.
+
+### CI failure diagnosis and correction — 2026-11-28
+
+The first attempt to place author-collected URLs/dates directly into independent-review task metadata caused expected fail-closed failures. Actual logs were inspected:
+- Run `46154910801`: Python A1–C1 structural jobs rejected populated `source_evidence_urls` and `source_observed_on`; the Node B2 structural job rejected the non-null observation date; Python release denial and mutation baseline also failed because the structural baseline was no longer valid.
+- Run `46154910803`: the `Fail-closed provisional review provenance` job rejected the four populated records as “intake cannot impersonate evidence collection.”
+- Run `46154910882`: source-scope guard rejected the task inventory after the same metadata contamination.
+- Run `46154910839`: review-selection structural jobs rejected the task inventory.
+- Run `46154971564` on report commit `20541013a17dbd684c9705560d17d4fdfc92d4c7`: the current structural workflow again rejected the four populated records; Node approved-manifest denial and synthetic audio-evidence checks passed, but the full workflow failed.
+
+This was a metadata-placement mistake, not a reason to weaken the guards. The four source URLs remain in the research note, while the task JSON is restored to its strict pending-only shape. A fresh CI run for the restoration commit and this report update must be checked before claiming the workflow is green.
