@@ -604,3 +604,19 @@ Fresh GitHub repository metadata and the recursive staging Git tree were read at
 Official current policy source checked 2026-11-28: https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits. It states a recommended 1 GB source repository, a maximum 1 GB published site, 10-minute deployment timeout, 100 GB/month soft bandwidth limit and 10 native builds/hour soft limit (custom Actions builds are exempt from the build-frequency limit).
 
 **Interpretation limit:** This is a measured repository/tree and asset preflight, not a final GitHub Pages build artifact. It does not measure actual published output bytes, monthly bandwidth, or a deployment duration for the final approved manifest. The release ledger's hosting receipt therefore remains absent and the hosting gate remains blocked. No deployment or Pages settings were changed.
+
+
+## Four-way automated browser regression — verified pass
+
+The repaired four-way browser workflow [`46157999098`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46157999098), commit `91ee8bbd523275f94417bf1c7297ea82b5771271`, completed with conclusion **success**. The actual job conclusion, all steps and logs were fetched. All browser regression steps completed successfully:
+
+- CEFR UI guard: 1,000 provisional entries/five levels, search/view, audio routing, HTML escaping, and rejection of empty, unreviewed, duplicate and missing-audio data.
+- Chromium desktop: 432 lesson/tab combinations (all 54 lessons × 8 tabs).
+- WebKit desktop: 64 representative lesson/tab combinations.
+- Chromium Pixel 7 mobile emulation: 64 combinations.
+- WebKit iPhone 13 mobile emulation: 64 combinations.
+- 18 sample existing-production MP3 HTTP GETs returned valid responses.
+
+The prior WebKit history-throttle failure and its fix are recorded above. This successful run closes the **automated four-way staging browser matrix**. It does not supply a physical iPhone Safari review: both mobile runs are simulator/emulation. The browser script mocks `Audio.play()` to check voice routing and stop handlers; it does not establish audible pronunciation or actual listening. The sample MP3 HTTP GETs use existing production audio, not the new unreviewed CEFR candidate recordings.
+
+The formal release ledger still has no approved 1,000-entry manifest to bind the browser receipts to, so this automated run does not change any independent review, listening, physical-device, hosting or deployment gate. The physical iPhone Safari and real George/Emma listening blockers remain unchanged.
