@@ -26,12 +26,7 @@ Source file blob SHAs observed:
 - Provisional shortlist: `475e68ae17ab97bd937e73e5ce4794e0dcd76551`.
 - Independent review tasks: `77abf35146825f05e3e58cfdd7a73b3c7302c967`.
 
-The author-side evidence notes currently cover nine A1 candidates and five C1 candidates:
-- [A1 core nouns: water, food, family, friend](CEFR-1000-EVIDENCE-2026-11-28-A1-CORE-NOUNS.md).
-- [A1 family and education: mother, father, school, teacher, student](CEFR-1000-EVIDENCE-2026-11-28-A1-FAMILY-AND-EDUCATION.md).
-- [C1 exact-sense level challenges: naval, tribute, divine, municipal, neutral](CEFR-1000-EVIDENCE-2026-11-28-C1-LEVEL-CHALLENGES.md).
-
-The A1 notes record Cambridge exact-sense A1 evidence, British pronunciation references, proposed English-definition refinements, Myanmar meaning/register notes, original example grammar and Burmese renderings. They distinguish A1 school-place from A2 school-period and common parent senses from separate title/formal-verb senses. The C1 note identifies two direct C2 conflicts (`naval`, `tribute`), one C1 assignment not established by the inspected CEFR-labelled source (`divine`), and two exact C1 matches (`municipal`, `neutral`). It also flags the `tribute` example for being too close to the Cambridge source example. These are author-side findings only; none count as independent checks or approvals.
+The author-side evidence notes cover selected A1–C1 candidates and are research aids, not independent review records. They preserve source URLs, observation dates, exact-sense distinctions, original shortlist/task provenance, British pronunciation references, proposed Myanmar refinements and newly drafted examples. Coverage is partial; the presence of a note never changes a task's pending status or approval count. The notes include A1 articles, family/education, core nouns, lexical sense boundaries, daily-life/actions and core verbs/adjectives; A2 sense/level audits; B1 exact-sense/level audits; C1 level challenges, political/legal senses, lexical-level risks and C2/A2 conflicts; and a source-provenance gap audit.
 
 ## Release gates
 
@@ -335,3 +330,28 @@ Direct dictionary page-opening attempts returned HTTP 403 in this session; the i
 ## CI status for the latest A1 evidence update — 2026-11-28
 
 The A1 evidence note was created on staging in commit `3d9266051c4a443ab10ffc22cf4301c3a722eace`; the report update is commit `1c84f4643dc392d9db5d2cc931a97f3856418354`. At the time of this check, GitHub's combined commit-status endpoint returned no status records for the report commit, and the available commit-to-workflow lookup returned no runs (that connector lookup is limited to pull-request-triggered runs). Therefore no current-tip CI run ID, job conclusion or log is claimed for these latest changes. The last fully inspected successful run remains `46138263135` on report commit `8929276f3014f52b3a6bcee326f66fcc291dec04`, with 14/14 jobs successful. Its success predates the A1 evidence/report additions and must not be treated as validation of them. The staging workflow is configured to run on pushes changing these CEFR-1000 Markdown files; its result for the new commits remains to be fetched.
+
+
+## A1 core verbs and adjective audit — 2026-11-28
+
+Added [A1 core verbs and adjective evidence note](CEFR-1000-EVIDENCE-2026-11-28-A1-CORE-VERBS-AND-ADJECTIVES.md) in staging commit `c17f24a974a7b9d1762f2fc7bea8ca8e6ba5e709`. It covers eight original A1 tasks: `need` (CEFR1000-A1-0050), `come` (-0058), `use` (-0057), `make` (-0066), `look` (-0067), `take` (-0068), `give` (-0064), and `old` (-0060). Cambridge Learner's / Essential British dictionary extracts observed 2026-11-28 provide A1 exact-sense signals for the selected senses. UK IPA, source URLs, source batch/blob SHA, shortlist/task provenance, English-definition refinements, Myanmar register/sense notes, original example grammar and fresh example options are recorded.
+
+Most consequential finding: the shortlist's A1 `give` definition (“hand something to someone”) and example (“Please give me the book.”) most directly select Cambridge's A2 hand-transfer sense. The A1 source sense is “provide someone with something”; the note proposes an A1-aligned definition/example and explicitly leaves the level/example decision to an independent reviewer. `take` also needs a more explicit carry-with-you example; `old` needs separate Myanmar wording for human age versus old/used objects; `use` must retain the verb pronunciation /juːz/ rather than noun /juːs/. The other entries retain A1 senses while documenting A2/B1 neighbouring senses and grammar constraints. All eight remain author-side only; no shortlist/task field, review flag, hold or approval was changed.
+
+## Latest inspected Actions run before the new A1 audit — 2026-11-28
+
+Branch head before the new evidence note was `507c4f2d9c341c38700ab5fe108d4d7488255baf`. GitHub Actions run [`46144929728`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46144929728) completed with overall conclusion **success**, and the jobs endpoint returned **14/14 successful jobs**. Actual job conclusions and logs were fetched:
+- Python structural integrity A1–C1: A1 `140978756579`, A2 `140978756552`, B1 `140978756581`, B2 `140978756561`, C1 `140978756584` — all success, each reported `errors: []` and `independent_approval_inferred: false`.
+- Node cross-level/task-ID structural A1–C1: A1 `140978756569`, A2 `140978756630`, B1 `140978756583`, B2 `140978756615`, C1 `140978756577` — all success.
+- Twenty mutation checks: `140978756682` — success; log confirmed all twenty corruptions rejected.
+- Python release denial: `140978756575` — success; log confirmed controlled explicit denial and no inferred independent approval.
+- Node approved-manifest release denial: `140978756531` — success; log confirmed the release remains BLOCKED.
+- Adversarial audio/evidence checks: `140978756336` — success; all six synthetic checks passed (mismatched CEFR level, generic CEFR excerpt, wrong transcript, duplicate audio bytes, invalid format/signature, and a complete synthetic schema fixture). The log explicitly says no real review or audio evidence was created.
+
+Run `46144929728` validates commit `507c4f2d9c341c38700ab5fe108d4d7488255baf`, not the later evidence-note commit `c17f24a974a7b9d1762f2fc7bea8ca8e6ba5e709` or this report update. The new documentation changes should trigger another push run; current-tip success must be checked separately. Earlier failed adversarial fixture runs remain documented above, along with the repair and successful later regression runs.
+
+## Reconciled inventory after the new A1 audit — 2026-11-28
+
+The actual shortlist and independent-task JSON were reparsed before adding the new evidence note. Results remain A1 200 written / 200 unique / 0 independently approved; A2 200 / 200 / 0; B1 200 / 200 / 0; B2 200 / 200 / 0; C1 200 / 200 / 0. All 1,000 entries remain on editorial hold, all 1,000 independent tasks remain pending, and no reviewer signatures or source-evidence URLs were manufactured. The note does not modify any source JSON.
+
+Release blockers remain unchanged: independent English, Myanmar, original-example and source-backed CEFR signoff 0/1,000; final George/Emma headword/example audio 0/4,000 generated and actually listened to; vocabulary-specific desktop/mobile regression not evidenced; physical iPhone Safari review not evidenced; GitHub Pages hosting clearance outstanding; and confirmed production deployment absent. The 54 lessons, separate IELTS bank, established production audio, privacy controls and `main` remain untouched. Remain staging-only.
