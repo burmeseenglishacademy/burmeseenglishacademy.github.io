@@ -41,7 +41,9 @@ const manifest={
   };
  })
 };
-fs.writeFileSync(path.join(draft,'CEFR-1000-APPROVED-RELEASE-MANIFEST.json'),JSON.stringify(manifest));
+const manifestPath=path.join(draft,'CEFR-1000-APPROVED-RELEASE-MANIFEST.json');
+const writeManifest=()=>fs.writeFileSync(manifestPath,JSON.stringify(manifest));
+writeManifest();
 
 const kinds=['george_headword','emma_headword','george_example','emma_example'];
 const audio={};
@@ -93,6 +95,7 @@ try{
  const firstManifestEntry=manifest.entries[0];
  const originalCefrLevel=firstManifestEntry.source_cefr_level;
  firstManifestEntry.source_cefr_level='C2';
+ writeManifest();
  writeEvidence();
  const wrongCefrLevel=runGate();
  assert.equal(wrongCefrLevel.status,1,'A CEFR label that differs from the approved level must be rejected');
@@ -100,8 +103,10 @@ try{
  console.log('PASS: a source CEFR label that conflicts with the manifest level is rejected');
 
  firstManifestEntry.source_cefr_level=originalCefrLevel;
+ writeManifest();
  const originalCefrExcerpt=firstManifestEntry.source_cefr_evidence_excerpt;
  firstManifestEntry.source_cefr_evidence_excerpt='Generic Oxford word-list landing page; no individual headword level is shown';
+ writeManifest();
  writeEvidence();
  const genericCefrSource=runGate();
  assert.equal(genericCefrSource.status,1,'A generic word-list URL without a headword-level excerpt must be rejected');
@@ -109,6 +114,7 @@ try{
  console.log('PASS: a generic list reference without an exact headword/level excerpt is rejected');
 
  firstManifestEntry.source_cefr_evidence_excerpt=originalCefrExcerpt;
+ writeManifest();
  writeEvidence();
 
  const first=evidence.audio.george_headword[0];
