@@ -117,7 +117,7 @@ The evidence note includes source URLs, observation date, source shortlist/task 
 On 2026-11-28, `scripts/cefr-1000-release-readiness-gate.cjs` was strengthened before any final audio is generated:
 - Every George/Emma headword audio record must carry `spoken_text` exactly matching the approved manifest headword; every example recording must match the approved example sentence.
 - Audio files must use a declared `mp3`, `wav`, `ogg` or `flac` format whose extension matches and whose file header has the corresponding basic container/signature marker.
-- SHA-256 content digests must be unique across all 4,000 voice/utterance slots, not merely within each task. File paths remain unique, confined to staging `draft/`, regular (not symlinked), nonempty and checksum-verified.
+- Audio paths and SHA-256 digests may be reused only when the exact spoken text and voice are identical (for example, repeated example sentences); every manifest slot must still have its own exact-text audio record. Reuse across different spoken text or across George/Emma voices is rejected. File paths remain unique, confined to staging `draft/`, regular (not symlinked), nonempty and checksum-verified.
 - Existing checks for exactly 1,000 records in each of four audio categories, one record per manifest task, British George/Emma identity, `en-GB`, generator provenance, listener identity/time and listening-evidence URL remain in force.
 
 Added `scripts/cefr1000_release_gate_negative_tests.cjs` and a dedicated workflow job. The test uses a temporary synthetic fixture only (not repository release evidence or actual audio) and verifies: complete evidence-schema fixture passes schema validation only; wrong spoken text is rejected; duplicate audio bytes across different tasks are rejected; and invalid audio signature is rejected.
@@ -727,3 +727,16 @@ A separate programmatic audit of all 16 shard reports confirms the intended mapp
 - Result: 3,992 MP3 files (1,996 George + 1,996 Emma) cover all 4,000 voice/utterance slot mappings.
 
 This validates mapping completeness and archive integrity, not pronunciation quality or listening. Every record still states `listening_review: NOT_PERFORMED` and `independent_approval: false`; the human listening signoff count remains **0/3,992**. No file was copied into production.
+
+
+## Audio evidence deduplication correction — 2026-11-28
+
+The artifact-level audit above confirmed that all 4,000 voice/utterance slots are mapped, while three exact duplicate example strings mean only 3,992 distinct audio files are needed. The original release gate's global unique-path/unique-digest rule would incorrectly reject a valid exact-text reuse for the same voice. It was narrowed without weakening cross-content checks:
+
+- Commit [`07593bed4025ab1a34ddb05b70166a7a4fb211cf`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/07593bed4025ab1a34ddb05b70166a7a4fb211cf) changes `scripts/cefr-1000-release-readiness-gate.cjs` to permit a shared path or digest only when voice, exact spoken text and (for a shared path) digest all match. Different spoken text or cross-voice reuse remains a blocker.
+- Commit [`fda6e6d60df6fec5f3f8fb2ffc3c6d6a861aaf72`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/fda6e6d60df6fec5f3f8fb2ffc3c6d6a861aaf72) expands the synthetic negative tests: exact same-text/same-voice reuse is accepted; path reuse for different text, duplicate bytes across different text, George-to-Emma reuse and invalid audio signatures are rejected.
+- Commit [`f7931120b354cf5dc07b7388ddd9f06d6404e361`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/commit/f7931120b354cf5dc07b7388ddd9f06d6404e361) clarifies the structural workflow step label. The structural workflow's path filters include the changed gate and test files.
+
+A local logic-case check of the new path/digest comparison accepted exact same-voice/same-text reuse and rejected different-text path reuse, different-text digest reuse and cross-voice digest reuse. **No GitHub Actions pass is claimed for these new commits yet:** the combined-status endpoint returned no status entries, and no new run ID/job list was available through the current run-query surface at this observation. The structural workflow is configured to run on these paths; its actual job conclusions/logs must be checked before treating the change as CI-verified.
+
+This change affects only the release validator and its synthetic tests. It does not alter the provisional shortlist, review tasks, generated audio artifact, production assets or any approval status. Real listening remains 0/3,992.
