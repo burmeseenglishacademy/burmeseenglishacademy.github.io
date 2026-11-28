@@ -620,3 +620,21 @@ The repaired four-way browser workflow [`46157999098`](https://github.com/burmes
 The prior WebKit history-throttle failure and its fix are recorded above. This successful run closes the **automated four-way staging browser matrix**. It does not supply a physical iPhone Safari review: both mobile runs are simulator/emulation. The browser script mocks `Audio.play()` to check voice routing and stop handlers; it does not establish audible pronunciation or actual listening. The sample MP3 HTTP GETs use existing production audio, not the new unreviewed CEFR candidate recordings.
 
 The formal release ledger still has no approved 1,000-entry manifest to bind the browser receipts to, so this automated run does not change any independent review, listening, physical-device, hosting or deployment gate. The physical iPhone Safari and real George/Emma listening blockers remain unchanged.
+
+
+## Current protected-production hash recheck — 2026-11-28
+
+At staging head `aa06a4b1501be3316f2bb485e61adc8dc0fe4bc9`, the current GitHub `main` head was `dca0db7aa30118ecc18350db8dc406e6cac91554`. Direct Git blob comparisons confirmed these eight protected files are byte-identical between `main` and staging:
+
+| Protected file | Matching blob SHA |
+|---|---|
+| `content.js` (54 published lessons) | `d47c520e6c2829bb801e0826c18a7c943a5b78f5` |
+| `ielts-vocabulary-data.js` (separate IELTS bank) | `416326bd893547a2a2d70dc5d9c2840712e03aeb` |
+| `audio-manifest.js` | `dcad03fd7b8feeba7dc4c4a1cbd27ceaa56c7154` |
+| `audio-player.js` | `3123b76765f33e14d991f89dc7354c11e5098e45` |
+| `audio-integration.js` | `ac7c805f6839e9509e4c92d215d4890a2b158d06` |
+| `privacy-tools.js` | `b873232a9c18a5efa95ab6661bce3f067043a214` |
+| `privacy.html` | `42790fdcc3deb352a584a29080098a1aaa1c5597` |
+| `site-config.js` | `7ff067d980a5c7b265eddc7eb1df0e4efb8c7c02` |
+
+The full preservation workflow run `46155894372` also passed its read-only production baseline check, including the audio directory. No changes were made to `main`. This is preservation evidence only; it does not replace the final content-bound production-asset receipt required by the release ledger.
