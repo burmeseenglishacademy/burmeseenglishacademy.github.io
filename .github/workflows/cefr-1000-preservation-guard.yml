@@ -14,11 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 1
           persist-credentials: false
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.11'
       - name: Fetch public production main for read-only object comparison
@@ -27,7 +27,7 @@ jobs:
         run: python3 tools/verify_cefr_protected_baseline.py
       - name: Archive staging-only preservation comparison
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: cefr1000-staging-legacy-preservation-verification
           path: scratch/cefr1000-preservation/report.json
