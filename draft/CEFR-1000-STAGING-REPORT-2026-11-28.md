@@ -100,3 +100,18 @@ On 2026-11-28, five A1 entries were documented in `draft/CEFR-1000-EVIDENCE-2026
 ## C1 level-risk evidence addition
 
 On 2026-11-28, the C1 risk note documented five existing entries: `naval` (Cambridge C2, conflicting with shortlist C1), `tribute` (Cambridge C2, conflicting with shortlist C1, plus example originality concern), `divine` (exact sense supported but no CEFR level shown by the inspected Cambridge learner entry), `municipal` (C1 supported), and `neutral` (C1 supported for the no-opinion adjective sense). Tasks CEFR1000-C1-0801, -0812, -0813, -0814 and -0815 remain pending. Evidence-file commit: `7c83d5f6d10e6b541423ff6db0a253cfed6f9ab4`.
+
+
+
+## C1 political, institutional and legal sense evidence addition
+
+On 2026-11-28, an author-side evidence note was added at `draft/CEFR-1000-EVIDENCE-2026-11-28-C1-POLITICAL-AND-LEGAL-SENSES.md` for seven existing C1 candidates (all still pending):
+- `civilian` (CEFR1000-C1-0829): Cambridge labels the selected noun sense C2, conflicting with shortlist C1.
+- `coalition` (CEFR1000-C1-0830): Cambridge supports the political-alliance sense but the inspected Cambridge entries show no CEFR label; Wordmom shows B2, treated only as a low-confidence warning.
+- `controversial` (CEFR1000-C1-0831): Cambridge labels the exact adjective sense B2, conflicting with C1.
+- `dominant` (CEFR1000-C1-0833): Cambridge labels the selected general adjective sense C1; specialised biological, anatomical, psychological and music senses are kept separate.
+- `furthermore` (CEFR1000-C1-0834): Cambridge labels the formal connective B2, conflicting with C1.
+- `treasury` (CEFR1000-C1-0822): government-department sense supported by Collins/Cambridge, but no authoritative CEFR label found in those entries; secondary B2 and inconsistent frequency-based B2/C1 signals are not sufficient for approval. The note flags generic lowercase `treasury` versus named institutional `the Treasury`, and distinguishes department, funds, storehouse and collection senses.
+- `warrant` (CEFR1000-C1-0824): Cambridge confirms the legal-document noun sense; Oxford Advanced Learner's search metadata exposed a “Law and justice C1” topic tag, but direct opening returned HTTP 403. The tag needs human verification and must not be generalised to the verb or other noun senses.
+
+The evidence note includes source URLs, observation date, source shortlist/task provenance, Myanmar refinements and original example proposals. It is author-side research only. No review-task source fields, reviewer identity, timestamps, reviewed flags, approval flags, shortlist entries or levels were changed. Evidence-note correction commit: `741057791c14b63d121ccd7c2cc2106e2c55c71c`.
