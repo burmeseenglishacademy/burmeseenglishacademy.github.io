@@ -20,7 +20,7 @@ Structural observations:
 - 1,000 unique case-folded NFC headwords in the shortlist.
 - All 1,000 shortlist entries remain `editorial_hold: true`.
 - All provisional `reviewed_english`, `reviewed_burmese`, `reviewed_example`, `reviewed_level`, `reviewed_pronunciation`, and `release_approved` flags remain explicitly false.
-- All 1,000 review tasks remain pending and approval false; no task has an assigned reviewer, reviewer identity or signature. The task file's `source_evidence_urls` remain empty and `source_observed_on` remains null for every task because these fields are reserved for evidence entered through the independent-review process. Four B2 author-collected Cambridge research leads are preserved in the separate evidence note only; they are not independent signoff.
+- All 1,000 review tasks remain pending and approval false; no task has an assigned reviewer, reviewer identity or signature. The task file's `source_evidence_urls` remain empty and `source_observed_on` remains null for every task because these fields are reserved for evidence entered through the independent-review process. Four B2 author-collected Cambridge/Oxford research leads are preserved in the separate evidence note only; they are not independent signoff.
 
 Source file blob SHAs observed:
 - Provisional shortlist: `475e68ae17ab97bd937e73e5ce4794e0dcd76551`.
@@ -401,8 +401,8 @@ Added `draft/CEFR-1000-EVIDENCE-2026-11-28-B2-EXACT-SENSE-AUDIT.md` (commit `e6d
 Key findings:
 - `personality`: Cambridge Learner's and English Dictionary extracts both label the selected character sense B2.
 - `relief`: the selected emotional sense is B2; the current definition should be narrowed so it does not conflate emotional relief with pain relief.
-- `resistance`: the learner entry has a matching opposition sense but no visible CEFR label in the indexed extract; the main English entry labels a broad overlapping sense C2. B2 remains unsubstantiated by the inspected evidence and needs another explicit source or independent reallocation decision.
-- `retail`: the selected noun/activity sense is explicitly labelled C1 by Cambridge, directly challenging its provisional B2 placement. Any C1 reallocation requires review of the full level allocation and a replacement candidate; no automatic move was made.
+- `resistance`: Cambridge Learner's Dictionary has the matching opposition sense without a visible CEFR label; Cambridge's main entry gives a broad overlapping C2 signal; Oxford's matching first sense carries the topic label Preferences and decisions C1. This challenges B2 but is not a direct headword-list assignment.
+- `retail`: Cambridge labels the noun/activity sense C1, while Oxford labels the same sense Business B2 and Shopping B2. This is a cross-publisher B2/C1 conflict; the provisional B2 placement has Oxford topic-level support but remains on hold for independent adjudication.
 
 Direct Cambridge page opens returned HTTP 403. The note therefore identifies the search-indexed extracts as evidence leads and requires human source-page verification. It does not claim independent source verification or approval.
 
@@ -466,3 +466,20 @@ The review-selection workflow that was still running at the previous report upda
 - [Run `46155709499`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46155709499), exact report commit `ba5fd37a941f0e671e38f9b5edab31364545e30c`: **14/14 jobs successful**. Actual job conclusions and logs were checked: five Python level-specific structural jobs, five Node cross-level/task-ID jobs, twenty mutation cases, both release-denial jobs and eight synthetic independent-review/audio-evidence rejection cases all succeeded. Logs explicitly retain `independent_approval_inferred: false`, zero independently verified entries, and `release: BLOCKED`.
 
 These successes validate structural integrity and fail-closed behaviour only. They do not approve vocabulary content, create real audio, establish that anyone listened to audio, prove browser/device playback, or authorize production deployment. The new report commit created by this follow-up will trigger its own documentation-path workflow run, which must be inspected separately rather than inferred from either run above.
+
+
+### Oxford cross-publisher refinement of the B2 audit — 2026-11-28
+
+The B2 evidence note was updated in commit `e5532b48b0af292c6ceca53f2fdc16a542a650c6` after additional Oxford Learner's Dictionaries indexed extracts were found. Direct Oxford page opens also returned HTTP 403; the note records indexed extracts and canonical URLs, not a successful direct-page audit.
+
+- `resistance`: Oxford's first noun sense matches opposition to a plan/idea and is tagged under Preferences and decisions C1. This joins Cambridge's broad C2 signal; neither is a direct CEFR word-list label. B2 remains challenged and the entry remains held.
+- `retail`: Oxford's noun sense matches the shortlist and carries Business B2 and Shopping B2 topic labels, while Cambridge's English Dictionary labels the noun C1. This is a real cross-publisher disagreement, not a clear one-way C1 reassignment. Keep B2 on hold pending independent adjudication.
+- `relief`: Oxford places the exact emotional sense under Feelings B2, corroborating Cambridge's B2 label.
+- `personality`: the current evidence remains Cambridge B2 for the selected character sense; no Oxford exact-sense level was established in this pass.
+
+Oxford source URLs:
+- https://www.oxfordlearnersdictionaries.com/definition/english/resistance
+- https://www.oxfordlearnersdictionaries.com/us/definition/english/retail_1
+- https://www.oxfordlearnersdictionaries.com/us/definition/english/relief
+
+No provisional entry, level, Myanmar meaning, example, task status or approval flag was changed.
