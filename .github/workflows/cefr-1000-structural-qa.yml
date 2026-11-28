@@ -23,10 +23,10 @@ jobs:
       matrix:
         level: [A1, A2, B1, B2, C1]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
       - name: Check provisional inventory and review-task integrity
@@ -35,10 +35,10 @@ jobs:
     name: Reject corrupted provisional data
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
       - name: Run twenty fail-closed mutation checks
@@ -47,10 +47,10 @@ jobs:
     name: Assert unverified release remains blocked
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
       - name: Verify release gate fails closed
@@ -88,12 +88,13 @@ jobs:
       matrix:
         level: [A1, A2, B1, B2, C1]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '22'
+          package-manager-cache: false
       - name: Check 200 provisional entries and matching global task IDs
         env:
           CEFR_LEVEL: ${{ matrix.level }}
@@ -139,12 +140,13 @@ jobs:
     name: Node approved-manifest release denial
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '22'
+          package-manager-cache: false
       - name: Require explicit fail-closed staging result
         shell: bash
         run: |
