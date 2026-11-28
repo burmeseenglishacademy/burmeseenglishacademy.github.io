@@ -19,15 +19,32 @@ const tasks=JSON.parse(fs.readFileSync(path.join(repoRoot,'draft/CEFR-1000-INDEP
 fs.writeFileSync(path.join(draft,'CEFR-1000-PROVISIONAL-SHORTLIST.json'),JSON.stringify(shortlist));
 fs.writeFileSync(path.join(draft,'CEFR-1000-INDEPENDENT-REVIEW-TASKS.json'),JSON.stringify(tasks));
 
+const digest=value=>crypto.createHash('sha256').update(value).digest('hex');
+const signoff=(dimension,authorId,payload)=>({
+ decision:'APPROVED',
+ reviewer_id:'fixture-independent-reviewer-'+dimension,
+ reviewer_profile_url:'https://fixture.invalid/reviewer/'+dimension,
+ qualification_evidence_url:'https://fixture.invalid/qualification/'+dimension,
+ evidence_url:'https://fixture.invalid/review/'+dimension,
+ signed_at:'2026-11-28T08:00:00Z',
+ reviewed_content_sha256:digest(payload)
+});
 const manifest={
  scope:'CEFR-1000 ONLY',
  entries:shortlist.entries.map((source,index)=>{
   const task=tasks.tasks[index];
+  const authorId='fixture-original-author';
+  const cefrPayload=JSON.stringify({
+   headword:source.word,level:source.level,
+   url:'https://fixture.invalid/cefr/'+encodeURIComponent(source.word),
+   excerpt:source.word+': CEFR '+source.level+' synthetic exact-sense label',
+   reference:'synthetic CEFR excerpt '+index,observed_on:'2026-11-28'
+  });
   return {
    headword:source.word,level:source.level,task_id:task.task_id,part_of_speech:source.part_of_speech,
    english_definition:source.english_definition,myanmar_meaning:source.burmese_meaning,
    example_sentence:source.example_sentence,exact_sense:'Synthetic fixture sense for '+source.word,
-   reviewer_id:'fixture-independent-reviewer',author_id:'fixture-original-author',
+   reviewer_id:'fixture-independent-reviewer',author_id:authorId,
    reviewer_signed_at:'2026-11-28T08:00:00Z',source_observed_on:'2026-11-28',
    source_url:'https://fixture.invalid/source/'+encodeURIComponent(source.word),
    source_excerpt_reference:'synthetic fixture excerpt '+index,
@@ -37,7 +54,13 @@ const manifest={
    source_cefr_excerpt_reference:'synthetic CEFR excerpt '+index,
    source_cefr_observed_on:'2026-11-28',
    independent_english_review:true,independent_myanmar_review:true,
-   independent_example_review:true,independent_cefr_review:true
+   independent_example_review:true,independent_cefr_review:true,
+   independent_review_signoffs:{
+    english:signoff('english',authorId,source.english_definition),
+    myanmar:signoff('myanmar',authorId,source.burmese_meaning),
+    example:signoff('example',authorId,source.example_sentence),
+    cefr:signoff('cefr',authorId,cefrPayload)
+   }
   };
  })
 };
@@ -91,6 +114,40 @@ try{
  assert.equal(baseline.status,0,'Synthetic complete schema fixture should pass schema validation');
  assert.equal(baseline.report.release,'EVIDENCE_SCHEMA_CHECK_PASSED_NOT_DEPLOYMENT_AUTHORIZATION');
  console.log('PASS: complete synthetic fixture satisfies evidence schema only (not deployment authorization)');
+
+ const firstManifestEntry=manifest.entries[0];
+ const myanmarSignoff=firstManifestEntry.independent_review_signoffs.myanmar;
+ const originalMyanmarReviewer=myanmarSignoff.reviewer_id;
+ myanmarSignoff.reviewer_id=firstManifestEntry.author_id;
+ writeManifest();writeEvidence();
+ const selfMyanmar=runGate();
+ assert.equal(selfMyanmar.status,1,'A Myanmar reviewer who is also the author must be rejected');
+ assert.ok(selfMyanmar.report.blockers.some(x=>x.includes('independent myanmar reviewer must be identified and differ from author')));
+ console.log('PASS: author self-review is rejected for a review dimension');
+ myanmarSignoff.reviewer_id=originalMyanmarReviewer;
+ writeManifest();
+
+ const exampleSignoff=firstManifestEntry.independent_review_signoffs.example;
+ const originalExampleHash=exampleSignoff.reviewed_content_sha256;
+ exampleSignoff.reviewed_content_sha256='0'.repeat(64);
+ writeManifest();writeEvidence();
+ const staleExample=runGate();
+ assert.equal(staleExample.status,1,'An independent example signoff bound to stale text must be rejected');
+ assert.ok(staleExample.report.blockers.some(x=>x.includes('stale or mismatched independent example content hash')));
+ console.log('PASS: review signoff is invalidated when reviewed example text changes');
+ exampleSignoff.reviewed_content_sha256=originalExampleHash;
+ writeManifest();
+
+ const cefrSignoff=firstManifestEntry.independent_review_signoffs.cefr;
+ const originalCefrDecision=cefrSignoff.decision;
+ cefrSignoff.decision='PENDING';
+ writeManifest();writeEvidence();
+ const pendingCefr=runGate();
+ assert.equal(pendingCefr.status,1,'A pending CEFR review must be rejected');
+ assert.ok(pendingCefr.report.blockers.some(x=>x.includes('missing independent cefr approval')));
+ console.log('PASS: pending exact-sense CEFR signoff is rejected');
+ cefrSignoff.decision=originalCefrDecision;
+ writeManifest();writeEvidence();
 
  const firstManifestEntry=manifest.entries[0];
  const originalCefrLevel=firstManifestEntry.source_cefr_level;
