@@ -309,3 +309,15 @@ The preceding failed run `46135033907` is retained as a transparent regression r
 ## C1 C2/A2 lexical-level challenge — 2026-11-28
 
 The new author-side note `draft/CEFR-1000-EVIDENCE-2026-11-28-C1-C2-CONFLICTS-AND-ALACRITY.md` records four Oxford topic-list C2 conflicts among C1 candidates (`affable`, `ameliorate`, `acquiescence`, `acrimonious`) and the Oxford OALD Oxford 3000 A2 label for `alacrity`, which is already historically quarantined. Cambridge exact-sense definitions and British pronunciation references, Oxford CEFR evidence URLs, task IDs, source-batch provenance, observation date, Myanmar refinements and original example proposals are retained. These findings are author-side only and do not count as independent checks.
+
+
+## Report-commit CI confirmation — 2026-11-28
+
+The staging-report update commit `d30cd247b2e5a29b3080c8ba19d4f9ab451e4478` was itself checked by GitHub Actions run [46138175714](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46138175714): overall conclusion `success`, **14/14 jobs successful**, exact head SHA match.
+
+Actual job conclusions and selected logs were fetched:
+- Python A1–C1 structural jobs: A1 `140958044599`, A2 `140958044585`, B1 `140958044565`, B2 `140958044543`, C1 `140958044686` — all success.
+- Node A1–C1 cross-level/task-ID jobs: A1 `140958044340`, A2 `140958044614`, B1 `140958044573`, B2 `140958044516`, C1 `140958044643` — all success.
+- Mutation suite `140958044617`, Python release denial `140958044618`, Node release denial `140958044646`, and adversarial release/audio suite `140958044595` — all success.
+
+The adversarial log again passed the persisted wrong-level, generic CEFR excerpt, wrong transcript, duplicate audio bytes and invalid audio-signature rejection cases. Both release-denial logs explicitly confirm no independent approval is inferred and the provisional release remains blocked. This validates the report and staging safeguards only; it does not constitute linguistic signoff or real audio/device/hosting/deployment evidence.
