@@ -88,8 +88,10 @@ if(exists(manifestPath)&&exists(evidencePath)){
   const required=['george_headword','emma_headword','george_example','emma_example'];
   const audio=ev.audio||{};
   const manifestByTask=new Map(entries.map(e=>[e.task_id,e]));
-  const audioPaths=new Set(); // Each voice/utterance slot needs its own file.
-  const audioDigests=new Set(); // Distinct files must also contain distinct audio bytes globally.
+  // Every manifest slot still needs a record. Exact duplicate spoken text may share one
+  // recording only within the same voice; different text or cross-voice reuse is rejected.
+  const audioPaths=new Map(); // path -> {voice,text,digest}
+  const audioDigests=new Map(); // digest -> {voice,text}
   const supportedFormats=new Set(['mp3','wav','ogg','flac']);
   const hasAudioSignature=(buffer,format)=>{
    if(format==='mp3')return buffer.length>=3&&(buffer.subarray(0,3).toString()==='ID3'||(buffer[0]===0xff&&(buffer[1]&0xe0)===0xe0));
@@ -109,9 +111,12 @@ if(exists(manifestPath)&&exists(evidencePath)){
     check(typeof r.spoken_text==='string'&&r.spoken_text===expectedText,'audio spoken text mismatch '+kind+' '+r.task_id);
     const safePath=typeof r.path==='string'&&/^draft\/[a-zA-Z0-9_./-]+$/.test(r.path)&&!r.path.split('/').includes('..')&&path.resolve(root,r.path).startsWith(path.resolve(root,'draft')+path.sep);
     check(safePath&&exists(r.path),'missing or unsafe staging audio file '+kind+' '+r.task_id);
+    const voice=kind.startsWith('george')?'George':'Emma';
     if(safePath){
-     check(!audioPaths.has(r.path),'audio file reused across voice/utterance slots '+r.path);
-     audioPaths.add(r.path);
+     const previous=audioPaths.get(r.path);
+     check(!previous||(previous.voice===voice&&previous.text===r.spoken_text&&previous.digest===r.sha256),
+       'audio file reused across different voice/utterance content '+r.path);
+     if(!previous)audioPaths.set(r.path,{voice,text:r.spoken_text,digest:r.sha256});
     }
     if(safePath&&exists(r.path)&&typeof r.sha256==='string'&&/^[a-f0-9]{64}$/.test(r.sha256)){
      const stat=fs.lstatSync(path.join(root,r.path));
@@ -120,8 +125,10 @@ if(exists(manifestPath)&&exists(evidencePath)){
       const bytes=fs.readFileSync(path.join(root,r.path));
       const digest=crypto.createHash('sha256').update(bytes).digest('hex');
       check(digest===r.sha256,'audio checksum mismatch '+kind+' '+r.task_id);
-      check(!audioDigests.has(digest),'audio content digest reused across all voice/utterance slots '+kind+' '+r.task_id);
-      audioDigests.add(digest);
+      const previousDigest=audioDigests.get(digest);
+      check(!previousDigest||(previousDigest.voice===voice&&previousDigest.text===r.spoken_text),
+        'audio content digest reused across different spoken text or voice '+kind+' '+r.task_id);
+      if(!previousDigest)audioDigests.set(digest,{voice,text:r.spoken_text});
       const format=typeof r.format==='string'?r.format.toLowerCase():'';
       const extension=path.extname(r.path).slice(1).toLowerCase();
       check(supportedFormats.has(format)&&format===extension&&hasAudioSignature(bytes,format),'unrecognised audio format/signature '+kind+' '+r.task_id);
