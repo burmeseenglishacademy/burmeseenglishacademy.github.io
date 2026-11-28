@@ -143,6 +143,40 @@ if(exists(manifestPath)&&exists(evidencePath)){
    const g=ev[gate];
    check(!!g&&g.passed===true&&typeof g.evidence_url==='string'&&/^https:\/\//.test(g.evidence_url)&&typeof g.checked_at==='string'&&!!g.checked_at&&typeof g.reviewer_id==='string'&&!!g.reviewer_id,'missing externally evidenced '+gate);
   }
+  // A generic "Pages passed" boolean is insufficient. Require measured evidence
+  // against GitHub's published limits, bound to the exact deployment commit.
+  const pages=ev.github_pages_limits||{};
+  const MAX_GB=1_000_000_000;       // published-site cap; source repo recommendation
+  const MAX_ARTIFACT=10_000_000_000; // upload-pages-artifact tar limit
+  const MAX_DEPLOY_SECONDS=600;      // Pages deployment timeout
+  const SOFT_BANDWIDTH=100_000_000_000; // monthly soft limit
+  check(Number.isSafeInteger(pages.source_repository_size_bytes)&&pages.source_repository_size_bytes>=0&&pages.source_repository_size_bytes<=MAX_GB,
+    'GitHub Pages source repository must be measured and remain within the 1 GB recommended limit');
+  check(Number.isSafeInteger(pages.published_site_size_bytes)&&pages.published_site_size_bytes>=0&&pages.published_site_size_bytes<=MAX_GB,
+    'published GitHub Pages site must be measured and remain at or below 1 GB');
+  check(Number.isSafeInteger(pages.pages_artifact_size_bytes)&&pages.pages_artifact_size_bytes>=0&&pages.pages_artifact_size_bytes<=MAX_ARTIFACT,
+    'GitHub Pages deployment artifact must be measured and remain below 10 GB');
+  check(Number.isFinite(pages.deployment_duration_seconds)&&pages.deployment_duration_seconds>=0&&pages.deployment_duration_seconds<MAX_DEPLOY_SECONDS,
+    'GitHub Pages deployment must be measured and complete in under 10 minutes');
+  check(Number.isFinite(pages.monthly_bandwidth_estimate_bytes)&&pages.monthly_bandwidth_estimate_bytes>=0,
+    'missing measured monthly GitHub Pages bandwidth estimate');
+  check(typeof pages.bandwidth_estimate_method==='string'&&!!pages.bandwidth_estimate_method.trim(),
+    'missing GitHub Pages bandwidth estimate method');
+  check(pages.monthly_bandwidth_estimate_bytes<=SOFT_BANDWIDTH||
+    (typeof pages.mitigation_plan_url==='string'&&/^https:\/\//.test(pages.mitigation_plan_url)),
+    'monthly bandwidth exceeds the 100 GB soft limit without a mitigation plan');
+  check(typeof pages.custom_actions_workflow==='boolean'&&Number.isFinite(pages.builds_per_hour)&&pages.builds_per_hour>=0,
+    'missing GitHub Pages publishing method/build-frequency evidence');
+  check(pages.custom_actions_workflow===true||pages.builds_per_hour<=10,
+    'GitHub Pages build frequency exceeds 10/hour for non-custom workflow publishing');
+  check(typeof pages.artifact_sha256==='string'&&/^[a-f0-9]{64}$/.test(pages.artifact_sha256),
+    'missing SHA-256 for measured GitHub Pages artifact');
+  check(typeof pages.measurement_commit_sha==='string'&&/^[a-f0-9]{40}$/.test(pages.measurement_commit_sha)&&pages.measurement_commit_sha===ev.production_commit_sha,
+    'GitHub Pages size/deployment evidence is not bound to the production commit');
+  check(typeof pages.limits_reference_url==='string'&&pages.limits_reference_url==='https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits',
+    'missing official GitHub Pages limits reference');
+  check(typeof pages.measured_at==='string'&&!Number.isNaN(Date.parse(pages.measured_at)),
+    'invalid GitHub Pages measurement date');
   check(typeof ev.production_commit_sha==='string'&&/^[a-f0-9]{40}$/.test(ev.production_commit_sha),'missing verified production commit');
  }catch(err){errors.push('cannot validate release evidence: '+err.message)}
 }
