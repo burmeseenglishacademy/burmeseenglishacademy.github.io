@@ -46,7 +46,7 @@ The author-side evidence notes cover selected A1–C1 candidates and are researc
 | GitHub Pages hosting/capacity limits for proposed release | Not assessed for this release |
 | Confirmed production deployment | Not deployed / not confirmed |
 
-The final audio requirement is 4,000 distinct voice/utterance assets (1,000 headwords and 1,000 examples for each of George and Emma), each with provenance and real listening signoff. Existing production audio is not a substitute for these new assets.
+The final audio requirement is 4,000 voice/utterance slot mappings (1,000 headwords and 1,000 examples for each of George and Emma), each with provenance and real listening signoff. Exact-text deduplication may reduce the number of distinct files only when identical source text is reused across multiple slots; every slot must still map exactly once per voice. Existing production audio is not a substitute for these new assets.
 
 ## CI evidence and workflow notes
 
@@ -712,3 +712,18 @@ These are successful automated structural, synthetic negative, browser-emulation
 5. Content-bound release ledger/approved manifest and final production deployment receipt: **absent**.
 
 **Decision remains STAGING ONLY.** The branch remains `cefr-5000-bilingual-qa-staging`; no merge to `main`, public deployment, or production asset change was made. The 54 published lessons, separate IELTS 1,000-word bank, established George/Emma production audio and privacy controls remain protected. No independent approval, actual listening or physical iPhone test is claimed.
+
+
+## Artifact-level George/Emma audio slot-mapping audit — 2026-11-28
+
+The complete unreviewed audio artifact (`15268540341`) was downloaded and its ZIP SHA-256 independently recomputed; it matches the GitHub Actions upload log: `eb02755b0d97ef0f41b943f06f9ebbe3aa721f5b3caca5544f0d23ae82c31426`. The archive contains 4,009 entries: 3,992 MP3 files, 16 shard reports and one technical inventory.
+
+A separate programmatic audit of all 16 shard reports confirms the intended mapping is complete:
+- Each voice has exactly **2,000 slot mappings**: 1,000 headword slots and 1,000 example slots.
+- Each CEFR level has 400 mappings per voice (200 headwords + 200 examples).
+- Each voice maps all 2,000 unique slot keys exactly once; there are **0 missing slots and 0 duplicate slot keys within either voice**.
+- Both voices carry identical source-slot mappings.
+- There are 1,996 distinct source texts. Three exact-text groups account for four repeated slot uses per voice, so those identical texts share a file without losing any slot mapping.
+- Result: 3,992 MP3 files (1,996 George + 1,996 Emma) cover all 4,000 voice/utterance slot mappings.
+
+This validates mapping completeness and archive integrity, not pronunciation quality or listening. Every record still states `listening_review: NOT_PERFORMED` and `independent_approval: false`; the human listening signoff count remains **0/3,992**. No file was copied into production.
