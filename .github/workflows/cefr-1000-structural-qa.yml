@@ -5,6 +5,7 @@ on:
       - cefr-5000-bilingual-qa-staging
     paths:
       - 'draft/CEFR-1000-*.json'
+      - 'draft/CEFR-1000-*.md'
       - 'scripts/cefr1000_staging_gate.py'
       - 'scripts/cefr1000_negative_tests.py'
       - 'scripts/cefr-1000-level-structural-qa.cjs'
@@ -40,7 +41,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Run sixteen fail-closed mutation checks
+      - name: Run twenty fail-closed mutation checks
         run: python scripts/cefr1000_negative_tests.py
   release-blocker:
     name: Assert unverified release remains blocked
