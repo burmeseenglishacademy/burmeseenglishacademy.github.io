@@ -967,3 +967,15 @@ Remain **STAGING ONLY — DO NOT PUBLISH**. Outstanding gates are unchanged:
 - confirmed production deployment: not performed or confirmed.
 
 No merge, publication, production write, or change to `main` was made. The 54 published lessons, IELTS vocabulary bank, existing production audio and privacy assets remain identical to `main`.
+
+
+### Follow-up CI after the report update — 2026-11-29
+
+The report commit at head `65d349863bc9c9962955986e1378190178bea61a` triggered a fresh structural workflow. Run [`46169945391`](https://github.com/burmeseenglishacademy/burmeseenglishacademy.github.io/actions/runs/46169945391) completed successfully with **14/14 jobs**. The actual job list and all 14 job logs were fetched:
+- all five Python A1–C1 structural jobs reported `errors: []` and `independent_approval_inferred: false`;
+- all five Node A1–C1 cross-level task-ID swap tests rejected the swapped IDs;
+- all twenty provisional mutation cases were rejected;
+- controlled release denial and approved-manifest denial passed;
+- the adversarial evidence job passed the synthetic Pages-limit, independent-review, exact-sense, and George/Emma audio-content/voice checks.
+
+This is a follow-up automated staging check only. It does not change any linguistic review, listening, physical-device, hosting-measurement or deployment blocker.
